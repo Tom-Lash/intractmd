@@ -2,6 +2,11 @@ const express=require('express'),fetch=require('node-fetch'),path=require('path'
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')));
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
+
 // In-memory drug data cache — keyed by lowercase drug name, TTL 1 hour
 const drugDataCache=new Map();
 const CACHE_TTL=60*60*1000;
