@@ -513,4 +513,16 @@ app.post('/api/drug-ifu',async(req,res)=>{
   }
 });
 
-app.listen(3000,'0.0.0.0',()=>console.log('DDI Checker running at http://localhost:3000'));
+const server = app.listen(3000, "0.0.0.0", () => {
+  console.log("[STARTUP] DDI Checker running at http://localhost:3000");
+});
+
+server.on("error", (err) => {
+  console.error("[SERVER_ERROR]", err);
+  process.exit(1);
+});
+
+process.on("SIGTERM", () => {
+  console.log("[SIGTERM] Graceful shutdown");
+  server.close(() => process.exit(0));
+});
