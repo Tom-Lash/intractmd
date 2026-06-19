@@ -2,6 +2,8 @@ process.on("uncaughtException", (err) => { console.error("[FATAL]", err); proces
 process.on("unhandledRejection", (reason) => { console.error("[FATAL]", reason); process.exit(1); });
 
 const express=require('express'),fetch=require('node-fetch'),path=require('path'),app=express();
+console.log("[STARTUP] Checking environment...");
+if (!process.env.ANTHROPIC_API_KEY) { console.warn("[WARN] ANTHROPIC_API_KEY not set"); }
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')));
 
