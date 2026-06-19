@@ -1,11 +1,22 @@
 #!/usr/bin/env node
 
 const http = require('http');
+const url = require('url');
 
 console.log('[TEST] Starting minimal HTTP server');
 
 const server = http.createServer((req, res) => {
-  console.log('[TEST] Request:', req.method, req.url);
+  const parsedUrl = url.parse(req.url, true);
+  const pathname = parsedUrl.pathname;
+  
+  console.log('[TEST] Request:', req.method, pathname);
+  
+  if (pathname === '/health') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ status: 'ok' }));
+    return;
+  }
+  
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hello from intractmd\n');
 });
