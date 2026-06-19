@@ -1,3 +1,6 @@
+process.on("uncaughtException", (err) => { console.error("[FATAL]", err); process.exit(1); });
+process.on("unhandledRejection", (reason) => { console.error("[FATAL]", reason); process.exit(1); });
+
 const express=require('express'),fetch=require('node-fetch'),path=require('path'),app=express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')));
