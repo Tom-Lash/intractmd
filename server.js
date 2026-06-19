@@ -34,6 +34,11 @@ try {
     res.json({ status: 'ok' });
   });
 
+  // Simple root endpoint
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  });
+
   // In-memory drug data cache — keyed by lowercase drug name, TTL 1 hour
   const drugDataCache = new Map();
   const CACHE_TTL = 60 * 60 * 1000;
@@ -472,8 +477,13 @@ try {
 
   console.log('[STARTUP] All routes configured');
 
-  const server = app.listen(3000, '0.0.0.0', () => {
-    console.log('[STARTUP] DDI Checker running at http://localhost:3000');
+  console.log('[STARTUP] About to create server...');
+  const server = app.listen(3000, '0.0.0.0');
+  
+  console.log('[STARTUP] Server created, waiting for listening event...');
+  
+  server.on('listening', () => {
+    console.log('[STARTUP] Server is listening on port 3000');
   });
 
   server.on('error', (err) => {
@@ -488,13 +498,13 @@ try {
 
   console.log('[STARTUP] Server initialization complete');
 
+  // Keep-alive interval to prevent process exit
+  setInterval(() => {
+    // Do nothing, just keep the process alive
+  }, 30000);
+
 } catch (e) {
   console.error('[STARTUP_ERROR]', e);
   process.exit(1);
 }
 
-
-// Keep-alive interval to prevent process exit
-setInterval(() => {
-  // Do nothing, just keep the process alive
-}, 30000);
