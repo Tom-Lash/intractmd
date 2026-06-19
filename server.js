@@ -426,7 +426,7 @@ console.log('[STARTUP] All routes configured');
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log('[STARTUP] Server listening on port ' + port');
+  console.log(`[STARTUP] Server listening on port ${port}`);
 });
 
 server.on('error', (err) => {
