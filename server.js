@@ -5,6 +5,7 @@ const url = require('url');
 
 console.log('[TEST] Starting minimal HTTP server');
 
+const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
   const pathname = parsedUrl.pathname;
@@ -21,8 +22,8 @@ const server = http.createServer((req, res) => {
   res.end('Hello from intractmd\n');
 });
 
-server.listen(3000, '0.0.0.0', () => {
-  console.log('[TEST] Server listening on 0.0.0.0:3000');
+server.listen(port, '0.0.0.0', () => {
+  console.log(`[TEST] Server listening on 0.0.0.0:${port}`);
 });
 
 server.on('error', (err) => {
