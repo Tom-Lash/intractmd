@@ -310,15 +310,24 @@ app.post('/api/risk', async (req, res) => {
     + 'Return ONLY raw valid JSON — no markdown, no backticks, no prose. Start with { end with }.\n'
     + 'Use this exact structure:\n'
     + '{"overall_score":<integer 0-100>,"risk_level":"<CRITICAL|HIGH|MODERATE|LOW|MINIMAL>",'
-    + '"risk_breakdown":{"pharmacokinetic":<0-100>,"pharmacodynamic":<0-100>,"narrow_therapeutic_index":<0-100>,"renal_hepatic_burden":<0-100>,"cns_depression":<0-100>,"bleeding_risk":<0-100>,"cardiac_risk":<0-100>,"serotonin_syndrome":<0-100>},'
+    + '"risk_breakdown":{'
+    + '"pharmacokinetic":{"score":<0-100>,"explanation":"<1 sentence: why this score for this specific regimen>"},'
+    + '"pharmacodynamic":{"score":<0-100>,"explanation":"<1 sentence>"},'
+    + '"narrow_therapeutic_index":{"score":<0-100>,"explanation":"<1 sentence>"},'
+    + '"renal_hepatic_burden":{"score":<0-100>,"explanation":"<1 sentence>"},'
+    + '"cns_depression":{"score":<0-100>,"explanation":"<1 sentence>"},'
+    + '"bleeding_risk":{"score":<0-100>,"explanation":"<1 sentence>"},'
+    + '"cardiac_risk":{"score":<0-100>,"explanation":"<1 sentence>"},'
+    + '"serotonin_syndrome":{"score":<0-100>,"explanation":"<1 sentence>"}},'
     + '"top_risks":[{"risk":"<concise name>","score":<0-100>,"drugs_involved":["drug1"],"explanation":"<1-2 sentence clinical explanation>","urgency":"<immediate|monitor|watch>"}],'
     + '"patient_factors":"<how patient factors modify risk>","trend":"<improving|stable|worsening>",'
     + '"recommendations":["<specific action 1>","<specific action 2>","<specific action 3>"]}\n\n'
     + 'Scoring guide: MINIMAL=0-20, LOW=21-40, MODERATE=41-60, HIGH=61-80, CRITICAL=81-100. '
+    + 'Each risk_breakdown explanation must be a single sentence specific to this patient\'s regimen — state the key reason for the score (e.g. which drugs interact, what pathway is affected). '
     + 'Include 2-5 top_risks ordered by severity. urgency: immediate=same-day clinical action required, monitor=set monitoring parameters, watch=observe for symptoms. '
     + 'recommendations must be specific and actionable for this exact regimen.';
   try {
-    const raw = await callClaude(apiKey, prompt, 1500);
+    const raw = await callClaude(apiKey, prompt, 2000);
     const parsed = tryParseJSON(raw);
     if (!parsed) return res.status(502).json({ error: 'Failed to parse AI response' });
     res.json(parsed);

@@ -31,6 +31,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;backgroun
 .lbl{font-size:11px;font-weight:500;color:var(--tx2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
 input[type=text],input[type=number],select{width:100%;padding:8px 12px;border:0.5px solid var(--br2);border-radius:var(--r);font-size:13px;background:var(--bg);color:var(--tx);font-family:inherit}
 input:focus,select:focus{outline:none;border-color:var(--teal)}
+input::placeholder{color:#6b6b66}
 .drug-row{display:flex;gap:8px}
 .wrap{flex:1;position:relative}
 .wrap input{width:100%}
@@ -48,7 +49,7 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
 .btn-p:disabled{opacity:.4;cursor:not-allowed}
 .btn-s{padding:8px 14px;background:var(--bg);color:var(--tx);border:0.5px solid var(--br2);border-radius:var(--r);font-size:13px;cursor:pointer}
 .btn-row{display:flex;gap:8px;align-items:center;margin-top:1.25rem}
-.status{font-size:12px;color:var(--tx2);margin-left:auto}
+.status{font-size:12px;color:#44443f;font-weight:500;margin-left:auto}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1rem}
 .fg label{display:block;font-size:11px;color:var(--tx2);margin-bottom:4px}
 .ck{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--tx2);margin-bottom:8px}
@@ -79,10 +80,10 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
 .poly-t{font-size:13px;font-weight:500;margin-bottom:6px;display:flex;align-items:center;gap:6px}
 .loading{text-align:center;padding:3rem 1rem}
 .loading i{font-size:32px;color:var(--tx3);display:block;margin-bottom:10px}
-.loading p{font-size:13px;color:var(--tx2);margin-bottom:4px}
+.loading p{font-size:13px;color:#3a3a36;font-weight:500;margin-bottom:4px}
 .spin{width:18px;height:18px;border:2px solid var(--br);border-top-color:var(--teal);border-radius:50%;animation:spin .7s linear infinite;display:inline-block;vertical-align:middle;margin-right:6px}
 @keyframes spin{to{transform:rotate(360deg)}}
-.empty{text-align:center;padding:3rem 1rem;color:var(--tx2)}
+.empty{text-align:center;padding:3rem 1rem;color:#44443f}
 .empty i{font-size:40px;display:block;margin-bottom:12px;opacity:.25}
 .disc{margin-top:1.5rem;padding:10px 14px;border-radius:var(--r);background:var(--bg2);border:0.5px solid var(--br);font-size:11px;color:var(--tx2);line-height:1.7}
 .sec-hdr{font-size:13px;font-weight:600;color:var(--tx);margin-bottom:10px;display:flex;align-items:center;gap:8px}
@@ -253,6 +254,11 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
   /* Collapse 2-col grids in pill ID and IFU modals to single column */
   .pi-grid{grid-template-columns:1fr!important}
   .ifu-form-grid{grid-template-columns:1fr!important}
+  /* contrast improvements on mobile */
+  :root{--tx2:#44443f;--tx3:#504f4b}
+  #dInput,#sInput,#fInput{font-size:14px}
+  .status{font-size:13px}
+  .loading p{font-size:14px}
 }
 /* ===== FLIPBOOK ===== */
 #fb-overlay{position:fixed;inset:0;background:rgba(0,0,0,.84);z-index:2000;display:none;flex-direction:column;align-items:center;justify-content:center;padding:12px 0}
@@ -324,7 +330,7 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
 <div class="card">
 <div class="app-hdr">
 <div class="logo"><img src="/logo.png" alt="Logo" style="height:80px;width:auto;object-fit:contain;border-radius:4px"/></div>
-<div><div class="app-title">IntractMD</div><div class="app-sub">by Resolve.med — Drugs · Supplements · Foods</div></div>
+<div><div class="app-title">IntractMD</div><div class="app-sub">by Resolve Medical · Drugs · Supplements · Foods</div></div>
 <div class="hdr-resolve"><img src="/resolve-logo.png" alt="Resolve Medical"/></div>
 </div>
 <div class="card-body"><div class="card-main">
@@ -371,7 +377,8 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
 <button class="btn-s" id="addSuppBtn">Add</button>
 </div>
 <div class="tags-area" id="supp-tags"></div>
-<button class="qr-toggle" id="qr-toggle-supp" onclick="toggleQR('suppQuickRow','qr-toggle-supp')">Show suggestions ▾</button><div class="quick-row" id="suppQuickRow" style="margin-top:8px"></div>
+<div class="lbl" style="margin-top:10px">Quick add — tap to add supplements</div>
+<button class="qr-toggle" id="qr-toggle-supp" onclick="toggleQR('suppQuickRow','qr-toggle-supp')">Show suggestions ▾</button><div class="quick-row" id="suppQuickRow"></div>
 <div class="divider"></div>
 <div class="food-lbl"><i class="ti ti-apple"></i>Foods &amp; Dietary Factors</div>
 <div class="drug-row">
@@ -379,7 +386,8 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
 <button class="btn-s" id="addFoodBtn">Add</button>
 </div>
 <div class="tags-area" id="food-tags"></div>
-<div class="quick-row" id="foodQuickRow" style="margin-top:8px"></div>
+<div class="lbl" style="margin-top:10px">Quick add — tap to add foods</div>
+<button class="qr-toggle" id="qr-toggle-food" onclick="toggleQR('foodQuickRow','qr-toggle-food')">Show suggestions ▾</button><div class="quick-row" id="foodQuickRow"></div>
 <div class="btn-row">
 <button class="btn-p" id="checkBtn" disabled>Analyze all interactions</button>
 <span class="status" id="st">Add drugs or supplements to begin.</span>
@@ -398,16 +406,17 @@ input:focus,select:focus{outline:none;border-color:var(--teal)}
 <label class="ck"><input type="checkbox" id="p-old"> Aged 65+ (Beers criteria)</label>
 <label class="ck"><input type="checkbox" id="p-preg"> Pregnancy</label>
 <label class="ck"><input type="checkbox" id="p-ped"> Pediatric</label>
-<div class="btn-row"><button class="btn-s" id="backBtn">Back</button></div>
+<div class="btn-row"><button class="btn-s" id="backBtn">Back</button><button class="btn-s" onclick="openPatientFlipbook()" style="display:inline-flex;align-items:center;gap:5px"><i class="ti ti-book-2"></i> View as FlipBook</button></div>
 </div>
 <div class="panel" id="panel-results">
 <div id="results"><div class="empty"><i class="ti ti-flask"></i><p>Run an analysis to see results.</p></div></div>
 </div>
 <div class="panel" id="panel-risk">
-<div id="risk-loading" style="display:none"><div class="loading"><i class="ti ti-chart-bar"></i><p><span class="spin"></span>Calculating predictive risk score... this can take up to a minute.</p><p style="font-size:12px;color:var(--tx3)">Please don't close this window — your results are being generated.</p></div></div>
+<div id="risk-loading" style="display:none"><div class="loading"><i class="ti ti-chart-bar"></i><p><span class="spin"></span>Calculating predictive risk score... this can take up to a minute.</p><p style="font-size:12px;color:#3a3a36;font-weight:500">Please don't close this window — your results are being generated.</p></div></div>
 <div id="risk-empty"><div class="empty"><i class="ti ti-shield-check"></i><p>Add at least 2 drugs to calculate a predictive risk score.</p></div></div>
 <div id="risk-content" style="display:none">
 <div class="risk-gauge-wrap"><div class="risk-gauge" id="rg-gauge"><div class="risk-gauge-center"><div class="risk-gauge-val" id="rg-val">--</div><div class="risk-gauge-lbl" id="rg-lbl">--</div></div></div><div id="rg-trend" style="text-align:center;font-size:12px;color:var(--tx3);margin-top:8px"></div></div>
+<div style="text-align:center;margin:10px 0 14px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap"><button class="btn-s" style="display:inline-flex;align-items:center;gap:6px" onclick="openRiskFlipbook()"><i class="ti ti-book-2"></i> View as FlipBook</button></div>
 <div id="rg-bars" style="padding:0 0 4px"></div>
 <div id="rg-top-risks"></div>
 <div id="rg-patient-factors"></div>
@@ -868,7 +877,7 @@ function addSupp(){
 }
 addSuppBtn.addEventListener("click",addSupp);
 
-var SUPP_CHIPS=["Omega-3","Vitamin D","Magnesium","St John's Wort","Ginkgo Biloba","Garlic Extract","Turmeric/Curcumin","Melatonin","Coenzyme Q10","Echinacea","Valerian Root","Ginseng"];
+var SUPP_CHIPS=["Omega-3","Vitamin D","Magnesium","St John's Wort","Ginkgo Biloba","Melatonin","Turmeric/Curcumin","CoQ10","Garlic Extract","Echinacea","Valerian Root","Ginseng"];
 var sqr=document.getElementById("suppQuickRow");
 SUPP_CHIPS.forEach(function(chip){
   var btn=document.createElement("button");
@@ -938,7 +947,7 @@ function addFood(){
 }
 addFoodBtn.addEventListener("click",addFood);
 
-var FOOD_CHIPS=["Grapefruit","Grapefruit Juice","Alcohol","Green Leafy Vegetables (Vitamin K)","Dairy Products","High-Fat Meal","Tyramine-rich Foods","Caffeine","St John's Wort Tea","Pomelo","Seville Orange","Cranberry Juice","Chargrilled Meat"];
+var FOOD_CHIPS=["Grapefruit","Alcohol","Green Leafy Vegetables","Dairy Products","Caffeine","Tyramine-rich Foods","High-Fat Meal","Cranberry Juice","Pomelo","Seville Orange"];
 var fqr=document.getElementById("foodQuickRow");
 FOOD_CHIPS.forEach(function(chip){
   var btn=document.createElement("button");
@@ -998,7 +1007,7 @@ function renderResults(ai){
     h+='<div class="exec-sum">'
       +'<div class="exec-sum-hdr">'
       +'<img src="/logo.png" style="height:40px;width:auto;object-fit:contain"/>'
-      +'<div><div class="exec-sum-title">AI Clinical Summary</div><div class="exec-sum-brand">IntractMD by Resolve.med</div></div>'
+      +'<div><div class="exec-sum-title">AI Clinical Summary</div><div class="exec-sum-brand">IntractMD by Resolve Medical</div></div>'
       +'<div class="exec-sum-time">'+analysisTime+'</div>'
       +'</div>'
       +'<div class="exec-sum-body">'+ai.executive_summary+'</div>'
@@ -1125,12 +1134,12 @@ function buildPrintReport(ai){
   h+='<img src="/logo.png" class="report-logo" style="display:block;margin:0 auto 16px;height:80px;width:auto;object-fit:contain"/>';
   h+='<div style="border-bottom:2px solid #0F6E56;padding-bottom:14px;margin-bottom:18px">';
   h+='<div style="'+F+'10px;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px">Clinical Report</div>';
-  h+='<h1 style="'+F+'20px;font-weight:700;color:#0F6E56;margin:0 0 6px">IntractMD Drug Interaction Report by Resolve.med</h1>';
+  h+='<h1 style="'+F+'20px;font-weight:700;color:#0F6E56;margin:0 0 6px">IntractMD Drug Interaction Report by Resolve Medical</h1>';
   h+='<div style="'+F+'12px;color:#555">Generated: '+ds+' at '+ts+'</div></div>';
   // Executive summary
   if(ai.executive_summary){
     h+='<div style="background:#E1F5EE;border:0.5px solid #5DCAA5;border-left:3px solid #0F6E56;border-radius:6px;padding:14px 16px;margin-bottom:18px">';
-    h+='<div style="'+F+'10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#085041;margin-bottom:8px">AI Clinical Summary — IntractMD by Resolve.med</div>';
+    h+='<div style="'+F+'10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#085041;margin-bottom:8px">AI Clinical Summary — IntractMD by Resolve Medical</div>';
     h+='<div style="'+F+'13px;color:#1a1a18;line-height:1.8">'+ai.executive_summary+'</div>';
     h+='</div>';
   }
@@ -1286,7 +1295,7 @@ function shareResult(){
   var known=lastAnalysis.known_interactions||lastAnalysis.pairs||[];
   var predictive=lastAnalysis.predictive_interactions||[];
   var food_ints=lastAnalysis.food_interactions||[];
-  var lines=['IntractMD Drug Interaction Report by Resolve.med'];
+  var lines=['IntractMD Drug Interaction Report by Resolve Medical'];
   lines.push('Drugs: '+drugs.map(function(d){return drugDisplayStr(d);}).join(', '));
   if(supplements.length)lines.push('Supplements: '+supplements.join(', '));
   if(foods.length)lines.push('Foods/Dietary: '+foods.join(', '));
@@ -1312,7 +1321,7 @@ function shareResult(){
     predictive.forEach(function(p){lines.push('• '+p.drugs+(p.probability?' ['+capFirst(p.probability)+' probability]':'')+(p.action?' — '+p.action:''));});
   }
   lines.push('');
-  lines.push('Generated by IntractMD by Resolve.med (Claude AI) — for informational purposes only.');
+  lines.push('Generated by IntractMD by Resolve Medical (Claude AI) — for informational purposes only.');
   navigator.clipboard.writeText(lines.join('\n')).then(function(){
     var btn=document.getElementById('shareBtn');
     if(btn){var orig=btn.innerHTML;btn.textContent='Copied!';setTimeout(function(){btn.innerHTML=orig;},2000);}
@@ -1324,7 +1333,7 @@ function buildShareText(){
   var known=lastAnalysis.known_interactions||lastAnalysis.pairs||[];
   var food_ints=lastAnalysis.food_interactions||[];
   var predictive=lastAnalysis.predictive_interactions||[];
-  var lines=['IntractMD Drug Interaction Report by Resolve.med'];
+  var lines=['IntractMD Drug Interaction Report by Resolve Medical'];
   lines.push('Drugs: '+drugs.map(function(d){return drugDisplayStr(d);}).join(', '));
   if(supplements.length)lines.push('Supplements: '+supplements.join(', '));
   if(foods.length)lines.push('Foods/Dietary: '+foods.join(', '));
@@ -1344,7 +1353,7 @@ function buildShareText(){
     predictive.forEach(function(p){lines.push('\u2022 '+p.drugs+(p.probability?' ['+capFirst(p.probability)+' probability]':'')+(p.action?' \u2014 '+p.action:''));});
   }
   lines.push('');
-  lines.push('Generated by IntractMD by Resolve.med (Claude AI) \u2014 for informational purposes only.');
+  lines.push('Generated by IntractMD by Resolve Medical (Claude AI) \u2014 for informational purposes only.');
   return lines.join('\n');
 }
 
@@ -1353,7 +1362,7 @@ function emailReport(){
   var known=lastAnalysis.known_interactions||lastAnalysis.pairs||[];
   var food_ints=lastAnalysis.food_interactions||[];
   var body=[];
-  body.push('IntractMD Drug Interaction Report by Resolve.med');
+  body.push('IntractMD Drug Interaction Report by Resolve Medical');
   body.push('');
   body.push('MEDICATIONS: '+drugs.map(function(d){return drugDisplayStr(d);}).join(', '));
   if(supplements.length)body.push('SUPPLEMENTS: '+supplements.join(', '));
@@ -1383,9 +1392,9 @@ function emailReport(){
   }
   body.push('');
   body.push('---');
-  body.push('Full detailed report generated by IntractMD by Resolve.med.');
+  body.push('Full detailed report generated by IntractMD by Resolve Medical.');
   body.push('For informational purposes only. Always consult a licensed pharmacist or physician.');
-  var subject=encodeURIComponent('IntractMD Drug Interaction Report by Resolve.med');
+  var subject=encodeURIComponent('IntractMD Drug Interaction Report by Resolve Medical');
   var bodyStr=encodeURIComponent(body.join('\n'));
   window.location.href='mailto:?subject='+subject+'&body='+bodyStr;
 }
@@ -1402,7 +1411,7 @@ function textReport(){
   if(lastAnalysis.key_concern)parts.push('Concern: '+lastAnalysis.key_concern);
   var top=sorted.slice(0,3);
   top.forEach(function(p){parts.push(p.drugs+' ['+capFirst(p.severity)+']'+(p.action?' - '+p.action:''));});
-  parts.push('Via IntractMD by Resolve.med. Consult your pharmacist.');
+  parts.push('Via IntractMD by Resolve Medical. Consult your pharmacist.');
   var msg=parts.join('\n');
   if(msg.length>320)msg=msg.slice(0,317)+'...';
   window.location.href='sms:?body='+encodeURIComponent(msg);
@@ -1433,9 +1442,9 @@ checkBtn.addEventListener("click",async function(){
   if(drugs.length)itemDesc.push(drugs.length+" drug"+(drugs.length!==1?"s":""));
   if(supplements.length)itemDesc.push(supplements.length+" supplement"+(supplements.length!==1?"s":""));
   if(foods.length)itemDesc.push(foods.length+" food/dietary factor"+(foods.length!==1?"s":""));
-  resEl.innerHTML="<div class=\"loading\" id=\"check-loading-div\"><i class=\"ti ti-brain\"></i><p><span class=\"spin\"></span>Analyzing your medications... this can take up to a minute for complex regimens.</p><p style=\"font-size:12px;color:var(--tx3)\">Please don’t close this window — your results are being generated.</p></div>";
+  resEl.innerHTML="<div class=\"loading\" id=\"check-loading-div\"><i class=\"ti ti-brain\"></i><p><span class=\"spin\"></span>Analyzing your medications... this can take up to a minute for complex regimens.</p><p style=\"font-size:12px;color:#3a3a36;font-weight:500\">Please don’t close this window — your results are being generated.</p></div>";
   checkBtn.disabled=true;
-  var loadingTimer=setTimeout(function(){var ld=document.getElementById('check-loading-div');if(ld){ld.innerHTML='<i class="ti ti-brain"></i><p><span class="spin"></span>Running AI clinical analysis across all drug pairs... this may take 30-60 seconds.</p><p style="font-size:12px;color:var(--tx3)">Please don’t close this window — your results are being generated.</p>';}},15000);
+  var loadingTimer=setTimeout(function(){var ld=document.getElementById('check-loading-div');if(ld){ld.innerHTML='<i class="ti ti-brain"></i><p><span class="spin"></span>Running AI clinical analysis across all drug pairs... this may take 30-60 seconds.</p><p style="font-size:12px;color:#3a3a36;font-weight:500">Please don\'t close this window — your results are being generated.</p>';}},15000);
   try{
     var pt=getPatient();
     var r=await fetch("/api/analyze",{
@@ -1683,7 +1692,8 @@ function renderRisk(data){
   ];
   var barsHtml='<div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin-bottom:10px">Risk Dimensions</div>';
   dims.forEach(function(d){
-    var v=breakdown[d[0]]||0;
+    var raw=breakdown[d[0]];
+    var v=typeof raw==='object'&&raw!==null?(raw.score||0):(raw||0);
     var c=v>=81?'var(--red-bd)':v>=61?'var(--org-bd)':v>=41?'var(--amb-bd)':v>=21?'#7DC21E':'var(--grn)';
     barsHtml+='<div class="risk-dim-row"><div class="risk-dim-name">'+d[1]+'</div><div class="risk-dim-track"><div class="risk-dim-fill" style="width:'+v+'%;background:'+c+'"></div></div><div class="risk-dim-val" style="color:'+c+'">'+v+'</div></div>';
   });
@@ -1792,6 +1802,7 @@ async function getDrugInfo(){
   }
 }
 function renderDrugInfo(d){
+  window._drugInfoLast=d;
   var h='<div style="border-bottom:0.5px solid var(--br);padding-bottom:12px;margin-bottom:14px">';
   h+='<div style="font-size:17px;font-weight:700;color:var(--tx)">'+(d.generic_name||'')+'</div>';
   if(d.brand_names&&d.brand_names.length){h+='<div style="font-size:13px;color:var(--tx2);margin-top:3px">Brand name'+(d.brand_names.length>1?'s':'')+': '+d.brand_names.join(', ')+'</div>';}
@@ -1812,6 +1823,15 @@ function renderDrugInfo(d){
     h+='</div>';
   });
   document.getElementById('di-results').innerHTML=h;
+  var filledSecs=['purpose','how_it_works','common_side_effects','warnings','typical_dosing'].filter(function(k){return!!d[k];});
+  if(filledSecs.length>=3){
+    var fbBtn=document.createElement('button');
+    fbBtn.className='btn-s';
+    fbBtn.style.cssText='display:inline-flex;align-items:center;gap:5px;font-size:12px;margin-top:12px';
+    fbBtn.innerHTML='<i class="ti ti-book-2"></i> View as FlipBook';
+    fbBtn.onclick=function(){openFlipbookWith(buildDrugInfoPages(window._drugInfoLast));};
+    document.getElementById('di-results').appendChild(fbBtn);
+  }
 }
 
 // Pharmacy Locator modal
@@ -1941,6 +1961,15 @@ function renderPillResults(d){
   h+='<a href="https://www.drugs.com/pill_identification.html" target="_blank" rel="noopener" class="btn-s" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:12px"><i class="ti ti-external-link"></i> Drugs.com Pill Identifier</a>';
   h+='</div>';
   document.getElementById('pi-results').innerHTML=h;
+  if(matches.length>=2){
+    window._pillIdLast=d;
+    var fbBtn=document.createElement('button');
+    fbBtn.className='btn-s';
+    fbBtn.style.cssText='display:inline-flex;align-items:center;gap:5px;font-size:12px;margin-top:8px';
+    fbBtn.innerHTML='<i class="ti ti-book-2"></i> View '+matches.length+' matches as FlipBook';
+    fbBtn.onclick=function(){openFlipbookWith(buildPillIdPages(window._pillIdLast));};
+    document.getElementById('pi-results').appendChild(fbBtn);
+  }
 }
 
 
@@ -2197,7 +2226,7 @@ function buildFlipbookPages(ai){
     html:'<div class="fb-cover">'
       +'<img src="/logo.png" style="height:72px;width:auto;object-fit:contain;margin-bottom:1.25rem" alt="IntractMD logo"/>'
       +'<h2 style="font-size:1.35em;font-weight:700;margin-bottom:.4rem">Drug Interaction Report</h2>'
-      +'<div style="font-size:.85em;color:var(--tx2);margin-bottom:1.5rem">IntractMD by Resolve.med &mdash; '+now+'</div>'
+      +'<div style="font-size:.85em;color:var(--tx2);margin-bottom:1.5rem">IntractMD by Resolve Medical &mdash; '+now+'</div>'
       +'<div style="background:var(--bg2);border-radius:var(--r);padding:1rem 1.25rem;text-align:left;width:100%;max-width:360px">'
       +'<div style="font-size:.75em;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin-bottom:.6rem">Medications analyzed</div>'
       +'<div style="font-size:.92em;line-height:1.7">'+allItems.map(function(i){return'&bull; '+i;}).join('<br>')+'</div>'
@@ -2207,7 +2236,7 @@ function buildFlipbookPages(ai){
       +'<span style="font-size:.85em;color:var(--tx2)">/ 100 risk score &mdash; <strong style="color:'+riskColor+'">'+(ai.overall_risk||'')+'</strong></span>'
       +'</div>'
       +'</div>',
-    text:'Drug Interaction Report. IntractMD by Resolve.med. '+now+'. Medications: '+allItems.join(', ')+'. Overall risk: '+(ai.overall_risk||'')+', score '+score+' out of 100.'
+    text:'Drug Interaction Report. IntractMD by Resolve Medical. '+now+'. Medications: '+allItems.join(', ')+'. Overall risk: '+(ai.overall_risk||'')+', score '+score+' out of 100.'
   });
 
   // Page 2: AI Executive Summary
@@ -2341,6 +2370,216 @@ function buildFlipbookPages(ai){
       +'</div>',
     text:'Disclaimer. Analysis by Claude AI and NLM RxNorm. Reference data: '+dataSrc+'. This report is for informational purposes only and does not constitute medical advice. Always consult a licensed pharmacist or physician.'
   });
+}
+
+function openFlipbookWith(pages){
+  if(!pages||!pages.length)return;
+  fbPages=pages;
+  fbIdx=0;fbTtsPlaying=false;
+  document.getElementById('fb-overlay').style.display='flex';
+  document.body.style.overflow='hidden';
+  fbRenderPage(0,0,true);
+}
+
+function buildDrugInfoPages(d){
+  var pages=[];
+  pages.push({
+    title:d.generic_name||'Drug Information',
+    html:'<div class="fb-cover">'
+      +'<img src="/logo.png" style="height:56px;width:auto;object-fit:contain;margin-bottom:1rem" alt="IntractMD"/>'
+      +'<h2 style="font-size:1.3em;font-weight:700;margin-bottom:.35rem">'+(d.generic_name||'Drug Information')+'</h2>'
+      +(d.brand_names&&d.brand_names.length?'<div style="font-size:.85em;color:var(--tx2);margin-bottom:.75rem">Brand: '+d.brand_names.join(', ')+'</div>':'')
+      +(d.drug_class?'<div style="display:inline-block;padding:3px 12px;background:var(--teal-lt);color:var(--teal-dk);border-radius:12px;font-size:.82em;font-weight:600;border:0.5px solid var(--teal-md)">'+d.drug_class+'</div>':'')
+      +'</div>',
+    text:(d.generic_name||'Drug Information')+(d.brand_names&&d.brand_names.length?' Brands: '+d.brand_names.join(', ')+'.':'')+(d.drug_class?' Drug class: '+d.drug_class+'.':'')
+  });
+  [{k:'purpose',icon:'ti-target-arrow',lbl:'What it is used for'},
+   {k:'how_it_works',icon:'ti-atom',lbl:'How it works'},
+   {k:'common_side_effects',icon:'ti-alert-triangle',lbl:'Common side effects'},
+   {k:'warnings',icon:'ti-shield-exclamation',lbl:'Important warnings'},
+   {k:'typical_dosing',icon:'ti-clock',lbl:'Typical dosing'}
+  ].forEach(function(s){
+    if(!d[s.k])return;
+    pages.push({
+      title:s.lbl,
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem;display:flex;align-items:center;gap:7px"><i class="ti '+s.icon+'" style="font-size:1.2em;color:var(--teal-dk)"></i>'+s.lbl+'</h2>'
+        +'<div class="fb-body">'+d[s.k]+'</div>',
+      text:s.lbl+'. '+fbStripHtml(d[s.k])
+    });
+  });
+  return pages;
+}
+
+function buildPillIdPages(d){
+  var matches=d.matches||[];
+  var pages=[];
+  pages.push({
+    title:'Pill Identification Results',
+    html:'<div class="fb-cover">'
+      +'<h2 style="font-size:1.3em;font-weight:700;margin-bottom:.5rem">Pill Identification</h2>'
+      +'<div style="font-size:.9em;color:var(--tx2);margin-bottom:1.25rem">'+matches.length+' match'+(matches.length!==1?'es':'')+' found</div>'
+      +'<div style="background:var(--amb-lt);border:0.5px solid var(--amb-bd);border-radius:var(--r);padding:.75rem 1rem;font-size:.85em;color:var(--amb);max-width:320px;text-align:left">Always confirm with a licensed pharmacist before taking any medication.</div>'
+      +'</div>',
+    text:'Pill Identification. '+matches.length+' match'+(matches.length!==1?'es':'')+' found. Always confirm with a pharmacist.'
+  });
+  matches.forEach(function(m,i){
+    var conf=(m.confidence||'low').toLowerCase();
+    pages.push({
+      title:m.drug_name||'Match '+(i+1),
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.5rem">'+(m.drug_name||'')+'</h2>'
+        +(m.strength?'<div style="font-size:.85em;color:var(--tx2);margin-bottom:.75rem">'+m.strength+'</div>':'')
+        +'<div style="margin-bottom:.9rem"><span class="conf-badge '+conf+'">'+(conf==='high'?'High':conf==='medium'?'Medium':'Low')+' confidence</span>'
+        +(m.imprint_confirmed?' <span style="font-size:10px;font-weight:600;color:var(--grn);background:var(--grn-lt);border-radius:10px;padding:2px 8px">Imprint confirmed</span>':'')
+        +'</div>'
+        +(m.generic_name&&m.generic_name!==m.drug_name?'<div class="fb-field"><div class="fb-lbl">Generic name</div><div class="fb-val">'+m.generic_name+'</div></div>':'')
+        +(m.description?'<div class="fb-field"><div class="fb-lbl">Description</div><div class="fb-val">'+m.description+'</div></div>':'')
+        +(m.warning?'<div class="fb-field" style="border-left:3px solid var(--amb-bd)"><div class="fb-lbl">Warning</div><div class="fb-val" style="color:var(--amb)">'+m.warning+'</div></div>':''),
+      text:(m.drug_name||'')+(m.strength?' '+m.strength+'.':'')+(m.description?' '+fbStripHtml(m.description)+'.':'')+(m.warning?' Warning: '+fbStripHtml(m.warning):'')
+    });
+  });
+  return pages;
+}
+
+function buildPatientProfilePages(){
+  var pt=getPatient();
+  var pages=[];
+  var flags=[];
+  if(pt.elderly)flags.push('Beers criteria (65+)');
+  if(pt.pregnant)flags.push('Pregnancy');
+  if(pt.pediatric)flags.push('Pediatric');
+  pages.push({
+    title:'Patient Profile',
+    html:'<div class="fb-cover">'
+      +'<h2 style="font-size:1.3em;font-weight:700;margin-bottom:.5rem">Patient Profile</h2>'
+      +(flags.length?'<div style="display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin-top:.75rem">'+flags.map(function(f){return'<span class="badge amb">'+f+'</span>';}).join('')+'</div>':'')
+      +'</div>',
+    text:'Patient Profile.'+(flags.length?' Flags: '+flags.join(', ')+'.':'')
+  });
+  var demoFields=[];
+  if(pt.age)demoFields.push({lbl:'Age',v:pt.age+' years'});
+  if(pt.weight)demoFields.push({lbl:'Weight',v:pt.weight+' kg'});
+  if(pt.sex)demoFields.push({lbl:'Sex',v:pt.sex});
+  if(demoFields.length){
+    pages.push({
+      title:'Demographics',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Demographics</h2>'
+        +demoFields.map(function(f){return'<div class="fb-field"><div class="fb-lbl">'+f.lbl+'</div><div class="fb-val">'+f.v+'</div></div>';}).join(''),
+      text:'Demographics. '+demoFields.map(function(f){return f.lbl+': '+f.v;}).join('. ')+'.'
+    });
+  }
+  if(pt.renal||pt.hepatic){
+    pages.push({
+      title:'Renal / Hepatic Function',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Renal / Hepatic Function</h2>'
+        +(pt.renal?'<div class="fb-field"><div class="fb-lbl">Renal function</div><div class="fb-val">'+pt.renal+'</div></div>':'')
+        +(pt.hepatic?'<div class="fb-field"><div class="fb-lbl">Hepatic function</div><div class="fb-val">'+pt.hepatic+'</div></div>':''),
+      text:'Renal/Hepatic.'+(pt.renal?' Renal: '+pt.renal+'.':'')+(pt.hepatic?' Hepatic: '+pt.hepatic+'.':'')
+    });
+  }
+  if(pt.conditions){
+    pages.push({
+      title:'Medical Conditions',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Medical Conditions</h2>'
+        +'<div class="fb-field"><div class="fb-lbl">Conditions</div><div class="fb-val">'+pt.conditions+'</div></div>',
+      text:'Medical conditions: '+pt.conditions+'.'
+    });
+  }
+  if(flags.length){
+    pages.push({
+      title:'Special Populations',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Special Populations</h2>'
+        +flags.map(function(f){return'<div class="fb-field" style="border-left:3px solid var(--amb-bd)"><div class="fb-lbl">Flag</div><div class="fb-val" style="font-weight:500;color:var(--amb)">'+f+'</div></div>';}).join(''),
+      text:'Special populations: '+flags.join(', ')+'.'
+    });
+  }
+  return pages;
+}
+function openPatientFlipbook(){
+  var pages=buildPatientProfilePages();
+  if(pages.length<3){alert('Fill in at least 2 patient profile sections to use FlipBook view.');return;}
+  openFlipbookWith(pages);
+}
+
+function buildRiskScorePages(data){
+  var score=data.overall_score||0;
+  var level=data.risk_level||'';
+  var breakdown=data.risk_breakdown||{};
+  var topRisks=data.top_risks||[];
+  var recs=data.recommendations||[];
+  var pf=data.patient_factors||'';
+  var color=score>=81?'var(--red-bd)':score>=61?'var(--org-bd)':score>=41?'var(--amb-bd)':score>=21?'#7DC21E':'var(--grn)';
+  var pages=[];
+  pages.push({
+    title:'Risk Score: '+score+'/100',
+    html:'<div class="fb-cover">'
+      +'<div style="font-size:3.5em;font-weight:800;color:'+color+';line-height:1;margin-bottom:.2rem">'+score+'</div>'
+      +'<div style="font-size:.8em;color:var(--tx2);margin-bottom:.5rem">out of 100</div>'
+      +'<div style="font-size:1.2em;font-weight:700;color:'+color+';margin-bottom:1.25rem">'+level+'</div>'
+      +(drugs.length?'<div style="background:var(--bg2);border-radius:var(--r);padding:.75rem 1rem;text-align:left;width:100%;max-width:300px"><div style="font-size:.72em;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin-bottom:.4rem">Medications</div><div style="font-size:.88em;line-height:1.7">'+drugs.map(function(d){return'&bull; '+drugDisplayStr(d);}).join('<br>')+'</div></div>':'')
+      +'</div>',
+    text:'Risk Score: '+score+'/100. Level: '+level+'.'
+  });
+  [{k:'pharmacokinetic',  lbl:'Pharmacokinetic',        icon:'ti-arrows-exchange'},
+   {k:'pharmacodynamic',  lbl:'Pharmacodynamic',        icon:'ti-activity'},
+   {k:'narrow_therapeutic_index',lbl:'Narrow Therapeutic Index',icon:'ti-ruler-measure'},
+   {k:'renal_hepatic_burden',    lbl:'Renal / Hepatic Burden', icon:'ti-droplet'},
+   {k:'cns_depression',  lbl:'CNS Depression',          icon:'ti-brain'},
+   {k:'bleeding_risk',   lbl:'Bleeding Risk',            icon:'ti-droplet-filled'},
+   {k:'cardiac_risk',    lbl:'Cardiac Risk',             icon:'ti-heart'},
+   {k:'serotonin_syndrome',lbl:'Serotonin Syndrome',    icon:'ti-bolt'}
+  ].forEach(function(d){
+    var raw=breakdown[d.k];
+    var v=typeof raw==='object'&&raw!==null?(raw.score||0):(raw||0);
+    var expl=typeof raw==='object'&&raw!==null?(raw.explanation||''):'';
+    var levelLabel=v>=81?'Critical':v>=61?'High':v>=41?'Moderate':v>=21?'Low':'Minimal';
+    var c=v>=81?'var(--red-bd)':v>=61?'var(--org-bd)':v>=41?'var(--amb-bd)':v>=21?'#7DC21E':'var(--grn)';
+    var sentence=expl||d.lbl+' score is '+v+'/100 ('+levelLabel+') for this regimen.';
+    pages.push({
+      title:d.lbl+' — '+levelLabel,
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem;display:flex;align-items:center;gap:7px"><i class="ti '+d.icon+'" style="font-size:1.2em;color:'+c+'"></i>'+d.lbl+'</h2>'
+        +'<div style="text-align:center;padding:.75rem 0 1rem">'
+        +'<div style="font-size:3em;font-weight:800;color:'+c+';line-height:1">'+v+'</div>'
+        +'<div style="font-size:.8em;color:var(--tx2);margin-top:.25rem">out of 100 &mdash; <strong style="color:'+c+'">'+levelLabel+'</strong></div>'
+        +'</div>'
+        +'<div class="risk-dim-track" style="height:14px;border-radius:7px;margin-bottom:1.1rem">'
+        +'<div class="risk-dim-fill" style="width:'+v+'%;background:'+c+'"></div>'
+        +'</div>'
+        +'<div class="fb-body">'+sentence+'</div>',
+      text:d.lbl+': '+v+'/100 ('+levelLabel+'). '+sentence
+    });
+  });
+  topRisks.forEach(function(tr){
+    var urg=tr.urgency||'watch';
+    var urgLabel=urg==='immediate'?'Immediate Action':urg==='monitor'?'Monitor':'Watch';
+    pages.push({
+      title:tr.risk||'Risk Factor',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.75rem">'+(tr.risk||'')+'</h2>'
+        +'<div style="margin-bottom:.9rem"><span class="urgency-badge '+urg+'">'+urgLabel+'</span></div>'
+        +(tr.drugs_involved&&tr.drugs_involved.length?'<div class="fb-field"><div class="fb-lbl">Drugs involved</div><div class="fb-val">'+tr.drugs_involved.join(' + ')+'</div></div>':'')
+        +(tr.explanation?'<div class="fb-field"><div class="fb-lbl">Explanation</div><div class="fb-val">'+fbStripHtml(tr.explanation)+'</div></div>':''),
+      text:(tr.risk||'')+'. '+urgLabel+'.'+(tr.explanation?' '+fbStripHtml(tr.explanation):'')
+    });
+  });
+  if(recs.length){
+    pages.push({
+      title:'Recommended Actions',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Recommended Actions</h2>'
+        +recs.map(function(r,i){return'<div class="risk-rec"><div class="risk-rec-num">'+(i+1)+'</div><div style="font-size:.9em;color:var(--tx);padding-top:2px">'+r+'</div></div>';}).join(''),
+      text:'Recommendations. '+recs.map(function(r,i){return(i+1)+'. '+r;}).join(' ')
+    });
+  }
+  if(pf){
+    pages.push({
+      title:'Patient Risk Factors',
+      html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Patient Risk Factors</h2><div class="fb-body">'+pf+'</div>',
+      text:'Patient Risk Factors: '+fbStripHtml(pf)
+    });
+  }
+  return pages;
+}
+function openRiskFlipbook(){
+  if(!lastRisk)return;
+  openFlipbookWith(buildRiskScorePages(lastRisk));
 }
 
 function openFlipbook(){
