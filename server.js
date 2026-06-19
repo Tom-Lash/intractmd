@@ -493,3 +493,8 @@ try {
   process.exit(1);
 }
 
+
+// Keep-alive interval to prevent process exit
+setInterval(() => {
+  // Do nothing, just keep the process alive
+}, 30000);
