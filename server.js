@@ -505,4 +505,4 @@ app.post('/api/drug-ifu',async(req,res)=>{
   }
 });
 
-app.listen(3000,()=>console.log('DDI Checker running at http://localhost:3000'));
+app.listen(3000, '0.0.0.0', ()=>console.log('DDI Checker running at http://localhost:3000'));
