@@ -403,28 +403,32 @@ app.post('/api/pill-ocr', async (req, res) => {
 });
 
 app.post('/api/drug-ifu', async (req, res) => {
-  const apiKey = req.headers['x-api-key'];
-  if (!apiKey) return res.status(401).json({ error: 'API key required' });
-  const { drugName, dosage, frequency, indication } = req.body;
-  if (!drugName) return res.status(400).json({ error: 'drugName required' });
-
-  const userPrompt = `Create a clear, patient-friendly "Instructions for Use" summary for ${drugName}${dosage ? ' (' + dosage + ')' : ''}${frequency ? ', ' + frequency : ''}${indication ? ' for ' + indication : ''}. Include: 1) How to take it, 2) When to take it, 3) What to do if you miss a dose, 4) Important precautions, 5) When to call your doctor. Use simple language. Keep it concise.`;
-
   try {
+    const apiKey = req.headers['x-api-key'];
+    if (!apiKey) return res.status(401).json({ error: 'API key required' });
+    const { drugName, dosage, form, condition } = req.body;
+    if (!drugName) return res.status(400).json({ error: 'drugName required' });
+
+    const userPrompt = `Create patient-friendly Instructions for Use for ${drugName}${dosage ? ' (' + dosage + ')' : ''}${form ? ', ' + form + ' form' : ''}${condition ? ' for ' + condition : ''}. Return a JSON object with exactly these fields: drug_name (string), brand_names (array of strings), what_its_for (string), how_to_take (string), dosing (string), missed_dose (string), storage (string), what_to_avoid (string), when_to_call_doctor (string), when_it_works (string), special_populations (string or null). Use simple patient-friendly language.`;
+
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
-        max_tokens: 1500,
-        system: 'You are a clinical pharmacist creating a clear, patient-friendly Instructions for Use summary. Use simple language a patient can understand. Avoid medical jargon. Be specific and practical.',
+        max_tokens: 2000,
+        system: 'You are a clinical pharmacist. Respond with ONLY valid JSON. Do not include any markdown code fences, explanatory text, or commentary before or after the JSON object. Return a single JSON object with patient-friendly instructions for use fields.',
         messages: [{ role: 'user', content: userPrompt }]
       })
     });
     const data = await r.json();
-    const raw = ((data.content && data.content[0] && data.content[0].text) || '').trim();
+    let raw = ((data.content && data.content[0] && data.content[0].text) || '').trim();
+    raw = raw.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/```\s*$/i, '').trim();
     const parsed = tryParseJSON(raw);
-    if (!parsed) return res.status(502).json({ error: 'Failed to parse AI response' });
+    if (!parsed) {
+      console.error('[IFU] Failed to parse AI response:', raw.slice(0, 500));
+      return res.status(502).json({ error: 'Could not parse AI response', raw: raw.slice(0, 200) });
+    }
     res.json(parsed);
   } catch (e) {
     res.status(502).json({ error: e.message });
