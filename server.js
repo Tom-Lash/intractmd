@@ -288,8 +288,8 @@ app.post('/api/ocr', async (req, res) => {
 });
 
 app.post('/api/risk', async (req, res) => {
-  const apiKey = req.headers['x-api-key'];
-  if (!apiKey) return res.status(401).json({ error: 'API key required' });
+  const apiKey = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
+  if (!apiKey) return res.status(401).json({ error: 'No API key' });
   const { drugs = [], supplements = [], foods = [], patient = {} } = req.body;
   const drugsList = Array.isArray(drugs) ? drugs.map(d => typeof d === 'string' ? d : (d.display || d)) : [];
   const allItems = [...drugsList, ...(Array.isArray(supplements) ? supplements : []), ...(Array.isArray(foods) ? foods : [])].filter(Boolean);
@@ -337,8 +337,8 @@ app.post('/api/risk', async (req, res) => {
 });
 
 app.post('/api/drug-info', async (req, res) => {
-  const apiKey = req.headers['x-api-key'];
-  if (!apiKey) return res.status(401).json({ error: 'API key required' });
+  const apiKey = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
+  if (!apiKey) return res.status(401).json({ error: 'No API key' });
   const { drugName } = req.body;
   if (!drugName) return res.status(400).json({ error: 'drugName required' });
 
@@ -404,8 +404,8 @@ app.post('/api/pill-ocr', async (req, res) => {
 
 app.post('/api/drug-ifu', async (req, res) => {
   try {
-    const apiKey = req.headers['x-api-key'];
-    if (!apiKey) return res.status(401).json({ error: 'API key required' });
+    const apiKey = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
+    if (!apiKey) return res.status(401).json({ error: 'No API key' });
     const { drugName, dosage, form, condition } = req.body;
     if (!drugName) return res.status(400).json({ error: 'drugName required' });
 

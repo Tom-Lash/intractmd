@@ -322,11 +322,7 @@ input::placeholder{color:#6b6b66}
 </head>
 <body>
 <div class="page">
-<div class="banner" id="banner">
-<i class="ti ti-key"></i>
-<div style="flex:1"><strong>Anthropic API key required.</strong> Get one free at <a href="https://console.anthropic.com" target="_blank" style="color:inherit">console.anthropic.com</a>.
-<div class="key-row"><input type="password" id="apiKeyInput" placeholder="sk-ant-..."/><button class="btn-s" id="saveKeyBtn">Save</button></div></div>
-</div>
+<div class="banner" id="banner" style="display:none"></div>
 <div class="card">
 <div class="app-hdr">
 <div class="logo"><img src="/logo.png" alt="Logo" style="height:80px;width:auto;object-fit:contain;border-radius:4px"/></div>
@@ -642,33 +638,6 @@ function newAnalysis(){
   go("drugs");
 }
 
-function saveKey(){
-  var k=document.getElementById("apiKeyInput").value.trim();
-  if(!k)return;
-  API_KEY=k;localStorage.setItem("ddi_key",k);
-  setBannerOk();
-}
-document.getElementById("saveKeyBtn").addEventListener("click",saveKey);
-document.getElementById("apiKeyInput").addEventListener("keydown",function(e){if(e.key==="Enter")saveKey();});
-function setBannerOk(){
-  var b=document.getElementById("banner");
-  b.className="banner ok";
-  b.innerHTML="<i class=\"ti ti-circle-check\"></i><span style=\"flex:1\"> API key saved — AI analysis enabled.</span>"
-    +"<button class=\"btn-s\" id=\"changeKeyBtn\" style=\"margin-left:12px;flex-shrink:0\">Change Key</button>";
-  document.getElementById("changeKeyBtn").addEventListener("click",showKeyEntry);
-}
-function showKeyEntry(){
-  API_KEY="";localStorage.removeItem("ddi_key");
-  var b=document.getElementById("banner");
-  b.className="banner";
-  b.innerHTML="<i class=\"ti ti-key\"></i>"
-    +"<div style=\"flex:1\"><strong>Anthropic API key required.</strong> Get one free at <a href=\"https://console.anthropic.com\" target=\"_blank\" style=\"color:inherit\">console.anthropic.com</a>."
-    +"<div class=\"key-row\"><input type=\"password\" id=\"apiKeyInput\" placeholder=\"sk-ant-...\"/><button class=\"btn-s\" id=\"saveKeyBtn\">Save</button></div></div>";
-  document.getElementById("saveKeyBtn").addEventListener("click",saveKey);
-  document.getElementById("apiKeyInput").addEventListener("keydown",function(e){if(e.key==="Enter")saveKey();});
-  document.getElementById("apiKeyInput").focus();
-}
-if(API_KEY)setBannerOk();
 
 var TOP20_DRUGS=[
   {name:"Atorvastatin",brand:"Lipitor"},{name:"Levothyroxine",brand:"Synthroid"},{name:"Metformin",brand:"Glucophage"},
@@ -1434,7 +1403,6 @@ function nativeShare(){
 checkBtn.addEventListener("click",async function(){
   var meds=drugs.length+supplements.length;
   if(meds+foods.length<2||meds<1)return;
-  if(!API_KEY){alert("Please enter your Anthropic API key first.");return;}
   document.getElementById("tab-results").disabled=false;
   go("results");
   var resEl=document.getElementById("results");
@@ -1537,7 +1505,6 @@ function closeCamera(){
 }
 async function captureAndOCR(){
   if(!camStream)return;
-  if(!API_KEY){document.getElementById('cam-status').textContent='Enter API key first.';return;}
   var video=document.getElementById('cam-video');
   var canvas=document.getElementById('cam-canvas');
   canvas.width=video.videoWidth;canvas.height=video.videoHeight;
@@ -1594,7 +1561,6 @@ async function captureAndOCR(){
 }
 
 function callRisk(){
-  if(!API_KEY){alert('Please enter your Anthropic API key first.');return;}
   if(drugs.length<2){
     document.getElementById('risk-empty').style.display='';
     document.getElementById('risk-loading').style.display='none';
@@ -1632,7 +1598,7 @@ function callRisk(){
   });
 }
 function maybeAutoRisk(){
-  if(drugs.length<2||!API_KEY)return;
+  if(drugs.length<2)return;
   var key=drugs.map(function(d){return drugDisplayStr(d);}).sort().join(',');
   if(key===riskDrugs)return;
   clearTimeout(riskTimer);
@@ -1784,7 +1750,6 @@ function showDiAC(items){
 async function getDrugInfo(){
   var name=diInput.value.trim();
   if(!name)return;
-  if(!API_KEY){alert('Please enter your Anthropic API key first.');return;}
   diAcd.style.display='none';
   var resEl=document.getElementById('di-results');
   resEl.innerHTML='<div class="loading"><i class="ti ti-pill"></i><p><span class="spin"></span>Looking up '+name+'...</p></div>';
@@ -1888,7 +1853,6 @@ function openPillCamera(){
 }
 document.getElementById('pillid-modal').addEventListener('click',function(e){if(e.target===this)closePillId();});
 async function identifyPill(){
-  if(!API_KEY){alert('Please enter your Anthropic API key first.');return;}
   var shape=document.getElementById('pi-shape').value;
   var color1=document.getElementById('pi-color1').value;
   var color2=document.getElementById('pi-color2').value;
@@ -2023,7 +1987,6 @@ function showIfuAC(items){
 async function getIFU(){
   var name=ifuInput.value.trim();
   if(!name)return;
-  if(!API_KEY){alert('Please enter your Anthropic API key first.');return;}
   ifuAcd.style.display='none';
   var form=document.getElementById('ifu-form').value;
   var condition=document.getElementById('ifu-condition').value.trim();
