@@ -15,8 +15,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;backgroun
 .key-row{display:flex;gap:8px;margin-top:8px}
 .key-row input{flex:1;padding:7px 10px;border:0.5px solid var(--br2);border-radius:6px;font-size:13px;font-family:monospace;background:var(--bg);color:var(--tx)}
 .card{background:var(--bg);border:0.5px solid var(--br);border-radius:var(--rl);overflow:hidden}
-.app-hdr{display:flex;align-items:center;gap:12px;padding:1.5rem 1.5rem;background:linear-gradient(135deg,#f8fbff 0%,#e8f4fd 100%);border-bottom:1.5px solid #00B4D8}
-.logo{width:auto;height:80px;border-radius:var(--r);background:transparent;display:flex;align-items:center;justify-content:center}
+.app-hdr{display:flex;align-items:center;gap:8px;padding:1.5rem 1.5rem;background:linear-gradient(135deg,#f8fbff 0%,#e8f4fd 100%);border-bottom:1.5px solid #00B4D8}
+.logo{flex-shrink:0;width:auto;height:80px;border-radius:var(--r);background:transparent;display:flex;align-items:center;justify-content:center}
 .logo i{color:#fff;font-size:18px}
 .app-title{font-size:15px;font-weight:600}
 .app-sub{font-size:12px;color:var(--tx2)}
@@ -29,7 +29,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;backgroun
 .tab:disabled{opacity:.35;cursor:not-allowed}
 .tab.tab-help{color:var(--amb)}
 .tab.tab-help.active{color:var(--amb);background-image:linear-gradient(#fff,#fff),linear-gradient(90deg,var(--amb-bd),var(--amb));background-origin:border-box;background-clip:padding-box,border-box}
-.lang-toggle{display:flex;gap:0;border:1.5px solid rgba(0,180,216,.5);border-radius:20px;overflow:hidden;margin-left:auto;margin-right:10px;align-self:center;flex-shrink:0}
+.lang-toggle{display:flex;gap:0;border:1.5px solid rgba(0,180,216,.5);border-radius:20px;overflow:hidden;margin-left:auto;margin-right:6px;align-self:center;flex-shrink:0}
 .lang-btn{padding:4px 12px;font-size:11px;font-weight:700;letter-spacing:.05em;border:none;background:none;color:var(--teal);cursor:pointer;line-height:1.4;transition:background .15s,color .15s}
 .lang-btn.active{background:var(--teal-md);color:#fff}
 .lang-btn:hover:not(.active){background:var(--teal-lt)}
@@ -338,7 +338,7 @@ input::placeholder{color:#6b6b66}
 <div class="card">
 <div class="app-hdr">
 <div class="logo"><img src="/logo.png" alt="Logo" style="height:80px;width:auto;object-fit:contain;border-radius:4px"/></div>
-<div><div class="app-title">IntractMD</div><div class="app-sub">by Resolve Medical · Drugs · Supplements · Foods</div></div>
+<div style="flex:1;min-width:0"><div class="app-title">IntractMD</div><div class="app-sub">by Resolve Medical · Drugs · Supplements · Foods</div></div>
 <div class="lang-toggle" id="lang-toggle" aria-label="Language selector">
   <button class="lang-btn active" id="lang-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
   <button class="lang-btn" id="lang-es" onclick="setLang('es')" aria-label="Cambiar a español">ES</button>
