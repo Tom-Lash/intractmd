@@ -12,7 +12,9 @@ const app = express();
 // ── File-based response cache ──────────────────────────────────────────────
 const DRUG_INFO_CACHE_DIR = path.join(__dirname, 'cache', 'drug-info');
 const IFU_CACHE_DIR = path.join(__dirname, 'cache', 'ifu');
-[DRUG_INFO_CACHE_DIR, IFU_CACHE_DIR].forEach(d => { if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true }); });
+const DRUG_INFO_ES_CACHE_DIR = path.join(__dirname, 'cache', 'drug-info-es');
+const IFU_ES_CACHE_DIR = path.join(__dirname, 'cache', 'ifu-es');
+[DRUG_INFO_CACHE_DIR, IFU_CACHE_DIR, DRUG_INFO_ES_CACHE_DIR, IFU_ES_CACHE_DIR].forEach(d => { if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true }); });
 
 function slugify(name) {
   return name.toLowerCase()
@@ -191,14 +193,17 @@ function buildGroundingContext(drugDataArr) {
   return `REAL-TIME FDA AND RXNORM DATA (use as primary grounding source):\n${lines.join('\n')}\n\n`;
 }
 
-async function callClaude(k, prompt, maxTok = 4096) {
+async function callClaude(k, prompt, maxTok = 4096, lang = 'en') {
+  const langInstr = lang === 'es'
+    ? ' Respond entirely in Spanish (español), using clear, patient-friendly language appropriate for Spanish-speaking patients in the United States. Keep drug names in their standard form (generic or brand as provided) but explain all mechanisms, effects, instructions, and recommendations in Spanish.'
+    : '';
   const r = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'x-api-key': k, 'anthropic-version': '2023-06-01' },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: maxTok,
-      system: 'You are a senior clinical pharmacist and pharmacologist with deep expertise in drug interactions, pharmacokinetics, and patient safety. Respond with raw valid JSON ONLY. Do NOT use markdown code blocks, backticks, or any prose. Your entire response must begin with { and end with }.',
+      system: 'You are a senior clinical pharmacist and pharmacologist with deep expertise in drug interactions, pharmacokinetics, and patient safety. Respond with raw valid JSON ONLY. Do NOT use markdown code blocks, backticks, or any prose. Your entire response must begin with { and end with }.' + langInstr,
       messages: [{ role: 'user', content: prompt }]
     })
   });
@@ -210,7 +215,7 @@ app.post('/api/analyze', async (req, res) => {
   const k = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
   if (!k) return res.status(401).json({ error: 'No API key' });
 
-  const { drugs = [], patient, supplements = [], foods = [] } = req.body;
+  const { drugs = [], patient, supplements = [], foods = [], language = 'en' } = req.body;
   const meds = drugs.length + supplements.length;
   if (meds + foods.length < 2 || meds < 1) return res.status(400).json({ error: 'At least 2 medications/supplements required' });
 
@@ -255,15 +260,15 @@ app.post('/api/analyze', async (req, res) => {
   try {
     let raw, rawF = null;
     if (splitCalls && foods.length > 0) {
-      [raw, rawF] = await Promise.all([callClaude(k, mainPrompt, 4096), callClaude(k, foodOnlyPrompt, 2048)]);
+      [raw, rawF] = await Promise.all([callClaude(k, mainPrompt, 4096, language), callClaude(k, foodOnlyPrompt, 2048, language)]);
     } else {
-      raw = await callClaude(k, mainPrompt, 4096);
+      raw = await callClaude(k, mainPrompt, 4096, language);
     }
 
     let result = tryParseJSON(raw);
     if (!result) {
       const retryPrompt = 'IMPORTANT: Return raw JSON only, starting with { ending with }. No markdown, no backticks.\n\nDrug interactions for: ' + drugs.join(',') + (supplements.length ? ', supps:' + supplements.join(',') : '') + (includeFoodInMain && foods.length ? ', foods:' + foods.join(',') : '') + '.\n\n' + mainPrompt;
-      raw = await callClaude(k, retryPrompt, 4096);
+      raw = await callClaude(k, retryPrompt, 4096, language);
       result = tryParseJSON(raw);
       if (!result) {
         return res.status(500).json({ error: 'AI response could not be parsed after two attempts. Please try again.' });
@@ -321,7 +326,7 @@ app.post('/api/ocr', async (req, res) => {
 app.post('/api/risk', async (req, res) => {
   const apiKey = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
   if (!apiKey) return res.status(401).json({ error: 'No API key' });
-  const { drugs = [], supplements = [], foods = [], patient = {} } = req.body;
+  const { drugs = [], supplements = [], foods = [], patient = {}, language = 'en' } = req.body;
   const drugsList = Array.isArray(drugs) ? drugs.map(d => typeof d === 'string' ? d : (d.display || d)) : [];
   const allItems = [...drugsList, ...(Array.isArray(supplements) ? supplements : []), ...(Array.isArray(foods) ? foods : [])].filter(Boolean);
   if (allItems.length < 2) return res.status(400).json({ error: 'At least 2 items required' });
@@ -358,7 +363,7 @@ app.post('/api/risk', async (req, res) => {
     + 'Include 2-5 top_risks ordered by severity. urgency: immediate=same-day clinical action required, monitor=set monitoring parameters, watch=observe for symptoms. '
     + 'recommendations must be specific and actionable for this exact regimen.';
   try {
-    const raw = await callClaude(apiKey, prompt, 2000);
+    const raw = await callClaude(apiKey, prompt, 2000, language);
     const parsed = tryParseJSON(raw);
     if (!parsed) return res.status(502).json({ error: 'Failed to parse AI response' });
     res.json(parsed);
@@ -370,11 +375,12 @@ app.post('/api/risk', async (req, res) => {
 app.post('/api/drug-info', async (req, res) => {
   const apiKey = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
   if (!apiKey) return res.status(401).json({ error: 'No API key' });
-  const { drugName } = req.body;
+  const { drugName, language = 'en' } = req.body;
   if (!drugName) return res.status(400).json({ error: 'drugName required' });
 
+  const drugInfoCacheDir = language === 'es' ? DRUG_INFO_ES_CACHE_DIR : DRUG_INFO_CACHE_DIR;
   const slug = slugify(drugName);
-  const cached = readFileCache(DRUG_INFO_CACHE_DIR, slug);
+  const cached = readFileCache(drugInfoCacheDir, slug);
   if (cached) return res.json({ ...cached, cached: true });
 
   const drugData = await fetchDrugData(drugName);
@@ -398,10 +404,10 @@ app.post('/api/drug-info', async (req, res) => {
     + '"typical_dosing":"<typical dosing information in simple language>"}\n\n'
     + 'Use language a patient can understand. Avoid clinical jargon. Be warm and helpful.';
   try {
-    const raw = await callClaude(apiKey, prompt, 1500);
+    const raw = await callClaude(apiKey, prompt, 1500, language);
     const parsed = tryParseJSON(raw);
     if (!parsed) return res.status(502).json({ error: 'Failed to parse AI response' });
-    writeFileCache(DRUG_INFO_CACHE_DIR, slug, parsed);
+    writeFileCache(drugInfoCacheDir, slug, parsed);
     res.json({ ...parsed, cached: false });
   } catch (e) {
     res.status(502).json({ error: e.message });
@@ -442,13 +448,17 @@ app.post('/api/drug-ifu', async (req, res) => {
   try {
     const apiKey = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
     if (!apiKey) return res.status(401).json({ error: 'No API key' });
-    const { drugName, dosage, form, condition } = req.body;
+    const { drugName, dosage, form, condition, language = 'en' } = req.body;
     if (!drugName) return res.status(400).json({ error: 'drugName required' });
 
+    const ifuCacheDir = language === 'es' ? IFU_ES_CACHE_DIR : IFU_CACHE_DIR;
     const slug = slugify(drugName) + (form ? '-' + slugify(form) : '') + (condition ? '-for-' + slugify(condition) : '');
-    const cached = readFileCache(IFU_CACHE_DIR, slug);
+    const cached = readFileCache(ifuCacheDir, slug);
     if (cached) return res.json({ ...cached, cached: true });
 
+    const langInstr = language === 'es'
+      ? ' Respond entirely in Spanish (español), using clear, patient-friendly language appropriate for Spanish-speaking patients in the United States. Keep drug names in their standard form but write all explanations, instructions, and recommendations in Spanish.'
+      : '';
     const userPrompt = `Create patient-friendly Instructions for Use for ${drugName}${dosage ? ' (' + dosage + ')' : ''}${form ? ', ' + form + ' form' : ''}${condition ? ' for ' + condition : ''}. Return a JSON object with exactly these fields: drug_name (string), brand_names (array of strings), what_its_for (string), how_to_take (string), dosing (string), missed_dose (string), storage (string), what_to_avoid (string), when_to_call_doctor (string), when_it_works (string), special_populations (string or null). Use simple patient-friendly language.`;
 
     const r = await fetch('https://api.anthropic.com/v1/messages', {
@@ -457,7 +467,7 @@ app.post('/api/drug-ifu', async (req, res) => {
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
         max_tokens: 2000,
-        system: 'You are a clinical pharmacist. Respond with ONLY valid JSON. Do not include any markdown code fences, explanatory text, or commentary before or after the JSON object. Return a single JSON object with patient-friendly instructions for use fields.',
+        system: 'You are a clinical pharmacist. Respond with ONLY valid JSON. Do not include any markdown code fences, explanatory text, or commentary before or after the JSON object. Return a single JSON object with patient-friendly instructions for use fields.' + langInstr,
         messages: [{ role: 'user', content: userPrompt }]
       })
     });
@@ -469,7 +479,7 @@ app.post('/api/drug-ifu', async (req, res) => {
       console.error('[IFU] Failed to parse AI response:', raw.slice(0, 500));
       return res.status(502).json({ error: 'Could not parse AI response', raw: raw.slice(0, 200) });
     }
-    writeFileCache(IFU_CACHE_DIR, slug, parsed);
+    writeFileCache(ifuCacheDir, slug, parsed);
     res.json({ ...parsed, cached: false });
   } catch (e) {
     res.status(502).json({ error: e.message });
