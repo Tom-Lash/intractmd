@@ -772,6 +772,7 @@ var HELP={
 function renderHelpPanel(){
   var h=HELP[uiLang]||HELP.en;
   var out='<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:14px;border-bottom:0.5px solid var(--br)">';
+  out+='<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="goBackToDrugs()"><i class="ti ti-arrow-left" style="margin-right:2px"></i>'+(uiLang==='es'?'Volver a Medicamentos':'Back to Drugs')+'</button>';
   out+='<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="openFlipbookWith(buildHelpPages())"><i class="ti ti-book-2"></i> '+h.action_flipbook+'</button>';
   out+='<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="printHelp()"><i class="ti ti-printer"></i> '+h.action_print+'</button>';
   out+='<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="emailHelp()"><i class="ti ti-mail"></i> '+h.action_email+'</button>';
@@ -983,23 +984,47 @@ async function nlmGet(path,qs){
 }
 // Local drug list for instant autocomplete
 var _localDrugList=null;
+var _localDrugListReady=false;
 async function loadLocalDrugList(){
   if(_localDrugList)return _localDrugList;
   try{var r=await fetch('/api/drug-list');_localDrugList=await r.json();}catch(e){_localDrugList=[];}
+  _localDrugListReady=true;
   return _localDrugList;
 }
-function filterLocalDrugs(term){
+var _SALTS=/\s+(calcium|sodium|hydrochloride|hcl|sulfate|bisulfate|maleate|tartrate|oxalate|mesylate|besylate|succinate|fumarate|phosphate|acetate|chloride|bromide|potassium|magnesium|zinc|citrate|gluconate|tannate|stearate|valerate|benzoate|propionate)\b.*/i;
+function filterLocalDrugs(term,max){
   if(!_localDrugList||!_localDrugList.length)return[];
+  max=max||8;
   var t=term.toLowerCase();
-  var results=[],seen={};
-  var SALTS=/\s+(calcium|sodium|hydrochloride|hcl|sulfate|bisulfate|maleate|tartrate|oxalate|mesylate|besylate|succinate|fumarate|phosphate|acetate|chloride|bromide|potassium|magnesium|zinc|citrate|gluconate|tannate|stearate|valerate|benzoate|propionate)\b.*/i;
+  var sw=[],ct=[],seen={};
   _localDrugList.forEach(function(d){
-    var g=(d.generic||'').replace(SALTS,'');
+    var gFull=d.generic||'';
+    var g=gFull.replace(_SALTS,'').trim();
     var b=d.brand||'';
-    if(g&&g.toLowerCase().indexOf(t)===0&&!seen[g.toLowerCase()]){seen[g.toLowerCase()]=1;results.push({name:g,isBrand:false});}
-    if(b&&b.toLowerCase().indexOf(t)===0&&!seen[b.toLowerCase()]){seen[b.toLowerCase()]=1;results.push({name:b,isBrand:true});}
+    var gLc=g.toLowerCase();
+    var bLc=b.toLowerCase();
+    // generic match
+    if(g&&!seen[gLc]){
+      var lbl=b&&bLc!==gLc?g+' ('+b+')':g;
+      if(gLc.indexOf(t)===0){seen[gLc]=1;sw.push({name:g,label:lbl,isBrand:false});}
+      else if(gLc.indexOf(t)!==-1){seen[gLc]=1;ct.push({name:g,label:lbl,isBrand:false});}
+    }
+    // brand match
+    if(b&&!seen[bLc]){
+      var lbl2=g&&gLc!==bLc?b+' ('+g+')':b;
+      if(bLc.indexOf(t)===0){seen[bLc]=1;sw.push({name:b,label:lbl2,isBrand:true});}
+      else if(bLc.indexOf(t)!==-1){seen[bLc]=1;ct.push({name:b,label:lbl2,isBrand:true});}
+    }
   });
-  return results.slice(0,8);
+  // starts-with results fill first; pad with contains only if needed
+  var out=sw.slice(0,max);
+  if(out.length<max){var need=max-out.length;out=out.concat(ct.slice(0,need));}
+  return out;
+}
+// Synchronous local search — no async, no network.
+// Returns array (may be empty). Caller does NLM fallback if empty.
+function doAC(term){
+  return filterLocalDrugs(term,8);
 }
 // Start loading the drug list in the background immediately
 loadLocalDrugList();
@@ -1038,27 +1063,19 @@ async function doAcNLM(term){
     return items.slice(0,8);
   }catch(e){return[];}
 }
-async function doAC(term){
-  await loadLocalDrugList();
-  var local=filterLocalDrugs(term);
-  if(local.length>=5)return local;
-  // Not enough local hits — augment with NLM
-  try{
-    var nlm=await doAcNLM(term);
-    var seen={};local.forEach(function(i){seen[i.name.toLowerCase()]=1;});
-    nlm.forEach(function(i){if(!seen[i.name.toLowerCase()]){seen[i.name.toLowerCase()]=1;local.push(i);}});
-  }catch(e){}
-  return local.slice(0,8);
+function _acItemHtml(it){
+  var name=typeof it==='string'?it:it.name;
+  var label=(typeof it==='object'&&it.label)?it.label:name;
+  return{name:name,html:label};
 }
 function showAC(items){
   if(!items.length){acdEl.style.display="none";return;}
   acResults=items;acSel=-1;acdEl.innerHTML="";
   items.forEach(function(it){
-    var name=typeof it==='string'?it:it.name;
-    var isBrand=typeof it==='object'&&it.isBrand;
+    var p=_acItemHtml(it);
     var div=document.createElement("div");div.className="ac-item";
-    div.innerHTML=name+(isBrand?' <span style="font-size:10px;background:#E8F4FD;color:#1B6EC2;border-radius:3px;padding:1px 5px;margin-left:4px;vertical-align:middle">Brand</span>':'')+'';
-    div.addEventListener("click",function(){dInput.value=name;acdEl.style.display="none";});
+    div.textContent=p.html;
+    div.addEventListener("click",function(){dInput.value=p.name;acdEl.style.display="none";});
     acdEl.appendChild(div);
   });
   acdEl.style.display="block";
@@ -1074,10 +1091,19 @@ dInput.addEventListener("focus",function(){
 dInput.addEventListener("input",function(){
   var v=dInput.value.trim();
   if(!v){showDrugDefaults();return;}
-  if(v.length<2){showDrugDefaults(v);return;}
-  showDrugDefaults(v);
-  clearTimeout(acTimer);
-  acTimer=setTimeout(async function(){var r=await doAC(v);if(r.length)showAC(r);},150);
+  // instant local search — synchronous, no debounce
+  var local=doAC(v);
+  if(local.length){clearTimeout(acTimer);showAC(local);return;}
+  // zero local hits: NLM fallback with debounce
+  if(v.length>=2){
+    clearTimeout(acTimer);
+    acTimer=setTimeout(async function(){
+      var nlm=await doAcNLM(v);
+      if(document.activeElement===dInput&&dInput.value.trim()===v){
+        if(nlm.length)showAC(nlm);else acdEl.style.display="none";
+      }
+    },300);
+  }else{acdEl.style.display="none";}
 });
 dInput.addEventListener("keydown",function(e){
   var items=acdEl.querySelectorAll(".ac-item");
@@ -1991,10 +2017,17 @@ diInput.addEventListener('focus',function(){if(!diInput.value.trim())showDiDefau
 diInput.addEventListener('input',function(){
   var v=diInput.value.trim();
   if(!v){showDiDefaults();return;}
-  if(v.length<2){showDiDefaults(v);return;}
-  showDiDefaults(v);
-  clearTimeout(diTimer);
-  diTimer=setTimeout(async function(){var r=await doAC(v);if(r.length)showDiAC(r);},150);
+  var local=doAC(v);
+  if(local.length){clearTimeout(diTimer);showDiAC(local);return;}
+  if(v.length>=2){
+    clearTimeout(diTimer);
+    diTimer=setTimeout(async function(){
+      var nlm=await doAcNLM(v);
+      if(document.activeElement===diInput&&diInput.value.trim()===v){
+        if(nlm.length)showDiAC(nlm);else diAcd.style.display='none';
+      }
+    },300);
+  }else{diAcd.style.display='none';}
 });
 diInput.addEventListener('keydown',function(e){
   var items=diAcd.querySelectorAll('.ac-item');
@@ -2016,11 +2049,10 @@ function showDiAC(items){
   if(!items.length){diAcd.style.display='none';return;}
   diAcResults=items;diAcSel=-1;diAcd.innerHTML='';
   items.forEach(function(it){
-    var name=typeof it==='string'?it:it.name;
-    var isBrand=typeof it==='object'&&it.isBrand;
+    var p=_acItemHtml(it);
     var div=document.createElement('div');div.className='ac-item';
-    div.innerHTML=name+(isBrand?' <span style="font-size:10px;background:#E8F4FD;color:#1B6EC2;border-radius:3px;padding:1px 5px;margin-left:4px;vertical-align:middle">Brand</span>':'');
-    div.addEventListener('click',function(){diInput.value=name;diAcd.style.display='none';getDrugInfo();});
+    div.textContent=p.html;
+    div.addEventListener('click',function(){diInput.value=p.name;diAcd.style.display='none';getDrugInfo();});
     diAcd.appendChild(div);
   });
   diAcd.style.display='block';
@@ -2229,10 +2261,17 @@ ifuInput.addEventListener('focus',function(){if(!ifuInput.value.trim())showIfuDe
 ifuInput.addEventListener('input',function(){
   var v=ifuInput.value.trim();
   if(!v){showIfuDefaults();return;}
-  if(v.length<2){showIfuDefaults(v);return;}
-  showIfuDefaults(v);
-  clearTimeout(ifuTimer);
-  ifuTimer=setTimeout(async function(){var r=await doAC(v);if(r.length)showIfuAC(r);},150);
+  var local=doAC(v);
+  if(local.length){clearTimeout(ifuTimer);showIfuAC(local);return;}
+  if(v.length>=2){
+    clearTimeout(ifuTimer);
+    ifuTimer=setTimeout(async function(){
+      var nlm=await doAcNLM(v);
+      if(document.activeElement===ifuInput&&ifuInput.value.trim()===v){
+        if(nlm.length)showIfuAC(nlm);else ifuAcd.style.display='none';
+      }
+    },300);
+  }else{ifuAcd.style.display='none';}
 });
 ifuInput.addEventListener('keydown',function(e){
   var items=ifuAcd.querySelectorAll('.ac-item');
@@ -2253,11 +2292,10 @@ function showIfuAC(items){
   if(!items.length){ifuAcd.style.display='none';return;}
   ifuAcResults=items;ifuAcSel=-1;ifuAcd.innerHTML='';
   items.forEach(function(it){
-    var name=typeof it==='string'?it:it.name;
-    var isBrand=typeof it==='object'&&it.isBrand;
+    var p=_acItemHtml(it);
     var div=document.createElement('div');div.className='ac-item';
-    div.innerHTML=name+(isBrand?' <span style="font-size:10px;background:#E8F4FD;color:#1B6EC2;border-radius:3px;padding:1px 5px;margin-left:4px;vertical-align:middle">Brand</span>':'');
-    div.addEventListener('click',function(){ifuInput.value=name;ifuAcd.style.display='none';getIFU();});
+    div.textContent=p.html;
+    div.addEventListener('click',function(){ifuInput.value=p.name;ifuAcd.style.display='none';getIFU();});
     ifuAcd.appendChild(div);
   });
   ifuAcd.style.display='block';
