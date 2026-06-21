@@ -27,7 +27,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;backgroun
 .tab{padding:10px 16px;font-size:15px;font-weight:600;cursor:pointer;color:var(--tx2);border:none;border-bottom:2px solid transparent;margin-bottom:-1px;background:none}
 .tab.active{color:var(--accent-blue);border-bottom:3px solid transparent;background-image:linear-gradient(#fff,#fff),linear-gradient(90deg,#00B4D8,#1B6EC2);background-origin:border-box;background-clip:padding-box,border-box;font-weight:600}
 .tab:disabled{opacity:.35;cursor:not-allowed}
+.tab.tab-help{color:var(--amb)}
+.tab.tab-help.active{color:var(--amb);background-image:linear-gradient(#fff,#fff),linear-gradient(90deg,var(--amb-bd),var(--amb));background-origin:border-box;background-clip:padding-box,border-box}
 .panel{display:none;padding:1.5rem}.panel.active{display:block}
+.help-step{display:flex;gap:13px;align-items:flex-start;margin-bottom:14px}
+.help-step-num{min-width:32px;height:32px;border-radius:50%;background:var(--amb-bd);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.help-risk-row{display:flex;align-items:center;gap:10px;padding:7px 12px;border-radius:var(--r);margin-bottom:5px;font-size:13px}
+.help-faq-q{font-weight:600;color:var(--tx);margin-bottom:4px;font-size:13px}
+.help-faq-a{font-size:13px;color:var(--tx2);line-height:1.65;margin-bottom:14px}
 .lbl{font-size:11px;font-weight:500;color:var(--tx2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
 input[type=text],input[type=number],select{width:100%;padding:8px 12px;border:0.5px solid var(--br2);border-radius:var(--r);font-size:13px;background:var(--bg);color:var(--tx);font-family:inherit}
 input:focus,select:focus{outline:none;border-color:var(--teal)}
@@ -335,6 +342,7 @@ input::placeholder{color:#6b6b66}
 <button class="tab" id="tab-patient"><span class="tab-full">Patient profile</span><span class="tab-short">Profile</span></button>
 <button class="tab" id="tab-risk"><span class="tab-full">Risk Score</span><span class="tab-short">Risk</span> <span id="risk-tab-badge" style="display:none"></span></button>
 <button class="tab" id="tab-results" disabled><span class="tab-full">Results</span><span class="tab-short">Results</span></button>
+<button class="tab tab-help" id="tab-help"><i class="ti ti-help-circle" style="font-size:14px;margin-right:3px;vertical-align:-1px;opacity:.85"></i><span class="tab-full">Help</span><span class="tab-short">Help</span></button>
 </div>
 
 <div class="panel active" id="panel-drugs">
@@ -420,6 +428,83 @@ input::placeholder{color:#6b6b66}
 <div style="text-align:center;margin-top:18px;padding-bottom:8px"><button class="btn-s" style="display:inline-flex;align-items:center;gap:6px" onclick="callRisk()"><i class="ti ti-refresh"></i> Recalculate Risk</button></div>
 </div>
 </div>
+</div>
+<div class="panel" id="panel-help">
+<!-- Action buttons at top -->
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:14px;border-bottom:0.5px solid var(--br)">
+<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="openFlipbookWith(buildHelpPages())"><i class="ti ti-book-2"></i> View as FlipBook</button>
+<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="printHelp()"><i class="ti ti-printer"></i> Print</button>
+<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="emailHelp()"><i class="ti ti-mail"></i> Email</button>
+<button class="btn-s" style="display:inline-flex;align-items:center;gap:5px;font-size:12px" onclick="textHelp()"><i class="ti ti-message"></i> Text</button>
+</div>
+<!-- Welcome -->
+<div class="ifu-card" style="border-left:3px solid var(--amb-bd)">
+<div class="ifu-card-hdr" style="color:var(--amb)"><i class="ti ti-sparkles"></i>Welcome to IntractMD</div>
+<div class="ifu-card-body">IntractMD checks for interactions across your medications, supplements, and foods — helping you and your care team make safer treatment decisions. It combines real-time FDA data with AI-powered analysis to flag known interactions, predict potential risks, and explain everything in plain language. Use it whenever you're starting a new medication or want a full safety review of your current regimen.</div>
+</div>
+<!-- Getting Started -->
+<div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin:18px 0 10px;display:flex;align-items:center;gap:6px"><i class="ti ti-rocket"></i>Getting Started</div>
+<div class="help-step">
+<div class="help-step-num">1</div>
+<div><strong style="font-size:13px;color:var(--tx)">Open IntractMD</strong><div style="font-size:13px;color:var(--tx2);margin-top:2px;line-height:1.6">Visit <strong>www.intractmd.com</strong> on any device — phone, tablet, or desktop. No account or login required.</div></div>
+</div>
+<div class="help-step">
+<div class="help-step-num">2</div>
+<div><strong style="font-size:13px;color:var(--tx)">Add your medications</strong><div style="font-size:13px;color:var(--tx2);margin-top:2px;line-height:1.6">Use the <strong>Drugs</strong> tab to type, speak, or scan each medication name. Add them one at a time using the input field.</div></div>
+</div>
+<div class="help-step">
+<div class="help-step-num">3</div>
+<div><strong style="font-size:13px;color:var(--tx)">Add supplements &amp; foods</strong><div style="font-size:13px;color:var(--tx2);margin-top:2px;line-height:1.6">Include vitamins, herbs, and dietary supplements using the Supplements section. Add relevant foods (like grapefruit or alcohol) in the Foods section — these can interact with many medications.</div></div>
+</div>
+<div class="help-step">
+<div class="help-step-num">4</div>
+<div><strong style="font-size:13px;color:var(--tx)">Tap Analyze</strong><div style="font-size:13px;color:var(--tx2);margin-top:2px;line-height:1.6">Press the <strong>Analyze Interactions</strong> button. The AI checks every possible combination simultaneously using real-time FDA data. This usually takes 10–30 seconds.</div></div>
+</div>
+<div class="help-step" style="margin-bottom:0">
+<div class="help-step-num">5</div>
+<div><strong style="font-size:13px;color:var(--tx)">Review your results</strong><div style="font-size:13px;color:var(--tx2);margin-top:2px;line-height:1.6">Go to the <strong>Results</strong> tab to see severity ratings, clinical explanations, and recommended actions. Use the <strong>Risk Score</strong> tab for an overall safety score and personalized recommendations.</div></div>
+</div>
+<!-- Understanding Results -->
+<div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin:20px 0 10px;display:flex;align-items:center;gap:6px"><i class="ti ti-chart-bar"></i>Understanding Your Results</div>
+<div class="ifu-card">
+<div class="ifu-card-hdr"><i class="ti ti-shield-half"></i>Risk Score Scale</div>
+<div class="ifu-card-body" style="padding-top:4px">
+<div class="help-risk-row" style="background:#FCEBEB;border:0.5px solid #E24B4A"><span style="font-weight:700;color:#A32D2D;min-width:70px">CRITICAL</span><span style="color:#7a2020;font-size:12px">81–100 · Serious risk requiring immediate clinical attention. Do not take this combination without speaking to your doctor or pharmacist first.</span></div>
+<div class="help-risk-row" style="background:#FCEBEB;border:0.5px solid #E24B4A"><span style="font-weight:700;color:#A32D2D;min-width:70px">HIGH</span><span style="color:#7a2020;font-size:12px">61–80 · Significant interaction risk. Discuss with your prescriber before proceeding.</span></div>
+<div class="help-risk-row" style="background:#FAEEDA;border:0.5px solid #EF9F27"><span style="font-weight:700;color:#854F0B;min-width:70px">MODERATE</span><span style="color:#6b3f08;font-size:12px">41–60 · Noticeable interactions present. Monitor carefully and inform your care team.</span></div>
+<div class="help-risk-row" style="background:#EAF3DE;border:0.5px solid #6aaa2a"><span style="font-weight:700;color:#3B6D11;min-width:70px">LOW</span><span style="color:#2e540d;font-size:12px">21–40 · Minor interactions. Generally manageable with standard monitoring.</span></div>
+<div class="help-risk-row" style="background:#f0f0ec;border:0.5px solid var(--br2)" style="margin-bottom:0"><span style="font-weight:700;color:var(--tx2);min-width:70px">MINIMAL</span><span style="color:var(--tx3);font-size:12px">0–20 · No significant interactions detected. Continue as normal.</span></div>
+</div>
+</div>
+<div class="ifu-card" style="margin-top:10px">
+<div class="ifu-card-hdr"><i class="ti ti-git-compare"></i>Known vs Predictive Interactions</div>
+<div class="ifu-card-body"><strong>Known interactions</strong> are documented in FDA drug labels, clinical databases, and published research — these are established facts. <strong>Predictive interactions</strong> are AI-identified risks based on shared metabolic pathways, pharmacology, and drug class patterns — useful for combinations not yet formally studied. Always discuss both types with your healthcare provider.</div>
+</div>
+<!-- Other Features -->
+<div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin:20px 0 10px;display:flex;align-items:center;gap:6px"><i class="ti ti-tool"></i>Other Helpful Features</div>
+<div class="ifu-card">
+<div class="ifu-card-body" style="display:flex;flex-direction:column;gap:10px">
+<div><span style="font-weight:600;color:var(--teal)"><i class="ti ti-pill" style="margin-right:4px"></i>Drug Info</span> — Look up any medication to get a plain-language summary of what it does, how it works, common side effects, warnings, and typical dosing. Available under the sidebar tools.</div>
+<div><span style="font-weight:600;color:var(--accent-blue)"><i class="ti ti-map-pin" style="margin-right:4px"></i>Find Pharmacy</span> — Locate nearby pharmacies by ZIP code or your current location using integrated map links.</div>
+<div><span style="font-weight:600;color:var(--teal)"><i class="ti ti-search" style="margin-right:4px"></i>Pill Identifier</span> — Identify an unknown pill by entering its imprint, color, and shape — or scan it with your camera.</div>
+<div><span style="font-weight:600;color:var(--org)"><i class="ti ti-info-circle" style="margin-right:4px"></i>IFU Summary</span> — Generate a patient-friendly "Instructions for Use" guide for any medication — ideal for printing or sharing with patients.</div>
+</div>
+</div>
+<!-- FAQ -->
+<div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);margin:20px 0 10px;display:flex;align-items:center;gap:6px"><i class="ti ti-question-mark"></i>Frequently Asked Questions</div>
+<div class="ifu-card">
+<div class="ifu-card-body">
+<div class="help-faq-q">Do I need an account or login?</div>
+<div class="help-faq-a">No. IntractMD requires no account, login, or registration. Open the app and start using it immediately on any device.</div>
+<div class="help-faq-q">Is my information saved or stored?</div>
+<div class="help-faq-a">No information is saved between sessions. When you close or refresh the browser, your drug list and results are cleared. Nothing is stored on our servers or associated with you personally.</div>
+<div class="help-faq-q">Can I trust these results?</div>
+<div class="help-faq-a">IntractMD uses real-time FDA label data and AI analysis as decision-support tools — not as a replacement for professional medical advice. Always discuss results with your pharmacist or prescriber before making changes to your medications.</div>
+<div class="help-faq-q" style="margin-top:4px">What if I'm unsure about a result?</div>
+<div class="help-faq-a" style="margin-bottom:0">If a result is unclear or seems incorrect, use the <strong>Drug Info</strong> tool to look up each medication individually, or consult your pharmacist. The AI can occasionally misidentify obscure drug combinations — your clinical judgment always takes priority.</div>
+</div>
+</div>
+<div class="ifu-disclaimer" style="margin-top:16px"><strong>Disclaimer:</strong> IntractMD is for informational and decision-support purposes only. It does not constitute medical advice and should not replace the judgment of a licensed healthcare professional. Always consult your pharmacist or physician before making medication changes.</div>
 </div>
 <div class="sidebar-tools">
 <button class="sidebar-btn sb-info" onclick="openDrugInfo()"><i class="ti ti-pill"></i><span class="btn-full">Drug Info</span><span class="btn-short">Drug Info</span></button>
@@ -627,6 +712,7 @@ document.getElementById("tab-risk").addEventListener("click",function(){
     renderRisk(lastRisk);
   }
 });
+document.getElementById("tab-help").addEventListener("click",function(){go("help");});
 document.getElementById("backBtn").addEventListener("click",function(){go("drugs");});
 function goBackToDrugs(){go("drugs");}
 function newAnalysis(){
@@ -713,6 +799,28 @@ function renderSuppTags(){
 async function nlmGet(path,qs){
   try{var r=await fetch("/api/nlm/"+path+(qs?"?"+qs:""));return r.json();}catch(e){return{};}
 }
+// Local drug list for instant autocomplete
+var _localDrugList=null;
+async function loadLocalDrugList(){
+  if(_localDrugList)return _localDrugList;
+  try{var r=await fetch('/api/drug-list');_localDrugList=await r.json();}catch(e){_localDrugList=[];}
+  return _localDrugList;
+}
+function filterLocalDrugs(term){
+  if(!_localDrugList||!_localDrugList.length)return[];
+  var t=term.toLowerCase();
+  var results=[],seen={};
+  var SALTS=/\s+(calcium|sodium|hydrochloride|hcl|sulfate|bisulfate|maleate|tartrate|oxalate|mesylate|besylate|succinate|fumarate|phosphate|acetate|chloride|bromide|potassium|magnesium|zinc|citrate|gluconate|tannate|stearate|valerate|benzoate|propionate)\b.*/i;
+  _localDrugList.forEach(function(d){
+    var g=(d.generic||'').replace(SALTS,'');
+    var b=d.brand||'';
+    if(g&&g.toLowerCase().indexOf(t)===0&&!seen[g.toLowerCase()]){seen[g.toLowerCase()]=1;results.push({name:g,isBrand:false});}
+    if(b&&b.toLowerCase().indexOf(t)===0&&!seen[b.toLowerCase()]){seen[b.toLowerCase()]=1;results.push({name:b,isBrand:true});}
+  });
+  return results.slice(0,8);
+}
+// Start loading the drug list in the background immediately
+loadLocalDrugList();
 async function resolveRxCUI(name){
   try{var d=await nlmGet("rxcui.json","name="+encodeURIComponent(name)+"&search=2");return(d&&d.idGroup&&d.idGroup.rxnormId&&d.idGroup.rxnormId[0])||name;}catch(e){return name;}
 }
@@ -731,7 +839,7 @@ function drugDisplayStr(d){
   if(d.generic&&d.generic.toLowerCase()!==d.display.toLowerCase())return d.display+' ('+d.generic+')';
   return d.display;
 }
-async function doAC(term){
+async function doAcNLM(term){
   try{
     var r1=await nlmGet("drugs.json","name="+encodeURIComponent(term));
     var r2=await nlmGet("spellingsuggestions.json","name="+encodeURIComponent(term));
@@ -747,6 +855,18 @@ async function doAC(term){
     sugg.forEach(function(n){if(!seen[n.toLowerCase()]){seen[n.toLowerCase()]=1;items.push({name:n,isBrand:false});}});
     return items.slice(0,8);
   }catch(e){return[];}
+}
+async function doAC(term){
+  await loadLocalDrugList();
+  var local=filterLocalDrugs(term);
+  if(local.length>=5)return local;
+  // Not enough local hits — augment with NLM
+  try{
+    var nlm=await doAcNLM(term);
+    var seen={};local.forEach(function(i){seen[i.name.toLowerCase()]=1;});
+    nlm.forEach(function(i){if(!seen[i.name.toLowerCase()]){seen[i.name.toLowerCase()]=1;local.push(i);}});
+  }catch(e){}
+  return local.slice(0,8);
 }
 function showAC(items){
   if(!items.length){acdEl.style.display="none";return;}
@@ -966,7 +1086,6 @@ function renderResults(ai){
   var analysisTime=new Date().toLocaleString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'});
   var h='<div style="display:flex;gap:8px;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:0.5px solid var(--br);flex-wrap:wrap">'+'<button class="btn-s" onclick="goBackToDrugs()"><i class="ti ti-arrow-left" style="margin-right:4px"></i>Back to Drugs</button>'+'<button class="btn-s" onclick="newAnalysis()" style="display:inline-flex;align-items:center;gap:5px"><i class="ti ti-refresh"></i>New Analysis</button>'+'<button class="btn-s" onclick="openFlipbook()" style="display:inline-flex;align-items:center;gap:5px;margin-left:auto"><i class="ti ti-book-2"></i> FlipBook View</button>'+'</div>'+'<div class="export-bar">'
     +'<button class="btn-p eb-btn" onclick="exportPDF()"><i class="ti ti-file-type-pdf"></i> Export PDF</button>'
-    +'<button class="btn-s eb-btn" onclick="exportCSV()"><i class="ti ti-download"></i> Export CSV</button>'
     +'<button class="btn-s eb-btn" onclick="emailReport()"><i class="ti ti-mail"></i> Email Report</button>'
     +'<button class="btn-s eb-btn" onclick="textReport()"><i class="ti ti-message"></i> Text Report</button>'
     +'<button class="btn-s eb-btn" id="shareBtn" onclick="nativeShare()"><i class="ti ti-share"></i> Share</button>'
@@ -1234,29 +1353,6 @@ function exportPDF(){
   if(!lastAnalysis)return;
   document.getElementById('print-report').innerHTML=buildPrintReport(lastAnalysis);
   window.print();
-}
-
-function exportCSV(){
-  if(!lastAnalysis)return;
-  var known=lastAnalysis.known_interactions||lastAnalysis.pairs||[];
-  var predictive=lastAnalysis.predictive_interactions||[];
-  var food_ints=lastAnalysis.food_interactions||[];
-  var rows=[['Type','Drugs/Items','Severity','Mechanism / Basis','Clinical Effect','Evidence / Probability / Timing','Monitoring','Action','Patient Note']];
-  known.forEach(function(p){
-    rows.push(['Known',p.drugs||'',p.severity||'',p.mechanism||'',p.clinical_effect||'',p.evidence||'',p.monitoring||'',p.action||'',p.patient_specific&&p.patient_specific!=='null'?p.patient_specific:'']);
-  });
-  food_ints.forEach(function(p){
-    var label=(p.drugs||p.items||p.food||'')+(p.food&&p.drugs?' + '+p.food:'');
-    rows.push(['Food Interaction',label,p.severity||'',p.mechanism||'',p.clinical_effect||'',p.timing||'',p.monitoring||'',p.action||'','']);
-  });
-  predictive.forEach(function(p){
-    rows.push(['Predictive',p.drugs||'',p.severity||'',p.basis||'',p.clinical_effect||'',p.probability?capFirst(p.probability)+' probability':'',p.monitoring||'',p.action||'','']);
-  });
-  var csv=rows.map(function(row){return row.map(function(cell){return'"'+String(cell).replace(/"/g,'""')+'"';}).join(',');}).join('\n');
-  var a=document.createElement('a');
-  a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);
-  a.download='IntractMD-Drug-Interaction-Report.csv';
-  document.body.appendChild(a);a.click();document.body.removeChild(a);
 }
 
 function shareResult(){
@@ -2398,6 +2494,99 @@ function buildIFUPages(d){
   });
   if(d.special_populations){pages.push({title:'Special Populations',html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:.9rem">Special Populations</h2><div class="fb-body">'+d.special_populations+'</div>',text:'Special Populations. '+fbStripHtml(d.special_populations)});}
   return pages;
+}
+function buildHelpPages(){
+  var pages=[];
+  // Cover
+  pages.push({title:'Getting Started with IntractMD',html:'<div style="text-align:center;padding:1.2rem 0 .8rem"><div style="font-size:48px;margin-bottom:14px">💊</div><h1 style="font-size:1.35em;font-weight:800;color:#1B6EC2;margin-bottom:10px">IntractMD</h1><div style="font-size:1em;font-weight:600;color:#5f5e5a;margin-bottom:18px">Drug Interaction Checker</div><p style="font-size:.9em;color:#5f5e5a;line-height:1.7;max-width:340px;margin:0 auto">IntractMD checks for interactions across your medications, supplements, and foods — helping you and your care team make safer treatment decisions.</p></div>',text:'IntractMD — Drug Interaction Checker. Checks for interactions across your medications, supplements, and foods, combining real-time FDA data with AI-powered analysis.'});
+  // 5 steps
+  var steps=[
+    {n:1,t:'Open IntractMD',b:'Visit www.intractmd.com on any device — phone, tablet, or desktop. No account or login required.'},
+    {n:2,t:'Add your medications',b:'Use the Drugs tab to type, speak, or scan each medication name. Add them one at a time using the input field.'},
+    {n:3,t:'Add supplements & foods',b:'Include vitamins, herbs, and dietary supplements. Add relevant foods (like grapefruit or alcohol) — these can interact with many medications.'},
+    {n:4,t:'Tap Analyze',b:'Press the Analyze Interactions button. The AI checks every possible combination using real-time FDA data. This usually takes 10–30 seconds.'},
+    {n:5,t:'Review your results',b:'Go to the Results tab to see severity ratings, clinical explanations, and recommended actions. Use the Risk Score tab for an overall safety score.'}
+  ];
+  steps.forEach(function(s){
+    pages.push({title:'Step '+s.n+': '+s.t,html:'<div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:18px"><div style="min-width:42px;height:42px;border-radius:50%;background:#EF9F27;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">'+s.n+'</div><div><h2 style="font-size:1.1em;font-weight:700;margin-bottom:8px">'+s.t+'</h2><p class="fb-body" style="font-size:.95em;line-height:1.7;color:#5f5e5a">'+s.b+'</p></div></div>',text:'Step '+s.n+': '+s.t+'. '+s.b});
+  });
+  // Understanding Results
+  pages.push({title:'Understanding Your Results',html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:12px">Risk Score Scale</h2><div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px"><div style="padding:7px 12px;border-radius:6px;background:#FCEBEB;border:0.5px solid #E24B4A;font-size:.88em"><strong style="color:#A32D2D">CRITICAL (81–100):</strong><span style="color:#7a2020"> Serious risk — do not take without speaking to your doctor first.</span></div><div style="padding:7px 12px;border-radius:6px;background:#FCEBEB;border:0.5px solid #E24B4A;font-size:.88em"><strong style="color:#A32D2D">HIGH (61–80):</strong><span style="color:#7a2020"> Significant risk — discuss with prescriber before proceeding.</span></div><div style="padding:7px 12px;border-radius:6px;background:#FAEEDA;border:0.5px solid #EF9F27;font-size:.88em"><strong style="color:#854F0B">MODERATE (41–60):</strong><span style="color:#6b3f08"> Noticeable interactions — monitor carefully and inform your care team.</span></div><div style="padding:7px 12px;border-radius:6px;background:#EAF3DE;border:0.5px solid #6aaa2a;font-size:.88em"><strong style="color:#3B6D11">LOW (21–40):</strong><span style="color:#2e540d"> Minor interactions — manageable with standard monitoring.</span></div><div style="padding:7px 12px;border-radius:6px;background:#f0f0ec;border:0.5px solid #ccc;font-size:.88em"><strong style="color:#5f5e5a">MINIMAL (0–20):</strong><span style="color:#6d6b67"> No significant interactions detected.</span></div></div><h2 style="font-size:1.05em;font-weight:700;margin-bottom:8px">Known vs Predictive Interactions</h2><p class="fb-body" style="font-size:.9em;line-height:1.7"><strong>Known interactions</strong> are documented in FDA drug labels and published research. <strong>Predictive interactions</strong> are AI-identified risks based on shared metabolic pathways and pharmacology. Always discuss both with your healthcare provider.</p>',text:'Risk Scale: CRITICAL (81-100), HIGH (61-80), MODERATE (41-60), LOW (21-40), MINIMAL (0-20). Known interactions are from FDA data. Predictive interactions are AI-identified based on drug class patterns.'});
+  // Other Features
+  pages.push({title:'Other Helpful Features',html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:14px">Sidebar Tools</h2><div style="display:flex;flex-direction:column;gap:12px"><div class="fb-body"><strong style="color:#1B6EC2">💊 Drug Info</strong> — Plain-language summary of what a medication does, how it works, common side effects, warnings, and typical dosing.</div><div class="fb-body"><strong style="color:#1B6EC2">📍 Find Pharmacy</strong> — Locate nearby pharmacies by ZIP code or your current location.</div><div class="fb-body"><strong style="color:#1B6EC2">🔍 Pill Identifier</strong> — Identify an unknown pill by imprint, color, and shape — or scan it with your camera.</div><div class="fb-body"><strong style="color:#B45309">📋 IFU Summary</strong> — Generate patient-friendly Instructions for Use for any medication — ideal for printing or sharing.</div></div>',text:'Sidebar tools: Drug Info (medication summaries), Find Pharmacy (nearby pharmacies), Pill Identifier (identify pills by imprint/color/shape), IFU Summary (patient-friendly usage guides).'});
+  // FAQ
+  pages.push({title:'Frequently Asked Questions',html:'<h2 style="font-size:1.05em;font-weight:700;margin-bottom:14px">FAQ</h2><div style="display:flex;flex-direction:column;gap:14px"><div><div style="font-weight:600;margin-bottom:4px;font-size:.93em">Do I need an account or login?</div><div class="fb-body" style="font-size:.9em;color:#5f5e5a">No. IntractMD requires no account, login, or registration. Start using it immediately on any device.</div></div><div><div style="font-weight:600;margin-bottom:4px;font-size:.93em">Is my information saved or stored?</div><div class="fb-body" style="font-size:.9em;color:#5f5e5a">No information is saved between sessions. When you close the browser, your drug list and results are cleared. Nothing is stored on our servers.</div></div><div><div style="font-weight:600;margin-bottom:4px;font-size:.93em">Can I trust these results?</div><div class="fb-body" style="font-size:.9em;color:#5f5e5a">IntractMD uses FDA data and AI analysis as decision-support tools — not as a replacement for professional medical advice. Always discuss results with your pharmacist or prescriber.</div></div><div><div style="font-weight:600;margin-bottom:4px;font-size:.93em">What if I\'m unsure about a result?</div><div class="fb-body" style="font-size:.9em;color:#5f5e5a">Use the Drug Info tool to look up each medication individually, or consult your pharmacist. Your clinical judgment always takes priority.</div></div></div>',text:'FAQ: No account needed. No data stored between sessions. Results are decision-support only — always consult your pharmacist or prescriber. Use Drug Info for individual medication details.'});
+  return pages;
+}
+function printHelp(){
+  var css='';
+  css+='body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;color:#1a1a18;max-width:680px;margin:0 auto;padding:28px}';
+  css+='.brand{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1B6EC2;margin-bottom:2px}';
+  css+='.byline{font-size:10px;color:#888;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid #ddd}';
+  css+='.sec{margin-bottom:14px;padding:12px 14px;border:0.5px solid #ddd;border-radius:6px}';
+  css+='.sec-amb{border-left:3px solid #EF9F27;background:#FAEEDA}';
+  css+='.lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#888;margin-bottom:6px}';
+  css+='.body{font-size:13px;line-height:1.7}';
+  css+='.step{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}';
+  css+='.step-num{min-width:28px;height:28px;border-radius:50%;background:#EF9F27;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}';
+  css+='.risk-row{padding:6px 10px;border-radius:4px;margin-bottom:4px;font-size:12px}';
+  css+='.disc{margin-top:16px;padding:10px 12px;background:#f5f5f3;border:1px solid #ddd;border-radius:4px;font-size:10px;color:#666;line-height:1.8}';
+  css+='@media print{body{margin:0;padding:20px;max-width:100%}}';
+  var h='<!DOCTYPE html><html><head><meta charset="UTF-8"/><title>Getting Started — IntractMD</title><style>'+css+'</style></head><body>';
+  h+='<div class="brand">IntractMD by Resolve Medical</div>';
+  h+='<div class="byline">Getting Started Guide</div>';
+  h+='<div class="sec sec-amb"><div class="lbl">Welcome</div><div class="body">IntractMD checks for interactions across your medications, supplements, and foods — combining real-time FDA data with AI-powered analysis to flag known interactions, predict potential risks, and explain everything in plain language.</div></div>';
+  h+='<div class="sec"><div class="lbl">Getting Started</div>';
+  [['Open IntractMD','Visit www.intractmd.com on any device. No account or login required.'],['Add your medications','Type, speak, or scan each medication name in the Drugs tab.'],['Add supplements &amp; foods','Include vitamins, herbs, and foods like grapefruit or alcohol.'],['Tap Analyze','The AI checks every combination using real-time FDA data (10–30 seconds).'],['Review your results','See severity ratings, explanations, and recommended actions in the Results tab.']].forEach(function(s,i){h+='<div class="step"><div class="step-num">'+(i+1)+'</div><div class="body"><strong>'+s[0]+'</strong> — '+s[1]+'</div></div>';});
+  h+='</div>';
+  h+='<div class="sec"><div class="lbl">Risk Score Scale</div>';
+  h+='<div class="risk-row" style="background:#FCEBEB;border:0.5px solid #E24B4A"><strong style="color:#A32D2D">CRITICAL (81–100):</strong> Serious risk — do not take without speaking to your doctor first.</div>';
+  h+='<div class="risk-row" style="background:#FCEBEB;border:0.5px solid #E24B4A"><strong style="color:#A32D2D">HIGH (61–80):</strong> Significant risk — discuss with prescriber before proceeding.</div>';
+  h+='<div class="risk-row" style="background:#FAEEDA;border:0.5px solid #EF9F27"><strong style="color:#854F0B">MODERATE (41–60):</strong> Noticeable interactions — monitor carefully.</div>';
+  h+='<div class="risk-row" style="background:#EAF3DE;border:0.5px solid #6aaa2a"><strong style="color:#3B6D11">LOW (21–40):</strong> Minor interactions — manageable with standard monitoring.</div>';
+  h+='<div class="risk-row" style="background:#f5f5f3;border:0.5px solid #ccc"><strong style="color:#5f5e5a">MINIMAL (0–20):</strong> No significant interactions detected.</div>';
+  h+='</div>';
+  h+='<div class="sec"><div class="lbl">Other Helpful Features</div><div class="body"><strong>Drug Info</strong> — plain-language medication summaries.<br><strong>Find Pharmacy</strong> — locate nearby pharmacies.<br><strong>Pill Identifier</strong> — identify pills by imprint, color, and shape.<br><strong>IFU Summary</strong> — patient-friendly Instructions for Use guides.</div></div>';
+  h+='<div class="sec"><div class="lbl">FAQ</div><div class="body"><strong>Do I need an account?</strong> No. No login or registration required.<br><br><strong>Is my information saved?</strong> No. Nothing is stored between sessions or on our servers.<br><br><strong>Can I trust these results?</strong> IntractMD is a decision-support tool — always confirm with your pharmacist or prescriber.<br><br><strong>What if a result seems wrong?</strong> Use Drug Info to look up each medication, or consult your pharmacist.</div></div>';
+  h+='<div class="disc"><strong>Disclaimer:</strong> IntractMD is for informational and decision-support purposes only. It does not constitute medical advice and should not replace the judgment of a licensed healthcare professional.</div>';
+  h+='</body></html>';
+  var w=window.open('','_blank');
+  w.document.write(h);
+  w.document.close();
+  w.print();
+}
+function emailHelp(){
+  var body='Getting Started with IntractMD\n';
+  body+='================================\n\n';
+  body+='IntractMD checks for interactions across your medications, supplements, and foods — combining real-time FDA data with AI-powered analysis.\n\n';
+  body+='GETTING STARTED\n';
+  body+='1. Open IntractMD — visit www.intractmd.com on any device. No login required.\n';
+  body+='2. Add your medications — type, speak, or scan each drug name.\n';
+  body+='3. Add supplements & foods — include vitamins, herbs, grapefruit, alcohol.\n';
+  body+='4. Tap Analyze — AI checks all combinations (10–30 seconds).\n';
+  body+='5. Review your results — see severity ratings and recommended actions.\n\n';
+  body+='RISK SCORE SCALE\n';
+  body+='CRITICAL (81–100): Serious risk — do not take without speaking to your doctor first.\n';
+  body+='HIGH (61–80): Significant risk — discuss with prescriber before proceeding.\n';
+  body+='MODERATE (41–60): Noticeable interactions — monitor carefully.\n';
+  body+='LOW (21–40): Minor interactions — manageable with standard monitoring.\n';
+  body+='MINIMAL (0–20): No significant interactions detected.\n\n';
+  body+='OTHER HELPFUL FEATURES\n';
+  body+='Drug Info — plain-language medication summaries\n';
+  body+='Find Pharmacy — locate nearby pharmacies\n';
+  body+='Pill Identifier — identify pills by imprint, color, shape\n';
+  body+='IFU Summary — patient-friendly Instructions for Use\n\n';
+  body+='FAQ\n';
+  body+='Do I need an account? No — no login or registration required.\n';
+  body+='Is my information saved? No — nothing is stored between sessions.\n';
+  body+='Can I trust these results? Use as decision support — always confirm with your pharmacist or prescriber.\n';
+  body+='What if a result seems wrong? Use Drug Info or consult your pharmacist.\n\n';
+  body+='---\nDisclaimer: IntractMD is for informational purposes only and does not replace professional medical advice.\n\nGenerated by IntractMD by Resolve Medical — www.intractmd.com';
+  window.location.href='mailto:?subject='+encodeURIComponent('Getting Started with IntractMD')+'&body='+encodeURIComponent(body);
+}
+function textHelp(){
+  var msg='IntractMD Drug Checker: 1) Open www.intractmd.com 2) Add meds 3) Add supplements/foods 4) Tap Analyze 5) Review results. Risk scale: Critical/High/Moderate/Low/Minimal. Full guide at www.intractmd.com — tap the Help tab.';
+  window.location.href='sms:?body='+encodeURIComponent(msg);
 }
 function buildPillIdPages(d){
   var matches=d.matches||[];

@@ -5,8 +5,32 @@ console.log('[STARTUP] Process started');
 const express = require('express');
 const fetch = require('node-fetch');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
+
+// ── File-based response cache ──────────────────────────────────────────────
+const DRUG_INFO_CACHE_DIR = path.join(__dirname, 'cache', 'drug-info');
+const IFU_CACHE_DIR = path.join(__dirname, 'cache', 'ifu');
+[DRUG_INFO_CACHE_DIR, IFU_CACHE_DIR].forEach(d => { if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true }); });
+
+function slugify(name) {
+  return name.toLowerCase()
+    .replace(/\s+(calcium|sodium|hydrochloride|hcl|sulfate|bisulfate|maleate|tartrate|oxalate|mesylate|besylate|succinate|fumarate|phosphate|acetate|chloride|bromide|potassium|magnesium|zinc|citrate|gluconate|tannate|pamoate|stearate|valerate|benzoate|propionate)\b.*/i, '')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function readFileCache(dir, slug) {
+  try {
+    const f = path.join(dir, slug + '.json');
+    if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+  } catch (e) {}
+  return null;
+}
+
+function writeFileCache(dir, slug, data) {
+  try { fs.writeFileSync(path.join(dir, slug + '.json'), JSON.stringify(data), 'utf8'); } catch (e) {}
+}
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -21,6 +45,13 @@ app.get('/health', (req, res) => {
 // Root
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Serve local drug list for instant frontend autocomplete
+app.get('/api/drug-list', (req, res) => {
+  try {
+    res.json(JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'drug-list.json'), 'utf8')));
+  } catch (e) { res.json([]); }
 });
 
 // Drug data cache
@@ -342,6 +373,10 @@ app.post('/api/drug-info', async (req, res) => {
   const { drugName } = req.body;
   if (!drugName) return res.status(400).json({ error: 'drugName required' });
 
+  const slug = slugify(drugName);
+  const cached = readFileCache(DRUG_INFO_CACHE_DIR, slug);
+  if (cached) return res.json({ ...cached, cached: true });
+
   const drugData = await fetchDrugData(drugName);
   const groundingParts = [];
   if (drugData.drugClass) groundingParts.push(`Drug class: ${drugData.drugClass}`);
@@ -366,7 +401,8 @@ app.post('/api/drug-info', async (req, res) => {
     const raw = await callClaude(apiKey, prompt, 1500);
     const parsed = tryParseJSON(raw);
     if (!parsed) return res.status(502).json({ error: 'Failed to parse AI response' });
-    res.json(parsed);
+    writeFileCache(DRUG_INFO_CACHE_DIR, slug, parsed);
+    res.json({ ...parsed, cached: false });
   } catch (e) {
     res.status(502).json({ error: e.message });
   }
@@ -409,6 +445,10 @@ app.post('/api/drug-ifu', async (req, res) => {
     const { drugName, dosage, form, condition } = req.body;
     if (!drugName) return res.status(400).json({ error: 'drugName required' });
 
+    const slug = slugify(drugName) + (form ? '-' + slugify(form) : '') + (condition ? '-for-' + slugify(condition) : '');
+    const cached = readFileCache(IFU_CACHE_DIR, slug);
+    if (cached) return res.json({ ...cached, cached: true });
+
     const userPrompt = `Create patient-friendly Instructions for Use for ${drugName}${dosage ? ' (' + dosage + ')' : ''}${form ? ', ' + form + ' form' : ''}${condition ? ' for ' + condition : ''}. Return a JSON object with exactly these fields: drug_name (string), brand_names (array of strings), what_its_for (string), how_to_take (string), dosing (string), missed_dose (string), storage (string), what_to_avoid (string), when_to_call_doctor (string), when_it_works (string), special_populations (string or null). Use simple patient-friendly language.`;
 
     const r = await fetch('https://api.anthropic.com/v1/messages', {
@@ -429,7 +469,8 @@ app.post('/api/drug-ifu', async (req, res) => {
       console.error('[IFU] Failed to parse AI response:', raw.slice(0, 500));
       return res.status(502).json({ error: 'Could not parse AI response', raw: raw.slice(0, 200) });
     }
-    res.json(parsed);
+    writeFileCache(IFU_CACHE_DIR, slug, parsed);
+    res.json({ ...parsed, cached: false });
   } catch (e) {
     res.status(502).json({ error: e.message });
   }

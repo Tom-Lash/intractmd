@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-06-21T11:25:45.340Z",
+  "elapsed_ms": 1620,
+  "passed": 4,
+  "failed": 0,
+  "all_passed": true,
+  "results": {
+    "openfda": {
+      "name": "OpenFDA API",
+      "ok": true,
+      "ms": 737,
+      "detail": "Results: 1, warnings: true, drug_interactions: true",
+      "warnings_present": true,
+      "drug_interactions_present": true,
+      "timestamp": "2026-06-21T11:25:45.340Z"
+    },
+    "nlm_rxnorm": {
+      "name": "NLM RxNorm API",
+      "ok": true,
+      "ms": 157,
+      "detail": "warfarin → RxCUI 11289 ✓",
+      "timestamp": "2026-06-21T11:25:45.340Z"
+    },
+    "nlm_suggest": {
+      "name": "NLM Drug Suggest",
+      "ok": true,
+      "ms": 47,
+      "detail": "aspirin → 165 concepts across 4 groups",
+      "timestamp": "2026-06-21T11:25:45.340Z"
+    },
+    "claude": {
+      "name": "Anthropic Claude API",
+      "ok": true,
+      "ms": 676,
+      "detail": "Parsed OK: {\"status\":\"ok\",\"service\":\"claude\"}",
+      "model": "claude-haiku-4-5-20251001",
+      "timestamp": "2026-06-21T11:25:45.340Z"
+    }
+  }
+}
