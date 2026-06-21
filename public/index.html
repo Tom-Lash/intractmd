@@ -20,16 +20,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;backgroun
 .logo i{color:#fff;font-size:18px}
 .app-title{font-size:15px;font-weight:600}
 .app-sub{font-size:12px;color:var(--tx2)}
-.hdr-resolve{flex-shrink:0;display:flex;align-items:center}
-.hdr-resolve img{height:80px;width:auto;object-fit:contain}
-@media(max-width:640px){.hdr-resolve img{height:56px}}
 .tabs{display:flex;border-bottom:0.5px solid var(--br);padding:0 1.5rem}
 .tab{padding:10px 16px;font-size:15px;font-weight:600;cursor:pointer;color:var(--tx2);border:none;border-bottom:2px solid transparent;margin-bottom:-1px;background:none}
 .tab.active{color:var(--accent-blue);border-bottom:3px solid transparent;background-image:linear-gradient(#fff,#fff),linear-gradient(90deg,#00B4D8,#1B6EC2);background-origin:border-box;background-clip:padding-box,border-box;font-weight:600}
 .tab:disabled{opacity:.35;cursor:not-allowed}
 .tab.tab-help{color:var(--amb)}
 .tab.tab-help.active{color:var(--amb);background-image:linear-gradient(#fff,#fff),linear-gradient(90deg,var(--amb-bd),var(--amb));background-origin:border-box;background-clip:padding-box,border-box}
-.lang-toggle{display:flex;gap:0;border:1.5px solid rgba(0,180,216,.5);border-radius:20px;overflow:hidden;margin-left:auto;margin-right:6px;align-self:center;flex-shrink:0}
+.lang-toggle{display:flex;gap:0;border:1.5px solid rgba(0,180,216,.5);border-radius:20px;overflow:hidden;align-self:center;flex-shrink:0}
 .lang-btn{padding:4px 12px;font-size:11px;font-weight:700;letter-spacing:.05em;border:none;background:none;color:var(--teal);cursor:pointer;line-height:1.4;transition:background .15s,color .15s}
 .lang-btn.active{background:var(--teal-md);color:#fff}
 .lang-btn:hover:not(.active){background:var(--teal-lt)}
@@ -343,7 +340,6 @@ input::placeholder{color:#6b6b66}
   <button class="lang-btn active" id="lang-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
   <button class="lang-btn" id="lang-es" onclick="setLang('es')" aria-label="Cambiar a español">ES</button>
 </div>
-<div class="hdr-resolve"><img src="/resolve-logo.png" alt="Resolve Medical"/></div>
 </div>
 <div class="card-body"><div class="card-main">
 <div class="tabs">
