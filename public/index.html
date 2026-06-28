@@ -349,7 +349,7 @@ input::placeholder{color:#6b6b66}
 #dInput,#sInput,#fInput{background:#EBF5FB;border:2px solid #00B4D8;border-radius:8px;padding:10px 14px;font-size:15px;box-shadow:0 1px 4px rgba(0,180,216,.10)}
 #dInput:focus,#sInput:focus,#fInput:focus{border-color:#0D3B6E;box-shadow:0 0 0 3px rgba(0,180,216,.18);outline:none}
 .sidebar-tools{border-top:3px solid #00B4D8;background:#F0F8FE;padding:14px 8px 10px 8px;gap:6px}
-.sidebar-tools::before{content:"OTHER TOOLS";display:block;font-size:9px;font-weight:700;color:#0D3B6E;letter-spacing:.1em;text-align:center;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #C0DFF5;width:100%}
+.sidebar-tools::before{display:none}.sb-tools-label{font-size:8px;font-weight:700;color:#0D3B6E;letter-spacing:.08em;text-align:center;line-height:1.4;padding-right:8px;border-right:1px solid #C0DFF5;flex-shrink:0;align-self:center;display:none}
 .sidebar-btn{border-radius:8px;border:1px solid #C0DFF5;background:#FFFFFF;margin-bottom:4px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;width:100%;box-sizing:border-box}
 .sidebar-btn i{color:#0D3B6E;font-size:20px}
 .sidebar-btn .btn-full{color:#0D3B6E;font-weight:600;font-size:11px;text-align:center;display:block}
@@ -363,6 +363,7 @@ input::placeholder{color:#6b6b66}
 .app-sub{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .divider{margin:6px 0}
 .tags-area{min-height:0;margin:0;padding:0}
+.sb-tools-label{display:block}
 .sidebar-tools{order:99;border-left:none;border-top:1.5px solid #C0DFF5;padding:8px;margin-top:8px;width:100%;box-sizing:border-box;display:flex;flex-direction:row;align-items:stretch;gap:6px}
 .sb-tools-grid{flex-direction:row;flex-wrap:nowrap;gap:4px;flex:1}
 .sb-tools-grid .sidebar-btn{flex:1;min-width:0;width:auto;flex-direction:column;align-items:center;padding:8px 2px;margin-bottom:0;border:1px solid #C0DFF5;background:#fff;border-radius:8px;display:flex;cursor:pointer}
@@ -490,7 +491,7 @@ input::placeholder{color:#6b6b66}
 <div id="help-content"></div>
 </div>
 <div class="sidebar-tools">
-<div class="sb-tools-grid"><button class="sidebar-btn sb-info" onclick="openDrugInfo()"><i class="ti ti-pill"></i><span class="btn-full">Drug Info</span><span class="btn-short">Drug Info</span><span class="sb-sub">Look up any medication</span></button>
+<div class="sb-tools-label">OTHER<br>TOOLS</div><div class="sb-tools-grid"><button class="sidebar-btn sb-info" onclick="openDrugInfo()"><i class="ti ti-pill"></i><span class="btn-full">Drug Info</span><span class="btn-short">Drug Info</span><span class="sb-sub">Look up any medication</span></button>
 <button class="sidebar-btn sb-pharm" onclick="openPharmacy()"><i class="ti ti-map-pin"></i><span class="btn-full">Find Pharmacy</span><span class="btn-short">Find Pharmacy</span><span class="sb-sub">Nearby locations</span></button>
 <button class="sidebar-btn sb-pill" onclick="openPillId()"><i class="ti ti-search"></i><span class="btn-full">Pill Identifier</span><span class="btn-short">Pill ID</span><span class="sb-sub">Identify unknown pills</span></button>
 <button class="sidebar-btn sb-ifu" onclick="openIFU()"><i class="ti ti-info-circle"></i><span class="btn-full">IFU Summary</span><span class="btn-short">IFU Summary</span><span class="sb-sub">How to take your med</span></button></div>
