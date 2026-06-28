@@ -374,6 +374,20 @@ input::placeholder{color:#6b6b66}
 }
 
 @media(max-width:600px){.app-hdr{padding:8px 10px;gap:6px;align-items:center}.app-hdr .logo img{height:40px}.app-title{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app-sub{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lang-toggle{flex-shrink:0;margin-left:0}}
+
+/* Fix dead space + restore Other Tools on mobile */
+@media(max-width:600px){
+  #im-speak-section,#im-scan-section{margin:0;padding:0}
+  #im-speak-section>div,#im-scan-section>div{padding:6px 0}
+  .sidebar-tools{display:flex;flex-direction:column;order:99;width:100%;border-left:none;border-top:1.5px solid #C0DFF5;background:#F0F8FE;padding:10px;margin-top:8px}
+  .sidebar-tools::before{writing-mode:horizontal-tb;transform:none;border-right:none;border-bottom:1px solid #C0DFF5;padding:0 0 6px 0;margin-bottom:8px;margin-right:0;width:100%;text-align:center;display:block;color:#0D3B6E}
+  .sidebar-tools-inner,.sidebar-tools>button{flex-shrink:0}
+  .sb-tools-row{display:flex;flex-direction:row;gap:8px;justify-content:space-around;flex-wrap:wrap}
+  .sidebar-btn{width:22%;min-width:70px;flex-direction:column;align-items:center;padding:8px 4px;margin-bottom:0}
+  .sidebar-btn .btn-full{display:none}
+  .sidebar-btn .btn-short{display:block;font-size:9px;font-weight:600;color:#0D3B6E;text-align:center}
+  .sidebar-btn .sb-sub{display:block;font-size:8px;color:#5f6b7c;text-align:center}
+}
 </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG4JFDNRBN"></script>
