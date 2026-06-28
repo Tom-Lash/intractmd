@@ -388,6 +388,16 @@ input::placeholder{color:#6b6b66}
   .sidebar-btn .btn-short{display:block;font-size:9px;font-weight:600;color:#0D3B6E;text-align:center}
   .sidebar-btn .sb-sub{display:block;font-size:8px;color:#5f6b7c;text-align:center}
 }
+
+/* Fix drug section dead space - collapse hidden speak/scan */
+#im-speak-section[style*="display:none"],
+#im-scan-section[style*="display:none"]{
+  height:0;overflow:hidden;padding:0;margin:0
+}
+#im-speak-section[style*="display:none"] *,
+#im-scan-section[style*="display:none"] *{
+  padding:0;margin:0
+}
 </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG4JFDNRBN"></script>
