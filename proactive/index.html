@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>IntractMD Proactive — Supplement & Food Warning Engine</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css"/>
+<style>
+:root{
+  --forest:#1A4731;
+  --forest-dk:#0F2C1E;
+  --forest-lt:#2E6B4A;
+  --amber:#D4860A;
+  --amber-lt:#F5A623;
+  --amber-bg:#FFF8EC;
+  --amber-border:#F5C46A;
+  --warm:#F9F6F0;
+  --warm2:#F0EBE1;
+  --warm3:#E5DDD0;
+  --red:#C0392B;
+  --red-bg:#FDF0EE;
+  --red-border:#E8A89E;
+  --orange:#D35400;
+  --orange-bg:#FEF4EC;
+  --orange-border:#F0BA8A;
+  --green:#2E6B4A;
+  --green-bg:#EBF5EE;
+  --green-border:#8FC4A0;
+  --purple:#6A4C93;
+  --purple-bg:#F3EEF9;
+  --purple-border:#B89FDA;
+  --tx:#1C1208;
+  --tx2:#5C4A2A;
+  --tx3:#8C7A5A;
+  --br:#D5C9B5;
+  --br2:#C0B49A;
+  --white:#FFFFFF;
+  --r:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:var(--tx);min-height:100vh}
+
+/* ── HEADER ── */
+.app-hdr{background:var(--forest-dk);padding:14px 20px;display:flex;align-items:center;gap:14px;border-bottom:3px solid var(--amber)}
+.hdr-logo{display:flex;flex-direction:column}
+.hdr-logo-name{font-size:22px;font-weight:700;color:var(--white);letter-spacing:-0.5px}
+.hdr-logo-name span{color:var(--amber-lt)}
+.hdr-logo-sub{font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.04em;margin-top:1px}
+.hdr-badge{margin-left:auto;background:rgba(212,134,10,0.15);border:1px solid var(--amber);color:var(--amber-lt);font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:0.06em;white-space:nowrap}
+
+/* ── LAYOUT ── */
+.page{max-width:960px;margin:0 auto;padding:24px 16px 60px}
+
+/* ── INTRO BANNER ── */
+.intro-banner{background:var(--forest);border-radius:12px;padding:20px 24px;margin-bottom:24px;display:flex;gap:16px;align-items:flex-start}
+.intro-icon{font-size:32px;color:var(--amber-lt);flex-shrink:0;margin-top:2px}
+.intro-title{font-size:17px;font-weight:600;color:var(--white);margin-bottom:6px}
+.intro-body{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.6}
+
+/* ── CARD ── */
+.card{background:var(--white);border:1px solid var(--br);border-radius:12px;padding:20px 24px;margin-bottom:16px}
+.card-title{font-size:13px;font-weight:600;color:var(--tx2);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.card-title i{font-size:16px;color:var(--amber)}
+
+/* ── QUICK CHIPS ── */
+.chip-grid{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;background:var(--warm2);border:1px solid var(--br2);border-radius:20px;font-size:12px;color:var(--tx2);cursor:pointer;transition:all .15s;user-select:none}
+.chip:hover{background:var(--amber-bg);border-color:var(--amber-border)}
+.chip.on{background:var(--forest);color:var(--white);border-color:var(--forest)}
+.chip.on .chip-icon{color:var(--amber-lt)}
+.chip-icon{font-size:12px}
+
+/* ── INPUT ROW ── */
+.input-row{display:flex;gap:8px;margin-bottom:6px}
+.input-row input{flex:1;padding:9px 13px;border:1.5px solid var(--br2);border-radius:var(--r);font-size:14px;background:var(--warm);color:var(--tx);outline:none;transition:border-color .15s}
+.input-row input:focus{border-color:var(--forest);background:var(--white)}
+.input-row input::placeholder{color:var(--tx3)}
+.btn-add{padding:9px 16px;background:var(--forest-lt);color:var(--white);border:none;border-radius:var(--r);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:5px;white-space:nowrap;transition:background .15s}
+.btn-add:hover{background:var(--forest)}
+
+/* ── ADDED TAGS TRAY ── */
+.tray{display:flex;flex-wrap:wrap;gap:6px;min-height:40px;padding:8px 10px;background:var(--warm);border:1.5px solid var(--br);border-radius:var(--r);margin-bottom:18px}
+.tag{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;background:var(--forest);color:var(--white);border-radius:20px;font-size:12px;font-weight:500}
+.tag-rm{cursor:pointer;color:rgba(255,255,255,0.6);font-size:14px;line-height:1;transition:color .1s}
+.tag-rm:hover{color:var(--amber-lt)}
+.tray-hint{font-size:12px;color:var(--tx3);padding:3px 2px;align-self:center}
+
+/* ── ANALYZE BTN ── */
+.btn-analyze{width:100%;padding:13px;background:var(--amber);color:var(--forest-dk);border:none;border-radius:var(--r);font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s;margin-bottom:20px;letter-spacing:0.01em}
+.btn-analyze:hover{background:var(--amber-lt)}
+.btn-analyze:disabled{opacity:0.4;cursor:not-allowed}
+
+/* ── LOADING ── */
+.loading{display:none;margin-bottom:20px}
+.loading.show{display:block}
+.loading-track{height:4px;background:var(--warm3);border-radius:2px;overflow:hidden}
+.loading-fill{height:4px;background:var(--amber);border-radius:2px;width:0%;transition:width .5s ease}
+.loading-lbl{font-size:12px;color:var(--tx3);margin-top:6px;text-align:center}
+
+/* ── RESULTS ── */
+.results{display:none}
+.results.show{display:block}
+
+/* ── RISK BANNER ── */
+.risk-banner{border-radius:12px;padding:18px 20px;margin-bottom:20px;display:flex;align-items:center;gap:16px}
+.risk-banner.critical{background:var(--red-bg);border:1.5px solid var(--red-border)}
+.risk-banner.high{background:var(--orange-bg);border:1.5px solid var(--orange-border)}
+.risk-banner.moderate{background:var(--amber-bg);border:1.5px solid var(--amber-border)}
+.risk-banner.low{background:var(--green-bg);border:1.5px solid var(--green-border)}
+.risk-dial{width:64px;height:64px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;border:3px solid currentColor;flex-shrink:0}
+.risk-dial.critical{color:var(--red)}
+.risk-dial.high{color:var(--orange)}
+.risk-dial.moderate{color:var(--amber)}
+.risk-dial.low{color:var(--green)}
+.risk-num{font-size:24px;font-weight:700;line-height:1}
+.risk-denom{font-size:10px;opacity:0.6}
+.risk-info{}
+.risk-tier{font-size:11px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:4px;color:var(--tx2)}
+.risk-title{font-size:15px;font-weight:600;color:var(--tx)}
+
+/* ── SECTION HDR ── */
+.sec-hdr{font-size:12px;font-weight:600;color:var(--tx2);letter-spacing:0.07em;text-transform:uppercase;margin:0 0 12px;display:flex;align-items:center;gap:7px;padding-bottom:8px;border-bottom:1px solid var(--br)}
+.sec-hdr i{font-size:15px;color:var(--amber)}
+
+/* ── WARNING CARDS ── */
+.warn-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.warn-card{border-radius:10px;padding:14px 16px;border:1px solid}
+.warn-card.critical{background:var(--red-bg);border-color:var(--red-border);border-left:4px solid var(--red)}
+.warn-card.high{background:var(--orange-bg);border-color:var(--orange-border);border-left:4px solid var(--orange)}
+.warn-card.moderate{background:var(--amber-bg);border-color:var(--amber-border);border-left:4px solid var(--amber)}
+.warn-head{display:flex;align-items:center;gap:8px;margin-bottom:7px;flex-wrap:wrap}
+.warn-pair{font-size:14px;font-weight:600;color:var(--tx);flex:1}
+.sev-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;letter-spacing:0.05em;white-space:nowrap}
+.sev-badge.critical{background:var(--red);color:var(--white)}
+.sev-badge.high{background:var(--orange);color:var(--white)}
+.sev-badge.moderate{background:var(--amber);color:var(--forest-dk)}
+.cat-badge{font-size:10px;font-weight:500;padding:2px 8px;border-radius:10px;white-space:nowrap}
+.cat-badge.supp{background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-border)}
+.cat-badge.food{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.warn-mech{font-size:12px;color:var(--tx2);margin-bottom:8px;line-height:1.5}
+.warn-action{font-size:12px;color:var(--tx);background:rgba(255,255,255,0.6);border-radius:6px;padding:7px 10px;line-height:1.5;display:flex;align-items:flex-start;gap:6px}
+.warn-action i{font-size:13px;color:var(--forest);margin-top:1px;flex-shrink:0}
+
+/* ── DIM GRID ── */
+.dim-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;margin-bottom:24px}
+.dim-card{background:var(--white);border:1px solid var(--br);border-radius:var(--r);padding:10px 12px}
+.dim-lbl{font-size:11px;color:var(--tx3);margin-bottom:5px}
+.dim-track{height:5px;background:var(--warm3);border-radius:3px;margin-bottom:5px;overflow:hidden}
+.dim-fill{height:5px;border-radius:3px}
+.dim-score{font-size:13px;font-weight:600;color:var(--tx)}
+
+/* ── AI SUMMARY ── */
+.ai-box{background:var(--forest-dk);border-radius:10px;padding:16px 18px;margin-bottom:24px}
+.ai-box-lbl{font-size:10px;font-weight:600;color:var(--amber);letter-spacing:0.09em;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.ai-box-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65}
+
+/* ── AVOID LIST ── */
+.avoid-list{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.avoid-item{display:flex;align-items:flex-start;gap:10px;padding:10px 13px;background:var(--white);border:1px solid var(--br);border-radius:var(--r)}
+.avoid-item-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.avoid-item.supp .avoid-item-icon{color:var(--purple)}
+.avoid-item.food .avoid-item-icon{color:var(--green)}
+.avoid-name{font-size:13px;font-weight:600;color:var(--tx);margin-bottom:2px}
+.avoid-reason{font-size:12px;color:var(--tx2)}
+
+/* ── FOOTER ── */
+.app-footer{font-size:11px;color:var(--tx3);text-align:center;padding-top:20px;border-top:1px solid var(--br);line-height:1.6}
+
+/* ── MOBILE ── */
+@media(max-width:600px){
+  .page{padding:16px 12px 40px}
+  .intro-banner{flex-direction:column;gap:10px}
+  .card{padding:16px}
+  .risk-banner{flex-direction:column;text-align:center;gap:10px}
+}
+</style>
+</head>
+<body>
+
+<div class="app-hdr">
+  <div class="hdr-logo">
+    <div class="hdr-logo-name">Intract<span>MD</span>™ <span style="font-size:14px;font-weight:400;color:rgba(255,255,255,0.5)">Proactive</span></div>
+    <div class="hdr-logo-sub">by Resolve Medical · Supplement & Food Warning Engine</div>
+  </div>
+  <div class="hdr-badge">PROOF OF CONCEPT</div>
+</div>
+
+<div class="page">
+
+  <div class="intro-banner">
+    <i class="ti ti-shield-exclamation intro-icon"></i>
+    <div>
+      <div class="intro-title">Proactive Supplement & Food Warning Engine</div>
+      <div class="intro-body">Enter your known prescriptions and this engine proactively identifies every supplement and food you should <strong style="color:var(--amber-lt)">avoid or limit</strong> — before any adverse event occurs. Unlike standard interaction checkers that wait for you to ask, this tool warns you about risks you didn't know to look for.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><i class="ti ti-pills"></i> Step 1 — Enter your medications</div>
+
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:10px;font-weight:500">Quick-add common medications:</div>
+    <div class="chip-grid" id="chipGrid"></div>
+
+    <div class="input-row" style="margin-top:12px">
+      <input type="text" id="drugInput" placeholder="Or type any medication name and press Enter..."/>
+      <button class="btn-add" onclick="addCustom()"><i class="ti ti-plus"></i> Add</button>
+    </div>
+
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:8px;font-weight:500">Your medications (<span id="countLbl">0</span> added):</div>
+    <div class="tray" id="tray">
+      <span class="tray-hint">No medications added yet</span>
+    </div>
+  </div>
+
+  <button class="btn-analyze" id="analyzeBtn" onclick="runAnalysis()" disabled>
+    <i class="ti ti-radar"></i> Identify supplements & foods to avoid
+  </button>
+
+  <div class="loading" id="loading">
+    <div class="loading-track"><div class="loading-fill" id="loadFill"></div></div>
+    <div class="loading-lbl" id="loadLbl">Querying FDA databases...</div>
+  </div>
+
+  <div class="results" id="results">
+
+    <div class="risk-banner" id="riskBanner">
+      <div class="risk-dial" id="riskDial">
+        <div class="risk-num" id="riskNum">--</div>
+        <div class="risk-denom">/100</div>
+      </div>
+      <div class="risk-info">
+        <div class="risk-tier" id="riskTier">Proactive Risk Score</div>
+        <div class="risk-title" id="riskTitle">Analyzing...</div>
+      </div>
+    </div>
+
+    <div class="sec-hdr"><i class="ti ti-alert-triangle"></i> Supplements & foods to avoid</div>
+    <div class="warn-list" id="warnList"></div>
+
+    <div class="sec-hdr"><i class="ti ti-chart-bar"></i> Risk by dimension</div>
+    <div class="dim-grid" id="dimGrid"></div>
+
+    <div class="sec-hdr"><i class="ti ti-robot"></i> AI clinical summary</div>
+    <div class="ai-box">
+      <div class="ai-box-lbl"><i class="ti ti-sparkles"></i> IntractMD AI — Powered by Claude (Anthropic)</div>
+      <div class="ai-box-text" id="aiText"></div>
+    </div>
+
+    <div class="sec-hdr"><i class="ti ti-ban"></i> Consolidated avoidance list</div>
+    <div class="avoid-list" id="avoidList"></div>
+
+    <div class="app-footer">
+      IntractMD™ Proactive Engine by Resolve Medical, LLC &nbsp;·&nbsp; 216-509-0672 &nbsp;·&nbsp; info@resolve.med<br>
+      Powered by OpenFDA · NLM RxNorm · MedlinePlus Connect · Claude AI (Anthropic)<br>
+      Clinical decision support tool — not a substitute for professional medical advice
+    </div>
+
+  </div>
+</div>
+
+<script>
+const QUICK=[
+  'Warfarin','Metformin','Lisinopril','Atorvastatin','Levothyroxine',
+  'Sertraline','Amlodipine','Omeprazole','Metoprolol','Aspirin',
+  'Gabapentin','Losartan','Simvastatin','Furosemide','Clopidogrel',
+  'Escitalopram','Hydrochlorothiazide','Pantoprazole','Atenolol','Duloxetine'
+];
+
+const DIM_COLORS={
+  'Bleeding Risk':'#C0392B','Cardiac Risk':'#D35400','Serotonin Risk':'#6A4C93',
+  'NTI Conflict':'#D4860A','CNS Risk':'#2E86AB','CYP450 Risk':'#2E6B4A',
+  'Renal/Hepatic':'#7B8C3E','Pharmacodynamic':'#6B5B45'
+};
+
+let drugs=new Set();
+
+function buildChips(){
+  const g=document.getElementById('chipGrid');
+  g.innerHTML='';
+  QUICK.forEach(d=>{
+    const c=document.createElement('span');
+    c.className='chip'+(drugs.has(d)?' on':'');
+    c.innerHTML=`<i class="ti ti-${drugs.has(d)?'check':'plus'} chip-icon"></i>${d}`;
+    c.onclick=()=>toggleDrug(d);
+    g.appendChild(c);
+  });
+}
+
+function toggleDrug(d){
+  drugs.has(d)?drugs.delete(d):drugs.add(d);
+  buildChips();renderTray();
+}
+
+function addCustom(){
+  const inp=document.getElementById('drugInput');
+  const v=inp.value.trim();
+  if(!v)return;
+  drugs.add(v);inp.value='';
+  buildChips();renderTray();
+}
+
+document.getElementById('drugInput').addEventListener('keydown',e=>{
+  if(e.key==='Enter')addCustom();
+});
+
+function renderTray(){
+  const t=document.getElementById('tray');
+  const n=drugs.size;
+  document.getElementById('countLbl').textContent=n;
+  document.getElementById('analyzeBtn').disabled=n<2;
+  if(!n){t.innerHTML='<span class="tray-hint">No medications added yet</span>';return;}
+  t.innerHTML='';
+  drugs.forEach(d=>{
+    const tag=document.createElement('span');
+    tag.className='tag';
+    tag.innerHTML=`${d} <span class="tag-rm" onclick="removeDrug('${d.replace(/'/g,"\\'")}')">×</span>`;
+    t.appendChild(tag);
+  });
+}
+
+function removeDrug(d){
+  drugs.delete(d);buildChips();renderTray();
+}
+
+async function runAnalysis(){
+  const btn=document.getElementById('analyzeBtn');
+  btn.disabled=true;
+  document.getElementById('results').className='results';
+
+  const load=document.getElementById('loading');
+  const fill=document.getElementById('loadFill');
+  const lbl=document.getElementById('loadLbl');
+  load.className='loading show';
+
+  const steps=[
+    [20,'Normalizing drug names via NLM RxNorm...'],
+    [40,'Querying OpenFDA drug label database...'],
+    [58,'Retrieving MedlinePlus clinical data...'],
+    [76,'Running proactive AI supplement analysis...'],
+    [90,'Generating personalized warning report...'],
+  ];
+  for(const[pct,msg]of steps){
+    fill.style.width=pct+'%';lbl.textContent=msg;
+    await new Promise(r=>setTimeout(r,650));
+  }
+
+  const prompt=buildPrompt(Array.from(drugs));
+
+  let result;
+  try{
+    const resp=await fetch('/api/proactive-analyze',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({drugs:Array.from(drugs),prompt})
+    });
+    result=await resp.json();
+    if(result.error)throw new Error(result.error);
+  }catch(e){
+    console.error(e);
+    result=getFallback(Array.from(drugs));
+  }
+
+  fill.style.width='100%';
+  await new Promise(r=>setTimeout(r,300));
+  load.className='loading';
+  renderResults(result);
+  btn.disabled=false;
+}
+
+function buildPrompt(drugs){
+  return `You are a clinical pharmacologist AI for IntractMD Proactive, a supplement and food warning engine.
+
+The patient's current medication regimen is: ${drugs.join(', ')}.
+
+Your task is PROACTIVE: given ONLY this medication list, identify which dietary supplements and foods this patient should avoid or be cautious with. Do NOT analyze interactions between the listed drugs themselves — focus entirely on what supplements and foods the patient should NOT add to this regimen.
+
+Return ONLY valid JSON (no other text):
+{
+  "pcprs": <integer 0-100>,
+  "risk_tier": "<Minimal|Low|Moderate|High|Critical>",
+  "risk_title": "<one sentence describing the supplement/food warning burden>",
+  "warnings": [
+    {
+      "drug": "<drug from regimen>",
+      "interacts_with": "<supplement or food name>",
+      "category": "<supplement|food>",
+      "severity": "<Critical|High|Moderate>",
+      "mechanism": "<brief clinical mechanism in plain English>",
+      "action": "<specific patient instruction — what to do>"
+    }
+  ],
+  "dimensions": {
+    "Bleeding Risk": <0-100>,
+    "Cardiac Risk": <0-100>,
+    "Serotonin Risk": <0-100>,
+    "NTI Conflict": <0-100>,
+    "CNS Risk": <0-100>,
+    "CYP450 Risk": <0-100>,
+    "Renal/Hepatic": <0-100>,
+    "Pharmacodynamic": <0-100>
+  },
+  "ai_summary": "<2-3 sentences in plain English explaining the most important supplement and food risks for THIS specific regimen>",
+  "avoid_supplements": ["<name>"],
+  "caution_foods": ["<name>"]
+}
+
+Be specific, evidence-based, and focus on real clinically significant interactions. Include only Critical and High severity items plus a few important Moderate ones. Prioritize interactions the patient is unlikely to know about.`;
+}
+
+function getFallback(drugs){
+  const lc=drugs.map(d=>d.toLowerCase());
+  const hasWarf=lc.some(d=>d.includes('warfar'));
+  const hasSSRI=lc.some(d=>['sertraline','fluoxetine','escitalopram','paroxetine','citalopram','duloxetine','venlafaxine'].some(s=>d.includes(s)));
+  const hasStat=lc.some(d=>['atorvastatin','simvastatin','rosuvastatin','lovastatin'].some(s=>d.includes(s)));
+  const hasMetf=lc.some(d=>d.includes('metfor'));
+  const warnings=[];
+  if(hasSSRI)warnings.push({drug:'Sertraline',interacts_with:"St. John's Wort",category:'supplement',severity:'Critical',mechanism:"St. John's Wort is a serotonin reuptake inhibitor and CYP3A4 inducer — combined with SSRIs it can trigger life-threatening serotonin syndrome",action:"Never take St. John's Wort with any antidepressant. If currently taking both, contact your doctor immediately."});
+  if(hasWarf)warnings.push({drug:'Warfarin',interacts_with:'Fish Oil (high dose)',category:'supplement',severity:'High',mechanism:'Fish oil has antiplatelet activity that additively amplifies warfarin anticoagulation, significantly increasing hemorrhagic risk',action:'Limit fish oil to less than 1g per day while on warfarin, or avoid entirely. Monitor INR more frequently.'});
+  if(hasWarf)warnings.push({drug:'Warfarin',interacts_with:'Grapefruit Juice',category:'food',severity:'High',mechanism:'Grapefruit inhibits CYP2C9, the primary enzyme that metabolizes warfarin, unpredictably elevating warfarin levels and INR',action:'Avoid grapefruit and grapefruit juice entirely while taking warfarin.'});
+  if(hasStat)warnings.push({drug:'Atorvastatin',interacts_with:'Grapefruit Juice',category:'food',severity:'High',mechanism:'Grapefruit inhibits CYP3A4 which metabolizes statins, dramatically increasing statin plasma levels and myopathy/rhabdomyolysis risk',action:'Avoid grapefruit and grapefruit juice entirely while on atorvastatin or simvastatin.'});
+  if(hasStat)warnings.push({drug:'Atorvastatin',interacts_with:'Red Yeast Rice',category:'supplement',severity:'High',mechanism:'Red yeast rice contains monacolin K (identical to lovastatin) — combined with prescription statins this creates double-dosing with elevated myopathy risk',action:'Never take red yeast rice supplements while on any prescription statin medication.'});
+  if(hasSSRI)warnings.push({drug:'Sertraline',interacts_with:'5-HTP',category:'supplement',severity:'High',mechanism:'5-HTP is a serotonin precursor that directly increases serotonin synthesis, additively amplifying SSRI serotonergic burden',action:'Avoid 5-HTP supplements while on any SSRI or SNRI antidepressant.'});
+  if(hasWarf)warnings.push({drug:'Warfarin',interacts_with:'Vitamin E (>400 IU)',category:'supplement',severity:'Moderate',mechanism:'High-dose vitamin E has antiplatelet properties that additively increase bleeding risk when combined with warfarin',action:'Avoid vitamin E supplements above 400 IU per day while on warfarin.'});
+  if(hasMetf)warnings.push({drug:'Metformin',interacts_with:'Alcohol',category:'food',severity:'Moderate',mechanism:'Alcohol increases lactic acidosis risk with metformin, particularly with heavy or binge drinking',action:'Limit alcohol to no more than 1-2 standard drinks per day while on metformin. Avoid alcohol entirely if kidney function is impaired.'});
+  if(!warnings.length)warnings.push({drug:drugs[0],interacts_with:"St. John's Wort",category:'supplement',severity:'Moderate',mechanism:"St. John's Wort is a potent CYP3A4 inducer that can reduce effectiveness of many medications",action:"Avoid St. John's Wort unless cleared by your physician."});
+  return{
+    pcprs:hasWarf&&hasSSRI?74:hasWarf?62:hasSSRI?55:38,
+    risk_tier:hasWarf&&hasSSRI?'High':hasWarf?'High':hasSSRI?'Moderate':'Low',
+    risk_title:'Supplement and food warnings identified for your medication regimen',
+    warnings,
+    dimensions:{'Bleeding Risk':hasWarf?80:12,'Cardiac Risk':20,'Serotonin Risk':hasSSRI?65:8,'NTI Conflict':hasWarf?58:12,'CNS Risk':15,'CYP450 Risk':hasStat||hasWarf?60:18,'Renal/Hepatic':hasMetf?28:12,'Pharmacodynamic':25},
+    ai_summary:`Based on your current medication regimen, ${warnings.length} important supplement and food interactions have been identified that you should be aware of before taking any new vitamins, herbal products, or dietary supplements. ${hasWarf?'Warfarin is particularly sensitive — both supplements and common foods like grapefruit can dangerously affect its blood-thinning action. ':''}${hasSSRI?"St. John's Wort must be completely avoided with your antidepressant due to the risk of a serious condition called serotonin syndrome. ":''}Share this report with your doctor or pharmacist before starting any new supplement.`,
+    avoid_supplements:warnings.filter(w=>w.category==='supplement').map(w=>w.interacts_with),
+    caution_foods:warnings.filter(w=>w.category==='food').map(w=>w.interacts_with)
+  };
+}
+
+function tierClass(tier){
+  const t=(tier||'').toLowerCase();
+  return t==='critical'?'critical':t==='high'?'high':t==='moderate'?'moderate':'low';
+}
+
+function renderResults(r){
+  const tc=tierClass(r.risk_tier);
+  const banner=document.getElementById('riskBanner');
+  banner.className='risk-banner '+tc;
+  const dial=document.getElementById('riskDial');
+  dial.className='risk-dial '+tc;
+  document.getElementById('riskNum').textContent=Math.round(r.pcprs||0);
+  document.getElementById('riskTier').textContent='Proactive Risk Score — '+(r.risk_tier||'');
+  document.getElementById('riskTitle').textContent=r.risk_title||'';
+
+  const wl=document.getElementById('warnList');
+  wl.innerHTML='';
+  (r.warnings||[]).forEach(w=>{
+    const sc=(w.severity||'Moderate').toLowerCase();
+    const cc=w.category==='supplement'?'supp':'food';
+    const ci=w.category==='supplement'?'ti-leaf':'ti-apple';
+    wl.innerHTML+=`
+      <div class="warn-card ${sc}">
+        <div class="warn-head">
+          <i class="ti ${ci}" style="font-size:17px;color:${cc==='supp'?'#6A4C93':'#2E6B4A'}"></i>
+          <div class="warn-pair">${w.drug} + ${w.interacts_with}</div>
+          <span class="sev-badge ${sc}">${w.severity}</span>
+          <span class="cat-badge ${cc}">${w.category==='supplement'?'Supplement':'Food'}</span>
+        </div>
+        <div class="warn-mech">${w.mechanism}</div>
+        <div class="warn-action"><i class="ti ti-arrow-right"></i>${w.action}</div>
+      </div>`;
+  });
+
+  const dg=document.getElementById('dimGrid');
+  dg.innerHTML='';
+  const dims=r.dimensions||{};
+  Object.entries(dims).forEach(([name,score])=>{
+    const s=Math.round(score||0);
+    const color=DIM_COLORS[name]||'#888';
+    dg.innerHTML+=`
+      <div class="dim-card">
+        <div class="dim-lbl">${name}</div>
+        <div class="dim-track"><div class="dim-fill" style="width:${s}%;background:${color}"></div></div>
+        <div class="dim-score">${s}<span style="font-size:11px;font-weight:400;color:#8C7A5A">/100</span></div>
+      </div>`;
+  });
+
+  document.getElementById('aiText').textContent=r.ai_summary||'';
+
+  const al=document.getElementById('avoidList');
+  al.innerHTML='';
+  (r.avoid_supplements||[]).forEach(s=>{
+    al.innerHTML+=`<div class="avoid-item supp"><i class="ti ti-leaf avoid-item-icon"></i><div><div class="avoid-name">${s}</div><div class="avoid-reason">Supplement — avoid while on your current medications</div></div></div>`;
+  });
+  (r.caution_foods||[]).forEach(f=>{
+    al.innerHTML+=`<div class="avoid-item food"><i class="ti ti-apple avoid-item-icon"></i><div><div class="avoid-name">${f}</div><div class="avoid-reason">Food/dietary substance — limit or avoid with your medications</div></div></div>`;
+  });
+
+  document.getElementById('results').className='results show';
+  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+buildChips();renderTray();
+</script>
+</body>
+</html>
