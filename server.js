@@ -488,6 +488,7 @@ app.post('/api/drug-ifu', async (req, res) => {
 
 console.log('[STARTUP] All routes configured');
 
+app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
     const { drugs, prompt } = req.body;
