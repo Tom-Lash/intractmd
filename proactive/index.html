@@ -173,6 +173,15 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
   .card{padding:16px}
   .risk-banner{flex-direction:column;text-align:center;gap:10px}
 }
+
+.explain-panel{background:var(--white);border:1px solid var(--br);border-radius:10px;margin-bottom:20px;overflow:hidden}
+.explain-toggle{width:100%;padding:12px 16px;background:none;border:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-size:13px;font-weight:600;color:var(--tx2);text-align:left}
+.explain-toggle i{font-size:15px;color:var(--amber);transition:transform .2s}
+.explain-toggle.open i.ti-chevron-down{transform:rotate(180deg)}
+.explain-body{display:none;padding:0 16px 16px;font-size:13px;color:var(--tx);line-height:1.6}
+.explain-body.open{display:block}
+.explain-tier{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;margin-bottom:8px;font-size:13px}
+.explain-tier-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -234,6 +243,21 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
       </div>
     </div>
 
+    <div class="explain-panel" id="explainPanel" style="display:none">
+      <button class="explain-toggle" id="explainToggle" onclick="toggleExplain()">
+        <span><i class="ti ti-info-circle" style="margin-right:6px;color:var(--amber)"></i>What does this score mean?</span>
+        <i class="ti ti-chevron-down"></i>
+      </button>
+      <div class="explain-body" id="explainBody">
+        <p style="margin-bottom:12px">The <strong>Proactive Risk Score (0–100)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.</p>
+        <div class="explain-tier"><div class="explain-tier-dot" style="background:#2E6B4A"></div><div><strong>0–20 Minimal</strong> — Few or no significant interactions identified. Standard precautions apply.</div></div>
+        <div class="explain-tier"><div class="explain-tier-dot" style="background:#8BC34A"></div><div><strong>21–40 Low</strong> — Minor interactions present. Review warnings and discuss with your pharmacist.</div></div>
+        <div class="explain-tier"><div class="explain-tier-dot" style="background:#D4860A"></div><div><strong>41–60 Moderate</strong> — Several interactions identified. Some supplements or foods should be avoided. Consult your doctor.</div></div>
+        <div class="explain-tier"><div class="explain-tier-dot" style="background:#D35400"></div><div><strong>61–80 High</strong> — Multiple significant interactions. Medication review recommended. Avoid flagged supplements and foods.</div></div>
+        <div class="explain-tier"><div class="explain-tier-dot" style="background:#C0392B"></div><div><strong>81–100 Critical</strong> — Serious interactions present. Contact your doctor or pharmacist immediately before taking any supplements.</div></div>
+        <p style="margin-top:12px;font-size:12px;color:var(--tx3)">This tool provides educational information only and is not a substitute for professional medical advice. Always consult your healthcare provider before making changes to your medications or supplements.</p>
+      </div>
+    </div>
     <div class="sec-hdr" id="ddSection" style="display:none"><i class="ti ti-pills"></i> Drug-drug interactions</div><div class="warn-list" id="ddList"></div><div class="sec-hdr"><i class="ti ti-leaf"></i> Supplements & foods to avoid</div>
     <div class="warn-list" id="warnList"></div>
 
@@ -288,7 +312,13 @@ function buildChips(){
 
 function toggleDrug(d){
   drugs.has(d)?drugs.delete(d):drugs.add(d);
-  buildChips();renderTray();
+  function toggleExplain(){
+  const btn=document.getElementById('explainToggle');
+  const body=document.getElementById('explainBody');
+  btn.classList.toggle('open');
+  body.classList.toggle('open');
+}
+buildChips();renderTray();
 }
 
 function addCustom(){
@@ -494,6 +524,7 @@ function renderResults(r){
     al.innerHTML+=`<div class="avoid-item food"><i class="ti ti-apple avoid-item-icon"></i><div><div class="avoid-name">${f}</div><div class="avoid-reason">Food/dietary substance — limit or avoid with your medications</div></div></div>`;
   });
 
+  document.getElementById('explainPanel').style.display='block';
   document.getElementById('results').className='results show';
   document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
 }
