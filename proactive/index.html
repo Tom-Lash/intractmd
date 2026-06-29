@@ -234,7 +234,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
       </div>
     </div>
 
-    <div class="sec-hdr"><i class="ti ti-alert-triangle"></i> Supplements & foods to avoid</div>
+    <div class="sec-hdr" id="ddSection" style="display:none"><i class="ti ti-pills"></i> Drug-drug interactions</div><div class="warn-list" id="ddList"></div><div class="sec-hdr"><i class="ti ti-leaf"></i> Supplements & foods to avoid</div>
     <div class="warn-list" id="warnList"></div>
 
     <div class="sec-hdr"><i class="ti ti-chart-bar"></i> Risk by dimension</div>
@@ -372,14 +372,14 @@ function buildPrompt(drugs){
 
 The patient's current medication regimen is: ${drugs.join(', ')}.
 
-Your task is PROACTIVE: given ONLY this medication list, identify which dietary supplements and foods this patient should avoid or be cautious with. Do NOT analyze interactions between the listed drugs themselves — focus entirely on what supplements and foods the patient should NOT add to this regimen.
+Your task is COMPREHENSIVE: perform TWO analyses: (1) DRUG-DRUG INTERACTIONS between the listed medications, and (2) PROACTIVE SUPPLEMENT and FOOD WARNINGS the patient should know about — focus entirely on what supplements and foods the patient should NOT add to this regimen.
 
 Return ONLY valid JSON (no other text):
 {
   "pcprs": <integer 0-100>,
   "risk_tier": "<Minimal|Low|Moderate|High|Critical>",
   "risk_title": "<one sentence describing the supplement/food warning burden>",
-  "warnings": [
+  "drug_interactions": [{"drug_a": "<first drug>","drug_b": "<second drug>","severity": "<Critical|High|Moderate>","mechanism": "<mechanism>","action": "<instruction>"}],"warnings": [
     {
       "drug": "<drug from regimen>",
       "interacts_with": "<supplement or food name>",
@@ -450,7 +450,7 @@ function renderResults(r){
   document.getElementById('riskTier').textContent='Proactive Risk Score — '+(r.risk_tier||'');
   document.getElementById('riskTitle').textContent=r.risk_title||'';
 
-  const wl=document.getElementById('warnList');
+  const ddl=document.getElementById('ddList');const ddSec=document.getElementById('ddSection');ddl.innerHTML='';if(r.drug_interactions&&r.drug_interactions.length){ddSec.style.display='flex';r.drug_interactions.forEach(w=>{const sc=(w.severity||'Moderate').toLowerCase();ddl.innerHTML+=`<div class="warn-card ${sc}"><div class="warn-head"><i class="ti ti-pills" style="font-size:17px;color:#1B6EC2"></i><div class="warn-pair">${w.drug_a} + ${w.drug_b}</div><span class="sev-badge ${sc}">${w.severity}</span><span class="cat-badge" style="background:#EBF5FC;color:#1B6EC2;border:1px solid #C0DFF5">Drug-Drug</span></div><div class="warn-mech">${w.mechanism}</div><div class="warn-action"><i class="ti ti-arrow-right"></i>${w.action}</div></div>`;});}else{ddSec.style.display='none';}const wl=document.getElementById('warnList');
   wl.innerHTML='';
   (r.warnings||[]).forEach(w=>{
     const sc=(w.severity||'Moderate').toLowerCase();
