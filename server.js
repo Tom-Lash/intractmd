@@ -488,6 +488,9 @@ app.post('/api/drug-ifu', async (req, res) => {
 
 console.log('[STARTUP] All routes configured');
 
+app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
+app.post('/api/proactive-analyze', async (req, res) => { try { const {drugs,prompt}=req.body; if(!drugs||drugs.length<2) return res.status(400).json({error:'Need 2+ drugs'}); const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':process.env.ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1500,messages:[{role:'user',content:prompt}]})}); const d=await r.json(); const raw=d.content?.[0]?.text||''; const m=raw.match(/\{[\s\S]*\}/); if(!m) throw new Error('No JSON'); res.json(JSON.parse(m[0])); } catch(e){ res.status(500).json({error:e.message}); }});
+
 const port = process.env.PORT || 3000;
 const server = app.listen(port, '0.0.0.0', () => {
   console.log(`[STARTUP] Server listening on port ${port}`);
