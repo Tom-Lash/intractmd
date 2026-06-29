@@ -312,13 +312,13 @@ function buildChips(){
 
 function toggleDrug(d){
   drugs.has(d)?drugs.delete(d):drugs.add(d);
-  function toggleExplain(){
+  buildChips();renderTray();
+}
+function toggleExplain(){
   const btn=document.getElementById('explainToggle');
   const body=document.getElementById('explainBody');
   btn.classList.toggle('open');
   body.classList.toggle('open');
-}
-buildChips();renderTray();
 }
 
 function addCustom(){
