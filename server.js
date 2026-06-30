@@ -367,7 +367,7 @@ async function fetchDrugData(drugName) {
     })(),
     (async () => {
       try {
-        const r = await safeFetch(`https://api.fda.gov/drug/label.json?search=openfda.generic_name:${fdaEnc}&limit=1`);
+        const r = await safeFetch(`https://api.fda.gov/drug/label.json?search=openfda.generic_name:${fdaEnc}&limit=1${process.env.OPENFDA_API_KEY ? "&api_key=" + process.env.OPENFDA_API_KEY : ""}`);
         if (r.ok) {
           const data = await r.json();
           const label = data.results && data.results[0];
