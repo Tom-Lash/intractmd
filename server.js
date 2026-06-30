@@ -10,6 +10,266 @@ const fs = require('fs');
 const app = express();
 
 // ── File-based response cache ──────────────────────────────────────────────
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD — PAIRWISE INTERACTION CACHE ARCHITECTURE
+// ════════════════════════════════════════════════════════════════════════════
+// Add this block to server.js, near your existing cache directory setup
+// (alongside DRUG_INFO_CACHE_DIR, IFU_CACHE_DIR, etc.)
+// ════════════════════════════════════════════════════════════════════════════
+
+const PAIR_CACHE_DIR = path.join(__dirname, 'cache', 'drug-pairs');
+if (!fs.existsSync(PAIR_CACHE_DIR)) fs.mkdirSync(PAIR_CACHE_DIR, { recursive: true });
+
+// ── PAIR KEY GENERATION ──────────────────────────────────────────────────────
+// Always alphabetize the pair so "Warfarin+Aspirin" and "Aspirin+Warfarin"
+// resolve to the same cache file.
+
+function pairKey(drugA, drugB) {
+  const a = slugify(drugA);
+  const b = slugify(drugB);
+  return a < b ? `${a}__${b}` : `${b}__${a}`;
+}
+
+function readPairCache(drugA, drugB) {
+  try {
+    const key = pairKey(drugA, drugB);
+    const f = path.join(PAIR_CACHE_DIR, key + '.json');
+    if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+  } catch (e) {}
+  return null;
+}
+
+function writePairCache(drugA, drugB, data) {
+  try {
+    const key = pairKey(drugA, drugB);
+    fs.writeFileSync(path.join(PAIR_CACHE_DIR, key + '.json'), JSON.stringify(data), 'utf8');
+  } catch (e) {}
+}
+
+// ── PAIR DATA STRUCTURE ──────────────────────────────────────────────────────
+// Each cached pair stores structured data — NOT raw prose — so it composes
+// cleanly into a multi-drug regimen analysis without re-calling the AI.
+//
+// {
+//   drugA: "Warfarin",
+//   drugB: "Aspirin",
+//   hasInteraction: true,
+//   severity: "Critical",              // Minimal | Low | Moderate | High | Critical
+//   mechanism: "Additive anticoagulant and antiplatelet effects...",
+//   action: "Avoid combination unless specifically directed by physician...",
+//   dimensions: {                      // contribution to each of the 8 CPRS dimensions
+//     "Bleeding Risk": 88,
+//     "Cardiac Risk": 5,
+//     "Serotonin Risk": 0,
+//     "NTI Conflict": 40,
+//     "CNS Risk": 0,
+//     "CYP450 Risk": 10,
+//     "Renal/Hepatic": 5,
+//     "Pharmacodynamic": 15
+//   },
+//   computedAt: "2026-06-30T12:00:00Z",
+//   source: "precomputed-batch-v1"      // vs "live-fallback" for cache misses filled at runtime
+// }
+
+
+// ── REGIMEN DECOMPOSITION: TURN AN N-DRUG LIST INTO PAIRS ───────────────────
+
+function decomposeToPairs(drugList) {
+  const pairs = [];
+  for (let i = 0; i < drugList.length; i++) {
+    for (let j = i + 1; j < drugList.length; j++) {
+      pairs.push([drugList[i], drugList[j]]);
+    }
+  }
+  return pairs;
+}
+
+
+// ── MAIN LOOKUP: CHECK CACHE FOR ALL PAIRS, RETURN GAPS ─────────────────────
+
+function lookupPairsFromCache(drugList) {
+  const pairs = decomposeToPairs(drugList);
+  const found = [];
+  const missing = [];
+
+  for (const [a, b] of pairs) {
+    const cached = readPairCache(a, b);
+    if (cached) {
+      found.push(cached);
+    } else {
+      missing.push([a, b]);
+    }
+  }
+
+  return { found, missing, totalPairs: pairs.length };
+}
+
+
+// ── COMPOSITE SCORING FROM CACHED PAIRS (NO AI CALL) ────────────────────────
+// This implements the same weighting logic as your CPRS algorithm spec,
+// but operating on cached structured data instead of asking Claude to
+// re-derive it from scratch every time.
+
+const CPRS_WEIGHTS = {
+  'Bleeding Risk': 0.22, 'Cardiac Risk': 0.18, 'Serotonin Risk': 0.15,
+  'NTI Conflict': 0.14, 'CNS Risk': 0.12, 'CYP450 Risk': 0.10,
+  'Renal/Hepatic': 0.05, 'Pharmacodynamic': 0.04
+};
+
+function computeCompositeFromPairs(foundPairs, totalSubstanceCount) {
+  // Aggregate max severity per dimension across all pairs (conservative: take the max, not sum,
+  // to avoid double-counting when multiple pairs touch the same dimension)
+  const dimMax = {};
+  for (const dim of Object.keys(CPRS_WEIGHTS)) dimMax[dim] = 0;
+
+  let maxSeverity = 'Minimal';
+  const severityRank = { Minimal: 0, Low: 1, Moderate: 2, High: 3, Critical: 4 };
+
+  for (const pair of foundPairs) {
+    if (!pair.hasInteraction) continue;
+    for (const [dim, score] of Object.entries(pair.dimensions || {})) {
+      if (score > dimMax[dim]) dimMax[dim] = score;
+    }
+    if (severityRank[pair.severity] > severityRank[maxSeverity]) {
+      maxSeverity = pair.severity;
+    }
+  }
+
+  // Weighted sum (Mi cross-category multiplier would be applied here if pair
+  // metadata includes substance category — extend pair schema with
+  // categoryA/categoryB fields to enable this in a future iteration)
+  let weightedSum = 0;
+  for (const [dim, weight] of Object.entries(CPRS_WEIGHTS)) {
+    weightedSum += weight * dimMax[dim];
+  }
+
+  // Phi: polypharmacy burden factor
+  const phi = 1 + 0.05 * Math.max(0, totalSubstanceCount - 4);
+
+  // Kappa: severity floor
+  const kappa = maxSeverity === 'Critical' ? 1.25 : 1.0;
+
+  const cprs = Math.min(100, weightedSum * phi * kappa);
+
+  return {
+    cprs: Math.round(cprs),
+    maxSeverity,
+    dimensions: dimMax,
+    phi: Math.round(phi * 100) / 100,
+    kappa
+  };
+}
+
+
+// ── HYBRID ANALYSIS: CACHE-FIRST, AI-FALLBACK-FOR-GAPS-ONLY ─────────────────
+// This replaces a full fresh Claude call with: cache lookup for all pairs,
+// then a SINGLE targeted Claude call only for the missing pairs (if any),
+// then composes the final result algorithmically.
+
+async function analyzeRegimenHybrid(drugList, anthropicApiKey) {
+  const { found, missing, totalPairs } = lookupPairsFromCache(drugList);
+
+  console.log(`[HYBRID] ${drugList.length} drugs → ${totalPairs} pairs. ` +
+    `Cache hits: ${found.length}, misses: ${missing.length}`);
+
+  let newlyComputed = [];
+
+  if (missing.length > 0) {
+    // Only call Claude for the gap — not the whole regimen
+    newlyComputed = await fetchMissingPairsFromClaude(missing, anthropicApiKey);
+    // Cache each newly computed pair for next time
+    for (const pair of newlyComputed) {
+      writePairCache(pair.drugA, pair.drugB, { ...pair, source: 'live-fallback', computedAt: new Date().toISOString() });
+    }
+  }
+
+  const allPairs = [...found, ...newlyComputed];
+  const composite = computeCompositeFromPairs(allPairs, drugList.length);
+
+  return {
+    cprs: composite.cprs,
+    riskTier: composite.cprs >= 81 ? 'Critical' : composite.cprs >= 61 ? 'High' :
+              composite.cprs >= 41 ? 'Moderate' : composite.cprs >= 21 ? 'Low' : 'Minimal',
+    dimensions: composite.dimensions,
+    interactions: allPairs.filter(p => p.hasInteraction),
+    cacheStats: {
+      totalPairs,
+      cacheHits: found.length,
+      cacheMisses: missing.length,
+      hitRate: totalPairs > 0 ? Math.round((found.length / totalPairs) * 100) : 100
+    }
+  };
+}
+
+
+// ── TARGETED CLAUDE CALL FOR MISSING PAIRS ONLY ─────────────────────────────
+// Batches all missing pairs into ONE Claude call (not one call per pair)
+// to keep cost and latency down even on partial cache misses.
+
+async function fetchMissingPairsFromClaude(missingPairs, apiKey) {
+  const pairList = missingPairs.map(([a, b]) => `${a} + ${b}`).join('\n');
+
+  const prompt = `You are a clinical pharmacologist. For EACH of the following drug pairs, determine if a clinically significant interaction exists.
+
+Drug pairs to analyze:
+${pairList}
+
+Return ONLY valid JSON — an array with one object per pair, in the same order:
+[
+  {
+    "drugA": "<first drug>",
+    "drugB": "<second drug>",
+    "hasInteraction": <true|false>,
+    "severity": "<Minimal|Low|Moderate|High|Critical>",
+    "mechanism": "<brief clinical mechanism, empty string if no interaction>",
+    "action": "<patient guidance, empty string if no interaction>",
+    "dimensions": {
+      "Bleeding Risk": <0-100>, "Cardiac Risk": <0-100>, "Serotonin Risk": <0-100>,
+      "NTI Conflict": <0-100>, "CNS Risk": <0-100>, "CYP450 Risk": <0-100>,
+      "Renal/Hepatic": <0-100>, "Pharmacodynamic": <0-100>
+    }
+  }
+]`;
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01'
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 4000,
+      messages: [{ role: 'user', content: prompt }]
+    })
+  });
+
+  const data = await response.json();
+  const raw = data.content?.[0]?.text || '[]';
+  const match = raw.match(/\[[\s\S]*\]/);
+  if (!match) throw new Error('No JSON array in Claude response');
+  return JSON.parse(match[0]);
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// USAGE — replace your existing full-regimen Claude call with:
+//
+//   const result = await analyzeRegimenHybrid(drugNamesArray, process.env.ANTHROPIC_API_KEY);
+//
+// result.cacheStats.hitRate tells you what % of the regimen was served from
+// cache vs. live AI — useful to log/monitor during the pilot.
+// ════════════════════════════════════════════════════════════════════════════
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD — PAIRWISE INTERACTION CACHE ARCHITECTURE
+// ════════════════════════════════════════════════════════════════════════════
+//
+//   const result = await analyzeRegimenHybrid(drugNamesArray, process.env.ANTHROPIC_API_KEY);
+//
+// result.cacheStats.hitRate tells you what % of the regimen was served from
+// cache vs. live AI — useful to log/monitor during the pilot.
+// ════════════════════════════════════════════════════════════════════════════
 const DRUG_INFO_CACHE_DIR = path.join(__dirname, 'cache', 'drug-info');
 const IFU_CACHE_DIR = path.join(__dirname, 'cache', 'ifu');
 const DRUG_INFO_ES_CACHE_DIR = path.join(__dirname, 'cache', 'drug-info-es');
@@ -233,6 +493,12 @@ app.post('/api/analyze', async (req, res) => {
   }
   const ddP = [], dsP = [], ssP = [], dfP = [], sfP = [];
   for (let i = 0; i < drugs.length; i++) for (let j = i + 1; j < drugs.length; j++) ddP.push(drugs[i] + '+' + drugs[j]);
+  // PAIR CACHE LOOKUP — checks pre-computed cache before calling Claude
+  const pairCacheLookup = lookupPairsFromCache(drugs);
+  const cachedDDPairs = pairCacheLookup.found;
+  const missingDDPairs = pairCacheLookup.missing;
+  const cachedDDInteractions = cachedDDPairs.filter(function(p){ return p.hasInteraction; });
+  console.log("[CACHE] hits:" + cachedDDPairs.length + " misses:" + missingDDPairs.length);
   for (let i = 0; i < drugs.length; i++) for (let j = 0; j < supplements.length; j++) dsP.push(drugs[i] + '+' + supplements[j]);
   for (let i = 0; i < supplements.length; i++) for (let j = i + 1; j < supplements.length; j++) ssP.push(supplements[i] + '+' + supplements[j]);
   for (let i = 0; i < drugs.length; i++) for (let j = 0; j < foods.length; j++) dfP.push(drugs[i] + '+' + foods[j]);

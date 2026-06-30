@@ -1,0 +1,1 @@
+{"drugA":"Quinidine","drugB":"Mefenamic Acid","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":5,"Serotonin Risk":0,"NTI Conflict":10,"CNS Risk":0,"CYP450 Risk":5,"Renal/Hepatic":10,"Pharmacodynamic":5},"computedAt":"2026-06-30T17:46:49.831Z","source":"precomputed-batch-v2"}

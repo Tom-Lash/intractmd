@@ -1,0 +1,1 @@
+{"drugA":"Citalopram","drugB":"Bisoprolol","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":5,"Renal/Hepatic":0,"Pharmacodynamic":5},"computedAt":"2026-06-30T13:50:47.875Z","source":"precomputed-batch-v2"}

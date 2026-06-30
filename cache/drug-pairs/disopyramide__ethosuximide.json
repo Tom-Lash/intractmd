@@ -1,0 +1,1 @@
+{"drugA":"Disopyramide","drugB":"Ethosuximide","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":10,"CNS Risk":10,"CYP450 Risk":10,"Renal/Hepatic":0,"Pharmacodynamic":5},"computedAt":"2026-06-30T17:45:39.365Z","source":"precomputed-batch-v2"}

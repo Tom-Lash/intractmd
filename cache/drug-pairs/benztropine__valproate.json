@@ -1,0 +1,1 @@
+{"drugA":"Benztropine","drugB":"Valproate Sodium","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":15,"CYP450 Risk":5,"Renal/Hepatic":5,"Pharmacodynamic":10},"computedAt":"2026-06-30T18:29:50.752Z","source":"precomputed-batch-v2"}

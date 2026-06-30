@@ -1,0 +1,1 @@
+{"drugA":"Azithromycin","drugB":"Etodolac","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":5,"CNS Risk":5,"CYP450 Risk":10,"Renal/Hepatic":15,"Pharmacodynamic":10},"computedAt":"2026-06-30T14:05:05.321Z","source":"precomputed-batch-v2"}

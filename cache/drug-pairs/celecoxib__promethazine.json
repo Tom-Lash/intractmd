@@ -1,0 +1,1 @@
+{"drugA":"Promethazine","drugB":"Celecoxib","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":5,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":10,"Renal/Hepatic":10,"Pharmacodynamic":5},"computedAt":"2026-06-30T15:40:45.568Z","source":"precomputed-batch-v2"}

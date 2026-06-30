@@ -1,0 +1,1 @@
+{"drugA":"Warfarin","drugB":"Fentanyl","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":5,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":5,"CNS Risk":5,"CYP450 Risk":5,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-06-30T14:07:02.049Z","source":"precomputed-batch-v2"}

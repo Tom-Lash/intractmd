@@ -1,0 +1,1 @@
+{"drugA":"Colchicine","drugB":"Perampanel","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":10,"CYP450 Risk":10,"Renal/Hepatic":0,"Pharmacodynamic":5},"computedAt":"2026-06-30T16:38:58.445Z","source":"precomputed-batch-v2"}

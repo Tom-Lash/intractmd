@@ -1,0 +1,1 @@
+{"drugA":"Desvenlafaxine","drugB":"Sirolimus","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":5,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":10,"CNS Risk":10,"CYP450 Risk":15,"Renal/Hepatic":15,"Pharmacodynamic":10},"computedAt":"2026-06-30T16:51:03.504Z","source":"precomputed-batch-v2"}

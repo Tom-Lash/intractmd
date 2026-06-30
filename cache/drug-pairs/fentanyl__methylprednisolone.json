@@ -1,0 +1,1 @@
+{"drugA":"Methylprednisolone","drugB":"Fentanyl","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":10,"CYP450 Risk":5,"Renal/Hepatic":0,"Pharmacodynamic":5},"computedAt":"2026-06-30T15:48:05.681Z","source":"precomputed-batch-v2"}

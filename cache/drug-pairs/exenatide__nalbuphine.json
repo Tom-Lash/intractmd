@@ -1,0 +1,1 @@
+{"drugA":"Exenatide","drugB":"Nalbuphine","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":5,"Serotonin Risk":5,"NTI Conflict":0,"CNS Risk":15,"CYP450 Risk":0,"Renal/Hepatic":5,"Pharmacodynamic":10},"computedAt":"2026-06-30T17:22:58.188Z","source":"precomputed-batch-v2"}

@@ -1,0 +1,1 @@
+{"drugA":"Tacrolimus + Lacosamide","drugB":"Tacrolimus + Lacosamide","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":5,"Serotonin Risk":0,"NTI Conflict":5,"CNS Risk":5,"CYP450 Risk":5,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-06-30T18:21:35.908Z","source":"precomputed-batch-v2"}

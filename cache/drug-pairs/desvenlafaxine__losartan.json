@@ -1,0 +1,1 @@
+{"drugA":"Losartan","drugB":"Desvenlafaxine","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":5,"Cardiac Risk":10,"Serotonin Risk":10,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":5,"Renal/Hepatic":0,"Pharmacodynamic":10},"computedAt":"2026-06-30T13:16:46.522Z","source":"precomputed-batch-v2"}

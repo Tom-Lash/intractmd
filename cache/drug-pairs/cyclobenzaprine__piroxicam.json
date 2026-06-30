@@ -1,0 +1,1 @@
+{"drugA":"Cyclobenzaprine","drugB":"Piroxicam","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":5,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":10,"Renal/Hepatic":15,"Pharmacodynamic":5},"computedAt":"2026-06-30T14:10:49.406Z","source":"precomputed-batch-v2"}

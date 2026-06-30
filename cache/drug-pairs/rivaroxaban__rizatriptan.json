@@ -1,0 +1,1 @@
+{"drugA":"Rivaroxaban","drugB":"Rizatriptan","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":5,"Cardiac Risk":10,"Serotonin Risk":5,"NTI Conflict":0,"CNS Risk":0,"CYP450 Risk":0,"Renal/Hepatic":0,"Pharmacodynamic":5},"computedAt":"2026-06-30T18:50:43.514Z","source":"precomputed-batch-v2"}

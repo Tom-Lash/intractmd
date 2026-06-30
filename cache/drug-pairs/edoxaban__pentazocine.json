@@ -1,0 +1,1 @@
+{"drugA":"Edoxaban","drugB":"Pentazocine","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":5,"Serotonin Risk":5,"NTI Conflict":0,"CNS Risk":15,"CYP450 Risk":0,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-06-30T17:10:45.372Z","source":"precomputed-batch-v2"}

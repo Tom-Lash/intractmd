@@ -1,0 +1,1 @@
+{"drugA":"Budesonide","drugB":"Vortioxetine","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":5,"Serotonin Risk":10,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":10,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-06-30T15:52:20.125Z","source":"precomputed-batch-v2"}
