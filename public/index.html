@@ -372,7 +372,8 @@ input::placeholder{color:#6b6b66}
 .sb-tools-grid .sidebar-btn .btn-full{display:none}
 .sb-tools-grid .sidebar-btn .sb-sub{display:none}
 #addBtn,#addSuppBtn,#addFoodBtn{background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:0 14px;font-size:14px;font-weight:600;height:42px;min-width:52px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
-}</style>
+}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+</style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG4JFDNRBN"></script>
 <script>
@@ -3193,7 +3194,9 @@ function fbTtsRead(text){
   var useOpenAI = true; // set to false to always use browser TTS
 
   if(useOpenAI){
-    fbTtsPlaying=true;fbUpdateTtsBtn();
+    fbTtsPlaying=true;
+    var btn=document.getElementById('fb-tts-btn');
+    if(btn){btn.innerHTML='<i class="ti ti-loader" style="animation:spin 1s linear infinite"></i><span class="btn-full"> Generating audio...</span>';btn.disabled=true;}
     var statusEl=document.getElementById('fb-tts-btn');
 
     fetch('/api/tts',{
@@ -3206,6 +3209,7 @@ function fbTtsRead(text){
       return r.arrayBuffer();
     })
     .then(function(buf){
+      if(btn){btn.disabled=false;fbUpdateTtsBtn();}
       var ctx=new (window.AudioContext||window.webkitAudioContext)();
       return ctx.decodeAudioData(buf).then(function(decoded){
         var source=ctx.createBufferSource();
@@ -3223,6 +3227,7 @@ function fbTtsRead(text){
       });
     })
     .catch(function(err){
+      if(btn){btn.disabled=false;fbUpdateTtsBtn();}
       console.warn('OpenAI TTS failed, falling back to browser TTS:',err.message);
       fbTtsPlaying=false;
       fbTtsBrowser(text); // fall back
