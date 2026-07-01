@@ -932,7 +932,7 @@ app.post('/api/tts', async (req, res) => {
     const trimmed = text.slice(0, 4096);
 
     // Use OpenAI TTS API
-    const voice = language === 'es' ? 'nova' : 'nova'; // nova works well for both languages
+    const voice = language === 'es' ? 'nova' : 'alloy'; // nova works well for both languages
     const r = await fetch('https://api.openai.com/v1/audio/speech', {
       method: 'POST',
       headers: {
