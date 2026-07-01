@@ -785,14 +785,31 @@ app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirnam
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
     const { drugs, prompt } = req.body;
-    if (!drugs || drugs.length < 2) return res.status(400).json({ error: 'Need 2+ drugs' });
-    const drugDataArr = await Promise.all(drugs.map(fetchDrugData));
+    if (!drugs || drugs.length < 1) return res.status(400).json({ error: 'Need at least 1 drug' });
+
+    // Pair cache lookup for drug-drug interactions
+    const pairCacheLookup = drugs.length > 1 ? lookupPairsFromCache(drugs) : { found: [], missing: [] };
+    const cachedDDPairs = pairCacheLookup.found;
+    const cachedDDInteractions = cachedDDPairs.filter(p => p.hasInteraction);
+    const cachedSummary = cachedDDInteractions.length > 0
+      ? 'KNOWN DRUG-DRUG INTERACTIONS FROM DATABASE (include as drug_interactions in response):\n' +
+        cachedDDInteractions.map(p => p.drugA + '+' + p.drugB + ': ' + p.severity + ' — ' + p.mechanism).join('\n') + '\n\n'
+      : '';
+    console.log('[PROACTIVE CACHE] hits:' + cachedDDPairs.length + ' misses:' + pairCacheLookup.missing.length);
+
+    // Skip FDA calls if all pairs cached and building grounding only for supplements/foods
+    const allCached = pairCacheLookup.missing.length === 0 && drugs.length > 1;
+    const drugDataArr = allCached
+      ? drugs.map(name => ({ name, rxcui: null, drugClass: null, warnings: null, interactions: null, contraindications: null, rxnormInteractions: [], sources: ['PairCache'] }))
+      : await Promise.all(drugs.map(fetchDrugData));
+    if (allCached) console.log('[PROACTIVE FASTPATH] Skipping FDA calls — all pairs cached');
+
     const grounding = buildGroundingContext(drugDataArr);
-    const groundedPrompt = grounding + prompt;
+    const groundedPrompt = grounding + cachedSummary + prompt;
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 2000, messages: [{ role: 'user', content: groundedPrompt }] })
+      body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 1500, messages: [{ role: 'user', content: groundedPrompt }] })
     });
     const d = await r.json();
     const raw = d.content?.[0]?.text || '';
