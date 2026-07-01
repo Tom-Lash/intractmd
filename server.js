@@ -791,7 +791,10 @@ app.post('/api/proactive-analyze', async (req, res) => {
     if (!drugs || drugs.length < 1) return res.status(400).json({ error: 'Need at least 1 drug' });
 
     // ── FAST PATH: Check proactive profile cache first ──────────────────────
-    const profileLookup = mergeProactiveProfiles(drugs);
+    let profileLookup;
+    try { profileLookup = mergeProactiveProfiles(drugs); }
+    catch(cacheErr) { console.error('[PROACTIVE CACHE ERROR]', cacheErr.message); profileLookup = { hit: false, missing: drugs }; }
+    console.log('[PROACTIVE LOOKUP] hit:', profileLookup.hit, 'missing:', JSON.stringify(profileLookup.missing||[]));
     if (profileLookup.hit) {
       console.log('[PROACTIVE] Cache hit for all drugs — skipping AI call');
       // Also inject drug-drug pairs from pair cache
