@@ -3219,6 +3219,17 @@ function fbTtsRead(text){
         source.onended=function(){
           fbTtsPlaying=false;fbUpdateTtsBtn();fbClearTtsHl();
           ctx.close();
+          // Auto-advance to next page if not last page
+          if(fbIdx<fbPages.length-1){
+            setTimeout(function(){
+              fbIdx++;
+              fbRenderPage(fbIdx,1);
+              fbTtsPlaying=true;
+              fbUpdateTtsBtn();
+              var nextPage=fbPages[fbIdx];
+              if(nextPage)fbTtsRead(nextPage.text);
+            },800);
+          }
         };
         // Store reference for stop functionality
         window._fbTtsSource=source;
