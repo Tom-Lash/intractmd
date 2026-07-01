@@ -1768,15 +1768,38 @@ checkBtn.addEventListener("click",async function(){
   var loadingTimer=setTimeout(function(){var ld=document.getElementById('check-loading-div');if(ld){ld.innerHTML='<i class="ti ti-brain"></i><p><span class="spin"></span>Running AI clinical analysis across all drug pairs... this may take 30-60 seconds.</p><p style="font-size:12px;color:#3a3a36;font-weight:500">Please don\'t close this window — your results are being generated.</p>';}},15000);
   try{
     var pt=getPatient();
-    var r=await fetch("/api/analyze",{
-      method:"POST",
-      headers:{"Content-Type":"application/json","x-api-key":API_KEY},
-      body:JSON.stringify({drugs:drugs.map(function(d){return drugDisplayStr(d);}),supplements:supplements,foods:foods,patient:pt,language:uiLang})
-    });
-    var ai=await r.json();
+    var payload=JSON.stringify({drugs:drugs.map(function(d){return drugDisplayStr(d);}),supplements:supplements,foods:foods,patient:pt,language:uiLang});
+    var streamRes=await fetch("/api/analyze-stream",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":API_KEY},body:payload});
     clearTimeout(loadingTimer);
-    if(ai.error){resEl.innerHTML="<div class=\"empty\"><i class=\"ti ti-alert-circle\"></i><p>Error: "+ai.error+"</p></div>";}
-    else{renderResults(ai);}
+    if(!streamRes.ok||!streamRes.body){var r2=await fetch("/api/analyze",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":API_KEY},body:payload});var ai2=await r2.json();if(ai2.error){resEl.innerHTML="<div class=\"empty\"><p>Error: "+ai2.error+"</p></div>";}else{renderResults(ai2);}checkBtn.disabled=false;return;}
+    resEl.innerHTML='<div style="padding:20px;text-align:center"><div class="spinner" style="margin:0 auto 12px"></div><p id="stream-status" style="color:#666;font-size:13px">Connecting to AI...</p><div id="stream-risk" style="display:none;margin-top:16px;padding:12px;background:#EBF5FC;border-radius:8px;font-size:14px;font-weight:500;color:#0D3B6E"></div></div>';
+    var statusEl=document.getElementById("stream-status");
+    var riskEl=document.getElementById("stream-risk");
+    var reader=streamRes.body.getReader();
+    var decoder=new TextDecoder();
+    var buf="";
+    var eventType="";
+    while(true){
+      var chunk=await reader.read();
+      if(chunk.done)break;
+      buf+=decoder.decode(chunk.value,{stream:true});
+      var lines=buf.split("\n");
+      buf=lines.pop();
+      for(var li=0;li<lines.length;li++){
+        var line=lines[li];
+        if(line.startsWith("event: ")){eventType=line.slice(7).trim();}
+        else if(line.startsWith("data: ")){
+          try{
+            var d=JSON.parse(line.slice(6));
+            if(eventType==="status"&&statusEl)statusEl.textContent=d.message;
+            else if(eventType==="risk"&&riskEl){riskEl.style.display="block";riskEl.innerHTML="Risk Score: <strong>"+d.score+"/100</strong> — <strong>"+d.tier+"</strong>";}
+            else if(eventType==="complete"){if(d.error){resEl.innerHTML="<div class=\"empty\"><p>Error: "+d.error+"</p></div>";}else{renderResults(d);}}
+            else if(eventType==="error"){resEl.innerHTML="<div class=\"empty\"><p>Stream error: "+d.message+"</p></div>";}
+          }catch(pe){}
+          eventType="";
+        }
+      }
+    }
   }catch(e){
     clearTimeout(loadingTimer);
     resEl.innerHTML="<div class=\"empty\"><i class=\"ti ti-wifi-off\"></i><p>Error: "+e.message+"</p></div>";
