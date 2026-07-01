@@ -1,3 +1,26 @@
+/* =============================================================================
+   IntractMD™ — AI-Powered Drug Interaction & Polypharmacy Risk Platform
+   Copyright © 2026 Resolve Medical, LLC. All rights reserved.
+   700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113
+   tom@resolve.med | 216-509-0672 | intractmd.com
+
+   PATENT PENDING — USPTO Provisional Patent Application Filed June 2026
+   Covering: CPRS Algorithm, Multi-Source FDA Fusion Pipeline, Unified
+   Drug-Supplement-Food Analysis, PHI-Minimized Batch API, Proactive
+   Warning Engine, and Bilingual Language-Invariant Risk Scoring.
+
+   PROPRIETARY AND CONFIDENTIAL
+   This software and its source code constitute valuable trade secrets and
+   proprietary intellectual property of Resolve Medical, LLC. Unauthorized
+   copying, modification, distribution, reverse engineering, or use of this
+   software, in whole or in part, is strictly prohibited without prior
+   written authorization from Resolve Medical, LLC.
+
+   The pre-computed drug interaction database (Pair Cache) contained herein
+   is protected as a proprietary compilation under U.S. copyright law and
+   as a trade secret under applicable state and federal law.
+   =============================================================================
+*/
 #!/usr/bin/env node
 
 console.log('[STARTUP] Process started');
