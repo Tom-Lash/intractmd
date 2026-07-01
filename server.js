@@ -921,6 +921,50 @@ app.post('/api/analyze-stream', async (req, res) => {
 });
 // ── END STREAMING ENDPOINT ───────────────────────────────────────────────────
 
+
+// ── OPENAI TTS ENDPOINT ──────────────────────────────────────────────────────
+app.post('/api/tts', async (req, res) => {
+  try {
+    const { text, language = 'en' } = req.body;
+    if (!text) return res.status(400).json({ error: 'text required' });
+
+    // Trim text to 4096 chars (OpenAI TTS limit per call)
+    const trimmed = text.slice(0, 4096);
+
+    // Use OpenAI TTS API
+    const voice = language === 'es' ? 'nova' : 'nova'; // nova works well for both languages
+    const r = await fetch('https://api.openai.com/v1/audio/speech', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + process.env.OPENAI_API_KEY
+      },
+      body: JSON.stringify({
+        model: 'tts-1',
+        input: trimmed,
+        voice: voice,
+        speed: 1.0
+      })
+    });
+
+    if (!r.ok) {
+      const err = await r.text();
+      console.error('[TTS] OpenAI error:', err.slice(0, 200));
+      return res.status(502).json({ error: 'TTS API error' });
+    }
+
+    // Stream the MP3 back to the browser
+    res.setHeader('Content-Type', 'audio/mpeg');
+    res.setHeader('Cache-Control', 'no-cache');
+    r.body.pipe(res);
+
+  } catch (e) {
+    console.error('[TTS] Error:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+// ── END TTS ENDPOINT ─────────────────────────────────────────────────────────
+
 const port = process.env.PORT || 3000;
 const server = app.listen(port, '0.0.0.0', () => {
   console.log(`[STARTUP] Server listening on port ${port}`);

@@ -3187,8 +3187,54 @@ function fbToggleHC(){
 
 // TTS
 function fbTtsRead(text){
-  if(!window.speechSynthesis)return;
   fbTtsStop();
+
+  // Try OpenAI TTS first (much better quality), fall back to browser TTS
+  var useOpenAI = true; // set to false to always use browser TTS
+
+  if(useOpenAI){
+    fbTtsPlaying=true;fbUpdateTtsBtn();
+    var statusEl=document.getElementById('fb-tts-btn');
+
+    fetch('/api/tts',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({text:text,language:uiLang})
+    })
+    .then(function(r){
+      if(!r.ok)throw new Error('TTS API error '+r.status);
+      return r.arrayBuffer();
+    })
+    .then(function(buf){
+      var ctx=new (window.AudioContext||window.webkitAudioContext)();
+      return ctx.decodeAudioData(buf).then(function(decoded){
+        var source=ctx.createBufferSource();
+        source.buffer=decoded;
+        source.connect(ctx.destination);
+        source.playbackRate.value=fbTtsRate||1.0;
+        source.onended=function(){
+          fbTtsPlaying=false;fbUpdateTtsBtn();fbClearTtsHl();
+          ctx.close();
+        };
+        // Store reference for stop functionality
+        window._fbTtsSource=source;
+        window._fbTtsCtx=ctx;
+        source.start(0);
+      });
+    })
+    .catch(function(err){
+      console.warn('OpenAI TTS failed, falling back to browser TTS:',err.message);
+      fbTtsPlaying=false;
+      fbTtsBrowser(text); // fall back
+    });
+    return;
+  }
+
+  fbTtsBrowser(text);
+}
+
+function fbTtsBrowser(text){
+  if(!window.speechSynthesis)return;
   var sentences=text.match(/[^.!?]+[.!?]+/g)||[text];
   var el=document.getElementById('fb-page-content');
   // Inject sentence spans for highlighting
@@ -3248,6 +3294,9 @@ function fbTtsRead(text){
 }
 
 function fbTtsStop(){
+  // Stop OpenAI audio if playing
+  if(window._fbTtsSource){try{window._fbTtsSource.stop();}catch(e){}window._fbTtsSource=null;}
+  if(window._fbTtsCtx){try{window._fbTtsCtx.close();}catch(e){}window._fbTtsCtx=null;}
   if(window.speechSynthesis)window.speechSynthesis.cancel();
   fbTtsPlaying=false;
   fbUpdateTtsBtn();
