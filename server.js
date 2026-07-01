@@ -240,7 +240,7 @@ Return ONLY valid JSON — an array with one object per pair, in the same order:
     },
     body: JSON.stringify({
       model: 'claude-haiku-4-5-20251001',
-      max_tokens: 4000,
+      max_tokens: 1500,
       messages: [{ role: 'user', content: prompt }]
     })
   });
