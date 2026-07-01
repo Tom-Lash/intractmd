@@ -787,6 +787,24 @@ app.post('/api/proactive-analyze', async (req, res) => {
     const { drugs, prompt } = req.body;
     if (!drugs || drugs.length < 1) return res.status(400).json({ error: 'Need at least 1 drug' });
 
+    // ── FAST PATH: Check proactive profile cache first ──────────────────────
+    const profileLookup = mergeProactiveProfiles(drugs);
+    if (profileLookup.hit) {
+      console.log('[PROACTIVE] Cache hit for all drugs — skipping AI call');
+      // Also inject drug-drug pairs from pair cache
+      if (drugs.length > 1) {
+        const ddLookup = lookupPairsFromCache(drugs);
+        const ddInteractions = ddLookup.found.filter(p => p.hasInteraction);
+        profileLookup.result.drug_interactions = ddInteractions.map(p => ({
+          drug_a: p.drugA, drug_b: p.drugB, severity: p.severity,
+          mechanism: p.mechanism, action: 'Consult your pharmacist or physician.'
+        }));
+      }
+      return res.json(profileLookup.result);
+    }
+    console.log('[PROACTIVE] Cache miss for:', profileLookup.missing.join(', '), '— falling back to AI');
+
+    // ── SLOW PATH: AI generation for uncached drugs ──────────────────────────
     // Pair cache lookup for drug-drug interactions
     const pairCacheLookup = drugs.length > 1 ? lookupPairsFromCache(drugs) : { found: [], missing: [] };
     const cachedDDPairs = pairCacheLookup.found;
@@ -821,6 +839,91 @@ app.post('/api/proactive-analyze', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
+
+
+// ── PROACTIVE PROFILE CACHE ───────────────────────────────────────────────────
+const PROACTIVE_CACHE_DIR = path.join(__dirname, 'cache', 'proactive-profiles');
+const proactiveProfileCache = new Map(); // in-memory cache
+
+function slugDrug(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function loadProactiveProfile(drugName) {
+  const key = slugDrug(drugName);
+  if (proactiveProfileCache.has(key)) return proactiveProfileCache.get(key);
+  const filePath = path.join(PROACTIVE_CACHE_DIR, key + '.json');
+  if (fs.existsSync(filePath)) {
+    try {
+      const profile = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      proactiveProfileCache.set(key, profile);
+      return profile;
+    } catch(e) { return null; }
+  }
+  return null;
+}
+
+function mergeProactiveProfiles(drugs) {
+  const profiles = drugs.map(d => ({ drug: d, profile: loadProactiveProfile(d) }));
+  const missing = profiles.filter(p => !p.profile).map(p => p.drug);
+  const found = profiles.filter(p => p.profile);
+
+  if (missing.length > 0) return { hit: false, missing };
+
+  // Merge all profiles into unified response
+  const avoidSupplements = [], cautionSupplements = [], avoidFoods = [], cautionFoods = [];
+  const seen = new Set();
+
+  found.forEach(({ drug, profile }) => {
+    (profile.avoid_supplements || []).forEach(s => {
+      const key = s.name.toLowerCase() + drug;
+      if (!seen.has(key)) { seen.add(key); avoidSupplements.push({ ...s, drug }); }
+    });
+    (profile.caution_supplements || []).forEach(s => {
+      const key = 'c' + s.name.toLowerCase() + drug;
+      if (!seen.has(key)) { seen.add(key); cautionSupplements.push({ ...s, drug }); }
+    });
+    (profile.avoid_foods || []).forEach(f => {
+      const key = 'f' + f.name.toLowerCase() + drug;
+      if (!seen.has(key)) { seen.add(key); avoidFoods.push({ ...f, drug }); }
+    });
+    (profile.caution_foods || []).forEach(f => {
+      const key = 'cf' + f.name.toLowerCase() + drug;
+      if (!seen.has(key)) { seen.add(key); cautionFoods.push({ ...f, drug }); }
+    });
+  });
+
+  // Calculate PCPRS from severity counts
+  const critCount = [...avoidSupplements, ...avoidFoods].filter(x => x.severity === 'Critical').length;
+  const highCount = [...avoidSupplements, ...avoidFoods].filter(x => x.severity === 'High').length;
+  const modCount = [...avoidSupplements, ...avoidFoods].filter(x => x.severity === 'Moderate').length;
+  const pcprs = Math.min(100, critCount * 25 + highCount * 12 + modCount * 5 + cautionSupplements.length * 2 + cautionFoods.length * 1);
+  const risk_tier = pcprs >= 81 ? 'Critical' : pcprs >= 61 ? 'High' : pcprs >= 41 ? 'Moderate' : pcprs >= 21 ? 'Low' : 'Minimal';
+
+  const warnings = [
+    ...avoidSupplements.map(s => ({ drug: s.drug, interacts_with: s.name, category: 'supplement', severity: s.severity, mechanism: s.mechanism, action: s.action })),
+    ...avoidFoods.map(f => ({ drug: f.drug, interacts_with: f.name, category: 'food', severity: f.severity, mechanism: f.mechanism, action: f.action })),
+    ...cautionSupplements.map(s => ({ drug: s.drug, interacts_with: s.name, category: 'supplement', severity: 'Low', mechanism: s.mechanism, action: s.action })),
+    ...cautionFoods.map(f => ({ drug: f.drug, interacts_with: f.name, category: 'food', severity: 'Low', mechanism: f.mechanism, action: f.action })),
+  ];
+
+  return {
+    hit: true,
+    result: {
+      pcprs,
+      risk_tier,
+      risk_title: risk_tier + ' supplement and food interaction burden for this regimen',
+      warnings,
+      avoid_supplements: [...new Set(avoidSupplements.map(s => s.name))],
+      caution_foods: [...new Set([...cautionFoods, ...avoidFoods].map(f => f.name))],
+      drug_interactions: [], // populated separately by pair cache
+      dimensions: { 'Bleeding Risk': 0, 'Cardiac Risk': 0, 'Serotonin Risk': 0, 'NTI Conflict': 0, 'CNS Risk': 0, 'CYP450 Risk': 0, 'Renal/Hepatic': 0, 'Pharmacodynamic': 0 },
+      ai_summary: 'Analysis based on pre-computed supplement and food interaction profiles. ' + (avoidSupplements.length + avoidFoods.length) + ' interactions identified for this regimen. Review the AVOID list carefully before taking any supplements.',
+      from_cache: true
+    }
+  };
+}
+// ── END PROACTIVE PROFILE CACHE ───────────────────────────────────────────────
 
 // ── STREAMING ANALYSIS ENDPOINT ─────────────────────────────────────────────
 // Uses Server-Sent Events to stream Claude's response token-by-token.
