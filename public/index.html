@@ -3203,6 +3203,31 @@ function fbTtsRead(text){
   var utter=new SpeechSynthesisUtterance(text);
   utter.lang=uiLang==='es'?'es-US':'en-US';
   utter.rate=fbTtsRate;
+
+  // Pick the best available voice — prefer neural/enhanced voices over robotic defaults
+  var allVoices=window.speechSynthesis.getVoices();
+  var lang=uiLang==='es'?'es':'en';
+  // Preferred voice names in priority order (neural/natural voices first)
+  var preferred=uiLang==='es'
+    ?['Google español','Monica','Paulina','Mónica','es-US','es-MX','es-419']
+    :['Google US English','Samantha','Karen','Moira','Allison','Ava','Victoria','Alex','Google UK English Female','en-US','en-GB'];
+  var bestVoice=null;
+  // First pass: exact name match on preferred list
+  for(var pi=0;pi<preferred.length;pi++){
+    for(var vi=0;vi<allVoices.length;vi++){
+      if(allVoices[vi].name.indexOf(preferred[pi])>=0 && allVoices[vi].lang.indexOf(lang)>=0){
+        bestVoice=allVoices[vi]; break;
+      }
+    }
+    if(bestVoice)break;
+  }
+  // Second pass: any voice matching the language
+  if(!bestVoice){
+    for(var vi2=0;vi2<allVoices.length;vi2++){
+      if(allVoices[vi2].lang.indexOf(lang)>=0){bestVoice=allVoices[vi2];break;}
+    }
+  }
+  if(bestVoice)utter.voice=bestVoice;
   utter.onstart=function(){fbTtsPlaying=true;fbUpdateTtsBtn();};
   utter.onend=function(){fbTtsPlaying=false;fbUpdateTtsBtn();fbClearTtsHl();};
   utter.onerror=function(){fbTtsPlaying=false;fbUpdateTtsBtn();fbClearTtsHl();};
