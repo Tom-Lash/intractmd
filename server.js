@@ -343,7 +343,8 @@ app.get('/api/drug-list', (req, res) => {
 const drugDataCache = new Map();
 const CACHE_TTL = 60 * 60 * 1000;
 const PROACTIVE_CACHE_DIR = path.join(__dirname, 'cache', 'proactive-profiles');
-const proactiveProfileCache = new Map(); // in-memory cache
+const proactiveProfileCache = new Map();
+console.log('[PROACTIVE CACHE] Dir:', PROACTIVE_CACHE_DIR, 'exists:', require('fs').existsSync(PROACTIVE_CACHE_DIR)); // in-memory cache
 
 app.get('/api/nlm/:p(*)', async (req, res) => {
   try {
@@ -833,8 +834,9 @@ app.post('/api/proactive-analyze', async (req, res) => {
     });
     const d = await r.json();
     const raw = d.content?.[0]?.text || '';
-    const m = raw.match(/{[\s\S]*}/);
-    if (!m) throw new Error('No JSON');
+    const clean = raw.replace(/```json[\s]*/g,'').replace(/```[\s]*/g,'').trim();
+    const m = clean.match(/{[\s\S]*}/);
+    if (!m) { console.error('[PROACTIVE] No JSON:', raw.slice(0,200)); throw new Error('No JSON'); }
     res.json(JSON.parse(m[0]));
   } catch(e) {
     console.error('[PROACTIVE]', e.message);
