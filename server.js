@@ -342,6 +342,8 @@ app.get('/api/drug-list', (req, res) => {
 // Drug data cache
 const drugDataCache = new Map();
 const CACHE_TTL = 60 * 60 * 1000;
+const PROACTIVE_CACHE_DIR = path.join(__dirname, 'cache', 'proactive-profiles');
+const proactiveProfileCache = new Map(); // in-memory cache
 
 app.get('/api/nlm/:p(*)', async (req, res) => {
   try {
@@ -842,8 +844,6 @@ app.post('/api/proactive-analyze', async (req, res) => {
 
 
 // ── PROACTIVE PROFILE CACHE ───────────────────────────────────────────────────
-const PROACTIVE_CACHE_DIR = path.join(__dirname, 'cache', 'proactive-profiles');
-const proactiveProfileCache = new Map(); // in-memory cache
 
 function slugDrug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
