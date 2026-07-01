@@ -1,0 +1,1 @@
+{"drugA":"Piroxicam","drugB":"Rilpivirine","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":5,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":0,"CYP450 Risk":10,"Renal/Hepatic":5,"Pharmacodynamic":0},"computedAt":"2026-07-01T16:55:51.893Z","source":"precomputed-batch-v2"}

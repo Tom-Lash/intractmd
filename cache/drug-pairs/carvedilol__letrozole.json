@@ -1,0 +1,1 @@
+{"drugA":"Carvedilol","drugB":"Letrozole","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":0,"CYP450 Risk":10,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-07-01T13:01:45.415Z","source":"precomputed-batch-v2"}

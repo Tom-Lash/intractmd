@@ -1,0 +1,1 @@
+{"drugA":"Vortioxetine","drugB":"Venetoclax","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":5,"Serotonin Risk":5,"NTI Conflict":0,"CNS Risk":10,"CYP450 Risk":10,"Renal/Hepatic":10,"Pharmacodynamic":5},"computedAt":"2026-07-01T15:23:41.309Z","source":"precomputed-batch-v2"}

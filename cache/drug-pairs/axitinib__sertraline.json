@@ -1,0 +1,1 @@
+{"drugA":"Sertraline","drugB":"Axitinib","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":10,"Renal/Hepatic":5,"Pharmacodynamic":10},"computedAt":"2026-07-01T12:46:07.550Z","source":"precomputed-batch-v2"}

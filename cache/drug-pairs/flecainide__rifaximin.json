@@ -1,0 +1,1 @@
+{"drugA":"Flecainide","drugB":"Rifaximin","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":5,"Serotonin Risk":0,"NTI Conflict":5,"CNS Risk":0,"CYP450 Risk":10,"Renal/Hepatic":0,"Pharmacodynamic":5},"computedAt":"2026-07-01T20:14:29.256Z","source":"precomputed-batch-v2"}

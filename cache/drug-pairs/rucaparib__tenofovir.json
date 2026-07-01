@@ -1,0 +1,1 @@
+{"drugA":"Tenofovir","drugB":"Rucaparib","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":0,"CYP450 Risk":10,"Renal/Hepatic":10,"Pharmacodynamic":0},"computedAt":"2026-07-01T19:31:48.283Z","source":"precomputed-batch-v2"}

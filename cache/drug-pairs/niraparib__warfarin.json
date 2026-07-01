@@ -1,0 +1,1 @@
+{"drugA":"Warfarin","drugB":"Niraparib","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":10,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":10,"CNS Risk":0,"CYP450 Risk":5,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-07-01T13:13:15.744Z","source":"precomputed-batch-v2"}

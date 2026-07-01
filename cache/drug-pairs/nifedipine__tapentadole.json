@@ -1,0 +1,1 @@
+{"drugA":"Nifedipine","drugB":"Tapentadole","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":5,"Serotonin Risk":10,"NTI Conflict":0,"CNS Risk":10,"CYP450 Risk":0,"Renal/Hepatic":5,"Pharmacodynamic":5},"computedAt":"2026-07-01T13:51:17.515Z","source":"precomputed-batch-v2"}

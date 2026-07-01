@@ -1,0 +1,1 @@
+{"drugA":"Dofetilide","drugB":"Alectinib","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":0,"Cardiac Risk":15,"Serotonin Risk":0,"NTI Conflict":10,"CNS Risk":0,"CYP450 Risk":10,"Renal/Hepatic":5,"Pharmacodynamic":10},"computedAt":"2026-07-01T16:30:05.921Z","source":"precomputed-batch-v2"}

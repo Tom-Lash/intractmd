@@ -1,0 +1,1 @@
+{"drugA":"Exemestane","drugB":"Bevacizumab","hasInteraction":false,"severity":"Minimal","mechanism":"","action":"","dimensions":{"Bleeding Risk":15,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":0,"CYP450 Risk":0,"Renal/Hepatic":10,"Pharmacodynamic":10},"computedAt":"2026-07-01T21:09:43.340Z","source":"precomputed-batch-v2"}
