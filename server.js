@@ -781,6 +781,146 @@ app.post('/api/proactive-analyze', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
+
+// ── STREAMING ANALYSIS ENDPOINT ─────────────────────────────────────────────
+// Uses Server-Sent Events to stream Claude's response token-by-token.
+// Frontend receives partial JSON and renders as soon as risk score appears.
+app.post('/api/analyze-stream', async (req, res) => {
+  const k = process.env.ANTHROPIC_API_KEY || req.headers['x-api-key'];
+  if (!k) return res.status(401).json({ error: 'No API key' });
+
+  const { drugs = [], supplements = [], foods = [], patient, language = 'en' } = req.body;
+  if (drugs.length < 1) return res.status(400).json({ error: 'At least 1 drug required' });
+
+  // Set up SSE headers
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+
+  const send = (event, data) => {
+    res.write('event: ' + event + '\n');
+    res.write('data: ' + JSON.stringify(data) + '\n\n');
+  };
+
+  try {
+    // Step 1: Pair cache lookup (instant)
+    const pairCacheLookup = lookupPairsFromCache(drugs);
+    const cachedDDPairs = pairCacheLookup.found;
+    const missingDDPairs = pairCacheLookup.missing;
+    const cachedDDInteractions = cachedDDPairs.filter(p => p.hasInteraction);
+    send('cache', { hits: cachedDDPairs.length, misses: missingDDPairs.length });
+
+    // Step 2: FDA data (skip if all cached and no supplements/foods)
+    const allCached = missingDDPairs.length === 0 && supplements.length === 0 && foods.length === 0;
+    let groundingContext = '';
+    if (!allCached) {
+      send('status', { message: 'Querying FDA databases...' });
+      const drugDataArr = await Promise.all(drugs.map(fetchDrugData));
+      groundingContext = buildGroundingContext(drugDataArr);
+    } else {
+      send('status', { message: 'Cache hit — skipping FDA lookup...' });
+    }
+
+    // Step 3: Build prompt
+    const langInstr = language === 'es' ? ' Respond in Spanish.' : '';
+    const cachedSummary = cachedDDInteractions.length > 0
+      ? 'KNOWN INTERACTIONS FROM DATABASE:\n' + cachedDDInteractions.map(p => p.drugA + '+' + p.drugB + ': ' + p.severity + ' — ' + p.mechanism).join('\n') + '\n\n'
+      : '';
+
+    const prompt = groundingContext + cachedSummary +
+      'Drug interaction analysis for: ' + drugs.join(', ') +
+      (supplements.length ? ', supplements: ' + supplements.join(', ') : '') +
+      (foods.length ? ', foods: ' + foods.join(', ') : '') +
+      '.\n\nReturn ONLY raw JSON (no markdown): {"overall_risk":"HIGH|MODERATE|LOW|MINIMAL","risk_score":0,"summary":"2 sentences","known_interactions":[{"drugs":"A+B","type":"drug-drug","severity":"major|moderate|minor","mechanism":"","clinical_effect":"","monitoring":"","action":""}],"predictive_interactions":[{"drugs":"A+B","severity":"moderate","basis":"","clinical_effect":"","probability":"high|moderate|low","action":""}],"polypharmacy_assessment":{"overall_burden":"1 sentence","recommendations":"1 sentence"},"key_concern":"1 sentence","contraindicated":false,"executive_summary":"2 sentences"}' + langInstr;
+
+    send('status', { message: 'Running AI analysis...' });
+
+    // Step 4: Stream from Claude
+    const claudeRes = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': k,
+        'anthropic-version': '2023-06-01'
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 1500,
+        stream: true,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+
+    if (!claudeRes.ok) {
+      const err = await claudeRes.text();
+      send('error', { message: 'Claude API error: ' + err.slice(0, 200) });
+      return res.end();
+    }
+
+    // Stream the response chunks
+    let fullText = '';
+    const reader = claudeRes.body;
+    let buffer = '';
+
+    reader.on('data', chunk => {
+      buffer += chunk.toString();
+      const lines = buffer.split('\n');
+      buffer = lines.pop(); // keep incomplete line
+
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          const data = line.slice(6);
+          if (data === '[DONE]') continue;
+          try {
+            const parsed = JSON.parse(data);
+            if (parsed.type === 'content_block_delta' && parsed.delta?.text) {
+              fullText += parsed.delta.text;
+              send('token', { text: parsed.delta.text });
+
+              // Try to parse partial JSON and send risk score as soon as available
+              if (fullText.includes('"risk_score"')) {
+                const scoreMatch = fullText.match(/"risk_score"s*:s*(d+)/);
+                const riskMatch = fullText.match(/"overall_risk"s*:s*"([^"]+)"/);
+                if (scoreMatch && riskMatch) {
+                  send('risk', { score: parseInt(scoreMatch[1]), tier: riskMatch[1] });
+                }
+              }
+            }
+          } catch (e) {}
+        }
+      }
+    });
+
+    reader.on('end', () => {
+      // Parse and send the complete result
+      try {
+        const jsonMatch = fullText.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          const result = JSON.parse(jsonMatch[0]);
+          result.realtime_sources = allCached ? ['PairCache'] : ['RxNorm', 'OpenFDA'];
+          send('complete', result);
+        } else {
+          send('error', { message: 'Could not parse JSON from response' });
+        }
+      } catch (e) {
+        send('error', { message: 'Parse error: ' + e.message });
+      }
+      res.end();
+    });
+
+    reader.on('error', err => {
+      send('error', { message: err.message });
+      res.end();
+    });
+
+  } catch (e) {
+    send('error', { message: e.message });
+    res.end();
+  }
+});
+// ── END STREAMING ENDPOINT ───────────────────────────────────────────────────
+
 const port = process.env.PORT || 3000;
 const server = app.listen(port, '0.0.0.0', () => {
   console.log(`[STARTUP] Server listening on port ${port}`);
