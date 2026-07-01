@@ -1,0 +1,49 @@
+{
+  "drug": "Exemestane",
+  "drug_class": "Aromatase Inhibitor (Steroidal)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2D6",
+    "17β-HSD",
+    "3β-HSD"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces exemestane bioavailability and therapeutic efficacy",
+      "action": "Avoid concomitant use; counsel patient to discontinue prior to exemestane initiation"
+    },
+    {
+      "name": "Red Clover (Trifolium pratense)",
+      "severity": "High",
+      "mechanism": "Phytoestrogen content may antagonize exemestane's estrogen-suppressing effects",
+      "action": "Contraindicated; recommend alternative supplements without estrogenic activity"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase exemestane exposure",
+      "action": "Monitor for increased side effects; limit grapefruit product consumption"
+    },
+    {
+      "name": "Black Cohosh",
+      "severity": "Low",
+      "mechanism": "Potential weak estrogenic activity may modestly reduce efficacy",
+      "action": "Use with caution; monitor clinical response and consider alternatives"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase exemestane plasma concentrations",
+      "action": "Limit or avoid regular consumption; educate patient on potential for increased exposure"
+    }
+  ],
+  "monitoring_notes": "Exemestane is a prodrug requiring hepatic metabolism for activation; monitor for efficacy loss with CYP3A4 inducers and for tolerability with potent inhibitors. Counsel on avoidance of phytoestrogens and estrogenic supplements to maintain therapeutic efficacy in breast cancer treatment."
+}

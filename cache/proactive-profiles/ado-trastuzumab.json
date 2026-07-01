@@ -1,0 +1,60 @@
+{
+  "drug": "Ado-Trastuzumab",
+  "drug_class": "HER2-targeted antibody-drug conjugate (ADC)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Antibody-based mechanism",
+    "DM1 linker metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce metabolism of DM1 payload; potential reduced efficacy of cytotoxic component",
+      "action": "Avoid concurrent use; consider alternative herbal products if needed"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate bleeding risk and increase cardiotoxicity concerns with ADC therapy",
+      "action": "Limit vitamin E supplementation; discuss with oncology team"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential immunomodulatory effects may interact with antibody-mediated immune response",
+      "action": "Monitor for altered treatment response; use with caution"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "May theoretically impact immune function during HER2-targeted therapy",
+      "action": "Use judiciously; inform oncology team of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "May inhibit metabolism of DM1 linker, increasing cytotoxic exposure and cardiotoxicity risk",
+      "action": "Avoid grapefruit and grapefruit juice during treatment course"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (>2 drinks/day)",
+      "severity": "Low",
+      "mechanism": "Additive cardiotoxicity risk with ado-trastuzumab; increased hepatic stress",
+      "action": "Limit alcohol consumption; discuss safe limits with care team"
+    },
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate potential cardiac dysfunction from HER2 inhibition",
+      "action": "Maintain moderate sodium intake; monitor fluid retention"
+    }
+  ],
+  "monitoring_notes": "Ado-trastuzumab is an antibody-drug conjugate with limited hepatic metabolism; monitor for cardiac toxicity (LVEF) and infusion reactions. Coordinate dietary and supplement modifications with oncology team, especially regarding cardiotoxicity risk factors."
+}

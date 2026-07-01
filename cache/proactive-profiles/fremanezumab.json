@@ -1,0 +1,41 @@
+{
+  "drug": "Fremanezumab",
+  "drug_class": "Monoclonal Antibody (CGRP Antagonist)",
+  "key_pathways": [
+    "No significant CYP metabolism",
+    "Protein catabolism (normal antibody clearance)",
+    "CGRP receptor binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose NSAIDs (chronic use)",
+      "severity": "Moderate",
+      "mechanism": "May counteract migraine prevention efficacy; fremanezumab works via CGRP pathway which NSAIDs partially overlap",
+      "action": "Use lowest effective NSAID dose for acute migraines only; prefer acetaminophen or triptans as rescue therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; fremanezumab has no direct anticoagulant activity but combination may increase bleeding risk theoretically",
+      "action": "Monitor for unusual bruising; use moderate doses"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "Low",
+      "mechanism": "Traditional migraine prevention agent; additive effects with fremanezumab may increase efficacy but also side effects",
+      "action": "Coordinate with prescriber; monitor for adverse effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Tyramine can trigger migraines in susceptible individuals; fremanezumab efficacy may be reduced if dietary triggers persist",
+      "action": "Identify and avoid personal migraine triggers; maintain migraine diary"
+    }
+  ],
+  "monitoring_notes": "Fremanezumab is a monoclonal antibody with minimal hepatic metabolism; drug-supplement interactions are unlikely at the pharmacokinetic level. Monitor for injection site reactions and ensure adequate migraine trigger avoidance during CGRP therapy."
+}

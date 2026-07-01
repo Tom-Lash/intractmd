@@ -1,0 +1,66 @@
+{
+  "drug": "Exenatide",
+  "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "key_pathways": [
+    "GLP-1 receptor signaling",
+    "Gastric motility",
+    "Insulin secretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose chromium",
+      "severity": "High",
+      "mechanism": "Additive hypoglycemic effects may increase risk of severe hypoglycemia when combined with exenatide's glucose-lowering action",
+      "action": "Avoid supplemental chromium or use only under medical supervision with increased glucose monitoring"
+    },
+    {
+      "name": "Fenugreek seeds",
+      "severity": "High",
+      "mechanism": "Fenugreek has independent hypoglycemic properties that may potentiate exenatide's glucose-lowering effects",
+      "action": "Discontinue fenugreek supplementation or monitor blood glucose closely if use continues"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May have mild additive glucose-lowering effects; risk of hypoglycemia is generally low",
+      "action": "Monitor blood glucose patterns; inform healthcare provider of concurrent use"
+    },
+    {
+      "name": "Ginseng (American or Asian)",
+      "severity": "Low",
+      "mechanism": "May modestly reduce blood glucose; additive effect possible but typically mild",
+      "action": "Monitor for signs of hypoglycemia; dose adjustment of exenatide may be needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Exenatide delays gastric emptying; high-fat foods further slow gastric transit, increasing GI adverse effects (nausea, vomiting) and reducing medication efficacy",
+      "action": "Counsel patient to consume low-fat, balanced meals; avoid fatty or fried foods within 1-2 hours of exenatide administration"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "High",
+      "mechanism": "Alcohol impairs hepatic glucose production and increases hypoglycemia risk; exenatide's glucose-lowering effects are potentiated",
+      "action": "Avoid alcohol or consume only minimal amounts; increased glucose monitoring required if alcohol is used"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Large meals",
+      "severity": "Low",
+      "mechanism": "Exenatide delays gastric emptying; large portions may worsen nausea and GI discomfort without affecting glucose control significantly",
+      "action": "Recommend smaller, more frequent meals to improve tolerability"
+    },
+    {
+      "name": "Sugary foods and refined carbohydrates",
+      "severity": "Low",
+      "mechanism": "These foods may blunt exenatide's therapeutic benefit and increase postprandial glucose excursions in some patients",
+      "action": "Encourage dietary modification toward complex carbohydrates and whole grains as part of diabetes management"
+    }
+  ],
+  "monitoring_notes": "Monitor for hypoglycemia, especially when exenatide is combined with insulin or sulfonylureas. Assess gastric tolerance and advise patients on meal composition and timing to optimize both efficacy and tolerability."
+}

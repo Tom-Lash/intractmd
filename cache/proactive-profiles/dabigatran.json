@@ -1,0 +1,77 @@
+{
+  "drug": "Dabigatran",
+  "drug_class": "Direct Thrombin Inhibitor (DOAC)",
+  "key_pathways": [
+    "P-gp substrate",
+    "minimal CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and may potentiate anticoagulant effect",
+      "action": "Discontinue or avoid concurrent use; counsel patient on bleeding risk"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and prolongs bleeding time",
+      "action": "Avoid high-dose garlic supplements; monitor for increased bleeding"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "High",
+      "mechanism": "May inhibit platelet aggregation and increase bleeding risk",
+      "action": "Counsel patient to avoid or use with caution; monitor INR equivalents if applicable"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce P-glycoprotein, potentially reducing dabigatran levels",
+      "action": "Advise against use; if necessary, monitor for reduced anticoagulant effect"
+    },
+    {
+      "name": "Cranberry (high-dose supplements)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effect and increase bleeding risk",
+      "action": "Limit high-dose cranberry supplements; counsel on bleeding precautions"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 fatty acids (>3g/day)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effect may additively increase bleeding risk",
+      "action": "Monitor at standard doses; advise patient to report unusual bleeding"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet properties",
+      "action": "Use with awareness; monitor for bleeding signs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Cranberry juice (excessive intake)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effect and increase bleeding risk",
+      "action": "Advise patient to limit cranberry juice to moderate amounts or avoid"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Leafy greens (spinach, kale, broccoli)",
+      "severity": "Low",
+      "mechanism": "High vitamin K content has minimal impact on dabigatran (unlike warfarin); consistency is key",
+      "action": "Maintain consistent intake; dabigatran is not vitamin K-dependent but consistency promotes stable levels"
+    },
+    {
+      "name": "Alcohol (>2 drinks/day)",
+      "severity": "Low",
+      "mechanism": "Excessive alcohol may increase bleeding risk and affect hemostasis",
+      "action": "Counsel patient to limit alcohol to moderate amounts; monitor for bleeding"
+    }
+  ],
+  "monitoring_notes": "Dabigatran has minimal hepatic metabolism and is primarily a P-gp substrate, reducing interaction potential compared to other DOACs. Monitor for signs of bleeding (unusual bruising, blood in urine/stool, nosebleeds) and educate patients that unlike warfarin, dabigatran does not require dietary vitamin K restriction."
+}

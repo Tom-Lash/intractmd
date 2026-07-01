@@ -1,0 +1,53 @@
+{
+  "drug": "Acalabrutinib",
+  "drug_class": "Bruton's Tyrosine Kinase (BTK) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces acalabrutinib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; allow 2 weeks washout before starting acalabrutinib"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inducer may decrease acalabrutinib bioavailability",
+      "action": "Avoid or use alternative immune support; consult oncology team"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase acalabrutinib levels minimally",
+      "action": "Limit consumption; monitor for increased side effects if used"
+    },
+    {
+      "name": "Turmeric/Curcumin (high-dose)",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inhibitory effects at high doses",
+      "action": "Use standardized supplements at moderate doses; discuss with provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases acalabrutinib plasma concentrations and toxicity risk",
+      "action": "Complete avoidance required; includes pomelo and Seville oranges"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase acalabrutinib absorption; absorption is food-independent but fatty foods may alter kinetics",
+      "action": "Take consistently with or without food; maintain consistent dietary pattern"
+    }
+  ],
+  "monitoring_notes": "Acalabrutinib is extensively metabolized via CYP3A4; monitor for efficacy loss with enzyme inducers and toxicity with enzyme inhibitors. Regular assessment of bleeding risk and lymphocyte counts is warranted, particularly when dietary or supplement changes occur."
+}

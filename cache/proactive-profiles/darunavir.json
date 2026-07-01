@@ -1,0 +1,60 @@
+{
+  "drug": "Darunavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces darunavir plasma concentrations by ~50%, leading to treatment failure and resistance development",
+      "action": "Absolutely contraindicated; counsel patient to avoid completely"
+    },
+    {
+      "name": "Garlic Supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may significantly reduce darunavir levels",
+      "action": "Avoid high-dose supplemental garlic; culinary amounts acceptable"
+    },
+    {
+      "name": "Rifabutin",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer decreases darunavir exposure; concurrent use with darunavir/ritonavir not recommended without dose adjustment",
+      "action": "Avoid or use alternative TB treatment; if essential, requires clinical monitoring and possible dosing adjustment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4 at high doses, potentially reducing darunavir levels",
+      "action": "Use cautiously and monitor viral load; maintain consistent dosing"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Possible mild CYP3A4 induction may slightly reduce darunavir bioavailability",
+      "action": "Monitor for therapeutic efficacy; generally acceptable at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases darunavir exposure, raising risk of toxicity and adverse effects",
+      "action": "Completely avoid grapefruit and grapefruit juice; substitute with other citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "Fat increases darunavir bioavailability; inconsistent fat intake may cause variable absorption",
+      "action": "Maintain consistent dietary fat intake with meals; darunavir should be taken with food for optimal absorption"
+    }
+  ],
+  "monitoring_notes": "Darunavir is a potent CYP3A4 substrate requiring careful management of enzyme inducers and inhibitors. Monitor viral load, CD4 count, and hepatic function periodically, especially when adding new supplements or medications."
+}

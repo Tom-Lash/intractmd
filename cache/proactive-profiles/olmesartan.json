@@ -1,0 +1,58 @@
+{
+  "drug": "Olmesartan",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ARBs reduce aldosterone, increasing potassium retention; concurrent supplementation significantly elevates hyperkalemia risk",
+      "action": "Avoid potassium supplementation unless serum levels are documented low and approved by prescriber; monitor K+ levels regularly"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal perfusion and antagonize antihypertensive effect; combined use increases acute kidney injury and hyperkalemia risk",
+      "action": "Avoid chronic NSAID use; prefer acetaminophen; if NSAID necessary, use lowest dose for shortest duration and monitor renal function"
+    },
+    {
+      "name": "ACE inhibitors",
+      "severity": "High",
+      "mechanism": "Dual RAAS blockade significantly increases hyperkalemia, hypotension, and acute renal failure risk",
+      "action": "Do not combine ARBs with ACE inhibitors; choose one agent only"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Licorice may promote sodium retention and potassium depletion, potentially counteracting blood pressure benefits",
+      "action": "Limit consumption; monitor blood pressure response and electrolytes if used"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "May have additive hypotensive effects, risk of excessive blood pressure lowering",
+      "action": "Monitor blood pressure; inform prescriber of use; assess for dizziness or orthostatic hypotension"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-potassium foods (bananas, spinach, beans, tomatoes, coconut water)",
+      "severity": "Low",
+      "mechanism": "ARBs increase potassium retention; excessive dietary potassium may contribute to hyperkalemia in susceptible patients",
+      "action": "Consume in moderation; particularly cautious if renal function impaired; monitor serum potassium levels"
+    },
+    {
+      "name": "Sodium-restricted diet",
+      "severity": "Low",
+      "mechanism": "While not contraindicated, excessive sodium restriction combined with ARBs may enhance hypotensive effect",
+      "action": "Maintain moderate sodium intake per hypertension guidelines; avoid excessive restriction"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and BUN at baseline and regularly, especially in elderly patients or those with renal impairment. Assess for symptoms of hyperkalemia (weakness, palpitations) and hypotension (dizziness, syncope) at each visit."
+}

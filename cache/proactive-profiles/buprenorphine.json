@@ -1,0 +1,66 @@
+{
+  "drug": "Buprenorphine",
+  "drug_class": "Partial Opioid Agonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces buprenorphine levels; may precipitate withdrawal symptoms",
+      "action": "Discontinue St. John's Wort or avoid buprenorphine; counsel patient before initiating either agent"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; potentiates CNS depression and respiratory depression",
+      "action": "Contraindicated; recommend alternative anxiolytic or herbal option"
+    },
+    {
+      "name": "Valerian Root (high dose)",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and respiratory depression risk",
+      "action": "Avoid concurrent use; consider alternative sleep aid with lower CNS interaction"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase buprenorphine levels; typically minimal effect",
+      "action": "Monitor for opioid toxicity signs; document use in medical record"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; no direct pharmacokinetic interaction",
+      "action": "Monitor if patient has bleeding risk; generally safe at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases buprenorphine bioavailability and levels",
+      "action": "Eliminate grapefruit products entirely; educate patient on hidden sources (some juices, supplements)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase buprenorphine absorption; sublingual formulation less affected",
+      "action": "Consistent timing relative to food intake recommended; counsel on standardized administration"
+    },
+    {
+      "name": "Caffeine (high intake)",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS effects; no direct metabolic interaction",
+      "action": "Advise moderation; monitor for increased sedation or jitteriness"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of opioid toxicity (sedation, respiratory depression, pinpoint pupils) especially with CYP3A4 inhibitors. Counsel patients on strict avoidance of grapefruit and CNS depressants; assess for withdrawal symptoms if CYP3A4 inducers are initiated."
+}

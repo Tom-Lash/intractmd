@@ -1,0 +1,71 @@
+{
+  "drug": "Nitroglycerin",
+  "drug_class": "Nitrate vasodilator",
+  "key_pathways": [
+    "Nitric oxide pathway",
+    "Guanylate cyclase activation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Phosphodiesterase-5 inhibitors (sildenafil, tadalafil, vardenafil)",
+      "severity": "Critical",
+      "mechanism": "Both nitrates and PDE-5 inhibitors cause vasodilation via nitric oxide pathway; combined use results in severe, potentially life-threatening hypotension",
+      "action": "Absolutely contraindicated. Patients must avoid all PDE-5 inhibitors. Counsel on cardiac risks."
+    },
+    {
+      "name": "Riociguat (soluble guanylate cyclase stimulator)",
+      "severity": "Critical",
+      "mechanism": "Direct additive vasodilation through same final pathway; results in severe hypotension and syncope",
+      "action": "Contraindicated. Do not co-administer under any circumstances."
+    },
+    {
+      "name": "High-dose vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate antiplatelet effects and increase bleeding risk; enhances vasodilation",
+      "action": "Avoid supplementation exceeding 400 IU daily. Monitor for bleeding signs."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet and vasodilatory properties; potential additive hypotensive effect",
+      "action": "Use cautiously; monitor blood pressure. Inform patient of potential additive effects."
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May cause mild vasodilation and interact with blood pressure regulation",
+      "action": "Monitor blood pressure response; use only under supervision if needed."
+    },
+    {
+      "name": "Hawthorn extract",
+      "severity": "Low",
+      "mechanism": "Mild cardiovascular effects; possible additive hypotensive response",
+      "action": "Use with caution; monitor for excessive blood pressure reduction."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition may increase nitroglycerin bioavailability and hypotensive effects; also increases metabolite levels",
+      "action": "Completely avoid grapefruit products. No consumption within 24 hours of nitroglycerin use."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may cause fluid retention and reduce antihypertensive efficacy of nitroglycerin",
+      "action": "Maintain moderate sodium intake; counsel on heart-healthy diet. Monitor blood pressure."
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Potential for hypertensive response when combined with vasodilators in susceptible patients",
+      "action": "Consume in moderation; monitor for headache or blood pressure elevation."
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure closely, especially at treatment initiation and with any new supplements or dietary changes. Counsel patients that PDE-5 inhibitors are absolutely contraindicated due to life-threatening hypotension risk; this is the critical safety issue with nitroglycerin use."
+}

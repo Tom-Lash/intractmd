@@ -1,0 +1,72 @@
+{
+  "drug": "Tigecycline",
+  "drug_class": "Tetracycline antibiotic (broad-spectrum)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Primarily biliary excretion",
+    "Not a significant CYP450 substrate or inhibitor"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Tetracyclines form insoluble complexes with divalent cations (Fe2+), reducing tigecycline absorption and efficacy",
+      "action": "Separate administration by at least 2-3 hours; prioritize timing of antibiotic dosing"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Calcium chelation reduces tigecycline bioavailability similar to iron interactions",
+      "action": "Separate administration by at least 2-3 hours; take tigecycline on empty stomach if possible"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Mg2+ cation complexation impairs tigecycline gastrointestinal absorption",
+      "action": "Administer tigecycline 2-3 hours before or after magnesium-containing products"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "Moderate",
+      "mechanism": "Divalent cation chelation reduces tetracycline absorption",
+      "action": "Space doses by at least 2 hours; monitor clinical response"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin K supplements",
+      "severity": "Low",
+      "mechanism": "Tigecycline may suppress gut flora producing vitamin K; supplementation may help prevent hypoprothrombinemia with prolonged use",
+      "action": "Consider monitoring INR if on warfarin; supplementation generally supportive"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Tigecycline disrupts normal microbiota; probiotics may support GI health during treatment",
+      "action": "Administer probiotics 2+ hours apart from tigecycline; use well-studied strains"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "High",
+      "mechanism": "Calcium in dairy chelates tigecycline, significantly reducing absorption and serum concentrations",
+      "action": "Avoid consumption within 2-3 hours of tigecycline dosing; counsel patient on timing"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-fortified cereals and grains",
+      "severity": "Low",
+      "mechanism": "Fortified iron may reduce tigecycline absorption if consumed concurrently",
+      "action": "Separate consumption by 2+ hours; monitor for adequate clinical response"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fat-rich foods may slightly delay tigecycline absorption but do not substantially impair it",
+      "action": "May take with or without food; consistent timing preferred for optimal levels"
+    }
+  ],
+  "monitoring_notes": "Tigecycline has minimal CYP450 interactions but significant chelation concerns with divalent cations requiring careful meal/supplement timing. Monitor for GI tolerability, photosensitivity reactions, and tissue penetration efficacy in critically ill patients; counsel patients on strict spacing of cation-containing products to prevent treatment failure."
+}

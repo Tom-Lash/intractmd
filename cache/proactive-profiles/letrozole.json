@@ -1,0 +1,53 @@
+{
+  "drug": "Letrozole",
+  "drug_class": "Aromatase Inhibitor (Non-steroidal)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2A6",
+    "Aromatase inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce letrozole levels and efficacy in hormone-sensitive breast cancer",
+      "action": "Avoid concurrent use; consult oncologist before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild estrogenic activity; theoretical concern in hormone-sensitive conditions",
+      "action": "Monitor for reduced letrozole efficacy; discuss with healthcare provider"
+    },
+    {
+      "name": "Red Clover",
+      "severity": "Low",
+      "mechanism": "Contains isoflavones with potential estrogenic effects that may counteract letrozole",
+      "action": "Use with caution and medical supervision in breast cancer patients"
+    },
+    {
+      "name": "Calcium Supplements",
+      "severity": "Low",
+      "mechanism": "May slightly reduce letrozole absorption if taken simultaneously",
+      "action": "Separate dosing by 2+ hours"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Soy products (high intake)",
+      "severity": "Low",
+      "mechanism": "Isoflavones possess weak estrogenic activity; excessive intake may theoretically reduce aromatase inhibitor efficacy",
+      "action": "Moderate consumption; avoid excessive soy supplementation in hormone-sensitive breast cancer"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase letrozole levels; limited clinical significance with letrozole",
+      "action": "Moderate intake; monitor for adverse effects if consuming large quantities"
+    }
+  ],
+  "monitoring_notes": "Letrozole is minimally metabolized and has few major interactions, but vigilance regarding estrogenic supplements is warranted in breast cancer patients. Monitor for reduced efficacy (hot flashes, joint pain control) or signs of estrogen rebound if estrogenic substances are co-administered."
+}

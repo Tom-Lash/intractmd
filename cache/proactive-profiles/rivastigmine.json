@@ -1,0 +1,52 @@
+{
+  "drug": "Rivastigmine",
+  "drug_class": "Acetylcholinesterase Inhibitor",
+  "key_pathways": [
+    "Non-CYP metabolism (ester hydrolysis)",
+    "Acetylcholinesterase inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anticholinergic herbs (Jimson weed, belladonna)",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of rivastigmine's cholinergic effects; may precipitate acute confusion or loss of drug efficacy",
+      "action": "Absolutely contraindicated; counsel patient to avoid all anticholinergic botanicals"
+    },
+    {
+      "name": "NSAIDs (high-dose chronic use)",
+      "severity": "High",
+      "mechanism": "Increased risk of GI bleeding due to cholinergic effects on GI motility and increased gastric acid secretion",
+      "action": "Avoid chronic NSAID use; recommend acetaminophen or gastroprotection if NSAIDs necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Minor additive cholinergic effects; theoretical risk of enhanced GI side effects",
+      "action": "Monitor for increased nausea, vomiting, or diarrhea; discontinue if GI symptoms worsen"
+    },
+    {
+      "name": "Cholinergic supplements (Huperzine A, phosphatidylserine)",
+      "severity": "Low",
+      "mechanism": "Potential additive cholinergic activity may increase side effects (nausea, bradycardia, syncope)",
+      "action": "Use together cautiously; monitor heart rate and GI tolerance; consider dose adjustment if symptoms emerge"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay rivastigmine absorption and reduce peak plasma concentrations; does not affect overall bioavailability significantly",
+      "action": "Take on consistent schedule (with or without food); counsel consistent timing for optimal efficacy"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Alcohol may potentiate cholinergic effects and increase CNS depression; enhances GI irritation risk",
+      "action": "Counsel moderation or avoidance; assess cognitive and GI tolerance if patient drinks alcohol"
+    }
+  ],
+  "monitoring_notes": "Rivastigmine undergoes non-CYP ester hydrolysis, minimizing traditional drug-drug interactions, but cholinergic excess remains the primary concern. Monitor for bradycardia, syncope, severe nausea/vomiting, and GI bleeding, particularly in patients on concurrent anticoagulants or with ulcer history."
+}

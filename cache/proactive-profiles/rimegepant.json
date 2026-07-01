@@ -1,0 +1,53 @@
+{
+  "drug": "Rimegepant",
+  "drug_class": "Calcitonin Gene-Related Peptide (CGRP) Receptor Antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces rimegepant plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products if needed"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4, potentially decreasing rimegepant levels",
+      "action": "Use with caution and monitor for reduced efficacy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may modestly increase rimegepant exposure",
+      "action": "Inform patient of potential interaction; monitor for increased side effects"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "Contains berberine with potential CYP3A4 effects",
+      "action": "Use with caution; counsel patient on monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition significantly increases rimegepant bioavailability and adverse effects",
+      "action": "Strictly avoid grapefruit products during rimegepant therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase rimegepant absorption rate and peak plasma concentrations",
+      "action": "Take consistently with or without food; counsel on consistent dosing pattern"
+    }
+  ],
+  "monitoring_notes": "Rimegepant is metabolized primarily via CYP3A4 and transported by P-glycoprotein; clinicians should screen for potent CYP3A4 inhibitors/inducers and counsel patients to maintain consistent dietary patterns. Monitor for therapeutic failure or increased adverse effects if dietary or supplement changes occur."
+}

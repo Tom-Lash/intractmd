@@ -1,0 +1,66 @@
+{
+  "drug": "Pegfilgrastim",
+  "drug_class": "Granulocyte Colony-Stimulating Factor (G-CSF) analog",
+  "key_pathways": [
+    "G-CSF receptor signaling",
+    "Hematopoietic stem cell mobilization",
+    "Neutrophil proliferation and differentiation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May overstimulate immune system concurrently with pegfilgrastim, potentially causing excessive immune activation and unpredictable WBC responses",
+      "action": "Avoid concurrent use; if patient desires immune support, defer until pegfilgrastim course completed"
+    },
+    {
+      "name": "High-dose vitamin C (>2000 mg daily)",
+      "severity": "Moderate",
+      "mechanism": "May enhance myeloid progenitor proliferation unpredictably and interfere with intended G-CSF dosing titration",
+      "action": "Limit supplemental vitamin C to <1000 mg daily; monitor CBC responses"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May interact with neutropenia-related infection risk; benefits unclear during pegfilgrastim therapy but generally considered low-risk",
+      "action": "Acceptable to continue; counsel on hand hygiene and monitoring for infection signs"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have mild anti-inflammatory effects that could theoretically modulate response to G-CSF; minimal clinical impact documented",
+      "action": "May continue; no dose adjustment needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Undercooked or raw meats/seafood",
+      "severity": "Critical",
+      "mechanism": "Pegfilgrastim-induced neutropenia significantly increases infection risk from foodborne pathogens; immunocompromised patients at severe risk for invasive infections",
+      "action": "Enforce strict food safety; use only well-cooked proteins; avoid sushi, undercooked eggs, unpasteurized dairy"
+    },
+    {
+      "name": "Unwashed fresh produce",
+      "severity": "High",
+      "mechanism": "Environmental bacteria and mold contamination pose significant infection risk in neutropenic patients",
+      "action": "Thoroughly wash all raw fruits/vegetables; consider limiting fresh produce during severe neutropenia phases"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "May contribute to fluid retention and potential exacerbation of bone pain (common pegfilgrastim side effect); no direct pharmacokinetic interaction",
+      "action": "Counsel moderate sodium intake; ensure adequate hydration and monitor for musculoskeletal symptoms"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Pegfilgrastim undergoes minimal hepatic metabolism, but grapefruit may have minor immunomodulatory effects; clinical significance low",
+      "action": "No strict prohibition, but recommend limiting; preference for other citrus fruits"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC parameters closely during pegfilgrastim therapy, particularly WBC trends and platelet counts, as supplements/foods affecting immune or hematopoietic function may alter therapeutic response. Emphasize strict food safety protocols given neutropenia risk, and counsel patients on infection prevention, including hand hygiene and symptom reporting (fever >100.4°F, chills, oral ulcers)."
+}

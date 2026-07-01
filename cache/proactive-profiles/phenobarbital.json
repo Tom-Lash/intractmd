@@ -1,0 +1,81 @@
+{
+  "drug": "Phenobarbital",
+  "drug_class": "Barbiturate (sedative-hypnotic, anticonvulsant)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C19",
+    "CYP3A4",
+    "CYP2B6",
+    "UGT1A1",
+    "UGT1A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 and CYP2C9 inducer; may further increase phenobarbital metabolism and reduce efficacy",
+      "action": "Avoid concurrent use; counsel on alternative mood support if needed"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression with phenobarbital; increased risk of excessive sedation and respiratory depression",
+      "action": "Avoid combination; educate on cumulative CNS depressant effects"
+    },
+    {
+      "name": "Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and potential hepatotoxicity; phenobarbital also induces kava metabolism",
+      "action": "Contraindicated; counsel patient to avoid"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium",
+      "severity": "Low",
+      "mechanism": "Phenobarbital impairs vitamin D metabolism; chronic use increases osteoporosis risk",
+      "action": "Monitor bone health; may require supplementation with concurrent vitamin D"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Phenobarbital induces CYP24A1, increasing vitamin D catabolism",
+      "action": "Assess serum vitamin D; supplement if deficient (common in chronic phenobarbital users)"
+    },
+    {
+      "name": "Folic Acid",
+      "severity": "Low",
+      "mechanism": "Phenobarbital impairs folate absorption and metabolism; deficiency risk increases with long-term use",
+      "action": "Consider baseline and periodic folate monitoring; supplement if indicated"
+    },
+    {
+      "name": "Vitamin K",
+      "severity": "Low",
+      "mechanism": "Phenobarbital induces hepatic metabolism affecting vitamin K-dependent clotting factors",
+      "action": "Monitor coagulation parameters; ensure adequate vitamin K intake"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression; increased risk of severe sedation, respiratory depression, and overdose",
+      "action": "Absolute contraindication; provide clear patient education on complete alcohol avoidance"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase phenobarbital absorption variability; inconsistent bioavailability",
+      "action": "Counsel consistent food intake patterns; take with or without food consistently"
+    },
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor; may increase phenobarbital levels; however, phenobarbital's strong induction may override this effect",
+      "action": "Avoid or limit consumption; monitor for toxicity signs if consumed"
+    }
+  ],
+  "monitoring_notes": "Phenobarbital is a potent inducer of multiple CYP450 enzymes and UGT pathways, significantly reducing effectiveness of many medications and supplements. Long-term use carries high risk of nutritional deficiencies (vitamin D, folate, calcium, vitamin K) and secondary osteoporosis; proactive screening and supplementation recommended. CNS depressant effects mandate strict avoidance of alcohol and other depressants."
+}

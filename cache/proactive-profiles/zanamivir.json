@@ -1,0 +1,52 @@
+{
+  "drug": "Zanamivir",
+  "drug_class": "Neuraminidase Inhibitor (Antiviral)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin C (>2000mg daily)",
+      "severity": "Moderate",
+      "mechanism": "May increase urinary acidification and potentially alter zanamivir renal clearance; theoretical risk of crystal formation in renal tubules with prolonged high-dose use",
+      "action": "Limit vitamin C supplementation to RDA levels (75-90mg daily); monitor renal function if patient insists on higher doses"
+    },
+    {
+      "name": "Echinacea (concurrent use during treatment)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate immune stimulation effects; theoretical additive antiviral mechanisms could mask symptom resolution assessment",
+      "action": "Recommend avoiding concurrent echinacea during active zanamivir therapy; can resume after treatment completion"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Zinc lozenges/high-dose zinc",
+      "severity": "Low",
+      "mechanism": "Zinc may have independent antiviral properties; concurrent use could complicate efficacy assessment and increase gastrointestinal side effects",
+      "action": "Counsel patient to separate timing; monitor for nausea and GI upset if combined use occurs"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "No direct interaction, but zanamivir may affect GI flora; probiotics may help maintain gut health during treatment",
+      "action": "Generally safe; may be beneficial for GI support during antiviral therapy"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods/salt",
+      "severity": "Low",
+      "mechanism": "May increase fluid retention; zanamivir respiratory administration requires adequate hydration for optimal delivery",
+      "action": "Maintain normal sodium intake; ensure adequate hydration (6-8 glasses water daily) during treatment"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Minimal interaction expected given zanamivir's minimal hepatic metabolism, but general caution with antivirals advised",
+      "action": "No strict avoidance required; prefer water or other beverages for hydration support"
+    }
+  ],
+  "monitoring_notes": "Zanamivir undergoes minimal hepatic metabolism and is primarily renascent unchanged; therefore supplement-drug interactions are limited. Monitor renal function (particularly in elderly or renally impaired patients) and respiratory status with inhaled zanamivir administration."
+}

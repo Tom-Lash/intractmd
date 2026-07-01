@@ -1,0 +1,47 @@
+{
+  "drug": "Brivaracetam",
+  "drug_class": "Antiepileptic/Anticonvulsant",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C19, significantly reducing brivaracetam plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if previously used, monitor seizure control closely during discontinuation as brivaracetam levels will increase"
+    },
+    {
+      "name": "Phenytoin-containing herbal products",
+      "severity": "High",
+      "mechanism": "May induce metabolism of brivaracetam, reducing therapeutic levels",
+      "action": "Avoid; consider alternative seizure management if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Potential weak CYP3A4 induction may slightly reduce brivaracetam levels",
+      "action": "Monitor seizure control; generally safe at standard doses but use with awareness"
+    },
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "May have additive CNS depressant effects with brivaracetam",
+      "action": "Use cautiously; counsel patient on potential increased dizziness or sedation"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase dizziness, drowsiness, and impaired coordination",
+      "action": "Counsel patient to limit or avoid alcohol; educate on safety risks with seizure disorder"
+    }
+  ],
+  "monitoring_notes": "Brivaracetam has relatively few direct food-drug interactions as it is not significantly affected by dietary components. Maintain consistent administration times and monitor for breakthrough seizures if CYP-inducing substances are added or removed from the regimen."
+}

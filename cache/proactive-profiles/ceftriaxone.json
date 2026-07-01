@@ -1,0 +1,60 @@
+{
+  "drug": "Ceftriaxone",
+  "drug_class": "Third-generation cephalosporin antibiotic",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Renal excretion",
+    "Biliary excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin-potentiating supplements (Ginkgo biloba, Garlic, Ginger)",
+      "severity": "High",
+      "mechanism": "Ceftriaxone may displace warfarin from protein binding and reduce vitamin K synthesis via microbiome disruption; combined with anticoagulant supplements increases bleeding risk",
+      "action": "Avoid concurrent use; monitor INR closely if coadministration necessary; counsel patient on bleeding signs"
+    },
+    {
+      "name": "Magnesium/Calcium supplements",
+      "severity": "Moderate",
+      "mechanism": "Divalent cations can chelate ceftriaxone in GI tract, reducing antibiotic absorption and efficacy",
+      "action": "Separate administration by at least 2 hours; take ceftriaxone first, then supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics (Lactobacillus, Saccharomyces)",
+      "severity": "Low",
+      "mechanism": "Ceftriaxone disrupts normal microbiota; probiotics may help restore intestinal flora but timing affects efficacy",
+      "action": "Administer probiotics at least 2-3 hours apart from ceftriaxone; continue during and after therapy"
+    },
+    {
+      "name": "Vitamin K supplements",
+      "severity": "Low",
+      "mechanism": "Ceftriaxone may reduce vitamin K synthesis via microbiome disruption; supplementation may partially mitigate coagulopathy risk",
+      "action": "Consider vitamin K supplementation if prolonged therapy; monitor PT/INR if at risk"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-calcium dairy products (taken simultaneously)",
+      "severity": "Moderate",
+      "mechanism": "Calcium chelates cephalosporin, reducing bioavailability and therapeutic efficacy",
+      "action": "Separate dairy intake by 2+ hours from ceftriaxone administration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Cephalosporins rarely cause disulfiram-like reaction; alcohol may worsen GI side effects like nausea and diarrhea",
+      "action": "Limit alcohol consumption during therapy; monitor for increased GI upset"
+    },
+    {
+      "name": "Fermented foods (sauerkraut, kimchi, yogurt)",
+      "severity": "Low",
+      "mechanism": "High histamine content may be poorly tolerated if ceftriaxone-induced dysbiosis impairs histamine metabolism",
+      "action": "Monitor for histamine intolerance symptoms (flushing, headache); reduce intake if symptomatic"
+    }
+  ],
+  "monitoring_notes": "Ceftriaxone undergoes minimal hepatic metabolism, reducing CYP interactions; however, microbiome disruption poses risks for vitamin K deficiency, secondary infections (C. difficile), and altered drug metabolism of other agents. Monitor PT/INR in at-risk patients, assess for diarrhea/CDI, and educate on chelation interactions with divalent cations and concurrent supplements."
+}

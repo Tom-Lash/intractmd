@@ -1,0 +1,72 @@
+{
+  "drug": "Indinavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "UGT1A1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 induction reduces indinavir levels by 50-75%, significantly reducing antiretroviral efficacy",
+      "action": "Contraindicated; do not use concurrently. Counsel patient on alternative mood support options"
+    },
+    {
+      "name": "Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer dramatically decreases indinavir plasma concentrations below therapeutic levels",
+      "action": "Avoid concurrent use; coordinate with prescriber if TB prophylaxis needed"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce indinavir bioavailability; fresh garlic generally safe",
+      "action": "Avoid concentrated garlic supplements; culinary amounts of fresh garlic acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation; limited clinical data with protease inhibitors",
+      "action": "Monitor virologic response; use only under clinical supervision if benefits outweigh risks"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition; effect generally minimal with indinavir",
+      "action": "Occasional use acceptable; maintain consistent intake patterns"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases indinavir concentrations, elevating toxicity risk and nephrolithiasis potential",
+      "action": "Eliminate from diet; educate on all grapefruit products including pomelo and Seville oranges"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Significantly reduces indinavir absorption; take on empty stomach for optimal bioavailability",
+      "action": "Administer indinavir 1 hour before or 2 hours after meals; light snack acceptable if needed"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry juice",
+      "severity": "Low",
+      "mechanism": "May acidify urine; modest risk of crystal nephropathy when combined with indinavir",
+      "action": "Limit consumption; maintain adequate hydration (1.5L+ daily) to prevent kidney stone formation"
+    },
+    {
+      "name": "Caffeinated beverages",
+      "severity": "Low",
+      "mechanism": "Mild CYP1A2 interaction; no major impact on indinavir but may increase adverse effects",
+      "action": "Moderate intake; monitor for increased nausea or GI upset"
+    }
+  ],
+  "monitoring_notes": "Indinavir carries significant nephrolithiasis risk; counsel patients on adequate hydration (>48 oz water daily) and monitor renal function periodically. Maintain consistent dietary patterns and ensure strict adherence to fasting requirements to optimize antiretroviral efficacy and minimize toxicity."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Diphenoxylate",
+  "drug_class": "Antidiarrheal (Opioid agonist)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces diphenoxylate levels and efficacy; may increase diarrhea recurrence",
+      "action": "Avoid concurrent use or monitor for reduced antidiarrheal effect"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; additive CNS depression with diphenoxylate's atropine component",
+      "action": "Contraindicated; select alternative hepatoprotective supplement if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may moderately increase diphenoxylate levels",
+      "action": "Monitor for increased anticholinergic and CNS effects; use lowest effective dose"
+    },
+    {
+      "name": "Anticholinergic herbs (Belladonna, Henbane)",
+      "severity": "Low",
+      "mechanism": "Additive anticholinergic effects with atropine component; increased constipation/urinary retention risk",
+      "action": "Use cautiously; monitor for anticholinergic toxicity symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases diphenoxylate bioavailability and atropine levels; risk of adverse effects",
+      "action": "Eliminate from diet during diphenoxylate therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase absorption rate and peak levels of diphenoxylate",
+      "action": "Take with consistent meal timing; counsel on uniform food intake patterns"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; may potentiate anticholinergic effects",
+      "action": "Limit alcohol consumption; counsel on CNS impairment risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of opioid toxicity (respiratory depression, drowsiness, miosis) and anticholinergic effects (urinary retention, constipation, tachycardia), especially with CYP3A4 inhibitors. Assess hydration status and electrolytes during extended use due to antidiarrheal potency."
+}

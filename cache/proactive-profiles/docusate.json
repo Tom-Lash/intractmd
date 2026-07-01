@@ -1,0 +1,46 @@
+{
+  "drug": "Docusate",
+  "drug_class": "Stool softener (anionic surfactant laxative)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Local GI action only"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Mineral oil",
+      "severity": "High",
+      "mechanism": "Both agents increase fat-soluble vitamin malabsorption and may increase docusate systemic absorption; concurrent use increases risk of lipid pneumonitis if aspirated",
+      "action": "Separate dosing by at least 2 hours; avoid concurrent use in elderly or those with swallowing difficulties"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Psyllium husk or other bulk-forming laxatives",
+      "severity": "Low",
+      "mechanism": "Combined laxative effect may enhance bowel activity; generally safe but may cause excessive stooling",
+      "action": "Counsel on adequate hydration; monitor for dehydration or electrolyte imbalance with prolonged use"
+    },
+    {
+      "name": "Fat-soluble vitamins (A, D, E, K)",
+      "severity": "Low",
+      "mechanism": "Docusate may slightly increase fecal fat excretion, potentially reducing absorption of fat-soluble vitamins",
+      "action": "Monitor vitamin status with chronic docusate use; separate dosing by 2+ hours if possible"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat foods",
+      "severity": "Low",
+      "mechanism": "May increase docusate absorption and GI transit time; excessive dietary fat may worsen stool consistency changes",
+      "action": "Maintain balanced diet; consistent fat intake recommended during docusate therapy"
+    },
+    {
+      "name": "Inadequate fluid intake",
+      "severity": "Low",
+      "mechanism": "Docusate efficacy depends on adequate hydration; insufficient water intake reduces stool softening effect",
+      "action": "Ensure patient consumes at least 6-8 glasses of water daily for optimal therapeutic effect"
+    }
+  ],
+  "monitoring_notes": "Docusate undergoes minimal systemic absorption and hepatic metabolism, making drug-supplement interactions uncommon. Monitor for dehydration, electrolyte imbalances, and adequate fluid intake during chronic use, particularly in elderly patients or those on concurrent laxatives."
+}

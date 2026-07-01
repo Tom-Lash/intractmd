@@ -1,0 +1,65 @@
+{
+  "drug": "Lanthanum",
+  "drug_class": "Phosphate binder",
+  "key_pathways": [
+    "Non-CYP mediated",
+    "Gastrointestinal binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Phosphate supplements",
+      "severity": "Critical",
+      "mechanism": "Lanthanum binds phosphate in GI tract; phosphate supplementation counteracts therapeutic effect and increases hyperphosphatemia risk",
+      "action": "Discontinue phosphate supplements; monitor serum phosphate levels regularly"
+    },
+    {
+      "name": "Calcium supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Both lanthanum and calcium bind phosphate; concurrent use may lead to hypophosphatemia and reduced bioavailability of other nutrients",
+      "action": "Separate administration by 2+ hours; use lowest effective calcium dose"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Lanthanum may bind iron in GI tract, reducing iron absorption and efficacy",
+      "action": "Administer iron supplement 2+ hours apart from lanthanum; monitor for anemia"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Lanthanum may slightly reduce magnesium absorption if taken concurrently",
+      "action": "Monitor serum magnesium levels; separate dosing by 2+ hours if possible"
+    },
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "May affect calcium and phosphate metabolism balance; lanthanum patients often require coordinated vitamin D therapy",
+      "action": "Coordinate with prescriber; monitor calcium and phosphate levels"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-phosphate foods (processed meats, dairy, nuts, seeds)",
+      "severity": "High",
+      "mechanism": "Lanthanum efficacy depends on dietary phosphate restriction; high-phosphate foods reduce treatment effectiveness",
+      "action": "Educate patient on phosphate-restricted diet; work with renal dietitian for meal planning"
+    },
+    {
+      "name": "Foods with added phosphate additives",
+      "severity": "High",
+      "mechanism": "Food additives (phosphates in processed foods, colas, baked goods) significantly increase dietary phosphate burden",
+      "action": "Read labels; avoid processed foods, soft drinks, and commercially prepared items with phosphate additives"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Calcium-rich foods (milk, cheese, yogurt)",
+      "severity": "Low",
+      "mechanism": "High concurrent calcium intake may interfere with lanthanum absorption or alter phosphate-calcium balance",
+      "action": "Consume in moderation as part of balanced renal diet; coordinate timing with lanthanum doses"
+    }
+  ],
+  "monitoring_notes": "Monitor serum phosphate, calcium, and magnesium levels regularly to assess efficacy and prevent mineral imbalances. Patient adherence to low-phosphate diet is critical for lanthanum effectiveness in chronic kidney disease management."
+}

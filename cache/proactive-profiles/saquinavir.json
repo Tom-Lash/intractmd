@@ -1,0 +1,66 @@
+{
+  "drug": "Saquinavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces saquinavir levels by 50-75%, compromising viral suppression",
+      "action": "Contraindicated; use alternative mood support if needed and monitor CD4/viral load"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction decreases saquinavir bioavailability and therapeutic efficacy",
+      "action": "Avoid high-dose garlic supplements; fresh garlic in food acceptable"
+    },
+    {
+      "name": "Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly reduces saquinavir plasma concentrations",
+      "action": "Contraindicated; use alternative TB prophylaxis and consult HIV specialist"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 modulation may slightly reduce saquinavir levels",
+      "action": "Monitor virologic response; dose adjustment unlikely needed"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 induction with inconsistent clinical significance",
+      "action": "Use cautiously; monitor for reduced efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inhibitor increases saquinavir exposure and toxicity risk",
+      "action": "Completely avoid grapefruit and pomegranate juice; increased risk of QT prolongation and adverse effects"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Increases saquinavir absorption; may elevate drug levels and GI side effects",
+      "action": "Saquinavir should be taken with food; consistent fat intake recommended to maintain stable levels"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "CYP3A4 substrate competition may slightly increase saquinavir levels",
+      "action": "Moderate caffeine intake; excessive consumption may potentiate adverse effects"
+    }
+  ],
+  "monitoring_notes": "Monitor CD4 count, viral load, and liver function regularly as CYP3A4 interactions significantly affect saquinavir efficacy. Assess for QT prolongation risk, especially with high-dose boosting and concurrent QT-prolonging agents; EKG baseline recommended."
+}

@@ -1,0 +1,53 @@
+{
+  "drug": "Tofacitinib",
+  "drug_class": "Janus Kinase (JAK) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces tofacitinib plasma concentrations and efficacy",
+      "action": "Contraindicated; recommend alternative mood support if needed"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May enhance immune activation, potentially reducing therapeutic effect of JAK inhibition in autoimmune conditions",
+      "action": "Avoid use; counsel on alternative immune support strategies"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase tofacitinib levels",
+      "action": "Monitor for increased adverse effects; limit consumption"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Potential additive immunomodulation; limited clinical data",
+      "action": "Use with caution; monitor clinical response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases tofacitinib bioavailability and systemic exposure, elevating risk of adverse effects",
+      "action": "Strictly contraindicated; recommend alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase tofacitinib absorption and peak plasma levels",
+      "action": "Administer consistently with or without food; counsel on consistent intake pattern"
+    }
+  ],
+  "monitoring_notes": "Assess for signs of infection, thrombosis, and lipid abnormalities. Monitor CBC, liver function, and lipid panel periodically, and counsel patients to avoid live vaccines and report any immunosuppression-related infections."
+}

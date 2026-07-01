@@ -1,0 +1,67 @@
+{
+  "drug": "Baricitinib",
+  "drug_class": "Janus Kinase (JAK) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Organic Anion Transporter (OAT3)",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4, reducing baricitinib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May enhance immune activation, potentially counteracting JAK inhibitor immunosuppressive effects",
+      "action": "Avoid or use only under clinical supervision"
+    },
+    {
+      "name": "Ginseng (American/Asian)",
+      "severity": "Moderate",
+      "mechanism": "Immune stimulant that may reduce drug efficacy and increase infection risk with JAK inhibitor use",
+      "action": "Discontinue use; discuss alternative supplements with healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Extract/Seed",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase baricitinib levels",
+      "action": "Limit intake; monitor for increased adverse effects if used regularly"
+    },
+    {
+      "name": "Quercetin",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition and antiviral properties may affect metabolism",
+      "action": "Use in moderation; no dose adjustment typically needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Pomelo",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases baricitinib bioavailability and plasma concentration",
+      "action": "Completely avoid grapefruit and pomelo; check for hidden sources in juices and supplements"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase baricitinib absorption rate but do not significantly alter overall bioavailability",
+      "action": "Can be taken with or without food; maintain consistent timing relative to meals"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May increase hepatotoxicity risk and impair immune function during JAK inhibition",
+      "action": "Limit to moderate consumption; discuss safe limits with healthcare provider"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of infection, hematologic abnormalities, and lipid/liver enzyme changes. Assess adherence and counsel on immunosuppression risks, particularly with concurrent immune-stimulating supplements that may reduce clinical efficacy."
+}

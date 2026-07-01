@@ -1,0 +1,78 @@
+{
+  "drug": "Atezolizumab",
+  "drug_class": "Monoclonal Antibody (PD-L1 Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Immune checkpoint inhibition",
+    "Fc receptor-mediated clearance"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate immunosuppressive effects and increase bleeding risk in combination with immunotherapy",
+      "action": "Avoid supplementation; obtain from dietary sources only"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May cause unpredictable immune stimulation or suppression, potentially interfering with atezolizumab's mechanism",
+      "action": "Discontinue at least 2 weeks before and during atezolizumab therapy"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May alter immune response and increase risk of immune-related adverse events",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate gut microbiome, potentially affecting immunotherapy efficacy",
+      "action": "Use with monitoring; discuss specific strain and timing with oncology team"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Potential immunomodulatory effects that may interact with checkpoint inhibitor mechanism",
+      "action": "Monitor for efficacy changes; maintain consistent dosing if continued"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "May have mild immunomodulatory effects",
+      "action": "Monitor for excessive bleeding or bruising; maintain dosages <3g/day"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "While not metabolically significant for atezolizumab, may increase GI side effects and inflammatory responses",
+      "action": "Avoid consumption during treatment course"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate fluid retention and hypertension associated with immunotherapy",
+      "action": "Limit intake; maintain adequate hydration and monitor blood pressure"
+    },
+    {
+      "name": "Charred/heavily grilled meats",
+      "severity": "Low",
+      "mechanism": "Contains heterocyclic amines that may trigger inflammatory responses",
+      "action": "Consume in moderation; prefer steaming, baking, or boiling methods"
+    },
+    {
+      "name": "Alcohol (>1-2 drinks/day)",
+      "severity": "Low",
+      "mechanism": "May impair immune function and increase hepatotoxicity risk",
+      "action": "Limit consumption; avoid binge drinking during treatment"
+    }
+  ],
+  "monitoring_notes": "Atezolizumab is a monoclonal antibody with minimal hepatic metabolism, making traditional drug-supplement interactions unlikely. Primary concerns focus on supplements and foods that modulate immune function or increase risk of immune-related adverse events (irAEs). Monitor for emerging irAEs including pneumonitis, colitis, hepatitis, and endocrinopathies."
+}

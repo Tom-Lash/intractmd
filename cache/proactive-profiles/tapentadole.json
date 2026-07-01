@@ -1,0 +1,73 @@
+{
+  "drug": "Tapentadol",
+  "drug_class": "Synthetic opioid analgesic with norepinephrine reuptake inhibition",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C19",
+    "CYP1A2",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP2C9 and CYP2C19, reducing tapentadol plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor for reduced analgesia and adjust tapentadol dose"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Potentiates CNS depression and increases risk of sedation, respiratory depression, and overdose",
+      "action": "Contraindicated; counsel patient to avoid combination"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; may inhibit CYP2C9",
+      "action": "Avoid concurrent use; monitor liver function if exposure occurs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "5-HTP",
+      "severity": "Low",
+      "mechanism": "Additive serotonergic effects; theoretical risk of serotonin syndrome given tapentadol's norepinephrine activity",
+      "action": "Monitor for agitation, confusion, rapid heart rate; counsel on risk"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild CYP2C9 induction possible; may slightly reduce tapentadol concentrations",
+      "action": "Monitor analgesic efficacy; adjust tapentadol if needed"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression effects",
+      "action": "Counsel on increased sedation risk; use lowest effective doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Critical",
+      "mechanism": "Severe potentiation of CNS depression, respiratory depression, sedation, and overdose risk; increased metabolism via shared pathways",
+      "action": "Absolute contraindication; counsel strict avoidance; educate on overdose risk"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase tapentadol concentrations; minor clinical significance given primary metabolism via CYP2C9/2C19",
+      "action": "Monitor for increased side effects; counsel occasional use is likely safe"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Tapentadol's norepinephrine reuptake inhibition may potentiate tyramine effects; risk of hypertensive crisis is theoretical at typical doses",
+      "action": "Counsel moderation; monitor blood pressure if high tyramine intake; clinical relevance is minimal"
+    }
+  ],
+  "monitoring_notes": "Monitor for CNS depression, respiratory depression, and serotonergic symptoms. Counsel patients to avoid alcohol absolutely and report excessive sedation, difficulty breathing, confusion, or mood/behavior changes. Assess baseline and periodic liver and renal function given glucuronidation pathway dependence."
+}

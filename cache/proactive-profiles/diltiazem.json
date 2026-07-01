@@ -1,0 +1,66 @@
+{
+  "drug": "Diltiazem",
+  "drug_class": "Calcium Channel Blocker (Non-dihydropyridine)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces diltiazem levels and efficacy",
+      "action": "Avoid concurrent use; if needed, monitor heart rate and blood pressure closely"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases diltiazem levels and hypotension risk",
+      "action": "Avoid; use alternative supplements"
+    },
+    {
+      "name": "High-dose Calcium Supplements",
+      "severity": "Moderate",
+      "mechanism": "Calcium antagonizes diltiazem's therapeutic mechanism",
+      "action": "Avoid high doses (>1000mg/day); maintain adequate but modest intake"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Additive cardiovascular effects; potential for enhanced hypotension",
+      "action": "Monitor blood pressure; inform prescriber if using"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate hypotensive effects of diltiazem",
+      "action": "Use moderate doses; monitor for dizziness or weakness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases diltiazem plasma concentration and hypotension risk",
+      "action": "Eliminate from diet; substitute with other citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium Foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium may counteract diltiazem's antihypertensive effects",
+      "action": "Maintain DASH diet; limit sodium intake to <2300mg/day"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and potassium loss, reducing antihypertensive benefit",
+      "action": "Limit consumption of licorice-containing products"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and signs of excessive hypotension (dizziness, fatigue). Screen for CYP3A4 inhibitor interactions that may significantly elevate diltiazem levels and adverse effects."
+}

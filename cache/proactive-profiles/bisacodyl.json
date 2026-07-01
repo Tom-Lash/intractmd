@@ -1,0 +1,53 @@
+{
+  "drug": "Bisacodyl",
+  "drug_class": "Stimulant Laxative",
+  "key_pathways": [
+    "Local GI tract action",
+    "Minimal systemic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Psyllium husk",
+      "severity": "High",
+      "mechanism": "Concurrent use of multiple bulk-forming and stimulant laxatives increases risk of intestinal obstruction, severe cramping, and dehydration",
+      "action": "Separate administration by at least 2 hours; counsel patient on appropriate laxative selection"
+    },
+    {
+      "name": "Senna",
+      "severity": "High",
+      "mechanism": "Additive stimulant laxative effects may cause excessive bowel stimulation, electrolyte depletion, and intestinal dysfunction",
+      "action": "Avoid concurrent use; alternate laxative agents or space dosing with clinical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "High-dose bisacodyl may transiently reduce beneficial bacterial colonization; probiotics may help maintain gut flora",
+      "action": "Administer probiotics at different times from bisacodyl; monitor for gastrointestinal tolerance"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays gastric emptying and may reduce bisacodyl efficacy; increases cramping and GI distress when laxative effect occurs",
+      "action": "Take bisacodyl on empty stomach; advise patient to avoid fatty foods within 2 hours of dose"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "May coat GI mucosa and slightly delay tablet dissolution; minimal clinical impact",
+      "action": "Space dairy consumption 1-2 hours from bisacodyl administration if decreased efficacy observed"
+    },
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "Additive laxative effect may increase GI cramping and urgency; can support overall bowel regularity",
+      "action": "Moderate fiber intake when initiating bisacodyl; encourage adequate hydration throughout treatment"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of electrolyte depletion (weakness, muscle cramps), dehydration, and medication dependence with chronic use. Counsel patients that bisacodyl should not be used regularly for >1 week without medical supervision due to risk of laxative dependency and altered bowel function."
+}

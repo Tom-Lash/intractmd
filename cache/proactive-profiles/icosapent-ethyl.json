@@ -1,0 +1,73 @@
+{
+  "drug": "Icosapent Ethyl",
+  "drug_class": "Omega-3 Fatty Acid (Prescription)",
+  "key_pathways": [
+    "Lipid metabolism",
+    "Triglyceride reduction",
+    "Platelet aggregation",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants (drug interaction)",
+      "severity": "High",
+      "mechanism": "Icosapent ethyl increases bleeding risk when combined with anticoagulants; additive antiplatelet effects",
+      "action": "Avoid concurrent use or obtain baseline PT/INR; monitor INR closely if concurrent use necessary"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "Both have antiplatelet properties; synergistic bleeding risk",
+      "action": "Limit vitamin E to <400 IU daily or discontinue; counsel on bleeding precautions"
+    },
+    {
+      "name": "Garlic supplements (concentrated extracts)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects; increased bleeding risk",
+      "action": "Avoid concentrated garlic supplements; counsel patient to discontinue prior to procedures"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; potential additive bleeding risk",
+      "action": "Monitor for unusual bleeding/bruising; consider discontinuation if signs develop"
+    },
+    {
+      "name": "Fish oil supplements",
+      "severity": "Low",
+      "mechanism": "Redundant therapy; both are omega-3 fatty acids",
+      "action": "Avoid concurrent use to prevent excessive dosing; icosapent ethyl is prescription-strength alternative"
+    },
+    {
+      "name": "Aspirin (low-dose)",
+      "severity": "Low",
+      "mechanism": "Additive antiplatelet effects; acceptable together in cardiac patients but requires monitoring",
+      "action": "Use only if cardioprotection indicated; monitor for bleeding signs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (when taking non-food formulations)",
+      "severity": "Moderate",
+      "mechanism": "May increase GI side effects (nausea, dyspepsia); fat enhances absorption variability",
+      "action": "Take with low-fat meals or moderate fat intake; consistent meal timing improves tolerability"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High omega-6 polyunsaturated fats (vegetable oils in excess)",
+      "severity": "Low",
+      "mechanism": "May counteract triglyceride-lowering effects; imbalances omega-3/omega-6 ratio",
+      "action": "Encourage balanced fat intake; monitor triglyceride response at follow-up visits"
+    },
+    {
+      "name": "Alcohol (>2 drinks/day)",
+      "severity": "Low",
+      "mechanism": "May potentiate hypertriglyceridemia and increase bleeding risk",
+      "action": "Counsel on moderate alcohol consumption; monitor triglyceride levels if chronic use"
+    }
+  ],
+  "monitoring_notes": "Monitor lipid panel at 4-8 weeks to assess triglyceride response; assess bleeding risk baseline and periodically, especially if patient requires anticoagulants. Counsel on consistent meal timing and GI tolerance; educate on signs of bleeding and when to seek emergency care."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Flecainide",
+  "drug_class": "Class IC Antiarrhythmic",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "Renal elimination"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces flecainide levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Grapefruit extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases flecainide concentration and toxicity risk",
+      "action": "Avoid supplementation; advise against high-dose grapefruit consumption"
+    },
+    {
+      "name": "Alkaline-forming supplements (sodium bicarbonate, potassium citrate)",
+      "severity": "High",
+      "mechanism": "Increased urinary pH decreases renal elimination, elevating flecainide levels and arrhythmia risk",
+      "action": "Avoid alkalinizing supplements; monitor urine pH if used; coordinate with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May have additive cardiac effects; high doses could theoretically potentiate arrhythmia risk",
+      "action": "Use standard supplemental doses; monitor for palpitations or cardiac symptoms"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May cause hypokalemia and sodium retention, increasing arrhythmia susceptibility",
+      "action": "Limit licorice intake; maintain electrolyte monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases flecainide bioavailability and plasma concentration",
+      "action": "Complete avoidance recommended; switch to alternative juices (orange, apple)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium may contribute to fluid retention and electrolyte imbalance, affecting cardiac function",
+      "action": "Maintain moderate sodium intake; follow heart-healthy dietary guidelines"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase sympathetic activity and trigger arrhythmias in susceptible patients",
+      "action": "Limit coffee, tea, energy drinks; individual tolerance varies"
+    }
+  ],
+  "monitoring_notes": "Monitor flecainide plasma levels (therapeutic range 0.2-1.0 mcg/mL) when CYP2D6/3A4 interactions are suspected. Regular assessment of renal function and serum electrolytes (particularly potassium and magnesium) is essential, as flecainide has narrow therapeutic index and renal clearance is significant."
+}

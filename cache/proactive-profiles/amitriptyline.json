@@ -1,0 +1,78 @@
+{
+  "drug": "Amitriptyline",
+  "drug_class": "Tricyclic Antidepressant",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces amitriptyline levels; serotonergic activity increases serotonin syndrome risk",
+      "action": "Discontinue St. John's Wort or use alternative antidepressant; allow 2-week washout before switching"
+    },
+    {
+      "name": "Linezolid",
+      "severity": "Critical",
+      "mechanism": "MAOI-like activity combined with amitriptyline's serotonergic effects increases serotonin syndrome risk",
+      "action": "Avoid concurrent use; consider alternative antibiotic if possible"
+    },
+    {
+      "name": "SAM-e",
+      "severity": "High",
+      "mechanism": "Serotonergic activity increases risk of serotonin syndrome and excessive CNS effects",
+      "action": "Avoid concurrent supplementation; counsel patient on serotonin syndrome symptoms"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential additive stimulant effects and mild serotonergic activity",
+      "action": "Monitor for increased agitation, tremor, or tachycardia; consider dose adjustment if needed"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase sedation and dizziness",
+      "action": "Advise patient to monitor for excessive drowsiness; take at separate times if possible"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Minor serotonergic activity; theoretical increased bleeding risk",
+      "action": "Monitor for excessive sedation or serotonergic symptoms; assess bleeding risk if on concurrent anticoagulants"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Moderate",
+      "mechanism": "Although amitriptyline has weak MAOI activity, high tyramine intake may increase hypertension risk",
+      "action": "Limit excessive intake of aged cheeses, cured meats, and heavily fermented foods; monitor blood pressure"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression increases sedation, impaired cognition, and motor coordination",
+      "action": "Advise patient to limit or avoid alcohol; counsel on increased fall and accident risk"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "CYP1A2 interaction may increase amitriptyline levels; stimulant effects may antagonize sedation or cause jitteriness",
+      "action": "Monitor for tremor, tachycardia, or anxiety; reduce caffeine intake if adverse effects occur"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase amitriptyline plasma concentrations",
+      "action": "Advise patient to avoid grapefruit juice or consume consistently; monitor for increased anticholinergic or CNS effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome (agitation, confusion, rapid heart rate, high blood pressure, dilated pupils, muscle rigidity), anticholinergic toxicity (dry mouth, urinary retention, constipation, confusion), and excessive CNS depression. Assess CYP2D6 phenotype if available, as poor metabolizers may experience elevated amitriptyline levels and increased adverse effects."
+}

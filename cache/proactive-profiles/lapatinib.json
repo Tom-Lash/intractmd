@@ -1,0 +1,90 @@
+{
+  "drug": "Lapatinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces lapatinib levels by 40-50%, decreasing therapeutic efficacy",
+      "action": "Contraindicated; do not use concurrently. Notify oncology provider immediately if already taking."
+    },
+    {
+      "name": "Grapefruit/Grapefruit seed extract",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibitor significantly increases lapatinib exposure and toxicity risk",
+      "action": "Strictly avoid; select alternative supplements and foods."
+    },
+    {
+      "name": "Kava kava",
+      "severity": "High",
+      "mechanism": "May inhibit CYP3A4, potentially increasing lapatinib levels and adverse effects",
+      "action": "Avoid use; discuss with oncology team before supplementing."
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce lapatinib bioavailability",
+      "action": "Avoid concurrent use; choose alternative hepatoprotective strategies if needed."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition; may marginally increase lapatinib levels",
+      "action": "Use in moderation (culinary amounts safe); monitor for increased toxicity signs."
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition at high doses; may increase lapatinib exposure",
+      "action": "Limit to dietary amounts; high-dose supplementation not recommended without monitoring."
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May alter gut pH and bacterial metabolism affecting lapatinib absorption variability",
+      "action": "Monitor for efficacy changes; maintain consistent probiotic use if beneficial."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition increases lapatinib levels 2-4 fold, elevating toxicity risk",
+      "action": "Complete avoidance required; remove from diet during treatment."
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; may increase lapatinib exposure and adverse effects",
+      "action": "Avoid consumption; select alternative beverages."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Significantly increases lapatinib absorption (up to 3-4 fold); may increase toxicity if intake inconsistent",
+      "action": "Take lapatinib consistently with or without food to maintain steady-state levels; maintain dietary consistency."
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, Brussels sprouts, cabbage)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction at high consumption; may slightly reduce lapatinib levels",
+      "action": "Normal dietary consumption acceptable; avoid excessive supplemental amounts."
+    },
+    {
+      "name": "Soy products",
+      "severity": "Low",
+      "mechanism": "May have weak estrogenic effects; theoretical interaction with HER2+ breast cancer therapy",
+      "action": "Moderate intake acceptable; discuss high-dose soy supplementation with oncology team."
+    }
+  ],
+  "monitoring_notes": "Lapatinib requires strict CYP3A4 interaction management due to narrow therapeutic window in oncology. Monitor for diarrhea, rash, hepatotoxicity, and QT prolongation; maintain consistent meal timing and composition to optimize absorption predictability."
+}

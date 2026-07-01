@@ -1,0 +1,47 @@
+{
+  "drug": "Necitumumab",
+  "drug_class": "Monoclonal Antibody (EGFR Inhibitor)",
+  "key_pathways": [
+    "EGFR signaling",
+    "No hepatic metabolism (protein)",
+    "Renal clearance"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effects and increase bleeding risk in patients receiving concurrent anticoagulation",
+      "action": "Limit vitamin E supplementation to RDA levels (15 mg/day); monitor for bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have immunomodulatory effects that could theoretically interfere with monoclonal antibody efficacy",
+      "action": "Monitor therapeutic response; discuss with oncology team before use"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential immunostimulatory effects may interact with cancer immunotherapy mechanisms",
+      "action": "Avoid or use with caution; prioritize discussion with treating oncologist"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Hypertension is a known adverse effect of necitumumab; excess sodium intake may exacerbate this risk",
+      "action": "Maintain sodium restriction (<2,300 mg/day) and monitor blood pressure regularly"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "No direct interaction with protein drug, but used cautiously in patients on concurrent medications metabolized by CYP3A4",
+      "action": "Avoid if taking additional CYP3A4-dependent medications; otherwise unrestricted"
+    }
+  ],
+  "monitoring_notes": "Necitumumab is a monoclonal antibody with no hepatic metabolism, minimizing direct drug-supplement interactions. Primary concerns are monitoring for infusion-related reactions, hypertension, hypomagnesemia, and skin toxicity; counsel patients to avoid immunostimulatory supplements that may interfere with therapeutic mechanism."
+}

@@ -1,0 +1,79 @@
+{
+  "drug": "Tamoxifen",
+  "drug_class": "Selective Estrogen Receptor Modulator (SERM)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C9",
+    "CYP2B6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2D6, reducing tamoxifen metabolism and active metabolite (endoxifen) formation, decreasing therapeutic efficacy",
+      "action": "Avoid concurrent use; counsel patient to discontinue at least 2 weeks before starting tamoxifen"
+    },
+    {
+      "name": "Red Clover",
+      "severity": "High",
+      "mechanism": "Contains isoflavones with estrogenic activity that may antagonize tamoxifen's therapeutic effects in hormone-sensitive breast cancer",
+      "action": "Contraindicated; recommend alternative botanical support after discussion with oncologist"
+    },
+    {
+      "name": "Black Cohosh",
+      "severity": "Moderate",
+      "mechanism": "May have estrogenic activity and could potentially reduce tamoxifen efficacy in estrogen-dependent cancers",
+      "action": "Avoid or use only under close oncologic supervision; discuss alternatives for menopausal symptom management"
+    },
+    {
+      "name": "Dong Quai",
+      "severity": "Moderate",
+      "mechanism": "Contains phytoestrogens that may compete with tamoxifen at estrogen receptors and reduce therapeutic effect",
+      "action": "Advise against use; explore non-estrogenic alternatives for symptom management"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Extract",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4, potentially increasing tamoxifen levels; effect typically modest",
+      "action": "Limit intake; monitor for increased side effects (hot flashes, nausea); inform provider if regular consumption occurs"
+    },
+    {
+      "name": "Vitamin E (high-dose >400 IU daily)",
+      "severity": "Low",
+      "mechanism": "May have mild anticoagulant effects; tamoxifen increases thromboembolic risk",
+      "action": "Keep doses ≤400 IU daily; monitor for signs of bleeding or clotting"
+    },
+    {
+      "name": "Saw Palmetto",
+      "severity": "Low",
+      "mechanism": "Weak 5-alpha reductase inhibitor; theoretical potential to affect hormone metabolism",
+      "action": "Use with caution; not absolutely contraindicated but discuss with oncology team"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor that increases tamoxifen blood levels and metabolite concentrations, raising risk of adverse effects",
+      "action": "Eliminate grapefruit and juice from diet; switch to alternative citrus fruits (oranges, lemons)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-dose soy products (>25g isoflavones daily)",
+      "severity": "Low",
+      "mechanism": "Isoflavones have weak estrogenic activity; excessive intake may theoretically reduce tamoxifen efficacy",
+      "action": "Moderate consumption acceptable (1-2 servings daily); avoid supplements with concentrated soy isoflavones"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contain indole-3-carbinol which may induce estrogen metabolism; excessive amounts theoretically could impact efficacy",
+      "action": "Normal dietary intake is safe and beneficial; no restriction necessary"
+    }
+  ],
+  "monitoring_notes": "Monitor for reduced tamoxifen efficacy if CYP2D6 inducing agents are used concomitantly, as conversion to active metabolite endoxifen is critical for therapeutic benefit. Assess adherence and counsel on avoiding estrogenic substances that may compromise cancer treatment outcomes; coordinate with oncology team regarding any supplement use."
+}

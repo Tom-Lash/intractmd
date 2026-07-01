@@ -1,0 +1,78 @@
+{
+  "drug": "Rizatriptan",
+  "drug_class": "Selective 5-HT1B/1D receptor agonist (triptan)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "MAO-A metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and MAO-A, reducing rizatriptan levels and efficacy; may increase serotonin syndrome risk",
+      "action": "Avoid concurrent use; discontinue St. John's Wort at least 2 weeks before rizatriptan therapy"
+    },
+    {
+      "name": "5-Hydroxytryptophan (5-HTP)",
+      "severity": "High",
+      "mechanism": "Direct serotonin precursor increases central serotonergic activity, elevating serotonin syndrome risk with triptan use",
+      "action": "Contraindicated; do not use concurrently with rizatriptan"
+    },
+    {
+      "name": "L-Tryptophan (high-dose)",
+      "severity": "High",
+      "mechanism": "Serotonin precursor may potentiate serotonergic effects and increase serotonin syndrome risk",
+      "action": "Avoid high-dose supplementation; use only dietary amounts if needed"
+    },
+    {
+      "name": "Linezolid",
+      "severity": "Critical",
+      "mechanism": "Weak MAOI activity combined with triptan's serotonergic effects significantly increases serotonin syndrome risk",
+      "action": "Absolute contraindication; do not use with rizatriptan"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild stimulant properties may theoretically potentiate cardiovascular effects of triptan; limited clinical evidence",
+      "action": "Monitor for increased heart rate or blood pressure; use with caution in patients with cardiac risk factors"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "Low",
+      "mechanism": "Used for migraine prevention; additive vasoconstrictive effects possible with rizatriptan",
+      "action": "Generally acceptable for migraine prophylaxis; monitor for vasoconstrictive symptoms"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May enhance migraine relief and reduce triptan need; no direct interaction mechanism",
+      "action": "Can be used concurrently for migraine prophylaxis; consider as adjunctive therapy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays rizatriptan absorption and peak plasma concentration, reducing efficacy for acute migraine treatment",
+      "action": "Take rizatriptan on empty stomach or with light meal; avoid within 2 hours of high-fat food consumption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, soy sauce, fermented products)",
+      "severity": "Low",
+      "mechanism": "Rizatriptan is not an MAOI, but excessive tyramine intake may theoretically potentiate vasoconstrictive effects",
+      "action": "No strict restriction required; normal dietary tyramine intake acceptable; counsel patients on moderation"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May enhance triptan efficacy and migraine relief; some formulations contain caffeine; potential for mild additive stimulation",
+      "action": "Moderate caffeine intake acceptable; excessive use may worsen rebound headaches"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity) if used with other serotonergic agents. Assess cardiovascular status, particularly in patients with hypertension or coronary artery disease, as triptans cause vasoconstriction."
+}

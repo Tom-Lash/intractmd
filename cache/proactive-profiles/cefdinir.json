@@ -1,0 +1,40 @@
+{
+  "drug": "Cefdinir",
+  "drug_class": "Third-generation cephalosporin antibiotic",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Primarily renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements (ferrous sulfate, ferrous gluconate)",
+      "severity": "High",
+      "mechanism": "Iron forms insoluble chelate complexes with cefdinir, reducing cefdinir absorption by up to 80% and decreasing antimicrobial efficacy",
+      "action": "Separate administration by at least 2 hours; take cefdinir first, then iron supplement after minimum 2-hour interval"
+    },
+    {
+      "name": "Antacids containing magnesium or aluminum hydroxide",
+      "severity": "Moderate",
+      "mechanism": "Reduces cefdinir absorption through chelation and pH elevation in GI tract",
+      "action": "Administer cefdinir at least 2 hours before or after antacid use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics (Lactobacillus, Saccharomyces boulardii)",
+      "severity": "Low",
+      "mechanism": "Antibiotics may reduce probiotic viability; probiotics may theoretically reduce antibiotic efficacy if taken simultaneously",
+      "action": "Consider separating by 2-3 hours; resume probiotics after antibiotic course completion"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay cefdinir absorption and peak serum concentrations, though clinical significance is minimal",
+      "action": "Cefdinir can be taken with or without food; consistency in administration method is recommended"
+    }
+  ],
+  "monitoring_notes": "Cefdinir undergoes minimal hepatic metabolism and has few direct drug interactions. Primary concern is iron chelation reducing bioavailability; monitor for clinical treatment failure if iron supplementation cannot be separated. Screen for hypersensitivity reactions in penicillin-allergic patients (cross-reactivity ~1-3%)."
+}

@@ -1,0 +1,47 @@
+{
+  "drug": "Ethosuximide",
+  "drug_class": "Succinimide anticonvulsant",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces ethosuximide plasma concentrations and seizure control efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor seizure activity closely and may require ethosuximide dose adjustment"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "May lower seizure threshold and reduce anticonvulsant efficacy of ethosuximide",
+      "action": "Discontinue ginkgo biloba or monitor seizure control; consider alternative supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression with ethosuximide; may increase drowsiness and dizziness",
+      "action": "Use with caution; counsel patient on additive CNS effects and avoid driving if drowsiness occurs"
+    },
+    {
+      "name": "Kava",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression and increase risk of hepatotoxicity with chronic ethosuximide use",
+      "action": "Monitor for excessive sedation; limit use and counsel on hepatic monitoring"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase drowsiness, dizziness, and impair coordination; may lower seizure threshold",
+      "action": "Advise patient to minimize or avoid alcohol consumption; monitor for increased CNS effects"
+    }
+  ],
+  "monitoring_notes": "Monitor serum ethosuximide concentrations (therapeutic range: 40-100 mcg/mL) and seizure control, especially when initiating or discontinuing interacting supplements. Assess for CNS side effects (drowsiness, dizziness, ataxia) and counsel on medication adherence for seizure prevention."
+}

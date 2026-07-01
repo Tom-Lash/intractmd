@@ -1,0 +1,66 @@
+{
+  "drug": "Pomalidomide",
+  "drug_class": "Immunomodulatory agent (IMiD)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2",
+    "hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces pomalidomide plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase pomalidomide levels and adverse effects",
+      "action": "Avoid or use with caution; monitor for toxicity"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "Potential additive anticoagulant/antiplatelet effects; pomalidomide increases VTE risk",
+      "action": "Limit to RDA; discuss with prescriber before supplementing"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin K",
+      "severity": "Low",
+      "mechanism": "May interact with anticoagulation management in VTE prevention strategies",
+      "action": "Maintain consistent intake; inform healthcare team of supplementation"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition; theoretical risk of increased pomalidomide levels",
+      "action": "Monitor clinical response; report any increased side effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases pomalidomide bioavailability and toxicity risk",
+      "action": "Completely avoid grapefruit products during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase pomalidomide absorption; take consistently with or without food",
+      "action": "Maintain consistent meal timing relative to dosing; avoid variable fat intake"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May increase hepatic metabolism burden and GI side effects",
+      "action": "Limit alcohol consumption; monitor for increased nausea or hepatic effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for thromboembolic events (VTE risk is high with pomalidomide); assess for increased peripheral neuropathy and hematologic toxicity. Verify no concurrent CYP3A4 inhibitors/inducers and counsel on strict adherence to teratogenic precautions (FDA REMS program)."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Zanubrutinib",
+  "drug_class": "Bruton's Tyrosine Kinase (BTK) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer that significantly reduces zanubrutinib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; select alternative herbal supplement if needed"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor that increases zanubrutinib exposure and risk of toxicity",
+      "action": "Discontinue use; do not combine with zanubrutinib"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 modulation may slightly affect zanubrutinib levels",
+      "action": "Use with caution; monitor for efficacy changes"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inhibitory effects at high doses",
+      "action": "Monitor closely if used; maintain consistent dosing patterns"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increasing zanubrutinib bioavailability and systemic exposure, elevating toxicity risk",
+      "action": "Completely eliminate grapefruit and juice from diet during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase zanubrutinib absorption; food effect varies but can impact plasma levels",
+      "action": "Take zanubrutinib consistently with or without food; do not alternate"
+    },
+    {
+      "name": "Cruciferous Vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction with excessive consumption",
+      "action": "Maintain normal dietary intake; avoid extreme supplementation"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of toxicity (diarrhea, infections, bleeding) as CYP3A4 inhibitors increase zanubrutinib exposure. Maintain consistent meal timing and composition to minimize pharmacokinetic variability."
+}

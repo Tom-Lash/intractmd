@@ -1,0 +1,60 @@
+{
+  "drug": "Quinagolide",
+  "drug_class": "Dopamine D2 Receptor Agonist (Non-ergot)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Dopaminergic pathways"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce quinagolide plasma concentrations and efficacy; potential loss of prolactin suppression",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Antipsychotic herb combinations (e.g., high-dose kava)",
+      "severity": "High",
+      "mechanism": "May antagonize dopaminergic effects of quinagolide and increase CNS side effects",
+      "action": "Discontinue and consult physician before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapeseed extract/Grapefruit extracts",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may slightly increase quinagolide levels",
+      "action": "Monitor for increased side effects (nausea, dizziness, headache); dose adjustment may be needed"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation with variable effects",
+      "action": "Monitor prolactin levels and clinical response; report any changes to physician"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases quinagolide bioavailability and plasma concentrations, elevating risk of adverse effects",
+      "action": "Eliminate from diet; no grapefruit consumption during quinagolide therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay quinagolide absorption and affect peak concentration timing",
+      "action": "Take quinagolide consistently with or without food; maintain routine for consistent therapeutic levels"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Dopamine agonists may have minor interactions with tyramine metabolism; quinagolide has low hypertensive risk profile",
+      "action": "Moderation advised; monitor blood pressure if consuming large amounts"
+    }
+  ],
+  "monitoring_notes": "Monitor prolactin levels, blood pressure, and cardiovascular status during therapy. Report any signs of ergotism, valvular dysfunction, or CNS effects; dose adjustments may be needed if CYP3A4 inhibitors/inducers are initiated or discontinued."
+}

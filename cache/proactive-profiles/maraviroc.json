@@ -1,0 +1,46 @@
+{
+  "drug": "Maraviroc",
+  "drug_class": "CCR5 antagonist (antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces maraviroc plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases maraviroc levels below therapeutic range",
+      "action": "Contraindicated; use alternative antibiotic if TB treatment required"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "May weakly induce CYP3A4, potentially reducing maraviroc concentrations",
+      "action": "Monitor viral load; discuss with provider before use"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction possible; limited clinical evidence",
+      "action": "Use with caution and clinical monitoring"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase maraviroc levels; clinical significance unclear",
+      "action": "Limit consumption; no restriction necessary but maintain consistency"
+    }
+  ],
+  "monitoring_notes": "Maraviroc has good oral bioavailability with minimal food interactions. Monitor for virologic failure if CYP3A4 inducers are co-prescribed; dosage adjustment to 600 mg twice daily may be needed with CYP3A4 inhibitors."
+}

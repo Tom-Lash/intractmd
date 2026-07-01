@@ -1,0 +1,85 @@
+{
+  "drug": "Mefenamic Acid",
+  "drug_class": "NSAID (Nonsteroidal Anti-inflammatory Drug)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "Renal excretion",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants",
+      "severity": "Critical",
+      "mechanism": "Mefenamic acid increases bleeding risk by inhibiting platelet function and displacing warfarin from protein binding, elevating INR",
+      "action": "Avoid concurrent use; if necessary, monitor INR closely with frequent testing and dose adjustment"
+    },
+    {
+      "name": "High-dose Aspirin",
+      "severity": "Critical",
+      "mechanism": "Combined NSAID use increases GI bleeding, ulceration, and cardiovascular event risk",
+      "action": "Do not combine; use only one NSAID at a time"
+    },
+    {
+      "name": "Lithium",
+      "severity": "High",
+      "mechanism": "Mefenamic acid reduces renal lithium clearance, increasing serum levels to toxic concentrations",
+      "action": "Avoid combination; if necessary, monitor serum lithium levels and renal function weekly"
+    },
+    {
+      "name": "ACE Inhibitors/Angiotensin II Receptor Blockers",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce the antihypertensive effect and increase risk of acute kidney injury and hyperkalemia",
+      "action": "Monitor blood pressure and serum creatinine; consider alternative pain management"
+    },
+    {
+      "name": "Methotrexate",
+      "severity": "High",
+      "mechanism": "Mefenamic acid decreases methotrexate renal clearance, increasing toxicity risk",
+      "action": "Avoid; use alternative analgesic if pain management needed during methotrexate therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish Oil/Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "May have additive antiplatelet effects with mefenamic acid, slightly increasing bleeding risk",
+      "action": "Monitor for unusual bruising or bleeding; use lowest effective doses"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Potential additive antiplatelet and anticoagulant properties with NSAIDs",
+      "action": "Monitor for signs of bleeding; inform provider if using high-dose ginger supplements"
+    },
+    {
+      "name": "Garlic Supplements",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects that could potentiate bleeding risk",
+      "action": "Use moderate amounts; counsel on signs of excessive bleeding"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (>2 drinks daily)",
+      "severity": "High",
+      "mechanism": "Significantly increases GI bleeding and ulceration risk; alcohol also increases hepatotoxicity",
+      "action": "Counsel to minimize or eliminate alcohol consumption during mefenamic acid therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay and enhance mefenamic acid absorption, potentially increasing GI side effects",
+      "action": "Take mefenamic acid with food or milk to reduce GI irritation; avoid large fatty meals before dosing"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "Mild additive GI irritation; may increase gastric acidity",
+      "action": "Limit coffee, tea, and cola consumption; take medication with non-acidic beverage"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (serum creatinine, BUN) and electrolytes (especially potassium) at baseline and periodically during use. Assess for signs of GI bleeding, edema, hypertension, and cardiovascular events. Counsel patients on appropriate duration of use (typically ≤7 days) and to report persistent abdominal pain, black stools, or unusual bleeding."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Loperamide",
+  "drug_class": "Antidiarrheal (Opioid agonist)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "P-glycoprotein (efflux transporter)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction and P-glycoprotein upregulation reduces loperamide levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidiarrheal if St. John's Wort is necessary"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases loperamide bioavailability and CNS penetration, elevating toxicity risk",
+      "action": "Discontinue grapefruit products; allow 48-72 hours washout before loperamide use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Quercetin",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may modestly increase loperamide levels",
+      "action": "Monitor for increased side effects (constipation, dizziness); dose adjustment rarely needed"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase loperamide exposure",
+      "action": "Use with caution; monitor for anticholinergic effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases loperamide absorption and CNS levels, risking QT prolongation and opioid toxicity",
+      "action": "Avoid grapefruit products entirely during loperamide therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase loperamide absorption and delay gastric emptying, potentially prolonging drug effect",
+      "action": "Take loperamide consistently with or without food for predictable efficacy"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may counteract loperamide's constipating effects but carries no direct pharmacokinetic interaction",
+      "action": "Counsel patient that caffeine may reduce efficacy; monitor symptom control"
+    }
+  ],
+  "monitoring_notes": "Loperamide has significant P-glycoprotein substrate activity; inhibitors (ketoconazole, erythromycin, verapamil) can dramatically increase CNS exposure and toxicity risk. Monitor for signs of opioid overdose (respiratory depression, altered mental status, QT prolongation) especially when combined with CYP3A4/P-gp inhibitors, even at standard doses."
+}

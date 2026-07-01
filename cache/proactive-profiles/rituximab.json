@@ -1,0 +1,59 @@
+{
+  "drug": "Rituximab",
+  "drug_class": "Monoclonal Antibody (Anti-CD20)",
+  "key_pathways": [
+    "Not CYP-metabolized",
+    "Immune system (B-cell depletion)",
+    "Fc-receptor mediated clearance"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immunostimulant may antagonize rituximab's immunosuppressive effects and reduce therapeutic efficacy",
+      "action": "Avoid during rituximab treatment and for at least 6 months after completion"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immune-enhancing supplement may counteract B-cell depletion and reduce drug effectiveness",
+      "action": "Discontinue use during rituximab therapy"
+    },
+    {
+      "name": "Live Attenuated Vaccines",
+      "severity": "Critical",
+      "mechanism": "Rituximab causes B-cell depletion and immunosuppression; live vaccines pose infection risk",
+      "action": "Contraindicated during and for at least 6 months after rituximab; use only inactivated vaccines"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild immune modulation may theoretically interact with rituximab's mechanism",
+      "action": "Use with caution and monitor for changes in disease control"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May support immune recovery but unlikely to significantly impact rituximab efficacy",
+      "action": "May be considered for GI support; select well-studied strains"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-dose vitamin D supplementation",
+      "severity": "Low",
+      "mechanism": "Vitamin D modulates immune function; excessive intake may theoretically affect immunosuppressive balance",
+      "action": "Monitor vitamin D levels; maintain physiologic supplementation only"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Not a CYP substrate, but may have mild immune-modulatory effects",
+      "action": "No strict avoidance required but limit excessive consumption"
+    }
+  ],
+  "monitoring_notes": "Rituximab is a monoclonal antibody not metabolized by CYP450 enzymes, making traditional drug-supplement interactions unlikely. Primary concern is immune modulation: avoid immunostimulants that may reduce efficacy and strictly contraindicate live vaccines. Monitor for infection risk given B-cell depletion and maintain appropriate prophylaxis."
+}

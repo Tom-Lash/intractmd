@@ -1,0 +1,54 @@
+{
+  "drug": "Felbamate",
+  "drug_class": "Antiepileptic Agent",
+  "key_pathways": [
+    "CYP2C19",
+    "CYP3A4",
+    "CYP2C9",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C19, reducing felbamate levels and efficacy; may precipitate seizures",
+      "action": "Avoid concurrent use; counsel patient on seizure risk if discontinuing felbamate"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4 metabolism; potential reduction in felbamate concentrations",
+      "action": "Monitor seizure control; consider alternative supplement or felbamate level monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression; may enhance sedation",
+      "action": "Advise patient of increased sedation risk; use lowest effective doses"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk",
+      "action": "Monitor for excessive sedation; assess liver function if combined use necessary"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase felbamate plasma concentrations",
+      "action": "Limit grapefruit consumption or monitor for adverse effects (dizziness, ataxia, diplopia)"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay absorption and alter peak plasma concentrations",
+      "action": "Administer felbamate consistently with or without food for stable levels"
+    }
+  ],
+  "monitoring_notes": "Monitor for hepatotoxicity and bone marrow suppression as per FDA black box warning; periodic liver function tests and CBC are recommended. Therapeutic drug monitoring may be warranted given CYP450 enzyme interactions and narrow therapeutic index."
+}

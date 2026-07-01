@@ -1,0 +1,77 @@
+{
+  "drug": "Calcium Acetate",
+  "drug_class": "Phosphate binder",
+  "key_pathways": [
+    "GI absorption",
+    "Chelation complexes"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Calcium forms insoluble complexes with iron, reducing iron absorption by up to 50%",
+      "action": "Separate dosing by at least 2 hours; take iron supplements 2 hours before or 6 hours after calcium acetate"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Calcium competitively inhibits zinc absorption in the GI tract",
+      "action": "Administer zinc supplements at least 2 hours apart from calcium acetate dosing"
+    },
+    {
+      "name": "Fluoride supplements/sodium fluoride",
+      "severity": "High",
+      "mechanism": "Calcium binds fluoride in GI tract, reducing fluoride bioavailability",
+      "action": "Separate administration by at least 2-4 hours"
+    },
+    {
+      "name": "Tetracycline antibiotics (oral)",
+      "severity": "High",
+      "mechanism": "Calcium chelates tetracyclines, significantly reducing antibiotic efficacy",
+      "action": "Avoid concurrent use; administer tetracyclines 2 hours before or 6 hours after calcium acetate"
+    },
+    {
+      "name": "Quinolone antibiotics (oral)",
+      "severity": "Moderate",
+      "mechanism": "Calcium reduces quinolone absorption and bioavailability",
+      "action": "Separate dosing by at least 2 hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Vitamin D increases calcium absorption; combined use enhances efficacy but requires monitoring for hypercalcemia in susceptible patients",
+      "action": "Monitor serum calcium levels; dose adjustment may be necessary"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "High calcium can reduce magnesium absorption; may lead to magnesium depletion with chronic use",
+      "action": "Monitor magnesium levels; maintain adequate spacing between doses if possible"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-phosphorus foods (dairy, nuts, seeds, legumes)",
+      "severity": "Critical",
+      "mechanism": "Calcium acetate's primary mechanism is phosphate binding; high dietary phosphorus reduces therapeutic efficacy in hyperphosphatemia management",
+      "action": "Implement strict dietary phosphorus restriction as part of renal disease management; coordinate with dietitian"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Spinach, kale, and high-oxalate vegetables",
+      "severity": "Low",
+      "mechanism": "Oxalates bind calcium, reducing calcium availability; generally minimal clinical impact in phosphate binder therapy",
+      "action": "No strict avoidance necessary; variety in vegetable intake is acceptable"
+    },
+    {
+      "name": "Whole grains and fiber-rich foods",
+      "severity": "Low",
+      "mechanism": "Phytates in whole grains can bind calcium, slightly reducing absorption",
+      "action": "Adequate spacing between calcium acetate and high-phytate meals is reasonable"
+    }
+  ],
+  "monitoring_notes": "Monitor serum calcium, phosphorus, and parathyroid hormone levels regularly in patients with chronic kidney disease. Assess for signs of hypercalcemia (nausea, vomiting, constipation, lethargy) and ensure compliance with dietary phosphorus restriction for optimal therapeutic outcome."
+}

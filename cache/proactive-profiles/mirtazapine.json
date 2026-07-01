@@ -1,0 +1,78 @@
+{
+  "drug": "Mirtazapine",
+  "drug_class": "Tetracyclic antidepressant (noradrenergic and specific serotonergic antidepressant)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2D6, reducing mirtazapine levels; increases serotonin risk",
+      "action": "Avoid concurrent use; if discontinuing St. John's Wort, monitor for increased mirtazapine effects"
+    },
+    {
+      "name": "SAMe",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increase risk of serotonin syndrome",
+      "action": "Avoid or use only under medical supervision with close monitoring"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Serotonin precursor; additive serotonergic activity increases serotonin syndrome risk",
+      "action": "Contraindicated; do not use concurrently"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May increase serotonergic activity; mild CYP3A4 induction possible",
+      "action": "Monitor for excessive serotonergic effects; inform prescriber of use"
+    },
+    {
+      "name": "Valerian",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and sedation",
+      "action": "Use with caution; monitor for excessive drowsiness and impaired cognition"
+    },
+    {
+      "name": "Kava",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; hepatotoxicity concern",
+      "action": "Minimize use; monitor for excessive sedation and hepatic function"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Moderate",
+      "mechanism": "Though mirtazapine is not an MAOI, high tyramine intake with concurrent noradrenergic activity may elevate blood pressure",
+      "action": "Limit excessive tyramine intake; monitor blood pressure if consuming large quantities"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase mirtazapine absorption and onset of sedation",
+      "action": "Take mirtazapine consistently with or without food; be aware of enhanced drowsiness with fatty meals"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and sedation",
+      "action": "Minimize or avoid alcohol; warn patients of increased drowsiness, impaired judgment, and motor coordination"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May antagonize sedative effects and increase anxiety or tremor",
+      "action": "Monitor tolerance; consider reducing caffeine intake if experiencing increased anxiety or sleep disturbance"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome signs (agitation, confusion, rapid heart rate, high blood pressure, dilated pupils) especially when combining with other serotonergic agents. Assess weight gain, metabolic parameters, and sedation levels regularly, as mirtazapine commonly causes significant appetite increase and drowsiness."
+}

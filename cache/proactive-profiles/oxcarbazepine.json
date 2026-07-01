@@ -1,0 +1,47 @@
+{
+  "drug": "Oxcarbazepine",
+  "drug_class": "Aromatic antiepileptic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces oxcarbazepine levels; may decrease seizure control",
+      "action": "Avoid concurrent use; counsel on alternatives for mood support"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "May lower seizure threshold and reduce drug efficacy",
+      "action": "Counsel patient to discontinue or switch to non-herbal alternatives"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce oxcarbazepine absorption if taken simultaneously",
+      "action": "Separate dosing by 2+ hours; monitor seizure control"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Potential for additive CNS depression and reduced absorption",
+      "action": "Monitor for increased dizziness/fatigue; separate dosing if needed"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase oxcarbazepine levels",
+      "action": "Limit consumption; monitor for toxicity signs (ataxia, diplopia, hyponatremia)"
+    }
+  ],
+  "monitoring_notes": "Monitor serum sodium levels periodically as hyponatremia is a known adverse effect; assess seizure frequency and CNS symptoms when interactions are suspected. Coordinate with neurology on any supplement changes."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Zidovudine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "key_pathways": [
+    "Glucuronidation (UGT1A1)",
+    "Phosphorylation (intracellular)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "May induce UGT1A1 and reduce zidovudine concentrations, potentially decreasing antiretroviral efficacy",
+      "action": "Avoid concurrent use; counsel patient on alternative mood support options and inform prescriber if currently used"
+    },
+    {
+      "name": "Ribavirin",
+      "severity": "High",
+      "mechanism": "Antagonistic antiretroviral activity and increased risk of hematologic toxicity; may reduce zidovudine phosphorylation",
+      "action": "Avoid combination unless specifically indicated; monitor CBC closely if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Acetaminophen (chronic high-dose)",
+      "severity": "Low",
+      "mechanism": "Both undergo glucuronidation; potential for increased zidovudine or acetaminophen concentrations",
+      "action": "Use lowest effective acetaminophen dose; monitor for increased adverse effects; consider alternative analgesics"
+    },
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "Zidovudine may impair B12 absorption; supplementation provides protective benefit",
+      "action": "Monitor B12 levels; supplementation generally recommended with long-term zidovudine use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (with immediate-release formulation)",
+      "severity": "Moderate",
+      "mechanism": "Delays and reduces peak zidovudine absorption, potentially compromising viral suppression",
+      "action": "Administer zidovudine on empty stomach or with light meal; separate from high-fat foods by 2+ hours"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Minor CYP3A4 inhibition; zidovudine has limited hepatic metabolism, so clinical significance is low",
+      "action": "No strict avoidance required, but moderate consumption recommended; monitor for increased GI side effects"
+    },
+    {
+      "name": "Alcohol (chronic/heavy use)",
+      "severity": "Low",
+      "mechanism": "May exacerbate hepatic metabolism and increase risk of hematologic toxicity; potential for additive mitochondrial effects",
+      "action": "Counsel on limiting alcohol intake; monitor CBC and liver function tests with regular use"
+    }
+  ],
+  "monitoring_notes": "Monitor complete blood count (CBC) regularly for anemia and neutropenia, as zidovudine is known for hematologic toxicity. Assess adherence and viral load at each visit, as food/supplement interactions may compromise efficacy; counsel on consistent dosing with regard to meals."
+}

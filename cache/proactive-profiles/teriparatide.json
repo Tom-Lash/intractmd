@@ -1,0 +1,60 @@
+{
+  "drug": "Teriparatide",
+  "drug_class": "Recombinant Parathyroid Hormone (PTH) Analog",
+  "key_pathways": [
+    "PTH1 receptor signaling",
+    "Calcium homeostasis",
+    "Bone metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin D (>4000 IU daily without monitoring)",
+      "severity": "High",
+      "mechanism": "Concurrent use may cause hypercalcemia; teriparatide increases serum calcium and vitamin D enhances intestinal calcium absorption",
+      "action": "Monitor serum calcium levels closely; coordinate vitamin D dosing with prescriber; limit to recommended dietary intake unless supervised"
+    },
+    {
+      "name": "Phosphate binders (Calcium carbonate >2000mg daily)",
+      "severity": "High",
+      "mechanism": "Excessive supplemental calcium may interfere with teriparatide's calcium-mobilizing effects and alter PTH-mediated phosphate regulation",
+      "action": "Use minimal supplemental calcium; obtain baseline serum calcium and phosphate; coordinate with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Magnesium affects PTH secretion and calcium absorption; excessive supplementation may attenuate teriparatide response",
+      "action": "Maintain normal magnesium intake; monitor serum magnesium if supplementing"
+    },
+    {
+      "name": "Strontium supplements",
+      "severity": "Low",
+      "mechanism": "Both agents promote bone formation; additive effects possible with unclear long-term safety profile",
+      "action": "Consider temporal separation of administration; discuss concurrent use with prescriber"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High dietary phosphate (processed meats, soft drinks, cheese >1500mg daily)",
+      "severity": "Moderate",
+      "mechanism": "Excessive phosphate intake suppresses PTH secretion and may counteract teriparatide's bone-anabolic effects",
+      "action": "Counsel on modest phosphate restriction; encourage whole foods over processed items"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-calcium dairy (>1200mg daily from foods alone)",
+      "severity": "Low",
+      "mechanism": "May contribute to hypercalcemia risk when combined with teriparatide's calcium-mobilizing effects",
+      "action": "Monitor total dietary calcium intake; ensure combined intake does not exceed recommended limits"
+    },
+    {
+      "name": "Caffeine-rich beverages (>400mg daily)",
+      "severity": "Low",
+      "mechanism": "Caffeine increases urinary calcium excretion and may modestly reduce teriparatide efficacy",
+      "action": "Encourage moderate caffeine consumption; counsel on balanced fluid intake"
+    }
+  ],
+  "monitoring_notes": "Monitor serum calcium, phosphate, and alkaline phosphatase at baseline and periodically during therapy; assess for hypercalcemia symptoms (nausea, constipation, polyuria). Ensure adequate vitamin D levels (25-75 ng/mL) and coordinate supplementation with prescriber to prevent overcorrection."
+}

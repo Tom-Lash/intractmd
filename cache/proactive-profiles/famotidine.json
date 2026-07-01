@@ -1,0 +1,52 @@
+{
+  "drug": "Famotidine",
+  "drug_class": "H2-receptor antagonist",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Famotidine increases gastric pH, reducing iron absorption by up to 50%",
+      "action": "Separate iron supplementation by at least 2 hours from famotidine dosing"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Reduced stomach acid impairs calcium citrate absorption; calcium carbonate may also be affected",
+      "action": "Take calcium supplements 2+ hours before or after famotidine; use calcium citrate formulation if possible"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B12",
+      "severity": "Low",
+      "mechanism": "Chronic famotidine use may reduce B12 absorption due to hypochlorhydria; typically only clinically significant with long-term use",
+      "action": "Monitor B12 levels if using famotidine chronically; consider supplementation if deficiency develops"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Elevated gastric pH may slightly reduce magnesium absorption",
+      "action": "No strict separation required, but monitor for adequate magnesium status with prolonged use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Famotidine reduces gastric acid; caffeine may cause increased gastric irritation in some patients with underlying conditions",
+      "action": "No restriction needed; counsel patients to monitor symptoms and reduce caffeine if heartburn worsens"
+    },
+    {
+      "name": "Spicy, acidic, or fatty foods",
+      "severity": "Low",
+      "mechanism": "While famotidine reduces acid, these foods may still trigger symptoms in susceptible individuals",
+      "action": "Encourage dietary modification based on individual symptom response"
+    }
+  ],
+  "monitoring_notes": "Famotidine has minimal drug metabolism and low interaction potential. Monitor for malabsorption of iron and calcium with concurrent supplementation; counsel patients on proper timing of supplements. Assess B12 status in patients on chronic therapy (>1 year)."
+}

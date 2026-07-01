@@ -1,0 +1,41 @@
+{
+  "drug": "Methylnaltrexone",
+  "drug_class": "Peripheral Opioid Receptor Antagonist",
+  "key_pathways": [
+    "Not significantly metabolized by CYP450",
+    "Renal excretion (primary)",
+    "P-glycoprotein substrate"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "P-glycoprotein inducer may reduce methylnaltrexone bioavailability and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Extract",
+      "severity": "Low",
+      "mechanism": "P-glycoprotein inhibitor may theoretically increase methylnaltrexone levels",
+      "action": "Monitor for increased side effects (nausea, diarrhea); limit consumption"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May enhance gastrointestinal motility effects; additive GI stimulation",
+      "action": "Monitor bowel function; separate administration timing if possible"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and affect subcutaneous absorption timing",
+      "action": "No dietary restriction needed; effects are minor with parenteral administration"
+    }
+  ],
+  "monitoring_notes": "Methylnaltrexone has minimal drug interactions due to lack of hepatic metabolism and limited CYP450 involvement. Monitor renal function as primary elimination route; adjust dose in severe renal impairment. No clinically significant food interactions reported."
+}

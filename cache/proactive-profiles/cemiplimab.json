@@ -1,0 +1,59 @@
+{
+  "drug": "Cemiplimab",
+  "drug_class": "Monoclonal Antibody (PD-1 Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Protein catabolism",
+    "Immune checkpoint inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May potentiate immune activation and increase risk of immune-related adverse events (irAEs) in patients receiving PD-1 inhibitors",
+      "action": "Avoid concurrent use; counsel patient on immune stimulant risks"
+    },
+    {
+      "name": "Ginseng (high-dose)",
+      "severity": "High",
+      "mechanism": "Immune-stimulating properties may enhance PD-1 checkpoint inhibition, elevating autoimmune toxicity risk",
+      "action": "Avoid or use only under close clinical monitoring"
+    },
+    {
+      "name": "Curcumin (high-dose)",
+      "severity": "Moderate",
+      "mechanism": "May enhance immune activation and increase inflammatory response in patients on checkpoint inhibitors",
+      "action": "Limit to dietary amounts; avoid supplemental doses"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Gut microbiota composition may influence immunotherapy efficacy; effects are individual-dependent",
+      "action": "Monitor clinical response; standardized strains may be preferable"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Immune modulatory effects; deficiency associated with altered checkpoint inhibitor response in some studies",
+      "action": "Maintain adequate levels (25-75 ng/mL); monitor if supplementing"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate hypertension, a known irAE in PD-1 inhibitor therapy",
+      "action": "Counsel on moderation; monitor blood pressure regularly"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "May impair immune function and increase hepatotoxicity risk during immunotherapy",
+      "action": "Limit to moderate intake; assess baseline liver function"
+    }
+  ],
+  "monitoring_notes": "Cemiplimab is not hepatically metabolized, thus drug-drug interactions are minimal. Primary concern is immune potentiation from supplements that may increase irAE risk. Monitor for immune-related adverse events (colitis, pneumonitis, hepatitis, endocrinopathies) and counsel patients to avoid immunostimulatory supplements."
+}

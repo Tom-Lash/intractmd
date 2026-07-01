@@ -1,0 +1,66 @@
+{
+  "drug": "Citalopram",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C19, reducing citalopram levels and efficacy; increases serotonin syndrome risk",
+      "action": "Discontinue St. John's Wort at least 2 weeks before starting citalopram or avoid concurrent use"
+    },
+    {
+      "name": "Serotonergic supplements (5-HTP, L-tryptophan)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increase risk of serotonin syndrome",
+      "action": "Avoid concurrent use; counsel patient on serotonin syndrome symptoms (agitation, confusion, tremor, hyperthermia)"
+    },
+    {
+      "name": "MAO inhibitor-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Severe risk of serotonin syndrome and hypertensive crisis",
+      "action": "Contraindicated; maintain 14-day washout period between MAOIs and citalopram initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; citalopram may increase bleeding risk",
+      "action": "Monitor for unusual bruising or bleeding; ensure adequate monitoring if concurrent use necessary"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Potential antiplatelet activity with additive bleeding risk",
+      "action": "Monitor bleeding risk; counsel on signs of abnormal bleeding"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (with MAOIs only - not applicable to citalopram monotherapy)",
+      "severity": "Critical",
+      "mechanism": "Hypertensive crisis risk if citalopram combined with MAOIs",
+      "action": "Only relevant if citalopram used with MAOI; avoid aged cheeses, cured meats, fermented products in that scenario"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depression; may increase sedation, dizziness, and impair cognitive function",
+      "action": "Counsel patient to limit alcohol consumption; advise avoiding or minimizing use, especially early in treatment"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase citalopram plasma concentrations",
+      "action": "Consider limiting grapefruit consumption; monitor for excessive side effects if intake is significant"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms when initiating or increasing citalopram dose, especially with concurrent serotonergic agents. Assess QT interval at baseline and with higher doses (≥40 mg/day), as citalopram carries dose-dependent QT prolongation risk."
+}

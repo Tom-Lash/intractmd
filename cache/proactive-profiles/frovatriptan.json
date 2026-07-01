@@ -1,0 +1,65 @@
+{
+  "drug": "Frovatriptan",
+  "drug_class": "Selective 5-HT1B/1D receptor agonist (triptan)",
+  "key_pathways": [
+    "CYP1A2",
+    "monoamine oxidase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP1A2 and MAO activity, reducing frovatriptan levels; also increases serotonergic activity increasing serotonin syndrome risk",
+      "action": "Avoid concurrent use or discontinue St. John's Wort 2 weeks before frovatriptan therapy"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Increases serotonin levels; combined with frovatriptan increases risk of serotonin syndrome",
+      "action": "Discontinue 5-HTP before initiating frovatriptan therapy"
+    },
+    {
+      "name": "L-Tryptophan (high-dose)",
+      "severity": "High",
+      "mechanism": "Serotonin precursor that elevates central serotonin; additive effect with triptan increases serotonin syndrome risk",
+      "action": "Avoid supplemental L-tryptophan; counsel on dietary protein moderation if concurrent use necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild CYP1A2 induction may slightly reduce frovatriptan efficacy",
+      "action": "Monitor for reduced migraine relief; consider dose adjustment if needed"
+    },
+    {
+      "name": "SAMe",
+      "severity": "Low",
+      "mechanism": "Mild serotonergic activity; theoretical additive effect though clinical significance is low",
+      "action": "Use with caution and monitor for serotonergic symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Moderate",
+      "mechanism": "Tyramine may interact with monoamine pathways; triptans have mild MAOI-like activity in some contexts",
+      "action": "Limit tyramine-containing foods; counsel patient on dietary restrictions typical for triptan use"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay frovatriptan absorption and onset of action",
+      "action": "Administer frovatriptan on empty stomach or with light meal for optimal efficacy"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Both frovatriptan and caffeine affect cerebral vasculature; additive vasoconstrictive effects possible",
+      "action": "Advise moderate caffeine intake; excessive consumption may increase cardiovascular side effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity) especially if frovatriptan is combined with SSRIs, SNRIs, or other serotonergic agents. Assess for medication overuse headache if frovatriptan is used >10 days per month."
+}

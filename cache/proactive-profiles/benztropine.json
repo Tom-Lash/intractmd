@@ -1,0 +1,58 @@
+{
+  "drug": "Benztropine",
+  "drug_class": "Anticholinergic Agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anticholinergic herbs (Jimson weed, henbane, deadly nightshade)",
+      "severity": "Critical",
+      "mechanism": "Additive anticholinergic effects leading to severe toxicity",
+      "action": "Avoid completely; counsel patient on identification and avoidance"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may decrease benztropine levels; reduced efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "May potentiate anticholinergic effects and increase CNS depression",
+      "action": "Discontinue kava kava prior to benztropine initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild anticholinergic properties; additive effects possible",
+      "action": "Monitor for excessive anticholinergic symptoms; use lowest effective dose"
+    },
+    {
+      "name": "Valerian",
+      "severity": "Low",
+      "mechanism": "May increase sedation and CNS depression when combined",
+      "action": "Counsel on dizziness/drowsiness risk; avoid driving if combined"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "Benztropine reduces GI motility; excessive fiber may worsen constipation",
+      "action": "Moderate intake; ensure adequate hydration and monitor bowel function"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and anticholinergic effects",
+      "action": "Limit alcohol consumption; counsel on increased drowsiness and impaired cognition"
+    }
+  ],
+  "monitoring_notes": "Monitor for anticholinergic toxicity signs (dry mouth, urinary retention, constipation, confusion, tachycardia) especially in elderly patients or those on multiple anticholinergic agents. Screen for drug interactions via CYP3A4 and CYP2D6 substrate/inhibitor medications."
+}

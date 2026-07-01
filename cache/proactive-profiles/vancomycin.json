@@ -1,0 +1,48 @@
+{
+  "drug": "Vancomycin",
+  "drug_class": "Glycopeptide Antibiotic",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Renal elimination",
+    "Minimal drug-drug interactions"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Probiotics (during acute therapy)",
+      "severity": "Moderate",
+      "mechanism": "Vancomycin kills beneficial gut bacteria; simultaneous probiotic supplementation may reduce antibiotic efficacy or cause unpredictable bacterial dynamics",
+      "action": "Separate probiotic administration by at least 2-4 hours from vancomycin dose; resume probiotics 2-3 days after completion of therapy"
+    },
+    {
+      "name": "Nephrotoxic Supplements (Aristolochic acid, high-dose NSAIDs)",
+      "severity": "High",
+      "mechanism": "Vancomycin has intrinsic nephrotoxicity; concurrent nephrotoxic agents increase risk of acute kidney injury",
+      "action": "Avoid nephrotoxic herbal supplements and limit NSAID use; monitor serum creatinine and vancomycin trough levels"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Electrolyte supplements (Potassium, Magnesium)",
+      "severity": "Low",
+      "mechanism": "Vancomycin may cause electrolyte abnormalities; supplementation may complicate monitoring",
+      "action": "Obtain baseline electrolytes; use supplementation only if serum levels confirm deficiency"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium foods (if IV formulation used with cardiac/renal disease)",
+      "severity": "Moderate",
+      "mechanism": "IV vancomycin formulations contain sodium chloride; excessive dietary sodium may worsen fluid retention in susceptible patients",
+      "action": "Monitor sodium intake in patients with heart failure or renal impairment; review IV formulation sodium content"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Fermented foods and high-fiber foods (oral vancomycin only)",
+      "severity": "Low",
+      "mechanism": "May alter gut microbiota composition and affect oral vancomycin efficacy for C. difficile infection",
+      "action": "Moderate intake of fermented foods during oral vancomycin therapy; resume after treatment completion"
+    }
+  ],
+  "monitoring_notes": "Vancomycin undergoes minimal hepatic metabolism and has low propensity for drug interactions via CYP enzymes. Primary monitoring focus should be renal function (serum creatinine, BUN), vancomycin trough levels (target 15-20 mcg/mL), and auditory function (ototoxicity risk), particularly when combined with other nephrotoxic or ototoxic agents."
+}

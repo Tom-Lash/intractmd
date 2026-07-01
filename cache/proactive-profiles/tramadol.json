@@ -1,0 +1,79 @@
+{
+  "drug": "Tramadol",
+  "drug_class": "Synthetic opioid analgesic / SNRI",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP2B6",
+    "Monoamine reuptake inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces tramadol levels; serotonergic activity increases seizure risk",
+      "action": "Discontinue St. John's Wort or avoid tramadol; consider alternative analgesic"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increase risk of serotonin syndrome",
+      "action": "Avoid concurrent use; monitor for agitation, confusion, rapid heart rate, hyperthermia"
+    },
+    {
+      "name": "Tramadol + MAOI or MAOI-like supplements",
+      "severity": "Critical",
+      "mechanism": "Severe serotonin syndrome risk due to tramadol's SNRI properties",
+      "action": "Contraindicated; allow 14-day washout between tramadol and MAOIs"
+    },
+    {
+      "name": "SAMe",
+      "severity": "High",
+      "mechanism": "Additive serotonergic activity; increased seizure risk",
+      "action": "Avoid concurrent use; counsel patient on serotonin syndrome symptoms"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase tramadol levels and adverse effects",
+      "action": "Monitor for increased side effects (dizziness, nausea); consider dose adjustment if concurrent use necessary"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May have additive CNS depressant effects at high doses",
+      "action": "Use standard supplemental doses; counsel on dizziness risk"
+    },
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression possible",
+      "action": "Monitor for excessive sedation; avoid during activities requiring alertness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases tramadol plasma concentrations and toxicity risk",
+      "action": "Eliminate grapefruit products; consider alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Tramadol's weak MAOI-like activity may potentiate hypertensive response",
+      "action": "Moderate intake; monitor blood pressure; educate on hypertensive crisis symptoms"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression increases sedation and seizure risk",
+      "action": "Advise limiting or avoiding alcohol; warn against driving/operating machinery"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, tremor, hyperthermia, hyperreflexia) and seizure activity, especially with CYP2D6 inhibitor co-medications. Counsel on increased fall/overdose risk with concurrent CNS depressants and avoid abrupt discontinuation due to withdrawal potential."
+}

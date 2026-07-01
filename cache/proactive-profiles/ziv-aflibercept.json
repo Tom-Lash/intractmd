@@ -1,0 +1,65 @@
+{
+  "drug": "Ziv-Aflibercept",
+  "drug_class": "Vascular Endothelial Growth Factor (VEGF) Inhibitor - Recombinant Fusion Protein",
+  "key_pathways": [
+    "VEGF signaling",
+    "Not hepatically metabolized"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "May increase bleeding risk due to antiplatelet effects; aflibercept increases thrombotic and hemorrhagic risk",
+      "action": "Limit vitamin E supplementation to <400 IU daily; monitor for bleeding signs"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Antiplatelet and anticoagulant properties may potentiate hemorrhage risk with VEGF inhibitors",
+      "action": "Avoid concurrent use; counsel patient on bleeding precautions"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Antiplatelet effects compound aflibercept's thrombotic/hemorrhagic risk profile",
+      "action": "Discontinue high-dose garlic supplements; monitor CBC and bleeding indicators"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish oil/Omega-3 supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effect; may slightly increase bleeding tendency",
+      "action": "Monitor for unusual bleeding or bruising; no discontinuation required typically"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet and anticoagulant properties",
+      "action": "Monitor clinical response and bleeding parameters if concurrent use desired"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose herbal teas (feverfew, ginger root)",
+      "severity": "Moderate",
+      "mechanism": "Natural antiplatelet compounds may increase bleeding risk",
+      "action": "Counsel patient to limit consumption; avoid concentrated herbal preparations"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Ginger (culinary amounts)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects at high dietary intake",
+      "action": "Monitor if consuming in therapeutic quantities; normal culinary use is acceptable"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage)",
+      "severity": "Low",
+      "mechanism": "High vitamin K content may interact with any concurrent anticoagulation",
+      "action": "Maintain consistent intake; inform if patient on concurrent anticoagulants"
+    }
+  ],
+  "monitoring_notes": "Ziv-aflibercept is a large recombinant protein not subject to hepatic CYP metabolism; interactions are primarily pharmacodynamic (bleeding/thrombotic risk). Monitor for hypertension, proteinuria, and hemorrhagic events; counsel on bleeding precautions and avoid antiplatelet/anticoagulant supplements unless clinically indicated."
+}

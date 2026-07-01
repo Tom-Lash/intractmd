@@ -1,0 +1,60 @@
+{
+  "drug": "Cetuximab",
+  "drug_class": "Monoclonal Antibody (EGFR Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "EGFR signaling inhibition",
+    "Fc receptor-mediated clearance"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate bleeding risk and interfere with EGFR inhibition efficacy",
+      "action": "Limit vitamin E supplementation; discuss with oncology team before use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce P-glycoprotein affecting monoclonal antibody disposition and immune response",
+      "action": "Avoid concurrent use; use alternative herbal supplements if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 Fatty Acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "May increase bleeding tendency; cetuximab can cause skin toxicity with anticoagulant effects",
+      "action": "Monitor for increased bruising or bleeding; coordinate with oncology if used"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May enhance immune response; potential to alter cetuximab efficacy unpredictably",
+      "action": "Use with caution and inform oncology team of concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose herbal teas (echinacea, goldenseal)",
+      "severity": "Moderate",
+      "mechanism": "Immunostimulating effects may counteract EGFR-targeted therapy and increase infusion reactions",
+      "action": "Avoid herbal immune-boosting preparations during cetuximab treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "While cetuximab is not CYP3A4-metabolized, grapefruit may enhance EGFR pathway effects unpredictably",
+      "action": "Limit consumption; monitor for increased skin toxicity or gastrointestinal effects"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and reduce tolerability of concurrent oral chemotherapy agents",
+      "action": "Maintain consistent, moderate-fat diet; separate from cetuximab infusions by 2+ hours if possible"
+    }
+  ],
+  "monitoring_notes": "Cetuximab is a monoclonal antibody not metabolized hepatically; interactions are primarily immune-mediated or related to concurrent therapies. Monitor closely for acneiform rash, infusion reactions, and gastrointestinal toxicity, which may be exacerbated by immune-stimulating supplements or anticoagulants."
+}

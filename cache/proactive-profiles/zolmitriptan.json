@@ -1,0 +1,72 @@
+{
+  "drug": "Zolmitriptan",
+  "drug_class": "Selective 5-HT1B/1D Receptor Agonist (Triptan)",
+  "key_pathways": [
+    "CYP1A2",
+    "MAO-A",
+    "Serotonergic pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "MAO inhibition and serotonin elevation; increased risk of serotonin syndrome",
+      "action": "Avoid concurrent use; discontinue St. John's Wort at least 2 weeks before starting zolmitriptan"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Direct serotonin precursor; additive serotonergic effects increase serotonin syndrome risk",
+      "action": "Avoid combination; use alternative migraine prevention if needed"
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "High",
+      "mechanism": "Serotonin precursor; enhanced serotonergic activity with triptan",
+      "action": "Avoid concurrent supplementation during triptan therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild serotonergic activity; theoretical additive effects",
+      "action": "Monitor for serotonin syndrome symptoms (agitation, tremor, hyperthermia); use lowest effective dose"
+    },
+    {
+      "name": "Caffeine supplements",
+      "severity": "Low",
+      "mechanism": "Mild vasoconstrictor; additive vasoconstrictive effects with triptan",
+      "action": "Limit caffeine intake to <200 mg daily; monitor blood pressure and headache frequency"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Broad beans (fava beans)",
+      "severity": "Moderate",
+      "mechanism": "High tyramine content; risk of hypertensive crisis when combined with serotonergic agents",
+      "action": "Avoid or limit consumption; educate patient on tyramine-rich foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Aged cheeses, cured meats",
+      "severity": "Low",
+      "mechanism": "Tyramine content; potential mild vasoconstrictive interactions",
+      "action": "Moderate consumption; monitor for headache exacerbation or blood pressure elevation"
+    },
+    {
+      "name": "Chocolate",
+      "severity": "Low",
+      "mechanism": "Contains phenylethylamine and small amounts of serotonin; may trigger migraines independently",
+      "action": "Identify if chocolate is a personal migraine trigger; avoid if patient-specific sensitivity exists"
+    },
+    {
+      "name": "High-caffeine beverages (energy drinks, excessive coffee)",
+      "severity": "Low",
+      "mechanism": "Vasoconstrictor effects; additive with triptan vasomotor activity",
+      "action": "Limit to <200 mg caffeine daily; monitor for cardiovascular symptoms"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, hyperthermia, muscle rigidity) especially if other serotonergic agents are used concurrently. Assess for vasoconstrictive side effects (chest tightness, palpitations) and counsel on proper triptan dosing (maximum 10 mg per dose, 30 mg/24 hours)."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Ramucirumab",
+  "drug_class": "Monoclonal antibody (VEGF receptor 2 antagonist)",
+  "key_pathways": [
+    "VEGF signaling",
+    "Angiogenesis",
+    "Not hepatically metabolized"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Potentiates anticoagulant effects and bleeding risk, compounded by ramucirumab-induced thrombocytopenia",
+      "action": "Limit vitamin E to <400 IU/day; monitor for bleeding signs (bruising, hemoptysis, GI bleeding)"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Increases bleeding risk through antiplatelet mechanisms; synergistic with ramucirumab-associated thrombocytopenia",
+      "action": "Avoid concurrent use; counsel patient on bleeding precautions"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Potentiates platelet dysfunction and bleeding risk in context of ramucirumab immunosuppression",
+      "action": "Avoid concentrated garlic supplements; monitor platelet counts and bleeding symptoms"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity may additively increase bleeding risk; generally safe at culinary doses",
+      "action": "Use culinary amounts only; avoid high-dose supplements without medical consultation"
+    },
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; may slightly increase bleeding tendency in susceptible patients",
+      "action": "Monitor for excessive bleeding; standard doses (1-3g/day) generally acceptable with oversight"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Cranberry juice/concentrated products",
+      "severity": "Moderate",
+      "mechanism": "Contains compounds that may potentiate bleeding risk when combined with ramucirumab-induced thrombocytopenia",
+      "action": "Avoid concentrated cranberry products; monitor bleeding indices"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (particularly heavy consumption)",
+      "severity": "Low",
+      "mechanism": "Increases bleeding risk and may impair immune function during ramucirumab therapy",
+      "action": "Limit to moderate intake (≤1 drink/day for women, ≤2 for men); counsel on bleeding precautions"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Ramucirumab may increase hypertension risk; excessive sodium may exacerbate blood pressure elevation",
+      "action": "Monitor blood pressure regularly; maintain low-sodium diet (<2,300mg/day) if hypertension develops"
+    }
+  ],
+  "monitoring_notes": "Ramucirumab is a monoclonal antibody with minimal hepatic metabolism, making traditional drug-drug interactions rare; however, bleeding risk from thrombocytopenia and hypertension management are primary clinical concerns. Monitor CBC (platelet count), blood pressure, and signs of bleeding or hemorrhage; counsel patients to avoid antiplatelet/anticoagulant supplements and moderate dietary vitamin K consistency."
+}

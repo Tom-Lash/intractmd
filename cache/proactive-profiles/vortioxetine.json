@@ -1,0 +1,68 @@
+{
+  "drug": "Vortioxetine",
+  "drug_class": "Serotonin Modulator and Stimulator (SMS); Antidepressant",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2C19",
+    "Serotonin reuptake inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4/2C19 induction reduces vortioxetine levels; increased risk of serotonin syndrome",
+      "action": "Contraindicated; discontinue St. John's Wort before starting vortioxetine or avoid concurrent use"
+    },
+    {
+      "name": "Serotonergic herbs (SAMe, L-tryptophan, 5-HTP)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increase risk of serotonin syndrome",
+      "action": "Avoid concurrent use; counsel patient on serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity)"
+    },
+    {
+      "name": "Linezolid",
+      "severity": "High",
+      "mechanism": "MAOI-like activity combined with serotonin reuptake inhibition increases serotonin syndrome risk",
+      "action": "Avoid if possible; if necessary, use with extreme caution and close monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Potential additive antiplatelet effects; vortioxetine may increase bleeding risk",
+      "action": "Monitor for unusual bruising or bleeding; consider alternative supplement"
+    },
+    {
+      "name": "Omega-3 fatty acids (high doses)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects may add to increased bleeding risk with vortioxetine",
+      "action": "Monitor bleeding signs; keep doses moderate (≤2-3 g/day combined EPA+DHA)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (if used with other serotonergic agents)",
+      "severity": "Moderate",
+      "mechanism": "While vortioxetine is not an MAOI, combined use with other agents may increase hypertensive risk",
+      "action": "Minimal restriction with vortioxetine alone; counsel if combined with other serotonergic drugs"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression and impair judgment/coordination",
+      "action": "Counsel patient to limit or avoid alcohol; assess impact on individual basis"
+    },
+    {
+      "name": "Caffeine (high intake)",
+      "severity": "Low",
+      "mechanism": "May increase anxiety, insomnia, or agitation in some patients; mild CYP1A2 interaction",
+      "action": "Advise moderation; monitor for increased side effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome, especially if combined with other serotonergic agents. Assess CYP2D6 metabolism and adjust dose if coadministered with strong CYP2D6 inhibitors. Counsel on alcohol limitation and watch for emerging or worsening suicidal ideation."
+}

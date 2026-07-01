@@ -1,0 +1,71 @@
+{
+  "drug": "Metoprolol",
+  "drug_class": "Beta-adrenergic blocker (Beta-1 selective)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra (Ma Huang)",
+      "severity": "Critical",
+      "mechanism": "Direct sympathomimetic activity opposes beta-blocker effects; risk of hypertensive crisis and arrhythmias",
+      "action": "Absolutely contraindicated; counsel patient to avoid all ephedra-containing products"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-2 adrenergic antagonist increases sympathetic activity, counteracting metoprolol's therapeutic effects",
+      "action": "Avoid concurrent use; monitor blood pressure and heart rate if patient insists on use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 and CYP2D6 inducer reduces metoprolol plasma concentrations and efficacy",
+      "action": "Counsel avoidance; if discontinued, monitor for metoprolol toxicity as levels may rise"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and fluid accumulation, potentially increasing blood pressure despite metoprolol use",
+      "action": "Use cautiously and monitor blood pressure; limit to short-term use"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild sympathomimetic properties and could slightly reduce antihypertensive efficacy",
+      "action": "Monitor blood pressure if used; counsel moderation and inform healthcare provider"
+    },
+    {
+      "name": "Caffeine supplements",
+      "severity": "Low",
+      "mechanism": "Sympathomimetic stimulant may partially counteract beta-blocker effects on heart rate and blood pressure",
+      "action": "Recommend limiting caffeine intake; monitor heart rate and blood pressure response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases metoprolol bioavailability and plasma concentrations, elevating risk of bradycardia and hypotension",
+      "action": "Avoid grapefruit products entirely; patient should select alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake may counteract blood pressure-lowering effects and increase fluid retention",
+      "action": "Counsel on sodium restriction consistent with cardiovascular recommendations (<2,300 mg/day)"
+    },
+    {
+      "name": "Caffeine-rich beverages (coffee, tea, energy drinks)",
+      "severity": "Low",
+      "mechanism": "Caffeine stimulates sympathetic nervous system; may reduce antihypertensive and heart rate-lowering effects",
+      "action": "Recommend moderation (≤200 mg/day); monitor heart rate and blood pressure response"
+    }
+  ],
+  "monitoring_notes": "Monitor heart rate, blood pressure, and signs of decompensated heart failure at each visit; assess adherence and educate on avoiding sudden discontinuation. Counsel patients on CYP2D6-sensitive interactions, particularly with other cardioactive or CNS-active medications, and reinforce importance of disclosing all supplements."
+}

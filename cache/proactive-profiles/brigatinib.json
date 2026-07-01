@@ -1,0 +1,48 @@
+{
+  "drug": "Brigatinib",
+  "drug_class": "Anaplastic lymphoma kinase (ALK) inhibitor; tyrosine kinase inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces brigatinib plasma concentration and efficacy",
+      "action": "Contraindicated; do not use concurrently with brigatinib"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce brigatinib bioavailability",
+      "action": "Avoid use; consider alternative immune support if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase brigatinib levels",
+      "action": "Monitor for increased adverse effects; inform oncology team of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases brigatinib plasma concentration and toxicity risk",
+      "action": "Eliminate from diet during brigatinib therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May alter brigatinib absorption; food effects on ALK inhibitors variable",
+      "action": "Take brigatinib consistently with or without food; maintain consistent pattern per prescriber guidance"
+    }
+  ],
+  "monitoring_notes": "Brigatinib has significant hepatic metabolism via CYP3A4; monitor for toxicity signs including gastrointestinal effects, bradycardia, and interstitial lung disease. Confirm use of all supplements and herbal products with oncology team to prevent treatment failure or serious adverse events."
+}

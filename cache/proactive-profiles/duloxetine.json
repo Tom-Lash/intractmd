@@ -1,0 +1,79 @@
+{
+  "drug": "Duloxetine",
+  "drug_class": "Serotonin-norepinephrine reuptake inhibitor (SNRI)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "Serotonin reuptake",
+    "Norepinephrine reuptake"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Increased serotonergic activity; risk of serotonin syndrome",
+      "action": "Discontinue St. John's Wort or do not initiate duloxetine; allow 2-week washout if switching"
+    },
+    {
+      "name": "SAMe (S-adenosyl methionine)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects; increased serotonin syndrome risk",
+      "action": "Avoid concurrent use; counsel patient on serotonin syndrome symptoms"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Direct serotonin precursor; potentiates serotonergic activity",
+      "action": "Contraindicated with duloxetine; recommend alternative approaches"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "Critical",
+      "mechanism": "Combined serotonergic activity and opioid effects; significant serotonin syndrome risk",
+      "action": "Avoid concurrent use; consider alternative analgesics"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild stimulant properties; theoretical additive noradrenergic effects",
+      "action": "Monitor for increased tremor, anxiety, or agitation; use with caution"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May potentiate serotonergic effects; bleeding risk",
+      "action": "Monitor for bleeding signs and serotonin syndrome symptoms"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; additive with duloxetine's antiplatelet properties",
+      "action": "Monitor for unusual bleeding or bruising; generally safe at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive caffeine-containing beverages/foods",
+      "severity": "Moderate",
+      "mechanism": "Additive stimulant and noradrenergic effects; increased anxiety, tremor, and insomnia",
+      "action": "Limit caffeine intake to <200mg daily; counsel on caffeine content in coffee, tea, energy drinks, and chocolate"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Duloxetine has weak MAOI-like properties; minimal clinical risk but theoretical hypertensive potential",
+      "action": "Monitor blood pressure; excessive tyramine intake unlikely to cause issues but avoid large quantities"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depression; impaired judgment and motor control",
+      "action": "Counsel to limit or avoid alcohol; assess for additive CNS effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity, hyperthermia) especially during initiation or with supplement additions. Assess baseline and periodic blood pressure, as duloxetine can increase BP, particularly with stimulant co-exposures."
+}

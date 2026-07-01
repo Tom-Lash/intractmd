@@ -1,0 +1,66 @@
+{
+  "drug": "Glecaprevir",
+  "drug_class": "Hepatitis C virus (HCV) NS3/4A protease inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "OATP1B1/1B3",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces glecaprevir levels significantly, compromising antiviral efficacy",
+      "action": "Avoid completely; do not use concurrently"
+    },
+    {
+      "name": "Rifampicin/Rifampin",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer substantially decreases glecaprevir plasma concentrations",
+      "action": "Contraindicated; use alternative antituberculosis agent if needed"
+    },
+    {
+      "name": "Carbamazepine",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces glecaprevir exposure and antiviral activity",
+      "action": "Avoid; use alternative anticonvulsant (e.g., levetiracetam)"
+    },
+    {
+      "name": "Phenytoin",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer decreases glecaprevir bioavailability",
+      "action": "Avoid; consider alternative anticonvulsant therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may modestly reduce glecaprevir levels",
+      "action": "Monitor viral load; counsel on potential reduced efficacy"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have minor CYP3A4 inducing properties",
+      "action": "Use cautiously; monitor HCV RNA levels during therapy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition and OATP transporter inhibition increases glecaprevir levels unpredictably, risk of toxicity",
+      "action": "Avoid grapefruit and related citrus fruits (pomelo, Seville orange)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May enhance glecaprevir absorption; not contraindicated but may alter pharmacokinetics",
+      "action": "Consistent meal timing recommended; take with food if possible for optimal absorption"
+    }
+  ],
+  "monitoring_notes": "Glecaprevir is primarily metabolized via CYP3A4 and transported by OATP1B1/1B3; monitor for treatment failure if concurrent CYP3A4 inducers are necessary. Assess HCV RNA levels at standard intervals and monitor for hepatic function changes."
+}

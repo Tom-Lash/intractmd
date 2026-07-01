@@ -1,0 +1,71 @@
+{
+  "drug": "Insulin Regular",
+  "drug_class": "Rapid-acting insulin",
+  "key_pathways": [
+    "Glucose metabolism",
+    "Insulin receptor signaling"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose chromium",
+      "severity": "High",
+      "mechanism": "Chromium enhances insulin sensitivity and glucose uptake, potentially potentiating hypoglycemic effect",
+      "action": "Avoid supplementation or monitor blood glucose closely if used; coordinate with prescriber"
+    },
+    {
+      "name": "Fenugreek seeds",
+      "severity": "High",
+      "mechanism": "Fenugreek reduces blood glucose levels and may enhance insulin action, increasing hypoglycemia risk",
+      "action": "Avoid concurrent use; educate patient on hypoglycemia warning signs"
+    },
+    {
+      "name": "Ginseng (American and Asian)",
+      "severity": "High",
+      "mechanism": "Ginseng reduces fasting and postprandial glucose, potentiating insulin effect",
+      "action": "Avoid or use only under close glucose monitoring; coordinate dosing with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May modestly improve insulin sensitivity and glucose metabolism",
+      "action": "Monitor blood glucose; inform prescriber of use for dose optimization"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "Some evidence suggests mild glucose-lowering effects",
+      "action": "Monitor for hypoglycemia symptoms; coordinate with healthcare provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High glycemic index refined carbohydrates (white bread, sugary drinks, pastries)",
+      "severity": "Critical",
+      "mechanism": "Rapid glucose absorption causes unpredictable blood glucose spikes that are difficult to match with insulin dosing",
+      "action": "Educate on carbohydrate counting and encourage low-to-moderate glycemic index foods for glycemic stability"
+    },
+    {
+      "name": "Simple sugars and candy",
+      "severity": "Critical",
+      "mechanism": "Cause rapid postprandial hyperglycemia requiring insulin dose adjustment; increase hypoglycemia risk if insulin dose is fixed",
+      "action": "Restrict intake; use only for hypoglycemia treatment; coordinate carbohydrate intake with insulin timing"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fat delays gastric emptying and glucose absorption, potentially prolonging postprandial glucose elevation",
+      "action": "Coordinate timing of insulin administration with meal composition; monitor glucose response"
+    },
+    {
+      "name": "Alcohol (especially on empty stomach)",
+      "severity": "Low",
+      "mechanism": "Alcohol impairs hepatic gluconeogenesis and hypoglycemia awareness, increasing hypoglycemia risk",
+      "action": "Limit intake; avoid on empty stomach; advise patient to monitor glucose and wear medical alert identification"
+    }
+  ],
+  "monitoring_notes": "Regular insulin requires precise timing with meals and carbohydrate counting; patient education on consistent meal composition and timing is critical for glycemic control. Monitor for hypoglycemia, particularly when supplements or dietary changes affect glucose absorption or insulin sensitivity."
+}

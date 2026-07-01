@@ -1,0 +1,65 @@
+{
+  "drug": "Acarbose",
+  "drug_class": "Alpha-glucosidase inhibitor",
+  "key_pathways": [
+    "Intestinal brush border enzymes",
+    "Carbohydrate metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Digestive enzyme supplements (amylase, maltase)",
+      "severity": "High",
+      "mechanism": "Directly counteract acarbose's mechanism by breaking down disaccharides and oligosaccharides, reducing drug efficacy",
+      "action": "Avoid concurrent use; separate timing by at least 2 hours if necessary"
+    },
+    {
+      "name": "High-dose chromium picolinate",
+      "severity": "Moderate",
+      "mechanism": "May potentiate hypoglycemic effects leading to additive glucose-lowering activity",
+      "action": "Monitor blood glucose closely; coordinate with prescriber before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fenugreek seeds",
+      "severity": "Low",
+      "mechanism": "Additional mild glucose-lowering effect may occur with combination therapy",
+      "action": "Monitor for hypoglycemia; coordinate dosing with healthcare provider"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May enhance insulin sensitivity and glucose utilization",
+      "action": "Monitor blood glucose; adjust acarbose dose if hypoglycemia develops"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Simple sugars and refined carbohydrates (candy, pastries, sugary beverages)",
+      "severity": "Critical",
+      "mechanism": "Acarbose delays carbohydrate absorption; simple sugars bypass this mechanism causing hyperglycemia and gastrointestinal distress",
+      "action": "Strictly limit intake; educate patient on complex carbohydrate preference"
+    },
+    {
+      "name": "High-fat, high-sugar foods (desserts, fried foods)",
+      "severity": "High",
+      "mechanism": "Increases gastrointestinal side effects (flatulence, diarrhea) and may impair glycemic control",
+      "action": "Counsel on low-fat, high-fiber diet alignment with acarbose therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Lactose-containing products (milk, ice cream)",
+      "severity": "Low",
+      "mechanism": "Acarbose delays lactose digestion; may increase GI side effects in sensitive individuals",
+      "action": "Start with small portions; monitor GI tolerance and consider lactose-free alternatives"
+    },
+    {
+      "name": "High-fiber foods (beans, whole grains)",
+      "severity": "Low",
+      "mechanism": "Combined effect may exacerbate gas, bloating, and diarrhea, though beneficial for glycemic control",
+      "action": "Introduce gradually and maintain adequate hydration; benefits often outweigh side effects"
+    }
+  ],
+  "monitoring_notes": "Monitor HbA1c and fasting glucose regularly to assess efficacy and detect hypoglycemia. Educate patients that acarbose works best with a structured meal plan emphasizing complex carbohydrates, adequate fiber, and consistent meal timing; GI side effects typically diminish over 4-8 weeks."
+}

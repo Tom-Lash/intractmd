@@ -1,0 +1,78 @@
+{
+  "drug": "Pembrolizumab",
+  "drug_class": "Monoclonal Antibody (PD-1 Checkpoint Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Immune checkpoint modulation",
+    "T-cell activation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Curcumin",
+      "severity": "High",
+      "mechanism": "May enhance T-cell activation and increase risk of immune-related adverse events (irAEs)",
+      "action": "Avoid high-dose supplementation; inform oncology team of use"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Potentiates immune stimulation, potentially amplifying checkpoint inhibitor effects and irAEs",
+      "action": "Discontinue use during pembrolizumab therapy"
+    },
+    {
+      "name": "Medicinal Mushrooms (Reishi, Cordyceps, Maitake)",
+      "severity": "High",
+      "mechanism": "Immune-stimulating polysaccharides may exacerbate T-cell activation and irAEs",
+      "action": "Avoid during active treatment; discuss with oncology team"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate gut microbiota composition, which influences checkpoint inhibitor efficacy; individual response varies",
+      "action": "Monitor tolerance; coordinate with healthcare team; certain strains may be beneficial"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Anti-inflammatory effects may theoretically reduce irAE severity, but high doses could interfere with immune activation",
+      "action": "Use moderate doses; monitor for bleeding risk if combined with anticoagulants"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Immunomodulatory; deficiency associated with worse outcomes in cancer immunotherapy, but excess may enhance irAEs",
+      "action": "Maintain adequate levels (25-50 ng/mL); avoid megadoses; monitor serum levels"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Charred/Heavily Grilled Meats",
+      "severity": "Moderate",
+      "mechanism": "Heterocyclic amines (HCAs) and polycyclic aromatic hydrocarbons (PAHs) may increase systemic inflammation and irAE risk",
+      "action": "Minimize consumption; prefer gentle cooking methods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Fermented Foods (Sauerkraut, Kimchi, Miso)",
+      "severity": "Low",
+      "mechanism": "May modify gut microbiota composition, which influences immunotherapy response; effects are individualized",
+      "action": "Monitor tolerance; moderate intake acceptable; consistency may matter more than avoidance"
+    },
+    {
+      "name": "High-Fat Foods",
+      "severity": "Low",
+      "mechanism": "Excessive dietary fat may promote pro-inflammatory immune responses and increase irAE risk",
+      "action": "Maintain balanced diet; limit saturated fats; focus on Mediterranean-style nutrition"
+    },
+    {
+      "name": "Cruciferous Vegetables (Broccoli, Cabbage, Brussels Sprouts)",
+      "severity": "Low",
+      "mechanism": "Glucosinolates may modulate immune function; generally beneficial but individual tolerance varies",
+      "action": "Continue consumption; beneficial antioxidant properties; monitor GI tolerance"
+    }
+  ],
+  "monitoring_notes": "Pembrolizumab is not hepatically metabolized, minimizing direct drug-metabolism interactions; however, supplements and foods that modulate immune function or increase inflammation warrant careful consideration to minimize immune-related adverse events. Maintain open communication with oncology team regarding all supplements and dietary modifications; microbiota composition may significantly influence immunotherapy efficacy."
+}

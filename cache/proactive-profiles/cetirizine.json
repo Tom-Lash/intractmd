@@ -1,0 +1,40 @@
+{
+  "drug": "Cetirizine",
+  "drug_class": "Second-generation selective H1-receptor antagonist (antihistamine)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion (primary elimination)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce minor cytochrome P450 pathways and potentially reduce cetirizine efficacy; theoretical interaction",
+      "action": "Consider alternative herbal supplements; monitor antihistamine effectiveness if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression and sedation when combined with cetirizine's mild sedative effects",
+      "action": "Advise patient of additive drowsiness risk; caution with driving or hazardous activities"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depressant effects with cetirizine",
+      "action": "Monitor for increased sedation; counsel on avoiding concurrent use if possible"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Alcohol may potentiate CNS depression and sedation; additive effect with cetirizine's mild sedative properties",
+      "action": "Advise limiting alcohol consumption; counsel on impaired cognition and coordination risk"
+    }
+  ],
+  "monitoring_notes": "Cetirizine undergoes minimal hepatic metabolism with primary renal elimination, resulting in few clinically significant interactions. Monitor for excessive sedation or CNS depression when combined with other CNS depressants or sedating supplements."
+}

@@ -1,0 +1,84 @@
+{
+  "drug": "Levodopa-Carbidopa",
+  "drug_class": "Antiparkinson Agent (Dopamine Precursor + Decarboxylase Inhibitor)",
+  "key_pathways": [
+    "Aromatic L-amino acid decarboxylase (AADC)",
+    "Catechol-O-methyltransferase (COMT)",
+    "Monoamine oxidase (MAO)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Vitamin B6 (Pyridoxine) - High dose",
+      "severity": "Critical",
+      "mechanism": "Pyridoxine is a cofactor for AADC, accelerating peripheral conversion of levodopa to dopamine, reducing CNS bioavailability",
+      "action": "Avoid supplemental B6 >25 mg/day; patient should maintain consistent dietary B6 intake"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "May antagonize dopaminergic effects and worsen Parkinson's symptoms; hepatotoxic potential compounds risk",
+      "action": "Discontinue kava kava supplementation prior to or during levodopa therapy"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and may reduce levodopa-carbidopa efficacy; potential serotonergic interactions increasing psychosis risk",
+      "action": "Avoid concurrent use; allow 2-week washout if transitioning"
+    },
+    {
+      "name": "SAMe (S-Adenosyl Methionine)",
+      "severity": "Moderate",
+      "mechanism": "May deplete dopamine via COMT-mediated methylation pathways, potentially reducing levodopa efficacy",
+      "action": "Use with caution; monitor for reduced therapeutic response"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron Supplements",
+      "severity": "Low",
+      "mechanism": "May chelate or compete with levodopa absorption in GI tract, though clinical significance is variable",
+      "action": "Separate dosing by 2+ hours; monitor symptom control"
+    },
+    {
+      "name": "Calcium Supplements",
+      "severity": "Low",
+      "mechanism": "May form complexes with levodopa reducing absorption, particularly at high doses",
+      "action": "Administer levodopa-carbidopa 2 hours apart from calcium products"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May reduce levodopa absorption through chelation or altered GI pH",
+      "action": "Space dosing by 2+ hours; monitor for efficacy changes"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-protein meals (especially animal protein)",
+      "severity": "High",
+      "mechanism": "Neutral amino acids compete with levodopa for LAT1 transporter-mediated intestinal and BBB absorption, significantly reducing bioavailability",
+      "action": "Take levodopa-carbidopa 30-60 minutes before or 2+ hours after protein-rich meals; separate protein intake from dosing windows"
+    },
+    {
+      "name": "Fermented foods (sauerkraut, tempeh, miso)",
+      "severity": "Moderate",
+      "mechanism": "High tyramine content may increase blood pressure when combined with levodopa-carbidopa due to potentiation of sympathomimetic effects",
+      "action": "Limit intake; monitor blood pressure; avoid excessive consumption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods and beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may compete with levodopa transport and potentially increase dyskinesias or tremor in some patients",
+      "action": "Monitor tolerance; limit to moderate intake (≤200 mg/day caffeine)"
+    },
+    {
+      "name": "Whole grains and high-fiber foods",
+      "severity": "Low",
+      "mechanism": "Excessive fiber may slow GI transit and reduce levodopa peak levels, though modest amounts are generally well-tolerated",
+      "action": "Consume at separate times from medication; maintain consistent fiber intake"
+    }
+  ],
+  "monitoring_notes": "Patient education on protein timing is critical for maintaining consistent levodopa efficacy; serum vitamin B6 levels should be monitored periodically, especially if dietary sources vary. Regular assessment of motor symptom control and dyskinesia severity helps detect absorption or interaction issues."
+}

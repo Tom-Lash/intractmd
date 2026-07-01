@@ -1,0 +1,47 @@
+{
+  "drug": "Lamotrigine",
+  "drug_class": "Anticonvulsant / Antiepileptic Agent",
+  "key_pathways": [
+    "UGT1A4",
+    "UGT1A3",
+    "UGT2B7"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces UGT1A4 and may increase lamotrigine metabolism, reducing serum levels and therapeutic efficacy",
+      "action": "Avoid concurrent use; consult prescriber before adding or discontinuing"
+    },
+    {
+      "name": "Oral Contraceptives (Ethinyl Estradiol)",
+      "severity": "High",
+      "mechanism": "Estrogen induces UGT1A4, decreasing lamotrigine levels by 40-60%; conversely, lamotrigine may reduce oral contraceptive efficacy",
+      "action": "Monitor lamotrigine levels closely; may require dose adjustment; consider alternative contraception"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folic Acid",
+      "severity": "Low",
+      "mechanism": "Lamotrigine may deplete folate; supplementation supports overall health but does not directly interact pharmacokinetically",
+      "action": "Consider supplementation; monitor CBC periodically"
+    },
+    {
+      "name": "Calcium and Vitamin D",
+      "severity": "Low",
+      "mechanism": "Long-term anticonvulsant use may affect bone metabolism; supplementation may be beneficial",
+      "action": "Consider supplementation; assess bone health if prolonged therapy anticipated"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay absorption and peak levels of lamotrigine, though clinical significance is minimal",
+      "action": "Take with or without food consistently; maintain stable dosing schedule"
+    }
+  ],
+  "monitoring_notes": "Monitor for lamotrigine level reduction with estrogen-containing products or UGT inducers; assess for rash (especially in first 8 weeks) and hepatic/renal function. Educate patient on medication adherence and potential enzyme induction interactions."
+}

@@ -1,0 +1,86 @@
+{
+  "drug": "Methadone",
+  "drug_class": "Synthetic opioid agonist; analgesic and maintenance therapy agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2D6",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 and CYP2C19 inducer reduces methadone plasma concentrations, precipitating withdrawal symptoms and loss of therapeutic effect",
+      "action": "Contraindicated; do not use concurrently. If patient requires herbal therapy, consider alternative agents and monitor for withdrawal symptoms"
+    },
+    {
+      "name": "Rifampin/Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases methadone metabolism and bioavailability",
+      "action": "Avoid co-administration; if TB treatment necessary, use alternative antitubercular agents or increase methadone dose under close monitoring"
+    },
+    {
+      "name": "Grapefruit Supplement",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases methadone levels, elevating risk of overdose, respiratory depression, and QT prolongation",
+      "action": "Avoid consumption; counsel patient on all grapefruit-containing products including juices and supplements"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "CNS depressant effects potentiated with methadone; hepatotoxicity risk",
+      "action": "Contraindicated; do not use; counsel on risk of severe sedation and liver injury"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depressant effects may increase sedation and respiratory depression risk",
+      "action": "Monitor for excessive sedation, dizziness, and respiratory depression; advise patient to limit use or avoid"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce methadone levels",
+      "action": "Monitor methadone efficacy; short-term use likely safe but counsel on potential reduced pain control"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase methadone concentrations",
+      "action": "Monitor for signs of methadone toxicity (drowsiness, constipation); use cautiously"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases methadone plasma concentrations and prolongs half-life, increasing overdose risk and QT prolongation",
+      "action": "Complete avoidance required; instruct patient to eliminate all grapefruit products from diet"
+    },
+    {
+      "name": "Pomegranate Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor may modestly increase methadone bioavailability",
+      "action": "Recommend avoidance or significant restriction; monitor for signs of methadone toxicity"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase methadone absorption and peak plasma concentrations",
+      "action": "Counsel patient to maintain consistent dietary fat intake; avoid large fluctuations to minimize methadone level variability"
+    },
+    {
+      "name": "Foods High in Fiber (Excessive Amounts)",
+      "severity": "Low",
+      "mechanism": "May reduce methadone absorption; methadone already causes constipation",
+      "action": "Moderate fiber intake; monitor for therapeutic efficacy changes and bowel function"
+    }
+  ],
+  "monitoring_notes": "Methadone has a narrow therapeutic window with high QT prolongation risk; monitor ECG periodically and assess for signs of toxicity (oversedation, respiratory depression, constipation). Screen for CYP450 interactions at initiation and with any medication changes, as many inducers/inhibitors significantly alter methadone levels and withdrawal/overdose risk."
+}

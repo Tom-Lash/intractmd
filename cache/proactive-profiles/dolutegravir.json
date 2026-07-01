@@ -1,0 +1,66 @@
+{
+  "drug": "Dolutegravir",
+  "drug_class": "Integrase Strand Transfer Inhibitor (INSTI)",
+  "key_pathways": [
+    "UGT1A1",
+    "CYP3A4",
+    "Chelation-sensitive absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Divalent cations (Ca2+) chelate dolutegravir in GI tract, reducing absorption by 50-60%",
+      "action": "Separate dosing by ≥6 hours; take dolutegravir on empty stomach or ≥2 hours before calcium"
+    },
+    {
+      "name": "Iron supplements (ferrous/ferric)",
+      "severity": "High",
+      "mechanism": "Divalent iron chelates dolutegravir, significantly reducing plasma concentrations",
+      "action": "Separate dosing by ≥6 hours; consider food administration with dolutegravir to minimize iron interaction"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Mg2+ chelates dolutegravir, reducing bioavailability by 30-40%",
+      "action": "Separate dosing by ≥6 hours; do not co-administer"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 and UGT1A1 inducer increases dolutegravir metabolism, reducing levels by 50%+",
+      "action": "Avoid completely; may result in treatment failure and resistance"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Zinc supplements",
+      "severity": "Low",
+      "mechanism": "Divalent zinc may chelate dolutegravir similar to calcium/iron, though data limited",
+      "action": "Separate dosing by ≥2-3 hours if supplementation needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose calcium-fortified foods (>1200mg elemental calcium per meal)",
+      "severity": "High",
+      "mechanism": "Divalent calcium ions reduce dolutegravir absorption via chelation",
+      "action": "Consume calcium-rich foods separately from dolutegravir dosing by ≥6 hours"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, fortified cereals, spinach)",
+      "severity": "Low",
+      "mechanism": "High dietary iron may modestly decrease dolutegravir absorption",
+      "action": "Monitor for adequate virologic response; no strict avoidance required but spacing preferred"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Food increases dolutegravir Cmax and AUC; effect modest but variable",
+      "action": "Consistent food intake pattern recommended for steady-state optimization"
+    }
+  ],
+  "monitoring_notes": "Dolutegravir absorption is highly sensitive to divalent cations (Ca2+, Mg2+, Fe2+/3+) requiring strict temporal separation. Monitor viral load and CD4 count regularly; inadequate responses may indicate chelation-related absorption impairment or drug interactions."
+}

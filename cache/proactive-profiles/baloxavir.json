@@ -1,0 +1,41 @@
+{
+  "drug": "Baloxavir",
+  "drug_class": "Cap-dependent endonuclease inhibitor (antiviral)",
+  "key_pathways": [
+    "Not significantly metabolized by CYP450",
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "Potential interference with viral replication mechanisms; theoretical antagonism of antiviral efficacy",
+      "action": "Avoid concurrent high-dose supplementation; monitor for reduced baloxavir effectiveness"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May alter gut flora affecting drug absorption; limited clinical significance",
+      "action": "Monitor for any changes in efficacy; separate administration if possible"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "Low",
+      "mechanism": "High-dose zinc may interfere with viral protease mechanisms; theoretical interaction",
+      "action": "Use standard doses only; avoid megadose supplementation during treatment"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly reduce absorption of baloxavir when taken without regard to food intake",
+      "action": "Take baloxavir with or without food consistently; high-fat meals not contraindicated but monitor response"
+    }
+  ],
+  "monitoring_notes": "Baloxavir has minimal drug metabolism via CYP450 enzymes, resulting in a low interaction potential. Monitor for treatment efficacy and any emerging resistance patterns during therapy."
+}

@@ -1,0 +1,53 @@
+{
+  "drug": "Leuprolide",
+  "drug_class": "GnRH Agonist (Gonadotropin-Releasing Hormone Agonist)",
+  "key_pathways": [
+    "GnRH receptor signaling",
+    "Hypothalamic-Pituitary-Gonadal (HPG) axis",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements (high dose)",
+      "severity": "Moderate",
+      "mechanism": "Leuprolide-induced hypogonadism increases osteoporosis risk; excessive calcium supplementation may mask bone loss detection and complicate monitoring of bone density changes",
+      "action": "Maintain adequate calcium intake (800-1200 mg/day from diet preferred); coordinate high-dose supplementation with oncologist and ensure bone density monitoring"
+    },
+    {
+      "name": "Soy isoflavones (concentrated extracts)",
+      "severity": "Moderate",
+      "mechanism": "Phytoestrogens may theoretically counteract leuprolide's hormone suppression, though clinical significance is unclear in this context",
+      "action": "Advise patient to avoid concentrated soy supplements; moderate dietary soy consumption is generally acceptable but should be discussed with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Leuprolide-induced hypogonadism impairs calcium absorption; adequate vitamin D is essential for bone health monitoring and management",
+      "action": "Ensure adequate vitamin D supplementation (typically 800-2000 IU/day); coordinate with bone health assessment"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May support bone health during treatment-induced bone loss; generally beneficial but monitor total mineral intake",
+      "action": "Maintain adequate magnesium intake (320-420 mg/day); coordinate with comprehensive bone health regimen"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat foods",
+      "severity": "Low",
+      "mechanism": "May affect absorption of oral medications taken concurrently; leuprolide is injected but patient may be on multiple therapies",
+      "action": "No specific restriction on leuprolide; maintain balanced diet; discuss any concurrent oral medications with pharmacist"
+    },
+    {
+      "name": "Calcium-fortified foods (excessive intake)",
+      "severity": "Low",
+      "mechanism": "Similar to calcium supplements—excessive intake may interfere with bone loss monitoring and complicate assessment of treatment effects",
+      "action": "Consume adequate dietary calcium (800-1200 mg/day total) but avoid excessive fortified foods; coordinate intake with healthcare team"
+    }
+  ],
+  "monitoring_notes": "Leuprolide undergoes minimal hepatic metabolism and has few direct drug-nutrient interactions; primary concerns relate to treatment-induced hypogonadism and secondary osteoporosis risk. Monitor bone density regularly, ensure adequate calcium and vitamin D, and counsel on expected hormonal side effects including hot flashes, sexual dysfunction, and metabolic changes."
+}

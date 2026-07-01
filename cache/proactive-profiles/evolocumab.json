@@ -1,0 +1,41 @@
+{
+  "drug": "Evolocumab",
+  "drug_class": "PCSK9 Inhibitor (Monoclonal Antibody)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Direct protein binding",
+    "Immune-mediated clearance"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains lovastatin (statin); additive LDL-lowering effects may cause excessive lipid reduction and potential muscle toxicity when combined with evolocumab",
+      "action": "Avoid concurrent use; consider alternative supplements or use only under physician supervision with LDL monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Plant Sterols/Stanols",
+      "severity": "Low",
+      "mechanism": "Additive LDL-lowering effect; may enhance therapeutic benefit but could lower LDL excessively in some patients",
+      "action": "Monitor lipid panel; adjust dosing if LDL becomes subtherapeutic or excessively low"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Mild triglyceride-lowering effects; may have synergistic benefits but no major interaction",
+      "action": "Safe to use; monitor triglyceride levels periodically"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May impair subcutaneous absorption of evolocumab; clinically minor effect",
+      "action": "Administer injections consistently; food does not significantly impact efficacy but consistency in administration timing is important"
+    }
+  ],
+  "monitoring_notes": "Evolocumab is a monoclonal antibody not metabolized hepatically, making it relatively free from traditional drug-nutrient interactions. Monitor LDL-C levels regularly, especially if patient concurrently uses other lipid-lowering supplements, to avoid excessive LDL reduction which may be associated with adverse effects."
+}

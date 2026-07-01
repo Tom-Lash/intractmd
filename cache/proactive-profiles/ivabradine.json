@@ -1,0 +1,53 @@
+{
+  "drug": "Ivabradine",
+  "drug_class": "Selective If (funny channel) inhibitor; Bradycardic agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces ivabradine plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor heart rate closely and consult cardiologist for dosage adjustment"
+    },
+    {
+      "name": "Grapeseed Extract (high dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases ivabradine levels and bradycardia risk",
+      "action": "Avoid; choose alternative antioxidant supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Additive negative chronotropic effects may increase bradycardia risk",
+      "action": "Monitor for excessive heart rate reduction; report dizziness or syncope"
+    },
+    {
+      "name": "Omega-3 Fatty Acids (high dose >3g/day)",
+      "severity": "Low",
+      "mechanism": "May potentiate bradycardic effects",
+      "action": "Monitor heart rate; maintain standard dosing <3g/day"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases ivabradine bioavailability and plasma concentrations",
+      "action": "Completely avoid grapefruit products; increases risk of bradycardia and adverse effects"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase ivabradine absorption and bioavailability variability",
+      "action": "Take consistently with or without food; maintain routine for predictable drug levels"
+    }
+  ],
+  "monitoring_notes": "Monitor resting heart rate target (typically 50-60 bpm); assess for dizziness, syncope, or excessive fatigue during therapy. CYP3A4 interactions are primary concern; counsel patients on CYP3A4 inhibitor/inducer avoidance."
+}

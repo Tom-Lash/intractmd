@@ -1,0 +1,59 @@
+{
+  "drug": "Ranitidine",
+  "drug_class": "H2-receptor antagonist",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2C19",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction may reduce ranitidine efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Ranitidine reduces gastric acid, potentially decreasing iron absorption",
+      "action": "Separate dosing by 2 hours; monitor for anemia symptoms"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Reduced gastric acid may impair calcium absorption",
+      "action": "Take calcium with acidic beverages; monitor calcium levels if chronic use"
+    },
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "Long-term ranitidine use may reduce B12 absorption from food sources",
+      "action": "Monitor B12 levels; consider supplementation if deficiency develops"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase gastric acid production, potentially reducing ranitidine effectiveness",
+      "action": "Limit coffee, tea, chocolate, and caffeinated beverages during therapy"
+    },
+    {
+      "name": "Spicy and fatty foods",
+      "severity": "Low",
+      "mechanism": "Can stimulate gastric acid secretion and irritate GI lining",
+      "action": "Avoid large, spicy, or high-fat meals; eat smaller, frequent meals"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Can increase gastric acid production and irritate mucosa",
+      "action": "Limit or avoid alcohol consumption during acid-related disorder treatment"
+    }
+  ],
+  "monitoring_notes": "Monitor for efficacy in acid suppression and symptom relief; assess for vitamin B12 and calcium deficiency with prolonged use. Note: Ranitidine was withdrawn from US market in 2020 due to NDMA contamination concerns."
+}

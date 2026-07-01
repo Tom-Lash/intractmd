@@ -1,0 +1,54 @@
+{
+  "drug": "Topiramate",
+  "drug_class": "Anticonvulsant/Antiepileptic Agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Carbonic anhydrase inhibition",
+    "GABA enhancement"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C19, reducing topiramate levels and efficacy",
+      "action": "Avoid concurrent use; consult prescriber before adding or removing"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "May lower seizure threshold and reduce anticonvulsant efficacy",
+      "action": "Avoid or use only under medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Low",
+      "mechanism": "Topiramate can cause hypokalemia; supplementation may mask or complicate electrolyte monitoring",
+      "action": "Monitor serum potassium levels if used; coordinate with prescriber"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Topiramate increases risk of nephrolithiasis; excessive calcium may increase stone formation risk",
+      "action": "Use only recommended doses; ensure adequate hydration"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Moderate",
+      "mechanism": "Additive CNS depression and increased risk of cognitive impairment; may lower seizure threshold",
+      "action": "Minimize or avoid alcohol consumption; inform prescriber of intake"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "May increase seizure risk in susceptible individuals",
+      "action": "Limit intake and monitor for breakthrough seizures"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, bicarbonate, and renal function regularly as topiramate is associated with metabolic acidosis and hypokalemia. Ensure adequate hydration to reduce nephrolithiasis risk, particularly if patients use calcium supplements or have dietary risk factors for kidney stones."
+}

@@ -1,0 +1,47 @@
+{
+  "drug": "Ustekinumab",
+  "drug_class": "Monoclonal Antibody (IL-12/IL-23 Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Not CYP-dependent",
+    "IL-12/IL-23 signaling pathway inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immunostimulant may counteract ustekinumab's immunosuppressive effects and reduce therapeutic efficacy",
+      "action": "Avoid concurrent use; consult prescriber before using"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immune-enhancing supplement may antagonize IL-12/IL-23 inhibition and decrease drug effectiveness",
+      "action": "Avoid concurrent use; discontinue if patient wishes to initiate"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate immune response; generally considered safe but monitor for unexpected immunological changes",
+      "action": "Use with awareness; monitor clinical response and infection signs"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Supports immune homeostasis; may interact with IL-12/IL-23 pathway but typically beneficial in immunosuppressed patients",
+      "action": "Monitor levels; supplementation may be appropriate with prescriber guidance"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sugar foods",
+      "severity": "Low",
+      "mechanism": "May impair immune function in already immunosuppressed patients; increases infection risk",
+      "action": "Moderate intake; maintain balanced nutrition"
+    }
+  ],
+  "monitoring_notes": "Ustekinumab is a monoclonal antibody not metabolized by hepatic enzymes, so traditional drug-supplement interactions are minimal. Primary concern is avoiding immunostimulant supplements that could antagonize therapeutic effect; monitor for infection risk and maintain appropriate vaccination status per prescriber recommendations."
+}

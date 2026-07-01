@@ -1,0 +1,92 @@
+{
+  "drug": "Nilotinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2D6",
+    "P-glycoprotein (MDR1)",
+    "UGT1A1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer; significantly reduces nilotinib plasma concentrations and therapeutic efficacy",
+      "action": "Discontinue use immediately; do not co-administer with nilotinib"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer; dramatically decreases nilotinib bioavailability",
+      "action": "Avoid all rifampin-containing products; consult oncologist before use of any herbal inducer"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; increases nilotinib plasma concentration and toxicity risk",
+      "action": "Eliminate from regimen; inform all supplement vendors of nilotinib use"
+    },
+    {
+      "name": "Ketoconazole/antifungal supplements",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitors; elevate nilotinib levels increasing adverse effects",
+      "action": "Avoid unless prescribed by physician; require dose adjustment monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction; may marginally reduce nilotinib concentrations",
+      "action": "Use low-to-moderate doses only; monitor for efficacy changes"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Possible CYP3A4 modulation; limited clinical data with nilotinib",
+      "action": "Use with caution; counsel patient to report any efficacy or toxicity changes"
+    },
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 effects; antiplatelet properties may increase bleeding risk with TKI",
+      "action": "Moderate use acceptable; monitor for unusual bleeding or bruising"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "Inhibits CYP3A4 and P-glycoprotein; increases nilotinib bioavailability and toxicity risk",
+      "action": "Complete avoidance required; includes fresh grapefruit, juice, and related citrus (pomelo, Seville oranges)"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Substantially increases nilotinib absorption (fasting state is optimal); may elevate exposure beyond therapeutic window",
+      "action": "Administer on empty stomach; at least 2 hours before or 1 hour after meals"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Contain compounds that may induce CYP1A2; minimal effect on CYP3A4 but theoretical interaction",
+      "action": "Moderate consumption acceptable; maintain consistent dietary patterns for stable drug levels"
+    },
+    {
+      "name": "Charred/grilled foods",
+      "severity": "Low",
+      "mechanism": "Heterocyclic amines may induce CYP enzymes; inconsistent exposure with high consumption",
+      "action": "Consume in moderation; avoid charring/overcooking foods"
+    },
+    {
+      "name": "Licorice (in foods/candies)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition with excessive intake; sodium retention may complicate hypertension management",
+      "action": "Limit consumption; significant amounts should be avoided"
+    }
+  ],
+  "monitoring_notes": "Nilotinib requires strict fasting state administration (empty stomach) and has critical CYP3A4-mediated interactions; monitor BCR-ABL transcript levels and QTc interval regularly, as interactions affecting drug concentration may alter both efficacy and cardiac safety. Patient education on absolute avoidance of grapefruit/grapefruit juice and CYP3A4 inducers is essential for therapeutic success."
+}

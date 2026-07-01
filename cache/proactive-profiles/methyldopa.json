@@ -1,0 +1,78 @@
+{
+  "drug": "Methyldopa",
+  "drug_class": "Centrally Acting Antihypertensive (Alpha-2 Adrenergic Agonist)",
+  "key_pathways": [
+    "COMT",
+    "MAO",
+    "Aromatic amino acid decarboxylase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "May reduce methyldopa efficacy through enzyme induction and additive serotonergic effects; risk of hypertensive episodes",
+      "action": "Avoid concurrent use; counsel patient on alternatives for mood support"
+    },
+    {
+      "name": "Sympathomimetic amines (ephedrine, pseudoephedrine, phenylephrine)",
+      "severity": "High",
+      "mechanism": "Direct antagonism of methyldopa's antihypertensive effect; risk of acute hypertensive crisis",
+      "action": "Contraindicated; recommend non-sympathomimetic decongestants (saline, xylometazoline)"
+    },
+    {
+      "name": "Tyramine-containing supplements/herbals (high-dose ginseng, licorice root >3g daily)",
+      "severity": "High",
+      "mechanism": "Potential hypertensive response due to catecholamine potentiation and COMT pathway interaction",
+      "action": "Avoid high-dose formulations; monitor BP if low-dose use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May potentiate hypotensive effects; additive vasodilatory properties",
+      "action": "Monitor blood pressure; counsel on potential additive effect; adjust BP monitoring frequency"
+    },
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "Mild additive antihypertensive effects; potential increased bleeding risk if used long-term",
+      "action": "Monitor BP and bleeding signs; generally safe but counsel on additive effects"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May have mild independent antihypertensive activity",
+      "action": "Monitor blood pressure; counsel patient to report significant BP changes"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-tyramine foods (aged cheeses, cured meats, fermented soy products, overripe bananas)",
+      "severity": "Moderate",
+      "mechanism": "Tyramine can potentiate norepinephrine release and may reduce methyldopa efficacy or cause hypertensive episodes",
+      "action": "Educate patient on tyramine-restricted diet; focus on aged cheeses and cured meats as highest risk"
+    },
+    {
+      "name": "Licorice (food/candy >3g daily)",
+      "severity": "Moderate",
+      "mechanism": "Mineralocorticoid activity leads to sodium retention and potassium loss; counteracts antihypertensive effect and increases hypokalemia risk",
+      "action": "Advise avoidance of licorice-containing products; check electrolytes if chronic exposure occurred"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods (processed foods, salty snacks)",
+      "severity": "Low",
+      "mechanism": "Sodium excess counteracts antihypertensive efficacy and increases fluid retention",
+      "action": "Reinforce sodium restriction guidelines (typically <2.3g daily); monitor BP control"
+    },
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, energy drinks)",
+      "severity": "Low",
+      "mechanism": "May cause mild sympathomimetic stimulation and transient BP elevation",
+      "action": "Counsel moderation; monitor BP response if consumption is high (>400mg daily)"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly and assess for orthostatic hypotension, especially with concurrent use of other antihypertensives. Baseline and periodic CBC/liver function recommended due to methyldopa's potential for autoimmune hemolytic anemia and hepatotoxicity; monitor for fatigue, jaundice, and dark urine."
+}

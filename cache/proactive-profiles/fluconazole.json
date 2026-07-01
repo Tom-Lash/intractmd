@@ -1,0 +1,53 @@
+{
+  "drug": "Fluconazole",
+  "drug_class": "Azole antifungal",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces fluconazole levels and antifungal efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Rifampin (herbal)",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases fluconazole concentrations",
+      "action": "Avoid use; select alternative antifungal if rifampin co-administration necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 modulation; garlic has independent antifungal properties",
+      "action": "Monitor for enhanced or reduced antifungal response; separate dosing by 2 hours if possible"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition may modestly increase fluconazole levels",
+      "action": "Monitor for increased side effects; generally safe but document intake"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase fluconazole plasma concentrations",
+      "action": "Avoid excessive consumption; occasional intake typically safe"
+    },
+    {
+      "name": "Fatty meals",
+      "severity": "Low",
+      "mechanism": "May increase fluconazole absorption slightly; affects GI transit time",
+      "action": "Take fluconazole consistently with or without food; maintain steady-state dosing"
+    }
+  ],
+  "monitoring_notes": "Fluconazole is a moderate CYP3A4 inhibitor and substrate; monitor for QT prolongation (especially with concurrent QT-prolonging agents) and hepatic function in prolonged therapy. Most food/supplement interactions are low-severity; focus primarily on avoiding potent CYP inducers that compromise antifungal efficacy."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Pertuzumab",
+  "drug_class": "Monoclonal Antibody (HER2 Inhibitor)",
+  "key_pathways": [
+    "HER2 signaling pathway",
+    "Not hepatically metabolized"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May potentiate immunosuppression and reduce monoclonal antibody efficacy through immune modulation",
+      "action": "Avoid concurrent use; consult oncologist before initiation"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "Immunostimulant that may interfere with targeted HER2 therapy mechanism or increase adverse cardiac effects",
+      "action": "Discontinue during pertuzumab treatment; consider safer immune support alternatives"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild immunomodulatory effects that could theoretically interfere with monoclonal antibody therapy",
+      "action": "Monitor for reduced efficacy; discuss with oncology team before use"
+    },
+    {
+      "name": "CoQ10",
+      "severity": "Low",
+      "mechanism": "May provide cardiac protection given pertuzumab's potential for cardiomyopathy, though evidence is limited",
+      "action": "Can be considered with medical supervision; inform healthcare team of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "No direct metabolic interaction, but may increase GI side effects in some patients on biologics",
+      "action": "Limit consumption; not absolute contraindication but best avoided"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may exacerbate fluid retention and cardiac complications related to HER2 inhibition",
+      "action": "Maintain moderate sodium intake; especially important if baseline cardiac risk factors present"
+    },
+    {
+      "name": "Alcohol (>moderate amounts)",
+      "severity": "Low",
+      "mechanism": "May increase cardiotoxicity risk when combined with pertuzumab; dehydration concern",
+      "action": "Limit to ≤1 drink/day; ensure adequate hydration and discuss with oncology team"
+    }
+  ],
+  "monitoring_notes": "Pertuzumab is a monoclonal antibody not metabolized via CYP450 pathways, minimizing traditional drug interactions; primary concern is cardiac monitoring (LVEF assessment) and immune function preservation. Counsel patients to report any supplements or herbal products and maintain cardiology follow-up, particularly regarding HER2-mediated cardiomyopathy risk."
+}

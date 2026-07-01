@@ -1,0 +1,53 @@
+{
+  "drug": "Tenapanor",
+  "drug_class": "Sodium-hydrogen exchanger 3 (NHE3) inhibitor",
+  "key_pathways": [
+    "NHE3 inhibition",
+    "Intestinal sodium reabsorption",
+    "Phosphate homeostasis"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose phosphate binders (calcium carbonate, sevelamer)",
+      "severity": "High",
+      "mechanism": "Tenapanor increases intestinal phosphate excretion; concurrent phosphate binders may cause hypophosphatemia and reduce tenapanor efficacy",
+      "action": "Coordinate phosphate management with prescriber; space dosing if binders necessary"
+    },
+    {
+      "name": "High-dose calcium supplements (>1000 mg/day)",
+      "severity": "Moderate",
+      "mechanism": "May bind tenapanor in GI tract and reduce absorption; can also interfere with phosphate balance",
+      "action": "Use lower doses or obtain from food sources; separate administration by 2+ hours if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Tenapanor's effects on intestinal ion transport may alter iron absorption dynamics",
+      "action": "Monitor for signs of iron deficiency; consider iron status labs periodically"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "NHE3 inhibition may affect overall divalent cation absorption; monitor serum levels",
+      "action": "Assess magnesium status at baseline and during therapy if supplementing"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High phosphate foods (processed meats, dairy, nuts, seeds)",
+      "severity": "Low",
+      "mechanism": "Tenapanor increases phosphate excretion; excessive dietary phosphate may counteract therapeutic benefit in hyperphosphatemia",
+      "action": "Patient education on moderate phosphate intake; coordinate with renal dietitian if applicable"
+    },
+    {
+      "name": "Foods high in sodium",
+      "severity": "Low",
+      "mechanism": "Tenapanor reduces intestinal sodium reabsorption; high sodium diet may partially offset mechanism",
+      "action": "Counsel on sodium restriction consistent with clinical indication"
+    }
+  ],
+  "monitoring_notes": "Monitor serum phosphate, electrolytes (sodium, magnesium, calcium), and renal function periodically. Assess GI tolerance as tenapanor commonly causes diarrhea, which may be exacerbated by certain supplements or dietary patterns."
+}

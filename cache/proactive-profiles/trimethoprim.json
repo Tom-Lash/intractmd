@@ -1,0 +1,68 @@
+{
+  "drug": "Trimethoprim",
+  "drug_class": "Antibiotic (Folate Antagonist)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9",
+    "Folate metabolism",
+    "Renal tubular secretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Folic Acid (>5mg daily)",
+      "severity": "High",
+      "mechanism": "Folic acid directly antagonizes trimethoprim's antibacterial mechanism; high doses may reduce drug efficacy",
+      "action": "Avoid high-dose supplementation during treatment; standard prenatal doses (400-800mcg) are acceptable"
+    },
+    {
+      "name": "ACE inhibitor herbs (Licorice root)",
+      "severity": "Moderate",
+      "mechanism": "Trimethoprim can cause hyperkalemia; licorice causes sodium retention and potassium depletion, creating unpredictable electrolyte effects",
+      "action": "Avoid licorice supplements during trimethoprim use; monitor potassium levels"
+    },
+    {
+      "name": "Potassium supplements/high-dose potassium",
+      "severity": "Critical",
+      "mechanism": "Trimethoprim inhibits renal potassium excretion via ROMK channels, significantly increasing hyperkalemia risk",
+      "action": "Contraindicated; obtain baseline potassium level and renal function; monitor K+ weekly during treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B12",
+      "severity": "Low",
+      "mechanism": "Trimethoprim inhibits folate metabolism, which indirectly affects B12-dependent processes; supplementation may help prevent deficiency",
+      "action": "Consider supplementation if treatment exceeds 2 weeks; baseline B12 levels recommended for prolonged use"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May have minor interaction with renal handling; generally safe but monitor with other electrolytes",
+      "action": "Use standard doses; obtain baseline magnesium if on prolonged therapy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High potassium foods (bananas, spinach, sweet potatoes, avocado, coconut water)",
+      "severity": "High",
+      "mechanism": "Trimethoprim reduces renal potassium excretion; excessive dietary potassium increases hyperkalemia risk",
+      "action": "Limit high-potassium foods during treatment; provide patient with potassium-restricted food list if renal impairment present"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Leafy greens (moderate amounts)",
+      "severity": "Low",
+      "mechanism": "Folate content may theoretically reduce drug efficacy, though dietary folate levels are typically insufficient to cause clinically significant antagonism",
+      "action": "Moderate consumption is acceptable; avoid intentional supplementation of these foods"
+    },
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "May slightly reduce trimethoprim absorption; minimal clinical impact with standard dosing",
+      "action": "Space administration at least 2 hours apart from calcium-rich foods if absorption is critical"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and BUN at baseline and weekly during treatment, particularly in elderly or renally impaired patients. Assess for folate deficiency signs (macrocytic anemia, neuropathy) in patients on prolonged therapy >2 weeks."
+}

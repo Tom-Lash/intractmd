@@ -1,0 +1,28 @@
+{
+  "drug": "Micafungin",
+  "drug_class": "Echinocandin antifungal",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Biliary excretion",
+    "Not a CYP substrate or inhibitor"
+  ],
+  "avoid_supplements": [],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Theoretical induction of hepatic metabolism may reduce micafungin levels, though micafungin undergoes minimal CYP metabolism",
+      "action": "Monitor for reduced antifungal efficacy if co-administered; may consider alternative supplement"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying; micafungin is IV-administered but food interactions relevant for absorption of concurrent oral medications",
+      "action": "No specific restriction as micafungin is given intravenously; ensure adequate nutritional status during treatment"
+    }
+  ],
+  "monitoring_notes": "Micafungin has minimal drug interaction potential due to lack of CYP metabolism and minimal hepatic involvement. Monitor liver and renal function periodically during prolonged therapy, particularly in patients with hepatic impairment."
+}

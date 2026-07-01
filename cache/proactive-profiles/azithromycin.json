@@ -1,0 +1,73 @@
+{
+  "drug": "Azithromycin",
+  "drug_class": "Macrolide Antibiotic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "P-glycoprotein substrate",
+    "QT prolongation pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces azithromycin plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplement"
+    },
+    {
+      "name": "Antiarrhythmic supplements (QT-prolonging agents)",
+      "severity": "Critical",
+      "mechanism": "Azithromycin prolongs QT interval; concurrent use significantly increases risk of torsades de pointes and arrhythmias",
+      "action": "Contraindicated; use alternative antibiotic if possible"
+    },
+    {
+      "name": "Magnesium/Aluminum antacid supplements",
+      "severity": "High",
+      "mechanism": "Divalent cations chelate azithromycin, reducing absorption by 50% when taken concurrently",
+      "action": "Separate dosing by at least 2 hours; take azithromycin first"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Zinc supplements",
+      "severity": "Low",
+      "mechanism": "Divalent cation may reduce azithromycin absorption if taken simultaneously",
+      "action": "Separate dosing by 2+ hours or monitor for reduced efficacy"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce azithromycin absorption through chelation; effect less significant than Mg/Al",
+      "action": "Take azithromycin 2 hours before or 6 hours after calcium supplement"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Potential chelation reducing azithromycin bioavailability",
+      "action": "Separate dosing by 2+ hours; monitor clinical response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Fat delays azithromycin gastric emptying and may affect bioavailability depending on formulation; affects patient compliance with timing",
+      "action": "Take azithromycin on empty stomach (1 hour before or 2 hours after meals) for optimal absorption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may modestly increase azithromycin plasma concentration and QT prolongation risk",
+      "action": "Limit grapefruit consumption; monitor for adverse effects (nausea, QT changes)"
+    },
+    {
+      "name": "Dairy products (with immediate dosing)",
+      "severity": "Low",
+      "mechanism": "Calcium content may slightly reduce absorption if co-ingested; effect is minor with time separation",
+      "action": "Avoid taking azithromycin with milk/yogurt; safe if separated by 2+ hours"
+    }
+  ],
+  "monitoring_notes": "Monitor for QT prolongation risk, especially in elderly patients or those with cardiac comorbidities; counsel patients on timing relative to meals and supplements to maximize bioavailability and minimize drug interactions. Baseline ECG recommended in high-risk patients."
+}

@@ -1,0 +1,46 @@
+{
+  "drug": "Filgrastim",
+  "drug_class": "Granulocyte Colony-Stimulating Factor (G-CSF)",
+  "key_pathways": [
+    "G-CSF receptor signaling",
+    "Hematopoietic cell proliferation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May overstimulate immune response and potentially increase risk of splenic rupture or bone pain when combined with filgrastim's myelostimulatory effects",
+      "action": "Avoid concurrent use; counsel patient to discontinue echinacea during filgrastim therapy"
+    },
+    {
+      "name": "Andrographis paniculata",
+      "severity": "Moderate",
+      "mechanism": "Potent immune stimulant that may potentiate filgrastim's effects and increase adverse events such as bone pain and splenomegaly",
+      "action": "Advise patient to avoid this supplement during treatment course"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Astragalus",
+      "severity": "Low",
+      "mechanism": "Immunomodulatory properties may have additive effects with filgrastim; generally considered safe but warrants monitoring",
+      "action": "Use with caution; monitor for increased bone pain or splenomegaly; discuss with oncology team before use"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild immunostimulatory effects that could theoretically augment filgrastim response",
+      "action": "Monitor patient tolerance; no dosage adjustment typically needed but discuss with healthcare provider"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-dose vitamin C supplements/foods",
+      "severity": "Low",
+      "mechanism": "May theoretically increase oxidative stress in context of rapid myeloid proliferation; generally not contraindicated but warrant moderation",
+      "action": "Counsel on moderate intake; excessive supplementation should be discussed with oncology team"
+    }
+  ],
+  "monitoring_notes": "Filgrastim has no significant hepatic metabolism (CYP-independent) and minimal food/supplement interactions; primary concern is avoiding immune-potentiating supplements that may exacerbate myelostimulation-related adverse events like bone pain, splenomegaly, or splenic rupture. Monitor CBC, platelet counts, and clinical symptoms throughout therapy."
+}

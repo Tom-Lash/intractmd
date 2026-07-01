@@ -1,0 +1,59 @@
+{
+  "drug": "Nifedipine",
+  "drug_class": "Dihydropyridine Calcium Channel Blocker",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces nifedipine levels and efficacy",
+      "action": "Avoid concurrent use; may require nifedipine dose adjustment if discontinued"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases nifedipine bioavailability and hypotensive effects",
+      "action": "Avoid use; separate administration timing does not prevent interaction"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4, potentially increasing nifedipine levels",
+      "action": "Monitor blood pressure; report dizziness or edema to clinician"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "Sodium retention and potassium loss may counteract antihypertensive effects",
+      "action": "Monitor blood pressure regularly; use minimal amounts"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition dramatically increases nifedipine concentration (up to 4-fold), causing severe hypotension",
+      "action": "Completely avoid grapefruit and grapefruit juice; effects persist for 24+ hours"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase nifedipine absorption and bioavailability, potentially enhancing hypotensive effects",
+      "action": "Maintain consistent meal timing and fat intake; take consistently with or without food"
+    },
+    {
+      "name": "Caffeinated Beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may counteract hypotensive effects and increase heart rate variability",
+      "action": "Moderate caffeine intake; monitor blood pressure and heart rate response"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly and assess for peripheral edema, headache, and dizziness. Counsel patients to maintain consistent dietary habits and strictly avoid grapefruit products due to critical interaction risk."
+}

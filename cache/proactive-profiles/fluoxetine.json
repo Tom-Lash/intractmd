@@ -1,0 +1,80 @@
+{
+  "drug": "Fluoxetine",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP2C9",
+    "CYP2C19",
+    "CYP3A4",
+    "Serotonin reuptake inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Induces CYP3A4 and increases serotonin; risk of serotonin syndrome and reduced fluoxetine efficacy",
+      "action": "Contraindicated—do not combine; allow 5-week washout if switching from fluoxetine due to long half-life"
+    },
+    {
+      "name": "SAMe (S-Adenosyl methionine)",
+      "severity": "High",
+      "mechanism": "Potentiates serotonergic activity; increases risk of serotonin syndrome",
+      "action": "Avoid concurrent use; monitor for symptoms of serotonin syndrome if used"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Direct serotonin precursor; additive serotonergic effects increase serotonin syndrome risk",
+      "action": "Avoid use; counsel patient to discontinue before initiating or during fluoxetine therapy"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "High",
+      "mechanism": "SNRI activity combined with SSRI; significant serotonin syndrome risk",
+      "action": "Avoid or use only with close monitoring; educate on serotonin syndrome symptoms"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May potentiate serotonergic effects and increase bleeding risk via antiplatelet activity",
+      "action": "Use with caution; monitor for increased bleeding or bruising"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; additive with SSRI-related bleeding risk",
+      "action": "Generally safe; counsel on signs of bleeding if high-dose supplementation used"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Minor serotonergic activity; may cause mild additive effects",
+      "action": "Monitor for excessive sedation or vivid dreams; dose adjustment may be needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (in patients on fluoxetine + monoamine oxidase inhibitors)",
+      "severity": "Critical",
+      "mechanism": "Risk of hypertensive crisis if fluoxetine is combined with MAOIs; fluoxetine alone does not require tyramine restriction but use caution in combination therapy",
+      "action": "No tyramine restriction with fluoxetine monotherapy; restrict only if co-prescribed with MAOIs—ensure 5-week washout between fluoxetine and MAOI initiation"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Both increase serotonergic activity and central stimulation; may increase anxiety, insomnia, or tremor",
+      "action": "Moderate intake; advise patient to limit coffee, tea, and energy drinks; monitor for increased anxiety or sleep disturbance"
+    },
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Inhibits CYP3A4; may modestly increase fluoxetine levels",
+      "action": "Minimize consumption; no strict contraindication but counsel avoidance of large quantities"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome (agitation, confusion, rapid heart rate, muscle rigidity, hyperthermia) particularly with concomitant serotonergic agents. Counsel on increased bleeding risk (particularly with NSAIDs, anticoagulants, or antiplatelet agents) and monitor for hyponatremia, especially in elderly patients during initial therapy."
+}

@@ -1,0 +1,53 @@
+{
+  "drug": "Rifaximin",
+  "drug_class": "Antimicrobial (Non-absorbed Rifamycin)",
+  "key_pathways": [
+    "Minimal systemic absorption",
+    "Bacterial RNA polymerase inhibition",
+    "Gut microbiome modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Probiotics (during active treatment)",
+      "severity": "Moderate",
+      "mechanism": "Rifaximin kills bacteria non-selectively; concurrent probiotics may be neutralized, reducing therapeutic benefit",
+      "action": "Separate probiotic administration by at least 2 hours from rifaximin doses; consider reintroduction after treatment completion"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce residual CYP3A4 activity and reduce efficacy of any systemically absorbed rifaximin metabolites",
+      "action": "Avoid concurrent use; allow 2-week washout before starting rifaximin"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin K supplements",
+      "severity": "Low",
+      "mechanism": "Rifaximin can reduce gut bacteria that produce endogenous vitamin K; supplementation may prevent deficiency",
+      "action": "Monitor for signs of prolonged bleeding; counsel on adequate dietary vitamin K intake"
+    },
+    {
+      "name": "Fiber supplements",
+      "severity": "Low",
+      "mechanism": "May alter gut transit and rifaximin distribution; excessive fiber could reduce contact time with pathogenic bacteria",
+      "action": "Take fiber supplements 2+ hours apart from rifaximin; maintain consistent intake"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly increase rifaximin absorption in the GI tract, though clinical significance is minimal given low systemic bioavailability",
+      "action": "Consistency in meal timing is more important than composition; take with or without food as tolerated"
+    },
+    {
+      "name": "Foods high in fermented/probiotic content (yogurt, sauerkraut, kefir)",
+      "severity": "Low",
+      "mechanism": "Live organisms may be killed by rifaximin, reducing intended probiotic benefit but not creating contraindication",
+      "action": "No strict avoidance required; separate consumption by 2+ hours if possible to preserve probiotic viability"
+    }
+  ],
+  "monitoring_notes": "Rifaximin has minimal systemic absorption and few clinically significant drug-food interactions; primary concern is preservation of beneficial gut microbiota during and after treatment. Monitor for GI adverse effects and counsel patients on maintaining adequate hydration and nutritional status."
+}

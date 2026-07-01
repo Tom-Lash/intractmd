@@ -1,0 +1,48 @@
+{
+  "drug": "Simeprevir",
+  "drug_class": "Hepatitis C virus NS3/4A protease inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces simeprevir concentrations significantly, decreasing antiviral efficacy",
+      "action": "Contraindicated; discontinue at least 2 weeks before simeprevir initiation"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce simeprevir plasma concentrations and therapeutic effect",
+      "action": "Avoid high-dose garlic supplements; monitor for reduced efficacy if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase simeprevir levels; effect typically mild with extract formulations",
+      "action": "Use cautiously and monitor for adverse effects; standardized extracts preferred over whole grapefruit"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases simeprevir bioavailability and plasma concentrations, elevating toxicity risk",
+      "action": "Avoid consumption during simeprevir therapy; patient counseling essential"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fat-rich meals may increase simeprevir absorption; current formulations show improved bioavailability regardless",
+      "action": "May take with or without food per current formulations; verify with patient's specific product labeling"
+    }
+  ],
+  "monitoring_notes": "Simeprevir is substrate of CYP3A4 and P-glycoprotein; assess for significant drug/supplement interactions affecting metabolism. Maintain HCV viral load monitoring during therapy to confirm adequate simeprevir exposure and therapeutic response."
+}

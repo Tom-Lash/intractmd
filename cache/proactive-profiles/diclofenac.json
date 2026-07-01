@@ -1,0 +1,92 @@
+{
+  "drug": "Diclofenac",
+  "drug_class": "Nonsteroidal Anti-Inflammatory Drug (NSAID)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "CYP2C8",
+    "Renal excretion",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet effects increase bleeding risk; NSAIDs inhibit platelet aggregation",
+      "action": "Avoid concurrent use or limit Vitamin E to <400 IU/day; monitor for bleeding signs"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Platelet inhibition combined with NSAID antiplatelet activity significantly elevates bleeding risk",
+      "action": "Discontinue ginkgo or use alternative to diclofenac; counsel on bleeding precautions"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects of diclofenac, increasing hemorrhage risk",
+      "action": "Avoid high-dose garlic supplements; use culinary amounts only if necessary"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "High",
+      "mechanism": "Sodium retention and fluid accumulation; NSAIDs impair renal function and enhance licorice-induced hypertension",
+      "action": "Avoid licorice root; monitor blood pressure and renal function closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties; additive effect with diclofenac's platelet inhibition",
+      "action": "Monitor for increased bruising or bleeding; use moderate culinary doses"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Antiplatelet and potential CYP2C9 inhibition; may slightly increase diclofenac levels",
+      "action": "Monitor for efficacy changes; observe for bleeding signs with high-dose supplements"
+    },
+    {
+      "name": "Omega-3 fatty acids (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; synergistic with NSAID anticoagulation",
+      "action": "Use moderate doses; counsel on bleeding precautions"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "Low",
+      "mechanism": "Platelet aggregation inhibition; additive antiplatelet effects",
+      "action": "Monitor for increased bleeding tendency; consider alternative anti-inflammatory"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive alcohol (>3 drinks/day)",
+      "severity": "Critical",
+      "mechanism": "Alcohol irritates GI mucosa; NSAIDs inhibit protective prostaglandins; combined effect dramatically increases gastric ulceration and GI bleeding risk",
+      "action": "Advise complete alcohol avoidance or strict limitation to ≤1 drink/day; counsel on GI bleeding symptoms"
+    },
+    {
+      "name": "Aspirin-containing foods/products",
+      "severity": "High",
+      "mechanism": "Combined NSAID + aspirin use increases GI bleeding risk and renal toxicity without improved anti-inflammatory benefit",
+      "action": "Avoid aspirin and aspirin-containing products; use diclofenac as sole NSAID"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs impair renal sodium handling and increase water retention; excess dietary sodium worsens fluid accumulation and hypertension",
+      "action": "Recommend modest sodium restriction (<2300 mg/day); monitor blood pressure and weight"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay diclofenac absorption and increase peak GI irritation when taken with high-fat food",
+      "action": "Take diclofenac with light meals or milk; avoid taking on empty stomach despite delayed absorption"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, blood pressure, and signs of GI bleeding (dark stools, abdominal pain) regularly during diclofenac therapy. Assess cardiovascular risk and use lowest effective dose for shortest duration, especially in elderly or renally impaired patients."
+}

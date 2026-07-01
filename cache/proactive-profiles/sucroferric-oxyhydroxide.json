@@ -1,0 +1,65 @@
+{
+  "drug": "Sucroferric Oxyhydroxide",
+  "drug_class": "Iron-binding phosphate binder",
+  "key_pathways": [
+    "Gastrointestinal phosphate binding",
+    "Iron chelation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "Critical",
+      "mechanism": "Sucroferric oxyhydroxide contains iron and binds phosphate; concurrent iron supplementation increases iron burden and hyperferremia risk",
+      "action": "Avoid all iron supplements unless specifically prescribed by physician for documented deficiency; obtain serum iron levels"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Both agents bind phosphate and may compete for absorption; additive effects increase hypocalcemia and hyperphosphatemia control unpredictability",
+      "action": "Space dosing by at least 2 hours; consult nephrologist before concurrent use"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Sucroferric oxyhydroxide may impair zinc absorption through binding and pH alterations in the GI tract",
+      "action": "Monitor zinc levels; supplement only if deficiency confirmed; separate dosing by 2+ hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Potential for additive effects on phosphate binding and possible magnesium malabsorption",
+      "action": "Monitor serum magnesium levels periodically; adjust dose if hypomagnesemia develops"
+    },
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "May interact with phosphate-calcium-vitamin D metabolism in chronic kidney disease patients",
+      "action": "Coordinate dosing with nephrologist; monitor calcium-phosphate product"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-phosphate foods (processed meats, dairy, cola beverages)",
+      "severity": "High",
+      "mechanism": "Sucroferric oxyhydroxide is indicated to reduce phosphate absorption; high dietary phosphate overwhelming drug efficacy reduces therapeutic benefit",
+      "action": "Educate patient on phosphate-restricted diet; refer to renal nutritionist for CKD-appropriate meal planning"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, fortified cereals, spinach)",
+      "severity": "Low",
+      "mechanism": "Drug contains iron; high dietary iron may contribute to cumulative iron load, particularly in dialysis patients",
+      "action": "Monitor serum ferritin and transferrin saturation; moderate red meat consumption if elevated iron stores"
+    },
+    {
+      "name": "Calcium-fortified foods",
+      "severity": "Low",
+      "mechanism": "Additive effects with phosphate binding; may affect mineral metabolism balance",
+      "action": "Track total dietary and supplemental calcium intake; coordinate with nephrologist"
+    }
+  ],
+  "monitoring_notes": "Monitor serum phosphate, calcium, iron panel (ferritin, transferrin saturation), and zinc levels regularly, especially in the first 1-3 months of therapy. Patient education on strict phosphate restriction and adherence is critical for efficacy in chronic kidney disease management."
+}

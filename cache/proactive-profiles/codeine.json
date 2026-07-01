@@ -1,0 +1,66 @@
+{
+  "drug": "Codeine",
+  "drug_class": "Opioid analgesic",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "UDP-glucuronosyltransferase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces codeine metabolism and effectiveness; increases serotonin syndrome risk",
+      "action": "Avoid concurrent use; consult prescriber before discontinuing if currently taking"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression; increased sedation and respiratory depression risk",
+      "action": "Avoid use with codeine; use alternative sleep aids only under medical supervision"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Significant additive CNS depression; hepatotoxicity risk combined with codeine metabolism",
+      "action": "Contraindicated; do not use concurrently"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may slightly increase codeine levels",
+      "action": "Monitor for increased opioid effects; use in moderation or space dosing"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate opioid effects and constipation",
+      "action": "Use standard doses; monitor bowel function and pain control"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases codeine plasma concentrations and opioid effects",
+      "action": "Avoid grapefruit and grapefruit juice during codeine therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slow codeine absorption and delay onset of analgesia",
+      "action": "Take on empty stomach when possible; consistent timing with food acceptable"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; increased sedation and respiratory depression risk",
+      "action": "Limit or avoid alcohol; educate on potentiated side effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, respiratory depression, and constipation, especially in CYP2D6 poor metabolizers. Codeine efficacy depends on conversion to morphine via CYP2D6; interactions affecting this pathway significantly impact clinical response."
+}

@@ -1,0 +1,64 @@
+{
+  "drug": "Hydroxyzine",
+  "drug_class": "First-generation antihistamine (anxiolytic, sedating)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May reduce hydroxyzine levels via CYP3A4 induction; decreased anxiolytic efficacy",
+      "action": "Avoid concurrent use or monitor for reduced effectiveness; consult prescriber before combining"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; increased sedation and impairment",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression; excessive sedation, dizziness, and impaired cognition",
+      "action": "Avoid or use only under medical supervision with dose adjustment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depressant effects; may increase drowsiness",
+      "action": "Use with caution; monitor for excessive sedation"
+    },
+    {
+      "name": "Chamomile",
+      "severity": "Low",
+      "mechanism": "Mild additive sedative effects; minimal interaction risk",
+      "action": "Generally safe; advise patient to monitor for increased drowsiness"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; may enhance sedation",
+      "action": "Use together cautiously; monitor sleep quality and daytime function"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Marked additive CNS depression; significantly impairs cognition, coordination, and reaction time",
+      "action": "Advise complete avoidance or strict limitation; warn against driving/operating machinery"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase hydroxyzine levels and side effects",
+      "action": "Avoid or limit intake; monitor for enhanced sedation and anticholinergic effects"
+    }
+  ],
+  "monitoring_notes": "Hydroxyzine has significant CNS depressant effects; monitor for excessive sedation, anticholinergic symptoms (dry mouth, urinary retention, constipation), and impaired cognition. Counsel on avoiding alcohol and other depressants; caution regarding driving and hazardous activities, especially with concurrent supplements or foods affecting CYP3A4/2D6."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Memantine",
+  "drug_class": "NMDA receptor antagonist",
+  "key_pathways": [
+    "Renal excretion (primary)",
+    "Hepatic metabolism (minor)",
+    "CYP3A4 (minor involvement)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "D-Cycloserine",
+      "severity": "High",
+      "mechanism": "Both are NMDA receptor antagonists; concurrent use may cause excessive NMDA antagonism leading to cognitive impairment, psychosis, or neurotoxicity",
+      "action": "Avoid concurrent use; if clinically necessary, obtain specialist approval and monitor closely for adverse CNS effects"
+    },
+    {
+      "name": "Ketamine supplements/products",
+      "severity": "High",
+      "mechanism": "Both are NMDA receptor antagonists; additive effects may cause severe CNS depression, dissociation, or psychosis",
+      "action": "Contraindicated; do not combine under any circumstances"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects and could theoretically increase bleeding risk; additive CNS effects possible",
+      "action": "Monitor for signs of bleeding or increased dizziness; generally safe but discuss with healthcare provider"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4 and affect memantine metabolism; potential for reduced efficacy",
+      "action": "Inform provider before use; monitor memantine efficacy and adjust dosing if needed"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "High-dose magnesium may potentiate NMDA antagonism or affect urinary pH and memantine renal clearance",
+      "action": "Use normal dietary magnesium; consult provider before high-dose supplementation"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-pH foods/alkaline diet",
+      "severity": "Low",
+      "mechanism": "Memantine is renally excreted; alkaline urine increases reabsorption, potentially elevating drug levels and risk of toxicity",
+      "action": "Maintain neutral urine pH; avoid excessive alkaline foods (large amounts of citrus, vegetables); monitor renal function"
+    },
+    {
+      "name": "Excessive caffeine",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase CNS stimulation and potentially exacerbate dizziness, vertigo, or restlessness in sensitive patients",
+      "action": "Limit caffeine intake; monitor for increased dizziness or agitation"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function regularly as memantine is primarily renally eliminated; baseline and periodic assessment of cognitive function and neuropsychiatric symptoms is essential. Blood pressure should be monitored as memantine may increase hypertension risk."
+}

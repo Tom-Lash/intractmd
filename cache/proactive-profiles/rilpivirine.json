@@ -1,0 +1,71 @@
+{
+  "drug": "Rilpivirine",
+  "drug_class": "Non-Nucleoside Reverse Transcriptase Inhibitor (NNRTI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces rilpivirine concentrations below therapeutic levels",
+      "action": "Contraindicated - do not use concurrently; consider alternative antidepressant if needed"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer markedly decreases rilpivirine plasma concentrations",
+      "action": "Contraindicated - use alternative TB medication or separate antiretroviral regimen"
+    },
+    {
+      "name": "Proton Pump Inhibitors (PPIs)",
+      "severity": "High",
+      "mechanism": "Elevated gastric pH reduces rilpivirine absorption; clinically significant bioavailability reduction",
+      "action": "Avoid or use H2-receptor antagonist instead; if PPI necessary, separate dosing by 12+ hours"
+    },
+    {
+      "name": "Antacids (Aluminum/Magnesium hydroxide)",
+      "severity": "High",
+      "mechanism": "Elevated gastric pH impairs rilpivirine dissolution and absorption",
+      "action": "Separate administration by at least 2-4 hours; preferably use alternative antacids or H2 blockers"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit supplements",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase rilpivirine concentrations modestly",
+      "action": "Monitor for adverse effects; consistent consumption advised over sporadic use"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce rilpivirine absorption if taken concurrently due to chelation",
+      "action": "Separate dosing by 2+ hours; take rilpivirine on empty stomach if possible"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Significantly increases rilpivirine absorption and plasma exposure; inconsistent dosing conditions",
+      "action": "Take rilpivirine with food but NOT high-fat meals; consistent moderate food intake recommended"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may moderately elevate rilpivirine concentrations",
+      "action": "Limit consumption; if used, maintain consistent intake rather than sporadic use"
+    },
+    {
+      "name": "Cranberry products",
+      "severity": "Low",
+      "mechanism": "May modestly affect gastric pH and absorption",
+      "action": "No strict avoidance needed; monitor efficacy if high intakes used"
+    }
+  ],
+  "monitoring_notes": "Rilpivirine requires consistent food intake (light to moderate meal) for optimal absorption and has narrow therapeutic window; monitor for virologic failure or adverse effects with significant diet changes or supplement use. Gastric pH alterations are critical concern due to rilpivirine's pH-dependent absorption profile."
+}

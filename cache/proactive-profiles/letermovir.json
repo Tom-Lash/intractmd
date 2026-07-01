@@ -1,0 +1,54 @@
+{
+  "drug": "Letermovir",
+  "drug_class": "Cytomegalovirus (CMV) terminase inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (MDR1)",
+    "OATP1B1/1B3"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 and P-glycoprotein inducer; significantly reduces letermovir levels and therapeutic efficacy",
+      "action": "Discontinue St. John's Wort at least 2 weeks before letermovir initiation and avoid during treatment"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer; substantially decreases letermovir plasma concentrations",
+      "action": "Avoid concomitant use; if tuberculosis treatment necessary, consider alternative antituberculosis agents"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit supplements",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase letermovir levels; minimal clinical impact with standard dosing",
+      "action": "Limit consumption; monitor for adverse effects if used regularly"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inducer; potential for modest reduction in letermovir exposure",
+      "action": "Use with caution and counsel on potential reduced efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases letermovir plasma concentrations and exposure",
+      "action": "Completely avoid grapefruit, grapefruit juice, and related citrus products during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase letermovir absorption; food effect varies depending on formulation and patient factors",
+      "action": "Take with or without food consistently; maintain standardized meal patterns if possible"
+    }
+  ],
+  "monitoring_notes": "Monitor CMV viral load and clinical response to letermovir therapy, as supplement/food interactions may compromise antiviral efficacy in immunocompromised patients. Counsel patients on strict adherence to interaction avoidance, particularly with potent CYP3A4 inducers which may render letermovir subtherapeutic."
+}

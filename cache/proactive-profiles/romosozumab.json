@@ -1,0 +1,72 @@
+{
+  "drug": "Romosozumab",
+  "drug_class": "Monoclonal antibody; sclerostin inhibitor; bone-forming agent",
+  "key_pathways": [
+    "Wnt/β-catenin signaling pathway",
+    "Sclerostin inhibition",
+    "No hepatic metabolism (CYP-independent)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin A (>10,000 IU/day)",
+      "severity": "High",
+      "mechanism": "Excessive vitamin A antagonizes Wnt signaling and may reduce romosozumab efficacy in bone formation",
+      "action": "Limit vitamin A supplementation to recommended dietary allowance (700-900 mcg/day); monitor intake from multivitamins and retinoid products"
+    },
+    {
+      "name": "Systemic corticosteroid supplements (if used concurrently with oral corticosteroids)",
+      "severity": "High",
+      "mechanism": "Corticosteroids inhibit bone formation and directly antagonize romosozumab's mechanism; significantly reduce therapeutic benefit",
+      "action": "Use lowest effective corticosteroid dose; coordinate with prescriber; consider alternative therapies"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements (>1,200 mg/day total intake)",
+      "severity": "Low",
+      "mechanism": "While calcium is essential for bone health, excessive supplementation may cause hypercalcemia when combined with romosozumab's bone-forming effects",
+      "action": "Maintain calcium intake of 1,000-1,200 mg/day from diet and supplements combined; monitor serum calcium periodically"
+    },
+    {
+      "name": "Vitamin D3 supplementation",
+      "severity": "Low",
+      "mechanism": "Vitamin D is necessary for calcium absorption and bone metabolism; deficiency may reduce romosozumab efficacy, but excess may increase hypercalcemia risk",
+      "action": "Ensure adequate vitamin D status (25-75 ng/mL); supplement if deficient; typical dose 1,000-2,000 IU/day"
+    },
+    {
+      "name": "Phosphorus supplements",
+      "severity": "Low",
+      "mechanism": "Phosphorus imbalance may affect calcium-phosphate homeostasis and bone mineralization during romosozumab therapy",
+      "action": "Maintain adequate dietary phosphorus; avoid excessive supplementation; monitor serum phosphorus if symptomatic"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive sodium intake (>2,300 mg/day)",
+      "severity": "Moderate",
+      "mechanism": "High sodium increases urinary calcium excretion, potentially reducing bone mineral density gains achieved by romosozumab",
+      "action": "Limit dietary sodium to <2,300 mg/day; reduce processed and cured foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Calcium-rich foods (dairy, leafy greens, fortified products)",
+      "severity": "Low",
+      "mechanism": "Dietary calcium is essential for bone metabolism and romosozumab efficacy; inadequate intake reduces therapeutic benefit",
+      "action": "Consume 3-4 servings of calcium-rich foods daily to achieve 1,000-1,200 mg/day total calcium intake"
+    },
+    {
+      "name": "Vitamin D-containing foods (fatty fish, egg yolks, fortified milk)",
+      "severity": "Low",
+      "mechanism": "Dietary vitamin D supports calcium absorption and bone health; deficiency may impair romosozumab response",
+      "action": "Include vitamin D-rich foods in diet 2-3 times weekly; obtain 10-30 minutes sunlight exposure daily when possible"
+    },
+    {
+      "name": "Caffeine (>400 mg/day)",
+      "severity": "Low",
+      "mechanism": "Excessive caffeine may increase urinary calcium loss and slightly reduce bone mineral density; moderate intake is safe",
+      "action": "Limit caffeine from coffee, tea, and soft drinks to <400 mg/day (approximately 3-4 cups coffee); compensate with adequate calcium intake"
+    }
+  ],
+  "monitoring_notes": "Romosozumab is a monoclonal antibody with no hepatic metabolism, minimizing traditional drug-supplement interactions. Monitor serum calcium, phosphorus, and magnesium periodically, as romosozumab increases bone turnover and may affect mineral homeostasis. Assess vitamin D status at baseline and annually; maintain adequate calcium intake to optimize bone formation efficacy."
+}

@@ -1,0 +1,71 @@
+{
+  "drug": "Valsartan",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "Valsartan reduces aldosterone, increasing potassium retention; concurrent supplementation elevates hyperkalemia risk",
+      "action": "Avoid potassium supplements unless serum potassium is documented low; monitor K+ levels regularly"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce antihypertensive efficacy and increase renal dysfunction and hyperkalemia risk with ARBs",
+      "action": "Avoid chronic NSAID use; use acetaminophen for analgesia instead"
+    },
+    {
+      "name": "ACE inhibitors (lisinopril, enalapril)",
+      "severity": "High",
+      "mechanism": "Dual blockade of renin-angiotensin system increases hyperkalemia, hypotension, and renal impairment risk",
+      "action": "Do not combine; valsartan should replace, not supplement, ACE inhibitors"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Licorice causes sodium retention and potassium depletion, potentially counteracting valsartan's antihypertensive effects",
+      "action": "Limit licorice intake; monitor blood pressure response"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Hawthorn may have additive hypotensive effects with valsartan",
+      "action": "Monitor for excessive hypotension; inform provider of concurrent use"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Garlic may have mild blood pressure-lowering effects, potentially additive with valsartan",
+      "action": "Monitor blood pressure; adjust valsartan dose if needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (excessive intake)",
+      "severity": "High",
+      "mechanism": "High dietary potassium combined with valsartan-induced potassium retention increases hyperkalemia risk",
+      "action": "Moderate intake of bananas, spinach, sweet potatoes, tomatoes; follow renal dietitian guidance based on K+ levels"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Grapefruit inhibits CYP3A4, potentially increasing valsartan levels; effect is mild with valsartan",
+      "action": "Limit grapefruit juice consumption; monitor blood pressure response"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may reduce antihypertensive efficacy of valsartan",
+      "action": "Encourage low-sodium diet (<2.3g daily sodium) for optimal BP control"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and BUN at baseline and 1-2 weeks after initiation or dose changes. Watch for signs of hyperkalemia (weakness, palpitations) and renal dysfunction in patients with CKD, diabetes, or elderly populations."
+}

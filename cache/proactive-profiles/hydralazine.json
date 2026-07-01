@@ -1,0 +1,72 @@
+{
+  "drug": "Hydralazine",
+  "drug_class": "Vasodilator (Peripheral Vasodilator)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP1A2",
+    "Acetylation (NAT2)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ma Huang (Ephedra)",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic agent causes vasoconstriction and may antagonize hydralazine's hypotensive effects; risk of severe hypertension and cardiovascular events",
+      "action": "Contraindicated - advise patient to avoid completely"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "High",
+      "mechanism": "Causes sodium retention and potassium depletion, leading to hypertension and fluid retention that opposes hydralazine therapy",
+      "action": "Avoid or use only under strict medical supervision with regular blood pressure and electrolyte monitoring"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP2D6 and CYP1A2, potentially reducing hydralazine levels and therapeutic efficacy",
+      "action": "Avoid; if discontinuation necessary, inform prescriber for possible dose adjustment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild stimulant and blood pressure-raising properties that could counteract hydralazine's antihypertensive effects",
+      "action": "Monitor blood pressure closely; limit use and inform prescriber"
+    },
+    {
+      "name": "Vitamin B6 (Pyridoxine)",
+      "severity": "Low",
+      "mechanism": "Hydralazine may deplete B6 and cause peripheral neuropathy; supplementation may mitigate this effect",
+      "action": "Consider supplementation (25-50 mg daily) under medical guidance to prevent neuropathy"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May have mild blood pressure-lowering effects; additive effect possible though generally beneficial for cardiovascular health",
+      "action": "Use cautiously; monitor for enhanced hypotensive effects; may benefit heart function in heart failure"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-Rich Foods (Aged Cheeses, Processed Meats, Fermented Foods)",
+      "severity": "High",
+      "mechanism": "Hydralazine may inhibit monoamine oxidase activity; excessive tyramine consumption may cause hypertensive crisis when MAO inhibition occurs",
+      "action": "Limit intake of high-tyramine foods; monitor blood pressure; counsel on moderation in diet"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High Sodium Foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium can promote fluid retention and hypertension, counteracting antihypertensive benefits",
+      "action": "Recommend low-sodium diet (generally advised with antihypertensive therapy); monitor fluid balance"
+    },
+    {
+      "name": "Excessive Caffeine",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase heart rate and blood pressure, potentially reducing antihypertensive efficacy",
+      "action": "Advise moderate caffeine consumption; monitor for tachycardia or blood pressure elevations"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of systemic lupus erythematosus (SLE)-like syndrome with prolonged use. Assess peripheral neuropathy risk and consider B6 supplementation; regular blood pressure and heart rate monitoring essential."
+}

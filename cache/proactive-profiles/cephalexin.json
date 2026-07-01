@@ -1,0 +1,53 @@
+{
+  "drug": "Cephalexin",
+  "drug_class": "First-generation cephalosporin antibiotic",
+  "key_pathways": [
+    "Renal excretion",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "High",
+      "mechanism": "Cephalexin may cause hyperkalemia; combined supplementation increases risk of dangerous potassium elevation",
+      "action": "Avoid potassium supplements unless specifically prescribed by physician; monitor serum potassium levels"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics (Lactobacillus, Saccharomyces boulardii)",
+      "severity": "Low",
+      "mechanism": "Antibiotic may reduce beneficial bacterial flora; probiotics may help restore microbiome balance",
+      "action": "May take probiotics during and after treatment; separate administration by 2+ hours if possible"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Cephalexin may form complexes with divalent cations reducing absorption of both agents",
+      "action": "Separate administration by 2-3 hours; monitor for adequate absorption of both products"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (taken immediately before/with cephalexin)",
+      "severity": "Moderate",
+      "mechanism": "Fat delays gastric emptying and may reduce cephalexin absorption rate, potentially decreasing peak serum levels",
+      "action": "Take cephalexin 1 hour before or 2 hours after high-fat meals for optimal absorption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products (milk, yogurt, cheese)",
+      "severity": "Low",
+      "mechanism": "Calcium and magnesium in dairy may form chelation complexes with cephalexin, modestly reducing absorption",
+      "action": "Separate dairy consumption by 2+ hours from cephalexin dosing when possible"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Alcohol may increase GI upset and theoretically increase risk of disulfiram-like reaction (rare with cephalosporins)",
+      "action": "Limit alcohol consumption during treatment; counsel patient on potential GI side effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for allergic reactions especially in patients with penicillin allergy (cross-reactivity ~1-3%). Assess renal function as cephalexin is renally eliminated; adjust dosing in severe renal impairment (CrCl <30 mL/min). Monitor for C. difficile-associated diarrhea with prolonged use."
+}

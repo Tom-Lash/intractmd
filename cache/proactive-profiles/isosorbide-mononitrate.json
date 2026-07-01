@@ -1,0 +1,65 @@
+{
+  "drug": "Isosorbide Mononitrate",
+  "drug_class": "Nitrate vasodilator",
+  "key_pathways": [
+    "Nitric oxide-cGMP pathway",
+    "Vascular smooth muscle relaxation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Phosphodiesterase-5 (PDE-5) inhibitors (sildenafil, tadalafil, vardenafil)",
+      "severity": "Critical",
+      "mechanism": "Combined vasodilation causing severe, potentially life-threatening hypotension",
+      "action": "Absolutely contraindicated; counsel patient to avoid all PDE-5 inhibitors"
+    },
+    {
+      "name": "Riociguat (soluble guanylate cyclase stimulator)",
+      "severity": "Critical",
+      "mechanism": "Synergistic vasodilation and severe hypotension risk",
+      "action": "Contraindicated; do not use together"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate hypotensive effects through vasodilation",
+      "action": "Monitor blood pressure; adjust dose if significant hypotension occurs"
+    },
+    {
+      "name": "Hawthorn extract",
+      "severity": "Low",
+      "mechanism": "Additive vasodilatory and cardioactive effects",
+      "action": "Monitor for excessive hypotension or dizziness"
+    },
+    {
+      "name": "L-arginine",
+      "severity": "Low",
+      "mechanism": "Enhances nitric oxide production, potentiating vasodilation",
+      "action": "Monitor blood pressure; may enhance nitrate effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose phosphodiesterase inhibitor-containing foods (unlikely in standard diet)",
+      "severity": "Moderate",
+      "mechanism": "Theoretical risk with concentrated herbal supplements containing PDE inhibitors",
+      "action": "Review all herbal/supplement ingredients with patient"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Moderate",
+      "mechanism": "Additive hypotensive effects and increased risk of orthostatic hypotension and syncope",
+      "action": "Advise limiting alcohol consumption; counsel on dizziness/syncope risk"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May counteract therapeutic benefits in heart failure patients",
+      "action": "Recommend moderate sodium restriction as part of heart disease management"
+    }
+  ],
+  "monitoring_notes": "Monitor for headache (common nitrate side effect), dizziness, and syncope, particularly with first dose or dose increases. Assess for nitrate tolerance development with continuous dosing and counsel on the importance of a nitrate-free interval (10-14 hours daily) to maintain efficacy."
+}

@@ -1,0 +1,73 @@
+{
+  "drug": "Tetrabenazine",
+  "drug_class": "Monoamine Depleter (Vesicular Monoamine Transporter 2 Inhibitor)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "Monoamine metabolism",
+    "VMAT2 inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2D6 inducer; reduces tetrabenazine levels and increases active metabolites; may also enhance serotonergic effects",
+      "action": "Avoid concurrent use; consider alternative herbal supplements with provider approval"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "Critical",
+      "mechanism": "Combined serotonergic and monoaminergic activity increases risk of serotonin syndrome and seizures; tetrabenazine depletes monoamines while tramadol increases their activity",
+      "action": "Contraindicated; use alternative analgesics with provider guidance"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "May cause excessive serotonergic stimulation conflicting with tetrabenazine's monoamine-depleting mechanism; increased seizure and serotonin syndrome risk",
+      "action": "Avoid; discuss alternative mood support options with healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase tetrabenazine levels and metabolite accumulation",
+      "action": "Monitor for increased adverse effects (tardive dyskinesia, parkinsonism); adjust dosing if needed"
+    },
+    {
+      "name": "SAMe (S-adenosyl methionine)",
+      "severity": "Low",
+      "mechanism": "May enhance monoamine activity, potentially counteracting tetrabenazine effects or increasing serotonergic tone",
+      "action": "Use with caution; monitor efficacy and tolerability; report mood changes"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May theoretically enhance sedation and CNS effects of tetrabenazine",
+      "action": "Monitor for excessive somnolence; maintain consistent dosing"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases tetrabenazine and active metabolite (alpha-DHTBZ) bioavailability; increases risk of accumulation and toxicity",
+      "action": "Completely avoid grapefruit products; patient should be counseled on hidden grapefruit in supplements and beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Tetrabenazine depletes monoamines; concurrent high tyramine intake may theoretically increase hypertensive risk if monoamine restoration occurs",
+      "action": "Maintain moderate tyramine intake; monitor blood pressure; avoid excessive amounts of aged cheeses, soy sauce, or fermented foods"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May increase CNS stimulation and potentiate tremor or akathisia; may also inhibit CYP1A2 metabolism",
+      "action": "Limit caffeine intake; monitor for increased restlessness, tremor, or insomnia"
+    }
+  ],
+  "monitoring_notes": "Monitor for worsening or emergence of depression, suicidality, parkinsonism, akathisia, and tardive dyskinesia. CYP2D6 poor metabolizers require dose reduction; obtain CYP2D6 status and monitor for QTc prolongation, particularly when CYP3A4 inhibitors increase metabolite levels."
+}

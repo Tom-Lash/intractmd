@@ -1,0 +1,60 @@
+{
+  "drug": "Nitrofurantoin",
+  "drug_class": "Nitrofuran antibiotic",
+  "key_pathways": [
+    "Bacterial nitroreductase (prodrug activation)",
+    "Renal excretion",
+    "Hepatic metabolism (minor)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Magnesium antacids/supplements",
+      "severity": "High",
+      "mechanism": "Magnesium chelates nitrofurantoin, reducing GI absorption and urinary concentrations needed for efficacy",
+      "action": "Separate dosing by at least 2-3 hours; use alternative antacids if needed"
+    },
+    {
+      "name": "Probenecid",
+      "severity": "High",
+      "mechanism": "Inhibits renal tubular secretion of nitrofurantoin, reducing urinary drug concentration and antimicrobial efficacy",
+      "action": "Avoid concurrent use or consider alternative antibiotic"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B6 (pyridoxine)",
+      "severity": "Low",
+      "mechanism": "Nitrofurantoin may increase risk of peripheral neuropathy; B6 supplementation may provide protective benefit",
+      "action": "Monitor for neuropathic symptoms; supplementation may be beneficial with chronic use"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May help restore intestinal flora disrupted by nitrofurantoin antibiotic activity",
+      "action": "Consider taking 2+ hours apart from nitrofurantoin; use viable strains"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose vitamin C/acidifying foods (cranberry, citrus in excess)",
+      "severity": "Moderate",
+      "mechanism": "Excessive urinary acidification may precipitate nitrofurantoin crystals in renal tubules, increasing nephrotoxicity risk",
+      "action": "Maintain normal fluid intake; avoid megadose vitamin C; moderate cranberry use acceptable"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay nitrofurantoin absorption, but improves GI tolerance and reduces nausea",
+      "action": "Take with food if GI upset occurs; absorption remains adequate"
+    },
+    {
+      "name": "Dairy products/calcium-rich foods",
+      "severity": "Low",
+      "mechanism": "May modestly reduce absorption; effect is minimal with normal dietary intake",
+      "action": "Space dosing 2 hours apart from high-dose calcium supplements; dietary calcium acceptable"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (CrCl <60 mL/min requires dose adjustment), urinalysis for crystals, and signs of peripheral neuropathy with prolonged use. Ensure adequate hydration to maintain therapeutic urinary concentrations and reduce crystalluria risk."
+}

@@ -1,0 +1,52 @@
+{
+  "drug": "Fluticasone",
+  "drug_class": "Inhaled Corticosteroid",
+  "key_pathways": [
+    "CYP3A4",
+    "First-pass hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may increase fluticasone metabolism and reduce systemic exposure/efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "Moderate",
+      "mechanism": "Mineralocorticoid effects may potentiate corticosteroid-induced hypertension and hypokalemia",
+      "action": "Avoid or use only under medical supervision with electrolyte monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "May have immunostimulant properties that could counteract immunosuppressive effects of corticosteroids",
+      "action": "Use cautiously; monitor for reduced therapeutic effect"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation; may affect fluticasone metabolism variably",
+      "action": "Monitor clinical response; coordinate with healthcare provider if using"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May potentiate corticosteroid-induced fluid retention and hypertension",
+      "action": "Limit sodium intake; maintain dietary balance"
+    },
+    {
+      "name": "Foods high in simple sugars",
+      "severity": "Low",
+      "mechanism": "Corticosteroids can impair glucose tolerance; high sugar intake may worsen hyperglycemia risk",
+      "action": "Moderate intake; maintain balanced diet"
+    }
+  ],
+  "monitoring_notes": "Fluticasone is primarily metabolized via CYP3A4 and undergoes extensive first-pass hepatic metabolism, resulting in low systemic bioavailability with inhaled/intranasal use. Monitor for signs of adrenal suppression with long-term use, particularly with concurrent CYP3A4 inhibitors, and counsel on proper inhalation technique to maximize local benefit while minimizing systemic exposure."
+}

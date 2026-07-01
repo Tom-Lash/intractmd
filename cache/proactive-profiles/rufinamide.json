@@ -1,0 +1,47 @@
+{
+  "drug": "Rufinamide",
+  "drug_class": "Triazole antiepileptic agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2E1",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces rufinamide plasma concentrations and seizure control efficacy",
+      "action": "Contraindicated; avoid concurrent use or select alternative herbal supplement"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "May lower seizure threshold and counteract antiepileptic efficacy of rufinamide",
+      "action": "Avoid use; counsel patient on seizure risk if discontinued abruptly"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folate/Folic acid supplementation",
+      "severity": "Low",
+      "mechanism": "Rufinamide may impair folate metabolism; supplementation recommended to prevent deficiency",
+      "action": "Monitor folate levels; consider folic acid 1mg daily or higher doses if deficiency documented"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Increases rufinamide absorption and peak plasma concentration; may alter seizure control consistency",
+      "action": "Administer rufinamide consistently with or without food to maintain stable drug levels"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depression additive effect; may increase sedation and impair seizure threshold",
+      "action": "Advise limiting alcohol intake; monitor for increased CNS effects"
+    }
+  ],
+  "monitoring_notes": "Monitor seizure frequency and breakthrough seizures if supplements or dietary patterns change. Assess folate and vitamin D status periodically as antiepileptics impair metabolism of these nutrients."
+}

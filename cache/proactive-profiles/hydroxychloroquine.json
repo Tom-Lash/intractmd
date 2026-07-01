@@ -1,0 +1,65 @@
+{
+  "drug": "Hydroxychloroquine",
+  "drug_class": "Antimalarial/Disease-modifying antirheumatic drug (DMARD)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces hydroxychloroquine plasma concentrations and efficacy",
+      "action": "Discontinue St. John's Wort at least 2 weeks before starting hydroxychloroquine or switch to alternative antidepressant"
+    },
+    {
+      "name": "Kaolin",
+      "severity": "High",
+      "mechanism": "Kaolin-containing antacids significantly reduce hydroxychloroquine GI absorption by up to 50%",
+      "action": "Separate dosing by at least 4 hours; use alternative antacids (calcium carbonate, magnesium hydroxide)"
+    },
+    {
+      "name": "Digoxin supplements",
+      "severity": "High",
+      "mechanism": "Hydroxychloroquine increases digoxin serum levels, elevating toxicity risk",
+      "action": "Monitor serum digoxin levels closely; adjust digoxin dose if concurrent use necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "May reduce hydroxychloroquine absorption if taken simultaneously",
+      "action": "Space supplementation 4+ hours apart from hydroxychloroquine dose"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May modestly decrease hydroxychloroquine bioavailability",
+      "action": "Administer hydroxychloroquine 2-4 hours before or after calcium supplements"
+    },
+    {
+      "name": "Vitamin E (high-dose >400 IU daily)",
+      "severity": "Low",
+      "mechanism": "Potential additive antiplatelet effects may increase bleeding risk",
+      "action": "Use standard supplemental doses; monitor for unusual bleeding"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase hydroxychloroquine levels; effect variable",
+      "action": "Limit grapefruit consumption or monitor for increased adverse effects"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay hydroxychloroquine absorption timing",
+      "action": "Take hydroxychloroquine consistently with or without food for optimal absorption"
+    }
+  ],
+  "monitoring_notes": "Hydroxychloroquine has a narrow therapeutic window; monitor for retinal toxicity, QT prolongation, and drug interactions affecting CYP3A4/2D6 metabolism. Regular ophthalmologic exams and baseline ECG are recommended before initiating therapy."
+}

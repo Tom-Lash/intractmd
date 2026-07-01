@@ -1,0 +1,71 @@
+{
+  "drug": "Simvastatin",
+  "drug_class": "HMG-CoA reductase inhibitor (Statin)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces simvastatin levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant"
+    },
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains lovastatin (statin); additive myopathy and rhabdomyolysis risk",
+      "action": "Discontinue red yeast rice; counsel on statin monotherapy"
+    },
+    {
+      "name": "Niacin (high-dose >2g/day)",
+      "severity": "High",
+      "mechanism": "Potentiates myopathy risk and increases statin levels",
+      "action": "Avoid high-dose niacin; monitor CK if low-dose used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "Statins deplete CoQ10; supplementation may support muscle health",
+      "action": "Monitor for myalgia; consider 100-200mg daily if symptoms emerge"
+    },
+    {
+      "name": "Fish Oil (Omega-3)",
+      "severity": "Low",
+      "mechanism": "May have additive lipid-lowering effects; mild bleeding risk at high doses",
+      "action": "Use standard doses; monitor lipid panel and bleeding signs"
+    },
+    {
+      "name": "Garlic",
+      "severity": "Low",
+      "mechanism": "May have minor CYP3A4 induction; additive lipid effects possible",
+      "action": "Monitor lipid levels; clinical significance minimal at culinary doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition drastically increases simvastatin levels (up to 16-fold), raising myopathy and rhabdomyolysis risk",
+      "action": "Complete avoidance required; counsel on hidden grapefruit in juices and supplements"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Other Citrus (Pomegranate, Pomegranate Juice)",
+      "severity": "Low",
+      "mechanism": "Potential weak CYP3A4 inhibition; variable effect",
+      "action": "Monitor clinical response; adjust if lipid control changes significantly"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Increases GI absorption of simvastatin; may elevate drug levels",
+      "action": "Take simvastatin consistently with or without food; maintain routine"
+    }
+  ],
+  "monitoring_notes": "Monitor for myopathy symptoms (muscle pain, weakness, dark urine) especially when initiating therapy or combining with other interacting agents. Check baseline and periodic CK levels, lipid panel, and liver function tests; counsel patients on grapefruit avoidance as primary concern."
+}

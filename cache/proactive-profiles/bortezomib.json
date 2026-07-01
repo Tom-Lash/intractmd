@@ -1,0 +1,72 @@
+{
+  "drug": "Bortezomib",
+  "drug_class": "Proteasome Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Proteasome-mediated protein degradation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces bortezomib plasma concentrations and efficacy",
+      "action": "Discontinue at least 2 weeks before bortezomib initiation; consider alternative mood support"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Increased bleeding risk; bortezomib-induced thrombocytopenia combined with antiplatelet properties",
+      "action": "Avoid concurrent use; monitor CBC closely if patient unwilling to discontinue"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Potentiates anticoagulant effects and increases bleeding risk in thrombocytopenic patients",
+      "action": "Limit to <400 IU/day; monitor for hemorrhage"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Curcumin",
+      "severity": "Low",
+      "mechanism": "May enhance proteasome inhibition effects; theoretical additive neuroprotection",
+      "action": "Use cautiously; monitor for increased side effects; inform oncology team"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase bortezomib levels slightly",
+      "action": "Monitor for increased toxicity; assess necessity with healthcare provider"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effect; additive with bortezomib-induced thrombocytopenia",
+      "action": "Use standard doses; monitor platelet counts regularly"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases bortezomib plasma concentrations and toxicity risk",
+      "action": "Completely eliminate from diet during treatment; educate on hidden sources (pomelo, tangelo)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "CYP3A4 induction may modestly reduce bortezomib levels",
+      "action": "Maintain consistent intake; no need to eliminate; monitor clinical response"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay bortezomib absorption; optimal dosing on empty or light stomach",
+      "action": "Administer on empty stomach or with light snack; counsel on timing with meals"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC closely for thrombocytopenia (primary dose-limiting toxicity) and peripheral neuropathy progression. Assess drug interactions carefully as bortezomib is metabolized hepatically; renal function impacts accumulation. Counsel patients to avoid all grapefruit products and report any bleeding or neurological changes immediately."
+}

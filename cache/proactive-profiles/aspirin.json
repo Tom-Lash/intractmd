@@ -1,0 +1,85 @@
+{
+  "drug": "Aspirin",
+  "drug_class": "Nonsteroidal Anti-Inflammatory Drug (NSAID); Antiplatelet Agent",
+  "key_pathways": [
+    "COX-1 inhibition",
+    "COX-2 inhibition",
+    "Platelet aggregation",
+    "Renal function"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin or other anticoagulants",
+      "severity": "Critical",
+      "mechanism": "Additive anticoagulant effects and increased bleeding risk via platelet inhibition and displacement of warfarin from protein binding",
+      "action": "Avoid concurrent use; if necessary, obtain INR monitoring and dose adjustment by prescriber"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects and increases bleeding risk",
+      "action": "Limit vitamin E intake to ≤400 IU/day or discontinue if bleeding risk concerns exist"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and increases bleeding risk when combined with aspirin's antiplatelet effects",
+      "action": "Avoid concurrent use or monitor closely for signs of bleeding"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects and increases bleeding risk",
+      "action": "Discontinue feverfew or separate dosing; consult healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplement",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet properties and potentiate bleeding risk at high doses",
+      "action": "Monitor for unusual bruising or bleeding; use moderate amounts"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet activity and increase bleeding risk at high doses",
+      "action": "Use dietary amounts; avoid high-dose supplements without medical supervision"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties may potentiate aspirin effects at high doses",
+      "action": "Use culinary amounts; monitor for bleeding signs with high-dose supplements"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (chronic heavy use)",
+      "severity": "High",
+      "mechanism": "Increases GI bleeding risk, inhibits platelet function, and increases aspirin's anticoagulant effects",
+      "action": "Limit alcohol to ≤1 drink/day for women, ≤2 drinks/day for men; avoid binge drinking"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-dose caffeine (>400 mg/day)",
+      "severity": "Low",
+      "mechanism": "May increase GI irritation when combined with aspirin",
+      "action": "Limit caffeine intake; take aspirin with food and adequate water"
+    },
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "May increase gastric irritation and dyspepsia when combined with aspirin",
+      "action": "Consume spicy foods in moderation; take aspirin with meals"
+    },
+    {
+      "name": "Fatty/fried foods",
+      "severity": "Low",
+      "mechanism": "May delay aspirin absorption and increase GI upset",
+      "action": "Take aspirin with light meals; avoid high-fat foods immediately after dosing"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of GI bleeding (melena, hematemesis, abdominal pain) and unusual bruising or bleeding, especially in patients on concurrent anticoagulants or antiplatelet agents. Assess renal function periodically as NSAIDs can impair renal perfusion; use lowest effective dose for shortest duration, particularly in elderly patients and those with cardiovascular or renal disease."
+}

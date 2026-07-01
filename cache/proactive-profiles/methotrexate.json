@@ -1,0 +1,110 @@
+{
+  "drug": "Methotrexate",
+  "drug_class": "Antimetabolite / Immunosuppressant",
+  "key_pathways": [
+    "Dihydrofolate reductase inhibition",
+    "CYP3A4",
+    "CYP2C9",
+    "Organic anion transporter (OAT)",
+    "Reduced folate carrier"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Folic Acid (>5mg daily without medical guidance)",
+      "severity": "High",
+      "mechanism": "May reduce methotrexate efficacy by competing at dihydrofolate reductase; therapeutic folic acid supplementation (1mg daily) is standard but excessive doses can antagonize drug effect",
+      "action": "Coordinate folic acid supplementation with prescriber; use standard dose of 1mg daily on non-methotrexate days"
+    },
+    {
+      "name": "NSAIDs (high-dose or chronic)",
+      "severity": "Critical",
+      "mechanism": "Decrease renal clearance of methotrexate, increasing toxicity risk; can elevate MTX levels 25-50%",
+      "action": "Avoid NSAIDs entirely if possible; use acetaminophen for pain instead; if NSAID necessary, obtain prescriber approval and monitor renal function closely"
+    },
+    {
+      "name": "Trimethoprim",
+      "severity": "Critical",
+      "mechanism": "Both are dihydrofolate reductase inhibitors; additive toxicity and reduced methotrexate clearance",
+      "action": "Avoid concurrent use; select alternative antibiotic if infection treatment needed"
+    },
+    {
+      "name": "High-dose Vitamin A (>10,000 IU daily)",
+      "severity": "High",
+      "mechanism": "Both hepatotoxic; increases risk of cirrhosis and fibrosis with chronic methotrexate use",
+      "action": "Limit vitamin A to <5,000 IU daily; avoid retinoid supplements; monitor liver function"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May enhance methotrexate immunosuppression leading to decreased vaccine response and increased infection risk",
+      "action": "Discontinue echinacea during methotrexate therapy; consider immune support only under prescriber guidance"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Sulfonamides (including sulfasalazine)",
+      "severity": "Low",
+      "mechanism": "May displace methotrexate from protein binding and reduce renal clearance, slightly elevating MTX levels",
+      "action": "Monitor CBC and renal function more frequently; coordinate with prescriber if concurrent use necessary"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inducer may modestly increase methotrexate metabolism, reducing efficacy",
+      "action": "Inform prescriber of use; monitor disease response; consider discontinuation if efficacy concerns"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May affect gut microbiota-mediated enterohepatic circulation of methotrexate; generally beneficial but effects variable",
+      "action": "Monitor tolerability and efficacy; probiotics may be beneficial for GI side effects but ensure strain selection with pharmacist"
+    },
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Hepatoprotective properties may be beneficial given methotrexate hepatotoxicity; limited clinical evidence of interference",
+      "action": "May be considered as supportive therapy; monitor liver enzymes regularly"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High alcohol consumption (>2 drinks/day)",
+      "severity": "Critical",
+      "mechanism": "Both methotrexate and alcohol are hepatotoxic; significantly increases risk of cirrhosis, fibrosis, and hepatic necrosis",
+      "action": "Strongly advise complete alcohol avoidance or abstinence during methotrexate therapy; screen for alcohol use disorder"
+    },
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases methotrexate bioavailability and blood levels; increases toxicity risk",
+      "action": "Eliminate grapefruit and grapefruit juice from diet entirely during methotrexate treatment"
+    },
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "High sodium may impair renal function and reduce methotrexate clearance; worsens fluid retention",
+      "action": "Adopt low-sodium diet (<2,300mg daily); monitor renal function and blood pressure regularly"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Raw/undercooked meats and unpasteurized dairy",
+      "severity": "Low",
+      "mechanism": "Methotrexate causes immunosuppression increasing infection risk from foodborne pathogens (Listeria, Salmonella)",
+      "action": "Follow food safety practices: cook meats thoroughly, use pasteurized dairy, wash produce; practice good hygiene"
+    },
+    {
+      "name": "High-fat foods",
+      "severity": "Low",
+      "mechanism": "May increase methotrexate absorption and GI side effects; can elevate liver enzyme stress",
+      "action": "Limit saturated fat intake; maintain balanced, moderate-fat diet to minimize nausea and hepatic burden"
+    },
+    {
+      "name": "Caffeine-heavy beverages",
+      "severity": "Low",
+      "mechanism": "May increase methotrexate-induced GI irritation and nausea; mild diuretic effect may reduce drug clearance",
+      "action": "Limit caffeine to <200mg daily; substitute with herbal tea; maintain adequate hydration (2-3L water daily)"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC, comprehensive metabolic panel (renal and hepatic function), and albumin at baseline and regularly during therapy. Assess for signs of toxicity (mucositis, cytopenias, hepatotoxicity) and ensure adequate folic acid supplementation (1mg daily non-methotrexate days) to mitigate toxicity while preserving efficacy."
+}

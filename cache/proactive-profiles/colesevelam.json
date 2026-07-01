@@ -1,0 +1,77 @@
+{
+  "drug": "Colesevelam",
+  "drug_class": "Bile acid sequestrant",
+  "key_pathways": [
+    "Bile acid binding",
+    "GI absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Fat-soluble vitamins (A, D, E, K)",
+      "severity": "High",
+      "mechanism": "Colesevelam binds bile acids and reduces fat absorption, impairing absorption of fat-soluble vitamins",
+      "action": "Supplement fat-soluble vitamins at least 4 hours before or after colesevelam dose; monitor vitamin levels annually"
+    },
+    {
+      "name": "Digoxin",
+      "severity": "High",
+      "mechanism": "Colesevelam may bind digoxin in the GI tract, reducing its bioavailability and therapeutic effect",
+      "action": "Administer digoxin at least 2 hours before colesevelam; monitor digoxin levels"
+    },
+    {
+      "name": "Levothyroxine",
+      "severity": "High",
+      "mechanism": "Bile acid sequestrants can reduce thyroid hormone absorption",
+      "action": "Take levothyroxine at least 4 hours before colesevelam; monitor TSH levels"
+    },
+    {
+      "name": "Phosphate binders",
+      "severity": "Moderate",
+      "mechanism": "May have additive GI binding effects affecting mineral absorption",
+      "action": "Separate administration by at least 2 hours; monitor phosphate levels"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Beta-carotene",
+      "severity": "Low",
+      "mechanism": "May have reduced absorption due to impaired fat absorption",
+      "action": "Monitor vitamin A levels; consider supplementation if deficiency develops"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "Increased GI binding may reduce absorption slightly",
+      "action": "Take at least 2 hours apart from colesevelam"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Colesevelam reduces fat absorption; high-fat intake may worsen GI side effects and nutrient malabsorption",
+      "action": "Maintain moderate fat intake; distribute fat intake evenly throughout the day"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Vitamin K-rich foods (leafy greens, cruciferous vegetables)",
+      "severity": "Low",
+      "mechanism": "Colesevelam may reduce vitamin K absorption; dietary consistency important",
+      "action": "Maintain consistent intake of vitamin K-rich foods; monitor INR if on anticoagulants"
+    },
+    {
+      "name": "Calcium-fortified foods",
+      "severity": "Low",
+      "mechanism": "May compete with colesevelam binding; timing separation recommended",
+      "action": "Consume calcium-fortified foods at least 2 hours apart from colesevelam dose"
+    },
+    {
+      "name": "Iron-fortified foods",
+      "severity": "Low",
+      "mechanism": "Potential for reduced iron absorption",
+      "action": "Monitor for anemia; ensure adequate iron intake through diet or supplementation"
+    }
+  ],
+  "monitoring_notes": "Monitor fat-soluble vitamin levels (A, D, E, K) annually and counsel on adequate nutrient intake through diet or separate supplementation. Ensure all other medications are dosed at least 2-4 hours before or after colesevelam to prevent binding interactions."
+}

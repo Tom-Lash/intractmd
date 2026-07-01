@@ -1,0 +1,61 @@
+{
+  "drug": "Cobicistat",
+  "drug_class": "CYP3A4 Inhibitor / Pharmacokinetic Booster",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "CYP2D6",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces cobicistat levels and effectiveness of co-administered antiretrovirals",
+      "action": "Contraindicated; do not use concurrently. Counsel patient to avoid all St. John's Wort products"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce cobicistat plasma concentration and protease inhibitor efficacy",
+      "action": "Avoid high-dose garlic supplements; culinary amounts acceptable"
+    },
+    {
+      "name": "Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer; cobicistat increases rifabutin levels 3-4 fold, increasing toxicity risk",
+      "action": "Contraindicated; use alternative TB therapy if possible or reduce rifabutin dose significantly with careful monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 and increase cobicistat levels unpredictably",
+      "action": "Use with caution; monitor for increased adverse effects or consider avoiding"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May have CYP3A4 effects; potential for altered cobicistat metabolism",
+      "action": "Inform patient of potential interaction; monitor clinical response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases cobicistat and protease inhibitor concentrations; unpredictable effect magnitude",
+      "action": "Strictly avoid grapefruit and grapefruit juice; counsel on importance of dietary restriction"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Food effect variable; may increase cobicistat absorption when used with certain regimens",
+      "action": "Administer with food as directed; maintain consistent dietary patterns with cobicistat-containing products"
+    }
+  ],
+  "monitoring_notes": "Cobicistat is a potent CYP3A4 inhibitor used to boost protease inhibitor and integrase inhibitor concentrations; monitor for increased adverse effects from co-administered drugs and ensure patient awareness of critical dietary restrictions. Regular assessment of viral suppression and tolerability is essential, particularly with polypharmacy in HIV treatment regimens."
+}

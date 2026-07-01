@@ -1,0 +1,59 @@
+{
+  "drug": "Neostigmine",
+  "drug_class": "Cholinesterase Inhibitor",
+  "key_pathways": [
+    "Acetylcholinesterase inhibition",
+    "Parasympathomimetic effects"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anticholinergic herbs (Jimson weed, Datura, Henbane)",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of neostigmine's cholinergic effects; may precipitate severe anticholinergic crisis or reduced therapeutic efficacy",
+      "action": "Strictly contraindicate; counsel patient to avoid all anticholinergic-containing supplements"
+    },
+    {
+      "name": "Muscle relaxant supplements (Valerian root in high doses)",
+      "severity": "High",
+      "mechanism": "May potentiate neuromuscular depression and reduce neostigmine efficacy in myasthenia gravis management",
+      "action": "Avoid concurrent use; consider alternative relaxation supplements with minimal neuromuscular effects"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild cholinergic stimulation may additively increase parasympathomimetic effects",
+      "action": "Monitor for excessive salivation, lacrimation, or GI effects; dose adjustment may be needed"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May have mild anticholinergic properties that could slightly reduce neostigmine efficacy",
+      "action": "Monitor therapeutic response and cholinergic symptoms; inform prescriber if using concurrently"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "Excessive sodium may increase fluid retention and exacerbate cholinergic side effects (bronchospasm, muscle weakness)",
+      "action": "Maintain moderate sodium intake; monitor for worsening respiratory or muscular symptoms"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cruciferous vegetables (Broccoli, Cabbage)",
+      "severity": "Low",
+      "mechanism": "High vitamin K content may interact with concurrent anticoagulants if used; not direct interaction with neostigmine but relevant for poly-medicated patients",
+      "action": "No restriction needed; consume consistently and inform prescriber of dietary vitamin K intake if on warfarin"
+    },
+    {
+      "name": "Licorice root-containing foods",
+      "severity": "Low",
+      "mechanism": "May enhance fluid and sodium retention, potentially potentiating cholinergic adverse effects",
+      "action": "Limit intake; monitor for increased GI cramping, salivation, or muscle fasciculations"
+    }
+  ],
+  "monitoring_notes": "Monitor closely for cholinergic crisis symptoms (muscle fasciculations, bronchospasm, bradycardia, excessive salivation) and ensure patient recognizes signs requiring immediate medical attention. Assess neuromuscular function and respiratory status regularly, particularly if supplements or dietary changes are introduced."
+}

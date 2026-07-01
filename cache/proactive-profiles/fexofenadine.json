@@ -1,0 +1,47 @@
+{
+  "drug": "Fexofenadine",
+  "drug_class": "Second-generation H1-receptor antagonist (antihistamine)",
+  "key_pathways": [
+    "P-glycoprotein substrate",
+    "Minimal CYP450 metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces P-glycoprotein, reducing fexofenadine absorption and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "May inhibit P-glycoprotein, potentially increasing fexofenadine levels",
+      "action": "Monitor for increased antihistamine effects; adjust dosing if necessary"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "Inhibits P-glycoprotein transporter, significantly increasing fexofenadine bioavailability and plasma concentrations",
+      "action": "Avoid grapefruit and grapefruit juice; choose alternative beverages"
+    },
+    {
+      "name": "Orange juice (high-volume consumption)",
+      "severity": "Moderate",
+      "mechanism": "Certain orange juice formulations may inhibit P-glycoprotein and increase fexofenadine absorption",
+      "action": "Limit high-volume orange juice consumption; separate dosing by 2+ hours if possible"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Apple juice",
+      "severity": "Low",
+      "mechanism": "May minimally inhibit P-glycoprotein transporter, potentially increasing fexofenadine absorption",
+      "action": "Moderate consumption acceptable; monitor for excessive antihistamine effects"
+    }
+  ],
+  "monitoring_notes": "Fexofenadine is primarily a P-glycoprotein substrate with minimal hepatic metabolism, making it less susceptible to CYP450 interactions but vulnerable to P-glycoprotein modulators. Monitor for efficacy loss with P-glycoprotein inducers and increased adverse effects (dizziness, drowsiness) with P-glycoprotein inhibitors."
+}

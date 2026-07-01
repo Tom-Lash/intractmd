@@ -1,0 +1,71 @@
+{
+  "drug": "Erlotinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI), EGFR inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces erlotinib plasma concentrations by 50-60%, significantly reducing efficacy",
+      "action": "Avoid concurrent use; do not initiate during erlotinib therapy"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer markedly decreases erlotinib bioavailability and therapeutic levels",
+      "action": "Avoid or use alternative antibiotic; discontinue at least 2 weeks before erlotinib initiation"
+    },
+    {
+      "name": "Phenytoin",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces erlotinib concentrations and effectiveness",
+      "action": "Avoid if possible; use alternative anticonvulsant or monitor erlotinib levels closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly elevate erlotinib levels",
+      "action": "Limit consumption; monitor for increased adverse effects (rash, diarrhea, nausea)"
+    },
+    {
+      "name": "Milk thistle (silymarin)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition with potential minor increase in erlotinib exposure",
+      "action": "Use with caution; inform oncology team of supplementation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Increases erlotinib absorption by up to 2-fold, leading to elevated plasma concentrations and toxicity risk",
+      "action": "Take erlotinib on empty stomach, 1 hour before or 2 hours after food; specifically avoid fatty foods"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases erlotinib bioavailability and risk of toxicity (rash, diarrhea)",
+      "action": "Avoid completely throughout erlotinib therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, cola)",
+      "severity": "Low",
+      "mechanism": "CYP1A2 competition may slightly increase erlotinib levels, though clinical impact is minimal",
+      "action": "Moderate intake; excessive caffeine consumption should be avoided"
+    },
+    {
+      "name": "Charred/grilled meats",
+      "severity": "Low",
+      "mechanism": "Heterocyclic amines may induce CYP metabolism; generally minor clinical concern",
+      "action": "Maintain balanced diet; no specific restriction necessary"
+    }
+  ],
+  "monitoring_notes": "Erlotinib requires consistent dosing on an empty stomach for optimal pharmacokinetics; food interactions are critical and significantly impact efficacy and tolerability. Monitor closely for signs of toxicity (severe rash, gastrointestinal effects, hepatic changes) and verify patient adherence to fasting recommendations and supplement avoidance."
+}

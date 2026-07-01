@@ -1,0 +1,71 @@
+{
+  "drug": "Daclatasvir",
+  "drug_class": "Hepatitis C Virus (HCV) NS5A Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces daclatasvir plasma concentrations significantly, compromising antiviral efficacy",
+      "action": "Contraindicated; discontinue at least 2 weeks before daclatasvir initiation"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer decreases daclatasvir concentration by approximately 50%, reducing therapeutic effect",
+      "action": "Avoid concurrent use; if essential, increase daclatasvir dose to 90 mg daily under physician supervision"
+    },
+    {
+      "name": "Carbamazepine",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer substantially reduces daclatasvir bioavailability",
+      "action": "Avoid or use alternative anticonvulsant; if unavoidable, monitor HCV RNA levels closely"
+    },
+    {
+      "name": "Phenytoin",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer decreases daclatasvir plasma levels",
+      "action": "Consider alternative anticonvulsant; if used together, increase daclatasvir monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may moderately affect daclatasvir levels",
+      "action": "Use with caution; monitor treatment response with HCV RNA levels"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Potential mild P-glycoprotein inhibition may increase daclatasvir exposure",
+      "action": "Use cautiously and monitor for adverse effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (taken without food optimization)",
+      "severity": "Moderate",
+      "mechanism": "Food significantly increases daclatasvir absorption; inconsistent administration may reduce efficacy",
+      "action": "Take daclatasvir with food consistently at the same time daily for optimal absorption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase daclatasvir plasma concentration moderately",
+      "action": "Limit consumption; not absolutely contraindicated but monitor for increased adverse effects"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may slightly increase daclatasvir levels",
+      "action": "Occasional consumption acceptable; excessive intake should be avoided"
+    }
+  ],
+  "monitoring_notes": "Daclatasvir requires consistent food intake for optimal absorption and is highly dependent on CYP3A4 metabolism; concurrent use of strong CYP3A4 inducers significantly compromises viral suppression. Monitor HCV RNA levels at weeks 4, 12, and end-of-treatment, and assess for hepatotoxicity, particularly in patients with cirrhosis or concurrent hepatitis B infection."
+}

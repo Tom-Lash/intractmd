@@ -1,0 +1,65 @@
+{
+  "drug": "Axitinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inducer reduces axitinib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; counsel patient on alternative mood support if needed"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases axitinib exposure and toxicity risk",
+      "action": "Discontinue supplement; use alternative antioxidant if appropriate"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce axitinib bioavailability",
+      "action": "Avoid use; recommend alternative immune support approaches"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition at high doses; may increase axitinib levels",
+      "action": "Monitor for increased side effects; limit to dietary amounts or discuss with oncology team"
+    },
+    {
+      "name": "Vitamin E (high-dose)",
+      "severity": "Low",
+      "mechanism": "Additive antiplatelet effects may increase bleeding risk",
+      "action": "Limit to <400 IU daily; monitor for bleeding signs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases axitinib plasma concentration and toxicity",
+      "action": "Completely avoid grapefruit products; switch to alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase axitinib absorption; modest effect on bioavailability",
+      "action": "Take axitinib consistently with or without food; maintain consistent dietary pattern"
+    },
+    {
+      "name": "Caffeine-rich foods/beverages",
+      "severity": "Low",
+      "mechanism": "Potential CYP1A2 competition; unlikely to be clinically significant",
+      "action": "Monitor tolerance; moderate intake if dizziness or hypertension noted"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly and assess for signs of toxicity (diarrhea, fatigue, hand-foot syndrome) as CYP3A4 interactions significantly affect axitinib exposure. Counsel patients to maintain consistent timing and food intake patterns with each dose to optimize therapeutic levels."
+}

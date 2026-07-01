@@ -1,0 +1,73 @@
+{
+  "drug": "Fenofibrate",
+  "drug_class": "Fibric acid derivative (lipid-lowering agent)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "OATP1B1",
+    "UGT glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains lovastatin-like compounds; combined statin-fibrate therapy significantly increases rhabdomyolysis and myopathy risk",
+      "action": "Contraindicated; counsel patient to discontinue red yeast rice while taking fenofibrate"
+    },
+    {
+      "name": "High-dose Niacin (>1000 mg/day)",
+      "severity": "High",
+      "mechanism": "Niacin + fibrates increase myopathy risk and potentiate lipid-lowering effects unpredictably",
+      "action": "Avoid combination; if clinically necessary, use only with careful monitoring and dose adjustment"
+    },
+    {
+      "name": "Cranberry supplements (high doses)",
+      "severity": "Moderate",
+      "mechanism": "May inhibit OATP1B1 transporter, increasing fenofibrate exposure and myopathy risk",
+      "action": "Advise patient to limit cranberry supplements or monitor for muscle pain/weakness"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "Additive triglyceride-lowering effects; generally synergistic but may increase bleeding risk with high doses",
+      "action": "Monitor lipid panels and bleeding signs; coordinate dosing with prescriber"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects and potentiate lipid-lowering activity",
+      "action": "Use cautiously; monitor for excessive bleeding or bruising"
+    },
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity; may marginally enhance fibrate effects",
+      "action": "Monitor clinical response; no dose adjustment typically needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "Inhibits CYP3A4 and OATP1B1, substantially increasing fenofibrate bioavailability and myopathy risk",
+      "action": "Completely avoid grapefruit products; counsel patient to choose alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fenofibrate absorption is increased with food; may lead to variable drug levels",
+      "action": "Take fenofibrate consistently with or without food; maintain steady dietary pattern"
+    },
+    {
+      "name": "Alcohol (>1-2 drinks/day)",
+      "severity": "Low",
+      "mechanism": "Chronic alcohol increases triglycerides and hepatotoxicity risk; potentiates myopathy risk",
+      "action": "Counsel on moderate alcohol consumption; monitor liver function tests"
+    }
+  ],
+  "monitoring_notes": "Monitor CK levels, liver function tests (AST/ALT), and renal function at baseline and periodically, especially if patient develops muscle pain, weakness, or dark urine. Assess drug-drug interactions with concurrent statin use as combination significantly elevates myopathy risk."
+}

@@ -1,0 +1,65 @@
+{
+  "drug": "Pantoprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "key_pathways": [
+    "CYP2C19",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements (high dose)",
+      "severity": "High",
+      "mechanism": "PPIs reduce gastric acid, impairing calcium absorption; concurrent high-dose supplementation may not compensate for reduced bioavailability and increase hypercalcemia risk",
+      "action": "Separate dosing by 2+ hours; use lower doses or food-based sources; monitor calcium levels periodically"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Pantoprazole increases gastric pH, significantly reducing iron absorption (up to 66% reduction)",
+      "action": "Separate by at least 2 hours; consider alternative PPI timing or supplemental form; monitor for anemia"
+    },
+    {
+      "name": "Vitamin B12 supplements (if long-term use)",
+      "severity": "Moderate",
+      "mechanism": "Chronic PPI use reduces intrinsic factor and gastric acid needed for B12 absorption; supplementation may be needed but efficacy is reduced",
+      "action": "Monitor B12 levels annually with long-term pantoprazole use; consider sublingual or intramuscular B12 dosing"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "PPIs can reduce magnesium absorption; long-term deficiency risk exists but acute interactions are minimal",
+      "action": "Monitor magnesium levels; space dosing 2+ hours apart; consider food-based sources"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Moderate CYP3A4 inducer may slightly reduce pantoprazole efficacy through increased metabolism",
+      "action": "Monitor symptom control; may require pantoprazole dose adjustment if combined therapy necessary"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (concurrent with dosing)",
+      "severity": "Moderate",
+      "mechanism": "Fat delays gastric emptying and reduces pantoprazole absorption when taken with food",
+      "action": "Take pantoprazole 30-60 minutes before meals; separate from high-fat foods at time of administration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Calcium-rich foods (dairy, fortified products)",
+      "severity": "Low",
+      "mechanism": "Reduced gastric acid may modestly impair calcium bioavailability from food sources, but clinical impact is minimal with balanced diet",
+      "action": "Encourage adequate dietary calcium intake; monitor for signs of deficiency with long-term PPI use"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "Pantoprazole reduces acid-stimulated gastric secretion; caffeine effects on acid production may be blunted, reducing symptom relief benefit but not creating direct interaction",
+      "action": "Monitor symptom control; reduce caffeine if reflux worsens; no absolute contraindication"
+    }
+  ],
+  "monitoring_notes": "Long-term pantoprazole use (>1 year) warrants periodic monitoring of vitamin B12, magnesium, and calcium levels, especially in elderly patients or those with malabsorption risk factors. PPIs significantly reduce absorption of iron and calcium; counsel patients on optimal timing and consider supplementation strategies accordingly."
+}

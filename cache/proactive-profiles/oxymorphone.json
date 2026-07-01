@@ -1,0 +1,72 @@
+{
+  "drug": "Oxymorphone",
+  "drug_class": "Opioid Analgesic (Semi-synthetic)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Glucuronidation (UGT)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce oxymorphone levels and efficacy",
+      "action": "Avoid concurrent use; consult prescriber before discontinuing if already taking"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; additive CNS depression and respiratory depression",
+      "action": "Discontinue kava kava; do not use with oxymorphone"
+    },
+    {
+      "name": "Alcohol-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Severe additive CNS and respiratory depression; increased overdose risk",
+      "action": "Strictly avoid all alcohol and alcohol-containing products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression potential",
+      "action": "Monitor for excessive sedation; report unusual drowsiness"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depressant effects",
+      "action": "Use with caution; monitor for increased drowsiness"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase oxymorphone exposure",
+      "action": "Monitor for increased side effects; maintain consistent intake if using"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases oxymorphone levels and overdose risk",
+      "action": "Completely avoid grapefruit products; no safe consumption level established"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May alter oxymorphone absorption kinetics; extended-release formulations affected",
+      "action": "Take on consistent meal schedule; avoid variable fat intake around dosing"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May increase CNS stimulation and mask sedation; counteracts opioid effects",
+      "action": "Limit caffeine intake; monitor pain control and alertness"
+    }
+  ],
+  "monitoring_notes": "Monitor for respiratory depression, excessive sedation, and constipation. Counsel patients on strict avoidance of alcohol and grapefruit products, and advise maintaining consistent meal timing with extended-release formulations to ensure stable drug absorption."
+}

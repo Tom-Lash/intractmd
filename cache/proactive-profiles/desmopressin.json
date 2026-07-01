@@ -1,0 +1,60 @@
+{
+  "drug": "Desmopressin",
+  "drug_class": "Vasopressin analog (antidiuretic hormone)",
+  "key_pathways": [
+    "V2 receptor agonism",
+    "Aquaporin-2 water channel regulation",
+    "No significant CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "NSAIDs (e.g., ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs potentiate desmopressin's antidiuretic effect and increase risk of hyponatremia and water intoxication by inhibiting prostaglandin-mediated fluid excretion",
+      "action": "Avoid concurrent use; use acetaminophen as alternative analgesic"
+    },
+    {
+      "name": "Tricyclic antidepressants (amitriptyline, imipramine)",
+      "severity": "High",
+      "mechanism": "Additive antidiuretic effects increase hyponatremia risk through enhanced water reabsorption",
+      "action": "Monitor serum sodium closely; consider alternative antidepressant class if concurrent use necessary"
+    },
+    {
+      "name": "Selective serotonin reuptake inhibitors (SSRIs)",
+      "severity": "High",
+      "mechanism": "SSRIs increase ADH secretion and compound desmopressin's antidiuretic effect, elevating hyponatremia risk",
+      "action": "Monitor sodium levels regularly; use lowest effective SSRI dose and consider alternative therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice (glycyrrhiza)",
+      "severity": "Low",
+      "mechanism": "Licorice has mild mineralocorticoid activity and may potentiate fluid retention; additive effect with desmopressin's antidiuretic action",
+      "action": "Limit licorice consumption; monitor for edema and hyponatremia symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive free water intake",
+      "severity": "Critical",
+      "mechanism": "Desmopressin increases aquaporin-2 water reabsorption; excessive water intake without corresponding sodium intake causes acute hyponatremia and water intoxication",
+      "action": "Restrict free water intake; advise patients on appropriate fluid management and sodium-containing food balance"
+    },
+    {
+      "name": "Licorice-containing foods/candies",
+      "severity": "Moderate",
+      "mechanism": "High licorice consumption increases sodium retention and fluid reabsorption, compounding desmopressin's antidiuretic effects",
+      "action": "Limit licorice-containing products; encourage sodium-controlled diet"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may worsen hypertension in susceptible patients; desmopressin causes fluid retention that can increase blood pressure",
+      "action": "Monitor sodium intake and blood pressure; maintain moderate dietary sodium"
+    }
+  ],
+  "monitoring_notes": "Monitor serum sodium concentration regularly, especially in elderly patients, those with renal impairment, and concurrent use of medications affecting fluid balance. Educate patients on appropriate fluid intake, recognizing hyponatremia symptoms (headache, confusion, seizures), and the importance of medication compliance relative to fluid restriction."
+}

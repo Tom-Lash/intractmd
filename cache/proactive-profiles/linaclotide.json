@@ -1,0 +1,47 @@
+{
+  "drug": "Linaclotide",
+  "drug_class": "Guanylate Cyclase-C (GC-C) Agonist",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Local GI tract action",
+    "Minimal systemic absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose iron supplements",
+      "severity": "Moderate",
+      "mechanism": "Iron may increase GI irritation and worsen diarrhea; linaclotide-induced fluid secretion may impair iron absorption",
+      "action": "Separate administration by at least 2 hours; monitor for worsening diarrhea and anemia"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Linaclotide's osmotic effects may reduce probiotic colonization; theoretical benefit unclear",
+      "action": "Monitor clinical response; may use if beneficial for GI symptoms"
+    },
+    {
+      "name": "Antidiarrheal supplements (psyllium, calcium polycarbophil)",
+      "severity": "Low",
+      "mechanism": "May counteract therapeutic effect of linaclotide",
+      "action": "Avoid concurrent use; if needed for symptom breakthrough, space doses and monitor efficacy"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and alter local drug effect timing; may exacerbate diarrhea",
+      "action": "Take linaclotide on empty stomach as directed; counsel on consistent meal timing"
+    },
+    {
+      "name": "Foods high in fiber (sudden increase)",
+      "severity": "Low",
+      "mechanism": "Combined with linaclotide's secretory effects may increase diarrhea severity",
+      "action": "Advise gradual fiber increase; monitor for excessive fluid loss and electrolyte imbalance"
+    }
+  ],
+  "monitoring_notes": "Linaclotide undergoes minimal systemic absorption and hepatic metabolism, resulting in very low drug-drug and drug-supplement interaction potential. Primary monitoring should focus on adequate hydration status, electrolyte balance, and managing osmotic diarrhea symptoms during treatment initiation and dose adjustment."
+}

@@ -1,0 +1,84 @@
+{
+  "drug": "Celecoxib",
+  "drug_class": "Selective COX-2 Inhibitor (NSAID)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet effects; increased bleeding risk when combined with NSAID-induced platelet inhibition",
+      "action": "Advise patient to limit vitamin E supplementation to <400 IU/day or discontinue if concurrent use necessary; monitor for signs of bleeding"
+    },
+    {
+      "name": "Garlic (concentrated supplements)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet and anticoagulant effects; increases GI bleeding risk",
+      "action": "Recommend avoiding concentrated garlic supplements; dietary garlic is acceptable"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Platelet inhibition combined with NSAID effect increases bleeding risk, particularly GI bleeding",
+      "action": "Discontinue ginkgo biloba or use with close clinical monitoring; counsel on bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ibuprofen or other NSAIDs (herbal or OTC)",
+      "severity": "Moderate",
+      "mechanism": "Duplicate NSAID therapy increases GI ulceration, renal dysfunction, and cardiovascular risk",
+      "action": "Counsel patient to avoid concurrent NSAIDs; clarify celecoxib is sole NSAID being used"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "Moderate",
+      "mechanism": "Mineralocorticoid effects promote sodium retention and hypertension; compounds celecoxib's cardiovascular risk",
+      "action": "Monitor blood pressure; recommend limiting licorice root use to short-term or discontinue if hypertension present"
+    },
+    {
+      "name": "Omega-3 fatty acids (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; additive with celecoxib's minor antiplatelet properties",
+      "action": "Standard dietary omega-3 intake is safe; monitor if using high-dose supplements (>3g/day) with bleeding concerns"
+    },
+    {
+      "name": "Turmeric/Curcumin (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet and anticoagulant effects; potential additive GI irritation",
+      "action": "Dietary use acceptable; high-dose supplements require monitoring; counsel on GI symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (regular/heavy use)",
+      "severity": "High",
+      "mechanism": "Increases GI bleeding risk; alcohol enhances NSAID-induced gastric mucosal damage and increases cardiovascular and renal toxicity",
+      "action": "Advise patient to minimize or eliminate alcohol consumption; warn of increased GI ulceration and bleeding risk"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay celecoxib absorption and increase GI side effects; does not significantly alter bioavailability",
+      "action": "Take celecoxib with or without food; if GI upset occurs, take with light meal or milk; avoid heavy/fatty foods at time of dosing"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase celecoxib levels, though clinical significance is minimal",
+      "action": "Occasional grapefruit juice consumption is unlikely to cause problems; counsel to limit if concerned"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "May increase GI irritation and acid secretion; minor additive effect with NSAID gastric effects",
+      "action": "Moderate caffeine intake; if GI symptoms develop, reduce caffeine consumption"
+    }
+  ],
+  "monitoring_notes": "Assess renal function, blood pressure, and cardiovascular history prior to celecoxib initiation. Monitor for GI symptoms, fluid retention, hypertension, and bleeding signs, particularly in patients combining celecoxib with anticoagulants, antiplatelets, or the supplements listed above."
+}

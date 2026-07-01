@@ -1,0 +1,66 @@
+{
+  "drug": "Allopurinol",
+  "drug_class": "Xanthine oxidase inhibitor",
+  "key_pathways": [
+    "Xanthine oxidase inhibition",
+    "CYP1A2 (minor)",
+    "CYP3A4 (minor)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin C",
+      "severity": "High",
+      "mechanism": "Increases urinary uric acid excretion and may increase risk of urate crystal formation in kidneys; counteracts allopurinol efficacy",
+      "action": "Limit vitamin C intake to <2000 mg/day; monitor uric acid levels and renal function closely"
+    },
+    {
+      "name": "Azathioprine or 6-mercaptopurine supplements",
+      "severity": "Critical",
+      "mechanism": "Allopurinol inhibits xanthine oxidase, reducing metabolism of these immunosuppressants, leading to severe toxicity and bone marrow suppression",
+      "action": "Avoid concurrent use; if required, reduce azathioprine/6-mercaptopurine dose by 65-75% and monitor CBC closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Febuxostat",
+      "severity": "Low",
+      "mechanism": "Concurrent xanthine oxidase inhibitors may increase hypouricemic effect",
+      "action": "Monitor serum uric acid levels; use together only under physician direction"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Allopurinol may inhibit iron absorption slightly; iron may enhance oxidative stress",
+      "action": "Separate dosing by 2-3 hours; monitor for efficacy of both agents"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-purine foods (organ meats, anchovies, sardines, mussels)",
+      "severity": "Moderate",
+      "mechanism": "High dietary purine load increases uric acid production, potentially overwhelming allopurinol's effect and triggering gout flares",
+      "action": "Maintain low-purine diet; educate patient on purine content of foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (especially beer)",
+      "severity": "Low",
+      "mechanism": "Alcohol increases uric acid production and impairs renal excretion; beer contains high purines",
+      "action": "Limit alcohol consumption; counsel patient to restrict to moderate intake or eliminate"
+    },
+    {
+      "name": "High-fructose foods and beverages",
+      "severity": "Low",
+      "mechanism": "Fructose metabolism increases uric acid production",
+      "action": "Reduce intake of sugary drinks, honey, and high-fructose corn syrup"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May slightly increase uric acid levels; minimal clinical significance",
+      "action": "Moderate caffeine intake; excessive consumption should be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor serum uric acid levels, renal function (creatinine, eGFR), and liver function tests periodically, especially during initial therapy. Educate patients that allopurinol may precipitate acute gout flares early in treatment; concurrent colchicine or NSAIDs prophylaxis is typically recommended for 3-6 months."
+}

@@ -1,0 +1,40 @@
+{
+  "drug": "Vigabatrin",
+  "drug_class": "Antiepileptic/GABA enhancer",
+  "key_pathways": [
+    "Non-enzymatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic metabolism and reduce vigabatrin efficacy; increases seizure risk",
+      "action": "Avoid concomitant use; consult prescriber before initiating"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression; high-dose magnesium may affect drug absorption",
+      "action": "Monitor for increased sedation; separate dosing by 2 hours"
+    },
+    {
+      "name": "Vitamin B6 (Pyridoxine)",
+      "severity": "Low",
+      "mechanism": "May theoretically interact with GABA metabolism; high doses may affect seizure threshold",
+      "action": "Monitor; maintain consistent B6 intake; avoid megadosing"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Potentiates CNS depression and may lower seizure threshold",
+      "action": "Minimize or avoid alcohol consumption; counsel on increased drowsiness/dizziness risk"
+    }
+  ],
+  "monitoring_notes": "Vigabatrin is minimally metabolized enzymatically and has low food/supplement interaction potential. Primary concern is CNS depression risk and seizure threshold modification with depressants. Monitor renal function as vigabatrin is renally eliminated."
+}

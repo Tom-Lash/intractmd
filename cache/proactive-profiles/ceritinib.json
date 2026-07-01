@@ -1,0 +1,72 @@
+{
+  "drug": "Ceritinib",
+  "drug_class": "Anaplastic lymphoma kinase (ALK) inhibitor; tyrosine kinase inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces ceritinib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid completely; use alternative mood support if needed"
+    },
+    {
+      "name": "Grapefruit extract/seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases ceritinib exposure and toxicity risk",
+      "action": "Discontinue; allow 3-day washout before ceritinib use"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce ceritinib bioavailability",
+      "action": "Avoid concurrent use"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor may increase ceritinib levels and adverse effects",
+      "action": "Use with caution; monitor for toxicity"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may slightly reduce ceritinib exposure",
+      "action": "Monitor efficacy; inform healthcare provider of use"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inducer; minimal clinical impact at standard doses",
+      "action": "Use standard culinary amounts; high supplemental doses may warrant monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/pomelo/Seville oranges",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases ceritinib plasma concentration and toxicity risk",
+      "action": "Eliminate from diet during ceritinib therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase ceritinib absorption; requires consistent intake pattern",
+      "action": "Take ceritinib consistently with or without food; do not vary pattern significantly"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contains compounds with weak CYP1A2 activity; minimal impact on CYP3A4",
+      "action": "No restriction needed; consume normally as part of healthy diet"
+    }
+  ],
+  "monitoring_notes": "Monitor ceritinib efficacy and tolerability closely when initiating or changing concomitant CYP3A4 modulators. Assess for gastrointestinal toxicity, QT prolongation, and hepatotoxicity; maintain consistent meal patterns to avoid pharmacokinetic variability."
+}

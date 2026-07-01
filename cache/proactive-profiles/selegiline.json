@@ -1,0 +1,144 @@
+{
+  "drug": "Selegiline",
+  "drug_class": "Monoamine Oxidase Inhibitor (MAOI), Type B selective",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "MAO-B inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Serotonergic effects combined with MAOI activity increase serotonin syndrome risk",
+      "action": "Contraindicated; do not use concurrently"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Critical",
+      "mechanism": "Increased serotonin levels with MAOI inhibition causes serotonin syndrome risk",
+      "action": "Avoid; may cause hypertensive crisis or serotonin syndrome"
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "Critical",
+      "mechanism": "Serotonin precursor with MAOI leads to excessive serotonin accumulation",
+      "action": "Contraindicated; discontinue before selegiline initiation"
+    },
+    {
+      "name": "SAMe (S-adenosyl methionine)",
+      "severity": "High",
+      "mechanism": "Serotonergic activity potentiated by MAOI effects",
+      "action": "Avoid or use with caution under medical supervision"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "High",
+      "mechanism": "Stimulant properties with MAOI may cause hypertensive crisis",
+      "action": "Avoid concurrent use"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-adrenergic stimulation combined with MAOI increases hypertension risk",
+      "action": "Contraindicated; risk of hypertensive crisis"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Tyrosine (L-Tyrosine)",
+      "severity": "Low",
+      "mechanism": "At high doses, may increase catecholamine synthesis with MAOI activity",
+      "action": "Use normal dietary amounts; avoid supplemental megadoses"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "No direct interaction but may enhance CNS effects",
+      "action": "Monitor; use standard supplemental doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Aged cheeses (cheddar, blue, Parmesan, brie)",
+      "severity": "Critical",
+      "mechanism": "High tyramine content with MAOI causes tyramine pressor effect and hypertensive crisis",
+      "action": "Strictly avoid; risk of severe hypertension and intracranial hemorrhage"
+    },
+    {
+      "name": "Cured/processed meats (salami, pepperoni, bacon, sausage)",
+      "severity": "Critical",
+      "mechanism": "Tyramine accumulation from preservation combined with MAO-B inhibition",
+      "action": "Avoid entirely during selegiline therapy"
+    },
+    {
+      "name": "Fermented soy products (miso, soy sauce, tempeh)",
+      "severity": "Critical",
+      "mechanism": "High tyramine from fermentation with MAOI blockade",
+      "action": "Avoid; significant hypertensive crisis risk"
+    },
+    {
+      "name": "Overripe or spoiled bananas",
+      "severity": "High",
+      "mechanism": "Tyramine increases with ripening and bacterial decomposition",
+      "action": "Avoid very ripe bananas; fresh ripe bananas in moderation acceptable"
+    },
+    {
+      "name": "Soy sauce, tamari",
+      "severity": "High",
+      "mechanism": "High tyramine content from fermentation",
+      "action": "Avoid or use minimal amounts"
+    },
+    {
+      "name": "Sauerkraut, kimchi (fermented vegetables)",
+      "severity": "High",
+      "mechanism": "Tyramine production during fermentation process",
+      "action": "Avoid fermented vegetable products"
+    },
+    {
+      "name": "Broad beans (fava beans)",
+      "severity": "High",
+      "mechanism": "Naturally high dopamine and tyramine content",
+      "action": "Contraindicated; avoid completely"
+    },
+    {
+      "name": "Liver pâté",
+      "severity": "Critical",
+      "mechanism": "Extremely high tyramine concentration",
+      "action": "Absolutely contraindicated"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Soy milk and tofu (non-fermented)",
+      "severity": "Low",
+      "mechanism": "Lower tyramine than fermented soy but contains some biogenic amines",
+      "action": "Moderate consumption acceptable; monitor tolerance"
+    },
+    {
+      "name": "Avocados",
+      "severity": "Low",
+      "mechanism": "Contains small amounts of tyramine; variable ripeness affects content",
+      "action": "Limit to 1 per week or use occasionally if well-tolerated"
+    },
+    {
+      "name": "Spinach, tomatoes",
+      "severity": "Low",
+      "mechanism": "Trace to minimal tyramine levels in fresh produce",
+      "action": "Generally safe in normal dietary quantities"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May potentiate sympathomimetic effects; theoretical hypertension risk",
+      "action": "Limit intake; monitor blood pressure response"
+    },
+    {
+      "name": "Chocolate",
+      "severity": "Low",
+      "mechanism": "Contains tyramine and phenylethylamine in small amounts",
+      "action": "Moderate consumption; excessive amounts best avoided"
+    }
+  ],
+  "monitoring_notes": "At therapeutic doses of 5-10 mg daily, selegiline shows selective MAO-B inhibition with reduced tyramine interactions compared to non-selective MAOIs, but dietary restrictions still apply, especially at higher doses. Monitor for hypertensive crisis (sudden severe headache, chest pain, vision changes) and serotonin syndrome symptoms (agitation, tremor, hyperthermia, rigidity); counsel patients thoroughly on tyramine-restricted diet."
+}

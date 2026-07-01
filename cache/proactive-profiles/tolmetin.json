@@ -1,0 +1,73 @@
+{
+  "drug": "Tolmetin",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C8",
+    "Renal clearance",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants",
+      "severity": "Critical",
+      "mechanism": "NSAIDs inhibit platelet function and increase bleeding risk; tolmetin may displace warfarin from protein binding, elevating INR",
+      "action": "Avoid concurrent use; if necessary, monitor INR closely and reduce anticoagulant dose"
+    },
+    {
+      "name": "Lithium",
+      "severity": "High",
+      "mechanism": "Tolmetin reduces renal clearance of lithium, leading to toxic accumulation",
+      "action": "Avoid combination; if unavoidable, monitor lithium levels and renal function regularly"
+    },
+    {
+      "name": "ACE Inhibitors/Angiotensin Receptor Blockers",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce efficacy of antihypertensives and increase risk of acute renal injury and hyperkalemia",
+      "action": "Use with caution; monitor blood pressure, renal function, and potassium levels"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Additive antiplatelet and anticoagulant effects may increase bleeding risk",
+      "action": "Monitor for signs of bleeding; consider alternative herbal supplement"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties may potentiate tolmetin's antiplatelet effects",
+      "action": "Use with caution and monitor for excessive bleeding or bruising"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Minor antiplatelet activity may add to NSAID effects",
+      "action": "Monitor for increased bleeding risk with concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (chronic/excessive)",
+      "severity": "High",
+      "mechanism": "Alcohol increases GI irritation and bleeding risk; elevates risk of tolmetin-induced GI ulceration and hepatotoxicity",
+      "action": "Minimize or avoid alcohol consumption; counsel on GI protective measures"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs increase sodium retention; excessive dietary sodium may exacerbate fluid retention and hypertension",
+      "action": "Counsel patient to moderate salt intake and monitor blood pressure"
+    },
+    {
+      "name": "Grapefruit",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP2C9 metabolism, though clinical significance is minimal with tolmetin",
+      "action": "Monitor for increased GI side effects; generally safe in moderation"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, blood pressure, and signs of GI bleeding, particularly in elderly patients or those with renal impairment. Assess for drug interactions with antihypertensives, anticoagulants, and lithium; tolmetin should be used at the lowest effective dose for the shortest duration possible."
+}

@@ -1,0 +1,78 @@
+{
+  "drug": "Sulindac",
+  "drug_class": "Nonsteroidal anti-inflammatory drug (NSAID)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "Renal elimination"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Increased bleeding risk; ginkgo inhibits platelet aggregation and sulindac increases GI bleeding risk",
+      "action": "Avoid concurrent use or monitor closely for signs of bleeding"
+    },
+    {
+      "name": "Garlic (high-dose)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet effects increase hemorrhage risk",
+      "action": "Discontinue high-dose garlic supplements; culinary amounts acceptable"
+    },
+    {
+      "name": "Ginger (high-dose)",
+      "severity": "High",
+      "mechanism": "Enhanced antiplatelet activity combined with NSAID GI irritation",
+      "action": "Limit to culinary amounts; avoid therapeutic supplementation"
+    },
+    {
+      "name": "Licorice",
+      "severity": "High",
+      "mechanism": "Fluid/sodium retention and hypertension risk; increases GI ulceration risk",
+      "action": "Avoid licorice supplements during sulindac therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have additive anti-inflammatory effects but also increases bleeding risk at high doses",
+      "action": "Monitor for increased GI symptoms or bruising; maintain moderate doses"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties may have additive effects",
+      "action": "Use cautiously; monitor for bleeding signs"
+    },
+    {
+      "name": "Vitamin E (>400 IU/day)",
+      "severity": "Low",
+      "mechanism": "Anticoagulant properties at high doses may potentiate bleeding risk",
+      "action": "Keep supplemental vitamin E below 400 IU daily"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (regular/heavy consumption)",
+      "severity": "Critical",
+      "mechanism": "Significantly increases GI bleeding, ulceration, and hepatotoxicity risk with NSAIDs",
+      "action": "Counsel patient to avoid or limit alcohol to minimal amounts; assess daily intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs impair sodium excretion; excessive intake increases fluid retention and hypertension risk",
+      "action": "Recommend moderate sodium restriction; monitor blood pressure"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May increase gastric irritation and GI side effects",
+      "action": "Moderate caffeine consumption; take sulindac with food to reduce GI upset"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, blood pressure, and GI symptoms regularly as sulindac carries NSAID-class risks for GI bleeding, renal impairment, and cardiovascular events. Counsel on signs of bleeding (dark stools, abdominal pain) and report immediately; assess all OTC medication use as many contain NSAIDs."
+}

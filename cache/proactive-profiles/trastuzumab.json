@@ -1,0 +1,60 @@
+{
+  "drug": "Trastuzumab",
+  "drug_class": "Monoclonal Antibody (HER2-targeted)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Protein catabolism",
+    "HER2 pathway inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anthracycline-containing herbal products",
+      "severity": "Critical",
+      "mechanism": "Concurrent cardiotoxic agents increase risk of cardiomyopathy and heart failure when combined with trastuzumab's known cardiotoxicity",
+      "action": "Avoid all supplements containing anthracycline derivatives or cardiotoxic botanicals"
+    },
+    {
+      "name": "High-dose Vitamin C (>2g daily)",
+      "severity": "High",
+      "mechanism": "May potentiate oxidative stress and cardiac dysfunction in setting of trastuzumab-induced cardiotoxicity",
+      "action": "Limit vitamin C intake to <1g daily; use only under oncology supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have immunostimulatory effects that could theoretically interfere with monoclonal antibody therapy efficacy",
+      "action": "Monitor for reduced therapeutic response; discuss with oncologist before use"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have mild cardioprotective effects that could be beneficial but require monitoring in cardiotoxicity risk",
+      "action": "Use appropriate doses (≤3g daily) under medical supervision for cardiac monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "While trastuzumab is not CYP3A4 metabolized, grapefruit may alter immune function and increase cardiac stress in vulnerable populations",
+      "action": "Eliminate grapefruit products from diet during trastuzumab therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate fluid retention and cardiac stress in patients with trastuzumab-induced cardiomyopathy",
+      "action": "Maintain moderate sodium intake (<2.3g daily); monitor for edema and weight gain"
+    },
+    {
+      "name": "Alcohol (moderate to heavy consumption)",
+      "severity": "Low",
+      "mechanism": "May potentiate cardiotoxicity and impair immune function; increases dehydration and cardiac strain",
+      "action": "Limit alcohol to ≤1 drink daily or avoid entirely; discuss with oncology team"
+    }
+  ],
+  "monitoring_notes": "Trastuzumab is a monoclonal antibody not metabolized by hepatic enzymes, so traditional drug-supplement interactions are limited. Primary concern is cardiotoxicity risk; monitor baseline and periodic echocardiography, and counsel patients on cardiac risk factors including supplements/foods that stress cardiovascular function."
+}

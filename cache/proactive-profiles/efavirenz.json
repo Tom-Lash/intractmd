@@ -1,0 +1,67 @@
+{
+  "drug": "Efavirenz",
+  "drug_class": "Non-Nucleoside Reverse Transcriptase Inhibitor (NNRTI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C9",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces efavirenz plasma concentrations by 25-50%, leading to subtherapeutic levels and viral resistance",
+      "action": "Contraindicated; do not use concurrently. Counsel patient to avoid all herbal products containing St. John's Wort"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce efavirenz concentrations and antiviral efficacy",
+      "action": "Avoid high-dose garlic supplements; monitor viral load if used. Recommend food sources of garlic instead"
+    },
+    {
+      "name": "Rifampicin-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4/2B6 inducer significantly decreases efavirenz concentrations below therapeutic levels",
+      "action": "Contraindicated; use alternative antimycobacterial therapy or efavirenz dosage adjustment with close monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin E (high-dose >400 IU/day)",
+      "severity": "Low",
+      "mechanism": "Potential additive effects on CNS; efavirenz commonly causes dizziness and neuropsychiatric effects",
+      "action": "Monitor for increased CNS symptoms; maintain moderate supplementation if needed"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce efavirenz levels",
+      "action": "Use with caution; monitor viral load if high-dose supplementation is continued"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>50g fat)",
+      "severity": "Moderate",
+      "mechanism": "Increases efavirenz absorption and peak concentrations, potentially exacerbating CNS adverse effects (dizziness, impaired concentration, vivid dreams)",
+      "action": "Take efavirenz on empty stomach or with low-fat meal; avoid heavy fatty meals, especially around dosing time"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase efavirenz concentrations and adverse effects",
+      "action": "Limit consumption; monitor for increased CNS side effects if grapefruit intake increases"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; efavirenz frequently causes dizziness, impaired concentration, and psychiatric effects",
+      "action": "Minimize alcohol consumption; counsel on additive neuropsychiatric risks and impaired judgment/driving"
+    }
+  ],
+  "monitoring_notes": "Monitor for CNS adverse effects (dizziness, impaired concentration, vivid dreams, psychiatric symptoms) which are dose- and administration-dependent. Ensure adherence to empty stomach administration recommendations and counsel against high-fat meals to minimize absorption variability and toxicity risk."
+}

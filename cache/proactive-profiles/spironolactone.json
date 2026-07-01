@@ -1,0 +1,71 @@
+{
+  "drug": "Spironolactone",
+  "drug_class": "Potassium-sparing diuretic; Aldosterone antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "Renal potassium handling"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "Spironolactone reduces urinary potassium excretion; additive effect increases hyperkalemia risk",
+      "action": "Contraindicated unless serum K+ is low; require baseline and periodic K+ monitoring"
+    },
+    {
+      "name": "ACE inhibitors/ARBs (as supplements or concurrent)",
+      "severity": "Critical",
+      "mechanism": "Both drugs increase serum potassium through different renal mechanisms",
+      "action": "Use only under close medical supervision with frequent K+ and renal function monitoring"
+    },
+    {
+      "name": "NSAIDs",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and increase potassium retention; impair diuretic efficacy",
+      "action": "Avoid chronic use; if necessary, use lowest dose for shortest duration with K+ monitoring"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "High",
+      "mechanism": "Licorice causes sodium retention and potassium wasting; may antagonize spironolactone efficacy and increase hypokalemia risk in combined use",
+      "action": "Avoid supplementation; monitor blood pressure and potassium levels if exposure occurs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4, potentially increasing spironolactone levels",
+      "action": "Monitor for increased adverse effects (gynecomastia, hyperkalemia); inform provider of use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4, potentially decreasing spironolactone efficacy",
+      "action": "Monitor blood pressure and edema control; adjust spironolactone dose if needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (bananas, spinach, potatoes, tomatoes, avocados, nuts)",
+      "severity": "High",
+      "mechanism": "Dietary potassium combined with potassium-sparing diuretic significantly increases hyperkalemia risk",
+      "action": "Counsel on moderate potassium intake; restrict if serum K+ > 5.0 mEq/L or renal function impaired"
+    },
+    {
+      "name": "Salt substitutes (potassium chloride-based)",
+      "severity": "Critical",
+      "mechanism": "Direct potassium source; additive effect with spironolactone causes severe hyperkalemia risk",
+      "action": "Absolutely contraindicated; counsel patient to use standard salt or potassium-free alternatives"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase spironolactone plasma concentrations",
+      "action": "Limit or avoid; if consumed regularly, monitor for increased side effects"
+    }
+  ],
+  "monitoring_notes": "Baseline and periodic monitoring of serum potassium (especially within first week and after dose changes), renal function (creatinine, eGFR), and sodium is essential. Educate patient on hyperkalemia symptoms (weakness, palpitations, irregular heartbeat) and dietary potassium restriction."
+}

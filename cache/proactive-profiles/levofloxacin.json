@@ -1,0 +1,78 @@
+{
+  "drug": "Levofloxacin",
+  "drug_class": "Fluoroquinolone antibiotic",
+  "key_pathways": [
+    "CYP1A2 (minor metabolism)",
+    "CYP3A4 (minor metabolism)",
+    "Renal excretion (primary)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex formation reduces levofloxacin absorption by 50-90%",
+      "action": "Separate administration by at least 2 hours before or 6 hours after levofloxacin"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Chelation reduces fluoroquinolone bioavailability",
+      "action": "Space dosing at least 2 hours apart; consider alternative timing"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Iron chelation decreases levofloxacin absorption",
+      "action": "Administer levofloxacin 2 hours before or 6 hours after iron"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex impairs fluoroquinolone absorption",
+      "action": "Separate doses by at least 2 hours"
+    },
+    {
+      "name": "Aluminum-containing antacids",
+      "severity": "High",
+      "mechanism": "Chelation significantly reduces levofloxacin bioavailability",
+      "action": "Avoid concurrent use; space 2+ hours apart"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "Low",
+      "mechanism": "May increase risk of CNS stimulation and seizure potential",
+      "action": "Use lowest effective dose; monitor for increased tremor or seizure risk"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Fluoroquinolones inhibit CYP1A2, potentially increasing caffeine levels",
+      "action": "Monitor for caffeine-related side effects; consider modest reduction"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (milk, yogurt, cheese)",
+      "severity": "Moderate",
+      "mechanism": "Calcium content chelates levofloxacin, reducing absorption",
+      "action": "Separate dairy intake by 2+ hours from levofloxacin dose"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "May slightly reduce fluoroquinolone absorption if taken simultaneously",
+      "action": "Space high-fiber meals by 1-2 hours from levofloxacin dosing"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Reduced CYP1A2 metabolism may elevate caffeine levels",
+      "action": "Moderate caffeine intake during levofloxacin therapy"
+    }
+  ],
+  "monitoring_notes": "Levofloxacin is primarily renally excreted with minimal hepatic metabolism, making it relatively safe from CYP interactions but highly susceptible to chelation. Monitor for tendinopathy, QT prolongation, and CNS effects; counsel patients to take levofloxacin on an empty stomach separated from all divalent/trivalent cations and antacids."
+}

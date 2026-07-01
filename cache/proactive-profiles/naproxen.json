@@ -1,0 +1,79 @@
+{
+  "drug": "Naproxen",
+  "drug_class": "Nonsteroidal Anti-Inflammatory Drug (NSAID)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP1A2",
+    "Renal excretion",
+    "Protein binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants",
+      "severity": "Critical",
+      "mechanism": "Naproxen inhibits platelet function and displaces warfarin from protein binding, increasing bleeding risk",
+      "action": "Avoid concurrent use; if necessary, monitor INR closely and adjust anticoagulant dosing"
+    },
+    {
+      "name": "High-dose Aspirin",
+      "severity": "Critical",
+      "mechanism": "Combined NSAIDs increase gastrointestinal ulceration, bleeding, and renal toxicity risk",
+      "action": "Do not combine; use only one NSAID at a time"
+    },
+    {
+      "name": "Corticosteroids",
+      "severity": "High",
+      "mechanism": "Increased GI ulceration and bleeding risk when combined with NSAIDs",
+      "action": "Use lowest effective doses; consider gastroprotection with PPI if combined therapy necessary"
+    },
+    {
+      "name": "ACE Inhibitors/ARBs",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce antihypertensive efficacy and increase acute kidney injury risk",
+      "action": "Monitor renal function and blood pressure; consider alternative pain management"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Additive antiplatelet effects may modestly increase bleeding risk",
+      "action": "Monitor for unusual bruising or bleeding; generally acceptable in moderate amounts"
+    },
+    {
+      "name": "Garlic",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity may potentiate naproxen's effects on platelet function",
+      "action": "Use in normal dietary amounts; monitor for bleeding signs"
+    },
+    {
+      "name": "Omega-3 Fatty Acids (high-dose)",
+      "severity": "Low",
+      "mechanism": "May have additive effects on platelet inhibition at very high doses",
+      "action": "Monitor at doses >3g daily; standard supplemental doses are generally safe"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (especially chronic/heavy use)",
+      "severity": "High",
+      "mechanism": "Increases GI irritation, ulceration risk, and hepatotoxicity; impairs platelet function",
+      "action": "Avoid alcohol consumption; counsel on GI bleeding risk"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs reduce sodium excretion; excess sodium may worsen fluid retention and hypertension",
+      "action": "Monitor sodium intake; counsel on heart failure and hypertension management"
+    },
+    {
+      "name": "Caffeinated beverages",
+      "severity": "Low",
+      "mechanism": "May slightly increase GI irritation; caffeine may enhance analgesia (minor interaction)",
+      "action": "Moderate caffeine intake if GI symptoms develop"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, blood pressure, and signs of GI bleeding, especially in elderly patients or those with cardiovascular/renal disease. Assess for fluid retention and edema, particularly in patients on concurrent antihypertensives or with heart failure."
+}

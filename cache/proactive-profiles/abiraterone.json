@@ -1,0 +1,65 @@
+{
+  "drug": "Abiraterone",
+  "drug_class": "CYP17 Inhibitor / Androgen Synthesis Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces abiraterone plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; switch to alternative mood support if needed"
+    },
+    {
+      "name": "Grapefruit Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases abiraterone levels and toxicity risk",
+      "action": "Avoid completely; use alternative supplements"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction may decrease abiraterone bioavailability",
+      "action": "Use alternative immune support or separate dosing by 2+ hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Saw Palmetto",
+      "severity": "Low",
+      "mechanism": "Mild androgen pathway interaction; may have additive hormonal effects",
+      "action": "Monitor for side effects; discuss with prescriber before use"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "Low",
+      "mechanism": "Potential mineralocorticoid effects; abiraterone requires concurrent prednisone",
+      "action": "Use sparingly; monitor blood pressure and electrolytes"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases abiraterone exposure and adverse effects",
+      "action": "Completely avoid; counsel patient on all grapefruit products including pomelo and Seville oranges"
+    },
+    {
+      "name": "High-Fat Meals",
+      "severity": "High",
+      "mechanism": "Increases abiraterone absorption 5-10 fold, elevating toxicity risk",
+      "action": "Take on empty stomach (1 hour before or 2 hours after food); follow strict administration guidelines"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cruciferous Vegetables (Broccoli, Cabbage)",
+      "severity": "Low",
+      "mechanism": "Indole-3-carbinol may weakly induce CYP3A4; clinically minor interaction",
+      "action": "Normal consumption acceptable; no dietary restriction needed"
+    }
+  ],
+  "monitoring_notes": "Abiraterone requires strict fasting administration and concurrent prednisone therapy; monitor for hypokalemia, hypertension, and fluid retention. Assess liver function and testosterone suppression regularly, particularly if CYP3A4 interactions are suspected."
+}

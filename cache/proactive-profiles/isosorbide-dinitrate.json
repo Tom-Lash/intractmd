@@ -1,0 +1,65 @@
+{
+  "drug": "Isosorbide Dinitrate",
+  "drug_class": "Nitrate vasodilator",
+  "key_pathways": [
+    "Non-enzymatic bioconversion",
+    "Mitochondrial aldehyde dehydrogenase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Sildenafil (Viagra)",
+      "severity": "Critical",
+      "mechanism": "Both cause vasodilation; concurrent use results in severe, uncontrolled hypotension and cardiovascular collapse",
+      "action": "Absolute contraindication - patient must avoid all phosphodiesterase-5 inhibitors"
+    },
+    {
+      "name": "Tadalafil (Cialis)",
+      "severity": "Critical",
+      "mechanism": "Potent synergistic vasodilation causing severe hypotension; tadalafil has prolonged half-life increasing risk duration",
+      "action": "Contraindicated - maintain minimum 48-hour separation; recommend alternative ED therapy"
+    },
+    {
+      "name": "Riociguat",
+      "severity": "Critical",
+      "mechanism": "Soluble guanylate cyclase stimulator causes life-threatening hypotension when combined with nitrates",
+      "action": "Absolute contraindication - do not combine under any circumstances"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "L-arginine",
+      "severity": "Low",
+      "mechanism": "May enhance nitrate-induced vasodilation and potentiate hypotensive effects",
+      "action": "Monitor blood pressure; counsel patient on dizziness risk and report symptoms"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate vasodilatory effects and affect blood pressure regulation",
+      "action": "Monitor for excessive hypotension; assess blood pressure at follow-up visits"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may theoretically increase nitrate levels and hypotensive effects",
+      "action": "Advise patient to avoid regular grapefruit juice consumption; occasional consumption likely safe"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Licorice (high amounts)",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and potassium depletion, counteracting antihypertensive effects",
+      "action": "Counsel patient to limit licorice intake; monitor electrolytes if regular consumption"
+    },
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may increase fluid retention and reduce nitrate efficacy in angina management",
+      "action": "Recommend standard heart-healthy low-sodium diet for cardiovascular benefit"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of nitrate tolerance with chronic use and counsel on nitrate-free intervals if applicable. Blood pressure monitoring is essential; educate patient on orthostatic hypotension symptoms and safe position changes. Absolute contraindication with phosphodiesterase-5 inhibitors requires explicit patient counseling."
+}

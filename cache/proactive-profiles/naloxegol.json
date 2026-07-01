@@ -1,0 +1,53 @@
+{
+  "drug": "Naloxegol",
+  "drug_class": "Peripheral Mu-Opioid Receptor Antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (efflux transporter)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces naloxegol plasma concentrations and efficacy",
+      "action": "Avoid concomitant use; consider alternative herbal supplement"
+    },
+    {
+      "name": "Grapefruit Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases naloxegol bioavailability and adverse effects",
+      "action": "Discontinue grapefruit extract; allow 48-72 hours washout before naloxegol initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Potential weak CYP3A4 induction may slightly reduce naloxegol levels",
+      "action": "Monitor for reduced naloxegol efficacy; maintain consistent dosing"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "Possible CYP3A4 inhibition may increase naloxegol exposure",
+      "action": "Use with caution; monitor for increased adverse effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases naloxegol systemic exposure and toxicity risk",
+      "action": "Completely avoid grapefruit; choose alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase naloxegol absorption and peak concentrations slightly",
+      "action": "Take naloxegol consistently with or without food; maintain routine timing"
+    }
+  ],
+  "monitoring_notes": "Monitor opioid withdrawal symptoms and gastrointestinal efficacy; assess for adequate naloxegol response as CYP3A4 interactions may significantly alter drug levels. Counsel patients to maintain consistent food/supplement intake patterns and report new medications or herbal products."
+}

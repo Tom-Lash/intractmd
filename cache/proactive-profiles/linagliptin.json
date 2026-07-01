@@ -1,0 +1,47 @@
+{
+  "drug": "Linagliptin",
+  "drug_class": "Dipeptidyl Peptidase-4 (DPP-4) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (substrate)",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction may increase linagliptin metabolism and reduce efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have additive hypoglycemic effects",
+      "action": "Monitor blood glucose closely; adjust dosing if hypoglycemia occurs"
+    },
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "Potential additive glucose-lowering effect",
+      "action": "Monitor blood glucose; counsel on signs of hypoglycemia"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay but not significantly reduce linagliptin absorption",
+      "action": "Can take with or without food; consistency recommended"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase linagliptin levels slightly",
+      "action": "Limit consumption; monitor for adverse effects if intake unavoidable"
+    }
+  ],
+  "monitoring_notes": "Linagliptin undergoes minimal hepatic metabolism and is primarily renally cleared unchanged, resulting in few significant drug-nutrient interactions. Monitor for hypoglycemia when combined with other glucose-lowering supplements or in renal impairment."
+}

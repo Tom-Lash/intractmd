@@ -1,0 +1,42 @@
+{
+  "drug": "Ezetimibe",
+  "drug_class": "Cholesterol Absorption Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "Glucuronidation",
+    "Biliary excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Bile acid sequestrants (Cholestyramine, Colesevelam)",
+      "severity": "High",
+      "mechanism": "Bile acid sequestrants reduce ezetimibe absorption by binding in the GI tract, decreasing drug efficacy",
+      "action": "Separate dosing by at least 2 hours; take ezetimibe before bile acid sequestrant"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 induction may increase ezetimibe metabolism, potentially reducing efficacy",
+      "action": "Monitor lipid panel; consider alternative herbal products or increased ezetimibe monitoring"
+    },
+    {
+      "name": "Red Yeast Rice",
+      "severity": "Low",
+      "mechanism": "Contains naturally occurring statins; additive LDL-lowering effect may increase myopathy risk when combined",
+      "action": "Educate patient on additive cholesterol-lowering effects; monitor for muscle symptoms"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase ezetimibe plasma concentrations, though clinical significance is minimal",
+      "action": "Limit grapefruit consumption; monitor for increased adverse effects if high intake"
+    }
+  ],
+  "monitoring_notes": "Ezetimibe has minimal interactions due to modest CYP metabolism and primarily glucuronidation-based elimination. Monitor lipid levels 4-12 weeks after initiation or dosing changes, and assess for unexplained muscle pain/weakness, particularly if co-prescribed with statins."
+}

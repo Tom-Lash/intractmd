@@ -1,0 +1,72 @@
+{
+  "drug": "Venetoclax",
+  "drug_class": "BCL-2 inhibitor (selective apoptosis regulator)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces venetoclax exposure and efficacy",
+      "action": "Contraindicated; discontinue prior to venetoclax initiation"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may decrease venetoclax plasma concentrations",
+      "action": "Avoid concurrent use; recommend alternative immune support"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly reduces venetoclax bioavailability",
+      "action": "Absolute contraindication; use alternative antimicrobial if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may marginally elevate venetoclax levels",
+      "action": "Monitor for increased toxicity; consistent dosing timing recommended"
+    },
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 effects; limited clinical evidence",
+      "action": "Use cautiously; inform provider of concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition significantly increases venetoclax exposure and toxicity risk",
+      "action": "Strictly avoid; counsel patient on all grapefruit products"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition may elevate venetoclax concentrations",
+      "action": "Avoid consumption; recommend alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Seville oranges",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition; lower risk than grapefruit but similar mechanism",
+      "action": "Minimize intake; routine orange consumption acceptable"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase venetoclax absorption and bioavailability variability",
+      "action": "Administer with consistent food intake; counsel on uniform meal timing"
+    }
+  ],
+  "monitoring_notes": "Venetoclax requires CYP3A4 dosing adjustments when coadministered with strong inhibitors or inducers; monitor for tumor lysis syndrome, cytopenias, and infection. Ensure consistent food intake patterns and absolute avoidance of grapefruit and pomegranate products due to critical interaction potential."
+}

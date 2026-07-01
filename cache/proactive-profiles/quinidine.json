@@ -1,0 +1,71 @@
+{
+  "drug": "Quinidine",
+  "drug_class": "Class IA Antiarrhythmic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces quinidine levels and therapeutic efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor quinidine levels closely and adjust dose"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases quinidine concentration and toxicity risk",
+      "action": "Completely avoid; significant increase in QT prolongation and arrhythmia risk"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "High",
+      "mechanism": "CYP3A4/2D6 inhibition elevates quinidine plasma levels",
+      "action": "Discontinue or avoid; monitor ECG and QTc interval if concurrent use unavoidable"
+    },
+    {
+      "name": "Alkalizing Agents (Sodium Bicarbonate, Calcium Carbonate)",
+      "severity": "Critical",
+      "mechanism": "Increased urine pH reduces quinidine renal elimination, elevating serum levels",
+      "action": "Avoid antacids and alkalizing supplements; maintain stable urine pH"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice Root",
+      "severity": "Low",
+      "mechanism": "May cause hypokalemia and hypomagnesemia, increasing QT prolongation risk",
+      "action": "Monitor potassium and magnesium levels; counsel patient on limitation of intake"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Additive cardiac effects; theoretical risk of enhanced antiarrhythmic action",
+      "action": "Use cautiously; monitor heart rate and ECG parameters"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases quinidine bioavailability and toxicity",
+      "action": "Completely eliminate from diet; choose alternative fruits (orange, apple)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fiber Foods (Bran, Psyllium)",
+      "severity": "Low",
+      "mechanism": "May reduce quinidine absorption if taken simultaneously",
+      "action": "Separate administration by 2+ hours from quinidine dosing"
+    },
+    {
+      "name": "Foods High in Potassium Depletion Risk",
+      "severity": "Low",
+      "mechanism": "Combined hypokalemia increases risk of QT prolongation and torsades de pointes",
+      "action": "Monitor dietary potassium; ensure adequate intake; check serum K+ regularly"
+    }
+  ],
+  "monitoring_notes": "Monitor quinidine serum levels (therapeutic 2-5 mcg/mL), QTc interval, heart rate, and electrolytes (K+, Mg2+) regularly, especially when initiating therapy or adding interacting substances. Assess for signs of toxicity including cinchonism, heart block, or arrhythmia exacerbation."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Dulaglutide",
+  "drug_class": "GLP-1 Receptor Agonist",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Renal clearance",
+    "Peptide degradation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose chromium",
+      "severity": "High",
+      "mechanism": "Additive glucose-lowering effects may increase hypoglycemia risk",
+      "action": "Avoid concurrent use; counsel patient on hypoglycemia symptoms"
+    },
+    {
+      "name": "Bitter melon extract",
+      "severity": "High",
+      "mechanism": "Potentiates insulin secretion and glucose reduction leading to synergistic hypoglycemic effect",
+      "action": "Discontinue bitter melon; monitor blood glucose closely if unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng (American and Asian)",
+      "severity": "Low",
+      "mechanism": "May have additive glucose-lowering properties",
+      "action": "Monitor blood glucose; educate on hypoglycemia awareness"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "Modest glucose-lowering potential with GLP-1 agonists",
+      "action": "Monitor for hypoglycemia; dose adjustment of dulaglutide may be needed"
+    },
+    {
+      "name": "Fenugreek",
+      "severity": "Low",
+      "mechanism": "Minor additive glucose-lowering effects",
+      "action": "Counsel on hypoglycemia recognition; routine glucose monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>50g fat)",
+      "severity": "Moderate",
+      "mechanism": "Delays gastric emptying and may worsen nausea/GI adverse effects already common with GLP-1 agonists",
+      "action": "Advise low-fat, small frequent meals; take dulaglutide with light meals"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Rapid-acting simple carbohydrates",
+      "severity": "Low",
+      "mechanism": "Enhanced glucose-lowering effect may increase hypoglycemia risk",
+      "action": "Educate on balanced carbohydrate intake; reserve for hypoglycemia treatment"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "Impairs gluconeogenesis and awareness of hypoglycemic symptoms",
+      "action": "Limit alcohol; counsel on hypoglycemia risk and never drink on empty stomach"
+    }
+  ],
+  "monitoring_notes": "Dulaglutide is a peptide not metabolized by CYP enzymes, limiting drug-drug interactions; however, cumulative glucose-lowering effects remain the primary concern. Monitor for hypoglycemia and GI effects (nausea, vomiting, diarrhea); adjust background diabetes medications as needed and reinforce dietary counseling emphasizing low-fat, balanced meals."
+}

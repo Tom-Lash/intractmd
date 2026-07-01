@@ -1,0 +1,53 @@
+{
+  "drug": "Senna",
+  "drug_class": "Anthraquinone Laxative",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Colonic bacterial metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "High",
+      "mechanism": "Senna causes potassium depletion through increased colonic fluid loss; concurrent supplementation may create electrolyte imbalance",
+      "action": "Monitor serum potassium levels; avoid routine potassium supplementation unless specifically prescribed by healthcare provider"
+    },
+    {
+      "name": "Other stimulant laxatives",
+      "severity": "High",
+      "mechanism": "Additive bowel stimulation and electrolyte depletion with concurrent use",
+      "action": "Do not combine with other stimulant laxatives; allow adequate spacing between products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "Both licorice and senna may cause potassium depletion and sodium retention",
+      "action": "Monitor electrolytes if concurrent use; counsel on signs of hypokalemia"
+    },
+    {
+      "name": "Herbs with laxative properties (Aloe, Cascara)",
+      "severity": "Low",
+      "mechanism": "Additive laxative effects and potential electrolyte disturbances",
+      "action": "Avoid concurrent use or space dosing; monitor bowel function and hydration status"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive dietary fiber",
+      "severity": "Moderate",
+      "mechanism": "Combined with senna's stimulant effect may cause severe cramping, diarrhea, and dehydration",
+      "action": "Counsel to maintain moderate fiber intake during senna use; ensure adequate fluid intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "Senna-induced potassium loss may be exacerbated by high sodium intake, increasing electrolyte imbalance",
+      "action": "Encourage moderate sodium intake and adequate hydration with senna use"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of chronic use complications including electrolyte depletion (hypokalemia, hyponatremia), dehydration, and potential laxative dependence. Senna should be used short-term (7-10 days maximum) unless medically indicated; assess kidney function and baseline electrolytes in elderly or high-risk patients."
+}

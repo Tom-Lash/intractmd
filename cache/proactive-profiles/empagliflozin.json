@@ -1,0 +1,52 @@
+{
+  "drug": "Empagliflozin",
+  "drug_class": "SGLT2 Inhibitor",
+  "key_pathways": [
+    "UGT1A9",
+    "Minimal CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce UGT1A9, potentially reducing empagliflozin exposure and efficacy",
+      "action": "Avoid concurrent use; select alternative herbal supplement if needed and monitor glucose control closely"
+    },
+    {
+      "name": "High-dose Fenugreek",
+      "severity": "Moderate",
+      "mechanism": "Independent hypoglycemic effects may additive with empagliflozin, increasing hypoglycemia risk",
+      "action": "Avoid or use cautiously; requires increased glucose monitoring and possible dose adjustment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-Lipoic Acid",
+      "severity": "Low",
+      "mechanism": "May have mild glucose-lowering effects; potential for additive hypoglycemic effect",
+      "action": "Monitor blood glucose; may require dose adjustment of empagliflozin or supplement"
+    },
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May modestly improve insulin sensitivity; potential additive glucose reduction",
+      "action": "Counsel on hypoglycemia signs; monitor glucose levels if concurrent use desired"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Empagliflozin increases urinary sodium excretion; excessive sodium intake may counteract fluid/electrolyte balance benefits",
+      "action": "Encourage moderate sodium intake (<2.3g/day) to optimize cardiovascular benefits"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "Alcohol may increase dehydration and euglycemic DKA risk, particularly with SGLT2 inhibitors",
+      "action": "Limit alcohol to moderate amounts; educate on DKA signs (nausea, shortness of breath, abdominal pain)"
+    }
+  ],
+  "monitoring_notes": "Empagliflozin undergoes minimal hepatic metabolism via UGT1A9, making true drug interactions less common. Monitor for genital mycotic infections, euglycemic DKA (especially in acute illness), volume depletion, and acute kidney injury; counsel patients on adequate hydration and sick day management."
+}

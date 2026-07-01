@@ -1,0 +1,52 @@
+{
+  "drug": "Finasteride",
+  "drug_class": "5-alpha reductase inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Saw Palmetto",
+      "severity": "High",
+      "mechanism": "Additive 5-alpha reductase inhibition may cause excessive DHT suppression and unpredictable therapeutic effects",
+      "action": "Avoid concurrent use; counsel patient to discontinue saw palmetto before finasteride initiation"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer may significantly reduce finasteride plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor PSA and symptom response closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may marginally reduce finasteride levels",
+      "action": "Monitor therapeutic response; no dose adjustment typically needed but inform patient of potential interaction"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May have weak hormonal effects; potential additive effects on DHT modulation",
+      "action": "Counsel to limit licorice intake; monitor for any changes in efficacy or adverse effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase finasteride absorption and plasma concentrations slightly",
+      "action": "Take consistently with or without food; maintain stable dietary pattern for consistent drug levels"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly elevate finasteride concentrations",
+      "action": "Avoid excessive grapefruit juice consumption; occasional intake likely minimal impact"
+    }
+  ],
+  "monitoring_notes": "Monitor PSA levels and BPH/hair loss symptoms regularly during therapy, especially if concurrent CYP3A4 inducers or inhibitors are initiated. Counsel patients on consistent dosing timing and to report any decreased efficacy or unexpected adverse effects."
+}

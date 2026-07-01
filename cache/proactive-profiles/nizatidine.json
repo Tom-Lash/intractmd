@@ -1,0 +1,59 @@
+{
+  "drug": "Nizatidine",
+  "drug_class": "H2-receptor antagonist",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Nizatidine increases gastric pH, reducing iron absorption",
+      "action": "Separate administration by at least 2 hours; monitor for anemia"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Reduced gastric acidity decreases calcium bioavailability",
+      "action": "Take calcium at least 2 hours before or after nizatidine"
+    },
+    {
+      "name": "B12 (Cyanocobalamin)",
+      "severity": "Moderate",
+      "mechanism": "Reduced gastric acid impairs intrinsic factor-dependent B12 absorption",
+      "action": "Monitor B12 levels with long-term use; consider sublingual or parenteral B12"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Elevated gastric pH may modestly reduce magnesium absorption",
+      "action": "Monitor for adequate magnesium status; space dosing when possible"
+    },
+    {
+      "name": "Antacids containing aluminum or magnesium",
+      "severity": "Low",
+      "mechanism": "Potential additive effects and altered absorption kinetics",
+      "action": "Separate administration by 2 hours if concurrent use necessary"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may stimulate gastric acid production, potentially reducing nizatidine efficacy",
+      "action": "Limit coffee, tea, and cola; monitor symptom control"
+    },
+    {
+      "name": "Spicy or acidic foods",
+      "severity": "Low",
+      "mechanism": "May irritate gastric mucosa and reduce therapeutic benefit",
+      "action": "Counsel to avoid if symptoms worsen; individualize based on tolerance"
+    }
+  ],
+  "monitoring_notes": "Monitor vitamin B12 and magnesium levels during chronic nizatidine therapy, particularly in elderly patients or those on prolonged treatment. Advise spacing of supplements from nizatidine dosing to optimize absorption."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Telmisartan",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "key_pathways": [
+    "CYP2C8",
+    "CYP3A4",
+    "hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ARBs increase renal potassium retention; combined supplementation elevates hyperkalemia risk",
+      "action": "Contraindicated without physician oversight; monitor serum potassium if supplementation essential"
+    },
+    {
+      "name": "NSAIDs (including supplements)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce antihypertensive efficacy and increase hyperkalemia and acute kidney injury risk with ARBs",
+      "action": "Avoid concurrent use; use acetaminophen for pain management instead"
+    },
+    {
+      "name": "ACE inhibitors",
+      "severity": "High",
+      "mechanism": "Combined use increases hyperkalemia, hypotension, and renal dysfunction risk",
+      "action": "Do not combine; use either ARB or ACE inhibitor monotherapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and potassium loss, potentially counteracting antihypertensive effect",
+      "action": "Limit intake; monitor blood pressure if used"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "May have additive hypotensive effects",
+      "action": "Monitor blood pressure; report dizziness or syncope to physician"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (excessive amounts)",
+      "severity": "Moderate",
+      "mechanism": "ARBs reduce urinary potassium excretion; excessive dietary potassium increases hyperkalemia risk",
+      "action": "Consume potassium-rich foods (bananas, spinach, tomatoes) in moderation; do not restrict entirely without guidance"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake may attenuate antihypertensive efficacy of telmisartan",
+      "action": "Encourage moderation of salt intake to optimize blood pressure control"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may slightly increase telmisartan exposure",
+      "action": "Occasional consumption likely safe; limit if concerned about increased bioavailability"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and blood pressure regularly, especially in patients with renal impairment or diabetes. Counsel on signs of hyperkalemia (weakness, palpitations) and acute kidney injury, and avoid NSAIDs and potassium supplements without explicit physician approval."
+}

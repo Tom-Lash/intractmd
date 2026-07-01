@@ -1,0 +1,65 @@
+{
+  "drug": "Calcitonin",
+  "drug_class": "Bone resorption inhibitor; Polypeptide hormone",
+  "key_pathways": [
+    "Direct receptor binding (calcitonin receptor)",
+    "No significant CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Vitamin D supplements (high-dose >4000 IU daily)",
+      "severity": "High",
+      "mechanism": "Excessive vitamin D increases serum calcium and may counteract calcitonin's hypocalcemic effects; increases risk of hypercalcemia",
+      "action": "Limit vitamin D supplementation to ≤2000 IU daily without physician approval; monitor serum calcium levels"
+    },
+    {
+      "name": "Calcium supplements (>1200 mg elemental daily during therapy)",
+      "severity": "High",
+      "mechanism": "Excessive calcium supplementation may attenuate calcitonin-induced reduction in serum calcium and bone resorption benefits",
+      "action": "Coordinate calcium intake with prescriber; ensure total dietary + supplemental calcium does not exceed RDA (1000-1200 mg daily)"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "High-dose magnesium may modulate calcium homeostasis; potential additive effects on mineral metabolism",
+      "action": "Monitor total magnesium intake; standard supplementation (200-400 mg daily) generally safe"
+    },
+    {
+      "name": "Phosphorus supplements",
+      "severity": "Low",
+      "mechanism": "Phosphorus influences calcium-phosphate balance; excessive supplementation may affect calcitonin efficacy",
+      "action": "Avoid supplementation unless specifically directed; obtain phosphate levels via diet"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Fortified dairy products (milk, yogurt with high calcium content)",
+      "severity": "Moderate",
+      "mechanism": "High dietary calcium may reduce calcitonin efficacy in lowering serum calcium; excessive intake impairs therapeutic response",
+      "action": "Moderate dairy intake to achieve RDA; coordinate total daily calcium with prescriber"
+    },
+    {
+      "name": "High-dose vitamin D-fortified foods (fortified cereals, supplements stacked with food)",
+      "severity": "Moderate",
+      "mechanism": "Cumulative vitamin D from fortified foods + supplements increases hypercalcemia risk and reduces calcitonin efficacy",
+      "action": "Review all fortified food labels; limit cumulative vitamin D from all sources to <2000 IU daily"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Leafy greens (spinach, kale) with high oxalate content",
+      "severity": "Low",
+      "mechanism": "Oxalates may marginally reduce calcium bioavailability; minimal clinical impact during calcitonin therapy",
+      "action": "No restriction necessary; consumption supports overall bone health through other minerals"
+    },
+    {
+      "name": "Salty foods and high sodium diet",
+      "severity": "Low",
+      "mechanism": "High sodium increases renal calcium excretion, which may complement calcitonin effects but causes unpredictable fluctuations",
+      "action": "Maintain moderate sodium intake (<2300 mg daily) for cardiovascular and bone health"
+    }
+  ],
+  "monitoring_notes": "Calcitonin undergoes no hepatic CYP metabolism, minimizing direct drug interactions; monitor serum calcium, phosphate, and alkaline phosphatase periodically during therapy. Coordinate all calcium and vitamin D supplementation with the prescriber to prevent antagonism of calcitonin's therapeutic hypocalcemic and anti-resorptive effects."
+}

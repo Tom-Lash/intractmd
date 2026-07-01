@@ -1,0 +1,46 @@
+{
+  "drug": "Sacituzumab",
+  "drug_class": "Antibody-drug conjugate (ADC); anti-TROP-2 monoclonal antibody",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "No CYP450 involvement"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce immune tolerance and reduce monoclonal antibody efficacy through cytochrome P450 modulation affecting immune cell function",
+      "action": "Avoid concurrent use; discuss with oncologist before use"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "Immune stimulant may interfere with therapeutic antibody mechanisms and potentially increase infusion-related reactions",
+      "action": "Avoid use during active sacituzumab therapy; discuss timing with healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin E (high-dose >400 IU)",
+      "severity": "Low",
+      "mechanism": "May have anticoagulant properties; sacituzumab carries thrombocytopenia risk",
+      "action": "Monitor platelet counts; use standard dosing only if needed"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Potential immune modulation; limited evidence for interaction but may affect immune tolerance",
+      "action": "Inform oncologist of use; monitor for therapeutic efficacy"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "No direct CYP450 interaction with sacituzumab, but may affect concomitant medications metabolized by CYP3A4",
+      "action": "Limit intake if concurrent medications present; not a primary concern for sacituzumab alone"
+    }
+  ],
+  "monitoring_notes": "Sacituzumab is a monoclonal antibody with no significant hepatic metabolism; interactions are primarily immunologic rather than pharmacokinetic. Monitor for infusion-related reactions, thrombocytopenia, and neutropenia; avoid immunostimulant supplements that may compromise therapeutic efficacy."
+}

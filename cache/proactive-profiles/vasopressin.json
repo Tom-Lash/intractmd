@@ -1,0 +1,60 @@
+{
+  "drug": "Vasopressin",
+  "drug_class": "Antidiuretic Hormone (ADH) / Vasopressor Agent",
+  "key_pathways": [
+    "V1a receptor agonism",
+    "V2 receptor agonism",
+    "Direct renal and vascular smooth muscle effects"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Licorice (Glycyrrhiza glabra)",
+      "severity": "High",
+      "mechanism": "Licorice potentiates vasopressin effects and increases sodium retention, significantly elevating hyponatremia and hypertension risk",
+      "action": "Avoid concurrent use; monitor sodium levels if prior exposure"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen supplements)",
+      "severity": "High",
+      "mechanism": "NSAIDs potentiate vasopressin antidiuretic effects and increase risk of water intoxication and hyponatremia",
+      "action": "Avoid or use lowest effective dose with close sodium monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Sodium supplements",
+      "severity": "Low",
+      "mechanism": "May complicate fluid and electrolyte management in patients receiving vasopressin therapy",
+      "action": "Monitor serum sodium levels regularly; coordinate supplementation with prescriber"
+    },
+    {
+      "name": "Tricyclic antidepressants (herbal or supplement forms)",
+      "severity": "Low",
+      "mechanism": "May potentiate vasopressin antidiuretic effects through ADH sensitization",
+      "action": "Monitor fluid balance and sodium concentration"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "Excess sodium intake may compound fluid retention and hypertension in vasopressin therapy, particularly in SIADH management",
+      "action": "Maintain sodium restriction as directed by clinical protocol; counsel on processed food avoidance"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Excessive free water intake",
+      "severity": "Low",
+      "mechanism": "High fluid intake increases water intoxication risk in patients on vasopressin, especially in SIADH treatment",
+      "action": "Implement fluid restriction per clinical guidelines; patient education on intake monitoring"
+    },
+    {
+      "name": "Licorice-containing candies/foods",
+      "severity": "Low",
+      "mechanism": "Dietary licorice exposure may potentiate vasopressin effects and electrolyte imbalance",
+      "action": "Educate patient to avoid licorice-flavored products"
+    }
+  ],
+  "monitoring_notes": "Monitor serum sodium, osmolality, and fluid status closely during vasopressin therapy due to potent effects on fluid and electrolyte balance. Watch for signs of water intoxication (confusion, seizures, cerebral edema) and adjust fluid/sodium intake accordingly."
+}

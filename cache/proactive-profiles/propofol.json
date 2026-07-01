@@ -1,0 +1,74 @@
+{
+  "drug": "Propofol",
+  "drug_class": "Intravenous General Anesthetic",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "CYP2C8",
+    "Hepatic conjugation",
+    "Extrahepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C9 induction may accelerate propofol metabolism and reduce anesthetic effect",
+      "action": "Discontinue at least 2 weeks before anesthesia; coordinate with anesthesia team"
+    },
+    {
+      "name": "Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity combined with propofol's hepatic metabolism and potential for propofol infusion syndrome risk",
+      "action": "Avoid completely; discontinue at least 1 week prior to any scheduled procedures"
+    },
+    {
+      "name": "Valerian",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and sedation with propofol; increases risk of respiratory depression",
+      "action": "Discontinue 2-3 days before anesthesia; inform anesthesiologist of use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation and mild CNS stimulation may variably affect propofol requirements",
+      "action": "Document use; monitor anesthetic depth; may require dose adjustment"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild anticoagulant effects and potential CYP3A4 interaction; theoretical additive CNS depression",
+      "action": "Discontinue 1 week before elective procedures; disclose to anesthesia team"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedative effects may potentiate propofol's CNS depression",
+      "action": "Avoid on day of anesthesia; inform anesthesiologist of chronic use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase propofol levels and prolong anesthetic effects; risk of prolonged sedation",
+      "action": "Avoid for 48-72 hours before scheduled procedures requiring propofol"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase propofol absorption if taken orally (rare); potential for delayed gastric emptying affecting preoperative fasting requirements",
+      "action": "Follow standard NPO (nothing by mouth) guidelines; coordinate with perioperative team"
+    },
+    {
+      "name": "Caffeinated beverages",
+      "severity": "Low",
+      "mechanism": "CNS stimulation may increase propofol requirements and affect anesthetic depth stability",
+      "action": "Limit intake day-of procedure; disclose consumption to anesthesia team"
+    }
+  ],
+  "monitoring_notes": "Propofol is administered only in controlled clinical settings by trained anesthesia professionals; monitor vital signs, oxygen saturation, and depth of anesthesia throughout infusion. Watch for propofol infusion syndrome (PRIS) risk, particularly with prolonged infusions, and assess hepatic function and lipid clearance in at-risk patients."
+}

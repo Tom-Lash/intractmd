@@ -1,0 +1,101 @@
+{
+  "drug": "Linezolid",
+  "drug_class": "Oxazolidinone antibiotic",
+  "key_pathways": [
+    "Monoamine oxidase (MAO) inhibition",
+    "Weak CYP3A4 substrate"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "May reduce linezolid efficacy through CYP3A4 induction; also has independent serotonergic activity increasing serotonin syndrome risk",
+      "action": "Avoid concurrent use; consider alternative mood support if necessary"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Critical",
+      "mechanism": "Linezolid has weak MAO inhibitory properties; combined serotonergic activity significantly increases serotonin syndrome risk",
+      "action": "Contraindicated; discontinue 5-HTP before linezolid initiation and wait 2 weeks after discontinuation"
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "Critical",
+      "mechanism": "Precursor to serotonin; linezolid's MAO inhibition impairs tryptophan metabolism, substantially elevating serotonin syndrome risk",
+      "action": "Avoid during linezolid therapy; counsel patient to avoid tryptophan-rich supplements"
+    },
+    {
+      "name": "SAM-e",
+      "severity": "High",
+      "mechanism": "Serotonergic activity combined with linezolid's weak MAO inhibition increases serotonin syndrome risk",
+      "action": "Avoid concurrent use; discuss alternative supplements with healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Theoretical stimulant effects may be additive with linezolid's potential for hypertension and serotonergic activity",
+      "action": "Monitor blood pressure and mood symptoms; use with caution and at lowest effective dose"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "No direct interaction, but high-dose supplementation may affect GI absorption; linezolid is well-absorbed orally but GI side effects are common",
+      "action": "Separate dosing by 2-4 hours if supplementing; monitor for GI tolerance"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Aged cheeses (cheddar, blue, Swiss, Parmesan)",
+      "severity": "High",
+      "mechanism": "High tyramine content; linezolid's MAO inhibitory activity impairs tyramine metabolism, risking hypertensive crisis",
+      "action": "Strictly avoid aged cheeses during linezolid therapy; counsel patient on tyramine-restricted diet"
+    },
+    {
+      "name": "Cured/processed meats (pepperoni, salami, prosciutto, bacon)",
+      "severity": "High",
+      "mechanism": "Significant tyramine levels; linezolid-induced MAO inhibition increases hypertensive and cardiovascular risk",
+      "action": "Avoid during treatment; provide written tyramine-restriction guidance"
+    },
+    {
+      "name": "Fermented soy products (soy sauce, miso, tempeh)",
+      "severity": "High",
+      "mechanism": "Contains substantial tyramine from fermentation; linezolid's weak MAO inhibition poses hypertensive risk",
+      "action": "Avoid soy sauce, miso, and fermented soy; fresh tofu in moderation acceptable"
+    },
+    {
+      "name": "Fermented vegetables (sauerkraut, kimchi)",
+      "severity": "Moderate",
+      "mechanism": "Moderate tyramine content from fermentation process; may elevate blood pressure when combined with linezolid's MAO activity",
+      "action": "Minimize intake during therapy; advise patient to monitor for headache or hypertension symptoms"
+    },
+    {
+      "name": "Broad beans/fava beans",
+      "severity": "Moderate",
+      "mechanism": "Contains tyramine and dopamine; linezolid's weak MAO inhibition reduces their metabolism, increasing hypertensive risk",
+      "action": "Limit consumption; avoid large quantities during linezolid therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Soy sauce (regular/non-fermented alternatives acceptable)",
+      "severity": "Low",
+      "mechanism": "Modern low-tyramine versions pose minimal risk; fermented versions should be avoided per avoid_foods",
+      "action": "Use low-sodium, non-fermented soy sauce alternatives if desired; limit quantity"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "Theoretical additive stimulant effect; linezolid may rarely increase blood pressure",
+      "action": "Moderate intake (limit to <200mg/day); monitor for palpitations or hypertension"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS effects and increase risk of hypertension; linezolid can cause dizziness and headache",
+      "action": "Limit to moderate consumption; avoid heavy drinking during therapy"
+    }
+  ],
+  "monitoring_notes": "Linezolid's weak MAO inhibitory properties necessitate strict tyramine avoidance to prevent hypertensive crisis; counsel all patients on comprehensive tyramine restriction before initiating therapy. Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity) especially if patient takes concurrent serotonergic agents; baseline and periodic blood pressure monitoring recommended."
+}

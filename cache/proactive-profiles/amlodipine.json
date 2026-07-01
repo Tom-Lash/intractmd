@@ -1,0 +1,58 @@
+{
+  "drug": "Amlodipine",
+  "drug_class": "Calcium Channel Blocker (Dihydropyridine)",
+  "key_pathways": [
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces amlodipine levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Potassium supplements (high-dose)",
+      "severity": "Moderate",
+      "mechanism": "Additive hyperkalemia risk; amlodipine may increase potassium retention",
+      "action": "Avoid supplementation unless prescribed by physician; monitor serum potassium"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase amlodipine levels minimally",
+      "action": "Monitor blood pressure; limit intake if dizziness or edema develops"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate vasodilation effects",
+      "action": "Use standard recommended doses; monitor for hypotension symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases amlodipine bioavailability and plasma concentrations",
+      "action": "Eliminate grapefruit entirely; effects can persist 24 hours after consumption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Sodium may counteract antihypertensive benefits",
+      "action": "Maintain DASH diet principles; monitor blood pressure regularly"
+    },
+    {
+      "name": "Licorice (high amounts)",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and potassium loss, reducing drug efficacy",
+      "action": "Limit licorice-containing candies and supplements; monitor potassium levels"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly as grapefruit can significantly increase amlodipine levels, increasing hypotension and peripheral edema risk. Periodic serum electrolytes (potassium) are recommended, especially if patient uses potassium-containing products or has renal impairment."
+}

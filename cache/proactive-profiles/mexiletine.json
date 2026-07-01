@@ -1,0 +1,66 @@
+{
+  "drug": "Mexiletine",
+  "drug_class": "Class IB Antiarrhythmic (Local Anesthetic)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP1A2 and CYP3A4 induction reduces mexiletine levels and therapeutic efficacy",
+      "action": "Avoid concurrent use; if patient requires St. John's Wort, obtain baseline and repeat mexiletine levels after 2-3 weeks"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases mexiletine plasma concentrations and toxicity risk",
+      "action": "Avoid grapefruit and grapefruit juice entirely; counsel patient on hidden sources in supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic Supplements",
+      "severity": "Low",
+      "mechanism": "Potential CYP1A2 induction may modestly reduce mexiletine levels",
+      "action": "Monitor for loss of arrhythmia control; consider mexiletine level monitoring if high-dose garlic supplement used"
+    },
+    {
+      "name": "Flaxseed",
+      "severity": "Low",
+      "mechanism": "May have modest CYP1A2 inducing properties",
+      "action": "Monitor clinical response; use established brands with consistent composition"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases mexiletine bioavailability and plasma concentrations, elevating toxicity risk",
+      "action": "Strictly avoid; counsel patient and family members; check dietary supplements and juices for grapefruit content"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, energy drinks)",
+      "severity": "Low",
+      "mechanism": "Caffeine competes for CYP1A2 metabolism; high intake may increase mexiletine levels slightly",
+      "action": "Maintain consistent caffeine intake; counsel patient to avoid sudden increases; monitor for tremor or palpitations"
+    },
+    {
+      "name": "Charbroiled/smoked foods",
+      "severity": "Low",
+      "mechanism": "Polycyclic aromatic hydrocarbons may induce CYP1A2, potentially reducing mexiletine levels",
+      "action": "Counsel on moderation; maintain consistent dietary patterns; monitor arrhythmia control"
+    },
+    {
+      "name": "Acidic foods (citrus, vinegar, tomatoes)",
+      "severity": "Low",
+      "mechanism": "Acidic environment increases mexiletine reabsorption in renal tubules, potentially raising serum levels",
+      "action": "Counsel on maintaining neutral urinary pH; avoid extreme dietary acid loads; monitor for toxicity signs"
+    }
+  ],
+  "monitoring_notes": "Mexiletine has a narrow therapeutic window (0.5-2 μg/mL); obtain baseline level within 3-5 days of initiation or dose changes, then at steady-state (5-7 days). Monitor for tremor, dizziness, nausea, and arrhythmia recurrence, especially with CYP enzyme-inducing or -inhibiting interactions; renal function and urinary pH significantly influence mexiletine elimination and require assessment."
+}

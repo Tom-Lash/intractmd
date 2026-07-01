@@ -1,0 +1,71 @@
+{
+  "drug": "Gefitinib",
+  "drug_class": "Epidermal Growth Factor Receptor (EGFR) Tyrosine Kinase Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces gefitinib plasma concentrations and therapeutic efficacy",
+      "action": "Contraindicated; discontinue at least 2 weeks before gefitinib initiation"
+    },
+    {
+      "name": "Grapefruit Extract/Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases gefitinib bioavailability and risk of toxicity",
+      "action": "Avoid completely; may elevate drug levels unpredictably"
+    },
+    {
+      "name": "High-Dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "Potential antiplatelet effects may increase bleeding risk in patients with thrombocytopenia",
+      "action": "Limit to <400 IU daily; monitor for bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce gefitinib levels",
+      "action": "Monitor efficacy; counsel on potential interaction"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "May have additive antiplatelet effects; generally safe at standard doses",
+      "action": "Acceptable at normal dietary doses; inform oncology team"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases gefitinib plasma concentration and toxicity risk",
+      "action": "Eliminate from diet; counsel patient on all grapefruit products"
+    },
+    {
+      "name": "Seville Oranges and Pomelo",
+      "severity": "Moderate",
+      "mechanism": "Similar furanocoumarins to grapefruit inhibit CYP3A4",
+      "action": "Avoid; suggest alternative citrus fruits (sweet oranges, lemons acceptable)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase gefitinib absorption; dosing typically accounts for food effects but fat timing varies response",
+      "action": "Consistent meal pattern recommended; take with or without food consistently"
+    },
+    {
+      "name": "Cruciferous Vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contains glucosinolates with mild CYP1A2 induction; effect on CYP3A4 minimal",
+      "action": "No restriction needed; encourage as part of balanced diet"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of gefitinib toxicity (diarrhea, skin rash, hepatotoxicity) especially if CYP3A4 inhibitors are introduced. Counsel patients to maintain consistent meal timing and absolutely avoid grapefruit; report all herbal supplements and over-the-counter medications to oncology team."
+}

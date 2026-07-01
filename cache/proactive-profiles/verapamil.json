@@ -1,0 +1,73 @@
+{
+  "drug": "Verapamil",
+  "drug_class": "Calcium Channel Blocker (Phenylalkylamine)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2",
+    "CYP2C8",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces verapamil plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; may require verapamil dose adjustment if discontinued"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases verapamil bioavailability and risk of toxicity",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "Calcium Supplements (high-dose)",
+      "severity": "Moderate",
+      "mechanism": "May antagonize verapamil's calcium channel blocking effects",
+      "action": "Use lowest effective dose; monitor blood pressure and heart rate closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "May have additive cardiovascular effects and hypotensive potential",
+      "action": "Monitor blood pressure; inform healthcare provider of concurrent use"
+    },
+    {
+      "name": "Garlic",
+      "severity": "Low",
+      "mechanism": "Theoretical additive antiplatelet and hypotensive effects",
+      "action": "Monitor for increased bleeding risk and blood pressure changes"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May have additive effects on cardiac conduction and blood pressure",
+      "action": "Use at standard doses; monitor cardiac rhythm if high doses used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition dramatically increases verapamil plasma levels, increasing hypotension, bradycardia, and AV block risk",
+      "action": "Complete avoidance required; even small amounts can significantly alter drug levels"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase verapamil absorption and peak plasma concentrations",
+      "action": "Take consistently with or without food to maintain stable drug levels"
+    },
+    {
+      "name": "Caffeine-Containing Foods/Beverages",
+      "severity": "Low",
+      "mechanism": "May have opposing effects on heart rate; high caffeine could reduce verapamil benefits",
+      "action": "Moderate caffeine intake; monitor heart rate response"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and signs of AV block (dizziness, syncope, chest discomfort) regularly. Baseline ECG and periodic monitoring recommended, especially when initiating or adjusting doses."
+}

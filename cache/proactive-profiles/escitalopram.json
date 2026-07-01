@@ -1,0 +1,72 @@
+{
+  "drug": "Escitalopram",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C19, reducing escitalopram levels and efficacy; increases serotonin synthesis independently",
+      "action": "Avoid concurrent use; allow 2-week washout before or after escitalopram initiation"
+    },
+    {
+      "name": "Serotonergic supplements (5-HTP, L-tryptophan, SAMe)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic activity increases risk of serotonin syndrome (agitation, tremor, hyperthermia, altered mental status)",
+      "action": "Contraindicated; counsel patient to avoid without medical supervision"
+    },
+    {
+      "name": "Linezolid",
+      "severity": "Critical",
+      "mechanism": "Potent monoamine oxidase inhibitor activity combined with SSRI leads to serotonin syndrome",
+      "action": "Avoid concurrent use; alternative antibiotics should be considered"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild serotonergic activity and antiplatelet effects; may potentiate bleeding risk if combined with other anticoagulants",
+      "action": "Monitor for bleeding symptoms; use with caution at standard doses"
+    },
+    {
+      "name": "Omega-3 fatty acids (high doses >3g/day)",
+      "severity": "Low",
+      "mechanism": "Antiplatelet and anticoagulant effects; SSRIs may increase bleeding risk",
+      "action": "Monitor bleeding risk; standard supplementation (≤2g/day) generally safe"
+    },
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and mild serotonergic activity",
+      "action": "Counsel on increased sedation risk; monitor for excessive drowsiness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Escitalopram has minimal MAOI activity; tyramine interaction risk is very low but theoretical",
+      "action": "No strict restriction required; standard dietary advice applies"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase escitalopram levels, though escitalopram is not primarily metabolized via CYP3A4",
+      "action": "Limit consumption; monitor for increased side effects (QT prolongation at high doses)"
+    },
+    {
+      "name": "Caffeine (high intake >400mg/day)",
+      "severity": "Low",
+      "mechanism": "Additive CNS stimulation and potential serotonergic potentiation; may worsen anxiety or insomnia in sensitive patients",
+      "action": "Counsel moderation; monitor for increased anxiety or sleep disturbance"
+    }
+  ],
+  "monitoring_notes": "Escitalopram carries FDA warning for QT prolongation at doses >20mg/day, particularly relevant with CYP2C19 inhibitors. Monitor for serotonin syndrome symptoms, bleeding risk (especially with anticoagulants/antiplatelet agents), and hyponatremia during first 2 weeks of therapy."
+}

@@ -1,0 +1,70 @@
+{
+  "drug": "Lisinopril",
+  "drug_class": "ACE Inhibitor (Angiotensin-Converting Enzyme Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized; renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ACE inhibitors reduce aldosterone secretion, decreasing potassium excretion and increasing serum levels; potassium supplements amplify hyperkalemia risk",
+      "action": "Avoid potassium supplements unless specifically prescribed by clinician; monitor serum potassium regularly"
+    },
+    {
+      "name": "NSAIDs (including ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and increase potassium retention; combined use increases hyperkalemia risk and reduces antihypertensive efficacy",
+      "action": "Avoid NSAIDs; use acetaminophen or topical NSAIDs as alternatives; if NSAIDs necessary, use lowest dose for shortest duration with increased monitoring"
+    },
+    {
+      "name": "ACE inhibitor herbal supplements (licorice, yohimbe)",
+      "severity": "High",
+      "mechanism": "Licorice causes sodium retention and potassium loss with compensatory hyperkalemia risk; yohimbe increases blood pressure opposing lisinopril's effect",
+      "action": "Discontinue licorice and yohimbe; choose alternative supplements with clinician approval"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate hypotensive effects through vasodilation; additive blood pressure lowering possible",
+      "action": "Monitor blood pressure; adjust lisinopril dose if significant hypotension develops"
+    },
+    {
+      "name": "CoQ10",
+      "severity": "Low",
+      "mechanism": "May cause modest additional blood pressure reduction; theoretical synergistic effect",
+      "action": "Monitor blood pressure regularly; inform clinician of concurrent use"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May enhance vasodilation and potentiate hypotensive effects",
+      "action": "Monitor blood pressure; coordinate supplementation with clinician"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (excessive intake)",
+      "severity": "High",
+      "mechanism": "ACE inhibitors impair potassium excretion; excessive dietary potassium increases hyperkalemia risk, particularly in renal impairment",
+      "action": "Limit potassium-rich foods (bananas, oranges, spinach, potatoes, tomatoes) to normal dietary amounts; avoid potassium salt substitutes"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Moderate potassium-containing foods",
+      "severity": "Low",
+      "mechanism": "Normal intake generally safe but contributes to overall potassium load; risk increases with renal dysfunction or concurrent medications",
+      "action": "Monitor serum potassium at baseline and periodically; adjust intake based on lab results and renal function"
+    },
+    {
+      "name": "Licorice-containing foods",
+      "severity": "Low",
+      "mechanism": "Licorice causes sodium retention opposing lisinopril's antihypertensive effect",
+      "action": "Minimize licorice candy and licorice root-containing products"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and blood pressure at baseline and regularly during therapy, especially in patients with renal impairment, diabetes, or concurrent use of other renin-angiotensin system inhibitors. Counsel patients on signs of hyperkalemia (weakness, palpitations, shortness of breath) and angioedema (facial swelling, difficulty breathing)."
+}

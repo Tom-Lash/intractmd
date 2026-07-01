@@ -1,0 +1,53 @@
+{
+  "drug": "Quetiapine",
+  "drug_class": "Atypical Antipsychotic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction decreases quetiapine levels, reducing antipsychotic efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support supplement if needed"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; may impair motor function",
+      "action": "Contraindicated; do not use together"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase quetiapine concentrations",
+      "action": "Limit intake; monitor for increased side effects (sedation, orthostasis)"
+    },
+    {
+      "name": "SAM-e",
+      "severity": "Low",
+      "mechanism": "Potential additive serotonergic effects; theoretical risk of serotonin syndrome",
+      "action": "Use cautiously; monitor mood and neurological symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases quetiapine bioavailability and serum levels",
+      "action": "Avoid completely; choose alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase quetiapine absorption and peak concentrations",
+      "action": "Take consistently with or without food; maintain routine for steady-state levels"
+    }
+  ],
+  "monitoring_notes": "Monitor for CNS depression, orthostatic hypotension, and metabolic effects (weight, glucose, lipids). Counsel patients to maintain consistent dosing schedule and report breakthrough psychiatric symptoms or excessive sedation."
+}

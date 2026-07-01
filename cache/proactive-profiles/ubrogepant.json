@@ -1,0 +1,51 @@
+{
+  "drug": "Ubrogepant",
+  "drug_class": "Calcitonin gene-related peptide (CGRP) receptor antagonist",
+  "key_pathways": [
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces ubrogepant plasma concentration and therapeutic efficacy",
+      "action": "Avoid concomitant use; consider alternative supplements"
+    },
+    {
+      "name": "Rifampin (herbal equivalent)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction significantly decreases ubrogepant exposure",
+      "action": "Discontinue herbal CYP3A4 inducers before ubrogepant therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase ubrogepant levels",
+      "action": "Monitor for increased adverse effects; limit consumption"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may reduce ubrogepant efficacy",
+      "action": "Use with caution and monitor migraine control"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase ubrogepant plasma concentrations",
+      "action": "Limit consumption or avoid; prefer other citrus beverages"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay ubrogepant absorption and onset of migraine relief",
+      "action": "Take ubrogepant on empty stomach or with light meal for optimal efficacy"
+    }
+  ],
+  "monitoring_notes": "Ubrogepant is primarily metabolized via CYP3A4; monitor for loss of efficacy with CYP3A4 inducers and increased adverse effects with CYP3A4 inhibitors. Counsel patients to maintain consistent supplement and dietary patterns and report any changes in migraine control."
+}

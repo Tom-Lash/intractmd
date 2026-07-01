@@ -1,0 +1,54 @@
+{
+  "drug": "Etravirine",
+  "drug_class": "Non-nucleoside reverse transcriptase inhibitor (NNRTI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces etravirine plasma concentrations below therapeutic levels",
+      "action": "Contraindicated; do not use concurrently with etravirine"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer decreases etravirine exposure by approximately 40%",
+      "action": "Avoid concurrent use; consider alternative antimicrobial if possible"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4 at high doses, potentially reducing etravirine levels",
+      "action": "Monitor virologic response; use moderate doses only"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 induction properties",
+      "action": "Use with caution; monitor etravirine efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Etravirine requires fasting state or low-fat meal for optimal absorption; fatty foods significantly decrease bioavailability",
+      "action": "Take etravirine with a low-fat meal or on an empty stomach; avoid high-fat foods around dosing time"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase etravirine levels slightly",
+      "action": "Limit consumption; monitor for increased adverse effects if regularly consumed"
+    }
+  ],
+  "monitoring_notes": "Monitor HIV RNA viral load and CD4 counts regularly to assess etravirine efficacy, particularly if potential interactions occur. Counsel patients on strict adherence to fasting/low-fat meal requirements and the critical importance of avoiding St. John's Wort."
+}

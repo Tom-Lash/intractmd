@@ -1,0 +1,83 @@
+{
+  "drug": "Etanercept",
+  "drug_class": "TNF-alpha inhibitor (Tumor Necrosis Factor inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Protein therapeutic - cleared by reticuloendothelial system"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May stimulate immune function and potentially reduce etanercept efficacy or increase infection risk in immunosuppressed patients",
+      "action": "Counsel patient to avoid echinacea supplements during etanercept therapy"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May have immunostimulatory effects that could interfere with TNF-inhibitor therapy",
+      "action": "Advise patient to discontinue or avoid St. John's Wort during treatment"
+    },
+    {
+      "name": "Interferon-alpha supplements",
+      "severity": "High",
+      "mechanism": "Direct immune stimulation opposing etanercept's immunosuppressive mechanism; increased infection and malignancy risk",
+      "action": "Absolutely contraindicated - ensure patient awareness and avoid concurrent use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Generally safe but use with caution in severely immunocompromised patients; select non-pathogenic strains only",
+      "action": "Monitor for adverse effects; discuss specific probiotic selection with healthcare provider"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "May have mild immunomodulatory effects; supplementation reasonable for deficiency but monitor levels",
+      "action": "Check baseline 25-OH vitamin D level; supplement if deficient (monitor 25-OH vitamin D 25-50 ng/mL range)"
+    },
+    {
+      "name": "Zinc",
+      "severity": "Low",
+      "mechanism": "Essential for immune function; deficiency may increase infection risk in immunosuppressed patients",
+      "action": "Maintain adequate dietary intake; supplementation reasonable if deficient but avoid excess (>40 mg/day)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Raw/undercooked animal products (meat, eggs, shellfish)",
+      "severity": "High",
+      "mechanism": "Increased pathogenic bacterial/viral contamination risk in immunocompromised patients receiving TNF-inhibitors",
+      "action": "Counsel on food safety: cook all animal products thoroughly; avoid raw oysters, sushi with raw fish, undercooked poultry"
+    },
+    {
+      "name": "Unpasteurized dairy products",
+      "severity": "High",
+      "mechanism": "Risk of Listeria monocytogenes and other pathogens in severely immunosuppressed etanercept patients",
+      "action": "Recommend only pasteurized dairy products; avoid raw milk cheeses and unpasteurized milk"
+    },
+    {
+      "name": "Unwashed fresh produce",
+      "severity": "Moderate",
+      "mechanism": "Potential contamination with pathogenic organisms (E. coli, Listeria) in immunocompromised hosts",
+      "action": "Thoroughly wash all fresh fruits and vegetables; consider cooking produce when possible"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Etanercept may increase cardiovascular and fluid retention risk; excessive sodium can worsen these effects",
+      "action": "Encourage moderate sodium intake (<2,300 mg/day); monitor blood pressure regularly"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Not a direct interaction but may affect concurrent medications (warfarin, statins) often used with etanercept patients",
+      "action": "If consuming concurrent CYP3A4 substrates, limit grapefruit or monitor for interactions separately"
+    }
+  ],
+  "monitoring_notes": "Etanercept is a protein therapeutic not metabolized hepatically, so drug-drug interactions via cytochrome P450 are minimal. Primary concerns are immunosuppression-related infection risk from supplements and foods with pathogenic contamination; monitor for signs of infection (fever, persistent cough, unusual fatigue) and counsel extensively on food safety practices."
+}

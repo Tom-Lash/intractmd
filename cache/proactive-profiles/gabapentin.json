@@ -1,0 +1,53 @@
+{
+  "drug": "Gabapentin",
+  "drug_class": "Anticonvulsant/Gabapentinoid (Analgesic, Anticonvulsant)",
+  "key_pathways": [
+    "Not hepatically metabolized (renal excretion)",
+    "Calcium channel modulation (α2δ subunit)",
+    "No CYP450 interactions"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Morphine/Opioid supplements or concurrent use",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and respiratory depression risk; gabapentin increases opioid bioavailability",
+      "action": "Avoid concurrent use or require dose adjustment and enhanced monitoring for respiratory depression"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depressant effects",
+      "action": "Monitor for increased sedation or dizziness"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression",
+      "action": "Use with caution; monitor for excessive sedation"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Potential for CNS effects; may reduce gabapentin efficacy in some contexts",
+      "action": "Monitor clinical response and CNS symptoms"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May decrease gabapentin absorption rate; food delays but does not significantly reduce overall bioavailability",
+      "action": "Take gabapentin consistently with or without food; maintain routine for consistency"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression effects; increased risk of sedation, dizziness, impaired cognition",
+      "action": "Limit or avoid alcohol consumption; counsel on CNS depression risks"
+    }
+  ],
+  "monitoring_notes": "Gabapentin undergoes minimal metabolism and has no significant CYP450 interactions, making it relatively safe from drug-drug interactions at the metabolic level. Primary concerns involve additive CNS depression with opioids, other CNS depressants, and alcohol; monitor renal function as gabapentin is renally cleared and may accumulate in renal impairment."
+}

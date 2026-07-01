@@ -1,0 +1,66 @@
+{
+  "drug": "Metformin",
+  "drug_class": "Biguanide (Antidiabetic)",
+  "key_pathways": [
+    "Renal clearance",
+    "Organic cation transporter 1 (OCT1)",
+    "Organic cation transporter 2 (OCT2)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Contrast dye (iodinated)",
+      "severity": "Critical",
+      "mechanism": "Risk of lactic acidosis and acute kidney injury; metformin should be held before contrast administration",
+      "action": "Discontinue metformin 48 hours before iodinated contrast procedures; restart only after renal function confirmed stable"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "High",
+      "mechanism": "Increases risk of lactic acidosis by impairing lactate clearance and reducing hepatic gluconeogenesis",
+      "action": "Limit alcohol to ≤1-2 drinks per day; avoid binge drinking"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May enhance insulin sensitivity and hypoglycemic effects; additive glucose-lowering action",
+      "action": "Monitor blood glucose closely; may require metformin dose adjustment"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "Potential additive glucose-lowering effects through enhanced insulin sensitivity",
+      "action": "Monitor for hypoglycemia; inform patient of combined glucose-lowering potential"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "May have mild glucose-lowering properties; additive effects possible",
+      "action": "Monitor blood glucose; clinical significance typically minimal"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (excessive)",
+      "severity": "Moderate",
+      "mechanism": "May delay metformin absorption and reduce gastrointestinal tolerability; increases GI side effects",
+      "action": "Take metformin with meals containing moderate fat; avoid large fatty meals"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Vitamin B12-depleting foods (if deficiency risk)",
+      "severity": "Low",
+      "mechanism": "Metformin reduces B12 absorption; high-risk patients benefit from B12-rich foods",
+      "action": "Encourage intake of B12-rich foods (meat, dairy, fortified cereals); monitor B12 levels annually in at-risk patients"
+    },
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "May improve glycemic control but can increase GI side effects if introduced too rapidly",
+      "action": "Gradually increase fiber intake; ensure adequate hydration"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (eGFR/serum creatinine) regularly, as metformin is contraindicated in severe renal impairment (eGFR <30 mL/min/1.73m²). Assess for vitamin B12 deficiency annually, especially in patients on long-term therapy, and monitor for signs of lactic acidosis (rare but serious)."
+}

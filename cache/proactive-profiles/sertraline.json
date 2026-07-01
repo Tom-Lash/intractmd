@@ -1,0 +1,85 @@
+{
+  "drug": "Sertraline",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C19",
+    "Serotonin reuptake inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C19 induction; increases sertraline metabolism and reduces efficacy; serotonin syndrome risk",
+      "action": "Discontinue St. John's Wort; allow 2-week washout before starting or after stopping sertraline"
+    },
+    {
+      "name": "SAMe (S-adenosylmethionine)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic activity increases serotonin syndrome risk (agitation, tremor, hyperthermia, confusion)",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "5-Hydroxytryptophan (5-HTP)",
+      "severity": "High",
+      "mechanism": "Direct serotonin precursor amplifies serotonergic effects; serotonin syndrome risk",
+      "action": "Avoid use with sertraline; discuss alternative supplements with provider"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "Critical",
+      "mechanism": "Opioid with SNRI activity; significant serotonin syndrome and seizure risk",
+      "action": "Avoid concurrent use; use alternative analgesia (acetaminophen, NSAIDs if appropriate)"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; sertraline may increase bleeding risk when combined",
+      "action": "Monitor for unusual bruising or bleeding; assess benefit-risk ratio"
+    },
+    {
+      "name": "Omega-3 fatty acids (high-dose >2g/day)",
+      "severity": "Low",
+      "mechanism": "Antiplatelet properties may potentiate sertraline-associated bleeding risk",
+      "action": "Use standard dietary doses; monitor if high-dose supplementation needed"
+    },
+    {
+      "name": "L-tryptophan supplement",
+      "severity": "Low",
+      "mechanism": "Increased serotonin precursor availability; minor additive serotonergic effects",
+      "action": "Avoid or use minimal doses; monitor for serotonergic symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Sertraline has minimal MAOI activity; risk is substantially lower than traditional MAOIs but modest interaction possible",
+      "action": "Normal dietary tyramine intake is safe; extreme restriction unnecessary"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase sertraline levels and side effects",
+      "action": "Limit or avoid grapefruit; monitor for increased dizziness, nausea, or sexual dysfunction"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depression; increases sedation and impairs judgment/motor control",
+      "action": "Minimize or avoid alcohol; if consumed, use minimal quantities and monitor response"
+    },
+    {
+      "name": "Caffeine (high intake >400mg/day)",
+      "severity": "Low",
+      "mechanism": "CNS stimulation may increase anxiety, tremor, or insomnia in sertraline-treated patients",
+      "action": "Limit caffeine intake; reduce if anxiety or sleep disturbances occur"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, high blood pressure, dilated pupils, muscle rigidity) especially with supplements or concurrent medications affecting serotonin. Educate patient on bleeding risk with concurrent NSAIDs or antiplatelet agents and counsel on alcohol moderation."
+}

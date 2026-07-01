@@ -1,0 +1,73 @@
+{
+  "drug": "Trazodone",
+  "drug_class": "Serotonin antagonist and reuptake inhibitor (SARI); Antidepressant",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Serotonin reuptake inhibition",
+    "Alpha-1 adrenergic antagonism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer; may reduce trazodone levels and increase serotonin syndrome risk due to combined serotonergic effects",
+      "action": "Avoid concurrent use; allow 2-week washout period if switching"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Direct serotonergic activity; additive serotonin effects may precipitate serotonin syndrome",
+      "action": "Contraindicated; do not use concurrently"
+    },
+    {
+      "name": "SAMe",
+      "severity": "High",
+      "mechanism": "Serotonergic activity; increased risk of serotonin syndrome with combined SARI mechanism",
+      "action": "Avoid concurrent use; consult clinician if considering supplementation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "L-Tryptophan",
+      "severity": "Low",
+      "mechanism": "Serotonin precursor; may have additive serotonergic effects",
+      "action": "Monitor for serotonin syndrome symptoms (agitation, tremor, hyperthermia); use lowest effective dose"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild stimulant properties; may increase CNS effects or reduce sedative benefit",
+      "action": "Monitor for excessive stimulation or altered sedation; dose adjustment may be needed"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression and sedation",
+      "action": "Monitor for excessive drowsiness; generally safe at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Significantly delays trazodone absorption and increases bioavailability; may alter efficacy timing",
+      "action": "Take on empty stomach or consistent with/without food; avoid taking immediately after high-fat meal"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; potentiates sedation and impairs cognition",
+      "action": "Minimize or avoid alcohol; if used, limit to moderate amounts and monitor for excessive drowsiness"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase trazodone plasma concentrations",
+      "action": "Monitor for increased side effects; consider avoiding or using consistently if therapeutic benefit affected"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome, particularly with concurrent serotonergic agents (SSRIs, MAOIs, tramadol). Assess for excessive CNS depression and orthostatic hypotension, especially in elderly patients or those on concurrent CNS depressants."
+}

@@ -1,0 +1,53 @@
+{
+  "drug": "Rabeprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Gastric pH-dependent absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce rabeprazole effectiveness",
+      "action": "Avoid concurrent use; select alternative herbal supplement"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Reduced gastric acid decreases calcium absorption; take 2+ hours apart",
+      "action": "Separate dosing by at least 2 hours; monitor for hypocalcemia with chronic use"
+    },
+    {
+      "name": "Vitamin B12",
+      "severity": "Low",
+      "mechanism": "Long-term PPI use reduces intrinsic factor and B12 absorption",
+      "action": "Monitor B12 levels annually; consider supplementation if deficiency develops"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Reduced gastric acid impairs non-heme iron absorption",
+      "action": "Take iron supplement 2+ hours before rabeprazole; monitor for anemia"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Decreased gastric acid reduces magnesium bioavailability",
+      "action": "Monitor magnesium levels with chronic PPI use; supplement if needed"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase rabeprazole levels",
+      "action": "Limit grapefruit juice consumption; monitor for adverse effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for vitamin B12, calcium, magnesium, and iron deficiencies with long-term use. Rabeprazole effectiveness may be compromised by CYP3A4 inducers; no food interactions significantly impair absorption."
+}

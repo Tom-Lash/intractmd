@@ -1,0 +1,59 @@
+{
+  "drug": "Denosumab",
+  "drug_class": "Monoclonal Antibody (RANKL Inhibitor)",
+  "key_pathways": [
+    "Non-hepatic metabolism",
+    "RANKL pathway inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin D (>4000 IU daily without medical supervision)",
+      "severity": "High",
+      "mechanism": "Denosumab increases hypocalcemia risk; excessive vitamin D supplementation may cause hypercalcemia rebound or complicate calcium-vitamin D balance management",
+      "action": "Monitor serum calcium and vitamin D levels; use moderate doses only under physician guidance; maintain coordinated supplementation with prescriber"
+    },
+    {
+      "name": "Calcium supplements (>1200 mg daily without coordination)",
+      "severity": "High",
+      "mechanism": "Denosumab suppresses bone turnover and increases hypocalcemia risk; uncoordinated supplementation may mask or exacerbate electrolyte imbalances",
+      "action": "Coordinate calcium supplementation with prescriber; monitor serum calcium levels; maintain consistent dosing patterns"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Phosphate binders or high-dose phosphate supplements",
+      "severity": "Low",
+      "mechanism": "May affect mineral metabolism in context of denosumab-induced hypocalcemia",
+      "action": "Inform prescriber of use; monitor serum phosphate and calcium levels periodically"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Denosumab therapy may alter magnesium homeostasis; supplementation may be beneficial but requires coordination",
+      "action": "Discuss with healthcare provider; monitor if used concurrently"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Inconsistent dairy intake patterns",
+      "severity": "Moderate",
+      "mechanism": "Unpredictable dietary calcium intake complicates calcium-vitamin D management in setting of denosumab-induced hypocalcemia",
+      "action": "Maintain consistent dairy and calcium-rich food intake; coordinate with prescribed supplementation regimen"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High phosphate processed foods",
+      "severity": "Low",
+      "mechanism": "Excessive dietary phosphate may affect calcium-phosphate balance during denosumab therapy",
+      "action": "Maintain moderate intake of processed foods; focus on balanced mineral nutrition"
+    },
+    {
+      "name": "Fortified foods with vitamin D",
+      "severity": "Low",
+      "mechanism": "Cumulative vitamin D intake may interact with denosumab's effects on calcium homeostasis",
+      "action": "Account for dietary vitamin D sources when calculating total intake; coordinate with supplementation"
+    }
+  ],
+  "monitoring_notes": "Denosumab does not undergo hepatic metabolism and has minimal drug interactions, but careful monitoring of serum calcium, phosphate, magnesium, and vitamin D is essential due to its mechanism of action suppressing bone turnover. Coordinate all calcium and vitamin D supplementation with the prescriber to prevent hypocalcemia and maintain mineral homeostasis."
+}

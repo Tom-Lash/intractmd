@@ -1,0 +1,84 @@
+{
+  "drug": "Vemurafenib",
+  "drug_class": "BRAF kinase inhibitor (targeted cancer therapy)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces vemurafenib levels by 30-50%, decreasing efficacy",
+      "action": "Contraindicated; do not use concurrently. Consult oncologist for alternatives"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly decreases vemurafenib plasma concentrations",
+      "action": "Absolute contraindication; avoid all forms"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU)",
+      "severity": "High",
+      "mechanism": "May increase bleeding risk and potentiate QT prolongation with vemurafenib",
+      "action": "Limit to <400 IU daily; obtain oncologist approval before supplementation"
+    },
+    {
+      "name": "Grapefruit/Pomegranate supplements",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases vemurafenib levels, raising toxicity risk",
+      "action": "Avoid; choose alternative citrus supplements if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "May have anticoagulant properties; additive bleeding risk with vemurafenib's known effects",
+      "action": "Use cautiously; inform oncology team; monitor for signs of bleeding"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition; potential for minor vemurafenib level increase",
+      "action": "Permissible in moderate doses; monitor for increased toxicity symptoms"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May alter gut microbiota affecting vemurafenib absorption; minimal clinical significance",
+      "action": "Monitor GI tolerance; space dosing 2+ hours apart if used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases vemurafenib exposure and toxicity risk",
+      "action": "Completely avoid grapefruit and juice; substitute with other fruits"
+    },
+    {
+      "name": "Pomegranate/Pomegranate juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition elevates vemurafenib levels",
+      "action": "Avoid consumption; select alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase vemurafenib absorption; food effect documented in product labeling",
+      "action": "Consistent meal pattern recommended; take with or without food consistently"
+    },
+    {
+      "name": "Caffeine-rich foods/beverages",
+      "severity": "Low",
+      "mechanism": "Mild CYP1A2 substrate interaction; minimal clinical impact at typical intake",
+      "action": "Moderate intake acceptable; excessive caffeine may increase QT prolongation risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of toxicity (rash, photosensitivity, QT prolongation, bleeding) as CYP3A4 inhibitors increase vemurafenib exposure. Counsel patients on strict avoidance of grapefruit/pomegranate and St. John's Wort; verify all new supplements with oncology prior to use given vemurafenib's narrow therapeutic window and serious adverse effect profile."
+}

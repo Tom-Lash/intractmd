@@ -1,0 +1,59 @@
+{
+  "drug": "Hydrochlorothiazide",
+  "drug_class": "Thiazide Diuretic",
+  "key_pathways": [
+    "Renal excretion",
+    "Electrolyte metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "High",
+      "mechanism": "Hydrochlorothiazide causes potassium depletion; concurrent supplementation may lead to hypokalemia if patient is already depleted, though some patients may need supplementation based on individual monitoring",
+      "action": "Only use potassium supplements under direct physician supervision with regular serum potassium monitoring"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "High",
+      "mechanism": "Licorice causes sodium retention and potassium loss, compounding hydrochlorothiazide's electrolyte-depleting effects and increasing hypokalemia and hypertension risk",
+      "action": "Avoid licorice root supplements entirely; monitor for signs of hypokalemia (muscle weakness, palpitations)"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild hypertensive effects, potentially counteracting antihypertensive benefits of hydrochlorothiazide",
+      "action": "Use cautiously; monitor blood pressure regularly and discuss with healthcare provider"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Hydrochlorothiazide may reduce urinary calcium excretion, increasing serum calcium levels when combined with supplementation",
+      "action": "Monitor serum calcium levels periodically; adjust supplementation dose as needed based on lab values"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive sodium/salt",
+      "severity": "High",
+      "mechanism": "High sodium intake counteracts the diuretic and antihypertensive effects of hydrochlorothiazide, reducing efficacy",
+      "action": "Maintain sodium restriction (<2300 mg/day as recommended); counsel patient on reading food labels and avoiding processed foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Potassium-rich foods (bananas, spinach, sweet potatoes)",
+      "severity": "Low",
+      "mechanism": "While hydrochlorothiazide depletes potassium, moderate intake of potassium-rich foods may help maintain balance depending on individual serum levels",
+      "action": "Consume in moderation; base intake on serum potassium levels and physician recommendation; some patients may benefit while others require restriction"
+    },
+    {
+      "name": "Caffeine-containing foods and beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine has mild diuretic and hypertensive effects that may slightly amplify hydrochlorothiazide's effects",
+      "action": "Limit caffeine intake to moderate levels (<200 mg/day); monitor blood pressure response"
+    }
+  ],
+  "monitoring_notes": "Monitor serum electrolytes (especially potassium, sodium, calcium), glucose, lipid panel, and uric acid regularly as hydrochlorothiazide can affect these parameters. Assess blood pressure control and counsel on sodium restriction as the primary dietary intervention for optimizing efficacy."
+}

@@ -1,0 +1,65 @@
+{
+  "drug": "Losartan",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "Losartan increases renal potassium retention; combined supplementation significantly elevates hyperkalemia risk",
+      "action": "Avoid potassium supplements unless serum potassium is documented low and prescribed by clinician; monitor K+ levels regularly"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal perfusion and increase potassium retention; combined use increases hyperkalemia and acute kidney injury risk",
+      "action": "Avoid concurrent use; if necessary, use lowest NSAID dose for shortest duration and monitor renal function and K+ closely"
+    },
+    {
+      "name": "ACE inhibitors",
+      "severity": "High",
+      "mechanism": "Dual RAAS blockade significantly increases hyperkalemia, hypotension, and renal dysfunction risk",
+      "action": "Avoid combination; if dual therapy deemed essential, require close specialist monitoring with frequent K+ and creatinine checks"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "Licorice causes sodium retention and potassium loss, potentially counteracting losartan's blood pressure lowering effects",
+      "action": "Limit licorice intake; counsel patient on blood pressure monitoring"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4, potentially reducing losartan levels, though clinical significance is modest",
+      "action": "Monitor blood pressure response; inform clinician of concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (excessive intake)",
+      "severity": "High",
+      "mechanism": "Losartan reduces urinary potassium excretion; excessive dietary potassium significantly increases hyperkalemia risk",
+      "action": "Counsel on moderation of potassium-rich foods (bananas, oranges, spinach, tomatoes); restrict if K+ elevated or renal function impaired"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Grapefruit inhibits CYP3A4, potentially increasing losartan levels; clinical impact is generally minimal",
+      "action": "Counsel patient to limit grapefruit juice consumption or maintain consistent intake; monitor blood pressure"
+    },
+    {
+      "name": "Sodium-rich foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium may counteract antihypertensive effect of losartan",
+      "action": "Counsel on sodium restriction consistent with hypertension management guidelines"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium and renal function (creatinine, eGFR) regularly, especially at initiation or dose changes, and in patients with renal impairment or concurrent medications affecting potassium. Monitor blood pressure and counsel patients on sodium restriction and potassium moderation based on individual renal function."
+}

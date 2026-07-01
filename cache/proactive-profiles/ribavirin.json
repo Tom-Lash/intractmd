@@ -1,0 +1,59 @@
+{
+  "drug": "Ribavirin",
+  "drug_class": "Nucleoside Analog Antiviral",
+  "key_pathways": [
+    "Intracellular phosphorylation (independent of CYP450)",
+    "Inosine monophosphate dehydrogenase (IMPDH) inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Folic Acid (>5mg daily)",
+      "severity": "High",
+      "mechanism": "Ribavirin inhibits IMPDH, disrupting purine synthesis; excessive folate may unmask or worsen cytopenias through competing metabolic pathways",
+      "action": "Limit folic acid supplementation to RDA levels (400mcg); monitor CBC closely if supplementation necessary"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce intracellular phosphorylation enzymes and reduce ribavirin bioavailability; also increases risk of hepatotoxicity in HCV patients",
+      "action": "Avoid concurrent use; discontinue St. John's Wort before starting ribavirin therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron Supplements",
+      "severity": "Low",
+      "mechanism": "Ribavirin may impair hematopoiesis; iron supplementation could mask anemia development or interact with antiviral efficacy",
+      "action": "Use only if iron deficiency documented; monitor hemoglobin/hematocrit regularly"
+    },
+    {
+      "name": "Vitamin E (>400 IU daily)",
+      "severity": "Low",
+      "mechanism": "May potentiate anticoagulant effects if patient on concurrent antivirals with bleeding risk; unclear synergistic effects on viral clearance",
+      "action": "Monitor for bleeding signs; maintain moderate dosing and inform all providers of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "While ribavirin is not CYP3A4-metabolized, grapefruit affects concurrent medications (protease inhibitors, immunosuppressants) used with ribavirin in combination therapy",
+      "action": "Avoid grapefruit products during entire ribavirin treatment course"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-purine foods (organ meats, shellfish, red meat)",
+      "severity": "Low",
+      "mechanism": "Ribavirin disrupts purine synthesis via IMPDH inhibition; excessive dietary purines may create metabolic imbalance and worsen cytopenias",
+      "action": "Moderate purine intake; ensure balanced diet with adequate protein from varied sources"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Alcohol potentiates hepatotoxicity and may worsen teratogenic risk in HCV patients; impairs hematopoietic recovery",
+      "action": "Counsel strict alcohol avoidance, particularly in HCV/HBV co-infection; reinforce teratogenicity warnings"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC (hemoglobin, hematocrit, platelets, WBC) every 2-4 weeks due to ribavirin-induced hemolytic anemia and cytopenias; assess liver function and renal function baseline and periodically. Ribavirin has significant teratogenic potential—ensure effective contraception in all reproductive-age patients and partner assessment for male patients."
+}

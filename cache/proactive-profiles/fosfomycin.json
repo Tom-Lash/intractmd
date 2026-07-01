@@ -1,0 +1,59 @@
+{
+  "drug": "Fosfomycin",
+  "drug_class": "Phosphonic acid antibiotic",
+  "key_pathways": [
+    "Non-CYP dependent",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Fosfomycin forms insoluble chelate complexes with divalent cations (calcium, magnesium, iron), significantly reducing bioavailability and therapeutic efficacy",
+      "action": "Separate administration by at least 2-3 hours; take fosfomycin on empty stomach"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation binding reduces fosfomycin absorption and urinary concentration needed for UTI efficacy",
+      "action": "Separate dosing by 2-3 hours minimum; avoid concurrent intake"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Iron (ferrous/ferric) chelation with fosfomycin impairs drug absorption and bioavailability",
+      "action": "Take fosfomycin 2-3 hours apart from iron; preferably on empty stomach"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Zinc supplements",
+      "severity": "Low",
+      "mechanism": "Potential minor chelation with fosfomycin; clinical significance unclear but theoretical interaction exists",
+      "action": "Monitor therapeutic response; space dosing if possible"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "High",
+      "mechanism": "High calcium content chelates fosfomycin, reducing absorption by 30-50% and lowering urinary drug levels required for bactericidal activity",
+      "action": "Avoid dairy within 2 hours before and after fosfomycin dose; take on empty stomach"
+    },
+    {
+      "name": "Fortified cereals and grain products",
+      "severity": "Moderate",
+      "mechanism": "Added iron and calcium fortification can reduce fosfomycin bioavailability",
+      "action": "Separate consumption by at least 2 hours from fosfomycin dose"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "May reduce fosfomycin absorption rate; minimal clinical impact but theoretically relevant",
+      "action": "Consistency in timing with fosfomycin dosing is preferred"
+    }
+  ],
+  "monitoring_notes": "Fosfomycin should be taken on an empty stomach with water to maximize absorption and achieve adequate urinary concentrations. Monitor for adequate therapeutic response and counsel patients to strictly avoid concurrent divalent cation supplements and dairy products, particularly for single-dose UTI treatment where absorption is critical."
+}

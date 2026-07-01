@@ -1,0 +1,66 @@
+{
+  "drug": "Pazopanib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2",
+    "CYP1B1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer that significantly reduces pazopanib plasma concentrations and therapeutic efficacy",
+      "action": "Contraindicated; do not use concurrently. Allow 2-week washout before starting pazopanib if previously used"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases pazopanib bioavailability and risk of toxicity",
+      "action": "Avoid completely; may increase pazopanib levels up to 2-fold"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce pazopanib efficacy",
+      "action": "Avoid use during pazopanib therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4; potential for increased pazopanib levels",
+      "action": "Use with caution; monitor for increased toxicity signs"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inhibitory effects at high doses",
+      "action": "Moderate amounts likely safe; avoid excessive supplementation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Significantly increases pazopanib absorption (up to 2-fold increase in Cmax); increases risk of adverse effects",
+      "action": "Take pazopanib consistently with or without food; maintain same dietary pattern daily to ensure stable levels"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "May have mild CYP1A2 inducing properties at very high consumption levels",
+      "action": "Normal dietary intake is safe; excessive consumption may theoretically reduce levels"
+    },
+    {
+      "name": "Charred/grilled foods",
+      "severity": "Low",
+      "mechanism": "Heterocyclic amines may induce CYP1A2",
+      "action": "Consume in moderation; avoid charring of meats"
+    }
+  ],
+  "monitoring_notes": "Pazopanib should be taken consistently with regard to food (either always with food or always without) to maintain stable plasma concentrations. Monitor for hepatotoxicity, QT prolongation, and hypertension; pazopanib has significant drug-drug interactions via CYP3A4 metabolism, requiring careful evaluation of all concomitant medications and supplements."
+}

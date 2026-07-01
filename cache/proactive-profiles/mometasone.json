@@ -1,0 +1,40 @@
+{
+  "drug": "Mometasone",
+  "drug_class": "Corticosteroid (Inhaled/Intranasal/Topical)",
+  "key_pathways": [
+    "CYP3A4",
+    "Local tissue metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inducer may reduce mometasone systemic bioavailability and efficacy when absorbed systemically",
+      "action": "Avoid concurrent use or monitor for reduced corticosteroid response"
+    },
+    {
+      "name": "High-dose Licorice",
+      "severity": "Moderate",
+      "mechanism": "Mineralocorticoid effects compound corticosteroid-induced hypokalemia and sodium retention",
+      "action": "Avoid high-dose licorice supplements during mometasone therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium/Vitamin D",
+      "severity": "Low",
+      "mechanism": "Chronic corticosteroid use increases bone loss risk; supplementation supportive but not an interaction",
+      "action": "Consider supplementation to mitigate osteoporosis risk with long-term mometasone use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "Systemic corticosteroid absorption may increase sodium retention and hypertension risk",
+      "action": "Monitor sodium intake during prolonged systemic mometasone exposure, especially inhaled high-dose formulations"
+    }
+  ],
+  "monitoring_notes": "Mometasone has low systemic bioavailability due to local administration (inhaled/intranasal/topical) and rapid hepatic metabolism, minimizing drug interactions. Monitor for HPA axis suppression and adrenal insufficiency with prolonged use, particularly in pediatric patients."
+}

@@ -1,0 +1,67 @@
+{
+  "drug": "Acetaminophen",
+  "drug_class": "Analgesic/Antipyretic",
+  "key_pathways": [
+    "CYP2E1",
+    "CYP1A2",
+    "CYP3A4",
+    "UDP-glucuronosyltransferase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2E1, increasing acetaminophen metabolism and toxic metabolite (NAPQI) formation",
+      "action": "Avoid concurrent use; increases hepatotoxicity risk"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Hepatotoxic supplement that compounds acetaminophen-related liver injury risk",
+      "action": "Contraindicated; do not use together due to cumulative hepatotoxicity"
+    },
+    {
+      "name": "High-dose Vitamin A (>10,000 IU daily)",
+      "severity": "High",
+      "mechanism": "Both are hepatotoxic; combined use increases risk of liver damage",
+      "action": "Avoid chronic concurrent use; monitor liver function if necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "N-acetylcysteine (NAC)",
+      "severity": "Low",
+      "mechanism": "NAC is used to treat acetaminophen overdose but may theoretically interfere with therapeutic effect at high doses",
+      "action": "Use at therapeutic doses only; monitor if combining"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "May provide hepatoprotective effects; minor CYP3A4 induction possible",
+      "action": "Monitor; generally considered safe but may slightly increase metabolism"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Chronic alcohol consumption",
+      "severity": "Critical",
+      "mechanism": "Alcohol induces CYP2E1, increasing toxic metabolite formation and depleting glutathione stores; significantly increases hepatotoxicity risk",
+      "action": "Avoid alcohol entirely or limit to <1 drink/day; risk is dose and duration dependent"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay acetaminophen absorption, slowing onset of analgesia slightly",
+      "action": "Take on empty stomach or with light food for optimal absorption"
+    },
+    {
+      "name": "Charbroiled foods (well-done meats)",
+      "severity": "Low",
+      "mechanism": "Contains compounds that may induce CYP1A2, potentially increasing acetaminophen metabolism",
+      "action": "No strict avoidance needed; monitor if consuming in excess"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests (AST, ALT, bilirubin) in patients with chronic use, pre-existing liver disease, or concurrent hepatotoxic agents. Ensure total daily acetaminophen dose from all sources does not exceed 3,000-4,000 mg/day in healthy adults to minimize hepatotoxicity risk."
+}

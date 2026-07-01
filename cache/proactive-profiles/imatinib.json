@@ -1,0 +1,67 @@
+{
+  "drug": "Imatinib",
+  "drug_class": "Tyrosine Kinase Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C9",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces imatinib plasma concentrations by up to 50%, significantly decreasing therapeutic efficacy",
+      "action": "Absolutely contraindicated; discontinue at least 2 weeks before imatinib initiation"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases imatinib bioavailability and risk of toxicity",
+      "action": "Avoid completely; includes juice, whole fruit, and seed extract supplements"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C9 inducer may reduce imatinib concentrations and effectiveness",
+      "action": "Discontinue use prior to imatinib therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may modestly increase imatinib levels",
+      "action": "Monitor for increased side effects; use only if clinically necessary"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 and increase imatinib bioavailability at high doses",
+      "action": "Use cautiously at low doses; inform provider of supplementation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases imatinib plasma concentrations and toxicity risk",
+      "action": "Completely avoid grapefruit and grapefruit juice throughout imatinib therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase imatinib absorption and peak plasma concentrations",
+      "action": "Take consistently with or without food; maintain routine for predictable levels"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Potential interaction if concurrent use with other agents; monitor blood pressure",
+      "action": "No strict restriction but monitor for hypertensive effects given imatinib's cardiovascular risks"
+    }
+  ],
+  "monitoring_notes": "Monitor for treatment efficacy and adverse effects (edema, GI upset, hepatotoxicity) as CYP3A4 inhibitors increase imatinib exposure while inducers decrease it. Assess blood pressure regularly as imatinib carries cardiovascular risks that may be potentiated by certain interactions."
+}

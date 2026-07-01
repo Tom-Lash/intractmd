@@ -1,0 +1,71 @@
+{
+  "drug": "Hydrocodone",
+  "drug_class": "Opioid Analgesic",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces hydrocodone levels and efficacy; may precipitate withdrawal",
+      "action": "Avoid concurrent use; allow 2-week washout before or after St. John's Wort"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression; increased risk of respiratory depression and sedation",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "High-dose Vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "May affect hepatic metabolism; limited but potential interaction",
+      "action": "Avoid high-dose supplementation; monitor for efficacy changes"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression potential",
+      "action": "Use cautiously; counsel on increased sedation and impairment risk"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May enhance opioid effects at high doses",
+      "action": "Monitor for excessive sedation; use standard recommended doses"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition may increase hydrocodone levels",
+      "action": "Limit intake; monitor for increased side effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases hydrocodone bioavailability and toxicity risk",
+      "action": "Avoid consumption; choose alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase absorption rate and peak hydrocodone levels",
+      "action": "Take with consistent meal pattern; counsel on consistent dosing timing"
+    },
+    {
+      "name": "Alcohol-containing foods",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression even in small amounts",
+      "action": "Minimize consumption; educate on synergistic effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of opioid toxicity (excessive sedation, respiratory depression, constipation) as CYP2D6 and CYP3A4 interactions significantly affect hydrocodone metabolism. Patient should maintain consistent meal timing and avoid alcohol completely."
+}

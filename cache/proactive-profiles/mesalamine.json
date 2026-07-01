@@ -1,0 +1,60 @@
+{
+  "drug": "Mesalamine",
+  "drug_class": "Aminosalicylate; Anti-inflammatory Agent",
+  "key_pathways": [
+    "Direct topical/mucosal action",
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Iron supplements",
+      "severity": "Moderate",
+      "mechanism": "Iron may bind mesalamine in GI tract and reduce absorption; mesalamine may impair iron absorption",
+      "action": "Separate administration by at least 2 hours; monitor for anemia"
+    },
+    {
+      "name": "Lactulose (high doses)",
+      "severity": "Moderate",
+      "mechanism": "May alter colonic pH and reduce mesalamine efficacy in inflammatory bowel disease",
+      "action": "Coordinate use with gastroenterologist; monitor disease control"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May enhance mesalamine efficacy; generally synergistic but effects not fully standardized",
+      "action": "Monitor therapeutic response; use established probiotic strains"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Potential additive anti-inflammatory effects; may enhance mesalamine benefits in IBD",
+      "action": "Monitor for excessive GI effects; may require dose adjustment of either agent"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fiber foods (during acute flares)",
+      "severity": "Moderate",
+      "mechanism": "May increase bowel transit time and reduce mesalamine contact time with inflamed mucosa",
+      "action": "Restrict during acute disease exacerbation; reintroduce as symptoms resolve"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "May contain calcium that could theoretically affect drug absorption; often triggers in IBD patients",
+      "action": "Individualize based on tolerance; separate mesalamine dosing from high-calcium foods if concerned"
+    },
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "May irritate inflamed GI mucosa; not a direct drug interaction but may exacerbate symptoms",
+      "action": "Advise dietary tolerance assessment; not contraindicated but symptom-dependent"
+    }
+  ],
+  "monitoring_notes": "Mesalamine has minimal drug metabolism and hepatic interaction potential. Monitor renal function periodically, as mesalamine is renally excreted and acetylated metabolites may accumulate. Assess therapeutic efficacy in IBD control and watch for signs of renal impairment or sulfasalazine-like reactions."
+}

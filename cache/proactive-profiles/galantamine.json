@@ -1,0 +1,53 @@
+{
+  "drug": "Galantamine",
+  "drug_class": "Acetylcholinesterase Inhibitor",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce galantamine bioavailability and efficacy",
+      "action": "Avoid concurrent use; consult prescriber before initiating St. John's Wort"
+    },
+    {
+      "name": "Anticholinergic Supplements (Jimsonweed, Datura)",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of galantamine's cholinergic effects; increased risk of toxicity with opposing mechanisms",
+      "action": "Absolutely contraindicated; educate patient to avoid completely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase galantamine levels; additive cholinergic effects possible",
+      "action": "Monitor for enhanced cholinergic symptoms (nausea, bradycardia); dose adjustment may be needed"
+    },
+    {
+      "name": "Cholinergic Supplements (Choline, Lecithin)",
+      "severity": "Low",
+      "mechanism": "Additive cholinergic stimulation may enhance side effects without clear therapeutic benefit",
+      "action": "Use together cautiously; monitor for excessive salivation, sweating, or GI distress"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (taken with galantamine)",
+      "severity": "Moderate",
+      "mechanism": "Significantly increases galantamine absorption and peak levels, increasing side effect risk",
+      "action": "Administer galantamine consistently with or without food; avoid taking after high-fat meals"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase galantamine concentration",
+      "action": "Limit consumption; monitor for enhanced cholinergic adverse effects (nausea, diarrhea, bradycardia)"
+    }
+  ],
+  "monitoring_notes": "Monitor heart rate and blood pressure regularly, as galantamine can cause bradycardia and syncope. Watch for cholinergic toxicity signs including nausea, vomiting, diarrhea, muscle weakness, and potential GI bleeding in susceptible patients."
+}

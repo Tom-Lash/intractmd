@@ -1,0 +1,68 @@
+{
+  "drug": "Nevirapine",
+  "drug_class": "Non-Nucleoside Reverse Transcriptase Inhibitor (NNRTI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C9",
+    "CYP2C19",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 and CYP2B6 inducer significantly reduces nevirapine plasma concentrations and antiretroviral efficacy",
+      "action": "Contraindicated; counsel patient to avoid completely and report use"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4/2B6 inducer decreases nevirapine levels by 20-40%, reducing antiviral activity",
+      "action": "Avoid concurrent use; if tuberculosis treatment required, use alternative antiretroviral regimen"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce nevirapine concentrations",
+      "action": "Avoid high-dose garlic supplements; monitor viral load if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 induction may modestly reduce nevirapine levels",
+      "action": "Use with caution; monitor for maintained viral suppression"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction possible; limited clinical data in HIV patients",
+      "action": "Inform provider of use; monitor therapeutic response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase nevirapine levels, potentially increasing toxicity risk (hepatotoxicity, rash)",
+      "action": "Advise patient to avoid grapefruit products during nevirapine therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay nevirapine absorption slightly; no significant impact on bioavailability",
+      "action": "May take with or without food; consistent timing improves adherence"
+    },
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Contain compounds that may induce CYP3A4; high intake may reduce nevirapine levels",
+      "action": "Normal dietary consumption acceptable; excessive supplementation should be discussed with provider"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests regularly as nevirapine carries risk of hepatotoxicity, particularly in first 18 weeks. Assess for drug interactions at each visit, especially with concurrent medications affecting CYP3A4/2B6, and emphasize importance of adherence for virological control."
+}

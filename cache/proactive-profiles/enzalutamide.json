@@ -1,0 +1,68 @@
+{
+  "drug": "Enzalutamide",
+  "drug_class": "Androgen Receptor Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C19",
+    "BCRP",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces enzalutamide concentrations and efficacy",
+      "action": "Avoid completely; may require dose adjustment if discontinuation occurs"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases enzalutamide levels and toxicity risk",
+      "action": "Avoid; choose alternative supplements if needed"
+    },
+    {
+      "name": "High-Dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "May potentiate antiandrogen effects and increase bleeding risk",
+      "action": "Limit to <400 IU daily or monitor for adverse effects"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Saw Palmetto",
+      "severity": "Low",
+      "mechanism": "Mild 5-alpha reductase inhibition may have additive antiandrogen effects",
+      "action": "Use with caution; monitor for increased side effects"
+    },
+    {
+      "name": "Cranberry Extract",
+      "severity": "Low",
+      "mechanism": "May inhibit BCRP transporter affecting drug absorption",
+      "action": "Space dosing by 2+ hours; monitor efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases enzalutamide bioavailability and toxicity risk",
+      "action": "Avoid completely throughout treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase enzalutamide absorption; food effect variable",
+      "action": "Take on consistent schedule relative to meals for predictable levels"
+    },
+    {
+      "name": "Soy Products",
+      "severity": "Low",
+      "mechanism": "Phytoestrogen content may theoretically modulate androgen signaling",
+      "action": "Moderate intake; no dose adjustment needed but monitor response"
+    }
+  ],
+  "monitoring_notes": "Monitor PSA levels, testosterone, and clinical response regularly as these reflect therapeutic efficacy. Assess for seizure risk (black box warning) and counsel patients to report new neurological symptoms, as several interactions may increase toxicity."
+}

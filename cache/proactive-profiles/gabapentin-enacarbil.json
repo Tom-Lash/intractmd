@@ -1,0 +1,59 @@
+{
+  "drug": "Gabapentin Enacarbil",
+  "drug_class": "Gabapentinoid; Anticonvulsant; Neuropathic Pain Agent",
+  "key_pathways": [
+    "Renal excretion (primary)",
+    "Minimal hepatic metabolism",
+    "L-amino acid transporter 1 (LAT1) dependent absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Magnesium supplements",
+      "severity": "Moderate",
+      "mechanism": "May reduce gabapentin enacarbil absorption via competitive LAT1 transporter inhibition; additive CNS depression risk",
+      "action": "Separate dosing by 2+ hours; monitor for reduced efficacy and increased sedation"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Moderate",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; increased dizziness, drowsiness, and ataxia",
+      "action": "Avoid concurrent use; counsel patient on CNS depression risks"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depressant effects",
+      "action": "Monitor for increased drowsiness, dizziness, or impaired cognition; counsel on safety with machinery"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depression possible",
+      "action": "Advise patient to monitor for enhanced sedation or dizziness"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "May enhance CNS depressant effects",
+      "action": "Use lowest effective dose; monitor for excessive daytime somnolence"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gabapentin enacarbil absorption; peak plasma levels reduced",
+      "action": "Take with consistent meal timing; consider taking with light meals for optimal absorption"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; increased risk of dizziness, drowsiness, impaired coordination, and cognitive effects",
+      "action": "Counsel patient to minimize or avoid alcohol consumption; warn against driving or hazardous activities if combined"
+    }
+  ],
+  "monitoring_notes": "Gabapentin enacarbil is primarily renally eliminated with minimal hepatic metabolism, reducing drug-drug interaction potential. Monitor renal function and for signs of CNS depression, particularly when combined with other depressants; dose adjustment may be necessary in renal impairment."
+}

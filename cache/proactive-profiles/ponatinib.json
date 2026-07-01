@@ -1,0 +1,74 @@
+{
+  "drug": "Ponatinib",
+  "drug_class": "Tyrosine Kinase Inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2D6",
+    "CYP2C9",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces ponatinib plasma concentrations and therapeutic efficacy",
+      "action": "Discontinue at least 2 weeks before ponatinib initiation; use alternative antidepressant"
+    },
+    {
+      "name": "Grapefruit Extract/Seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases ponatinib exposure and toxicity risk",
+      "action": "Avoid completely; switch to orange juice or other citrus without furanocoumarins"
+    },
+    {
+      "name": "High-Dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate antiplatelet/anticoagulant effects increasing bleeding risk with ponatinib-induced thrombocytopenia",
+      "action": "Limit to <400 IU daily; monitor CBC and bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may modestly increase ponatinib levels",
+      "action": "Monitor for toxicity signs; dose adjustment may be needed if combined"
+    },
+    {
+      "name": "Garlic Extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce ponatinib exposure",
+      "action": "Use modestly; assess efficacy if high doses initiated"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "May enhance antiplatelet effects; additive bleeding risk",
+      "action": "Monitor bleeding parameters; generally acceptable at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Pomelo",
+      "severity": "High",
+      "mechanism": "Furanocoumarins irreversibly inhibit CYP3A4, significantly increasing ponatinib bioavailability and toxicity",
+      "action": "Completely avoid grapefruit, pomelo, and tangelo; safe alternatives include oranges and lemons"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase ponatinib absorption; absorption is variable but generally food-independent",
+      "action": "Take consistently with or without food; maintain uniform dietary pattern"
+    },
+    {
+      "name": "Cruciferous Vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Indole-3-carbinol may induce CYP1A2 and modestly affect metabolism",
+      "action": "Maintain normal dietary intake; excessive supplementation should be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of ponatinib toxicity (arterial thrombosis, pancreatitis, hepatotoxicity) especially when CYP3A4 inhibitors are co-administered. Assess CBC regularly due to thrombocytopenia risk, particularly if antiplatelet supplements or NSAIDs are used concurrently."
+}

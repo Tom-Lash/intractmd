@@ -1,0 +1,89 @@
+{
+  "drug": "Enoxaparin",
+  "drug_class": "Low-Molecular-Weight Heparin (LMWH)",
+  "key_pathways": [
+    "Factor Xa inhibition",
+    "Coagulation cascade"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin (if concurrent use)",
+      "severity": "Critical",
+      "mechanism": "Additive anticoagulant effect increases bleeding risk; enoxaparin and warfarin have overlapping mechanisms",
+      "action": "Do not combine without explicit clinical indication and close INR monitoring; transition carefully if switching anticoagulants"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and may potentiate anticoagulant effect, increasing bleeding risk",
+      "action": "Avoid concurrent use; discontinue ginkgo at least 2 weeks before enoxaparin or if already on therapy"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Inhibits platelet function and may increase bleeding risk when combined with anticoagulants",
+      "action": "Avoid high-dose garlic supplements; dietary garlic in normal amounts is generally acceptable"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and thromboxane synthesis, compounding anticoagulant effects",
+      "action": "Avoid concurrent use; counsel patient to discontinue before enoxaparin therapy"
+    },
+    {
+      "name": "Dong quai",
+      "severity": "High",
+      "mechanism": "Contains coumarin-like compounds that enhance anticoagulation and increase bleeding risk",
+      "action": "Avoid concurrent use; discontinue supplement prior to enoxaparin initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish oil (omega-3 fatty acids)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; may slightly increase bleeding risk at very high doses (>3g/day)",
+      "action": "Monitor for signs of bleeding; limit to ≤3g/day or monitor closely if higher doses used"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet and anti-inflammatory properties at high doses",
+      "action": "Counsel patient to avoid excessive supplementation; dietary amounts are safe"
+    },
+    {
+      "name": "Cranberry supplements",
+      "severity": "Low",
+      "mechanism": "Possible mild interaction through polyphenol content affecting coagulation; evidence is weak",
+      "action": "Monitor INR/PT if concurrent use; cranberry juice in normal amounts is generally safe"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose vitamin K foods (if unstable dosing)",
+      "severity": "Moderate",
+      "mechanism": "Vitamin K antagonizes anticoagulant effect; excessive intake may reduce enoxaparin efficacy indirectly by affecting overall coagulation balance",
+      "action": "Maintain consistent vitamin K intake from foods like leafy greens; avoid sudden increases or decreases"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Leafy green vegetables (spinach, kale, broccoli)",
+      "severity": "Low",
+      "mechanism": "Contain vitamin K which affects coagulation; inconsistent intake may alter hemostasis balance",
+      "action": "Consume in consistent amounts; no need to restrict but maintain dietary stability"
+    },
+    {
+      "name": "Alcohol (moderate-to-heavy consumption)",
+      "severity": "Low",
+      "mechanism": "Chronic heavy alcohol use impairs coagulation and increases bleeding risk; acute use may potentiate anticoagulation",
+      "action": "Counsel patient to limit alcohol to ≤1-2 drinks daily; avoid binge drinking"
+    },
+    {
+      "name": "Ginger (culinary amounts)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects at high supplemental doses; normal dietary use is minimal risk",
+      "action": "Dietary ginger is acceptable; avoid concentrated ginger supplements or excessive amounts"
+    }
+  ],
+  "monitoring_notes": "Enoxaparin is a parenteral anticoagulant with no significant hepatic metabolism; interactions are primarily related to additive anticoagulant/antiplatelet effects. Monitor for signs of bleeding (petechiae, hematuria, GI bleeding, excessive bruising) and assess renal function periodically, as enoxaparin is renally cleared."
+}

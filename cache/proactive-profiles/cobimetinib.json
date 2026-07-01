@@ -1,0 +1,53 @@
+{
+  "drug": "Cobimetinib",
+  "drug_class": "MEK inhibitor (mitogen-activated protein kinase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces cobimetinib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor may increase cobimetinib levels and toxicity risk",
+      "action": "Discontinue use during cobimetinib therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 enzyme modulation may slightly affect cobimetinib metabolism",
+      "action": "Monitor for efficacy changes; use with caution and inform oncology team"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have additive effects on MEK pathway; theoretical hepatic metabolism interaction",
+      "action": "Discuss with healthcare provider before use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases cobimetinib bioavailability and plasma concentration",
+      "action": "Completely avoid grapefruit products during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase cobimetinib absorption and gastrointestinal side effects",
+      "action": "Take cobimetinib consistently with or without food; maintain consistent dietary pattern"
+    }
+  ],
+  "monitoring_notes": "Monitor for increased cobimetinib toxicity (diarrhea, rash, cardiac effects) if CYP3A4 inhibitors are used concurrently. Assess treatment efficacy if potent CYP3A4 inducers are introduced, as reduced drug levels may compromise therapeutic response."
+}

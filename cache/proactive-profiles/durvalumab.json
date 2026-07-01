@@ -1,0 +1,57 @@
+{
+  "drug": "Durvalumab",
+  "drug_class": "Monoclonal Antibody (PD-L1 Inhibitor)",
+  "key_pathways": [
+    "Immunotherapy - No significant CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May enhance immune stimulation and potentiate durvalumab's immune activation, increasing risk of immune-related adverse events (irAEs)",
+      "action": "Advise patient to discontinue echinacea during durvalumab therapy"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immunostimulatory properties may synergistically amplify PD-L1 inhibitor effects and exacerbate autoimmune-like reactions",
+      "action": "Avoid concurrent use; counsel on alternative immune-supportive approaches"
+    },
+    {
+      "name": "High-dose Vitamin D supplements (>2000 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May augment immune activation and potentially increase irAE risk; immunomodulatory effects",
+      "action": "Limit to RDA levels; monitor calcium and phosphate; baseline and periodic vitamin D assessment recommended"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate gut microbiota composition; emerging evidence suggests microbiota may influence immunotherapy response and irAE development",
+      "action": "Use cautiously; monitor for GI symptoms; inform oncology team of probiotic use"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Anti-inflammatory properties may theoretically interfere with immune activation, but clinical significance with PD-L1 inhibitors unclear",
+      "action": "Use in moderation; avoid high-dose supplementation; monitor for efficacy changes"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate hypertension and cardiovascular irAEs in susceptible patients; sodium can promote Th17 differentiation",
+      "action": "Encourage low-sodium diet; monitor blood pressure regularly"
+    },
+    {
+      "name": "Charred/grilled meats",
+      "severity": "Low",
+      "mechanism": "Heterocyclic amines and polycyclic aromatic hydrocarbons may modulate immune response, though clinical relevance with durvalumab is unclear",
+      "action": "Recommend moderate intake; advise cooking methods that minimize carcinogen formation"
+    }
+  ],
+  "monitoring_notes": "Durvalumab is not hepatically metabolized via CYP enzymes, so traditional drug-supplement interactions are minimal; however, immunomodulatory supplements may amplify immune-related adverse events including colitis, pneumonitis, and hepatitis. Close monitoring for irAEs is essential, particularly with immune-stimulating botanical products."
+}

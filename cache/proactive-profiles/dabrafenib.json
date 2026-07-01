@@ -1,0 +1,67 @@
+{
+  "drug": "Dabrafenib",
+  "drug_class": "BRAF kinase inhibitor (targeted cancer therapy)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9",
+    "UDP-glucuronosyltransferase (UGT)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer that significantly reduces dabrafenib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; if discontinuation needed, allow 2-week washout period before starting dabrafenib or after cessation"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases dabrafenib exposure and toxicity risk",
+      "action": "Avoid grapefruit and grapefruit juice; consider alternative citrus fruits"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day) with blood thinners",
+      "severity": "Moderate",
+      "mechanism": "May potentiate bleeding risk in patients on anticoagulant therapy, which dabrafenib patients may require",
+      "action": "Limit vitamin E supplementation; monitor for bleeding signs if concurrent anticoagulants used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may modestly increase dabrafenib exposure",
+      "action": "Monitor for increased adverse effects; use cautiously and report symptoms to healthcare provider"
+    },
+    {
+      "name": "Turmeric/Curcumin (high doses)",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 at high doses, potentially increasing dabrafenib levels",
+      "action": "Use standard culinary amounts; discuss high-dose supplementation with oncology team"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases dabrafenib bioavailability and toxicity risk",
+      "action": "Eliminate grapefruit and grapefruit juice from diet; include in patient education"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase dabrafenib absorption rate; modest effect on overall exposure",
+      "action": "Maintain consistent meal timing and fat content; dabrafenib should be taken with or without food consistently"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "May induce CYP1A2 and UGT at very high intakes, potentially reducing dabrafenib levels",
+      "action": "Consume in normal dietary amounts; excessive supplemental intake should be avoided"
+    }
+  ],
+  "monitoring_notes": "Dabrafenib has narrow therapeutic window; monitor for loss of efficacy with enzyme inducers and increased toxicity (rash, diarrhea, photosensitivity) with enzyme inhibitors. Coordinate all supplements and dietary changes with oncology team due to critical nature of BRAF-mutant cancer treatment."
+}

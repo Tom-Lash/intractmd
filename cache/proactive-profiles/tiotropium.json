@@ -1,0 +1,48 @@
+{
+  "drug": "Tiotropium",
+  "drug_class": "Long-acting muscarinic antagonist (anticholinergic bronchodilator)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "P-glycoprotein",
+    "Muscarinic receptor M3 antagonism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anticholinergic herbs (Jimsonweed, Datura, Henbane)",
+      "severity": "Critical",
+      "mechanism": "Additive anticholinergic effects leading to urinary retention, constipation, tachycardia, and cognitive impairment",
+      "action": "Contraindicated; counsel patient to avoid completely"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce tiotropium bioavailability and efficacy",
+      "action": "Avoid concurrent use; discuss alternative supplements with healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapeseed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may modestly increase tiotropium levels",
+      "action": "Monitor for increased anticholinergic effects; no dose adjustment typically needed"
+    },
+    {
+      "name": "Ginger (high doses)",
+      "severity": "Low",
+      "mechanism": "May have mild anticholinergic properties; additive effects possible at high doses",
+      "action": "Limit ginger supplementation to moderate culinary amounts"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay absorption of tiotropium; clinical significance minimal for maintenance therapy",
+      "action": "Take tiotropium consistently with or without food; maintain consistent routine"
+    }
+  ],
+  "monitoring_notes": "Tiotropium has minimal hepatic metabolism and low systemic bioavailability; primary monitoring should focus on anticholinergic side effects (dry mouth, urinary retention, constipation, tachycardia) especially in elderly patients or those with BPH/narrow-angle glaucoma. Counsel patients on proper inhalation technique and consistent daily use for optimal respiratory outcomes."
+}

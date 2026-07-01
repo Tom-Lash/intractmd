@@ -1,0 +1,52 @@
+{
+  "drug": "Doxazosin",
+  "drug_class": "Alpha-1 adrenergic antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Yohimbe",
+      "severity": "High",
+      "mechanism": "Alpha-adrenergic agonist activity may counteract doxazosin's antihypertensive effects and increase blood pressure",
+      "action": "Avoid concurrent use; counsel patient to discontinue yohimbe supplements"
+    },
+    {
+      "name": "Ephedra (Ma Huang)",
+      "severity": "High",
+      "mechanism": "Sympathomimetic activity antagonizes doxazosin efficacy and increases cardiovascular stimulation risk",
+      "action": "Contraindicated; ensure patient avoids all ephedra-containing products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inducer may reduce doxazosin plasma concentrations and efficacy",
+      "action": "Monitor blood pressure response; inform prescriber if St. John's Wort is used"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild stimulatory effects that could reduce antihypertensive efficacy",
+      "action": "Use with caution; monitor for reduced blood pressure control"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake can antagonize doxazosin's antihypertensive effects",
+      "action": "Encourage sodium restriction as part of hypertension management"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase doxazosin levels; effect typically mild",
+      "action": "Moderate consumption acceptable; monitor for dizziness or orthostatic hypotension"
+    }
+  ],
+  "monitoring_notes": "Monitor orthostatic blood pressure, heart rate, and symptom control (BPH/hypertension) during therapy. Counsel patients on alpha-blocker side effects including dizziness, syncope risk, and importance of slow position changes."
+}

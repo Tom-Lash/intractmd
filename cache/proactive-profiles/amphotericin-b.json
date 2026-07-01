@@ -1,0 +1,60 @@
+{
+  "drug": "Amphotericin B",
+  "drug_class": "Polyene antifungal antibiotic",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Renal excretion",
+    "Binds to ergosterol in fungal cell membranes"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Nephrotoxic supplements (high-dose vitamin A, vitamin D megadoses)",
+      "severity": "Critical",
+      "mechanism": "Amphotericin B is highly nephrotoxic; concurrent nephrotoxic agents significantly increase risk of acute kidney injury and electrolyte wasting",
+      "action": "Avoid high-dose fat-soluble vitamin supplementation; monitor baseline and periodic renal function and electrolytes"
+    },
+    {
+      "name": "Potassium-elevating supplements (potassium chloride megadoses)",
+      "severity": "High",
+      "mechanism": "Amphotericin B causes significant hypokalemia through renal wasting; concurrent supplementation may mask electrolyte depletion or cause dangerous hyperkalemia if renal failure develops",
+      "action": "Monitor serum potassium weekly; supplementation only per clinical laboratory values and physician direction"
+    },
+    {
+      "name": "NSAIDs (including herbal; feverfew, willow bark)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal perfusion and exacerbate amphotericin B-induced nephrotoxicity and acute tubular necrosis",
+      "action": "Avoid NSAIDs during amphotericin B therapy; use acetaminophen for analgesia"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Amphotericin B causes hypomagnesemia through renal wasting; supplementation may be beneficial but requires monitoring",
+      "action": "Monitor serum magnesium levels; supplement only if deficient and under clinical supervision"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Amphotericin B can cause hypocalcemia; appropriate supplementation may support bone health if deficient",
+      "action": "Monitor serum calcium; supplement if deficient per clinical lab results"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium foods (processed foods, cured meats, salty snacks)",
+      "severity": "Moderate",
+      "mechanism": "Amphotericin B causes sodium wasting and electrolyte abnormalities; excess dietary sodium may worsen fluid-electrolyte imbalance",
+      "action": "Maintain moderate sodium intake; monitor fluid status and sodium levels; physician may recommend sodium restriction or monitoring"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-potassium foods (bananas, citrus, nuts, legumes)",
+      "severity": "Low",
+      "mechanism": "While amphotericin B typically causes hypokalemia, moderate dietary potassium intake is important for replacement; excessive intake should be avoided if renal impairment develops",
+      "action": "Monitor potassium intake and serum levels; adjust based on clinical laboratory values and renal function status"
+    }
+  ],
+  "monitoring_notes": "Amphotericin B nephrotoxicity and electrolyte wasting (particularly potassium, magnesium) are primary clinical concerns; monitor serum creatinine, BUN, electrolytes (K, Na, Mg, Ca, PO4), and urinalysis baseline and at least weekly. Ensure adequate hydration with normal saline and use lipid formulations when appropriate to reduce nephrotoxicity risk."
+}

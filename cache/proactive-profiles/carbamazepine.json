@@ -1,0 +1,74 @@
+{
+  "drug": "Carbamazepine",
+  "drug_class": "Anticonvulsant/Antiepileptic Agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2C19",
+    "CYP1A2",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Induces CYP3A4 and glucuronidation; increases carbamazepine metabolism and reduces serum levels, risking seizure breakthrough",
+      "action": "Contraindicated; do not use concurrently. Counsel patient to avoid all herbal products containing St. John's Wort"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "May induce CYP3A4 metabolism; potential reduction in carbamazepine efficacy",
+      "action": "Avoid concurrent use; recommend alternative cognitive support strategies if needed"
+    },
+    {
+      "name": "Ginseng (American and Asian)",
+      "severity": "High",
+      "mechanism": "CYP3A4 enzyme induction; may decrease carbamazepine plasma concentrations",
+      "action": "Discontinue use; monitor seizure control if patient has been using concurrently"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folate/Folic Acid",
+      "severity": "Low",
+      "mechanism": "Carbamazepine increases folate metabolism; supplementation may be beneficial but does not alter drug metabolism",
+      "action": "Monitor folate levels; supplementation may be recommended, especially in women of childbearing age due to teratogenic risk"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Carbamazepine induces CYP24A1 and increases vitamin D metabolism; deficiency risk with long-term use",
+      "action": "Monitor vitamin D levels periodically; supplementation often recommended to maintain bone health"
+    },
+    {
+      "name": "Calcium",
+      "severity": "Low",
+      "mechanism": "Carbamazepine impairs calcium absorption and bone metabolism; supplementation may offset deficiency risk",
+      "action": "Consider supplementation; monitor bone health parameters in long-term users"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases carbamazepine bioavailability and serum levels, raising toxicity risk",
+      "action": "Eliminate grapefruit products from diet; counsel patient on all citrus products to avoid"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods (excessive amounts)",
+      "severity": "Low",
+      "mechanism": "May reduce gastrointestinal absorption of carbamazepine if intake is excessive",
+      "action": "Maintain consistent, moderate fiber intake; separate high-fiber meals from drug administration by 2 hours if possible"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depression additive effect; alcohol may also induce carbamazepine metabolism with chronic use",
+      "action": "Limit or avoid alcohol; counsel patient on increased sedation and dizziness risk"
+    }
+  ],
+  "monitoring_notes": "Carbamazepine is a potent CYP3A4 inducer requiring vigilant monitoring for interactions with many medications and supplements. Regular serum level monitoring (therapeutic range: 4-12 mcg/mL) is essential, particularly when supplements or dietary changes are introduced, as carbamazepine levels may fluctuate significantly."
+}

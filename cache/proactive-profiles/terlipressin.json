@@ -1,0 +1,60 @@
+{
+  "drug": "Terlipressin",
+  "drug_class": "Vasopressin analog; selective V1 receptor agonist",
+  "key_pathways": [
+    "V1 receptor signaling",
+    "Vascular smooth muscle contraction",
+    "No significant hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra/Ma Huang",
+      "severity": "Critical",
+      "mechanism": "Additive vasoconstriction and hypertensive effects; risk of severe hypertension, arrhythmias, and ischemic events",
+      "action": "Contraindicated; counsel patient to discontinue immediately"
+    },
+    {
+      "name": "Licorice root (high doses)",
+      "severity": "High",
+      "mechanism": "Mineralocorticoid-like effects causing sodium retention and hypokalemia; synergistic with terlipressin vasoconstriction",
+      "action": "Avoid; if unavoidable, monitor electrolytes and blood pressure closely"
+    },
+    {
+      "name": "Ginseng (stimulating varieties)",
+      "severity": "High",
+      "mechanism": "Sympathomimetic effects may potentiate vasoconstrictive and hypertensive effects of terlipressin",
+      "action": "Avoid or use with caution; monitor vital signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements/Allicin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet and vasodilatory effects may partially counteract terlipressin vasoconstriction",
+      "action": "Monitor for reduced efficacy; assess bleeding risk if concurrent anticoagulants present"
+    },
+    {
+      "name": "Omega-3 fatty acids (high doses)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet and vasodilatory properties; minimal clinical significance with terlipressin",
+      "action": "Use standard doses; counsel on concurrent anticoagulant/antiplatelet monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High sodium foods/salt",
+      "severity": "High",
+      "mechanism": "Terlipressin increases water reabsorption and may contribute to hyponatremia; excess sodium complicates fluid-electrolyte management in portal hypertension",
+      "action": "Recommend sodium restriction as clinically appropriate; monitor serum sodium and fluid status"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Licorice-containing candies/foods",
+      "severity": "Low",
+      "mechanism": "Minimal amounts in foods unlikely to cause clinically significant interactions; risk increases with chronic consumption",
+      "action": "Counsel patient on avoiding excessive licorice-containing foods and beverages"
+    }
+  ],
+  "monitoring_notes": "Terlipressin is minimally metabolized hepatically, reducing drug-drug interaction risk, but its potent vasoconstrictive effects necessitate monitoring for hypertension, hyponatremia, and peripheral/splanchnic ischemia. Vigilant assessment of supplements with sympathomimetic or vasoconstrictive properties and careful fluid/electrolyte management are essential."
+}

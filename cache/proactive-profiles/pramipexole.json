@@ -1,0 +1,60 @@
+{
+  "drug": "Pramipexole",
+  "drug_class": "Dopamine Agonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Renal Elimination"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Metoclopramide",
+      "severity": "Critical",
+      "mechanism": "D2-receptor antagonist directly opposes pramipexole's dopaminergic effects, reducing efficacy in Parkinson's disease",
+      "action": "Avoid concurrent use; select alternative antiemetics (ondansetron, domperidone)"
+    },
+    {
+      "name": "High-dose Vitamin B6",
+      "severity": "High",
+      "mechanism": "Vitamin B6 antagonizes dopamine effects and may reduce pramipexole efficacy",
+      "action": "Limit supplemental B6 to <25 mg daily; monitor symptom control"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "May reduce pramipexole absorption if taken simultaneously",
+      "action": "Separate dosing by 2+ hours; monitor for reduced efficacy"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Potential additive hypotensive effects; may increase dizziness/syncope risk",
+      "action": "Monitor blood pressure; counsel on fall prevention"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-protein meals (concurrent dosing)",
+      "severity": "Moderate",
+      "mechanism": "Amino acids compete with pramipexole absorption via intestinal transporters",
+      "action": "Take pramipexole consistently with or without food; avoid timing with heavy protein intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and orthostatic hypotension; increased fall risk",
+      "action": "Limit alcohol consumption; counsel on dizziness/syncope symptoms"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate fluid retention in susceptible patients",
+      "action": "Monitor for edema; maintain moderate sodium intake"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, as pramipexole is primarily renally eliminated; dose adjustments required in renal impairment. Assess for impulse control disorders, orthostatic hypotension, and somnolence, especially when initiating or combining with other CNS-active agents."
+}

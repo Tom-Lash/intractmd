@@ -1,0 +1,67 @@
+{
+  "drug": "Colchicine",
+  "drug_class": "Anti-inflammatory alkaloid; microtubule inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "P-glycoprotein (MDR1)",
+    "OATP1B1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces colchicine levels; P-gp induction decreases bioavailability",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases colchicine concentrations and toxicity risk",
+      "action": "Discontinue supplement; allow 48-72 hour washout before colchicine initiation"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "High",
+      "mechanism": "Contains berberine; CYP3A4 inhibition elevates colchicine levels",
+      "action": "Avoid use; increased risk of colchicine-induced myopathy and neuropathy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce colchicine levels",
+      "action": "Monitor for reduced efficacy; dosage adjustment rarely needed"
+    },
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition may moderately increase colchicine exposure",
+      "action": "Monitor for adverse effects; counsel on signs of toxicity"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inhibition significantly increases colchicine bioavailability and plasma concentrations, increasing myopathy and neurotoxicity risk",
+      "action": "Complete avoidance required; single glass of juice can inhibit CYP3A4 for 24+ hours"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition may elevate colchicine levels to toxic range",
+      "action": "Avoid consumption; select alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase colchicine absorption and delay gastric emptying, potentially elevating peak concentrations",
+      "action": "Separate colchicine dosing from large fatty meals by at least 2 hours when possible"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of colchicine toxicity including muscle weakness, myalgia, neuropathy, diarrhea, and elevated creatinine kinase, particularly in patients with renal impairment (CrCl <30 mL/min) or concurrent P-gp and CYP3A4 inhibitors. Counsel patients to report all supplements, herbal products, and dietary changes to their pharmacist."
+}

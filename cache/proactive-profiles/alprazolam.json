@@ -1,0 +1,71 @@
+{
+  "drug": "Alprazolam",
+  "drug_class": "Benzodiazepine (anxiolytic/sedative-hypnotic)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces alprazolam levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; both hepatotoxic",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression leading to excessive sedation",
+      "action": "Avoid or use only with physician supervision and dose adjustment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depressant effects at high doses",
+      "action": "Monitor for increased sedation; maintain moderate supplemental doses"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depression potential",
+      "action": "Use cautiously; counsel patient on increased drowsiness risk"
+    },
+    {
+      "name": "Chamomile",
+      "severity": "Low",
+      "mechanism": "Mild additive sedative effects",
+      "action": "Limit use; monitor for excessive sedation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases alprazolam levels and toxicity risk",
+      "action": "Avoid grapefruit and juice entirely during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; synergistic impairment of cognition and motor function",
+      "action": "Minimize or eliminate alcohol; counsel on severe impairment risk"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay alprazolam absorption slightly; minimal clinical impact",
+      "action": "Take consistently with or without food for predictability"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, respiratory depression, and CNS depression, particularly when combined with other CNS depressants or CYP3A4 inhibitors. Assess for substance use disorder risk and dependence development, especially with concurrent alcohol use."
+}

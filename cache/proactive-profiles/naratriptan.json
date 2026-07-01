@@ -1,0 +1,60 @@
+{
+  "drug": "Naratriptan",
+  "drug_class": "Selective 5-HT1B/1D receptor agonist (Triptan)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Monoamine oxidase metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce naratriptan levels; serotonergic activity increases serotonin syndrome risk",
+      "action": "Discontinue St. John's Wort at least 2 weeks before naratriptan use; consider alternative mood support if needed"
+    },
+    {
+      "name": "SAMe (S-Adenosyl methionine)",
+      "severity": "High",
+      "mechanism": "Serotonergic supplement increases risk of serotonin syndrome when combined with triptan",
+      "action": "Avoid concurrent use; discuss alternative supplements with healthcare provider"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Critical",
+      "mechanism": "Direct serotonin precursor; significant additive serotonergic effect increases serotonin syndrome risk",
+      "action": "Do not combine; allow at least 2 weeks washout between treatments"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild serotonergic activity; theoretical additive effect with naratriptan",
+      "action": "Monitor for excessive serotonergic symptoms (agitation, tremor, hyperthermia); use lowest effective dose"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "Low",
+      "mechanism": "May have independent migraine-preventive effects; additive vasoconstrictive potential",
+      "action": "Monitor blood pressure and cardiovascular symptoms; may be beneficial as preventive agent separate from acute dosing"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Foods high in tyramine (aged cheeses, cured meats, fermented foods)",
+      "severity": "Moderate",
+      "mechanism": "Triptans have mild MAOI-like properties; tyramine can cause hypertensive crisis via monoamine interaction",
+      "action": "Limit tyramine-rich foods; counsel on moderation rather than strict avoidance"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages and foods",
+      "severity": "Low",
+      "mechanism": "Caffeine may enhance migraine relief but increases cardiovascular stimulation and jitteriness",
+      "action": "Moderate caffeine intake around naratriptan dosing; patient preference and tolerance should guide use"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity, hyperthermia) particularly if combining with other serotonergic agents. Assess blood pressure and cardiovascular status given naratriptan's vasoconstrictive properties, especially in patients with cardiac risk factors."
+}

@@ -1,0 +1,52 @@
+{
+  "drug": "Triamcinolone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "key_pathways": [
+    "CYP3A4",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may increase triamcinolone metabolism and reduce efficacy",
+      "action": "Avoid concurrent use; counsel patient to discontinue St. John's Wort or consider alternative corticosteroid therapy"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May potentiate immunosuppressive effects and increase infection risk with triamcinolone",
+      "action": "Advise against use during triamcinolone therapy; monitor for signs of infection"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice Root",
+      "severity": "Low",
+      "mechanism": "Mineralocorticoid activity may additive with triamcinolone, increasing hypertension and hypokalemia risk",
+      "action": "Monitor blood pressure and electrolytes; limit licorice root duration and dose"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May increase blood glucose levels; triamcinolone also elevates glucose",
+      "action": "Monitor blood glucose in diabetic patients; use cautiously with dose adjustment if needed"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "Triamcinolone increases sodium retention; excessive dietary sodium may compound fluid retention and hypertension",
+      "action": "Counsel on moderate sodium restriction; monitor blood pressure regularly"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase triamcinolone exposure, though clinical significance is minimal for this agent",
+      "action": "Limit grapefruit consumption; monitor for increased corticosteroid side effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for hyperglycemia, hypokalemia, hypertension, and infection risk as triamcinolone causes immunosuppression and metabolic effects. Counsel on adequate calcium, vitamin D, and protein intake to mitigate osteoporosis risk with long-term use."
+}

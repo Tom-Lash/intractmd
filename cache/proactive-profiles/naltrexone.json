@@ -1,0 +1,60 @@
+{
+  "drug": "Naltrexone",
+  "drug_class": "Opioid Antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "UDP-glucuronosyltransferase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction may reduce naltrexone levels; potential reduced efficacy",
+      "action": "Avoid concurrent use or monitor for decreased naltrexone effectiveness"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Moderate",
+      "mechanism": "Hepatotoxicity risk; may compound liver stress in patients with alcohol use disorder or cirrhosis",
+      "action": "Contraindicated; counsel patients to avoid"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression; may increase sedation or dizziness",
+      "action": "Monitor for excessive CNS depression; advise patient of potential additive effects"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "May support hepatic function but theoretical CYP3A4 modulation possible",
+      "action": "Generally safe; monitor liver function tests if used long-term"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Critical",
+      "mechanism": "Naltrexone blocks opioid receptors and may precipitate withdrawal; alcohol increases hepatotoxicity risk and CNS depression",
+      "action": "Absolute contraindication; counsel complete alcohol avoidance during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay naltrexone absorption and peak concentration timing",
+      "action": "Take naltrexone consistently with or without food; maintain routine for consistent levels"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase naltrexone exposure slightly",
+      "action": "Limit grapefruit juice consumption; not absolutely contraindicated but consistency advised"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests regularly, especially in patients with hepatic impairment or history of liver disease. Counsel patients on strict alcohol avoidance and assess for opioid use to prevent precipitated withdrawal."
+}

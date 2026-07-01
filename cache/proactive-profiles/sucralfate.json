@@ -1,0 +1,63 @@
+{
+  "drug": "Sucralfate",
+  "drug_class": "Mucosal protectant/Gastroprotective agent",
+  "key_pathways": [
+    "Non-systemic; local GI tract action"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Sucralfate binds iron in the GI tract, reducing iron absorption by 20-50%",
+      "action": "Separate administration by at least 2 hours; take iron supplements 2 hours before or 6 hours after sucralfate"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Sucralfate may bind calcium, reducing bioavailability of both agents",
+      "action": "Administer calcium supplements at least 2 hours apart from sucralfate"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Sucralfate binds zinc in the GI lumen, significantly reducing zinc absorption",
+      "action": "Space dosing by at least 2 hours; monitor for zinc deficiency signs if concurrent use necessary"
+    },
+    {
+      "name": "Fat-soluble vitamins (A, D, E, K)",
+      "severity": "Moderate",
+      "mechanism": "Sucralfate may impair absorption of fat-soluble vitamins through altered GI absorption",
+      "action": "Monitor vitamin status; consider supplementation if prolonged sucralfate therapy (>4 weeks)"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Phosphate binders/Calcium phosphate supplements",
+      "severity": "Low",
+      "mechanism": "Potential for additive binding effects in the GI tract",
+      "action": "Monitor for constipation and nutrient malabsorption; maintain adequate hydration"
+    },
+    {
+      "name": "Antacids (aluminum-based)",
+      "severity": "Low",
+      "mechanism": "Both agents work locally in GI tract; aluminum from antacids may accumulate with prolonged concurrent use",
+      "action": "Use cautiously; prefer magnesium-based antacids if needed; monitor for aluminum toxicity with chronic use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fat may reduce sucralfate's local protective effects by altering gastric pH and mucosal coating",
+      "action": "Take sucralfate 1 hour before meals on an empty stomach for optimal efficacy"
+    },
+    {
+      "name": "Acidic foods/beverages (citrus, tomato, vinegar)",
+      "severity": "Low",
+      "mechanism": "Acidic environment may theoretically affect sucralfate's binding and protective mechanism",
+      "action": "Avoid immediately before/after sucralfate administration; not absolute contraindication"
+    }
+  ],
+  "monitoring_notes": "Sucralfate is minimally absorbed systemically but significantly binds minerals and drugs in the GI tract; separate administration of iron, calcium, zinc, and most other medications by at least 2 hours. Monitor for signs of mineral deficiency with prolonged therapy (>4 weeks), particularly iron and zinc status."
+}

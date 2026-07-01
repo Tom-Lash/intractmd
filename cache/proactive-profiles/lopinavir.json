@@ -1,0 +1,66 @@
+{
+  "drug": "Lopinavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces lopinavir plasma concentrations by up to 75%, compromising antiviral efficacy",
+      "action": "Contraindicated; do not use concurrently. Consider alternative mood support if needed."
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce lopinavir bioavailability and therapeutic levels",
+      "action": "Avoid high-dose garlic supplements; culinary amounts are acceptable."
+    },
+    {
+      "name": "Rifabutin",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases lopinavir concentrations",
+      "action": "Avoid concurrent use; alternative TB medications should be considered."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition may increase lopinavir levels",
+      "action": "Monitor for signs of lopinavir toxicity (GI upset, elevated liver enzymes); limit consumption."
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Possible mild CYP3A4 modulation; uncertain clinical significance",
+      "action": "Use with monitoring; assess for changes in viral load or tolerability."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases lopinavir plasma concentrations, raising toxicity risk",
+      "action": "Completely avoid grapefruit products; substitute with other citrus fruits if desired."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Increased absorption of lopinavir (formulation-dependent); may enhance bioavailability variably",
+      "action": "Consistent meal pattern recommended; take with food as directed; maintain stable dietary fat intake."
+    },
+    {
+      "name": "Calcium-fortified foods and supplements",
+      "severity": "Low",
+      "mechanism": "May reduce lopinavir absorption if taken simultaneously",
+      "action": "Separate lopinavir and calcium-rich foods/supplements by at least 2 hours."
+    }
+  ],
+  "monitoring_notes": "Monitor viral load, CD4 count, and liver function regularly as CYP3A4 interactions may compromise antiviral efficacy or increase toxicity. Counsel patients on strict adherence and to report all supplements and dietary changes to avoid treatment failure."
+}

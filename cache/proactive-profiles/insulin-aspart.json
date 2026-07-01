@@ -1,0 +1,66 @@
+{
+  "drug": "Insulin Aspart",
+  "drug_class": "Rapid-acting insulin analog",
+  "key_pathways": [
+    "Glucose metabolism",
+    "Insulin receptor signaling",
+    "Hepatic glucose uptake"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose chromium",
+      "severity": "High",
+      "mechanism": "May potentiate insulin effect and increase hypoglycemia risk by enhancing insulin sensitivity",
+      "action": "Avoid supplementation or use only under medical supervision with increased glucose monitoring"
+    },
+    {
+      "name": "Ginseng (Korean/Siberian)",
+      "severity": "High",
+      "mechanism": "Can lower blood glucose levels and may potentiate insulin effect, increasing hypoglycemia risk",
+      "action": "Avoid concurrent use or monitor blood glucose closely with frequent self-monitoring"
+    },
+    {
+      "name": "Fenugreek seeds",
+      "severity": "High",
+      "mechanism": "Contains compounds that slow carbohydrate absorption and enhance insulin sensitivity, synergistic hypoglycemia risk",
+      "action": "Avoid use; counsel on hypoglycemia symptoms and glucose monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May modestly improve insulin sensitivity and reduce insulin requirements",
+      "action": "Monitor blood glucose more frequently; may require insulin dose adjustment"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "Some evidence suggests modest effects on glucose metabolism and insulin sensitivity",
+      "action": "Monitor for changes in glycemic control; minimal risk at typical dietary doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High glycemic index refined carbohydrates (white bread, sugary drinks)",
+      "severity": "High",
+      "mechanism": "Rapid glucose absorption may cause postprandial hyperglycemia spikes despite insulin aspart's rapid onset, increasing glycemic variability",
+      "action": "Counsel on carbohydrate quality and consistent meal timing relative to insulin administration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and slow carbohydrate absorption, potentially delaying peak glucose rise relative to insulin aspart peak action",
+      "action": "Monitor for delayed postprandial glucose elevation; may require timing adjustment of insulin injection"
+    },
+    {
+      "name": "Alcohol (especially without food)",
+      "severity": "Low",
+      "mechanism": "Can impair hepatic glucose production and increase hypoglycemia risk, particularly when combined with insulin",
+      "action": "Advise limiting alcohol consumption and always consuming with carbohydrate-containing food"
+    }
+  ],
+  "monitoring_notes": "Insulin aspart is not significantly metabolized by CYP enzymes, so drug-drug interactions are primarily pharmacodynamic. Close glucose monitoring is essential as supplements or foods affecting carbohydrate absorption or insulin sensitivity can significantly impact glycemic control and hypoglycemia risk."
+}

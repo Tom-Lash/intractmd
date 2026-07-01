@@ -1,0 +1,66 @@
+{
+  "drug": "Anastrozole",
+  "drug_class": "Aromatase Inhibitor (Non-steroidal)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce anastrozole plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed and consult oncologist"
+    },
+    {
+      "name": "Red Clover",
+      "severity": "High",
+      "mechanism": "Contains isoflavones with estrogenic activity; may counteract anastrozole's aromatase inhibition and hormone suppression",
+      "action": "Contraindicated in hormone-sensitive breast cancer; avoid completely"
+    },
+    {
+      "name": "Black Cohosh",
+      "severity": "High",
+      "mechanism": "Potential estrogenic or estrogen-modulating effects may reduce therapeutic benefit in estrogen-dependent cancers",
+      "action": "Avoid use; discuss non-hormonal alternatives for menopausal symptoms with oncologist"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase anastrozole concentrations; effect generally mild with seed extract vs. juice",
+      "action": "Limit intake; monitor for increased adverse effects (joint pain, hot flashes) and report to provider"
+    },
+    {
+      "name": "Calcium and Vitamin D",
+      "severity": "Low",
+      "mechanism": "No direct interaction, but anastrozole increases osteoporosis risk; supplementation may help mitigate bone loss",
+      "action": "Encouraged as supportive therapy; coordinate dosing and timing with other medications"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase anastrozole plasma levels and adverse effects",
+      "action": "Avoid grapefruit products; switch to alternative citrus fruits (oranges, lemons)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Soy-based Products",
+      "severity": "Low",
+      "mechanism": "Soy isoflavones have weak estrogenic properties; high intakes may theoretically reduce anastrozole benefit",
+      "action": "Moderate consumption is generally acceptable; excessive intake (>2-3 servings/day) should be limited and discussed with oncologist"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "No direct pharmacokinetic interaction, but may increase hot flashes and joint pain; increases osteoporosis and liver stress risk",
+      "action": "Limit to ≤1 drink/day for women; monitor tolerance and discuss with healthcare provider"
+    }
+  ],
+  "monitoring_notes": "Anastrozole is used in hormone receptor-positive breast cancer; interactions that restore estrogen signaling are of critical concern. Monitor bone density, lipid panel, and cardiovascular status routinely, as anastrozole increases these risks independent of interactions."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Idelalisib",
+  "drug_class": "Phosphatidylinositol 3-kinase (PI3K) inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer that significantly reduces idelalisib plasma concentrations",
+      "action": "Avoid concurrent use; may reduce idelalisib efficacy"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor that increases idelalisib exposure and hepatotoxicity risk",
+      "action": "Avoid supplementation; discontinue grapefruit products during treatment"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increasing idelalisib levels and adverse effects",
+      "action": "Avoid concurrent use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential hepatoprotective effects but may affect CYP metabolism",
+      "action": "Monitor liver function tests; discuss with healthcare provider before use"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 and increase idelalisib levels slightly",
+      "action": "Use with caution; monitor for increased toxicity"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition leading to elevated idelalisib concentrations and hepatotoxicity risk",
+      "action": "Completely avoid grapefruit and juice throughout treatment duration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase idelalisib absorption; consider consistent administration pattern",
+      "action": "Take idelalisib consistently with or without food; maintain uniform dietary pattern"
+    }
+  ],
+  "monitoring_notes": "Idelalisib requires vigilant hepatic function monitoring due to inherent hepatotoxicity risk; concurrent CYP3A4 inhibitors or inducers significantly affect drug exposure. Monitor for diarrhea, liver enzyme elevations, and opportunistic infections, especially with concurrent medications metabolized through CYP3A4."
+}

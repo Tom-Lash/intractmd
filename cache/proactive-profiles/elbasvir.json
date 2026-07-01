@@ -1,0 +1,66 @@
+{
+  "drug": "Elbasvir",
+  "drug_class": "Hepatitis C virus (HCV) NS5A inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (PgP) substrate",
+    "BCRP substrate"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces elbasvir plasma concentrations, reducing antiviral efficacy",
+      "action": "Discontinue St. John's Wort; do not use concurrently with elbasvir"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly decreases elbasvir bioavailability",
+      "action": "Avoid all rifampin supplements during elbasvir therapy"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May increase anticoagulant effects and potentially affect drug metabolism",
+      "action": "Limit vitamin E supplementation to ≤400 IU daily; monitor if higher doses needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inducing properties; limited clinical data with elbasvir",
+      "action": "Use with caution; monitor for reduced elbasvir efficacy if taken chronically"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Theoretical CYP3A4 inhibition may increase elbasvir levels, but clinical significance unclear",
+      "action": "Avoid high-dose supplementation; patient education recommended"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and BCRP inhibition increases elbasvir plasma concentrations unpredictably",
+      "action": "Eliminate grapefruit and grapefruit juice entirely during treatment; use alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly increase elbasvir absorption; consistent food intake recommended",
+      "action": "Take elbasvir consistently with or without food; maintain consistent dietary pattern"
+    },
+    {
+      "name": "Cruciferous vegetables (in excess)",
+      "severity": "Low",
+      "mechanism": "High intake may induce CYP metabolism; unlikely significant at normal consumption",
+      "action": "No dietary restriction needed; maintain normal vegetable consumption"
+    }
+  ],
+  "monitoring_notes": "Monitor HCV RNA levels and liver function tests throughout therapy, as reduced elbasvir concentrations may result in treatment failure. Counsel patients to avoid CYP3A4 inducers and grapefruit products; recommend consistent food intake patterns to maintain stable drug absorption."
+}

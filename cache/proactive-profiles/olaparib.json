@@ -1,0 +1,60 @@
+{
+  "drug": "Olaparib",
+  "drug_class": "PARP inhibitor (Poly-ADP-ribose polymerase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces olaparib plasma concentrations, decreasing efficacy",
+      "action": "Discontinue St. John's Wort; use alternative mood support if needed"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases olaparib concentrations and toxicity risk",
+      "action": "Avoid completely; substitute with other antioxidant supplements if desired"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may modestly increase olaparib levels",
+      "action": "Monitor for increased toxicity; may use with dose awareness"
+    },
+    {
+      "name": "Omega-3 fatty acid supplements",
+      "severity": "Low",
+      "mechanism": "Potential additive anti-platelet effects; minimal clinical significance at standard doses",
+      "action": "Use standard doses; monitor for unusual bleeding"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases olaparib bioavailability and toxicity risk",
+      "action": "Completely avoid grapefruit and juice; choose alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase olaparib absorption; food effect varies based on formulation",
+      "action": "Take consistently with or without food; maintain uniform dosing pattern"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contain compounds that may induce CYP3A4 metabolism if consumed in very large quantities",
+      "action": "Normal dietary consumption acceptable; excessive intake should be consistent"
+    }
+  ],
+  "monitoring_notes": "Olaparib is a substrate of CYP3A4 with significant interaction potential; monitor for signs of toxicity (anemia, GI effects, myelosuppression) when any CYP3A4 modifiers are used. Maintain consistent dietary patterns and report any new supplements or herbal products to oncology team."
+}

@@ -1,0 +1,84 @@
+{
+  "drug": "Digoxin",
+  "drug_class": "Cardiac glycoside (inotropic agent)",
+  "key_pathways": [
+    "P-glycoprotein (MDR1) substrate",
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces P-glycoprotein, increasing digoxin elimination and reducing serum levels below therapeutic range",
+      "action": "Contraindicated; use alternative antidepressant if needed"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "High",
+      "mechanism": "May increase digoxin levels and cardiac effects; increases inotropic activity leading to arrhythmia risk",
+      "action": "Avoid concurrent use; monitor heart rate and rhythm if unavoidable"
+    },
+    {
+      "name": "Licorice",
+      "severity": "High",
+      "mechanism": "Causes hypokalemia and sodium retention, increasing digoxin toxicity risk and arrhythmias",
+      "action": "Contraindicated; use alternative if needed; monitor potassium levels closely"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "High",
+      "mechanism": "Potentiates inotropic and arrhythmogenic effects of digoxin; additive cardiac activity",
+      "action": "Avoid use; consult cardiologist before use as supplement"
+    },
+    {
+      "name": "Calcium supplements (high-dose)",
+      "severity": "Critical",
+      "mechanism": "Increases digoxin-induced arrhythmias by enhancing cardiac contractility and automaticity",
+      "action": "Avoid high-dose supplementation; use dietary sources only; maintain normal serum calcium"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Low",
+      "mechanism": "Hypokalemia increases digoxin toxicity risk; supplementation helps maintain therapeutic window",
+      "action": "May be beneficial; coordinate with prescriber and monitor serum potassium and digoxin levels"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Hypomagnesemia increases digoxin toxicity; supplementation may reduce arrhythmia risk",
+      "action": "May be appropriate; monitor magnesium and digoxin levels; doses should be moderate"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May alter gut flora metabolism affecting digoxin absorption and enterohepatic recirculation",
+      "action": "Monitor digoxin levels if initiating probiotics; generally safe but individualize monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fiber foods (excessive intake)",
+      "severity": "Moderate",
+      "mechanism": "Excessive fiber binds digoxin in GI tract, reducing absorption and therapeutic efficacy",
+      "action": "Maintain consistent (not excessive) fiber intake; separate timing of digoxin and high-fiber meals if possible"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Potassium-rich foods (spinach, bananas, sweet potatoes)",
+      "severity": "Low",
+      "mechanism": "Hypokalemia increases digoxin toxicity; dietary potassium helps maintain normal levels",
+      "action": "Encourage moderate intake; coordinate with prescriber regarding diuretic use and potassium status"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "May inhibit P-glycoprotein, potentially increasing digoxin levels, though clinical significance is variable",
+      "action": "Consistent intake acceptable; avoid sudden changes; monitor for toxicity signs if consumption increases"
+    }
+  ],
+  "monitoring_notes": "Digoxin has a narrow therapeutic window (0.5-2 ng/mL); serum level monitoring is essential, especially when supplements or significant dietary changes are introduced. Monitor for signs of toxicity (nausea, visual disturbances, arrhythmias) and maintain consistent potassium and magnesium levels."
+}

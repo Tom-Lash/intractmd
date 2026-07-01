@@ -1,0 +1,46 @@
+{
+  "drug": "Bictegravir",
+  "drug_class": "Integrase strand transfer inhibitor (INSTI)",
+  "key_pathways": [
+    "UGT1A1",
+    "minimal CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces UGT1A1 and may reduce bictegravir plasma concentrations, potentially leading to treatment failure",
+      "action": "Avoid concurrent use; counsel patient on alternative mood support options"
+    },
+    {
+      "name": "Rifampin/Rifampicin supplements",
+      "severity": "High",
+      "mechanism": "Strong UGT1A1 inducer that significantly reduces bictegravir exposure",
+      "action": "Contraindicated; use alternative anti-tuberculous agents if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements (>1200 mg daily)",
+      "severity": "Low",
+      "mechanism": "May chelate bictegravir and reduce absorption if taken simultaneously",
+      "action": "Separate dosing by at least 2 hours; preferably take bictegravir first"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Potential chelation reducing bictegravir bioavailability",
+      "action": "Separate administration by 2+ hours; monitor viral load if concurrent use necessary"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase bictegravir absorption; food effect is generally minimal but variable",
+      "action": "Take with or without food; maintain consistent administration pattern for optimal exposure"
+    }
+  ],
+  "monitoring_notes": "Bictegravir has minimal drug interactions due to low hepatic metabolism and primarily renal/glucuronidation clearance. Monitor viral load and CD4 count regularly, especially if supplements affecting UGT1A1 are used; counsel patients to disclose all OTC and herbal products."
+}

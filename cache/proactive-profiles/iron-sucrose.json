@@ -1,0 +1,65 @@
+{
+  "drug": "Iron Sucrose",
+  "drug_class": "Intravenous Iron Supplement",
+  "key_pathways": [
+    "Iron absorption and metabolism",
+    "Transferrin binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Calcium competes with iron for absorption and can significantly reduce iron bioavailability",
+      "action": "Separate administration by at least 2 hours; prioritize iron dosing timing"
+    },
+    {
+      "name": "Polyphenol-rich supplements (tea extract, grape seed extract)",
+      "severity": "Moderate",
+      "mechanism": "Polyphenols chelate iron and reduce absorption",
+      "action": "Avoid concurrent use; space administration by 2+ hours"
+    },
+    {
+      "name": "Phosphate binders",
+      "severity": "Moderate",
+      "mechanism": "Can chelate iron and reduce systemic availability",
+      "action": "Coordinate with dialysis team; separate dosing by 4+ hours if possible"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin C supplements (high dose >1000mg)",
+      "severity": "Low",
+      "mechanism": "Excessive vitamin C may enhance iron absorption leading to potential iron overload",
+      "action": "Monitor ferritin levels; avoid megadosing; moderate supplementation acceptable"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May compete for absorption sites but effect is mild with IV iron",
+      "action": "No strict separation required; monitor for GI symptoms if combined"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-calcium dairy products (consumed with oral iron)",
+      "severity": "Moderate",
+      "mechanism": "Calcium binding reduces iron absorption; note: IV iron bypasses GI absorption",
+      "action": "Restriction less critical with IV iron; apply if any oral iron supplementation occurs"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tea, coffee, red wine (high tannins/polyphenols)",
+      "severity": "Low",
+      "mechanism": "Tannins chelate iron; minimal impact with IV administration but relevant if transitioning to oral",
+      "action": "No restriction needed with IV sucrose; educate on timing if oral iron prescribed"
+    },
+    {
+      "name": "Phytate-rich foods (whole grains, legumes, nuts)",
+      "severity": "Low",
+      "mechanism": "Phytates reduce iron absorption via GI tract; irrelevant for IV route",
+      "action": "No dietary restrictions necessary with IV iron therapy"
+    }
+  ],
+  "monitoring_notes": "Monitor serum ferritin, TSAT (transferrin saturation), and hemoglobin regularly as IV iron sucrose bypasses GI absorption, eliminating most food/supplement interactions at absorption level. Assess for signs of iron overload (elevated ferritin >500 ng/mL) particularly in dialysis patients receiving frequent dosing."
+}

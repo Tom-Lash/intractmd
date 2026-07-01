@@ -1,0 +1,71 @@
+{
+  "drug": "Risedronate",
+  "drug_class": "Bisphosphonate",
+  "key_pathways": [
+    "Non-enzymatic",
+    "Gastrointestinal absorption-dependent"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Critical",
+      "mechanism": "Chelation of risedronate in GI tract reduces bioavailability by up to 60%; must separate dosing",
+      "action": "Administer risedronate on empty stomach; separate calcium by at least 30 minutes before or 2 hours after risedronate"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation binds risedronate, significantly reducing absorption",
+      "action": "Separate dosing by at least 30 minutes; administer risedronate first on empty stomach"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation chelation decreases risedronate bioavailability",
+      "action": "Maintain minimum 30-minute separation; take risedronate on completely empty stomach"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation binds risedronate, reducing GI absorption",
+      "action": "Separate by at least 2 hours from risedronate administration"
+    },
+    {
+      "name": "Aluminum-containing antacids",
+      "severity": "High",
+      "mechanism": "Trivalent aluminum cation forms insoluble complex with bisphosphonate",
+      "action": "Avoid or separate by minimum 30 minutes after risedronate dosing"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "May enhance bone mineralization effects; generally beneficial but monitor calcium-phosphate balance",
+      "action": "Monitor serum calcium and phosphate; coordinate timing with calcium supplementation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-calcium dairy products",
+      "severity": "Critical",
+      "mechanism": "Dietary calcium chelates risedronate in GI lumen, reducing bioavailability by 50-60%",
+      "action": "Do not consume milk, cheese, or yogurt within 30 minutes before or 2 hours after risedronate dose"
+    },
+    {
+      "name": "Fortified food products (calcium-fortified juices, cereals)",
+      "severity": "High",
+      "mechanism": "Significant calcium content impairs risedronate absorption",
+      "action": "Avoid consuming fortified foods during risedronate absorption window (30 min before to 2 hours after)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, spinach, fortified cereals)",
+      "severity": "Low",
+      "mechanism": "Dietary iron may modestly reduce risedronate absorption; effect less pronounced than supplements",
+      "action": "No strict avoidance required, but optimal absorption achieved on empty stomach without iron-rich foods"
+    }
+  ],
+  "monitoring_notes": "Risedronate requires strict administration on empty stomach with plain water only, 30 minutes before any food, supplements, or other medications to ensure adequate bioavailability. Monitor for esophageal irritation, hypocalcemia, and renal function during long-term therapy; ensure adequate dietary calcium intake outside the absorption window."
+}

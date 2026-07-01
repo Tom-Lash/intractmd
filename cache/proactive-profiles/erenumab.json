@@ -1,0 +1,40 @@
+{
+  "drug": "Erenumab",
+  "drug_class": "Monoclonal antibody against CGRP receptor",
+  "key_pathways": [
+    "CGRP signaling pathway",
+    "Immune system modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Immunosuppressive supplements (e.g., high-dose astragalus, reishi mushroom)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate immunosuppressive effects or interfere with erenumab's mechanism of action",
+      "action": "Avoid concurrent use; consult healthcare provider before initiating immunomodulatory supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May enhance vasodilatory effects; magnesium has mild CGRP pathway involvement",
+      "action": "Monitor for increased headache relief or adverse effects; use standard recommended doses"
+    },
+    {
+      "name": "Riboflavin (Vitamin B2)",
+      "severity": "Low",
+      "mechanism": "May have additive migraine prophylaxis benefits",
+      "action": "Concurrent use is generally safe; monitor for enhanced therapeutic effect"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Tyramine may trigger migraines independent of erenumab; not a direct interaction but clinical relevance in migraine management",
+      "action": "Maintain dietary awareness as part of comprehensive migraine management strategy"
+    }
+  ],
+  "monitoring_notes": "Erenumab is a monoclonal antibody with minimal hepatic metabolism and no significant drug-metabolizing enzyme interactions. Monitor for injection site reactions, cardiovascular changes, and migraine pattern changes during therapy."
+}

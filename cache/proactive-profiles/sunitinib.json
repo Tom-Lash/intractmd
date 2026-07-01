@@ -1,0 +1,83 @@
+{
+  "drug": "Sunitinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces sunitinib plasma concentration by 50%+ via increased hepatic metabolism",
+      "action": "Absolute contraindication - do not use concurrently; allow 2-week washout if recently used"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases sunitinib concentration and toxicity risk",
+      "action": "Avoid completely during sunitinib therapy"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP1A2 induction may reduce sunitinib efficacy",
+      "action": "Counsel patient to discontinue; monitor for reduced drug response"
+    },
+    {
+      "name": "Turmeric/Curcumin (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition and potential increased QT prolongation risk",
+      "action": "Avoid high-dose supplementation; maintain <500mg daily if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle (silymarin)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase sunitinib levels",
+      "action": "Monitor for increased toxicity signs (fatigue, hypertension); dose adjustment may be needed"
+    },
+    {
+      "name": "Ginger (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition and anticoagulant properties; sunitinib carries bleeding risk",
+      "action": "Limit to culinary amounts (<1g daily); counsel on bleeding precautions"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction; may modestly decrease sunitinib concentration",
+      "action": "Monitor response; counsel patient to maintain consistent intake"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition dramatically increases sunitinib bioavailability and toxicity risk",
+      "action": "Complete avoidance required throughout therapy; includes pomelo and Seville oranges"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase sunitinib absorption and peak plasma concentration",
+      "action": "Take sunitinib consistently with or without food; maintain uniform feeding pattern"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May potentiate hypertension risk; sunitinib commonly causes HTN",
+      "action": "Avoid excessive licorice consumption; monitor blood pressure closely"
+    },
+    {
+      "name": "Tyramine-rich foods (in context of hypertension)",
+      "severity": "Low",
+      "mechanism": "Sunitinib-induced hypertension may be compounded; minimal direct interaction",
+      "action": "Counsel on moderation of aged cheeses, cured meats, fermented foods"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, electrolytes, liver function, and signs of toxicity (handfoot syndrome, fatigue, bleeding). Ensure strict CYP3A4 inducer/inhibitor avoidance as sunitinib has narrow therapeutic window with significant toxicity at elevated levels."
+}

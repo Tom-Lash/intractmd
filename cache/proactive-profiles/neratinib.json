@@ -1,0 +1,79 @@
+{
+  "drug": "Neratinib",
+  "drug_class": "HER2-targeted tyrosine kinase inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "P-glycoprotein (MDR1)",
+    "BCRP"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces neratinib plasma concentrations and therapeutic efficacy",
+      "action": "Discontinue St. John's Wort; allow 2-week washout before starting neratinib"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inducer may decrease neratinib exposure",
+      "action": "Avoid concurrent use; consider alternative if cognitive support needed"
+    },
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer and P-glycoprotein substrate may reduce neratinib bioavailability",
+      "action": "Avoid use during neratinib therapy"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces neratinib systemic exposure",
+      "action": "Discontinue echinacea during treatment course"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Moderate CYP3A4 inhibition may increase neratinib levels; potential GI irritation additive effect",
+      "action": "Monitor for increased side effects; dose separation not required but counsel on increased diarrhea risk"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may slightly increase neratinib exposure",
+      "action": "Use with caution; monitor for toxicity signs (diarrhea, rash); consider avoiding high doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases neratinib bioavailability and toxicity risk",
+      "action": "Completely avoid grapefruit, grapefruit juice, and related citrus (pomelo) during therapy"
+    },
+    {
+      "name": "Seville oranges and pomelos",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition similar to grapefruit increases neratinib plasma concentrations",
+      "action": "Avoid consumption; educate on hidden sources in marmalades and specialty beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase neratinib absorption; take consistently with or without food",
+      "action": "Advise consistent feeding state with each dose; fat content does not require dose adjustment"
+    },
+    {
+      "name": "Spicy foods and high-fiber foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate diarrhea (common adverse effect); fiber may affect GI transit",
+      "action": "Counsel on moderation; provide dietary guidance for managing neratinib-induced diarrhea"
+    }
+  ],
+  "monitoring_notes": "Neratinib requires strict CYP3A4 inhibitor avoidance due to narrow therapeutic window and diarrhea-related dose-limiting toxicity. Counsel patients on complete grapefruit avoidance and review all herbal supplements for enzyme induction before initiating therapy; monitor for GI side effects and hepatic function periodically."
+}

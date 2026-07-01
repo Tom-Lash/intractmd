@@ -1,0 +1,60 @@
+{
+  "drug": "Octreotide",
+  "drug_class": "Somatostatin analog",
+  "key_pathways": [
+    "Somatostatin receptor signaling",
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin D supplements",
+      "severity": "High",
+      "mechanism": "Octreotide inhibits growth hormone and may impair calcium absorption; concurrent high-dose vitamin D supplementation may cause hypercalcemia or electrolyte imbalances",
+      "action": "Monitor calcium and phosphate levels; use only standard-dose vitamin D under physician supervision"
+    },
+    {
+      "name": "Corticosteroid supplements",
+      "severity": "High",
+      "mechanism": "Octreotide suppresses growth hormone and multiple hormones; corticosteroids may mask symptoms of adrenal insufficiency or increase adverse effects",
+      "action": "Avoid concurrent use without endocrinology oversight; monitor HPA axis function"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Octreotide may impair nutrient absorption in GI tract; iron absorption could be reduced",
+      "action": "Space dosing 2+ hours apart; monitor hemoglobin and ferritin levels"
+    },
+    {
+      "name": "Fat-soluble vitamin supplements (A, E, K)",
+      "severity": "Low",
+      "mechanism": "Octreotide reduces fat absorption and may decrease bioavailability of lipophilic vitamins",
+      "action": "Monitor fat-soluble vitamin levels periodically; consider water-soluble alternatives if needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Octreotide significantly reduces fat absorption and slows GI transit; high-fat intake increases risk of steatorrhea, malabsorption, and GI distress",
+      "action": "Maintain low-fat diet (<25-30g fat daily); counsel on dietary modifications"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Calcium-rich foods (dairy, leafy greens)",
+      "severity": "Low",
+      "mechanism": "Octreotide impairs calcium and fat-soluble vitamin absorption; excessive intake may not be absorbed effectively and could affect bone health",
+      "action": "Monitor dietary calcium intake; assess serum calcium and bone markers during long-term therapy"
+    },
+    {
+      "name": "Protein-rich meals",
+      "severity": "Low",
+      "mechanism": "Octreotide slows gastric emptying and may reduce protein absorption; large protein loads could worsen GI symptoms",
+      "action": "Distribute protein intake throughout day in moderate portions; monitor nutritional status"
+    }
+  ],
+  "monitoring_notes": "Monitor electrolytes (sodium, potassium), glucose, vitamin B12, fat-soluble vitamins, and bone density during long-term octreotide therapy, as malabsorption and metabolic effects are common. Assess for steatorrhea, GI symptoms, and nutritional deficiencies at regular intervals."
+}

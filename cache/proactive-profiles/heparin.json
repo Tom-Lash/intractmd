@@ -1,0 +1,90 @@
+{
+  "drug": "Heparin",
+  "drug_class": "Anticoagulant (Parenteral)",
+  "key_pathways": [
+    "Factor IIa inhibition",
+    "Factor Xa inhibition",
+    "Non-metabolic (renal/RES clearance)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin (if used concurrently)",
+      "severity": "Critical",
+      "mechanism": "Additive anticoagulant effects significantly increase bleeding risk",
+      "action": "Avoid concurrent use; coordinate anticoagulation therapy with prescriber"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet and anticoagulant effects, increases bleeding risk",
+      "action": "Limit vitamin E supplementation to <400 IU/day; monitor for bleeding signs"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and may potentiate anticoagulant effects",
+      "action": "Avoid supplement; counsel patient on bleeding risk"
+    },
+    {
+      "name": "Garlic (concentrated supplements)",
+      "severity": "High",
+      "mechanism": "Antiplatelet activity compounds heparin's anticoagulant effects",
+      "action": "Discontinue concentrated garlic supplements; food amounts are acceptable"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "High",
+      "mechanism": "May reduce anticoagulant effect and increase thrombotic risk",
+      "action": "Avoid use; monitor INR/aPTT if inadvertently used"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "May reduce heparin effectiveness through unknown mechanisms",
+      "action": "Avoid supplement; counsel on interaction risk"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; additive with heparin at high doses",
+      "action": "Monitor for bleeding; dose up to 3g/day generally acceptable with monitoring"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity may slightly potentiate anticoagulation",
+      "action": "Monitor patient; culinary amounts safe; monitor with concentrated supplements"
+    },
+    {
+      "name": "Bromelain",
+      "severity": "Low",
+      "mechanism": "Proteolytic enzyme may have mild anticoagulant effects",
+      "action": "Monitor for signs of bleeding; generally low risk at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Inconsistent Vitamin K intake",
+      "severity": "Moderate",
+      "mechanism": "While heparin is not vitamin K-dependent, erratic intake affects monitoring stability if patient transitions to warfarin; affects lab interpretation",
+      "action": "Maintain consistent daily vitamin K intake; counsel on leafy greens consistency"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (excessive consumption)",
+      "severity": "Low",
+      "mechanism": "Alcohol potentiates anticoagulant effects and increases bleeding risk; impairs platelet function",
+      "action": "Limit to ≤1-2 drinks/day; counsel on moderation"
+    },
+    {
+      "name": "Cranberry juice (large quantities)",
+      "severity": "Low",
+      "mechanism": "May potentiate anticoagulant effects through unknown mechanism",
+      "action": "Moderate intake; monitor for bleeding if consuming >1L daily"
+    }
+  ],
+  "monitoring_notes": "Heparin is a non-hepatically metabolized anticoagulant, so CYP interactions are minimal; primary concerns are additive antiplatelet/anticoagulant effects from supplements and foods. Monitor aPTT regularly and observe for signs of bleeding (ecchymosis, hematuria, epistaxis, melena); educate patients on the critical importance of disclosing all supplements and herbs."
+}

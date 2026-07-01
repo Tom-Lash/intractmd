@@ -1,0 +1,78 @@
+{
+  "drug": "Desvenlafaxine",
+  "drug_class": "Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Serotonergic pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4/2D6 and increases serotonergic activity; risk of serotonin syndrome and reduced desvenlafaxine efficacy",
+      "action": "Avoid concurrent use; discontinue St. John's Wort at least 2 weeks before initiating or after discontinuing desvenlafaxine"
+    },
+    {
+      "name": "Serotonergic supplements (5-HTP, L-tryptophan)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increase risk of serotonin syndrome",
+      "action": "Contraindicated; do not use concurrently with desvenlafaxine"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "Critical",
+      "mechanism": "Combined serotonergic activity and shared CYP2D6 metabolism; significant serotonin syndrome risk",
+      "action": "Avoid; if pain management necessary, use alternative analgesics with lower serotonergic potential"
+    },
+    {
+      "name": "MAOIs and MAOI-like agents (linezolid, methylene blue)",
+      "severity": "Critical",
+      "mechanism": "Severe risk of serotonin syndrome and hypertensive crisis",
+      "action": "Absolute contraindication; maintain minimum 14-day washout between discontinuation and MAOI initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate serotonergic effects and stimulant properties; mild risk of increased serotonergic activity",
+      "action": "Monitor for excessive stimulation, agitation, or anxiety; use with caution and inform provider"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Minor serotonergic properties; may have mild additive effects",
+      "action": "Generally safe but monitor for serotonin-related symptoms; use moderate doses"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; desvenlafaxine may slightly increase bleeding risk",
+      "action": "Monitor for unusual bruising or bleeding; high doses warrant caution"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "Moderate",
+      "mechanism": "Desvenlafaxine may potentiate norepinephrine activity; tyramine can trigger hypertensive response at higher doses",
+      "action": "Avoid excessive consumption of aged cheeses, cured/processed meats, fermented soy products; monitor blood pressure if consumed"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Additive stimulant effects; may increase anxiety, tremor, or insomnia",
+      "action": "Limit caffeine intake; monitor tolerance and reduce if CNS stimulation occurs"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Increased CNS depression and impaired judgment; may worsen depression or anxiety",
+      "action": "Minimize or avoid alcohol consumption; counsel on increased sedation and impaired cognition risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity, hyperthermia) especially with concurrent serotonergic agents. Assess for hypertensive episodes in patients with uncontrolled blood pressure or those consuming excessive tyramine; baseline and periodic blood pressure monitoring recommended."
+}

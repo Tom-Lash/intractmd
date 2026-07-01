@@ -1,0 +1,66 @@
+{
+  "drug": "Ramipril",
+  "drug_class": "ACE Inhibitor (Antihypertensive)",
+  "key_pathways": [
+    "ACE inhibition",
+    "Bradykinin potentiation",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ACE inhibitors reduce aldosterone-mediated potassium excretion; combined use increases hyperkalemia risk",
+      "action": "Avoid potassium supplements unless specifically prescribed; monitor serum K+ levels regularly"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs impair renal function and reduce antihypertensive efficacy; combined use increases acute kidney injury and hyperkalemia risk",
+      "action": "Avoid chronic NSAID use; use acetaminophen as alternative; if necessary, monitor renal function and K+"
+    },
+    {
+      "name": "Enalapril, Lisinopril, or other ACE inhibitors",
+      "severity": "Critical",
+      "mechanism": "Concurrent ACE inhibitor use results in excessive bradykinin accumulation and duplicative mechanism",
+      "action": "Do not combine; ensure patient is on single ACE inhibitor therapy only"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic (high-dose)",
+      "severity": "Low",
+      "mechanism": "Garlic may have modest blood pressure-lowering effects; additive hypotensive effect possible",
+      "action": "Monitor blood pressure; dose adjustment may be needed if combined use causes excessive hypotension"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Hawthorn may potentiate vasodilation and blood pressure reduction",
+      "action": "Monitor for dizziness or hypotension; inform prescriber of concurrent use"
+    },
+    {
+      "name": "Ginger (high-dose)",
+      "severity": "Low",
+      "mechanism": "High-dose ginger may have mild blood pressure-lowering effects",
+      "action": "Monitor blood pressure; no dose adjustment typically needed at culinary doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (in excess)",
+      "severity": "High",
+      "mechanism": "ACE inhibitors reduce potassium excretion; excessive dietary potassium increases hyperkalemia risk",
+      "action": "Counsel on potassium-restricted diet if serum K+ elevated; include bananas, oranges, spinach, tomatoes in moderation; monitor K+ levels"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Salt substitutes (potassium-based)",
+      "severity": "Low",
+      "mechanism": "Potassium-based salt substitutes increase dietary potassium intake",
+      "action": "Use standard salt or low-sodium alternatives without potassium; counsel patient to avoid potassium-containing salt substitutes"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and blood pressure at baseline and periodically during therapy. Educate patient on hyperkalemia symptoms (weakness, palpitations) and advise avoidance of NSAIDs and potassium supplements."
+}

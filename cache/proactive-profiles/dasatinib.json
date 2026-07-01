@@ -1,0 +1,71 @@
+{
+  "drug": "Dasatinib",
+  "drug_class": "Tyrosine Kinase Inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer decreases dasatinib plasma concentrations and therapeutic efficacy",
+      "action": "Contraindicated; do not use concurrently with dasatinib"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "May inhibit platelet aggregation, increasing bleeding risk when combined with dasatinib-induced thrombocytopenia",
+      "action": "Avoid use; increased hemorrhage risk"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction and antiplatelet effects compound dasatinib's hematologic toxicity",
+      "action": "Discontinue high-dose supplementation; monitor CBC closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 and increase dasatinib levels; mild antiplatelet effects",
+      "action": "Use cautiously; monitor for dasatinib toxicity symptoms and bleeding"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity may additively increase bleeding risk",
+      "action": "Monitor closely; acceptable in culinary amounts"
+    },
+    {
+      "name": "Vitamin E (>400 IU daily)",
+      "severity": "Low",
+      "mechanism": "Antiplatelet effects may compound thrombocytopenia risk",
+      "action": "Monitor CBC; limit supplementation to recommended dietary allowance"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases dasatinib bioavailability and plasma concentrations, elevating toxicity risk",
+      "action": "Complete avoidance required; no grapefruit products during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase dasatinib absorption; administration with food is acceptable but timing should be consistent",
+      "action": "Take dasatinib consistently with or without food; avoid variable meal patterns"
+    },
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction with excessive consumption",
+      "action": "Normal dietary consumption acceptable; avoid excessive supplementation of broccoli extracts"
+    }
+  ],
+  "monitoring_notes": "Monitor complete blood count regularly for dasatinib-related thrombocytopenia and bleeding complications. Counsel patients on strict CYP3A4 interaction avoidance and consistent dosing schedules relative to food intake."
+}

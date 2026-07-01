@@ -1,0 +1,71 @@
+{
+  "drug": "Zoledronic Acid",
+  "drug_class": "Bisphosphonate",
+  "key_pathways": [
+    "Renal excretion",
+    "Bone mineral metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Chelation of zoledronic acid in GI tract reduces absorption and efficacy; high doses impair bisphosphonate bioavailability",
+      "action": "Separate administration by minimum 2 hours; use lowest effective calcium dose; consider dietary sources instead"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Iron chelates bisphosphonates, reducing drug absorption and therapeutic effect",
+      "action": "Administer iron supplements at least 2 hours before or 4 hours after zoledronic acid IV infusion"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Magnesium binds bisphosphonates, significantly reducing systemic absorption",
+      "action": "Separate dosing by minimum 2 hours; monitor for reduced therapeutic response"
+    },
+    {
+      "name": "Aluminum-containing antacids",
+      "severity": "High",
+      "mechanism": "Aluminum chelates bisphosphonates, reducing bioavailability",
+      "action": "Avoid concurrent use; use alternative antacids (H2-blockers preferred)"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "While beneficial, excessive vitamin D with bisphosphonates may increase hypocalcemia risk in susceptible patients",
+      "action": "Monitor serum calcium and vitamin D levels; coordinate supplementation with prescriber"
+    },
+    {
+      "name": "NSAIDs (as supplements/OTC)",
+      "severity": "Low",
+      "mechanism": "NSAIDs may increase GI upset and renal function stress when combined with bisphosphonates",
+      "action": "Use lowest effective dose; monitor renal function; consider gastroprotection if concurrent use necessary"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-calcium foods consumed immediately before/after IV infusion",
+      "severity": "Moderate",
+      "mechanism": "While zoledronic acid is IV-administered, concurrent high-calcium intake may alter serum calcium balance during drug redistribution phase",
+      "action": "Time high-calcium meals away from infusion day; maintain normal dietary calcium intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "Low",
+      "mechanism": "High calcium content may theoretically affect mineral metabolism balance; not a direct drug interaction but worth monitoring",
+      "action": "Maintain normal dietary dairy intake; ensure adequate but not excessive calcium from food sources"
+    },
+    {
+      "name": "Foods high in oxalates (spinach, rhubarb, nuts)",
+      "severity": "Low",
+      "mechanism": "May chelate minerals and affect overall bone metabolism homeostasis during bisphosphonate therapy",
+      "action": "No specific restriction needed; maintain balanced, varied diet"
+    }
+  ],
+  "monitoring_notes": "Monitor serum calcium, phosphate, magnesium, and renal function (eGFR) regularly, especially within 2 weeks post-infusion and annually. Assess for osteonecrosis of the jaw risk factors and atypical fractures; counsel patients on adequate calcium and vitamin D intake separate from drug administration timing."
+}

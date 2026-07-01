@@ -1,0 +1,73 @@
+{
+  "drug": "Morphine",
+  "drug_class": "Opioid Analgesic",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP2C8",
+    "UDP-glucuronosyltransferase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces morphine plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant if mood support needed"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression increases sedation, respiratory depression risk",
+      "action": "Discontinue valerian or reduce morphine dose with close monitoring"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Potentiates CNS depression and increases hepatotoxicity risk",
+      "action": "Avoid; substitute with non-hepatotoxic anxiolytics if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase morphine levels and side effects",
+      "action": "Monitor for increased sedation or constipation; adjust dose if necessary"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly elevate morphine concentrations",
+      "action": "Use with caution; inform provider if using for liver support"
+    },
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "CYP3A4/2D6 inhibition may increase morphine levels",
+      "action": "Limit duration of use; monitor for opioid-related adverse effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases morphine bioavailability and plasma concentrations",
+      "action": "Eliminate grapefruit completely; no safe threshold exists"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May delay morphine absorption and peak levels; variable effect depending on formulation",
+      "action": "Take immediate-release morphine on empty stomach; note timing of extended-release doses"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression increases sedation and respiratory depression risk",
+      "action": "Minimize alcohol consumption; educate patient on cumulative depressant effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, respiratory depression, and constipation, particularly when combining with CNS depressants or CYP enzyme inhibitors. Counsel patients to maintain consistent dietary habits and avoid abrupt changes in supplement use without consulting provider."
+}

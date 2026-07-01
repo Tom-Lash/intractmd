@@ -1,0 +1,65 @@
+{
+  "drug": "Enalapril",
+  "drug_class": "ACE Inhibitor (Angiotensin-Converting Enzyme Inhibitor)",
+  "key_pathways": [
+    "Renal clearance",
+    "Hepatic esterase metabolism to active metabolite enalaprilat"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ACE inhibitors reduce aldosterone secretion, decreasing urinary potassium excretion and increasing serum potassium levels; additive hyperkalemic effect",
+      "action": "Avoid potassium supplementation unless specifically prescribed by physician; monitor serum potassium levels regularly"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and antagonize ACE inhibitor efficacy; increase hyperkalemia risk and acute kidney injury",
+      "action": "Avoid concurrent use; if necessary, use lowest dose for shortest duration with renal function monitoring"
+    },
+    {
+      "name": "Spironolactone and potassium-sparing diuretics",
+      "severity": "Critical",
+      "mechanism": "Both reduce potassium excretion; additive hyperkalemic effect with significant risk of cardiac arrhythmias",
+      "action": "Use only with careful physician oversight and frequent potassium level monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Licorice can cause sodium retention and potassium depletion, potentially counteracting ACE inhibitor benefits and affecting blood pressure control",
+      "action": "Limit licorice consumption; monitor blood pressure and electrolytes if use continues"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May increase blood pressure and potentially reduce antihypertensive efficacy of enalapril",
+      "action": "Use cautiously; monitor blood pressure response and adjust enalapril dose if needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (excessive intake)",
+      "severity": "High",
+      "mechanism": "ACE inhibitors reduce renal potassium excretion; excessive dietary potassium intake increases hyperkalemia risk",
+      "action": "Moderate intake of potassium-rich foods (bananas, oranges, spinach, potatoes); discuss appropriate dietary potassium limits with healthcare provider"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Salt substitutes (potassium chloride-based)",
+      "severity": "Low",
+      "mechanism": "Salt substitutes containing potassium increase serum potassium levels in presence of ACE inhibitor",
+      "action": "Avoid or use regular salt as alternative; consult physician before using potassium-containing salt substitutes"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "May inhibit hepatic metabolism, though clinical significance is minimal with enalapril's renal clearance",
+      "action": "Moderate consumption acceptable; no strict avoidance required but monitor for increased effects"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium levels, renal function (creatinine, BUN, eGFR), and blood pressure regularly, especially when initiating therapy or adjusting doses. Educate patients on dietary potassium restriction and to report symptoms of hyperkalemia (weakness, palpitations, irregular heartbeat)."
+}

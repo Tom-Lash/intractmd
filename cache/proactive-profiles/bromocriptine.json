@@ -1,0 +1,66 @@
+{
+  "drug": "Bromocriptine",
+  "drug_class": "Dopamine agonist (ergot derivative)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "dopamine receptor agonism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may decrease bromocriptine levels and reduce therapeutic efficacy",
+      "action": "Avoid concurrent use; select alternative supplement or monitor for loss of therapeutic effect"
+    },
+    {
+      "name": "Metoclopramide-containing supplements",
+      "severity": "High",
+      "mechanism": "Dopamine antagonist directly opposes bromocriptine's mechanism of action",
+      "action": "Avoid; use alternative antiemetics if needed"
+    },
+    {
+      "name": "Ergot alkaloid supplements",
+      "severity": "Critical",
+      "mechanism": "Additive ergot toxicity risk including vasospasm, hypertension, and ischemia",
+      "action": "Contraindicated; absolute avoidance required"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase bromocriptine plasma concentrations",
+      "action": "Monitor for adverse effects (nausea, dizziness, orthostatic hypotension)"
+    },
+    {
+      "name": "Vitamin B6 (high-dose >100mg daily)",
+      "severity": "Low",
+      "mechanism": "May reduce bromocriptine effectiveness in prolactin suppression",
+      "action": "Limit B6 supplementation; monitor prolactin levels if used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases bromocriptine bioavailability and adverse effect risk",
+      "action": "Avoid consumption; select alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay absorption and reduce peak plasma levels of bromocriptine",
+      "action": "Take bromocriptine with food if GI upset occurs; consistent timing recommended"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Potential hypertensive response due to dopamine agonist effects on catecholamine regulation",
+      "action": "No strict avoidance required but moderate intake; monitor blood pressure"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly, particularly upon initiation and with dose increases. Assess for ergot toxicity signs (peripheral vasoconstriction, chest pain) and monitor prolactin levels in therapeutic use. Counsel patients on orthostatic hypotension risk and potential drug-food interactions affecting absorption."
+}

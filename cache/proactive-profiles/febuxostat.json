@@ -1,0 +1,66 @@
+{
+  "drug": "Febuxostat",
+  "drug_class": "Xanthine oxidase inhibitor (urate-lowering therapy)",
+  "key_pathways": [
+    "CYP2C8",
+    "CYP1A2",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose vitamin C (>2000mg daily)",
+      "severity": "High",
+      "mechanism": "Increases uric acid excretion and may reduce febuxostat efficacy; can precipitate uric acid crystals in renal tubules",
+      "action": "Limit vitamin C to <1000mg daily; counsel on adequate hydration"
+    },
+    {
+      "name": "Niacin supplements (>1500mg daily)",
+      "severity": "High",
+      "mechanism": "Niacin competes with uric acid for renal excretion and reduces febuxostat effectiveness",
+      "action": "Avoid high-dose niacin; consult prescriber if supplementation needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle (Silybum marianum)",
+      "severity": "Low",
+      "mechanism": "Potential CYP2C8/2C9 inhibition may increase febuxostat levels",
+      "action": "Monitor for increased side effects; consider alternative hepatoprotective if needed"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP1A2 and CYP2C9 induction may reduce febuxostat exposure",
+      "action": "Monitor serum uric acid levels; may require febuxostat dose adjustment"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-purine foods (organ meats, anchovies, sardines, mussels)",
+      "severity": "Moderate",
+      "mechanism": "Excessive purine intake increases uric acid production, counteracting febuxostat's therapeutic effect",
+      "action": "Counsel on low-purine diet; recommend lean proteins and plant-based alternatives"
+    },
+    {
+      "name": "High-fructose foods (sugar-sweetened beverages, honey, agave)",
+      "severity": "Moderate",
+      "mechanism": "Fructose metabolism increases uric acid synthesis and impairs renal excretion",
+      "action": "Limit added sugars and high-fructose corn syrup; emphasize water and unsweetened beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (especially beer)",
+      "severity": "Low",
+      "mechanism": "Alcohol increases uric acid production and inhibits renal excretion; beer contains purines",
+      "action": "Limit to ≤1-2 drinks daily; counsel on gout attack risk with excessive consumption"
+    },
+    {
+      "name": "Red meat and processed meats",
+      "severity": "Low",
+      "mechanism": "Moderate purine content may incrementally increase uric acid levels",
+      "action": "Moderate intake; encourage fish and plant proteins; monitor serum uric acid response"
+    }
+  ],
+  "monitoring_notes": "Monitor serum uric acid levels 2-4 weeks after initiation to assess efficacy; educate patients on gout attack risk during initial febuxostat therapy and ensure adequate hydration (2-3L water daily). Reassess at 2-5 weeks if target uric acid not achieved (<6 mg/dL for most patients)."
+}

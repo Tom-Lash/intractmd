@@ -1,0 +1,59 @@
+{
+  "drug": "Palbociclib",
+  "drug_class": "Cyclin-dependent kinase 4/6 (CDK4/6) inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer; significantly reduces palbociclib plasma concentrations and therapeutic efficacy",
+      "action": "Contraindicated; do not use concurrently with palbociclib"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxic supplement that may impair liver function and increase palbociclib metabolism via CYP3A4 induction",
+      "action": "Avoid; may compromise palbociclib tolerability and efficacy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation; may alter palbociclib metabolism",
+      "action": "Use with caution; monitor for changes in palbociclib efficacy or side effects"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4, potentially increasing palbociclib exposure",
+      "action": "Inform patient to avoid or use cautiously; separate dosing by several hours if necessary"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition leading to increased palbociclib plasma concentrations and elevated risk of adverse effects including myelosuppression and QT prolongation",
+      "action": "Completely avoid grapefruit and grapefruit juice during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase palbociclib bioavailability and gastrointestinal absorption variability",
+      "action": "Take palbociclib consistently with or without food; maintain consistent dietary pattern"
+    },
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction with excessive consumption",
+      "action": "Normal dietary intake is acceptable; excessive supplementation should be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor complete blood counts regularly as palbociclib causes myelosuppression; assess for QT prolongation risk, especially if combined with other QT-prolonging agents. Counsel patients on strict grapefruit avoidance and review all supplements and herbal products for CYP3A4 interactions."
+}

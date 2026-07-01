@@ -1,0 +1,53 @@
+{
+  "drug": "Amantadine",
+  "drug_class": "Antiviral/Antiparkinsonian Agent",
+  "key_pathways": [
+    "Renal excretion (minimal hepatic metabolism)",
+    "Dopaminergic pathways",
+    "NMDA receptor antagonism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anticholinergic supplements (e.g., Jimson weed, Datura)",
+      "severity": "High",
+      "mechanism": "Additive anticholinergic effects may increase risk of urinary retention, constipation, confusion, and hallucinations",
+      "action": "Avoid concurrent use; counsel on anticholinergic side effects"
+    },
+    {
+      "name": "Stimulant supplements (e.g., ephedra, excessive caffeine >300mg/day)",
+      "severity": "High",
+      "mechanism": "Combined dopaminergic/stimulant activity may cause tachycardia, tremor, agitation, and cardiac arrhythmias",
+      "action": "Limit caffeine intake and avoid herbal stimulants; monitor heart rate and blood pressure"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild dopaminergic effects; potential for additive CNS stimulation",
+      "action": "Monitor for increased tremor, insomnia, or agitation"
+    },
+    {
+      "name": "L-DOPA supplements",
+      "severity": "Low",
+      "mechanism": "Combined dopaminergic activity may enhance therapeutic or adverse effects",
+      "action": "Use together cautiously; monitor for dyskinesia or behavioral changes"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods (processed foods, cured meats)",
+      "severity": "Low",
+      "mechanism": "Amantadine is renally eliminated; excessive sodium may affect fluid/electrolyte balance and renal function monitoring",
+      "action": "Encourage moderate sodium intake; maintain consistent hydration status"
+    },
+    {
+      "name": "Caffeine-rich beverages (coffee, energy drinks, tea)",
+      "severity": "Low",
+      "mechanism": "Caffeine may potentiate CNS stimulation and increase amantadine-related tremor or insomnia",
+      "action": "Limit to moderate amounts (<300mg/day); monitor for CNS overstimulation"
+    }
+  ],
+  "monitoring_notes": "Amantadine has minimal drug metabolism but is renally eliminated; monitor renal function regularly, especially in elderly patients or those with renal impairment. Watch for CNS effects (tremor, insomnia, hallucinations) and anticholinergic symptoms (urinary retention, constipation), which may be exacerbated by supplements or high caffeine intake."
+}

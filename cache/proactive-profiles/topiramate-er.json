@@ -1,0 +1,67 @@
+{
+  "drug": "Topiramate ER",
+  "drug_class": "Anticonvulsant/Antiepileptic Agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Renal excretion",
+    "Carbonic anhydrase inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce topiramate levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Phenobarbital",
+      "severity": "High",
+      "mechanism": "Enhanced metabolism of topiramate via CYP3A4 induction; reduced anticonvulsant efficacy",
+      "action": "Avoid or require dose adjustment and therapeutic drug monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Potential additive anticonvulsant effects; minor CYP3A4 interaction",
+      "action": "Monitor seizure control; report changes in seizure frequency"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce topiramate absorption if taken simultaneously",
+      "action": "Separate dosing by 2+ hours; monitor seizure control"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May affect topiramate GI absorption",
+      "action": "Separate dosing by 2+ hours; maintain consistent timing"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Additive CNS depression; increased risk of sedation, cognitive impairment, and ataxia",
+      "action": "Avoid alcohol completely or limit to minimal intake; counsel on impaired judgment/motor function"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase topiramate exposure",
+      "action": "Limit consumption; monitor for increased adverse effects"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay ER formulation absorption timing",
+      "action": "Take consistently with or without food; maintain routine"
+    }
+  ],
+  "monitoring_notes": "Monitor for cognitive/CNS effects, especially with alcohol or other CNS depressants. Assess renal function periodically, as topiramate is primarily renally eliminated and carbonic anhydrase inhibition may affect electrolytes and hydration status. Watch for metabolic acidosis and hypokalemia."
+}

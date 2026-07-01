@@ -1,0 +1,78 @@
+{
+  "drug": "Meloxicam",
+  "drug_class": "NSAID (Nonsteroidal Anti-Inflammatory Drug)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet effects increase bleeding risk",
+      "action": "Avoid concurrent use; counsel patient on bleeding signs"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet and anticoagulant effects",
+      "action": "Discontinue or use low-dose only; monitor for bleeding"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet activity increases GI and systemic bleeding risk",
+      "action": "Avoid concurrent use; counsel on bleeding precautions"
+    },
+    {
+      "name": "Corticosteroids (concurrent use)",
+      "severity": "High",
+      "mechanism": "Markedly increases GI ulceration and perforation risk",
+      "action": "Avoid combination; if necessary, use PPI prophylaxis and monitor closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 induction may decrease meloxicam levels",
+      "action": "Monitor efficacy; may require dose adjustment"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties; may have additive GI effects",
+      "action": "Use cautiously; counsel on GI symptom monitoring"
+    },
+    {
+      "name": "Omega-3 fatty acids (high-dose)",
+      "severity": "Low",
+      "mechanism": "Modest antiplatelet effects may add to NSAID bleeding risk",
+      "action": "Monitor; maintain standard doses and watch for bleeding signs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (>2 drinks/day)",
+      "severity": "High",
+      "mechanism": "Increases GI irritation, ulceration, and bleeding risk; impairs renal function",
+      "action": "Strongly advise minimization; counsel on GI and cardiovascular risks"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs reduce sodium excretion; excessive intake may worsen fluid retention and hypertension",
+      "action": "Recommend moderate sodium intake; monitor BP and fluid status"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase meloxicam exposure slightly",
+      "action": "Limit consumption; monitor for adverse effects if used"
+    }
+  ],
+  "monitoring_notes": "Monitor for GI symptoms (pain, nausea, dark stools), renal function (BUN, creatinine), blood pressure, and cardiovascular events. Educate patients on increased ulceration/perforation risk, especially with age >65 or prior GI disease; consider PPI prophylaxis for high-risk patients."
+}

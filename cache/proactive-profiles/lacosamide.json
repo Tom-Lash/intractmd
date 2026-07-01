@@ -1,0 +1,46 @@
+{
+  "drug": "Lacosamide",
+  "drug_class": "Antiepileptic agent (functionalized amino acid)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion (40% unchanged)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce metabolic pathways and reduce lacosamide efficacy; potential for breakthrough seizures",
+      "action": "Avoid concomitant use; if necessary, obtain serum levels and adjust dose under close monitoring"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "Theoretical risk of additive anticonvulsant effects and increased CNS depression",
+      "action": "Avoid or use with caution; monitor for excessive sedation and dizziness"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depressant effects, increasing sedation and dizziness",
+      "action": "Counsel patient on additive CNS effects; monitor for excessive drowsiness"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression and hepatotoxicity risk",
+      "action": "Advise cautious use; monitor for increased sedation and liver function"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Moderate",
+      "mechanism": "Additive CNS depression may worsen dizziness, ataxia, and cognitive impairment; increases seizure risk",
+      "action": "Counsel strict alcohol avoidance; educate patient on increased fall and seizure risk"
+    }
+  ],
+  "monitoring_notes": "Lacosamide undergoes minimal hepatic metabolism, reducing drug-drug interaction risk. Monitor for CNS-related adverse effects (dizziness, ataxia, diplopia) when used with other sedating agents; renal function assessment recommended given 40% renal excretion."
+}

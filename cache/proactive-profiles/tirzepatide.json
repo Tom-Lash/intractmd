@@ -1,0 +1,61 @@
+{
+  "drug": "Tirzepatide",
+  "drug_class": "GLP-1 and GIP receptor agonist",
+  "key_pathways": [
+    "GLP-1 signaling",
+    "GIP signaling",
+    "Gastric motility",
+    "Hepatic metabolism (minor)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose chromium",
+      "severity": "Moderate",
+      "mechanism": "May potentiate hypoglycemic effects and increase risk of severe hypoglycemia",
+      "action": "Avoid supplemental chromium; monitor blood glucose closely if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May have additive glucose-lowering effects",
+      "action": "Monitor blood glucose regularly; patient education on hypoglycemia symptoms advised"
+    },
+    {
+      "name": "Cinnamon extract",
+      "severity": "Low",
+      "mechanism": "Potential additive glucose-lowering activity",
+      "action": "Monitor for signs of hypoglycemia; coordinate with healthcare provider"
+    },
+    {
+      "name": "Berberine",
+      "severity": "Low",
+      "mechanism": "May enhance glucose-lowering effects",
+      "action": "Monitor blood glucose; educate on hypoglycemia awareness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>50g fat per meal)",
+      "severity": "Moderate",
+      "mechanism": "Delays gastric emptying and may exacerbate nausea/GI side effects; tirzepatide already slows gastric motility",
+      "action": "Counsel patients to consume low-fat, moderate-portion meals; space meals consistently"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Rapid-digesting carbohydrates (high glycemic index)",
+      "severity": "Low",
+      "mechanism": "May cause postprandial blood glucose spikes; tirzepatide efficacy depends on meal composition adherence",
+      "action": "Educate on balanced macronutrient intake and low-glycemic index food selection"
+    },
+    {
+      "name": "Alcohol (particularly on empty stomach)",
+      "severity": "Low",
+      "mechanism": "May increase hypoglycemia risk and gastric irritation; tirzepatide delays gastric emptying",
+      "action": "Advise moderate consumption with food; monitor for hypoglycemia symptoms"
+    }
+  ],
+  "monitoring_notes": "Tirzepatide has minimal hepatic metabolism and few drug interactions, but gastrointestinal tolerability is paramount—counsel on meal timing, composition, and portion control. Monitor for pancreatitis signs, hypoglycemia (especially if combined with other antidiabetics), and dehydration due to GI effects."
+}

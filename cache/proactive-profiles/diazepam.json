@@ -1,0 +1,72 @@
+{
+  "drug": "Diazepam",
+  "drug_class": "Benzodiazepine (anxiolytic, sedative-hypnotic)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2B6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C19 induction reduces diazepam levels and efficacy",
+      "action": "Avoid concurrent use; notify prescriber if currently taking"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; increased sedation and cognitive impairment",
+      "action": "Discontinue kava kava before diazepam therapy"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression effects; enhanced sedation and impaired psychomotor function",
+      "action": "Avoid combination; space dosing by at least 8 hours if unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depressant effects",
+      "action": "Monitor for excessive drowsiness; use lowest effective doses"
+    },
+    {
+      "name": "Chamomile",
+      "severity": "Low",
+      "mechanism": "Potential additive sedation; minor interaction risk",
+      "action": "Monitor clinical response; inform patient of cumulative CNS effects"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition may slightly increase diazepam levels",
+      "action": "Monitor for signs of overdose; limit grapefruit consumption"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases diazepam bioavailability and plasma concentrations",
+      "action": "Eliminate grapefruit products from diet during diazepam therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; enhanced sedation and respiratory depression risk",
+      "action": "Limit or avoid alcohol; educate patient on severe interaction risks"
+    },
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May slow absorption but increase overall bioavailability variably",
+      "action": "Take diazepam consistently with or without food for predictable effect"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, respiratory depression, and cognitive impairment, particularly during initiation or dose escalation. Counsel patients to avoid all CNS depressants and maintain consistent dietary habits to prevent fluctuations in drug levels and clinical response."
+}

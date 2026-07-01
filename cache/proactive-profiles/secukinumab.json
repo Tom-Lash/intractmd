@@ -1,0 +1,52 @@
+{
+  "drug": "Secukinumab",
+  "drug_class": "Monoclonal Antibody (IL-17A Inhibitor)",
+  "key_pathways": [
+    "IL-17A signaling",
+    "Immune modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immune stimulant may counteract secukinumab's immunosuppressive effects and reduce therapeutic efficacy",
+      "action": "Discontinue echinacea use; consult physician before use during secukinumab therapy"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immunostimulant properties may antagonize IL-17A inhibition and compromise treatment efficacy",
+      "action": "Avoid concurrent use; discuss alternative immune support with healthcare provider"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Moderate",
+      "mechanism": "May enhance immune activation, potentially reducing secukinumab efficacy in autoimmune conditions",
+      "action": "Use with caution or avoid; monitor disease activity closely if concurrent use is necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate immune response; monitor for changes in disease control",
+      "action": "Use cautiously; select well-studied strains and monitor therapeutic response"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Supports immune homeostasis; deficiency common in autoimmune diseases; may be beneficial",
+      "action": "Maintain adequate vitamin D levels with monitoring; supplementation generally supportive"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate inflammatory responses in certain autoimmune conditions; not a direct drug interaction",
+      "action": "Moderate sodium intake as part of general autoimmune disease management"
+    }
+  ],
+  "monitoring_notes": "Secukinumab is a biologic agent with minimal direct food-drug interactions, but immune-stimulating supplements should be avoided to prevent antagonism of therapeutic effects. Monitor for increased infection risk due to IL-17A inhibition, which impairs mucosal immunity; counsel patients on signs of infection and vaccine considerations."
+}

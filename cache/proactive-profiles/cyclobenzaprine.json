@@ -1,0 +1,71 @@
+{
+  "drug": "Cyclobenzaprine",
+  "drug_class": "Skeletal Muscle Relaxant (Tricyclic Amine)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce cyclobenzaprine levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression may cause excessive sedation and impaired cognition",
+      "action": "Avoid combination; if used, monitor closely for somnolence and dizziness"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk",
+      "action": "Contraindicated; use alternative muscle relaxation therapies"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase cyclobenzaprine concentrations",
+      "action": "Monitor for increased adverse effects; dose adjustment may be needed"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression effects",
+      "action": "Use with caution; counsel on avoiding activities requiring alertness"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Low",
+      "mechanism": "Theoretical serotonergic interaction; additive sedation risk",
+      "action": "Monitor for excessive drowsiness; separate dosing if possible"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases cyclobenzaprine bioavailability and toxicity risk",
+      "action": "Eliminate grapefruit products from diet during cyclobenzaprine therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase cyclobenzaprine absorption and peak concentrations",
+      "action": "Take consistently with or without food; maintain routine for stable levels"
+    },
+    {
+      "name": "Alcohol-Containing Foods (Kombucha, Certain Sauces)",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and increased sedation risk",
+      "action": "Minimize consumption; counsel patient on alcohol avoidance during therapy"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive CNS depression, dry mouth, and dizziness, particularly when cyclobenzaprine is combined with alcohol or other CNS depressants. Educate patients to avoid driving and hazardous activities until individual tolerance is established."
+}

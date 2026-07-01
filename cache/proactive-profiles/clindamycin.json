@@ -1,0 +1,60 @@
+{
+  "drug": "Clindamycin",
+  "drug_class": "Lincosamide antibiotic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Kaolin-pectin antidiarrheals",
+      "severity": "High",
+      "mechanism": "Reduces clindamycin absorption by binding in GI tract; may reduce antibiotic efficacy",
+      "action": "Separate administration by at least 2-3 hours; avoid concurrent use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4, potentially reducing clindamycin concentrations",
+      "action": "Consider alternative antibiotic or monitor for reduced efficacy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics (Saccharomyces boulardii, Lactobacillus)",
+      "severity": "Low",
+      "mechanism": "Clindamycin disrupts normal flora; probiotics may help mitigate C. difficile risk during therapy",
+      "action": "Administer 2+ hours apart; may be beneficial adjunctive therapy"
+    },
+    {
+      "name": "Magnesium/calcium supplements",
+      "severity": "Low",
+      "mechanism": "Minor potential for chelation; unlikely to significantly impact clindamycin absorption",
+      "action": "Separate dosing by 2 hours if desired; monitor for efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (concurrent dosing)",
+      "severity": "Moderate",
+      "mechanism": "May delay clindamycin absorption, though oral formulation can be taken with or without food",
+      "action": "Take with glass of water; food is not contraindicated but may slow absorption rate"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Fermented foods (yogurt, kefir, sauerkraut)",
+      "severity": "Low",
+      "mechanism": "Contain beneficial bacteria; disrupted by clindamycin but may help restore flora post-therapy",
+      "action": "Continue consumption during therapy; particularly beneficial after treatment completion"
+    },
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "May modestly affect GI transit; clindamycin may cause diarrhea independent of diet",
+      "action": "Maintain normal fiber intake; monitor for diarrhea severity"
+    }
+  ],
+  "monitoring_notes": "Monitor for Clostridioides difficile-associated diarrhea (CDAD), the primary safety concern with clindamycin; antibiotic-induced diarrhea may be severe and warrants medical evaluation. Counsel patients to report persistent or bloody diarrhea, abdominal pain, or signs of hypersensitivity."
+}

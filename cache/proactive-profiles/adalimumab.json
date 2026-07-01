@@ -1,0 +1,71 @@
+{
+  "drug": "Adalimumab",
+  "drug_class": "Tumor Necrosis Factor (TNF) Inhibitor - Monoclonal Antibody",
+  "key_pathways": [
+    "TNF-alpha inhibition",
+    "Immune system modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "TNF-alpha stimulation may counteract adalimumab's immunosuppressive effects and reduce therapeutic efficacy",
+      "action": "Avoid use; consider alternative immune support with healthcare provider approval"
+    },
+    {
+      "name": "Live Probiotics (high-dose)",
+      "severity": "High",
+      "mechanism": "May cause infection risk in immunocompromised patients receiving TNF inhibitors; contraindicated during active immunosuppression",
+      "action": "Avoid high-dose live bacterial supplements; consult pharmacist/physician before use"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immune-stimulating properties may reduce adalimumab efficacy and increase infection/autoimmune complications",
+      "action": "Discontinue; discuss alternative herbal supplements with provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Moderate immune modulation; deficiency common in TNF inhibitor users and may require monitoring",
+      "action": "Monitor levels; supplementation may be beneficial if deficient (consult provider for dosing)"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Anti-inflammatory properties generally synergistic with adalimumab but may potentiate bleeding at high doses",
+      "action": "Use at standard doses; monitor for unusual bleeding or bruising"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild anti-inflammatory; may have additive effects with adalimumab at moderate doses",
+      "action": "Use cautiously at culinary amounts; avoid therapeutic doses without provider approval"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Unpasteurized/Raw Animal Products",
+      "severity": "Critical",
+      "mechanism": "Increased infection risk from pathogens (Listeria, Salmonella, E. coli) in severely immunocompromised patients on TNF inhibitors",
+      "action": "Strictly avoid raw/undercooked meat, seafood, eggs, and unpasteurized dairy; ensure all foods are properly cooked/pasteurized"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Sugar Foods/Processed Foods",
+      "severity": "Low",
+      "mechanism": "May promote chronic inflammation and reduce adalimumab efficacy; increase infection risk",
+      "action": "Limit intake; emphasize whole foods, lean proteins, and anti-inflammatory diet"
+    },
+    {
+      "name": "Alcohol (Moderate-High Intake)",
+      "severity": "Low",
+      "mechanism": "Hepatotoxicity risk; adalimumab associated with rare liver injury; alcohol increases risk",
+      "action": "Limit to ≤1 drink/day for women, ≤2 for men; monitor liver function tests"
+    }
+  ],
+  "monitoring_notes": "Adalimumab significantly increases infection risk and requires avoidance of live vaccines and immunostimulating supplements. Monitor liver function tests, CBC, and signs of infection; educate patients on food safety and avoidance of live/raw foods, particularly in immunocompromised states."
+}

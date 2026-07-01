@@ -1,0 +1,83 @@
+{
+  "drug": "Apixaban",
+  "drug_class": "Factor Xa Inhibitor (Direct Oral Anticoagulant)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin",
+      "severity": "Critical",
+      "mechanism": "Concurrent anticoagulants increase bleeding risk significantly",
+      "action": "Do not combine with other anticoagulants unless directed by physician for bridging therapy"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C8 inducer reduces apixaban plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consult prescriber before use"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "High",
+      "mechanism": "Antiplatelet and anticoagulant properties potentiate bleeding risk",
+      "action": "Avoid or use only with close medical supervision and INR/bleeding monitoring"
+    },
+    {
+      "name": "Garlic (High-dose supplements)",
+      "severity": "High",
+      "mechanism": "Antiplatelet effects increase bleeding tendency",
+      "action": "Avoid high-dose supplements; normal dietary garlic is acceptable"
+    },
+    {
+      "name": "Cranberry Supplements",
+      "severity": "Moderate",
+      "mechanism": "May inhibit CYP3A4 and CYP2C8, potentially increasing apixaban levels",
+      "action": "Avoid high-dose cranberry supplements; discuss with provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 Fatty Acids (High-dose)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effect may additively increase bleeding risk",
+      "action": "Use standard dietary doses; monitor for unusual bleeding"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties; theoretical bleeding risk",
+      "action": "Use in culinary amounts; avoid high-dose supplements without monitoring"
+    },
+    {
+      "name": "Vitamin E (High-dose >400 IU)",
+      "severity": "Low",
+      "mechanism": "Antiplatelet effect at high doses may increase bleeding risk",
+      "action": "Limit to dietary sources or standard supplementation; report any bleeding"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases apixaban bioavailability and plasma concentrations, increasing bleeding risk",
+      "action": "Completely avoid grapefruit and grapefruit juice during apixaban therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry Juice (High-volume consumption)",
+      "severity": "Low",
+      "mechanism": "May weakly inhibit CYP3A4; excessive intake could theoretically increase apixaban levels",
+      "action": "Limit to occasional use; avoid daily high-volume consumption"
+    },
+    {
+      "name": "Vitamin K-Rich Foods (Kale, Spinach, Broccoli)",
+      "severity": "Low",
+      "mechanism": "Unlike warfarin, apixaban is not vitamin K-dependent, but consistency in intake is preferable",
+      "action": "Maintain consistent intake; no strict restriction needed"
+    }
+  ],
+  "monitoring_notes": "Apixaban has minimal food interactions compared to warfarin due to its predictable pharmacokinetics, but CYP3A4/2C8 inducers and inhibitors require caution. Monitor for signs of bleeding (bruising, blood in urine/stool, nosebleeds) and report concurrent medications or high-dose supplements to the prescribing provider, especially those affecting liver enzymes."
+}

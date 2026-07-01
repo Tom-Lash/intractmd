@@ -1,0 +1,60 @@
+{
+  "drug": "Terbinafine",
+  "drug_class": "Allylamine antifungal",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce terbinafine plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4 and potentially reduce terbinafine levels",
+      "action": "Use alternative immune support or separate dosing by 2+ hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Caffeine supplements",
+      "severity": "Low",
+      "mechanism": "CYP1A2 competition may increase caffeine levels; terbinafine is a moderate CYP1A2 inhibitor",
+      "action": "Monitor for caffeine-related side effects; reduce caffeine intake if needed"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential minor CYP3A4 induction; may slightly reduce terbinafine efficacy",
+      "action": "Monitor clinical response; no dose adjustment typically required"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (concurrent dosing)",
+      "severity": "Moderate",
+      "mechanism": "May increase terbinafine absorption variability; fat content affects bioavailability",
+      "action": "Take terbinafine consistently with or without food; avoid variable timing with fatty meals"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase terbinafine levels; clinically minor interaction",
+      "action": "Limit consumption; monitor for increased side effects (headache, GI upset)"
+    },
+    {
+      "name": "Caffeine-containing foods (coffee, tea, chocolate)",
+      "severity": "Low",
+      "mechanism": "CYP1A2 inhibition by terbinafine may increase caffeine accumulation",
+      "action": "Moderate intake; monitor for jitteriness or insomnia"
+    }
+  ],
+  "monitoring_notes": "Terbinafine is a moderate CYP2D6 inhibitor that may increase levels of drugs metabolized by this pathway; monitor for hepatotoxicity and taste disturbances during therapy. Patient counseling should emphasize consistent meal timing and avoidance of enzyme-inducing supplements to maintain consistent antifungal efficacy."
+}

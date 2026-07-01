@@ -1,0 +1,53 @@
+{
+  "drug": "Tiagabine",
+  "drug_class": "Anticonvulsant (GABA reuptake inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "Protein binding displacement"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces tiagabine levels and efficacy; may precipitate seizures",
+      "action": "Contraindicated; do not use concurrently with tiagabine"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and sedation; may increase seizure risk with abrupt discontinuation",
+      "action": "Avoid concurrent use; discuss with healthcare provider before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild anticonvulsant properties; potential additive effects on seizure threshold",
+      "action": "Monitor seizure control if used; report any changes in seizure frequency"
+    },
+    {
+      "name": "Magnesium supplementation",
+      "severity": "Low",
+      "mechanism": "May enhance GABAergic activity; theoretical additive CNS effects",
+      "action": "Monitor for increased sedation; maintain consistent dosing if using"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase tiagabine absorption and peak concentrations; potential for increased side effects",
+      "action": "Take tiagabine consistently with or without food; avoid large fatty meals immediately before dosing"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Moderate",
+      "mechanism": "Additive CNS depression; increased risk of sedation, dizziness, and impaired cognition",
+      "action": "Limit or avoid alcohol consumption; educate patient on increased fall and seizure risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for seizure control, sedation, and cognitive effects. Tiagabine has a narrow therapeutic index and is susceptible to CYP3A4 interactions; advise patients to maintain consistent dosing timing and report any changes in seizure frequency or CNS symptoms."
+}

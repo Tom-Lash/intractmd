@@ -1,0 +1,72 @@
+{
+  "drug": "Promethazine",
+  "drug_class": "First-generation antihistamine; phenothiazine derivative",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP1A2",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce promethazine levels; additive photosensitivity risk",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; both agents cause drowsiness and impair cognition",
+      "action": "Contraindicated; counsel patient to discontinue kava kava"
+    },
+    {
+      "name": "Anticholinergic supplements (Jimsonweed, Datura)",
+      "severity": "Critical",
+      "mechanism": "Promethazine has anticholinergic properties; additive effects increase risk of urinary retention, severe constipation, altered mental status, and hyperthermia",
+      "action": "Strictly avoid; educate patient on herbal products with anticholinergic activity"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase sedation and drowsiness",
+      "action": "Monitor for excessive sedation; advise patient to use caution with activities requiring alertness"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depressant effects",
+      "action": "Counsel on increased sedation risk; monitor clinical response"
+    },
+    {
+      "name": "Grapefruit extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may slightly increase promethazine levels",
+      "action": "Limit grapefruit consumption; monitor for increased anticholinergic or sedative effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Significant additive CNS depression; alcohol impairs metabolism and increases promethazine levels",
+      "action": "Advise complete avoidance or strict limitation; warn against driving/operating machinery"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay absorption and alter peak levels of promethazine",
+      "action": "Administer promethazine consistently with or without food for predictable response"
+    },
+    {
+      "name": "Tyramine-rich foods (cured meats, aged cheeses, fermented products)",
+      "severity": "Low",
+      "mechanism": "Phenothiazines may potentiate hypertensive response to tyramine",
+      "action": "Encourage moderation in high-tyramine food intake; monitor blood pressure"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive CNS depression, anticholinergic toxicity (urinary retention, constipation, confusion), and orthostatic hypotension, particularly in elderly patients or those with concurrent medications. Assess compliance with interaction avoidance at each visit and reinforce counseling on alcohol and herbal products with CNS or anticholinergic effects."
+}

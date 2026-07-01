@@ -1,0 +1,77 @@
+{
+  "drug": "Midazolam",
+  "drug_class": "Benzodiazepine (short-acting anxiolytic/sedative)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces midazolam levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative anxiolytic if St. John's Wort is needed"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression; increased risk of respiratory depression and oversedation",
+      "action": "Contraindicated; do not use together under any circumstances"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and sedation potentiation",
+      "action": "Avoid concurrent use; separate dosing or discontinue valerian"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase midazolam levels",
+      "action": "Monitor for excessive sedation; may require dose adjustment"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Potential additive anxiolytic and mild CNS depressant effects",
+      "action": "Use cautiously; monitor for enhanced sedation"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedative effects may increase drowsiness",
+      "action": "Monitor tolerance; dose adjustment may be needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases midazolam bioavailability and CNS effects; risk of severe oversedation",
+      "action": "Completely avoid grapefruit and grapefruit juice; maintain avoidance throughout therapy"
+    },
+    {
+      "name": "Pomegranate",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases midazolam levels and duration of action",
+      "action": "Avoid or limit consumption; monitor for enhanced sedation if consumed"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and slow midazolam absorption; minimal clinical impact for IV/IM forms",
+      "action": "Take oral formulations consistently with or without food; maintain routine"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; impaired cognitive and motor function",
+      "action": "Advise complete avoidance during midazolam therapy; educate on overdose risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, respiratory depression, and loss of consciousness, particularly with grapefruit co-ingestion or CNS-depressant supplements. Educate patient on grapefruit avoidance and alcohol interaction risks; reassess CNS function if new supplements or dietary changes are introduced."
+}

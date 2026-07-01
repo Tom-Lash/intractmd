@@ -1,0 +1,66 @@
+{
+  "drug": "Lorlatinib",
+  "drug_class": "Anaplastic Lymphoma Kinase (ALK) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces lorlatinib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consult oncologist before initiation or discontinuation"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases lorlatinib exposure",
+      "action": "Contraindicated; use alternative antimicrobial if possible or monitor drug levels"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor may increase lorlatinib levels and toxicity risk",
+      "action": "Avoid completely; advise patient to eliminate from regimen"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibitor; minimal clinical significance at standard doses",
+      "action": "Monitor for increased side effects; use cautiously and report any changes"
+    },
+    {
+      "name": "Curcumin",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation at high doses; limited clinical data with lorlatinib",
+      "action": "Use standard dietary doses only; avoid high-dose supplements"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases lorlatinib plasma concentration and systemic exposure",
+      "action": "Eliminate from diet; use alternative citrus fruits (oranges, lemons)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase lorlatinib absorption; food effects are moderate",
+      "action": "Maintain consistent meal patterns; take with or without food consistently as directed"
+    },
+    {
+      "name": "Cruciferous Vegetables (Broccoli, Cabbage)",
+      "severity": "Low",
+      "mechanism": "Contains compounds that may weakly induce CYP3A4 at very high intake",
+      "action": "No dietary restriction needed at normal consumption; maintain balanced diet"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of lorlatinib toxicity (CNS effects, hyperglycemia, hyperlipidemia) given CYP3A4 metabolism; baseline and periodic assessment of glucose and lipid panels recommended. Counsel patient on strict avoidance of CYP3A4 inducers/inhibitors and consistent adherence to dosing instructions."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Afatinib",
+  "drug_class": "Epidermal Growth Factor Receptor (EGFR) Inhibitor; Tyrosine Kinase Inhibitor",
+  "key_pathways": [
+    "Limited hepatic metabolism",
+    "P-gp substrate",
+    "Minimal CYP450 involvement"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "P-glycoprotein inducer may increase afatinib efflux and reduce plasma concentrations",
+      "action": "Avoid concomitant use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "May potentiate bleeding risk and increase gastrointestinal side effects",
+      "action": "Discontinue use or monitor closely for signs of bleeding"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium and magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce afatinib absorption if taken simultaneously; afatinib requires acidic pH for optimal absorption",
+      "action": "Separate dosing by at least 2 hours; take afatinib on empty stomach"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "May chelate afatinib and reduce bioavailability",
+      "action": "Space dosing at least 2 hours apart from afatinib"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Significantly increases afatinib bioavailability (up to 39% increase), risking increased toxicity and adverse effects",
+      "action": "Take afatinib on an empty stomach; avoid fatty meals for 3 hours before and 1 hour after dosing"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products and calcium-rich foods",
+      "severity": "Low",
+      "mechanism": "Calcium content may reduce afatinib absorption due to pH-dependent absorption mechanism",
+      "action": "Separate intake by at least 2 hours from afatinib administration"
+    },
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Potential P-gp inhibition may affect afatinib disposition, though clinical significance is limited",
+      "action": "Moderate consumption or consider alternative citrus fruits"
+    }
+  ],
+  "monitoring_notes": "Afatinib absorption is pH-dependent and significantly affected by food composition; consistent empty-stomach dosing is critical for optimal drug exposure. Monitor for gastrointestinal toxicity (diarrhea, nausea) and dermatologic reactions, as these are dose-dependent and may be exacerbated by high bioavailability states."
+}

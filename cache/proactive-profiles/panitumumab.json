@@ -1,0 +1,70 @@
+{
+  "drug": "Panitumumab",
+  "drug_class": "Monoclonal Antibody (EGFR Inhibitor)",
+  "key_pathways": [
+    "EGFR signaling",
+    "Immune-mediated mechanisms"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce immune system activation and potentially interfere with monoclonal antibody efficacy",
+      "action": "Avoid concurrent use; consult oncologist before use"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "May increase bleeding risk and interfere with immune response in cancer patients on biologic therapy",
+      "action": "Limit to <400 IU/day or avoid; inform healthcare provider"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "Immunostimulatory effects may counteract intended immunotherapeutic action and increase adverse events",
+      "action": "Avoid use during panitumumab therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "May support immune function; monitor for optimal levels during cancer treatment",
+      "action": "Use appropriate supplementation (800-2000 IU/day); discuss with oncology team"
+    },
+    {
+      "name": "Zinc",
+      "severity": "Low",
+      "mechanism": "Essential for immune function; deficiency may worsen treatment-related complications",
+      "action": "Monitor levels; supplement if deficient (10-15 mg/day)"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May support gastrointestinal health during cancer therapy; variable evidence",
+      "action": "May use with medical guidance; choose clinical-grade products"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "While panitumumab is not hepatically metabolized, grapefruit may affect overall immune function and drug absorption; precautionary",
+      "action": "Limit consumption; maintain consistent intake if used"
+    },
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate fluid retention and hypertension risk associated with EGFR inhibitors",
+      "action": "Maintain low-sodium diet; monitor blood pressure regularly"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "May impair immune function and increase gastrointestinal toxicity risk",
+      "action": "Limit to moderate consumption or avoid; discuss with oncologist"
+    }
+  ],
+  "monitoring_notes": "Panitumumab is a monoclonal antibody with minimal hepatic metabolism, so traditional drug interactions are limited. Monitor for immune-related adverse events (acneiform rash, diarrhea, hypomagnesemia, infusion reactions) and ensure adequate nutritional support. Regular assessment of EGFR mutation status and treatment response is essential."
+}

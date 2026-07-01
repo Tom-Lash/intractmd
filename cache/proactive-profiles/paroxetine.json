@@ -1,0 +1,91 @@
+{
+  "drug": "Paroxetine",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP2C19",
+    "Serotonin reuptake inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 and CYP2C19 inducer; increases paroxetine metabolism and reduces efficacy; risk of serotonin syndrome",
+      "action": "Discontinue St. John's Wort at least 2 weeks before starting paroxetine or avoid concurrent use"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "Critical",
+      "mechanism": "Both inhibit serotonin reuptake and tramadol inhibits norepinephrine reuptake; significant serotonin syndrome risk",
+      "action": "Avoid concurrent use; if essential, use lowest dose with close monitoring for serotonin syndrome symptoms"
+    },
+    {
+      "name": "Linezolid",
+      "severity": "Critical",
+      "mechanism": "Weak MAOI activity; combined serotonergic effect increases serotonin syndrome risk",
+      "action": "Avoid use; if medically necessary, discontinue paroxetine 2 weeks prior and monitor closely"
+    },
+    {
+      "name": "S-Adenosyl Methionine (SAM-e)",
+      "severity": "High",
+      "mechanism": "Serotonergic activity; may increase serotonin syndrome risk when combined with SSRIs",
+      "action": "Avoid concurrent use or use with caution under medical supervision"
+    },
+    {
+      "name": "5-Hydroxytryptophan (5-HTP)",
+      "severity": "High",
+      "mechanism": "Direct serotonin precursor; increases serotonergic activity and serotonin syndrome risk",
+      "action": "Discontinue 5-HTP or avoid concurrent use with paroxetine"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; paroxetine increases bleeding risk through platelet dysfunction",
+      "action": "Monitor for signs of bleeding; consider periodic assessment if long-term concurrent use"
+    },
+    {
+      "name": "Omega-3 Fatty Acids (high-dose)",
+      "severity": "Low",
+      "mechanism": "Modest antiplatelet and anticoagulant effects; additive with paroxetine's platelet effects",
+      "action": "Monitor for bleeding signs; moderate doses (≤2-3g EPA/DHA daily) generally safe"
+    },
+    {
+      "name": "Folic Acid and B-vitamins",
+      "severity": "Low",
+      "mechanism": "May potentiate serotonergic effects; generally supportive for mood",
+      "action": "Safe to use; monitor mood and anxiety symptoms with concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (if any MAOI interaction occurs)",
+      "severity": "Moderate",
+      "mechanism": "Paroxetine has minimal MAOI activity, but tyramines could theoretically elevate blood pressure if combined with unintended serotonergic potentiation",
+      "action": "No strict tyramine avoidance required with paroxetine monotherapy, but counsel to limit aged cheeses, cured meats if switching from MAOIs"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor; may moderately increase paroxetine levels, though paroxetine is primarily metabolized by CYP2D6",
+      "action": "Moderate consumption acceptable; excessive intake (>1L daily) should be avoided"
+    },
+    {
+      "name": "Caffeinated beverages (coffee, tea, energy drinks)",
+      "severity": "Low",
+      "mechanism": "Caffeine potentiates CNS stimulation and may increase anxiety, tremor, or insomnia in susceptible individuals",
+      "action": "Limit caffeine intake; counsel patients to monitor for increased anxiety or sleep disturbance"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depressant; may potentiate sedation, impair judgment, and worsen depression; increases bleeding risk",
+      "action": "Advise minimal or no alcohol consumption; counsel on impaired cognition and fall risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity) especially with supplements or drugs affecting serotonin. Assess bleeding risk and symptoms (bruising, petechiae) as paroxetine inhibits platelet aggregation; caution with anticoagulants or antiplatelet agents."
+}

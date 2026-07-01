@@ -1,0 +1,53 @@
+{
+  "drug": "Ledipasvir",
+  "drug_class": "HCV NS5A inhibitor",
+  "key_pathways": [
+    "P-gp substrate",
+    "OATP1B1/1B3"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "P-gp inducer reduces ledipasvir plasma concentrations significantly, compromising HCV treatment efficacy",
+      "action": "Discontinue St. John's Wort at least 2 weeks before and during ledipasvir therapy"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Potent P-gp and OATP inducer markedly decreases ledipasvir bioavailability",
+      "action": "Avoid concurrent use; if tuberculosis treatment required, consult specialist for alternative regimen"
+    },
+    {
+      "name": "Carbamazepine",
+      "severity": "High",
+      "mechanism": "P-gp inducer reduces ledipasvir levels and antiviral efficacy",
+      "action": "Use alternative anticonvulsant; if unavoidable, monitor HCV RNA closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic (high-dose)",
+      "severity": "Low",
+      "mechanism": "Potential mild P-gp induction at very high doses",
+      "action": "Monitor ledipasvir efficacy if using pharmacologic doses; dietary garlic is safe"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase ledipasvir levels unpredictably; P-gp inhibition affects absorption",
+      "action": "Eliminate grapefruit products during ledipasvir treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May enhance ledipasvir absorption slightly; consistent intake recommended",
+      "action": "Take ledipasvir with food consistently; meal type (fat content) less critical than adherence"
+    }
+  ],
+  "monitoring_notes": "Ledipasvir requires administration with food to optimize bioavailability and is substrate for P-gp and OATP transporters, making it susceptible to significant drug interactions. Monitor HCV RNA at standard intervals; any virologic breakthrough warrants assessment for concurrent P-gp-inducing agents."
+}

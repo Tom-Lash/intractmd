@@ -1,0 +1,60 @@
+{
+  "drug": "Valganciclovir",
+  "drug_class": "Antiviral (Nucleoside analog)",
+  "key_pathways": [
+    "Hepatic metabolism to ganciclovir",
+    "Renal elimination",
+    "Not significantly metabolized by CYP450"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Nephrotoxic herbs (Aristolochia, Creatine megadoses)",
+      "severity": "High",
+      "mechanism": "Additive renal toxicity; valganciclovir is renally eliminated and can cause nephrotoxicity",
+      "action": "Avoid concurrent use; monitor serum creatinine and BUN regularly"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic metabolism and reduce valganciclovir efficacy",
+      "action": "Avoid or use alternative antidepressant; consult prescriber if concurrent use necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Valganciclovir can disrupt gut flora; probiotics may help restore balance",
+      "action": "May be beneficial; use standard formulations and monitor GI tolerance"
+    },
+    {
+      "name": "Electrolyte supplements (Sodium, Potassium)",
+      "severity": "Low",
+      "mechanism": "Valganciclovir may affect electrolyte balance; monitoring recommended",
+      "action": "Use only as directed by provider; monitor serum electrolytes"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose vitamin C supplements in food form",
+      "severity": "Moderate",
+      "mechanism": "May increase urinary crystallization risk; valganciclovir already poses renal risk",
+      "action": "Limit to RDA levels; ensure adequate hydration (2-3 L/day minimum)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Minimal CYP3A4 interaction as valganciclovir undergoes limited hepatic metabolism",
+      "action": "No strict restriction needed, but monitor for any unexpected efficacy changes"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May affect renal function and electrolyte balance during valganciclovir therapy",
+      "action": "Moderate sodium intake; maintain consistent dietary pattern"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (serum creatinine, GFR, BUN) at baseline and regularly during therapy as valganciclovir is nephrotoxic and renally eliminated. Ensure adequate hydration and assess for signs of nephrotoxicity (elevated creatinine, decreased urine output), electrolyte abnormalities, and bone marrow suppression."
+}

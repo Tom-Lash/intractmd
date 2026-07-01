@@ -1,0 +1,61 @@
+{
+  "drug": "Raloxifene",
+  "drug_class": "Selective Estrogen Receptor Modulator (SERM)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "Glucuronidation",
+    "Sulfation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce raloxifene bioavailability and efficacy",
+      "action": "Avoid concurrent use or monitor for reduced therapeutic effect"
+    },
+    {
+      "name": "Ginkgo biloba (high-dose)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effects and increase thrombotic risk",
+      "action": "Avoid high-dose supplementation; use only under medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May impair raloxifene absorption if taken simultaneously; raloxifene itself indicated for bone health",
+      "action": "Separate administration by at least 2 hours"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "May reduce raloxifene absorption through GI binding",
+      "action": "Administer iron supplements at least 2 hours apart from raloxifene"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "May significantly increase raloxifene absorption and systemic exposure, increasing adverse effects risk",
+      "action": "Take raloxifene with consistent fat intake or on fasting state as directed"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase raloxifene levels; minor interaction potential",
+      "action": "Limit consumption or monitor for increased side effects"
+    },
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "May induce glucuronidation and reduce raloxifene exposure",
+      "action": "Maintain consistent dietary intake; excessive changes should be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor for venous thromboembolism (VTE) risk, especially in immobilized patients. Assess bone mineral density response and counsel on adequate calcium/vitamin D intake separate from raloxifene dosing."
+}

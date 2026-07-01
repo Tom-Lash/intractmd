@@ -1,0 +1,53 @@
+{
+  "drug": "Acyclovir",
+  "drug_class": "Nucleoside Analog Antiviral",
+  "key_pathways": [
+    "Renal excretion (glomerular filtration and active tubular secretion)",
+    "Viral thymidine kinase activation",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Probenecid",
+      "severity": "High",
+      "mechanism": "Probenecid inhibits renal tubular secretion of acyclovir, significantly increasing serum concentrations and nephrotoxicity risk",
+      "action": "Avoid concurrent use or monitor renal function closely if co-administration necessary; consider dose reduction"
+    },
+    {
+      "name": "Nephrotoxic supplements (Aristolochic acid-containing herbs)",
+      "severity": "High",
+      "mechanism": "Combined nephrotoxicity with acyclovir increases risk of acute kidney injury, especially in elderly or renally compromised patients",
+      "action": "Avoid supplements containing aristolochic acid or other nephrotoxic botanicals; monitor serum creatinine"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "L-lysine",
+      "severity": "Low",
+      "mechanism": "Potential additive antiviral effects; limited clinical evidence but theoretical benefit in herpes prophylaxis",
+      "action": "Monitor for enhanced efficacy; no dose adjustment typically needed but inform patient of concurrent use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may theoretically reduce acyclovir levels slightly, though acyclovir is minimally hepatically metabolized",
+      "action": "Counsel patient on limited interaction risk; monitor clinical response to antiviral therapy"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake may affect renal function and fluid balance, potentially impacting acyclovir clearance in susceptible patients",
+      "action": "Maintain adequate hydration and counsel patients with renal impairment to moderate sodium intake"
+    },
+    {
+      "name": "Dehydrating beverages (excessive caffeine/alcohol)",
+      "severity": "Low",
+      "mechanism": "Dehydration reduces glomerular filtration rate and increases acyclovir concentration, raising nephrotoxicity risk",
+      "action": "Encourage adequate water intake (2-3 liters daily) and limit caffeinated/alcoholic beverages during treatment"
+    }
+  ],
+  "monitoring_notes": "Monitor serum creatinine, BUN, and urinalysis baseline and during therapy, particularly in elderly patients, those with renal impairment, or receiving IV acyclovir. Ensure adequate hydration to minimize nephrotoxicity risk and optimize renal clearance."
+}

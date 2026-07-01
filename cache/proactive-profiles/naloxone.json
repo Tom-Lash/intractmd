@@ -1,0 +1,27 @@
+{
+  "drug": "Naloxone",
+  "drug_class": "Opioid Antagonist",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Primarily renal excretion"
+  ],
+  "avoid_supplements": [],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Theoretical enzyme induction may theoretically affect naloxone metabolism, though clinical significance is minimal due to naloxone's short half-life and rapid clearance",
+      "action": "Monitor for reduced naloxone efficacy in emergency settings; no routine dose adjustment needed"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay absorption of oral naloxone formulations by slowing gastrointestinal transit",
+      "action": "Take oral naloxone with or without food; parenteral and intranasal routes are unaffected"
+    }
+  ],
+  "monitoring_notes": "Naloxone has minimal drug interactions due to its short half-life (30-81 minutes), low systemic bioavailability, and rapid hepatic metabolism. Primary monitoring should focus on opioid withdrawal symptoms and adequacy of opioid reversal rather than supplement/food interactions."
+}

@@ -1,0 +1,104 @@
+{
+  "drug": "Ketorolac",
+  "drug_class": "Non-selective NSAID (Nonsteroidal Anti-inflammatory Drug)",
+  "key_pathways": [
+    "CYP2C8",
+    "CYP2C9",
+    "CYP3A4",
+    "Renal excretion",
+    "Protein binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Aspirin",
+      "severity": "Critical",
+      "mechanism": "Both are NSAIDs; combined use increases risk of GI bleeding, ulceration, and renal impairment",
+      "action": "Do not combine ketorolac with aspirin or other NSAIDs without explicit physician approval"
+    },
+    {
+      "name": "Warfarin or other anticoagulants",
+      "severity": "Critical",
+      "mechanism": "Ketorolac inhibits platelet function and increases bleeding risk; may displace warfarin from protein binding",
+      "action": "Avoid concurrent use; if necessary, monitor INR closely and adjust warfarin dose"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Garlic has antiplatelet and anticoagulant properties; combined effect increases bleeding risk",
+      "action": "Discontinue high-dose garlic supplements during ketorolac therapy"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Ginkgo has antiplatelet effects; combined with ketorolac increases bleeding risk",
+      "action": "Avoid ginkgo biloba supplements during ketorolac use"
+    },
+    {
+      "name": "Omega-3 fatty acids (high-dose)",
+      "severity": "High",
+      "mechanism": "High-dose omega-3 supplements have antiplatelet effects; increases bleeding risk with NSAIDs",
+      "action": "Limit omega-3 supplementation to dietary sources or low-dose supplements; monitor for bleeding"
+    },
+    {
+      "name": "ACE inhibitors/ARBs",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce efficacy of antihypertensives and increase risk of acute kidney injury",
+      "action": "Monitor blood pressure and renal function; alternative analgesics may be preferred"
+    },
+    {
+      "name": "Lithium",
+      "severity": "High",
+      "mechanism": "Ketorolac may increase lithium levels by reducing renal clearance, risking toxicity",
+      "action": "Monitor lithium levels closely; consider alternative NSAID or analgesic"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric (curcumin)",
+      "severity": "Low",
+      "mechanism": "Turmeric has mild antiplatelet properties; may slightly increase bleeding risk when combined",
+      "action": "Monitor for signs of bleeding; use moderate amounts only"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Ginger has mild antiplatelet effects; may have additive effect with ketorolac",
+      "action": "Use ginger cautiously and monitor for excessive bleeding"
+    },
+    {
+      "name": "Vitamin E (high-dose >400 IU)",
+      "severity": "Low",
+      "mechanism": "High-dose vitamin E has mild anticoagulant properties",
+      "action": "Limit vitamin E supplementation to standard dietary levels or <400 IU daily"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Alcohol increases GI irritation and bleeding risk; may enhance gastric ulceration caused by ketorolac",
+      "action": "Avoid alcohol consumption during ketorolac therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-salt foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs impair renal sodium handling; high sodium intake may increase fluid retention and hypertension",
+      "action": "Maintain moderate sodium intake; monitor blood pressure"
+    },
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "Spicy foods may irritate GI mucosa, potentially increasing ulcer risk with NSAIDs",
+      "action": "Limit spicy foods; take ketorolac with food to minimize GI irritation"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Caffeine may enhance analgesic effects but can increase GI irritation",
+      "action": "Moderate caffeine consumption; take ketorolac with food and water"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (creatinine, BUN), blood pressure, and signs of GI bleeding. Ketorolac is contraindicated in severe renal impairment, advanced liver disease, or perioperative cardiac surgery. Educate patient on short-term use only (maximum 5 days) and increased cardiovascular and GI risks with prolonged use."
+}

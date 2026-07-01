@@ -1,0 +1,53 @@
+{
+  "drug": "Avatrombopag",
+  "drug_class": "Thrombopoietin (TPO) Receptor Agonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces avatrombopag plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, consult prescriber for dose adjustment"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases avatrombopag concentrations and thrombotic risk",
+      "action": "Discontinue use; maintain consistent grapefruit avoidance throughout treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric (Curcumin)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition and platelet aggregation effects may potentiate thrombosis risk",
+      "action": "Monitor platelet counts; limit doses to <1g daily if used"
+    },
+    {
+      "name": "Garlic Supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects may additively increase bleeding risk in thrombocytopenia patients",
+      "action": "Monitor for unusual bleeding; use moderate doses only"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly elevates avatrombopag levels, increasing thrombotic complications",
+      "action": "Eliminate from diet; educate patient on hidden grapefruit in juices and supplements"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May delay avatrombopag absorption and alter pharmacokinetics",
+      "action": "Administer with consistent meal patterns; avoid excessive dietary fat fluctuations"
+    }
+  ],
+  "monitoring_notes": "Monitor platelet counts regularly during therapy, particularly if CYP3A4/2C8 inhibitors or inducers are initiated. Assess for signs of thrombosis (pain, swelling, shortness of breath) as avatrombopag carries inherent thrombotic risk that may be potentiated by drug interactions."
+}

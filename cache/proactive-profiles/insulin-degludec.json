@@ -1,0 +1,72 @@
+{
+  "drug": "Insulin Degludec",
+  "drug_class": "Long-acting basal insulin (ultra-long-acting insulin analog)",
+  "key_pathways": [
+    "Glucose metabolism",
+    "Insulin receptor signaling",
+    "Hepatic glucose production inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Chromium (high-dose >200mcg/day)",
+      "severity": "High",
+      "mechanism": "Chromium enhances insulin sensitivity and glucose uptake, potentiating hypoglycemic effect",
+      "action": "Avoid high-dose chromium supplementation; monitor blood glucose closely if used at standard doses"
+    },
+    {
+      "name": "Ginseng (American/Asian)",
+      "severity": "High",
+      "mechanism": "Ginseng reduces blood glucose levels and may increase insulin sensitivity, increasing hypoglycemia risk",
+      "action": "Avoid concurrent use; if necessary, require frequent glucose monitoring and dose adjustment"
+    },
+    {
+      "name": "Bitter Melon",
+      "severity": "High",
+      "mechanism": "Contains compounds that mimic insulin action and enhance glucose utilization, additive hypoglycemic effects",
+      "action": "Contraindicated; counsel patient to avoid this supplement entirely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May modestly improve insulin sensitivity and reduce blood glucose; potential for minor hypoglycemia risk",
+      "action": "Use with caution; monitor blood glucose and adjust insulin dose if needed"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "May have modest glucose-lowering properties; clinical significance is minor",
+      "action": "Monitor glucose; unlikely to require dose adjustment but track trends"
+    },
+    {
+      "name": "Fenugreek",
+      "severity": "Low",
+      "mechanism": "May reduce postprandial glucose; mechanism unclear but appears modest",
+      "action": "Monitor blood glucose; inform healthcare provider of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Refined/simple carbohydrates (high glycemic index foods)",
+      "severity": "Moderate",
+      "mechanism": "Rapid glucose absorption causes acute hyperglycemia, requiring dose titration; degludec's long half-life may not accommodate rapid changes",
+      "action": "Educate patient on carbohydrate counting and consistent carbohydrate intake; counsel on low-to-moderate glycemic index foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (especially on empty stomach)",
+      "severity": "Low",
+      "mechanism": "Alcohol impairs hepatic glucose production and increases hypoglycemia risk; degludec's long-acting nature prolongs this effect",
+      "action": "Advise limiting alcohol to moderate amounts with food; educate on hypoglycemia symptoms and glucagon availability"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fat delays gastric emptying, potentially affecting postprandial glucose patterns; may require timing adjustments",
+      "action": "Counsel on balanced meals; monitor glucose response to high-fat meals"
+    }
+  ],
+  "monitoring_notes": "Insulin degludec requires individualized glucose monitoring and dose adjustments based on patient-specific factors including diet, activity, and concurrent medications. Counsel patients on consistent carbohydrate intake, recognition of hypoglycemic symptoms, and the importance of regular blood glucose monitoring to maintain glycemic control."
+}

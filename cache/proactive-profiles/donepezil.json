@@ -1,0 +1,52 @@
+{
+  "drug": "Donepezil",
+  "drug_class": "Acetylcholinesterase Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces donepezil levels and efficacy",
+      "action": "Avoid concurrent use; consult prescriber before starting St. John's Wort"
+    },
+    {
+      "name": "Anticholinergic Supplements (Scopolia, Hyoscyamus)",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of donepezil's cholinergic mechanism of action",
+      "action": "Strictly contraindicated; choose alternative supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "NSAIDs (as supplements)",
+      "severity": "Low",
+      "mechanism": "May increase GI irritation; donepezil can cause nausea and GI upset",
+      "action": "Monitor for GI symptoms; use lowest effective dose"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Additive cholinergic effects may increase adverse events",
+      "action": "Monitor for dizziness, syncope, and GI symptoms"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay donepezil absorption; no effect on bioavailability",
+      "action": "Take donepezil consistently with or without food for optimal effect"
+    },
+    {
+      "name": "Foods high in tyramine",
+      "severity": "Low",
+      "mechanism": "Potential for cholinergic excess symptoms in sensitive patients",
+      "action": "No strict restriction needed; monitor for nausea or bradycardia"
+    }
+  ],
+  "monitoring_notes": "Monitor heart rate and rhythm as donepezil can cause bradycardia and syncope. Assess for GI distress, particularly nausea and diarrhea, which are common dose-limiting adverse effects."
+}

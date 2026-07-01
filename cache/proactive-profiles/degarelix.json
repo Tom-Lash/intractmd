@@ -1,0 +1,41 @@
+{
+  "drug": "Degarelix",
+  "drug_class": "Gonadotropin-Releasing Hormone (GnRH) Antagonist",
+  "key_pathways": [
+    "GnRH receptor antagonism",
+    "Hepatic metabolism (minimal)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic enzymes and potentially reduce degarelix efficacy through altered metabolism",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Degarelix may affect bone mineral density; high-dose calcium supplementation requires monitoring to assess therapeutic benefit",
+      "action": "Monitor bone health markers; discuss supplementation timing with healthcare provider"
+    },
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Degarelix-induced hypogonadism increases osteoporosis risk; vitamin D supports bone health management",
+      "action": "Consider supplementation as part of bone protection strategy; monitor 25-OH vitamin D levels"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay subcutaneous absorption of degarelix; unlikely to significantly impact efficacy",
+      "action": "No dietary restrictions needed; maintain consistent meal patterns"
+    }
+  ],
+  "monitoring_notes": "Degarelix has minimal drug-drug interactions due to lack of CYP metabolism and protein binding. Monitor testosterone suppression efficacy, PSA levels, bone mineral density, and QT interval (risk of prolongation); counsel patients on hot flashes and injection site reactions."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Sulfasalazine",
+  "drug_class": "Sulfonamide DMARD (Disease-Modifying Antirheumatic Drug)",
+  "key_pathways": [
+    "Hepatic acetylation",
+    "Gut microbiota metabolism",
+    "Folate metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Methotrexate",
+      "severity": "Critical",
+      "mechanism": "Both agents are DMARDs with overlapping hepatotoxicity and myelosuppression risk; synergistic toxicity to bone marrow and liver",
+      "action": "Avoid concurrent use unless explicitly prescribed and monitored by rheumatologist"
+    },
+    {
+      "name": "High-dose Folic Acid (>5 mg/day without medical supervision)",
+      "severity": "High",
+      "mechanism": "Sulfasalazine inhibits folate absorption; excessive supplementation may mask deficiency or cause imbalance",
+      "action": "Use only prescribed folate doses (typically 1 mg daily); coordinate with prescriber"
+    },
+    {
+      "name": "Iron supplements (concurrent dosing)",
+      "severity": "High",
+      "mechanism": "Sulfasalazine reduces iron absorption; concurrent high-dose iron may cause GI irritation and impaired efficacy of both agents",
+      "action": "Separate dosing by 2-3 hours; monitor for anemia"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Sulfasalazine is activated by gut bacteria; probiotics may alter drug metabolism and efficacy",
+      "action": "Use cautiously; separate dosing by 2 hours and monitor therapeutic response"
+    },
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "Sulfasalazine impairs B12 absorption; supplementation may help offset deficiency",
+      "action": "Monitor B12 levels; consider supplementation if deficiency develops"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive high-fiber foods (concurrent with dosing)",
+      "severity": "Moderate",
+      "mechanism": "High fiber can reduce sulfasalazine absorption and increase GI transit time, reducing bioavailability",
+      "action": "Consume fiber-rich foods 2+ hours apart from sulfasalazine dose"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "Calcium in dairy may slightly reduce sulfasalazine absorption",
+      "action": "Separate dosing by 2 hours from high-calcium foods"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Alcohol increases hepatotoxicity risk and GI irritation with sulfasalazine",
+      "action": "Minimize alcohol consumption; avoid binge drinking"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC, liver function, and folate/B12 levels regularly (baseline and every 8-12 weeks). Counsel patients on GI side effects, increased photosensitivity, and the importance of maintaining adequate hydration and taking sulfasalazine with food if GI upset occurs."
+}

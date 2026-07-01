@@ -1,0 +1,46 @@
+{
+  "drug": "Raltegravir",
+  "drug_class": "Integrase Strand Transfer Inhibitor (INSTI)",
+  "key_pathways": [
+    "UGT1A1",
+    "minimal CYP450"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces UGT1A1, significantly reducing raltegravir plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Potent UGT1A1 inducer decreases raltegravir levels by approximately 40-60%",
+      "action": "Avoid use; if TB treatment necessary, increase raltegravir dose to 800 mg twice daily"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements (>1000 mg/dose)",
+      "severity": "Low",
+      "mechanism": "May chelate raltegravir and reduce absorption if taken simultaneously",
+      "action": "Separate administration by 2+ hours; take raltegravir 2 hours before or 6 hours after calcium"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Potential chelation reducing raltegravir bioavailability",
+      "action": "Separate dosing by 2+ hours; monitor viral load if co-administered"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May modestly increase raltegravir absorption and peak concentrations",
+      "action": "No dose adjustment needed; consistent timing with or without food is acceptable"
+    }
+  ],
+  "monitoring_notes": "Raltegravir has minimal hepatic metabolism, making it one of the safest antiretrovirals for interactions. Monitor viral load and CD4 count regularly; counsel patients on medication adherence as resistance can develop with subtherapeutic levels, particularly with UGT1A1 inducers."
+}

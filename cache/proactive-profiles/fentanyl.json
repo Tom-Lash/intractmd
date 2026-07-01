@@ -1,0 +1,102 @@
+{
+  "drug": "Fentanyl",
+  "drug_class": "Opioid Analgesic (Synthetic mu-receptor agonist)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (efflux transporter)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inducer reduces fentanyl levels; P-glycoprotein inducer increases efflux",
+      "action": "Contraindicated. Risk of reduced analgesia and breakthrough pain. Do not use concurrently."
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibitor increases fentanyl bioavailability and plasma concentrations",
+      "action": "Avoid completely. Risk of profound sedation, respiratory depression, and overdose."
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "CNS depressant; potential CYP3A4 interactions; hepatotoxicity risk compounds opioid metabolic burden",
+      "action": "Contraindicated. Increased respiratory depression and sedation risk."
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "CNS depressant potentiates opioid effects; may inhibit CYP3A4",
+      "action": "Avoid concurrent use. Risk of excessive sedation and respiratory compromise."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibitor may modestly increase fentanyl levels",
+      "action": "Monitor for increased opioid effects (drowsiness, dizziness). Dose adjustment may be needed."
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition; antiemetic effect may mask opioid-induced nausea warning signs",
+      "action": "Use with caution. Monitor for efficacy changes; document concurrent use."
+    },
+    {
+      "name": "Turmeric (Curcumin)",
+      "severity": "Low",
+      "mechanism": "Potential weak CYP3A4 inhibition at high doses",
+      "action": "Generally safe at typical dietary doses. Monitor if high-dose supplementation used."
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May enhance opioid receptor sensitivity and CNS depression at high doses",
+      "action": "Use at RDA levels only (320-420 mg/day). Avoid megadosing."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases fentanyl bioavailability (up to 2-3 fold)",
+      "action": "Strictly avoid. Risk of severe respiratory depression, overdose, and death."
+    },
+    {
+      "name": "Pomegranate Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases fentanyl plasma concentrations",
+      "action": "Avoid or limit intake. Monitor closely if consumed; report any increased sedation."
+    },
+    {
+      "name": "Seville Oranges (and marmalade)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; stronger effect than regular oranges",
+      "action": "Contraindicated. Avoid products containing Seville orange extract."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Starfruit",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition; minimal clinical significance but documented interaction potential",
+      "action": "Occasional consumption acceptable; avoid frequent or large quantities."
+    },
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase transmucosal fentanyl absorption and variability; affects GI transit",
+      "action": "Maintain consistent dietary fat intake. Instruct patient on standardized meal timing with transdermal/buccal forms."
+    },
+    {
+      "name": "Cranberry Juice",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 interaction; limited clinical evidence",
+      "action": "Moderate intake acceptable; monitor for any unusual opioid effects."
+    }
+  ],
+  "monitoring_notes": "Fentanyl is a high-risk opioid with narrow therapeutic window metabolized primarily by CYP3A4; any inhibition significantly increases overdose risk. Educate patients to report all supplements, herbal products, and dietary changes; counsel specifically on absolute avoidance of grapefruit/pomegranate and St. John's Wort to prevent dangerous interactions or loss of analgesia."
+}

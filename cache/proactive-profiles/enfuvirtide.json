@@ -1,0 +1,47 @@
+{
+  "drug": "Enfuvirtide",
+  "drug_class": "Fusion Inhibitor (HIV Entry Inhibitor)",
+  "key_pathways": [
+    "No hepatic metabolism",
+    "No CYP450 involvement",
+    "Protease degradation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce immune dysregulation or interfere with antiretroviral efficacy through CYP450 effects on other HIV medications",
+      "action": "Avoid concurrent use; consult HIV specialist before use"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "Potential immunostimulation may complicate HIV disease management and viral load monitoring",
+      "action": "Avoid or use only under medical supervision with close CD4/viral load monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May influence gastrointestinal absorption and immune function; generally safe but monitor response",
+      "action": "Use standard formulations; inform provider of use during routine monitoring"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "HIV patients often deficient; supplementation supports immune function without direct interaction",
+      "action": "Appropriate supplementation encouraged with baseline and periodic monitoring"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Enfuvirtide is administered subcutaneously (no oral bioavailability); food interactions minimal but general nutrition important for immune status",
+      "action": "Maintain balanced nutrition; no specific dietary restrictions required for drug efficacy"
+    }
+  ],
+  "monitoring_notes": "Enfuvirtide undergoes minimal hepatic metabolism and has no significant CYP450 interactions, making supplement/food interactions less critical than with other antiretrovirals. Monitor for injection site reactions and maintain overall immune health through proper nutrition and avoid immunosuppressive supplements."
+}

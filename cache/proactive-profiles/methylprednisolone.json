@@ -1,0 +1,71 @@
+{
+  "drug": "Methylprednisolone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces methylprednisolone levels and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "High",
+      "mechanism": "Potentiates mineralocorticoid effects, increases hypertension and hypokalemia risk with corticosteroids",
+      "action": "Contraindicated; do not use with methylprednisolone"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium and Vitamin D",
+      "severity": "Low",
+      "mechanism": "Long-term corticosteroid use increases bone loss; supplementation helps mitigate osteoporosis risk",
+      "action": "Consider supplementation; monitor bone density with prolonged therapy"
+    },
+    {
+      "name": "Zinc",
+      "severity": "Low",
+      "mechanism": "Corticosteroids may increase urinary zinc loss; deficiency impairs immune function",
+      "action": "Monitor levels; consider supplementation if deficient during prolonged use"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Corticosteroids alter gut flora; probiotics may support GI health without direct interaction",
+      "action": "May be beneficial for GI tolerance; select quality products"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases methylprednisolone levels and adverse effects risk",
+      "action": "Eliminate grapefruit products during therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Sodium Foods",
+      "severity": "Low",
+      "mechanism": "Corticosteroids promote sodium retention; excessive intake increases hypertension risk",
+      "action": "Moderate sodium intake; monitor blood pressure regularly"
+    },
+    {
+      "name": "Simple Carbohydrates/Sugary Foods",
+      "severity": "Low",
+      "mechanism": "Corticosteroids impair glucose metabolism; high glycemic foods elevate diabetes risk",
+      "action": "Limit simple sugars; monitor glucose levels, especially in at-risk patients"
+    },
+    {
+      "name": "High-Potassium Foods",
+      "severity": "Low",
+      "mechanism": "Corticosteroids may cause hypokalemia; excessive potassium intake less likely to cause problems but monitor",
+      "action": "Monitor serum potassium levels; adjust intake based on lab values"
+    }
+  ],
+  "monitoring_notes": "Monitor serum electrolytes (potassium, sodium), glucose, and blood pressure regularly during corticosteroid therapy. Long-term use requires bone density assessment and calcium/vitamin D supplementation to prevent osteoporosis."
+}

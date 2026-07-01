@@ -1,0 +1,48 @@
+{
+  "drug": "Metronidazole",
+  "drug_class": "Nitroimidazole antimicrobial (antibiotic/antiprotozoal)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "hepatic reduction"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Alcohol (ethanol)",
+      "severity": "Critical",
+      "mechanism": "Disulfiram-like reaction due to acetaldehyde accumulation; metronidazole inhibits aldehyde dehydrogenase",
+      "action": "Strictly avoid all alcohol (including mouthwash, cough syrups) during therapy and for 48 hours after last dose"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C9, reducing metronidazole levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplement"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Metronidazole kills beneficial gut bacteria; probiotics may partially restore flora during/after therapy",
+      "action": "Consider starting 2-3 hours apart from metronidazole; consult provider for timing optimization"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol-containing foods (fermented products, vinegar-based dressings)",
+      "severity": "High",
+      "mechanism": "Ethanol content triggers disulfiram-like reaction similar to alcohol beverages",
+      "action": "Avoid foods with significant alcohol content; limit fermented items"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May alter absorption kinetics and delay peak plasma levels",
+      "action": "Take metronidazole with or without food; consistent dosing schedule preferred"
+    }
+  ],
+  "monitoring_notes": "Monitor for disulfiram-like reactions (flushing, nausea, vomiting, headache) if alcohol exposure occurs. Assess for secondary infection risk due to microbiota disruption; counsel on gastrointestinal symptoms and potential C. difficile infection development."
+}

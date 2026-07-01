@@ -1,0 +1,72 @@
+{
+  "drug": "Cabergoline",
+  "drug_class": "Dopamine agonist (ergot derivative)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Dopamine D2 receptor agonism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Metoclopramide",
+      "severity": "Critical",
+      "mechanism": "Metoclopramide is a dopamine antagonist that directly opposes cabergoline's mechanism of action, reducing therapeutic efficacy",
+      "action": "Avoid concurrent use; use alternative antiemetics (ondansetron, prochlorperazine at lowest dose) if needed"
+    },
+    {
+      "name": "Strong CYP3A4 inhibitors (e.g., ketoconazole, itraconazole, ritonavir)",
+      "severity": "High",
+      "mechanism": "Inhibition of CYP3A4 increases cabergoline plasma levels and prolongs exposure, increasing risk of adverse effects (hypotension, valvular disease)",
+      "action": "Avoid or use with caution; monitor blood pressure and consider dose reduction if co-administration necessary"
+    },
+    {
+      "name": "Ergot alkaloids (bromocriptine, pergolide, methysergide)",
+      "severity": "High",
+      "mechanism": "Additive dopaminergic effects and potential for combined ergotism, increasing risk of vasospasm and cardiac valvulopathy",
+      "action": "Contraindicated; do not combine with other ergot derivatives"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inducer that may reduce cabergoline plasma concentrations and therapeutic effect",
+      "action": "Advise patient to inform prescriber; monitor for reduced efficacy and consider dose adjustment"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate dopaminergic effects, increasing risk of hypotension or CNS stimulation",
+      "action": "Use with caution; monitor blood pressure and counsel on potential additive effects"
+    },
+    {
+      "name": "High-dose Vitamin B6 (>100 mg/day)",
+      "severity": "Low",
+      "mechanism": "Vitamin B6 is a cofactor for dopamine synthesis and may potentiate dopaminergic activity",
+      "action": "Limit supplemental B6 to RDA levels (1.3-1.7 mg/day); monitor for excessive dopaminergic effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inhibitor that significantly increases cabergoline bioavailability and plasma levels, elevating risk of hypotension and adverse effects",
+      "action": "Completely avoid grapefruit and grapefruit juice during cabergoline therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and slightly increase cabergoline absorption, potentially affecting peak serum levels",
+      "action": "Administer cabergoline consistently with or without food; maintain consistent dietary pattern for optimal therapeutic control"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Dopamine agonists may have minor effects on norepinephrine metabolism; excessive tyramine intake could theoretically elevate blood pressure",
+      "action": "No strict restriction required, but counsel on moderation; monitor blood pressure if consuming large amounts"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly, especially at treatment initiation or dose escalation, and assess for signs of cardiac valvulopathy (dyspnea, edema, new cardiac murmurs). Baseline and periodic echocardiography recommended, particularly with long-term use; counsel patient to avoid grapefruit products and ergot-containing medications absolutely."
+}

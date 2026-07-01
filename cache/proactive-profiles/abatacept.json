@@ -1,0 +1,47 @@
+{
+  "drug": "Abatacept",
+  "drug_class": "Selective T-cell costimulation modulator (CTLA-4 fusion protein)",
+  "key_pathways": [
+    "T-cell activation",
+    "CD80/CD86-CD28 interaction",
+    "Not hepatically metabolized via CYP450"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immunostimulant that may counteract abatacept's immunosuppressive effects and increase infection risk",
+      "action": "Avoid concurrent use; patient should discontinue before starting abatacept therapy"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immune stimulant may oppose therapeutic immunosuppression and reduce drug efficacy",
+      "action": "Counsel patient to avoid; discontinue if currently using"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May enhance immune function; monitor for adequacy of immunosuppression",
+      "action": "Use with monitoring; ensure no unexplained infections or loss of disease control"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Modulates immune function; deficiency may worsen RA outcomes",
+      "action": "Monitor levels; supplementation may be beneficial but should be tracked"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "No direct CYP450 interaction, but may affect gut immunity; theoretical concern only",
+      "action": "No strict avoidance required; monitor if excessive consumption"
+    }
+  ],
+  "monitoring_notes": "Abatacept is a biologic with no significant CYP450 metabolism; primary concern is immunostimulatory supplements that counteract its T-cell suppressive effects. Monitor for infections and loss of disease control, particularly if immunostimulating supplements are used concurrently."
+}

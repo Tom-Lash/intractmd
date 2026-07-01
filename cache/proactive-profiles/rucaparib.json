@@ -1,0 +1,61 @@
+{
+  "drug": "Rucaparib",
+  "drug_class": "PARP inhibitor (Poly-ADP-ribose polymerase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "PARP inhibition",
+    "DNA repair pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer that significantly reduces rucaparib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if discontinuation of St. John's Wort is necessary, allow 2 weeks washout before assessment of rucaparib dosing adjustments"
+    },
+    {
+      "name": "High-dose Vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "May increase thrombotic risk; rucaparib can cause thrombocytopenia and bleeding complications",
+      "action": "Avoid high-dose supplementation; maintain consistent dietary intake and monitor platelet counts regularly"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor that may modestly increase rucaparib concentrations",
+      "action": "Monitor for increased adverse effects; counsel on consistent use patterns if tolerated"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May affect gut microbiome and drug absorption; generally supportive for GI tolerability",
+      "action": "Safe to use; may help manage GI side effects from rucaparib therapy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases rucaparib plasma concentrations, elevating risk of dose-related toxicity",
+      "action": "Complete avoidance recommended; select alternative citrus fruits (oranges, lemons, limes)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay rucaparib absorption and alter bioavailability kinetics",
+      "action": "Take rucaparib consistently with or without food; establish routine to minimize variability"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contain compounds that may induce CYP3A4; unlikely to be clinically significant at dietary levels",
+      "action": "No restriction needed; maintain balanced diet and monitor clinical response"
+    }
+  ],
+  "monitoring_notes": "Monitor platelet counts, hemoglobin, and renal function regularly as rucaparib carries significant hematologic and hepatic toxicity risks. Educate patients on bleeding precautions, report signs of anemia/infection, and maintain consistent supplement/food intake patterns to avoid pharmacokinetic variability."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Daptomycin",
+  "drug_class": "Cyclic lipopeptide antibiotic",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Renal elimination"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "Potential antagonism of antibiotic efficacy; theoretical interference with bacterial cell wall disruption",
+      "action": "Avoid supplementation exceeding dietary sources; maintain consistent dietary vitamin K intake"
+    },
+    {
+      "name": "Probiotics (during acute therapy)",
+      "severity": "Moderate",
+      "mechanism": "May reduce daptomycin efficacy by competing with pathogenic organisms; disrupts intended antimicrobial action",
+      "action": "Separate probiotic administration by at least 2 hours from daptomycin dosing; consider delaying probiotics until post-treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "HMG-CoA reductase inhibitors (statins as supplements)",
+      "severity": "Low",
+      "mechanism": "Concurrent use may increase risk of muscle toxicity and myopathy; daptomycin has known muscle-related adverse effects",
+      "action": "Monitor for muscle pain, weakness, or elevated CK levels; coordinate with prescriber regarding statin continuation"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Daptomycin requires calcium/magnesium for optimal activity; excessive supplementation may cause electrolyte imbalance",
+      "action": "Maintain normal dietary magnesium; monitor serum electrolytes if supplementing"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "While daptomycin is not CYP3A4-metabolized, grapefruit may affect renal function and electrolyte balance",
+      "action": "Avoid excessive grapefruit consumption during therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and affect IV administration timing; minimal direct interaction as daptomycin is IV-only",
+      "action": "No specific restriction; maintain normal nutrition to support immune function during infection treatment"
+    },
+    {
+      "name": "Foods high in potassium",
+      "severity": "Low",
+      "mechanism": "Daptomycin can affect electrolyte balance; excessive potassium intake may potentiate imbalances",
+      "action": "Maintain normal dietary potassium; monitor serum electrolytes during treatment"
+    }
+  ],
+  "monitoring_notes": "Daptomycin has minimal drug-supplement interactions due to non-hepatic metabolism and IV administration. Primary concerns are electrolyte monitoring (calcium, magnesium, potassium) and muscle toxicity risk (CK levels, myalgia). Renal function assessment is essential given renal elimination."
+}

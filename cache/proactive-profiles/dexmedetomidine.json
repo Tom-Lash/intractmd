@@ -1,0 +1,65 @@
+{
+  "drug": "Dexmedetomidine",
+  "drug_class": "Selective alpha-2 adrenergic agonist (sedative-analgesic)",
+  "key_pathways": [
+    "CYP2A6",
+    "CYP2E1",
+    "Hepatic glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and sedation; may potentiate respiratory depression risk",
+      "action": "Discontinue valerian root at least 24 hours before dexmedetomidine administration"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "High",
+      "mechanism": "Potentiates CNS depression and hepatotoxicity risk; additive sedative effects",
+      "action": "Avoid concurrent use; counsel patient to discontinue prior to treatment"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP2A6 and CYP2E1 induction may reduce dexmedetomidine efficacy",
+      "action": "Allow 2-week washout before dexmedetomidine use; monitor sedation level"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedative effects; may enhance dexmedetomidine-induced somnolence",
+      "action": "Use with caution; counsel patient on increased sedation risk"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild CNS depressant effects; additive with dexmedetomidine sedation",
+      "action": "Monitor for excessive drowsiness; consider timing separation"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have stimulant properties that could antagonize dexmedetomidine effects",
+      "action": "Advise patient of potential reduced efficacy; monitor response"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "Stimulant effects may partially antagonize dexmedetomidine's sedative action",
+      "action": "Limit intake during treatment; advise patient to avoid large amounts"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP2E1 inhibition may increase dexmedetomidine levels slightly",
+      "action": "Advise avoidance or consistent minimal intake; monitor for enhanced effects"
+    }
+  ],
+  "monitoring_notes": "Monitor vital signs closely including heart rate, blood pressure, and respiratory function as dexmedetomidine carries significant risks of bradycardia and hypotension. Assess hepatic function baseline and periodically, as primary metabolism occurs hepatically; use caution in hepatic impairment."
+}

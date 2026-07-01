@@ -1,0 +1,72 @@
+{
+  "drug": "Cholestyramine",
+  "drug_class": "Bile Acid Sequestrant",
+  "key_pathways": [
+    "Bile acid binding",
+    "Enterohepatic circulation",
+    "GI absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Fat-soluble vitamins (A, D, E, K)",
+      "severity": "High",
+      "mechanism": "Cholestyramine binds fat-soluble vitamins in the GI tract, reducing their absorption and potentially causing deficiency with long-term use",
+      "action": "Separate administration by at least 4-6 hours; consider vitamin supplementation; monitor for deficiency signs"
+    },
+    {
+      "name": "Digoxin",
+      "severity": "High",
+      "mechanism": "Cholestyramine may bind digoxin in the gut, reducing its bioavailability and therapeutic efficacy",
+      "action": "Administer digoxin at least 2 hours before or 6 hours after cholestyramine; monitor digoxin levels"
+    },
+    {
+      "name": "Warfarin and anticoagulants",
+      "severity": "High",
+      "mechanism": "Reduced vitamin K absorption due to cholestyramine binding may affect anticoagulant efficacy",
+      "action": "Separate dosing by 4-6 hours; monitor INR closely; may require anticoagulant dose adjustment"
+    },
+    {
+      "name": "Thyroid hormones (Levothyroxine)",
+      "severity": "High",
+      "mechanism": "Cholestyramine may bind thyroid hormones and reduce absorption",
+      "action": "Administer levothyroxine at least 4-6 hours before cholestyramine; monitor TSH levels"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "Potential for binding of lipid-based supplements in the GI tract",
+      "action": "Separate administration by at least 2 hours; monitor lipid panel response"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May compete for GI absorption though not strongly bound by cholestyramine",
+      "action": "Separate administration by 2+ hours to optimize absorption"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "While cholestyramine binds bile acids needed for fat digestion, excessive fat may worsen GI side effects (bloating, constipation, steatorrhea)",
+      "action": "Recommend moderate fat intake; counsel patient on dietary modifications to manage GI tolerance"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Vitamin K-rich foods (spinach, kale, broccoli)",
+      "severity": "Low",
+      "mechanism": "Although dietary vitamin K intake is generally adequate, long-term cholestyramine may reduce absorption of dietary vitamin K",
+      "action": "Maintain consistent vitamin K intake; monitor for changes in anticoagulant response if applicable"
+    },
+    {
+      "name": "Dietary fiber (excessive amounts)",
+      "severity": "Low",
+      "mechanism": "High fiber combined with cholestyramine may increase constipation and GI discomfort",
+      "action": "Titrate fiber intake gradually; maintain adequate hydration; monitor GI tolerance"
+    }
+  ],
+  "monitoring_notes": "Cholestyramine is a non-absorbed bile acid sequestrant that primarily interacts by binding substances in the GI tract. Monitor for fat-soluble vitamin deficiencies (especially vitamins A, D, K) and ensure adequate separation of dosing (4-6 hours minimum) from other medications. Baseline and periodic monitoring of lipid panel, fat-soluble vitamin levels, and INR (if on anticoagulants) is recommended."
+}

@@ -1,0 +1,79 @@
+{
+  "drug": "Sorafenib",
+  "drug_class": "Multikinase inhibitor (Tyrosine kinase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9",
+    "UGT1A9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces sorafenib plasma concentrations significantly",
+      "action": "Avoid concurrent use; if necessary, switch to alternative antidepressant and allow 2-week washout before sorafenib dosing adjustment"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4/2C8 inducer substantially decreases sorafenib bioavailability",
+      "action": "Use alternative antimicrobial if possible; if required, monitor for reduced sorafenib efficacy and consider dose increase under physician guidance"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effects and increase bleeding risk with sorafenib",
+      "action": "Limit vitamin E to <400 IU daily; monitor for signs of bleeding and adjust if on concurrent anticoagulants"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may modestly reduce sorafenib levels",
+      "action": "Monitor efficacy; maintain consistent dosing and discuss with prescriber if considering use"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; combined with sorafenib may increase minor bleeding risk",
+      "action": "Use with caution; monitor for unusual bruising or bleeding"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may slightly increase sorafenib exposure",
+      "action": "Moderate intake acceptable; inform prescriber of regular use for monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Significantly increases sorafenib absorption (up to 49%), leading to increased toxicity risk and variable bioavailability",
+      "action": "Take sorafenib consistently on empty stomach (1 hour before or 2 hours after food); avoid grapefruit and fatty meals"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inhibitor increases sorafenib plasma concentrations and toxicity risk",
+      "action": "Eliminate grapefruit and grapefruit juice from diet entirely during sorafenib therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Theoretical interaction with kinase inhibition pathways; minimal clinical evidence",
+      "action": "No specific restriction needed, but maintain consistent dietary pattern and report any unusual symptoms"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Mild CYP1A2 and CYP3A4 induction at very high intakes",
+      "action": "Normal consumption is safe; excessive amounts (>3 servings daily) should be discussed with prescriber"
+    }
+  ],
+  "monitoring_notes": "Sorafenib requires consistent empty-stomach administration for reliable bioavailability; counsel patients to maintain strict adherence to food/supplement restrictions to prevent therapeutic failure or toxicity. Monitor blood pressure, hand-foot skin reactions, and bleeding signs; adjust intake of vitamin K-containing foods minimally and maintain consistency if on concurrent anticoagulation."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Lubiprostone",
+  "drug_class": "Chloride channel activator (prostone analog)",
+  "key_pathways": [
+    "No major CYP metabolism",
+    "Local GI tract action",
+    "Minimal systemic absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose calcium supplements",
+      "severity": "Moderate",
+      "mechanism": "Calcium can reduce intestinal motility and fluid secretion, potentially counteracting lubiprostone's mechanism of action",
+      "action": "Separate dosing by 2-4 hours; counsel on dietary calcium adequacy instead"
+    },
+    {
+      "name": "Anticholinergic herbal supplements (belladonna, hyoscyamine)",
+      "severity": "High",
+      "mechanism": "Anticholinergic effects inhibit GI motility and fluid secretion, directly opposing lubiprostone action",
+      "action": "Avoid concurrent use; recommend alternative herbal remedies"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Psyllium husk and bulk-forming fiber supplements",
+      "severity": "Low",
+      "mechanism": "May cause additive effects on bowel movements; excessive gas or bloating possible",
+      "action": "Monitor patient tolerance; gradual introduction recommended with adequate hydration"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Theoretical benefit in supporting GI health; no direct interaction but may alter efficacy perception",
+      "action": "No restriction; patient may continue if tolerated"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Fat delays gastric emptying and may reduce lubiprostone absorption and local GI availability",
+      "action": "Take lubiprostone with food but limit fat content; counsel on light meal composition"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Low-fiber diet foods",
+      "severity": "Low",
+      "mechanism": "Lack of fiber reduces treatment efficacy; lubiprostone works best with adequate dietary fiber",
+      "action": "Encourage gradual increase in dietary fiber (fruits, vegetables, whole grains) to optimize therapeutic response"
+    },
+    {
+      "name": "Dehydrating beverages (excessive caffeine, alcohol)",
+      "severity": "Low",
+      "mechanism": "Dehydration reduces lubiprostone efficacy by limiting available fluid for intestinal secretion",
+      "action": "Counsel on adequate daily water intake (8-10 glasses); limit caffeine and alcohol"
+    }
+  ],
+  "monitoring_notes": "Lubiprostone undergoes minimal systemic metabolism, making drug-supplement interactions rare; however, GI effects can be optimized through dietary counsel. Monitor for abdominal distension, nausea, and diarrhea severity, adjusting lifestyle measures as needed."
+}

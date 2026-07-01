@@ -1,0 +1,60 @@
+{
+  "drug": "Epinephrine",
+  "drug_class": "Alpha and Beta Adrenergic Agonist",
+  "key_pathways": [
+    "COMT",
+    "MAO",
+    "PNMT"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Sympathomimetic herbs (Ephedra, Ma Huang)",
+      "severity": "Critical",
+      "mechanism": "Additive sympathomimetic effects causing severe hypertension, tachycardia, and arrhythmias",
+      "action": "Contraindicated; counsel patient to avoid completely"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "MAO inhibition properties may potentiate epinephrine effects and increase risk of hypertensive crisis",
+      "action": "Avoid concurrent use; consider alternative antidepressant if epinephrine needed chronically"
+    },
+    {
+      "name": "Tyramine-containing supplements",
+      "severity": "High",
+      "mechanism": "Risk of hypertensive crisis when combined with epinephrine, especially in anaphylaxis settings",
+      "action": "Avoid high-dose supplements; limit dietary tyramine intake"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Mild additive stimulant effects may increase heart rate and anxiety",
+      "action": "Monitor for increased nervousness or palpitations; use in moderation"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Weak sympathomimetic properties may enhance epinephrine effects",
+      "action": "Monitor vital signs; use moderate doses only"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Aged cheeses, cured meats, fermented foods (high tyramine)",
+      "severity": "High",
+      "mechanism": "Tyramine interaction may precipitate hypertensive crisis, particularly concerning during epinephrine emergency use",
+      "action": "Counsel patient to limit tyramine intake; especially important if on concurrent MAO inhibitors"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods (chocolate, coffee, tea)",
+      "severity": "Low",
+      "mechanism": "Additive sympathomimetic effects may increase heart rate and tremor",
+      "action": "Monitor tolerance; counsel moderation, especially in anxiety-prone patients"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and cardiac rhythm, particularly when epinephrine is used for emergency conditions or in patients with cardiovascular disease. Assess for additive sympathomimetic effects if patient uses stimulant-containing supplements or foods."
+}

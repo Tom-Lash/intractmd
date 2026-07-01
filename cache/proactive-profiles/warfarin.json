@@ -1,0 +1,91 @@
+{
+  "drug": "Warfarin",
+  "drug_class": "Anticoagulant (Vitamin K Antagonist)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C8",
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Vitamin K supplements",
+      "severity": "Critical",
+      "mechanism": "Directly antagonizes warfarin's anticoagulant effect by serving as cofactor for clotting factor synthesis",
+      "action": "Strictly avoid supplementation; maintain consistent dietary vitamin K intake instead"
+    },
+    {
+      "name": "High-dose vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Inhibits vitamin K-dependent clotting factors and potentiates anticoagulant effect",
+      "action": "Avoid supplementation; monitor INR if patient takes >400 IU daily from food sources"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and may potentiate bleeding risk",
+      "action": "Discontinue use; counsel patient on bleeding risk if concurrent use unavoidable"
+    },
+    {
+      "name": "Garlic supplements (concentrated/high-dose)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects and may increase bleeding risk",
+      "action": "Avoid high-dose supplements; monitor INR closely if used"
+    },
+    {
+      "name": "Cranberry supplements",
+      "severity": "High",
+      "mechanism": "May inhibit CYP2C9 and increase warfarin levels; procoagulant properties also reported",
+      "action": "Avoid supplementation; advise patient to report if consuming cranberry products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish oil (omega-3)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects at high doses; uncertain clinical significance",
+      "action": "Monitor INR; limit to <3g/day if concurrent use necessary"
+    },
+    {
+      "name": "CoQ10",
+      "severity": "Low",
+      "mechanism": "Structurally similar to vitamin K; may reduce warfarin efficacy at high doses",
+      "action": "Monitor INR; counsel on consistent intake and timing"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties; clinical significance unclear at culinary doses",
+      "action": "Monitor for bleeding; counsel on moderation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High vitamin K foods (kale, spinach, collards, broccoli)",
+      "severity": "Moderate",
+      "mechanism": "Vitamin K directly antagonizes warfarin effect; excessive intake reduces INR",
+      "action": "Maintain consistent vitamin K intake; do not eliminate but keep steady day-to-day"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry juice/products",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP2C9 and potentiate warfarin effect; evidence mixed",
+      "action": "Limit consumption; monitor INR if regular intake; advise consistency"
+    },
+    {
+      "name": "Alcohol (especially heavy/binge use)",
+      "severity": "Low",
+      "mechanism": "Chronic use may induce CYP450; acute use may potentiate anticoagulant effect",
+      "action": "Limit to ≤1-2 drinks/day; monitor INR with pattern changes"
+    },
+    {
+      "name": "Avocado",
+      "severity": "Low",
+      "mechanism": "Contains small amounts of vitamin K; high intake may reduce warfarin efficacy",
+      "action": "Moderate consumption; maintain consistency; not necessary to eliminate"
+    }
+  ],
+  "monitoring_notes": "INR monitoring is essential with any dietary or supplement change; patient education on consistent vitamin K intake is critical since elimination and excessive intake both destabilize anticoagulation. Counsel patients to report all supplements and herbal products and to avoid sudden changes in dietary patterns."
+}

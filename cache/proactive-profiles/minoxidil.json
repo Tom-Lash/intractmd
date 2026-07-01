@@ -1,0 +1,59 @@
+{
+  "drug": "Minoxidil",
+  "drug_class": "Vasodilator (Potassium Channel Opener)",
+  "key_pathways": [
+    "CYP3A4",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "NSAIDs (Ibuprofen, Naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and may impair minoxidil efficacy; increased risk of sodium retention and fluid accumulation",
+      "action": "Use acetaminophen for pain relief instead; if NSAIDs necessary, use lowest dose for shortest duration and monitor fluid retention"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "High",
+      "mechanism": "Licorice causes sodium retention and potassium depletion, compounding minoxidil's fluid retention and hypotensive effects",
+      "action": "Avoid licorice supplements; monitor electrolytes and blood pressure closely if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Potassium supplements or high-dose potassium-sparing agents",
+      "severity": "Low",
+      "mechanism": "Minoxidil may cause potassium retention; excessive supplementation increases hyperkalemia risk",
+      "action": "Monitor serum potassium levels; supplement only if clinically indicated with regular lab monitoring"
+    },
+    {
+      "name": "Caffeine supplements",
+      "severity": "Low",
+      "mechanism": "Caffeine may potentiate tachycardia risk associated with minoxidil's vasodilation",
+      "action": "Limit caffeine intake to moderate levels (≤200 mg/day) and monitor heart rate and symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium foods (processed meats, canned foods, salty snacks)",
+      "severity": "Moderate",
+      "mechanism": "Minoxidil promotes sodium and fluid retention; high dietary sodium exacerbates edema, weight gain, and blood pressure elevation",
+      "action": "Maintain low-sodium diet (<2.3 g/day); read food labels and choose fresh, unsalted alternatives"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Grapefruit inhibits CYP3A4, potentially increasing minoxidil exposure; minimal clinical impact with topical use but relevant for oral formulations",
+      "action": "Limit grapefruit consumption; monitor for increased side effects if consuming regularly with oral minoxidil"
+    },
+    {
+      "name": "High-potassium foods (bananas, spinach, sweet potatoes, avocado)",
+      "severity": "Low",
+      "mechanism": "Minoxidil may increase potassium retention; excessive dietary potassium increases hyperkalemia risk in susceptible patients",
+      "action": "Consume moderate portions; monitor serum potassium, especially in patients with renal impairment"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and fluid retention status regularly, especially during initial therapy. Assess serum electrolytes (potassium, sodium) and renal function periodically, particularly in patients with baseline hypertension or renal disease."
+}

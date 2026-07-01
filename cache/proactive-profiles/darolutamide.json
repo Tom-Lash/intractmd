@@ -1,0 +1,56 @@
+{
+  "drug": "Darolutamide",
+  "drug_class": "Androgen receptor inhibitor (second-generation)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2D6",
+    "OATP1B1/1B3",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces darolutamide plasma concentrations and efficacy",
+      "action": "Avoid concomitant use; counsel patient to discontinue prior to darolutamide therapy"
+    },
+    {
+      "name": "Saw Palmetto",
+      "severity": "Moderate",
+      "mechanism": "May have additive androgen-blocking effects; risk of enhanced pharmacodynamic effects",
+      "action": "Avoid or use with caution; monitor for increased adverse effects (fatigue, sexual dysfunction)"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase darolutamide exposure",
+      "action": "Inform patient to avoid high-dose or frequent grapefruit products; monitor efficacy"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Possible mild CYP3A4 induction; minimal clinical impact expected",
+      "action": "Monitor for any changes in darolutamide efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases darolutamide bioavailability and systemic exposure; risk of toxicity",
+      "action": "Advise patient to avoid grapefruit and grapefruit juice entirely during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase darolutamide absorption; variable food effect reported",
+      "action": "Counsel patient on consistent meal timing; can be taken with or without food, but maintain consistency"
+    }
+  ],
+  "monitoring_notes": "Monitor serum PSA levels, testosterone, and clinical response regularly. Assess for signs of darolutamide toxicity (rash, hepatotoxicity) if CYP3A4 inhibitors are inadvertently used; baseline liver function tests recommended."
+}

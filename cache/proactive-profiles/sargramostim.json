@@ -1,0 +1,60 @@
+{
+  "drug": "Sargramostim",
+  "drug_class": "Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF)",
+  "key_pathways": [
+    "Cytokine signaling",
+    "Hematopoietic pathway",
+    "Immune cell proliferation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May potentiate immune stimulation and increase risk of adverse effects when combined with sargramostim's immune-activating properties",
+      "action": "Avoid concurrent use; consider discontinuation 1-2 weeks before sargramostim initiation"
+    },
+    {
+      "name": "Interferon-alpha supplements",
+      "severity": "High",
+      "mechanism": "Additive immune stimulation may increase risk of cytokine storm, fever, and inflammatory complications",
+      "action": "Avoid use during sargramostim therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin C (high-dose >2g daily)",
+      "severity": "Low",
+      "mechanism": "May enhance immune activation; monitor for excessive inflammatory response",
+      "action": "Limit to recommended dietary allowance; monitor clinical response"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild immune stimulation may have additive effects with sargramostim",
+      "action": "Use with caution and monitor for increased adverse effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "Sargramostim can cause fluid retention; excessive sodium increases this risk and may worsen cardiovascular effects",
+      "action": "Maintain low sodium intake (<2,300 mg/day); monitor fluid balance and weight"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "May inhibit metabolism of concurrent medications used with sargramostim therapy",
+      "action": "Limit consumption; consider alternative beverages if taking multiple medications"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May impair absorption of oral medications co-administered with sargramostim",
+      "action": "Space meals appropriately from medication administration if needed"
+    }
+  ],
+  "monitoring_notes": "Sargramostim is a biologic cytokine with minimal direct supplement-drug interactions; monitoring should focus on additive immune stimulation effects and fluid/electrolyte balance given sargramostim's known adverse effects. Regular assessment of CBC, platelet count, and fluid status is essential during therapy."
+}

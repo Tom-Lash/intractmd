@@ -1,0 +1,46 @@
+{
+  "drug": "Saxagliptin",
+  "drug_class": "Dipeptidyl Peptidase-4 (DPP-4) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces saxagliptin plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use or monitor glycemic control closely if co-administration is unavoidable"
+    },
+    {
+      "name": "Ginseng (American/Asian)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate hypoglycemic effects and increase risk of low blood glucose episodes",
+      "action": "Avoid or use with caution; monitor blood glucose levels closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric (Curcumin)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase saxagliptin exposure; may enhance glucose-lowering effects",
+      "action": "Monitor for signs of hypoglycemia; no dose adjustment typically required"
+    },
+    {
+      "name": "Garlic Extract",
+      "severity": "Low",
+      "mechanism": "Potential additive hypoglycemic effects; may enhance saxagliptin's glucose-lowering action",
+      "action": "Monitor blood glucose; inform patient of additive effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase saxagliptin plasma concentrations; unlikely to require dose adjustment at therapeutic doses",
+      "action": "Limit grapefruit consumption; monitor for adverse effects if frequent intake occurs"
+    }
+  ],
+  "monitoring_notes": "Saxagliptin has relatively low food interaction risk; however, CYP3A4 inhibitors/inducers may affect exposure. Monitor HbA1c, renal function, and signs of hypoglycemia, especially when adding supplements that alter glucose metabolism or CYP3A4 activity."
+}

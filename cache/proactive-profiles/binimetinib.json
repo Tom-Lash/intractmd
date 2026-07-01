@@ -1,0 +1,60 @@
+{
+  "drug": "Binimetinib",
+  "drug_class": "MEK inhibitor (mitogen-activated protein kinase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer reduces binimetinib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases binimetinib exposure and toxicity risk",
+      "action": "Discontinue supplement; maintain consistent grapefruit avoidance"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 induction may modestly reduce binimetinib levels",
+      "action": "Monitor for reduced efficacy; use with clinical judgment"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have additive effects on platelet function; binimetinib can cause bleeding",
+      "action": "Use at standard doses; counsel on bleeding precautions"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases binimetinib plasma concentration and toxicity risk",
+      "action": "Eliminate from diet; educate on all grapefruit-containing products"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase binimetinib absorption; variable bioavailability documented",
+      "action": "Take consistently with or without food; maintain consistent dietary patterns"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage)",
+      "severity": "Low",
+      "mechanism": "Minor CYP3A4 induction potential with high chronic intake",
+      "action": "No restriction needed; maintain normal vegetable consumption"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of toxicity (diarrhea, rash, cardiac effects) as binimetinib has a narrow therapeutic window. Assess medication adherence and CYP3A4 inhibitor/inducer exposure at each visit, particularly with any new supplements or dietary changes."
+}

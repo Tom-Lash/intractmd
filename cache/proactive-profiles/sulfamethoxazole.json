@@ -1,0 +1,54 @@
+{
+  "drug": "Sulfamethoxazole",
+  "drug_class": "Sulfonamide Antibiotic",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "Folate metabolism",
+    "Renal tubular secretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Methotrexate",
+      "severity": "Critical",
+      "mechanism": "Both agents inhibit dihydrofolate reductase and compete for renal secretion, significantly increasing methotrexate toxicity and bone marrow suppression risk",
+      "action": "Avoid concurrent use; if essential, monitor CBC, renal function, and methotrexate levels closely"
+    },
+    {
+      "name": "High-dose Folic Acid (>5mg daily)",
+      "severity": "High",
+      "mechanism": "Excessive folic acid may reduce sulfamethoxazole efficacy by competing with PABA metabolism and antagonizing the drug's mechanism",
+      "action": "Limit folic acid supplementation to ≤1mg daily; use only if prescribed for folate deficiency prevention"
+    },
+    {
+      "name": "Warfarin",
+      "severity": "High",
+      "mechanism": "Sulfamethoxazole inhibits CYP2C9 and displaces warfarin from protein binding, increasing anticoagulant effect and bleeding risk",
+      "action": "Monitor INR frequently; adjust warfarin dose as needed; consider alternative antibiotic if possible"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Para-Aminobenzoic Acid (PABA)",
+      "severity": "Low",
+      "mechanism": "PABA is a competitive substrate for the same folate synthesis pathway that sulfamethoxazole inhibits, potentially reducing antibiotic efficacy",
+      "action": "Monitor clinical response; avoid high-dose PABA supplements during treatment"
+    },
+    {
+      "name": "Phenytoin",
+      "severity": "Low",
+      "mechanism": "Both agents induce and compete for CYP2C9 metabolism; sulfamethoxazole may increase phenytoin levels",
+      "action": "Monitor phenytoin levels and seizure control; adjust dosing if necessary"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-dose vitamin supplements containing folate analogs",
+      "severity": "Low",
+      "mechanism": "Excessive dietary folate supplementation may reduce sulfamethoxazole antimicrobial efficacy",
+      "action": "Maintain normal dietary folate intake; avoid megavitamin formulations during antibiotic therapy"
+    }
+  ],
+  "monitoring_notes": "Monitor for crystalluria, hematologic toxicity (CBC), and hepatorenal function throughout therapy. Educate patients to maintain adequate hydration to minimize kidney stone risk and to report signs of Stevens-Johnson syndrome or severe hypersensitivity reactions immediately."
+}

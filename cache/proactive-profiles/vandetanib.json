@@ -1,0 +1,72 @@
+{
+  "drug": "Vandetanib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2",
+    "CYP1B1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces vandetanib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concomitant use; consider alternative herbal products if mood support needed"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases vandetanib bioavailability",
+      "action": "Avoid use; consult oncologist for alternative antimicrobial if infection treatment required"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases vandetanib exposure and risk of toxicity",
+      "action": "Avoid supplement; use alternative antioxidant if desired"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; may impair vandetanib metabolism and increase liver toxicity",
+      "action": "Avoid; counsel on hepatotoxic herbal alternatives to eliminate"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "QT-prolonging supplements (hawthorn, digitalis)",
+      "severity": "Low",
+      "mechanism": "Vandetanib carries QT prolongation risk; additive cardiac effects possible",
+      "action": "Monitor ECG; use lowest effective dose; baseline QTc assessment recommended"
+    },
+    {
+      "name": "Calcium and magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce vandetanib absorption if taken simultaneously",
+      "action": "Separate administration by at least 2 hours"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases vandetanib plasma concentration and toxicity risk",
+      "action": "Eliminate from diet during vandetanib therapy; educate on hidden sources"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase vandetanib absorption and peak concentrations",
+      "action": "Administer vandetanib consistently with or without food; maintain consistency"
+    },
+    {
+      "name": "Tyramine-rich foods (if on concurrent medications)",
+      "severity": "Low",
+      "mechanism": "Potential interaction if using monoamine oxidase inhibitors; vandetanib alone has low risk",
+      "action": "Standard dietary precautions; review with multidrug regimen"
+    }
+  ],
+  "monitoring_notes": "Monitor QTc interval at baseline and periodically; assess for diarrhea, rash, and hypertension as common vandetanib adverse effects. Screen for CYP3A4 inhibitor/inducer interactions as vandetanib is extensively metabolized through this pathway."
+}

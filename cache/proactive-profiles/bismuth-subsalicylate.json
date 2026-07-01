@@ -1,0 +1,65 @@
+{
+  "drug": "Bismuth Subsalicylate",
+  "drug_class": "Antidiarrheal/Salicylate",
+  "key_pathways": [
+    "Non-enzymatic salicylate metabolism",
+    "Gastric pH dependent absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Aspirin or other salicylates",
+      "severity": "High",
+      "mechanism": "Additive salicylate exposure increases risk of salicylism, tinnitus, and bleeding complications",
+      "action": "Avoid concurrent use; separate dosing by at least 2 hours if necessary"
+    },
+    {
+      "name": "Warfarin or other anticoagulants",
+      "severity": "High",
+      "mechanism": "Bismuth subsalicylate's salicylate component inhibits platelet aggregation and may potentiate anticoagulant effects",
+      "action": "Monitor INR closely; consider alternative antidiarrheal agent"
+    },
+    {
+      "name": "High-dose vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "May antagonize the antiplatelet effects of salicylate component",
+      "action": "Maintain consistent vitamin K intake; avoid sudden increases"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "Low",
+      "mechanism": "Additive GI irritation and increased bleeding risk due to salicylate component",
+      "action": "Use lowest effective dose and monitor for GI symptoms"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Bismuth may have antimicrobial effects that could affect probiotic efficacy",
+      "action": "Separate administration by 2-4 hours"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Increases GI irritation and bleeding risk; enhances salicylate absorption and toxicity",
+      "action": "Avoid alcohol consumption during bismuth subsalicylate therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-salicylate foods (berries, tomatoes, peppers, nuts)",
+      "severity": "Low",
+      "mechanism": "Cumulative salicylate intake may increase risk of adverse effects in sensitive individuals",
+      "action": "Monitor for signs of salicylism; no strict avoidance needed for most patients"
+    },
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "May reduce bismuth subsalicylate absorption when consumed simultaneously",
+      "action": "Separate dairy consumption by at least 2 hours from medication"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of salicylism (tinnitus, dizziness, altered mental status) especially with prolonged use or in patients >60 years. Black/dark stools are expected and benign; however, monitor for GI bleeding signs in patients on concurrent anticoagulants or antiplatelets."
+}

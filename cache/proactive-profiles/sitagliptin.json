@@ -1,0 +1,54 @@
+{
+  "drug": "Sitagliptin",
+  "drug_class": "Dipeptidyl Peptidase-4 (DPP-4) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "Organic anion transporter (OAT3)",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction may reduce sitagliptin levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have additive hypoglycemic effects",
+      "action": "Monitor blood glucose closely; adjust doses as needed"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Potential additive glucose-lowering effects",
+      "action": "Monitor for hypoglycemia; inform prescriber of use"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "May have modest glucose-lowering properties",
+      "action": "Monitor blood glucose levels regularly"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay sitagliptin absorption without reducing bioavailability",
+      "action": "Take sitagliptin consistently with or without food for optimal efficacy"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase sitagliptin exposure",
+      "action": "Limit or avoid grapefruit juice; monitor for adverse effects"
+    }
+  ],
+  "monitoring_notes": "Sitagliptin has minimal food interactions and relatively low drug interaction potential. Monitor for signs of hypoglycemia when combined with other antidiabetic agents or glucose-lowering supplements, and assess renal function regularly as sitagliptin is renally eliminated."
+}

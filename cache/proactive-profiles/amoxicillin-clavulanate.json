@@ -1,0 +1,60 @@
+{
+  "drug": "Amoxicillin-Clavulanate",
+  "drug_class": "Beta-lactam antibiotic with beta-lactamase inhibitor",
+  "key_pathways": [
+    "Bacterial cell wall synthesis",
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "High",
+      "mechanism": "Clavulanate may cause hyperkalemia; combined potassium supplementation increases risk of dangerous serum levels",
+      "action": "Avoid concurrent use; monitor potassium levels if supplementation is essential"
+    },
+    {
+      "name": "Methotrexate",
+      "severity": "High",
+      "mechanism": "Amoxicillin-clavulanate may reduce renal clearance of methotrexate, increasing toxicity risk",
+      "action": "Avoid combination; use alternative antibiotic if possible or monitor methotrexate levels closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Antibiotic may reduce effectiveness of probiotic colonization; timing separation may improve efficacy",
+      "action": "Take probiotics at least 2-3 hours apart from antibiotic dose"
+    },
+    {
+      "name": "Vitamin K supplements",
+      "severity": "Low",
+      "mechanism": "Prolonged antibiotic use may deplete vitamin K-producing gut flora",
+      "action": "Consider vitamin K supplementation if antibiotic course exceeds 2 weeks"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (taken concurrently)",
+      "severity": "Moderate",
+      "mechanism": "May delay and reduce absorption of amoxicillin-clavulanate, particularly clavulanate component",
+      "action": "Take on empty stomach (1 hour before or 2 hours after meals) for optimal absorption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "May slightly reduce amoxicillin absorption due to calcium and protein binding",
+      "action": "Separate dairy intake by 2+ hours from antibiotic doses when possible"
+    },
+    {
+      "name": "Acidic foods/beverages",
+      "severity": "Low",
+      "mechanism": "May affect gastric pH and antibiotic absorption, though effect is minimal",
+      "action": "No strict avoidance needed; maintain consistent timing relative to meals"
+    }
+  ],
+  "monitoring_notes": "Monitor for gastrointestinal effects, allergic reactions, and hepatic function (clavulanate can cause liver injury). In patients with renal impairment or those on prolonged therapy, assess potassium levels and vitamin K status."
+}

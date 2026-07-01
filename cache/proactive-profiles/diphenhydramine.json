@@ -1,0 +1,58 @@
+{
+  "drug": "Diphenhydramine",
+  "drug_class": "First-generation H1-receptor antagonist (anticholinergic antihistamine)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Alcohol/Ethanol",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression; alcohol inhibits metabolism and increases diphenhydramine levels",
+      "action": "Contraindicated—counsel patient to completely avoid alcohol during diphenhydramine use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces diphenhydramine efficacy; may decrease antihistamine effect",
+      "action": "Avoid concurrent use or monitor for reduced symptom control; consider alternative antihistamine"
+    },
+    {
+      "name": "Jimsonweed (Datura)",
+      "severity": "High",
+      "mechanism": "Additive anticholinergic effects; risk of severe anticholinergic toxicity (urinary retention, glaucoma, tachycardia, confusion)",
+      "action": "Absolutely contraindicated—counsel complete avoidance"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression effects; may increase sedation and drowsiness",
+      "action": "Use with caution; counsel patient on increased sedation risk; avoid driving/operating machinery"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression",
+      "action": "Monitor for excessive drowsiness; advise patient to separate dosing or reduce concurrent use if sedation problematic"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase diphenhydramine levels",
+      "action": "Counsel moderation; excessive consumption may increase anticholinergic side effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay absorption and onset of action due to slowed gastric emptying",
+      "action": "Take diphenhydramine on empty stomach or with light meal for optimal absorption; space dosing away from large fatty meals"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, anticholinergic effects (dry mouth, urinary retention, blurred vision, constipation), and CNS depression, particularly in elderly patients and those with concurrent medications affecting CYP2D6/3A4. Counsel on fall risk and impaired cognition; avoid driving or hazardous activities until individual tolerance established."
+}

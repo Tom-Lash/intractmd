@@ -1,0 +1,52 @@
+{
+  "drug": "Amoxicillin",
+  "drug_class": "Beta-lactam antibiotic (aminopenicillin)",
+  "key_pathways": [
+    "Renal excretion",
+    "Bacterial cell wall synthesis"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin (if concurrent use)",
+      "severity": "High",
+      "mechanism": "Amoxicillin may potentiate warfarin effect by reducing vitamin K-producing gut flora and displacing protein binding",
+      "action": "Monitor INR closely; coordinate with prescriber for dose adjustments if concurrent use necessary"
+    },
+    {
+      "name": "Oral contraceptives",
+      "severity": "Moderate",
+      "mechanism": "Amoxicillin reduces enterohepatic recirculation of ethinylestradiol by disrupting gut flora, potentially decreasing contraceptive efficacy",
+      "action": "Use backup contraception during antibiotic course and for 7 days after completion"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics (Lactobacillus, Bifidobacterium)",
+      "severity": "Low",
+      "mechanism": "Amoxicillin destroys beneficial gut bacteria; probiotics may help restore microbiota balance",
+      "action": "May administer probiotics 2+ hours apart from amoxicillin dosing; consider after antibiotic course completion"
+    },
+    {
+      "name": "Methotrexate",
+      "severity": "Low",
+      "mechanism": "Amoxicillin may reduce renal clearance of methotrexate, increasing toxicity risk",
+      "action": "Monitor renal function and methotrexate levels if concurrent use; ensure adequate hydration"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay gastric absorption of amoxicillin, though clinical significance is minimal",
+      "action": "Take amoxicillin on an empty stomach (1 hour before or 2 hours after meals) for optimal absorption"
+    },
+    {
+      "name": "Dairy products with calcium",
+      "severity": "Low",
+      "mechanism": "Calcium may form chelate complexes, minimally reducing amoxicillin absorption",
+      "action": "Separate administration by 2 hours if taking calcium supplements or large dairy servings"
+    }
+  ],
+  "monitoring_notes": "Monitor for allergic reactions, GI disturbances (diarrhea/C. difficile risk), and drug-drug interactions with anticoagulants or immunosuppressants. Assess baseline renal function as amoxicillin is renally eliminated; adjust dosing in severe renal impairment."
+}

@@ -1,0 +1,74 @@
+{
+  "drug": "Valproic Acid",
+  "drug_class": "Anticonvulsant, Histone Deacetylase Inhibitor",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2A6",
+    "CYP2B6",
+    "Glucuronidation",
+    "Beta-oxidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP2C9 and glucuronidation, reducing valproic acid levels and efficacy",
+      "action": "Avoid concurrent use; consult prescriber before discontinuation to prevent breakthrough seizures"
+    },
+    {
+      "name": "Carnitine (L-Carnitine supplementation)",
+      "severity": "High",
+      "mechanism": "Valproic acid impairs carnitine metabolism and increases renal losses; supplementation may be necessary but requires monitoring",
+      "action": "Do not self-supplement; only use under medical supervision with carnitine level monitoring"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "May increase bleeding risk by potentiating antiplatelet effects and hepatotoxicity",
+      "action": "Avoid high-dose supplementation; maintain dietary vitamin E intake only"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folate/Folic Acid",
+      "severity": "Low",
+      "mechanism": "Valproic acid impairs folate metabolism and increases neural tube defect risk; supplementation may be beneficial",
+      "action": "Supplementation recommended especially in reproductive-age females; use high-dose folic acid (4-5 mg daily) as clinically indicated"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Valproic acid reduces vitamin D metabolism and increases osteoporosis risk",
+      "action": "Monitor vitamin D levels; supplementation may be appropriate with baseline and periodic testing"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "Valproic acid may reduce magnesium levels; magnesium may enhance therapeutic effects",
+      "action": "Monitor serum magnesium; supplementation may be considered if deficient"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Critical",
+      "mechanism": "Increases CNS depression, hepatotoxicity risk, and impairs valproic acid metabolism",
+      "action": "Completely avoid alcohol consumption during valproic acid therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay valproic acid absorption and reduce peak serum levels",
+      "action": "Take valproic acid consistently with or without food; maintain consistent timing relative to meals"
+    },
+    {
+      "name": "Cranberry juice",
+      "severity": "Low",
+      "mechanism": "May slightly increase urinary excretion of valproic acid through acidification",
+      "action": "Limit intake or maintain consistent consumption; monitor seizure control if consumption changes"
+    }
+  ],
+  "monitoring_notes": "Monitor for hepatotoxicity, pancreatitis, and bone density loss regularly. Assess carnitine status, folate, and vitamin D levels periodically, particularly in patients at high risk (children, polypharmacy, long-term therapy). Therapeutic drug monitoring recommended to maintain levels of 50-100 mcg/mL."
+}

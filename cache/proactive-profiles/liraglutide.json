@@ -1,0 +1,71 @@
+{
+  "drug": "Liraglutide",
+  "drug_class": "GLP-1 Receptor Agonist",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal clearance of metabolites"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Chromium",
+      "severity": "High",
+      "mechanism": "Additive glucose-lowering effects may cause severe hypoglycemia",
+      "action": "Avoid concurrent use; if necessary, monitor blood glucose closely and adjust liraglutide dose"
+    },
+    {
+      "name": "Bitter Melon",
+      "severity": "High",
+      "mechanism": "Potentiates glucose-lowering effects, increasing hypoglycemia risk",
+      "action": "Discontinue bitter melon supplementation; counsel on hypoglycemia symptoms"
+    },
+    {
+      "name": "Fenugreek Seeds",
+      "severity": "High",
+      "mechanism": "Synergistic reduction in blood glucose with GLP-1 agonists",
+      "action": "Avoid use; recommend alternative herbal products without glucose-lowering properties"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-Lipoic Acid",
+      "severity": "Low",
+      "mechanism": "Mild glucose-lowering potential may have minor additive effect",
+      "action": "Use with caution; monitor for hypoglycemia symptoms and maintain consistent dosing"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "Weak insulin-sensitizing effects; minimal interaction at typical doses",
+      "action": "Monitor blood glucose; generally safe but counsel on hypoglycemia awareness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat Meals",
+      "severity": "Moderate",
+      "mechanism": "Delays gastric emptying and may increase GI side effects (nausea, vomiting); affects medication absorption timing",
+      "action": "Recommend low-fat diet; separate high-fat meals from liraglutide administration by 2+ hours"
+    },
+    {
+      "name": "Rapid-acting Simple Carbohydrates (High Glycemic Index)",
+      "severity": "Moderate",
+      "mechanism": "May cause postprandial blood glucose spikes despite liraglutide; increases hypoglycemia risk if overcorrecting",
+      "action": "Counsel on balanced carbohydrate intake; emphasize portion control and complex carbohydrates"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Moderate alcohol may potentiate hypoglycemia risk; impairs hypoglycemia awareness",
+      "action": "Limit to ≤1 drink daily; monitor blood glucose before bed if consumed; educate on hypoglycemia risk"
+    },
+    {
+      "name": "Sugary Beverages",
+      "severity": "Low",
+      "mechanism": "Rapid glucose absorption may cause postprandial hyperglycemia; undermines therapeutic benefit",
+      "action": "Recommend sugar-free alternatives; counsel on blood glucose monitoring and dietary adherence"
+    }
+  ],
+  "monitoring_notes": "Liraglutide undergoes minimal CYP450 metabolism, reducing direct drug-supplement interactions; however, additive hypoglycemic effects with glucose-lowering agents/supplements and delayed gastric emptying from high-fat foods are primary concerns. Monitor for hypoglycemia, GI tolerance, and blood glucose control; counsel on consistent meal timing and composition."
+}

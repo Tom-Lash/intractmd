@@ -1,0 +1,72 @@
+{
+  "drug": "Glimepiride",
+  "drug_class": "Meglitinide (rapid-acting insulin secretagogue)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginseng (American & Asian)",
+      "severity": "High",
+      "mechanism": "Additive hypoglycemic effects; ginseng enhances insulin secretion and glucose uptake",
+      "action": "Discontinue ginseng or monitor blood glucose closely; may require glimepiride dose reduction"
+    },
+    {
+      "name": "Fenugreek",
+      "severity": "High",
+      "mechanism": "Potent hypoglycemic activity; increases insulin secretion and slows carbohydrate absorption",
+      "action": "Avoid concurrent use; consult prescriber before use if diabetes control is established"
+    },
+    {
+      "name": "Garlic (concentrated/supplement)",
+      "severity": "High",
+      "mechanism": "Significant hypoglycemic effects; allicin enhances insulin secretion",
+      "action": "Avoid high-dose garlic supplements; monitor blood glucose if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May enhance insulin sensitivity and glucose metabolism, potentially augmenting hypoglycemic effect",
+      "action": "Monitor blood glucose regularly; dose adjustment may be needed with high-dose chromium (>200 mcg daily)"
+    },
+    {
+      "name": "Bilberry",
+      "severity": "Low",
+      "mechanism": "Mild hypoglycemic properties; anthocyanins may improve glucose control",
+      "action": "Use with caution and monitor blood glucose; generally well-tolerated at dietary doses"
+    },
+    {
+      "name": "Bitter Melon",
+      "severity": "Low",
+      "mechanism": "Hypoglycemic polypeptide-p may enhance insulin secretion and glucose utilization",
+      "action": "Monitor blood glucose; maintain consistent intake if used regularly"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High glycemic index foods (refined sugars, white bread, glucose drinks)",
+      "severity": "Moderate",
+      "mechanism": "Rapid glucose absorption triggers excessive insulin secretion via glimepiride, risking severe hypoglycemia",
+      "action": "Advise patient to consume low-glycemic foods; maintain consistent carbohydrate intake; educate on glycemic index"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (especially on empty stomach)",
+      "severity": "Low",
+      "mechanism": "Alcohol impairs hepatic gluconeogenesis and enhances glimepiride hypoglycemic effect; increases hypoglycemia risk",
+      "action": "Limit alcohol consumption; avoid consuming alcohol without food; monitor blood glucose"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and nutrient absorption, potentially altering glimepiride pharmacokinetics and glucose response timing",
+      "action": "Take glimepiride consistently with meals; monitor postprandial glucose response"
+    }
+  ],
+  "monitoring_notes": "Monitor blood glucose regularly, especially when initiating or discontinuing supplements. Educate patients on hypoglycemia recognition and the importance of maintaining consistent meal timing and carbohydrate intake with this insulin secretagogue."
+}

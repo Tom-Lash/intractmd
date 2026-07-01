@@ -1,0 +1,84 @@
+{
+  "drug": "Ibrutinib",
+  "drug_class": "Bruton's Tyrosine Kinase (BTK) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces ibrutinib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; substitute with alternative if depression treatment needed"
+    },
+    {
+      "name": "Grapefruit Extract/Seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases ibrutinib exposure and toxicity risk",
+      "action": "Discontinue supplement; counsel on grapefruit-containing products"
+    },
+    {
+      "name": "Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxic supplement may potentiate ibrutinib-related liver injury",
+      "action": "Avoid; monitor liver function tests baseline and periodically"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "May increase bleeding risk synergistically with ibrutinib's antiplatelet effects",
+      "action": "Limit to <400 IU/day; monitor for bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic Extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction and antiplatelet effects may modestly reduce ibrutinib levels",
+      "action": "Use in moderation; maintain consistent intake if used"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase ibrutinib concentrations",
+      "action": "Monitor for increased toxicity; adjust ibrutinib timing if needed"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Mild hepatic enzyme modulation; limited clinical interaction data",
+      "action": "Use cautiously; monitor liver enzymes and ibrutinib efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Pomelo",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases ibrutinib bioavailability and toxicity risk significantly",
+      "action": "Eliminate from diet; educate on all citrus variants containing furanocoumarins"
+    },
+    {
+      "name": "High-fat Meals (>50g fat)",
+      "severity": "Moderate",
+      "mechanism": "Increases ibrutinib absorption unpredictably; may elevate plasma concentrations",
+      "action": "Take ibrutinib consistently with or without food; avoid variable fat intake patterns"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry Juice (high quantity)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition; antiplatelet properties may synergize with drug",
+      "action": "Consume in moderation (<8 oz/day); monitor for bleeding"
+    },
+    {
+      "name": "Cruciferous Vegetables (excessive intake)",
+      "severity": "Low",
+      "mechanism": "Indole-3-carbinol may induce CYP3A4 at very high consumption levels",
+      "action": "Normal dietary intake acceptable; counsel against supplemental or concentrated forms"
+    }
+  ],
+  "monitoring_notes": "Ibrutinib has narrow therapeutic index and significant CYP3A4/P-gp dependence; counsel on consistent food/supplement habits to maintain stable levels. Monitor CBC, liver/renal function, and bleeding signs regularly, especially if CYP3A4 modulators are introduced."
+}

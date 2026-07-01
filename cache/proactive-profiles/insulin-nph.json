@@ -1,0 +1,66 @@
+{
+  "drug": "Insulin NPH",
+  "drug_class": "Intermediate-acting insulin",
+  "key_pathways": [
+    "Glucose metabolism",
+    "Insulin receptor signaling",
+    "Hepatic glycogenolysis inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose chromium",
+      "severity": "High",
+      "mechanism": "May potentiate insulin effect and increase hypoglycemia risk",
+      "action": "Avoid or use only under medical supervision with frequent glucose monitoring"
+    },
+    {
+      "name": "Vanadium",
+      "severity": "High",
+      "mechanism": "May enhance insulin sensitivity and potentiate glucose-lowering effects",
+      "action": "Discontinue use and monitor blood glucose closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May improve insulin sensitivity and enhance glucose uptake",
+      "action": "Monitor blood glucose; dose adjustments may be needed"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May lower blood glucose levels and enhance insulin action",
+      "action": "Monitor for hypoglycemia; coordinate use with healthcare provider"
+    },
+    {
+      "name": "Bitter melon",
+      "severity": "Low",
+      "mechanism": "May have glucose-lowering properties and potentiate insulin effects",
+      "action": "Monitor blood glucose regularly; coordinate timing and dosing"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (excessive intake)",
+      "severity": "Critical",
+      "mechanism": "Impairs gluconeogenesis and increases hypoglycemia risk; delays glucose absorption",
+      "action": "Limit or avoid alcohol; if consumed, do so with food and monitor glucose closely"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-glycemic carbohydrates",
+      "severity": "Low",
+      "mechanism": "Rapid glucose spikes may require timing adjustment relative to NPH injection",
+      "action": "Space meals appropriately; coordinate carbohydrate intake with NPH action curve"
+    },
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "May slow glucose absorption and affect insulin requirement timing",
+      "action": "Maintain consistent fiber intake; monitor glucose patterns for dose adjustments"
+    }
+  ],
+  "monitoring_notes": "NPH insulin requires consistent meal timing and carbohydrate intake; monitor blood glucose before meals and at bedtime to assess hypoglycemia risk, particularly with supplements or dietary changes that affect glucose metabolism. Any substance altering glucose homeostasis warrants dose reassessment and increased glucose monitoring frequency."
+}

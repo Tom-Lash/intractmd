@@ -1,0 +1,53 @@
+{
+  "drug": "Emtricitabine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion",
+    "Intracellular phosphorylation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin B12 supplements",
+      "severity": "Moderate",
+      "mechanism": "Emtricitabine may impair B12 absorption; excessive supplementation could mask deficiency or cause imbalance",
+      "action": "Monitor B12 levels regularly; use standard doses only if supplementation is necessary"
+    },
+    {
+      "name": "Nephrotoxic herbal supplements (e.g., aristolochic acid-containing herbs)",
+      "severity": "High",
+      "mechanism": "Emtricitabine is renally eliminated; nephrotoxic agents increase risk of renal impairment and drug accumulation",
+      "action": "Avoid completely; consult pharmacist before using any herbal kidney support products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May theoretically affect gastrointestinal absorption, though clinical significance is minimal for emtricitabine",
+      "action": "Use standard probiotic formulations; maintain consistent timing separate from dosing"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have immune-modulating effects that could theoretically interact with antiretroviral therapy mechanisms",
+      "action": "Use in moderation; inform healthcare provider of concurrent use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay absorption of emtricitabine; clinical significance is minimal as food effect is not substantial",
+      "action": "May take with or without food; consistency in timing is more important than fasting"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Excessive alcohol may impair adherence and liver function; emtricitabine has minimal hepatic metabolism but overall antiretroviral regimen may include hepatically-metabolized agents",
+      "action": "Limit alcohol consumption; maintain liver health monitoring"
+    }
+  ],
+  "monitoring_notes": "Emtricitabine has minimal drug interactions due to limited hepatic metabolism and primarily renal elimination. Monitor renal function regularly, as nephrotoxic substances may impair clearance and increase toxicity risk. Ensure consistent adherence and assess for lactic acidosis symptoms with concurrent medications."
+}

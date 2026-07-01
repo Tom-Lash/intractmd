@@ -1,0 +1,53 @@
+{
+  "drug": "Alirocumab",
+  "drug_class": "PCSK9 Inhibitor (Monoclonal Antibody)",
+  "key_pathways": [
+    "PCSK9 pathway",
+    "LDL receptor recycling",
+    "No CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains statin-like compounds (monacolin K) that may have additive LDL-lowering effects and increase myopathy risk when combined with alirocumab's LDL reduction",
+      "action": "Avoid concurrent use; recommend discussion with prescriber before supplementation"
+    },
+    {
+      "name": "Niacin (High-dose >2g/day)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate lipid-lowering effects and increase risk of hyperuricemia or gout in susceptible patients on aggressive lipid therapy",
+      "action": "Limit to recommended dietary amounts; consult clinician before high-dose supplementation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish Oil/Omega-3 (≤3g/day)",
+      "severity": "Low",
+      "mechanism": "Additive modest triglyceride-lowering effects; generally well-tolerated together but may increase bleeding risk if on anticoagulants",
+      "action": "Monitor; use standardized products with documented purity"
+    },
+    {
+      "name": "Plant Sterols/Stanols",
+      "severity": "Low",
+      "mechanism": "Complementary cholesterol-lowering mechanism; safe when combined but additive effects may reduce LDL below therapeutic target in some patients",
+      "action": "Monitor lipid panel; adjust if LDL becomes suboptimal"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High saturated fat diet",
+      "severity": "Low",
+      "mechanism": "May counteract alirocumab's LDL-lowering efficacy and reduce overall cardiovascular benefit",
+      "action": "Reinforce heart-healthy diet; emphasize Mediterranean or DASH diet patterns"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "No direct interaction with alirocumab (monoclonal antibody, no CYP metabolism), but relevant if patient also takes statins or other CYP3A4 substrates",
+      "action": "Relevant only if concurrent statin use; advise moderation or avoidance"
+    }
+  ],
+  "monitoring_notes": "Alirocumab is a monoclonal antibody with no CYP450 metabolism, minimizing direct drug interactions. Focus monitoring on lipid panel response, myalgia symptoms (especially if concurrent statin use), and adherence to subcutaneous dosing schedule every 2 weeks."
+}

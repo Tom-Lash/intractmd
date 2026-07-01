@@ -1,0 +1,60 @@
+{
+  "drug": "Rocuronium",
+  "drug_class": "Neuromuscular blocking agent (aminosteroid)",
+  "key_pathways": [
+    "Hepatic metabolism (limited)",
+    "Renal elimination (primary)",
+    "Ester hydrolysis (Hofmann elimination)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Magnesium supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Magnesium potentiates neuromuscular blockade by inhibiting acetylcholine release at the neuromuscular junction",
+      "action": "Avoid supplemental magnesium during rocuronium therapy; monitor serum magnesium levels"
+    },
+    {
+      "name": "Aminoglycosides (e.g., gentamicin supplements)",
+      "severity": "High",
+      "mechanism": "Synergistic potentiation of neuromuscular blockade; reduces acetylcholine release",
+      "action": "Contraindicated; ensure no concomitant aminoglycoside use during rocuronium administration"
+    },
+    {
+      "name": "Fluoroquinolone supplements",
+      "severity": "Moderate",
+      "mechanism": "May potentiate neuromuscular blockade effects",
+      "action": "Avoid or use with close neuromuscular monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Calcium may antagonize neuromuscular blockade; separate administration timing",
+      "action": "Monitor blockade duration; administer calcium away from rocuronium dosing"
+    },
+    {
+      "name": "Potassium supplements",
+      "severity": "Low",
+      "mechanism": "Hyperkalemia risk post-rocuronium administration; rocuronium may increase serum potassium",
+      "action": "Monitor serum potassium; avoid supplementation unless clinically indicated"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (bananas, spinach, avocado)",
+      "severity": "Moderate",
+      "mechanism": "Rocuronium can cause hyperkalemia, particularly in trauma/burn patients; excessive dietary potassium increases risk",
+      "action": "Limit high-potassium foods during perioperative period; monitor serum potassium"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may theoretically alter rocuronium metabolism minimally; rocuronium undergoes primarily renal elimination",
+      "action": "No strict restriction needed; general caution advised in hepatically impaired patients"
+    }
+  ],
+  "monitoring_notes": "Rocuronium is primarily renounced via renal elimination (Hofmann elimination) with minimal hepatic metabolism, reducing traditional drug-supplement interactions. Close neuromuscular monitoring is essential, particularly in patients with renal impairment, magnesium abnormalities, or concurrent neuromuscular-potentiating agents."
+}

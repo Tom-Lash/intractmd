@@ -1,0 +1,52 @@
+{
+  "drug": "Belimumab",
+  "drug_class": "Monoclonal Antibody (BLyS inhibitor)",
+  "key_pathways": [
+    "B-cell activation pathway",
+    "Immune system modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May enhance immune stimulation, potentially counteracting belimumab's immunosuppressive effects and reducing therapeutic efficacy",
+      "action": "Avoid concurrent use; educate patient on immunostimulant avoidance"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Potent immune stimulant that may antagonize belimumab's B-cell suppression mechanism",
+      "action": "Discontinue use prior to belimumab therapy"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Moderate",
+      "mechanism": "May stimulate immune function and reduce immunosuppressive efficacy of belimumab",
+      "action": "Counsel patient to avoid or monitor for reduced therapeutic response"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate gut-associated lymphoid tissue; generally safe but monitor clinical response",
+      "action": "Use cautiously and maintain consistent product/strain; report any changes in disease activity"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "May support immune regulation; beneficial in SLE patients but monitor levels during belimumab therapy",
+      "action": "Supplementation generally appropriate; monitor serum levels periodically"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium diet",
+      "severity": "Low",
+      "mechanism": "May exacerbate lupus nephritis and fluid retention, particularly relevant in SLE patients on belimumab",
+      "action": "Recommend sodium restriction consistent with SLE management guidelines"
+    }
+  ],
+  "monitoring_notes": "Belimumab is a monoclonal antibody with no significant hepatic or renal metabolism; primary concern is avoiding immunostimulant supplements that may reduce efficacy. Monitor for infection risk and ensure vaccination status is current prior to therapy initiation, as concurrent immunostimulants increase infection complications."
+}

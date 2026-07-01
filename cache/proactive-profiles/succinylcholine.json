@@ -1,0 +1,59 @@
+{
+  "drug": "Succinylcholine",
+  "drug_class": "Depolarizing Neuromuscular Blocking Agent",
+  "key_pathways": [
+    "Plasma Pseudocholinesterase (Butyrylcholinesterase)",
+    "Acetylcholine Receptor"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Magnesium Supplements",
+      "severity": "High",
+      "mechanism": "Magnesium potentiates neuromuscular blockade and prolongs paralysis duration by reducing acetylcholine release at the neuromuscular junction",
+      "action": "Discontinue magnesium supplements at least 24-48 hours before anesthesia; inform anesthesiologist of recent supplementation"
+    },
+    {
+      "name": "Calcium Channel Blockers (Supplement Form)",
+      "severity": "High",
+      "mechanism": "Enhanced neuromuscular blockade and prolonged apnea through decreased acetylcholine release and sensitivity",
+      "action": "Avoid supplemental calcium channel blocking agents; coordinate with anesthesiologist if patient taking prescription versions"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Potassium Supplements",
+      "severity": "Low",
+      "mechanism": "Succinylcholine causes transient hyperkalemia; elevated baseline potassium may increase cardiac arrhythmia risk",
+      "action": "Monitor serum potassium levels; assess risk-benefit in patients requiring supplementation"
+    },
+    {
+      "name": "Corticosteroid Supplements",
+      "severity": "Low",
+      "mechanism": "May increase potassium release in response to succinylcholine-induced muscle depolarization",
+      "action": "Use lowest effective dose; baseline electrolyte monitoring recommended"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-Potassium Foods (Bananas, Spinach, Tomatoes, Potatoes)",
+      "severity": "Moderate",
+      "mechanism": "Succinylcholine causes acute potassium release from muscles; high dietary potassium elevates baseline levels and increases hyperkalemia risk",
+      "action": "Reduce intake of high-potassium foods 24 hours before planned anesthesia; maintain normal dietary potassium otherwise"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May cause potassium depletion and electrolyte imbalances that could affect neuromuscular function and cardiac stability during succinylcholine use",
+      "action": "Limit licorice consumption; ensure adequate electrolyte balance perioperatively"
+    },
+    {
+      "name": "Grapefruit",
+      "severity": "Low",
+      "mechanism": "May inhibit plasma pseudocholinesterase metabolism slightly, potentially prolonging drug effect marginally",
+      "action": "Minimal clinical concern; routine dietary restriction not necessary"
+    }
+  ],
+  "monitoring_notes": "Succinylcholine's primary concern involves potassium release and prolonged blockade in patients with pseudocholinesterase deficiency. Monitor serum potassium, electrolytes, and cardiac rhythm perioperatively, particularly in patients with renal disease, burns, or concurrent medications affecting potassium homeostasis."
+}

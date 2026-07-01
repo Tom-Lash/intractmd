@@ -1,0 +1,55 @@
+{
+  "drug": "Procainamide",
+  "drug_class": "Class IA Antiarrhythmic",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "Renal excretion",
+    "Acetylation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce procainamide levels and decrease antiarrhythmic efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases procainamide concentrations and risk of toxicity including QT prolongation",
+      "action": "Discontinue use; counsel on grapefruit avoidance"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May have additive effects on cardiac contractility; theoretical risk of enhanced negative inotropy",
+      "action": "Monitor for increased fatigue or dyspnea; coordinate supplementation with cardiologist"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Potential hypokalemia and sodium retention may increase arrhythmia risk and procainamide toxicity",
+      "action": "Limit use; monitor serum potassium and sodium levels"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases procainamide bioavailability and plasma concentrations, elevating toxicity risk",
+      "action": "Eliminate from diet; advise patient of all grapefruit-containing products to avoid"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake may antagonize procainamide's antiarrhythmic effects and increase fluid retention",
+      "action": "Counsel on moderate sodium restriction consistent with cardiac guidelines"
+    }
+  ],
+  "monitoring_notes": "Monitor procainamide levels, ECG parameters (QT interval, PR duration), renal function, and acetylator status, as renal impairment and genetic polymorphisms in CYP2D6/acetylation significantly affect drug clearance. Watch for signs of lupus-like syndrome and electrolyte abnormalities (hypokalemia) which can precipitate arrhythmias."
+}

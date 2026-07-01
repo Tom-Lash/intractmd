@@ -1,0 +1,72 @@
+{
+  "drug": "Edoxaban",
+  "drug_class": "Factor Xa Inhibitor (Direct Oral Anticoagulant)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2J2",
+    "P-glycoprotein (efflux transporter)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inducer; reduces edoxaban levels and anticoagulant efficacy",
+      "action": "Avoid concurrent use; consult prescriber before discontinuation due to rebound thrombotic risk"
+    },
+    {
+      "name": "High-dose Vitamin K supplements",
+      "severity": "High",
+      "mechanism": "Vitamin K antagonizes Factor Xa inhibitor anticoagulant effect through vitamin K-dependent cofactor pathway",
+      "action": "Avoid supplementation; maintain consistent dietary vitamin K intake"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Antiplatelet and anticoagulant properties; increases bleeding risk when combined with anticoagulants",
+      "action": "Discontinue supplement; monitor for bleeding signs if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Cranberry extract",
+      "severity": "Low",
+      "mechanism": "Potential mild anticoagulant and P-glycoprotein inhibitor effects; may slightly increase edoxaban levels",
+      "action": "Monitor for increased bleeding signs; limit high-dose consumption"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity; additive bleeding risk at high doses",
+      "action": "Use in moderation; counsel on consumption amounts"
+    },
+    {
+      "name": "Omega-3 fatty acids (>3g/day)",
+      "severity": "Low",
+      "mechanism": "Antiplatelet effects; may potentiate anticoagulation at high doses",
+      "action": "Monitor if dose exceeds 3g daily; assess for bleeding risk"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibitor; increases edoxaban bioavailability and bleeding risk",
+      "action": "Avoid completely; select alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High vitamin K foods (kale, spinach, broccoli)",
+      "severity": "Low",
+      "mechanism": "Excessive vitamin K intake may reduce anticoagulant efficacy through Factor Xa pathway interference",
+      "action": "Maintain consistent intake; avoid sudden increases in consumption"
+    },
+    {
+      "name": "Alcohol (>2 drinks daily)",
+      "severity": "Low",
+      "mechanism": "Increased bleeding risk and potential hepatic metabolism effects at excessive intake",
+      "action": "Counsel on moderate consumption; monitor for bleeding if heavy use"
+    }
+  ],
+  "monitoring_notes": "Edoxaban has moderate interaction potential; monitor renal function as drug is renally cleared and relevant for dose adjustments. Assess baseline and periodic bleeding risk, particularly with concurrent antiplatelet agents or NSAIDs."
+}

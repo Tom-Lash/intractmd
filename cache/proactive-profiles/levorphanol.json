@@ -1,0 +1,66 @@
+{
+  "drug": "Levorphanol",
+  "drug_class": "Opioid agonist (synthetic morphinan)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may decrease levorphanol levels and efficacy; risk of withdrawal",
+      "action": "Avoid concurrent use; consult prescriber before initiating St. John's Wort"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; enhanced sedation and respiratory depression",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Significant additive CNS depressant effects; enhanced sedation and impaired cognition",
+      "action": "Avoid concurrent use; space dosing if unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may modestly increase levorphanol levels",
+      "action": "Monitor for increased opioid effects; limit grapefruit products"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May have mild additive CNS depressant effects at high doses",
+      "action": "Use standard doses; monitor for excessive sedation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases levorphanol bioavailability and plasma levels",
+      "action": "Eliminate grapefruit consumption during levorphanol therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase levorphanol absorption rate and peak levels",
+      "action": "Take with or without food consistently; counsel on stable timing"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS and respiratory depression; increased overdose risk",
+      "action": "Advise complete avoidance or minimal use; counsel on severe interaction risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of opioid toxicity (excessive sedation, respiratory depression, miosis) and adjust dosing accordingly. Assess for potential CYP2D6 polymorphisms affecting metabolism, as levorphanol undergoes significant hepatic metabolism."
+}

@@ -1,0 +1,47 @@
+{
+  "drug": "Plecanatide",
+  "drug_class": "Guanylate cyclase-C (GC-C) agonist",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Local GI activation",
+    "Renal excretion of metabolites"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose mineral oil supplements",
+      "severity": "Moderate",
+      "mechanism": "May enhance laxative effect and increase risk of diarrhea/dehydration",
+      "action": "Avoid concurrent use; separate administration if necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Psyllium husk/Fiber supplements",
+      "severity": "Low",
+      "mechanism": "Additive effects on bowel motility; may increase loose stools",
+      "action": "Monitor stool frequency and consistency; adjust fiber intake as needed"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate GI effects; limited clinical data on interaction",
+      "action": "Monitor GI tolerance; separate dosing if feasible"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay GI motility and affect plecanatide absorption timing",
+      "action": "Consistent meal timing recommended; plecanatide may be taken with or without food"
+    },
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, energy drinks)",
+      "severity": "Low",
+      "mechanism": "Stimulates GI motility; additive effects with plecanatide may increase urgency",
+      "action": "Counsel on potential increased bowel urgency; monitor tolerance"
+    }
+  ],
+  "monitoring_notes": "Plecanatide has minimal systemic absorption and is not significantly metabolized by hepatic enzymes, resulting in very low drug-supplement/food interaction potential. Monitor for excessive diarrhea, dehydration, and electrolyte abnormalities, particularly during initiation or with concurrent GI-active agents."
+}

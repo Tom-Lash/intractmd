@@ -1,0 +1,72 @@
+{
+  "drug": "Glyburide",
+  "drug_class": "Meglitinide/Sulfonylurea (Second-generation)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces glyburide levels, decreasing glucose-lowering efficacy",
+      "action": "Avoid concurrent use; if essential, monitor blood glucose closely and adjust glyburide dose"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Potentiates insulin secretion and glucose-lowering effects, increasing hypoglycemia risk",
+      "action": "Avoid high-dose garlic supplements; counsel on hypoglycemia symptoms"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "High",
+      "mechanism": "Enhances glucose-lowering effects of glyburide, significantly increasing hypoglycemia risk",
+      "action": "Avoid concurrent use; if patient insists, monitor blood glucose frequently"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May have additive glucose-lowering effects",
+      "action": "Monitor blood glucose; may require glyburide dose adjustment"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "Potential additive glucose-lowering effects",
+      "action": "Counsel on hypoglycemia awareness; monitor glucose if used"
+    },
+    {
+      "name": "Bitter melon",
+      "severity": "Low",
+      "mechanism": "May enhance insulin secretion and glucose utilization",
+      "action": "Monitor blood glucose levels; educate on hypoglycemia symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (excessive/chronic use)",
+      "severity": "High",
+      "mechanism": "Impairs hepatic gluconeogenesis and potentiates hypoglycemic effects; increases lactic acidosis risk",
+      "action": "Advise strict alcohol limitation; counsel on severe hypoglycemia risk with concurrent use"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-carbohydrate/refined sugar meals",
+      "severity": "Low",
+      "mechanism": "Rapid glucose absorption may necessitate increased glyburide dosing; poor glycemic control",
+      "action": "Recommend consistent carbohydrate intake and complex carbohydrates; reinforce dietary counseling"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase glyburide levels slightly",
+      "action": "Limit grapefruit juice consumption; monitor glucose response"
+    }
+  ],
+  "monitoring_notes": "Monitor fasting and postprandial glucose levels regularly; assess for hypoglycemic episodes, especially when supplements or dietary changes are introduced. Educate patients on consistent meal timing and carbohydrate intake to optimize glyburide efficacy."
+}

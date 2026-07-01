@@ -1,0 +1,92 @@
+{
+  "drug": "Ritonavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C9",
+    "CYP2C19",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces ritonavir plasma concentrations significantly, compromising antiretroviral efficacy",
+      "action": "Contraindicated; do not use concurrently with ritonavir"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce ritonavir levels and increase protease inhibitor resistance risk",
+      "action": "Avoid high-dose garlic supplements; counsel on use of culinary amounts only"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein induction may decrease ritonavir bioavailability",
+      "action": "Avoid use; consider alternative liver support strategies if needed"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction potential may reduce ritonavir effectiveness",
+      "action": "Avoid or use with caution; monitor viral load if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase ritonavir levels; effect typically minimal with seed extract compared to juice",
+      "action": "Monitor for increased adverse effects; maintain consistent intake if used"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "High doses may have anticoagulant effects; minimal direct interaction but monitor if combined with other anticoagulants",
+      "action": "Use at standard recommended doses; counsel on bleeding risk awareness"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "No direct pharmacokinetic interaction; may support GI health during antiretroviral therapy",
+      "action": "Generally safe; may provide symptomatic benefit for GI side effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases ritonavir plasma concentrations and toxicity risk",
+      "action": "Contraindicated; advise complete avoidance including all grapefruit products"
+    },
+    {
+      "name": "High-fat meals (inconsistent intake)",
+      "severity": "Moderate",
+      "mechanism": "Ritonavir absorption is food-dependent; inconsistent fat intake causes variable bioavailability affecting viral suppression",
+      "action": "Always take ritonavir with food (preferably meals containing fat >500 kcal); maintain consistent meal timing"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Pomegranate juice",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition; effect is generally minor compared to grapefruit",
+      "action": "Moderate consumption acceptable; no strict avoidance required but monitor consistency"
+    },
+    {
+      "name": "Seville orange (bitter orange)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition similar to but less potent than grapefruit",
+      "action": "Limit consumption; prefer sweet oranges as safer alternative"
+    },
+    {
+      "name": "Licorice-containing foods",
+      "severity": "Low",
+      "mechanism": "High doses may affect drug metabolism and electrolyte balance; minimal interaction at typical food intake levels",
+      "action": "Use in moderation; avoid excessive licorice candy or supplements"
+    }
+  ],
+  "monitoring_notes": "Ritonavir is a potent CYP3A4 inhibitor used to boost other protease inhibitors; maintain consistent food intake (especially fat content) to ensure stable absorption and viral suppression. Monitor for signs of toxicity with CYP3A4-metabolized drugs and counsel on strict avoidance of enzyme-inducing supplements that compromise antiretroviral efficacy."
+}

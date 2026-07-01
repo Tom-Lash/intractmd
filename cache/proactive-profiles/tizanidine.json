@@ -1,0 +1,77 @@
+{
+  "drug": "Tizanidine",
+  "drug_class": "Alpha-2 adrenergic agonist (skeletal muscle relaxant)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Fluvoxamine",
+      "severity": "Critical",
+      "mechanism": "CYP1A2 inhibitor dramatically increases tizanidine levels, risking severe hypotension, bradycardia, and syncope",
+      "action": "Avoid combination; use alternative SSRI if antidepressant needed"
+    },
+    {
+      "name": "Ciprofloxacin",
+      "severity": "Critical",
+      "mechanism": "CYP1A2 inhibitor significantly elevates tizanidine concentrations and toxicity risk",
+      "action": "Avoid use; substitute with non-CYP1A2 inhibiting antibiotic"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; may potentiate muscle relaxation effects",
+      "action": "Discontinue kava kava; counsel on CNS depression risks"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce tizanidine efficacy; also increases CNS effects unpredictably",
+      "action": "Avoid combination; consider alternative mood support"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase sedation and dizziness",
+      "action": "Use cautiously; monitor for excessive drowsiness; counsel on combined CNS effects"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May partially induce CYP3A4, potentially reducing tizanidine levels",
+      "action": "Monitor efficacy; adjust tizanidine dose if needed under clinical supervision"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May have additive muscle relaxant properties",
+      "action": "Monitor for excessive weakness or hypotension; use standard supplemental doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases tizanidine bioavailability and plasma concentrations, raising hypotension and adverse effect risk",
+      "action": "Completely avoid grapefruit; counsel patient on all citrus products and juices"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase tizanidine absorption and bioavailability compared to fasted state",
+      "action": "Take tizanidine consistently with or without food; avoid sudden dietary changes"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "CYP1A2 substrate competition; caffeine may modestly reduce tizanidine metabolism or increase CNS stimulation offset",
+      "action": "Limit caffeine intake; monitor for reduced efficacy or excessive sedation"
+    }
+  ],
+  "monitoring_notes": "Tizanidine is extensively metabolized by CYP1A2 (primary) and CYP3A4 (secondary), making it highly susceptible to inhibitor interactions causing hypotension and syncope. Monitor blood pressure and heart rate closely, especially when initiating or titrating; counsel patients on avoiding grapefruit and CYP1A2-inhibiting medications/supplements."
+}

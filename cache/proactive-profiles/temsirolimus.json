@@ -1,0 +1,66 @@
+{
+  "drug": "Temsirolimus",
+  "drug_class": "mTOR inhibitor (immunosuppressant/antineoplastic)",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (MDR1)",
+    "mTOR pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction significantly reduces temsirolimus levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases temsirolimus levels and toxicity risk",
+      "action": "Contraindicated; use alternative supplements and avoid grapefruit products"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4 and reduce temsirolimus bioavailability",
+      "action": "Avoid or monitor closely; consider alternatives for immune support"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation; limited clinical data with temsirolimus",
+      "action": "Use with caution and inform oncology team; monitor for efficacy changes"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "May have additive immunosuppressive effects",
+      "action": "Permissible but use standard doses; monitor immunologic parameters"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and citrus products (pomelo, Seville orange)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases temsirolimus plasma concentration and adverse effects",
+      "action": "Completely avoid grapefruit and related citrus; use sweet oranges/lemons if needed"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May alter temsirolimus absorption kinetics; variable effects reported",
+      "action": "Maintain consistent meal timing; take with or without food consistently"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive immunosuppression and hepatotoxicity risk",
+      "action": "Limit to minimal intake; discuss safe consumption limits with oncology team"
+    }
+  ],
+  "monitoring_notes": "Monitor for increased immunosuppression, hyperglycemia, hyperlipidemia, and pneumonitis. Temsirolimus has significant CYP3A4 metabolism; assess all supplements and medications for enzyme interactions before initiation."
+}

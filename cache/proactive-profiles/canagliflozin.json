@@ -1,0 +1,67 @@
+{
+  "drug": "Canagliflozin",
+  "drug_class": "SGLT2 Inhibitor",
+  "key_pathways": [
+    "UGT1A9",
+    "CYP3A4",
+    "Renal excretion",
+    "Glucose metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may decrease canagliflozin plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Herbal diuretics (Juniper, Buchu)",
+      "severity": "High",
+      "mechanism": "Additive diuretic effect increases dehydration and acute kidney injury risk with SGLT2 inhibitor",
+      "action": "Avoid concomitant use; monitor renal function if unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-Lipoic Acid",
+      "severity": "Low",
+      "mechanism": "May potentiate glucose-lowering effects",
+      "action": "Monitor blood glucose; adjust canagliflozin dose if needed"
+    },
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May enhance insulin sensitivity and glucose lowering",
+      "action": "Monitor for hypoglycemia; educate patient on symptoms"
+    },
+    {
+      "name": "Berberine",
+      "severity": "Low",
+      "mechanism": "Additive glucose-lowering effects",
+      "action": "Monitor blood glucose levels regularly"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "Excessive sodium increases dehydration risk and may worsen volume depletion from SGLT2 inhibition",
+      "action": "Counsel on low-sodium diet; maintain adequate hydration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-calorie/high-carbohydrate meals",
+      "severity": "Low",
+      "mechanism": "Large glucose loads may overcome canagliflozin's glucose-lowering capacity",
+      "action": "Reinforce balanced meal planning with healthcare provider"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase canagliflozin exposure",
+      "action": "Limit grapefruit juice consumption; monitor for adverse effects"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (eGFR, urinalysis) regularly due to SGLT2 inhibitor effects on kidney hemodynamics and increased genital infection risk. Ensure adequate hydration status and educate on signs of diabetic ketoacidosis (DKA) and acute kidney injury."
+}

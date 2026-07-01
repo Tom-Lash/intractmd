@@ -1,0 +1,45 @@
+{
+  "drug": "Nystatin",
+  "drug_class": "Polyene Antifungal",
+  "key_pathways": [
+    "Fungal cell membrane disruption (not hepatically metabolized)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Probiotics (during acute therapy)",
+      "severity": "Moderate",
+      "mechanism": "Nystatin may reduce beneficial bacterial flora; concurrent high-dose probiotics may create conflicting microbial pressures and reduce nystatin efficacy for candida overgrowth",
+      "action": "Separate probiotic dosing by at least 2 hours from nystatin; consider lower probiotic doses during active treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Garlic has mild antifungal properties that may theoretically compete with nystatin's mechanism or mask treatment efficacy assessment",
+      "action": "Monitor clinical response; use standard culinary amounts if desired"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "May have overlapping antifungal activity; potential additive effects without established safety data in combination",
+      "action": "Use only under clinical guidance; monitor for adverse effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sugar foods and refined carbohydrates",
+      "severity": "Low",
+      "mechanism": "Excess dietary sugar promotes candida growth and may reduce therapeutic efficacy of nystatin treatment",
+      "action": "Recommend patient reduce sugar intake during treatment course to optimize antifungal outcomes"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Alcohol may impair immune function and increase candida proliferation; minimal direct pharmacokinetic interaction but may reduce treatment effectiveness",
+      "action": "Advise limiting alcohol consumption during active nystatin therapy"
+    }
+  ],
+  "monitoring_notes": "Nystatin is minimally absorbed systemically and has no significant hepatic metabolism, making direct drug-supplement interactions unlikely. Focus monitoring on factors affecting local antifungal efficacy and patient adherence to oral/topical application protocols."
+}

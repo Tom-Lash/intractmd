@@ -1,0 +1,65 @@
+{
+  "drug": "Alectinib",
+  "drug_class": "ALK inhibitor (tyrosine kinase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces alectinib plasma concentrations and efficacy",
+      "action": "Avoid completely; use alternative for mood/anxiety support if needed"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer decreases alectinib levels; concurrent use contraindicated",
+      "action": "Do not use; coordinate with oncology if tuberculosis treatment needed"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases alectinib exposure and toxicity risk",
+      "action": "Avoid; use alternative antioxidant supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may slightly increase alectinib levels",
+      "action": "Monitor for increased side effects; use in moderation or limit to culinary amounts"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 modulation and additive hepatotoxicity risk",
+      "action": "Use cautiously; monitor liver function tests if supplementing regularly"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases alectinib plasma concentrations and adverse event risk",
+      "action": "Eliminate from diet completely; switch to other citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase alectinib absorption and peak plasma concentrations",
+      "action": "Take alectinib consistently with or without food; maintain consistent dietary pattern"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, Brussels sprouts, cabbage)",
+      "severity": "Low",
+      "mechanism": "Contain indoles that may induce CYP3A4 at very high intake levels",
+      "action": "Normal dietary consumption acceptable; excessive supplemental intake should be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor for hepatotoxicity and signs of alectinib toxicity (gastrointestinal upset, vision changes, muscle pain) as CYP3A4 interactions significantly impact drug exposure. Baseline and periodic liver function tests recommended, especially if adding CYP3A4 modulators."
+}

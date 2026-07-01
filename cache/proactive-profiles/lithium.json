@@ -1,0 +1,95 @@
+{
+  "drug": "Lithium",
+  "drug_class": "Mood stabilizer / Antimanic agent",
+  "key_pathways": [
+    "Renal clearance",
+    "Sodium-potassium ATPase inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Sodium supplements",
+      "severity": "Critical",
+      "mechanism": "Increased sodium intake increases renal lithium clearance, reducing therapeutic levels and efficacy",
+      "action": "Avoid sodium supplements; maintain consistent dietary sodium intake"
+    },
+    {
+      "name": "Diuretics (herbal: Juniper, Dandelion)",
+      "severity": "Critical",
+      "mechanism": "Diuretics reduce renal lithium clearance, leading to toxic accumulation",
+      "action": "Avoid all diuretic supplements; consult prescriber before use"
+    },
+    {
+      "name": "NSAIDs (including herbal: Willow bark, Meadowsweet)",
+      "severity": "High",
+      "mechanism": "NSAIDs decrease renal lithium clearance by reducing glomerular filtration and prostaglandin-mediated renal blood flow",
+      "action": "Avoid NSAIDs; use acetaminophen for pain/fever instead"
+    },
+    {
+      "name": "ACE inhibitors and ARBs (herbal equivalents: Garlic)",
+      "severity": "High",
+      "mechanism": "These agents reduce renal lithium clearance and increase serum levels",
+      "action": "Monitor lithium levels closely if concurrent use unavoidable; coordinate with prescriber"
+    },
+    {
+      "name": "Thiazide diuretics (herbal: Bumetanide-containing supplements)",
+      "severity": "Critical",
+      "mechanism": "Thiazides reduce lithium clearance and increase renal tubular reabsorption, causing toxicity",
+      "action": "Avoid; inform prescriber of all diuretic use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Caffeine increases lithium excretion; inconsistent intake may destabilize lithium levels",
+      "action": "Maintain consistent caffeine intake; avoid sudden changes"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May slightly affect lithium absorption and renal handling",
+      "action": "Take at separate times from lithium; monitor for changes in efficacy"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May compete with lithium for renal reabsorption",
+      "action": "Space dosing 2+ hours apart; monitor lithium levels if high doses used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "High",
+      "mechanism": "Sodium competes with lithium for renal reabsorption, increasing clearance and reducing therapeutic effect",
+      "action": "Maintain low, consistent sodium diet; target <2g sodium daily"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "May alter lithium metabolism and increase absorption",
+      "action": "Avoid grapefruit products; choose alternative fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-potassium foods (bananas, spinach, avocados)",
+      "severity": "Low",
+      "mechanism": "Potassium may affect lithium-sodium balance in renal tubules",
+      "action": "Consume in moderation; maintain consistent intake; monitor serum lithium levels"
+    },
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, cola)",
+      "severity": "Low",
+      "mechanism": "Caffeine increases urinary lithium excretion; variable intake destabilizes levels",
+      "action": "Maintain consistent daily caffeine intake; avoid sudden increases or decreases"
+    },
+    {
+      "name": "Dehydrating foods (high sugar, high salt snacks)",
+      "severity": "Low",
+      "mechanism": "Dehydration concentrates lithium levels in blood and increases toxicity risk",
+      "action": "Maintain consistent fluid intake (≥2L water daily); avoid excessive dehydration"
+    }
+  ],
+  "monitoring_notes": "Lithium has a narrow therapeutic window (0.6-1.2 mEq/L); serum levels must be monitored regularly, especially when dietary sodium or fluid intake changes. Maintain consistent daily patterns for sodium, potassium, caffeine, and fluid intake to prevent therapeutic fluctuations and toxicity."
+}

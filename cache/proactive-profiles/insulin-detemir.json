@@ -1,0 +1,66 @@
+{
+  "drug": "Insulin Detemir",
+  "drug_class": "Long-acting Basal Insulin",
+  "key_pathways": [
+    "Non-hepatic metabolism",
+    "Subcutaneous absorption",
+    "Albumin binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Chromium picolinate",
+      "severity": "High",
+      "mechanism": "May enhance insulin sensitivity and reduce blood glucose, increasing hypoglycemia risk",
+      "action": "Avoid concurrent use; consult prescriber before supplementation"
+    },
+    {
+      "name": "Ginseng (American or Asian)",
+      "severity": "High",
+      "mechanism": "Reduces blood glucose levels and may potentiate insulin effect, increasing hypoglycemia risk",
+      "action": "Discontinue use or monitor blood glucose closely with frequent testing"
+    },
+    {
+      "name": "Fenugreek seeds",
+      "severity": "High",
+      "mechanism": "Lowers postprandial and fasting glucose; enhances insulin action",
+      "action": "Avoid use; consult healthcare provider regarding diabetes management"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May improve insulin sensitivity in some patients; modest glucose-lowering effect",
+      "action": "Monitor blood glucose; dose adjustment of insulin may be needed"
+    },
+    {
+      "name": "Bitter melon",
+      "severity": "Low",
+      "mechanism": "Has mild glucose-lowering properties that may additively reduce blood glucose",
+      "action": "Monitor blood glucose regularly; inform prescriber of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive refined carbohydrates and simple sugars",
+      "severity": "Moderate",
+      "mechanism": "Causes rapid blood glucose spikes that may overwhelm insulin detemir's steady-state action, leading to glycemic variability",
+      "action": "Maintain consistent carbohydrate intake; choose complex carbohydrates and low glycemic index foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Delays gastric emptying and carbohydrate absorption, potentially prolonging postprandial glucose elevation",
+      "action": "Monitor postprandial glucose; coordinate meal timing with insulin administration"
+    },
+    {
+      "name": "Alcohol (especially on empty stomach)",
+      "severity": "Low",
+      "mechanism": "Impairs hepatic glucose production and increases hypoglycemia risk, particularly with basal insulins",
+      "action": "Consume moderate amounts with food; monitor blood glucose; educate on hypoglycemia awareness"
+    }
+  ],
+  "monitoring_notes": "Monitor blood glucose regularly, especially when initiating or changing supplements/diet. Insulin detemir is minimally metabolized hepatically, reducing drug-drug interactions, but hypoglycemia risk increases with concurrent glucose-lowering agents or supplements."
+}

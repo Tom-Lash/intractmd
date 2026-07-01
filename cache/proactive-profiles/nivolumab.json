@@ -1,0 +1,65 @@
+{
+  "drug": "Nivolumab",
+  "drug_class": "Monoclonal Antibody (PD-1 Checkpoint Inhibitor)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Catabolized via proteolytic pathways",
+    "Immune checkpoint modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May enhance immune activation and potentially increase risk of immune-related adverse events (irAEs) with checkpoint inhibitors",
+      "action": "Avoid concurrent use; counsel patient to discontinue prior to nivolumab therapy"
+    },
+    {
+      "name": "High-dose Vitamin C (>2000 mg/day)",
+      "severity": "High",
+      "mechanism": "May have immunomodulatory effects that could interfere with checkpoint inhibitor mechanism of action and increase irAEs",
+      "action": "Limit to recommended dietary amounts; avoid megadose supplementation during treatment"
+    },
+    {
+      "name": "Medicinal Mushrooms (Reishi, Maitake, Shiitake)",
+      "severity": "High",
+      "mechanism": "Potent immune stimulants that may exacerbate immune activation and increase risk of severe irAEs",
+      "action": "Contraindicated during nivolumab therapy; discontinue before treatment initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May influence gut microbiota composition which plays a role in immunotherapy response; some evidence suggests potential benefit but requires monitoring",
+      "action": "Use cautiously under clinical supervision; monitor for any changes in immune-related adverse events"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Mild immunomodulatory effects; generally well-tolerated but may theoretically influence checkpoint inhibitor efficacy",
+      "action": "Monitor patient tolerance; maintain consistent dosing if used"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Has immunomodulatory and anti-inflammatory properties that could theoretically affect checkpoint inhibitor mechanism",
+      "action": "Use in moderation; inform healthcare provider if taking supplemental doses"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "While nivolumab is not CYP3A4 metabolized, concurrent medications for managing irAEs may be affected; grapefruit can inhibit drug transporters",
+      "action": "Not absolutely contraindicated but avoid excessive consumption; inform provider if consuming regularly"
+    },
+    {
+      "name": "High-fiber diet (>50g/day)",
+      "severity": "Low",
+      "mechanism": "May significantly alter gut microbiota composition, which influences immunotherapy response and irAE risk",
+      "action": "Maintain consistent dietary fiber intake; discuss fiber supplementation plans with healthcare team"
+    }
+  ],
+  "monitoring_notes": "Nivolumab is not hepatically metabolized and has minimal direct drug interactions; however, immune-related adverse events (irAEs) are the primary concern with immune-stimulating supplements and dietary components affecting gut microbiota. Monitor for signs of autoimmune toxicity including colitis, pneumonitis, hepatitis, and endocrinopathies, and coordinate supplementation decisions with the oncology team managing checkpoint inhibitor therapy."
+}

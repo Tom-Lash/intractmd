@@ -1,0 +1,65 @@
+{
+  "drug": "Omeprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "key_pathways": [
+    "CYP2C19",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium Carbonate",
+      "severity": "High",
+      "mechanism": "Omeprazole reduces gastric acid, impairing calcium carbonate absorption; separate administration by 2+ hours",
+      "action": "Use calcium citrate instead or take calcium supplement 2 hours after omeprazole dose"
+    },
+    {
+      "name": "Iron Supplements",
+      "severity": "High",
+      "mechanism": "Reduced gastric acidity decreases non-heme iron absorption by 50-65%",
+      "action": "Separate iron and omeprazole by at least 2 hours; consider iron supplementation timing or form adjustment"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Moderate",
+      "mechanism": "Chronic PPI use reduces magnesium absorption and increases hypomagnesemia risk with long-term supplementation",
+      "action": "Monitor magnesium levels with chronic use; space dosing 2+ hours apart"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B12 Supplements",
+      "severity": "Low",
+      "mechanism": "Omeprazole reduces B12 absorption from food sources; supplementation may be needed with chronic therapy (>1 year)",
+      "action": "Monitor B12 levels annually; consider supplementation if deficiency develops"
+    },
+    {
+      "name": "Cyanocobalamin/Methylcobalamin",
+      "severity": "Low",
+      "mechanism": "Reduced intrinsic factor and gastric acid reduce food-bound B12 absorption, but synthetic forms bypass this mechanism",
+      "action": "Use methylcobalamin or cyanocobalamin supplements if B12 deficiency occurs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Iron-Rich Foods (spinach, red meat, fortified cereals)",
+      "severity": "Moderate",
+      "mechanism": "Omeprazole-induced hypochlorhydria impairs non-heme iron absorption from food sources",
+      "action": "Consume iron-rich foods 2+ hours apart from omeprazole; ensure adequate dietary iron intake or supplement with separated dosing"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Calcium-Rich Foods (dairy, fortified products)",
+      "severity": "Low",
+      "mechanism": "Reduced acid may modestly decrease calcium absorption from food; effect is less significant than with supplements",
+      "action": "Maintain adequate dietary calcium intake; no specific separation required for food sources"
+    },
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May delay omeprazole absorption and peak levels; minimal clinical impact on efficacy",
+      "action": "Take omeprazole on empty stomach (30-60 minutes before food) for optimal absorption"
+    }
+  ],
+  "monitoring_notes": "Monitor for hypomagnesemia, B12 deficiency, and iron deficiency with chronic omeprazole use (>1 year). Assess baseline magnesium and B12 levels before long-term therapy; recheck annually if supplementation or dietary sources are inadequate."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Repaglinide",
+  "drug_class": "Meglitinide (rapid-acting insulin secretagogue)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "OATP1B1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C8 induction reduces repaglinide metabolism and efficacy",
+      "action": "Avoid concurrent use; may require dose adjustment if unavoidable"
+    },
+    {
+      "name": "Gemfibrozil",
+      "severity": "High",
+      "mechanism": "OATP1B1 inhibition increases repaglinide levels and hypoglycemia risk",
+      "action": "Contraindicated; use alternative lipid-lowering agent"
+    },
+    {
+      "name": "Clarithromycin",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly elevates repaglinide concentrations",
+      "action": "Avoid or reduce repaglinide dose; monitor blood glucose closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate hypoglycemic effect through insulin secretion",
+      "action": "Monitor blood glucose; inform patient of additive hypoglycemic risk"
+    },
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May enhance insulin sensitivity and lower glucose independent of repaglinide",
+      "action": "Monitor for hypoglycemia; coordinate supplementation with provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays repaglinide absorption and peak concentration, reducing glucose control efficacy",
+      "action": "Take repaglinide 15-30 minutes before meals; avoid heavy fat intake at dosing time"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase repaglinide exposure",
+      "action": "Limit consumption; monitor for increased hypoglycemic symptoms"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Potentiates hypoglycemic effect and may impair hypoglycemia awareness",
+      "action": "Limit to moderate amounts; consume with food; monitor glucose"
+    }
+  ],
+  "monitoring_notes": "Repaglinide is rapidly absorbed and metabolized; timing relative to meals and CYP3A4/2C8 inhibitors is critical for efficacy and safety. Monitor fasting and postprandial glucose, HbA1c, and symptoms of hypoglycemia, particularly when initiating, adjusting doses, or adding interacting agents."
+}

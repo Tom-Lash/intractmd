@@ -1,0 +1,60 @@
+{
+  "drug": "Dapagliflozin",
+  "drug_class": "SGLT2 Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "UGT1A9",
+    "Renal Excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inducer may reduce dapagliflozin levels and efficacy",
+      "action": "Avoid concomitant use; select alternative herbal supplement"
+    },
+    {
+      "name": "High-dose Cranberry Extract",
+      "severity": "Moderate",
+      "mechanism": "May increase urinary acidification and alter SGLT2 inhibitor effectiveness; increases DKA risk",
+      "action": "Avoid supplementation; use whole cranberry cautiously"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic Supplement",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; additive bleeding risk if combined with other anticoagulants",
+      "action": "Monitor; generally safe at standard doses"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May independently lower blood glucose; potential additive hypoglycemic effect",
+      "action": "Monitor blood glucose closely; counsel on hypoglycemia symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive Alcohol",
+      "severity": "High",
+      "mechanism": "Increases risk of euglycemic diabetic ketoacidosis (euDKA) and hypoglycemia with SGLT2 inhibitors",
+      "action": "Limit alcohol to ≤1 drink/day for women, ≤2 drinks/day for men; avoid binge drinking"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High Sodium Foods",
+      "severity": "Low",
+      "mechanism": "May increase blood pressure and fluid retention; dapagliflozin may increase sodium excretion",
+      "action": "Counsel on moderate sodium intake (<2,300 mg/day) as part of diabetes management"
+    },
+    {
+      "name": "Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor; minimal clinical significance with dapagliflozin but may slightly increase levels",
+      "action": "Occasional consumption acceptable; counsel to maintain consistent intake if consumed"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of euglycemic diabetic ketoacidosis (nausea, vomiting, abdominal pain, dyspnea) especially with acute illness, surgery, or alcohol use. Assess renal function (eGFR) regularly as dapagliflozin efficacy decreases at eGFR <45 mL/min/1.73m²."
+}

@@ -1,0 +1,40 @@
+{
+  "drug": "Ipratropium",
+  "drug_class": "Anticholinergic bronchodilator",
+  "key_pathways": [
+    "Muscarinic receptor antagonism",
+    "Local airway delivery (minimal systemic absorption)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Scopolia, Jimson weed, Datura",
+      "severity": "High",
+      "mechanism": "Additive anticholinergic effects (dry mouth, urinary retention, constipation, tachycardia, CNS effects)",
+      "action": "Avoid concurrent use; counsel patient on anticholinergic symptom recognition"
+    },
+    {
+      "name": "Belladonna alkaloid-containing supplements",
+      "severity": "High",
+      "mechanism": "Synergistic anticholinergic toxicity affecting GI, urinary, and cardiac function",
+      "action": "Discontinue herbal anticholinergics; monitor for overdose symptoms"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Potential minor CYP interactions affecting any systemically absorbed ipratropium metabolites",
+      "action": "Monitor for altered efficacy; generally low concern due to minimal systemic absorption"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods (in excess)",
+      "severity": "Low",
+      "mechanism": "Anticholinergic effects may worsen constipation when combined with fiber intake without adequate hydration",
+      "action": "Ensure adequate fluid intake; monitor bowel function"
+    }
+  ],
+  "monitoring_notes": "Ipratropium is delivered via inhalation with minimal systemic absorption, resulting in low interaction potential. Primary concern is additive anticholinergic effects with herbal supplements containing muscarinic antagonists; monitor for dry mouth, urinary hesitancy, constipation, and elevated heart rate."
+}

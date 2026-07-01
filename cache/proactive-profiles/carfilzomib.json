@@ -1,0 +1,66 @@
+{
+  "drug": "Carfilzomib",
+  "drug_class": "Proteasome Inhibitor",
+  "key_pathways": [
+    "Proteasome inhibition",
+    "Not significantly metabolized by CYP450",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce protein degradation pathways and potentially reduce carfilzomib efficacy through competing proteasome modulation",
+      "action": "Avoid concurrent use; consult oncology team before initiating"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate bleeding risk and increase peripheral neuropathy risk when combined with carfilzomib",
+      "action": "Limit vitamin E supplementation; discuss with prescriber"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Moderate",
+      "mechanism": "Antiplatelet effects may compound carfilzomib-associated thrombotic and bleeding complications",
+      "action": "Avoid concurrent use; monitor platelet counts closely if unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild proteasome-modulating properties; theoretical additive effects on proteasome inhibition",
+      "action": "Monitor for increased side effects; consider lower doses"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects may slightly increase bleeding risk in susceptible patients",
+      "action": "Use standard doses; monitor for unusual bruising or bleeding"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "May inhibit minor metabolic pathways and increase carfilzomib exposure; potential for enhanced toxicity",
+      "action": "Avoid grapefruit and juice; consider alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Carfilzomib can cause hypertension; excess sodium may exacerbate this effect",
+      "action": "Moderate sodium intake; monitor blood pressure regularly"
+    },
+    {
+      "name": "Caffeine-rich beverages",
+      "severity": "Low",
+      "mechanism": "May increase heart rate and blood pressure in patients with carfilzomib-induced cardiovascular effects",
+      "action": "Limit caffeine intake; monitor for palpitations or hypertension"
+    }
+  ],
+  "monitoring_notes": "Carfilzomib has minimal CYP450 metabolism, reducing traditional drug-supplement interactions, but close monitoring for bleeding, thrombosis, peripheral neuropathy, and cardiovascular effects is essential. Regular blood pressure, platelet count, and cardiac function assessments should be maintained throughout therapy."
+}

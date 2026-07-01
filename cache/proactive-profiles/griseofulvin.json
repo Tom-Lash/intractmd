@@ -1,0 +1,59 @@
+{
+  "drug": "Griseofulvin",
+  "drug_class": "Antifungal",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces griseofulvin plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant if fungal treatment ongoing"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "Potential CYP3A4 induction may reduce griseofulvin levels",
+      "action": "Avoid during active antifungal therapy; use alternative immune support"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin A (high-dose)",
+      "severity": "Low",
+      "mechanism": "Griseofulvin may increase vitamin A absorption; risk of hypervitaminosis A with concurrent high-dose supplementation",
+      "action": "Monitor for signs of vitamin A toxicity (headache, bone pain, skin changes); consider baseline and periodic vitamin A levels"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "Theoretical CYP3A4 competition; minimal clinical significance",
+      "action": "Generally safe; monitor for reduced griseofulvin efficacy if high doses used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases griseofulvin levels and toxicity risk; may elevate hepatic adverse effects",
+      "action": "Eliminate grapefruit consumption during treatment; substitute other citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Fat enhances griseofulvin absorption; variable bioavailability if intake inconsistent",
+      "action": "Consume with consistent fat content meals (preferably fatty meals) for optimized and predictable absorption"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Potential additive hepatotoxicity and may cause disulfiram-like reaction; increased GI upset",
+      "action": "Minimize alcohol intake; counsel on hepatotoxicity risk, especially with prolonged therapy"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests (LFTs) regularly, especially with concurrent alcohol use or pre-existing hepatic impairment. Assess for signs of vitamin A toxicity if patient taking concurrent supplements, and ensure consistent dietary fat intake to maintain stable griseofulvin bioavailability."
+}

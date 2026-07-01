@@ -1,0 +1,73 @@
+{
+  "drug": "Prednisolone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "Glucocorticoid Receptor (GR)",
+    "HPA Axis"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces prednisolone bioavailability and efficacy; may precipitate adrenal insufficiency with dose reduction",
+      "action": "Avoid concurrent use; if unavoidable, monitor clinical response closely and adjust prednisolone dose accordingly"
+    },
+    {
+      "name": "Licorice Root (high dose >3g/day)",
+      "severity": "High",
+      "mechanism": "Mineralocorticoid effects compound prednisolone's sodium retention and potassium depletion; increases hypertension and hypokalemia risk",
+      "action": "Avoid or limit to <1g/day; monitor electrolytes and blood pressure if concurrent use necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "May stimulate immune function, potentially counteracting prednisolone's immunosuppressive effects",
+      "action": "Use with caution; inform patient of potential reduced corticosteroid efficacy"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May enhance immune activation; potential CYP3A4 interaction may slightly increase prednisolone metabolism",
+      "action": "Monitor clinical response; coordinate use with prescriber"
+    },
+    {
+      "name": "Calcium and Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Prednisolone impairs calcium absorption and increases bone loss; supplementation helps mitigate osteoporosis risk",
+      "action": "Encourage adequate intake (1000-1200 mg calcium, 800-2000 IU vitamin D daily) to offset corticosteroid-induced bone loss"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "High",
+      "mechanism": "Prednisolone increases sodium retention and fluid accumulation; excessive sodium exacerbates hypertension, edema, and heart failure risk",
+      "action": "Restrict sodium intake to <2g/day; counsel on avoiding processed, canned, and fast foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase prednisolone levels and adverse effects",
+      "action": "Limit consumption; consider alternative citrus if frequent intake"
+    },
+    {
+      "name": "High-potassium foods (bananas, spinach, potatoes with skin)",
+      "severity": "Low",
+      "mechanism": "Prednisolone increases urinary potassium loss; adequate dietary potassium helps prevent hypokalemia",
+      "action": "Encourage moderate intake; monitor serum potassium levels, especially with prolonged use"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "May increase gastric irritation and anxiety; prednisolone already increases GI upset risk",
+      "action": "Counsel moderation; take prednisolone with food to minimize GI effects"
+    }
+  ],
+  "monitoring_notes": "Monitor blood glucose, blood pressure, electrolytes (especially potassium), and bone density during chronic prednisolone therapy. Patient education on sodium restriction, adequate calcium/vitamin D intake, and infection precautions due to immunosuppression is essential."
+}

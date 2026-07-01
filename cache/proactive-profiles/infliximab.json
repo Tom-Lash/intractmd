@@ -1,0 +1,78 @@
+{
+  "drug": "Infliximab",
+  "drug_class": "TNF-alpha inhibitor (monoclonal antibody); Immunosuppressant/Biologic",
+  "key_pathways": [
+    "TNF-alpha inhibition",
+    "Immune system modulation",
+    "Not hepatically metabolized (monoclonal antibody)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Stimulates immune system; may counteract immunosuppressive effects and increase infection risk",
+      "action": "Avoid concurrent use; counsel patient on infection risk"
+    },
+    {
+      "name": "Astragalus",
+      "severity": "High",
+      "mechanism": "Immune-stimulating properties may antagonize TNF-inhibitor therapy and reduce efficacy",
+      "action": "Contraindicated; recommend discontinuation before starting infliximab"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4; potential to affect metabolism of concomitant medications; immunomodulatory effects",
+      "action": "Avoid or use with caution; monitor for reduced efficacy of concurrent medications"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Live microorganisms; theoretical infection risk in immunocompromised patients, though generally considered safe",
+      "action": "Use with monitoring; choose non-pathogenic strains and inform prescriber"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "May support immune regulation; deficiency is common in inflammatory bowel disease patients on infliximab",
+      "action": "Monitor levels; supplementation may be beneficial if deficient"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Raw/undercooked meats and seafood",
+      "severity": "Critical",
+      "mechanism": "Increased infection risk from foodborne pathogens (Listeria, Salmonella, etc.) due to immunosuppression",
+      "action": "Strict avoidance required; counsel on proper food handling and cooking temperatures"
+    },
+    {
+      "name": "Unpasteurized dairy products",
+      "severity": "Critical",
+      "mechanism": "Risk of Listeria monocytogenes and other pathogens; immunosuppressed patients at high risk for severe infection",
+      "action": "Avoid completely; use only pasteurized dairy products"
+    },
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "May increase blood pressure and cardiovascular risk; infliximab associated with hypertension in some patients",
+      "action": "Limit intake; monitor blood pressure regularly"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods (if GI sensitivity)",
+      "severity": "Low",
+      "mechanism": "May exacerbate GI symptoms in patients with IBD; individual tolerance varies",
+      "action": "Monitor tolerance; adjust fiber intake based on individual response"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May increase hepatotoxicity risk and infection susceptibility; moderate use generally acceptable",
+      "action": "Limit to moderate consumption; avoid excessive intake"
+    }
+  ],
+  "monitoring_notes": "Infliximab carries a black box warning for serious infections and malignancy; counsel patients to maintain strict food safety practices and avoid live vaccines and immunostimulating supplements. Monitor for signs of infection, tuberculosis screening required, and baseline hepatitis B testing essential due to risk of reactivation."
+}

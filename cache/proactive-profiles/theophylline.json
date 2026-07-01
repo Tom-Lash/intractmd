@@ -1,0 +1,66 @@
+{
+  "drug": "Theophylline",
+  "drug_class": "Xanthine bronchodilator",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4",
+    "CYP2E1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP1A2 and CYP3A4 induction reduces theophylline levels and therapeutic efficacy",
+      "action": "Avoid concurrent use; monitor theophylline levels if discontinuation occurs"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP1A2 and CYP3A4, potentially reducing theophylline concentrations",
+      "action": "Use cautiously; monitor for reduced bronchodilator effectiveness"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapeseed extract",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition may increase theophylline levels",
+      "action": "Monitor theophylline serum concentrations if used concurrently"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS stimulation effects of theophylline",
+      "action": "Use with caution; counsel on potential increased nervousness or tremor"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases theophylline bioavailability and serum concentrations, raising toxicity risk",
+      "action": "Avoid grapefruit products entirely; substitute with other citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase theophylline absorption and delay peak serum concentrations",
+      "action": "Administer theophylline consistently with or without food; avoid timing changes"
+    },
+    {
+      "name": "Charbroiled foods",
+      "severity": "Low",
+      "mechanism": "Polycyclic aromatic hydrocarbons induce CYP1A2, potentially reducing theophylline levels",
+      "action": "Maintain consistent dietary patterns; monitor efficacy if intake increases significantly"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Additive CNS stimulation and similar metabolism via CYP1A2; may increase adverse effects",
+      "action": "Limit caffeine intake; counsel on potential increased jitteriness or insomnia"
+    }
+  ],
+  "monitoring_notes": "Theophylline has a narrow therapeutic index (10-20 mcg/mL); therapeutic drug monitoring is essential, particularly when interactions occur. Monitor for toxicity signs (nausea, tachycardia, tremor, arrhythmias) and efficacy changes, especially with CYP1A2 inducers or inhibitors."
+}

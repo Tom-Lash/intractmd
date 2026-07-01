@@ -1,0 +1,60 @@
+{
+  "drug": "Anakinra",
+  "drug_class": "Interleukin-1 Receptor Antagonist (Biologic Immunosuppressant)",
+  "key_pathways": [
+    "IL-1 signaling pathway",
+    "Immune system modulation",
+    "No significant CYP450 metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immunostimulant properties may counteract anakinra's immunosuppressive effects and reduce therapeutic efficacy",
+      "action": "Avoid concurrent use; counsel patient on immune-boosting supplement risks with immunosuppressants"
+    },
+    {
+      "name": "Interferon-alpha supplements",
+      "severity": "Critical",
+      "mechanism": "May potentiate immune activation, increasing risk of serious infections and reducing anakinra efficacy",
+      "action": "Contraindicated; provide alternative immune support strategies"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May stimulate intestinal immune response; generally safe but monitor for GI tolerance",
+      "action": "Use high-quality, well-studied strains; monitor for adverse effects"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Important for immune regulation; deficiency may impair treatment response; supplementation is typically supportive",
+      "action": "Maintain adequate levels (25-50 ng/mL); monitor and supplement if deficient"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Raw/undercooked animal products",
+      "severity": "High",
+      "mechanism": "Increased infection risk due to anakinra-induced immunosuppression; pathogens like Listeria, Salmonella pose serious threat",
+      "action": "Enforce strict food safety; ensure all meat, poultry, eggs cooked thoroughly; avoid unpasteurized dairy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Patients on anakinra may experience fluid retention; excessive sodium intake may exacerbate hypertension",
+      "action": "Moderate sodium intake; monitor blood pressure regularly"
+    },
+    {
+      "name": "Grapefruit",
+      "severity": "Low",
+      "mechanism": "No direct interaction, but may have mild immunostimulant properties; unlikely to significantly affect anakinra",
+      "action": "No strict contraindication, but moderate consumption advisable"
+    }
+  ],
+  "monitoring_notes": "Anakinra carries significant infection risk; patients require education on food safety, immunization status review, and signs of infection. Monitor CBC, absolute neutrophil count, liver/renal function regularly, and counsel on avoiding live vaccines and immunostimulating supplements."
+}

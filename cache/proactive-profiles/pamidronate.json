@@ -1,0 +1,59 @@
+{
+  "drug": "Pamidronate",
+  "drug_class": "Bisphosphonate",
+  "key_pathways": [
+    "Non-hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements (taken simultaneously)",
+      "severity": "High",
+      "mechanism": "Calcium binds pamidronate in GI tract, significantly reducing bioavailability and therapeutic efficacy",
+      "action": "Separate administration by at least 2 hours; take pamidronate on empty stomach"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Iron forms chelate complexes with bisphosphonates, reducing absorption of both agents",
+      "action": "Separate by minimum 2 hours; counsel on empty stomach administration"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Magnesium chelates pamidronate, reducing oral absorption and bioavailability",
+      "action": "Administer pamidronate on empty stomach, separated from magnesium by ≥2 hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "May increase serum calcium levels; pamidronate lowers calcium, creating opposing effects",
+      "action": "Monitor serum calcium and phosphate levels; coordinate supplementation with prescriber"
+    },
+    {
+      "name": "NSAIDs (e.g., ibuprofen, naproxen)",
+      "severity": "Low",
+      "mechanism": "May increase risk of GI irritation and osteonecrosis of the jaw when combined with bisphosphonates",
+      "action": "Use lowest effective dose; consider gastroprotection; monitor oral health"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-calcium dairy products (taken within 2 hours)",
+      "severity": "High",
+      "mechanism": "Dietary calcium significantly impairs pamidronate absorption through chelation in GI lumen",
+      "action": "Maintain 2-hour separation between pamidronate and dairy intake; administer on empty stomach"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, fortified cereals)",
+      "severity": "Low",
+      "mechanism": "High dietary iron may reduce pamidronate bioavailability if consumed simultaneously",
+      "action": "Separate meals containing high iron from pamidronate administration by ≥2 hours when possible"
+    }
+  ],
+  "monitoring_notes": "Pamidronate is primarily renally excreted and does not undergo hepatic metabolism, limiting drug-drug interactions but requiring renal function monitoring. Monitor serum calcium, phosphate, and magnesium levels regularly, particularly in patients with renal impairment or concurrent use of agents affecting electrolytes."
+}

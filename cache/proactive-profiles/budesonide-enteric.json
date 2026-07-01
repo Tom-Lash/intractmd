@@ -1,0 +1,58 @@
+{
+  "drug": "Budesonide Enteric",
+  "drug_class": "Corticosteroid (Inhaled/Oral)",
+  "key_pathways": [
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces budesonide bioavailability and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Licorice Root (high dose)",
+      "severity": "High",
+      "mechanism": "Additive mineralocorticoid effects increase hypertension and hypokalemia risk",
+      "action": "Avoid or use only under medical supervision with electrolyte monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase budesonide levels; effect typically modest with enteric formulation",
+      "action": "Monitor for increased steroid side effects; separate dosing if possible"
+    },
+    {
+      "name": "Calcium and Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Long-term corticosteroids impair calcium absorption; supplementation recommended",
+      "action": "Ensure adequate intake (1000-1200 mg calcium, 800-2000 IU vitamin D daily)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases systemic budesonide exposure and adverse effects",
+      "action": "Avoid consumption; choose alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Corticosteroids promote sodium retention and fluid accumulation",
+      "action": "Moderate sodium intake; monitor blood pressure and fluid status"
+    },
+    {
+      "name": "Foods high in potassium-depleting diuretics",
+      "severity": "Low",
+      "mechanism": "Budesonide may cause hypokalemia; adequate dietary potassium intake important",
+      "action": "Maintain adequate potassium through diet (bananas, leafy greens, legumes)"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, electrolytes (especially potassium), and bone density with long-term use. Assess for signs of adrenal suppression and GI irritation, particularly in patients with IBD."
+}

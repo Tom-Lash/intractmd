@@ -1,0 +1,67 @@
+{
+  "drug": "Olanzapine",
+  "drug_class": "Atypical Antipsychotic (Thienobenzodiazepine)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "CYP3A4",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP1A2 induction reduces olanzapine levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support supplements if needed"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; additive CNS depression and sedation",
+      "action": "Contraindicated; counsel patient to discontinue before olanzapine initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase olanzapine levels and adverse effects",
+      "action": "Monitor for increased sedation, orthostasis, or metabolic effects; limit consumption"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and sedation",
+      "action": "Use with caution; advise patient to monitor for excessive drowsiness"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedative effects",
+      "action": "Monitor dosing and timing; patient may require dose adjustment of either agent"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases olanzapine bioavailability and plasma concentrations",
+      "action": "Eliminate from diet during olanzapine therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase olanzapine absorption and peak levels, potentially enhancing side effects",
+      "action": "Advise consistent meal timing and fat intake; take consistently with or without food"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "CYP1A2 competition; high intake may increase olanzapine levels; stimulant effects may counteract sedation",
+      "action": "Limit caffeine intake; counsel on moderate consumption to avoid interaction"
+    }
+  ],
+  "monitoring_notes": "Monitor for metabolic effects (weight gain, glucose dysregulation, lipid changes), orthostatic hypotension, and excessive CNS depression. Assess adherence and efficacy, as supplement interactions may reduce therapeutic benefit or increase adverse effects requiring dose adjustment."
+}

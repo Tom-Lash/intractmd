@@ -1,0 +1,58 @@
+{
+  "drug": "Pioglitazone",
+  "drug_class": "Thiazolidinedione (TZD) - Insulin Sensitizer",
+  "key_pathways": [
+    "CYP2C8",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces pioglitazone levels and efficacy",
+      "action": "Avoid concurrent use; select alternative herbal supplement"
+    },
+    {
+      "name": "Rifampin/Rifabutin",
+      "severity": "High",
+      "mechanism": "Strong CYP2C8/3A4 inducer significantly decreases pioglitazone concentrations",
+      "action": "Avoid if possible; if necessary, monitor glucose closely and adjust dose"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate hypoglycemic effects when combined with pioglitazone",
+      "action": "Monitor blood glucose; inform patient of additive glucose-lowering effects"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May enhance insulin sensitivity and glucose lowering",
+      "action": "Monitor for hypoglycemia; coordinate dosing with healthcare provider"
+    },
+    {
+      "name": "Chromium",
+      "severity": "Low",
+      "mechanism": "May have additive glucose-lowering effects",
+      "action": "Monitor blood glucose; assess need for pioglitazone dose adjustment"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay pioglitazone absorption and increase GI side effects",
+      "action": "Take with or without food; consistent timing recommended"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Moderate",
+      "mechanism": "Increases hypoglycemia risk and may worsen fluid retention/heart failure complications",
+      "action": "Limit alcohol intake; counsel on signs of hypoglycemia and heart failure exacerbation"
+    }
+  ],
+  "monitoring_notes": "Monitor for fluid retention, weight gain, and signs of heart failure exacerbation (especially in patients with pre-existing cardiac disease). Assess fasting glucose and HbA1c periodically; pioglitazone effect may take 4-8 weeks to manifest fully."
+}

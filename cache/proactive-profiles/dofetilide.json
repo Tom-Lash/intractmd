@@ -1,0 +1,54 @@
+{
+  "drug": "Dofetilide",
+  "drug_class": "Class III Antiarrhythmic (Potassium Channel Blocker)",
+  "key_pathways": [
+    "Renal elimination (60-80%)",
+    "CYP3A4 metabolism (minor)",
+    "Cationic secretion via OCT2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce dofetilide levels and decrease antiarrhythmic efficacy",
+      "action": "Avoid concurrent use; consult cardiology before discontinuation due to potential arrhythmia risk"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases dofetilide exposure and QT prolongation risk",
+      "action": "Avoid entirely; potential for torsades de pointes"
+    },
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "Hyperkalemia potentiates QT prolongation and increases torsades de pointes risk",
+      "action": "Contraindicated; monitor serum potassium (target 3.5-4.5 mEq/L); use only if clinically essential with frequent monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Hypomagnesemia increases QT prolongation risk; supplementation may be protective",
+      "action": "Monitor serum magnesium levels; supplementation generally beneficial if deficient (target >2 mg/dL)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases dofetilide levels and QT interval prolongation",
+      "action": "Avoid completely; no safe amount established"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High potassium foods (bananas, spinach, tomatoes, oranges)",
+      "severity": "Low",
+      "mechanism": "Modest dietary potassium elevation may interact with renal function and QT effects",
+      "action": "Monitor intake in patients with renal impairment; encourage consistent, moderate consumption"
+    }
+  ],
+  "monitoring_notes": "Dofetilide requires strict renal function monitoring (CrCl-based dosing) and baseline ECG with QTc interval <440 ms. Monitor serum electrolytes (potassium, magnesium, calcium) regularly, as electrolyte abnormalities significantly increase proarrhythmic risk including torsades de pointes."
+}

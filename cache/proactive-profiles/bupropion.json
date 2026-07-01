@@ -1,0 +1,66 @@
+{
+  "drug": "Bupropion",
+  "drug_class": "Antidepressant (Norepinephrine-Dopamine Reuptake Inhibitor)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP2B6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2B6 induction reduces bupropion levels; increased risk of treatment failure and seizures",
+      "action": "Discontinue St. John's Wort; allow 2-week washout before or after bupropion initiation"
+    },
+    {
+      "name": "MAO Inhibitors (including supplements containing phenylethylamine)",
+      "severity": "Critical",
+      "mechanism": "Risk of hypertensive crisis, serotonin syndrome, and increased seizure risk",
+      "action": "Avoid all MAO inhibitors; maintain 14-day separation between discontinuation and bupropion initiation"
+    },
+    {
+      "name": "Stimulant supplements (e.g., excessive caffeine, ephedrine, yohimbine)",
+      "severity": "High",
+      "mechanism": "Additive stimulant effects increase risk of hypertension, tachycardia, anxiety, and seizures",
+      "action": "Limit caffeine intake to <200mg daily; avoid ephedrine and yohimbine-containing products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild anticoagulant properties; theoretical additive seizure risk at high doses",
+      "action": "Monitor for unusual bleeding; use standard doses only"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate stimulant effects and increase seizure threshold",
+      "action": "Use cautiously; monitor for increased agitation or tremor"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "High",
+      "mechanism": "Bupropion has weak MAOI activity; excessive tyramine may precipitate hypertensive crisis",
+      "action": "Counsel on moderation of high-tyramine foods; avoid excessive quantities of aged cheeses, cured meats, soy sauce, and fermented products"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-caffeine foods and beverages (coffee, energy drinks, chocolate)",
+      "severity": "Low",
+      "mechanism": "Additive stimulant effects may increase anxiety, insomnia, tremor, and lower seizure threshold",
+      "action": "Limit caffeine to <200mg daily; monitor tolerance"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depression may be altered; alcohol lowers seizure threshold",
+      "action": "Minimize alcohol consumption; counsel on seizure risk and CNS effects"
+    }
+  ],
+  "monitoring_notes": "Monitor for seizures (risk 0.4%), hypertension, and stimulant-related adverse effects (insomnia, agitation, tremor). Assess CYP2D6 status if co-prescribing drugs requiring CYP2D6 metabolism, as bupropion is a strong CYP2D6 inhibitor."
+}

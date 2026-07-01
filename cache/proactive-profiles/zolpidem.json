@@ -1,0 +1,71 @@
+{
+  "drug": "Zolpidem",
+  "drug_class": "Sedative-hypnotic (non-benzodiazepine)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces zolpidem levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant if needed"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression effects",
+      "action": "Avoid concurrent use; separate dosing by 12+ hours if necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depression",
+      "action": "Use with caution; monitor for excessive sedation"
+    },
+    {
+      "name": "Chamomile",
+      "severity": "Low",
+      "mechanism": "Potential additive sedative effects",
+      "action": "Monitor patient response; adjust dosing if needed"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive effects on sleep onset and duration",
+      "action": "Monitor for excessive sedation; may allow zolpidem dose reduction"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays zolpidem absorption and onset of action",
+      "action": "Take on empty stomach; avoid fatty foods within 2 hours of dosing"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Critical",
+      "mechanism": "Severe additive CNS depression, respiratory depression, and overdose risk",
+      "action": "Absolute contraindication; counsel patient to avoid all alcohol"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase zolpidem levels",
+      "action": "Limit consumption; monitor for excessive sedation if intake cannot be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive sedation, complex sleep behaviors, and respiratory depression, especially in elderly patients or those with hepatic impairment. Advise patients to take zolpidem on an empty stomach immediately before bed for optimal efficacy."
+}

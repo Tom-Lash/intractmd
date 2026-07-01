@@ -1,0 +1,78 @@
+{
+  "drug": "Clonazepam",
+  "drug_class": "Benzodiazepine (anxiolytic, anticonvulsant, muscle relaxant)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces clonazepam levels and efficacy",
+      "action": "Discontinue or avoid concurrent use; monitor for reduced seizure control or increased anxiety"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk",
+      "action": "Contraindicated; risk of severe sedation, respiratory depression, and liver damage"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depressant effects; increased sedation and impairment",
+      "action": "Avoid concurrent use; counsel on enhanced drowsiness and cognitive impairment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may slightly reduce clonazepam levels",
+      "action": "Use with caution; monitor for reduced efficacy; no dose adjustment typically required"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedative effects; minor CNS depression potentiation",
+      "action": "Monitor for excessive drowsiness; educate on fall risk and impaired cognition"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depression",
+      "action": "Use cautiously; counsel on potential enhanced sedation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases clonazepam bioavailability and peak levels",
+      "action": "Eliminate from diet; increased risk of overdose, severe sedation, and respiratory depression"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Additive CNS depression, potentiated sedation, impaired motor control and judgment",
+      "action": "Strongly counsel complete avoidance; risk of dangerous impairment, overdose, and respiratory depression"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay clonazepam absorption without significantly altering total bioavailability",
+      "action": "Consistent timing with meals recommended; take with or without food consistently"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May antagonize some anxiolytic effects and increase CNS stimulation",
+      "action": "Monitor for reduced efficacy; counsel on potential increased anxiety or tremor"
+    }
+  ],
+  "monitoring_notes": "Clonazepam has significant CNS depression potential; concurrent use with other depressants (alcohol, opioids, sedating medications) requires careful patient counseling and monitoring for respiratory depression, falls, and overdose risk. Regular assessment of efficacy and tolerance is essential given benzodiazepine dependence potential."
+}

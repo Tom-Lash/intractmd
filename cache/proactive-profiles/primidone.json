@@ -1,0 +1,86 @@
+{
+  "drug": "Primidone",
+  "drug_class": "Barbiturate anticonvulsant",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C19",
+    "CYP3A4",
+    "CYP2D6",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 and CYP2C9 inducer; significantly reduces primidone levels and anticonvulsant efficacy",
+      "action": "Avoid concurrent use; may require seizure threshold monitoring if discontinuation necessary"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; combined CNS depression with primidone increases sedation and impairs cognition",
+      "action": "Contraindicated; use alternative supplements with lower hepatotoxic potential"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Moderate",
+      "mechanism": "Additive CNS depression; may potentiate sedation, ataxia, and psychomotor impairment",
+      "action": "Avoid or use with extreme caution; counsel on increased fall risk and cognitive effects"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Primidone increases metabolism of vitamin D; deficiency impairs bone health and seizure control",
+      "action": "Monitor 25-OH vitamin D levels; consider supplementation (400-2000 IU daily) with periodic monitoring"
+    },
+    {
+      "name": "Calcium",
+      "severity": "Low",
+      "mechanism": "Primidone impairs calcium absorption; may contribute to bone loss and increased fracture risk",
+      "action": "Ensure adequate intake (1000-1200 mg daily) and coordinate timing 2+ hours from primidone doses"
+    },
+    {
+      "name": "Folic Acid",
+      "severity": "Low",
+      "mechanism": "Primidone increases folate metabolism; deficiency linked to anemia and poor seizure control",
+      "action": "Monitor CBC and homocysteine; supplement with 1-5 mg daily as indicated by lab values"
+    },
+    {
+      "name": "Vitamin K",
+      "severity": "Low",
+      "mechanism": "Primidone may reduce vitamin K-dependent clotting factor synthesis; increases bleeding risk",
+      "action": "Monitor INR if on anticoagulants; ensure adequate leafy greens intake; supplement if deficient"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor; increases primidone levels and risk of toxicity, ataxia, and dizziness",
+      "action": "Eliminate from diet; counsel on symptom recognition; monitor for overdose signs"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay primidone absorption and alter peak drug levels; inconsistent seizure control timing",
+      "action": "Take primidone with consistent meal composition and timing; avoid large lipid loads at dosing time"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Indole compounds may modestly induce CYP3A4; may marginally reduce primidone levels with excessive consumption",
+      "action": "Consume in moderation as part of balanced diet; maintain consistent intake patterns"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Potentiates CNS depression; increases sedation, ataxia, cognitive impairment, and seizure risk",
+      "action": "Strongly discourage consumption; counsel on seizure threshold reduction and fall hazards"
+    }
+  ],
+  "monitoring_notes": "Primidone is a potent enzyme inducer requiring comprehensive monitoring of bone health (vitamin D, calcium, alkaline phosphatase), hematologic parameters (CBC for folate deficiency anemia), and anticonvulsant efficacy due to multiple drug interactions. Patients should maintain consistent dietary patterns and avoid herbal inducers; counsel on CNS depression risks with alcohol and sedating supplements."
+}

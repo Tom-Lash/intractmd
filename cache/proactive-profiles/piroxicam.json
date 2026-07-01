@@ -1,0 +1,79 @@
+{
+  "drug": "Piroxicam",
+  "drug_class": "Non-steroidal anti-inflammatory drug (NSAID)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C8",
+    "Hepatic metabolism",
+    "Renal elimination"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet effects increase bleeding risk",
+      "action": "Avoid concurrent use or limit Vitamin E to <400 IU/day; monitor for bleeding signs"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Antiplatelet properties combined with NSAID increase hemorrhage risk",
+      "action": "Discontinue ginkgo biloba during piroxicam therapy"
+    },
+    {
+      "name": "Garlic (therapeutic doses)",
+      "severity": "High",
+      "mechanism": "Antiplatelet and anticoagulant effects increase GI and systemic bleeding",
+      "action": "Avoid high-dose garlic supplements; culinary amounts are acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Both have anti-inflammatory properties; potential for additive GI irritation",
+      "action": "Use together cautiously; monitor for GI symptoms; may allow lower NSAID doses"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Can cause sodium retention and fluid accumulation, increasing hypertension and edema risk",
+      "action": "Monitor blood pressure and fluid status; limit duration of concurrent use"
+    },
+    {
+      "name": "Fish oil (omega-3)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; may have additive anti-inflammatory benefit",
+      "action": "Monitor for bruising or bleeding; generally safe at moderate doses (2-3g/day)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (≥3 drinks daily)",
+      "severity": "Critical",
+      "mechanism": "Synergistic GI ulceration and bleeding risk; increased hepatotoxicity",
+      "action": "Strictly limit alcohol intake; counsel on GI bleed warning signs (dark stools, hematemesis)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay piroxicam absorption and increase peak plasma levels; potential GI upset",
+      "action": "Take piroxicam with food to minimize GI irritation; separate from high-fat meals if possible"
+    },
+    {
+      "name": "Excessive sodium intake",
+      "severity": "Low",
+      "mechanism": "NSAIDs impair sodium handling; high intake increases fluid retention and hypertension risk",
+      "action": "Counsel on moderate salt restriction; monitor blood pressure and edema"
+    },
+    {
+      "name": "Potassium-rich foods (excessive)",
+      "severity": "Low",
+      "mechanism": "NSAIDs reduce renal potassium excretion; hyperkalemia risk with excessive intake",
+      "action": "Monitor potassium levels in high-risk patients (renal disease, elderly); counsel on moderation"
+    }
+  ],
+  "monitoring_notes": "Piroxicam has a long half-life (~50 hours), increasing cumulative interaction risk. Monitor for GI bleeding, renal function decline, hypertension, and edema; check baseline renal function, CBC, and electrolytes before therapy and periodically during use."
+}

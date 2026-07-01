@@ -1,0 +1,78 @@
+{
+  "drug": "Mycophenolate",
+  "drug_class": "Immunosuppressant (Inosine Monophosphate Dehydrogenase Inhibitor)",
+  "key_pathways": [
+    "IMPDH (Inosine Monophosphate Dehydrogenase)",
+    "Glucuronidation (UGT1A9, UGT2B7)",
+    "Enterohepatic circulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immune system stimulation may directly antagonize mycophenolate's immunosuppressive effects and increase transplant rejection risk",
+      "action": "Contraindicated; counsel patient to avoid all echinacea-containing products"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces UGT enzymes, increasing mycophenolate glucuronidation and reducing therapeutic concentrations",
+      "action": "Avoid concurrent use; consider therapeutic drug monitoring if unavoidable"
+    },
+    {
+      "name": "Probiotics (specific strains)",
+      "severity": "Moderate",
+      "mechanism": "Certain probiotic strains may stimulate immune function, potentially undermining mycophenolate efficacy",
+      "action": "Avoid high-potency multi-strain probiotics; discuss specific probiotic selection with clinician"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Antacids (calcium, magnesium, aluminum hydroxide)",
+      "severity": "Low",
+      "mechanism": "May reduce mycophenolate absorption by chelation; separate dosing recommended",
+      "action": "Administer mycophenolate 2 hours before or 6 hours after antacids; monitor clinical response"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "May chelate mycophenolate in GI tract, potentially reducing absorption",
+      "action": "Space dosing by at least 2 hours; monitor for loss of immunosuppressive effect"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild immunostimulatory properties that could reduce mycophenolate efficacy",
+      "action": "Use with caution; consider alternative adaptogens; monitor graft function"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Significantly reduces mycophenolate mofetil (MMF) absorption by 40-50%; affects peak levels and bioavailability",
+      "action": "Administer on empty stomach (fasting 1 hour before and 2 hours after); separate from fatty foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "May inhibit glucuronidation pathways; potential for increased mycophenolate exposure",
+      "action": "Limit consumption; monitor for adverse effects; maintain consistent intake pattern"
+    },
+    {
+      "name": "High-fiber foods (excessive intake)",
+      "severity": "Low",
+      "mechanism": "May reduce mycophenolate absorption when consumed in very large quantities near dosing time",
+      "action": "Consume fiber at least 2 hours apart from mycophenolate dosing"
+    },
+    {
+      "name": "Dairy products (with dosing)",
+      "severity": "Low",
+      "mechanism": "Calcium in dairy may chelate mycophenolate if consumed simultaneously",
+      "action": "Separate dairy intake from mycophenolate dosing by at least 2 hours"
+    }
+  ],
+  "monitoring_notes": "Monitor mycophenolic acid (MPA) trough concentrations (target 1-3.5 mcg/mL) and assess graft function through serum creatinine and clinical rejection markers, especially when supplements or dietary patterns change. Educate patients on strict administration timing relative to food intake, as absorption variability directly impacts immunosuppressive efficacy and transplant outcomes."
+}

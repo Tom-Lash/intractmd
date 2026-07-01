@@ -1,0 +1,60 @@
+{
+  "drug": "Methocarbamol",
+  "drug_class": "Skeletal muscle relaxant",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "Hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may decrease methocarbamol levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk",
+      "action": "Contraindicated; use alternative relaxation methods"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depressant effects",
+      "action": "Monitor for excessive drowsiness; educate on fall risk"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS depression",
+      "action": "Counsel on additive sedation risk; adjust dosing if needed"
+    },
+    {
+      "name": "Grapefruit",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase methocarbamol levels",
+      "action": "Limit grapefruit intake; monitor for increased side effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Additive CNS depression, increased sedation, impaired cognition, and fall risk",
+      "action": "Strongly counsel avoidance; warn against driving or operating machinery"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay methocarbamol absorption and onset of action",
+      "action": "Take with or without food; consistent dosing schedule recommended"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive CNS depression, dizziness, and drowsiness—particularly with concurrent alcohol or CNS depressants. Assess liver and kidney function periodically, especially in elderly patients or those with hepatic/renal impairment."
+}

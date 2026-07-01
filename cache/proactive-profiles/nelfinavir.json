@@ -1,0 +1,66 @@
+{
+  "drug": "Nelfinavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces nelfinavir plasma concentrations by up to 50%, reducing antiretroviral efficacy and increasing resistance risk",
+      "action": "Absolutely contraindicated; counsel patient to avoid completely and report use immediately"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces nelfinavir bioavailability and therapeutic levels",
+      "action": "Avoid high-dose garlic supplements; monitor viral load if patient insists on use"
+    },
+    {
+      "name": "Rifabutin",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases nelfinavir concentrations below therapeutic range",
+      "action": "Contraindicated; use alternative antimycobacterial agent if TB treatment needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may modestly reduce nelfinavir levels",
+      "action": "Monitor viral load; use sparingly and inform healthcare provider"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have minor CYP3A4 inducing properties affecting drug metabolism",
+      "action": "Use cautiously; maintain consistent dosing if used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases nelfinavir plasma concentrations, elevating risk of toxicity and QT prolongation",
+      "action": "Completely avoid grapefruit products; counsel on dietary restriction"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May enhance nelfinavir absorption and bioavailability; absorption is food-dependent",
+      "action": "Administer with food as directed; consistent meal timing optimizes levels"
+    },
+    {
+      "name": "Alcohol (heavy use)",
+      "severity": "Low",
+      "mechanism": "May impair hepatic metabolism and increase GI side effects; nelfinavir is hepatically metabolized",
+      "action": "Counsel to limit alcohol; monitor liver function if chronic use"
+    }
+  ],
+  "monitoring_notes": "Nelfinavir requires administration with food for optimal absorption. Baseline and periodic viral load/CD4 monitoring is essential to detect subtherapeutic levels from drug-supplement interactions. Counsel patients on strict avoidance of potent CYP3A4 inducers and grapefruit to maintain antiretroviral efficacy."
+}

@@ -1,0 +1,60 @@
+{
+  "drug": "Ondansetron",
+  "drug_class": "5-HT3 Receptor Antagonist (Antiemetic)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces ondansetron plasma concentrations and antiemetic efficacy",
+      "action": "Avoid concurrent use; allow 2-week washout period before starting ondansetron"
+    },
+    {
+      "name": "Serotonin-enhancing supplements (5-HTP, L-tryptophan)",
+      "severity": "Moderate",
+      "mechanism": "Potential additive serotonergic effects may increase risk of serotonin syndrome, though ondansetron risk is lower than other agents",
+      "action": "Monitor for agitation, confusion, rapid heart rate, or muscle rigidity; use with caution"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit supplements",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase ondansetron levels",
+      "action": "Monitor for increased side effects (headache, constipation); limit concurrent use"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may slightly elevate ondansetron concentrations",
+      "action": "No dose adjustment typically needed; monitor for tolerability"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase ondansetron bioavailability and systemic exposure",
+      "action": "Avoid grapefruit and related citrus (pomelo, Seville orange); advise patient to choose alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay ondansetron absorption and slightly reduce peak concentrations, but overall exposure unchanged",
+      "action": "Take ondansetron with or without food; if GI upset occurs, administer with light meals"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; may worsen sedation or dizziness",
+      "action": "Counsel patient to limit alcohol consumption during treatment"
+    }
+  ],
+  "monitoring_notes": "Ondansetron has a relatively low interaction potential due to its hepatic metabolism and limited enzyme induction/inhibition properties. Monitor for constipation (common side effect) and assess antiemetic efficacy, particularly if CYP3A4 inducers are co-administered."
+}

@@ -1,0 +1,47 @@
+{
+  "drug": "Ixazomib",
+  "drug_class": "Proteasome Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces ixazomib plasma concentrations and therapeutic efficacy",
+      "action": "Contraindicated; do not use concurrently with ixazomib"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate anticoagulant effects and increase bleeding risk with concurrent thrombocytopenia from ixazomib",
+      "action": "Avoid or limit to <400 IU daily; monitor for bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects may compound thrombocytopenia risk associated with ixazomib therapy",
+      "action": "Use with caution; monitor platelet counts and bleeding signs"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties may increase bleeding risk in combination with ixazomib-induced thrombocytopenia",
+      "action": "Monitor for increased bruising or bleeding; consider dose reduction if used"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly reduce ixazomib absorption; manufacturer recommends fasting or light meal",
+      "action": "Take ixazomib on an empty stomach or with light meal; avoid heavy fatty foods"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC closely for thrombocytopenia and peripheral neuropathy development during therapy. Assess for bleeding manifestations if supplements with antiplatelet properties are used concurrently."
+}

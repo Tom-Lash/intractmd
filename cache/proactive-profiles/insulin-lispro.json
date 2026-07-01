@@ -1,0 +1,78 @@
+{
+  "drug": "Insulin Lispro",
+  "drug_class": "Rapid-acting insulin analog",
+  "key_pathways": [
+    "Glucose metabolism",
+    "Insulin receptor signaling",
+    "Hepatic glucose production"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Chromium picolinate",
+      "severity": "High",
+      "mechanism": "May potentiate insulin effects and cause hypoglycemia by enhancing insulin sensitivity",
+      "action": "Avoid concurrent use; monitor blood glucose closely if used together"
+    },
+    {
+      "name": "Fenugreek seeds",
+      "severity": "High",
+      "mechanism": "Increases insulin sensitivity and delays gastric emptying, increasing hypoglycemia risk",
+      "action": "Discontinue or use only under close medical supervision with glucose monitoring"
+    },
+    {
+      "name": "Bitter melon extract",
+      "severity": "High",
+      "mechanism": "Enhances insulin secretion and glucose uptake, potentiating hypoglycemic effect",
+      "action": "Avoid use; counsel patient on hypoglycemia risk if inadvertently combined"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "May modestly improve insulin sensitivity; limited clinical evidence but potential additive effect",
+      "action": "Monitor blood glucose; dose adjustment of insulin may be needed"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May enhance glucose utilization and reduce insulin resistance",
+      "action": "Monitor for hypoglycemia; educate patient on symptoms"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May lower blood glucose through enhanced insulin secretion",
+      "action": "Monitor blood glucose regularly; inform healthcare provider of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High glycemic index foods (refined sugars, white bread, pastries)",
+      "severity": "Critical",
+      "mechanism": "Rapid glucose absorption overwhelms insulin lispro's onset, causing hyperglycemia or excessive post-prandial spikes",
+      "action": "Counsel patient on carbohydrate counting and low-to-moderate glycemic index food selection"
+    },
+    {
+      "name": "Alcohol (especially on empty stomach)",
+      "severity": "High",
+      "mechanism": "Impairs hepatic glucose production and potentiates hypoglycemic effect of insulin",
+      "action": "Advise abstinence or minimal consumption with food; educate on hypoglycemia awareness"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Delays gastric emptying, prolonging insulin-glucose mismatch and increasing risk of delayed hypoglycemia",
+      "action": "Advise patient to monitor glucose response; may require insulin timing adjustment"
+    },
+    {
+      "name": "Simple carbohydrates with fiber (fruit, legumes)",
+      "severity": "Low",
+      "mechanism": "Fiber slows glucose absorption; insulin lispro timing should align with actual carbohydrate absorption",
+      "action": "Educate on appropriate carb counting; monitor glucose response to optimize dosing"
+    }
+  ],
+  "monitoring_notes": "Insulin lispro users require consistent carbohydrate intake and meal timing synchronization with injection; blood glucose self-monitoring is essential to detect hypoglycemia and adjust dosing for supplements or dietary changes. Healthcare provider should review all supplements and dietary modifications to prevent dangerous insulin-glucose dysregulation."
+}

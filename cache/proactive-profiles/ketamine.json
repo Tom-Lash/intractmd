@@ -1,0 +1,66 @@
+{
+  "drug": "Ketamine",
+  "drug_class": "Dissociative Anesthetic/NMDA Receptor Antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce ketamine levels and efficacy; also increases risk of serotonergic effects",
+      "action": "Discontinue St. John's Wort at least 2 weeks before ketamine therapy"
+    },
+    {
+      "name": "Grapefruit Extract/Seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases ketamine concentrations and risk of adverse effects including dissociation and cardiovascular changes",
+      "action": "Avoid grapefruit products entirely during ketamine treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "May potentiate NMDA antagonism and enhance dissociative effects; theoretical additive CNS depression",
+      "action": "Monitor for increased dissociation or dizziness; use standard supplemental doses only"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depression effects",
+      "action": "Counsel on possible increased sedation; monitor clinical response"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Low",
+      "mechanism": "May enhance CNS depression and dissociative effects",
+      "action": "Avoid or use with caution; counsel on increased risk of sedation and dissociation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases ketamine bioavailability and plasma concentrations, elevating risk of toxicity and adverse effects",
+      "action": "Eliminate grapefruit and pomelo from diet during ketamine therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric clearance and absorption if oral ketamine is used; potential for variable bioavailability",
+      "action": "Take oral ketamine consistently with or without food to maintain steady-state levels"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and increased dissociative/psychotomimetic effects; impairs judgment and coordination",
+      "action": "Strongly counsel against alcohol use; monitor for excessive sedation or dissociation"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of excessive dissociation, altered mental status, and cardiovascular changes (blood pressure, heart rate). Assess for drug-drug interactions at CYP3A4/2B6 level, particularly with inducers or inhibitors, as ketamine has narrow therapeutic margins in clinical settings."
+}

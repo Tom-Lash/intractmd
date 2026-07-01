@@ -1,0 +1,59 @@
+{
+  "drug": "Benazepril",
+  "drug_class": "ACE Inhibitor (Antihypertensive)",
+  "key_pathways": [
+    "ACE inhibition",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ACE inhibitors reduce aldosterone, decreasing potassium excretion; combined supplementation significantly increases hyperkalemia risk",
+      "action": "Avoid potassium supplements unless prescribed by physician; monitor serum potassium levels regularly"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and impair benazepril's antihypertensive effect; increases acute kidney injury and hyperkalemia risk",
+      "action": "Use acetaminophen instead; if NSAIDs necessary, use lowest dose for shortest duration with renal monitoring"
+    },
+    {
+      "name": "ARBs (Angiotensin II Receptor Blockers)",
+      "severity": "High",
+      "mechanism": "Dual renin-angiotensin system blockade increases hyperkalemia, hypotension, and acute kidney injury risk",
+      "action": "Avoid combination therapy; use only under direct physician supervision if clinically indicated"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Licorice promotes sodium retention and potassium loss, potentially counteracting benazepril's antihypertensive effects",
+      "action": "Limit licorice consumption; monitor blood pressure response"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild stimulant properties that could interfere with blood pressure control",
+      "action": "Monitor blood pressure; use cautiously with physician awareness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (excessive intake)",
+      "severity": "High",
+      "mechanism": "Excessive intake of potassium-rich foods (bananas, oranges, spinach, tomatoes, salt substitutes) increases hyperkalemia risk in ACE inhibitor users",
+      "action": "Maintain normal dietary potassium intake; avoid potassium-based salt substitutes; do not drastically increase high-K foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Sodium intake",
+      "severity": "Low",
+      "mechanism": "High sodium intake may reduce benazepril's antihypertensive efficacy",
+      "action": "Maintain moderate sodium restriction per DASH diet guidelines for optimal blood pressure control"
+    }
+  ],
+  "monitoring_notes": "Monitor serum creatinine, potassium, and blood pressure regularly, especially within 1-2 weeks of initiation and after dose adjustments. Assess renal function before combining with other medications affecting the renin-angiotensin system."
+}

@@ -1,0 +1,84 @@
+{
+  "drug": "Rivaroxaban",
+  "drug_class": "Factor Xa Inhibitor (Direct Oral Anticoagulant)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2J2",
+    "P-glycoprotein (ABCB1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Vitamin K (High-dose)",
+      "severity": "High",
+      "mechanism": "Vitamin K antagonizes anticoagulant effect through hepatic clotting factor synthesis",
+      "action": "Maintain consistent dietary vitamin K intake; avoid supplements >90 mcg/day without provider consultation"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and P-glycoprotein inducer reduces rivaroxaban bioavailability and anticoagulant effect",
+      "action": "Discontinue at least 2 weeks prior to rivaroxaban initiation or avoid combination"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "High",
+      "mechanism": "Platelet aggregation inhibition and possible P-glycoprotein interaction increases bleeding risk",
+      "action": "Avoid concurrent use; counsel patient on alternative cognitive supplements"
+    },
+    {
+      "name": "Garlic (Concentrated/Supplement)",
+      "severity": "High",
+      "mechanism": "Antiplatelet effects and CYP3A4 modulation increase bleeding risk",
+      "action": "Avoid garlic supplements; dietary garlic in normal amounts acceptable"
+    },
+    {
+      "name": "Cranberry Supplements",
+      "severity": "High",
+      "mechanism": "Possible P-glycoprotein inhibition and warfarin-like anticoagulant activity",
+      "action": "Avoid concentrated cranberry supplements; discuss with provider before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 Fatty Acids (High-dose)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet and anticoagulant effects may have additive bleeding risk",
+      "action": "Monitor for bleeding signs; use doses ≤2g/day; inform provider of supplementation"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects and potential CYP3A4 inhibition at high doses",
+      "action": "Use culinary doses; monitor for excessive bruising or bleeding"
+    },
+    {
+      "name": "Ginger Supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet and possible CYP3A4 modulation effects",
+      "action": "Limit to culinary amounts or low-dose supplements; monitor bleeding risk"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibitor increases rivaroxaban plasma concentrations and bleeding risk",
+      "action": "Avoid grapefruit and grapefruit juice entirely; select alternative citrus beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Vitamin K Foods (Kale, Spinach, Broccoli)",
+      "severity": "Low",
+      "mechanism": "High vitamin K intake may antagonize anticoagulant effect if consumption dramatically changes",
+      "action": "Maintain consistent intake of green leafy vegetables; avoid sudden dietary changes"
+    },
+    {
+      "name": "Cranberry Juice",
+      "severity": "Low",
+      "mechanism": "Potential additive anticoagulant and P-glycoprotein inhibition effects",
+      "action": "Consume in moderation (≤12 oz/day); monitor for signs of bleeding"
+    }
+  ],
+  "monitoring_notes": "Rivaroxaban is a substrate of CYP3A4 and P-glycoprotein; interactions that inhibit these pathways increase bleeding risk while inducers reduce efficacy. Monitor for signs of bleeding (unusual bruising, blood in urine/stool, nosebleeds) and maintain consistent dietary patterns, especially regarding vitamin K and grapefruit products."
+}

@@ -1,0 +1,52 @@
+{
+  "drug": "Nebivolol",
+  "drug_class": "Beta-1 selective adrenergic antagonist (cardioselective beta-blocker)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce nebivolol levels and efficacy",
+      "action": "Avoid concurrent use; select alternative herbal supplement"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-2 antagonist activity counteracts beta-blocker effects; risk of hypertension and tachycardia",
+      "action": "Contraindicated; do not use together"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May increase blood pressure and heart rate, potentially opposing nebivolol effects",
+      "action": "Monitor blood pressure and heart rate; discuss with prescriber if used"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "Can elevate blood pressure and cause sodium retention, counteracting beta-blocker benefits",
+      "action": "Limit intake; monitor blood pressure regularly"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "May potentiate cardiovascular effects; additive hypotensive and inotropic effects possible",
+      "action": "Use with caution; monitor heart rate and blood pressure"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium may reduce antihypertensive efficacy of nebivolol",
+      "action": "Maintain moderate sodium intake (<2,300 mg/day) as part of heart disease management"
+    }
+  ],
+  "monitoring_notes": "Monitor heart rate, blood pressure, and signs of bronchospasm or fatigue. CYP2D6 poor metabolizers may accumulate nebivolol; dosage adjustment may be warranted. Avoid abrupt discontinuation due to risk of rebound hypertension."
+}

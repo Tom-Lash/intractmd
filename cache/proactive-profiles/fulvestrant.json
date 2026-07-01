@@ -1,0 +1,53 @@
+{
+  "drug": "Fulvestrant",
+  "drug_class": "Selective Estrogen Receptor Degrader (SERD)",
+  "key_pathways": [
+    "Not significantly metabolized by CYP450",
+    "Hepatic metabolism via sulfation and glucuronidation",
+    "Biliary excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "May induce hepatic metabolism and reduce fulvestrant exposure; potential loss of efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effects and increase bleeding risk in patients on concurrent anticoagulants",
+      "action": "Limit vitamin E supplementation; monitor for signs of bleeding"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have estrogenic properties; theoretical potential to antagonize fulvestrant effects",
+      "action": "Monitor clinical response; discuss use with oncology team"
+    },
+    {
+      "name": "Red Clover",
+      "severity": "Low",
+      "mechanism": "Contains isoflavones with estrogenic activity; may theoretically reduce fulvestrant efficacy",
+      "action": "Avoid or use with caution; inform healthcare provider of use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor; fulvestrant not primarily CYP3A4-dependent but excessive consumption may alter hepatic metabolism",
+      "action": "Limit grapefruit consumption; no strict avoidance required but moderate intake recommended"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May affect absorption and distribution of intramuscular fulvestrant; does not significantly impact efficacy but consistency advised",
+      "action": "Maintain consistent dietary fat intake; not a critical concern for this IM formulation"
+    }
+  ],
+  "monitoring_notes": "Fulvestrant is minimally metabolized by CYP450 enzymes, reducing drug-drug and supplement-drug interactions. Primary monitoring should focus on estrogenic supplements that may antagonize SERD activity and anticoagulant interactions, particularly in patients on concurrent anticoagulation therapy."
+}

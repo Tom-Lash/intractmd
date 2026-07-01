@@ -1,0 +1,34 @@
+{
+  "drug": "Galcanezumab",
+  "drug_class": "Monoclonal Antibody (CGRP Antagonist)",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Direct protein binding mechanism",
+    "No CYP450 involvement"
+  ],
+  "avoid_supplements": [],
+  "caution_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Low",
+      "mechanism": "Potential additive anticoagulant effects; galcanezumab may have minor platelet effects",
+      "action": "Monitor for unusual bleeding or bruising; maintain consistent dosing"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet activity; theoretical additive bleeding risk",
+      "action": "Counsel on bleeding precautions and report unusual symptoms"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol (excessive intake)",
+      "severity": "Low",
+      "mechanism": "May worsen migraine frequency or trigger migraines; potential CNS effects with antibody therapy",
+      "action": "Limit alcohol consumption and track migraine patterns; counsel on migraine triggers"
+    }
+  ],
+  "monitoring_notes": "Galcanezumab is a monoclonal antibody with minimal drug interactions due to lack of hepatic metabolism and CYP450 involvement. Monitor injection site reactions and migraine control; no routine laboratory monitoring required for interactions."
+}

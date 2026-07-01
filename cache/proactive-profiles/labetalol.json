@@ -1,0 +1,72 @@
+{
+  "drug": "Labetalol",
+  "drug_class": "Alpha/Beta-Adrenergic Blocker",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra/Ma Huang",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic activity counteracts labetalol's antihypertensive effects and may cause hypertensive crisis",
+      "action": "Contraindicated; counsel patient to avoid completely"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-adrenergic agonist that opposes labetalol's mechanism of action, reducing efficacy and increasing BP",
+      "action": "Avoid concurrent use; recommend alternative supplements"
+    },
+    {
+      "name": "Licorice (high doses >3g/day)",
+      "severity": "High",
+      "mechanism": "Mineralocorticoid-like effects promote sodium retention and potassium depletion, worsening hypertension and reducing labetalol efficacy",
+      "action": "Limit licorice intake; monitor blood pressure and electrolytes if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild sympathomimetic effects potentially reducing antihypertensive efficacy",
+      "action": "Monitor blood pressure; use moderate doses only"
+    },
+    {
+      "name": "Caffeine supplements",
+      "severity": "Low",
+      "mechanism": "Stimulant effects may modestly counteract labetalol's antihypertensive benefits",
+      "action": "Limit high-dose caffeine intake; monitor response"
+    },
+    {
+      "name": "CoQ10",
+      "severity": "Low",
+      "mechanism": "May have mild blood pressure-lowering effects; potential for additive hypotension",
+      "action": "Monitor blood pressure; dose adjustment of labetalol may be needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (with concurrent MAOIs or in excessive amounts)",
+      "severity": "Moderate",
+      "mechanism": "While labetalol is not an MAOI, excessive tyramine may trigger sympathomimetic response that could oppose antihypertensive action",
+      "action": "Moderate intake of aged cheeses, cured meats, fermented foods; counsel patient"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium intake reduces antihypertensive efficacy and may increase fluid retention",
+      "action": "Counsel on DASH diet and sodium restriction (<2300mg/day)"
+    },
+    {
+      "name": "Licorice-containing foods/candies",
+      "severity": "Low",
+      "mechanism": "Excessive consumption may cause sodium retention and hypokalemia, reducing drug efficacy",
+      "action": "Limit intake; encourage awareness of hidden licorice in processed foods"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly as interactions may reduce labetalol efficacy. Counsel on avoiding sympathomimetic supplements and maintaining adequate potassium intake, as labetalol use carries hypokalemia risk with concurrent supplements affecting sodium-potassium balance."
+}

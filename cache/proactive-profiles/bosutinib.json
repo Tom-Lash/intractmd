@@ -1,0 +1,66 @@
+{
+  "drug": "Bosutinib",
+  "drug_class": "Tyrosine Kinase Inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces bosutinib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative supplements with provider approval"
+    },
+    {
+      "name": "Grapefruit extract/seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases bosutinib bioavailability and toxicity risk",
+      "action": "Discontinue supplement; allow 72+ hours washout before bosutinib initiation"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce bosutinib therapeutic levels",
+      "action": "Avoid use; discuss alternatives with healthcare provider"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may modestly increase bosutinib levels",
+      "action": "Monitor for increased toxicity (diarrhea, GI effects); dosage adjustment may be considered"
+    },
+    {
+      "name": "Garlic (high-dose)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction at very high doses",
+      "action": "Use culinary amounts without concern; limit supplemental doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/pomelo/Seville orange",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition increases bosutinib exposure and adverse effects",
+      "action": "Completely eliminate from diet; switch to other citrus fruits (oranges, lemons, limes acceptable)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase bosutinib absorption; food effect dependent on formulation",
+      "action": "Take consistently with or without food; maintain routine; notify provider of significant dietary changes"
+    },
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction with very high chronic consumption",
+      "action": "Normal dietary amounts acceptable; avoid excessive supplemental concentrated forms"
+    }
+  ],
+  "monitoring_notes": "Bosutinib is primarily metabolized by CYP3A4; significant drug-food interactions are possible with CYP3A4 modulators and P-glycoprotein inhibitors. Monitor for GI toxicity (diarrhea is most common adverse effect), myelosuppression, and signs of reduced efficacy when supplements or dietary patterns change."
+}

@@ -1,0 +1,53 @@
+{
+  "drug": "Fosinopril",
+  "drug_class": "ACE Inhibitor (Angiotensin-Converting Enzyme Inhibitor)",
+  "key_pathways": [
+    "Hepatic esterase metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "Critical",
+      "mechanism": "ACE inhibitors reduce aldosterone secretion, decreasing potassium excretion and increasing serum potassium levels; concurrent supplementation increases hyperkalemia risk",
+      "action": "Contraindicated; monitor serum potassium closely if patient has renal impairment; counsel on dietary potassium restriction"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen, indomethacin)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and inhibit prostaglandin-mediated vasodilation; combined effect increases risk of acute kidney injury and hyperkalemia",
+      "action": "Avoid concurrent use; if necessary, use lowest dose for shortest duration and monitor renal function and potassium"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Licorice causes sodium retention and potassium depletion, potentially reducing fosinopril efficacy and causing electrolyte imbalance",
+      "action": "Monitor blood pressure and electrolytes; limit licorice consumption or consider alternative supplements"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild sympathomimetic effects that could reduce antihypertensive efficacy of fosinopril",
+      "action": "Monitor blood pressure response; counsel on potential interaction"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-potassium foods (bananas, spinach, sweet potatoes, tomatoes, coconut water)",
+      "severity": "High",
+      "mechanism": "ACE inhibitors reduce potassium excretion; excessive dietary potassium intake increases risk of hyperkalemia, especially with renal dysfunction",
+      "action": "Counsel on dietary potassium restriction; obtain baseline potassium levels and monitor periodically"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Sodium-containing foods and salt substitutes containing potassium",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may blunt antihypertensive effects; potassium-based salt substitutes increase hyperkalemia risk",
+      "action": "Recommend DASH diet and sodium restriction (<2.3g daily); advise against potassium-containing salt substitutes"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, creatinine, and blood pressure regularly, particularly within 1-2 weeks of initiation and dose adjustment. Counsel patients on signs of hyperkalemia (weakness, palpitations) and acute kidney injury (reduced urine output, fatigue)."
+}

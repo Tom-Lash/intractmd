@@ -1,0 +1,66 @@
+{
+  "drug": "Delavirdine",
+  "drug_class": "Non-nucleoside reverse transcriptase inhibitor (NNRTI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces delavirdine plasma concentrations, compromising antiretroviral efficacy",
+      "action": "Contraindicated; do not use concurrently. Counsel patient to avoid all St. John's Wort products"
+    },
+    {
+      "name": "Rifampin/Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 induction reduces delavirdine levels by >50%, leading to treatment failure and resistance",
+      "action": "Avoid combination; use alternative antimycobacterial if TB treatment required"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce delavirdine bioavailability",
+      "action": "Avoid high-dose garlic supplements; dietary garlic in normal amounts acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium/Iron supplements",
+      "severity": "Low",
+      "mechanism": "May reduce delavirdine absorption if taken simultaneously due to chelation and pH effects",
+      "action": "Separate dosing by at least 2 hours; delavirdine requires acidic environment for optimal absorption"
+    },
+    {
+      "name": "Antacids (calcium-based)",
+      "severity": "Low",
+      "mechanism": "Increases gastric pH, reducing delavirdine solubility and absorption",
+      "action": "If antacid needed, separate administration by ≥2 hours"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "May reduce delavirdine bioavailability; requires acidic environment for absorption",
+      "action": "Take delavirdine on empty stomach or with light meal; avoid heavy fatty foods within 1 hour of dosing"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase delavirdine levels and potential for adverse effects",
+      "action": "Limit grapefruit consumption or monitor for increased side effects if consumed regularly"
+    },
+    {
+      "name": "Cranberry juice",
+      "severity": "Low",
+      "mechanism": "May affect gastric pH and potentially reduce absorption",
+      "action": "Consume in moderation; separate from delavirdine dosing if possible"
+    }
+  ],
+  "monitoring_notes": "Delavirdine requires acidic gastric environment for optimal absorption; monitor for reduced efficacy if gastric pH-altering agents are used. Regular CD4 count and viral load monitoring essential to detect treatment failure from significant interactions."
+}

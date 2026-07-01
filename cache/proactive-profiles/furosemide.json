@@ -1,0 +1,65 @@
+{
+  "drug": "Furosemide",
+  "drug_class": "Loop diuretic",
+  "key_pathways": [
+    "Renal tubular secretion via organic anion transporter (OAT)",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Licorice",
+      "severity": "High",
+      "mechanism": "Licorice causes sodium retention and potassium depletion, counteracting furosemide's diuretic effect and exacerbating hypokalemia",
+      "action": "Advise patient to avoid licorice and licorice-containing products; monitor serum potassium and sodium levels closely"
+    },
+    {
+      "name": "Potassium supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Furosemide causes significant potassium wasting; excessive supplementation may lead to overcorrection if dose is adjusted, but deficiency risk is primary concern requiring balanced monitoring",
+      "action": "Do not supplement without serum potassium monitoring; coordinate supplementation with prescriber based on lab values"
+    },
+    {
+      "name": "NSAIDs (including supplements containing willow bark, meadowsweet)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal perfusion and decrease furosemide efficacy; increase risk of acute kidney injury and hyperkalemia",
+      "action": "Avoid NSAIDs; use acetaminophen or other alternatives; monitor renal function and potassium if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild diuretic properties and could enhance furosemide effect unpredictably",
+      "action": "Monitor blood pressure and electrolytes if used concurrently"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "May have diuretic and cardiovascular effects that could potentiate furosemide",
+      "action": "Monitor blood pressure and symptoms of volume depletion"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods, salt-cured meats, canned soups",
+      "severity": "Moderate",
+      "mechanism": "Excessive sodium intake counteracts the blood pressure-lowering and fluid-reducing effects of furosemide",
+      "action": "Recommend sodium restriction (<2g/day); educate on reading food labels and avoiding processed foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-potassium foods (bananas, spinach, orange juice, avocado, sweet potatoes)",
+      "severity": "Low",
+      "mechanism": "Furosemide causes potassium depletion; while normal dietary potassium is beneficial, excessive intake requires monitoring in context of serum potassium levels",
+      "action": "Include moderate potassium-rich foods in diet; adjust based on serum potassium monitoring and prescriber recommendation"
+    },
+    {
+      "name": "Licorice-containing candies and herbal teas",
+      "severity": "Low",
+      "mechanism": "Minor exposure may have minimal effect, but regular consumption compounds sodium retention and potassium loss",
+      "action": "Limit consumption; educate patient on potential effects"
+    }
+  ],
+  "monitoring_notes": "Monitor serum electrolytes (potassium, sodium, magnesium, calcium), renal function (BUN/creatinine), blood pressure, and fluid status regularly. Particular attention to hypokalemia risk, especially in patients on concurrent ACE inhibitors or on potassium supplementation."
+}

@@ -1,0 +1,85 @@
+{
+  "drug": "Leflunomide",
+  "drug_class": "Immunosuppressant, Disease-Modifying Antirheumatic Drug (DMARD)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "CYP2D6",
+    "Dihydroorotate dehydrogenase inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "May stimulate immune function, counteracting leflunomide's immunosuppressive effects",
+      "action": "Avoid concurrent use; may reduce therapeutic efficacy of leflunomide"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C9 inducer, may decrease leflunomide active metabolite levels",
+      "action": "Avoid use; coordinate with healthcare provider before initiating"
+    },
+    {
+      "name": "Methotrexate",
+      "severity": "Critical",
+      "mechanism": "Both are hepatotoxic DMARDs; combined use increases liver injury risk",
+      "action": "Contraindicated in combination; do not use together"
+    },
+    {
+      "name": "Hepatotoxic herbs (Kava, Comfrey, Greater Celandine)",
+      "severity": "High",
+      "mechanism": "Additive hepatotoxicity risk with leflunomide, which undergoes hepatic metabolism",
+      "action": "Avoid completely; monitor liver function tests closely if exposure occurs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folic acid/Folinic acid",
+      "severity": "Low",
+      "mechanism": "May reduce leflunomide efficacy but is commonly co-prescribed to reduce toxicity",
+      "action": "Use as directed by prescribing physician; separate dosing by 2-4 hours if possible"
+    },
+    {
+      "name": "Vitamin E (high-dose >400 IU)",
+      "severity": "Low",
+      "mechanism": "Potential additive immunosuppressive effects and increased bleeding risk",
+      "action": "Limit to <400 IU daily; monitor for bleeding or increased infections"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May stimulate immune function; potential interference with leflunomide immunosuppression",
+      "action": "Use cautiously; inform healthcare provider of concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (chronic/heavy use)",
+      "severity": "Critical",
+      "mechanism": "Increases hepatotoxicity risk; leflunomide and active metabolite are hepatotoxic",
+      "action": "Abstain from alcohol or limit to <1 drink/day; monitor liver function tests regularly"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "May alter absorption and metabolism of leflunomide",
+      "action": "Take leflunomide consistently with or without food; maintain consistent dietary patterns"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor; may increase leflunomide metabolite levels slightly",
+      "action": "Limit consumption; not strictly contraindicated but inconsistent intake may affect levels"
+    },
+    {
+      "name": "High-purine foods (organ meats, certain seafood)",
+      "severity": "Low",
+      "mechanism": "Leflunomide inhibits dihydroorotate dehydrogenase; theoretical interaction in urate metabolism",
+      "action": "No strict restriction needed; maintain balanced diet and monitor uric acid levels if indicated"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests (AST, ALT, albumin) every 4-8 weeks during leflunomide therapy; baseline and periodic CBC, renal function, and blood pressure assessment are essential. Educate patients on teratogenicity risk and the need for cholestyramine washout if discontinuing due to toxicity or pregnancy planning."
+}

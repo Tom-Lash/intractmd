@@ -1,0 +1,48 @@
+{
+  "drug": "Tipranavir",
+  "drug_class": "Protease Inhibitor (HIV)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "UGT1A1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces tipranavir levels by up to 75%, causing treatment failure and resistance development",
+      "action": "Absolutely contraindicated; counsel patient to avoid all St. John's Wort products"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may significantly reduce tipranavir plasma concentrations",
+      "action": "Avoid high-dose garlic supplements; culinary amounts acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May have weak CYP3A4 inducing effects; limited clinical data in HIV patients",
+      "action": "Monitor for reduced efficacy; consider alternative hepatoprotective if concerned"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Increases tipranavir absorption significantly; inconsistent dosing may reduce efficacy or increase toxicity",
+      "action": "Take tipranavir with food consistently; avoid variable fat intake around dosing time"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase tipranavir levels; effect typically modest with protease inhibitors",
+      "action": "Limit consumption; not absolutely contraindicated but recommend patient consistency"
+    }
+  ],
+  "monitoring_notes": "Tipranavir is a substrate and inducer of CYP3A4 with significant interaction potential; adherence to food intake requirements is critical for consistent bioavailability. Monitor viral load, CD4 count, and hepatic function regularly, especially when initiating or discontinuing interacting agents."
+}

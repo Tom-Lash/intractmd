@@ -1,0 +1,83 @@
+{
+  "drug": "Indomethacin",
+  "drug_class": "Non-Selective NSAID (Nonsteroidal Anti-Inflammatory Drug)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Both increase bleeding risk through antiplatelet effects; indomethacin inhibits platelet aggregation and ginkgo interferes with platelet function",
+      "action": "Avoid concurrent use or monitor closely for signs of bleeding (bruising, blood in urine/stool)"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet and anticoagulant effects increase GI bleeding risk",
+      "action": "Avoid therapeutic garlic supplements; dietary garlic is acceptable"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation, increasing bleeding risk when combined with indomethacin's antiplatelet properties",
+      "action": "Discontinue feverfew or select alternative NSAID"
+    },
+    {
+      "name": "ACE inhibitor supplements (e.g., potassium-sparing herbs)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal function and increase potassium retention; combined hyperkalemia risk",
+      "action": "Monitor serum potassium and renal function; avoid potassium supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have antiplatelet properties and could slightly increase GI irritation risk",
+      "action": "Monitor for increased GI symptoms; generally safe at low-moderate doses"
+    },
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects may additively increase bleeding risk at very high doses",
+      "action": "Standard supplemental doses (≤2-3g/day) are typically safe; monitor for unusual bleeding"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and hypertension, compounding fluid retention from NSAIDs",
+      "action": "Monitor blood pressure and fluid status; limit duration of use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (chronic/excessive use)",
+      "severity": "High",
+      "mechanism": "Both indomethacin and alcohol irritate gastric mucosa; synergistic GI ulceration and bleeding risk",
+      "action": "Strictly limit alcohol; avoid daily consumption and binge drinking"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "NSAIDs reduce renal sodium excretion; excessive sodium may worsen fluid retention and hypertension",
+      "action": "Maintain moderate sodium intake (<2,300mg/day); monitor blood pressure"
+    },
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "May irritate gastric mucosa already compromised by indomethacin",
+      "action": "Avoid excessive spicy foods if experiencing GI upset; take with food"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase gastric acid secretion and GI irritation",
+      "action": "Moderate caffeine intake; take indomethacin with food and adequate fluids"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, blood pressure, and serum potassium regularly, especially in elderly patients or those with baseline hypertension/renal disease. Watch for GI symptoms (dyspepsia, abdominal pain, black stools) and signs of bleeding throughout therapy."
+}

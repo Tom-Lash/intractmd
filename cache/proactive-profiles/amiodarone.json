@@ -1,0 +1,67 @@
+{
+  "drug": "Amiodarone",
+  "drug_class": "Class III Antiarrhythmic Agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2D6",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 metabolism, decreasing amiodarone levels and reducing antiarrhythmic efficacy",
+      "action": "Discontinue St. John's Wort; do not use concurrently with amiodarone"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "Inhibits CYP3A4, increasing amiodarone concentrations and risk of toxicity including QT prolongation and torsades de pointes",
+      "action": "Completely avoid grapefruit products; counsel patient on hidden sources"
+    },
+    {
+      "name": "QT-Prolonging Supplements (Hawthorn, Licorice)",
+      "severity": "Critical",
+      "mechanism": "Additive QT prolongation with amiodarone increases risk of life-threatening arrhythmias and torsades de pointes",
+      "action": "Strictly contraindicated; counsel patient to avoid all herbal products without pharmacist review"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin E (high doses >400 IU/day)",
+      "severity": "Low",
+      "mechanism": "Potential additive anticoagulant effects; amiodarone increases warfarin levels",
+      "action": "Monitor INR more frequently if patient takes high-dose vitamin E; limit to ≤400 IU daily"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May reduce amiodarone efficacy through CYP3A4 interactions; antioxidant effects may compete with drug action",
+      "action": "Use with caution; monitor arrhythmia control and consider dose adjustments"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and citrus juices (Seville oranges, pomelo)",
+      "severity": "High",
+      "mechanism": "Inhibits CYP3A4, significantly elevating amiodarone plasma concentrations and toxicity risk",
+      "action": "Eliminate from diet; avoid all grapefruit juice and related citrus products"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry juice (large quantities)",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inhibition; limited clinical significance but possible minor interaction",
+      "action": "Moderate intake; no absolute contraindication but excessive consumption should be avoided"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium may increase fluid retention and worsen heart failure risk in susceptible patients on amiodarone",
+      "action": "Counsel on moderate sodium restriction as part of standard cardiac dietary management"
+    }
+  ],
+  "monitoring_notes": "Amiodarone has extensive hepatic metabolism via multiple CYP enzymes and substantial drug-drug interaction potential; monitor QTc interval, serum amiodarone levels (therapeutic 0.5-2.5 mcg/mL), and thyroid/liver function regularly. All supplements require pharmacist review before use due to arrhythmia risk and narrow therapeutic window."
+}

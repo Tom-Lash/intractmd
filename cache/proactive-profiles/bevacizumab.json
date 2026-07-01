@@ -1,0 +1,84 @@
+{
+  "drug": "Bevacizumab",
+  "drug_class": "Monoclonal Antibody (VEGF Inhibitor)",
+  "key_pathways": [
+    "VEGF signaling",
+    "Angiogenesis",
+    "No CYP metabolism (protein)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Additive anticoagulant/antiplatelet effects; increased bleeding risk with bevacizumab-induced thrombotic complications",
+      "action": "Limit vitamin E to <400 IU daily or avoid; monitor for bleeding signs"
+    },
+    {
+      "name": "Garlic supplements (concentrated extracts)",
+      "severity": "High",
+      "mechanism": "Platelet aggregation inhibition compounds bleeding risk associated with bevacizumab therapy",
+      "action": "Discontinue high-dose garlic supplements; discuss with oncology team before use"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Antiplatelet effects potentiate bleeding risk; may interfere with wound healing",
+      "action": "Avoid during bevacizumab treatment; inform prescriber of any prior use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce immune responses that could interfere with monoclonal antibody efficacy",
+      "action": "Avoid or use with close clinical monitoring and dose adjustment consideration"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties; generally well-tolerated but additive bleeding risk possible",
+      "action": "Use standard doses (<3g/day); monitor for excessive bleeding; document use"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects and potential wound healing impacts",
+      "action": "Limit to culinary amounts; avoid high-dose supplements without oncologist approval"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Generally safe; ensure quality/sterility given immunosuppressive effects of therapy",
+      "action": "Use well-established, quality-controlled probiotic strains; monitor GI tolerance"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive alcohol (>2 drinks/day)",
+      "severity": "High",
+      "mechanism": "Increases GI bleeding risk, impairs wound healing, and potentiates hepatotoxicity; bevacizumab already elevates GI perforation risk",
+      "action": "Limit to ≤1 drink/day or abstain; counsel patient on bleeding complications"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Low",
+      "mechanism": "Bevacizumab increases hypertension risk; excess sodium exacerbates this effect",
+      "action": "Encourage DASH diet; monitor blood pressure regularly; limit sodium to <2.3g/day"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Theoretical concern for immune modulation; not direct interaction but caution with immunotherapy",
+      "action": "Occasional consumption acceptable; avoid excessive daily intake"
+    },
+    {
+      "name": "Raw/undercooked foods",
+      "severity": "Low",
+      "mechanism": "Bevacizumab can compromise immune function; increased infection risk with foodborne pathogens",
+      "action": "Practice food safety; ensure proper cooking temperatures; avoid high-risk foods (sushi, unpasteurized dairy)"
+    }
+  ],
+  "monitoring_notes": "Bevacizumab is a protein therapeutic not metabolized by CYP enzymes, reducing traditional drug-drug interactions; however, bleeding risk is paramount—monitor for hemorrhage, GI perforation, and delayed wound healing. Regular blood pressure monitoring is essential as hypertension is a common adverse effect requiring dietary sodium restriction and concurrent antihypertensive management."
+}

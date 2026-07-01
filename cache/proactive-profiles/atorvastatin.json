@@ -1,0 +1,72 @@
+{
+  "drug": "Atorvastatin",
+  "drug_class": "HMG-CoA Reductase Inhibitor (Statin)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "OATP1B1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces atorvastatin plasma levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains statin-like compounds (monacolin K) causing additive LDL reduction and myopathy risk",
+      "action": "Discontinue red yeast rice; do not combine with atorvastatin"
+    },
+    {
+      "name": "High-dose Niacin (>2g daily)",
+      "severity": "High",
+      "mechanism": "Additive statin effects increase myopathy, myositis, and rhabdomyolysis risk",
+      "action": "Avoid high-dose niacin; monitor CK levels if low-dose used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Coenzyme Q10 (CoQ10)",
+      "severity": "Low",
+      "mechanism": "Statins deplete CoQ10; supplementation may reduce statin-induced myopathy symptoms",
+      "action": "Monitor for muscle pain; CoQ10 100-200mg daily may be considered if myalgias develop"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Statins may reduce vitamin D synthesis; supplementation supports bone health",
+      "action": "Monitor 25-OH vitamin D levels; supplement if deficient (1000-2000 IU daily)"
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Additive cardiovascular benefits; no direct interaction but potentiates anticoagulant effects",
+      "action": "Monitor for bleeding signs if on concurrent anticoagulants; generally safe at standard doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit Juice (High volume, >1 liter daily)",
+      "severity": "High",
+      "mechanism": "CYP3A4 and OATP1B1 inhibition increases atorvastatin plasma levels up to 16-fold, elevating myopathy risk",
+      "action": "Avoid grapefruit juice entirely; select alternative citrus beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat foods",
+      "severity": "Low",
+      "mechanism": "May slightly increase atorvastatin absorption; can reduce drug efficacy for lipid management if diet high in saturated fat",
+      "action": "Maintain heart-healthy diet low in saturated fat (<7% of calories); take atorvastatin independent of meals"
+    },
+    {
+      "name": "Alcohol (>2 drinks daily)",
+      "severity": "Low",
+      "mechanism": "Chronic heavy alcohol increases liver enzyme activity and myopathy risk",
+      "action": "Limit alcohol to ≤1-2 drinks daily; monitor liver function tests"
+    }
+  ],
+  "monitoring_notes": "Monitor CK and liver function tests (AST, ALT) at baseline and as clinically indicated. Counsel patients on muscle pain/weakness symptoms and the critical importance of avoiding grapefruit products."
+}

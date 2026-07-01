@@ -1,0 +1,52 @@
+{
+  "drug": "Loratadine",
+  "drug_class": "Second-generation antihistamine (non-sedating H1-receptor antagonist)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inducer; increases loratadine metabolism and reduces plasma concentrations",
+      "action": "Avoid concurrent use or monitor for reduced antihistamine efficacy; consider alternative herbal supplement"
+    },
+    {
+      "name": "Ketoconazole (oral)",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor; significantly increases loratadine metabolite exposure and QT interval risk",
+      "action": "Avoid combination; use alternative antifungal if necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition may slightly increase loratadine levels",
+      "action": "Limit intake or monitor for increased drowsiness or dry mouth"
+    },
+    {
+      "name": "Quercetin",
+      "severity": "Low",
+      "mechanism": "Natural antihistamine with additive effects; may enhance sedation risk",
+      "action": "Use together cautiously and counsel patient on possible increased drowsiness"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition increases loratadine active metabolite concentrations",
+      "action": "Limit grapefruit juice consumption or separate dosing by several hours"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; loratadine is non-sedating but alcohol may potentiate any residual effects",
+      "action": "Advise patient to limit or avoid alcohol; counsel on potential impaired cognitive/motor function"
+    }
+  ],
+  "monitoring_notes": "Loratadine has minimal interaction potential due to low systemic bioavailability and CYP3A4/2D6 metabolism; most interactions affect active metabolite desloratadine rather than parent drug. Monitor for loss of efficacy with CYP3A4 inducers and increased adverse effects with strong CYP3A4 inhibitors."
+}

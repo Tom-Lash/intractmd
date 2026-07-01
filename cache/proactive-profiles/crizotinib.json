@@ -1,0 +1,72 @@
+{
+  "drug": "Crizotinib",
+  "drug_class": "Tyrosine kinase inhibitor (ALK/ROS1 inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces crizotinib plasma concentrations and efficacy",
+      "action": "Avoid completely; do not use concurrently with crizotinib therapy"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may decrease crizotinib bioavailability",
+      "action": "Discontinue use prior to and during crizotinib treatment"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases crizotinib levels; risk of toxicity",
+      "action": "Avoid supplemental extracts; advise patient to avoid grapefruit products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 induction may modestly affect crizotinib metabolism",
+      "action": "Monitor efficacy; use with caution and inform clinical team"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May weakly induce CYP3A4; limited clinical evidence but possible interaction",
+      "action": "Monitor for changes in tolerability or efficacy if used concurrently"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases crizotinib plasma concentration and adverse effects",
+      "action": "Completely avoid grapefruit and fresh grapefruit juice during treatment"
+    },
+    {
+      "name": "Seville oranges (bitter oranges)",
+      "severity": "High",
+      "mechanism": "Contains furanocoumarins; inhibits CYP3A4 similarly to grapefruit",
+      "action": "Avoid fresh Seville oranges and marmalades made from Seville oranges"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase crizotinib absorption; modest effect on bioavailability",
+      "action": "Take with consistent food intake; counsel patient on adherence with/without food as directed"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition; may marginally increase crizotinib levels",
+      "action": "Monitor tolerability if consumed regularly; limit intake or discuss with healthcare provider"
+    }
+  ],
+  "monitoring_notes": "Crizotinib is a substrate of CYP3A4 and sensitive to enzyme induction/inhibition; monitor for loss of efficacy with inducers and increased adverse effects (QT prolongation, hepatotoxicity) with inhibitors. Counsel patients on strict avoidance of grapefruit products and strong CYP3A4 inducers, and maintain consistent dietary patterns during therapy."
+}

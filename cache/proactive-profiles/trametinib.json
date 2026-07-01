@@ -1,0 +1,73 @@
+{
+  "drug": "Trametinib",
+  "drug_class": "MEK1/MEK2 inhibitor (mitogen-activated protein kinase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "BCRP (breast cancer resistance protein)",
+    "P-glycoprotein efflux"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer reduces trametinib plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed with oncology team approval"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4/CYP2C8 inducer significantly decreases trametinib exposure",
+      "action": "Contraindicated; notify prescriber immediately if taking this antibiotic"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "May increase bleeding risk and potentiate anticoagulant effects; trametinib has cardiovascular toxicity concerns",
+      "action": "Limit to dietary sources; discuss high-dose supplementation with oncology team"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase trametinib levels marginally",
+      "action": "Minimize consumption; if used, monitor for increased side effects"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May have modest CYP3A4 effects; limited clinical data in cancer patients",
+      "action": "Use with caution and inform oncology team; monitor for efficacy changes"
+    },
+    {
+      "name": "Turmeric/Curcumin (high-dose)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition and antiplatelet effects at high doses",
+      "action": "Dietary amounts acceptable; avoid concentrated supplements without team consultation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Significantly increases trametinib absorption and peak plasma levels, raising toxicity risk",
+      "action": "Take trametinib on empty stomach (1 hour before or 2 hours after meals); counsel on consistent dosing schedule"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly elevate trametinib concentrations",
+      "action": "Minimize intake; occasional consumption likely acceptable but discuss frequency with pharmacist"
+    },
+    {
+      "name": "Cruciferous vegetables (excessive)",
+      "severity": "Low",
+      "mechanism": "High intake may induce CYP enzymes, potentially reducing drug levels",
+      "action": "Normal dietary consumption is safe; avoid excessive supplementation with cruciferous extracts"
+    }
+  ],
+  "monitoring_notes": "Monitor for hepatotoxicity, rash, cardiac dysfunction, and signs of reduced efficacy. Counsel patients on consistent empty stomach administration and to report all supplements immediately, as many interact via CYP3A4/CYP2C8 pathways or potentiate cardiovascular/hematologic toxicity."
+}

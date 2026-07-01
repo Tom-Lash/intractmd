@@ -1,0 +1,72 @@
+{
+  "drug": "Ipilimumab",
+  "drug_class": "Monoclonal Antibody (CTLA-4 Checkpoint Inhibitor)",
+  "key_pathways": [
+    "Immune checkpoint inhibition",
+    "T-cell activation",
+    "Not hepatically metabolized"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate immunostimulation and increase autoimmune/immune-related adverse event (irAE) risk",
+      "action": "Avoid supplementation; obtain from dietary sources only"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Enhances immune system activation; may increase irAE severity including colitis, hepatitis, and pneumonitis",
+      "action": "Contraindicated; counsel patient to discontinue"
+    },
+    {
+      "name": "High-dose Probiotics (>10 billion CFU/day)",
+      "severity": "High",
+      "mechanism": "May alter gut microbiota balance and increase autoimmune reactions; associated with increased colitis risk in checkpoint inhibitor therapy",
+      "action": "Avoid high-dose formulations; standard dietary probiotics acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Immunomodulatory properties may theoretically enhance immune activation",
+      "action": "Monitor for irAE symptoms; use dietary amounts preferred over supplements"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild immune-stimulating effects may potentiate checkpoint inhibitor activity",
+      "action": "Counsel on potential additive effects; monitor clinical response"
+    },
+    {
+      "name": "Vitamin D (>2000 IU/day)",
+      "severity": "Low",
+      "mechanism": "Immunomodulatory at high doses; may influence T-cell differentiation",
+      "action": "Monitor levels; maintain normal physiologic range (30-100 ng/mL)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "Moderate",
+      "mechanism": "Elevated sodium promotes Th17 differentiation and intestinal inflammation; may exacerbate ipilimumab-induced colitis",
+      "action": "Recommend low-sodium diet; target <2300 mg sodium/day"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Fermented foods (kimchi, sauerkraut, miso)",
+      "severity": "Low",
+      "mechanism": "Alter gut microbiota composition; may influence immune checkpoint response and irAE manifestation",
+      "action": "Monitor tolerance; moderate intake acceptable but individualize based on GI symptoms"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase intestinal permeability and bacterial translocation; theoretical risk for immune activation",
+      "action": "Counsel on balanced, moderate-fat diet; monitor GI tolerance"
+    }
+  ],
+  "monitoring_notes": "Ipilimumab is not metabolized by hepatic CYP enzymes, minimizing traditional drug-supplement interactions; however, immune-stimulating supplements pose significant risk for exacerbating immune-related adverse events (colitis, hepatitis, pneumonitis, endocrinopathies). Monitor baseline and ongoing CBC, liver/kidney function, TSH, and gastrointestinal symptoms throughout treatment course."
+}

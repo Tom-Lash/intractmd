@@ -1,0 +1,59 @@
+{
+  "drug": "Aripiprazole",
+  "drug_class": "Atypical Antipsychotic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2D6 inducer reduces aripiprazole plasma concentrations",
+      "action": "Avoid concurrent use; may reduce antipsychotic efficacy"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk and additive CNS depression",
+      "action": "Contraindicated; risk of liver injury and increased sedation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly decrease aripiprazole levels",
+      "action": "Monitor for reduced efficacy; adjust dose if needed"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and sedation",
+      "action": "Use with caution; monitor for excessive drowsiness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases aripiprazole plasma concentrations and toxicity risk",
+      "action": "Avoid completely; increased risk of adverse effects including QT prolongation"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Additive CNS stimulation may increase agitation or tremor",
+      "action": "Limit intake; monitor for increased psychomotor effects"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression increases sedation and impairs cognition",
+      "action": "Minimize or avoid; counsel on reduced driving safety"
+    }
+  ],
+  "monitoring_notes": "Monitor for akathisia, extrapyramidal symptoms, and metabolic effects (weight, glucose). Assess efficacy and tolerability if significant dietary changes occur, particularly with CYP3A4 inhibitors or inducers."
+}

@@ -1,0 +1,62 @@
+{
+  "drug": "Eltrombopag",
+  "drug_class": "Thrombopoietin (TPO) Receptor Agonist",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2C8",
+    "CYP3A4",
+    "UDP-glucuronosyltransferase (UGT)",
+    "Protein binding (highly albumin-bound)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP1A2 induction reduces eltrombopag plasma concentrations",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "High-dose Vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "May potentiate thrombotic effects and alter anticoagulation balance",
+      "action": "Limit vitamin K supplementation; maintain consistent dietary intake instead"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May chelate eltrombopag and reduce absorption if taken concurrently",
+      "action": "Separate administration by at least 2-4 hours from eltrombopag dosing"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "May chelate eltrombopag and reduce gastrointestinal absorption",
+      "action": "Space dosing 2-4 hours apart; monitor platelet response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (with eltrombopag)",
+      "severity": "High",
+      "mechanism": "Calcium in dairy significantly reduces eltrombopag bioavailability by 70-80%",
+      "action": "Take eltrombopag on empty stomach, 1 hour before or 2 hours after dairy/calcium-rich foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay absorption but does not significantly reduce bioavailability",
+      "action": "Administer on empty stomach for optimal absorption; consistent timing recommended"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase eltrombopag levels",
+      "action": "Limit grapefruit consumption; monitor for increased adverse effects"
+    }
+  ],
+  "monitoring_notes": "Platelet counts must be monitored regularly (baseline and during therapy) as eltrombopag has a narrow therapeutic window and risk of thrombosis. Strict adherence to empty stomach administration (no food 1 hour before, 2 hours after) is critical given the major interaction with calcium-containing products."
+}

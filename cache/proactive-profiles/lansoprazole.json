@@ -1,0 +1,66 @@
+{
+  "drug": "Lansoprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Gastric pH regulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Lansoprazole increases gastric pH, reducing iron absorption by up to 60%",
+      "action": "Separate administration by at least 2 hours; consider IV iron if oral absorption critical"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Reduced gastric acidity impairs calcium carbonate absorption; citrate formulations less affected",
+      "action": "Use calcium citrate formulation; separate dosing by 2+ hours or monitor for deficiency"
+    },
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Moderate",
+      "mechanism": "Long-term PPI use reduces intrinsic factor and B12 absorption from food sources",
+      "action": "Monitor B12 levels annually; consider cyanocobalamin supplementation for chronic users"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "PPIs may increase magnesium depletion risk with chronic concurrent use",
+      "action": "Monitor serum magnesium levels; supplement if deficiency develops"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4, potentially reducing lansoprazole levels",
+      "action": "Monitor for reduced PPI efficacy; consider alternative herbal products"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays lansoprazole absorption and reduces peak plasma concentration",
+      "action": "Administer 30-60 minutes before meals on empty stomach for optimal bioavailability"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase lansoprazole exposure",
+      "action": "Limit consumption; monitor for increased side effects"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "May increase gastric irritation and reduce therapeutic benefit in some patients",
+      "action": "Counsel patients to moderate intake; not absolutely contraindicated"
+    }
+  ],
+  "monitoring_notes": "Monitor for vitamin B12, magnesium, and calcium deficiencies with chronic lansoprazole use (>1 year). Assess for hypomagnesemia-induced hypokalemia and consider baseline/annual micronutrient screening in at-risk populations."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Avelumab",
+  "drug_class": "Programmed Death Ligand-1 (PD-L1) Inhibitor Monoclonal Antibody",
+  "key_pathways": [
+    "PD-L1/PD-1 immune checkpoint pathway",
+    "No hepatic metabolism (monoclonal antibody)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Immunosuppressive Herbs (e.g., astragalus, reishi in excessive amounts)",
+      "severity": "High",
+      "mechanism": "May counteract avelumab's immune-activating mechanism and reduce therapeutic efficacy in cancer immunotherapy",
+      "action": "Avoid high-dose immunosuppressive supplements; consult oncologist before use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic enzymes affecting any concomitant medications metabolized by CYP450; potential for reduced drug levels",
+      "action": "Avoid use; inform clinical team of all herbal supplement use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics and Prebiotics",
+      "severity": "Low",
+      "mechanism": "Gut microbiota composition affects immune response; may influence checkpoint inhibitor efficacy, though data is limited",
+      "action": "Monitor for changes in immune-related adverse events; maintain consistent use if already taking"
+    },
+    {
+      "name": "Antioxidant Supplements (Vitamin C, E, Selenium in excess)",
+      "severity": "Low",
+      "mechanism": "High-dose antioxidants may theoretically reduce immune activation; clinical significance uncertain with avelumab",
+      "action": "Use standard dietary doses; avoid megadoses without oncologist approval"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "No specific foods contraindicated",
+      "severity": "Moderate",
+      "mechanism": "Avelumab is a monoclonal antibody with no food-drug interactions; however, malnutrition impairs immune function and treatment response",
+      "action": "Maintain adequate nutrition and hydration; discuss dietary concerns with oncology team"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "Though avelumab is not CYP3A4-metabolized, patients may receive concomitant medications affected by grapefruit; exercise general caution",
+      "action": "Limit consumption; inform team of all concurrent medications"
+    },
+    {
+      "name": "High-sodium and Processed Foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate immune-related adverse events (e.g., hypertension, fluid retention); impacts overall immune homeostasis",
+      "action": "Maintain heart-healthy diet; monitor blood pressure and fluid status"
+    }
+  ],
+  "monitoring_notes": "Avelumab is a monoclonal antibody with minimal direct drug metabolism; primary concerns involve immune checkpoint modulation and concomitant medication interactions. Monitor for immune-related adverse events (irAEs) including autoimmune phenomena, and ensure adequate nutritional and immune support throughout treatment."
+}

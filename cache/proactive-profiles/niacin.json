@@ -1,0 +1,66 @@
+{
+  "drug": "Niacin",
+  "drug_class": "B Vitamin (Vitamin B3); Lipid-lowering agent",
+  "key_pathways": [
+    "GPR109A receptor",
+    "Hepatic metabolism (minor)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin A",
+      "severity": "High",
+      "mechanism": "Both niacin and excess vitamin A can cause hepatotoxicity and skin toxicity; additive risk of liver injury and hypervitaminosis A",
+      "action": "Avoid concurrent high-dose supplementation; monitor liver function tests and vitamin A levels"
+    },
+    {
+      "name": "Chromium picolinate",
+      "severity": "Moderate",
+      "mechanism": "Both agents affect glucose metabolism and may cause hypoglycemia; niacin impairs glucose tolerance while chromium enhances insulin sensitivity",
+      "action": "Use together only under physician supervision with frequent glucose monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish Oil (Omega-3)",
+      "severity": "Low",
+      "mechanism": "Additive lipid-lowering effects; both reduce triglycerides and may potentiate anticoagulant effects",
+      "action": "Monitor lipid panel and coagulation parameters; educate on bleeding risk"
+    },
+    {
+      "name": "Red Yeast Rice",
+      "severity": "Low",
+      "mechanism": "Contains lovastatin (statin-like); additive lipid-lowering effect and increased risk of myopathy with niacin",
+      "action": "Monitor for muscle pain, weakness, or elevated CK; separate dosing by 2+ hours if used together"
+    },
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Both metabolized hepatically; theoretical increased hepatic workload in high-dose niacin therapy",
+      "action": "Monitor baseline and periodic liver function tests"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive alcohol",
+      "severity": "High",
+      "mechanism": "Alcohol potentiates niacin-induced flushing, hepatotoxicity, and hyperglycemia; increases vasodilation and adverse effects",
+      "action": "Counsel patient to limit or eliminate alcohol; niacin use contraindicated in active liver disease or heavy alcohol use"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sugar/refined carbohydrate foods",
+      "severity": "Low",
+      "mechanism": "Niacin impairs glucose tolerance and increases blood glucose; high glycemic foods may exacerbate hyperglycemia risk",
+      "action": "Recommend low glycemic index foods; monitor fasting glucose and HbA1c in diabetic patients"
+    },
+    {
+      "name": "Caffeine-containing beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase niacin-induced flushing and vasodilation; mild additive stimulant effect",
+      "action": "Advise patient to limit caffeine intake; take niacin at night or with food to minimize flushing"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests (ALT, AST, bilirubin) at baseline and periodically, especially at doses >2g/day. Track fasting glucose and HbA1c in diabetic patients, as niacin impairs glucose tolerance; educate on flushing management (take with food, use aspirin pretreatment as directed by physician)."
+}

@@ -1,0 +1,71 @@
+{
+  "drug": "Atenolol",
+  "drug_class": "Beta-blocker (selective β1-adrenergic antagonist)",
+  "key_pathways": [
+    "Renal elimination",
+    "Hepatic metabolism (minimal)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra/Ma huang",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic activity antagonizes beta-blocker effects; risk of hypertensive crisis and arrhythmias",
+      "action": "Absolutely contraindicated; counsel patient to avoid all ephedra-containing products"
+    },
+    {
+      "name": "Yohimbe",
+      "severity": "High",
+      "mechanism": "Alpha-2 adrenergic antagonist; counteracts beta-blockade and increases blood pressure and heart rate",
+      "action": "Avoid concurrent use; recommend alternative supplements"
+    },
+    {
+      "name": "Licorice (high doses)",
+      "severity": "High",
+      "mechanism": "Mineralocorticoid effects cause sodium retention and potassium depletion; increases blood pressure and reduces atenolol efficacy",
+      "action": "Restrict to minimal amounts; monitor blood pressure and electrolytes if use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild sympathomimetic properties and could theoretically reduce beta-blocker efficacy",
+      "action": "Use with caution; monitor blood pressure response"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "May potentiate cardiovascular effects and cause additive hypotension",
+      "action": "Monitor for excessive blood pressure reduction; adjust doses if needed"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May enhance beta-blocker effects and cause additive hypotension",
+      "action": "Use standard dietary doses only; monitor blood pressure"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Moderate",
+      "mechanism": "Excessive sodium increases fluid retention and blood pressure, reducing atenolol effectiveness in hypertension management",
+      "action": "Counsel on DASH diet and sodium restriction (<2.3g/day); monitor blood pressure control"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine (high intake)",
+      "severity": "Low",
+      "mechanism": "Sympathomimetic effects may partially antagonize beta-blocker efficacy and increase heart rate variability",
+      "action": "Limit caffeine intake to moderate levels (<200mg/day); monitor heart rate and blood pressure"
+    },
+    {
+      "name": "Licorice-containing candies/foods",
+      "severity": "Low",
+      "mechanism": "High licorice consumption can cause sodium retention and potassium loss, opposing beta-blocker antihypertensive effects",
+      "action": "Limit consumption; counsel on hidden sources in candy and herbal teas"
+    }
+  ],
+  "monitoring_notes": "Atenolol has minimal hepatic metabolism and is primarily renally eliminated, reducing drug-drug interaction potential via CYP pathways. Monitor for loss of blood pressure control, excessive bradycardia, and electrolyte abnormalities, particularly when supplements or dietary changes are introduced; renal function should be assessed periodically given renal dependence of elimination."
+}

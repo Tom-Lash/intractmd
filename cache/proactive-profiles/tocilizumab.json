@@ -1,0 +1,63 @@
+{
+  "drug": "Tocilizumab",
+  "drug_class": "Interleukin-6 (IL-6) receptor antagonist - Monoclonal antibody",
+  "key_pathways": [
+    "IL-6 signaling",
+    "CYP3A4",
+    "CYP1A2",
+    "CYP2C9",
+    "CYP2C19",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Stimulates IL-6 production and may counteract tocilizumab's immunosuppressive effects; increases infection risk",
+      "action": "Avoid concurrent use; counsel patient on immunosuppression risk"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C9, reducing tocilizumab metabolism and increasing hepatic clearance of concomitant medications",
+      "action": "Discontinue at least 2 weeks before tocilizumab initiation; avoid during treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Astragalus",
+      "severity": "Low",
+      "mechanism": "Immunostimulant properties may partially counteract tocilizumab's mechanism; generally weak interaction",
+      "action": "Monitor for reduced efficacy; counsel on immunosuppression awareness"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate immune response; generally considered safe but monitor clinical response",
+      "action": "Use high-quality formulations; monitor therapeutic efficacy"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose vitamin A supplements (from food sources)",
+      "severity": "Moderate",
+      "mechanism": "Excessive vitamin A can impair immune tolerance and increase infection risk in immunosuppressed patients",
+      "action": "Maintain normal dietary intake; avoid supplementation beyond RDA (700-900 mcg)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may affect metabolism of drugs used concurrently with tocilizumab; minimal direct effect on tocilizumab",
+      "action": "Limit consumption; monitor for drug interactions with concomitant medications"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "May increase hepatotoxicity risk and impair immune function in immunosuppressed patients",
+      "action": "Counsel on moderate consumption; monitor liver function tests"
+    }
+  ],
+  "monitoring_notes": "Tocilizumab significantly affects CYP enzyme activity and may reduce metabolism of numerous medications; baseline and periodic monitoring of hepatic function, lipid panel, and neutrophil count is essential. Monitor for signs of infection given IL-6 antagonism suppresses infection-related inflammatory response."
+}

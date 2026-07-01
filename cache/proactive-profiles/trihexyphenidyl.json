@@ -1,0 +1,54 @@
+{
+  "drug": "Trihexyphenidyl",
+  "drug_class": "Anticholinergic agent",
+  "key_pathways": [
+    "Hepatic metabolism (CYP450)",
+    "Anticholinergic activity",
+    "Parasympathetic inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Cholinergic supplements (acetylcholine precursors, alpha-GPC)",
+      "severity": "High",
+      "mechanism": "Direct antagonism of trihexyphenidyl's anticholinergic effects, reducing therapeutic efficacy",
+      "action": "Avoid concurrent use; maintain minimum 2-4 hour separation if necessary"
+    },
+    {
+      "name": "Anticholinergic herbal products (datura, jimsonweed, belladonna)",
+      "severity": "Critical",
+      "mechanism": "Additive anticholinergic effects leading to severe toxicity, urinary retention, hyperthermia",
+      "action": "Absolutely contraindicated; educate patient on identification and avoidance"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce hepatic metabolism of trihexyphenidyl, potentially reducing drug levels",
+      "action": "Monitor for decreased efficacy; may require dose adjustment"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild anticholinergic properties; additive CNS effects possible",
+      "action": "Use with caution; monitor for increased dry mouth or constipation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fiber foods in excess",
+      "severity": "Moderate",
+      "mechanism": "Anticholinergic effects reduce GI motility; excessive fiber may precipitate severe constipation or impaction",
+      "action": "Maintain moderate, balanced fiber intake; ensure adequate hydration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "CNS stimulation may counteract anticholinergic sedation; combined effect on heart rate and tremor possible",
+      "action": "Monitor tolerance; limit excessive intake and monitor for increased tremor or palpitations"
+    }
+  ],
+  "monitoring_notes": "Monitor for anticholinergic toxicity signs: severe dry mouth, urinary retention, constipation, confusion, and tachycardia. Assess therapeutic efficacy for movement disorder control and screen for additive anticholinergic burden from other medications (antihistamines, tricyclic antidepressants, antispasmodics)."
+}

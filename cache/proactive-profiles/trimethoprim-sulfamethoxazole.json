@@ -1,0 +1,68 @@
+{
+  "drug": "Trimethoprim-Sulfamethoxazole",
+  "drug_class": "Sulfonamide antibiotic with dihydrofolate reductase inhibitor",
+  "key_pathways": [
+    "CYP2C8",
+    "CYP2C9",
+    "CYP3A4",
+    "Folate metabolism",
+    "PABA metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Methotrexate",
+      "severity": "Critical",
+      "mechanism": "Both drugs inhibit dihydrofolate reductase; combined effect increases toxicity risk and bone marrow suppression",
+      "action": "Avoid concurrent use; consult prescriber before combining immunosuppressants or chemotherapy agents"
+    },
+    {
+      "name": "Para-aminobenzoic acid (PABA)",
+      "severity": "High",
+      "mechanism": "PABA is a competitive substrate for bacterial folate synthesis; supplemental PABA may reduce antibiotic efficacy",
+      "action": "Avoid PABA supplements during TMP-SMX therapy and for 48 hours after discontinuation"
+    },
+    {
+      "name": "High-dose folic acid (>1mg daily)",
+      "severity": "High",
+      "mechanism": "May antagonize the antimicrobial activity of trimethoprim by bypassing the blocked folate pathway",
+      "action": "Use only standard prenatal doses (0.4-0.8mg) if medically necessary; inform prescriber of supplementation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Potassium supplements or potassium-sparing agents",
+      "severity": "Low",
+      "mechanism": "Trimethoprim can increase serum potassium levels; concurrent potassium supplementation may elevate risk of hyperkalemia",
+      "action": "Monitor potassium levels if supplementation required; ensure adequate renal function"
+    },
+    {
+      "name": "NSAIDs",
+      "severity": "Low",
+      "mechanism": "May increase serum creatinine and reduce renal clearance of TMP-SMX metabolites",
+      "action": "Use lowest effective dose and monitor renal function; maintain adequate hydration"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose vitamin supplements containing folate antagonists",
+      "severity": "Moderate",
+      "mechanism": "Excessive micronutrient intake may interfere with antibiotic mechanism or worsen folate depletion",
+      "action": "Maintain normal dietary folate intake; avoid megadose supplement regimens during therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-potassium foods (bananas, leafy greens, potatoes, orange juice)",
+      "severity": "Low",
+      "mechanism": "Trimethoprim may increase serum potassium; excessive dietary potassium may elevate hyperkalemia risk in susceptible patients",
+      "action": "Monitor potassium intake in patients with renal impairment or on concurrent ACE inhibitors; ensure adequate hydration"
+    },
+    {
+      "name": "Dairy products consumed with medication",
+      "severity": "Low",
+      "mechanism": "Calcium and magnesium in dairy may slightly reduce absorption of TMP-SMX if taken simultaneously",
+      "action": "Separate dairy intake by 2+ hours from TMP-SMX administration; take with water"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of folate deficiency (megaloblastic anemia, peripheral neuropathy) and hyperkalemia, particularly in renal impairment or elderly patients. Assess baseline CBC, renal function, and potassium levels; recheck during prolonged therapy exceeding 2 weeks."
+}

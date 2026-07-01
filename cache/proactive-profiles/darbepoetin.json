@@ -1,0 +1,65 @@
+{
+  "drug": "Darbepoetin",
+  "drug_class": "Erythropoiesis-Stimulating Agent (ESA)",
+  "key_pathways": [
+    "Erythropoietin receptor signaling",
+    "Hematopoietic pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Iron supplements (>325 mg elemental iron daily)",
+      "severity": "High",
+      "mechanism": "Excessive iron supplementation may cause iron overload and increase thrombotic risk when combined with ESAs",
+      "action": "Monitor serum ferritin and iron levels; use only physiologic iron replacement doses"
+    },
+    {
+      "name": "Androgenic steroids (DHEA, testosterone)",
+      "severity": "High",
+      "mechanism": "Potentiates erythropoietic effect and significantly increases thrombotic and cardiovascular event risk",
+      "action": "Avoid concurrent use; discuss alternative therapies with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "B12 is a cofactor for erythropoiesis; deficiency reduces darbepoetin efficacy",
+      "action": "Ensure adequate B12 status; supplement if deficient (typically 1000-2000 mcg monthly)"
+    },
+    {
+      "name": "Folic acid supplements",
+      "severity": "Low",
+      "mechanism": "Folic acid is required for erythrocyte maturation; deficiency impairs darbepoetin response",
+      "action": "Maintain adequate folate status; supplement 1 mg daily if deficient"
+    },
+    {
+      "name": "Vitamin C (ascorbic acid)",
+      "severity": "Low",
+      "mechanism": "Enhances iron absorption and bioavailability, supporting adequate iron stores for erythropoiesis",
+      "action": "Monitor iron indices; vitamin C supplementation (100-200 mg daily) may be beneficial if iron-deficient"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive high-iron foods without monitoring",
+      "severity": "Moderate",
+      "mechanism": "Chronic excessive iron intake increases ferritin levels and thrombotic risk in ESA-treated patients",
+      "action": "Monitor serum ferritin quarterly; counsel on iron-rich food moderation if ferritin elevated (>500 ng/mL)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, fortified cereals, legumes)",
+      "severity": "Low",
+      "mechanism": "Dietary iron sources support adequate iron stores needed for optimal darbepoetin efficacy",
+      "action": "Maintain balanced iron intake; monitor ferritin levels to guide dietary counseling"
+    },
+    {
+      "name": "Folate-rich foods (leafy greens, legumes, fortified grains)",
+      "severity": "Low",
+      "mechanism": "Dietary folate supports erythrocyte maturation and darbepoetin response",
+      "action": "Encourage adequate intake; ensure minimum 400 mcg daily from food sources"
+    }
+  ],
+  "monitoring_notes": "Monitor hemoglobin/hematocrit, serum ferritin, iron saturation, and reticulocyte count every 2-4 weeks initially, then monthly once stable. Assess for thromboembolic symptoms and maintain target hemoglobin 10-12 g/dL to minimize cardiovascular risk."
+}

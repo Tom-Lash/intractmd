@@ -1,0 +1,47 @@
+{
+  "drug": "Montelukast",
+  "drug_class": "Leukotriene Receptor Antagonist (LTRA)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer may significantly reduce montelukast plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products if mood support needed"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 and CYP2C8 induction substantially decreases montelukast levels",
+      "action": "Avoid use; if antimicrobial therapy required, consult prescriber for dose adjustment consideration"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce montelukast exposure",
+      "action": "Monitor asthma control; report any decreased symptom management to healthcare provider"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction may marginally affect montelukast levels",
+      "action": "Use cautiously; maintain consistent dosing and monitor for reduced effectiveness"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase montelukast plasma concentrations",
+      "action": "Limit consumption; if regularly ingested, monitor for increased side effects"
+    }
+  ],
+  "monitoring_notes": "Montelukast is extensively metabolized via hepatic CYP enzymes; monitor for loss of efficacy with strong enzyme inducers or increased side effects with inhibitors. No significant food restrictions; bioavailability is not substantially affected by food intake."
+}

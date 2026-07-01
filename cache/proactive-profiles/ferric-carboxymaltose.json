@@ -1,0 +1,66 @@
+{
+  "drug": "Ferric Carboxymaltose",
+  "drug_class": "Intravenous Iron Replacement Agent",
+  "key_pathways": [
+    "Iron metabolism",
+    "Transferrin binding",
+    "Reticuloendothelial system uptake"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Oral Iron Supplements",
+      "severity": "Critical",
+      "mechanism": "Concurrent use increases risk of iron overload and toxicity; ferric carboxymaltose is already providing IV iron",
+      "action": "Discontinue all oral iron supplements during and for at least 5 days after IV ferric carboxymaltose administration"
+    },
+    {
+      "name": "High-dose Vitamin C (>2000 mg/day)",
+      "severity": "High",
+      "mechanism": "Increases iron absorption and oxidative stress; may potentiate iron-induced tissue damage",
+      "action": "Limit vitamin C supplementation to <1000 mg/day; avoid megadoses during iron treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce oral iron absorption if taken concurrently, though minimal impact with IV administration",
+      "action": "Space administration by 2+ hours if patient also takes oral iron; monitor iron levels"
+    },
+    {
+      "name": "Polyphenol-rich supplements (Green tea extract, Resveratrol)",
+      "severity": "Low",
+      "mechanism": "May chelate iron and reduce bioavailability of future oral iron therapy",
+      "action": "Monitor serum ferritin and iron levels; no dose adjustment typically needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose iron-fortified cereals and supplements combined",
+      "severity": "High",
+      "mechanism": "Risk of iron overload when combined with IV ferric carboxymaltose",
+      "action": "Counsel patients to avoid deliberate iron fortification intake during treatment period"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Tea and Coffee (high tannin content)",
+      "severity": "Low",
+      "mechanism": "Tannins chelate iron and reduce oral iron absorption; minimal impact on IV iron but relevant if transitioning to oral therapy",
+      "action": "No strict avoidance needed but limit consumption near any future oral iron doses"
+    },
+    {
+      "name": "Calcium-rich dairy products",
+      "severity": "Low",
+      "mechanism": "May interfere with oral iron absorption in patients transitioning from IV therapy",
+      "action": "Space dairy intake from oral iron supplements by 2+ hours if applicable"
+    },
+    {
+      "name": "High-fiber foods (whole grains, legumes)",
+      "severity": "Low",
+      "mechanism": "Phytates and fiber may reduce oral iron bioavailability; not relevant to IV administration",
+      "action": "Relevant only for future oral iron supplementation; maintain normal dietary fiber intake"
+    }
+  ],
+  "monitoring_notes": "Monitor serum ferritin, transferrin saturation, and hemoglobin/hematocrit regularly during and after treatment. Assess for signs of iron overload (abdominal pain, joint pain, cardiac arrhythmias) and ensure discontinuation of all oral iron products for minimum 5 days post-infusion."
+}

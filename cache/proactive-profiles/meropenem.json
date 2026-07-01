@@ -1,0 +1,41 @@
+{
+  "drug": "Meropenem",
+  "drug_class": "Carbapenem Beta-Lactam Antibiotic",
+  "key_pathways": [
+    "Not significantly metabolized by CYP450",
+    "Renal excretion (primary)",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Probiotics (high-dose, during therapy)",
+      "severity": "Moderate",
+      "mechanism": "Meropenem is a broad-spectrum antibiotic that kills beneficial gut bacteria; high-dose probiotics during therapy may compete with endogenous flora recovery",
+      "action": "Initiate probiotics at least 2 hours apart from meropenem dosing; consider waiting until post-treatment or use low-dose formulations"
+    },
+    {
+      "name": "Valproic Acid / Valproate Supplements",
+      "severity": "High",
+      "mechanism": "Meropenem reduces serum valproic acid levels by 30-60% through unknown mechanism, potentially causing loss of seizure control",
+      "action": "Avoid concurrent use; monitor serum valproate levels closely if coadministration is unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium and Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May reduce meropenem absorption if taken simultaneously; meropenem is typically IV-administered, minimizing interaction risk",
+      "action": "Space oral supplements 2 hours apart from any oral meropenem formulation if available"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods (during treatment)",
+      "severity": "Low",
+      "mechanism": "Excessive fiber may alter gut motility and bacterial flora composition, potentially affecting antibiotic efficacy or GI tolerance",
+      "action": "Maintain normal fiber intake; avoid sudden increases during meropenem therapy"
+    }
+  ],
+  "monitoring_notes": "Meropenem is primarily renally excreted with minimal hepatic metabolism, reducing CYP450 interaction risk. Monitor renal function, seizure control if patient on anticonvulsants (especially valproate), and assess for Clostridioides difficile infection risk given broad-spectrum coverage."
+}

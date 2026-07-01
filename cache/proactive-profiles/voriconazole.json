@@ -1,0 +1,60 @@
+{
+  "drug": "Voriconazole",
+  "drug_class": "Triazole antifungal",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and CYP2C19 inducer significantly reduces voriconazole levels",
+      "action": "Contraindicated; discontinue St. John's Wort at least 2 weeks before voriconazole therapy"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer decreases voriconazole plasma concentrations by up to 75%",
+      "action": "Avoid concurrent use; use alternative antituberculous agent if possible"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce voriconazole bioavailability",
+      "action": "Avoid high-dose garlic supplements; dietary garlic acceptable"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may decrease voriconazole efficacy",
+      "action": "Discontinue or avoid concurrent use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase voriconazole levels",
+      "action": "Monitor for increased adverse effects; maintain consistent intake if used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases voriconazole plasma concentrations and toxicity risk",
+      "action": "Strictly avoid grapefruit and grapefruit juice during therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay voriconazole absorption and reduce peak serum levels",
+      "action": "Take voriconazole 1 hour before or 1 hour after meals for optimal absorption; consistent timing recommended"
+    }
+  ],
+  "monitoring_notes": "Voriconazole has narrow therapeutic index and significant CYP metabolism; monitor for hepatotoxicity, visual disturbances, and QT prolongation. Therapeutic drug monitoring recommended due to high inter-individual variability and potential for drug interactions via CYP3A4, CYP2C19, and CYP2C9 inhibition."
+}

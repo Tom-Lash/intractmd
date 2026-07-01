@@ -1,0 +1,66 @@
+{
+  "drug": "Talazoparib",
+  "drug_class": "PARP Inhibitor (Poly-ADP-Ribose Polymerase Inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "BCRP"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces talazoparib exposure and efficacy",
+      "action": "Avoid concurrent use; consult oncologist before use"
+    },
+    {
+      "name": "Grapefruit Extract/Seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 and BCRP inhibitor increases talazoparib levels and toxicity risk",
+      "action": "Discontinue use; allow 3-day washout before starting talazoparib"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inducer may reduce talazoparib bioavailability",
+      "action": "Avoid or monitor for reduced efficacy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition; minimal clinical impact expected",
+      "action": "Use with monitoring; report any increased side effects"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Potential weak CYP3A4 inhibition at high doses",
+      "action": "Use standard culinary amounts; monitor for enhanced effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Pomelo",
+      "severity": "High",
+      "mechanism": "CYP3A4 and BCRP inhibition increases talazoparib concentration and toxicity",
+      "action": "Completely avoid consumption during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase talazoparib absorption; variable effect on PK",
+      "action": "Take with consistent food pattern; maintain same timing relative to meals"
+    },
+    {
+      "name": "Cruciferous vegetables (high quantities)",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 induction with chronic high intake",
+      "action": "Consume in normal dietary amounts; no restriction needed"
+    }
+  ],
+  "monitoring_notes": "Monitor for hematologic toxicity and GI tolerability as talazoparib has a narrow therapeutic window. Regular CBC monitoring is essential; adjust dosing if severe myelosuppression occurs. Patients should maintain consistent meal timing and composition to minimize pharmacokinetic variability."
+}

@@ -1,0 +1,72 @@
+{
+  "drug": "Osimertinib",
+  "drug_class": "Tyrosine Kinase Inhibitor (TKI) - EGFR inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "UDP-glucuronosyltransferase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces osimertinib plasma concentrations significantly, decreasing therapeutic efficacy",
+      "action": "Avoid completely; use alternative mood support if needed"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate bleeding risk and increase cardiovascular events in cancer patients; additive anticoagulant effects",
+      "action": "Restrict to <400 IU/day; monitor for bleeding signs"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction potential and antiplatelet properties increase bleeding risk with TKI-induced thrombocytopenia",
+      "action": "Discontinue before starting osimertinib; use alternative cognitive support if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce osimertinib levels; antiplatelet properties add minor bleeding risk",
+      "action": "Use in moderation; monitor for efficacy changes"
+    },
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition potential may increase osimertinib exposure; generally well-tolerated at therapeutic doses",
+      "action": "Monitor for increased adverse effects; adjust if GI symptoms worsen"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May alter gut microbiota affecting osimertinib absorption; generally safe but individual variation exists",
+      "action": "Can use; monitor GI tolerance and treatment response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases osimertinib plasma concentrations, raising toxicity risk",
+      "action": "Completely avoid grapefruit and juice; consider alternatives like orange juice"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase osimertinib absorption variability; osimertinib can be taken with or without food but consistency improves stability",
+      "action": "Maintain consistent meal timing relative to dosing; avoid extreme dietary changes"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May increase QT prolongation risk when combined with osimertinib; modest interaction potential",
+      "action": "Moderate intake; limit to <200mg/day caffeine equivalents"
+    }
+  ],
+  "monitoring_notes": "Monitor for QT prolongation (especially with electrolyte abnormalities), interstitial lung disease, and skin toxicities. Assess therapeutic drug levels and efficacy if CYP3A4 interactions suspected; baseline and periodic ECG monitoring recommended, particularly if combining with QT-prolonging substances."
+}

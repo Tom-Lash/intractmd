@@ -1,0 +1,34 @@
+{
+  "drug": "Abacavir",
+  "drug_class": "Nucleoside reverse transcriptase inhibitor (NRTI)",
+  "key_pathways": [
+    "Alcohol dehydrogenase (ADH)",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose alcohol (ethanol)",
+      "severity": "High",
+      "mechanism": "Abacavir is metabolized by alcohol dehydrogenase; concurrent use increases metabolism and may reduce abacavir levels while increasing toxic metabolites",
+      "action": "Advise patient to minimize or avoid alcohol consumption; counsel on hepatotoxicity risk"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce glucuronidation pathways and potentially reduce abacavir exposure",
+      "action": "Monitor viral load; consider alternative if St. John's Wort use is necessary"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay abacavir absorption but unlikely to significantly impact bioavailability",
+      "action": "Abacavir can be taken with or without food; no strict dietary restrictions required"
+    }
+  ],
+  "monitoring_notes": "Monitor for hypersensitivity reaction (HSR) risk within first 6 weeks; ensure HLA-B*5701 screening completed prior to initiation. Assess liver function and counsel on alcohol avoidance due to shared hepatic metabolism."
+}

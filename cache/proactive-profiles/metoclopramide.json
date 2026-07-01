@@ -1,0 +1,66 @@
+{
+  "drug": "Metoclopramide",
+  "drug_class": "Dopamine antagonist/Prokinetic agent",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Domperidone",
+      "severity": "Critical",
+      "mechanism": "Additive dopamine antagonism increases risk of tardive dyskinesia and extrapyramidal side effects",
+      "action": "Do not use concurrently; select alternative prokinetic agent"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2D6 inducer reduces metoclopramide plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; allow 14-day washout if switching"
+    },
+    {
+      "name": "High-dose Vitamin B6 (>200mg/day)",
+      "severity": "High",
+      "mechanism": "May increase risk of peripheral neuropathy when combined with metoclopramide's known neurological effects",
+      "action": "Limit vitamin B6 supplementation to <100mg/day; monitor for paresthesias"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Both have prokinetic properties; additive GI effects possible but generally beneficial for nausea management",
+      "action": "May be used cautiously together; monitor for GI symptoms"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Low",
+      "mechanism": "Potential additive serotonergic effects; theoretical risk of serotonin syndrome is minimal at therapeutic doses",
+      "action": "Use with caution; counsel patient on serotonin syndrome symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Alcohol potentiates CNS depression and increases risk of sedation, dizziness, and impaired coordination",
+      "action": "Counsel patient to avoid alcohol consumption during metoclopramide therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and reduce absorption rate of metoclopramide; decreases therapeutic effect onset",
+      "action": "Take metoclopramide 30 minutes before meals with water for optimal absorption"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase metoclopramide metabolism via CYP1A2; excessive intake may reduce efficacy",
+      "action": "Moderate caffeine consumption; monitor therapeutic response if high intake"
+    }
+  ],
+  "monitoring_notes": "Monitor for tardive dyskinesia, extrapyramidal symptoms, and depression especially with prolonged use >3 months. Counsel on CNS effects and advise against driving/operating machinery until effects are known. Patient should report involuntary movements, restlessness, or mood changes immediately."
+}

@@ -1,0 +1,46 @@
+{
+  "drug": "Oseltamivir",
+  "drug_class": "Neuraminidase inhibitor (antiviral)",
+  "key_pathways": [
+    "Hepatic metabolism (limited)",
+    "Renal elimination (primary)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose vitamin C (>2000 mg/day)",
+      "severity": "Moderate",
+      "mechanism": "May increase urinary pH and oseltamivir renal clearance, potentially reducing antiviral efficacy",
+      "action": "Limit vitamin C supplementation to RDA levels (75-90 mg/day) during oseltamivir therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Oseltamivir may reduce beneficial gut flora; probiotics may help maintain GI microbiota",
+      "action": "May use concurrently but separate administration by 2+ hours if GI upset occurs"
+    },
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "May have mild antiemetic properties to counter oseltamivir-induced nausea",
+      "action": "Safe to use; may provide symptomatic relief for GI side effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay oseltamivir absorption and peak plasma concentration",
+      "action": "Administer oseltamivir with food to reduce nausea, but high-fat meals may be suboptimal for absorption timing"
+    },
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "Calcium may minimally chelate oseltamivir; separate administration recommended",
+      "action": "Take oseltamivir 1-2 hours before or after dairy-heavy meals if possible"
+    }
+  ],
+  "monitoring_notes": "Oseltamivir undergoes minimal hepatic metabolism and is primarily renin-cleared; interactions are uncommon. Monitor renal function in patients with compromised kidney function, as oseltamivir accumulation may increase neuropsychiatric side effects."
+}

@@ -1,0 +1,84 @@
+{
+  "drug": "Venlafaxine",
+  "drug_class": "Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Induces CYP3A4 and CYP2C19, reducing venlafaxine levels; increases serotonin independently, risk of serotonin syndrome",
+      "action": "Contraindicated; do not use concurrently. Discontinue St. John's Wort before starting venlafaxine or allow 2-week washout."
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Direct serotonergic activity increases serotonin syndrome risk when combined with venlafaxine's SNRI mechanism",
+      "action": "Avoid concurrent use; counsel patient on serotonin syndrome symptoms (agitation, confusion, rapid heart rate, high BP, hyperthermia)."
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "High",
+      "mechanism": "Precursor to serotonin; combined with venlafaxine increases central serotonin levels excessively",
+      "action": "Avoid supplementation; obtain tryptophan from dietary sources only if needed."
+    },
+    {
+      "name": "SAMe (S-Adenosyl Methionine)",
+      "severity": "High",
+      "mechanism": "Enhances serotonergic and noradrenergic neurotransmission, additive effects with venlafaxine",
+      "action": "Contraindicated; discontinue before initiating venlafaxine therapy."
+    },
+    {
+      "name": "MAOI-containing supplements (e.g., Yohimbe)",
+      "severity": "Critical",
+      "mechanism": "MAOI activity combined with SNRI causes hypertensive crisis and serotonin syndrome",
+      "action": "Absolutely contraindicated; ensure 14-day washout period between MAOI use and venlafaxine initiation."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild stimulant properties may potentiate venlafaxine's noradrenergic effects; theoretical risk of increased BP or heart rate",
+      "action": "Monitor blood pressure and heart rate; use at standard doses only. Patient education on symptom reporting."
+    },
+    {
+      "name": "Caffeine/Guarana",
+      "severity": "Low",
+      "mechanism": "Stimulant effects may compound venlafaxine-induced tachycardia, tremor, or anxiety; minor CYP1A2 interaction",
+      "action": "Limit caffeine intake to <200 mg/day; monitor for increased nervousness or palpitations."
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "Modest antiplatelet effects; venlafaxine may increase bleeding risk at high doses via platelet dysfunction",
+      "action": "Monitor for unusual bruising/bleeding; standard doses generally safe; inform if high-dose omega-3 used."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (if used with MAOI-like activity)",
+      "severity": "Moderate",
+      "mechanism": "Venlafaxine alone does not require strict tyramine avoidance; however, concern increases with higher doses due to weak MAOI-like activity at doses >300 mg/day",
+      "action": "At standard doses, no dietary restriction needed. At high doses, limit aged cheeses, cured meats, fermented foods, soy sauce, and alcohol."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "CNS depressant effects additive with venlafaxine; alcohol may impair judgment and increase sedation; venlafaxine may increase intoxication",
+      "action": "Limit alcohol consumption; counsel on reduced cognitive/motor performance. Avoid binge drinking."
+    },
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase venlafaxine plasma levels; effect is modest given CYP2D6 and CYP2C19 also involved",
+      "action": "Avoid excessive consumption; if patient desires grapefruit products, monitor for increased side effects (nausea, dizziness, increased BP)."
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome signs (especially if supplements added later), blood pressure, and heart rate at baseline and during therapy. Counsel patients to report all OTC supplements and botanical products; CYP3A4/2D6/2C19 interactions warrant individualized assessment if polypharmacy develops."
+}

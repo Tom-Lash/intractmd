@@ -1,0 +1,101 @@
+{
+  "drug": "Ciprofloxacin",
+  "drug_class": "Fluoroquinolone antibiotic",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Iron chelates ciprofloxacin, reducing its bioavailability by up to 90%, compromising antibiotic efficacy",
+      "action": "Separate administration by at least 2-4 hours; take ciprofloxacin 2 hours before or 6 hours after iron"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Zinc forms insoluble complexes with ciprofloxacin, significantly reducing absorption",
+      "action": "Separate administration by at least 2-4 hours; prioritize ciprofloxacin dosing first"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Magnesium chelates ciprofloxacin and decreases its absorption by 50-90%",
+      "action": "Administer ciprofloxacin 2 hours before or 6 hours after magnesium supplementation"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Calcium forms insoluble complexes with fluoroquinolones, reducing bioavailability significantly",
+      "action": "Separate administration by at least 2-4 hours; take ciprofloxacin before calcium intake"
+    },
+    {
+      "name": "Aluminum-containing antacids",
+      "severity": "High",
+      "mechanism": "Aluminum chelates ciprofloxacin, reducing absorption by up to 90%",
+      "action": "Avoid concurrent use; separate by at least 2-4 hours, preferably 6 hours"
+    },
+    {
+      "name": "Tizanidine",
+      "severity": "Critical",
+      "mechanism": "Ciprofloxacin inhibits CYP1A2 metabolism of tizanidine, causing dangerous accumulation and severe hypotension",
+      "action": "Avoid concurrent use; use alternative fluoroquinolone or muscle relaxant"
+    },
+    {
+      "name": "Caffeine supplements",
+      "severity": "Moderate",
+      "mechanism": "Ciprofloxacin inhibits CYP1A2, reducing caffeine metabolism and increasing risk of CNS stimulation, tremor, and tachycardia",
+      "action": "Reduce caffeine intake during ciprofloxacin therapy; monitor for excessive stimulation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "NSAIDs (including supplemental forms)",
+      "severity": "Low",
+      "mechanism": "Combined use may increase risk of tendon rupture and CNS stimulation effects",
+      "action": "Use lowest effective dose of NSAID; monitor for tendon pain or CNS symptoms"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Ciprofloxacin kills beneficial bacteria; probiotics may partially mitigate antibiotic-associated diarrhea",
+      "action": "May consider probiotics 2+ hours apart from ciprofloxacin dosing; no absolute contraindication"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Theoretical increase in CNS stimulation when combined with fluoroquinolone-induced effects",
+      "action": "Monitor for dizziness, tremor, or insomnia; consider temporary discontinuation if symptoms occur"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "High",
+      "mechanism": "Calcium and magnesium in dairy chelate ciprofloxacin, reducing absorption by 30-50%",
+      "action": "Avoid dairy products within 2-4 hours of ciprofloxacin; take antibiotic on empty stomach or with non-fortified juice"
+    },
+    {
+      "name": "Fortified juices (orange juice, apple juice)",
+      "severity": "High",
+      "mechanism": "Fortified with calcium or magnesium salts that chelate ciprofloxacin and reduce bioavailability",
+      "action": "Avoid fortified juices; use water or non-fortified beverages with ciprofloxacin"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages (coffee, tea, chocolate)",
+      "severity": "Low",
+      "mechanism": "Ciprofloxacin inhibits CYP1A2, prolonging caffeine half-life and increasing stimulatory effects",
+      "action": "Moderate caffeine intake during treatment; monitor for jitteriness, insomnia, or tachycardia"
+    },
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "Excessive fiber may slightly reduce ciprofloxacin absorption; minimal clinical impact",
+      "action": "No strict avoidance needed; ensure adequate hydration and maintain normal fiber intake"
+    }
+  ],
+  "monitoring_notes": "Ciprofloxacin absorption is critically dependent on proper spacing from divalent/trivalent cations (iron, zinc, magnesium, calcium, aluminum); administer on empty stomach with water only for optimal bioavailability. Monitor for QT prolongation risk, tendinopathy, and CNS effects, particularly in elderly patients or those with concurrent risk factors."
+}

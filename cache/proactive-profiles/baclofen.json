@@ -1,0 +1,59 @@
+{
+  "drug": "Baclofen",
+  "drug_class": "Skeletal muscle relaxant; GABA-B receptor agonist",
+  "key_pathways": [
+    "Renal excretion (primary)",
+    "Minimal hepatic metabolism",
+    "GABA-B receptor modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; both agents suppress muscle tone and neural activity",
+      "action": "Avoid concurrent use; counsel patient on CNS depression risks"
+    },
+    {
+      "name": "GHB (Gamma-hydroxybutyrate)",
+      "severity": "Critical",
+      "mechanism": "Both are GABA-B agonists; severe additive CNS depression, respiratory depression, and overdose risk",
+      "action": "Absolutely contraindicated; educate patient on serious overdose potential"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depression; may enhance sedation or dizziness",
+      "action": "Monitor for excessive CNS depression; advise caution with dosing timing"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild GABAergic activity; potential additive CNS effects",
+      "action": "Counsel on increased sedation risk; monitor tolerance"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May reduce baclofen efficacy through unclear mechanisms; potential mood interaction",
+      "action": "Monitor clinical response; consider alternative mood support if needed"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Potent additive CNS depression; significantly increases risk of sedation, dizziness, impaired cognition, and motor control impairment",
+      "action": "Strongly advise abstinence or minimal consumption; counsel on impaired driving/machinery operation risk"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May affect fluid retention and electrolyte balance; minimal direct interaction but relevant to renal function monitoring",
+      "action": "Encourage moderate sodium intake; monitor fluid status if renal impairment present"
+    }
+  ],
+  "monitoring_notes": "Baclofen undergoes minimal hepatic metabolism and is primarily renally excreted, limiting typical CYP-mediated interactions. Monitor for CNS depression signs (sedation, dizziness, ataxia) when combined with other depressants; assess renal function periodically as dose adjustment may be needed with declining renal clearance."
+}

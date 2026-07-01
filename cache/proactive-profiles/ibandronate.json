@@ -1,0 +1,71 @@
+{
+  "drug": "Ibandronate",
+  "drug_class": "Bisphosphonate",
+  "key_pathways": [
+    "Non-enzymatic (minimal hepatic metabolism)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Critical",
+      "mechanism": "Bisphosphonates require acidic environment for GI absorption; calcium chelates ibandronate and significantly reduces bioavailability",
+      "action": "Separate ibandronate and calcium supplements by at least 6 hours; administer ibandronate on empty stomach"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Divalent cations chelate bisphosphonates, reducing absorption by 60-90%",
+      "action": "Separate dosing by at least 6 hours; take ibandronate first on empty stomach"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation forms insoluble complexes with bisphosphonates, reducing bioavailability",
+      "action": "Administer ibandronate 6+ hours before or after magnesium supplements"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation chelation reduces bisphosphonate absorption",
+      "action": "Separate administration by minimum 6 hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Vitamin D enhances calcium absorption, potentially increasing GI interaction risk if taken with ibandronate",
+      "action": "Time vitamin D doses separately from ibandronate; monitor for adequate vitamin D status (target 30-50 ng/mL)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "Critical",
+      "mechanism": "High calcium content chelates ibandronate and dramatically reduces absorption to subtherapeutic levels",
+      "action": "Maintain 30-minute fast before and 2 hours after ibandronate dose; avoid all dairy during this window"
+    },
+    {
+      "name": "Fortified cereals and plant-based milks (fortified)",
+      "severity": "High",
+      "mechanism": "Added calcium content reduces bisphosphonate bioavailability similar to dairy",
+      "action": "Consume fortified foods at least 2 hours after ibandronate dose"
+    },
+    {
+      "name": "High-mineral foods (spinach, collard greens, fortified OJ)",
+      "severity": "High",
+      "mechanism": "Oxalates and added minerals chelate bisphosphonates reducing absorption",
+      "action": "Separate these foods from ibandronate dosing by minimum 2 hours"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Coffee/tea with food",
+      "severity": "Low",
+      "mechanism": "Tannins and food components in acidic beverages may affect absorption timing; not a direct interaction",
+      "action": "Black coffee or plain tea without food additives acceptable; avoid with meals taken near ibandronate dose"
+    }
+  ],
+  "monitoring_notes": "Ibandronate requires strict empty-stomach administration (30 minutes fasting before, 2 hours after) with plain water only to ensure adequate absorption; monitor for GI side effects and ensure adequate vitamin D/calcium intake through separate, properly-timed dosing to maintain bone health while avoiding chelation interactions."
+}

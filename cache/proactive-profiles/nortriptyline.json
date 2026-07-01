@@ -1,0 +1,78 @@
+{
+  "drug": "Nortriptyline",
+  "drug_class": "Tricyclic Antidepressant (TCA)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP1A2",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2D6 induction; reduces nortriptyline levels and efficacy; increases serotonin syndrome risk",
+      "action": "Contraindicated; discontinue at least 2 weeks before starting nortriptyline"
+    },
+    {
+      "name": "SAMe (S-Adenosyl Methionine)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects; increases risk of serotonin syndrome",
+      "action": "Avoid concurrent use; monitor for agitation, tremor, hyperthermia"
+    },
+    {
+      "name": "Tramadol-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Serotonin syndrome risk; both increase serotonergic activity",
+      "action": "Avoid; use alternative analgesics"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "5-HTP",
+      "severity": "Low",
+      "mechanism": "Mild serotonergic additive effects",
+      "action": "Use with caution; monitor for serotonin syndrome symptoms (tremor, agitation, confusion)"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential stimulant effects may potentiate anticholinergic side effects",
+      "action": "Monitor for increased cardiovascular effects or dry mouth"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression",
+      "action": "Monitor for increased sedation or dizziness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products)",
+      "severity": "High",
+      "mechanism": "TCAs inhibit monoamine oxidase; excessive tyramine can cause hypertensive crisis",
+      "action": "Counsel on moderation; excessive intake may elevate blood pressure"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase nortriptyline levels",
+      "action": "Limit consumption; monitor for increased anticholinergic effects"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Additive stimulant effects; CYP1A2 competition",
+      "action": "Moderate intake; monitor for tremor, palpitations, or insomnia"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and anticholinergic effects",
+      "action": "Minimize alcohol consumption; counsel on impaired cognition and sedation risk"
+    }
+  ],
+  "monitoring_notes": "Nortriptyline undergoes significant hepatic metabolism via CYP2D6; monitor for anticholinergic effects (dry mouth, urinary retention, constipation) and serotonin syndrome when combined with other serotonergic agents. Baseline and periodic ECG monitoring is recommended due to cardiac effects."
+}

@@ -1,0 +1,47 @@
+{
+  "drug": "Lanreotide",
+  "drug_class": "Somatostatin analog",
+  "key_pathways": [
+    "Somatostatin receptor binding",
+    "GI motility modulation",
+    "Hepatic metabolism (minor CYP)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic metabolism and reduce lanreotide efficacy; affects serotonin pathways",
+      "action": "Avoid concurrent use; consult oncologist or endocrinologist before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "Lanreotide may impair B12 absorption; supplementation may be beneficial",
+      "action": "Monitor B12 levels annually; supplement if deficiency develops"
+    },
+    {
+      "name": "Calcium and Vitamin D",
+      "severity": "Low",
+      "mechanism": "Lanreotide may affect fat-soluble nutrient absorption and bone metabolism",
+      "action": "Ensure adequate intake; monitor bone density in long-term therapy"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay lanreotide absorption and alter GI transit time",
+      "action": "Administer lanreotide injections independent of meal timing; consistent timing recommended"
+    },
+    {
+      "name": "Foods high in tyramine",
+      "severity": "Low",
+      "mechanism": "Lanreotide inhibits GI motility; theoretical concern with vasoactive compounds",
+      "action": "No strict avoidance needed; monitor for unusual symptoms"
+    }
+  ],
+  "monitoring_notes": "Monitor vitamin B12, glucose, and thyroid function regularly during lanreotide therapy. Assess nutritional status as lanreotide affects fat-soluble vitamin absorption and GI function."
+}

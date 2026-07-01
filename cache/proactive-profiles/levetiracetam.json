@@ -1,0 +1,47 @@
+{
+  "drug": "Levetiracetam",
+  "drug_class": "Antiepileptic Agent",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Primarily renal excretion",
+    "SV2A protein binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic metabolism and reduce levetiracetam levels; also has seizure-lowering threshold potential",
+      "action": "Avoid concurrent use; if patient already taking, do not abruptly discontinue without consulting prescriber"
+    },
+    {
+      "name": "Evening Primrose Oil",
+      "severity": "Moderate",
+      "mechanism": "May lower seizure threshold and reduce antiepileptic efficacy",
+      "action": "Avoid or use only under close medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS effects and theoretical seizure threshold reduction",
+      "action": "Monitor for increased dizziness, somnolence, or lack of seizure control"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase sedation and dizziness",
+      "action": "Monitor for enhanced drowsiness or impaired cognition"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression may increase somnolence, dizziness, and cognitive impairment",
+      "action": "Minimize or avoid alcohol consumption; counsel on impaired coordination and judgment"
+    }
+  ],
+  "monitoring_notes": "Levetiracetam undergoes minimal hepatic metabolism with predominant renal excretion, resulting in few clinically significant drug-nutrient interactions. Primary monitoring should focus on CNS adverse effects and seizure control, with renal function assessment in patients with impaired kidney function."
+}

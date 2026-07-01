@@ -1,0 +1,65 @@
+{
+  "drug": "Sevelamer",
+  "drug_class": "Phosphate binder",
+  "key_pathways": [
+    "Gastrointestinal anion exchange (non-systemic)",
+    "No hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Fat-soluble vitamins (A, D, E, K) supplements",
+      "severity": "High",
+      "mechanism": "Sevelamer's polymer structure binds and reduces absorption of fat-soluble vitamins, increasing deficiency risk when supplemented without monitoring",
+      "action": "Monitor vitamin levels regularly; separate dosing by at least 4 hours; consider water-soluble forms if deficiency develops"
+    },
+    {
+      "name": "Phosphate-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism; phosphate supplements counteract therapeutic effect of sevelamer in hyperphosphatemia management",
+      "action": "Absolutely contraindicated; discontinue any phosphate-containing products"
+    },
+    {
+      "name": "High-dose iron supplements",
+      "severity": "High",
+      "mechanism": "Sevelamer binds iron in the GI tract, significantly reducing bioavailability and potentially worsening anemia",
+      "action": "Separate iron supplementation by 4+ hours from sevelamer; monitor hemoglobin/ferritin; consider IV iron if oral absorption inadequate"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Minimal direct binding, but combined use requires monitoring to prevent hypercalcemia in renal disease patients",
+      "action": "Use only as directed by nephrologist; monitor serum calcium levels; adjust sevelamer dosing if needed"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Potential for additive GI effects and altered absorption; minimal direct interaction",
+      "action": "Monitor for constipation or diarrhea; separate dosing by 2+ hours if possible"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-phosphate foods (processed meats, dairy, nuts, seeds)",
+      "severity": "High",
+      "mechanism": "Dietary phosphate works against sevelamer's therapeutic goal of controlling serum phosphate; inadequate dietary control reduces drug efficacy",
+      "action": "Maintain strict low-phosphate renal diet; coordinate with dietitian; sevelamer dosing ineffective without dietary adherence"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May impair sevelamer GI distribution and can affect absorption of any co-administered fat-soluble nutrients",
+      "action": "Take sevelamer with meals as directed; avoid very high-fat meals within 2 hours of dosing"
+    },
+    {
+      "name": "Iron-rich foods (red meat, fortified cereals, leafy greens)",
+      "severity": "Low",
+      "mechanism": "Sevelamer may bind iron; excessive intake could theoretically worsen absorption when combined with supplementation",
+      "action": "Include in diet as tolerated for nutrition; monitor iron levels; coordinate with iron supplementation timing"
+    }
+  ],
+  "monitoring_notes": "Sevelamer is a non-absorbed polymer; monitor serum phosphate, calcium, fat-soluble vitamin levels (especially vitamins A, D, K), and hemoglobin/iron status at baseline and regularly during therapy. Emphasize dietary phosphate restriction as essential to therapeutic success, and ensure 4+ hour separation between sevelamer and fat-soluble vitamin or iron supplementation."
+}

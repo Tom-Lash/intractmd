@@ -1,0 +1,60 @@
+{
+  "drug": "Zonisamide",
+  "drug_class": "Sulfonamide anticonvulsant",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Renal excretion",
+    "Carbonic anhydrase inhibition"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may decrease zonisamide levels and reduce seizure control",
+      "action": "Avoid concurrent use; consult prescriber before initiating"
+    },
+    {
+      "name": "Topiramate",
+      "severity": "High",
+      "mechanism": "Dual carbonic anhydrase inhibitors increase risk of metabolic acidosis and kidney stones",
+      "action": "Do not combine without explicit medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folate/Folic acid",
+      "severity": "Low",
+      "mechanism": "Anticonvulsants may deplete folate; supplementation may be beneficial",
+      "action": "Monitor levels; consider supplementation if deficiency develops"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Anticonvulsants increase vitamin D catabolism; supplementation may help prevent bone loss",
+      "action": "Counsel on adequate intake; monitor bone health"
+    },
+    {
+      "name": "Calcium",
+      "severity": "Low",
+      "mechanism": "Zonisamide may increase risk of metabolic bone disease",
+      "action": "Ensure adequate dietary calcium intake; consider supplementation"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Zonisamide increases kidney stone risk; sodium restriction may help reduce urinary calcium",
+      "action": "Recommend moderate sodium intake; maintain adequate hydration"
+    },
+    {
+      "name": "High-calcium foods in excess",
+      "severity": "Low",
+      "mechanism": "Excessive dietary calcium combined with metabolic acidosis may increase kidney stone risk",
+      "action": "Maintain balanced intake; avoid excessive supplementation"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, serum bicarbonate, and kidney stone risk due to zonisamide's carbonic anhydrase inhibition. Counsel on hydration to minimize nephrolithiasis risk and monitor for metabolic acidosis, particularly with concurrent use of other carbonic anhydrase inhibitors."
+}

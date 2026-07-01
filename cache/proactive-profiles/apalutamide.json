@@ -1,0 +1,56 @@
+{
+  "drug": "Apalutamide",
+  "drug_class": "Androgen receptor inhibitor (second-generation)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP2D6",
+    "BCRP",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer reduces apalutamide plasma concentrations and efficacy",
+      "action": "Contraindicated; use alternative mood support if needed"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly decreases apalutamide exposure",
+      "action": "Avoid concomitant use; if tuberculosis treatment required, consider alternative regimens"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase apalutamide levels",
+      "action": "Monitor for increased adverse effects; consider spacing dosing"
+    },
+    {
+      "name": "Saw palmetto",
+      "severity": "Low",
+      "mechanism": "May have additive androgen-blocking effects; limited clinical data",
+      "action": "Use with caution and monitor therapeutic response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>30g fat)",
+      "severity": "Moderate",
+      "mechanism": "Significantly increases apalutamide bioavailability and variability; may increase toxicity risk",
+      "action": "Take on empty stomach or with low-fat meal only"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase apalutamide exposure",
+      "action": "Limit consumption; if used, monitor for adverse effects"
+    }
+  ],
+  "monitoring_notes": "Apalutamide is a CYP3A4 substrate with narrow therapeutic window; monitor for efficacy loss with enzyme inducers and toxicity with inhibitors. Screen patients for concomitant medications and supplements affecting CYP450 metabolism at baseline and with any new additions to regimen."
+}

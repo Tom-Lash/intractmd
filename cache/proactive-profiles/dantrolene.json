@@ -1,0 +1,53 @@
+{
+  "drug": "Dantrolene",
+  "drug_class": "Skeletal muscle relaxant (direct-acting)",
+  "key_pathways": [
+    "Hepatic metabolism (CYP3A4, CYP2C9)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces dantrolene plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk; both agents can cause liver injury and additive hepatic stress",
+      "action": "Contraindicated; do not use together"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase dantrolene levels; effect less pronounced than grapefruit juice",
+      "action": "Monitor for increased muscle weakness or adverse effects; may require dose adjustment"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential hepatoprotective effects; theoretical risk of additive hepatic effects",
+      "action": "Use cautiously and monitor liver function tests periodically"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases dantrolene bioavailability and plasma concentrations",
+      "action": "Avoid consumption; choose alternative beverages (orange juice, water)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase dantrolene absorption and peak plasma levels",
+      "action": "Take consistently with or without food; maintain uniform dietary pattern"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests (AST, ALT, bilirubin) regularly as dantrolene carries hepatotoxicity risk; assess for excessive muscle weakness, sedation, or signs of hepatic impairment. Counsel patients on adherence to consistent dosing schedule and avoidance of hepatotoxic substances."
+}

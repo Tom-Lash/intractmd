@@ -1,0 +1,60 @@
+{
+  "drug": "Pyridostigmine",
+  "drug_class": "Acetylcholinesterase Inhibitor",
+  "key_pathways": [
+    "Acetylcholinesterase inhibition",
+    "Parasympathomimetic activity",
+    "Hepatic metabolism (limited)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Anticholinergic herbs (Belladonna, Datura, Jimsonweed)",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of cholinergic effects; negates therapeutic benefit and increases risk of myasthenic crisis",
+      "action": "Absolutely avoid; educate patient on anticholinergic-containing supplements"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "May potentiate anticoagulant effects and increase cholinergic side effects including GI bleeding risk",
+      "action": "Avoid high-dose supplementation; monitor for bleeding if concurrent use necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May enhance neuromuscular blocking effects; theoretical risk of weakness exacerbation in myasthenia gravis",
+      "action": "Monitor for increased muscle weakness; separate dosing by 2+ hours if possible"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects; additive with pyridostigmine's cholinergic GI effects",
+      "action": "Use cautiously; monitor for increased nausea or GI symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Foods high in anticholinergic alkaloids (nightshade family: peppers, eggplant in excess)",
+      "severity": "Moderate",
+      "mechanism": "Contain tropane alkaloids that antagonize cholinergic effects and reduce drug efficacy",
+      "action": "Limit excessive nightshade consumption; maintain consistent dietary intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods and salt supplements",
+      "severity": "Low",
+      "mechanism": "May exacerbate fluid retention and cholinergic-mediated GI effects; increases cramping risk",
+      "action": "Moderate sodium intake; maintain consistent dietary sodium levels"
+    },
+    {
+      "name": "Caffeine-rich foods and beverages",
+      "severity": "Low",
+      "mechanism": "Stimulant effects may potentiate cholinergic symptoms (tremor, anxiety, GI motility)",
+      "action": "Limit caffeine intake; monitor for increased side effects"
+    }
+  ],
+  "monitoring_notes": "Pyridostigmine has minimal hepatic metabolism and narrow therapeutic window; monitor for cholinergic crisis (excessive salivation, muscle fasciculations, respiratory distress) and myasthenic crisis (weakness). Educate patients to maintain consistent supplement and food intake, avoid anticholinergic agents, and report any changes in symptom control or muscle weakness."
+}

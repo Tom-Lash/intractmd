@@ -1,0 +1,53 @@
+{
+  "drug": "Megestrol",
+  "drug_class": "Progestin (synthetic progesterone)",
+  "key_pathways": [
+    "CYP3A4",
+    "Hepatic metabolism",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction decreases megestrol acetate plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; counsel patient to discontinue St. John's Wort prior to megestrol initiation"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases megestrol exposure and risk of adverse effects",
+      "action": "Advise patient to avoid grapefruit products; consider alternative supplement if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium and Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Megestrol may increase bone loss risk; adequate calcium/vitamin D intake may mitigate osteoporosis development",
+      "action": "Monitor bone health; ensure adequate supplementation; recommend DEXA screening with prolonged use"
+    },
+    {
+      "name": "Herbal CYP3A4 inducers (Echinacea, Rifampin-containing products)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may reduce megestrol efficacy",
+      "action": "Monitor therapeutic response; dosage adjustment may be necessary with concurrent use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases megestrol plasma concentrations; risk of dose-dependent adverse effects",
+      "action": "Advise patient to eliminate grapefruit from diet during megestrol therapy"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase megestrol absorption; variable effect on bioavailability",
+      "action": "Take consistently with or without food; maintain consistent dietary pattern for stable drug levels"
+    }
+  ],
+  "monitoring_notes": "Monitor for thromboembolic events, fluid retention, and hyperglycemia. Assess bone density and lipid panels periodically, especially with prolonged megestrol use for appetite stimulation or cancer therapy."
+}

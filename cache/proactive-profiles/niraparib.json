@@ -1,0 +1,60 @@
+{
+  "drug": "Niraparib",
+  "drug_class": "PARP Inhibitor (Poly-ADP-Ribose Polymerase Inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "UGT1A1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 inducer that significantly reduces niraparib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements if mood support needed"
+    },
+    {
+      "name": "High-dose Vitamin K supplements",
+      "severity": "Moderate",
+      "mechanism": "May increase thrombotic risk; niraparib already carries bleeding risk from bone marrow suppression",
+      "action": "Avoid supplementation; maintain dietary vitamin K consistency"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor that may increase niraparib exposure; effect typically minor but variable",
+      "action": "Monitor for increased side effects; dose adjustment may be needed"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition; may modestly increase niraparib levels",
+      "action": "Use with caution; report any increased toxicity to provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases niraparib bioavailability and peak concentrations, elevating toxicity risk",
+      "action": "Completely avoid grapefruit products; switch to alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase niraparib absorption and delay gastric clearance; food effect is modest but notable",
+      "action": "Take niraparib consistently with or without food; maintain routine for consistency"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contain indole-3-carbinol, weak CYP3A4 inducer; minimal clinical impact but worth noting",
+      "action": "No need to restrict; maintain normal dietary intake"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of increased toxicity (myelosuppression, GI effects) if CYP3A4 inhibitors are coadministered or consumed. Counsel patients to maintain consistent meal timing relative to niraparib dosing and report any significant changes in tolerability."
+}

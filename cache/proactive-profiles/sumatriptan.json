@@ -1,0 +1,78 @@
+{
+  "drug": "Sumatriptan",
+  "drug_class": "Selective 5-HT1B/1D receptor agonist (triptan)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "MAO-A metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction increases sumatriptan metabolism; serotonergic activity increases serotonin syndrome risk",
+      "action": "Discontinue St. John's Wort at least 2 weeks before sumatriptan use or switch to alternative antidepressant"
+    },
+    {
+      "name": "5-Hydroxytryptophan (5-HTP)",
+      "severity": "High",
+      "mechanism": "Direct serotonergic precursor increases risk of serotonin syndrome when combined with 5-HT1 agonist",
+      "action": "Avoid concurrent use; maintain minimum 24-hour separation between doses"
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "High",
+      "mechanism": "Serotonin precursor increases central serotonergic tone, elevating serotonin syndrome risk",
+      "action": "Avoid supplementation during sumatriptan therapy; consider alternative amino acid source"
+    },
+    {
+      "name": "SAMe (S-Adenosyl Methionine)",
+      "severity": "High",
+      "mechanism": "Serotonergic activity may potentiate serotonin syndrome risk in combination with triptans",
+      "action": "Avoid concurrent use; select alternative mood support if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild serotonergic effects and theoretical CYP3A4 interaction; additive stimulant properties possible",
+      "action": "Monitor for excessive stimulation, tremor, or palpitations; use lowest effective dose"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "Low",
+      "mechanism": "Used for migraine prevention; potential additive vasoconstrictive effects at high doses",
+      "action": "Coordinate migraine management strategy; monitor blood pressure and heart rate"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "Migraine prophylaxis supplement; no direct interaction but therapeutic overlap in migraine management",
+      "action": "May enhance therapeutic benefit; ensure adequate but not excessive supplementation (>400 mg/day)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (cured meats, aged cheeses, fermented products)",
+      "severity": "Moderate",
+      "mechanism": "Tyramine can trigger hypertensive crisis; combined with sumatriptan's vasoconstrictive properties increases cardiovascular risk",
+      "action": "Limit intake of cured bacon, aged cheddar, blue cheese, soy sauce, sauerkraut, and fermented soy products"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-caffeine foods and beverages (coffee, energy drinks, chocolate)",
+      "severity": "Low",
+      "mechanism": "Caffeine is often used adjunctively in migraine therapy but excess may increase stimulant effects and cardiovascular stress",
+      "action": "Limit to <200 mg caffeine on sumatriptan dosing days; monitor for tremor or tachycardia"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May potentiate vasodilation countereffects and increase migraine recurrence; mild CNS depression interaction",
+      "action": "Minimize alcohol consumption on treatment days; avoid heavy use during migraine episode"
+    }
+  ],
+  "monitoring_notes": "Primary concern is serotonin syndrome risk with concurrent serotonergic agents (SSRIs, SNRIs, MAOIs, herbal serotonergics); monitor for agitation, confusion, rapid heart rate, muscle rigidity, and hyperthermia. Sumatriptan's vasoconstrictive properties warrant caution with foods/supplements affecting vascular tone and blood pressure, particularly in patients with cardiovascular risk factors."
+}

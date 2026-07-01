@@ -1,0 +1,53 @@
+{
+  "drug": "Tamsulosin",
+  "drug_class": "Alpha-1A Adrenergic Receptor Antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce tamsulosin levels and efficacy",
+      "action": "Avoid concurrent use or consult healthcare provider before combining"
+    },
+    {
+      "name": "Yohimbe",
+      "severity": "High",
+      "mechanism": "Alpha-adrenergic agonist may antagonize tamsulosin's therapeutic effect and increase blood pressure",
+      "action": "Avoid use; may counteract symptomatic relief of BPH"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Saw Palmetto",
+      "severity": "Low",
+      "mechanism": "May have additive alpha-blocking effects and increase hypotensive risk",
+      "action": "Monitor blood pressure; inform provider of concurrent use"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition may increase tamsulosin levels",
+      "action": "Monitor for increased side effects (dizziness, syncope)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases tamsulosin bioavailability and plasma concentrations",
+      "action": "Eliminate grapefruit products from diet; risk of hypotension and syncope"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase tamsulosin absorption and delay peak plasma concentration",
+      "action": "Take consistently with or without food; maintain routine for consistent efficacy"
+    }
+  ],
+  "monitoring_notes": "Monitor for orthostatic hypotension, dizziness, and syncope especially with CYP3A4 inhibitors. Counsel on consistent dosing timing relative to meals and avoidance of grapefruit products."
+}

@@ -1,0 +1,80 @@
+{
+  "drug": "Meperidine",
+  "drug_class": "Opioid analgesic (phenylpiperidine derivative)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C19",
+    "CYP2D6",
+    "Monoamine oxidase (MAO)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces meperidine levels; MAO inhibition properties may increase serotonin syndrome risk",
+      "action": "Avoid concurrent use; allow 2-week washout before or after meperidine therapy"
+    },
+    {
+      "name": "Serotonin agonists (5-HTP, L-tryptophan, SAM-e)",
+      "severity": "Critical",
+      "mechanism": "Combined serotonergic activity increases risk of serotonin syndrome, especially with meperidine's metabolite normeperidine which has MAOI properties",
+      "action": "Contraindicated; do not use together; monitor for agitation, confusion, tremor, hyperthermia if exposure occurs"
+    },
+    {
+      "name": "Linezolid",
+      "severity": "Critical",
+      "mechanism": "MAOI properties combined with meperidine's serotonergic effects create severe serotonin syndrome risk",
+      "action": "Avoid concurrent use; select alternative analgesic"
+    },
+    {
+      "name": "MAO inhibitors (phenelzine, tranylcypromine, isocarboxazid)",
+      "severity": "Critical",
+      "mechanism": "Meperidine has weak MAOI activity; concurrent use causes severe serotonin syndrome and hypertensive crisis",
+      "action": "Contraindicated; maintain 14-day separation between discontinuation of MAOI and meperidine initiation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit supplement",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may increase meperidine levels slightly",
+      "action": "Monitor for increased opioid effects; consistent dosing recommended if continued"
+    },
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression with meperidine",
+      "action": "Monitor for excessive sedation, dizziness; counsel on fall risk"
+    },
+    {
+      "name": "Kava",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and potential hepatotoxicity with chronic meperidine use",
+      "action": "Monitor for enhanced sedation; limit concurrent use duration"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose tyramine-containing foods (cured meats, aged cheeses, fermented products) with concurrent MAOI-like activity",
+      "severity": "High",
+      "mechanism": "Meperidine's MAOI properties combined with tyramine can precipitate hypertensive crisis",
+      "action": "Advise moderate dietary tyramine intake; monitor blood pressure; educate on hypertensive crisis symptoms"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may moderately increase meperidine concentrations",
+      "action": "Monitor for enhanced opioid effects; consistent grapefruit consumption preferable to sporadic intake"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression increases risk of respiratory depression, sedation, and impaired cognition",
+      "action": "Advise abstinence or strict limitation; counsel on overdose risk and fall hazards"
+    }
+  ],
+  "monitoring_notes": "Meperidine has unique MAOI properties that create critical interaction risks, particularly with serotonergic agents—serotonin syndrome is a primary concern. Monitor for CNS depression when combined with alcohol or sedating supplements, and maintain awareness of hypertensive crisis risk with tyramine exposure."
+}

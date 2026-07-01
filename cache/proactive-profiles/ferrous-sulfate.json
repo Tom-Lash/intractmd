@@ -1,0 +1,112 @@
+{
+  "drug": "Ferrous Sulfate",
+  "drug_class": "Iron supplement (mineral)",
+  "key_pathways": [
+    "Non-enzymatic (chelation-based interactions)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Calcium and iron compete for absorption in the GI tract; concurrent use reduces iron bioavailability by 20-50%",
+      "action": "Separate administration by at least 2 hours; take iron on empty stomach when possible"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Both metals compete for intestinal absorption; can reduce iron absorption and impair zinc status",
+      "action": "Separate by 2+ hours; monitor serum iron and zinc levels if concurrent use necessary"
+    },
+    {
+      "name": "Polyphenol/Tannin-containing supplements (green tea, black tea extracts)",
+      "severity": "High",
+      "mechanism": "Polyphenols and tannins form insoluble complexes with iron, drastically reducing absorption",
+      "action": "Avoid concurrent ingestion; separate by at least 2 hours"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Moderate",
+      "mechanism": "Mg competes with Fe for absorption in the proximal small intestine",
+      "action": "Stagger doses by 2+ hours; prioritize iron absorption timing"
+    },
+    {
+      "name": "Phosphate binders (calcium phosphate, aluminum hydroxide)",
+      "severity": "High",
+      "mechanism": "Form insoluble iron complexes in the GI lumen, preventing absorption",
+      "action": "Separate administration by 4+ hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin E (high-dose >400 IU)",
+      "severity": "Low",
+      "mechanism": "High-dose vitamin E may impair iron absorption through mild antioxidant interference",
+      "action": "Monitor hemoglobin/ferritin; use standard doses only"
+    },
+    {
+      "name": "Copper supplements",
+      "severity": "Low",
+      "mechanism": "Iron and copper compete for absorption; high iron may reduce copper status over time",
+      "action": "Monitor copper levels with long-term concurrent use; space dosing if possible"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tea (black, green, white)",
+      "severity": "High",
+      "mechanism": "Tannins and polyphenols in tea form insoluble complexes with iron, reducing absorption by up to 50-70%",
+      "action": "Avoid tea consumption within 2 hours before and after iron dosing"
+    },
+    {
+      "name": "Coffee",
+      "severity": "High",
+      "mechanism": "Chlorogenic acid and polyphenols in coffee chelate iron, reducing bioavailability",
+      "action": "Separate coffee and iron administration by at least 2 hours"
+    },
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "High",
+      "mechanism": "Calcium and phosphates in dairy form poorly absorbable iron complexes",
+      "action": "Take iron on empty stomach, away from dairy; wait 2+ hours between doses"
+    },
+    {
+      "name": "High-fiber foods (bran, whole grains, legumes)",
+      "severity": "Moderate",
+      "mechanism": "Phytates and fiber in whole grains/legumes bind iron and reduce absorption",
+      "action": "Take iron 1-2 hours before or 4+ hours after high-fiber meals"
+    },
+    {
+      "name": "Spinach, kale, and leafy greens",
+      "severity": "Moderate",
+      "mechanism": "Oxalates in spinach form insoluble complexes with iron; 'heme-iron myth' makes non-heme supplemental iron particularly vulnerable",
+      "action": "Avoid concurrent consumption; separate by 2+ hours for optimal absorption"
+    },
+    {
+      "name": "Nuts and seeds",
+      "severity": "Moderate",
+      "mechanism": "Phytates and mineral compounds in nuts/seeds inhibit iron absorption",
+      "action": "Take iron away from nut/seed consumption; separate by 2+ hours"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Citrus fruits (orange, lemon, grapefruit)",
+      "severity": "Low",
+      "mechanism": "Vitamin C and citric acid enhance iron absorption; this is actually beneficial but may increase GI side effects",
+      "action": "Can take with iron to enhance absorption, but monitor for GI upset; may reduce nausea if taken together"
+    },
+    {
+      "name": "Red meat and poultry",
+      "severity": "Low",
+      "mechanism": "Heme iron from meat may compete with non-heme supplemental iron for absorption pathways; minimal clinical impact",
+      "action": "No restriction needed; may consume together, though heme/non-heme absorption is independent"
+    },
+    {
+      "name": "Eggs",
+      "severity": "Low",
+      "mechanism": "Eggs contain phosphoproteins that weakly bind iron; minor effect on non-heme iron absorption",
+      "action": "Space administration by 1-2 hours for optimal absorption if concerned"
+    }
+  ],
+  "monitoring_notes": "Ferrous sulfate absorption is critically dependent on gastric pH and timing relative to chelating agents (polyphenols, tannins, calcium, phosphates). Patients should take iron on an empty stomach 1 hour before or 2 hours after meals/supplements for maximal bioavailability. Monitor serum ferritin, hemoglobin, and transferrin saturation every 4-8 weeks during therapy; counsel patients on GI side effects and the importance of strict timing separation from interacting substances."
+}

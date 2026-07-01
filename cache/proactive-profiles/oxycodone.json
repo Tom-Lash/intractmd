@@ -1,0 +1,65 @@
+{
+  "drug": "Oxycodone",
+  "drug_class": "Opioid analgesic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces oxycodone levels and efficacy",
+      "action": "Avoid concurrent use; discuss alternative antidepressants with prescriber"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression and respiratory depression risk",
+      "action": "Contraindicated; do not use together"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression, sedation, and respiratory depression",
+      "action": "Avoid use; use alternative for sleep support only under medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit supplement",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase oxycodone levels",
+      "action": "Monitor for increased oxycodone effects; limit concurrent use"
+    },
+    {
+      "name": "Black Cohosh",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS effects possible",
+      "action": "Monitor for increased drowsiness or dizziness"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases oxycodone bioavailability and toxicity risk",
+      "action": "Avoid completely; select alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase oxycodone absorption and peak levels",
+      "action": "Take oxycodone consistently with or without food; avoid variable fat intake patterns"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and increased respiratory depression risk",
+      "action": "Limit or avoid alcohol; educate on serious overdose risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of overdose (respiratory depression, altered consciousness, pinpoint pupils) especially with CYP3A4/2D6 inhibitors or CNS depressants. Counsel patients on addiction risk, fall prevention, and constipation management."
+}

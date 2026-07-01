@@ -1,0 +1,73 @@
+{
+  "drug": "Fosamprenavir",
+  "drug_class": "Protease Inhibitor (HIV)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "CYP2C19",
+    "UGT1A1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces fosamprenavir concentrations by 40-50%, compromising antiretroviral efficacy",
+      "action": "Absolute contraindication—do not use concurrently; consider alternatives if mood support needed"
+    },
+    {
+      "name": "Rifampin/Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducers dramatically decrease fosamprenavir levels below therapeutic range",
+      "action": "Do not combine; if TB treatment necessary, switch to alternative antiretroviral regimen"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce fosamprenavir concentrations and viral suppression effectiveness",
+      "action": "Avoid high-dose garlic supplements; culinary amounts are acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce fosamprenavir levels",
+      "action": "Monitor viral load; use only if clearly beneficial and with prescriber awareness"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 interaction with variable clinical significance",
+      "action": "Limit use and inform prescriber; monitor for loss of viral control"
+    },
+    {
+      "name": "Calcium/Iron supplements",
+      "severity": "Low",
+      "mechanism": "May reduce fosamprenavir absorption if taken simultaneously",
+      "action": "Separate dosing by ≥2 hours; take minerals at different times"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals with fosamprenavir (unboosted)",
+      "severity": "Moderate",
+      "mechanism": "Food effect increases fosamprenavir absorption unpredictably; dosing consistency compromised",
+      "action": "When used without ritonavir, take on empty stomach; if ritonavir-boosted, take with food for optimal absorption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase fosamprenavir concentrations slightly; effect modest with protease inhibitors",
+      "action": "Limit consumption; monitor for increased adverse effects (GI, hepatic symptoms)"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "Low",
+      "mechanism": "Minor CYP3A4 inhibition with uncertain clinical relevance for fosamprenavir",
+      "action": "Use occasionally with awareness; not typically restrictive"
+    }
+  ],
+  "monitoring_notes": "Fosamprenavir is typically boosted with ritonavir, which dominates CYP3A4 interaction profile; monitor viral load and CD4 counts regularly, especially if supplements are added. Assess for signs of inadequate viral suppression (elevated viral RNA, declining CD4) or excess drug exposure (elevated liver enzymes, GI disturbance)."
+}

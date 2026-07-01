@@ -1,0 +1,52 @@
+{
+  "drug": "Stavudine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "key_pathways": [
+    "Intracellular phosphorylation",
+    "Mitochondrial toxicity pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Dideoxynucleosides (DDI, DDC)",
+      "severity": "Critical",
+      "mechanism": "Additive mitochondrial toxicity and increased risk of pancreatitis, peripheral neuropathy, and hepatic steatosis",
+      "action": "Contraindicated in combination; avoid all co-administration"
+    },
+    {
+      "name": "High-dose Vitamin B12 (>1000 mcg daily)",
+      "severity": "High",
+      "mechanism": "May increase stavudine phosphorylation and mitochondrial toxicity risk",
+      "action": "Limit supplemental B12 to ≤1000 mcg daily; monitor for neuropathy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Carnitine",
+      "severity": "Low",
+      "mechanism": "Stavudine-induced carnitine depletion may increase mitochondrial dysfunction; supplementation may be protective",
+      "action": "Monitor carnitine levels; consider supplementation if deficiency develops (usual dose 2-3g daily)"
+    },
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "May provide hepatoprotection against stavudine-associated hepatic steatosis",
+      "action": "May consider as adjunctive support; ensure no drug-drug interactions with other antiretrovirals"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slow stavudine absorption and delay peak plasma concentrations",
+      "action": "Administer stavudine on empty stomach (30 minutes before or 2 hours after food) for optimal absorption"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Increases hepatotoxicity risk and mitochondrial dysfunction; may worsen stavudine-associated fatty liver disease",
+      "action": "Limit alcohol consumption; counsel patient on hepatic toxicity risk"
+    }
+  ],
+  "monitoring_notes": "Stavudine is rarely used in modern ART regimens due to significant mitochondrial toxicity and lipodystrophy risks. Monitor for peripheral neuropathy, pancreatitis, hepatic steatosis, and lactate accumulation; baseline and periodic CD4, viral load, liver/renal function, and lactate levels are essential."
+}

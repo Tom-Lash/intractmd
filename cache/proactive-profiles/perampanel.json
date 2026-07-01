@@ -1,0 +1,71 @@
+{
+  "drug": "Perampanel",
+  "drug_class": "Non-competitive AMPA receptor antagonist (anticonvulsant)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reduces perampanel plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor seizure control closely and consider perampanel dose adjustment"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4 and increase seizure risk through GABA antagonism",
+      "action": "Avoid or use with caution; monitor for reduced anticonvulsant efficacy"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk and potential CYP3A4 interactions; increases CNS depression and seizure risk",
+      "action": "Contraindicated; avoid entirely due to compounded hepatic and seizure risks"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; mild CYP3A4 interaction potential",
+      "action": "Use with caution; monitor for excessive sedation or dizziness"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression effects",
+      "action": "Counsel on potential increased drowsiness; adjust activities as needed"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "May have anticonvulsant properties but generally supportive; mild antiplatelet effects",
+      "action": "Generally safe; may provide complementary seizure control support"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inhibitor significantly increases perampanel plasma concentrations and toxicity risk",
+      "action": "Completely avoid grapefruit products; counsel patient on hidden sources in juices and supplements"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, energy drinks)",
+      "severity": "Low",
+      "mechanism": "Mild CYP1A2 competition; caffeine may lower seizure threshold at high intakes",
+      "action": "Moderate caffeine intake; monitor for increased irritability or seizure frequency at high consumption"
+    },
+    {
+      "name": "Charred/grilled meats",
+      "severity": "Low",
+      "mechanism": "Heterocyclic amines may induce CYP3A4, potentially reducing perampanel levels",
+      "action": "Consume in moderation; maintain consistent dietary patterns to avoid fluctuating drug levels"
+    }
+  ],
+  "monitoring_notes": "Perampanel is primarily metabolized by CYP3A4; monitor for seizure breakthrough or toxicity signs (dizziness, ataxia, behavioral changes) when adding or removing CYP3A4 modulators. Counsel on strict avoidance of grapefruit and herbal inducers that may compromise seizure control."
+}

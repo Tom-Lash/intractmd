@@ -1,0 +1,72 @@
+{
+  "drug": "Lorazepam",
+  "drug_class": "Benzodiazepine (anxiolytic, sedative-hypnotic)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Glucuronidation (Phase II metabolism)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce lorazepam levels; also GABA antagonism may counteract anxiolytic effects",
+      "action": "Avoid concurrent use; if discontinuing St. John's Wort, monitor for increased lorazepam levels"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; both agents impact GABA receptors",
+      "action": "Contraindicated; risk of excessive sedation and liver injury"
+    },
+    {
+      "name": "Alcohol (including herbal extracts with alcohol content)",
+      "severity": "Critical",
+      "mechanism": "Profound additive CNS depression, respiratory depression, and impaired cognitive/motor function",
+      "action": "Absolute contraindication; educate patient to avoid all alcoholic beverages"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and GABA potentiation may enhance sedation",
+      "action": "Monitor for excessive drowsiness; dose adjustment of lorazepam may be needed"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild GABA-enhancing properties may potentiate lorazepam effects",
+      "action": "Monitor for increased sedation; counsel on CNS depression risk"
+    },
+    {
+      "name": "Chamomile",
+      "severity": "Low",
+      "mechanism": "Mild sedative effects; potential additive CNS depression",
+      "action": "Advise patient to monitor for excessive drowsiness; generally safe in moderate amounts"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase lorazepam levels and prolong effects",
+      "action": "Limit grapefruit consumption; monitor for increased sedation or adverse effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "May delay lorazepam absorption and alter onset of action",
+      "action": "Take lorazepam consistently with or without food; maintain routine for predictable effect"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages (coffee, tea, energy drinks, chocolate)",
+      "severity": "Low",
+      "mechanism": "Caffeine antagonizes GABA effects and may counteract lorazepam anxiolytic action",
+      "action": "Counsel patient to minimize caffeine intake; excessive amounts may reduce therapeutic benefit"
+    }
+  ],
+  "monitoring_notes": "Monitor for CNS depression, respiratory function, and signs of dependency with chronic use. Assess for drug-drug interactions at each visit, particularly with other CNS depressants, and counsel on avoidance of alcohol and driving impairment."
+}

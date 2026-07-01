@@ -1,0 +1,79 @@
+{
+  "drug": "Prasugrel",
+  "drug_class": "Thienopyridine P2Y12 Platelet Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2B6",
+    "CYP2C9",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects; increases bleeding risk through platelet inhibition and von Willebrand factor reduction",
+      "action": "Discontinue ginkgo biloba; counsel patient on bleeding precautions and signs of hemorrhage"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Enhances antiplatelet aggregation effects; increases risk of clinically significant bleeding",
+      "action": "Avoid high-dose garlic supplements; dietary garlic is acceptable in normal amounts"
+    },
+    {
+      "name": "Ginger (high-dose)",
+      "severity": "High",
+      "mechanism": "Potentiates platelet inhibition and anticoagulant effects; increases bleeding risk",
+      "action": "Avoid therapeutic doses of ginger supplements; counsel to avoid concurrent use with other anticoagulants"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "High",
+      "mechanism": "Inhibits platelet aggregation and thromboxane synthesis; additive antiplatelet effects",
+      "action": "Discontinue feverfew supplementation during prasugrel therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Turmeric (curcumin)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet properties; potential additive effect at high doses",
+      "action": "Monitor for signs of bleeding; moderate dietary use is generally safe"
+    },
+    {
+      "name": "Omega-3 fatty acids (fish oil >3g/day)",
+      "severity": "Low",
+      "mechanism": "May have minor antiplatelet effects; additive risk at high supplemental doses",
+      "action": "Monitor bleeding risk; doses ≤3g/day typically safe; counsel on signs of hemorrhage"
+    },
+    {
+      "name": "Vitamin E (high-dose >400 IU/day)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet activity at supraphysiologic doses; theoretical additive effect",
+      "action": "Monitor for bleeding; restrict to dietary sources or standard supplemental doses ≤400 IU/day"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive alcohol",
+      "severity": "High",
+      "mechanism": "Increases bleeding risk through gastric erosion, platelet dysfunction, and potentiation of antiplatelet effects",
+      "action": "Counsel to limit alcohol to ≤1 drink/day for women, ≤2 drinks/day for men; avoid binge drinking"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry juice (high-volume)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet properties and potential interaction with CYP450 metabolism",
+      "action": "Monitor for increased bleeding; moderate consumption (1-2 cups/day) generally acceptable"
+    },
+    {
+      "name": "Green tea (high-volume consumption)",
+      "severity": "Low",
+      "mechanism": "Contains vitamin K which may theoretically reduce antiplatelet effectiveness; high caffeine may increase bleeding complications",
+      "action": "Moderate consumption recommended; maintain consistent intake and monitor efficacy"
+    }
+  ],
+  "monitoring_notes": "Monitor patients for signs of bleeding (petechiae, ecchymosis, GI bleeding, intracranial hemorrhage) as prasugrel carries a Black Box warning for bleeding risk. Assess adherence and educate on medication necessity despite bleeding concerns, as premature discontinuation increases stent thrombosis and acute coronary syndrome risk."
+}

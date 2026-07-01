@@ -1,0 +1,59 @@
+{
+  "drug": "Ranolazine",
+  "drug_class": "Antianginal agent",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction decreases ranolazine levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplement"
+    },
+    {
+      "name": "Grapefruit extract/seed",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases ranolazine plasma concentrations and toxicity risk",
+      "action": "Discontinue supplement; allow 7-day washout before ranolazine initiation"
+    },
+    {
+      "name": "Kava",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may elevate ranolazine levels; hepatotoxicity risk additive",
+      "action": "Avoid use; consider alternative supplement with liver safety profile"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May enhance antianginal effects but limited clinical significance",
+      "action": "Monitor for increased efficacy; no dose adjustment typically needed"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "Potential additive effects on cardiac function; theoretical interaction only",
+      "action": "Use standard supplemental doses; monitor for cardiac symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases ranolazine concentration and QT prolongation risk",
+      "action": "Eliminate from diet; counsel patient on hidden sources (Seville oranges, pomelo)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase ranolazine absorption and plasma peak concentrations",
+      "action": "Take consistently with or without food; maintain constant intake pattern"
+    }
+  ],
+  "monitoring_notes": "Monitor QT interval prolongation risk, especially with CYP3A4 inhibitors that elevate ranolazine levels. Assess for dizziness, syncope, and cardiac arrhythmias during therapy initiation and with any interacting agent addition."
+}

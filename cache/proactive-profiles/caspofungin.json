@@ -1,0 +1,41 @@
+{
+  "drug": "Caspofungin",
+  "drug_class": "Echinocandin antifungal",
+  "key_pathways": [
+    "Not significantly metabolized by CYP450",
+    "Hepatic peptidase and N-acetylation",
+    "Minimal drug-drug interactions"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic metabolism and reduce caspofungin levels through non-CYP450 pathways",
+      "action": "Avoid concurrent use; if unavoidable, monitor for reduced antifungal efficacy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential hepatic enzyme induction with prolonged use may theoretically affect caspofungin metabolism",
+      "action": "Monitor clinical response; generally considered safe but use with awareness"
+    },
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Hepatic support supplement; no direct interaction expected but use during antifungal therapy warrants monitoring",
+      "action": "Acceptable to use; ensure adequate hydration and monitor liver function"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay or reduce absorption of oral formulations if developed; IV formulation unaffected",
+      "action": "No significant dietary restriction required; can be taken with or without food for IV administration"
+    }
+  ],
+  "monitoring_notes": "Caspofungin has minimal hepatic metabolism and low drug-drug interaction potential, making supplement interactions uncommon. Monitor for signs of reduced antifungal efficacy (persistent fever, worsening infection) if strong hepatic enzyme inducers are used concurrently."
+}

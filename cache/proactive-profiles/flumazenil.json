@@ -1,0 +1,46 @@
+{
+  "drug": "Flumazenil",
+  "drug_class": "Benzodiazepine antagonist",
+  "key_pathways": [
+    "Hepatic metabolism (minor)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Kava potentiates CNS depression and may counteract flumazenil's reversal effects; hepatotoxicity risk with both agents",
+      "action": "Discontinue kava kava use prior to flumazenil administration and avoid concurrent use"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "May induce hepatic metabolism and reduce flumazenil efficacy; potential serotonin interactions",
+      "action": "Monitor flumazenil effectiveness; consider alternative antidepressant if benzodiazepine reversal is critical"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depressant effects may complicate assessment of flumazenil reversal efficacy",
+      "action": "Monitor patient alertness and CNS status closely during flumazenil administration"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild CNS depression may interfere with clinical assessment of benzodiazepine reversal",
+      "action": "Document use and observe for delayed emergence from sedation"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Residual CNS depression may persist despite flumazenil reversal; alcohol potentiates CNS effects",
+      "action": "Advise patient to avoid alcohol for at least 24 hours following flumazenil administration"
+    }
+  ],
+  "monitoring_notes": "Flumazenil has minimal food/supplement interactions due to its short half-life and primary use in acute reversal settings. Monitor for resedation as flumazenil's duration may be shorter than the benzodiazepine being reversed, particularly with long-acting agents."
+}

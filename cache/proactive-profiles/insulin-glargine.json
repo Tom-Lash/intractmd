@@ -1,0 +1,78 @@
+{
+  "drug": "Insulin Glargine",
+  "drug_class": "Long-acting Basal Insulin",
+  "key_pathways": [
+    "Glucose metabolism",
+    "Insulin receptor signaling",
+    "Hepatic glucose production"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Chromium (high-dose >200 mcg/day)",
+      "severity": "High",
+      "mechanism": "Enhances insulin sensitivity and may potentiate hypoglycemic effects, increasing risk of severe hypoglycemia",
+      "action": "Avoid or use only under medical supervision with frequent glucose monitoring and potential insulin dose adjustment"
+    },
+    {
+      "name": "Ginseng (Panax)",
+      "severity": "High",
+      "mechanism": "Increases insulin secretion and peripheral glucose uptake, may cause additive hypoglycemic effects",
+      "action": "Avoid concurrent use; monitor blood glucose closely if discontinuing; adjust insulin dose as needed"
+    },
+    {
+      "name": "Fenugreek (seeds/extract)",
+      "severity": "High",
+      "mechanism": "Slows gastric emptying and reduces glucose absorption, potentiating insulin effect",
+      "action": "Avoid use or monitor glucose levels very closely with potential insulin dose reduction"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May modestly improve insulin sensitivity and glucose utilization",
+      "action": "Monitor blood glucose; minor dose adjustments may be needed with prolonged use"
+    },
+    {
+      "name": "Bitter melon extract",
+      "severity": "Low",
+      "mechanism": "Contains compounds that may enhance glucose uptake and reduce blood glucose",
+      "action": "Educate patient on potential minor hypoglycemic effects; maintain glucose monitoring"
+    },
+    {
+      "name": "Cinnamon",
+      "severity": "Low",
+      "mechanism": "Weak insulin-mimetic properties may slightly enhance glucose control",
+      "action": "Generally safe at culinary doses; monitor for any additive glucose-lowering effects"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-glycemic refined carbohydrates (white bread, sugary beverages, pastries)",
+      "severity": "High",
+      "mechanism": "Causes rapid postprandial glucose spikes that may overwhelm basal insulin coverage and increase hyperglycemic variability",
+      "action": "Strongly counsel patient to minimize or eliminate; emphasize structured carbohydrate intake with appropriate meal timing relative to insulin"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Simple sugars and desserts",
+      "severity": "Low",
+      "mechanism": "May cause postprandial glucose elevation; however, basal insulin provides background coverage",
+      "action": "Educate on portion control and carbohydrate counting; encourage consumption with protein/fat to slow absorption"
+    },
+    {
+      "name": "Alcohol (especially on empty stomach)",
+      "severity": "Low",
+      "mechanism": "Impairs hepatic gluconeogenesis and may increase hypoglycemia risk, particularly with acute intake",
+      "action": "Advise moderation, food consumption with alcohol, and awareness of delayed hypoglycemic symptoms"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Delays gastric emptying and glucose absorption, potentially causing unpredictable postprandial glucose response",
+      "action": "Patient should maintain consistent meal composition; excessive fat intake may complicate insulin timing"
+    }
+  ],
+  "monitoring_notes": "Insulin glargine has minimal direct drug-metabolism interactions (not hepatically metabolized), but supplements/foods affecting glucose utilization or insulin sensitivity require vigilant glucose monitoring and potential dose adjustments. Patient education on consistent carbohydrate intake, meal timing, and recognition of hypoglycemic symptoms is critical for optimal glycemic control."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Itraconazole",
+  "drug_class": "Azole Antifungal",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces itraconazole levels by up to 50%, decreasing antifungal efficacy",
+      "action": "Avoid concurrent use; allow 2 weeks washout before or after itraconazole therapy"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly reduces itraconazole plasma concentrations",
+      "action": "Do not combine; use alternative antifungal if rifampin required"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "May induce CYP3A4, potentially reducing itraconazole bioavailability",
+      "action": "Limit to dietary amounts; avoid concentrated garlic supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibition may minimally increase itraconazole levels",
+      "action": "Monitor for increased side effects (edema, headache); consider dose adjustment if high doses used"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May have minor effects on CYP3A4; limited clinical data available",
+      "action": "Use with caution; monitor clinical response and tolerability"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition and P-glycoprotein blockade increase itraconazole bioavailability, elevating plasma concentrations and risk of toxicity",
+      "action": "Completely avoid grapefruit products throughout treatment duration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May enhance itraconazole absorption and bioavailability; effect varies by formulation (capsules vs. solution)",
+      "action": "Take itraconazole capsules with food; solution on empty stomach; maintain consistent meal timing"
+    },
+    {
+      "name": "Acidic foods/beverages",
+      "severity": "Low",
+      "mechanism": "Gastric pH affects itraconazole dissolution and absorption (requires acidic environment)",
+      "action": "Avoid high-dose acid suppressants; no dietary restrictions necessary with normal pH"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of itraconazole toxicity (peripheral edema, headache, hypokalemia, elevated transaminases) as CYP3A4 interactions significantly impact drug levels. Assess renal and hepatic function at baseline and periodically during treatment, particularly with concomitant medications or supplements affecting CYP3A4."
+}

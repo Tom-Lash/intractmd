@@ -1,0 +1,84 @@
+{
+  "drug": "Cabozantinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer; significantly reduces cabozantinib plasma concentrations and efficacy",
+      "action": "Avoid completely; use alternative herbal products if needed"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer; dramatically decreases cabozantinib levels",
+      "action": "Contraindicated; consult oncologist for alternative antimicrobial therapy"
+    },
+    {
+      "name": "Grapefruit supplements",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; increases cabozantinib bioavailability and toxicity risk",
+      "action": "Avoid all grapefruit products and supplements"
+    },
+    {
+      "name": "Hypericum perforatum (St. John's Wort)",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 induction reduces cabozantinib efficacy below therapeutic levels",
+      "action": "Discontinue; notify oncologist before use of any herbal products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition; may slightly increase cabozantinib levels",
+      "action": "Monitor for increased side effects; report to healthcare team"
+    },
+    {
+      "name": "Curcumin/Turmeric supplements",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 modulating effects; limited clinical significance",
+      "action": "Use cautiously and inform oncologist; monitor tolerability"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential modest CYP3A4 induction; may marginally reduce drug levels",
+      "action": "Limit duration of use; discuss with care team"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases cabozantinib plasma concentration and adverse event risk",
+      "action": "Eliminate from diet; choose alternative citrus fruits"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase cabozantinib exposure",
+      "action": "Avoid or limit consumption; monitor for toxicity signs"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase cabozantinib absorption and GI side effects; consistent food state improves bioavailability predictability",
+      "action": "Take consistently with or without food; maintain uniform dosing schedule"
+    },
+    {
+      "name": "Charbroiled vegetables",
+      "severity": "Low",
+      "mechanism": "Polycyclic aromatic hydrocarbons may modestly induce CYP metabolism",
+      "action": "No strict avoidance needed; consume in moderation"
+    }
+  ],
+  "monitoring_notes": "Cabozantinib is highly dependent on CYP3A4 metabolism; avoid all strong CYP3A4 inducers and inhibitors to maintain therapeutic drug levels. Monitor for signs of toxicity (diarrhea, hand-foot skin reaction, hypertension) and efficacy; dose adjustments may be required if significant interactions occur."
+}

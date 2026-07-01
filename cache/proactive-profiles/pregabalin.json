@@ -1,0 +1,58 @@
+{
+  "drug": "Pregabalin",
+  "drug_class": "Anticonvulsant/Anxiolytic (Gabapentinoid)",
+  "key_pathways": [
+    "Renal excretion (primary)",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Opioid-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Additive CNS depression and respiratory depression risk",
+      "action": "Avoid concurrent use; monitor for excessive sedation, respiratory compromise, and overdose risk"
+    },
+    {
+      "name": "High-dose Valerian root",
+      "severity": "High",
+      "mechanism": "Additive CNS depressant effects potentiating sedation and cognitive impairment",
+      "action": "Avoid or use with caution; monitor for excessive drowsiness and impaired coordination"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Potential additive neurological effects; may enhance dizziness or ataxia",
+      "action": "Monitor patient tolerance; space dosing if feasible and counsel on dizziness precautions"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS effects; theoretical interaction with serotonergic pathways",
+      "action": "Advise patient of potential additive effects; monitor for excessive sedation"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and potential hepatotoxicity risk",
+      "action": "Monitor for increased sedation and cognitive effects; counsel on alcohol avoidance"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Significant additive CNS depression, impaired cognition, increased dizziness, ataxia, and respiratory depression risk",
+      "action": "Strongly advise against concurrent alcohol consumption; counsel on impaired judgment and fall risk"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay pregabalin absorption and peak concentration",
+      "action": "Administer pregabalin consistently with or without food to maintain stable levels"
+    }
+  ],
+  "monitoring_notes": "Pregabalin undergoes minimal hepatic metabolism and is renally eliminated, limiting CYP-mediated interactions but requiring renal function monitoring. Monitor for additive CNS depression, dizziness, ataxia, cognitive impairment, and weight gain; assess fall risk especially in elderly patients, and counsel patients on alcohol avoidance and safe driving practices."
+}

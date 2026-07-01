@@ -1,0 +1,84 @@
+{
+  "drug": "Propranolol",
+  "drug_class": "Beta-blocker (non-selective)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra (Ma Huang)",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic activity antagonizes beta-blocker effects; risk of hypertensive crisis and tachycardia",
+      "action": "Contraindicated; recommend alternative thermogenic agents"
+    },
+    {
+      "name": "Phenylephrine supplements",
+      "severity": "Critical",
+      "mechanism": "Direct alpha-adrenergic agonist opposes propranolol's vasodilatory effects; severe hypertension risk",
+      "action": "Avoid all decongestant supplements containing phenylephrine"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-2 adrenergic antagonist increases sympathetic activity opposing beta-blockade",
+      "action": "Contraindicated; monitor for hypertension and tachycardia if inadvertently combined"
+    },
+    {
+      "name": "Ginseng (high-dose)",
+      "severity": "High",
+      "mechanism": "Stimulant properties and potential sympathomimetic effects may reduce antihypertensive efficacy",
+      "action": "Avoid high-dose preparations; if used, monitor BP regularly"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "Mineralocorticoid effects may cause sodium/fluid retention and potassium loss, blunting antihypertensive effects",
+      "action": "Monitor blood pressure and electrolytes; limit duration and dose"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Additive cardiac effects and potential for enhanced beta-blockade; mild hypotension risk",
+      "action": "Monitor heart rate and blood pressure; may require dose adjustment"
+    },
+    {
+      "name": "Magnesium (high-dose)",
+      "severity": "Low",
+      "mechanism": "Excessive supplementation may potentiate hypotensive effects",
+      "action": "Limit to RDA (320-420 mg/day); monitor for hypotension symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium foods (chronic excessive intake)",
+      "severity": "Moderate",
+      "mechanism": "Sodium retention reduces antihypertensive efficacy of propranolol",
+      "action": "Counsel on DASH diet; maintain sodium <2300 mg/day"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages and foods",
+      "severity": "Low",
+      "mechanism": "Sympathomimetic effects may mildly reduce beta-blocker efficacy and cause tachycardia or tremor",
+      "action": "Moderate intake to <200 mg/day; monitor for increased heart rate or anxiety"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase propranolol absorption variability, potentially affecting steady-state levels",
+      "action": "Maintain consistent meal timing and fat intake for stable drug levels"
+    },
+    {
+      "name": "Chocolate (high-dose consumption)",
+      "severity": "Low",
+      "mechanism": "Contains caffeine and phenylethylamine with mild stimulant properties",
+      "action": "Limit to moderate amounts; counsel on total daily caffeine intake"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and exercise tolerance regularly as sympathomimetic supplements and excessive caffeine may reduce therapeutic efficacy. Assess for hypotension, fatigue, and bradycardia, especially if dietary sodium or stimulant intake changes; counsel on consistent meal composition and timing for stable propranolol bioavailability."
+}

@@ -1,0 +1,73 @@
+{
+  "drug": "Valproate Sodium",
+  "drug_class": "Anticonvulsant/Mood Stabilizer",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2A6",
+    "Beta-oxidation",
+    "Glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Carnitine (high-dose supplementation)",
+      "severity": "High",
+      "mechanism": "Valproate depletes carnitine; excessive supplementation may mask deficiency symptoms or cause imbalance",
+      "action": "Monitor carnitine levels; use only under clinical guidance if supplementation needed"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP450 enzymes, reducing valproate levels and efficacy; also increases seizure risk",
+      "action": "Avoid concomitant use; do not initiate without consulting prescriber"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "Critical",
+      "mechanism": "Hepatotoxic; combined with valproate increases risk of severe liver injury",
+      "action": "Contraindicated; educate patient to avoid completely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folate/Folic Acid",
+      "severity": "Low",
+      "mechanism": "Valproate interferes with folate metabolism; supplementation may help but requires monitoring",
+      "action": "Consider supplementation under clinical guidance; monitor folate levels periodically"
+    },
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Valproate increases metabolism of vitamin D, potentially causing deficiency",
+      "action": "Periodic monitoring and supplementation may be warranted; assess at baseline and annually"
+    },
+    {
+      "name": "Vitamin B12",
+      "severity": "Low",
+      "mechanism": "Valproate may reduce B12 absorption; deficiency possible with long-term use",
+      "action": "Monitor B12 levels annually; supplement if deficiency develops"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (large quantity consumed at once)",
+      "severity": "Moderate",
+      "mechanism": "May delay valproate absorption and reduce peak serum levels; affects drug efficacy timing",
+      "action": "Take valproate consistently with or without food; avoid erratic dietary fat intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; increases sedation risk; chronic use induces hepatic metabolism",
+      "action": "Counsel to minimize or avoid alcohol; assess impact on seizure control if consumed"
+    },
+    {
+      "name": "Caffeinated beverages",
+      "severity": "Low",
+      "mechanism": "May increase CNS stimulation, potentially affecting seizure threshold or anxiety levels",
+      "action": "Monitor tolerance; limit excessive caffeine intake and maintain consistent consumption"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function, ammonia levels, and blood counts regularly, especially in first 6 months. Assess carnitine, folate, vitamin D, and B12 status periodically as valproate depletes or interferes with these nutrients; supplement as clinically indicated."
+}

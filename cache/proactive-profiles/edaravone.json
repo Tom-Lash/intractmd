@@ -1,0 +1,46 @@
+{
+  "drug": "Edaravone",
+  "drug_class": "Free radical scavenger / Antioxidant",
+  "key_pathways": [
+    "Non-CYP dependent",
+    "Direct free radical neutralization"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "Additive antioxidant effects may increase bleeding risk and reduce edaravone efficacy through competitive free radical scavenging",
+      "action": "Limit Vitamin E supplementation to <400 IU daily or consult prescriber before concurrent use"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "Antiplatelet effects combined with edaravone's potential prothrombotic rebound may increase bleeding risk",
+      "action": "Discontinue ginkgo biloba or obtain cardiology clearance before edaravone therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Additive antioxidant activity may theoretically potentiate effects but clinical significance unclear",
+      "action": "Monitor for enhanced therapeutic response; no dose adjustment typically required"
+    },
+    {
+      "name": "N-acetylcysteine (NAC)",
+      "severity": "Low",
+      "mechanism": "Both are antioxidants; potential synergistic neuroprotection but no known adverse interaction",
+      "action": "May be combined with monitoring; document concurrent use in patient record"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High alcohol consumption",
+      "severity": "Low",
+      "mechanism": "Alcohol may impair free radical metabolism and increase oxidative stress, potentially reducing edaravone effectiveness",
+      "action": "Counsel patient to limit alcohol intake to ≤1 drink daily during treatment course"
+    }
+  ],
+  "monitoring_notes": "Edaravone has minimal hepatic metabolism and no major CYP interactions, reducing supplement interaction risk. Monitor for signs of bleeding or thrombosis given the drug's vascular effects, particularly if combined with antiplatelet agents."
+}

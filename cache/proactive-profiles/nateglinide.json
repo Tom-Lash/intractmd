@@ -1,0 +1,59 @@
+{
+  "drug": "Nateglinide",
+  "drug_class": "Meglitinide (Rapid-acting insulin secretagogue)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces nateglinide plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor blood glucose closely and adjust nateglinide dose"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "May potentiate hypoglycemic effects and increase insulin secretion independently",
+      "action": "Avoid or use with caution; monitor blood glucose and educate patient on hypoglycemia signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have additive glucose-lowering effects; limited evidence but potential for enhanced hypoglycemia",
+      "action": "Use with caution; counsel patient on hypoglycemia awareness and monitor glucose trends"
+    },
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May enhance insulin secretion and glucose utilization; additive hypoglycemic potential",
+      "action": "Monitor blood glucose regularly; inform patient of hypoglycemia risk with concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays nateglinide absorption and peak plasma concentrations; reduces glucose control at critical meal times",
+      "action": "Take nateglinide 1-30 minutes before meals; counsel patient to avoid high-fat foods with meals for optimal efficacy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Alcohol (moderate-to-heavy consumption)",
+      "severity": "Low",
+      "mechanism": "Alcohol may enhance and prolong hypoglycemic effects by impairing hepatic glucose production",
+      "action": "Advise limited alcohol intake; educate on hypoglycemia risk and carry fast-acting carbohydrates when drinking"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase nateglinide levels; clinical significance unclear but potential for enhanced effect",
+      "action": "Limit grapefruit juice consumption; monitor for signs of hypoglycemia if intake unavoidable"
+    }
+  ],
+  "monitoring_notes": "Monitor fasting and postprandial blood glucose regularly, especially when starting therapy or adding interacting supplements. Assess for hypoglycemic episodes and adjust nateglinide dosing based on glycemic response; counsel patients that nateglinide must be taken shortly before meals for optimal efficacy."
+}

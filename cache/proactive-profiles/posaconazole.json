@@ -1,0 +1,71 @@
+{
+  "drug": "Posaconazole",
+  "drug_class": "Triazole Antifungal",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces posaconazole levels by up to 50%, decreasing antifungal efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Rifampin/Rifabutin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducers significantly reduce posaconazole plasma concentrations",
+      "action": "Do not combine; use alternative antitubercular agents if possible"
+    },
+    {
+      "name": "Phenytoin",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer decreases posaconazole bioavailability and therapeutic levels",
+      "action": "Avoid combination or monitor antifungal levels closely with dose adjustment"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May induce CYP3A4, potentially reducing posaconazole concentration",
+      "action": "Discontinue echinacea during posaconazole therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4, potentially increasing posaconazole levels",
+      "action": "Monitor for signs of toxicity; may require dose adjustment"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 effects with unclear clinical significance",
+      "action": "Use with caution; monitor clinical response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases posaconazole bioavailability and risk of adverse effects",
+      "action": "Avoid grapefruit consumption during therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Delayed gastric emptying may enhance oral posaconazole absorption (suspension formulation dependent)",
+      "action": "Take oral suspension with food for optimal absorption; IV formulation unaffected"
+    },
+    {
+      "name": "Acidic beverages (cola, orange juice)",
+      "severity": "Low",
+      "mechanism": "Suspension formulation requires acidic environment for optimal dissolution",
+      "action": "May take with acidic drinks to enhance absorption of suspension formulation"
+    }
+  ],
+  "monitoring_notes": "Monitor for QT prolongation risk, especially with concurrent CYP3A4 inhibitors or in patients with electrolyte abnormalities. Ensure adequate gastric acidity for oral suspension absorption; monitor serum levels and antifungal efficacy during treatment."
+}

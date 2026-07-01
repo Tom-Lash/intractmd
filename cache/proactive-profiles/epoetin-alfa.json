@@ -1,0 +1,60 @@
+{
+  "drug": "Epoetin Alfa",
+  "drug_class": "Erythropoiesis-Stimulating Agent (ESA)",
+  "key_pathways": [
+    "Erythropoietin receptor signaling",
+    "Hematopoietic pathway",
+    "Iron metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "Antiplatelet and anticoagulant effects may potentiate thrombotic risk already increased by epoetin alfa",
+      "action": "Avoid supplemental vitamin E above dietary amounts; monitor for signs of thromboembolism"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Moderate",
+      "mechanism": "May enhance erythropoiesis and increase hematocrit synergistically, elevating thrombotic risk",
+      "action": "Avoid concurrent use; counsel patient to discontinue ginseng supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Epoetin alfa increases iron demand; supplementation is often necessary and beneficial for efficacy",
+      "action": "Coordinate iron supplementation with prescriber; monitor ferritin and transferrin saturation regularly"
+    },
+    {
+      "name": "Vitamin B12 and Folate",
+      "severity": "Low",
+      "mechanism": "These are cofactors for erythropoiesis; deficiency can reduce epoetin alfa effectiveness",
+      "action": "Ensure adequate dietary intake or supplementation as directed; baseline labs recommended"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-sodium processed foods",
+      "severity": "High",
+      "mechanism": "Epoetin alfa increases thrombotic risk and blood pressure; sodium exacerbates hypertension",
+      "action": "Recommend DASH diet and sodium restriction <2300 mg daily; monitor blood pressure"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, spinach, fortified cereals)",
+      "severity": "Low",
+      "mechanism": "Support adequate iron availability needed for maximal epoetin alfa efficacy",
+      "action": "Encourage consistent dietary iron intake; monitor iron parameters"
+    },
+    {
+      "name": "Foods high in B vitamins (leafy greens, eggs, poultry)",
+      "severity": "Low",
+      "mechanism": "Provide cofactors necessary for effective erythropoiesis",
+      "action": "Ensure adequate dietary sources; supplementation may be needed if deficient"
+    }
+  ],
+  "monitoring_notes": "Monitor hemoglobin/hematocrit, blood pressure, iron panel (ferritin, TSAT, serum iron), platelet count, and signs of thromboembolism (DVT/PE/stroke) at baseline and regularly during therapy. Assess for adequate nutritional iron and B vitamin status, as deficiencies impair epoetin alfa response and increase adverse effects."
+}

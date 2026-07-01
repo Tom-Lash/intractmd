@@ -1,0 +1,60 @@
+{
+  "drug": "Almotriptan",
+  "drug_class": "Selective 5-HT1B/1D receptor agonist (Triptan)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Monoamine oxidase"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces almotriptan levels; potential serotonin syndrome risk",
+      "action": "Avoid concurrent use; allow 2-week washout before or after St. John's Wort"
+    },
+    {
+      "name": "5-Hydroxytryptophan (5-HTP)",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increase risk of serotonin syndrome",
+      "action": "Contraindicated; do not use concurrently with almotriptan"
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "High",
+      "mechanism": "Increased serotonin precursor may potentiate serotonin syndrome risk",
+      "action": "Avoid concurrent use; monitor for serotonergic symptoms if unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 induction; possible additive stimulant effects",
+      "action": "Monitor for reduced efficacy or increased cardiovascular stimulation"
+    },
+    {
+      "name": "Valerian",
+      "severity": "Low",
+      "mechanism": "Minor CNS depression effects; may enhance drowsiness",
+      "action": "Counsel on potential additive sedation; advise cautious use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose tyramine-containing foods (aged cheeses, cured meats, fermented foods)",
+      "severity": "Moderate",
+      "mechanism": "Triptans cause vasoconstriction; tyramine increases blood pressure and may precipitate hypertensive crisis",
+      "action": "Advise patient to limit tyramine intake; monitor blood pressure if consumed"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Additive CNS stimulation; may increase tremor, jitteriness, or tachycardia",
+      "action": "Counsel to moderate caffeine intake during migraine treatment; monitor for excessive stimulation"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, high blood pressure, dilated pupils, muscle rigidity) especially when almotriptan is combined with other serotonergic agents. Counsel patients to report any unusual symptoms and avoid abrupt discontinuation."
+}

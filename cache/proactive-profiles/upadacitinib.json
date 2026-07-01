@@ -1,0 +1,59 @@
+{
+  "drug": "Upadacitinib",
+  "drug_class": "JAK inhibitor (Janus kinase inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "JAK-STAT signaling"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces upadacitinib exposure and efficacy",
+      "action": "Discontinue St. John's Wort; do not co-administer with upadacitinib"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May enhance immune stimulation, potentially counteracting JAK inhibitor immunosuppression",
+      "action": "Avoid concurrent use; counsel patient on infection risk mitigation"
+    },
+    {
+      "name": "Ginseng (high-dose)",
+      "severity": "Moderate",
+      "mechanism": "Immune system stimulation may antagonize JAK inhibitor effects",
+      "action": "Avoid or use only under medical supervision with close monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase upadacitinib levels",
+      "action": "Monitor for adverse effects; consider alternative supplements"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inhibitory effects",
+      "action": "No dose adjustment needed; routine monitoring appropriate"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may moderately increase upadacitinib exposure",
+      "action": "Limit or avoid grapefruit juice; counsel on consistent dietary patterns"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay absorption and alter bioavailability timing",
+      "action": "Take on consistent schedule; food timing less critical than consistency"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of infection given JAK inhibitor immunosuppression; assess liver function and lipid panels periodically. Educate patients on avoiding immune-stimulating supplements and maintaining consistent meal timing patterns."
+}

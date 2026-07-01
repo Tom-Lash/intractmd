@@ -1,0 +1,67 @@
+{
+  "drug": "Thalidomide",
+  "drug_class": "Immunomodulatory agent (IMID); TNF-α inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "Cereblon (CRBN) binding",
+    "E3 ubiquitin ligase modulation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce thalidomide levels and efficacy; also increases photosensitivity risk",
+      "action": "Contraindicated; counsel patient to avoid completely and inform provider of use"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Potential additive thrombotic risk; thalidomide is teratogenic with increased DVT/PE risk",
+      "action": "Limit vitamin E supplementation; doses >400 IU/day require provider approval and DVT prophylaxis assessment"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "Antiplatelet effects may compound thalidomide-associated thromboembolism risk",
+      "action": "Avoid or use only with explicit provider approval and monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B6 (pyridoxine)",
+      "severity": "Low",
+      "mechanism": "Thalidomide commonly causes peripheral neuropathy; B6 may help mitigate neuropathic symptoms",
+      "action": "Monitor for neuropathy; supplementation may be beneficial but requires provider coordination"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May provide antioxidant support; no direct interaction but used for fatigue management in cancer patients",
+      "action": "Generally safe; encourage provider awareness for comprehensive monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>30g fat)",
+      "severity": "Moderate",
+      "mechanism": "Increased fat intake can significantly elevate thalidomide absorption and serum levels, increasing toxicity risk",
+      "action": "Take thalidomide with consistent low-fat meals; counsel on dietary consistency to maintain stable levels"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase thalidomide exposure; effect is typically mild with thalidomide",
+      "action": "Occasional consumption acceptable; advise consistent intake patterns and provider awareness"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression and increased peripheral neuropathy risk; thalidomide causes dizziness/somnolence",
+      "action": "Limit alcohol; counsel on cumulative neuropathy risk and fall prevention"
+    }
+  ],
+  "monitoring_notes": "Thalidomide has critical teratogenicity (Category X) requiring strict REMS compliance; monitor for peripheral neuropathy, thromboembolism (DVT/PE prophylaxis often needed), and cytopenias independent of supplement interactions. Counsel on absolute dietary consistency given fat-dependent absorption and maintain close communication regarding any supplements or dietary changes."
+}

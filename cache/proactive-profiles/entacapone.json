@@ -1,0 +1,60 @@
+{
+  "drug": "Entacapone",
+  "drug_class": "COMT Inhibitor (Catechol-O-methyltransferase Inhibitor)",
+  "key_pathways": [
+    "COMT inhibition",
+    "Levodopa metabolism",
+    "CYP3A4 substrate"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Iron supplements (high dose)",
+      "severity": "High",
+      "mechanism": "Entacapone chelates iron, reducing iron absorption and entacapone efficacy; iron-rich supplements may decrease COMT inhibitor levels",
+      "action": "Separate dosing by at least 2-3 hours; monitor for reduced Parkinson's symptom control"
+    },
+    {
+      "name": "Sympathomimetic amines (ephedrine, pseudoephedrine supplements)",
+      "severity": "Critical",
+      "mechanism": "Entacapone increases levodopa bioavailability and dopamine levels; sympathomimetics combined with increased catecholamines risk hypertensive crisis",
+      "action": "Avoid all decongestant supplements; counsel patient to avoid OTC cold/allergy products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B6 (pyridoxine)",
+      "severity": "Low",
+      "mechanism": "High-dose B6 may reduce levodopa efficacy by peripheral conversion, though entacapone's COMT inhibition partially mitigates this effect",
+      "action": "Keep B6 supplementation modest (<25 mg daily); monitor for symptom control changes"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce entacapone and levodopa absorption via chelation if taken simultaneously",
+      "action": "Separate dosing by 2 hours from entacapone/levodopa combination"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High protein meals (concurrent with dosing)",
+      "severity": "Moderate",
+      "mechanism": "Large neutral amino acids compete with levodopa for intestinal and blood-brain barrier transport; reduces levodopa efficacy despite COMT inhibition",
+      "action": "Take entacapone/levodopa on empty stomach or 1 hour before/after protein-rich meals"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Iron-rich foods (red meat, spinach, fortified cereals)",
+      "severity": "Low",
+      "mechanism": "Dietary iron may chelate entacapone and reduce absorption; effect less significant than supplements",
+      "action": "Avoid excessive iron-rich foods at time of entacapone dosing; monitor clinical response"
+    },
+    {
+      "name": "Foods containing tyramine (aged cheeses, cured meats, fermented foods)",
+      "severity": "Low",
+      "mechanism": "Entacapone increases dopamine; excessive tyramine with elevated catecholamines poses theoretical hypertensive risk, though risk is lower than with MAOIs",
+      "action": "Counsel moderation; no strict avoidance required but avoid excessive consumption"
+    }
+  ],
+  "monitoring_notes": "Monitor for reduced levodopa efficacy if iron supplements or high-protein meals are consumed concurrently; assess blood pressure and heart rate regularly, especially if patient uses any sympathomimetic-containing products. Educate on timing of meals relative to medication dosing for optimal therapeutic effect."
+}

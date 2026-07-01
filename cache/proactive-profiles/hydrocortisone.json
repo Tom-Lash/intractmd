@@ -1,0 +1,60 @@
+{
+  "drug": "Hydrocortisone",
+  "drug_class": "Corticosteroid (glucocorticoid)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "Protein binding (cortisol-binding globulin)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may increase hydrocortisone metabolism and reduce therapeutic efficacy",
+      "action": "Avoid concurrent use; consult prescriber before initiating St. John's Wort"
+    },
+    {
+      "name": "Licorice root (high doses)",
+      "severity": "High",
+      "mechanism": "Licorice enhances mineralocorticoid effects and sodium/fluid retention; additive corticosteroid effects increase hypokalemia and hypertension risk",
+      "action": "Avoid supplementation; monitor potassium and blood pressure if use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium and Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "Hydrocortisone impairs calcium absorption and increases bone loss; supplementation may mitigate corticosteroid-induced osteoporosis",
+      "action": "Consider monitoring bone density; adequate supplementation recommended with long-term hydrocortisone use"
+    },
+    {
+      "name": "Potassium supplements",
+      "severity": "Low",
+      "mechanism": "Hydrocortisone can cause hypokalemia; supplementation may help maintain normal potassium levels",
+      "action": "Monitor serum potassium; supplementation may be beneficial depending on clinical context"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor may increase hydrocortisone bioavailability and systemic exposure, elevating adverse effect risk",
+      "action": "Avoid grapefruit products; choose alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Hydrocortisone promotes sodium retention and fluid accumulation; excess dietary sodium may exacerbate hypertension and edema",
+      "action": "Consider moderate sodium restriction; monitor blood pressure and fluid status"
+    },
+    {
+      "name": "Potassium-rich foods (bananas, spinach, sweet potato)",
+      "severity": "Low",
+      "mechanism": "Hydrocortisone-induced hypokalemia may be partially offset by potassium-rich dietary sources",
+      "action": "Monitor serum potassium; encourage adequate intake based on laboratory values"
+    }
+  ],
+  "monitoring_notes": "Monitor serum potassium, blood glucose, and blood pressure regularly during hydrocortisone therapy, as corticosteroids increase hypokalemia, hyperglycemia, and hypertension risk. Assess bone health in patients on prolonged therapy and consider osteoporosis prophylaxis with calcium/vitamin D supplementation."
+}

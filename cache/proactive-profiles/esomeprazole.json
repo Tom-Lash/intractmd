@@ -1,0 +1,71 @@
+{
+  "drug": "Esomeprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C19 inducer reduces esomeprazole levels and effectiveness",
+      "action": "Avoid concurrent use; consult provider before initiating or discontinuing St. John's Wort"
+    },
+    {
+      "name": "Calcium (high-dose supplementation)",
+      "severity": "High",
+      "mechanism": "PPIs reduce gastric acid required for calcium absorption; chronic use increases deficiency risk",
+      "action": "Take calcium supplements at least 2 hours after esomeprazole; consider citrate form for better absorption"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Elevated gastric pH from PPI impairs iron absorption; separate dosing times",
+      "action": "Administer iron at least 2-4 hours apart from esomeprazole; monitor hemoglobin if long-term PPI use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Long-term PPI use may increase hypomagnesemia risk; supplementation may be beneficial",
+      "action": "Monitor serum magnesium with chronic use; supplement if levels decline"
+    },
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "Chronic PPI use reduces B12 absorption; supplementation may prevent deficiency",
+      "action": "Consider B12 monitoring in patients on long-term esomeprazole therapy"
+    },
+    {
+      "name": "Clopidogrel",
+      "severity": "Low",
+      "mechanism": "Esomeprazole is a potent CYP2C19 inhibitor that may reduce clopidogrel activation",
+      "action": "Monitor for reduced antiplatelet effect; alternative PPI or H2-blocker may be considered"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays esomeprazole absorption and reduces peak plasma concentrations",
+      "action": "Administer esomeprazole on an empty stomach, 30-60 minutes before breakfast"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "May increase gastric acid secretion partially offsetting PPI effect",
+      "action": "Limit excessive caffeine intake; not a strict contraindication"
+    },
+    {
+      "name": "Spicy or acidic foods",
+      "severity": "Low",
+      "mechanism": "May irritate gastric mucosa despite PPI therapy in sensitive individuals",
+      "action": "Patients should assess individual tolerance; no universal restriction required"
+    }
+  ],
+  "monitoring_notes": "Monitor for long-term complications of PPI use including hypomagnesemia, B12 deficiency, and calcium malabsorption with chronic therapy (>1 year). CYP2C19 polymorphisms significantly affect esomeprazole metabolism; poor metabolizers may require dose adjustment."
+}

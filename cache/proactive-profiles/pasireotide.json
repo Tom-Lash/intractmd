@@ -1,0 +1,52 @@
+{
+  "drug": "Pasireotide",
+  "drug_class": "Somatostatin analog",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce pasireotide levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "Hypericum perforatum",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction decreases pasireotide plasma concentrations",
+      "action": "Discontinue before starting pasireotide therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may modestly increase pasireotide exposure",
+      "action": "Monitor for increased side effects; limit concurrent use"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition; limited clinical evidence",
+      "action": "Monitor glucose and symptoms; counsel on use"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase pasireotide levels",
+      "action": "Limit or avoid grapefruit consumption during therapy"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay pasireotide absorption and onset of action",
+      "action": "Take injections as directed; meal timing with tablets not established"
+    }
+  ],
+  "monitoring_notes": "Monitor blood glucose closely as pasireotide may impair glucose tolerance. Watch for QT prolongation risk if combined with other QT-prolonging agents; baseline and periodic ECG monitoring recommended."
+}

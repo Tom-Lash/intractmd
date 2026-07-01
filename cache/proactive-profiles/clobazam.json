@@ -1,0 +1,58 @@
+{
+  "drug": "Clobazam",
+  "drug_class": "Benzodiazepine (1,5-benzodiazepine)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces clobazam levels and seizure control efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and potential hepatotoxicity concerns with benzodiazepines",
+      "action": "Contraindicated; do not use with clobazam"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS depressant effects",
+      "action": "Monitor for excessive sedation or dizziness; dose adjustment may be needed"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Mild additive CNS depression",
+      "action": "Use cautiously; educate patient on sedation risk"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase clobazam levels",
+      "action": "Limit consumption; monitor for increased drowsiness or adverse effects"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "High",
+      "mechanism": "Significant additive CNS depression, impaired cognition, respiratory depression risk",
+      "action": "Strongly advise patient to avoid alcohol entirely during clobazam therapy"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay absorption and affect peak drug levels",
+      "action": "Take consistently with or without food; maintain consistent timing"
+    }
+  ],
+  "monitoring_notes": "Monitor seizure control, CNS depression symptoms, and liver function periodically. Counsel patients to avoid alcohol and CNS depressants, and report excessive sedation or breakthrough seizures."
+}

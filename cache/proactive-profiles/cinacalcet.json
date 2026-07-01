@@ -1,0 +1,60 @@
+{
+  "drug": "Cinacalcet",
+  "drug_class": "Calcimimetic agent (Calcium-sensing receptor allosteric modulator)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces cinacalcet plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal products"
+    },
+    {
+      "name": "Calcium supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Opposing mechanism of action; calcium supplementation counteracts cinacalcet's phosphate-lowering effects",
+      "action": "Use only if clinically necessary under physician supervision; monitor serum calcium and phosphate closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase cinacalcet levels; effect typically mild",
+      "action": "Monitor for increased side effects (nausea, vomiting, hypocalcemia)"
+    },
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "May increase serum calcium, potentially reducing cinacalcet efficacy",
+      "action": "Coordinate supplementation with prescriber; monitor calcium and phosphate levels"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases cinacalcet bioavailability and plasma concentrations",
+      "action": "Avoid consumption; switch to alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase cinacalcet absorption; food effect varies individually",
+      "action": "Take consistently with or without food; maintain consistent dietary pattern"
+    },
+    {
+      "name": "Calcium-fortified foods (excessive intake)",
+      "severity": "Low",
+      "mechanism": "High dietary calcium may reduce cinacalcet therapeutic benefit",
+      "action": "Maintain moderate, consistent calcium intake; avoid excessive fortified products"
+    }
+  ],
+  "monitoring_notes": "Monitor serum calcium, phosphate, and PTH levels regularly as cinacalcet's efficacy is highly individualized. Assess for hypocalcemia symptoms (paresthesias, muscle cramps, tetany) and adjust dose accordingly."
+}

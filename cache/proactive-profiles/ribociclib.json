@@ -1,0 +1,60 @@
+{
+  "drug": "Ribociclib",
+  "drug_class": "Cyclin-dependent kinase 4/6 (CDK4/6) inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer reducing ribociclib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements with no enzyme induction properties"
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increasing ribociclib exposure and toxicity risk",
+      "action": "Discontinue use; maintain consistent dietary approach throughout treatment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibition may modestly increase ribociclib levels",
+      "action": "Monitor for adverse effects; use at lowest effective dose if continued"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Low",
+      "mechanism": "Potential weak CYP3A4 and CYP2C8 modulation with variable clinical significance",
+      "action": "Use cautiously; inform healthcare provider of concurrent use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inhibition causing substantial increase in ribociclib systemic exposure and toxicity risk",
+      "action": "Completely avoid grapefruit products throughout entire treatment duration"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase ribociclib absorption and peak plasma concentrations",
+      "action": "Take with consistent meal composition; counsel patient on regular meal timing to maintain predictable drug levels"
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition with uncertain clinical impact at typical consumption levels",
+      "action": "Limit intake; monitor for increased adverse effects if consumed regularly"
+    }
+  ],
+  "monitoring_notes": "Monitor QT interval and cardiac function as ribociclib carries risk of QT prolongation; monitor CBC and liver function tests regularly. Counsel patients to maintain consistent meal patterns and avoid all grapefruit products to prevent unpredictable drug exposure variations."
+}

@@ -1,0 +1,78 @@
+{
+  "drug": "Ticagrelor",
+  "drug_class": "P2Y12 Platelet Inhibitor (Antiplatelet Agent)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (PgP)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces ticagrelor plasma concentrations and antiplatelet efficacy",
+      "action": "Contraindicated; use alternative herbal supplement if mood support needed"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet/anticoagulant effects increase bleeding risk",
+      "action": "Avoid concurrent use; counsel on increased bruising and bleeding risk"
+    },
+    {
+      "name": "Garlic (High-Dose Supplements)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet activity and may inhibit CYP3A4, increasing ticagrelor levels",
+      "action": "Avoid therapeutic garlic supplements; dietary garlic in normal amounts acceptable"
+    },
+    {
+      "name": "Ginger (High-Dose)",
+      "severity": "Moderate",
+      "mechanism": "Additive antiplatelet effects and potential CYP3A4 interaction",
+      "action": "Limit to culinary amounts; avoid high-dose supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 Fatty Acids (Fish Oil)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties may additively increase bleeding tendency",
+      "action": "Monitor for increased bruising; dose typically safe at standard supplementation"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Potential mild antiplatelet effects and CYP3A4 inhibition at high doses",
+      "action": "Use culinary amounts; monitor if taking high-dose supplements"
+    },
+    {
+      "name": "Vitamin E (High-Dose >400 IU/day)",
+      "severity": "Low",
+      "mechanism": "May potentiate antiplatelet effects at very high doses",
+      "action": "Recommend staying below 400 IU daily; standard supplementation acceptable"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition significantly increases ticagrelor plasma concentrations and bleeding risk",
+      "action": "Absolute contraindication; eliminate from diet; counsel on hidden sources (some juices, pomelos)"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry Juice (High-Dose/Concentrated)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet properties and potential CYP3A4 interaction at excessive intake",
+      "action": "Moderate consumption acceptable; limit concentrated supplements"
+    },
+    {
+      "name": "Alcohol (Excessive)",
+      "severity": "Low",
+      "mechanism": "Heavy alcohol use potentiates bleeding risk and may affect drug metabolism",
+      "action": "Counsel to limit alcohol to moderate amounts (≤1-2 drinks daily); avoid binge drinking"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of bleeding (spontaneous bruising, nosebleeds, bleeding gums, dark stools) and counsel patients to report all supplements and herbal products. Emphasize that ticagrelor's antiplatelet effect is essential for cardiovascular protection and should not be compromised by interacting substances."
+}

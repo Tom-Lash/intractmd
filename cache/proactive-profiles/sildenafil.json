@@ -1,0 +1,71 @@
+{
+  "drug": "Sildenafil",
+  "drug_class": "Phosphodiesterase-5 (PDE-5) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Nitrates (organic nitrates, amyl nitrite)",
+      "severity": "Critical",
+      "mechanism": "Severe hypotension and cardiovascular collapse via synergistic vasodilation",
+      "action": "Absolutely contraindicated; do not co-administer under any circumstances"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces sildenafil plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, switch to alternative or monitor for reduced efficacy"
+    },
+    {
+      "name": "Ritonavir and other potent CYP3A4 inhibitors",
+      "severity": "High",
+      "mechanism": "Inhibition of CYP3A4 increases sildenafil levels significantly, increasing adverse effects",
+      "action": "Use alternative HIV protease inhibitor or reduce sildenafil dose; monitor closely"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "L-arginine",
+      "severity": "Low",
+      "mechanism": "Potential additive vasodilatory effects; may enhance hypotensive response",
+      "action": "Monitor blood pressure; counsel on possible enhanced effects"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce sildenafil concentrations",
+      "action": "Monitor efficacy; no dose adjustment typically needed"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "Possible mild antiplatelet and vasodilatory additive effects",
+      "action": "Counsel on potential enhanced vasodilation; monitor if bleeding risk present"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Delays sildenafil absorption and reduces peak plasma concentration by up to 29%; delays onset by 60+ minutes",
+      "action": "Administer sildenafil on empty stomach or with light meal; counsel timing 30-60 minutes before activity"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase sildenafil levels moderately; effect variable and individual-dependent",
+      "action": "Counsel to limit grapefruit consumption; monitor for increased adverse effects (flushing, headache, hypotension)"
+    },
+    {
+      "name": "Alcohol (moderate-heavy consumption)",
+      "severity": "Low",
+      "mechanism": "Additive vasodilatory and hypotensive effects; increased risk of syncope and cardiac events",
+      "action": "Advise limiting alcohol intake; counsel on risk of orthostatic hypotension, especially with heavy use"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure and cardiovascular status, especially in patients with underlying cardiac disease, hypotension, or concurrent vasodilatory therapy. Assess for headache, flushing, dyspepsia, and visual disturbances as common adverse effects that may be exacerbated by food/supplement interactions."
+}

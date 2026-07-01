@@ -1,0 +1,60 @@
+{
+  "drug": "Riluzole",
+  "drug_class": "Glutamate antagonist/neuroprotective agent",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4",
+    "NAT (N-acetyltransferase)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP1A2 and CYP3A4 induction may significantly reduce riluzole levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate neurotoxic effects and increase hepatotoxicity risk with riluzole",
+      "action": "Limit to <400 IU/day or discontinue; discuss with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "NAC (N-acetylcysteine)",
+      "severity": "Low",
+      "mechanism": "May potentiate glutamate pathway effects; additive neuroprotective claims lack strong evidence",
+      "action": "Monitor for increased side effects; use only under medical supervision"
+    },
+    {
+      "name": "Curcumin/Turmeric",
+      "severity": "Low",
+      "mechanism": "Minor CYP3A4 inhibition may slightly increase riluzole exposure",
+      "action": "Monitor liver function tests; maintain consistent intake if used"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases riluzole bioavailability and hepatotoxicity risk",
+      "action": "Completely avoid grapefruit and related citrus fruits; choose alternative beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase riluzole absorption and GI side effects",
+      "action": "Take riluzole consistently with or without food; maintain same timing pattern"
+    },
+    {
+      "name": "Charred/grilled foods (high PAH content)",
+      "severity": "Low",
+      "mechanism": "May induce CYP1A2, potentially reducing riluzole levels",
+      "action": "Maintain moderate intake; excessive consumption may reduce efficacy"
+    }
+  ],
+  "monitoring_notes": "Riluzole carries hepatotoxicity risk; monitor baseline and periodic liver function tests (ALT/AST) every 3 months. Counsel patients to report jaundice, dark urine, or abdominal pain immediately and avoid all potent CYP3A4 inhibitors and inducers."
+}

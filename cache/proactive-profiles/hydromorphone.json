@@ -1,0 +1,72 @@
+{
+  "drug": "Hydromorphone",
+  "drug_class": "Opioid Analgesic",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "UDP-glucuronosyltransferase (UGT)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce hydromorphone concentrations and efficacy",
+      "action": "Avoid concurrent use; if necessary, monitor for reduced analgesia and adjust dosing"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk and potential CNS depression potentiation",
+      "action": "Contraindicated; do not use concurrently"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "High",
+      "mechanism": "Additive CNS depression increasing risk of respiratory depression and sedation",
+      "action": "Avoid use; counsel patient on risks of combined sedating effects"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase hydromorphone levels",
+      "action": "Monitor for increased opioid effects; generally safe but advise patient"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "High-dose magnesium may enhance CNS depression",
+      "action": "Use at standard supplemental doses; monitor if high-dose use is considered"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedation with opioid use",
+      "action": "Educate patient on cumulative sedative effects; use lowest effective dose"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases hydromorphone bioavailability and plasma concentrations, elevating overdose and toxicity risk",
+      "action": "Eliminate grapefruit consumption entirely during hydromorphone therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May delay hydromorphone absorption and peak levels; affects medication timing predictability",
+      "action": "Counsel patient to take consistently with or without food; maintain dietary consistency"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression, respiratory depression, and increased overdose risk even at moderate doses",
+      "action": "Strongly advise patient to avoid or minimize alcohol; educate on cumulative dangers"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of respiratory depression, excessive sedation, and opioid toxicity, particularly if CYP3A4 inhibitors or CNS depressants are introduced. Counsel patients to report use of all supplements and maintain consistent dietary patterns to ensure stable drug levels and therapeutic outcomes."
+}

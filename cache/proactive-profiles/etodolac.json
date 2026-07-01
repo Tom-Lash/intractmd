@@ -1,0 +1,78 @@
+{
+  "drug": "Etodolac",
+  "drug_class": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP1A2",
+    "glucuronidation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants",
+      "severity": "Critical",
+      "mechanism": "Etodolac inhibits platelet function and increases bleeding risk; additive anticoagulant effect",
+      "action": "Avoid concurrent use; if unavoidable, monitor INR closely and adjust warfarin dose"
+    },
+    {
+      "name": "High-dose Aspirin",
+      "severity": "High",
+      "mechanism": "Combined NSAID use increases GI ulceration, bleeding, and cardiovascular risk",
+      "action": "Do not combine; use only one NSAID at a time"
+    },
+    {
+      "name": "Corticosteroids",
+      "severity": "High",
+      "mechanism": "Synergistic increase in GI ulceration and bleeding risk",
+      "action": "Avoid combination; if necessary, use lowest effective doses and monitor GI symptoms"
+    },
+    {
+      "name": "Feverfew",
+      "severity": "High",
+      "mechanism": "Both inhibit platelet aggregation; increased bleeding risk",
+      "action": "Discontinue feverfew before starting etodolac"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild platelet inhibition may have additive antiplatelet effects",
+      "action": "Monitor for signs of bleeding; use moderate amounts only"
+    },
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet properties; potential additive effect",
+      "action": "Monitor for increased bleeding tendency; culinary amounts generally safe"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet activity; potential additive GI irritation",
+      "action": "Monitor GI tolerance; doses >1g daily warrant caution"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (>2 drinks/day)",
+      "severity": "High",
+      "mechanism": "Increases GI irritation, ulceration risk, and hepatotoxicity",
+      "action": "Limit alcohol to ≤1 drink/day or avoid entirely; counsel on GI bleeding risk"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay etodolac absorption and increase GI distress",
+      "action": "Take etodolac with food or milk to minimize GI upset, but avoid excessive fat"
+    },
+    {
+      "name": "Caffeine-containing foods",
+      "severity": "Low",
+      "mechanism": "May increase GI irritation and stomach acid; CYP1A2 substrate interaction potential",
+      "action": "Moderate caffeine intake; monitor for increased GI symptoms"
+    }
+  ],
+  "monitoring_notes": "Monitor for GI bleeding, ulceration, renal function, and blood pressure during etodolac therapy. Assess for drug interactions affecting CYP2C9 metabolism and counsel on cardiovascular/thrombotic risk, particularly in patients with history of MI or stroke."
+}

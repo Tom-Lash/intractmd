@@ -1,0 +1,72 @@
+{
+  "drug": "Carvedilol",
+  "drug_class": "Non-selective beta-blocker with alpha-1 blocking activity",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra (ma huang)",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic effects directly antagonize beta-blocker activity; risk of hypertensive crisis and arrhythmias",
+      "action": "Contraindicated; counsel patient to avoid entirely"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-2 antagonist increases sympathetic activity, reducing carvedilol efficacy and risking blood pressure elevation",
+      "action": "Avoid use; recommend alternative supplements"
+    },
+    {
+      "name": "Licorice root (high dose)",
+      "severity": "High",
+      "mechanism": "Causes sodium retention and potassium depletion, elevates blood pressure and reduces carvedilol efficacy",
+      "action": "Avoid; if used, limit to <100mg/day and monitor electrolytes and BP"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild sympathomimetic effects that could slightly reduce beta-blocker efficacy",
+      "action": "Monitor blood pressure; use with caution and inform prescriber"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "Additive cardiac effects; may increase risk of hypotension or bradycardia",
+      "action": "Monitor heart rate and blood pressure; coordinate with prescriber"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate carvedilol's blood pressure-lowering effects",
+      "action": "Monitor BP; obtain baseline serum magnesium; avoid excessive supplementation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals with carvedilol dosing",
+      "severity": "Moderate",
+      "mechanism": "Food increases carvedilol absorption variability; high-fat meals increase peak levels and bioavailability by up to 30%",
+      "action": "Take carvedilol consistently with or without food; avoid high-fat meals immediately before/after dosing to maintain stable levels"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Potassium-rich foods (bananas, spinach, potatoes)",
+      "severity": "Low",
+      "mechanism": "Carvedilol may cause hyperkalemia in susceptible patients, especially with renal impairment or ACE inhibitor co-use",
+      "action": "Monitor serum potassium levels periodically; no strict restriction needed but avoid excessive intake; counsel patient"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, soy sauce)",
+      "severity": "Low",
+      "mechanism": "Theoretical risk of hypertensive response if beta-blockade is overcome; minimal clinical significance with carvedilol",
+      "action": "No strict avoidance required; monitor for unusual BP elevation"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and serum electrolytes (potassium, magnesium) regularly, especially if supplements or dietary changes are introduced. Assess medication adherence and timing relative to meals to optimize carvedilol efficacy and minimize adverse effects."
+}

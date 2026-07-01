@@ -1,0 +1,71 @@
+{
+  "drug": "Bisoprolol",
+  "drug_class": "Beta-1 selective adrenergic antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra/Ma Huang",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic effects directly antagonize beta-blocker activity; risk of hypertensive crisis",
+      "action": "Contraindicated; counsel patient to avoid completely"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-2 antagonist increases norepinephrine; counteracts bisoprolol's antihypertensive effects",
+      "action": "Avoid concurrent use; may reduce efficacy"
+    },
+    {
+      "name": "Ginseng (high dose)",
+      "severity": "High",
+      "mechanism": "May increase sympathetic activity and blood pressure; antagonizes beta-blocker effects",
+      "action": "Avoid or use only under medical supervision with BP monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and potassium loss; can elevate blood pressure",
+      "action": "Monitor blood pressure; limit duration and dose"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "Beta-blockers may reduce CoQ10 levels; supplementation is generally safe and may be beneficial",
+      "action": "Monitor; supplementation often recommended (100-200mg daily)"
+    },
+    {
+      "name": "Hawthorn",
+      "severity": "Low",
+      "mechanism": "May have additive cardiovascular effects; potential for enhanced hypotensive response",
+      "action": "Monitor blood pressure and heart rate if combined"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High sodium foods (processed meats, fast food)",
+      "severity": "Moderate",
+      "mechanism": "Sodium retention counteracts antihypertensive efficacy of bisoprolol",
+      "action": "Maintain low-sodium diet (<2.3g sodium daily); counsel on dietary modification"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase bisoprolol levels; effect typically modest",
+      "action": "Avoid excessive consumption; monitor for increased beta-blocker effects if regular intake"
+    },
+    {
+      "name": "High-potassium foods (bananas, spinach, avocado)",
+      "severity": "Low",
+      "mechanism": "Beta-blockers may cause potassium retention; excessive intake could elevate serum K+",
+      "action": "Consume in moderation; monitor potassium levels periodically, especially in renal impairment"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and potassium levels regularly. Counsel patients on consistent dosing timing and to avoid abrupt discontinuation due to risk of rebound hypertension and tachycardia."
+}

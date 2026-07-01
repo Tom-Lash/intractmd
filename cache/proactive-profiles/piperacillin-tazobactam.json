@@ -1,0 +1,52 @@
+{
+  "drug": "Piperacillin-Tazobactam",
+  "drug_class": "Beta-lactam antibiotic combination (aminopenicillin + beta-lactamase inhibitor)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements",
+      "severity": "High",
+      "mechanism": "Piperacillin-tazobactam contains potassium; concurrent supplementation increases hyperkalemia risk, especially in renal impairment",
+      "action": "Avoid potassium supplements unless serum levels are monitored; check product formulation for potassium content"
+    },
+    {
+      "name": "Sodium supplements",
+      "severity": "Moderate",
+      "mechanism": "Formulation contains sodium; excessive intake may worsen fluid retention or hypertension in susceptible patients",
+      "action": "Limit additional sodium supplementation; monitor fluid status and blood pressure"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Beta-lactam antibiotics disrupt normal flora; timing separation may optimize probiotic colonization",
+      "action": "Separate administration by 2+ hours; consider during and after therapy to restore microbiota"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Aminopenicillins may chelate magnesium in GI tract; monitor for deficiency with prolonged therapy",
+      "action": "Monitor magnesium levels during extended treatment courses"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High potassium foods (bananas, spinach, coconut water, avocado)",
+      "severity": "Low",
+      "mechanism": "Drug contains potassium; cumulative intake may elevate serum levels, particularly in renal dysfunction",
+      "action": "Moderate intake if renal function is impaired; monitor serum potassium"
+    },
+    {
+      "name": "High sodium foods (processed foods, canned goods, salt)",
+      "severity": "Low",
+      "mechanism": "Formulation contains sodium; excessive dietary sodium may contribute to fluid retention",
+      "action": "Maintain consistent sodium intake; monitor for edema or hypertension"
+    }
+  ],
+  "monitoring_notes": "Piperacillin-tazobactam undergoes minimal metabolism and is primarily renally excreted; monitor renal function, serum electrolytes (potassium, sodium), and signs of C. difficile infection during therapy. Assess baseline potassium and sodium levels, especially in patients with renal impairment."
+}

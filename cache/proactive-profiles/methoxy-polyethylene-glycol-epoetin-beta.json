@@ -1,0 +1,58 @@
+{
+  "drug": "Methoxy Polyethylene Glycol-Epoetin Beta",
+  "drug_class": "Erythropoiesis-Stimulating Agent (ESA)",
+  "key_pathways": [
+    "Erythropoietin receptor signaling",
+    "Hematopoiesis"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Iron supplements (>325mg elemental iron daily)",
+      "severity": "High",
+      "mechanism": "Excessive iron supplementation may increase thrombotic risk and reduce ESA efficacy; iron metabolism is critical for erythropoiesis",
+      "action": "Use only prescribed iron supplementation; coordinate with prescriber regarding appropriate dosing"
+    },
+    {
+      "name": "Androgenic steroids",
+      "severity": "High",
+      "mechanism": "Concurrent use with ESAs significantly increases risk of thrombosis and cardiovascular events",
+      "action": "Avoid completely; inform prescriber of any androgen use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin B12 supplements",
+      "severity": "Low",
+      "mechanism": "B12 is essential for erythropoiesis; deficiency may reduce ESA response",
+      "action": "Monitor B12 levels; supplement only if deficient"
+    },
+    {
+      "name": "Folic acid supplements",
+      "severity": "Low",
+      "mechanism": "Folate is required for optimal hematopoietic response; deficiency impairs ESA effectiveness",
+      "action": "Ensure adequate folate status; supplement if deficient"
+    },
+    {
+      "name": "ACE inhibitors or ARBs (herbal equivalents)",
+      "severity": "Low",
+      "mechanism": "May theoretically potentiate ESA effects and increase thrombotic risk",
+      "action": "Use under medical supervision; monitor blood pressure and clotting parameters"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake may exacerbate hypertension and increase thrombotic risk in ESA-treated patients",
+      "action": "Maintain sodium restriction per renal disease guidelines (typically <2,300mg daily)"
+    },
+    {
+      "name": "Iron-fortified foods (excessive intake)",
+      "severity": "Low",
+      "mechanism": "While beneficial when coordinated with therapy, excessive iron intake may increase cardiovascular risk",
+      "action": "Monitor total iron intake from diet and supplements combined"
+    }
+  ],
+  "monitoring_notes": "Monitor hemoglobin, hematocrit, blood pressure, and thrombotic/cardiovascular events regularly. Ensure adequate iron stores, B12, and folate status for optimal ESA response and safety; baseline and periodic assessment of these cofactors is essential."
+}

@@ -1,0 +1,46 @@
+{
+  "drug": "Cefazolin",
+  "drug_class": "First-generation cephalosporin (beta-lactam antibiotic)",
+  "key_pathways": [
+    "Not significantly metabolized by CYP450",
+    "Renal excretion (primary elimination)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Potassium supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Cefazolin may cause hyperkalemia; combined potassium supplementation increases risk of dangerous serum levels",
+      "action": "Avoid potassium supplementation unless specifically prescribed; monitor serum potassium levels"
+    },
+    {
+      "name": "NSAIDs (ibuprofen, naproxen, indomethacin)",
+      "severity": "High",
+      "mechanism": "NSAIDs reduce renal blood flow and may impair cefazolin clearance; increased nephrotoxicity and hyperkalemia risk",
+      "action": "Use alternative pain relief (acetaminophen); if NSAIDs necessary, use lowest dose for shortest duration with renal monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probenecid",
+      "severity": "Low",
+      "mechanism": "Probenecid inhibits renal tubular secretion of cefazolin, increasing drug levels and duration",
+      "action": "Monitor for cefazolin toxicity signs; dose adjustment may be needed if co-administered"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May chelate with cefazolin in GI tract, potentially reducing absorption if oral formulation used",
+      "action": "Separate administration by 2+ hours if oral cefazolin is used"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High potassium foods (bananas, oranges, spinach, nuts)",
+      "severity": "Low",
+      "mechanism": "Cefazolin can cause mild hyperkalemia; excessive dietary potassium may contribute to elevated serum levels in susceptible patients",
+      "action": "Consume in moderation; particularly important for patients with renal impairment or baseline hyperkalemia"
+    }
+  ],
+  "monitoring_notes": "Cefazolin is minimally metabolized and primarily renounced; monitor renal function (creatinine clearance, BUN) especially in elderly or renally impaired patients. Watch for signs of hyperkalemia (weakness, palpitations) and allergic reactions, particularly in patients with penicillin/cephalosporin cross-reactivity history."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Glipizide",
+  "drug_class": "Meglitinide (short-acting insulin secretagogue)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP3A4",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginseng (Panax)",
+      "severity": "High",
+      "mechanism": "Additive hypoglycemic effects; may potentiate insulin secretion and glucose lowering",
+      "action": "Avoid concurrent use or monitor blood glucose closely if co-use necessary"
+    },
+    {
+      "name": "Fenugreek",
+      "severity": "High",
+      "mechanism": "Independent hypoglycemic properties; synergistic glucose-lowering effect with glipizide",
+      "action": "Counsel patient to discontinue fenugreek; monitor for hypoglycemic episodes"
+    },
+    {
+      "name": "Chromium (high-dose >200mcg daily)",
+      "severity": "High",
+      "mechanism": "Enhances insulin sensitivity and glucose utilization; additive hypoglycemic risk",
+      "action": "Avoid high-dose chromium supplementation; recommend <200mcg daily if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-lipoic acid",
+      "severity": "Low",
+      "mechanism": "May improve insulin sensitivity and reduce blood glucose; mild additive effect possible",
+      "action": "Monitor blood glucose; may require glipizide dose adjustment if added"
+    },
+    {
+      "name": "Bitter melon",
+      "severity": "Low",
+      "mechanism": "Contains compounds that may increase insulin secretion; modest hypoglycemic potential",
+      "action": "Use with caution; counsel patient to report hypoglycemic symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (excessive/chronic use)",
+      "severity": "High",
+      "mechanism": "Impairs hepatic glucose production and glipizide metabolism; increases hypoglycemic risk and hepatotoxicity",
+      "action": "Advise limiting alcohol to ≤1 drink/day for women, ≤2 drinks/day for men; avoid binge drinking"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric emptying and glipizide absorption; prolongs onset of action",
+      "action": "Counsel to take glipizide 15-30 minutes before meals for optimal efficacy"
+    },
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase glipizide levels; clinical significance varies",
+      "action": "Recommend avoiding grapefruit juice; monitor for increased hypoglycemic effects if consumed"
+    }
+  ],
+  "monitoring_notes": "Monitor fasting and postprandial blood glucose regularly, as supplements and foods may alter glipizide efficacy and increase hypoglycemia risk. Counsel patients on recognizing hypoglycemic symptoms and maintaining consistent meal timing since glipizide is rapid-acting."
+}

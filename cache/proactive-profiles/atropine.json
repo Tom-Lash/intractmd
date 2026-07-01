@@ -1,0 +1,59 @@
+{
+  "drug": "Atropine",
+  "drug_class": "Anticholinergic/Antimuscarinic",
+  "key_pathways": [
+    "Hepatic metabolism (minor)",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Cholinergic herbs (Physostigmine, Pilocarpine)",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of atropine's anticholinergic effects; may precipitate cholinergic crisis or reduce therapeutic efficacy",
+      "action": "Avoid concurrent use; counsel patient on incompatibility"
+    },
+    {
+      "name": "Scopolamine-containing supplements",
+      "severity": "High",
+      "mechanism": "Additive anticholinergic effects leading to severe xerostomia, urinary retention, constipation, and central toxicity",
+      "action": "Contraindicated; advise patient to discontinue before atropine therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Antihistamines (diphenhydramine, chlorpheniramine)",
+      "severity": "Low",
+      "mechanism": "Additive anticholinergic effects including dry mouth, urinary retention, and constipation",
+      "action": "Monitor for anticholinergic symptoms; use lowest effective doses"
+    },
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "May have mild prokinetic effects; potential modest opposition to atropine's GI-slowing effects",
+      "action": "Educate patient; generally safe at conventional doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fiber foods in excess (when atropine-induced constipation is present)",
+      "severity": "Moderate",
+      "mechanism": "Atropine reduces GI motility; excess fiber may exacerbate constipation and bowel obstruction risk",
+      "action": "Counsel on balanced fiber intake; ensure adequate hydration and monitor bowel function"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, chocolate)",
+      "severity": "Low",
+      "mechanism": "Caffeine stimulates GI motility and may partially offset atropine-induced constipation; minor anticholinergic antagonism",
+      "action": "Inform patient; moderate intake generally acceptable"
+    },
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "May increase gastric irritation or interact minimally with atropine's GI effects",
+      "action": "Tolerate in moderation; monitor for GI distress"
+    }
+  ],
+  "monitoring_notes": "Monitor for anticholinergic toxicity (mydriasis, tachycardia, urinary retention, constipation, confusion). Educate patient on avoiding additional anticholinergic agents and maintaining adequate hydration and fluid intake to mitigate constipation risk."
+}

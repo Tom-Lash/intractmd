@@ -1,0 +1,27 @@
+{
+  "drug": "Anidulafungin",
+  "drug_class": "Echinocandin antifungal",
+  "key_pathways": [
+    "Not hepatically metabolized",
+    "Non-CYP dependent"
+  ],
+  "avoid_supplements": [],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Anidulafungin may reduce beneficial fungal flora; concurrent use may limit probiotic efficacy",
+      "action": "Space probiotics at least 2 hours apart from anidulafungin administration; monitor for GI tolerance"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay IV infusion absorption if oral formulation becomes available; minimal clinical impact with current IV formulation",
+      "action": "No specific dietary restrictions needed; anidulafungin is administered intravenously"
+    }
+  ],
+  "monitoring_notes": "Anidulafungin is not metabolized by hepatic CYP450 enzymes and undergoes chemical degradation, resulting in minimal drug-drug interaction potential. Monitor for hepatotoxicity, infusion reactions, and baseline liver function tests; no routine supplement or food restrictions are necessary."
+}

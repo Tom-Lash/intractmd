@@ -1,0 +1,53 @@
+{
+  "drug": "Imipenem",
+  "drug_class": "Carbapenem Beta-Lactam Antibiotic",
+  "key_pathways": [
+    "Renal excretion",
+    "Dehydropeptidase-I metabolism",
+    "Bacterial cell wall synthesis"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Moderate",
+      "mechanism": "May increase seizure risk; imipenem lowers seizure threshold, additive CNS effects",
+      "action": "Avoid concurrent use; counsel patient to discontinue ginseng during imipenem therapy"
+    },
+    {
+      "name": "High-dose Probiotics with Lactobacillus/Bifidobacterium",
+      "severity": "Moderate",
+      "mechanism": "Imipenem may kill beneficial gut flora; concurrent supplementation may not restore flora adequately during therapy",
+      "action": "Separate dosing by 2+ hours; consider probiotics only after therapy completion"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; imipenem can cause seizures and altered mental status",
+      "action": "Monitor for increased CNS effects; use lowest effective dose of valerian"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild antibiotic-sparing properties; theoretical reduction in imipenem efficacy",
+      "action": "No dose adjustment needed; continue monitoring clinical response"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay gastric absorption if oral formulation used; imipenem is typically IV/IM but relevant if future oral forms considered",
+      "action": "Administer imipenem with consistent food timing; monitor therapeutic levels if available"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Minor CYP3A4 inhibition; imipenem is not significantly CYP-metabolized but may affect cilastatin component minimally",
+      "action": "No strict avoidance required; maintain consistent intake pattern"
+    }
+  ],
+  "monitoring_notes": "Monitor for seizures, CNS effects, and Clostridioides difficile-associated diarrhea (CDAD); assess renal function as imipenem is renally cleared and requires dose adjustment in renal impairment. Screen for penicillin/beta-lactam allergy before initiation."
+}

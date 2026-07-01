@@ -1,0 +1,46 @@
+{
+  "drug": "Oprelvekin",
+  "drug_class": "Thrombopoietic agent (interleukin-11 receptor agonist)",
+  "key_pathways": [
+    "IL-11 receptor signaling",
+    "non-CYP dependent"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Potentiates platelet aggregation effects and may increase thrombotic risk when combined with oprelvekin's platelet-stimulating activity",
+      "action": "Avoid concurrent use; discontinue ginkgo biloba at least 2 weeks before oprelvekin therapy"
+    },
+    {
+      "name": "Garlic supplements (concentrated)",
+      "severity": "High",
+      "mechanism": "High-dose garlic may enhance antiplatelet effects leading to unpredictable hemostasis when combined with oprelvekin-induced platelet proliferation",
+      "action": "Avoid therapeutic garlic supplements; culinary garlic is acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin E (>400 IU daily)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects that could theoretically interact with oprelvekin's thrombotic potential",
+      "action": "Monitor for unusual bleeding or clotting; maintain standard supplementation levels"
+    },
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "High-dose fish oil may have mild anticoagulant properties; clinical significance unclear with oprelvekin",
+      "action": "Monitor hemostasis; standard supplementation is likely safe"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Oprelvekin can cause fluid retention and hypertension; excessive sodium may exacerbate these effects",
+      "action": "Encourage moderate sodium intake and monitor blood pressure regularly"
+    }
+  ],
+  "monitoring_notes": "Oprelvekin undergoes minimal hepatic metabolism and has no significant CYP450 interactions, reducing traditional drug-supplement interactions. Monitor for signs of thrombosis, fluid retention, and hypertension, which are the primary concerns when combining with supplements affecting platelet function or fluid balance."
+}

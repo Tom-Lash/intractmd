@@ -1,0 +1,65 @@
+{
+  "drug": "Disopyramide",
+  "drug_class": "Class IA Antiarrhythmic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces disopyramide plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support agents"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases disopyramide levels, increasing risk of toxicity and arrhythmias",
+      "action": "Avoid or separate dosing by at least 2 hours"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "High",
+      "mechanism": "Hypokalemia and hypomagnesemia risk; disopyramide itself can prolong QT interval and cause electrolyte depletion",
+      "action": "Avoid; monitor potassium and magnesium levels if used"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "High-dose supplementation may potentiate QT prolongation; disopyramide depletes magnesium",
+      "action": "Monitor serum levels; coordinate supplementation with healthcare provider"
+    },
+    {
+      "name": "Potassium",
+      "severity": "Low",
+      "mechanism": "Disopyramide can cause hypokalemia; excessive supplementation may create imbalance",
+      "action": "Monitor electrolytes regularly; supplement only if serum levels confirm deficiency"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases disopyramide bioavailability and plasma concentrations",
+      "action": "Eliminate completely from diet during disopyramide therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Sodium intake affects electrolyte balance and may influence disopyramide's antiarrhythmic effects",
+      "action": "Maintain moderate sodium intake; monitor blood pressure and fluid balance"
+    },
+    {
+      "name": "Caffeine-containing foods/beverages",
+      "severity": "Low",
+      "mechanism": "Caffeine may increase arrhythmia risk and counteract antiarrhythmic effects",
+      "action": "Limit coffee, tea, chocolate, and energy drinks; monitor cardiac symptoms"
+    }
+  ],
+  "monitoring_notes": "Monitor ECG parameters (QT interval, PR interval) regularly and maintain serum electrolytes (potassium, magnesium) given disopyramide's anticholinergic effects and arrhythmogenic potential. Assess CYP3A4/2D6 inhibitor/inducer interactions closely, as disopyramide has a narrow therapeutic window."
+}

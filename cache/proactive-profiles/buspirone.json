@@ -1,0 +1,53 @@
+{
+  "drug": "Buspirone",
+  "drug_class": "Azapirone anxiolytic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces buspirone concentrations and therapeutic efficacy",
+      "action": "Discontinue St. John's Wort or avoid concurrent use; allow 2-week washout period if switching"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk; both hepatically metabolized",
+      "action": "Avoid concurrent use; monitor liver function tests if history of use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase buspirone levels and adverse effects",
+      "action": "Monitor for increased dizziness, drowsiness, or lightheadedness; consider dose adjustment if needed"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Low",
+      "mechanism": "Additive serotonergic effects may theoretically increase adverse event risk",
+      "action": "Monitor for serotonergic symptoms (agitation, tremor, hyperthermia); use lowest effective doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases buspirone bioavailability and peak concentrations",
+      "action": "Completely avoid grapefruit products; effects persist for 24+ hours after consumption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase buspirone absorption rate and bioavailability",
+      "action": "Administer buspirone consistently with or without food; maintain routine for predictable levels"
+    }
+  ],
+  "monitoring_notes": "Monitor for excessive CNS depression, dizziness, and efficacy for anxiety symptoms. Assessment of liver function is advisable given CYP3A4-dependent metabolism and potential supplement interactions."
+}

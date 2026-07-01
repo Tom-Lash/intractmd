@@ -1,0 +1,67 @@
+{
+  "drug": "Dexamethasone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "Glucocorticoid Receptor",
+    "Hepatic Metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer reduces dexamethasone levels and efficacy",
+      "action": "Avoid concurrent use or monitor for reduced corticosteroid effects"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "Moderate",
+      "mechanism": "May stimulate immune system, potentially counteracting immunosuppressive effects of dexamethasone",
+      "action": "Advise patient to discuss with prescriber before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice Root",
+      "severity": "Low",
+      "mechanism": "Mineralocorticoid activity may potentiate sodium retention and hypokalemia risk",
+      "action": "Monitor electrolytes and blood pressure if concurrent use"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May enhance hyperglycemic effects of dexamethasone",
+      "action": "Monitor blood glucose levels closely"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor may increase dexamethasone concentrations and adverse effects",
+      "action": "Eliminate grapefruit products from diet during dexamethasone therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High Sodium Foods",
+      "severity": "Low",
+      "mechanism": "Dexamethasone increases sodium retention; excess intake potentiates fluid retention and hypertension",
+      "action": "Recommend moderate sodium restriction; monitor blood pressure"
+    },
+    {
+      "name": "High Glycemic Index Foods",
+      "severity": "Low",
+      "mechanism": "Dexamethasone impairs glucose metabolism; high-GI foods worsen hyperglycemia",
+      "action": "Emphasize low-GI carbohydrates and monitor blood glucose"
+    },
+    {
+      "name": "Calcium-Rich Dairy (Excess)",
+      "severity": "Low",
+      "mechanism": "Dexamethasone impairs calcium absorption; high intake may mask bone loss risk",
+      "action": "Ensure adequate but not excessive calcium; supplement vitamin D"
+    }
+  ],
+  "monitoring_notes": "Monitor blood glucose, electrolytes (especially potassium), blood pressure, and bone health during dexamethasone therapy. Assess for drug interactions with CYP3A4 inducers/inhibitors and counsel on immunosuppression precautions."
+}

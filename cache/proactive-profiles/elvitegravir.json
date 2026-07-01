@@ -1,0 +1,48 @@
+{
+  "drug": "Elvitegravir",
+  "drug_class": "Integrase Strand Transfer Inhibitor (INSTI)",
+  "key_pathways": [
+    "CYP3A4",
+    "UGT1A1",
+    "Chelation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 induction reduces elvitegravir levels by 50%+, compromising antiretroviral efficacy",
+      "action": "Contraindicated; do not use concurrently. Consider alternative mood support strategies."
+    },
+    {
+      "name": "Divalent Cations (Calcium, Magnesium, Iron, Zinc supplements)",
+      "severity": "High",
+      "mechanism": "Chelation complex formation reduces elvitegravir absorption by 40-50%",
+      "action": "Separate dosing by ≥2 hours. Counsel patient on timing relative to meals and supplements."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Rifampin-containing products",
+      "severity": "Low",
+      "mechanism": "CYP3A4 induction may moderately reduce elvitegravir concentrations; less significant than St. John's Wort",
+      "action": "Monitor viral load; dose adjustment may be needed if used together. Verify with prescriber."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose mineral-fortified foods (taken with drug)",
+      "severity": "High",
+      "mechanism": "Chelation with divalent cations impairs elvitegravir bioavailability",
+      "action": "Take elvitegravir with food, then wait ≥2 hours before consuming fortified cereals, supplements."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly increase elvitegravir absorption; effect is generally manageable",
+      "action": "Consistent food intake recommended; no specific restriction needed if tolerated."
+    }
+  ],
+  "monitoring_notes": "Elvitegravir requires chelation-aware counseling, particularly for divalent cation-containing supplements and fortified foods. Monitor for virologic response, especially if CYP3A4 inducers are suspected or if absorption concerns arise."
+}

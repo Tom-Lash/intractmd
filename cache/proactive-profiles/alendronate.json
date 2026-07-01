@@ -1,0 +1,70 @@
+{
+  "drug": "Alendronate",
+  "drug_class": "Bisphosphonate",
+  "key_pathways": [
+    "Non-enzymatic (minimal hepatic metabolism)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Critical",
+      "mechanism": "Calcium binds alendronate in GI tract, significantly reducing oral bioavailability (up to 60% reduction)",
+      "action": "Separate dosing by at least 30 minutes; take alendronate on empty stomach, then wait ≥30 minutes before calcium intake"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Divalent cations (iron) form chelate complexes with bisphosphonates, reducing absorption",
+      "action": "Separate by at least 30 minutes from alendronate dosing"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation chelation reduces alendronate bioavailability",
+      "action": "Separate dosing by at least 30 minutes"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Divalent cation chelation impairs alendronate GI absorption",
+      "action": "Separate by minimum 30 minutes from alendronate administration"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplements",
+      "severity": "Low",
+      "mechanism": "While beneficial for bone health, excessive vitamin D may increase hypercalcemia risk; alendronate addresses calcium homeostasis",
+      "action": "Monitor serum calcium and vitamin D levels; coordinate dosing with healthcare provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "All foods and beverages (except plain water)",
+      "severity": "Critical",
+      "mechanism": "Food significantly reduces alendronate oral bioavailability; alendronate must be taken on empty stomach for adequate absorption",
+      "action": "Take with plain water only, 30 minutes before first food/beverage of day; remain upright for 30 minutes post-dose"
+    },
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "Critical",
+      "mechanism": "High calcium content chelates alendronate, reducing absorption by 50-60%",
+      "action": "Avoid within 30 minutes before and after alendronate dose"
+    },
+    {
+      "name": "Fortified foods (calcium-fortified juices, cereals)",
+      "severity": "High",
+      "mechanism": "Added calcium reduces alendronate bioavailability",
+      "action": "Separate from alendronate dosing by at least 30 minutes"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Calcium-rich foods (leafy greens, almonds, sardines)",
+      "severity": "Low",
+      "mechanism": "While part of balanced diet for bone health, high calcium meals consumed near dosing time may reduce alendronate absorption",
+      "action": "Plan calcium-rich meals ≥30 minutes after alendronate; maintain adequate overall dietary calcium intake"
+    }
+  ],
+  "monitoring_notes": "Alendronate absorption is highly dependent on proper administration technique (empty stomach, upright posture, 30-minute fasting periods). Monitor for GI side effects (heartburn, esophageal irritation) and ensure adequate vitamin D and dietary calcium intake separate from dosing windows to maintain therapeutic efficacy and bone health."
+}

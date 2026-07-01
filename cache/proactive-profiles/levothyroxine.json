@@ -1,0 +1,84 @@
+{
+  "drug": "Levothyroxine",
+  "drug_class": "Synthetic thyroid hormone (T4)",
+  "key_pathways": [
+    "GI absorption",
+    "Protein binding",
+    "Peripheral conversion to T3"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Forms insoluble complexes in GI tract, reducing levothyroxine absorption by 20-60%",
+      "action": "Separate administration by at least 4 hours; take levothyroxine first on empty stomach"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex formation reduces levothyroxine bioavailability by 20-50%",
+      "action": "Separate by at least 4 hours; levothyroxine should be taken first"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Forms chelation complexes reducing GI absorption of levothyroxine",
+      "action": "Separate administration by at least 4 hours"
+    },
+    {
+      "name": "Aluminum hydroxide antacids",
+      "severity": "High",
+      "mechanism": "Reduces levothyroxine absorption through chelation",
+      "action": "Separate by at least 4 hours; avoid concurrent use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Zinc supplements",
+      "severity": "Low",
+      "mechanism": "May reduce levothyroxine absorption when taken concurrently",
+      "action": "Separate administration by 2-4 hours if possible"
+    },
+    {
+      "name": "Soy isoflavones",
+      "severity": "Low",
+      "mechanism": "May modestly reduce levothyroxine absorption in sensitive individuals",
+      "action": "Monitor TSH levels; adjust levothyroxine dose if needed"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose soy products",
+      "severity": "Moderate",
+      "mechanism": "Isoflavones may reduce levothyroxine GI absorption and increase metabolism",
+      "action": "Limit soy consumption or separate by several hours from levothyroxine dose"
+    },
+    {
+      "name": "Cruciferous vegetables in excess",
+      "severity": "Moderate",
+      "mechanism": "Goitrogens may interfere with thyroid hormone synthesis and increase requirements",
+      "action": "Cook cruciferous vegetables and consume in moderation; maintain consistent intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Fiber-rich foods",
+      "severity": "Low",
+      "mechanism": "High dietary fiber can reduce levothyroxine absorption when consumed concurrently",
+      "action": "Take levothyroxine on empty stomach; wait 30-60 minutes before consuming fiber-rich foods"
+    },
+    {
+      "name": "Coffee/caffeinated beverages",
+      "severity": "Low",
+      "mechanism": "May slightly reduce levothyroxine absorption and increase cardiac effects",
+      "action": "Take levothyroxine with plain water; delay coffee consumption by 30+ minutes"
+    },
+    {
+      "name": "Milk and dairy products",
+      "severity": "Low",
+      "mechanism": "Calcium content may reduce levothyroxine absorption",
+      "action": "Avoid consuming with levothyroxine dose; separate by at least 4 hours"
+    }
+  ],
+  "monitoring_notes": "TSH and free T4 levels should be monitored 6-8 weeks after initiating therapy or any dose adjustment, as absorption interactions can affect thyroid hormone bioavailability and clinical efficacy. Patient education on proper administration (empty stomach, 30-60 minutes before food) is critical for therapeutic success."
+}

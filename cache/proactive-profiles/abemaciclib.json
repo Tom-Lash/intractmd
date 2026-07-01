@@ -1,0 +1,72 @@
+{
+  "drug": "Abemaciclib",
+  "drug_class": "Cyclin-dependent kinase 4/6 (CDK4/6) inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C9"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer; significantly reduces abemaciclib plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; use alternative herbal products if needed"
+    },
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; increases abemaciclib exposure and toxicity risk",
+      "action": "Do not consume grapefruit or grapefruit juice; consider other citrus alternatives"
+    },
+    {
+      "name": "Kava kava",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inducer; may reduce abemaciclib bioavailability",
+      "action": "Avoid use during abemaciclib therapy"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Goldenseal",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibitor; may increase abemaciclib levels modestly",
+      "action": "Monitor for increased side effects if used; ensure adequate washout periods"
+    },
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inducer; may slightly reduce abemaciclib concentrations",
+      "action": "Use with caution; monitor clinical response and adjust dosing if necessary"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases abemaciclib plasma concentration and adverse effect risk",
+      "action": "Completely eliminate from diet during treatment"
+    },
+    {
+      "name": "Pomegranate",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor; may increase abemaciclib exposure",
+      "action": "Avoid or limit consumption; discuss alternatives with healthcare provider"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase abemaciclib absorption and GI side effects; food effect varies by formulation",
+      "action": "Take with consistent meal pattern; avoid large high-fat meals if GI intolerance occurs"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction; unlikely to significantly affect abemaciclib at normal dietary intake",
+      "action": "No restriction needed; maintain normal vegetable consumption for nutritional benefit"
+    }
+  ],
+  "monitoring_notes": "Monitor CBC closely as abemaciclib is associated with neutropenia and diarrhea; dose adjustments may be needed with CYP3A4 inhibitors or inducers. Counsel patient on strict avoidance of grapefruit and strong CYP3A4 inducers to maintain therapeutic drug exposure."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Grazoprevir",
+  "drug_class": "HCV NS3/4A Protease Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "OATP1B1/1B3"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces grazoprevir plasma concentrations by up to 50%, compromising antiviral efficacy",
+      "action": "Contraindicated; do not use concurrently or within 2 weeks of discontinuation"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer significantly decreases grazoprevir exposure below therapeutic levels",
+      "action": "Absolute contraindication; use alternative antimicrobial agents"
+    },
+    {
+      "name": "Eleutherococcus (Siberian Ginseng)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce grazoprevir bioavailability and efficacy",
+      "action": "Avoid use; consider alternative adaptogens if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit extract/seed",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may marginally increase grazoprevir levels; clinical relevance uncertain",
+      "action": "Monitor for increased side effects; limit grapefruit consumption"
+    },
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 modulation and OATP inhibition; minimal clinical data",
+      "action": "Use with caution; report concurrent use to healthcare provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and OATP inhibition increases grazoprevir plasma concentrations and risk of toxicity/QT prolongation",
+      "action": "Completely avoid grapefruit products during treatment course"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase grazoprevir absorption; take with food for optimal bioavailability as recommended",
+      "action": "Consistent food intake pattern advised; take with meal as per prescribing guidelines"
+    }
+  ],
+  "monitoring_notes": "Grazoprevir is highly dependent on CYP3A4 metabolism and OATP transporters; monitor for treatment efficacy (HCV viral load) and hepatic function, especially in combination with elbasvir. Educate patients on strict avoidance of CYP3A4 inducers and grapefruit to maintain therapeutic drug levels."
+}

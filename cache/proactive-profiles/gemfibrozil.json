@@ -1,0 +1,68 @@
+{
+  "drug": "Gemfibrozil",
+  "drug_class": "Fibric acid derivative (Fibrate)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C19",
+    "Glucuronidation",
+    "OATP1B1"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains lovastatin which undergoes same CYP3A4 metabolism as gemfibrozil; significantly increases statin levels and myopathy risk",
+      "action": "Contraindicated; counsel patient to discontinue red yeast rice immediately"
+    },
+    {
+      "name": "High-dose Niacin (>1000mg daily)",
+      "severity": "High",
+      "mechanism": "Additive lipid-lowering effects with gemfibrozil may cause severe hypoprothrombinemia and increased bleeding risk; synergistic muscle toxicity",
+      "action": "Avoid combination; if niacin necessary, use low doses only with close monitoring"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 and CYP2C8 inducer may reduce gemfibrozil efficacy and alter metabolism",
+      "action": "Discourage use; if necessary, monitor lipid panel more frequently for therapeutic failure"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Fish Oil (Omega-3)",
+      "severity": "Low",
+      "mechanism": "Additive anticoagulant and lipid-lowering effects may increase bleeding risk; generally beneficial but monitor for excessive effect",
+      "action": "Acceptable with monitoring; assess for signs of bleeding and monitor INR if patient on anticoagulants"
+    },
+    {
+      "name": "Coenzyme Q10",
+      "severity": "Low",
+      "mechanism": "May be depleted by fibrates; supplementation could support muscle function but lacks strong evidence",
+      "action": "Consider supplementation (100-200mg daily) if patient develops muscle symptoms"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibitor increases gemfibrozil levels unpredictably; potential for increased adverse effects and toxicity",
+      "action": "Advise complete avoidance of grapefruit and grapefruit juice; inform patient of cross-reactivity with pomelo and Seville oranges"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly increase gemfibrozil absorption and delay gastric emptying; minor impact on efficacy",
+      "action": "Take gemfibrozil 30 minutes before meals for optimal absorption; consistent meal timing recommended"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "May increase triglyceride levels, opposing gemfibrozil's therapeutic effect; increases myopathy risk",
+      "action": "Limit alcohol to moderate intake (≤1 drink daily for women, ≤2 for men); educate on lipid effects"
+    }
+  ],
+  "monitoring_notes": "Monitor lipid panel (triglycerides, LDL, HDL) at baseline and 4-12 weeks; assess for muscle pain/weakness and obtain baseline CK if symptomatic. Monitor liver function and renal function periodically, especially in elderly or those with renal impairment; gemfibrozil is contraindicated if CrCl <30 mL/min."
+}

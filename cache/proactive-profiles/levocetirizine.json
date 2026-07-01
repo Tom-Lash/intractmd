@@ -1,0 +1,40 @@
+{
+  "drug": "Levocetirizine",
+  "drug_class": "Second-generation selective H1-receptor antagonist (antihistamine)",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Primarily renal excretion",
+    "Not a significant CYP450 substrate"
+  ],
+  "avoid_supplements": [],
+  "caution_supplements": [
+    {
+      "name": "Alcohol-containing supplements",
+      "severity": "Low",
+      "mechanism": "Both levocetirizine and alcohol can cause CNS depression and sedation; additive effects may occur",
+      "action": "Counsel patient to limit or avoid alcohol-containing herbal preparations and tinctures; monitor for increased drowsiness"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "Potential for additive CNS effects; theoretical induction of minor metabolic pathways",
+      "action": "Monitor for changes in efficacy or increased sedation; consider alternative if CNS depression occurs"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression leading to increased drowsiness, impaired cognition, and reduced alertness",
+      "action": "Advise patient to avoid or limit alcohol consumption; do not drive or operate machinery if combined use occurs"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay absorption and peak plasma concentrations of levocetirizine",
+      "action": "Administer on an empty stomach or with light meals for optimal absorption; food does not significantly reduce efficacy"
+    }
+  ],
+  "monitoring_notes": "Levocetirizine has minimal drug metabolism via CYP450 enzymes and is primarily eliminated unchanged renally, resulting in very few significant interactions. Monitor renal function in elderly patients and those with renal impairment, as reduced clearance may increase drug accumulation and adverse effects."
+}

@@ -1,0 +1,59 @@
+{
+  "drug": "Risperidone",
+  "drug_class": "Atypical Antipsychotic",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces risperidone levels and efficacy",
+      "action": "Avoid concurrent use; counsel patient on alternative mood support strategies"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Additive CNS depression and hepatotoxicity risk with risperidone",
+      "action": "Contraindicated; discuss safer alternatives with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS effects and minor CYP3A4 induction",
+      "action": "Monitor for increased sedation or reduced antipsychotic efficacy"
+    },
+    {
+      "name": "Melatonin",
+      "severity": "Low",
+      "mechanism": "Additive sedation with risperidone-induced drowsiness",
+      "action": "Use lowest effective dose and monitor for excessive sedation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases risperidone plasma concentrations and adverse effects",
+      "action": "Eliminate grapefruit products from diet during risperidone therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase risperidone absorption and peak concentrations",
+      "action": "Take risperidone consistently with or without food; maintain dietary stability"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "Additive CNS stimulation may counteract antipsychotic sedation",
+      "action": "Moderate caffeine intake and monitor for agitation or sleep disturbance"
+    }
+  ],
+  "monitoring_notes": "Monitor for orthostatic hypotension, metabolic changes, and extrapyramidal symptoms. Assess medication adherence and antipsychotic efficacy regularly, as interactions may compromise therapeutic outcomes."
+}

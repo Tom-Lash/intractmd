@@ -1,0 +1,52 @@
+{
+  "drug": "Terazosin",
+  "drug_class": "Alpha-1 adrenergic antagonist",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Antagonizes alpha-1 blockade effects; yohimbine is an alpha-2 antagonist that counteracts terazosin's therapeutic action",
+      "action": "Avoid concurrent use; counsel patient to discontinue yohimbine"
+    },
+    {
+      "name": "Ephedra/Ma huang",
+      "severity": "High",
+      "mechanism": "Sympathomimetic stimulant that opposes alpha-1 blockade and increases blood pressure, reducing terazosin efficacy",
+      "action": "Contraindicated; advise patient to avoid all ephedra-containing products"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inducer may increase terazosin metabolism, potentially reducing serum concentrations",
+      "action": "Monitor for reduced efficacy; counsel on potential need for dose adjustment by prescriber"
+    },
+    {
+      "name": "Saw palmetto",
+      "severity": "Low",
+      "mechanism": "Additive alpha-1 blockade effects may potentiate hypotensive response",
+      "action": "Monitor blood pressure; assess for orthostatic hypotension symptoms"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase terazosin bioavailability and serum concentrations",
+      "action": "Limit grapefruit consumption; monitor for increased side effects (dizziness, orthostatic hypotension)"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excessive sodium intake may counteract antihypertensive effects of terazosin",
+      "action": "Counsel on DASH diet principles; monitor blood pressure control"
+    }
+  ],
+  "monitoring_notes": "Monitor for orthostatic hypotension, dizziness, and syncope—counsel on slow position changes and fall risk. Assess blood pressure control at follow-up and counsel patient to report new or worsening symptoms of syncope or presyncope."
+}

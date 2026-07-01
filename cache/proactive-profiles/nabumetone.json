@@ -1,0 +1,66 @@
+{
+  "drug": "Nabumetone",
+  "drug_class": "Non-selective NSAID (Naphthylalkanone)",
+  "key_pathways": [
+    "CYP2C6",
+    "CYP3A4",
+    "Renal elimination"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants",
+      "severity": "Critical",
+      "mechanism": "NSAIDs inhibit platelet function and displace warfarin from protein binding, significantly increasing bleeding risk",
+      "action": "Avoid concurrent use; if necessary, require INR monitoring and dose adjustment by prescriber"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU/day)",
+      "severity": "High",
+      "mechanism": "Combined antiplatelet effects increase bleeding risk, particularly with NSAIDs",
+      "action": "Limit vitamin E to <400 IU daily or avoid supplementation; monitor for signs of bleeding"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "High",
+      "mechanism": "Ginkgo potentiates antiplatelet effects of NSAIDs, increasing hemorrhage risk",
+      "action": "Avoid concurrent use; counsel patient to discontinue ginkgo before starting nabumetone"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects that could additively affect NSAID-induced platelet inhibition",
+      "action": "Monitor for increased bruising or bleeding; consider limiting supplemental garlic intake"
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May promote sodium retention and hypertension, compounding NSAID-related fluid retention",
+      "action": "Monitor blood pressure; use lowest effective nabumetone dose and maintain adequate hydration"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (>2 drinks daily)",
+      "severity": "High",
+      "mechanism": "Alcohol increases gastric irritation and GI bleeding risk; both nabumetone and alcohol impair platelet function",
+      "action": "Advise patient to limit alcohol to ≤1 drink/day or avoid completely; counsel on GI bleed warning signs"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods/salt",
+      "severity": "Low",
+      "mechanism": "NSAIDs promote sodium retention and fluid accumulation; excess dietary sodium increases hypertension and edema risk",
+      "action": "Recommend moderate salt restriction; monitor weight and blood pressure regularly"
+    },
+    {
+      "name": "Fatty/fried foods",
+      "severity": "Low",
+      "mechanism": "May delay nabumetone absorption and increase GI upset when combined with NSAIDs",
+      "action": "Take nabumetone with food to reduce GI irritation, but avoid heavy fatty meals immediately before/after dosing"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function, blood pressure, and for signs of GI bleeding (dark stools, abdominal pain, hematemesis). Nabumetone is less selective for COX-1 inhibition than some NSAIDs but still carries substantial cardiovascular, renal, and GI risks, particularly in patients >65 years or with comorbid conditions."
+}

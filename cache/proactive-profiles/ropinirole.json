@@ -1,0 +1,77 @@
+{
+  "drug": "Ropinirole",
+  "drug_class": "Dopamine Agonist (Non-ergot)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Metoclopramide",
+      "severity": "Critical",
+      "mechanism": "Dopamine antagonist directly opposes ropinirole's therapeutic mechanism; reduces efficacy in Parkinson's disease management",
+      "action": "Avoid concurrent use; use alternative antiemetics (ondansetron, domperidone in select regions)"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer increases ropinirole metabolism, reducing plasma concentrations and therapeutic efficacy",
+      "action": "Discontinue St. John's Wort or monitor for loss of symptom control; dose adjustment may be needed"
+    },
+    {
+      "name": "Kava Kava",
+      "severity": "High",
+      "mechanism": "Hepatotoxicity risk and potential additive CNS depression; may impair dopaminergic effects",
+      "action": "Avoid use; consider safer alternatives for anxiety management"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iron Supplements",
+      "severity": "Low",
+      "mechanism": "May reduce ropinirole absorption if taken simultaneously; iron binds to dopamine agonists in GI tract",
+      "action": "Separate administration by at least 2 hours; take iron at different time of day"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS stimulation effects; theoretical risk of excessive dopaminergic activity",
+      "action": "Monitor for increased tremor, agitation, or sleep disturbances; dose adjustment possible"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depressant effects; may increase sedation and dizziness risk",
+      "action": "Use cautiously; counsel patient on fall risk and avoid concurrent sedating activities"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-dose Vitamin B6 (Pyridoxine) containing foods/supplements",
+      "severity": "Critical",
+      "mechanism": "Pyridoxine antagonizes dopamine effects and may significantly reduce ropinirole efficacy in Parkinson's disease",
+      "action": "Avoid B6 supplementation >10mg/day; maintain consistent moderate dietary B6 intake; monitor symptom stability"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay ropinirole absorption and slow onset of action; does not reduce overall bioavailability",
+      "action": "Take ropinirole consistently with or without food; establish routine to maintain stable plasma levels"
+    },
+    {
+      "name": "Caffeine-containing beverages/foods",
+      "severity": "Low",
+      "mechanism": "Caffeine may potentiate CNS stimulation and increase tremor, insomnia, or tachycardia risk",
+      "action": "Moderate caffeine intake (limit to <200mg/day); monitor for increased adverse effects"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression; increases orthostatic hypotension, dizziness, and sedation risk",
+      "action": "Limit alcohol consumption; counsel on fall risk and impaired cognition; avoid concurrent use with high doses"
+    }
+  ],
+  "monitoring_notes": "Monitor for loss of efficacy if CYP3A4 inducers are initiated; assess orthostatic vital signs and CNS depression symptoms, particularly with CNS depressants. Maintain consistent B6 intake and separate iron supplementation by ≥2 hours from ropinirole dosing."
+}

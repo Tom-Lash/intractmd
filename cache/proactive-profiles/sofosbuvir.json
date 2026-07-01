@@ -1,0 +1,53 @@
+{
+  "drug": "Sofosbuvir",
+  "drug_class": "Nucleotide Polymerase Inhibitor (Antiviral)",
+  "key_pathways": [
+    "Minimal CYP450 metabolism",
+    "Renal elimination",
+    "GI absorption"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces intestinal transporters (P-gp, BCRP) and may reduce sofosbuvir bioavailability; potential loss of antiviral efficacy",
+      "action": "Discontinue St. John's Wort at least 2 weeks before and during sofosbuvir therapy"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "High",
+      "mechanism": "Strong inducer of drug transporters and metabolism; significantly reduces sofosbuvir plasma concentrations",
+      "action": "Avoid concurrent use; contact prescriber if tuberculosis treatment required"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "High-dose Antioxidants (Vitamin E, Vitamin C)",
+      "severity": "Low",
+      "mechanism": "May theoretically interfere with viral suppression; limited evidence but caution warranted",
+      "action": "Use moderate doses; avoid megadose supplementation during therapy"
+    },
+    {
+      "name": "Milk Thistle",
+      "severity": "Low",
+      "mechanism": "Mild P-glycoprotein modulation; potential minor effect on absorption",
+      "action": "Monitor for reduced efficacy; separate dosing by 2+ hours if used"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase sofosbuvir absorption but clinical significance is minimal; some formulations are food-independent",
+      "action": "Take with or without food per product labeling; consistency recommended"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "May inhibit intestinal transporters (P-gp); potential modest increase in sofosbuvir levels",
+      "action": "Avoid excessive grapefruit juice consumption; not an absolute contraindication"
+    }
+  ],
+  "monitoring_notes": "Sofosbuvir has minimal hepatic metabolism and low drug-drug interaction potential, making it relatively safe with supplements. Primary monitoring should focus on renal function (creatinine clearance) and confirmation of viral response, as transporter inhibition or induction may affect bioavailability in renal-impaired patients."
+}

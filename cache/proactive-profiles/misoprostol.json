@@ -1,0 +1,41 @@
+{
+  "drug": "Misoprostol",
+  "drug_class": "Prostaglandin analog",
+  "key_pathways": [
+    "Direct prostaglandin receptor agonism",
+    "No significant CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Misoprostol causes diarrhea; magnesium supplements increase osmotic laxative effect and worsen GI adverse effects",
+      "action": "Avoid concurrent use or separate dosing by 2+ hours if necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "May help offset misoprostol-induced diarrhea through osmotic effects, but excessive amounts may cause drug binding",
+      "action": "Monitor GI tolerance; maintain consistent intake timing"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Moderate",
+      "mechanism": "Food reduces misoprostol absorption and peak plasma concentrations; fat specifically impairs bioavailability",
+      "action": "Administer on empty stomach; if GI upset occurs, use low-fat food only"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Milk and dairy products",
+      "severity": "Low",
+      "mechanism": "May provide mild gastroprotective effect and help offset diarrhea without significantly impairing absorption",
+      "action": "Can be used for GI symptom management if needed"
+    }
+  ],
+  "monitoring_notes": "Monitor for diarrhea severity and dehydration, as this is the primary dose-limiting adverse effect. Counsel patients to take on empty stomach or with low-fat food to optimize absorption and therapeutic efficacy."
+}

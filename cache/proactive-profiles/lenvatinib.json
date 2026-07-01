@@ -1,0 +1,67 @@
+{
+  "drug": "Lenvatinib",
+  "drug_class": "Multi-targeted tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "CYP2C19",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Potent CYP3A4 inducer; reduces lenvatinib concentrations and efficacy",
+      "action": "Discontinue St. John's Wort; allow 2-week washout before lenvatinib initiation"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "High",
+      "mechanism": "Strong CYP3A4 induction significantly decreases lenvatinib levels",
+      "action": "Avoid concurrent use; select alternative if antibiotic therapy needed"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "Moderate",
+      "mechanism": "May potentiate anticoagulant effects and increase bleeding risk with TKI therapy",
+      "action": "Limit Vitamin E to <400 IU daily; monitor for bleeding signs"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Moderate CYP3A4 inhibition may increase lenvatinib exposure",
+      "action": "Avoid grapefruit products; if used, monitor for increased adverse effects"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 induction at very high doses",
+      "action": "Moderate use acceptable; excessive supplementation should be avoided"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition increases lenvatinib bioavailability and toxicity risk",
+      "action": "Completely avoid grapefruit products during treatment"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase lenvatinib absorption; take on consistent basis with or without food",
+      "action": "Maintain consistent meal timing; counsel on uniform food intake patterns"
+    },
+    {
+      "name": "Cruciferous vegetables (excessive)",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 induction at very high chronic intake",
+      "action": "Normal dietary intake acceptable; excessive supplementation should be limited"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure weekly initially and regularly throughout therapy as lenvatinib commonly causes hypertension. Assess for signs of bleeding, proteinuria, hepatotoxicity, and QT prolongation; obtain baseline and periodic ECGs if risk factors present."
+}

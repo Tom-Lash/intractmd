@@ -1,0 +1,78 @@
+{
+  "drug": "Tacrolimus",
+  "drug_class": "Calcineurin inhibitor immunosuppressant",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer reduces tacrolimus levels significantly, leading to subtherapeutic concentrations and transplant rejection risk",
+      "action": "Contraindicated; discontinue immediately if currently used and monitor tacrolimus levels closely"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibitor dramatically increases tacrolimus bioavailability and toxicity risk",
+      "action": "Avoid completely; counsel patient to eliminate from diet"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce tacrolimus concentrations and increase rejection risk",
+      "action": "Advise against use; recommend alternative immune support if needed"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may decrease tacrolimus levels",
+      "action": "Avoid high-dose garlic supplements; moderate dietary garlic acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4 metabolism; potential for modest tacrolimus level reduction",
+      "action": "Use with caution; monitor tacrolimus levels if initiated or discontinued"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 at high doses; potential for level increase",
+      "action": "Limit to dietary amounts; avoid therapeutic supplements without monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and P-glycoprotein inhibition increases tacrolimus concentrations 2-3 fold, elevating toxicity risk",
+      "action": "Complete avoidance required; educate patient on hidden sources (some juices, pomelo)"
+    },
+    {
+      "name": "Pomelo/Seville oranges",
+      "severity": "Critical",
+      "mechanism": "Similar furanocoumarins as grapefruit; potent CYP3A4 inhibition",
+      "action": "Avoid completely; counsel on citrus variety awareness"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase tacrolimus absorption variability; food effect depends on formulation",
+      "action": "Maintain consistent dietary patterns; take with or without food consistently per formulation guidance"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 induction with very high intake",
+      "action": "Normal dietary intake acceptable; avoid excessive supplementation"
+    }
+  ],
+  "monitoring_notes": "Tacrolimus has a narrow therapeutic window (10-20 ng/mL) and high CYP3A4/3A5 metabolism making drug interactions clinically significant. Obtain baseline and periodic tacrolimus trough levels, especially when any supplements or significant dietary changes are initiated, and monitor renal function and signs of toxicity (tremor, headache, hyperglycemia)."
+}

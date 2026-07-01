@@ -1,0 +1,52 @@
+{
+  "drug": "Salmeterol",
+  "drug_class": "Long-acting beta-2 adrenergic agonist (LABA)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra (Ma Huang)",
+      "severity": "Critical",
+      "mechanism": "Both are sympathomimetics; concurrent use increases risk of severe tachycardia, hypertension, arrhythmias, and cardiac events",
+      "action": "Absolutely contraindicated; counsel patient to avoid all ephedra-containing products"
+    },
+    {
+      "name": "Caffeine (high-dose supplements >400mg/day)",
+      "severity": "High",
+      "mechanism": "Additive sympathomimetic effects; increases risk of tremor, tachycardia, and nervousness",
+      "action": "Advise limitation of caffeine-containing supplements and energy products; monitor for increased side effects"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inducer may increase salmeterol metabolism, potentially reducing efficacy",
+      "action": "Monitor respiratory control; adjust dosing if indicated in consultation with prescriber"
+    },
+    {
+      "name": "Ginseng (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild sympathomimetic activity; may potentiate beta-agonist effects",
+      "action": "Counsel moderation; monitor for increased tremor or cardiovascular symptoms"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase salmeterol absorption rate; potential for higher peak plasma concentrations",
+      "action": "Counsel consistent timing relative to meals; not a contraindication but maintain routine"
+    },
+    {
+      "name": "Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor; may increase salmeterol exposure and systemic effects",
+      "action": "Recommend avoidance or consistent minimal intake; monitor for increased tremor or palpitations"
+    }
+  ],
+  "monitoring_notes": "Salmeterol is primarily metabolized via CYP3A4; monitor for efficacy changes with enzyme-modulating supplements. Assess patients for sympathomimetic excess symptoms (tremor, tachycardia, anxiety) especially with concurrent stimulant use."
+}

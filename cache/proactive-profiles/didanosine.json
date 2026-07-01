@@ -1,0 +1,78 @@
+{
+  "drug": "Didanosine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "key_pathways": [
+    "Intracellular phosphorylation",
+    "Minimal hepatic metabolism",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Aluminum-containing antacids",
+      "severity": "Critical",
+      "mechanism": "Aluminum hydroxide significantly reduces didanosine absorption by buffering gastric pH and forming complexes",
+      "action": "Avoid concurrent use; separate administration by at least 2 hours"
+    },
+    {
+      "name": "Magnesium-containing antacids",
+      "severity": "Critical",
+      "mechanism": "Magnesium compounds reduce didanosine bioavailability through pH elevation and chelation",
+      "action": "Avoid concurrent use; separate administration by at least 2 hours"
+    },
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Calcium reduces didanosine absorption through pH-dependent and chelation mechanisms",
+      "action": "Separate administration by at least 2 hours; monitor viral load"
+    },
+    {
+      "name": "Itraconazole",
+      "severity": "High",
+      "mechanism": "Itraconazole requires acidic pH for absorption; didanosine buffering agents reduce both drug levels",
+      "action": "Avoid combination; use alternative antifungal if possible"
+    },
+    {
+      "name": "Ketoconazole",
+      "severity": "High",
+      "mechanism": "Ketoconazole absorption is pH-dependent; significant reduction in both drug concentrations",
+      "action": "Avoid combination; consider alternatives or separate dosing by 2+ hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Sodium bicarbonate",
+      "severity": "Low",
+      "mechanism": "Mild pH elevation may reduce didanosine absorption to a lesser extent than aluminum/magnesium",
+      "action": "Monitor viral load; separate dosing by 2+ hours if concurrent use necessary"
+    },
+    {
+      "name": "Multivitamins with minerals",
+      "severity": "Low",
+      "mechanism": "Metal cations (Ca, Mg, Fe, Zn) may reduce didanosine bioavailability",
+      "action": "Separate administration by 2+ hours; consider mineral-free formulations"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "High",
+      "mechanism": "Fat delays gastric emptying and reduces didanosine absorption by 50% or more",
+      "action": "Administer on empty stomach; take 30 minutes before or 2 hours after food"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products",
+      "severity": "Low",
+      "mechanism": "Calcium content may marginally reduce didanosine bioavailability",
+      "action": "Space dairy intake 2+ hours from didanosine dose when possible"
+    },
+    {
+      "name": "Iron-fortified cereals and foods",
+      "severity": "Low",
+      "mechanism": "Iron may chelate didanosine and reduce absorption",
+      "action": "Maintain consistent timing; monitor for virologic response"
+    }
+  ],
+  "monitoring_notes": "Didanosine requires strict adherence to empty stomach dosing and separation from divalent cations to maintain adequate plasma concentrations for viral suppression. Monitor HIV viral load and CD4 count regularly, as subtherapeutic levels due to absorption interactions may lead to resistance development."
+}

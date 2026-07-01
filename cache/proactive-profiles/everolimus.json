@@ -1,0 +1,72 @@
+{
+  "drug": "Everolimus",
+  "drug_class": "mTOR inhibitor (immunosuppressant/anticancer agent)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces everolimus plasma concentrations and efficacy",
+      "action": "Contraindicated; do not use concomitantly. Allow 2-week washout before starting everolimus."
+    },
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor increases everolimus bioavailability and toxicity risk",
+      "action": "Avoid completely; consider alternative supplements if CYP3A4 inhibition needed."
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce everolimus concentrations and therapeutic effect",
+      "action": "Avoid or use only under close clinical monitoring with possible dose adjustment."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk thistle (silymarin)",
+      "severity": "Low",
+      "mechanism": "Weak CYP3A4 inhibitor may modestly increase everolimus levels",
+      "action": "Monitor for increased adverse effects; report new symptoms to healthcare provider."
+    },
+    {
+      "name": "Turmeric (curcumin)",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 interaction and antiplatelet effects increase bleeding risk with mTOR inhibitors",
+      "action": "Use with caution; monitor for bruising, bleeding, or elevated drug levels."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition dramatically increases everolimus bioavailability and toxicity risk",
+      "action": "Absolute contraindication; eliminate from diet during everolimus therapy."
+    },
+    {
+      "name": "Pomegranate juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase everolimus concentrations",
+      "action": "Avoid or severely restrict intake; inform clinician of any consumption."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Increased absorption and bioavailability of everolimus; variable exposure",
+      "action": "Take consistently with or without food; maintain uniform dietary fat intake for stable levels."
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May increase hepatotoxicity risk and potentiate immunosuppression",
+      "action": "Limit to minimal intake; discuss alcohol use with clinical team."
+    }
+  ],
+  "monitoring_notes": "Monitor whole blood trough levels (target typically 3-8 ng/mL depending on indication) as everolimus has narrow therapeutic index and high inter-individual variability. Assess for signs of toxicity (mucositis, infections, pneumonitis) and counsel on strict avoidance of CYP3A4 inhibitors/inducers including herbal products."
+}

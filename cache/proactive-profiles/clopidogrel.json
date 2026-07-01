@@ -1,0 +1,79 @@
+{
+  "drug": "Clopidogrel",
+  "drug_class": "Antiplatelet agent (thienopyridine P2Y12 inhibitor)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C19",
+    "CYP1A2",
+    "CYP2B6"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C19 induction reduces clopidogrel activation and antiplatelet efficacy",
+      "action": "Avoid concomitant use; consider alternative antidepressant if needed"
+    },
+    {
+      "name": "Garlic (high-dose supplements)",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects, increasing bleeding risk synergistically with clopidogrel",
+      "action": "Avoid high-dose garlic supplements; moderate dietary garlic intake acceptable"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet and anticoagulant properties increase hemorrhage risk",
+      "action": "Discontinue supplement; consult cardiologist before resuming"
+    },
+    {
+      "name": "Ginger (high-dose supplements)",
+      "severity": "Moderate",
+      "mechanism": "Inhibits platelet aggregation; additive bleeding risk with clopidogrel",
+      "action": "Avoid high-dose supplements; culinary amounts generally safe"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Omega-3 fatty acids (fish oil)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; may slightly enhance bleeding risk",
+      "action": "Monitor for unusual bruising/bleeding; maintain consistent intake if tolerated"
+    },
+    {
+      "name": "Vitamin E (>400 IU daily)",
+      "severity": "Low",
+      "mechanism": "High-dose vitamin E may have mild anticoagulant properties",
+      "action": "Limit to ≤400 IU daily; monitor clinical status"
+    },
+    {
+      "name": "Turmeric/Curcumin supplements",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet effects at high doses",
+      "action": "Use culinary amounts; avoid high-dose supplements without monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase clopidogrel levels, but more importantly reduces active metabolite formation via CYP2C19",
+      "action": "Avoid grapefruit and grapefruit juice; switch to alternative citrus if desired"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry juice (large quantities)",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet properties; excessive intake could potentiate bleeding",
+      "action": "Consume in moderation (≤8 oz daily); monitor for bleeding signs"
+    },
+    {
+      "name": "Alcohol (heavy consumption)",
+      "severity": "Low",
+      "mechanism": "Alcohol potentiates antiplatelet effects and increases GI bleeding risk",
+      "action": "Limit to ≤1-2 drinks daily; avoid binge drinking"
+    }
+  ],
+  "monitoring_notes": "Clopidogrel requires CYP2C19 activation for efficacy; CYP2C19 loss-of-function variants may reduce effectiveness independent of interactions. Monitor for bleeding events and ensure consistent dosing; patients with stents require strict adherence to prevent thrombosis."
+}

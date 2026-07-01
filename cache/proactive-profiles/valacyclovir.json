@@ -1,0 +1,40 @@
+{
+  "drug": "Valacyclovir",
+  "drug_class": "Nucleoside analog antiviral",
+  "key_pathways": [
+    "Renal tubular secretion",
+    "Hepatic metabolism (minimal)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Nephrotoxic Supplements (NSAIDs, high-dose vitamin C)",
+      "severity": "High",
+      "mechanism": "Increased risk of acute kidney injury and crystalline nephropathy, particularly when combined with valacyclovir's renal clearance requirements",
+      "action": "Avoid concurrent use; if NSAIDs necessary, ensure adequate hydration and monitor renal function"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probenecid",
+      "severity": "Low",
+      "mechanism": "May compete for renal tubular secretion, potentially increasing valacyclovir levels",
+      "action": "Monitor for increased adverse effects (headache, tremor); dose adjustment may be needed"
+    },
+    {
+      "name": "L-Lysine",
+      "severity": "Low",
+      "mechanism": "Theoretical additive antiviral effect; no significant clinical interaction but monitor efficacy",
+      "action": "Concurrent use generally acceptable but monitor clinical response"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High sodium foods",
+      "severity": "Low",
+      "mechanism": "May affect renal function and fluid balance, indirectly impacting drug clearance",
+      "action": "Maintain adequate hydration and moderate sodium intake, particularly in elderly or renally impaired patients"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (serum creatinine, eGFR) especially in elderly patients, those with pre-existing renal impairment, or concurrent nephrotoxic agents. Ensure adequate hydration to prevent crystalline nephropathy and maximize oral bioavailability."
+}

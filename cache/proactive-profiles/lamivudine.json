@@ -1,0 +1,34 @@
+{
+  "drug": "Lamivudine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "key_pathways": [
+    "Renal excretion",
+    "Minimal hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose vitamin B12 supplements",
+      "severity": "Moderate",
+      "mechanism": "Lamivudine may reduce B12 absorption; excessive supplementation can mask deficiency symptoms and complicate monitoring",
+      "action": "Use standard B12 supplementation only if deficiency confirmed; monitor B12 levels regularly"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Trimethoprim-containing supplements",
+      "severity": "Low",
+      "mechanism": "Potential for additive renal clearance competition, though clinical significance is minimal with lamivudine",
+      "action": "Monitor renal function if concurrent use; generally safe at standard doses"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May slightly delay lamivudine absorption, though overall bioavailability is not significantly affected",
+      "action": "Take lamivudine with or without food; consistent timing recommended for optimal adherence"
+    }
+  ],
+  "monitoring_notes": "Lamivudine has minimal drug interactions due to limited hepatic metabolism and primarily renal excretion. Monitor renal function (creatinine clearance) as dosing adjustments are required for CrCl <50 mL/min, and assess for peripheral neuropathy and pancreatitis during therapy."
+}

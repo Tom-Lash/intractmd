@@ -1,0 +1,72 @@
+{
+  "drug": "Phenytoin",
+  "drug_class": "Antiepileptic/Anticonvulsant",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C19",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2C9, increasing phenytoin metabolism and reducing therapeutic levels",
+      "action": "Avoid concurrent use; if patient requires St. John's Wort, monitor phenytoin levels closely and adjust dose"
+    },
+    {
+      "name": "Folate (high-dose supplementation)",
+      "severity": "High",
+      "mechanism": "High-dose folate may interfere with phenytoin metabolism and increase seizure risk; phenytoin depletes folate stores",
+      "action": "Use only physiologic doses (400-800 mcg); supplement at recommended dietary allowance to prevent deficiency-related complications"
+    },
+    {
+      "name": "Calcium supplements (taken simultaneously)",
+      "severity": "High",
+      "mechanism": "Calcium binds phenytoin in the GI tract, reducing absorption and therapeutic levels",
+      "action": "Separate dosing by at least 2-3 hours; coordinate timing with patient and caregivers"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D supplementation",
+      "severity": "Low",
+      "mechanism": "Phenytoin increases vitamin D metabolism; supplementation may help prevent deficiency-related bone disease",
+      "action": "Monitor vitamin D levels; consider supplementation if deficient, but coordinate with prescriber"
+    },
+    {
+      "name": "Vitamin K",
+      "severity": "Low",
+      "mechanism": "Phenytoin may impair vitamin K-dependent clotting factors; supplementation may partially mitigate this effect",
+      "action": "Monitor coagulation parameters; discuss supplementation with prescriber if deficiency suspected"
+    },
+    {
+      "name": "Magnesium",
+      "severity": "Low",
+      "mechanism": "Phenytoin may deplete magnesium; supplementation may improve seizure control in some patients",
+      "action": "Monitor magnesium levels; consider supplementation if low, ensuring adequate spacing from phenytoin dose"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "Inhibits CYP3A4, potentially increasing phenytoin levels and toxicity risk",
+      "action": "Advise complete avoidance of grapefruit and grapefruit juice"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase phenytoin absorption variability; phenytoin absorption is inconsistent and food-dependent",
+      "action": "Maintain consistent meal patterns; take phenytoin with consistent food intake to optimize absorption"
+    },
+    {
+      "name": "Folic acid-rich foods (leafy greens)",
+      "severity": "Low",
+      "mechanism": "Phenytoin impairs folate metabolism; adequate dietary folate intake is beneficial for preventing deficiency",
+      "action": "Encourage regular consumption of folate-rich foods (spinach, kale, legumes) to counteract phenytoin-induced depletion"
+    }
+  ],
+  "monitoring_notes": "Phenytoin has a narrow therapeutic window and highly variable metabolism; monitor serum levels regularly (therapeutic range 10-20 mcg/mL) and assess for signs of toxicity (ataxia, nystagmus, gingival hyperplasia). Coordinate all supplements with prescriber given phenytoin's extensive CYP450 interactions and known depletion of folate, vitamin D, and vitamin K."
+}

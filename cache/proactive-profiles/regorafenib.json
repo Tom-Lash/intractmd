@@ -1,0 +1,81 @@
+{
+  "drug": "Regorafenib",
+  "drug_class": "Tyrosine Kinase Inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C9",
+    "CYP2D6",
+    "UGT1A1",
+    "BCRP",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces regorafenib plasma concentrations and therapeutic efficacy",
+      "action": "Contraindicated; discontinue at least 2 weeks before regorafenib initiation"
+    },
+    {
+      "name": "Ginseng (Panax)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may decrease regorafenib exposure and effectiveness",
+      "action": "Avoid concurrent use; consider alternative supplements"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C9 inducer reduces TKI concentration",
+      "action": "Discontinue before treatment; allow 2-week washout period"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Curcumin (Turmeric)",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 and increase regorafenib levels; also has anticoagulant properties",
+      "action": "Monitor for increased adverse effects; use moderate amounts and report bleeding symptoms"
+    },
+    {
+      "name": "Grapefruit Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase regorafenib exposure and toxicity",
+      "action": "Limit consumption; maintain consistent intake if used"
+    },
+    {
+      "name": "Omega-3 Fatty Acids (Fish Oil)",
+      "severity": "Low",
+      "mechanism": "Potential additive anticoagulant/antiplatelet effects increasing bleeding risk",
+      "action": "Monitor for bleeding; coordinate dosing with healthcare provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor significantly increases regorafenib plasma concentration and toxicity risk",
+      "action": "Completely avoid grapefruit and juice; substitute other citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "Regorafenib absorption increased with food; high-fat meals may increase variability in plasma levels",
+      "action": "Take consistently with or without food; if taking with food, maintain consistent fat intake"
+    },
+    {
+      "name": "Cruciferous Vegetables (Broccoli, Cabbage, Brussels Sprouts)",
+      "severity": "Low",
+      "mechanism": "Contains CYP1A2 and CYP3A4 inducers that may modestly reduce regorafenib exposure with excessive intake",
+      "action": "Normal dietary consumption acceptable; excessive supplementation should be avoided"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May increase hepatotoxicity risk and gastrointestinal side effects; impairs drug metabolism",
+      "action": "Minimize alcohol consumption; report any liver function changes"
+    }
+  ],
+  "monitoring_notes": "Monitor liver function tests, blood pressure, and signs of bleeding given regorafenib's hepatotoxicity and hemorrhage risks. Counsel patients on strict avoidance of CYP3A4 inducers and grapefruit to maintain therapeutic drug levels; consistent food intake timing is recommended."
+}

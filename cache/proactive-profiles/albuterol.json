@@ -1,0 +1,60 @@
+{
+  "drug": "Albuterol",
+  "drug_class": "Beta-2 Adrenergic Agonist (Bronchodilator)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2D6",
+    "Sympathomimetic pathway",
+    "Beta-2 adrenergic receptor"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra/Ma Huang",
+      "severity": "Critical",
+      "mechanism": "Additive sympathomimetic effects; increased risk of tachycardia, hypertension, arrhythmias, and tremor",
+      "action": "Contraindicated - do not use concurrently with albuterol"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Alpha-2 antagonist with sympathomimetic properties; potentiates cardiovascular stimulation",
+      "action": "Avoid use; consider alternative supplements with patient approval"
+    },
+    {
+      "name": "Caffeine supplements (high-dose)",
+      "severity": "High",
+      "mechanism": "Additive stimulant effects on central nervous and cardiovascular systems; increased tremor and anxiety",
+      "action": "Limit caffeine intake; advise patient to restrict to <200mg daily"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild sympathomimetic effects may modestly enhance albuterol's cardiovascular stimulation",
+      "action": "Monitor for increased tremor or palpitations; use lowest effective dose"
+    },
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May increase sodium retention and hypertension risk when combined with sympathomimetics",
+      "action": "Monitor blood pressure; limit duration of use to <4-6 weeks"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-caffeine beverages (coffee, energy drinks, cola)",
+      "severity": "Low",
+      "mechanism": "Additive stimulant effects may increase nervousness, tremor, and palpitations",
+      "action": "Moderate intake; counsel patient to monitor tolerance and reduce if adverse effects occur"
+    },
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May potentiate fluid retention and hypertension in susceptible individuals using beta-2 agonists",
+      "action": "Encourage dietary sodium moderation, particularly in patients with hypertension or cardiac conditions"
+    }
+  ],
+  "monitoring_notes": "Monitor for increased tremor, palpitations, anxiety, and cardiovascular effects when albuterol is combined with sympathomimetic supplements or high caffeine intake. Counsel patients on avoidance of stimulant supplements and moderation of caffeine-containing foods and beverages."
+}

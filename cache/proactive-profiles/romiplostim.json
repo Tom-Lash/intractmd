@@ -1,0 +1,60 @@
+{
+  "drug": "Romiplostim",
+  "drug_class": "Thrombopoietin (TPO) receptor agonist",
+  "key_pathways": [
+    "TPO signaling pathway",
+    "Megakaryopoiesis",
+    "No hepatic metabolism via CYP450"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "Vitamin E has antiplatelet and anticoagulant properties that may potentiate bleeding risk in patients receiving romiplostim for thrombocytopenia management",
+      "action": "Avoid high-dose supplementation; monitor platelet counts closely if patient insists on use"
+    },
+    {
+      "name": "Garlic extract (concentrated supplements)",
+      "severity": "High",
+      "mechanism": "Garlic possesses antiplatelet aggregation properties that may increase bleeding risk and counteract the therapeutic benefit of romiplostim",
+      "action": "Avoid concentrated garlic supplements; culinary amounts are acceptable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger supplements",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; unlikely to significantly interact but may theoretically enhance bleeding risk at high doses",
+      "action": "Use moderate amounts; counsel patient on bleeding precautions"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild platelet-modulating effects; clinical significance unclear with romiplostim",
+      "action": "Monitor for changes in platelet response; no strict contraindication required"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive alcohol",
+      "severity": "High",
+      "mechanism": "Alcohol impairs bone marrow function and platelet production, directly opposing romiplostim's therapeutic mechanism and increasing bleeding and thrombosis risk",
+      "action": "Strongly counsel against alcohol consumption; recommend abstinence or minimal intake"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Cranberry juice (large quantities)",
+      "severity": "Low",
+      "mechanism": "Contains compounds with mild antiplatelet properties; unlikely to clinically interact but high consumption should be moderated",
+      "action": "Counsel moderate consumption; monitor platelet counts if patient consumes large quantities"
+    },
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May affect subcutaneous injection absorption kinetics minimally; no direct pharmacodynamic interaction",
+      "action": "No restriction necessary; ensure consistent injection technique independent of meals"
+    }
+  ],
+  "monitoring_notes": "Romiplostim is a protein therapeutic with minimal drug-drug interactions via CYP450 metabolism; primary concern is additive antiplatelet/anticoagulant effects from supplements and alcohol that increase bleeding risk. Monitor platelet counts regularly and counsel patients to report bleeding symptoms, particularly when adding new supplements or increasing alcohol consumption."
+}

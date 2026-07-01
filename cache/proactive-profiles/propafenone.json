@@ -1,0 +1,72 @@
+{
+  "drug": "Propafenone",
+  "drug_class": "Class IC Antiarrhythmic Agent",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces propafenone levels and efficacy; may precipitate arrhythmias",
+      "action": "Avoid concurrent use; consult prescriber before adding"
+    },
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases propafenone levels and toxicity risk",
+      "action": "Discontinue use; switch to alternative supplements if needed"
+    },
+    {
+      "name": "High-Dose Vitamin K Supplements",
+      "severity": "Moderate",
+      "mechanism": "May antagonize anticoagulation if propafenone used with warfarin; increases thrombotic risk",
+      "action": "Maintain consistent intake; monitor INR closely if concurrent anticoagulation"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Quercetin",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition; theoretical increase in propafenone exposure",
+      "action": "Monitor for increased side effects (dizziness, tremor); report symptoms to prescriber"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4; modest effect on propafenone metabolism",
+      "action": "Use in moderation; monitor for increased propafenone effects"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "May enhance cardiac effects and prolong QT interval additively",
+      "action": "Monitor ECG parameters; use standard recommended doses only"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition dramatically increases propafenone serum levels and bioavailability",
+      "action": "Completely avoid grapefruit and products; choose alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "Increases propafenone absorption and peak serum levels; may enhance both efficacy and side effects",
+      "action": "Take with consistent meal timing/fat content; maintain stable dosing pattern"
+    },
+    {
+      "name": "Cruciferous Vegetables (Broccoli, Cabbage)",
+      "severity": "Low",
+      "mechanism": "CYP1A2 induction with high intake may slightly reduce propafenone levels",
+      "action": "Consume in normal dietary amounts; excessive intake should be avoided"
+    }
+  ],
+  "monitoring_notes": "Monitor heart rate, blood pressure, and ECG parameters (QRS, QT intervals) regularly as propafenone is a potent sodium channel blocker with proarrhythmic potential. Adjust monitoring intensity if CYP2D6 inhibitor supplements or medications are added, as propafenone metabolism is significantly affected by this pathway."
+}

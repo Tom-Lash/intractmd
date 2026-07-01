@@ -1,0 +1,65 @@
+{
+  "drug": "Clonidine",
+  "drug_class": "Alpha-2 adrenergic agonist (antihypertensive)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP1A2",
+    "Renal excretion"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Ephedra/Ma huang",
+      "severity": "Critical",
+      "mechanism": "Direct antagonism of clonidine's alpha-2 effects; risk of acute hypertensive crisis and rebound hypertension",
+      "action": "Absolutely contraindicated; counsel patient to avoid all ephedrine-containing products"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "Critical",
+      "mechanism": "Alpha-2 antagonist; directly opposes clonidine mechanism and can precipitate severe hypertension and tachycardia",
+      "action": "Contraindicated; do not use concurrently"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP2D6 and CYP1A2 inducer; reduces clonidine plasma concentrations and therapeutic efficacy",
+      "action": "Avoid concurrent use; if unavoidable, monitor blood pressure closely and adjust clonidine dosing"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Licorice root",
+      "severity": "Low",
+      "mechanism": "May cause sodium retention and potassium loss, potentially reducing antihypertensive efficacy and increasing fluid retention",
+      "action": "Use cautiously; monitor blood pressure and electrolytes; limit intake"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May increase sympathetic tone and modestly elevate blood pressure, potentially counteracting clonidine effects",
+      "action": "Monitor blood pressure response; advise moderate use only"
+    },
+    {
+      "name": "Caffeine-containing supplements",
+      "severity": "Low",
+      "mechanism": "Sympathomimetic effects may partially antagonize alpha-2 agonism and increase heart rate variability",
+      "action": "Counsel moderation; monitor blood pressure and heart rate"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Excess sodium may reduce antihypertensive efficacy and increase fluid retention",
+      "action": "Recommend dietary sodium restriction consistent with hypertension management guidelines"
+    },
+    {
+      "name": "Tyramine-rich foods (aged cheese, cured meats, fermented products)",
+      "severity": "Low",
+      "mechanism": "Clonidine may alter catecholamine metabolism; excessive tyramine intake could theoretically increase hypertensive risk",
+      "action": "No strict restriction needed but advise moderation and monitor for blood pressure changes"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure, heart rate, and signs of rebound hypertension (especially if abruptly discontinued). Assess for CNS depression and dry mouth; counsel on medication adherence to prevent dangerous blood pressure fluctuations."
+}

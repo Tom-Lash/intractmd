@@ -1,0 +1,66 @@
+{
+  "drug": "Ganciclovir",
+  "drug_class": "Antiviral (nucleoside analog)",
+  "key_pathways": [
+    "Renal excretion",
+    "Viral thymidine kinase phosphorylation",
+    "Intracellular deoxyribonucleotide metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin C (>2000mg daily)",
+      "severity": "High",
+      "mechanism": "May increase urinary crystallization risk and nephrotoxicity; ganciclovir already poses renal toxicity risk",
+      "action": "Limit vitamin C intake to <1000mg daily; ensure adequate hydration"
+    },
+    {
+      "name": "NSAIDs (as supplement/OTC)",
+      "severity": "High",
+      "mechanism": "Additive nephrotoxicity and reduced renal clearance of ganciclovir, increasing drug accumulation",
+      "action": "Avoid concurrent use; use acetaminophen for pain management instead"
+    },
+    {
+      "name": "Nephrotoxic herbs (Aristolochia, Creatine loading)",
+      "severity": "Critical",
+      "mechanism": "Synergistic renal dysfunction with ganciclovir's known nephrotoxicity",
+      "action": "Strictly avoid; monitor baseline and periodic renal function tests"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Ganciclovir may alter gut flora; probiotics support intestinal health during antiviral therapy",
+      "action": "Use standard doses; may provide benefit but no direct interaction"
+    },
+    {
+      "name": "Electrolyte supplements (sodium, potassium)",
+      "severity": "Low",
+      "mechanism": "Monitor electrolytes as ganciclovir can cause abnormalities; supplementation should be guided by lab values",
+      "action": "Only use with physician guidance based on serum electrolyte monitoring"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Excessive dietary potassium (high-K fruits, leafy greens in large amounts)",
+      "severity": "Moderate",
+      "mechanism": "Ganciclovir can cause hyperkalemia; high potassium intake may compound electrolyte imbalances",
+      "action": "Maintain moderate, consistent potassium intake; avoid large servings of bananas, spinach, potatoes"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "May affect fluid retention and electrolyte balance during antiviral therapy; maintain consistent intake",
+      "action": "Maintain moderate sodium intake; avoid sudden dietary changes"
+    },
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "While ganciclovir is not CYP3A4-dependent, grapefruit may affect general drug metabolism and fluid balance",
+      "action": "No strict contraindication but avoid excessive consumption; maintain hydration with water"
+    }
+  ],
+  "monitoring_notes": "Monitor renal function (serum creatinine, BUN, eGFR) and electrolytes (especially potassium) regularly during ganciclovir therapy due to inherent nephrotoxicity risk. Ensure adequate hydration (1.5-2L daily unless contraindicated) and avoid all nephrotoxic agents and supplements."
+}

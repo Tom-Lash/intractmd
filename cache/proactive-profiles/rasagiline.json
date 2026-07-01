@@ -1,0 +1,121 @@
+{
+  "drug": "Rasagiline",
+  "drug_class": "Monoamine Oxidase Inhibitor (MAOI-B selective)",
+  "key_pathways": [
+    "CYP1A2",
+    "Monoamine Oxidase-B inhibition",
+    "Serotonin metabolism",
+    "Dopamine metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "MAOI activity combined with serotonergic effects increases risk of serotonin syndrome",
+      "action": "Contraindicated; do not use concurrently with rasagiline"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "Critical",
+      "mechanism": "Direct serotonin precursor; MAOI potentiates serotonergic effects leading to serotonin syndrome",
+      "action": "Avoid; risk of hypertensive crisis and serotonin syndrome"
+    },
+    {
+      "name": "L-Tryptophan",
+      "severity": "Critical",
+      "mechanism": "Serotonin precursor; MAOI inhibition reduces serotonin metabolism",
+      "action": "Contraindicated; high risk of serotonin syndrome"
+    },
+    {
+      "name": "SAMe (S-Adenosyl Methionine)",
+      "severity": "High",
+      "mechanism": "Serotonergic activity potentiated by MAOI mechanism",
+      "action": "Avoid concurrent use; monitor for serotonin syndrome symptoms"
+    },
+    {
+      "name": "Ginseng",
+      "severity": "High",
+      "mechanism": "Stimulant properties combined with MAOI may cause hypertensive crisis",
+      "action": "Avoid; risk of elevated blood pressure and cardiac effects"
+    },
+    {
+      "name": "Ephedra/Ma Huang",
+      "severity": "Critical",
+      "mechanism": "Sympathomimetic amine; MAOI inhibits metabolism causing severe hypertensive crisis",
+      "action": "Contraindicated; high risk of hypertensive emergency"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Mild serotonergic activity; additive CNS depression possible",
+      "action": "Use with caution; monitor for excessive sedation or mood changes"
+    },
+    {
+      "name": "Passionflower",
+      "severity": "Low",
+      "mechanism": "Minor serotonergic effects; potential for additive CNS activity",
+      "action": "Monitor patient; generally safe in typical doses"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Aged cheeses (cheddar, blue, brie, camembert, feta, mozzarella)",
+      "severity": "High",
+      "mechanism": "High tyramine content; MAOI prevents tyramine breakdown causing hypertensive crisis",
+      "action": "Eliminate from diet; educate patient on tyramine-containing foods"
+    },
+    {
+      "name": "Cured/processed meats (pepperoni, salami, sausage, bologna, bacon)",
+      "severity": "High",
+      "mechanism": "High tyramine content from fermentation and curing processes",
+      "action": "Avoid; choose fresh poultry and meats instead"
+    },
+    {
+      "name": "Fermented soy products (soy sauce, miso, tempeh, soy paste)",
+      "severity": "High",
+      "mechanism": "Significant tyramine accumulation from fermentation",
+      "action": "Avoid or use minimal amounts; monitor for hypertensive symptoms"
+    },
+    {
+      "name": "Overripe or spoiled bananas",
+      "severity": "Moderate",
+      "mechanism": "Tyramine increases with ripeness and decomposition",
+      "action": "Consume only fresh, ripe bananas in moderation; avoid overripe"
+    },
+    {
+      "name": "Broad bean pods (fava beans)",
+      "severity": "High",
+      "mechanism": "High tyramine content, especially in pods",
+      "action": "Avoid; particularly the pod portions"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Soy milk (fresh, non-fermented)",
+      "severity": "Low",
+      "mechanism": "Lower tyramine than fermented soy products but trace amounts present",
+      "action": "Moderate intake acceptable; limit to 1-2 servings daily"
+    },
+    {
+      "name": "Peanuts",
+      "severity": "Low",
+      "mechanism": "Minimal tyramine content but present in trace amounts",
+      "action": "Consume in moderation; generally safe in typical quantities"
+    },
+    {
+      "name": "Chocolate",
+      "severity": "Low",
+      "mechanism": "Contains trace tyramine and phenylethylamine; minimal clinical risk at normal consumption",
+      "action": "Reasonable in moderation; excessive intake should be avoided"
+    },
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, cola)",
+      "severity": "Low",
+      "mechanism": "Stimulant effects may be potentiated; increased blood pressure risk at high doses",
+      "action": "Limit to moderate intake; monitor blood pressure and cardiovascular symptoms"
+    }
+  ],
+  "monitoring_notes": "Rasagiline is a selective MAO-B inhibitor with lower tyramine interaction risk than non-selective MAOIs, but significant dietary restrictions remain essential. Monitor for hypertensive crisis symptoms (severe headache, chest pain, palpitations, confusion) and serotonin syndrome (agitation, tremor, rigidity, hyperthermia), particularly during initiation or dose escalation."
+}

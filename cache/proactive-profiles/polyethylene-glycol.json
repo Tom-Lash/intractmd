@@ -1,0 +1,40 @@
+{
+  "drug": "Polyethylene Glycol",
+  "drug_class": "Osmotic Laxative",
+  "key_pathways": [
+    "Non-metabolized",
+    "Gastrointestinal osmotic effect"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Psyllium husk",
+      "severity": "High",
+      "mechanism": "Combined osmotic and bulk-forming laxative effects may cause excessive fluid loss, severe diarrhea, and electrolyte imbalances",
+      "action": "Avoid concurrent use; space administration by at least 2-4 hours if both are necessary"
+    },
+    {
+      "name": "Senna",
+      "severity": "High",
+      "mechanism": "Additive laxative effects leading to excessive bowel stimulation, dehydration, and electrolyte depletion",
+      "action": "Do not combine; use only one laxative agent at a time under medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "PEG may reduce absorption of some minerals through osmotic effects and rapid GI transit; minimal clinical impact with standard dosing",
+      "action": "Monitor serum calcium levels if high-dose or prolonged PEG use; separate administration by 2+ hours when possible"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods (beans, whole grains, vegetables)",
+      "severity": "Low",
+      "mechanism": "Combined fiber and osmotic effect may intensify bowel movements and cause abdominal discomfort",
+      "action": "Patient may temporarily reduce fiber intake during active PEG bowel cleansing; resume normal diet after treatment completion"
+    }
+  ],
+  "monitoring_notes": "PEG is not metabolized and has minimal systemic absorption; primary concern is electrolyte balance and hydration status during use. Monitor for signs of dehydration and advise adequate fluid intake throughout therapy."
+}

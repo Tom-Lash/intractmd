@@ -1,0 +1,89 @@
+{
+  "drug": "Doxycycline",
+  "drug_class": "Tetracycline Antibiotic",
+  "key_pathways": [
+    "Non-CYP metabolism",
+    "Protein binding"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex formation reduces doxycycline absorption by up to 50%",
+      "action": "Separate administration by at least 2-3 hours; take doxycycline on empty stomach"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex formation significantly impairs doxycycline bioavailability",
+      "action": "Separate by 2-3 hours; avoid concurrent use within same dosing window"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex reduces doxycycline absorption",
+      "action": "Administer doxycycline 2-3 hours before or after magnesium-containing products"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "High",
+      "mechanism": "Chelation complex formation decreases antibiotic absorption",
+      "action": "Space administration by at least 2 hours; prioritize antibiotic timing"
+    },
+    {
+      "name": "Aluminum-containing antacids",
+      "severity": "High",
+      "mechanism": "Chelation complex impairs doxycycline absorption",
+      "action": "Avoid concurrent use; separate by 3+ hours if necessary"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin K supplements",
+      "severity": "Low",
+      "mechanism": "Doxycycline may reduce vitamin K-producing gut flora; supplementation may help maintain levels",
+      "action": "Monitor for signs of bleeding; supplementation may be beneficial during prolonged therapy"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Doxycycline disrupts normal flora; probiotics may help restore beneficial bacteria",
+      "action": "Consider during and after extended doxycycline courses; separate administration by 2+ hours"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May increase photosensitivity risk when combined with doxycycline",
+      "action": "Monitor for enhanced sun sensitivity; advise strict photoprotection"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Dairy products (milk, cheese, yogurt)",
+      "severity": "High",
+      "mechanism": "Calcium in dairy forms chelation complexes reducing doxycycline absorption by 50-60%",
+      "action": "Take doxycycline on empty stomach; separate dairy consumption by 2-3 hours"
+    },
+    {
+      "name": "Iron-fortified cereals/breads",
+      "severity": "High",
+      "mechanism": "Iron chelation reduces antibiotic bioavailability",
+      "action": "Avoid at time of dosing; consume 2-3 hours apart"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Fatty foods",
+      "severity": "Low",
+      "mechanism": "May enhance doxycycline absorption slightly but can increase GI upset",
+      "action": "Take with light food if GI intolerance occurs; preferably on empty stomach for optimal absorption"
+    },
+    {
+      "name": "Acidic foods/beverages (citrus, tomatoes, vinegar)",
+      "severity": "Low",
+      "mechanism": "May slightly enhance doxycycline absorption but increase esophageal irritation risk",
+      "action": "Take with full glass of water; avoid taking immediately before lying down"
+    }
+  ],
+  "monitoring_notes": "Doxycycline should be taken on an empty stomach 1 hour before or 2 hours after food for optimal absorption; separate all chelating agents (minerals, antacids) by at least 2-3 hours. Monitor for photosensitivity reactions, especially if concurrent photosensitizing supplements/herbs used, and counsel patients on strict sun protection."
+}

@@ -1,0 +1,68 @@
+{
+  "drug": "Cimetidine",
+  "drug_class": "H2-receptor antagonist (histamine-2 blocker)",
+  "key_pathways": [
+    "CYP1A2",
+    "CYP2C9",
+    "CYP2C19",
+    "CYP2D6",
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction may reduce cimetidine efficacy; cimetidine inhibits metabolism of St. John's Wort constituents",
+      "action": "Avoid concurrent use; consider alternative H2-blocker if St. John's Wort needed"
+    },
+    {
+      "name": "High-dose Vitamin B12 supplements (cyanocobalamin)",
+      "severity": "Moderate",
+      "mechanism": "Cimetidine reduces vitamin B12 absorption by decreasing gastric acid and intrinsic factor",
+      "action": "Monitor B12 levels; use methylcobalamin or cyanoinjections instead of oral supplements"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Low",
+      "mechanism": "Reduced gastric acid from cimetidine may decrease calcium absorption",
+      "action": "Separate dosing by 2+ hours; monitor for signs of calcium deficiency; ensure adequate intake"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "Cimetidine-induced hypochlorhydria reduces iron absorption",
+      "action": "Space doses 2+ hours apart; consider ferrous sulfate with vitamin C for enhanced absorption"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Reduced gastric acid may impair magnesium bioavailability",
+      "action": "Monitor magnesium levels; separate dosing by 2+ hours"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Caffeine-containing beverages (coffee, tea, cola)",
+      "severity": "Moderate",
+      "mechanism": "Cimetidine inhibits CYP1A2, reducing caffeine metabolism and increasing CNS stimulation risk",
+      "action": "Limit caffeine intake to <200mg daily; monitor for tremor, palpitations, or insomnia"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fiber foods",
+      "severity": "Low",
+      "mechanism": "May slightly reduce cimetidine absorption; timing-dependent interaction",
+      "action": "Take cimetidine 2 hours before or after high-fiber meals for optimal absorption"
+    },
+    {
+      "name": "Fatty or heavy meals",
+      "severity": "Low",
+      "mechanism": "May delay cimetidine absorption; reduced gastric motility",
+      "action": "Take on empty stomach or with light meal for best efficacy"
+    }
+  ],
+  "monitoring_notes": "Cimetidine is a potent CYP450 inhibitor affecting multiple pathways; monitor for drug interactions especially with medications metabolized by CYP2D6, CYP2C19, and CYP3A4. Long-term use warrants monitoring of B12 and mineral (calcium, magnesium, iron) levels due to reduced absorption from hypochlorhydria."
+}

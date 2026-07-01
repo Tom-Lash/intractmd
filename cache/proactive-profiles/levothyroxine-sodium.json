@@ -1,0 +1,114 @@
+{
+  "drug": "Levothyroxine Sodium",
+  "drug_class": "Thyroid Hormone Replacement",
+  "key_pathways": [
+    "Gastrointestinal absorption",
+    "Protein binding (thyroxine-binding globulin)",
+    "Peripheral conversion to T3"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Calcium supplements",
+      "severity": "Critical",
+      "mechanism": "Forms insoluble complexes in GI tract, reducing levothyroxine absorption by up to 40%",
+      "action": "Separate dosing by at least 4 hours; take levothyroxine on empty stomach"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Critical",
+      "mechanism": "Forms chelate complexes with levothyroxine, significantly reducing bioavailability",
+      "action": "Separate dosing by at least 4 hours; monitor TSH levels closely"
+    },
+    {
+      "name": "Magnesium supplements",
+      "severity": "High",
+      "mechanism": "Chelation reduces levothyroxine absorption in the GI tract",
+      "action": "Separate administration by at least 4 hours"
+    },
+    {
+      "name": "Aluminum hydroxide antacids",
+      "severity": "High",
+      "mechanism": "Binds levothyroxine, reducing absorption and efficacy",
+      "action": "Avoid concurrent use; separate dosing by at least 4 hours"
+    },
+    {
+      "name": "Soy isoflavones",
+      "severity": "High",
+      "mechanism": "Inhibits intestinal absorption of levothyroxine; may increase thyroid hormone requirements",
+      "action": "Monitor TSH; may require levothyroxine dose adjustment; separate dosing if possible"
+    },
+    {
+      "name": "Cottonseed meal",
+      "severity": "Moderate",
+      "mechanism": "Contains goitrogens that may reduce levothyroxine effectiveness and increase iodine loss",
+      "action": "Avoid or limit dietary intake"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Iodine supplements",
+      "severity": "Low",
+      "mechanism": "Excessive iodine may suppress thyroid hormone secretion or cause thyroiditis in sensitive patients",
+      "action": "Monitor TSH and free T4; avoid excessive supplementation (RDA: 150 mcg/day)"
+    },
+    {
+      "name": "Selenium supplements",
+      "severity": "Low",
+      "mechanism": "Required for thyroid peroxidase and deiodinase function; excessive doses may interfere with thyroid hormone metabolism",
+      "action": "Maintain adequate but not excessive intake (RDA: 55 mcg/day)"
+    },
+    {
+      "name": "Zinc supplements",
+      "severity": "Low",
+      "mechanism": "Necessary for thyroid hormone metabolism; high doses may reduce levothyroxine efficacy",
+      "action": "Monitor TSH if supplementing above RDA (11 mg/day for men, 8 mg/day for women)"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fiber foods (when taken with levothyroxine)",
+      "severity": "High",
+      "mechanism": "Soluble fiber reduces gastric emptying and levothyroxine absorption",
+      "action": "Take levothyroxine 30-60 minutes before fiber-containing meals"
+    },
+    {
+      "name": "Soy products (tofu, soy milk, soy protein isolate)",
+      "severity": "High",
+      "mechanism": "Soy isoflavones inhibit levothyroxine absorption in the small intestine",
+      "action": "Maintain consistent intake; may require dose adjustment; separate dosing by 4 hours"
+    },
+    {
+      "name": "Cruciferous vegetables (when consumed in very high amounts)",
+      "severity": "Moderate",
+      "mechanism": "Goitrogens may inhibit thyroid peroxidase; high intake may increase levothyroxine requirements",
+      "action": "Cook vegetables to reduce goitrogen activity; maintain consistent intake; monitor TSH"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products and milk",
+      "severity": "Low",
+      "mechanism": "Calcium in dairy binds levothyroxine, potentially reducing absorption if taken simultaneously",
+      "action": "Separate levothyroxine administration from dairy by at least 4 hours"
+    },
+    {
+      "name": "Fortified cereals and grain products",
+      "severity": "Low",
+      "mechanism": "May contain iron or calcium additives that reduce levothyroxine bioavailability",
+      "action": "Maintain consistent intake; separate from levothyroxine dosing by 4 hours"
+    },
+    {
+      "name": "High-iodine foods (seaweed, kelp, nori)",
+      "severity": "Low",
+      "mechanism": "Excessive iodine intake may cause thyroid suppression or interfere with levothyroxine dosing requirements",
+      "action": "Monitor TSH if iodine intake fluctuates; maintain consistent dietary iodine levels"
+    },
+    {
+      "name": "Coffee and caffeinated beverages",
+      "severity": "Low",
+      "mechanism": "May slightly reduce levothyroxine absorption if taken simultaneously",
+      "action": "Take levothyroxine with water only; wait 30 minutes before consuming coffee"
+    }
+  ],
+  "monitoring_notes": "Levothyroxine has a narrow therapeutic window; monitor TSH and free T4 levels regularly, especially after initiating therapy or adjusting doses. Patient education on proper administration (empty stomach, 30-60 minutes before food/supplements) is critical for maintaining consistent absorption and therapeutic efficacy."
+}

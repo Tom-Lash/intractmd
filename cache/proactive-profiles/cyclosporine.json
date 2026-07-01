@@ -1,0 +1,101 @@
+{
+  "drug": "Cyclosporine",
+  "drug_class": "Calcineurin Inhibitor / Immunosuppressant",
+  "key_pathways": [
+    "CYP3A4",
+    "P-glycoprotein (MDR1)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 and P-glycoprotein inducer; significantly reduces cyclosporine levels and efficacy",
+      "action": "Contraindicated; do not use concurrently. Monitor trough levels if recently discontinued."
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction and potential P-glycoprotein activation; may reduce cyclosporine bioavailability",
+      "action": "Avoid use; may compromise transplant rejection prophylaxis."
+    },
+    {
+      "name": "Grapefruit Extract",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases cyclosporine levels; risk of toxicity and nephrotoxicity",
+      "action": "Avoid completely; counsel patient on grapefruit-containing products."
+    },
+    {
+      "name": "Garlic (High-dose supplements)",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 induction; may decrease cyclosporine concentrations",
+      "action": "Limit high-dose supplements; monitor cyclosporine trough levels if used regularly."
+    },
+    {
+      "name": "Potassium Supplements",
+      "severity": "High",
+      "mechanism": "Cyclosporine impairs renal potassium excretion; hyperkalemia risk",
+      "action": "Avoid unless prescribed; monitor serum potassium and renal function regularly."
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition; limited clinical data with cyclosporine",
+      "action": "May use with caution; monitor cyclosporine levels if high-dose therapy initiated."
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "severity": "Low",
+      "mechanism": "May have renoprotective effects but no direct CYP3A4 interaction",
+      "action": "Generally safe; may be beneficial for renal function; ensure adequate monitoring."
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "No direct pharmacokinetic interaction; may support GI health",
+      "action": "Safe to use; may help manage GI side effects."
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibition dramatically increases cyclosporine bioavailability and blood levels; toxicity risk",
+      "action": "Absolute contraindication; educate patient to avoid all forms (juice, pulp, fresh fruit)."
+    },
+    {
+      "name": "Pomegranate Juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition similar to grapefruit; increases cyclosporine exposure",
+      "action": "Avoid consumption; similar interaction profile to grapefruit."
+    },
+    {
+      "name": "Seville Oranges / Bitter Oranges",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition; less well-studied than grapefruit but significant interaction potential",
+      "action": "Advise avoidance; includes marmalades and specialty beverages."
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Fat Meals",
+      "severity": "Low",
+      "mechanism": "May increase cyclosporine absorption variability; affects microemulsion formulation bioavailability",
+      "action": "Maintain consistent meal timing; take with food as directed; note fatty meal variability in levels."
+    },
+    {
+      "name": "High-Potassium Foods (Bananas, Spinach, Potatoes)",
+      "severity": "Low",
+      "mechanism": "Cyclosporine reduces potassium excretion; additive hyperkalemia risk if excessive intake",
+      "action": "Moderate intake; monitor serum potassium; counsel on portion control."
+    },
+    {
+      "name": "Licorice",
+      "severity": "Low",
+      "mechanism": "May increase sodium retention and potassium loss; compounds cyclosporine's hypertensive effects",
+      "action": "Limit consumption; monitor blood pressure and electrolytes."
+    }
+  ],
+  "monitoring_notes": "Monitor cyclosporine trough levels regularly (target 100-400 ng/mL depending on indication and time post-transplant); assess renal function, blood pressure, and serum potassium at each visit. Counsel patients on strict avoidance of CYP3A4 inducers/inhibitors and grapefruit products to maintain therapeutic levels and prevent rejection or toxicity."
+}

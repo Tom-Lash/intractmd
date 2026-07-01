@@ -1,0 +1,60 @@
+{
+  "drug": "Tenofovir",
+  "drug_class": "Nucleotide Reverse Transcriptase Inhibitor (NtRTI)",
+  "key_pathways": [
+    "Renal tubular secretion",
+    "Mitochondrial DNA polymerase",
+    "P-glycoprotein (weak substrate)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "High-dose Vitamin D (>4000 IU daily long-term)",
+      "severity": "High",
+      "mechanism": "Tenofovir causes renal tubular dysfunction and hypophosphatemia; excessive vitamin D may compound electrolyte abnormalities and worsen renal impairment risk",
+      "action": "Monitor vitamin D levels; limit supplementation to recommended dietary allowance (600-800 IU daily for most adults); assess for deficiency before supplementing"
+    },
+    {
+      "name": "Nephrotoxic supplements (Aristolochic acid, high-dose NSAIDs)",
+      "severity": "Critical",
+      "mechanism": "Additive renal toxicity with tenofovir-induced nephrotoxicity; risk of acute kidney injury and chronic kidney disease progression",
+      "action": "Absolutely avoid; use acetaminophen for pain relief instead; if NSAIDs necessary, use lowest dose with adequate hydration and renal monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Phosphate binders (calcium carbonate, sevelamer)",
+      "severity": "Low",
+      "mechanism": "Tenofovir causes hypophosphatemia; phosphate binders may further reduce phosphate absorption and exacerbate electrolyte depletion",
+      "action": "Use only if clinically indicated for hyperphosphatemia; monitor serum phosphate levels every 3-6 months"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "Low",
+      "mechanism": "May induce P-glycoprotein, potentially reducing tenofovir exposure, though clinical significance is minimal",
+      "action": "Counsel on alternative antidepressants; monitor viral load if concurrent use unavoidable"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High sodium foods (processed meats, canned soups, fast food)",
+      "severity": "Moderate",
+      "mechanism": "Excessive sodium intake increases urinary phosphate wasting and may worsen tenofovir-associated renal tubular dysfunction and electrolyte abnormalities",
+      "action": "Counsel on DASH diet principles; limit sodium to <2300 mg daily; monitor blood pressure and renal function"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Weak P-glycoprotein inhibitor; may minimally increase tenofovir levels, though clinical impact is negligible",
+      "action": "No strict avoidance necessary, but counsel moderation; monitor for increased adverse effects if large quantities consumed"
+    },
+    {
+      "name": "High-phosphate foods (dairy, nuts, seeds) in excess",
+      "severity": "Low",
+      "mechanism": "Tenofovir causes hypophosphatemia; excessive dietary restriction may worsen phosphate depletion in susceptible patients",
+      "action": "Maintain balanced phosphate intake; renal function and electrolytes typically determine dietary need rather than restriction"
+    }
+  ],
+  "monitoring_notes": "Baseline and periodic monitoring of serum creatinine, phosphate, calcium, and urinalysis is essential to detect early renal dysfunction. Counsel patients on adequate hydration (2-3L daily) and annual renal function assessment, particularly in those with pre-existing kidney disease, diabetes, or hypertension."
+}

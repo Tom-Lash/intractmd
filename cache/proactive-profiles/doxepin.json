@@ -1,0 +1,84 @@
+{
+  "drug": "Doxepin",
+  "drug_class": "Tricyclic Antidepressant (TCA)",
+  "key_pathways": [
+    "CYP2D6",
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "Induces CYP3A4 and CYP2D6, reducing doxepin levels and efficacy; increases serotonergic effects",
+      "action": "Discontinue St. John's Wort; allow 2-week washout before starting doxepin or vice versa"
+    },
+    {
+      "name": "SAMe",
+      "severity": "High",
+      "mechanism": "Additive serotonergic effects increasing risk of serotonin syndrome",
+      "action": "Avoid concurrent use; consider alternative mood support supplements"
+    },
+    {
+      "name": "5-HTP",
+      "severity": "High",
+      "mechanism": "Additive serotonergic activity elevating serotonin syndrome risk",
+      "action": "Avoid combination; consult provider before use"
+    },
+    {
+      "name": "Tramadol",
+      "severity": "Critical",
+      "mechanism": "CYP2D6 competition and serotonergic interaction increasing seizure and serotonin syndrome risk",
+      "action": "Absolute contraindication; use alternative analgesic"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 induction may slightly reduce doxepin levels",
+      "action": "Monitor therapeutic response; adjust doxepin dose if needed"
+    },
+    {
+      "name": "Black Cohosh",
+      "severity": "Low",
+      "mechanism": "Potential additive CNS effects and anticholinergic properties",
+      "action": "Use with caution; monitor for excessive sedation or anticholinergic symptoms"
+    },
+    {
+      "name": "Valerian Root",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression effects",
+      "action": "Monitor for excessive drowsiness; counsel on fall risk"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Tyramine-rich foods (aged cheeses, cured meats, fermented products, soy sauce)",
+      "severity": "High",
+      "mechanism": "TCAs inhibit monoamine oxidase; hypertensive crisis risk with high tyramine intake",
+      "action": "Restrict high-tyramine foods; educate on dietary limitations"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition may increase doxepin plasma concentrations",
+      "action": "Limit grapefruit consumption; monitor for increased anticholinergic or sedative effects"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May potentiate CNS stimulation or antagonize sedative effects of doxepin",
+      "action": "Moderate caffeine intake; counsel patient on timing relative to dose"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Additive CNS depression, anticholinergic effects, and sedation",
+      "action": "Advise minimal to no alcohol consumption; counsel on impaired cognition and fall risk"
+    }
+  ],
+  "monitoring_notes": "Monitor for serotonin syndrome symptoms (agitation, confusion, rapid heart rate, muscle rigidity) when combining with serotonergic agents. Assess for anticholinergic toxicity (dry mouth, urinary retention, constipation, confusion) and CNS depression (excessive sedation, impaired coordination) especially in elderly patients on concurrent depressants."
+}

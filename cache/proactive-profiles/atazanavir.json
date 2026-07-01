@@ -1,0 +1,67 @@
+{
+  "drug": "Atazanavir",
+  "drug_class": "Protease Inhibitor (HIV)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "UGT1A1",
+    "P-glycoprotein"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces atazanavir levels below therapeutic range, reducing viral suppression",
+      "action": "Absolutely contraindicated; discontinue or avoid all St. John's Wort products"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer dramatically reduces atazanavir plasma concentrations",
+      "action": "Do not co-administer; use alternative antimicrobial agent"
+    },
+    {
+      "name": "Proton Pump Inhibitors (omeprazole, lansoprazole)",
+      "severity": "High",
+      "mechanism": "Increases gastric pH, reducing atazanavir solubility and absorption by 75-94%",
+      "action": "Avoid or use H2-antagonist alternative if acid suppression needed; separate dosing by 12+ hours"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Calcium/Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "May reduce atazanavir absorption through chelation and pH elevation; effect modest with separation",
+      "action": "Separate administration by 2+ hours from atazanavir; monitor viral load"
+    },
+    {
+      "name": "Iron supplements",
+      "severity": "Low",
+      "mechanism": "May chelate atazanavir and reduce absorption",
+      "action": "Space dosing 2+ hours apart; monitor clinical response"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals with certain preparations",
+      "severity": "Moderate",
+      "mechanism": "Atazanavir absorption is pH-dependent and reduced with significant food; fat content may variably affect bioavailability",
+      "action": "Take atazanavir with food (light snack preferred); avoid heavy/high-fat meals for optimal absorption"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may increase atazanavir levels and prolong QT interval risk",
+      "action": "Limit consumption; monitor QTc if regular intake continues"
+    },
+    {
+      "name": "Garlic supplements (high-dose)",
+      "severity": "Low",
+      "mechanism": "May induce CYP3A4 at high doses, potentially reducing atazanavir levels",
+      "action": "Use culinary amounts only; avoid high-dose therapeutic garlic products"
+    }
+  ],
+  "monitoring_notes": "Atazanavir requires acidic gastric environment for optimal absorption; monitor for virologic failure if gastric pH is elevated. Regular assessment of CD4 count, HIV RNA, and QTc interval (especially with concurrent QT-prolonging agents) is essential given atazanavir's cardiac conduction effects."
+}

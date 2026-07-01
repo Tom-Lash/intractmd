@@ -1,0 +1,77 @@
+{
+  "drug": "Ibuprofen",
+  "drug_class": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
+  "key_pathways": [
+    "CYP2C9",
+    "CYP2C8"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Warfarin/Anticoagulants",
+      "severity": "Critical",
+      "mechanism": "NSAIDs inhibit platelet function and displace anticoagulants from protein binding, significantly increasing bleeding risk",
+      "action": "Avoid concurrent use; consult prescriber for alternative pain management"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU)",
+      "severity": "High",
+      "mechanism": "Additive antiplatelet effects increase bleeding and bruising risk",
+      "action": "Limit vitamin E to ≤400 IU daily; monitor for signs of bleeding"
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "severity": "High",
+      "mechanism": "Potentiates antiplatelet effects and increases bleeding risk",
+      "action": "Discontinue ginkgo or avoid ibuprofen; consider alternative NSAID status with prescriber"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Garlic (high-dose)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects may add to NSAID's platelet inhibition",
+      "action": "Monitor for unusual bruising or bleeding; use culinary amounts only"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "May have mild antiplatelet activity; CYP2C9 substrate competition possible",
+      "action": "Use standard doses; monitor for GI upset which may be potentiated"
+    },
+    {
+      "name": "Omega-3 Fish Oil (>3g daily)",
+      "severity": "Low",
+      "mechanism": "Mild antiplatelet effects; potential additive GI irritation",
+      "action": "Limit to ≤3g daily combined EPA/DHA; monitor for bleeding signs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Alcohol (>2 drinks daily)",
+      "severity": "High",
+      "mechanism": "Increases GI irritation, ulceration risk, and hepatotoxicity; synergistic NSAID GI toxicity",
+      "action": "Minimize alcohol consumption; avoid regular concurrent use"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Delays ibuprofen absorption and may increase GI irritation risk",
+      "action": "Take ibuprofen with food to reduce gastric upset, but avoid high-fat meals immediately before/after"
+    },
+    {
+      "name": "Caffeine",
+      "severity": "Low",
+      "mechanism": "May slightly enhance analgesia but increases GI irritation potential",
+      "action": "Moderate caffeine intake (≤200mg daily); monitor for GI symptoms"
+    },
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "May increase gastric irritation when combined with NSAIDs",
+      "action": "Limit spicy foods during ibuprofen therapy; take with plain food or milk"
+    }
+  ],
+  "monitoring_notes": "Monitor for GI symptoms (heartburn, nausea, abdominal pain), signs of bleeding/bruising, and renal/hepatic function with prolonged use. Counsel patients to report any unusual bleeding, severe abdominal pain, or edema, especially if on concurrent anticoagulants or with renal/cardiac comorbidities."
+}

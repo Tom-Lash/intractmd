@@ -1,0 +1,58 @@
+{
+  "drug": "Budesonide",
+  "drug_class": "Corticosteroid (Inhaled/Intranasal/Oral)",
+  "key_pathways": [
+    "CYP3A4"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce budesonide bioavailability and therapeutic effect",
+      "action": "Avoid concurrent use; consider alternative herbal supplement if mood support needed"
+    },
+    {
+      "name": "Licorice Root",
+      "severity": "High",
+      "mechanism": "Additive mineralocorticoid effects may cause hypokalemia, hypertension, and fluid retention when combined with budesonide",
+      "action": "Avoid use; monitor potassium and blood pressure if concurrent use unavoidable"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit Seed Extract",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibitor may slightly increase budesonide levels, though clinical significance is minimal for inhaled formulations",
+      "action": "Monitor for increased corticosteroid side effects; generally safe for inhaled budesonide"
+    },
+    {
+      "name": "Calcium/Vitamin D Supplements",
+      "severity": "Low",
+      "mechanism": "Budesonide may impair calcium absorption; supplementation supports bone health during long-term therapy",
+      "action": "Recommend concurrent use to mitigate osteoporosis risk with chronic budesonide use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition increases budesonide systemic exposure, particularly with oral formulations",
+      "action": "Avoid grapefruit juice; fresh grapefruit has minimal effect on inhaled formulations"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-Sodium Foods",
+      "severity": "Low",
+      "mechanism": "Budesonide may cause sodium retention and fluid accumulation; high sodium intake increases risk",
+      "action": "Encourage moderate sodium restriction, especially during long-term therapy"
+    },
+    {
+      "name": "Potassium-Depleting Foods/High Sugar",
+      "severity": "Low",
+      "mechanism": "Chronic corticosteroid use increases potassium loss and hyperglycemia risk",
+      "action": "Monitor potassium levels; encourage potassium-rich foods (bananas, leafy greens) and moderate sugar intake"
+    }
+  ],
+  "monitoring_notes": "Monitor for systemic corticosteroid side effects (HPA axis suppression, osteoporosis, hyperglycemia) with chronic budesonide use, particularly with oral formulations. Counsel on potential drug-nutrient interactions and advise maintaining adequate calcium, vitamin D, and potassium intake."
+}

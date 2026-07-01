@@ -1,0 +1,90 @@
+{
+  "drug": "Semaglutide",
+  "drug_class": "GLP-1 Receptor Agonist",
+  "key_pathways": [
+    "Minimal hepatic metabolism",
+    "Predominantly renal clearance",
+    "No significant CYP450 interactions"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Bitter Melon",
+      "severity": "High",
+      "mechanism": "Additive hypoglycemic effects; may cause severe hypoglycemia when combined with semaglutide",
+      "action": "Avoid concurrent use; monitor blood glucose if co-use unavoidable"
+    },
+    {
+      "name": "Fenugreek",
+      "severity": "High",
+      "mechanism": "Potentiates glucose-lowering effects; increases risk of hypoglycemia",
+      "action": "Discontinue or obtain physician approval before semaglutide initiation"
+    },
+    {
+      "name": "Chromium Picolinate (high doses >200mcg/day)",
+      "severity": "High",
+      "mechanism": "May enhance insulin sensitivity and lower blood glucose synergistically with semaglutide",
+      "action": "Avoid high-dose supplementation; use only under medical supervision with glucose monitoring"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Alpha-Lipoic Acid",
+      "severity": "Low",
+      "mechanism": "May have mild glucose-lowering properties; additive effect possible but unlikely at typical doses",
+      "action": "Monitor blood glucose; inform provider of concurrent use"
+    },
+    {
+      "name": "Magnesium Supplements",
+      "severity": "Low",
+      "mechanism": "Semaglutide may cause gastrointestinal symptoms that affect mineral absorption; no direct interaction",
+      "action": "Separate dosing by 2+ hours; ensure adequate intake monitoring"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May alter GI motility effects; no direct pharmacological interaction documented",
+      "action": "Monitor GI tolerance; adjust timing if nausea or delayed gastric emptying worsens"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>50g fat per meal)",
+      "severity": "High",
+      "mechanism": "Semaglutide delays gastric emptying; high-fat foods significantly worsen nausea, vomiting, and GI distress",
+      "action": "Restrict dietary fat to <30g per meal; prioritize lean proteins and low-fat options"
+    },
+    {
+      "name": "Large portion sizes",
+      "severity": "High",
+      "mechanism": "Semaglutide reduces appetite and gastric capacity; oversized meals increase risk of vomiting and intolerance",
+      "action": "Consume smaller, frequent meals (4-6 per day); eat slowly and chew thoroughly"
+    },
+    {
+      "name": "Sugar-sweetened beverages and high-glycemic foods",
+      "severity": "Moderate",
+      "mechanism": "While semaglutide controls blood glucose, rapid glucose spikes may worsen nausea and GI symptoms",
+      "action": "Eliminate sugary drinks; choose complex carbohydrates and fiber-rich foods"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Spicy foods",
+      "severity": "Low",
+      "mechanism": "May exacerbate nausea and gastric irritation in sensitive patients; not a direct interaction",
+      "action": "Monitor tolerance; reduce spice intake if GI symptoms increase"
+    },
+    {
+      "name": "Caffeine and alcohol",
+      "severity": "Low",
+      "mechanism": "Both can increase nausea and dehydration risk; alcohol may impair glucose control awareness",
+      "action": "Limit caffeine to <200mg/day and alcohol to moderate amounts; ensure adequate hydration"
+    },
+    {
+      "name": "High-fiber foods (sudden increase)",
+      "severity": "Low",
+      "mechanism": "Semaglutide already slows GI transit; abrupt fiber increase may worsen bloating and constipation",
+      "action": "Gradually increase fiber intake over 2-4 weeks; maintain consistent hydration"
+    }
+  ],
+  "monitoring_notes": "Semaglutide has minimal CYP450-mediated drug interactions due to low hepatic metabolism; primary concerns are supplements/foods that potentiate glucose-lowering effects or exacerbate GI side effects (nausea, delayed gastric emptying). Monitor for hypoglycemia symptoms when combined with other antidiabetic agents or glucose-lowering supplements, and assess GI tolerance at each visit."
+}

@@ -1,0 +1,72 @@
+{
+  "drug": "Prednisone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "Hepatic metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces prednisone levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative herbal supplements"
+    },
+    {
+      "name": "Licorice Root (high dose)",
+      "severity": "High",
+      "mechanism": "Additive mineralocorticoid effects increase hypertension and hypokalemia risk",
+      "action": "Avoid or use only under medical supervision; monitor electrolytes"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D",
+      "severity": "Low",
+      "mechanism": "Prednisone impairs vitamin D metabolism; supplementation may be beneficial",
+      "action": "Consider supplementation; baseline and periodic 25-OH vitamin D monitoring recommended"
+    },
+    {
+      "name": "Calcium",
+      "severity": "Low",
+      "mechanism": "Prednisone increases bone loss; calcium supplementation supports bone health",
+      "action": "Consider supplementation (1000-1200 mg daily) with vitamin D for osteoporosis prevention"
+    },
+    {
+      "name": "Zinc",
+      "severity": "Low",
+      "mechanism": "Prednisone may increase urinary zinc losses",
+      "action": "Monitor zinc status; supplement if deficiency suspected"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may increase prednisone levels and adverse effects",
+      "action": "Avoid grapefruit products; use alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-sodium foods",
+      "severity": "Low",
+      "mechanism": "Prednisone causes sodium retention and fluid accumulation",
+      "action": "Limit sodium intake to <2g daily; monitor blood pressure"
+    },
+    {
+      "name": "High-sugar/refined carbohydrates",
+      "severity": "Low",
+      "mechanism": "Prednisone increases glucose levels and diabetes risk",
+      "action": "Minimize refined sugars; emphasize complex carbohydrates and monitor glucose"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "Increases GI irritation, osteoporosis risk, and infection susceptibility",
+      "action": "Minimize or avoid alcohol consumption; take prednisone with food"
+    }
+  ],
+  "monitoring_notes": "Monitor electrolytes (potassium, sodium), blood glucose, blood pressure, and bone density with chronic prednisone use. Assess for drug interactions with CYP3A4 substrates and ensure adequate calcium/vitamin D intake to mitigate osteoporosis risk."
+}

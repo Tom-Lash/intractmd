@@ -1,0 +1,67 @@
+{
+  "drug": "Tucatinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C8",
+    "P-glycoprotein (MDR1)",
+    "BCRP"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer significantly reduces tucatinib plasma concentrations and therapeutic efficacy",
+      "action": "Discontinue St. John's Wort; consider alternative mood support with oncology team approval"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 and CYP2C8 inducer may reduce tucatinib bioavailability",
+      "action": "Avoid supplementation; use alternative immune support if needed"
+    },
+    {
+      "name": "Rifampin",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer dramatically decreases tucatinib exposure",
+      "action": "Use alternative antibiotic if possible; if unavoidable, consult oncology for dose adjustment"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential CYP3A4 inhibition may increase tucatinib concentrations",
+      "action": "Monitor for increased toxicity; maintain consistent intake if used"
+    },
+    {
+      "name": "Milk thistle (Silymarin)",
+      "severity": "Low",
+      "mechanism": "May inhibit P-glycoprotein and CYP3A4, potentially increasing tucatinib levels",
+      "action": "Use cautiously; report any tolerability changes to healthcare provider"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 and BCRP inhibitor increases tucatinib plasma concentrations and risk of toxicity",
+      "action": "Eliminate grapefruit juice from diet; substitute other citrus beverages"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase tucatinib absorption; absorption is food-dependent",
+      "action": "Take tucatinib consistently with or without food; maintain dietary consistency"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, Brussels sprouts)",
+      "severity": "Low",
+      "mechanism": "Contains compounds that may induce CYP enzymes with chronic high consumption",
+      "action": "Consume in moderation; avoid excessive intake during treatment"
+    }
+  ],
+  "monitoring_notes": "Tucatinib has significant CYP3A4 and P-glycoprotein dependence; monitor for efficacy loss with enzyme inducers and toxicity with CYP3A4 inhibitors. Patients should maintain consistent dietary habits and avoid grapefruit products completely."
+}

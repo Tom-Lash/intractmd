@@ -1,0 +1,59 @@
+{
+  "drug": "Lactulose",
+  "drug_class": "Osmotic Laxative",
+  "key_pathways": [
+    "Non-enzymatic metabolism in colon",
+    "Bacterial fermentation"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Psyllium husk (high doses)",
+      "severity": "Moderate",
+      "mechanism": "Combined osmotic and bulk-forming effects may cause excessive bowel stimulation and severe diarrhea",
+      "action": "Avoid concurrent use or space doses 2+ hours apart; monitor for dehydration"
+    },
+    {
+      "name": "Castor oil",
+      "severity": "Moderate",
+      "mechanism": "Additive laxative effects may lead to severe electrolyte depletion and dehydration",
+      "action": "Do not combine; use one agent at a time under medical supervision"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Magnesium supplements",
+      "severity": "Low",
+      "mechanism": "Both have osmotic effects; may increase loose stools without clinical concern",
+      "action": "Monitor stool frequency and consistency; adjust doses as needed"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "Lactulose fermentation by bacteria supports probiotic efficacy; generally beneficial",
+      "action": "Monitor tolerance; separate administration by 2 hours if GI upset occurs"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fiber foods with reduced fluid intake",
+      "severity": "Moderate",
+      "mechanism": "Combined with lactulose may cause impaction or severe cramping if dehydration occurs",
+      "action": "Ensure adequate hydration (≥2L water daily) when consuming high-fiber foods with lactulose"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Dairy products (lactose-containing)",
+      "severity": "Low",
+      "mechanism": "Lactose may be fermented similarly to lactulose; may enhance osmotic effect slightly",
+      "action": "Monitor for increased bloating or gas; generally well-tolerated"
+    },
+    {
+      "name": "Galactose-containing foods",
+      "severity": "Low",
+      "mechanism": "Lactulose metabolism produces galactose; trace dietary galactose unlikely to cause issues except in galactosemia",
+      "action": "Contraindicated in diagnosed galactosemia; verify patient status"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of dehydration, electrolyte imbalance (sodium, potassium), and adequate fluid intake of at least 2 liters daily. Assess stool frequency, consistency, and presence of abdominal cramping or bloating, especially in elderly patients or those on concurrent medications affecting fluid/electrolyte balance."
+}

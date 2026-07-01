@@ -1,0 +1,65 @@
+{
+  "drug": "Lenalidomide",
+  "drug_class": "Immunomodulatory agent (IMiD)",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP1A2"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer may reduce lenalidomide levels and efficacy",
+      "action": "Avoid concurrent use; consider alternative mood support if needed"
+    },
+    {
+      "name": "High-dose Vitamin E (>400 IU daily)",
+      "severity": "High",
+      "mechanism": "May potentiate anticoagulant effects and increase bleeding risk, particularly important given lenalidomide's thrombotic potential",
+      "action": "Limit to ≤400 IU daily or avoid; inform prescriber of supplementation"
+    },
+    {
+      "name": "Ginkgo biloba",
+      "severity": "Moderate",
+      "mechanism": "Antiplatelet effects may compound lenalidomide-associated thromboembolism risk",
+      "action": "Avoid or use with caution; monitor for signs of bleeding"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapeseed extract",
+      "severity": "Low",
+      "mechanism": "May inhibit CYP3A4 and potentially increase lenalidomide exposure",
+      "action": "Monitor for increased side effects; inform prescriber of use"
+    },
+    {
+      "name": "Turmeric/Curcumin (standard doses)",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4 inhibitory effects at high doses",
+      "action": "Use standard culinary amounts; avoid megadoses without provider approval"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition significantly increases lenalidomide plasma concentrations and toxicity risk",
+      "action": "Complete avoidance recommended; switch to alternative citrus fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May alter lenalidomide absorption kinetics; optimal absorption on empty stomach",
+      "action": "Take lenalidomide consistently with or without food; maintain consistent timing"
+    },
+    {
+      "name": "Cruciferous vegetables (high intake)",
+      "severity": "Low",
+      "mechanism": "Mild CYP1A2 induction potential at very high consumption levels",
+      "action": "Normal dietary intake is safe; avoid extreme supplemental amounts"
+    }
+  ],
+  "monitoring_notes": "Lenalidomide carries significant risk for venous thromboembolism (VTE) and peripheral neuropathy; monitor closely for bleeding, neurological symptoms, and signs of clot formation. Drug interactions are primarily CYP3A4-mediated; avoid strong inducers/inhibitors and grapefruit. Dose adjustments may be needed based on renal function (drug is renally cleared)."
+}

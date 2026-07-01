@@ -1,0 +1,58 @@
+{
+  "drug": "Pravastatin",
+  "drug_class": "HMG-CoA Reductase Inhibitor (Statin)",
+  "key_pathways": [
+    "CYP3A4 (minor)",
+    "Hepatic glucuronidation (primary)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Red Yeast Rice",
+      "severity": "High",
+      "mechanism": "Contains lovastatin and monacolin K; additive statin effects increase myopathy and rhabdomyolysis risk",
+      "action": "Discontinue red yeast rice; monitor CK levels if prior use"
+    },
+    {
+      "name": "High-dose Niacin (>2g daily)",
+      "severity": "High",
+      "mechanism": "Increased risk of myopathy and statin-induced muscle injury when combined with pravastatin",
+      "action": "Use only low-dose niacin (<1g daily) with close CK monitoring or avoid combination"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Coenzyme Q10 (CoQ10)",
+      "severity": "Low",
+      "mechanism": "Statins reduce CoQ10 synthesis; supplementation may support muscle function but may reduce statin efficacy slightly",
+      "action": "Consider 100-200 mg daily; monitor lipid panel for efficacy maintenance"
+    },
+    {
+      "name": "Fish Oil/Omega-3 (high-dose)",
+      "severity": "Low",
+      "mechanism": "May have additive antiplatelet effects and increase bleeding risk in susceptible patients",
+      "action": "Limit to ≤3g daily; counsel on bleeding signs"
+    },
+    {
+      "name": "Garlic supplements",
+      "severity": "Low",
+      "mechanism": "May potentiate antiplatelet and anticoagulant effects; minor interaction with pravastatin metabolism",
+      "action": "Moderate intake acceptable; advise patient of cumulative antiplatelet effect"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Low",
+      "mechanism": "CYP3A4 inhibition; pravastatin is minimally metabolized by CYP3A4 (undergoes glucuronidation), so interaction is minor compared to other statins",
+      "action": "Occasional consumption is likely safe; excessive intake (>1L daily) warrants avoidance"
+    },
+    {
+      "name": "Alcohol (excessive)",
+      "severity": "Low",
+      "mechanism": "May increase statin myopathy risk and impair hepatic metabolism; increases transaminase elevations",
+      "action": "Limit to ≤1-2 drinks daily; counsel on liver function monitoring"
+    }
+  ],
+  "monitoring_notes": "Pravastatin has minimal CYP3A4 interaction potential due to primary glucuronidation metabolism, making it safer than other statins with supplements. Monitor for muscle pain, weakness, and elevated CK levels, especially if patient is on concurrent myopathy-risk medications or high-dose niacin."
+}

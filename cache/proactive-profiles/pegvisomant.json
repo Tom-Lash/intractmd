@@ -1,0 +1,47 @@
+{
+  "drug": "Pegvisomant",
+  "drug_class": "Growth hormone receptor antagonist",
+  "key_pathways": [
+    "GH receptor blockade",
+    "Hepatic metabolism (minor)",
+    "Renal clearance"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Growth hormone secretagogues (arginine, ornithine, GABA)",
+      "severity": "High",
+      "mechanism": "Direct antagonism of pegvisomant's therapeutic effect; may stimulate GH release and counteract receptor blockade",
+      "action": "Avoid concurrent use; counsel patient on competing mechanisms of action"
+    },
+    {
+      "name": "High-dose insulin sensitizers (berberine, chromium picolinate >200mcg/day)",
+      "severity": "Moderate",
+      "mechanism": "Pegvisomant alters glucose metabolism; excessive insulin sensitization may increase hypoglycemia risk",
+      "action": "Monitor blood glucose closely; coordinate with prescriber before use"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Vitamin D and calcium supplements",
+      "severity": "Low",
+      "mechanism": "GH antagonism may affect bone metabolism; adequate supplementation supports bone health during therapy",
+      "action": "Monitor bone density; ensure adequate intake but avoid excessive dosing"
+    },
+    {
+      "name": "Ginseng and adaptogenic herbs",
+      "severity": "Low",
+      "mechanism": "May have mild GH-stimulating properties; clinical significance unclear at typical doses",
+      "action": "Use cautiously and monitor for reduced pegvisomant efficacy"
+    }
+  ],
+  "avoid_foods": [],
+  "caution_foods": [
+    {
+      "name": "High-glycemic refined carbohydrates",
+      "severity": "Low",
+      "mechanism": "Pegvisomant reduces GH-mediated metabolic effects; excess refined carbs may increase glucose dysregulation risk",
+      "action": "Emphasize balanced macronutrient intake and monitor glucose control"
+    }
+  ],
+  "monitoring_notes": "Pegvisomant is a peptide with minimal hepatic metabolism and no major CYP interactions; monitor IGF-1 levels and glucose homeostasis regularly. Counsel on avoiding GH secretagogues and maintaining stable carbohydrate intake to optimize therapeutic efficacy and metabolic stability."
+}

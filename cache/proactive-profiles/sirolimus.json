@@ -1,0 +1,97 @@
+{
+  "drug": "Sirolimus",
+  "drug_class": "mTOR inhibitor; immunosuppressant",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5",
+    "P-glycoprotein (MDR1)",
+    "mTOR signaling"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inducer; decreases sirolimus levels by 50-60%, reducing immunosuppressive efficacy",
+      "action": "Absolutely contraindicated; do not use concurrently; monitor trough levels if recently discontinued"
+    },
+    {
+      "name": "Grapefruit/Grapefruit Juice",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibitor; increases sirolimus bioavailability and peak levels, risking toxicity",
+      "action": "Avoid completely; consider alternative citrus fruits; maintain consistent intake if unavoidable"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer; dramatically reduces sirolimus levels below therapeutic range",
+      "action": "Contraindicated; use alternative antimicrobial agents; monitor levels closely"
+    },
+    {
+      "name": "Milk Thistle (Silymarin)",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; may increase sirolimus concentrations and toxicity risk",
+      "action": "Avoid use; counsel on risk of elevated drug levels and adverse effects"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "CYP3A4 inducer; may reduce sirolimus efficacy and immunosuppression",
+      "action": "Avoid during transplant maintenance; use alternative immune support if needed"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginger",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 inhibitor; theoretical potential to increase sirolimus levels",
+      "action": "Use in moderation; monitor for signs of toxicity; no absolute contraindication at culinary doses"
+    },
+    {
+      "name": "Turmeric/Curcumin",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition; may marginally increase sirolimus exposure",
+      "action": "Generally safe at dietary levels; excessive supplementation should be discussed with provider"
+    },
+    {
+      "name": "Omega-3 fatty acids",
+      "severity": "Low",
+      "mechanism": "Minimal direct interaction; may enhance antiplatelet effects and increase bleeding risk",
+      "action": "Monitor for bleeding; use standard doses; inform provider of supplementation"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit",
+      "severity": "Critical",
+      "mechanism": "CYP3A4 inhibitor in juice and pulp; significantly increases sirolimus AUC and Cmax",
+      "action": "Eliminate completely from diet; educate on hidden sources in juices and fresh fruit"
+    },
+    {
+      "name": "Pomegranate",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibitor; increases sirolimus bioavailability similar to grapefruit",
+      "action": "Avoid pomegranate and pomegranate juice; consider alternative fruits"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "Increases sirolimus absorption and bioavailability; may elevate drug levels",
+      "action": "Maintain consistent dietary fat intake; take sirolimus consistently with or without food"
+    },
+    {
+      "name": "Cruciferous vegetables (broccoli, cabbage)",
+      "severity": "Low",
+      "mechanism": "Contains indoles that are mild CYP3A4 inducers; minimal clinical effect at normal intake",
+      "action": "No restriction needed; maintain consistent consumption patterns"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May impair liver function and increase infection risk in immunosuppressed patients",
+      "action": "Limit to moderate consumption; counsel on infection risk and drug metabolism"
+    }
+  ],
+  "monitoring_notes": "Maintain consistent dietary habits and obtain baseline/regular sirolimus trough levels (5-15 ng/mL target range varies by indication). Monitor renal function, lipid panel, and CBC regularly as sirolimus carries risks of nephrotoxicity, hyperlipidemia, and myelosuppression independent of food/supplement interactions."
+}

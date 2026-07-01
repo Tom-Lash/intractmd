@@ -1,0 +1,66 @@
+{
+  "drug": "Azathioprine",
+  "drug_class": "Immunosuppressant (Purine analog)",
+  "key_pathways": [
+    "TPMT (Thiopurine methyltransferase)",
+    "XO (Xanthine oxidase)",
+    "HGPRT (Hypoxanthine-guanine phosphoribosyltransferase)"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Allopurinol",
+      "severity": "Critical",
+      "mechanism": "Inhibits xanthine oxidase, significantly increasing azathioprine metabolite accumulation and toxicity risk",
+      "action": "Avoid concurrent use; if required, reduce azathioprine dose by 60-75% and monitor closely for myelosuppression"
+    },
+    {
+      "name": "Febuxostat",
+      "severity": "High",
+      "mechanism": "Xanthine oxidase inhibitor that increases active azathioprine metabolite levels",
+      "action": "Avoid or use alternative urate-lowering therapy; monitor CBC if concurrent use necessary"
+    },
+    {
+      "name": "Echinacea",
+      "severity": "High",
+      "mechanism": "Immunostimulant that may antagonize azathioprine's immunosuppressive effects",
+      "action": "Discontinue use; may reduce drug efficacy in transplant and autoimmune conditions"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Folate/Folic acid",
+      "severity": "Low",
+      "mechanism": "Azathioprine interferes with folate metabolism; supplementation may help mitigate hematologic toxicity",
+      "action": "Consider supplementation (5mg daily) under provider supervision; monitor CBC"
+    },
+    {
+      "name": "Probiotics",
+      "severity": "Low",
+      "mechanism": "May modulate immune response during immunosuppression; generally safe but effects unpredictable",
+      "action": "Use cautiously; monitor for infection signs and discuss with prescriber"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit/Grapefruit juice",
+      "severity": "Moderate",
+      "mechanism": "CYP3A4 inhibition may alter azathioprine metabolite levels variably",
+      "action": "Avoid consumption; use alternative citrus fruits if preferred"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-purine foods (organ meats, anchovies, sardines)",
+      "severity": "Low",
+      "mechanism": "May increase uric acid levels in patients with azathioprine-related hyperuricemia",
+      "action": "Moderate intake; maintain adequate hydration and monitor uric acid levels"
+    },
+    {
+      "name": "Alcohol",
+      "severity": "Low",
+      "mechanism": "May potentiate hepatotoxicity and myelosuppression risks associated with azathioprine",
+      "action": "Limit or avoid alcohol; discuss safe consumption limits with provider"
+    }
+  ],
+  "monitoring_notes": "TPMT genotyping is recommended before azathioprine initiation to identify poor metabolizers at high toxicity risk. Monitor CBC, liver function tests, and signs of infection regularly; baseline and periodic assessments are essential due to myelosuppression and malignancy risks."
+}

@@ -1,0 +1,66 @@
+{
+  "drug": "Tadalafil",
+  "drug_class": "Phosphodiesterase-5 (PDE-5) Inhibitor",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP2C17",
+    "Nitric oxide-cGMP pathway"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "Nitrates (organic nitrates, poppers)",
+      "severity": "Critical",
+      "mechanism": "Additive vasodilation leading to severe hypotension, syncope, myocardial infarction, or stroke",
+      "action": "Absolutely contraindicated; counsel patient to avoid all nitrate-containing products and alkyl nitrites"
+    },
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "CYP3A4 induction reduces tadalafil plasma concentrations and efficacy",
+      "action": "Avoid concurrent use; consider alternative antidepressant if tadalafil required"
+    },
+    {
+      "name": "Yohimbine",
+      "severity": "High",
+      "mechanism": "Additive sympathomimetic effects; increased blood pressure and cardiac strain",
+      "action": "Avoid concurrent use; counsel on alternative erectile dysfunction support"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Ginseng",
+      "severity": "Low",
+      "mechanism": "May have mild CYP3A4-inducing properties; potential modest reduction in tadalafil levels",
+      "action": "Monitor for reduced efficacy; reassess if erectile dysfunction control declines"
+    },
+    {
+      "name": "Saw Palmetto",
+      "severity": "Low",
+      "mechanism": "Mild CYP3A4 interaction; minimal clinical significance in most patients",
+      "action": "No specific restriction; standard monitoring recommended"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases tadalafil bioavailability and plasma concentrations, elevating hypotension and adverse effect risk",
+      "action": "Advise patient to avoid grapefruit products; consider dose adjustment if consumption unavoidable"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May delay tadalafil absorption and reduce peak plasma concentration; minimal impact on overall efficacy with once-daily dosing",
+      "action": "Counsel that tadalafil can be taken with or without food; consistent timing recommended"
+    },
+    {
+      "name": "Excessive alcohol",
+      "severity": "Low",
+      "mechanism": "Additive vasodilation and hypotensive effects; increased dizziness, headache, and syncope risk",
+      "action": "Advise limiting alcohol consumption; educate on increased adverse event risk with heavy use"
+    }
+  ],
+  "monitoring_notes": "Monitor blood pressure regularly, especially in patients taking antihypertensive agents concurrently. Counsel patients on absolute contraindication with nitrates and importance of disclosing all supplements and foods to prevent serious cardiovascular complications."
+}

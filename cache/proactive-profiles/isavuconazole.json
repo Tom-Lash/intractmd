@@ -1,0 +1,53 @@
+{
+  "drug": "Isavuconazole",
+  "drug_class": "Triazole antifungal",
+  "key_pathways": [
+    "CYP3A4",
+    "CYP3A5"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "Critical",
+      "mechanism": "Strong CYP3A4 inducer reduces isavuconazole levels by approximately 50-60%, significantly decreasing antifungal efficacy",
+      "action": "Absolutely contraindicated; select alternative supplement or antifungal"
+    },
+    {
+      "name": "Rifampin/Rifampicin",
+      "severity": "Critical",
+      "mechanism": "Potent CYP3A4 inducer substantially reduces isavuconazole plasma concentrations below therapeutic levels",
+      "action": "Avoid concurrent use; consider alternative antimicrobial if possible"
+    },
+    {
+      "name": "High-dose Calcium supplements (>1200mg daily)",
+      "severity": "High",
+      "mechanism": "May reduce isavuconazole absorption when taken simultaneously; calcium chelation effect",
+      "action": "Separate dosing by at least 2 hours; take isavuconazole first"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential mild CYP3A4 inhibition may slightly increase isavuconazole levels",
+      "action": "Monitor for increased adverse effects; generally acceptable but document use"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "High",
+      "mechanism": "CYP3A4 inhibition increases isavuconazole bioavailability and plasma concentrations, elevating toxicity risk",
+      "action": "Avoid consumption during entire course of therapy"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "High-fat meals",
+      "severity": "Low",
+      "mechanism": "May increase isavuconazole absorption; take consistently either with or without food for predictable levels",
+      "action": "Maintain consistent dietary pattern; document meal timing with doses"
+    }
+  ],
+  "monitoring_notes": "Monitor for signs of treatment failure or breakthrough infections if CYP3A4 inducers are coadministered. Assess for adverse effects (QT prolongation, hepatotoxicity) particularly if CYP3A4 inhibitors increase drug levels or in patients with renal impairment (eGFR <30 mL/min)."
+}

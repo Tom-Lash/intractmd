@@ -1,0 +1,48 @@
+{
+  "drug": "Pibrentasvir",
+  "drug_class": "NS5A inhibitor (hepatitis C antiviral)",
+  "key_pathways": [
+    "P-gp substrate",
+    "OATP1B1/1B3 substrate",
+    "minimal CYP metabolism"
+  ],
+  "avoid_supplements": [
+    {
+      "name": "St. John's Wort",
+      "severity": "High",
+      "mechanism": "P-gp and OATP inducer; reduces pibrentasvir concentrations via increased efflux and decreased hepatic uptake",
+      "action": "Avoid concurrent use; may reduce antiviral efficacy"
+    },
+    {
+      "name": "Rifampin-containing supplements",
+      "severity": "High",
+      "mechanism": "Potent P-gp/OATP inducer; significantly decreases pibrentasvir bioavailability",
+      "action": "Contraindicated; do not use together"
+    }
+  ],
+  "caution_supplements": [
+    {
+      "name": "Grapefruit seed extract",
+      "severity": "Low",
+      "mechanism": "Potential P-gp inhibition may increase pibrentasvir levels slightly",
+      "action": "Monitor; generally acceptable but use consistent intake"
+    }
+  ],
+  "avoid_foods": [
+    {
+      "name": "High-fat meals (>600 kcal fat)",
+      "severity": "Moderate",
+      "mechanism": "Significantly increases pibrentasvir absorption and exposure; may increase adverse effects",
+      "action": "Take on empty stomach or with low-fat meal; standardize timing relative to food"
+    }
+  ],
+  "caution_foods": [
+    {
+      "name": "Grapefruit and grapefruit juice",
+      "severity": "Low",
+      "mechanism": "Potential minor P-gp inhibition; clinical significance unclear with pibrentasvir",
+      "action": "Minimize intake or maintain consistent consumption patterns"
+    }
+  ],
+  "monitoring_notes": "Pibrentasvir has minimal hepatic metabolism but is a substrate for P-gp and OATP transporters; monitor for reduced efficacy with inducing supplements or foods that significantly alter absorption. Ensure consistent meal-timing practices to maintain stable drug levels."
+}
