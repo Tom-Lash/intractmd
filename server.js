@@ -914,20 +914,31 @@ function mergeProactiveProfiles(drugs) {
   const avoidSupplements = [], cautionSupplements = [], avoidFoods = [], cautionFoods = [];
   const seen = new Set();
 
+  // Filter out non-purchasable medical items and downgrade food severity
+  const excludeTerms = ['contrast dye','contrast media','iodinated','radioactive',
+    'general anesthesia','intravenous','iv fluid','blood transfusion','dialysis',
+    'intraoperative','perioperative','ct scan','mri contrast','x-ray dye'];
+  const isExcluded = name => excludeTerms.some(t => (name||'').toLowerCase().includes(t));
+  const foodSev = sev => sev==='Critical'?'High':sev==='High'?'Moderate':'Low';
+
   found.forEach(({ drug, profile }) => {
     (profile.avoid_supplements || []).forEach(s => {
+      if(isExcluded(s.name)) return;
       const key = s.name.toLowerCase() + drug;
       if (!seen.has(key)) { seen.add(key); avoidSupplements.push({ ...s, drug }); }
     });
     (profile.caution_supplements || []).forEach(s => {
+      if(isExcluded(s.name)) return;
       const key = 'c' + s.name.toLowerCase() + drug;
       if (!seen.has(key)) { seen.add(key); cautionSupplements.push({ ...s, drug }); }
     });
     (profile.avoid_foods || []).forEach(f => {
+      if(isExcluded(f.name)) return;
       const key = 'f' + f.name.toLowerCase() + drug;
-      if (!seen.has(key)) { seen.add(key); avoidFoods.push({ ...f, drug }); }
+      if (!seen.has(key)) { seen.add(key); avoidFoods.push({ ...f, drug, severity: foodSev(f.severity) }); }
     });
     (profile.caution_foods || []).forEach(f => {
+      if(isExcluded(f.name)) return;
       const key = 'cf' + f.name.toLowerCase() + drug;
       if (!seen.has(key)) { seen.add(key); cautionFoods.push({ ...f, drug }); }
     });
