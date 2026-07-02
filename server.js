@@ -961,10 +961,10 @@ function mergeProactiveProfiles(drugs) {
   const worstSev=critCount>0?'Critical':highCount>0?'High':modCount>0?'Moderate':'Low';
   let pcprs;
   if(worstSev==='Critical'){pcprs=Math.min(85,55+Math.min(critCount-1,3)*10);}
-  else if(worstSev==='High'){pcprs=Math.min(54,30+Math.min(highCount,4)*6);}
+  else if(worstSev==='High'){pcprs=Math.min(58,22+Math.min(highCount,6)*4);}
   else if(worstSev==='Moderate'){pcprs=Math.min(28,15+Math.min(modCount,5)*2);}
   else{pcprs=Math.min(14,cautionSupplements.length+cautionFoods.length);}
-  const risk_tier=pcprs>=75?'Critical':pcprs>=45?'High':pcprs>=25?'Moderate':pcprs>=10?'Low':'Minimal';
+  const risk_tier=pcprs>=70?"Critical":pcprs>=50?"High":pcprs>=30?"Moderate":pcprs>=10?"Low":"Minimal";
 
   const warnings = [
     ...avoidSupplements.map(s => ({ drug: s.drug, interacts_with: s.name, category: 'supplement', severity: s.severity, mechanism: s.mechanism, action: s.action })),
