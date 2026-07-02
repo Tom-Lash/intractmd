@@ -83,12 +83,12 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
 /* ── RISK FACTORS ── */
 .factor-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.factor-card{border:1.5px solid #e8e8e8;border-radius:8px;padding:10px 12px;cursor:pointer;transition:all .15s;}
-.factor-card:hover{border-color:var(--cyan);background:#f8fdff;}
+.factor-card{border:2px solid #d0d7e0;border-radius:8px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fafbfc;}
+.factor-card:hover{border-color:var(--cyan);background:#f0fafd;}
 .factor-card.selected{border-color:var(--confirmed-bd);background:var(--confirmed-lt);}
 .factor-card.selected .factor-name{color:var(--confirmed);}
-.factor-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;}
-.factor-desc{font-size:11px;color:var(--text3);}
+.factor-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.factor-desc{font-size:12px;color:var(--text2);}
 .factor-input{margin-top:6px;display:none;}
 .factor-card.selected .factor-input{display:block;}
 .factor-input input,.factor-input select{width:100%;padding:5px 8px;border:1px solid #ddd;border-radius:5px;font-size:11px;}
@@ -319,12 +319,14 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div id="autoFactorResults" style="margin-bottom:16px;">
           <div style="font-size:13px;color:var(--text3);padding:8px 0;">Run DDI analysis in Step 3 to auto-compute risk factors.</div>
         </div>
-        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 8px;">Additional Physiologic Factors (manual entry)</div>
+        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:16px 0 4px;">Additional Physiologic Factors (manual entry)</div>
+        <div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Click any card to select — add details if known from the patient record.</div>
         <div class="factor-grid" id="physiologicFactors">
           <!-- Populated by JS -->
         </div>
 
-        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:16px 0 8px;">Regimen Context Factors (Layer 3)</div>
+        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:16px 0 4px;">Regimen Context Factors (Layer 3)</div>
+        <div style="font-size:12px;color:var(--text3);margin-bottom:10px;">Select any additional context factors visible in the patient record.</div>
         <div class="factor-grid" id="regimenFactors">
           <!-- Populated by JS -->
         </div>
