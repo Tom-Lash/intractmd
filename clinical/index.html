@@ -446,7 +446,7 @@ function renderFactors(factors, containerId) {
             : `<input type="text" placeholder="${f.placeholder||''}"
                 onclick="event.stopPropagation()"
                 oninput="setFactorValue('${f.id}', this.value);ensureSelected('${f.id}');"
-                onkeydown="if(event.key==='Enter'){event.stopPropagation();event.preventDefault();var inputs=document.querySelectorAll('.factor-input input,.factor-input select');var idx=Array.from(inputs).indexOf(this);if(inputs[idx+1])inputs[idx+1].focus();}"
+                onkeydown="if(event.key==='Enter'){event.stopPropagation();event.preventDefault();this.blur();}"
                 />`
           }
         </div>` : ''}
