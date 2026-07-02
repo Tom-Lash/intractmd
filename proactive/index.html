@@ -360,25 +360,20 @@ function renderTray(){
 }
 
 function clearSelections(){
-  // Clear the Set of drugs
+  // Clear the drug Set
   drugs.clear();
-  // Reset the tray to just the hint
-  const tray=document.getElementById('tray');
-  if(tray)tray.innerHTML='<span class="tray-hint">No medications added yet</span>';
-  // Reset the count label
-  const countLbl=document.getElementById('countLbl');
-  if(countLbl)countLbl.textContent='0';
-  // Clear input field
+  // Reset chips and tray via existing functions
+  buildChips();
+  renderTray();
+  // Clear input field and autocomplete
   const inp=document.getElementById('drugInput');
   if(inp)inp.value='';
-  // Hide autocomplete
   const acd=document.getElementById('drugAcd');
   if(acd)acd.style.display='none';
-  // Disable analyze button
-  document.getElementById('analyzeBtn').disabled=true;
   // Hide clear button
-  document.getElementById('clearBtn').style.display='none';
-  // Hide results panel
+  const clearBtn=document.getElementById('clearBtn');
+  if(clearBtn)clearBtn.style.display='none';
+  // Clear results panel
   const results=document.getElementById('results');
   if(results)results.innerHTML='';
   // Hide loading
