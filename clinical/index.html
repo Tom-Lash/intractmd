@@ -315,7 +315,11 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div class="card-sub">Select risk factors from patient record — check all that apply. Each factor modifies the overall risk assessment.</div>
         <div class="tier-bar computed"><i class="ti ti-cpu"></i> COMPUTED — system applies severity modifiers based on selected factors</div>
 
-        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 8px;">Physiologic Factors (Layer 2)</div>
+        <div style="font-size:12px;font-weight:700;color:var(--computed);text-transform:uppercase;letter-spacing:.5px;margin:0 0 8px;display:flex;align-items:center;gap:6px;"><i class="ti ti-cpu"></i> Auto-Computed from Medication Regimen</div>
+        <div id="autoFactorResults" style="margin-bottom:16px;">
+          <div style="font-size:13px;color:var(--text3);padding:8px 0;">Run DDI analysis in Step 3 to auto-compute risk factors.</div>
+        </div>
+        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 8px;">Additional Physiologic Factors (manual entry)</div>
         <div class="factor-grid" id="physiologicFactors">
           <!-- Populated by JS -->
         </div>
@@ -443,6 +447,135 @@ function renderFactors(factors, containerId) {
   `).join('');
 }
 
+// ── AUTO-COMPUTE RISK FACTORS FROM DRUG REGIMEN ─────────────────────────
+function autoComputeFactors(drugList) {
+  const drugs = drugList.map(d => d.toLowerCase());
+
+  const NTI_DRUGS = ['warfarin','digoxin','lithium','levothyroxine','phenytoin',
+    'cyclosporine','tacrolimus','theophylline','methotrexate','carbamazepine'];
+  const ANTICOAG = ['warfarin','apixaban','rivaroxaban','dabigatran','edoxaban','heparin','enoxaparin'];
+  const OPIOIDS = ['morphine','oxycodone','hydrocodone','fentanyl','codeine','tramadol','methadone','buprenorphine'];
+  const ANTIDIABETIC = ['metformin','insulin','glipizide','glyburide','glimepiride','sitagliptin','empagliflozin','dapagliflozin','liraglutide','semaglutide'];
+  const ANTIEPILEPTIC = ['phenytoin','carbamazepine','valproic acid','levetiracetam','lamotrigine','topiramate','gabapentin','pregabalin'];
+  const ANTIPSYCHOTIC = ['quetiapine','risperidone','aripiprazole','olanzapine','haloperidol','clozapine'];
+  const BLEEDERS = ['warfarin','aspirin','clopidogrel','ticagrelor','prasugrel','apixaban','rivaroxaban'];
+  const RENAL_CLEARED = ['metformin','digoxin','lithium','gabapentin','pregabalin','dabigatran','enoxaparin'];
+  const QT_DRUGS = ['amiodarone','sotalol','haloperidol','quetiapine','azithromycin','ciprofloxacin','ondansetron'];
+  const HEPATIC = ['atorvastatin','simvastatin','warfarin','methotrexate','isoniazid','valproic acid'];
+
+  const autoFactors = {};
+
+  // NTI drug present
+  if(NTI_DRUGS.some(d => drugs.some(dr => dr.includes(d)))) {
+    const ntiDrug = NTI_DRUGS.find(d => drugs.some(dr => dr.includes(d)));
+    autoFactors['nti_drug'] = {
+      factorId: 'nti_drug', tier: 'COMPUTED',
+      label: 'Narrow Therapeutic Index Drug',
+      plainLanguage: ntiDrug + ' is a narrow therapeutic index drug requiring careful monitoring',
+      action: 'Small changes in dose or interactions can cause significant effects. Monitor closely.',
+      value: ntiDrug
+    };
+  }
+
+  // High-risk drug class
+  const highRiskClasses = [];
+  if(ANTICOAG.some(d => drugs.some(dr => dr.includes(d)))) highRiskClasses.push('Anticoagulant');
+  if(OPIOIDS.some(d => drugs.some(dr => dr.includes(d)))) highRiskClasses.push('Opioid');
+  if(ANTIDIABETIC.some(d => drugs.some(dr => dr.includes(d)))) highRiskClasses.push('Antidiabetic');
+  if(ANTIEPILEPTIC.some(d => drugs.some(dr => dr.includes(d)))) highRiskClasses.push('Antiepileptic');
+  if(ANTIPSYCHOTIC.some(d => drugs.some(dr => dr.includes(d)))) highRiskClasses.push('Antipsychotic');
+  if(highRiskClasses.length > 0) {
+    autoFactors['high_risk_class'] = {
+      factorId: 'high_risk_class', tier: 'COMPUTED',
+      label: 'High-Risk Drug Class Present',
+      plainLanguage: highRiskClasses.join(', ') + ' present in regimen',
+      action: 'Enhanced monitoring protocol applies for ' + highRiskClasses.join(' and ') + ' medications.',
+      value: highRiskClasses.join(', ')
+    };
+  }
+
+  // Elevated bleeding risk
+  const bleedDrugs = BLEEDERS.filter(d => drugs.some(dr => dr.includes(d)));
+  if(bleedDrugs.length >= 2) {
+    autoFactors['bleeding_risk'] = {
+      factorId: 'bleeding_risk', tier: 'COMPUTED',
+      label: 'Elevated Bleeding Risk',
+      plainLanguage: 'Multiple antiplatelet/anticoagulant agents: ' + bleedDrugs.join(', '),
+      action: 'Combined bleeding risk is elevated. Avoid NSAIDs, fish oil >1g, vitamin E >400 IU.',
+      value: bleedDrugs.join(', ')
+    };
+  }
+
+  // High medication count
+  if(drugList.length >= 5) {
+    autoFactors['high_med_count'] = {
+      factorId: 'high_med_count', tier: 'COMPUTED',
+      label: 'Polypharmacy — ' + drugList.length + ' Medications',
+      plainLanguage: 'Patient is on ' + drugList.length + ' active medications',
+      action: 'Polypharmacy increases interaction probability. Review for deprescribing opportunities.',
+      value: drugList.length
+    };
+  }
+
+  // QT prolongation risk
+  const qtDrugs = QT_DRUGS.filter(d => drugs.some(dr => dr.includes(d)));
+  if(qtDrugs.length >= 2) {
+    autoFactors['qt_risk'] = {
+      factorId: 'qt_risk', tier: 'COMPUTED',
+      label: 'QT Prolongation Risk',
+      plainLanguage: 'Multiple QT-prolonging agents: ' + qtDrugs.join(', '),
+      action: 'Cardiac rhythm monitoring may be indicated. Avoid additional QT-prolonging agents.',
+      value: qtDrugs.join(', ')
+    };
+  }
+
+  // Renal clearance concern
+  const renalDrugs = RENAL_CLEARED.filter(d => drugs.some(dr => dr.includes(d)));
+  if(renalDrugs.length > 0) {
+    autoFactors['renal_concern'] = {
+      factorId: 'renal_concern', tier: 'COMPUTED',
+      label: 'Renally Cleared Medications',
+      plainLanguage: renalDrugs.join(', ') + ' require adequate renal function',
+      action: 'Check recent eGFR. Dose adjustment may be needed if renal function is impaired.',
+      value: renalDrugs.join(', ')
+    };
+  }
+
+  // Hepatic metabolism concern
+  const hepaticDrugs = HEPATIC.filter(d => drugs.some(dr => dr.includes(d)));
+  if(hepaticDrugs.length >= 2) {
+    autoFactors['hepatic_concern'] = {
+      factorId: 'hepatic_concern', tier: 'COMPUTED',
+      label: 'Hepatic Metabolism Concern',
+      plainLanguage: 'Multiple hepatically metabolized drugs: ' + hepaticDrugs.join(', '),
+      action: 'Monitor liver function. Avoid alcohol and hepatotoxic supplements.',
+      value: hepaticDrugs.join(', ')
+    };
+  }
+
+  return autoFactors;
+}
+
+function renderAutoFactors(autoFactors) {
+  const container = document.getElementById('autoFactorResults');
+  if(!container) return;
+  const factors = Object.values(autoFactors);
+  if(!factors.length) {
+    container.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0;">No computed risk factors identified for this regimen.</div>';
+    return;
+  }
+  container.innerHTML = factors.map(f => `
+    <div style="padding:10px 12px;border-radius:8px;background:var(--computed-lt);border-left:3px solid var(--computed-bd);margin-bottom:8px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;">
+        <span style="font-size:11px;font-weight:700;padding:2px 6px;border-radius:3px;background:var(--computed-bd);color:#fff;">COMPUTED</span>
+        <strong style="font-size:13px;color:var(--computed);">${f.label}</strong>
+      </div>
+      <div style="font-size:12px;color:var(--text2);">${f.plainLanguage}</div>
+      <div style="font-size:12px;color:var(--text3);margin-top:3px;font-style:italic;">${f.action}</div>
+    </div>
+  `).join('');
+}
+
 function toggleFactor(id) {
   const card = document.getElementById('fc-' + id);
   const factor = [...PHYSIOLOGIC_FACTORS, ...REGIMEN_FACTORS].find(f => f.id === id);
@@ -516,8 +649,13 @@ async function runDDI() {
     supplementData = ddiData;
     renderDDIResult();
     renderSupplementResults();
+    // Auto-compute risk factors from drug regimen
+    const autoFactors = autoComputeFactors([...drugs]);
+    Object.assign(selectedFactors, autoFactors);
+    renderAutoFactors(autoFactors);
     updateCounts();
     document.getElementById('step3-num').className = 'step-num done';
+    document.getElementById('step4-num').className = 'step-num done';
     document.getElementById('step5-num').className = 'step-num done';
     document.getElementById('generateBtn').disabled = false;
   } catch(e) {
