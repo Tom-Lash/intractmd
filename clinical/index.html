@@ -854,9 +854,7 @@ function switchTab(tab) {
 renderFactors(PHYSIOLOGIC_FACTORS, 'physiologicFactors');
 renderFactors(REGIMEN_FACTORS, 'regimenFactors');
 
-document.getElementById('drugInput').addEventListener('keydown', e => {
-  if (e.key === 'Enter') addDrug();
-});
+// drugInput keydown handled by onDrugKeydown()
 </script>
 </body>
 </html>
