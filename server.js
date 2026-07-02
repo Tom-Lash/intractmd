@@ -1177,6 +1177,8 @@ app.post('/api/tts', async (req, res) => {
 
 // ── CLINICAL WORKFLOW ROUTE ───────────────────────────────────────────────
 app.get('/clinical', (req, res) => {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate');
+  res.setHeader('Surrogate-Control', 'no-store');
   res.sendFile(require('path').join(__dirname, 'clinical', 'index.html'));
 });
 // ── END CLINICAL ROUTE ────────────────────────────────────────────────────
