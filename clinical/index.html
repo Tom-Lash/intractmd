@@ -89,8 +89,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 .factor-card.selected .factor-name{color:var(--confirmed);}
 .factor-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
 .factor-desc{font-size:12px;color:var(--text2);}
-.factor-input{margin-top:6px;display:none;}
-.factor-card.selected .factor-input{display:block;}
+.factor-input{margin-top:6px;display:block;}
 .factor-input input,.factor-input select{width:100%;padding:5px 8px;border:1px solid #ddd;border-radius:5px;font-size:11px;}
 
 /* ── DDI RESULTS ── */
@@ -433,21 +432,21 @@ const REGIMEN_FACTORS = [
 function renderFactors(factors, containerId) {
   const container = document.getElementById(containerId);
   container.innerHTML = factors.map(f => `
-    <div class="factor-card" id="fc-${f.id}">
-      <div onclick="toggleFactor('${f.id}')" style="cursor:pointer;">
-        <div class="factor-name">${f.label}</div>
-        <div class="factor-desc">${f.desc}</div>
-      </div>
+    <div class="factor-card" id="fc-${f.id}" onclick="handleCardClick(event,'${f.id}')">
+      <div class="factor-name">${f.label}</div>
+      <div class="factor-desc">${f.desc}</div>
       ${f.input ? `
-        <div class="factor-input">
+        <div class="factor-input" style="margin-top:8px;">
           ${f.input === 'select'
-            ? `<select onchange="selectAndSetFactor('${f.id}', this.value)">
+            ? `<select onclick="event.stopPropagation()"
+                onchange="setFactorValue('${f.id}', this.value);ensureSelected('${f.id}');">
                 <option value="">Select...</option>
                 ${f.options.map(o=>`<option value="${o}">${o}</option>`).join('')}
               </select>`
             : `<input type="text" placeholder="${f.placeholder||''}"
-                oninput="selectAndSetFactor('${f.id}', this.value)"
-                onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur();}"
+                onclick="event.stopPropagation()"
+                oninput="setFactorValue('${f.id}', this.value);ensureSelected('${f.id}');"
+                onkeydown="if(event.key==='Enter'||event.key==='Tab'){event.stopPropagation();}"
                 />`
           }
         </div>` : ''}
@@ -455,13 +454,17 @@ function renderFactors(factors, containerId) {
   `).join('');
 }
 
-function selectAndSetFactor(id, value) {
-  // Auto-select the card when user types in input or changes select
+function handleCardClick(event, id) {
+  // Only toggle if click was on card itself, not on an input/select
+  if(event.target.tagName === 'INPUT' || event.target.tagName === 'SELECT') return;
+  toggleFactor(id);
+}
+
+function ensureSelected(id) {
   const card = document.getElementById('fc-' + id);
-  if(!card.classList.contains('selected')) {
+  if(card && !card.classList.contains('selected')) {
     toggleFactor(id);
   }
-  setFactorValue(id, value);
 }
 
 // ── AUTO-COMPUTE RISK FACTORS FROM DRUG REGIMEN ─────────────────────────
