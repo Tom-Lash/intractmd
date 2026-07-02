@@ -21,7 +21,6 @@
    as a trade secret under applicable state and federal law.
    =============================================================================
 */
-#!/usr/bin/env node
 
 console.log('[STARTUP] Process started');
 
