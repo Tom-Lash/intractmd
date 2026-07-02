@@ -300,15 +300,15 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div class="card-title"><i class="ti ti-radar"></i> Step 3 — Drug-Drug Interaction Risk Score</div>
         <div class="card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
         <div class="tier-bar confirmed"><i class="ti ti-check"></i> CONFIRMED — derived from verified medication list via FDA databases</div>
-        <div id="ddiPlaceholder" class="ddi-placeholder">
-          <i class="ti ti-radar" style="font-size:32px;margin-bottom:8px;display:block;"></i>
-          <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Add medications above, then run analysis</div>
-          <div style="font-size:12px;">Requires 2+ medications</div>
-        </div>
-        <div id="ddiResult" style="display:none;"></div>
-        <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-top:12px;padding:11px;">
+        <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-bottom:14px;padding:11px;">
           <i class="ti ti-radar"></i> Run Drug Interaction Analysis
         </button>
+        <div id="ddiPlaceholder" class="ddi-placeholder">
+          <i class="ti ti-radar" style="font-size:32px;margin-bottom:8px;display:block;opacity:.3;"></i>
+          <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Add 2+ medications in Step 2, then click the button above</div>
+          <div style="font-size:12px;">Analysis pulls from 124,750-pair cache — results in under 1 second</div>
+        </div>
+        <div id="ddiResult" style="display:none;"></div>
       </div>
 
       <!-- STEP 4: RISK FACTORS -->
