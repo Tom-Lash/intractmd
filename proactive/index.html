@@ -373,7 +373,7 @@ function clearSelections(){
   if(acd)acd.style.display='none';
   // Step 5: Hide clear button
   const clearBtn=document.getElementById('clearBtn');
-  if(clearBtn){clearBtn.style.display='none';clearBtn.classList.remove('go');}
+  if(clearBtn){clearBtn.style.display='none';clearBtn.style.background='';clearBtn.style.color='';clearBtn.style.border='';clearBtn.style.fontWeight='';}
   // Step 6: Hide results div (don't wipe innerHTML — named elements must persist)
   const results=document.getElementById('results');
   if(results)results.style.display='none';
@@ -438,7 +438,7 @@ async function runAnalysis(){
   btn.disabled=false;
   // Show clear button after analysis completes
   const clearBtn=document.getElementById('clearBtn');
-  if(clearBtn){clearBtn.style.display='block';clearBtn.classList.add('go');}
+  if(clearBtn){clearBtn.style.display='block';clearBtn.style.background='#2E7D4F';clearBtn.style.color='#fff';clearBtn.style.border='2px solid #2E7D4F';clearBtn.style.fontWeight='700';}
 }
 
 function buildPrompt(drugs){
