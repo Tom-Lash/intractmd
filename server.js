@@ -937,8 +937,13 @@ function mergeProactiveProfiles(drugs) {
   const critCount = [...avoidSupplements, ...avoidFoods].filter(x => x.severity === 'Critical').length;
   const highCount = [...avoidSupplements, ...avoidFoods].filter(x => x.severity === 'High').length;
   const modCount = [...avoidSupplements, ...avoidFoods].filter(x => x.severity === 'Moderate').length;
-  const pcprs = Math.min(100, critCount * 25 + highCount * 12 + modCount * 5 + cautionSupplements.length * 2 + cautionFoods.length * 1);
-  const risk_tier = pcprs >= 81 ? 'Critical' : pcprs >= 61 ? 'High' : pcprs >= 41 ? 'Moderate' : pcprs >= 21 ? 'Low' : 'Minimal';
+  const worstSev=critCount>0?'Critical':highCount>0?'High':modCount>0?'Moderate':'Low';
+  let pcprs;
+  if(worstSev==='Critical'){pcprs=Math.min(85,55+Math.min(critCount-1,3)*10);}
+  else if(worstSev==='High'){pcprs=Math.min(54,30+Math.min(highCount,4)*6);}
+  else if(worstSev==='Moderate'){pcprs=Math.min(28,15+Math.min(modCount,5)*2);}
+  else{pcprs=Math.min(14,cautionSupplements.length+cautionFoods.length);}
+  const risk_tier=pcprs>=75?'Critical':pcprs>=45?'High':pcprs>=25?'Moderate':pcprs>=10?'Low':'Minimal';
 
   const warnings = [
     ...avoidSupplements.map(s => ({ drug: s.drug, interacts_with: s.name, category: 'supplement', severity: s.severity, mechanism: s.mechanism, action: s.action })),
