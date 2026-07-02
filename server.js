@@ -867,6 +867,30 @@ function loadProactiveProfile(drugName) {
   return null;
 }
 
+
+function calcDimensions(profiles) {
+  const dims = {'Bleeding Risk':0,'Cardiac Risk':0,'Serotonin Risk':0,'NTI Conflict':0,'CNS Risk':0,'CYP450 Risk':0,'Renal/Hepatic':0,'Pharmacodynamic':0};
+  const ntiDrugs = ['warfarin','digoxin','lithium','levothyroxine','phenytoin','cyclosporine','tacrolimus','theophylline','methotrexate'];
+  profiles.forEach(({profile}) => {
+    if (!profile) return;
+    const pathways = (profile.key_pathways||[]).map(p=>p.toUpperCase());
+    if (pathways.some(p=>p.includes('CYP'))) dims['CYP450 Risk'] = Math.min(100, dims['CYP450 Risk'] + 30);
+    if (ntiDrugs.some(d=>profile.drug&&profile.drug.toLowerCase().includes(d))) dims['NTI Conflict'] = Math.min(100, dims['NTI Conflict'] + 60);
+    [...(profile.avoid_supplements||[]), ...(profile.avoid_foods||[])].forEach(item => {
+      const n=(item.name||'').toLowerCase(), m=(item.mechanism||'').toLowerCase();
+      const sv=item.severity==='Critical'?30:item.severity==='High'?18:7;
+      if(n.includes('ginkgo')||n.includes('garlic')||n.includes('fish oil')||n.includes('vitamin e')||m.includes('bleed')||m.includes('anticoag')||m.includes('platelet')) dims['Bleeding Risk']=Math.min(100,dims['Bleeding Risk']+sv);
+      if(n.includes("st. john")||n.includes('5-htp')||n.includes('sam-e')||m.includes('serotonin')) dims['Serotonin Risk']=Math.min(100,dims['Serotonin Risk']+sv);
+      if(m.includes('cardiac')||m.includes(' qt ')||m.includes('arrhythmia')) dims['Cardiac Risk']=Math.min(100,dims['Cardiac Risk']+sv);
+      if(m.includes('sedati')||m.includes('cns depress')||m.includes('drowsi')) dims['CNS Risk']=Math.min(100,dims['CNS Risk']+sv);
+      if(m.includes('renal')||m.includes('kidney')||m.includes('hepat')||m.includes('liver')) dims['Renal/Hepatic']=Math.min(100,dims['Renal/Hepatic']+sv);
+      if(m.includes('cyp')||m.includes('enzyme inhibit')||m.includes('enzyme induc')) dims['CYP450 Risk']=Math.min(100,dims['CYP450 Risk']+sv);
+      if(m.includes('blood pressure')||m.includes('glucose')||m.includes('absorption')||m.includes('additive')) dims['Pharmacodynamic']=Math.min(100,dims['Pharmacodynamic']+sv);
+    });
+  });
+  return dims;
+}
+
 function mergeProactiveProfiles(drugs) {
   const profiles = drugs.map(d => ({ drug: d, profile: loadProactiveProfile(d) }));
   const missing = profiles.filter(p => !p.profile).map(p => p.drug);
@@ -921,8 +945,8 @@ function mergeProactiveProfiles(drugs) {
       avoid_supplements: [...new Set(avoidSupplements.map(s => s.name))],
       caution_foods: [...new Set([...cautionFoods, ...avoidFoods].map(f => f.name))],
       drug_interactions: [], // populated separately by pair cache
-      dimensions: { 'Bleeding Risk': 0, 'Cardiac Risk': 0, 'Serotonin Risk': 0, 'NTI Conflict': 0, 'CNS Risk': 0, 'CYP450 Risk': 0, 'Renal/Hepatic': 0, 'Pharmacodynamic': 0 },
-      ai_summary: 'Analysis based on pre-computed supplement and food interaction profiles. ' + (avoidSupplements.length + avoidFoods.length) + ' interactions identified for this regimen. Review the AVOID list carefully before taking any supplements.',
+      dimensions: calcDimensions(found),
+      ai_summary: 'Pre-computed analysis: ' + (avoidSupplements.length + avoidFoods.length) + ' supplement/food interactions identified across ' + drugs.length + ' medication(s). Review the AVOID list carefully before taking any supplements or consuming flagged foods.',
       from_cache: true
     }
   };
