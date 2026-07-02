@@ -433,21 +433,35 @@ const REGIMEN_FACTORS = [
 function renderFactors(factors, containerId) {
   const container = document.getElementById(containerId);
   container.innerHTML = factors.map(f => `
-    <div class="factor-card" id="fc-${f.id}" onclick="toggleFactor('${f.id}')">
-      <div class="factor-name">${f.label}</div>
-      <div class="factor-desc">${f.desc}</div>
+    <div class="factor-card" id="fc-${f.id}">
+      <div onclick="toggleFactor('${f.id}')" style="cursor:pointer;">
+        <div class="factor-name">${f.label}</div>
+        <div class="factor-desc">${f.desc}</div>
+      </div>
       ${f.input ? `
         <div class="factor-input">
           ${f.input === 'select'
-            ? `<select onclick="event.stopPropagation()" onchange="setFactorValue('${f.id}', this.value)">
+            ? `<select onchange="selectAndSetFactor('${f.id}', this.value)">
                 <option value="">Select...</option>
                 ${f.options.map(o=>`<option value="${o}">${o}</option>`).join('')}
               </select>`
-            : `<input type="text" placeholder="${f.placeholder||''}" onclick="event.stopPropagation()" oninput="setFactorValue('${f.id}', this.value)"/>`
+            : `<input type="text" placeholder="${f.placeholder||''}"
+                oninput="selectAndSetFactor('${f.id}', this.value)"
+                onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur();}"
+                />`
           }
         </div>` : ''}
     </div>
   `).join('');
+}
+
+function selectAndSetFactor(id, value) {
+  // Auto-select the card when user types in input or changes select
+  const card = document.getElementById('fc-' + id);
+  if(!card.classList.contains('selected')) {
+    toggleFactor(id);
+  }
+  setFactorValue(id, value);
 }
 
 // ── AUTO-COMPUTE RISK FACTORS FROM DRUG REGIMEN ─────────────────────────
