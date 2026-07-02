@@ -278,18 +278,21 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div class="card-title"><i class="ti ti-pill"></i> Step 2 — Medication List</div>
         <div class="card-sub">Enter medications from EHR or pharmacy claims — these are CONFIRMED findings</div>
         <div class="tier-bar confirmed"><i class="ti ti-check"></i> CONFIRMED — sourced from verified medical record</div>
-        <div class="drug-entry">
-          <input type="text" id="drugInput" placeholder="Type drug name and press Add or Enter..." onkeydown="if(event.key==='Enter')addDrug()"/>
-          <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> Add</button>
-        </div>
-        <div class="drug-tags" id="drugTags"></div>
-        <div style="margin-top:12px;">
-          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:6px;">Common polypharmacy medications:</div>
-          <div style="display:flex;flex-wrap:wrap;gap:6px;">
-            ${['Warfarin','Metformin','Lisinopril','Atorvastatin','Metoprolol','Aspirin','Omeprazole','Amlodipine','Sertraline','Furosemide'].map(d=>
-              `<span onclick="quickAddDrug('${d}')" style="cursor:pointer;padding:3px 10px;border:1px solid #ddd;border-radius:20px;font-size:11px;color:var(--text2);background:#f8f8f8;" onmouseover="this.style.borderColor='var(--cyan)'" onmouseout="this.style.borderColor='#ddd'">${d}</span>`
-            ).join('')}
+        <div style="position:relative;">
+          <div class="drug-entry">
+            <input type="text" id="drugInput" placeholder="Type a drug name (e.g. Warfarin)..."
+              oninput="onDrugInput(this.value)" onkeydown="onDrugKeydown(event)"/>
+            <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> Add</button>
           </div>
+          <div id="drugAcd" style="display:none;position:absolute;top:42px;left:0;right:60px;background:#fff;border:1.5px solid var(--navy);border-radius:0 0 8px 8px;z-index:100;max-height:200px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,.1);"></div>
+        </div>
+        <div class="drug-tags" id="drugTags">
+          <span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">No medications added yet</span>
+        </div>
+        <div style="margin-top:14px;">
+          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Quick add — common polypharmacy medications:</div>
+          <div id="quickPills" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
+        </div>
         </div>
       </div>
 
@@ -603,12 +606,91 @@ function setFactorValue(id, value) {
 }
 
 // ── DRUG MANAGEMENT ────────────────────────────────────────────────────────
+// ── DRUG INPUT WITH AUTOCOMPLETE ─────────────────────────────────────────
+let drugListCache = [];
+let acdSelectedIdx = -1;
+
+fetch('/api/drug-list').then(r=>r.json()).then(data=>{
+  drugListCache = data;
+  renderQuickPills();
+}).catch(()=>{ renderQuickPills(); });
+
+const QUICK_DRUGS = ['Warfarin','Metformin','Lisinopril','Atorvastatin','Metoprolol',
+  'Aspirin','Omeprazole','Amlodipine','Sertraline','Furosemide',
+  'Gabapentin','Losartan','Simvastatin','Clopidogrel','Escitalopram'];
+
+function renderQuickPills() {
+  const container = document.getElementById('quickPills');
+  if(!container) return;
+  container.innerHTML = QUICK_DRUGS.map(d =>
+    '<span onclick="quickAddDrug(\'' + d + '\')" ' +
+    'style="cursor:pointer;padding:4px 12px;border:1.5px solid #ddd;border-radius:20px;' +
+    'font-size:12px;color:var(--navy);background:#f8f8f8;font-weight:500;transition:all .15s;" ' +
+    'onmouseover="this.style.borderColor=\'var(--cyan)\';this.style.background=\'#f0fafd\'" ' +
+    'onmouseout="this.style.borderColor=\'#ddd\';this.style.background=\'#f8f8f8\'">' + d + '</span>'
+  ).join('');
+}
+
+function onDrugInput(val) {
+  const acd = document.getElementById('drugAcd');
+  acdSelectedIdx = -1;
+  if(val.length < 2) { acd.style.display='none'; return; }
+  const v = val.toLowerCase();
+  const matches = [];
+  drugListCache.forEach(d => {
+    if(d.generic && d.generic.toLowerCase().startsWith(v)) matches.push(d.generic);
+    if(d.brand && d.brand.toLowerCase().startsWith(v)) matches.push(d.brand);
+  });
+  if(matches.length < 5) {
+    drugListCache.forEach(d => {
+      if(d.generic && d.generic.toLowerCase().includes(v) && !matches.includes(d.generic)) matches.push(d.generic);
+    });
+  }
+  const top = [...new Set(matches)].slice(0, 8);
+  if(!top.length) { acd.style.display='none'; return; }
+  acd.innerHTML = top.map((name,i) =>
+    '<div class="acd-drug-item" onclick="selectDrug(\'' + name.replace(/'/g,"\\'") + '\')" ' +
+    'style="padding:8px 14px;font-size:13px;cursor:pointer;color:var(--navy);border-bottom:1px solid #f0f0f0;" ' +
+    'onmouseover="this.style.background=\'#f0fafd\'" onmouseout="this.style.background=\'\'">' + name + '</div>'
+  ).join('');
+  acd.style.display = 'block';
+}
+
+function onDrugKeydown(e) {
+  const acd = document.getElementById('drugAcd');
+  const items = acd.querySelectorAll('.acd-drug-item');
+  if(e.key === 'ArrowDown') {
+    e.preventDefault();
+    acdSelectedIdx = Math.min(acdSelectedIdx+1, items.length-1);
+    items.forEach((el,i) => el.style.background = i===acdSelectedIdx ? '#f0fafd' : '');
+  } else if(e.key === 'ArrowUp') {
+    e.preventDefault();
+    acdSelectedIdx = Math.max(acdSelectedIdx-1, -1);
+    items.forEach((el,i) => el.style.background = i===acdSelectedIdx ? '#f0fafd' : '');
+  } else if(e.key === 'Enter') {
+    e.preventDefault();
+    if(acdSelectedIdx >= 0 && items[acdSelectedIdx]) {
+      selectDrug(items[acdSelectedIdx].textContent.trim());
+    } else { addDrug(); }
+    acd.style.display = 'none';
+  } else if(e.key === 'Escape') { acd.style.display = 'none'; }
+}
+
+function selectDrug(name) {
+  document.getElementById('drugInput').value = '';
+  document.getElementById('drugAcd').style.display = 'none';
+  drugs.add(name);
+  renderDrugTags();
+  updateStepStatus();
+}
+
 function addDrug() {
   const inp = document.getElementById('drugInput');
   const val = inp.value.trim();
   if (!val) return;
   drugs.add(val);
   inp.value = '';
+  document.getElementById('drugAcd').style.display = 'none';
   renderDrugTags();
   updateStepStatus();
 }
@@ -627,234 +709,21 @@ function removeDrug(name) {
 
 function renderDrugTags() {
   const container = document.getElementById('drugTags');
-  container.innerHTML = [...drugs].map(d => `
-    <span class="drug-tag">${d} <span class="rm" onclick="removeDrug('${d.replace(/'/g,"\\'")}')">×</span></span>
-  `).join('');
+  if(!drugs.size) {
+    container.innerHTML = '<span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">No medications added yet</span>';
+  } else {
+    container.innerHTML = [...drugs].map(d =>
+      '<span class="drug-tag">' + d + ' <span class="rm" onclick="removeDrug(\'' + d.replace(/'/g,"\\'") + '\')">×</span></span>'
+    ).join('');
+  }
   document.getElementById('ddiBtn').disabled = drugs.size < 2;
   document.getElementById('step2-num').className = 'step-num ' + (drugs.size > 0 ? 'done' : '');
 }
 
-// ── DDI ANALYSIS ───────────────────────────────────────────────────────────
-async function runDDI() {
-  const btn = document.getElementById('ddiBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<i class="ti ti-loader" style="animation:spin 1s linear infinite"></i> Analyzing...';
+document.addEventListener('click', e => {
+  const acd = document.getElementById('drugAcd');
+  const inp = document.getElementById('drugInput');
+  if(acd && inp && e.target !== inp && !acd.contains(e.target)) acd.style.display = 'none';
+});
 
-  try {
-    const prompt = buildProactivePrompt([...drugs]);
-    const resp = await fetch('/api/proactive-analyze', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ drugs: [...drugs], prompt })
-    });
-    ddiData = await resp.json();
-    supplementData = ddiData;
-    renderDDIResult();
-    renderSupplementResults();
-    // Auto-compute risk factors from drug regimen
-    const autoFactors = autoComputeFactors([...drugs]);
-    Object.assign(selectedFactors, autoFactors);
-    renderAutoFactors(autoFactors);
-    updateCounts();
-    document.getElementById('step3-num').className = 'step-num done';
-    document.getElementById('step4-num').className = 'step-num done';
-    document.getElementById('step5-num').className = 'step-num done';
-    document.getElementById('generateBtn').disabled = false;
-  } catch(e) {
-    document.getElementById('ddiResult').innerHTML = `<div style="color:red;font-size:13px;">Error: ${e.message}</div>`;
-  }
 
-  btn.disabled = false;
-  btn.innerHTML = '<i class="ti ti-refresh"></i> Re-run Analysis';
-}
-
-function buildProactivePrompt(drugList) {
-  return `You are a clinical pharmacologist for IntractMD Proactive.\n\nGenerate a supplement and food interaction profile for: ${drugList.join(', ')}\n\nReturn ONLY valid JSON:\n{"drug":"${drugList[0]}","drug_class":"<class>","key_pathways":["<CYP or pathway>"],"avoid_supplements":[{"name":"<name>","severity":"<Critical|High|Moderate>","mechanism":"<mechanism>","action":"<instruction>"}],"caution_supplements":[{"name":"<name>","severity":"Low","mechanism":"<mechanism>","action":"<instruction>"}],"avoid_foods":[{"name":"<food>","severity":"<Critical|High|Moderate>","mechanism":"<mechanism>","action":"<instruction>"}],"caution_foods":[{"name":"<food>","severity":"Low","mechanism":"<mechanism>","action":"<instruction>"}],"monitoring_notes":"<1-2 sentences>"}`;
-}
-
-function renderDDIResult() {
-  const el = document.getElementById('ddiResult');
-  const ph = document.getElementById('ddiPlaceholder');
-  const pcprs = ddiData.pcprs || 0;
-  const tier = ddiData.risk_tier || 'Unknown';
-  const tierColor = tier==='Critical'?'#8B0000':tier==='High'?'#C05020':tier==='Moderate'?'#D4860A':'#2E7D4F';
-
-  ph.style.display = 'none';
-  el.style.display = 'block';
-  el.innerHTML = `
-    <div class="ddi-result">
-      <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
-        <div>
-          <div class="ddi-score" style="color:${tierColor}">${pcprs}</div>
-          <div style="font-size:10px;color:var(--text3);">/ 100</div>
-        </div>
-        <div>
-          <div class="ddi-tier" style="color:${tierColor}">${tier} Supplement Risk</div>
-          <div style="font-size:12px;color:var(--text3);">${ddiData.risk_title||''}</div>
-        </div>
-        <div style="margin-left:auto;font-size:11px;padding:4px 8px;background:var(--confirmed-lt);color:var(--confirmed);border-radius:4px;font-weight:700;">from_cache: ${ddiData.from_cache?'✓ Yes':'No'}</div>
-      </div>
-      ${ddiData.warnings && ddiData.warnings.filter(w=>w.severity==='Critical'||w.severity==='High').length > 0 ? `
-        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;margin-bottom:6px;">Top Interaction Warnings</div>
-        <div class="interaction-list">
-          ${ddiData.warnings.filter(w=>w.severity==='Critical'||w.severity==='High').slice(0,4).map(w=>`
-            <div class="interaction-item">
-              <span class="sev ${w.severity.toLowerCase()}">${w.severity}</span>
-              <span style="margin:0 6px;color:var(--text3)">·</span>
-              <strong>${w.drug}</strong> + <strong>${w.interacts_with}</strong>
-              <div style="margin-top:3px;color:var(--text3);">${w.mechanism}</div>
-            </div>
-          `).join('')}
-        </div>
-      ` : '<div style="font-size:13px;color:var(--text3);">No Critical or High severity interactions identified.</div>'}
-    </div>
-  `;
-}
-
-function renderSupplementResults() {
-  const el = document.getElementById('supplementResults');
-  if (!ddiData || !ddiData.warnings) { return; }
-  const warns = ddiData.warnings.slice(0, 6);
-  el.innerHTML = warns.length ? `
-    <div style="display:flex;flex-direction:column;gap:8px;">
-      ${warns.map(w=>`
-        <div style="padding:10px 12px;border-radius:8px;background:#fafafa;border-left:3px solid ${w.severity==='Critical'?'#8B0000':w.severity==='High'?'#C05020':w.severity==='Moderate'?'#D4860A':'#2E7D4F'};">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-            <span style="font-size:11px;font-weight:700;padding:2px 6px;border-radius:3px;background:${w.severity==='Critical'?'#fce8e8':w.severity==='High'?'#fdeee8':'#fdf3e3'};color:${w.severity==='Critical'?'#8B0000':w.severity==='High'?'#C05020':'#D4860A'}">${w.severity}</span>
-            <strong style="font-size:13px;">${w.interacts_with}</strong>
-            <span style="font-size:11px;color:var(--text3);">(${w.category})</span>
-          </div>
-          <div style="font-size:12px;color:var(--text2);">${w.mechanism}</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:4px;font-style:italic;">${w.action}</div>
-        </div>
-      `).join('')}
-    </div>
-    <div style="margin-top:8px;font-size:11px;color:var(--predictive);font-weight:600;"><i class="ti ti-alert-triangle"></i> These are inferred from the medication regimen — not confirmed patient supplement intake.</div>
-  ` : '<div style="font-size:13px;color:var(--text3);">No significant supplement or food interactions identified for this regimen.</div>';
-}
-
-// ── COUNT BADGES ───────────────────────────────────────────────────────────
-function updateCounts() {
-  const confirmedCount = (ddiData && ddiData.drug_interactions ? ddiData.drug_interactions.filter(i=>i.severity==='Critical'||i.severity==='High').length : 0) + Object.values(selectedFactors).filter(f=>f.tier==='CONFIRMED').length;
-  const computedCount = Object.values(selectedFactors).filter(f=>f.tier==='MANUALLY_CONFIRMED').length;
-  const predictiveCount = ddiData && ddiData.warnings ? ddiData.warnings.filter(w=>w.severity==='Critical'||w.severity==='High').length : 0;
-  document.getElementById('confirmedCount').textContent = confirmedCount;
-  document.getElementById('computedCount').textContent = computedCount;
-  document.getElementById('predictiveCount').textContent = predictiveCount;
-}
-
-// ── STEP STATUS ────────────────────────────────────────────────────────────
-function updateStepStatus() {
-  document.getElementById('step2-num').className = 'step-num ' + (drugs.size > 0 ? 'done' : '');
-}
-
-function scrollToStep(n) {
-  document.getElementById('step-' + n).scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-// ── GENERATE MESSAGE ───────────────────────────────────────────────────────
-async function generateMessage() {
-  const btn = document.getElementById('generateBtn');
-  document.getElementById('loadingOverlay').classList.add('show');
-  btn.disabled = true;
-
-  try {
-    const payload = {
-      drugs: [...drugs],
-      ddiResults: ddiData || {},
-      riskFactors: Object.values(selectedFactors),
-      patientContext: {
-        firstName: document.getElementById('patientFirstName').value || 'Member',
-        planName: document.getElementById('planName').value || 'your health plan',
-        caseManagerName: document.getElementById('caseManagerName').value || 'your care team'
-      },
-      language: document.getElementById('outreachLanguage').value
-    };
-
-    const resp = await fetch('/api/generate-outreach', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-
-    const result = await resp.json();
-    if (result.error) throw new Error(result.error);
-
-    renderOutput(result);
-    document.getElementById('step6-num').className = 'step-num done';
-    document.getElementById('outputSection').style.display = 'block';
-    document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-  } catch(e) {
-    alert('Error generating message: ' + e.message);
-  }
-
-  document.getElementById('loadingOverlay').classList.remove('show');
-  btn.disabled = false;
-}
-
-function renderOutput(result) {
-  // Email
-  document.getElementById('email-subject').textContent = 'Subject: ' + (result.email?.subject || '');
-  document.getElementById('email-body').textContent = result.email?.body || '';
-
-  // SMS
-  const smsBody = result.sms?.body || '';
-  document.getElementById('sms-body').textContent = smsBody;
-  document.getElementById('sms-count').textContent = smsBody.length + ' / 160 characters';
-
-  // Call script
-  const script = result.case_manager_script || {};
-  document.getElementById('script-content').innerHTML = `
-    <div style="margin-bottom:10px;padding:10px 14px;background:var(--navy);color:#fff;border-radius:6px;font-size:13px;">
-      <strong>Opening:</strong> ${script.opening || ''}
-    </div>
-    <ul class="script-points">
-      ${(script.key_points||[]).map(p=>`<li class="script-point">${p}</li>`).join('')}
-    </ul>
-    <div style="margin-top:10px;padding:10px 14px;background:var(--confirmed-lt);color:var(--confirmed);border-radius:6px;font-size:13px;">
-      <strong>Closing:</strong> ${script.closing || ''}
-    </div>
-  `;
-
-  // Tier used
-  const tierUsed = result.confidence_summary?.highest_tier_used || 'PREDICTIVE';
-  const tierColors = { CONFIRMED:'var(--confirmed)', COMPUTED:'var(--computed)', PREDICTIVE:'var(--predictive)' };
-  document.getElementById('tierUsed').style.color = tierColors[tierUsed] || 'var(--predictive)';
-  document.getElementById('tierUsed').textContent = tierUsed;
-}
-
-// ── COPY ───────────────────────────────────────────────────────────────────
-function copyContent(type) {
-  let text = '';
-  if (type === 'email') {
-    text = document.getElementById('email-subject').textContent + '\n\n' + document.getElementById('email-body').textContent;
-  } else if (type === 'sms') {
-    text = document.getElementById('sms-body').textContent;
-  } else if (type === 'script') {
-    text = document.getElementById('script-content').innerText;
-  }
-  navigator.clipboard.writeText(text).then(() => {
-    const btns = document.querySelectorAll('.btn-copy');
-    btns.forEach(b => { if (b.onclick.toString().includes(type)) { b.textContent = '✓ Copied!'; setTimeout(() => b.innerHTML = '<i class="ti ti-copy"></i> Copy', 2000); } });
-  });
-}
-
-// ── TABS ───────────────────────────────────────────────────────────────────
-function switchTab(tab) {
-  document.querySelectorAll('.output-tab').forEach((t,i) => {
-    const tabs = ['email','sms','script'];
-    t.classList.toggle('active', tabs[i] === tab);
-  });
-  document.querySelectorAll('.output-pane').forEach(p => p.classList.remove('active'));
-  document.getElementById('pane-' + tab).classList.add('active');
-}
-
-// ── INIT ───────────────────────────────────────────────────────────────────
-renderFactors(PHYSIOLOGIC_FACTORS, 'physiologicFactors');
-renderFactors(REGIMEN_FACTORS, 'regimenFactors');
-
-// drugInput keydown handled by onDrugKeydown()
-</script>
-</body>
-</html>
