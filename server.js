@@ -1263,13 +1263,16 @@ ${confirmedFindings.length ? confirmedFindings.map(f => '- ' + f.finding + ': ' 
 COMPUTED FINDINGS (system-identified patterns):
 ${computedFindings.length ? computedFindings.map(f => '- ' + f.finding + ': ' + f.action).join('\n') : 'None selected.'}
 
+SPECIFIC SUPPLEMENTS/FOODS TO NAME (list each by name in the message):
+${predictiveFindings.map(f => "- " + f.finding.split(" (")[0]).join("\n") || "None"}
+
 PREDICTIVE FINDINGS (conditional language ONLY — inferred, not confirmed):
 ${predictiveFindings.length ? predictiveFindings.map(f => '- ' + f.finding + ': ' + f.action).join('\n') : 'None identified.'}
 
 COPY RULES — follow exactly:
 - CONFIRMED: Declarative. "Your records show [finding]..." or "We see that..."
 - COMPUTED: Pattern framing. "Our medication review identified..." or "Based on your current regimen..."
-- PREDICTIVE: Conditional ONLY. "Based on your medications, you may want to ask your pharmacist about..." NEVER say the patient IS taking a supplement. NEVER use declarative voice for predictive findings.
+- PREDICTIVE: Name each supplement/food SPECIFICALLY. Use: "Based on your medications, you may want to avoid [NAME] because..." or "If you take [NAME], let your pharmacist know." Always list each supplement by specific name — never say 'certain supplements' or 'some vitamins'. NEVER say the patient IS currently taking a supplement.
 - No raw lab values, no risk score numbers, no terms like eGFR, LFT, PCPRS, polypharmacy, frail, non-adherent
 - Always end with warm call to action referencing ${caseManagerName} and phone/portal contact
 - Keep the message hopeful and action-oriented, not alarming
