@@ -869,23 +869,35 @@ function loadProactiveProfile(drugName) {
 
 
 function calcDimensions(profiles) {
+  // Use max-severity per dimension rather than additive accumulation
+  // This prevents every query from scoring 100 across all dimensions
   const dims = {'Bleeding Risk':0,'Cardiac Risk':0,'Serotonin Risk':0,'NTI Conflict':0,'CNS Risk':0,'CYP450 Risk':0,'Renal/Hepatic':0,'Pharmacodynamic':0};
+  const dimCounts = {'Bleeding Risk':0,'Cardiac Risk':0,'Serotonin Risk':0,'NTI Conflict':0,'CNS Risk':0,'CYP450 Risk':0,'Renal/Hepatic':0,'Pharmacodynamic':0};
   const ntiDrugs = ['warfarin','digoxin','lithium','levothyroxine','phenytoin','cyclosporine','tacrolimus','theophylline','methotrexate'];
+
+  function score(dim, severity) {
+    const base = severity==='Critical'?70:severity==='High'?45:severity==='Moderate'?20:8;
+    dimCounts[dim]++;
+    // First interaction sets base, subsequent ones add diminishing amounts
+    const addl = dimCounts[dim]===1 ? base : Math.round(base * 0.15);
+    dims[dim] = Math.min(100, dims[dim] + addl);
+  }
+
   profiles.forEach(({profile}) => {
     if (!profile) return;
     const pathways = (profile.key_pathways||[]).map(p=>p.toUpperCase());
-    if (pathways.some(p=>p.includes('CYP'))) dims['CYP450 Risk'] = Math.min(100, dims['CYP450 Risk'] + 30);
-    if (ntiDrugs.some(d=>profile.drug&&profile.drug.toLowerCase().includes(d))) dims['NTI Conflict'] = Math.min(100, dims['NTI Conflict'] + 60);
+    if (pathways.some(p=>p.includes('CYP'))) score('CYP450 Risk','Moderate');
+    if (ntiDrugs.some(d=>profile.drug&&profile.drug.toLowerCase().includes(d))) score('NTI Conflict','High');
     [...(profile.avoid_supplements||[]), ...(profile.avoid_foods||[])].forEach(item => {
       const n=(item.name||'').toLowerCase(), m=(item.mechanism||'').toLowerCase();
-      const sv=item.severity==='Critical'?30:item.severity==='High'?18:7;
-      if(n.includes('ginkgo')||n.includes('garlic')||n.includes('fish oil')||n.includes('vitamin e')||m.includes('bleed')||m.includes('anticoag')||m.includes('platelet')) dims['Bleeding Risk']=Math.min(100,dims['Bleeding Risk']+sv);
-      if(n.includes("st. john")||n.includes('5-htp')||n.includes('sam-e')||m.includes('serotonin')) dims['Serotonin Risk']=Math.min(100,dims['Serotonin Risk']+sv);
-      if(m.includes('cardiac')||m.includes(' qt ')||m.includes('arrhythmia')) dims['Cardiac Risk']=Math.min(100,dims['Cardiac Risk']+sv);
-      if(m.includes('sedati')||m.includes('cns depress')||m.includes('drowsi')) dims['CNS Risk']=Math.min(100,dims['CNS Risk']+sv);
-      if(m.includes('renal')||m.includes('kidney')||m.includes('hepat')||m.includes('liver')) dims['Renal/Hepatic']=Math.min(100,dims['Renal/Hepatic']+sv);
-      if(m.includes('cyp')||m.includes('enzyme inhibit')||m.includes('enzyme induc')) dims['CYP450 Risk']=Math.min(100,dims['CYP450 Risk']+sv);
-      if(m.includes('blood pressure')||m.includes('glucose')||m.includes('absorption')||m.includes('additive')) dims['Pharmacodynamic']=Math.min(100,dims['Pharmacodynamic']+sv);
+      const sv=item.severity||'Moderate';
+      if(n.includes('ginkgo')||n.includes('garlic')||n.includes('fish oil')||n.includes('vitamin e')||m.includes('bleed')||m.includes('anticoag')||m.includes('platelet')) score('Bleeding Risk',sv);
+      if(n.includes("st. john")||n.includes('5-htp')||n.includes('sam-e')||m.includes('serotonin')) score('Serotonin Risk',sv);
+      if(m.includes('cardiac')||m.includes(' qt ')||m.includes('arrhythmia')) score('Cardiac Risk',sv);
+      if(m.includes('sedati')||m.includes('cns depress')||m.includes('drowsi')) score('CNS Risk',sv);
+      if(m.includes('renal')||m.includes('kidney')||m.includes('hepat')||m.includes('liver')) score('Renal/Hepatic',sv);
+      if(m.includes('cyp')||m.includes('enzyme inhibit')||m.includes('enzyme induc')) score('CYP450 Risk',sv);
+      if(m.includes('blood pressure')||m.includes('glucose')||m.includes('absorption')||m.includes('additive')) score('Pharmacodynamic',sv);
     });
   });
   return dims;
