@@ -243,7 +243,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
     <div class="loading-lbl" id="loadLbl">Querying FDA databases...</div>
   </div>
 
-  <div class="results" id="results">
+  <div class="results" id="results" style="display:none">
 
     <div class="risk-banner" id="riskBanner">
       <div class="risk-dial" id="riskDial">
@@ -360,26 +360,27 @@ function renderTray(){
 }
 
 function clearSelections(){
-  // Clear the drug Set
+  // Step 1: Clear drug Set first
   drugs.clear();
-  // Reset chips and tray via existing functions
+  // Step 2: Reset chips (must come after drugs.clear())
   buildChips();
+  // Step 3: Reset tray
   renderTray();
-  // Clear input field and autocomplete
+  // Step 4: Clear input and autocomplete
   const inp=document.getElementById('drugInput');
   if(inp)inp.value='';
   const acd=document.getElementById('drugAcd');
   if(acd)acd.style.display='none';
-  // Hide clear button
+  // Step 5: Hide clear button
   const clearBtn=document.getElementById('clearBtn');
   if(clearBtn)clearBtn.style.display='none';
-  // Clear results panel
+  // Step 6: Hide and clear entire results div
   const results=document.getElementById('results');
-  if(results)results.innerHTML='';
-  // Hide loading
+  if(results){results.style.display='none';results.innerHTML='';}
+  // Step 7: Hide loading bar
   const loading=document.getElementById('loading');
   if(loading)loading.className='loading';
-  // Scroll to top
+  // Step 8: Scroll to top
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
@@ -470,6 +471,9 @@ async function runAnalysis(){
   fill.style.width='100%';
   await new Promise(r=>setTimeout(r,300));
   load.className='loading';
+  // Show results div before rendering
+  const resultsDiv=document.getElementById('results');
+  if(resultsDiv)resultsDiv.style.display='block';
   renderResults(result);
   btn.disabled=false;
   // Show clear button after analysis completes
