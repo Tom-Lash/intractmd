@@ -89,6 +89,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 /* ── ADDED TAGS TRAY ── */
 .tray{display:flex;flex-wrap:wrap;gap:6px;min-height:40px;padding:8px 10px;background:var(--warm);border:1.5px solid var(--br);border-radius:var(--r);margin-bottom:18px}
 .tag{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;background:var(--forest);color:var(--white);border-radius:20px;font-size:12px;font-weight:500}
+.btn-clear{display:block;width:100%;margin-top:8px;padding:11px 20px;background:transparent;color:var(--amber);border:1.5px solid var(--amber);border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;text-align:center;}
+.btn-clear:hover{background:var(--amber);color:#1a2e1a;}
 .tag-rm{cursor:pointer;color:rgba(255,255,255,0.6);font-size:14px;line-height:1;transition:color .1s}
 .tag-rm:hover{color:var(--amber-lt)}
 .tray-hint{font-size:12px;color:var(--tx3);padding:3px 2px;align-self:center}
@@ -232,6 +234,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
   <button class="btn-analyze" id="analyzeBtn" onclick="runAnalysis()" disabled>
     <i class="ti ti-radar"></i> Check drug interactions + supplements & foods to avoid
   </button>
+  <button class="btn-clear" id="clearBtn" onclick="clearSelections()" style="display:none">
+    <i class="ti ti-trash"></i> Clear &amp; Start New Search
+  </button>
 
   <div class="loading" id="loading">
     <div class="loading-track"><div class="loading-fill" id="loadFill"></div></div>
@@ -354,6 +359,36 @@ function renderTray(){
   });
 }
 
+function clearSelections(){
+  // Clear drug list
+  drugs.clear();
+  // Clear the drug tags display
+  const tray=document.getElementById('drugTray')||document.querySelector('.drug-tray');
+  if(tray){
+    const hint=tray.querySelector('.tray-hint');
+    // Remove all tag elements
+    Array.from(tray.children).forEach(el=>{
+      if(!el.classList.contains('tray-hint'))el.remove();
+    });
+    if(hint)hint.style.display='';
+  }
+  // Clear input
+  const inp=document.getElementById('drugInput');
+  if(inp)inp.value='';
+  // Disable analyze button
+  document.getElementById('analyzeBtn').disabled=true;
+  // Hide clear button
+  document.getElementById('clearBtn').style.display='none';
+  // Hide results
+  const results=document.getElementById('results')||document.querySelector('.results');
+  if(results)results.style.display='none';
+  // Hide loading
+  const loading=document.getElementById('loading');
+  if(loading)loading.className='loading';
+  // Scroll to top
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
 function removeDrug(d){
   drugs.delete(d);buildChips();renderTray();
 }
@@ -443,6 +478,9 @@ async function runAnalysis(){
   load.className='loading';
   renderResults(result);
   btn.disabled=false;
+  // Show clear button after analysis completes
+  const clearBtn=document.getElementById('clearBtn');
+  if(clearBtn)clearBtn.style.display='block';
 }
 
 function buildPrompt(drugs){
