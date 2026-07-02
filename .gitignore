@@ -2,3 +2,16 @@ node_modules/
 .DS_Store
 *.pdf
 setup.py
+# Build and patch scripts
+fix_*.js
+fix_*.py
+add_copyright.js
+speed_fix.js
+streaming_fix.js
+write_stream_frontend.js
+test_proactive.js
+obfuscate_frontend.js
+precompute_proactive_cache.js
+main
+public/index.dev.html
+public/index.prod.html
