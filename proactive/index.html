@@ -98,7 +98,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 /* ── ANALYZE BTN ── */
 .btn-analyze{width:100%;padding:13px;background:var(--amber);color:var(--forest-dk);border:none;border-radius:var(--r);font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s;margin-bottom:20px;letter-spacing:0.01em}
 .btn-analyze:hover{background:var(--amber-lt)}
-.btn-analyze:disabled{opacity:0.4;cursor:not-allowed}
+.btn-analyze:disabled{opacity:0.4;cursor:not-allowed}.btn-analyze.ready{background:#2E7D4F;color:#fff;}
 
 /* ── LOADING ── */
 .loading{display:none;margin-bottom:20px}
@@ -348,7 +348,7 @@ function renderTray(){
   const t=document.getElementById('tray');
   const n=drugs.size;
   document.getElementById('countLbl').textContent=n;
-  document.getElementById('analyzeBtn').disabled=n<2;
+  const ab=document.getElementById('analyzeBtn');ab.disabled=n<2;ab.classList.remove('ready');
   if(!n){t.innerHTML='<span class="tray-hint">No medications added yet</span>';return;}
   t.innerHTML='';
   drugs.forEach(d=>{
@@ -390,7 +390,7 @@ function removeDrug(d){
 
 async function runAnalysis(){
   const btn=document.getElementById('analyzeBtn');
-  btn.disabled=true;
+  btn.disabled=true;btn.classList.remove("ready");
   document.getElementById('results').className='results';
 
   const load=document.getElementById('loading');
@@ -435,7 +435,7 @@ async function runAnalysis(){
   const resultsDiv=document.getElementById('results');
   if(resultsDiv)resultsDiv.style.display='block';
   renderResults(result);
-  btn.disabled=false;
+  btn.disabled=false;btn.classList.add("ready");
   // Show clear button after analysis completes
   const clearBtn=document.getElementById('clearBtn');
   if(clearBtn)clearBtn.style.display='block';
