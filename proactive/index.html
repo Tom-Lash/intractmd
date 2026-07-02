@@ -374,9 +374,9 @@ function clearSelections(){
   // Step 5: Hide clear button
   const clearBtn=document.getElementById('clearBtn');
   if(clearBtn)clearBtn.style.display='none';
-  // Step 6: Hide and clear entire results div
+  // Step 6: Hide results div (don't wipe innerHTML — named elements must persist)
   const results=document.getElementById('results');
-  if(results){results.style.display='none';results.innerHTML='';}
+  if(results)results.style.display='none';
   // Step 7: Hide loading bar
   const loading=document.getElementById('loading');
   if(loading)loading.className='loading';
