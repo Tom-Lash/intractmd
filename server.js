@@ -921,11 +921,21 @@ function mergeProactiveProfiles(drugs) {
   const isExcluded = name => excludeTerms.some(t => (name||'').toLowerCase().includes(t));
   const foodSev = sev => sev==='Critical'?'High':sev==='High'?'Moderate':'Low';
 
+  // Supplements over-classified as Critical by AI — downgrade to High
+  // These are real interactions but not acutely life-threatening for a patient-education tool
+  const downgradeToHigh = ['potassium','magnesium','calcium','sodium','electrolyte',
+    'vitamin k','high-potassium','salt substitute','nonsteroidal','nsaid'];
+  const suppSev = (name, sev) => {
+    if(sev !== 'Critical') return sev;
+    const n = (name||'').toLowerCase();
+    return downgradeToHigh.some(t => n.includes(t)) ? 'High' : sev;
+  };
+
   found.forEach(({ drug, profile }) => {
     (profile.avoid_supplements || []).forEach(s => {
       if(isExcluded(s.name)) return;
       const key = s.name.toLowerCase() + drug;
-      if (!seen.has(key)) { seen.add(key); avoidSupplements.push({ ...s, drug }); }
+      if (!seen.has(key)) { seen.add(key); avoidSupplements.push({ ...s, drug, severity: suppSev(s.name, s.severity) }); }
     });
     (profile.caution_supplements || []).forEach(s => {
       if(isExcluded(s.name)) return;
