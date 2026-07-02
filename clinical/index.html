@@ -725,4 +725,9 @@ document.addEventListener('click', e => {
   if(acd && inp && e.target !== inp && !acd.contains(e.target)) acd.style.display = 'none';
 });
 
+// ── INIT ──────────────────────────────────────────────────────────────────
+renderFactors(PHYSIOLOGIC_FACTORS, 'physiologicFactors');
+renderFactors(REGIMEN_FACTORS, 'regimenFactors');
+renderQuickPills();
+
 
