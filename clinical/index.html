@@ -446,7 +446,7 @@ function renderFactors(factors, containerId) {
             : `<input type="text" placeholder="${f.placeholder||''}"
                 onclick="event.stopPropagation()"
                 oninput="setFactorValue('${f.id}', this.value);ensureSelected('${f.id}');"
-                onkeydown="if(event.key==='Enter'||event.key==='Tab'){event.stopPropagation();}"
+                onkeydown="if(event.key==='Enter'||event.key==='Tab'){event.stopPropagation();event.preventDefault();}"
                 />`
           }
         </div>` : ''}
