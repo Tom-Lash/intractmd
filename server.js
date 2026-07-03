@@ -31,6 +31,8 @@ const fs = require('fs');
 
 const app = express();
 
+app.get('/healthz', (req, res) => res.status(200).send('OK'));
+
 const basicAuth = require('express-basic-auth');
 
 if (process.env.SITE_LOCKED === 'true') {
