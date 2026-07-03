@@ -31,6 +31,15 @@ const fs = require('fs');
 
 const app = express();
 
+const basicAuth = require('express-basic-auth');
+
+if (process.env.SITE_LOCKED === 'true') {
+  app.use(basicAuth({
+    users: { [process.env.SITE_USER]: process.env.SITE_PASSWORD },
+    challenge: true,
+  }));
+}
+
 // ── File-based response cache ──────────────────────────────────────────────
 // ════════════════════════════════════════════════════════════════════════════
 // INTRACTMD — PAIRWISE INTERACTION CACHE ARCHITECTURE

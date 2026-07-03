@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>IntractMD™ Clinical — Patient Outreach Generator</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css"/>
+<style>
+/* ── DESIGN TOKENS ── */
+:root{
+  --navy:#0D3B6E;--cyan:#00B4D8;--white:#FFFFFF;
+  --forest:#1A4731;--amber:#D4860A;--amber-lt:#FAEDCC;
+  --confirmed:#1A6B3C;--confirmed-lt:#E8F5ED;--confirmed-bd:#2E7D4F;
+  --computed:#1B5A8C;--computed-lt:#E6F1FB;--computed-bd:#2074B5;
+  --predictive:#7B4F00;--predictive-lt:#FDF3E3;--predictive-bd:#D4860A;
+  --gray:#F4F6F9;--text:#1A1A2E;--text2:#555;--text3:#888;
+  --r:10px;--shadow:0 2px 12px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--text);min-height:100vh;}
+
+/* ── HEADER ── */
+.hdr{background:var(--navy);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;}
+.hdr-logo{font-size:20px;font-weight:800;color:#fff;letter-spacing:-0.5px;}
+.hdr-logo span{color:var(--cyan);}
+.hdr-sub{font-size:11px;color:rgba(255,255,255,.5);margin-top:2px;}
+.hdr-badge{background:rgba(0,180,216,.15);border:1px solid var(--cyan);border-radius:20px;padding:4px 12px;font-size:11px;color:var(--cyan);font-weight:600;}
+
+/* ── LAYOUT ── */
+.container{max-width:1100px;margin:0 auto;padding:24px 16px;}
+.workflow{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:start;}
+
+/* ── STEPS SIDEBAR ── */
+.steps-panel{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:20px;position:sticky;top:20px;}
+.steps-title{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
+.step-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #f0f0f0;cursor:pointer;}
+.step-item:last-child{border-bottom:none;}
+.step-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;background:#f0f0f0;color:var(--text3);}
+.step-num.done{background:var(--confirmed-lt);color:var(--confirmed);}
+.step-num.active{background:var(--navy);color:#fff;}
+.step-label{font-size:13px;font-weight:600;color:var(--text2);}
+.step-label.active{color:var(--navy);}
+.step-desc{font-size:11px;color:var(--text3);margin-top:2px;}
+.step-tier{font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;margin-top:4px;display:inline-block;}
+.tier-confirmed{background:var(--confirmed-lt);color:var(--confirmed);}
+.tier-computed{background:var(--computed-lt);color:var(--computed);}
+.tier-predictive{background:var(--predictive-lt);color:var(--predictive);}
+
+/* ── MAIN PANEL ── */
+.main-panel{display:flex;flex-direction:column;gap:16px;}
+.card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:24px;}
+.card-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.card-sub{font-size:13px;color:var(--text3);margin-bottom:16px;}
+.tier-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:6px;margin-bottom:12px;font-size:12px;font-weight:600;}
+.tier-bar.confirmed{background:var(--confirmed-lt);border-left:3px solid var(--confirmed-bd);color:var(--confirmed);}
+.tier-bar.computed{background:var(--computed-lt);border-left:3px solid var(--computed-bd);color:var(--computed);}
+.tier-bar.predictive{background:var(--predictive-lt);border-left:3px solid var(--predictive-bd);color:var(--predictive);}
+
+/* ── INPUTS ── */
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.form-group{display:flex;flex-direction:column;gap:4px;}
+.form-group label{font-size:12px;font-weight:600;color:var(--text2);}
+.form-group input,.form-group select,.form-group textarea{
+  padding:9px 12px;border:1.5px solid #ddd;border-radius:7px;
+  font-size:13px;font-family:inherit;color:var(--text);
+  transition:border-color .15s;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+  outline:none;border-color:var(--cyan);
+}
+.form-group textarea{min-height:80px;resize:vertical;}
+
+/* ── DRUG TAGS ── */
+.drug-entry{display:flex;gap:8px;margin-bottom:8px;}
+.drug-entry input{flex:1;padding:9px 12px;border:1.5px solid #ddd;border-radius:7px;font-size:13px;}
+.drug-entry input:focus{outline:none;border-color:var(--cyan);}
+.btn-add{padding:9px 16px;background:var(--navy);color:#fff;border:none;border-radius:7px;font-size:13px;font-weight:600;cursor:pointer;}
+.btn-add:hover{background:#0a2f5a;}
+.drug-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.drug-tag{background:var(--confirmed-lt);color:var(--confirmed);border:1px solid var(--confirmed-bd);border-radius:20px;padding:4px 10px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.drug-tag .rm{cursor:pointer;color:var(--confirmed);opacity:.6;font-size:14px;line-height:1;}
+.drug-tag .rm:hover{opacity:1;}
+
+/* ── RISK FACTORS ── */
+.factor-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.factor-card{border:1.5px solid #e8e8e8;border-radius:8px;padding:10px 12px;cursor:pointer;transition:all .15s;}
+.factor-card:hover{border-color:var(--cyan);background:#f8fdff;}
+.factor-card.selected{border-color:var(--confirmed-bd);background:var(--confirmed-lt);}
+.factor-card.selected .factor-name{color:var(--confirmed);}
+.factor-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;}
+.factor-desc{font-size:11px;color:var(--text3);}
+.factor-input{margin-top:6px;display:none;}
+.factor-card.selected .factor-input{display:block;}
+.factor-input input,.factor-input select{width:100%;padding:5px 8px;border:1px solid #ddd;border-radius:5px;font-size:11px;}
+
+/* ── DDI RESULTS ── */
+.ddi-placeholder{background:#f8f9fa;border:2px dashed #ddd;border-radius:8px;padding:24px;text-align:center;color:var(--text3);}
+.ddi-result{border:1.5px solid var(--confirmed-bd);border-radius:8px;padding:14px;background:var(--confirmed-lt);}
+.ddi-score{font-size:28px;font-weight:800;color:var(--confirmed);}
+.ddi-tier{font-size:13px;font-weight:600;color:var(--confirmed);}
+.interaction-list{margin-top:10px;display:flex;flex-direction:column;gap:6px;}
+.interaction-item{background:#fff;border-radius:6px;padding:8px 10px;font-size:12px;}
+.interaction-item .sev{font-weight:700;color:var(--confirmed);}
+.interaction-item .sev.high{color:#C05020;}
+.interaction-item .sev.critical{color:#8B0000;}
+
+/* ── GENERATE BUTTON ── */
+.btn-generate{width:100%;padding:15px;background:var(--navy);color:#fff;border:none;border-radius:var(--r);font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .15s;}
+.btn-generate:hover{background:#0a2f5a;}
+.btn-generate:disabled{opacity:.4;cursor:not-allowed;}
+
+/* ── OUTPUT MESSAGES ── */
+.output-tabs{display:flex;gap:0;border-bottom:2px solid #eee;margin-bottom:16px;}
+.output-tab{padding:10px 20px;font-size:13px;font-weight:600;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .15s;}
+.output-tab.active{color:var(--navy);border-bottom-color:var(--navy);}
+.output-pane{display:none;}
+.output-pane.active{display:block;}
+
+.message-box{background:#f8f9fa;border:1.5px solid #e0e0e0;border-radius:8px;padding:16px;font-size:13px;line-height:1.7;color:var(--text);white-space:pre-wrap;}
+.message-subject{font-size:12px;font-weight:700;color:var(--text3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px;}
+.message-content{font-size:13px;line-height:1.7;color:var(--text);}
+.btn-copy{padding:7px 14px;background:var(--navy);color:#fff;border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;float:right;margin-bottom:8px;}
+.btn-copy:hover{background:#0a2f5a;}
+
+.script-points{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;}
+.script-point{padding:10px 14px;background:#fff;border-left:3px solid var(--navy);border-radius:0 6px 6px 0;font-size:13px;color:var(--text);}
+
+.confidence-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;}
+.conf-badge{padding:12px;border-radius:8px;text-align:center;}
+.conf-badge.confirmed{background:var(--confirmed-lt);}
+.conf-badge.computed{background:var(--computed-lt);}
+.conf-badge.predictive{background:var(--predictive-lt);}
+.conf-count{font-size:24px;font-weight:800;}
+.conf-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.confirmed .conf-count,.confirmed .conf-label{color:var(--confirmed);}
+.computed .conf-count,.computed .conf-label{color:var(--computed);}
+.predictive .conf-count,.predictive .conf-label{color:var(--predictive);}
+
+/* ── LOADING ── */
+.loading-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:100;align-items:center;justify-content:center;}
+.loading-overlay.show{display:flex;}
+.loading-box{background:#fff;border-radius:var(--r);padding:32px 40px;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.2);}
+.loading-spinner{width:48px;height:48px;border:4px solid #eee;border-top-color:var(--navy);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 16px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .workflow{grid-template-columns:1fr;}
+  .steps-panel{position:static;}
+  .form-row,.factor-grid{grid-template-columns:1fr;}
+  .confidence-summary{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="hdr">
+  <div>
+    <div class="hdr-logo">Intract<span>MD</span>™ <span style="font-size:14px;font-weight:500;color:rgba(255,255,255,.6)">Clinical</span></div>
+    <div class="hdr-sub">Institutional Patient Outreach Generator — Resolve Medical, LLC</div>
+  </div>
+  <div class="hdr-badge"><i class="ti ti-building-hospital"></i> Case Manager Workflow</div>
+</div>
+
+<!-- LOADING OVERLAY -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-box">
+    <div class="loading-spinner"></div>
+    <div style="font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px;">Generating outreach message...</div>
+    <div style="font-size:13px;color:var(--text3);">Applying confidence-tier framework</div>
+  </div>
+</div>
+
+<div class="container">
+  <div style="margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:800;color:var(--navy);">Patient Outreach Message Generator</div>
+    <div style="font-size:13px;color:var(--text3);margin-top:4px;">Step 6 of the IntractMD Clinical Workflow · Generates tiered patient messages based on confirmed, computed, and predictive findings</div>
+  </div>
+
+  <div class="workflow">
+
+    <!-- STEPS SIDEBAR -->
+    <div class="steps-panel">
+      <div class="steps-title">Workflow Progress</div>
+      <div class="step-item" onclick="scrollToStep(1)">
+        <div class="step-num done" id="step1-num">1</div>
+        <div>
+          <div class="step-label">Patient & Context</div>
+          <div class="step-desc">Name, plan, case manager</div>
+          <span class="step-tier tier-confirmed">SETUP</span>
+        </div>
+      </div>
+      <div class="step-item" onclick="scrollToStep(2)">
+        <div class="step-num" id="step2-num">2</div>
+        <div>
+          <div class="step-label">Medication List</div>
+          <div class="step-desc">From EHR or claims</div>
+          <span class="step-tier tier-confirmed">CONFIRMED</span>
+        </div>
+      </div>
+      <div class="step-item" onclick="scrollToStep(3)">
+        <div class="step-num" id="step3-num">3</div>
+        <div>
+          <div class="step-label">DDI Risk Score</div>
+          <div class="step-desc">Drug-drug interactions</div>
+          <span class="step-tier tier-confirmed">CONFIRMED</span>
+        </div>
+      </div>
+      <div class="step-item" onclick="scrollToStep(4)">
+        <div class="step-num" id="step4-num">4</div>
+        <div>
+          <div class="step-label">Risk Factors</div>
+          <div class="step-desc">Physiologic & regimen context</div>
+          <span class="step-tier tier-computed">COMPUTED</span>
+        </div>
+      </div>
+      <div class="step-item" onclick="scrollToStep(5)">
+        <div class="step-num" id="step5-num">5</div>
+        <div>
+          <div class="step-label">Supplement/Food Risks</div>
+          <div class="step-desc">Proactive avoidance list</div>
+          <span class="step-tier tier-predictive">PREDICTIVE</span>
+        </div>
+      </div>
+      <div class="step-item" onclick="scrollToStep(6)">
+        <div class="step-num active" id="step6-num">6</div>
+        <div>
+          <div class="step-label active">Generate Message</div>
+          <div class="step-desc">Email · SMS · Call script</div>
+          <span class="step-tier tier-predictive">ACTION OUTPUT</span>
+        </div>
+      </div>
+      <div style="margin-top:16px;padding:12px;background:#f8f9fa;border-radius:8px;">
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Confidence Legend</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div class="tier-bar confirmed" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-check"></i> CONFIRMED — from verified record</div>
+          <div class="tier-bar computed" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-cpu"></i> COMPUTED — system-derived</div>
+          <div class="tier-bar predictive" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-alert-triangle"></i> PREDICTIVE — inferred guidance</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN WORKFLOW -->
+    <div class="main-panel">
+
+      <!-- STEP 1: PATIENT CONTEXT -->
+      <div class="card" id="step-1">
+        <div class="card-title"><i class="ti ti-user"></i> Step 1 — Patient & Case Manager Context</div>
+        <div class="card-sub">Setup information for message personalization</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Patient First Name</label>
+            <input type="text" id="patientFirstName" placeholder="e.g., Margaret" oninput="updateStepStatus()"/>
+          </div>
+          <div class="form-group">
+            <label>Health Plan Name</label>
+            <input type="text" id="planName" placeholder="e.g., BlueCross BlueShield Ohio"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Case Manager Name</label>
+            <input type="text" id="caseManagerName" placeholder="e.g., Sarah Chen, PharmD"/>
+          </div>
+          <div class="form-group">
+            <label>Outreach Language</label>
+            <select id="outreachLanguage">
+              <option value="en">English</option>
+              <option value="es">Spanish (Español)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: MEDICATION LIST -->
+      <div class="card" id="step-2">
+        <div class="card-title"><i class="ti ti-pill"></i> Step 2 — Medication List</div>
+        <div class="card-sub">Enter medications from EHR or pharmacy claims — these are CONFIRMED findings</div>
+        <div class="tier-bar confirmed"><i class="ti ti-check"></i> CONFIRMED — sourced from verified medical record</div>
+        <div class="drug-entry">
+          <input type="text" id="drugInput" placeholder="Type drug name and press Add or Enter..." onkeydown="if(event.key==='Enter')addDrug()"/>
+          <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> Add</button>
+        </div>
+        <div class="drug-tags" id="drugTags"></div>
+        <div style="margin-top:12px;">
+          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:6px;">Common polypharmacy medications:</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            ${['Warfarin','Metformin','Lisinopril','Atorvastatin','Metoprolol','Aspirin','Omeprazole','Amlodipine','Sertraline','Furosemide'].map(d=>
+              `<span onclick="quickAddDrug('${d}')" style="cursor:pointer;padding:3px 10px;border:1px solid #ddd;border-radius:20px;font-size:11px;color:var(--text2);background:#f8f8f8;" onmouseover="this.style.borderColor='var(--cyan)'" onmouseout="this.style.borderColor='#ddd'">${d}</span>`
+            ).join('')}
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: DDI RISK SCORE -->
+      <div class="card" id="step-3">
+        <div class="card-title"><i class="ti ti-radar"></i> Step 3 — Drug-Drug Interaction Risk Score</div>
+        <div class="card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
+        <div class="tier-bar confirmed"><i class="ti ti-check"></i> CONFIRMED — derived from verified medication list via FDA databases</div>
+        <div id="ddiPlaceholder" class="ddi-placeholder">
+          <i class="ti ti-radar" style="font-size:32px;margin-bottom:8px;display:block;"></i>
+          <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Add medications above, then run analysis</div>
+          <div style="font-size:12px;">Requires 2+ medications</div>
+        </div>
+        <div id="ddiResult" style="display:none;"></div>
+        <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-top:12px;padding:11px;">
+          <i class="ti ti-radar"></i> Run Drug Interaction Analysis
+        </button>
+      </div>
+
+      <!-- STEP 4: RISK FACTORS -->
+      <div class="card" id="step-4">
+        <div class="card-title"><i class="ti ti-clipboard-list"></i> Step 4 — Polypharmacy Risk Factors</div>
+        <div class="card-sub">Select risk factors from patient record — check all that apply. Each factor modifies the overall risk assessment.</div>
+        <div class="tier-bar computed"><i class="ti ti-cpu"></i> COMPUTED — system applies severity modifiers based on selected factors</div>
+
+        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 8px;">Physiologic Factors (Layer 2)</div>
+        <div class="factor-grid" id="physiologicFactors">
+          <!-- Populated by JS -->
+        </div>
+
+        <div style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:16px 0 8px;">Regimen Context Factors (Layer 3)</div>
+        <div class="factor-grid" id="regimenFactors">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- STEP 5: SUPPLEMENT/FOOD RISKS -->
+      <div class="card" id="step-5">
+        <div class="card-title"><i class="ti ti-leaf"></i> Step 5 — Supplement & Food Risks</div>
+        <div class="card-sub">Inferred from the medication regimen — these are PREDICTIVE findings based on known drug interactions</div>
+        <div class="tier-bar predictive"><i class="ti ti-alert-triangle"></i> PREDICTIVE — inferred from regimen, not confirmed patient intake</div>
+        <div id="supplementResults">
+          <div class="ddi-placeholder" style="border-color:#ddd;">
+            <i class="ti ti-leaf" style="font-size:28px;margin-bottom:8px;display:block;opacity:.4;"></i>
+            <div style="font-size:13px;">Run DDI analysis first to load supplement and food risks</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 6: GENERATE MESSAGE -->
+      <div class="card" id="step-6">
+        <div class="card-title"><i class="ti ti-send"></i> Step 6 — Generate Patient Outreach Message</div>
+        <div class="card-sub">Generates email, SMS, and case manager call script using confidence-tier language framework</div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+          <div style="padding:10px;border-radius:8px;background:var(--confirmed-lt);text-align:center;">
+            <div style="font-size:20px;font-weight:800;color:var(--confirmed);" id="confirmedCount">0</div>
+            <div style="font-size:11px;font-weight:700;color:var(--confirmed);">CONFIRMED</div>
+          </div>
+          <div style="padding:10px;border-radius:8px;background:var(--computed-lt);text-align:center;">
+            <div style="font-size:20px;font-weight:800;color:var(--computed);" id="computedCount">0</div>
+            <div style="font-size:11px;font-weight:700;color:var(--computed);">COMPUTED</div>
+          </div>
+          <div style="padding:10px;border-radius:8px;background:var(--predictive-lt);text-align:center;">
+            <div style="font-size:20px;font-weight:800;color:var(--predictive);" id="predictiveCount">0</div>
+            <div style="font-size:11px;font-weight:700;color:var(--predictive);">PREDICTIVE</div>
+          </div>
+        </div>
+
+        <button class="btn-generate" id="generateBtn" onclick="generateMessage()" disabled>
+          <i class="ti ti-sparkles"></i> Generate Outreach Message
+        </button>
+
+        <!-- OUTPUT -->
+        <div id="outputSection" style="display:none;margin-top:20px;">
+          <div class="output-tabs">
+            <div class="output-tab active" onclick="switchTab('email')"><i class="ti ti-mail"></i> Email</div>
+            <div class="output-tab" onclick="switchTab('sms')"><i class="ti ti-message"></i> SMS</div>
+            <div class="output-tab" onclick="switchTab('script')"><i class="ti ti-phone"></i> Call Script</div>
+          </div>
+
+          <div class="output-pane active" id="pane-email">
+            <button class="btn-copy" onclick="copyContent('email')"><i class="ti ti-copy"></i> Copy</button>
+            <div class="message-subject" id="email-subject"></div>
+            <div class="message-box" id="email-body"></div>
+          </div>
+
+          <div class="output-pane" id="pane-sms">
+            <button class="btn-copy" onclick="copyContent('sms')"><i class="ti ti-copy"></i> Copy</button>
+            <div class="message-box" id="sms-body"></div>
+            <div style="font-size:11px;color:var(--text3);margin-top:6px;" id="sms-count"></div>
+          </div>
+
+          <div class="output-pane" id="pane-script">
+            <button class="btn-copy" onclick="copyContent('script')"><i class="ti ti-copy"></i> Copy</button>
+            <div id="script-content"></div>
+          </div>
+
+          <div style="margin-top:16px;padding:12px;background:#f8f9fa;border-radius:8px;font-size:12px;color:var(--text3);">
+            <i class="ti ti-info-circle"></i> <strong>Reviewer note:</strong> This message was generated using <span id="tierUsed" style="font-weight:700;"></span> findings. Predictive guidance is phrased conditionally ("based on your medications, you may want to...") and does not imply confirmed patient supplement intake.
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end main-panel -->
+  </div><!-- end workflow -->
+</div><!-- end container -->
+
+<script>
+// ── STATE ──────────────────────────────────────────────────────────────────
+const drugs = new Set();
+let ddiData = null;
+let supplementData = null;
+let selectedFactors = {};
+
+// ── RISK FACTOR DEFINITIONS (Layer 2-3 from Framework) ────────────────────
+const PHYSIOLOGIC_FACTORS = [
+  { id:'renal_impairment', label:'Renal Impairment', desc:'eGFR reduced / CrCl <60', action:'Renally cleared drugs may accumulate.', input:'select', options:['Mild (CrCl 30-60)','Moderate (CrCl 15-30)','Severe (CrCl <15)'] },
+  { id:'hepatic_impairment', label:'Hepatic Impairment', desc:'Elevated LFTs / liver disease', action:'Hepatically metabolized drugs may be affected.', input:'select', options:['Child-Pugh A','Child-Pugh B','Child-Pugh C'] },
+  { id:'age_65_plus', label:'Age 65+', desc:'Increased sensitivity to many drug classes', action:'Age-related pharmacokinetic changes present.', input:'text', placeholder:'Patient age' },
+  { id:'qt_risk', label:'QT Prolongation Risk', desc:'ECG or electrolyte concerns', action:'Cardiac rhythm monitoring may be needed.', input:null },
+  { id:'prior_ade', label:'Prior ADE / Allergy History', desc:'Known adverse drug event on record', action:'Review allergen list before adding new medications.', input:'text', placeholder:'Brief description' },
+  { id:'pregnancy', label:'Pregnancy / Breastfeeding', desc:'Documented in record', action:'Category review required for all medications.', input:null },
+];
+
+const REGIMEN_FACTORS = [
+  { id:'high_med_count', label:'High Medication Count', desc:'5+ active medications', action:'Polypharmacy risk increases interaction probability.', input:'text', placeholder:'Total medication count' },
+  { id:'recent_med_change', label:'Recent Medication Change', desc:'New Rx or dose change in last 30 days', action:'Monitor for new symptoms or side effects.', input:'text', placeholder:'Which medication changed' },
+  { id:'multiple_prescribers', label:'Multiple Prescribers', desc:'Care coordination concern', action:'Encourage patient to share complete medication list.', input:'text', placeholder:'Number of prescribers' },
+  { id:'high_risk_class', label:'High-Risk Drug Class', desc:'Anticoagulant, opioid, insulin, or antiepileptic present', action:'Enhanced monitoring protocol may apply.', input:'select', options:['Anticoagulant','Opioid','Insulin/Antidiabetic','Antiepileptic','Antipsychotic','Multiple classes'] },
+];
+
+// ── RENDER FACTOR GRIDS ───────────────────────────────────────────────────
+function renderFactors(factors, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = factors.map(f => `
+    <div class="factor-card" id="fc-${f.id}" onclick="toggleFactor('${f.id}')">
+      <div class="factor-name">${f.label}</div>
+      <div class="factor-desc">${f.desc}</div>
+      ${f.input ? `
+        <div class="factor-input">
+          ${f.input === 'select'
+            ? `<select onclick="event.stopPropagation()" onchange="setFactorValue('${f.id}', this.value)">
+                <option value="">Select...</option>
+                ${f.options.map(o=>`<option value="${o}">${o}</option>`).join('')}
+              </select>`
+            : `<input type="text" placeholder="${f.placeholder||''}" onclick="event.stopPropagation()" oninput="setFactorValue('${f.id}', this.value)"/>`
+          }
+        </div>` : ''}
+    </div>
+  `).join('');
+}
+
+function toggleFactor(id) {
+  const card = document.getElementById('fc-' + id);
+  const factor = [...PHYSIOLOGIC_FACTORS, ...REGIMEN_FACTORS].find(f => f.id === id);
+  if (card.classList.contains('selected')) {
+    card.classList.remove('selected');
+    delete selectedFactors[id];
+  } else {
+    card.classList.add('selected');
+    selectedFactors[id] = {
+      factorId: id,
+      label: factor.label,
+      plainLanguage: factor.action,
+      action: factor.action,
+      tier: 'MANUALLY_CONFIRMED',
+      value: factor.input ? null : true
+    };
+  }
+  updateCounts();
+}
+
+function setFactorValue(id, value) {
+  if (selectedFactors[id]) selectedFactors[id].value = value;
+}
+
+// ── DRUG MANAGEMENT ────────────────────────────────────────────────────────
+function addDrug() {
+  const inp = document.getElementById('drugInput');
+  const val = inp.value.trim();
+  if (!val) return;
+  drugs.add(val);
+  inp.value = '';
+  renderDrugTags();
+  updateStepStatus();
+}
+
+function quickAddDrug(name) {
+  drugs.add(name);
+  renderDrugTags();
+  updateStepStatus();
+}
+
+function removeDrug(name) {
+  drugs.delete(name);
+  renderDrugTags();
+  updateStepStatus();
+}
+
+function renderDrugTags() {
+  const container = document.getElementById('drugTags');
+  container.innerHTML = [...drugs].map(d => `
+    <span class="drug-tag">${d} <span class="rm" onclick="removeDrug('${d.replace(/'/g,"\\'")}')">×</span></span>
+  `).join('');
+  document.getElementById('ddiBtn').disabled = drugs.size < 2;
+  document.getElementById('step2-num').className = 'step-num ' + (drugs.size > 0 ? 'done' : '');
+}
+
+// ── DDI ANALYSIS ───────────────────────────────────────────────────────────
+async function runDDI() {
+  const btn = document.getElementById('ddiBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<i class="ti ti-loader" style="animation:spin 1s linear infinite"></i> Analyzing...';
+
+  try {
+    const prompt = buildProactivePrompt([...drugs]);
+    const resp = await fetch('/api/proactive-analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ drugs: [...drugs], prompt })
+    });
+    ddiData = await resp.json();
+    supplementData = ddiData;
+    renderDDIResult();
+    renderSupplementResults();
+    updateCounts();
+    document.getElementById('step3-num').className = 'step-num done';
+    document.getElementById('step5-num').className = 'step-num done';
+    document.getElementById('generateBtn').disabled = false;
+  } catch(e) {
+    document.getElementById('ddiResult').innerHTML = `<div style="color:red;font-size:13px;">Error: ${e.message}</div>`;
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '<i class="ti ti-refresh"></i> Re-run Analysis';
+}
+
+function buildProactivePrompt(drugList) {
+  return `You are a clinical pharmacologist for IntractMD Proactive.\n\nGenerate a supplement and food interaction profile for: ${drugList.join(', ')}\n\nReturn ONLY valid JSON:\n{"drug":"${drugList[0]}","drug_class":"<class>","key_pathways":["<CYP or pathway>"],"avoid_supplements":[{"name":"<name>","severity":"<Critical|High|Moderate>","mechanism":"<mechanism>","action":"<instruction>"}],"caution_supplements":[{"name":"<name>","severity":"Low","mechanism":"<mechanism>","action":"<instruction>"}],"avoid_foods":[{"name":"<food>","severity":"<Critical|High|Moderate>","mechanism":"<mechanism>","action":"<instruction>"}],"caution_foods":[{"name":"<food>","severity":"Low","mechanism":"<mechanism>","action":"<instruction>"}],"monitoring_notes":"<1-2 sentences>"}`;
+}
+
+function renderDDIResult() {
+  const el = document.getElementById('ddiResult');
+  const ph = document.getElementById('ddiPlaceholder');
+  const pcprs = ddiData.pcprs || 0;
+  const tier = ddiData.risk_tier || 'Unknown';
+  const tierColor = tier==='Critical'?'#8B0000':tier==='High'?'#C05020':tier==='Moderate'?'#D4860A':'#2E7D4F';
+
+  ph.style.display = 'none';
+  el.style.display = 'block';
+  el.innerHTML = `
+    <div class="ddi-result">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">
+        <div>
+          <div class="ddi-score" style="color:${tierColor}">${pcprs}</div>
+          <div style="font-size:10px;color:var(--text3);">/ 100</div>
+        </div>
+        <div>
+          <div class="ddi-tier" style="color:${tierColor}">${tier} Supplement Risk</div>
+          <div style="font-size:12px;color:var(--text3);">${ddiData.risk_title||''}</div>
+        </div>
+        <div style="margin-left:auto;font-size:11px;padding:4px 8px;background:var(--confirmed-lt);color:var(--confirmed);border-radius:4px;font-weight:700;">from_cache: ${ddiData.from_cache?'✓ Yes':'No'}</div>
+      </div>
+      ${ddiData.warnings && ddiData.warnings.filter(w=>w.severity==='Critical'||w.severity==='High').length > 0 ? `
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;margin-bottom:6px;">Top Interaction Warnings</div>
+        <div class="interaction-list">
+          ${ddiData.warnings.filter(w=>w.severity==='Critical'||w.severity==='High').slice(0,4).map(w=>`
+            <div class="interaction-item">
+              <span class="sev ${w.severity.toLowerCase()}">${w.severity}</span>
+              <span style="margin:0 6px;color:var(--text3)">·</span>
+              <strong>${w.drug}</strong> + <strong>${w.interacts_with}</strong>
+              <div style="margin-top:3px;color:var(--text3);">${w.mechanism}</div>
+            </div>
+          `).join('')}
+        </div>
+      ` : '<div style="font-size:13px;color:var(--text3);">No Critical or High severity interactions identified.</div>'}
+    </div>
+  `;
+}
+
+function renderSupplementResults() {
+  const el = document.getElementById('supplementResults');
+  if (!ddiData || !ddiData.warnings) { return; }
+  const warns = ddiData.warnings.slice(0, 6);
+  el.innerHTML = warns.length ? `
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      ${warns.map(w=>`
+        <div style="padding:10px 12px;border-radius:8px;background:#fafafa;border-left:3px solid ${w.severity==='Critical'?'#8B0000':w.severity==='High'?'#C05020':w.severity==='Moderate'?'#D4860A':'#2E7D4F'};">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+            <span style="font-size:11px;font-weight:700;padding:2px 6px;border-radius:3px;background:${w.severity==='Critical'?'#fce8e8':w.severity==='High'?'#fdeee8':'#fdf3e3'};color:${w.severity==='Critical'?'#8B0000':w.severity==='High'?'#C05020':'#D4860A'}">${w.severity}</span>
+            <strong style="font-size:13px;">${w.interacts_with}</strong>
+            <span style="font-size:11px;color:var(--text3);">(${w.category})</span>
+          </div>
+          <div style="font-size:12px;color:var(--text2);">${w.mechanism}</div>
+          <div style="font-size:12px;color:var(--text3);margin-top:4px;font-style:italic;">${w.action}</div>
+        </div>
+      `).join('')}
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:var(--predictive);font-weight:600;"><i class="ti ti-alert-triangle"></i> These are inferred from the medication regimen — not confirmed patient supplement intake.</div>
+  ` : '<div style="font-size:13px;color:var(--text3);">No significant supplement or food interactions identified for this regimen.</div>';
+}
+
+// ── COUNT BADGES ───────────────────────────────────────────────────────────
+function updateCounts() {
+  const confirmedCount = (ddiData && ddiData.drug_interactions ? ddiData.drug_interactions.filter(i=>i.severity==='Critical'||i.severity==='High').length : 0) + Object.values(selectedFactors).filter(f=>f.tier==='CONFIRMED').length;
+  const computedCount = Object.values(selectedFactors).filter(f=>f.tier==='MANUALLY_CONFIRMED').length;
+  const predictiveCount = ddiData && ddiData.warnings ? ddiData.warnings.filter(w=>w.severity==='Critical'||w.severity==='High').length : 0;
+  document.getElementById('confirmedCount').textContent = confirmedCount;
+  document.getElementById('computedCount').textContent = computedCount;
+  document.getElementById('predictiveCount').textContent = predictiveCount;
+}
+
+// ── STEP STATUS ────────────────────────────────────────────────────────────
+function updateStepStatus() {
+  document.getElementById('step2-num').className = 'step-num ' + (drugs.size > 0 ? 'done' : '');
+}
+
+function scrollToStep(n) {
+  document.getElementById('step-' + n).scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── GENERATE MESSAGE ───────────────────────────────────────────────────────
+async function generateMessage() {
+  const btn = document.getElementById('generateBtn');
+  document.getElementById('loadingOverlay').classList.add('show');
+  btn.disabled = true;
+
+  try {
+    const payload = {
+      drugs: [...drugs],
+      ddiResults: ddiData || {},
+      riskFactors: Object.values(selectedFactors),
+      patientContext: {
+        firstName: document.getElementById('patientFirstName').value || 'Member',
+        planName: document.getElementById('planName').value || 'your health plan',
+        caseManagerName: document.getElementById('caseManagerName').value || 'your care team'
+      },
+      language: document.getElementById('outreachLanguage').value
+    };
+
+    const resp = await fetch('/api/generate-outreach', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    const result = await resp.json();
+    if (result.error) throw new Error(result.error);
+
+    renderOutput(result);
+    document.getElementById('step6-num').className = 'step-num done';
+    document.getElementById('outputSection').style.display = 'block';
+    document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  } catch(e) {
+    alert('Error generating message: ' + e.message);
+  }
+
+  document.getElementById('loadingOverlay').classList.remove('show');
+  btn.disabled = false;
+}
+
+function renderOutput(result) {
+  // Email
+  document.getElementById('email-subject').textContent = 'Subject: ' + (result.email?.subject || '');
+  document.getElementById('email-body').textContent = result.email?.body || '';
+
+  // SMS
+  const smsBody = result.sms?.body || '';
+  document.getElementById('sms-body').textContent = smsBody;
+  document.getElementById('sms-count').textContent = smsBody.length + ' / 160 characters';
+
+  // Call script
+  const script = result.case_manager_script || {};
+  document.getElementById('script-content').innerHTML = `
+    <div style="margin-bottom:10px;padding:10px 14px;background:var(--navy);color:#fff;border-radius:6px;font-size:13px;">
+      <strong>Opening:</strong> ${script.opening || ''}
+    </div>
+    <ul class="script-points">
+      ${(script.key_points||[]).map(p=>`<li class="script-point">${p}</li>`).join('')}
+    </ul>
+    <div style="margin-top:10px;padding:10px 14px;background:var(--confirmed-lt);color:var(--confirmed);border-radius:6px;font-size:13px;">
+      <strong>Closing:</strong> ${script.closing || ''}
+    </div>
+  `;
+
+  // Tier used
+  const tierUsed = result.confidence_summary?.highest_tier_used || 'PREDICTIVE';
+  const tierColors = { CONFIRMED:'var(--confirmed)', COMPUTED:'var(--computed)', PREDICTIVE:'var(--predictive)' };
+  document.getElementById('tierUsed').style.color = tierColors[tierUsed] || 'var(--predictive)';
+  document.getElementById('tierUsed').textContent = tierUsed;
+}
+
+// ── COPY ───────────────────────────────────────────────────────────────────
+function copyContent(type) {
+  let text = '';
+  if (type === 'email') {
+    text = document.getElementById('email-subject').textContent + '\n\n' + document.getElementById('email-body').textContent;
+  } else if (type === 'sms') {
+    text = document.getElementById('sms-body').textContent;
+  } else if (type === 'script') {
+    text = document.getElementById('script-content').innerText;
+  }
+  navigator.clipboard.writeText(text).then(() => {
+    const btns = document.querySelectorAll('.btn-copy');
+    btns.forEach(b => { if (b.onclick.toString().includes(type)) { b.textContent = '✓ Copied!'; setTimeout(() => b.innerHTML = '<i class="ti ti-copy"></i> Copy', 2000); } });
+  });
+}
+
+// ── TABS ───────────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  document.querySelectorAll('.output-tab').forEach((t,i) => {
+    const tabs = ['email','sms','script'];
+    t.classList.toggle('active', tabs[i] === tab);
+  });
+  document.querySelectorAll('.output-pane').forEach(p => p.classList.remove('active'));
+  document.getElementById('pane-' + tab).classList.add('active');
+}
+
+// ── INIT ───────────────────────────────────────────────────────────────────
+renderFactors(PHYSIOLOGIC_FACTORS, 'physiologicFactors');
+renderFactors(REGIMEN_FACTORS, 'regimenFactors');
+
+document.getElementById('drugInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') addDrug();
+});
+</script>
+</body>
+</html>
