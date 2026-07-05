@@ -251,7 +251,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
         <div class="risk-denom">/100</div>
       </div>
       <div class="risk-info">
-        <div class="risk-tier" id="riskTier">Proactive Risk Score</div>
+        <div class="risk-tier" id="riskTier">Supplement &amp; Food Risk Score</div>
         <div class="risk-title" id="riskTitle">Analyzing...</div>
       </div>
     </div>
@@ -521,7 +521,7 @@ function renderResults(r){
   const dial=document.getElementById('riskDial');
   dial.className='risk-dial '+tc;
   document.getElementById('riskNum').textContent=Math.round(r.pcprs||0);
-  document.getElementById('riskTier').textContent='Proactive Risk Score — '+(r.risk_tier||'');
+  document.getElementById('riskTier').textContent='Supplement & Food Risk Score — '+(r.risk_tier||'');
   document.getElementById('riskTitle').textContent=r.risk_title||'';
 
   // Build unified sorted interaction list (drug-drug + supplements + foods)
