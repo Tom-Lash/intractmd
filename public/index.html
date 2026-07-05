@@ -476,9 +476,9 @@ input::placeholder{color:#6b6b66}
 </div>
 <div class="panel" id="panel-risk">
 <div id="risk-loading" style="display:none"><div class="loading"><i class="ti ti-chart-bar"></i><p><span class="spin"></span>Calculating predictive risk score... this can take up to a minute.</p><p style="font-size:12px;color:#3a3a36;font-weight:500">Please don't close this window — your results are being generated.</p></div></div>
-<div id="risk-empty"><div class="empty"><i class="ti ti-shield-check"></i><p>Add at least 2 drugs to calculate a predictive risk score.</p></div></div>
+<div style="font-size:11px;font-weight:700;color:var(--tx2);text-transform:uppercase;letter-spacing:.06em;padding:8px 0 4px;text-align:center;">Predictive Polypharmacy Risk Score</div><div id="risk-empty"><div class="empty"><i class="ti ti-shield-check"></i><p>Add at least 2 drugs to calculate a predictive risk score.</p></div></div>
 <div id="risk-content" style="display:none">
-<div class="risk-gauge-wrap"><div class="risk-gauge" id="rg-gauge"><div class="risk-gauge-center"><div class="risk-gauge-val" id="rg-val">--</div><div class="risk-gauge-lbl" id="rg-lbl">--</div></div></div><div id="rg-trend" style="text-align:center;font-size:12px;color:var(--tx3);margin-top:8px"></div></div>
+<div class="risk-gauge-wrap"><div class="risk-gauge" id="rg-gauge"><div class="risk-gauge-center"><div class="risk-gauge-val" id="rg-val">--</div><div class="risk-gauge-lbl" id="rg-lbl">--</div></div></div><div style="text-align:center;font-size:11px;font-weight:700;color:var(--tx2);text-transform:uppercase;letter-spacing:.06em;margin-top:4px;">Predictive Risk Score</div><div id="rg-trend" style="text-align:center;font-size:12px;color:var(--tx3);margin-top:4px"></div></div>
 <div style="text-align:center;margin:10px 0 14px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap"><button class="btn-s" style="display:inline-flex;align-items:center;gap:6px" onclick="openRiskFlipbook()"><i class="ti ti-book-2"></i> View as FlipBook</button></div>
 <div id="rg-bars" style="padding:0 0 4px"></div>
 <div id="rg-top-risks"></div>
@@ -1359,8 +1359,8 @@ function renderResults(ai){
       +'<div class="exec-sum-body">'+ai.executive_summary+'</div>'
       +'</div>';
   }
-  h+="<div class=\"metrics\">";
-  h+="<div class=\"metric\"><div class=\"mv "+(score>=70?"r":score>=40?"a":"g")+"\">"+score+"</div><div class=\"ml\">Risk score</div></div>";
+  h+="<div style=\"font-size:11px;font-weight:600;color:var(--tx3);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em\">Drug Interaction Analysis</div>";h+="<div class=\"metrics\">";
+  h+="<div class=\"metric\"><div class=\"mv "+(score>=70?"r":score>=40?"a":"g")+"\">"+score+"</div><div class=\"ml\">Drug Interaction Score</div></div>";
   h+="<div class=\"metric\"><div class=\"mv "+(major>0?"r":"g")+"\">"+major+"</div><div class=\"ml\">Major known</div></div>";
   h+="<div class=\"metric\"><div class=\"mv "+(mod>0?"a":"g")+"\">"+mod+"</div><div class=\"ml\">Moderate known</div></div>";
   h+="<div class=\"metric\"><div class=\"mv t\">"+predictive.length+"</div><div class=\"ml\">Predictive</div></div></div>";
