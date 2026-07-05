@@ -584,11 +584,16 @@ function renderResults(r){
   const SHOW_MAX=6;
   const wl=document.getElementById('warnList');
   wl.innerHTML='';
+  let modLowCount=0;
   nonCritItems.forEach((w,i)=>{
     const sc=(w.severity||'Moderate').toLowerCase();
-    // Never hide Critical or High — only hide Moderate/Low beyond SHOW_MAX
-    const isHighPriority=w.severity==='High';
-    const hidden=!isHighPriority && i>=SHOW_MAX;
+    // Always show High — only collapse Moderate/Low beyond SHOW_MAX
+    const isHighOrAbove=w.severity==='High';
+    let hidden=false;
+    if(!isHighOrAbove){
+      hidden=modLowCount>=SHOW_MAX;
+      modLowCount++;
+    }
     wl.innerHTML+=`<div class="warn-card ${sc}" style="${hidden?'display:none;':''}" data-extra="${hidden}">
       <div class="warn-head" style="cursor:pointer;" onclick="toggleCard(this)">
         <i class="ti ${w.icon}" style="font-size:17px;color:${w.iconColor}"></i>
