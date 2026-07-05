@@ -586,7 +586,9 @@ function renderResults(r){
   wl.innerHTML='';
   nonCritItems.forEach((w,i)=>{
     const sc=(w.severity||'Moderate').toLowerCase();
-    const hidden=i>=SHOW_MAX;
+    // Never hide Critical or High — only hide Moderate/Low beyond SHOW_MAX
+    const isHighPriority=w.severity==='High';
+    const hidden=!isHighPriority && i>=SHOW_MAX;
     wl.innerHTML+=`<div class="warn-card ${sc}" style="${hidden?'display:none;':''}" data-extra="${hidden}">
       <div class="warn-head" style="cursor:pointer;" onclick="toggleCard(this)">
         <i class="ti ${w.icon}" style="font-size:17px;color:${w.iconColor}"></i>
