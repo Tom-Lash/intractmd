@@ -524,37 +524,94 @@ function renderResults(r){
   document.getElementById('riskTier').textContent='Proactive Risk Score — '+(r.risk_tier||'');
   document.getElementById('riskTitle').textContent=r.risk_title||'';
 
-  const ddl=document.getElementById('ddList');const ddSec=document.getElementById('ddSection');ddl.innerHTML='';if(r.drug_interactions&&r.drug_interactions.length){ddSec.style.display='flex';r.drug_interactions.forEach(w=>{const sc=(w.severity||'Moderate').toLowerCase();ddl.innerHTML+=`<div class="warn-card ${sc}"><div class="warn-head"><i class="ti ti-pills" style="font-size:17px;color:#1B6EC2"></i><div class="warn-pair">${w.drug_a} + ${w.drug_b}</div><span class="sev-badge ${sc}">${w.severity}</span><span class="cat-badge" style="background:#EBF5FC;color:#1B6EC2;border:1px solid #C0DFF5">Drug-Drug</span></div><div class="warn-mech">${w.mechanism}</div><div class="warn-action"><i class="ti ti-arrow-right"></i>${w.action}</div></div>`;});}else{ddSec.style.display='none';}const wl=document.getElementById('warnList');
-  wl.innerHTML='';
+  // Build unified sorted interaction list (drug-drug + supplements + foods)
+  const sevOrder={Critical:0,High:1,Moderate:2,Low:3,Minimal:4};
+  const allInteractions=[];
+  (r.drug_interactions||[]).forEach(w=>{
+    allInteractions.push({severity:w.severity||'Moderate',label:w.drug_a+' + '+w.drug_b,
+      mechanism:w.mechanism,action:w.action,catLabel:'Drug-Drug',
+      catBg:'#EBF5FC',catColor:'#1B6EC2',catBorder:'#C0DFF5',
+      icon:'ti-pills',iconColor:'#1B6EC2'});
+  });
   (r.warnings||[]).forEach(w=>{
+    const isSupp=w.category==='supplement';
+    allInteractions.push({severity:w.severity||'Moderate',label:w.drug+' + '+w.interacts_with,
+      mechanism:w.mechanism,action:w.action,catLabel:isSupp?'Supplement':'Food',
+      catBg:isSupp?'#F3EEF9':'#E8F5ED',catColor:isSupp?'#6A4C93':'#2E6B4A',
+      catBorder:isSupp?'#D4C5E8':'#AEDCC0',
+      icon:isSupp?'ti-leaf':'ti-apple',iconColor:isSupp?'#6A4C93':'#2E6B4A'});
+  });
+  allInteractions.sort((a,b)=>(sevOrder[a.severity]||4)-(sevOrder[b.severity]||4));
+
+  // CHANGE 4: Severity count bar
+  const nCrit=allInteractions.filter(x=>x.severity==='Critical').length;
+  const nHigh=allInteractions.filter(x=>x.severity==='High').length;
+  const nMod=allInteractions.filter(x=>x.severity==='Moderate').length;
+  const nLow=allInteractions.filter(x=>x.severity==='Low'||x.severity==='Minimal').length;
+  let summaryEl=document.getElementById('severitySummary');
+  if(!summaryEl){summaryEl=document.createElement('div');summaryEl.id='severitySummary';
+    summaryEl.style.cssText='display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;';
+    const wl2=document.getElementById('warnList');
+    if(wl2&&wl2.parentNode)wl2.parentNode.insertBefore(summaryEl,wl2);}
+  summaryEl.innerHTML=[
+    nCrit>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0">${nCrit} Critical</span>`:'',
+    nHigh>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdeee8;color:#C05020;border:1px solid #e8b090">${nHigh} High</span>`:'',
+    nMod>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdf3e3;color:#D4860A;border:1px solid #e8cc80">${nMod} Moderate</span>`:'',
+    nLow>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#f2f8f4;color:#2E7D4F;border:1px solid #a0d0b0">${nLow} Low</span>`:''
+  ].join('');
+
+  // CHANGE 1: Critical red alert banner
+  let alertEl=document.getElementById('critAlertBanner');
+  if(!alertEl){alertEl=document.createElement('div');alertEl.id='critAlertBanner';
+    alertEl.style.cssText='display:none;margin-bottom:16px;padding:14px 16px;border-radius:10px;background:#fce8e8;border:2px solid #CC0000;';
+    summaryEl.parentNode.insertBefore(alertEl,summaryEl);}
+  const critItems=allInteractions.filter(x=>x.severity==='Critical');
+  if(critItems.length){
+    alertEl.style.display='block';
+    alertEl.innerHTML='<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:16px;">\u{1F6A8}</span><strong style="color:#8B0000;font-size:14px;">CRITICAL — Immediate attention required</strong></div>'
+      +critItems.map(x=>`<div style="padding:8px 10px;margin-bottom:6px;border-radius:6px;background:#fff;border-left:4px solid #CC0000;"><div style="font-weight:700;font-size:13px;color:#8B0000;margin-bottom:3px;">${x.label} <span style="font-size:11px;padding:2px 7px;border-radius:10px;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0;">${x.catLabel}</span></div><div style="font-size:12px;color:#5a2020;margin-bottom:4px;">${x.mechanism}</div><div style="font-size:12px;color:#8B0000;font-weight:600;">→ ${x.action}</div></div>`).join('');
+  }else{alertEl.style.display='none';}
+
+  // Hide old dd section header
+  const ddSec=document.getElementById('ddSection');
+  if(ddSec)ddSec.style.display='none';
+  const ddl=document.getElementById('ddList');
+  if(ddl)ddl.innerHTML='';
+
+  // CHANGE 2, 3, 5: Unified list, collapsed cards, top 6 visible
+  const SHOW_MAX=6;
+  const wl=document.getElementById('warnList');
+  wl.innerHTML='';
+  allInteractions.forEach((w,i)=>{
     const sc=(w.severity||'Moderate').toLowerCase();
-    const cc=w.category==='supplement'?'supp':'food';
-    const ci=w.category==='supplement'?'ti-leaf':'ti-apple';
-    wl.innerHTML+=`
-      <div class="warn-card ${sc}">
-        <div class="warn-head">
-          <i class="ti ${ci}" style="font-size:17px;color:${cc==='supp'?'#6A4C93':'#2E6B4A'}"></i>
-          <div class="warn-pair">${w.drug} + ${w.interacts_with}</div>
-          <span class="sev-badge ${sc}">${w.severity}</span>
-          <span class="cat-badge ${cc}">${w.category==='supplement'?'Supplement':'Food'}</span>
-        </div>
+    const hidden=i>=SHOW_MAX;
+    wl.innerHTML+=`<div class="warn-card ${sc}" style="${hidden?'display:none;':''}" data-extra="${hidden}">
+      <div class="warn-head" style="cursor:pointer;" onclick="toggleCard(this)">
+        <i class="ti ${w.icon}" style="font-size:17px;color:${w.iconColor}"></i>
+        <div class="warn-pair">${w.label}</div>
+        <span class="sev-badge ${sc}">${w.severity}</span>
+        <span class="cat-badge" style="background:${w.catBg};color:${w.catColor};border:1px solid ${w.catBorder}">${w.catLabel}</span>
+        <span style="margin-left:auto;font-size:11px;color:#aaa;padding-left:6px;">▼</span>
+      </div>
+      <div class="warn-detail" style="display:none;padding:10px 0 4px 28px;">
         <div class="warn-mech">${w.mechanism}</div>
         <div class="warn-action"><i class="ti ti-arrow-right"></i>${w.action}</div>
-      </div>`;
+      </div>
+    </div>`;
   });
+  if(allInteractions.length>SHOW_MAX){
+    const rem=allInteractions.length-SHOW_MAX;
+    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ Show ${rem} more interactions</div>`;
+  }
 
+  // Dimension grid
   const dg=document.getElementById('dimGrid');
   dg.innerHTML='';
   const dims=r.dimensions||{};
   Object.entries(dims).forEach(([name,score])=>{
     const s=Math.round(score||0);
     const color=DIM_COLORS[name]||'#888';
-    dg.innerHTML+=`
-      <div class="dim-card">
-        <div class="dim-lbl">${name}</div>
-        <div class="dim-track"><div class="dim-fill" style="width:${s}%;background:${color}"></div></div>
-        <div class="dim-score">${s}<span style="font-size:11px;font-weight:400;color:#8C7A5A">/100</span></div>
-      </div>`;
+    dg.innerHTML+=`<div class="dim-card"><div class="dim-lbl">${name}</div><div class="dim-track"><div class="dim-fill" style="width:${s}%;background:${color}"></div></div><div class="dim-score">${s}<span style="font-size:11px;font-weight:400;color:#8C7A5A">/100</span></div></div>`;
   });
 
   document.getElementById('aiText').textContent=r.ai_summary||'';
@@ -572,6 +629,24 @@ function renderResults(r){
   document.getElementById('results').className='results show';
   document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
 }
+
+function toggleCard(head){
+  const card=head.closest('.warn-card');
+  const detail=card.querySelector('.warn-detail');
+  const arrow=head.querySelector('span:last-child');
+  const open=detail.style.display==='block';
+  detail.style.display=open?'none':'block';
+  if(arrow)arrow.textContent=open?'▼':'▲';
+}
+
+function toggleShowMore(){
+  const extras=document.querySelectorAll('[data-extra="true"]');
+  const btn=document.getElementById('showMoreBtn');
+  const showing=extras[0]&&extras[0].style.display!=='none';
+  extras.forEach(e=>{e.style.display=showing?'none':'block';});
+  if(btn)btn.textContent=showing?'▼ Show '+extras.length+' more interactions':'▲ Show fewer';
+}
+
 
 buildChips();renderTray();
 </script>
