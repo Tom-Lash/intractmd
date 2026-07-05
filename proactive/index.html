@@ -579,10 +579,12 @@ function renderResults(r){
   if(ddl)ddl.innerHTML='';
 
   // CHANGE 2, 3, 5: Unified list, collapsed cards, top 6 visible
+  // Critical items already shown in red banner — exclude from main list
+  const nonCritItems=allInteractions.filter(x=>x.severity!=='Critical');
   const SHOW_MAX=6;
   const wl=document.getElementById('warnList');
   wl.innerHTML='';
-  allInteractions.forEach((w,i)=>{
+  nonCritItems.forEach((w,i)=>{
     const sc=(w.severity||'Moderate').toLowerCase();
     const hidden=i>=SHOW_MAX;
     wl.innerHTML+=`<div class="warn-card ${sc}" style="${hidden?'display:none;':''}" data-extra="${hidden}">
@@ -599,8 +601,8 @@ function renderResults(r){
       </div>
     </div>`;
   });
-  if(allInteractions.length>SHOW_MAX){
-    const rem=allInteractions.length-SHOW_MAX;
+  if(nonCritItems.length>SHOW_MAX){
+    const rem=nonCritItems.length-SHOW_MAX;
     wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ Show ${rem} more interactions</div>`;
   }
 
