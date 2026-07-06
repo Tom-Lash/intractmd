@@ -1381,7 +1381,7 @@ COPY RULES — follow exactly:
 - PREDICTIVE: Name each supplement/food SPECIFICALLY by name. Use: "Based on your medications, you may want to avoid [SPECIFIC NAME] because..." NEVER imply the patient IS currently taking a predictive item.
 - Confirmed foods/supplements must appear PROMINENTLY early in the letter, not buried.
 - No raw lab values, no risk score numbers, no terms like eGFR, LFT, PCPRS, polypharmacy, frail, non-adherent
-- Always end with a warm closing referencing ${caseManagerName}. Do NOT include phone numbers, portal links, or any placeholder tokens like [PHONE] or [PORTAL]. The case manager will add contact details before sending.
+- End the email with ONLY this closing — no modifications, no additions, no placeholders: "Please reach out to us with any questions. Warm regards, [CASEMANAGER_NAME]" where [CASEMANAGER_NAME] is replaced with the actual case manager name. Do NOT add phone numbers, portal links, brackets, or any other tokens after this closing.
 - Keep the message hopeful and action-oriented, not alarming
 
 Generate THREE versions:
