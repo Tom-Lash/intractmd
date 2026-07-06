@@ -590,7 +590,7 @@ input::placeholder{color:#6b6b66}
 <div style="margin-top:4px">
 <button class="btn-p" onclick="identifyPill()" style="display:inline-flex;align-items:center;gap:6px"><i class="ti ti-search"></i> Identify Pill</button>
 </div>
-<div style="margin-top:12px;padding:10px 12px;background:#FFF8E8;border:1px solid #EF9F27;border-radius:8px;font-size:12px;color:#854F0B;"><i class="ti ti-alert-triangle" style="margin-right:6px;"></i><strong>Note:</strong> Generic drugs do not always adhere to the same shape, size, or color, so may not be accurately identified.</div><div id="pi-results" style="margin-top:16px"></div>
+<div id="pi-disclaimer" style="margin-top:12px;padding:10px 12px;background:#FFF8E8;border:1px solid #EF9F27;border-radius:8px;font-size:12px;color:#854F0B;display:none;"><i class="ti ti-alert-triangle" style="margin-right:6px;"></i><strong>Note:</strong> Generic drugs do not always adhere to the same shape, size, or color, so may not be accurately identified.</div><div id="pi-results" style="margin-top:16px"></div>
 </div>
 </div>
 
@@ -2228,6 +2228,7 @@ function openPillId(){
 function closePillId(){
   document.getElementById('pillid-modal').classList.remove('open');
   document.getElementById('pi-results').innerHTML='';
+  document.getElementById('pi-disclaimer').style.display='none';
 }
 function openPillCamera(){
   camMode='pill';
@@ -2301,6 +2302,7 @@ function renderPillResults(d){
   h+='<a href="https://www.drugs.com/pill_identification.html" target="_blank" rel="noopener" class="btn-s" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:12px"><i class="ti ti-external-link"></i> Drugs.com Pill Identifier</a>';
   h+='</div>';
   document.getElementById('pi-results').innerHTML=h;
+  document.getElementById('pi-disclaimer').style.display='block';
   if(matches.length>=2){
     window._pillIdLast=d;
     var fbBtn=document.createElement('button');
