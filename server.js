@@ -832,32 +832,35 @@ app.post('/api/pill-identify', async (req, res) => {
       }
     } catch(rxe) { console.error('RxImage error:', rxe.message); }
 
-    // Step 2: OpenFDA NDC fallback
+    // Step 2: OpenFDA drug label API (has physical characteristics including imprint)
     if (!matches.length) {
-      let filters = [];
-      if (imprint) filters.push('imprint:"' + imprint + '"');
-      if (shape && shape !== 'Any') filters.push('shape:"' + shape + '"');
-      if (color1 && color1 !== 'Any') filters.push('color:"' + color1 + '"');
-      if (filters.length > 0) {
-        try {
-          const url = 'https://api.fda.gov/drug/ndc.json?search=' + filters.join('+AND+') + '&limit=8';
-          const r = await safeFetch(url, 8000);
-          if (r && r.results && r.results.length) {
-            matches = r.results.map(function(d) {
+      try {
+        let labelFilters = [];
+        if (imprint) labelFilters.push('openfda.imprint_code:"' + imprint + '"');
+        if (!imprint && shape && shape !== 'Any') labelFilters.push('openfda.shape:"' + shape + '"');
+        if (!imprint && color1 && color1 !== 'Any') labelFilters.push('openfda.color:"' + color1 + '"');
+        if (labelFilters.length > 0) {
+          const labelUrl = 'https://api.fda.gov/drug/label.json?search=' + labelFilters.join('+AND+') + '&limit=8';
+          const labelData = await safeFetch(labelUrl, 8000);
+          if (labelData && labelData.results && labelData.results.length) {
+            matches = labelData.results.map(function(d) {
+              const openfda = d.openfda || {};
+              const brandNames = openfda.brand_name || [];
+              const genericNames = openfda.generic_name || [];
               return {
-                drug_name: d.brand_name || d.generic_name || 'Unknown',
-                generic_name: d.generic_name || '',
+                drug_name: brandNames[0] || genericNames[0] || 'Unknown',
+                generic_name: genericNames[0] || '',
                 imprint: imprint || '',
                 confidence: imprint ? 'medium' : 'low',
                 imageUrl: '',
-                labeler: d.labeler_name || '',
-                strength: (d.active_ingredients || []).map(function(a){ return a.name + ' ' + a.strength; }).join(', '),
-                note: d.dosage_form || ''
+                labeler: (openfda.manufacturer_name || [])[0] || '',
+                strength: (openfda.strength || [])[0] || '',
+                note: (openfda.route || []).join(', ') || ''
               };
             });
           }
-        } catch(fe) { console.error('OpenFDA pill error:', fe.message); }
-      }
+        }
+      } catch(fe) { console.error('OpenFDA label error:', fe.message); }
     }
 
     // Step 3: Claude AI fallback
