@@ -1,0 +1,148 @@
+{
+  "drug_name": "Glyburide",
+  "generic_name": "Glyburide",
+  "drug_class": "Sulfonylurea (Meglitinide antidiabetic agent)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "1.25 mg",
+      "imprints": [
+        "1.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Diabeta",
+      "strength": "1.25 mg",
+      "imprints": [
+        "DIABETA",
+        "1.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Diabeta",
+      "strength": "2.5 mg",
+      "imprints": [
+        "DIABETA",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Diabeta",
+      "strength": "5 mg",
+      "imprints": [
+        "DIABETA",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Micronase",
+      "strength": "1.25 mg",
+      "imprints": [
+        "MICRONASE",
+        "1.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Pharmacia & Upjohn",
+      "scored": false
+    },
+    {
+      "brand_name": "Micronase",
+      "strength": "2.5 mg",
+      "imprints": [
+        "MICRONASE",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Pharmacia & Upjohn",
+      "scored": false
+    },
+    {
+      "brand_name": "Micronase",
+      "strength": "5 mg",
+      "imprints": [
+        "MICRONASE",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Pharmacia & Upjohn",
+      "scored": false
+    }
+  ]
+}

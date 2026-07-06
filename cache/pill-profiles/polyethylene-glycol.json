@@ -1,0 +1,98 @@
+{
+  "drug_name": "Polyethylene Glycol",
+  "generic_name": "Polyethylene Glycol 3350",
+  "drug_class": "Osmotic Laxative",
+  "variants": [
+    {
+      "brand_name": "GoLYTELY",
+      "strength": "4L solution (236 mL packets)",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear to slightly yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Braintree Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "CoLyte",
+      "strength": "4L solution (236 mL packets)",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear to slightly yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Naurex",
+      "scored": false
+    },
+    {
+      "brand_name": "MiraLAX",
+      "strength": "17g powder packet",
+      "imprints": [],
+      "shape": "powder",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Bayer Consumer Care",
+      "scored": false
+    },
+    {
+      "brand_name": "MiraLAX",
+      "strength": "119g powder bottle",
+      "imprints": [],
+      "shape": "powder",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Bayer Consumer Care",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Polyethylene Glycol 3350",
+      "strength": "17g powder packet",
+      "imprints": [],
+      "shape": "powder",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Miralax Gummies",
+      "strength": "1.6g per gummy",
+      "imprints": [],
+      "shape": "gummy",
+      "colors": [
+        "assorted"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Bayer Consumer Care",
+      "scored": false
+    },
+    {
+      "brand_name": "Polyethylene Glycol 3350 with Electrolytes",
+      "strength": "4L solution",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

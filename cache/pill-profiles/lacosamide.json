@@ -1,0 +1,127 @@
+{
+  "drug_name": "Lacosamide",
+  "generic_name": "Lacosamide",
+  "drug_class": "Antiepileptic drug (AED), functional amino acid",
+  "variants": [
+    {
+      "brand_name": "Vimpat",
+      "strength": "50 mg",
+      "imprints": [
+        "VMP 50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "UCB Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Vimpat",
+      "strength": "100 mg",
+      "imprints": [
+        "VMP 100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "UCB Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Vimpat",
+      "strength": "150 mg",
+      "imprints": [
+        "VMP 150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "UCB Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Vimpat",
+      "strength": "200 mg",
+      "imprints": [
+        "VMP 200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "UCB Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "L50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "L100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "L150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "L200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

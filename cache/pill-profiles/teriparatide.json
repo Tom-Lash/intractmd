@@ -1,0 +1,32 @@
+{
+  "drug_name": "Teriparatide",
+  "generic_name": "Teriparatide",
+  "drug_class": "Recombinant Human Parathyroid Hormone (PTH) Analog",
+  "variants": [
+    {
+      "brand_name": "Forteo",
+      "strength": "250 mcg/mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "formulation_type": "Subcutaneous injection pen"
+    },
+    {
+      "brand_name": "Bonsity",
+      "strength": "250 mcg/mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Ascendis Pharma",
+      "scored": false,
+      "formulation_type": "Subcutaneous injection pen"
+    }
+  ],
+  "note": "Teriparatide is not available as an oral tablet or pill in the United States. All FDA-approved formulations are injectable solutions delivered via prefilled injection pens for subcutaneous administration. There are no pill physical characteristics to report as this medication does not have a tablet form."
+}

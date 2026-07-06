@@ -1,0 +1,82 @@
+{
+  "drug_name": "Linagliptin",
+  "generic_name": "Linagliptin",
+  "drug_class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tradjenta",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linagliptin",
+      "strength": "5 mg",
+      "imprints": [
+        "L 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linagliptin",
+      "strength": "5 mg",
+      "imprints": [
+        "831"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linagliptin",
+      "strength": "5 mg",
+      "imprints": [
+        "SUN L5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linagliptin",
+      "strength": "5 mg",
+      "imprints": [
+        "NPI 0321"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Natco Pharma",
+      "scored": false
+    }
+  ]
+}

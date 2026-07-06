@@ -1,0 +1,71 @@
+{
+  "drug_name": "Dexlansoprazole",
+  "generic_name": "dexlansoprazole",
+  "drug_class": "Proton pump inhibitor",
+  "variants": [
+    {
+      "brand_name": "Dexilant",
+      "strength": "30 mg",
+      "imprints": [
+        "DEXILANT",
+        "30 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Dexilant",
+      "strength": "60 mg",
+      "imprints": [
+        "DEXILANT",
+        "60 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 20,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "DXL 30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "DXL 60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 20,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

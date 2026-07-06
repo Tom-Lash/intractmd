@@ -1,0 +1,73 @@
+{
+  "drug_name": "Triamcinolone",
+  "generic_name": "Triamcinolone acetonide",
+  "drug_class": "Corticosteroid",
+  "note": "Triamcinolone is primarily available as an oral tablet in the following formulations. Note that triamcinolone acetonide is more commonly available as injectable, cream, ointment, lotion, and oral paste formulations rather than oral tablets.",
+  "variants": [
+    {
+      "brand_name": "Generic Triamcinolone",
+      "strength": "1 mg",
+      "imprints": [
+        "TRIA 1",
+        "TCL 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Triamcinolone",
+      "strength": "2 mg",
+      "imprints": [
+        "TRIA 2",
+        "TCL 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Triamcinolone",
+      "strength": "4 mg",
+      "imprints": [
+        "TRIA 4",
+        "TCL 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Triamcinolone",
+      "strength": "8 mg",
+      "imprints": [
+        "TRIA 8",
+        "TCL 8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ],
+  "availability_note": "Oral triamcinolone tablets are limited in the US market. Most triamcinolone acetonide formulations are available as: intra-articular/intramuscular injections (Kenalog-40), topical cream/ointment (Kenalog, Triderm), oral paste (Kenalog in Orabase), inhalation powder (Azmacort), and nasal spray (Nasacort). The oral tablet form shown above represents the primary systemic formulations when available, though availability varies by manufacturer and region."
+}

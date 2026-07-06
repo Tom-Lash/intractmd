@@ -1,0 +1,151 @@
+{
+  "drug_name": "Fosinopril",
+  "generic_name": "Fosinopril sodium",
+  "drug_class": "ACE inhibitor",
+  "variants": [
+    {
+      "brand_name": "Monopril",
+      "strength": "10 mg",
+      "imprints": [
+        "MONOPRIL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Monopril",
+      "strength": "20 mg",
+      "imprints": [
+        "MONOPRIL",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Monopril",
+      "strength": "40 mg",
+      "imprints": [
+        "MONOPRIL",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "G",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "G",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "G",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "MYLAN",
+        "F10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "MYLAN",
+        "F20"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "MYLAN",
+        "F40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "drug_name": "Fentanyl",
+  "generic_name": "Fentanyl",
+  "drug_class": "Opioid analgesic",
+  "note": "Fentanyl is primarily available as transdermal patches, lozenges, buccal tablets, and injectable formulations in the US. Immediate-release oral tablets are not commonly manufactured. The following represents available solid oral/buccal formulations:",
+  "variants": [
+    {
+      "brand_name": "Actiq",
+      "strength": "200 mcg",
+      "imprints": [
+        "CEPHALON 200"
+      ],
+      "shape": "lozenge",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Actiq",
+      "strength": "400 mcg",
+      "imprints": [
+        "CEPHALON 400"
+      ],
+      "shape": "lozenge",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Actiq",
+      "strength": "600 mcg",
+      "imprints": [
+        "CEPHALON 600"
+      ],
+      "shape": "lozenge",
+      "colors": [
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Actiq",
+      "strength": "800 mcg",
+      "imprints": [
+        "CEPHALON 800"
+      ],
+      "shape": "lozenge",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Actiq",
+      "strength": "1200 mcg",
+      "imprints": [
+        "CEPHALON 1200"
+      ],
+      "shape": "lozenge",
+      "colors": [
+        "purple"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Actiq",
+      "strength": "1600 mcg",
+      "imprints": [
+        "CEPHALON 1600"
+      ],
+      "shape": "lozenge",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Fentora",
+      "strength": "100 mcg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Fentora",
+      "strength": "200 mcg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Fentora",
+      "strength": "400 mcg",
+      "imprints": [
+        "400"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Fentora",
+      "strength": "600 mcg",
+      "imprints": [
+        "600"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Fentora",
+      "strength": "800 mcg",
+      "imprints": [
+        "800"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Instanyl",
+      "strength": "100 mcg",
+      "imprints": [
+        "NEOS 100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Neos Therapeutics/Insys",
+      "scored": false
+    },
+    {
+      "brand_name": "Instanyl",
+      "strength": "200 mcg",
+      "imprints": [
+        "NEOS 200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Neos Therapeutics/Insys",
+      "scored": false
+    },
+    {
+      "brand_name": "Instanyl",
+      "strength": "400 mcg",
+      "imprints": [
+        "NEOS 400"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Neos Therapeutics/Insys",
+      "scored": false
+    },
+    {
+      "brand_name": "Instanyl",
+      "strength": "800 mcg",
+      "imprints": [
+        "NEOS 800"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Neos Therapeutics/Insys",
+      "scored": false
+    },
+    {
+      "brand_name": "Lazanda",
+      "strength": "100 mcg",
+      "imprints": [
+        "LAZANDA 100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Archimedes",
+      "scored": false
+    },
+    {
+      "brand_name": "Lazanda",
+      "strength": "400 mcg",
+      "imprints": [
+        "LAZANDA 400"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Archimedes",
+      "scored": false
+    },
+    {
+      "brand_name": "Lazanda",
+      "strength": "800 mcg",
+      "imprints": [
+        "LAZANDA 800"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Archimedes",
+      "scored": false
+    }
+  ]
+}

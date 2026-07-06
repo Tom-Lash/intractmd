@@ -1,0 +1,175 @@
+{
+  "drug_name": "Memantine",
+  "generic_name": "Memantine hydrochloride",
+  "drug_class": "NMDA receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Namenda",
+      "strength": "5 mg",
+      "imprints": [
+        "NAMENDA 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Forest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Namenda",
+      "strength": "10 mg",
+      "imprints": [
+        "NAMENDA 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Forest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Namenda XR",
+      "strength": "14 mg",
+      "imprints": [
+        "14 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Forest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Namenda XR",
+      "strength": "21 mg",
+      "imprints": [
+        "21 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Forest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Namenda XR",
+      "strength": "28 mg",
+      "imprints": [
+        "28 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Forest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Memantine",
+      "strength": "5 mg",
+      "imprints": [
+        "M5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Memantine",
+      "strength": "10 mg",
+      "imprints": [
+        "M10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Memantine",
+      "strength": "5 mg",
+      "imprints": [
+        "barr 127"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Memantine",
+      "strength": "10 mg",
+      "imprints": [
+        "barr 128"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Memantine",
+      "strength": "5 mg",
+      "imprints": [
+        "APO MEM5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Memantine",
+      "strength": "10 mg",
+      "imprints": [
+        "APO MEM10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "drug_name": "Nicotine",
+  "generic_name": "Nicotine",
+  "drug_class": "Nicotinic receptor agonist",
+  "note": "Nicotine is primarily available as over-the-counter nicotine replacement therapy (NRT) in non-pill oral forms (gum, lozenges, patches, nasal spray, oral inhaler). Traditional tablets/pills are extremely limited in the current US market.",
+  "variants": [
+    {
+      "brand_name": "Nicorette Lozenge",
+      "strength": "2 mg",
+      "imprints": [
+        "NIC 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "beige"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false,
+      "form_note": "Lozenge, not traditional tablet"
+    },
+    {
+      "brand_name": "Nicorette Lozenge",
+      "strength": "4 mg",
+      "imprints": [
+        "NIC 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "beige"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false,
+      "form_note": "Lozenge, not traditional tablet"
+    },
+    {
+      "brand_name": "Generic Nicotine Polacrilex Lozenge",
+      "strength": "2 mg",
+      "imprints": [],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Multiple OTC manufacturers",
+      "scored": false,
+      "form_note": "Lozenge, not traditional tablet"
+    },
+    {
+      "brand_name": "Generic Nicotine Polacrilex Lozenge",
+      "strength": "4 mg",
+      "imprints": [],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Multiple OTC manufacturers",
+      "scored": false,
+      "form_note": "Lozenge, not traditional tablet"
+    }
+  ],
+  "important_notice": "Nicotine in the US is NOT available as traditional oral tablets/pills in prescription or OTC form. Current FDA-approved formulations include: nicotine patches (transdermal), nicotine gum, nicotine lozenges, nicotine nasal spray, and nicotine oral inhalator. Historical nicotine tablets (such as those containing nicotine bitartrate) are no longer commercially available in the US market."
+}

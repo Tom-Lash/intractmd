@@ -1,0 +1,275 @@
+{
+  "drug_name": "Bupropion",
+  "generic_name": "Bupropion hydrochloride",
+  "drug_class": "Aminoketone antidepressant",
+  "variants": [
+    {
+      "brand_name": "Wellbutrin",
+      "strength": "75 mg",
+      "imprints": [
+        "WELLBUTRIN",
+        "75"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Wellbutrin",
+      "strength": "100 mg",
+      "imprints": [
+        "WELLBUTRIN",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Wellbutrin SR",
+      "strength": "100 mg",
+      "imprints": [
+        "WELLBUTRIN SR",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Wellbutrin SR",
+      "strength": "150 mg",
+      "imprints": [
+        "WELLBUTRIN SR",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Wellbutrin SR",
+      "strength": "200 mg",
+      "imprints": [
+        "WELLBUTRIN SR",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Wellbutrin XL",
+      "strength": "150 mg",
+      "imprints": [
+        "WELLBUTRIN XL",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Wellbutrin XL",
+      "strength": "300 mg",
+      "imprints": [
+        "WELLBUTRIN XL",
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Aplenzin",
+      "strength": "100 mg",
+      "imprints": [
+        "APLENZIN",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Naurex/Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Aplenzin",
+      "strength": "174 mg",
+      "imprints": [
+        "APLENZIN",
+        "174"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Naurex/Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Aplenzin",
+      "strength": "348 mg",
+      "imprints": [
+        "APLENZIN",
+        "348"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Naurex/Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Forfivo XL",
+      "strength": "450 mg",
+      "imprints": [
+        "FORFIVO XL",
+        "450"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Naurex/Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg SR",
+      "imprints": [
+        "various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg SR",
+      "imprints": [
+        "various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg XL",
+      "imprints": [
+        "various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg XL",
+      "imprints": [
+        "various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "drug_name": "Clindamycin",
+  "generic_name": "Clindamycin hydrochloride",
+  "drug_class": "Lincosamide antibiotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "CLINDAMYCIN 75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "CLINDAMYCIN 150",
+        "C 150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "CLINDAMYCIN 300",
+        "C 300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "75",
+        "APO"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "150",
+        "APO"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "300",
+        "APO"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "TEVA",
+        "3626"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "TEVA",
+        "3627"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "E 707"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Endo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "E 708"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Endo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "M 151"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "M 152"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

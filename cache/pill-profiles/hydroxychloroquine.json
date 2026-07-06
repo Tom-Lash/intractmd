@@ -1,0 +1,167 @@
+{
+  "drug_name": "Hydroxychloroquine",
+  "generic_name": "hydroxychloroquine sulfate",
+  "drug_class": "antimalarial, immunosuppressant, disease-modifying antirheumatic drug (DMARD)",
+  "variants": [
+    {
+      "brand_name": "Plaquenil",
+      "strength": "200 mg",
+      "imprints": [
+        "PLAQUENIL",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "M",
+        "H32"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "IP",
+        "190"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Ipca Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "L",
+        "368"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Lloyd",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "C",
+        "72"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "Z",
+        "1948"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Zydus",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "L",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "DR",
+        "1848"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Dr. Reddy's",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "K",
+        "67"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Kremers Urban",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Hydroxychloroquine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "T",
+        "39"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

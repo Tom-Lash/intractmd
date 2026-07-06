@@ -1,0 +1,71 @@
+{
+  "drug_name": "Apixaban",
+  "generic_name": "apixaban",
+  "drug_class": "Factor Xa Inhibitor (Anticoagulant)",
+  "variants": [
+    {
+      "brand_name": "Eliquat",
+      "strength": "2.5 mg",
+      "imprints": [
+        "893",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Eliquat",
+      "strength": "5 mg",
+      "imprints": [
+        "894",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Apixaban",
+      "strength": "2.5 mg",
+      "imprints": [
+        "APX",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Various (Teva, Sandoz, Mylan, Dr. Reddy's, Lupin)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Apixaban",
+      "strength": "5 mg",
+      "imprints": [
+        "APX",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various (Teva, Sandoz, Mylan, Dr. Reddy's, Lupin)",
+      "scored": false
+    }
+  ]
+}

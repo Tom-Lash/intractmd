@@ -1,0 +1,154 @@
+{
+  "drug_name": "Augmentin",
+  "generic_name": "amoxicillin/clavulanic acid",
+  "drug_class": "Beta-lactam antibiotic with beta-lactamase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Augmentin",
+      "strength": "250mg/125mg",
+      "imprints": [
+        "AUGMENTIN 250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Augmentin",
+      "strength": "500mg/125mg",
+      "imprints": [
+        "AUGMENTIN 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Augmentin",
+      "strength": "875mg/125mg",
+      "imprints": [
+        "AUGMENTIN 875"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Augmentin ES-600",
+      "strength": "600mg/42.9mg per 5mL",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white",
+        "strawberry flavored"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Augmentin XR",
+      "strength": "1000mg/62.5mg",
+      "imprints": [
+        "AUGMENTIN XR 1000"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Amoxicillin/Clavulanic Acid",
+      "strength": "250mg/125mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple (Sandoz, Teva, Mylan, Lupin, Hikma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Amoxicillin/Clavulanic Acid",
+      "strength": "500mg/125mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple (Sandoz, Teva, Mylan, Lupin, Hikma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Amoxicillin/Clavulanic Acid",
+      "strength": "875mg/125mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple (Sandoz, Teva, Mylan, Lupin, Hikma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Amoxicillin/Clavulanic Acid",
+      "strength": "200mg/28.5mg per 5mL",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Amoxicillin/Clavulanic Acid",
+      "strength": "400mg/57mg per 5mL",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

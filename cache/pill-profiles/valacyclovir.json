@@ -1,0 +1,167 @@
+{
+  "drug_name": "Valacyclovir",
+  "generic_name": "valacyclovir hydrochloride",
+  "drug_class": "Antiviral agent (nucleoside analog)",
+  "variants": [
+    {
+      "brand_name": "Valtrex",
+      "strength": "500 mg",
+      "imprints": [
+        "VALTREX 500"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Valtrex",
+      "strength": "1000 mg",
+      "imprints": [
+        "VALTREX 1000"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "M122"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "H104"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "V 500"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "M123"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "H105"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "V 1000"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "4H8"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "4H9"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    }
+  ]
+}

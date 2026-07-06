@@ -1,0 +1,131 @@
+{
+  "drug_name": "Risedronate",
+  "generic_name": "risedronate sodium",
+  "drug_class": "Bisphosphonate",
+  "variants": [
+    {
+      "brand_name": "Actonel",
+      "strength": "5 mg",
+      "imprints": [
+        "ACTONEL",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Actonel",
+      "strength": "30 mg",
+      "imprints": [
+        "ACTONEL",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Actonel",
+      "strength": "35 mg",
+      "imprints": [
+        "ACTONEL",
+        "35"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Actonel",
+      "strength": "150 mg",
+      "imprints": [
+        "ACTONEL",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "35 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

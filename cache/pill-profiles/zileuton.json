@@ -1,0 +1,69 @@
+{
+  "drug_name": "Zileuton",
+  "generic_name": "Zileuton",
+  "drug_class": "5-Lipoxygenase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zyflo",
+      "strength": "600 mg",
+      "imprints": [
+        "ZYFLO",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Abbott Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyflo CR",
+      "strength": "1200 mg",
+      "imprints": [
+        "ZYFLO CR",
+        "1200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 22,
+      "manufacturer": "Abbott Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Zileuton)",
+      "strength": "600 mg",
+      "imprints": [
+        "ZIL 600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Zileuton Extended-Release)",
+      "strength": "1200 mg",
+      "imprints": [
+        "ZIL 1200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 22,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    }
+  ]
+}

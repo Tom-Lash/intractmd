@@ -1,0 +1,143 @@
+{
+  "drug_name": "Rivastigmine",
+  "generic_name": "Rivastigmine tartrate",
+  "drug_class": "Cholinesterase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Exelon",
+      "strength": "1.5 mg",
+      "imprints": [
+        "EXE",
+        "1.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Exelon",
+      "strength": "3 mg",
+      "imprints": [
+        "EXE",
+        "3"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Exelon",
+      "strength": "4.5 mg",
+      "imprints": [
+        "EXE",
+        "4.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Exelon",
+      "strength": "6 mg",
+      "imprints": [
+        "EXE",
+        "6"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1.5 mg",
+      "imprints": [
+        "RIV",
+        "1.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "3 mg",
+      "imprints": [
+        "RIV",
+        "3"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4.5 mg",
+      "imprints": [
+        "RIV",
+        "4.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "6 mg",
+      "imprints": [
+        "RIV",
+        "6"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

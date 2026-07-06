@@ -1,0 +1,119 @@
+{
+  "drug_name": "Gemfibrozil",
+  "generic_name": "Gemfibrozil",
+  "drug_class": "Fibric acid derivative (Fibrate)",
+  "variants": [
+    {
+      "brand_name": "Lopid",
+      "strength": "600 mg",
+      "imprints": [
+        "LOPID",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "GG",
+        "639"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "SZ",
+        "648"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "AN",
+        "618"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Amneal",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "H",
+        "59"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Hikma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "ZC",
+        "05"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Zydus",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "E",
+        "144"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

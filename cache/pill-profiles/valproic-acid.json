@@ -1,0 +1,187 @@
+{
+  "drug_name": "Valproic Acid",
+  "generic_name": "Valproic Acid",
+  "drug_class": "Anticonvulsant, Mood Stabilizer, Histone Deacetylase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Depakote",
+      "strength": "125 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "125"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote",
+      "strength": "500 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote ER",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE ER",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote ER",
+      "strength": "500 mg",
+      "imprints": [
+        "DEPAKOTE ER",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote Sprinkle",
+      "strength": "125 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "SPRINKLE",
+        "125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote Sprinkle",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "SPRINKLE",
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "clear"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valproic Acid",
+      "strength": "250 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valproic Acid",
+      "strength": "500 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Stavzor",
+      "strength": "250 mg",
+      "imprints": [
+        "STAVZOR",
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Naurex (now part of AbbVie)",
+      "scored": false
+    },
+    {
+      "brand_name": "Stavzor",
+      "strength": "125 mg",
+      "imprints": [
+        "STAVZOR",
+        "125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Naurex (now part of AbbVie)",
+      "scored": false
+    }
+  ]
+}

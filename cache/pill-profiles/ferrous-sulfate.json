@@ -1,0 +1,128 @@
+{
+  "drug_name": "Ferrous Sulfate",
+  "generic_name": "ferrous sulfate",
+  "drug_class": "Iron supplement (hematinc)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "325 mg (65 mg elemental iron)",
+      "imprints": [
+        ""
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "325 mg (65 mg elemental iron)",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg (60 mg elemental iron)",
+      "imprints": [
+        ""
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Slow Fe",
+      "strength": "325 mg (65 mg elemental iron)",
+      "imprints": [
+        "Slow Fe"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Feosol",
+      "strength": "325 mg (65 mg elemental iron)",
+      "imprints": [
+        "FEOSOL"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Fer-In-Sol",
+      "strength": "220 mg/5 mL (44 mg elemental iron per 5 mL)",
+      "imprints": [
+        ""
+      ],
+      "shape": "liquid",
+      "colors": [
+        "orange"
+      ],
+      "coating": "liquid",
+      "size_mm": 0,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "131 mg (26 mg elemental iron)",
+      "imprints": [
+        ""
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Slow Fe Plus",
+      "strength": "325 mg (65 mg elemental iron) + 200 mg docusate",
+      "imprints": [
+        "Slow Fe Plus"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ]
+}

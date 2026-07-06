@@ -1,0 +1,83 @@
+{
+  "drug_name": "Alfuzosin",
+  "generic_name": "Alfuzosin hydrochloride",
+  "drug_class": "Alpha-1 adrenergic receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Uroxatral",
+      "strength": "10 mg",
+      "imprints": [
+        "UROXATRAL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "AL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "G 3722"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "ZC 91"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Zydus Cadila",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "AN 379"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Amneal Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

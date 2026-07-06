@@ -1,0 +1,133 @@
+{
+  "drug_name": "Chlorpheniramine",
+  "generic_name": "Chlorpheniramine Maleate",
+  "drug_class": "First-generation antihistamine",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "barr",
+        "323"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "ALPHARMA",
+        "2175"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Alpharma Inc",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "MYLAN",
+        "147"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "BARR",
+        "324"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "ALPHARMA",
+        "2176"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Alpharma Inc",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "MYLAN",
+        "148"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Chlor-Trimeton",
+      "strength": "2 mg",
+      "imprints": [
+        "CHLOR-TRIMETON"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Schering-Plough",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "no imprint"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various OTC manufacturers",
+      "scored": false
+    }
+  ]
+}

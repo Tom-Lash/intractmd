@@ -1,0 +1,99 @@
+{
+  "drug_name": "Sitagliptin",
+  "generic_name": "Sitagliptin phosphate monohydrate",
+  "drug_class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Januvia",
+      "strength": "25 mg",
+      "imprints": [
+        "271"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Merck Sharp & Dohme Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Januvia",
+      "strength": "50 mg",
+      "imprints": [
+        "277"
+      ],
+      "shape": "round",
+      "colors": [
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Merck Sharp & Dohme Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Januvia",
+      "strength": "100 mg",
+      "imprints": [
+        "278"
+      ],
+      "shape": "round",
+      "colors": [
+        "gray"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Merck Sharp & Dohme Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sitagliptin",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sitagliptin",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "beige",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sitagliptin",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "gray",
+        "grey"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

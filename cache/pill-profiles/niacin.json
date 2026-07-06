@@ -1,0 +1,142 @@
+{
+  "drug_name": "Niacin",
+  "generic_name": "Niacin (Nicotinic Acid)",
+  "drug_class": "B Vitamin / Antilipemic Agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Niaspan",
+      "strength": "500 mg",
+      "imprints": [
+        "Niaspan 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Kythera Biopharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Niaspan",
+      "strength": "750 mg",
+      "imprints": [
+        "Niaspan 750"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Kythera Biopharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Niaspan",
+      "strength": "1000 mg",
+      "imprints": [
+        "Niaspan 1000"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Kythera Biopharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "SL 250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "SL 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

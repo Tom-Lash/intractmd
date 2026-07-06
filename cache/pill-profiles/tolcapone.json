@@ -1,0 +1,71 @@
+{
+  "drug_name": "Tolcapone",
+  "generic_name": "Tolcapone",
+  "drug_class": "Catechol-O-methyltransferase (COMT) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tasmar",
+      "strength": "100 mg",
+      "imprints": [
+        "Tasmar",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tasmar",
+      "strength": "200 mg",
+      "imprints": [
+        "Tasmar",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "G",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "G",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

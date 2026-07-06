@@ -1,0 +1,105 @@
+{
+  "drug_name": "Dutasteride",
+  "generic_name": "Dutasteride",
+  "drug_class": "5-alpha reductase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Avodart",
+      "strength": "0.5 mg",
+      "imprints": [
+        "AVODART",
+        "0.5 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "G3719"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "DUTASTERIDE",
+        "0.5 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "R5357"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "SUN1002"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "UT500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

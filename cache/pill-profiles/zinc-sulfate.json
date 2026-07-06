@@ -1,0 +1,68 @@
+{
+  "drug_name": "Zinc Sulfate",
+  "generic_name": "Zinc Sulfate",
+  "drug_class": "Mineral Supplement / Trace Element",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "220 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "opaque"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple (Walgreens, CVS, Amazon Basics, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "110 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

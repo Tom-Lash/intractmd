@@ -1,0 +1,54 @@
+{
+  "drug_name": "Elvitegravir",
+  "generic_name": "Elvitegravir",
+  "drug_class": "Integrase Strand Transfer Inhibitor (INSTI)",
+  "variants": [
+    {
+      "brand_name": "Vitekta",
+      "strength": "85 mg",
+      "imprints": [
+        "GSI"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Vitekta",
+      "strength": "150 mg",
+      "imprints": [
+        "GSI",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Genvoya",
+      "strength": "150 mg (as part of combination tablet)",
+      "imprints": [
+        "GSI",
+        "262"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    }
+  ]
+}

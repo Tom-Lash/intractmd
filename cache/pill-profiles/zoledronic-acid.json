@@ -1,0 +1,49 @@
+{
+  "drug_name": "Zoledronic Acid",
+  "generic_name": "Zoledronic Acid",
+  "drug_class": "Bisphosphonate",
+  "note": "Zoledronic Acid is formulated as an intravenous infusion solution, not as oral tablets or capsules",
+  "variants": [
+    {
+      "brand_name": "Reclast",
+      "strength": "5 mg/100 mL",
+      "formulation": "intravenous infusion solution",
+      "concentration": "0.05 mg/mL",
+      "container": "single-dose vial",
+      "manufacturer": "Novartis",
+      "route": "intravenous"
+    },
+    {
+      "brand_name": "Aclasta",
+      "strength": "5 mg/100 mL",
+      "formulation": "intravenous infusion solution",
+      "concentration": "0.05 mg/mL",
+      "container": "single-dose vial",
+      "manufacturer": "Novartis",
+      "route": "intravenous"
+    },
+    {
+      "brand_name": "Generic Zoledronic Acid",
+      "strength": "4 mg/5 mL",
+      "formulation": "intravenous infusion solution",
+      "concentration": "0.8 mg/mL",
+      "container": "single-dose vial",
+      "manufacturers": [
+        "Various (Hospira, Pfizer, Apotex, others)"
+      ],
+      "route": "intravenous"
+    },
+    {
+      "brand_name": "Generic Zoledronic Acid",
+      "strength": "4 mg/100 mL",
+      "formulation": "intravenous infusion solution",
+      "concentration": "0.04 mg/mL",
+      "container": "single-dose vial",
+      "manufacturers": [
+        "Various"
+      ],
+      "route": "intravenous"
+    }
+  ],
+  "important_note": "Zoledronic Acid is NOT available as oral tablets or capsules in the US market. All formulations are intravenous solutions. Physical characteristics (color, shape, imprints) do not apply to this medication as it is supplied as a liquid injection solution in sterile vials."
+}

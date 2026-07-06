@@ -1,0 +1,97 @@
+{
+  "drug_name": "Perampanel",
+  "generic_name": "perampanel",
+  "drug_class": "Selective non-competitive AMPA receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Fycompa",
+      "strength": "2 mg",
+      "imprints": [
+        "P2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Fycompa",
+      "strength": "4 mg",
+      "imprints": [
+        "P4"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Fycompa",
+      "strength": "6 mg",
+      "imprints": [
+        "P6"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Fycompa",
+      "strength": "8 mg",
+      "imprints": [
+        "P8"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Fycompa",
+      "strength": "10 mg",
+      "imprints": [
+        "P10"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Fycompa",
+      "strength": "12 mg",
+      "imprints": [
+        "P12"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    }
+  ]
+}

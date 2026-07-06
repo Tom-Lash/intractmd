@@ -1,0 +1,105 @@
+{
+  "drug_name": "Budesonide",
+  "generic_name": "Budesonide",
+  "drug_class": "Corticosteroid (Inhaled/Intranasal/Oral)",
+  "variants": [
+    {
+      "brand_name": "Pulmicort Flexhaler",
+      "strength": "90 mcg/inhalation",
+      "imprints": [],
+      "shape": "inhaler device",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Pulmicort Flexhaler",
+      "strength": "180 mcg/inhalation",
+      "imprints": [],
+      "shape": "inhaler device",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Pulmicort Respules",
+      "strength": "0.25 mg/2 mL",
+      "imprints": [],
+      "shape": "liquid suspension",
+      "colors": [
+        "clear to white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Pulmicort Respules",
+      "strength": "0.5 mg/2 mL",
+      "imprints": [],
+      "shape": "liquid suspension",
+      "colors": [
+        "clear to white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Pulmicort Respules",
+      "strength": "1 mg/2 mL",
+      "imprints": [],
+      "shape": "liquid suspension",
+      "colors": [
+        "clear to white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Rhinocort Allergy Spray",
+      "strength": "64 mcg/spray",
+      "imprints": [],
+      "shape": "nasal spray",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Entocort EC",
+      "strength": "3 mg",
+      "imprints": [
+        "ENTOCORT EC",
+        "3MG"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Tillotson Healthcare",
+      "scored": false
+    }
+  ]
+}

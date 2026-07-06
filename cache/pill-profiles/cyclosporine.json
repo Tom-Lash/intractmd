@@ -1,0 +1,88 @@
+{
+  "drug_name": "Cyclosporine",
+  "generic_name": "Cyclosporine",
+  "drug_class": "Immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Neoral",
+      "strength": "25 mg",
+      "imprints": [
+        "NEORAL",
+        "25 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Neoral",
+      "strength": "100 mg",
+      "imprints": [
+        "NEORAL",
+        "100 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Gengraf",
+      "strength": "25 mg",
+      "imprints": [
+        "GENGRAF",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Abbvie",
+      "scored": false
+    },
+    {
+      "brand_name": "Gengraf",
+      "strength": "100 mg",
+      "imprints": [
+        "GENGRAF",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Abbvie",
+      "scored": false
+    },
+    {
+      "brand_name": "Restasis",
+      "strength": "0.05%",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Allergan",
+      "scored": false
+    }
+  ]
+}

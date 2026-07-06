@@ -1,0 +1,67 @@
+{
+  "drug_name": "Roflumilast",
+  "generic_name": "Roflumilast",
+  "drug_class": "Phosphodiesterase-4 (PDE-4) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Daliresp",
+      "strength": "250 mcg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Naurex (AbbVie)",
+      "scored": false
+    },
+    {
+      "brand_name": "Daliresp",
+      "strength": "500 mcg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Naurex (AbbVie)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Roflumilast",
+      "strength": "250 mcg",
+      "imprints": [
+        "RFL 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Roflumilast",
+      "strength": "500 mcg",
+      "imprints": [
+        "RFL 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

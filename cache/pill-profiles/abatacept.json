@@ -1,0 +1,41 @@
+{
+  "drug_name": "Abatacept",
+  "generic_name": "Abatacept",
+  "drug_class": "Selective costimulation modulator; TNF-alpha inhibitor",
+  "note": "Abatacept is primarily available as injectable formulations (intravenous and subcutaneous) in the United States. Oral tablet formulations are not currently FDA-approved or commercially available in the US market.",
+  "variants": [
+    {
+      "brand_name": "Orencia IV",
+      "strength": "250 mg/vial",
+      "formulation_type": "Intravenous injection",
+      "route": "IV",
+      "manufacturer": "Bristol Myers Squibb",
+      "presentation": "Single-use vial with lyophilized powder for reconstitution"
+    },
+    {
+      "brand_name": "Orencia SQ",
+      "strength": "50 mg/0.4 mL",
+      "formulation_type": "Subcutaneous injection",
+      "route": "SC",
+      "manufacturer": "Bristol Myers Squibb",
+      "presentation": "Pre-filled pen or syringe"
+    },
+    {
+      "brand_name": "Orencia SQ",
+      "strength": "87.5 mg/0.7 mL",
+      "formulation_type": "Subcutaneous injection",
+      "route": "SC",
+      "manufacturer": "Bristol Myers Squibb",
+      "presentation": "Pre-filled pen or syringe"
+    },
+    {
+      "brand_name": "Orencia SQ",
+      "strength": "125 mg/mL",
+      "formulation_type": "Subcutaneous injection",
+      "route": "SC",
+      "manufacturer": "Bristol Myers Squibb",
+      "presentation": "Prefilled syringe"
+    }
+  ],
+  "disclaimer": "Abatacept does not have oral tablet formulations approved in the United States. All US formulations are injectable (IV or SC). No pill physical characteristics are applicable."
+}

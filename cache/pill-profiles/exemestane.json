@@ -1,0 +1,87 @@
+{
+  "drug_name": "Exemestane",
+  "generic_name": "Exemestane",
+  "drug_class": "Aromatase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Aromasin",
+      "strength": "25 mg",
+      "imprints": [
+        "Pfizer",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "APO",
+        "EXE25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "ZA",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "M",
+        "EX25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "TL",
+        "177"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Torrent Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

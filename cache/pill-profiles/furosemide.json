@@ -1,0 +1,226 @@
+{
+  "drug_name": "Furosemide",
+  "generic_name": "Furosemide",
+  "drug_class": "Loop Diuretic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "LASIX",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "M 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "LASIX",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "M 40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "54 375"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "LASIX",
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "M 80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "54 376"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Roxane",
+      "scored": false
+    },
+    {
+      "brand_name": "Lasix",
+      "strength": "20 mg",
+      "imprints": [
+        "LASIX",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sanofi",
+      "scored": true
+    },
+    {
+      "brand_name": "Lasix",
+      "strength": "40 mg",
+      "imprints": [
+        "LASIX",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Sanofi",
+      "scored": true
+    },
+    {
+      "brand_name": "Lasix",
+      "strength": "80 mg",
+      "imprints": [
+        "LASIX",
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Sanofi",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "Watson",
+        "339"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Watson",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "Watson",
+        "340"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Watson",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "Watson",
+        "341"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Watson",
+      "scored": false
+    }
+  ]
+}

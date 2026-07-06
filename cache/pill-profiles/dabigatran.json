@@ -1,0 +1,55 @@
+{
+  "drug_name": "Dabigatran",
+  "generic_name": "dabigatran etexilate mesylate",
+  "drug_class": "Direct thrombin inhibitor (anticoagulant)",
+  "variants": [
+    {
+      "brand_name": "Pradaxa",
+      "strength": "75 mg",
+      "imprints": [
+        "GS75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Pradaxa",
+      "strength": "110 mg",
+      "imprints": [
+        "GS110"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Pradaxa",
+      "strength": "150 mg",
+      "imprints": [
+        "GS150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    }
+  ]
+}

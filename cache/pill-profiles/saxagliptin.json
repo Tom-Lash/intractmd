@@ -1,0 +1,127 @@
+{
+  "drug_name": "Saxagliptin",
+  "generic_name": "Saxagliptin",
+  "drug_class": "Dipeptidyl Peptidase-4 (DPP-4) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Onglyza",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Onglyza",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

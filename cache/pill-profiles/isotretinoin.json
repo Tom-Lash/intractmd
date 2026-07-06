@@ -1,0 +1,254 @@
+{
+  "drug_name": "Isotretinoin",
+  "generic_name": "Isotretinoin",
+  "drug_class": "Retinoid (Vitamin A derivative)",
+  "variants": [
+    {
+      "brand_name": "Accutane",
+      "strength": "10 mg",
+      "imprints": [
+        "Accutane",
+        "10 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Accutane",
+      "strength": "20 mg",
+      "imprints": [
+        "Accutane",
+        "20 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Accutane",
+      "strength": "40 mg",
+      "imprints": [
+        "Accutane",
+        "40 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Amnesteem",
+      "strength": "10 mg",
+      "imprints": [
+        "Amnesteem",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Amnesteem",
+      "strength": "20 mg",
+      "imprints": [
+        "Amnesteem",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Amnesteem",
+      "strength": "40 mg",
+      "imprints": [
+        "Amnesteem",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Claravis",
+      "strength": "10 mg",
+      "imprints": [
+        "Claravis",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Claravis",
+      "strength": "20 mg",
+      "imprints": [
+        "Claravis",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Claravis",
+      "strength": "40 mg",
+      "imprints": [
+        "Claravis",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Sotret",
+      "strength": "10 mg",
+      "imprints": [
+        "Sotret",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Sotret",
+      "strength": "20 mg",
+      "imprints": [
+        "Sotret",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Sotret",
+      "strength": "40 mg",
+      "imprints": [
+        "Sotret",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

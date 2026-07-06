@@ -1,0 +1,67 @@
+{
+  "drug_name": "Asenapine",
+  "generic_name": "Asenapine maleate",
+  "drug_class": "Atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Saphris",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Allergan (formerly Forest Pharmaceuticals)",
+      "scored": false
+    },
+    {
+      "brand_name": "Saphris",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Allergan (formerly Forest Pharmaceuticals)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Asenapine",
+      "strength": "5 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Mylan, Teva, Aurobindo, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Asenapine",
+      "strength": "10 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Mylan, Teva, Aurobindo, others)",
+      "scored": false
+    }
+  ]
+}

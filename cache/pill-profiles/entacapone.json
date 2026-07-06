@@ -1,0 +1,73 @@
+{
+  "drug_name": "Entacapone",
+  "generic_name": "Entacapone",
+  "drug_class": "Catechol-O-methyltransferase (COMT) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Comtan",
+      "strength": "200 mg",
+      "imprints": [
+        "COMTAN",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown",
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "E 200"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "193",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "M E200"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

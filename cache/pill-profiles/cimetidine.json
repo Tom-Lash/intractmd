@@ -1,0 +1,97 @@
+{
+  "drug_name": "Cimetidine",
+  "generic_name": "Cimetidine",
+  "drug_class": "Histamine H2-receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "CIMETIDINE 200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "CIMETIDINE 300"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "CIMETIDINE 400"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "800 mg",
+      "imprints": [
+        "CIMETIDINE 800"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Various generic manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Tagamet",
+      "strength": "200 mg",
+      "imprints": [
+        "TAGAMET 200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Tagamet HB",
+      "strength": "200 mg",
+      "imprints": [
+        "TAGAMET HB"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    }
+  ]
+}

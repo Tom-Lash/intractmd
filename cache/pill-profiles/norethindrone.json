@@ -1,0 +1,85 @@
+{
+  "drug_name": "Norethindrone",
+  "generic_name": "norethindrone",
+  "drug_class": "Progestin (synthetic progesterone)",
+  "variants": [
+    {
+      "brand_name": "Aygestin",
+      "strength": "5 mg",
+      "imprints": [
+        "AYGESTIN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Norethindrone",
+      "strength": "0.35 mg",
+      "imprints": [
+        "NOR 0.35"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Norethindrone",
+      "strength": "5 mg",
+      "imprints": [
+        "NORETHINDRONE 5 MG",
+        "Various imprints by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Lo Loestrin Fe",
+      "strength": "1 mg norethindrone/10 mcg ethinyl estradiol",
+      "imprints": [
+        "LL"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Norethindrone/Ethinyl Estradiol combinations",
+      "strength": "1 mg/35 mcg, 0.5 mg/35 mcg, 1 mg/50 mcg (various formulations)",
+      "imprints": [
+        "Various by manufacturer and brand"
+      ],
+      "shape": "round",
+      "colors": [
+        "various"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    }
+  ]
+}

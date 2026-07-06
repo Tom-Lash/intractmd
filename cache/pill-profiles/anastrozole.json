@@ -1,0 +1,87 @@
+{
+  "drug_name": "Anastrozole",
+  "generic_name": "Anastrozole",
+  "drug_class": "Aromatase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Arimidex",
+      "strength": "1 mg",
+      "imprints": [
+        "Arimidex",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "AN",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "Accord Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "Logo",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "APO",
+        "AN1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "R",
+        "A1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    }
+  ]
+}

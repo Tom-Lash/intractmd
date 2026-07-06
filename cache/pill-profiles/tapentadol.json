@@ -1,0 +1,177 @@
+{
+  "drug_name": "Tapentadol",
+  "generic_name": "Tapentadol",
+  "drug_class": "Opioid analgesic; norepinephrine reuptake inhibitor",
+  "variants": [
+    {
+      "brand_name": "Nucynta",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta ER",
+      "strength": "50 mg",
+      "imprints": [
+        "NUCYNTA ER",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta ER",
+      "strength": "100 mg",
+      "imprints": [
+        "NUCYNTA ER",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta ER",
+      "strength": "150 mg",
+      "imprints": [
+        "NUCYNTA ER",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta ER",
+      "strength": "200 mg",
+      "imprints": [
+        "NUCYNTA ER",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nucynta ER",
+      "strength": "250 mg",
+      "imprints": [
+        "NUCYNTA ER",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tapentadol",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tapentadol",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tapentadol",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

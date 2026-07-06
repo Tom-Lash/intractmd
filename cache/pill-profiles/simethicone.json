@@ -1,0 +1,83 @@
+{
+  "drug_name": "Simethicone",
+  "generic_name": "Simethicone",
+  "drug_class": "Antifoaming agent",
+  "variants": [
+    {
+      "brand_name": "Gas-X",
+      "strength": "80 mg",
+      "imprints": [
+        "GX80"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Novartis Consumer Health",
+      "scored": false
+    },
+    {
+      "brand_name": "Gas-X",
+      "strength": "125 mg",
+      "imprints": [
+        "GX125"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Novartis Consumer Health",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Simethicone",
+      "strength": "80 mg",
+      "imprints": [
+        "80"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Simethicone",
+      "strength": "125 mg",
+      "imprints": [
+        "125"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Phazyme",
+      "strength": "125 mg",
+      "imprints": [
+        "PHAZYME"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Prestige Brands Holdings",
+      "scored": false
+    }
+  ]
+}

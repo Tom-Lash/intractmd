@@ -1,0 +1,97 @@
+{
+  "drug_name": "Febuxostat",
+  "generic_name": "Febuxostat",
+  "drug_class": "Xanthine Oxidase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Uloric",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Uloric",
+      "strength": "80 mg",
+      "imprints": [
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Uloric",
+      "strength": "120 mg",
+      "imprints": [
+        "120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "FX 40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Various (Teva, Mylan, Luye Pharma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "FX 80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various (Teva, Mylan, Luye Pharma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "FX 120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various (Teva, Mylan, Luye Pharma, others)",
+      "scored": false
+    }
+  ]
+}

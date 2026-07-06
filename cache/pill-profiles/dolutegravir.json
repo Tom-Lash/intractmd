@@ -1,0 +1,97 @@
+{
+  "drug_name": "Dolutegravir",
+  "generic_name": "dolutegravir sodium",
+  "drug_class": "Integrase strand transfer inhibitor (INSTI)",
+  "variants": [
+    {
+      "brand_name": "Tivicay",
+      "strength": "10 mg",
+      "imprints": [
+        "GSI 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Tivicay",
+      "strength": "25 mg",
+      "imprints": [
+        "GSI 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "light green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Tivicay",
+      "strength": "50 mg",
+      "imprints": [
+        "GSI 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "light pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Dolutegravir)",
+      "strength": "50 mg",
+      "imprints": [
+        "DTG 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Dolutegravir)",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Cipla Limited",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Dolutegravir)",
+      "strength": "50 mg",
+      "imprints": [
+        "DLT 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

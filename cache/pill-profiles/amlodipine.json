@@ -1,0 +1,327 @@
+{
+  "drug_name": "Amlodipine",
+  "generic_name": "Amlodipine besylate",
+  "drug_class": "Calcium channel blocker (dihydropyridine)",
+  "variants": [
+    {
+      "brand_name": "Norvasc",
+      "strength": "2.5 mg",
+      "imprints": [
+        "NORVASC",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Norvasc",
+      "strength": "5 mg",
+      "imprints": [
+        "NORVASC",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Norvasc",
+      "strength": "10 mg",
+      "imprints": [
+        "NORVASC",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "M",
+        "A2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "APO",
+        "A2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "93",
+        "2127"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "M",
+        "A5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "APO",
+        "A5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "93",
+        "2128"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "LUPIN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M",
+        "A10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "APO",
+        "A10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "93",
+        "2129"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "LUPIN",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "GG",
+        "C25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "GG",
+        "C50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "GG",
+        "C100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "AN",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Amneal",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "AN",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Amneal",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "AN",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Amneal",
+      "scored": false
+    }
+  ]
+}

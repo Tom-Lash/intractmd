@@ -1,0 +1,40 @@
+{
+  "drug_name": "Guselkumab",
+  "generic_name": "guselkumab",
+  "drug_class": "Monoclonal Antibody (Anti-IL-23)",
+  "variants": [
+    {
+      "brand_name": "Tremfya",
+      "strength": "100 mg/mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "Prefilled pen (autoinjector)",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Tremfya",
+      "strength": "100 mg/mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "Prefilled syringe",
+      "route": "Subcutaneous"
+    }
+  ],
+  "note": "Guselkumab is a monoclonal antibody administered by injection only. It is NOT available as an oral tablet or pill in any formulation in the United States. The drug is supplied exclusively as injectable solutions in prefilled pens or syringes."
+}

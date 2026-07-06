@@ -1,0 +1,29 @@
+{
+  "drug_name": "Latanoprost",
+  "generic_name": "Latanoprost",
+  "drug_class": "Prostaglandin F analog (ophthalmic)",
+  "note": "Latanoprost is primarily available as an ophthalmic solution/drops, not as oral tablets or capsules for systemic use in the US",
+  "variants": [
+    {
+      "brand_name": "Xalatan",
+      "strength": "0.005%",
+      "formulation": "Ophthalmic solution",
+      "container": "2.5 mL bottle",
+      "manufacturer": "Pfizer",
+      "physical_form": "liquid",
+      "color": "clear to slightly opalescent",
+      "note": "Solution for topical ocular administration only"
+    },
+    {
+      "brand_name": "Generic Latanoprost",
+      "strength": "0.005%",
+      "formulation": "Ophthalmic solution",
+      "container": "2.5 mL bottle",
+      "manufacturer": "Multiple (Apotex, Cipla, Sandoz, others)",
+      "physical_form": "liquid",
+      "color": "clear to slightly opalescent",
+      "note": "Solution for topical ocular administration only"
+    }
+  ],
+  "important_note": "Latanoprost is NOT available as an oral solid dosage form (tablet or capsule) in the United States. It is exclusively formulated as an ophthalmic solution for treatment of ocular hypertension and open-angle glaucoma. The database query for 'pill physical characteristics' does not apply to this medication."
+}

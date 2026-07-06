@@ -1,0 +1,231 @@
+{
+  "drug_name": "Diazepam",
+  "generic_name": "Diazepam",
+  "drug_class": "Benzodiazepine",
+  "variants": [
+    {
+      "brand_name": "Valium",
+      "strength": "2 mg",
+      "imprints": [
+        "VALIUM",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Roche",
+      "scored": true
+    },
+    {
+      "brand_name": "Valium",
+      "strength": "5 mg",
+      "imprints": [
+        "VALIUM",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roche",
+      "scored": true
+    },
+    {
+      "brand_name": "Valium",
+      "strength": "10 mg",
+      "imprints": [
+        "VALIUM",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roche",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "2",
+        "Z2067"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Greenstone",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "Z2068"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Greenstone",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "Z2069"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "E2",
+        "1751"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "E5",
+        "1752"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "E10",
+        "1753"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "MP"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "MP"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "V2",
+        "2632"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Viatris",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "V5",
+        "2632"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Viatris",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "V10",
+        "2632"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Viatris",
+      "scored": true
+    }
+  ]
+}

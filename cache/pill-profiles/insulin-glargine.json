@@ -1,0 +1,64 @@
+{
+  "drug_name": "Insulin Glargine",
+  "generic_name": "Insulin Glargine",
+  "drug_class": "Long-acting Basal Insulin",
+  "note": "Insulin Glargine is a liquid injectable medication, NOT available as oral pills/tablets in the United States",
+  "variants": [
+    {
+      "brand_name": "Lantus",
+      "strength": "100 units/mL",
+      "form": "Subcutaneous Injection Solution",
+      "imprints": [],
+      "shape": "N/A - Liquid in vial/pen",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Toujeo",
+      "strength": "300 units/mL",
+      "form": "Subcutaneous Injection Solution",
+      "imprints": [],
+      "shape": "N/A - Liquid in prefilled pen",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Basaglar",
+      "strength": "100 units/mL",
+      "form": "Subcutaneous Injection Solution",
+      "imprints": [],
+      "shape": "N/A - Liquid in vial/pen",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Rezvoglar",
+      "strength": "100 units/mL",
+      "form": "Subcutaneous Injection Solution",
+      "imprints": [],
+      "shape": "N/A - Liquid in prefilled pen",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false
+    }
+  ]
+}

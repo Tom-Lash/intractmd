@@ -1,0 +1,82 @@
+{
+  "drug_name": "Darunavir",
+  "generic_name": "darunavir ethanolate",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "variants": [
+    {
+      "brand_name": "Prezista",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Prezista",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Prezista",
+      "strength": "400 mg",
+      "imprints": [
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Prezista",
+      "strength": "600 mg",
+      "imprints": [
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Prezista",
+      "strength": "800 mg",
+      "imprints": [
+        "800"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 22,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

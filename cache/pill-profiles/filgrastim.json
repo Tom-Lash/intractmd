@@ -1,0 +1,58 @@
+{
+  "drug_name": "Filgrastim",
+  "generic_name": "Filgrastim",
+  "drug_class": "Granulocyte Colony-Stimulating Factor (G-CSF)",
+  "note": "Filgrastim is available ONLY as injectable formulations (subcutaneous or intravenous) in the United States. No oral tablet or capsule formulations exist.",
+  "variants": [
+    {
+      "brand_name": "Neupogen",
+      "strength": "300 mcg/0.5 mL",
+      "formulation_type": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Amgen",
+      "route": "Subcutaneous or Intravenous"
+    },
+    {
+      "brand_name": "Neupogen",
+      "strength": "480 mcg/0.8 mL",
+      "formulation_type": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Amgen",
+      "route": "Subcutaneous or Intravenous"
+    },
+    {
+      "brand_name": "Neupogen",
+      "strength": "300 mcg/mL",
+      "formulation_type": "Vial - subcutaneous or intravenous injection",
+      "manufacturer": "Amgen",
+      "route": "Subcutaneous or Intravenous"
+    },
+    {
+      "brand_name": "Granix",
+      "strength": "300 mcg/0.5 mL",
+      "formulation_type": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Teva Pharmaceuticals",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Granix",
+      "strength": "480 mcg/0.8 mL",
+      "formulation_type": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Teva Pharmaceuticals",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Nivestym",
+      "strength": "300 mcg/0.5 mL",
+      "formulation_type": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Hospira/Pfizer",
+      "route": "Subcutaneous or Intravenous"
+    },
+    {
+      "brand_name": "Nivestym",
+      "strength": "480 mcg/0.8 mL",
+      "formulation_type": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Hospira/Pfizer",
+      "route": "Subcutaneous or Intravenous"
+    }
+  ],
+  "clarification": "Filgrastim has NO oral pill, tablet, or capsule formulations. All US formulations are injectable solutions for parenteral administration only."
+}

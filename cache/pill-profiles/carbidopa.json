@@ -1,0 +1,83 @@
+{
+  "drug_name": "Carbidopa",
+  "generic_name": "carbidopa",
+  "drug_class": "decarboxylase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Lodosyn",
+      "strength": "25 mg",
+      "imprints": [
+        "LODOSYN",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carbidopa",
+      "strength": "25 mg",
+      "imprints": [
+        "M 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carbidopa",
+      "strength": "25 mg",
+      "imprints": [
+        "CARBIDOPA 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carbidopa",
+      "strength": "25 mg",
+      "imprints": [
+        "54 142"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carbidopa",
+      "strength": "10 mg",
+      "imprints": [
+        "M 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

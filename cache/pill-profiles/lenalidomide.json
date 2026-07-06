@@ -1,0 +1,247 @@
+{
+  "drug_name": "Lenalidomide",
+  "generic_name": "Lenalidomide",
+  "drug_class": "Immunomodulatory agent (IMiD)",
+  "variants": [
+    {
+      "brand_name": "Revlimid",
+      "strength": "5 mg",
+      "imprints": [
+        "REVLIMID 5 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Revlimid",
+      "strength": "10 mg",
+      "imprints": [
+        "REVLIMID 10 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Revlimid",
+      "strength": "15 mg",
+      "imprints": [
+        "REVLIMID 15 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Revlimid",
+      "strength": "20 mg",
+      "imprints": [
+        "REVLIMID 20 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Revlimid",
+      "strength": "25 mg",
+      "imprints": [
+        "REVLIMID 25 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "5 mg",
+      "imprints": [
+        "L 5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "10 mg",
+      "imprints": [
+        "L 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "15 mg",
+      "imprints": [
+        "L 15"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "20 mg",
+      "imprints": [
+        "L 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "25 mg",
+      "imprints": [
+        "L 25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lenalidomide",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    }
+  ]
+}

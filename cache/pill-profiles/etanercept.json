@@ -1,0 +1,44 @@
+{
+  "drug_name": "Etanercept",
+  "generic_name": "Etanercept",
+  "drug_class": "Tumor Necrosis Factor (TNF) Inhibitor - Biologic",
+  "note": "Etanercept is a biologic medication available only as injectable formulations (subcutaneous or intravenous), NOT as oral tablets or pills. No pill physical characteristics exist.",
+  "variants": [
+    {
+      "brand_name": "Enbrel",
+      "strength": "25 mg/0.5 mL",
+      "formulation": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Amgen",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Enbrel",
+      "strength": "50 mg/1 mL",
+      "formulation": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Amgen",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Enbrel SureClick",
+      "strength": "50 mg/1 mL",
+      "formulation": "Autoinjector - subcutaneous injection",
+      "manufacturer": "Amgen",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Erelzi",
+      "strength": "25 mg/0.5 mL",
+      "formulation": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Sandoz",
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Erelzi",
+      "strength": "50 mg/1 mL",
+      "formulation": "Prefilled syringe - subcutaneous injection",
+      "manufacturer": "Sandoz",
+      "route": "Subcutaneous"
+    }
+  ],
+  "important_note": "No pill or tablet formulations exist for Etanercept in the United States. This is a biologic medication that requires parenteral (injectable) administration only."
+}

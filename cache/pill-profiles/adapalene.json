@@ -1,0 +1,36 @@
+{
+  "drug_name": "Adapalene",
+  "generic_name": "Adapalene",
+  "drug_class": "Retinoid (Topical)",
+  "note": "Adapalene is primarily available as a topical formulation (cream, gel, lotion) and is not manufactured as an oral tablet or capsule in the United States. Therefore, no pill physical characteristics exist for this medication.",
+  "variants": [
+    {
+      "brand_name": "Differin",
+      "strength": "0.1%",
+      "formulation": "Topical Gel",
+      "manufacturer": "Galderma Laboratories",
+      "packaging": "45g tube"
+    },
+    {
+      "brand_name": "Differin",
+      "strength": "0.3%",
+      "formulation": "Topical Gel",
+      "manufacturer": "Galderma Laboratories",
+      "packaging": "45g tube"
+    },
+    {
+      "brand_name": "Generic Adapalene",
+      "strength": "0.1%",
+      "formulation": "Topical Cream",
+      "manufacturer": "Multiple manufacturers",
+      "packaging": "45g tube"
+    },
+    {
+      "brand_name": "Differin",
+      "strength": "0.1%",
+      "formulation": "Topical Lotion",
+      "manufacturer": "Galderma Laboratories",
+      "packaging": "59mL bottle"
+    }
+  ]
+}

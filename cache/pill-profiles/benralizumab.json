@@ -1,0 +1,25 @@
+{
+  "drug_name": "Benralizumab",
+  "generic_name": "benralizumab",
+  "drug_class": "Monoclonal antibody (anti-IL-5 receptor alpha)",
+  "note": "Benralizumab is a biologic medication administered by subcutaneous injection only. It is NOT available in oral pill form in any formulation or manufacturer variant in the US market.",
+  "variants": [
+    {
+      "brand_name": "Fasenra",
+      "strength": "30 mg/mL",
+      "formulation": "Subcutaneous injection - pre-filled syringe",
+      "manufacturer": "AstraZeneca",
+      "administration_route": "Subcutaneous",
+      "available": true
+    },
+    {
+      "brand_name": "Fasenra",
+      "strength": "30 mg/mL",
+      "formulation": "Subcutaneous injection - pre-filled pen",
+      "manufacturer": "AstraZeneca",
+      "administration_route": "Subcutaneous",
+      "available": true
+    }
+  ],
+  "clarification": "Benralizumab has no pill, tablet, or capsule formulations. It is exclusively available as a parenteral injection for treatment of eosinophilic asthma and chronic rhinosinusitis with nasal polyps. The physical characteristics requested (imprints, shape, color, coating, size) do not apply to this medication."
+}

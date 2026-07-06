@@ -1,0 +1,139 @@
+{
+  "drug_name": "Atazanavir",
+  "generic_name": "atazanavir sulfate",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "variants": [
+    {
+      "brand_name": "Reyataz",
+      "strength": "100 mg",
+      "imprints": [
+        "BMS",
+        "1357"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Reyataz",
+      "strength": "150 mg",
+      "imprints": [
+        "BMS",
+        "1358"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Reyataz",
+      "strength": "200 mg",
+      "imprints": [
+        "BMS",
+        "1359"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Reyataz",
+      "strength": "300 mg",
+      "imprints": [
+        "BMS",
+        "1360"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple (Mylan, Teva, Cipla, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple (Mylan, Teva, Cipla, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Multiple (Mylan, Teva, Cipla, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Multiple (Mylan, Teva, Cipla, others)",
+      "scored": false
+    }
+  ]
+}

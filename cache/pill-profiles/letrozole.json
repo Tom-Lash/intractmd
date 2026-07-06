@@ -1,0 +1,101 @@
+{
+  "drug_name": "Letrozole",
+  "generic_name": "Letrozole",
+  "drug_class": "Aromatase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Femara",
+      "strength": "2.5 mg",
+      "imprints": [
+        "FEMARA",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Letrozole",
+      "strength": "2.5 mg",
+      "imprints": [
+        "L"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Letrozole",
+      "strength": "2.5 mg",
+      "imprints": [
+        "LET 2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Letrozole",
+      "strength": "2.5 mg",
+      "imprints": [
+        "93",
+        "7247"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Letrozole",
+      "strength": "2.5 mg",
+      "imprints": [
+        "AN",
+        "322"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Letrozole",
+      "strength": "2.5 mg",
+      "imprints": [
+        "WPI",
+        "3121"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

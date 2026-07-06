@@ -1,0 +1,97 @@
+{
+  "drug_name": "Desipramine",
+  "generic_name": "Desipramine Hydrochloride",
+  "drug_class": "Tricyclic Antidepressant (TCA)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

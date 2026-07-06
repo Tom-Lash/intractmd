@@ -1,0 +1,187 @@
+{
+  "drug_name": "Isosorbide Dinitrate",
+  "generic_name": "Isosorbide Dinitrate",
+  "drug_class": "Nitrate Vasodilator",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Isordil",
+      "strength": "5 mg",
+      "imprints": [
+        "ISORDIL 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Wyeth",
+      "scored": true
+    },
+    {
+      "brand_name": "Isordil",
+      "strength": "10 mg",
+      "imprints": [
+        "ISORDIL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Wyeth",
+      "scored": true
+    },
+    {
+      "brand_name": "Isordil",
+      "strength": "20 mg",
+      "imprints": [
+        "ISORDIL 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Wyeth",
+      "scored": true
+    },
+    {
+      "brand_name": "Isordil Titradose",
+      "strength": "5 mg",
+      "imprints": [
+        "ISORDIL 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Wyeth",
+      "scored": true
+    },
+    {
+      "brand_name": "Isordil Titradose",
+      "strength": "10 mg",
+      "imprints": [
+        "ISORDIL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Wyeth",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "M 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "M 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    }
+  ]
+}

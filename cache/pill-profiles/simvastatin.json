@@ -1,0 +1,179 @@
+{
+  "drug_name": "Simvastatin",
+  "generic_name": "Simvastatin",
+  "drug_class": "HMG-CoA Reductase Inhibitor (Statin)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "SIM 5",
+        "54 142",
+        "MP 512",
+        "ZC 13"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "SIM 10",
+        "54 143",
+        "MP 513",
+        "ZC 14"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "cream"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "SIM 20",
+        "54 144",
+        "MP 514",
+        "ZC 15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "beige",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "SIM 40",
+        "54 145",
+        "MP 515",
+        "ZC 16"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "pink",
+        "salmon"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "SIM 80",
+        "54 146",
+        "MP 516",
+        "ZC 17"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Zocor",
+      "strength": "5 mg",
+      "imprints": [
+        "ZOCOR 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Zocor",
+      "strength": "10 mg",
+      "imprints": [
+        "ZOCOR 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Zocor",
+      "strength": "20 mg",
+      "imprints": [
+        "ZOCOR 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Zocor",
+      "strength": "40 mg",
+      "imprints": [
+        "ZOCOR 40"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Zocor",
+      "strength": "80 mg",
+      "imprints": [
+        "ZOCOR 80"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Merck",
+      "scored": false
+    }
+  ]
+}

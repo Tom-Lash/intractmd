@@ -1,0 +1,97 @@
+{
+  "drug_name": "Amoxicillin",
+  "generic_name": "Amoxicillin trihydrate",
+  "drug_class": "Beta-lactam antibiotic (Penicillin)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "AMOXICILLIN 250mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "AMOXICILLIN 500mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "875 mg",
+      "imprints": [
+        "500",
+        "AMOX 875"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "125 mg/5mL",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg/5mL",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg/5mL",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

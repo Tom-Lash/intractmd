@@ -1,0 +1,231 @@
+{
+  "drug_name": "Celecoxib",
+  "generic_name": "Celecoxib",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID), Selective COX-2 Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Celebrex",
+      "strength": "50 mg",
+      "imprints": [
+        "Celebrex 50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gold"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Celebrex",
+      "strength": "100 mg",
+      "imprints": [
+        "Celebrex 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Celebrex",
+      "strength": "200 mg",
+      "imprints": [
+        "Celebrex 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Celebrex",
+      "strength": "400 mg",
+      "imprints": [
+        "Celebrex 400"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "50 mg",
+      "imprints": [
+        "ZC 17"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gold"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "100 mg",
+      "imprints": [
+        "ZC 18"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "200 mg",
+      "imprints": [
+        "ZC 19"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "400 mg",
+      "imprints": [
+        "ZC 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "100 mg",
+      "imprints": [
+        "L544"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "200 mg",
+      "imprints": [
+        "L545"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "50 mg",
+      "imprints": [
+        "44 S 433"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gold"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "100 mg",
+      "imprints": [
+        "44 S 434"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "200 mg",
+      "imprints": [
+        "44 S 435"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Celecoxib",
+      "strength": "400 mg",
+      "imprints": [
+        "44 S 436"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

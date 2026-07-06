@@ -1,0 +1,210 @@
+{
+  "drug_name": "Acetaminophen",
+  "generic_name": "Acetaminophen",
+  "drug_class": "Analgesic, Antipyretic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "325 mg",
+      "imprints": [
+        "325"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "650 mg",
+      "imprints": [
+        "650"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Tylenol",
+      "strength": "325 mg",
+      "imprints": [
+        "TYLENOL"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Tylenol",
+      "strength": "500 mg",
+      "imprints": [
+        "TYLENOL",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Tylenol Extra Strength",
+      "strength": "500 mg",
+      "imprints": [
+        "TYLENOL",
+        "EXTRA"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Tylenol",
+      "strength": "650 mg",
+      "imprints": [
+        "TYLENOL",
+        "650"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Tylenol 8 Hour Extended Release",
+      "strength": "650 mg",
+      "imprints": [
+        "TYLENOL",
+        "8HR"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "325 mg",
+      "imprints": [
+        "APAP",
+        "325"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "APAP",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Acetaminophen Capsule",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Extra Strength",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Store Brand Extra Strength",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

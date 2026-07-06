@@ -1,0 +1,166 @@
+{
+  "drug_name": "Clozapine",
+  "generic_name": "clozapine",
+  "drug_class": "Atypical Antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Clozaril",
+      "strength": "25 mg",
+      "imprints": [
+        "CLOZARIL",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "HLS Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "Clozaril",
+      "strength": "100 mg",
+      "imprints": [
+        "CLOZARIL",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "HLS Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "Fazaclo",
+      "strength": "25 mg",
+      "imprints": [
+        "FAZACLO",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Fazaclo",
+      "strength": "100 mg",
+      "imprints": [
+        "FAZACLO",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Fazaclo",
+      "strength": "150 mg",
+      "imprints": [
+        "FAZACLO",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Versacloz",
+      "strength": "50 mg/mL",
+      "imprints": [
+        "liquid suspension"
+      ],
+      "shape": "liquid",
+      "colors": [
+        "orange"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Tris Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

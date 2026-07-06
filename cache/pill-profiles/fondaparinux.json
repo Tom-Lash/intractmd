@@ -1,0 +1,148 @@
+{
+  "drug_name": "Fondaparinux",
+  "generic_name": "Fondaparinux sodium",
+  "drug_class": "Selective Factor Xa inhibitor (anticoagulant)",
+  "variants": [
+    {
+      "brand_name": "Arixtra",
+      "strength": "1.5 mg/0.3 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Aspen Pharmacare",
+      "scored": false
+    },
+    {
+      "brand_name": "Arixtra",
+      "strength": "2.5 mg/0.5 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Aspen Pharmacare",
+      "scored": false
+    },
+    {
+      "brand_name": "Arixtra",
+      "strength": "5 mg/0.4 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Aspen Pharmacare",
+      "scored": false
+    },
+    {
+      "brand_name": "Arixtra",
+      "strength": "7.5 mg/0.6 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Aspen Pharmacare",
+      "scored": false
+    },
+    {
+      "brand_name": "Arixtra",
+      "strength": "10 mg/0.8 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Aspen Pharmacare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fondaparinux",
+      "strength": "1.5 mg/0.3 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fondaparinux",
+      "strength": "2.5 mg/0.5 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fondaparinux",
+      "strength": "5 mg/0.4 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fondaparinux",
+      "strength": "7.5 mg/0.6 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fondaparinux",
+      "strength": "10 mg/0.8 mL",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ],
+  "note": "Fondaparinux is available only as a subcutaneous injection (prefilled syringe). No oral tablet or capsule formulations exist in the US market. Physical characteristics are limited as the medication is a liquid injectable solution."
+}

@@ -1,0 +1,242 @@
+{
+  "drug_name": "Omeprazole",
+  "generic_name": "Omeprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "variants": [
+    {
+      "brand_name": "Prilosec",
+      "strength": "20 mg",
+      "imprints": [
+        "PRILOSEC",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Prilosec",
+      "strength": "40 mg",
+      "imprints": [
+        "PRILOSEC",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "10 mg",
+      "imprints": [
+        "APO",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 14,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "APO",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "APO",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "MYLAN",
+        "MYLAN 262"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "MYLAN",
+        "MYLAN 263"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "TEVA",
+        "7665"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "TEVA",
+        "7666"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "SUN",
+        "S919"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "SUN",
+        "S920"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "L368"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Omeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "L369"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Prilosec OTC",
+      "strength": "20 mg",
+      "imprints": [
+        "PRILOSEC OTC"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    }
+  ]
+}

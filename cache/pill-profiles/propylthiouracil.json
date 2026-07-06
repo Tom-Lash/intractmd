@@ -1,0 +1,39 @@
+{
+  "drug_name": "Propylthiouracil",
+  "generic_name": "Propylthiouracil",
+  "drug_class": "Antithyroid Agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "PTU",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various (Teva, Hikma, Lannett, others)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "PROPYLTHIOURACIL",
+        "50 MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various manufacturers",
+      "scored": true
+    }
+  ]
+}

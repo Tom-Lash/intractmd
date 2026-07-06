@@ -1,0 +1,150 @@
+{
+  "drug_name": "Hydrochlorothiazide",
+  "generic_name": "Hydrochlorothiazide",
+  "drug_class": "Thiazide diuretic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "12.5 mg",
+      "imprints": [
+        "H12.5",
+        "HCTZ 12.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "H25",
+        "HCTZ 25",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "H50",
+        "HCTZ 50",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Microzide",
+      "strength": "12.5 mg",
+      "imprints": [
+        "Microzide",
+        "12.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "M25",
+        "93 38"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "54 392",
+        "MYLAN"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "G 375"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "12.5 mg",
+      "imprints": [
+        "MP 83"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mutual Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "MP 84"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Mutual Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

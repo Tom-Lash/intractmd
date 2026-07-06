@@ -1,0 +1,147 @@
+{
+  "drug_name": "Vardenafil",
+  "generic_name": "Vardenafil hydrochloride",
+  "drug_class": "Phosphodiesterase-5 (PDE5) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Levitra",
+      "strength": "2.5 mg",
+      "imprints": [
+        "LEVITRA",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Bayer Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Levitra",
+      "strength": "5 mg",
+      "imprints": [
+        "LEVITRA",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Bayer Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Levitra",
+      "strength": "10 mg",
+      "imprints": [
+        "LEVITRA",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Bayer Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Levitra",
+      "strength": "20 mg",
+      "imprints": [
+        "LEVITRA",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Bayer Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Staxyn",
+      "strength": "10 mg",
+      "imprints": [
+        "STAXYN",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Bayer Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vardenafil",
+      "strength": "2.5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vardenafil",
+      "strength": "5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vardenafil",
+      "strength": "10 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vardenafil",
+      "strength": "20 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

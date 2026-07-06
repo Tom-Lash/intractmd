@@ -1,0 +1,52 @@
+{
+  "drug_name": "Upadacitinib",
+  "generic_name": "upadacitinib",
+  "drug_class": "Janus kinase (JAK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Rinvoq",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "AbbVie Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Rinvoq",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "AbbVie Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Rinvoq",
+      "strength": "45 mg",
+      "imprints": [
+        "45"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "AbbVie Inc.",
+      "scored": false
+    }
+  ]
+}

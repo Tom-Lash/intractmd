@@ -1,0 +1,52 @@
+{
+  "drug_name": "Probenecid",
+  "generic_name": "Probenecid",
+  "drug_class": "Uricosuric Agent; Antigout Agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "PROBENECID 500MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Benemid",
+      "strength": "500 mg",
+      "imprints": [
+        "BENEMID 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck (historical - limited current availability)",
+      "scored": false
+    }
+  ]
+}

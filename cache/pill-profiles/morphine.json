@@ -1,0 +1,314 @@
+{
+  "drug_name": "Morphine",
+  "generic_name": "Morphine sulfate",
+  "drug_class": "Opioid analgesic",
+  "variants": [
+    {
+      "brand_name": "MS Contin",
+      "strength": "15 mg",
+      "imprints": [
+        "MS",
+        "15"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "gray"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "MS Contin",
+      "strength": "30 mg",
+      "imprints": [
+        "MS",
+        "30"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "purple"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "MS Contin",
+      "strength": "60 mg",
+      "imprints": [
+        "MS",
+        "60"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "MS Contin",
+      "strength": "100 mg",
+      "imprints": [
+        "MS",
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "gray"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "MS Contin",
+      "strength": "200 mg",
+      "imprints": [
+        "MS",
+        "200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "10 mg",
+      "imprints": [
+        "KAD",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 18,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "20 mg",
+      "imprints": [
+        "KAD",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gray",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "30 mg",
+      "imprints": [
+        "KAD",
+        "30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 20,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "50 mg",
+      "imprints": [
+        "KAD",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 21,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "60 mg",
+      "imprints": [
+        "KAD",
+        "60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 21,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "80 mg",
+      "imprints": [
+        "KAD",
+        "80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 22,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Kadian",
+      "strength": "100 mg",
+      "imprints": [
+        "KAD",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "clear"
+      ],
+      "coating": "capsule",
+      "size_mm": 22,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Morphine",
+      "strength": "15 mg",
+      "imprints": [
+        "54",
+        "542"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Roxane Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Morphine",
+      "strength": "30 mg",
+      "imprints": [
+        "54",
+        "543"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Roxane Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Morphine",
+      "strength": "60 mg",
+      "imprints": [
+        "54",
+        "544"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Roxane Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "DepoDur",
+      "strength": "10 mg",
+      "imprints": [
+        "DepoDur"
+      ],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "injectable suspension",
+      "size_mm": null,
+      "manufacturer": "Hospira",
+      "scored": false
+    },
+    {
+      "brand_name": "DepoDur",
+      "strength": "15 mg",
+      "imprints": [
+        "DepoDur"
+      ],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "injectable suspension",
+      "size_mm": null,
+      "manufacturer": "Hospira",
+      "scored": false
+    },
+    {
+      "brand_name": "Astramorph",
+      "strength": "0.5 mg/mL",
+      "imprints": [
+        "Astramorph"
+      ],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "injectable solution",
+      "size_mm": null,
+      "manufacturer": "Hospira",
+      "scored": false
+    },
+    {
+      "brand_name": "Astramorph",
+      "strength": "1 mg/mL",
+      "imprints": [
+        "Astramorph"
+      ],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "injectable solution",
+      "size_mm": null,
+      "manufacturer": "Hospira",
+      "scored": false
+    }
+  ]
+}

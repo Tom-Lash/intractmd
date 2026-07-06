@@ -1,0 +1,103 @@
+{
+  "drug_name": "Betamethasone",
+  "generic_name": "Betamethasone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "variants": [
+    {
+      "brand_name": "Celestone",
+      "strength": "0.6 mg",
+      "imprints": [
+        "SCHERING",
+        "295"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Schering-Plough",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betamethasone",
+      "strength": "0.6 mg",
+      "imprints": [
+        "M",
+        "B6"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betamethasone",
+      "strength": "0.6 mg",
+      "imprints": [
+        "WATSON",
+        "785"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betamethasone",
+      "strength": "0.6 mg",
+      "imprints": [
+        "44",
+        "291"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betamethasone",
+      "strength": "0.6 mg",
+      "imprints": [
+        "TEVA",
+        "3173"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betamethasone",
+      "strength": "0.6 mg",
+      "imprints": [
+        "AN",
+        "401"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Amneal Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

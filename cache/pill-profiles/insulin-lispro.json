@@ -1,0 +1,45 @@
+{
+  "drug_name": "Insulin Lispro",
+  "generic_name": "Insulin Lispro",
+  "drug_class": "Rapid-acting Insulin",
+  "note": "Insulin Lispro is a injectable medication, not an oral tablet. It is dispensed as a liquid solution in vials or prefilled pens, not as pills with imprints, shapes, or colors in the traditional sense.",
+  "variants": [
+    {
+      "brand_name": "Humalog",
+      "strength": "100 units/mL",
+      "format": "Vial",
+      "volume": "10 mL",
+      "container_type": "Glass vial with rubber stopper",
+      "manufacturer": "Eli Lilly and Company",
+      "appearance": "Clear, colorless solution"
+    },
+    {
+      "brand_name": "Humalog",
+      "strength": "100 units/mL",
+      "format": "Prefilled Pen (KwikPen)",
+      "volume": "3 mL cartridge",
+      "container_type": "Prefilled disposable pen",
+      "manufacturer": "Eli Lilly and Company",
+      "appearance": "Clear, colorless solution in pen device"
+    },
+    {
+      "brand_name": "Admelog",
+      "strength": "100 units/mL",
+      "format": "Vial",
+      "volume": "10 mL",
+      "container_type": "Glass vial with rubber stopper",
+      "manufacturer": "Sanofi-Aventis U.S. LLC",
+      "appearance": "Clear, colorless solution"
+    },
+    {
+      "brand_name": "Admelog",
+      "strength": "100 units/mL",
+      "format": "Prefilled Pen (SoloStar)",
+      "volume": "3 mL cartridge",
+      "container_type": "Prefilled disposable pen",
+      "manufacturer": "Sanofi-Aventis U.S. LLC",
+      "appearance": "Clear, colorless solution in pen device"
+    }
+  ],
+  "clarification": "Insulin Lispro does not come in pill form. Physical characteristics as requested (imprints, shapes, colors typical of tablets) do not apply to this injectable medication."
+}

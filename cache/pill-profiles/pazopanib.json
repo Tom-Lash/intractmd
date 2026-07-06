@@ -1,0 +1,97 @@
+{
+  "drug_name": "Pazopanib",
+  "generic_name": "Pazopanib hydrochloride",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Votrient",
+      "strength": "200 mg",
+      "imprints": [
+        "GS UDV"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Votrient",
+      "strength": "400 mg",
+      "imprints": [
+        "GS CFM"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "E 107"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Accord Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "Z 71"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "E 108"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Accord Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "Z 72"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

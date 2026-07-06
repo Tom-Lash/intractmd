@@ -1,0 +1,48 @@
+{
+  "drug_name": "Infliximab",
+  "generic_name": "Infliximab",
+  "drug_class": "Tumor Necrosis Factor (TNF) Inhibitor - Monoclonal Antibody",
+  "note": "Infliximab is a biologic medication administered by intravenous infusion or subcutaneous injection. It is NOT available as an oral tablet or pill form in any strength or manufacturer variant in the United States.",
+  "formulations": [
+    {
+      "brand_name": "Remicade",
+      "manufacturer": "Janssen Biotech, Inc.",
+      "route": "Intravenous infusion",
+      "strength": "100 mg",
+      "presentation": "Lyophilized powder for reconstitution in vial"
+    },
+    {
+      "brand_name": "Inflectra",
+      "manufacturer": "Celltrion, Inc.",
+      "route": "Intravenous infusion",
+      "strength": "100 mg",
+      "presentation": "Lyophilized powder for reconstitution in vial",
+      "note": "Biosimilar to Remicade"
+    },
+    {
+      "brand_name": "Renflexis",
+      "manufacturer": "Merck Sharp & Dohme Corp.",
+      "route": "Intravenous infusion",
+      "strength": "100 mg",
+      "presentation": "Lyophilized powder for reconstitution in vial",
+      "note": "Biosimilar to Remicade"
+    },
+    {
+      "brand_name": "Avsola",
+      "manufacturer": "Amgen Inc.",
+      "route": "Intravenous infusion",
+      "strength": "100 mg",
+      "presentation": "Lyophilized powder for reconstitution in vial",
+      "note": "Biosimilar to Remicade"
+    },
+    {
+      "brand_name": "Ixifi",
+      "manufacturer": "Pfizer Inc.",
+      "route": "Intravenous infusion",
+      "strength": "100 mg",
+      "presentation": "Lyophilized powder for reconstitution in vial",
+      "note": "Biosimilar to Remicade"
+    }
+  ],
+  "variants": []
+}

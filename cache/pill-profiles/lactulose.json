@@ -1,0 +1,79 @@
+{
+  "drug_name": "Lactulose",
+  "generic_name": "Lactulose",
+  "drug_class": "Osmotic Laxative",
+  "variants": [
+    {
+      "brand_name": "Generic Lactulose",
+      "strength": "10 g/15 mL",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless to slightly yellow"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Cephulac",
+      "strength": "10 g/15 mL",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless to slightly yellow"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Enulose",
+      "strength": "10 g/15 mL",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless to slightly yellow"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Bausch Health",
+      "scored": false
+    },
+    {
+      "brand_name": "Kristalose",
+      "strength": "10 g",
+      "imprints": [
+        "KRISTALOSE 10"
+      ],
+      "shape": "packet",
+      "colors": [
+        "white"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Kristalose",
+      "strength": "20 g",
+      "imprints": [
+        "KRISTALOSE 20"
+      ],
+      "shape": "packet",
+      "colors": [
+        "white"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Shire",
+      "scored": false
+    }
+  ]
+}

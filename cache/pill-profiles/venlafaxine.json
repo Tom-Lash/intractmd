@@ -1,0 +1,233 @@
+{
+  "drug_name": "Venlafaxine",
+  "generic_name": "Venlafaxine Hydrochloride",
+  "drug_class": "Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)",
+  "variants": [
+    {
+      "brand_name": "Effexor",
+      "strength": "37.5 mg",
+      "imprints": [
+        "EFFEXOR 37.5"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Effexor",
+      "strength": "75 mg",
+      "imprints": [
+        "EFFEXOR 75"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Effexor",
+      "strength": "150 mg",
+      "imprints": [
+        "EFFEXOR 150"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Effexor XR",
+      "strength": "37.5 mg",
+      "imprints": [
+        "EFFEXOR XR 37.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "peach"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Effexor XR",
+      "strength": "75 mg",
+      "imprints": [
+        "EFFEXOR XR 75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Effexor XR",
+      "strength": "150 mg",
+      "imprints": [
+        "EFFEXOR XR 150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Effexor XR",
+      "strength": "225 mg",
+      "imprints": [
+        "EFFEXOR XR 225"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine HCl)",
+      "strength": "37.5 mg",
+      "imprints": [
+        "V 3751",
+        "GG 259",
+        "3601"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo, Lupin)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine HCl)",
+      "strength": "75 mg",
+      "imprints": [
+        "V 3752",
+        "GG 260",
+        "3602"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo, Lupin)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine HCl)",
+      "strength": "150 mg",
+      "imprints": [
+        "V 3753",
+        "GG 261",
+        "3603"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo, Lupin)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine XR)",
+      "strength": "37.5 mg",
+      "imprints": [
+        "V 3754",
+        "GG 262"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "peach"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine XR)",
+      "strength": "75 mg",
+      "imprints": [
+        "V 3755",
+        "GG 263"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine XR)",
+      "strength": "150 mg",
+      "imprints": [
+        "V 3756",
+        "GG 264"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Venlafaxine XR)",
+      "strength": "225 mg",
+      "imprints": [
+        "V 3757",
+        "GG 265"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Aurobindo)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "drug_name": "Olmesartan",
+  "generic_name": "Olmesartan medoxomil",
+  "drug_class": "Angiotensin II receptor blocker (ARB)",
+  "variants": [
+    {
+      "brand_name": "Benicar",
+      "strength": "20 mg",
+      "imprints": [
+        "C75"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    },
+    {
+      "brand_name": "Benicar",
+      "strength": "40 mg",
+      "imprints": [
+        "C77"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    },
+    {
+      "brand_name": "Benicar",
+      "strength": "40 mg",
+      "imprints": [
+        "C78"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

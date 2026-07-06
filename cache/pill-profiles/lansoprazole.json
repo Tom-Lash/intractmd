@@ -1,0 +1,133 @@
+{
+  "drug_name": "Lansoprazole",
+  "generic_name": "Lansoprazole",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "variants": [
+    {
+      "brand_name": "Prevacid",
+      "strength": "15 mg",
+      "imprints": [
+        "PREVACID",
+        "15 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "maroon",
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Prevacid",
+      "strength": "30 mg",
+      "imprints": [
+        "PREVACID",
+        "30 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "maroon",
+        "black"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 21,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lansoprazole",
+      "strength": "15 mg",
+      "imprints": [
+        "L15"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "maroon",
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Various (Sandoz, Teva, Mylan, Dr. Reddy's)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lansoprazole",
+      "strength": "30 mg",
+      "imprints": [
+        "L30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "maroon",
+        "black"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 21,
+      "manufacturer": "Various (Sandoz, Teva, Mylan, Dr. Reddy's)",
+      "scored": false
+    },
+    {
+      "brand_name": "Prevacid SoluTab",
+      "strength": "15 mg",
+      "imprints": [
+        "PREVACID 15"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Prevacid SoluTab",
+      "strength": "30 mg",
+      "imprints": [
+        "PREVACID 30"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lansoprazole (Orally Disintegrating)",
+      "strength": "15 mg",
+      "imprints": [
+        "L 15"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Teva, Mylan, Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lansoprazole (Orally Disintegrating)",
+      "strength": "30 mg",
+      "imprints": [
+        "L 30"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Teva, Mylan, Sandoz",
+      "scored": false
+    }
+  ]
+}

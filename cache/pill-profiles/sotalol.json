@@ -1,0 +1,202 @@
+{
+  "drug_name": "Sotalol",
+  "generic_name": "Sotalol hydrochloride",
+  "drug_class": "Beta-blocker (Class II and III antiarrhythmic)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "44 292"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "AP 274"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "44 293"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "AP 275"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "160 mg",
+      "imprints": [
+        "44 294"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "160 mg",
+      "imprints": [
+        "AP 276"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Betapace",
+      "strength": "80 mg",
+      "imprints": [
+        "BETAPACE 80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Betapace",
+      "strength": "120 mg",
+      "imprints": [
+        "BETAPACE 120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Betapace",
+      "strength": "160 mg",
+      "imprints": [
+        "BETAPACE 160"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Betapace AF",
+      "strength": "80 mg",
+      "imprints": [
+        "BETAPACE AF 80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Betapace AF",
+      "strength": "120 mg",
+      "imprints": [
+        "BETAPACE AF 120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Betapace AF",
+      "strength": "160 mg",
+      "imprints": [
+        "BETAPACE AF 160"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "240 mg",
+      "imprints": [
+        "44 295"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    }
+  ]
+}

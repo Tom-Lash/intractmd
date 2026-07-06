@@ -1,0 +1,183 @@
+{
+  "drug_name": "Clarithromycin",
+  "generic_name": "Clarithromycin",
+  "drug_class": "Macrolide Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Biaxin",
+      "strength": "250 mg",
+      "imprints": [
+        "BIAXIN",
+        "250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Biaxin",
+      "strength": "500 mg",
+      "imprints": [
+        "BIAXIN",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Biaxin XL",
+      "strength": "500 mg",
+      "imprints": [
+        "BIAXIN XL",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "APO",
+        "250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "APO",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "C250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "M",
+        "C500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "93",
+        "7156"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "93",
+        "7157"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "RANBAXY",
+        "2410"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "RANBAXY",
+        "2412"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    }
+  ]
+}

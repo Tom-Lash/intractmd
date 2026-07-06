@@ -1,0 +1,127 @@
+{
+  "drug_name": "Promethazine",
+  "generic_name": "Promethazine Hydrochloride",
+  "drug_class": "First-generation antihistamine; phenothiazine",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "12.5 mg",
+      "imprints": [
+        "54 262"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "12.5 mg",
+      "imprints": [
+        "R 3061"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "54 263"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "R 3062"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "R 3064"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "54 264"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "R 3063"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "R 3065"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Actavis",
+      "scored": false
+    }
+  ]
+}

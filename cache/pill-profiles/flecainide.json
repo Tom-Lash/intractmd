@@ -1,0 +1,103 @@
+{
+  "drug_name": "Flecainide",
+  "generic_name": "Flecainide Acetate",
+  "drug_class": "Class IC Antiarrhythmic",
+  "variants": [
+    {
+      "brand_name": "Tambocor",
+      "strength": "50 mg",
+      "imprints": [
+        "TAMBOCOR",
+        "50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tambocor",
+      "strength": "100 mg",
+      "imprints": [
+        "TAMBOCOR",
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tambocor",
+      "strength": "150 mg",
+      "imprints": [
+        "TAMBOCOR",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "FLECAINIDE",
+        "50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various (Mylan, Teva, Sun Pharma, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "FLECAINIDE",
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Various (Mylan, Teva, Sun Pharma, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "FLECAINIDE",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Various (Mylan, Teva, Sun Pharma, etc.)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "drug_name": "Felodipine",
+  "generic_name": "Felodipine",
+  "drug_class": "Calcium Channel Blocker (Dihydropyridine)",
+  "variants": [
+    {
+      "brand_name": "Plendil",
+      "strength": "2.5 mg",
+      "imprints": [
+        "PLENDIL",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Plendil",
+      "strength": "5 mg",
+      "imprints": [
+        "PLENDIL",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Plendil",
+      "strength": "10 mg",
+      "imprints": [
+        "PLENDIL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "G 2205",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "G 2206",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "G 2207",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "93",
+        "7141"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "93",
+        "7142"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "93",
+        "7143"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "APO",
+        "FLD",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex Inc",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "APO",
+        "FLD",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex Inc",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "APO",
+        "FLD",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex Inc",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "SG",
+        "258"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "SG",
+        "259"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "SG",
+        "260"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

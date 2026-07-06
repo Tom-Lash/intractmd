@@ -1,0 +1,254 @@
+{
+  "drug_name": "Tramadol",
+  "generic_name": "tramadol hydrochloride",
+  "drug_class": "Opioid analgesic",
+  "variants": [
+    {
+      "brand_name": "Ultram",
+      "strength": "50 mg",
+      "imprints": [
+        "ULTRAM",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol",
+      "strength": "50 mg",
+      "imprints": [
+        "M T7"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol",
+      "strength": "50 mg",
+      "imprints": [
+        "Z C 01"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Zydus",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol",
+      "strength": "50 mg",
+      "imprints": [
+        "IP 272"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Innopharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol",
+      "strength": "50 mg",
+      "imprints": [
+        "AN 627"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Alpharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Ultram ER",
+      "strength": "100 mg",
+      "imprints": [
+        "ULTRAM",
+        "ER",
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Ultram ER",
+      "strength": "200 mg",
+      "imprints": [
+        "ULTRAM",
+        "ER",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Ultram ER",
+      "strength": "300 mg",
+      "imprints": [
+        "ULTRAM",
+        "ER",
+        "300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol ER",
+      "strength": "100 mg",
+      "imprints": [
+        "SZ 250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol ER",
+      "strength": "200 mg",
+      "imprints": [
+        "SZ 251"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol ER",
+      "strength": "300 mg",
+      "imprints": [
+        "SZ 252"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol ER",
+      "strength": "100 mg",
+      "imprints": [
+        "ER 100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol ER",
+      "strength": "200 mg",
+      "imprints": [
+        "ER 200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol ER",
+      "strength": "300 mg",
+      "imprints": [
+        "ER 300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol",
+      "strength": "50 mg",
+      "imprints": [
+        "V 58"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Vintage",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tramadol",
+      "strength": "50 mg",
+      "imprints": [
+        "L484"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Kroger",
+      "scored": false
+    }
+  ]
+}

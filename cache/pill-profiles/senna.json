@@ -1,0 +1,97 @@
+{
+  "drug_name": "Senna",
+  "generic_name": "senna leaf extract",
+  "drug_class": "Stimulant laxative",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "8.6 mg",
+      "imprints": [
+        "blank"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Senokot",
+      "strength": "8.6 mg",
+      "imprints": [
+        "SENOKOT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Purdue Products",
+      "scored": false
+    },
+    {
+      "brand_name": "Senna-Lax",
+      "strength": "8.6 mg",
+      "imprints": [
+        "blank"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Ex-Lax",
+      "strength": "15 mg",
+      "imprints": [
+        "EX-LAX"
+      ],
+      "shape": "oval",
+      "colors": [
+        "dark brown"
+      ],
+      "coating": "sugar-coated",
+      "size_mm": 14,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Fletcher's Castoria",
+      "strength": "1.4 mg/5mL",
+      "imprints": [
+        "liquid formulation"
+      ],
+      "shape": "liquid",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "17.2 mg",
+      "imprints": [
+        "blank"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

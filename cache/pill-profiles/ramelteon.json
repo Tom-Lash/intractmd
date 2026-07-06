@@ -1,0 +1,68 @@
+{
+  "drug_name": "Ramelteon",
+  "generic_name": "Ramelteon",
+  "drug_class": "Melatonin Receptor Agonist",
+  "variants": [
+    {
+      "brand_name": "Rozerem",
+      "strength": "8 mg",
+      "imprints": [
+        "ROZEREM",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ramelteon",
+      "strength": "8 mg",
+      "imprints": [
+        "R 8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ramelteon",
+      "strength": "8 mg",
+      "imprints": [
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Dr. Reddy's Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ramelteon",
+      "strength": "8 mg",
+      "imprints": [
+        "RML 8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    }
+  ]
+}

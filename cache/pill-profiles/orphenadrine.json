@@ -1,0 +1,103 @@
+{
+  "drug_name": "Orphenadrine",
+  "generic_name": "Orphenadrine Citrate",
+  "drug_class": "Anticholinergic/Muscle Relaxant",
+  "variants": [
+    {
+      "brand_name": "Norflex",
+      "strength": "100 mg",
+      "imprints": [
+        "NORFLEX",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Graceway Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Orphenadrine Citrate",
+      "strength": "100 mg",
+      "imprints": [
+        "M",
+        "O75"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Orphenadrine Citrate",
+      "strength": "100 mg",
+      "imprints": [
+        "AN",
+        "447"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Alpharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Orphenadrine Citrate",
+      "strength": "100 mg",
+      "imprints": [
+        "93",
+        "71"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Orphenadrine Citrate",
+      "strength": "100 mg",
+      "imprints": [
+        "WATSON",
+        "785"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Orphenadrine Citrate",
+      "strength": "100 mg",
+      "imprints": [
+        "SZ",
+        "533"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharma",
+      "scored": false
+    }
+  ]
+}

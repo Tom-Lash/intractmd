@@ -1,0 +1,191 @@
+{
+  "drug_name": "Imipramine",
+  "generic_name": "Imipramine hydrochloride",
+  "drug_class": "Tricyclic antidepressant (TCA)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "TOFRANIL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple manufacturers (Actavis, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "TOFRANIL 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers (Actavis, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "TOFRANIL 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple manufacturers (Actavis, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Tofranil",
+      "strength": "10 mg",
+      "imprints": [
+        "TOFRANIL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tofranil",
+      "strength": "25 mg",
+      "imprints": [
+        "TOFRANIL 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tofranil",
+      "strength": "50 mg",
+      "imprints": [
+        "TOFRANIL 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "TOFRANIL-PM 75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Tofranil-PM",
+      "strength": "75 mg",
+      "imprints": [
+        "TOFRANIL-PM 75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "TOFRANIL-PM 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Tofranil-PM",
+      "strength": "100 mg",
+      "imprints": [
+        "TOFRANIL-PM 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "125 mg",
+      "imprints": [
+        "TOFRANIL-PM 125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Tofranil-PM",
+      "strength": "125 mg",
+      "imprints": [
+        "TOFRANIL-PM 125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

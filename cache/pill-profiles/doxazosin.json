@@ -1,0 +1,235 @@
+{
+  "drug_name": "Doxazosin",
+  "generic_name": "Doxazosin mesylate",
+  "drug_class": "Alpha-1 adrenergic receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Cardura",
+      "strength": "1 mg",
+      "imprints": [
+        "CARDURA",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardura",
+      "strength": "2 mg",
+      "imprints": [
+        "CARDURA",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardura",
+      "strength": "4 mg",
+      "imprints": [
+        "CARDURA",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardura",
+      "strength": "8 mg",
+      "imprints": [
+        "CARDURA",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardura XL",
+      "strength": "4 mg",
+      "imprints": [
+        "CARDURA XL",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardura XL",
+      "strength": "8 mg",
+      "imprints": [
+        "CARDURA XL",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "ZO",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Zoetis/Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "ZO",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Zoetis/Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "ZO",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Zoetis/Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "ZO",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Zoetis/Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "APO",
+        "DXZ",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "APO",
+        "DXZ",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "APO",
+        "DXZ",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "APO",
+        "DXZ",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

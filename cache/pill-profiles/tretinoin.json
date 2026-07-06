@@ -1,0 +1,81 @@
+{
+  "drug_name": "Tretinoin",
+  "generic_name": "tretinoin",
+  "drug_class": "Retinoid",
+  "note": "Tretinoin is primarily available as a topical formulation (cream, gel, liquid) in the United States. Oral capsule formulations are extremely rare in current US pharmaceutical distribution. The following represents topical products which do not have traditional 'pills' with imprints, shapes, and colors in the conventional sense.",
+  "variants": [
+    {
+      "brand_name": "Retin-A",
+      "formulation_type": "Topical Cream",
+      "strength": "0.025%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "20g, 45g",
+      "form": "cream",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Retin-A",
+      "formulation_type": "Topical Cream",
+      "strength": "0.05%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "20g, 45g",
+      "form": "cream",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Retin-A",
+      "formulation_type": "Topical Cream",
+      "strength": "0.1%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "20g, 45g",
+      "form": "cream",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Retin-A",
+      "formulation_type": "Topical Gel",
+      "strength": "0.025%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "15g, 45g",
+      "form": "gel",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Retin-A",
+      "formulation_type": "Topical Gel",
+      "strength": "0.01%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "15g, 45g",
+      "form": "gel",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Retin-A Micro",
+      "formulation_type": "Topical Microsphere Gel",
+      "strength": "0.04%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "20g, 45g",
+      "form": "microsphere gel",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Retin-A Micro",
+      "formulation_type": "Topical Microsphere Gel",
+      "strength": "0.1%",
+      "manufacturer": "Valeant Pharmaceuticals",
+      "package_size": "20g, 45g",
+      "form": "microsphere gel",
+      "note": "Not a pill"
+    },
+    {
+      "brand_name": "Atralin",
+      "formulation_type": "Topical Gel",
+      "strength": "0.05%",
+      "manufacturer": "Naurex Inc.",
+      "package_size": "45g",
+      "form": "gel",
+      "note": "Not a pill"
+    }
+  ],
+  "important_note": "Tretinoin in the United States is FDA-approved and commercially available ONLY as topical formulations (creams, gels, liquids). Oral tretinoin capsules exist in some countries for severe acne treatment but are NOT currently marketed in the US. Therefore, traditional pill characteristics (imprints, shapes, colors, scoring) do not apply to tretinoin products available in the American market. This response cannot provide the requested pill data format because tretinoin pills are not available through standard US pharmaceutical channels."
+}

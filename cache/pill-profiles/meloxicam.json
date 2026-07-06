@@ -1,0 +1,163 @@
+{
+  "drug_name": "Meloxicam",
+  "generic_name": "Meloxicam",
+  "drug_class": "Nonsteroidal Anti-Inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Vivlodex",
+      "strength": "5 mg",
+      "imprints": [
+        "VIVLODEX",
+        "5mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Iroko Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Vivlodex",
+      "strength": "10 mg",
+      "imprints": [
+        "VIVLODEX",
+        "10mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Iroko Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "M7"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various (e.g., Teva, Mylan, Sun Pharma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "M15"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various (e.g., Teva, Mylan, Sun Pharma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "54 125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "54 126"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "E702"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "E703"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "G37"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Glenmark",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "G38"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Glenmark",
+      "scored": false
+    }
+  ]
+}

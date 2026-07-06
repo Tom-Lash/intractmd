@@ -1,0 +1,99 @@
+{
+  "drug_name": "Testosterone",
+  "generic_name": "Testosterone",
+  "drug_class": "Androgen",
+  "note": "Testosterone is primarily available as injections, gels, patches, and pellets in the US. Oral tablet formulations are limited. Below are the oral/tablet variants available:",
+  "variants": [
+    {
+      "brand_name": "Android",
+      "strength": "10 mg",
+      "imprints": [
+        "ANDROID 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Brown & Burk",
+      "scored": false
+    },
+    {
+      "brand_name": "Android",
+      "strength": "25 mg",
+      "imprints": [
+        "ANDROID 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Brown & Burk",
+      "scored": false
+    },
+    {
+      "brand_name": "Testred",
+      "strength": "10 mg",
+      "imprints": [
+        "TESTRED 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "ICN Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Testred",
+      "strength": "25 mg",
+      "imprints": [
+        "TESTRED 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "ICN Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Methyl Testosterone",
+      "strength": "10 mg",
+      "imprints": [
+        "Generic"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Methyl Testosterone",
+      "strength": "25 mg",
+      "imprints": [
+        "Generic"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ],
+  "important_note": "Oral testosterone tablets are rarely prescribed in modern practice. Most testosterone replacement therapy in the US utilizes intramuscular injections (Testosterone Cypionate, Enanthate), transdermal gels (Androgel, Testim), patches (Androderm), or subcutaneous pellets (Testopel). Data on currently available oral tablet variants may be limited as these formulations have largely been discontinued or are no longer commonly manufactured."
+}

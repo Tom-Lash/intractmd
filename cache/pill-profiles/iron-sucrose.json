@@ -1,0 +1,31 @@
+{
+  "drug_name": "Iron Sucrose",
+  "generic_name": "Iron Sucrose",
+  "drug_class": "Iron supplement - Parenteral",
+  "note": "Iron Sucrose is exclusively available as an intravenous injection formulation in the United States. No oral pill, tablet, or capsule forms are manufactured or available in the US market.",
+  "variants": [
+    {
+      "brand_name": "Venofer",
+      "formulation_type": "Intravenous injection",
+      "strength": "20 mg/mL",
+      "route": "IV",
+      "container": "5 mL single-dose vial",
+      "manufacturer": "Vifor Pharma (American Regent, Inc.)",
+      "note": "Injectable solution only - no oral tablet form exists"
+    },
+    {
+      "brand_name": "Generic Iron Sucrose",
+      "formulation_type": "Intravenous injection",
+      "strength": "20 mg/mL",
+      "route": "IV",
+      "container": "5 mL single-dose vial",
+      "manufacturers": [
+        "American Regent, Inc.",
+        "Fresenius Kabi",
+        "other approved generics"
+      ],
+      "note": "Injectable solution only - no oral tablet form exists"
+    }
+  ],
+  "important_note": "Iron Sucrose does not have any oral pill, tablet, or capsule formulations available in the United States. It is exclusively formulated as an intravenous injection used for iron supplementation in patients with iron-deficiency anemia, particularly those on hemodialysis. The request for pill physical characteristics cannot be fulfilled as no such forms exist in the US market."
+}

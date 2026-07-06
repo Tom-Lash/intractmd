@@ -1,0 +1,40 @@
+{
+  "drug_name": "Liraglutide",
+  "generic_name": "Liraglutide",
+  "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Saxenda",
+      "strength": "3 mg/mL",
+      "form": "subcutaneous injection (prefilled pen)",
+      "imprints": [],
+      "shape": "pen",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "note": "Available as 3 mL prefilled pen containing 3 mg/mL solution"
+    },
+    {
+      "brand_name": "Victoza",
+      "strength": "6 mg/mL",
+      "form": "subcutaneous injection (prefilled pen)",
+      "imprints": [],
+      "shape": "pen",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "note": "Available as 3 mL prefilled pen containing 6 mg/mL solution"
+    }
+  ],
+  "important_note": "Liraglutide is NOT available as an oral tablet or capsule in the United States. It is exclusively available as a subcutaneous injection in prefilled pen devices. Therefore, traditional pill physical characteristics (imprints, shape, color, size in mm) do not apply. The variants listed represent the available injectable formulations."
+}

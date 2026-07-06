@@ -1,0 +1,31 @@
+{
+  "drug_name": "Insulin Regular",
+  "generic_name": "Insulin Human (recombinant DNA origin)",
+  "drug_class": "Insulin (short-acting/rapid-acting antidiabetic)",
+  "note": "Insulin Regular is a liquid injectable medication, NOT a pill. It is not available in oral tablet form in the United States.",
+  "formulations": [
+    {
+      "brand_name": "Humulin R",
+      "strength": "100 units/mL",
+      "form": "Injectable solution",
+      "manufacturer": "Eli Lilly",
+      "package": "10 mL vial or prefilled pen"
+    },
+    {
+      "brand_name": "Novolin R",
+      "strength": "100 units/mL",
+      "form": "Injectable solution",
+      "manufacturer": "Novo Nordisk",
+      "package": "10 mL vial or prefilled pen"
+    },
+    {
+      "brand_name": "ReliOn",
+      "strength": "100 units/mL",
+      "form": "Injectable solution",
+      "manufacturer": "Novo Nordisk (Walmart brand)",
+      "package": "10 mL vial"
+    }
+  ],
+  "administration": "Subcutaneous injection only - available as vials or prefilled pens",
+  "pill_characteristics": "N/A - No oral tablet formulation exists for Insulin Regular in the United States"
+}

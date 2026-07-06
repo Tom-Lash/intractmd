@@ -1,0 +1,85 @@
+{
+  "drug_name": "Acyclovir",
+  "generic_name": "acyclovir",
+  "drug_class": "Antiviral (nucleoside analog)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "400",
+        "ACYCLOVIR 400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various (Mylan, Teva, Hikma, Aurobindo, Sandoz)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "800 mg",
+      "imprints": [
+        "800",
+        "ACYCLOVIR 800"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various (Mylan, Teva, Hikma, Aurobindo, Sandoz)",
+      "scored": true
+    },
+    {
+      "brand_name": "Zovirax",
+      "strength": "400 mg",
+      "imprints": [
+        "ZOVIRAX 400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "GSK",
+      "scored": true
+    },
+    {
+      "brand_name": "Zovirax",
+      "strength": "800 mg",
+      "imprints": [
+        "ZOVIRAX 800"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "GSK",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "200",
+        "ACYCLOVIR 200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Various (Mylan, Teva, Hikma, Aurobindo)",
+      "scored": false
+    }
+  ]
+}

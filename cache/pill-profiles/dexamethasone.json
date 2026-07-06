@@ -1,0 +1,157 @@
+{
+  "drug_name": "Dexamethasone",
+  "generic_name": "Dexamethasone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "54 092"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "DMS 0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.75 mg",
+      "imprints": [
+        "54 093"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "54 094"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "DMS 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "54 095"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "DMS 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "54 096"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "DMS 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "6 mg",
+      "imprints": [
+        "54 097"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    }
+  ]
+}

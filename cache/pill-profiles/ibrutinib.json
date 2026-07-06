@@ -1,0 +1,106 @@
+{
+  "drug_name": "Ibrutinib",
+  "generic_name": "ibrutinib",
+  "drug_class": "Bruton's tyrosine kinase (BTK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Imbruvica",
+      "strength": "140 mg",
+      "imprints": [
+        "IMBRUVICA",
+        "140 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Pharmacyclics LLC/AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Imbruvica",
+      "strength": "420 mg",
+      "imprints": [
+        "IMBRUVICA",
+        "420 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Pharmacyclics LLC/AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Imbruvica",
+      "strength": "560 mg",
+      "imprints": [
+        "IMBRUVICA",
+        "560 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 26,
+      "manufacturer": "Pharmacyclics LLC/AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibrutinib",
+      "strength": "140 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibrutinib",
+      "strength": "420 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibrutinib",
+      "strength": "560 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 26,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

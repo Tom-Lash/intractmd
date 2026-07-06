@@ -1,0 +1,73 @@
+{
+  "drug_name": "Emtricitabine",
+  "generic_name": "Emtricitabine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "variants": [
+    {
+      "brand_name": "Emtriva",
+      "strength": "200 mg",
+      "imprints": [
+        "GILEAD",
+        "200 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Emtricitabine",
+      "strength": "200 mg",
+      "imprints": [
+        "FTC 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Emtricitabine",
+      "strength": "200 mg",
+      "imprints": [
+        "EMT 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Emtricitabine",
+      "strength": "200 mg",
+      "imprints": [
+        "APO",
+        "EFV200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

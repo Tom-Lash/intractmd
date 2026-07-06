@@ -1,0 +1,127 @@
+{
+  "drug_name": "Famciclovir",
+  "generic_name": "Famciclovir",
+  "drug_class": "Antiviral (nucleoside analog)",
+  "variants": [
+    {
+      "brand_name": "Famvir",
+      "strength": "125 mg",
+      "imprints": [
+        "FAMVIR 125"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Famvir",
+      "strength": "250 mg",
+      "imprints": [
+        "FAMVIR 250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Famvir",
+      "strength": "500 mg",
+      "imprints": [
+        "FAMVIR 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "125 mg",
+      "imprints": [
+        "GG 637"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "GG 638"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "GG 639"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "93 7160"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "93 7161"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

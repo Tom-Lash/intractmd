@@ -1,0 +1,114 @@
+{
+  "drug_name": "Progesterone",
+  "generic_name": "Progesterone",
+  "drug_class": "Progestin",
+  "variants": [
+    {
+      "brand_name": "Prometrium",
+      "strength": "100 mg",
+      "imprints": [
+        "SOLVAY",
+        "1001"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Abbvie",
+      "scored": false
+    },
+    {
+      "brand_name": "Prometrium",
+      "strength": "200 mg",
+      "imprints": [
+        "SOLVAY",
+        "1002"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Abbvie",
+      "scored": false
+    },
+    {
+      "brand_name": "Crinone",
+      "strength": "4%",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Crinone",
+      "strength": "8%",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Endometrin",
+      "strength": "100 mg",
+      "imprints": [
+        "E100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Ferring Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

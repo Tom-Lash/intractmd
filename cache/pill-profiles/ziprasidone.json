@@ -1,0 +1,333 @@
+{
+  "drug_name": "Ziprasidone",
+  "generic_name": "Ziprasidone hydrochloride",
+  "drug_class": "Atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Geodon",
+      "strength": "20 mg",
+      "imprints": [
+        "Pfizer",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Geodon",
+      "strength": "40 mg",
+      "imprints": [
+        "Pfizer",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Geodon",
+      "strength": "60 mg",
+      "imprints": [
+        "Pfizer",
+        "60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Geodon",
+      "strength": "80 mg",
+      "imprints": [
+        "Pfizer",
+        "80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "ZPS",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "ZPS",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "ZPS",
+        "60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "ZPS",
+        "80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "543"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "544"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "545"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "546"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "APO",
+        "ZPS20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "APO",
+        "ZPS40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "APO",
+        "ZPS60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "APO",
+        "ZPS80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "TEVA",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "TEVA",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "TEVA",
+        "60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "TEVA",
+        "80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

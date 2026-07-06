@@ -1,0 +1,100 @@
+{
+  "drug_name": "Mirabegron",
+  "generic_name": "mirabegron",
+  "drug_class": "Beta-3 adrenergic agonist",
+  "variants": [
+    {
+      "brand_name": "Myrbetriq",
+      "strength": "25 mg",
+      "imprints": [
+        "M25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Myrbetriq",
+      "strength": "50 mg",
+      "imprints": [
+        "M50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "E25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "A25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "E50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "A50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "drug_name": "Diclofenac",
+  "generic_name": "Diclofenac Sodium or Diclofenac Potassium",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Cambia",
+      "strength": "50 mg",
+      "imprints": [
+        "CAMBIA"
+      ],
+      "shape": "packet",
+      "colors": [
+        "white"
+      ],
+      "coating": "powder sachet",
+      "size_mm": null,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Zipsor",
+      "strength": "25 mg",
+      "imprints": [
+        "ZIPSOR",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Hospira/Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Cataflam",
+      "strength": "50 mg",
+      "imprints": [
+        "CATAFLAM",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Various Manufacturers",
+      "strength": "50 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow",
+        "light yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Sun, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Various Manufacturers",
+      "strength": "75 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Sun, Mylan, others)",
+      "scored": false
+    }
+  ]
+}

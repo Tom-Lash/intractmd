@@ -1,0 +1,73 @@
+{
+  "drug_name": "Alectinib",
+  "generic_name": "alectinib",
+  "drug_class": "Tyrosine kinase inhibitor (ALK inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Alecensa",
+      "strength": "150 mg",
+      "imprints": [
+        "ALC",
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Alecensa",
+      "strength": "300 mg",
+      "imprints": [
+        "ALC",
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 25,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alectinib",
+      "strength": "150 mg",
+      "imprints": [
+        "ALK 150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Various ANDA approved manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alectinib",
+      "strength": "300 mg",
+      "imprints": [
+        "ALK 300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 25,
+      "manufacturer": "Various ANDA approved manufacturers",
+      "scored": false
+    }
+  ]
+}

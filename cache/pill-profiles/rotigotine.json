@@ -1,0 +1,99 @@
+{
+  "drug_name": "Rotigotine",
+  "generic_name": "Rotigotine",
+  "drug_class": "Dopamine Agonist",
+  "note": "Rotigotine is primarily available as a transdermal patch formulation in the United States, not as oral tablets or capsules",
+  "variants": [
+    {
+      "brand_name": "Neupro",
+      "strength": "1 mg/24 hours",
+      "format": "Transdermal Patch",
+      "patch_size_cm2": 10,
+      "colors": [
+        "beige"
+      ],
+      "manufacturer": "Various (Kyprolis/UCB)",
+      "imprints": [
+        "NEUPRO 1 mg/24h"
+      ],
+      "backing": "Polyester/Aluminum",
+      "adhesive_system": "Silicone-based"
+    },
+    {
+      "brand_name": "Neupro",
+      "strength": "2 mg/24 hours",
+      "format": "Transdermal Patch",
+      "patch_size_cm2": 10,
+      "colors": [
+        "beige"
+      ],
+      "manufacturer": "Various (Kyprolis/UCB)",
+      "imprints": [
+        "NEUPRO 2 mg/24h"
+      ],
+      "backing": "Polyester/Aluminum",
+      "adhesive_system": "Silicone-based"
+    },
+    {
+      "brand_name": "Neupro",
+      "strength": "3 mg/24 hours",
+      "format": "Transdermal Patch",
+      "patch_size_cm2": 15,
+      "colors": [
+        "beige"
+      ],
+      "manufacturer": "Various (Kyprolis/UCB)",
+      "imprints": [
+        "NEUPRO 3 mg/24h"
+      ],
+      "backing": "Polyester/Aluminum",
+      "adhesive_system": "Silicone-based"
+    },
+    {
+      "brand_name": "Neupro",
+      "strength": "4 mg/24 hours",
+      "format": "Transdermal Patch",
+      "patch_size_cm2": 20,
+      "colors": [
+        "beige"
+      ],
+      "manufacturer": "Various (Kyprolis/UCB)",
+      "imprints": [
+        "NEUPRO 4 mg/24h"
+      ],
+      "backing": "Polyester/Aluminum",
+      "adhesive_system": "Silicone-based"
+    },
+    {
+      "brand_name": "Neupro",
+      "strength": "6 mg/24 hours",
+      "format": "Transdermal Patch",
+      "patch_size_cm2": 30,
+      "colors": [
+        "beige"
+      ],
+      "manufacturer": "Various (Kyprolis/UCB)",
+      "imprints": [
+        "NEUPRO 6 mg/24h"
+      ],
+      "backing": "Polyester/Aluminum",
+      "adhesive_system": "Silicone-based"
+    },
+    {
+      "brand_name": "Neupro",
+      "strength": "8 mg/24 hours",
+      "format": "Transdermal Patch",
+      "patch_size_cm2": 40,
+      "colors": [
+        "beige"
+      ],
+      "manufacturer": "Various (Kyprolis/UCB)",
+      "imprints": [
+        "NEUPRO 8 mg/24h"
+      ],
+      "backing": "Polyester/Aluminum",
+      "adhesive_system": "Silicone-based"
+    }
+  ],
+  "important_note": "Rotigotine is NOT available as oral tablets/capsules in the US market. It is only available as transdermal patches under the brand name Neupro. Generic rotigotine patches may be available from multiple manufacturers with identical specifications to Neupro."
+}

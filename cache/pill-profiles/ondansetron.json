@@ -1,0 +1,263 @@
+{
+  "drug_name": "Ondansetron",
+  "generic_name": "Ondansetron",
+  "drug_class": "5-HT3 Receptor Antagonist (Antiemetic)",
+  "variants": [
+    {
+      "brand_name": "Zofran",
+      "strength": "4 mg",
+      "imprints": [
+        "ZOFRAN",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Zofran",
+      "strength": "8 mg",
+      "imprints": [
+        "ZOFRAN",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "54",
+        "262"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "G",
+        "51"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "U",
+        "28"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Unichem Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "54",
+        "266"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "G",
+        "52"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "U",
+        "29"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Unichem Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "SB",
+        "4965"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "24 mg",
+      "imprints": [
+        "SB",
+        "4966"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "OR",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Orchid Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "OR",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Orchid Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "TEVA",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "TEVA",
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "RDY",
+        "154"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Dr. Reddy's Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "RDY",
+        "155"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Dr. Reddy's Laboratories",
+      "scored": false
+    }
+  ]
+}

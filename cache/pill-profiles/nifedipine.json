@@ -1,0 +1,209 @@
+{
+  "drug_name": "Nifedipine",
+  "generic_name": "Nifedipine",
+  "drug_class": "Calcium Channel Blocker (Dihydropyridine)",
+  "variants": [
+    {
+      "brand_name": "Procardia",
+      "strength": "10 mg",
+      "imprints": [
+        "PROCARDIA 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Procardia",
+      "strength": "20 mg",
+      "imprints": [
+        "PROCARDIA 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Procardia XL",
+      "strength": "30 mg",
+      "imprints": [
+        "PROCARDIA XL 30"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Procardia XL",
+      "strength": "60 mg",
+      "imprints": [
+        "PROCARDIA XL 60"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Procardia XL",
+      "strength": "90 mg",
+      "imprints": [
+        "PROCARDIA XL 90"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Adalat CC",
+      "strength": "30 mg",
+      "imprints": [
+        "ADALAT CC 30"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Adalat CC",
+      "strength": "60 mg",
+      "imprints": [
+        "ADALAT CC 60"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Adalat CC",
+      "strength": "90 mg",
+      "imprints": [
+        "ADALAT CC 90"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nifedipine",
+      "strength": "10 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nifedipine",
+      "strength": "20 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nifedipine XL",
+      "strength": "30 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, Apotex, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nifedipine XL",
+      "strength": "60 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, Apotex, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nifedipine XL",
+      "strength": "90 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, Apotex, others)",
+      "scored": false
+    }
+  ]
+}

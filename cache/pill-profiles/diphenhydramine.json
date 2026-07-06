@@ -1,0 +1,165 @@
+{
+  "drug_name": "Diphenhydramine",
+  "generic_name": "Diphenhydramine Hydrochloride",
+  "drug_class": "First-generation antihistamine",
+  "variants": [
+    {
+      "brand_name": "Benadryl",
+      "strength": "25 mg",
+      "imprints": [
+        "BENADRYL",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Benadryl",
+      "strength": "50 mg",
+      "imprints": [
+        "BENADRYL",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Johnson & Johnson",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "DPH 25",
+        "M"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "DPH 50",
+        "M"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "Z 4680"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "Z 4681"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Zydus Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "54 035"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "54 036"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "GG 226"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Sandoz",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "GG 227"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": true
+    }
+  ]
+}

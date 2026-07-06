@@ -1,0 +1,129 @@
+{
+  "drug_name": "Varenicline",
+  "generic_name": "Varenicline tartrate",
+  "drug_class": "Partial nicotinic receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Chantix",
+      "strength": "0.5 mg",
+      "imprints": [
+        "CHANTIX",
+        "0.5"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Chantix",
+      "strength": "1 mg",
+      "imprints": [
+        "CHANTIX",
+        "1 mg"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "C 73"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "C 74"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "M V51"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "M V52"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "V 0.5"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "V 1"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

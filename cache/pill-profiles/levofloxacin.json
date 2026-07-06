@@ -1,0 +1,97 @@
+{
+  "drug_name": "Levofloxacin",
+  "generic_name": "Levofloxacin",
+  "drug_class": "Fluoroquinolone antibiotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "L250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "L500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "L750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Levaquin",
+      "strength": "250 mg",
+      "imprints": [
+        "LEVAQUIN 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Levaquin",
+      "strength": "500 mg",
+      "imprints": [
+        "LEVAQUIN 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Levaquin",
+      "strength": "750 mg",
+      "imprints": [
+        "LEVAQUIN 750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

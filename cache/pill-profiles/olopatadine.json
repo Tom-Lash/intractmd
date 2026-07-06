@@ -1,0 +1,36 @@
+{
+  "drug_name": "Olopatadine",
+  "generic_name": "Olopatadine hydrochloride",
+  "drug_class": "Selective H1-receptor antagonist (antihistamine)",
+  "note": "Olopatadine is primarily available as an ophthalmic (eye drop) formulation in the US. Oral tablet formulations are not currently FDA-approved or marketed in the United States. The drug is available as eye drops under brand names Patanol and Patanase nasal spray.",
+  "variants": [
+    {
+      "formulation_type": "Ophthalmic Solution",
+      "brand_name": "Patanol",
+      "strength": "0.1%",
+      "route": "Ophthalmic (eye drops)",
+      "manufacturer": "Alcon",
+      "container_type": "5 mL or 10 mL bottle",
+      "note": "Not a tablet formulation"
+    },
+    {
+      "formulation_type": "Ophthalmic Solution",
+      "brand_name": "Olopatadine",
+      "strength": "0.1%",
+      "route": "Ophthalmic (eye drops)",
+      "manufacturer": "Various generic manufacturers",
+      "container_type": "5 mL or 10 mL bottle",
+      "note": "Generic ophthalmic solution, not a tablet formulation"
+    },
+    {
+      "formulation_type": "Nasal Spray",
+      "brand_name": "Patanase",
+      "strength": "0.6%",
+      "route": "Intranasal",
+      "manufacturer": "Alcon",
+      "container_type": "30.5 mL spray bottle",
+      "note": "Not a tablet formulation"
+    }
+  ],
+  "important_note": "Olopatadine is not manufactured as an oral tablet in the United States. This response reflects the actual available formulations. If you are seeking oral antihistamine tablet information, please verify the specific medication name."
+}

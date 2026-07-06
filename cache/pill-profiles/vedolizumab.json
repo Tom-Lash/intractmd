@@ -1,0 +1,34 @@
+{
+  "drug_name": "Vedolizumab",
+  "generic_name": "vedolizumab",
+  "drug_class": "Monoclonal Antibody (Integrin Receptor Antagonist)",
+  "variants": [
+    {
+      "brand_name": "Entyvio",
+      "strength": "300 mg/mL",
+      "formulation": "intravenous infusion solution",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false,
+      "package_size": "10 mL single-dose vial"
+    },
+    {
+      "brand_name": "Entyvio SC",
+      "strength": "108 mg/0.68 mL",
+      "formulation": "subcutaneous injection solution",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false,
+      "package_size": "prefilled syringe or autoinjector"
+    }
+  ],
+  "note": "Vedolizumab is a biologic medication available only as injectable formulations (intravenous infusion or subcutaneous injection). It is NOT available as oral tablets or capsules in the United States. Therefore, traditional pill physical characteristics (shape, color, imprint, scoring) do not apply to this medication."
+}

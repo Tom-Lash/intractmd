@@ -1,0 +1,160 @@
+{
+  "drug_name": "Clomipramine",
+  "generic_name": "Clomipramine Hydrochloride",
+  "drug_class": "Tricyclic Antidepressant (TCA)",
+  "variants": [
+    {
+      "brand_name": "Anafranil",
+      "strength": "25 mg",
+      "imprints": [
+        "Anafranil",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Anafranil",
+      "strength": "50 mg",
+      "imprints": [
+        "Anafranil",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Anafranil",
+      "strength": "75 mg",
+      "imprints": [
+        "Anafranil",
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "MYLAN",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "MYLAN",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "MYLAN",
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "TEVA",
+        "3727"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "TEVA",
+        "3728"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "TEVA",
+        "3729"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

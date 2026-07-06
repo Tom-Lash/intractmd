@@ -1,0 +1,260 @@
+{
+  "drug_name": "Mirtazapine",
+  "generic_name": "Mirtazapine",
+  "drug_class": "Tetracyclic antidepressant",
+  "variants": [
+    {
+      "brand_name": "Remeron",
+      "strength": "15 mg",
+      "imprints": [
+        "REMERON",
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Remeron",
+      "strength": "30 mg",
+      "imprints": [
+        "REMERON",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Remeron",
+      "strength": "45 mg",
+      "imprints": [
+        "REMERON",
+        "45"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Remeron SolTab",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Remeron SolTab",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Remeron SolTab",
+      "strength": "45 mg",
+      "imprints": [
+        "45"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "M",
+        "7.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "M",
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "M",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "45 mg",
+      "imprints": [
+        "M",
+        "45"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "TEVA",
+        "3169"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "TEVA",
+        "3170"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "45 mg",
+      "imprints": [
+        "TEVA",
+        "3171"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "54",
+        "123"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "54",
+        "124"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "45 mg",
+      "imprints": [
+        "54",
+        "125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    }
+  ]
+}

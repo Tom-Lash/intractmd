@@ -1,0 +1,42 @@
+{
+  "drug_name": "Dicloxacillin",
+  "generic_name": "Dicloxacillin Sodium",
+  "drug_class": "Beta-lactam Antibiotic (Penicillinase-resistant Penicillin)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "DICLOXACILLIN 250MG",
+        "Various generic imprints"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "DICLOXACILLIN 500MG",
+        "Various generic imprints"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ],
+  "note": "Dicloxacillin is primarily available as a generic medication in the United States. Brand name formulations (Dynapen, Veracillin) are no longer actively manufactured. Current US availability consists of generic capsule formulations from various pharmaceutical manufacturers. Specific imprint details and manufacturer information vary based on production batch and distributor. No tablet formulations are currently widely available in the US market. Dicloxacillin is also available as an oral suspension/liquid formulation (not included in pill characteristics). Prescribers and patients should verify current imprints and manufacturers with their specific pharmacy, as these details change based on pharmaceutical supply chains and generic manufacturers."
+}

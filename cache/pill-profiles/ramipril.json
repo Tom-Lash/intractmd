@@ -1,0 +1,133 @@
+{
+  "drug_name": "Ramipril",
+  "generic_name": "Ramipril",
+  "drug_class": "Angiotensin-Converting Enzyme (ACE) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "1.25 mg",
+      "imprints": [
+        "1.25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Altace",
+      "strength": "1.25 mg",
+      "imprints": [
+        "ALTACE 1.25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Altace",
+      "strength": "2.5 mg",
+      "imprints": [
+        "ALTACE 2.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Altace",
+      "strength": "5 mg",
+      "imprints": [
+        "ALTACE 5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Altace",
+      "strength": "10 mg",
+      "imprints": [
+        "ALTACE 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

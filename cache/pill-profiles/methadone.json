@@ -1,0 +1,103 @@
+{
+  "drug_name": "Methadone",
+  "generic_name": "Methadone Hydrochloride",
+  "drug_class": "Opioid Agonist; Analgesic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "METHADONE"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "METHADONE"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "M",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Diskets",
+      "strength": "5 mg",
+      "imprints": [
+        "DISKET",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "sugar-coated",
+      "size_mm": 8,
+      "manufacturer": "Roxane",
+      "scored": true
+    },
+    {
+      "brand_name": "Diskets",
+      "strength": "10 mg",
+      "imprints": [
+        "DISKET",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "sugar-coated",
+      "size_mm": 9,
+      "manufacturer": "Roxane",
+      "scored": true
+    }
+  ]
+}

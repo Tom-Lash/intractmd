@@ -1,0 +1,67 @@
+{
+  "drug_name": "Solifenacin",
+  "generic_name": "Solifenacin succinate",
+  "drug_class": "Anticholinergic (Muscarinic receptor antagonist)",
+  "variants": [
+    {
+      "brand_name": "VESIcare",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "VESIcare",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Solifenacin",
+      "strength": "5 mg",
+      "imprints": [
+        "SL 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Solifenacin",
+      "strength": "10 mg",
+      "imprints": [
+        "SL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

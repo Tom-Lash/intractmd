@@ -1,0 +1,67 @@
+{
+  "drug_name": "Ticagrelor",
+  "generic_name": "Ticagrelor",
+  "drug_class": "Platelet aggregation inhibitor (P2Y12 receptor antagonist)",
+  "variants": [
+    {
+      "brand_name": "Brilinta",
+      "strength": "60 mg",
+      "imprints": [
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Brilinta",
+      "strength": "90 mg",
+      "imprints": [
+        "90"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ticagrelor",
+      "strength": "60 mg",
+      "imprints": [
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ticagrelor",
+      "strength": "90 mg",
+      "imprints": [
+        "90"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

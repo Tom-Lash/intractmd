@@ -1,0 +1,283 @@
+{
+  "drug_name": "Ibuprofen",
+  "generic_name": "Ibuprofen",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Advil",
+      "strength": "200 mg",
+      "imprints": [
+        "ADVIL"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Pfizer Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Motrin IB",
+      "strength": "200 mg",
+      "imprints": [
+        "MOTRIN IB",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "200 mg",
+      "imprints": [
+        "IBU",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "200 mg",
+      "imprints": [
+        "I2"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Advil",
+      "strength": "400 mg",
+      "imprints": [
+        "ADVIL 400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Pfizer Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Motrin IB",
+      "strength": "400 mg",
+      "imprints": [
+        "MOTRIN",
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "400 mg",
+      "imprints": [
+        "400",
+        "IBU"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "400 mg",
+      "imprints": [
+        "I4"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "600 mg",
+      "imprints": [
+        "600",
+        "IBU"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "600 mg",
+      "imprints": [
+        "I6"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "600 mg",
+      "imprints": [
+        "UPJOHN 27"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "800 mg",
+      "imprints": [
+        "800",
+        "IBU"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "800 mg",
+      "imprints": [
+        "I8"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "800 mg",
+      "imprints": [
+        "UPJOHN 44"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ibuprofen",
+      "strength": "800 mg",
+      "imprints": [
+        "MJ 750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Caldolor (IV)",
+      "strength": "100 mg",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Hospira",
+      "scored": false
+    },
+    {
+      "brand_name": "Children's Advil",
+      "strength": "100 mg per 5mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Pfizer Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Infants' Advil",
+      "strength": "50 mg per 1.25 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Pfizer Consumer Healthcare",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "drug_name": "Glipizide",
+  "generic_name": "Glipizide",
+  "drug_class": "Sulfonylurea (Meglitinide-class antidiabetic agent)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "GLUCOTROL 5",
+        "GLP 5",
+        "93 227"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "GLUCOTROL 10",
+        "GLP 10",
+        "93 228"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Glucotrol",
+      "strength": "5 mg",
+      "imprints": [
+        "GLUCOTROL 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Glucotrol",
+      "strength": "10 mg",
+      "imprints": [
+        "GLUCOTROL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Glucotrol XL",
+      "strength": "5 mg",
+      "imprints": [
+        "GLUCOTROL XL 5"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Glucotrol XL",
+      "strength": "10 mg",
+      "imprints": [
+        "GLUCOTROL XL 10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "APO GLP5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "APO GLP10"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "SZ 226"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Seqirus",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "SZ 227"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Seqirus",
+      "scored": false
+    }
+  ]
+}

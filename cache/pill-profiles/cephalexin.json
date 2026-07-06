@@ -1,0 +1,188 @@
+{
+  "drug_name": "Cephalexin",
+  "generic_name": "Cephalexin",
+  "drug_class": "First-generation cephalosporin antibiotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "KEFLEX 250",
+        "L368",
+        "WATSON 875",
+        "IP 272",
+        "AN 370",
+        "LCI 1331",
+        "GG 501"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "KEFLEX 500",
+        "L369",
+        "WATSON 876",
+        "IP 273",
+        "AN 371",
+        "LCI 1332",
+        "GG 502"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 23,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "KEFLEX 750",
+        "LCI 1333",
+        "IP 274",
+        "AN 372"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "KEFLEX 1000",
+        "LCI 1334",
+        "IP 275"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 25,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "250",
+        "L368",
+        "IP 272",
+        "AN 370"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "500",
+        "L369",
+        "IP 273",
+        "AN 371"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Keflex",
+      "strength": "250 mg",
+      "imprints": [
+        "KEFLEX 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Keflex",
+      "strength": "500 mg",
+      "imprints": [
+        "KEFLEX 500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 23,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Keflex",
+      "strength": "750 mg",
+      "imprints": [
+        "KEFLEX 750"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "coating": "uncoated",
+      "size_mm": 24,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Keflex",
+      "strength": "1000 mg",
+      "imprints": [
+        "KEFLEX 1000"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 25,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    }
+  ]
+}

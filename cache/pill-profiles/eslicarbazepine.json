@@ -1,0 +1,135 @@
+{
+  "drug_name": "Eslicarbazepine",
+  "generic_name": "Eslicarbazepine Acetate",
+  "drug_class": "Anticonvulsant/Antiepileptic Agent",
+  "variants": [
+    {
+      "brand_name": "Aptiom",
+      "strength": "200 mg",
+      "imprints": [
+        "APT",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aptiom",
+      "strength": "400 mg",
+      "imprints": [
+        "APT",
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aptiom",
+      "strength": "600 mg",
+      "imprints": [
+        "APT",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aptiom",
+      "strength": "800 mg",
+      "imprints": [
+        "APT",
+        "800"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "M",
+        "E200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "M",
+        "E400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "M",
+        "E600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "800 mg",
+      "imprints": [
+        "M",
+        "E800"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

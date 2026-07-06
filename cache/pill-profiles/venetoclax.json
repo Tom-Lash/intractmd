@@ -1,0 +1,71 @@
+{
+  "drug_name": "Venetoclax",
+  "generic_name": "venetoclax",
+  "drug_class": "BCL-2 inhibitor (apoptosis promoter)",
+  "variants": [
+    {
+      "brand_name": "Venclexta",
+      "strength": "10 mg",
+      "imprints": [
+        "VEN",
+        "10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Venclexta",
+      "strength": "50 mg",
+      "imprints": [
+        "VEN",
+        "50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Venclexta",
+      "strength": "100 mg",
+      "imprints": [
+        "VEN",
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Venclexta",
+      "strength": "400 mg",
+      "imprints": [
+        "VEN",
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "AbbVie",
+      "scored": false
+    }
+  ]
+}

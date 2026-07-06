@@ -1,0 +1,41 @@
+{
+  "drug_name": "Oxymetazoline",
+  "generic_name": "Oxymetazoline hydrochloride",
+  "drug_class": "Nasal decongestant (sympathomimetic amine)",
+  "note": "Oxymetazoline is primarily available as a nasal spray, nasal solution, and topical formulation. Oral tablet formulations are not currently marketed in the United States. The drug is available over-the-counter in various nasal spray products.",
+  "variants": [
+    {
+      "brand_name": "Afrin",
+      "strength": "0.05%",
+      "form": "Nasal spray",
+      "concentration": "0.05% solution",
+      "manufacturer": "Bayer Consumer Care",
+      "availability": "OTC"
+    },
+    {
+      "brand_name": "Dristan",
+      "strength": "0.05%",
+      "form": "Nasal spray",
+      "concentration": "0.05% solution",
+      "manufacturer": "Prestige Consumer Healthcare",
+      "availability": "OTC"
+    },
+    {
+      "brand_name": "Nostrilla",
+      "strength": "0.05%",
+      "form": "Nasal spray",
+      "concentration": "0.05% solution",
+      "manufacturer": "Prestige Consumer Healthcare",
+      "availability": "OTC"
+    },
+    {
+      "brand_name": "Generic Oxymetazoline",
+      "strength": "0.05%",
+      "form": "Nasal spray",
+      "concentration": "0.05% solution",
+      "manufacturer": "Multiple (various generic manufacturers)",
+      "availability": "OTC"
+    }
+  ],
+  "important_note": "Oxymetazoline is not available as an oral tablet in US pharmaceutical markets. All formulations are intranasal sprays or solutions for topical nasal use. No pill physical characteristics exist for this medication."
+}

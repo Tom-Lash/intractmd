@@ -1,0 +1,148 @@
+{
+  "drug_name": "Minocycline",
+  "generic_name": "Minocycline hydrochloride",
+  "drug_class": "Tetracycline antibiotic",
+  "variants": [
+    {
+      "brand_name": "Solodyn",
+      "strength": "45 mg",
+      "imprints": [
+        "45"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Medicis Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Solodyn",
+      "strength": "90 mg",
+      "imprints": [
+        "90"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Medicis Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Solodyn",
+      "strength": "135 mg",
+      "imprints": [
+        "135"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "Medicis Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Minocycline",
+      "strength": "50 mg",
+      "imprints": [
+        "Multiple variants by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Minocycline",
+      "strength": "75 mg",
+      "imprints": [
+        "Multiple variants by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Minocycline",
+      "strength": "100 mg",
+      "imprints": [
+        "Multiple variants by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Minocycline",
+      "strength": "50 mg",
+      "imprints": [
+        "Multiple variants by manufacturer"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Minocycline",
+      "strength": "75 mg",
+      "imprints": [
+        "Multiple variants by manufacturer"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Minocycline",
+      "strength": "100 mg",
+      "imprints": [
+        "Multiple variants by manufacturer"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

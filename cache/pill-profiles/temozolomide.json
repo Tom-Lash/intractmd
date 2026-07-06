@@ -1,0 +1,139 @@
+{
+  "drug_name": "Temozolomide",
+  "generic_name": "temozolomide",
+  "drug_class": "Alkylating agent (antineoplastic)",
+  "variants": [
+    {
+      "brand_name": "Temodar",
+      "strength": "20 mg",
+      "imprints": [
+        "TEMODAR",
+        "20 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Temodar",
+      "strength": "100 mg",
+      "imprints": [
+        "TEMODAR",
+        "100 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Temodar",
+      "strength": "140 mg",
+      "imprints": [
+        "TEMODAR",
+        "140 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Temodar",
+      "strength": "180 mg",
+      "imprints": [
+        "TEMODAR",
+        "180 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Cipla, Luye Pharma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple (Cipla, Luye Pharma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "140 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple (Cipla, Luye Pharma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "180 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple (Cipla, Luye Pharma, others)",
+      "scored": false
+    }
+  ]
+}

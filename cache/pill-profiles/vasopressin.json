@@ -1,0 +1,32 @@
+{
+  "drug_name": "Vasopressin",
+  "generic_name": "vasopressin",
+  "drug_class": "Vasopressor Agent / Antidiuretic Hormone (ADH)",
+  "variants": [
+    {
+      "brand_name": "Vasopressin",
+      "strength": "20 units/mL",
+      "imprints": [],
+      "shape": "N/A - Injectable solution",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Multiple (Pfizer, Fresenius Kabi, APP Pharmaceuticals, others)",
+      "scored": false,
+      "note": "Available as intramuscular or intravenous injection only"
+    },
+    {
+      "brand_name": "Pitressin",
+      "strength": "20 units/mL",
+      "imprints": [],
+      "shape": "N/A - Injectable solution",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Paragon Bioteck",
+      "scored": false,
+      "note": "Available as intramuscular or intravenous injection only"
+    }
+  ],
+  "important_note": "Vasopressin is NOT available as an oral tablet or capsule formulation in the United States. All US-approved formulations are injectable solutions (IM/IV). No pill physical characteristics exist for this medication as it is not produced in solid oral dosage forms."
+}

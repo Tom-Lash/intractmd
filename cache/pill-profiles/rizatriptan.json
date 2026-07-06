@@ -1,0 +1,101 @@
+{
+  "drug_name": "Rizatriptan",
+  "generic_name": "rizatriptan benzoate",
+  "drug_class": "Triptan (5-HT1B/1D receptor agonist)",
+  "variants": [
+    {
+      "brand_name": "Maxalt",
+      "strength": "5 mg",
+      "imprints": [
+        "MAXALT 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Maxalt",
+      "strength": "10 mg",
+      "imprints": [
+        "MAXALT 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Maxalt-MLT",
+      "strength": "5 mg",
+      "imprints": [
+        "MAXALT MLT 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Maxalt-MLT",
+      "strength": "10 mg",
+      "imprints": [
+        "MAXALT MLT 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "APO RIZ 5",
+        "RIZ 5",
+        "93 7382"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various (Apotex, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "APO RIZ 10",
+        "RIZ 10",
+        "93 7383"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various (Apotex, Teva, Sandoz, others)",
+      "scored": false
+    }
+  ]
+}

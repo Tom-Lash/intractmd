@@ -1,0 +1,41 @@
+{
+  "drug_name": "Sorafenib",
+  "generic_name": "sorafenib tosylate",
+  "drug_class": "tyrosine kinase inhibitor; multikinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Nexavar",
+      "strength": "200 mg",
+      "imprints": [
+        "Nexavar",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Bayer Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sorafenib",
+      "strength": "200 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "multiple generic manufacturers",
+      "scored": false
+    }
+  ],
+  "note": "Sorafenib is available primarily as a 200 mg film-coated tablet. The drug is not widely manufactured by multiple generic manufacturers in the US despite patent expiration, as branded Nexavar remains the predominant formulation. Other manufacturers may produce the formulation but maintain similar physical characteristics. Sorafenib is typically provided as a film-coated tablet to aid absorption and patient compliance."
+}

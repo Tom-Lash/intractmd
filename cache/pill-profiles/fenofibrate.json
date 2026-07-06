@@ -1,0 +1,198 @@
+{
+  "drug_name": "Fenofibrate",
+  "generic_name": "Fenofibrate",
+  "drug_class": "Fibric acid derivative (Antilipemic agent)",
+  "variants": [
+    {
+      "brand_name": "Tricor",
+      "strength": "48 mg",
+      "imprints": [
+        "TRI",
+        "48"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Tricor",
+      "strength": "145 mg",
+      "imprints": [
+        "TRI",
+        "145"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Lofibra",
+      "strength": "67 mg",
+      "imprints": [
+        "Lofibra",
+        "67"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Gate Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Lofibra",
+      "strength": "134 mg",
+      "imprints": [
+        "Lofibra",
+        "134"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Gate Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Lofibra",
+      "strength": "200 mg",
+      "imprints": [
+        "Lofibra",
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Gate Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "TriCor",
+      "strength": "20 mg",
+      "imprints": [
+        "TRI",
+        "20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Fenoglide",
+      "strength": "40 mg",
+      "imprints": [
+        "Fenoglide",
+        "40"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Fournier Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Fenoglide",
+      "strength": "120 mg",
+      "imprints": [
+        "Fenoglide",
+        "120"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Fournier Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fenofibrate",
+      "strength": "48 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Multiple (Mylan, Teva, Sun, Lupin, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fenofibrate",
+      "strength": "145 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple (Mylan, Teva, Sun, Lupin, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fenofibrate",
+      "strength": "54 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fenofibrate",
+      "strength": "160 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

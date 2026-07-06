@@ -1,0 +1,157 @@
+{
+  "drug_name": "Tacrolimus",
+  "generic_name": "Tacrolimus",
+  "drug_class": "Calcineurin Inhibitor Immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Prograf",
+      "strength": "0.5 mg",
+      "imprints": [
+        "PROGRAF",
+        "0.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Prograf",
+      "strength": "1 mg",
+      "imprints": [
+        "PROGRAF",
+        "1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Prograf",
+      "strength": "5 mg",
+      "imprints": [
+        "PROGRAF",
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tacrolimus",
+      "strength": "0.5 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tacrolimus",
+      "strength": "1 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tacrolimus",
+      "strength": "5 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Astagraf XL",
+      "strength": "0.5 mg",
+      "imprints": [
+        "ASTAGRAF XL",
+        "0.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Astagraf XL",
+      "strength": "1 mg",
+      "imprints": [
+        "ASTAGRAF XL",
+        "1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Astagraf XL",
+      "strength": "5 mg",
+      "imprints": [
+        "ASTAGRAF XL",
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    }
+  ]
+}

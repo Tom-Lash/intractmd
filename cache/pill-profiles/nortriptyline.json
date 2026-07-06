@@ -1,0 +1,275 @@
+{
+  "drug_name": "Nortriptyline",
+  "generic_name": "Nortriptyline Hydrochloride",
+  "drug_class": "Tricyclic Antidepressant",
+  "variants": [
+    {
+      "brand_name": "Pamelor",
+      "strength": "10 mg",
+      "imprints": [
+        "Pamelor",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Pamelor",
+      "strength": "25 mg",
+      "imprints": [
+        "Pamelor",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Pamelor",
+      "strength": "50 mg",
+      "imprints": [
+        "Pamelor",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Pamelor",
+      "strength": "75 mg",
+      "imprints": [
+        "Pamelor",
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "West-Ward",
+        "1074"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "West-Ward Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "West-Ward",
+        "1075"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "West-Ward Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "West-Ward",
+        "1076"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "West-Ward Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "West-Ward",
+        "1077"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "West-Ward Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "TEVA",
+        "3104"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "TEVA",
+        "3105"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "TEVA",
+        "3106"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "TEVA",
+        "3107"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "Mylan",
+        "NTP10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "Mylan",
+        "NTP25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "Mylan",
+        "NTP50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "Mylan",
+        "NTP75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

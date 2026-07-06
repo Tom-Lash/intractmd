@@ -1,0 +1,98 @@
+{
+  "drug_name": "Ezetimibe",
+  "generic_name": "Ezetimibe",
+  "drug_class": "Cholesterol absorption inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zetia",
+      "strength": "10 mg",
+      "imprints": [
+        "414"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ezetimibe",
+      "strength": "10 mg",
+      "imprints": [
+        "E10",
+        "EZ10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ezetimibe",
+      "strength": "10 mg",
+      "imprints": [
+        "GG 749"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ezetimibe",
+      "strength": "10 mg",
+      "imprints": [
+        "R 172"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ezetimibe",
+      "strength": "10 mg",
+      "imprints": [
+        "SZ 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ezetimibe",
+      "strength": "10 mg",
+      "imprints": [
+        "TEVA 7773"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

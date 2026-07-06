@@ -1,0 +1,109 @@
+{
+  "drug_name": "Sunitinib",
+  "generic_name": "sunitinib malate",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Sutent",
+      "strength": "12.5 mg",
+      "imprints": [
+        "Sutent",
+        "12.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Sutent",
+      "strength": "25 mg",
+      "imprints": [
+        "Sutent",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Sutent",
+      "strength": "50 mg",
+      "imprints": [
+        "Sutent",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "12.5 mg",
+      "imprints": [
+        "SUN",
+        "12.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "SUN",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "SUN",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

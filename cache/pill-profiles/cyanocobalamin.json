@@ -1,0 +1,101 @@
+{
+  "drug_name": "Cyanocobalamin",
+  "generic_name": "Cyanocobalamin",
+  "drug_class": "Vitamin B12 (Cobalamin)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "500 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "red",
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "red",
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Nascobal",
+      "strength": "500 mcg",
+      "imprints": [
+        "Nascobal"
+      ],
+      "shape": "nasal spray",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Bausch Health",
+      "scored": false
+    },
+    {
+      "brand_name": "CaloMist",
+      "strength": "500 mcg",
+      "imprints": [
+        "CaloMist"
+      ],
+      "shape": "nasal spray",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Bausch Health",
+      "scored": false
+    }
+  ]
+}

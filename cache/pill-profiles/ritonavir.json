@@ -1,0 +1,72 @@
+{
+  "drug_name": "Ritonavir",
+  "generic_name": "ritonavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "variants": [
+    {
+      "brand_name": "Norvir",
+      "strength": "100 mg",
+      "imprints": [
+        "NORVIR",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Norvir",
+      "strength": "100 mg",
+      "imprints": [
+        "ABBVIE",
+        "RTV 100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ritonavir",
+      "strength": "100 mg",
+      "imprints": [
+        "RTV 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Norvir",
+      "strength": "100 mg/mL",
+      "imprints": [
+        "liquid"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AbbVie",
+      "scored": false
+    }
+  ]
+}

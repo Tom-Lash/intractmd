@@ -1,0 +1,103 @@
+{
+  "drug_name": "Repaglinide",
+  "generic_name": "Repaglinide",
+  "drug_class": "Meglitinide (Rapid-acting insulin secretagogue)",
+  "variants": [
+    {
+      "brand_name": "Prandin",
+      "strength": "0.5 mg",
+      "imprints": [
+        "Prandin",
+        "0.5"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Novo Nordisk",
+      "scored": false
+    },
+    {
+      "brand_name": "Prandin",
+      "strength": "1 mg",
+      "imprints": [
+        "Prandin",
+        "1"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Novo Nordisk",
+      "scored": false
+    },
+    {
+      "brand_name": "Prandin",
+      "strength": "2 mg",
+      "imprints": [
+        "Prandin",
+        "2"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Novo Nordisk",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "REP",
+        "0.5"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various (Mylan, Teva, Sandoz)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "REP",
+        "1"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various (Mylan, Teva, Sandoz)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "REP",
+        "2"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various (Mylan, Teva, Sandoz)",
+      "scored": false
+    }
+  ]
+}

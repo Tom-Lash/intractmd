@@ -1,0 +1,44 @@
+{
+  "drug_name": "Brimonidine",
+  "generic_name": "brimonidine tartrate",
+  "drug_class": "Alpha-2 adrenergic agonist",
+  "variants": [
+    {
+      "brand_name": "Alphagan P",
+      "strength": "0.1%",
+      "form": "ophthalmic solution",
+      "imprints": [],
+      "packaging": "5 mL bottle",
+      "manufacturer": "Allergan",
+      "notes": "Eye drop solution, not a tablet"
+    },
+    {
+      "brand_name": "Alphagan",
+      "strength": "0.2%",
+      "form": "ophthalmic solution",
+      "imprints": [],
+      "packaging": "5 mL, 10 mL, 15 mL bottles",
+      "manufacturer": "Allergan",
+      "notes": "Eye drop solution, not a tablet"
+    },
+    {
+      "brand_name": "Generic Brimonidine",
+      "strength": "0.15%",
+      "form": "ophthalmic solution",
+      "imprints": [],
+      "packaging": "5 mL, 10 mL bottles",
+      "manufacturer": "Various (Apotex, Bausch Health, others)",
+      "notes": "Eye drop solution, not a tablet"
+    },
+    {
+      "brand_name": "Mirvaso",
+      "strength": "0.33%",
+      "form": "topical gel",
+      "imprints": [],
+      "packaging": "30 g, 45 g tubes",
+      "manufacturer": "Galderma",
+      "notes": "Topical gel for rosacea, not a tablet"
+    }
+  ],
+  "note": "Brimonidine is not available as an oral tablet in the United States. All FDA-approved formulations are either ophthalmic solutions (eye drops) or topical gel. No pill/tablet forms exist in current US pharmaceutical market."
+}

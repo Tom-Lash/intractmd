@@ -1,0 +1,32 @@
+{
+  "drug_name": "Albiglutide",
+  "generic_name": "albiglutide",
+  "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Tanzeum",
+      "strength": "30 mg",
+      "imprints": [],
+      "shape": "pen",
+      "colors": [],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false,
+      "formulation_type": "prefilled pen injection"
+    },
+    {
+      "brand_name": "Tanzeum",
+      "strength": "50 mg",
+      "imprints": [],
+      "shape": "pen",
+      "colors": [],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false,
+      "formulation_type": "prefilled pen injection"
+    }
+  ],
+  "note": "Albiglutide is formulated exclusively as a subcutaneous injection via prefilled pen. It is not available in oral tablet form. The drug was discontinued by GSK in 2018 for commercial reasons and is no longer widely available in the US market. No pill/tablet physical characteristics exist for this medication."
+}

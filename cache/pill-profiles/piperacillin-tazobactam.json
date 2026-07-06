@@ -1,0 +1,51 @@
+{
+  "drug_name": "Piperacillin-Tazobactam",
+  "generic_name": "Piperacillin sodium and tazobactam sodium",
+  "drug_class": "Beta-lactam antibiotic with beta-lactamase inhibitor",
+  "note": "Piperacillin-Tazobactam is primarily available as an intravenous or intramuscular injection formulation in the United States. Oral tablet formulations are not commercially available in the US market.",
+  "variants": [
+    {
+      "brand_name": "Zosyn",
+      "strength": "2.25g IV (2g piperacillin/0.25g tazobactam)",
+      "formulation_type": "Injectable powder for reconstitution",
+      "manufacturer": "Pfizer",
+      "route": "Intravenous or Intramuscular"
+    },
+    {
+      "brand_name": "Zosyn",
+      "strength": "3.375g IV (3g piperacillin/0.375g tazobactam)",
+      "formulation_type": "Injectable powder for reconstitution",
+      "manufacturer": "Pfizer",
+      "route": "Intravenous or Intramuscular"
+    },
+    {
+      "brand_name": "Zosyn",
+      "strength": "4.5g IV (4g piperacillin/0.5g tazobactam)",
+      "formulation_type": "Injectable powder for reconstitution",
+      "manufacturer": "Pfizer",
+      "route": "Intravenous or Intramuscular"
+    },
+    {
+      "brand_name": "Generic Piperacillin-Tazobactam",
+      "strength": "2.25g IV (2g piperacillin/0.25g tazobactam)",
+      "formulation_type": "Injectable powder for reconstitution",
+      "manufacturer": "Multiple (Hospira, Fresenius, Baxter, others)",
+      "route": "Intravenous or Intramuscular"
+    },
+    {
+      "brand_name": "Generic Piperacillin-Tazobactam",
+      "strength": "3.375g IV (3g piperacillin/0.375g tazobactam)",
+      "formulation_type": "Injectable powder for reconstitution",
+      "manufacturer": "Multiple (Hospira, Fresenius, Baxter, others)",
+      "route": "Intravenous or Intramuscular"
+    },
+    {
+      "brand_name": "Generic Piperacillin-Tazobactam",
+      "strength": "4.5g IV (4g piperacillin/0.5g tazobactam)",
+      "formulation_type": "Injectable powder for reconstitution",
+      "manufacturer": "Multiple (Hospira, Fresenius, Baxter, others)",
+      "route": "Intravenous or Intramuscular"
+    }
+  ],
+  "availability_note": "Piperacillin-Tazobactam is not available as an oral tablet in the United States. All US formulations are injectable preparations supplied as sterile powders for reconstitution. Physical characteristics (color, shape, imprint) are not applicable to injectable medications."
+}

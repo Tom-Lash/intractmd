@@ -1,0 +1,99 @@
+{
+  "drug_name": "Albuterol",
+  "generic_name": "albuterol sulfate",
+  "drug_class": "Beta-2 adrenergic agonist (bronchodilator)",
+  "note": "Albuterol is primarily available as inhalers (metered-dose and dry powder) and nebulizer solutions in the US. Oral tablet formulations are rarely manufactured currently. The following represents historical and limited current oral tablet availability:",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "Various including 2mg unmarked or manufacturer-specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers (Tris Pharma, Hikma, and others)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "Various including 4mg unmarked or manufacturer-specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers (Tris Pharma, Hikma, and others)",
+      "scored": true
+    },
+    {
+      "brand_name": "Proventil",
+      "strength": "2 mg",
+      "imprints": [
+        "PROVENTIL 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Merck (historical - limited current availability)",
+      "scored": true
+    },
+    {
+      "brand_name": "Proventil",
+      "strength": "4 mg",
+      "imprints": [
+        "PROVENTIL 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck (historical - limited current availability)",
+      "scored": true
+    },
+    {
+      "brand_name": "Ventolin",
+      "strength": "2 mg",
+      "imprints": [
+        "VENTOLIN 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline (historical - discontinued)",
+      "scored": true
+    },
+    {
+      "brand_name": "Ventolin",
+      "strength": "4 mg",
+      "imprints": [
+        "VENTOLIN 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline (historical - discontinued)",
+      "scored": true
+    }
+  ],
+  "important_note": "Albuterol oral tablets are rarely prescribed in modern US clinical practice. The primary US formulations are: ProAir HFA, Proventil HFA, Ventolin HFA (metered-dose inhalers), ProAir RespiClick (dry powder inhaler), and nebulizer solutions. Oral tablets should be verified with current pharmacy resources as availability and manufacturers change frequently."
+}

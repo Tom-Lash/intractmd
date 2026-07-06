@@ -1,0 +1,144 @@
+{
+  "drug_name": "Calcium Carbonate",
+  "generic_name": "Calcium Carbonate",
+  "drug_class": "Mineral Supplement, Antacid",
+  "variants": [
+    {
+      "brand_name": "Tums",
+      "strength": "500 mg",
+      "imprints": [
+        "TUMS"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Tums",
+      "strength": "750 mg",
+      "imprints": [
+        "TUMS"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Tums E-X",
+      "strength": "750 mg",
+      "imprints": [
+        "TUMS E-X"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Tums Ultra",
+      "strength": "1000 mg",
+      "imprints": [
+        "TUMS ULTRA"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Calcium Carbonate",
+      "strength": "600 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Calcium Carbonate",
+      "strength": "1000 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Caltrate",
+      "strength": "600 mg",
+      "imprints": [
+        "CALTRATE"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Os-Cal",
+      "strength": "500 mg",
+      "imprints": [
+        "OSCAL 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Os-Cal",
+      "strength": "1000 mg",
+      "imprints": [
+        "OSCAL 1000"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Bayer",
+      "scored": false
+    }
+  ]
+}

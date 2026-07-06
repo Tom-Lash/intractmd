@@ -1,0 +1,88 @@
+{
+  "drug_name": "Phenytoin",
+  "generic_name": "Phenytoin",
+  "drug_class": "Antiarrhythmic, Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Dilantin",
+      "strength": "30 mg",
+      "imprints": [
+        "PARKE",
+        "DAVIS",
+        "404"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer (Parke-Davis)",
+      "scored": false
+    },
+    {
+      "brand_name": "Dilantin",
+      "strength": "100 mg",
+      "imprints": [
+        "PARKE",
+        "DAVIS",
+        "405"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Pfizer (Parke-Davis)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Phenytoin",
+      "strength": "50 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Phenytoin",
+      "strength": "100 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Phenytoin",
+      "strength": "30 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

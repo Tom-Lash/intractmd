@@ -1,0 +1,69 @@
+{
+  "drug_name": "Misoprostol",
+  "generic_name": "Misoprostol",
+  "drug_class": "Prostaglandin analog",
+  "variants": [
+    {
+      "brand_name": "Cytotec",
+      "strength": "100 mcg",
+      "imprints": [
+        "SEARLE",
+        "1461"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer (Searle)",
+      "scored": false
+    },
+    {
+      "brand_name": "Cytotec",
+      "strength": "200 mcg",
+      "imprints": [
+        "SEARLE",
+        "1462"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer (Searle)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Misoprostol",
+      "strength": "100 mcg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Mylan, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Misoprostol",
+      "strength": "200 mcg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Mylan, Teva, Sandoz, others)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "drug_name": "Lopinavir",
+  "generic_name": "Lopinavir",
+  "drug_class": "Protease Inhibitor (Antiretroviral)",
+  "variants": [
+    {
+      "brand_name": "Kaletra",
+      "strength": "200 mg/50 mg (Lopinavir/Ritonavir)",
+      "imprints": [
+        "KALETRA"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "opaque"
+      ],
+      "coating": "uncoated",
+      "size_mm": 23,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Kaletra",
+      "strength": "100 mg/25 mg (Lopinavir/Ritonavir)",
+      "imprints": [
+        "KALETRA"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "opaque"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Kaletra",
+      "strength": "400 mg/100 mg per 5 mL (Lopinavir/Ritonavir)",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Kaletra",
+      "strength": "200 mg/50 mg (Lopinavir/Ritonavir)",
+      "imprints": [
+        "KALETRA"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "tan",
+        "film-coated"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "AbbVie",
+      "scored": true
+    }
+  ]
+}

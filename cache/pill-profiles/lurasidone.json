@@ -1,0 +1,162 @@
+{
+  "drug_name": "Lurasidone",
+  "generic_name": "Lurasidone hydrochloride",
+  "drug_class": "Atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Latuda",
+      "strength": "20 mg",
+      "imprints": [
+        "Latuda",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Latuda",
+      "strength": "40 mg",
+      "imprints": [
+        "Latuda",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Latuda",
+      "strength": "60 mg",
+      "imprints": [
+        "Latuda",
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Latuda",
+      "strength": "80 mg",
+      "imprints": [
+        "Latuda",
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Latuda",
+      "strength": "120 mg",
+      "imprints": [
+        "Latuda",
+        "120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lurasidone",
+      "strength": "20 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Aurobindo, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lurasidone",
+      "strength": "40 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Aurobindo, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lurasidone",
+      "strength": "60 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Aurobindo, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lurasidone",
+      "strength": "80 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple (Aurobindo, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lurasidone",
+      "strength": "120 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Multiple (Aurobindo, Teva, Sandoz, others)",
+      "scored": false
+    }
+  ]
+}

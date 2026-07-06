@@ -1,0 +1,297 @@
+{
+  "drug_name": "Paroxetine",
+  "generic_name": "paroxetine hydrochloride",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "variants": [
+    {
+      "brand_name": "Paxil",
+      "strength": "10 mg",
+      "imprints": [
+        "Paxil 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Paxil",
+      "strength": "20 mg",
+      "imprints": [
+        "Paxil 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Paxil",
+      "strength": "30 mg",
+      "imprints": [
+        "Paxil 30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Paxil",
+      "strength": "40 mg",
+      "imprints": [
+        "Paxil 40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Paxil CR",
+      "strength": "12.5 mg",
+      "imprints": [
+        "Paxil CR 12.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Paxil CR",
+      "strength": "25 mg",
+      "imprints": [
+        "Paxil CR 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Paxil CR",
+      "strength": "37.5 mg",
+      "imprints": [
+        "Paxil CR 37.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "10 mg",
+      "imprints": [
+        "PAR 010"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Paranova/Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "20 mg",
+      "imprints": [
+        "PAR 020",
+        "20",
+        "GG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Paranova/Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "30 mg",
+      "imprints": [
+        "PAR 030",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Paranova/Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "40 mg",
+      "imprints": [
+        "PAR 040",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Paranova/Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "10 mg",
+      "imprints": [
+        "MYLAN 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "20 mg",
+      "imprints": [
+        "MYLAN 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "30 mg",
+      "imprints": [
+        "MYLAN 30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "40 mg",
+      "imprints": [
+        "MYLAN 40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "10 mg",
+      "imprints": [
+        "TEVA 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "20 mg",
+      "imprints": [
+        "TEVA 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "30 mg",
+      "imprints": [
+        "TEVA 30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paroxetine",
+      "strength": "40 mg",
+      "imprints": [
+        "TEVA 40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

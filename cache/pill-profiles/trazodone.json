@@ -1,0 +1,199 @@
+{
+  "drug_name": "Trazodone",
+  "generic_name": "Trazodone hydrochloride",
+  "drug_class": "Serotonin antagonist and reuptake inhibitor (SARI); Antidepressant",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "50",
+        "TRAZ 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Aurobindo, Mylan, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100",
+        "TRAZ 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Aurobindo, Mylan, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "150",
+        "TRAZ 150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Aurobindo, Mylan, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "300",
+        "TRAZ 300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Multiple (Aurobindo, Mylan, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Desyrel",
+      "strength": "50 mg",
+      "imprints": [
+        "DESYREL",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Desyrel",
+      "strength": "100 mg",
+      "imprints": [
+        "DESYREL",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Desyrel",
+      "strength": "150 mg",
+      "imprints": [
+        "DESYREL",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Desyrel",
+      "strength": "300 mg",
+      "imprints": [
+        "DESYREL",
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Desyrel Dividose",
+      "strength": "150 mg",
+      "imprints": [
+        "DESYREL",
+        "DIVIDOSE"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Desyrel Dividose",
+      "strength": "300 mg",
+      "imprints": [
+        "DESYREL",
+        "DIVIDOSE"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Oleptro",
+      "strength": "150 mg",
+      "imprints": [
+        "OLEPTRO",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Naurex (Bausch Health)",
+      "scored": false
+    },
+    {
+      "brand_name": "Oleptro",
+      "strength": "300 mg",
+      "imprints": [
+        "OLEPTRO",
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Naurex (Bausch Health)",
+      "scored": false
+    }
+  ]
+}

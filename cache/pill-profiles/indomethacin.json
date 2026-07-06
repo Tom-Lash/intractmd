@@ -1,0 +1,103 @@
+{
+  "drug_name": "Indomethacin",
+  "generic_name": "Indomethacin",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "INDOCIN 25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "INDOCIN 50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Indocin",
+      "strength": "25 mg",
+      "imprints": [
+        "INDOCIN 25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Indocin",
+      "strength": "50 mg",
+      "imprints": [
+        "INDOCIN 50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "INDOCIN 75 SR"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Indocin SR",
+      "strength": "75 mg",
+      "imprints": [
+        "INDOCIN 75 SR"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Merck",
+      "scored": false
+    }
+  ]
+}

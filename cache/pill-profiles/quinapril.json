@@ -1,0 +1,191 @@
+{
+  "drug_name": "Quinapril",
+  "generic_name": "Quinapril hydrochloride",
+  "drug_class": "ACE inhibitor",
+  "variants": [
+    {
+      "brand_name": "Accupril",
+      "strength": "5 mg",
+      "imprints": [
+        "ACCUPRIL",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Accupril",
+      "strength": "10 mg",
+      "imprints": [
+        "ACCUPRIL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Accupril",
+      "strength": "20 mg",
+      "imprints": [
+        "ACCUPRIL",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Accupril",
+      "strength": "40 mg",
+      "imprints": [
+        "ACCUPRIL",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "M51"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M52"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "M53"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "M54"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "LL C71"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "LL C72"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "LL C73"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "LL C74"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    }
+  ]
+}

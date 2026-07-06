@@ -797,57 +797,105 @@ console.log('[STARTUP] All routes configured');
 
 
 // ── PILL IDENTIFIER ──────────────────────────────────────────────────────
+// ── PILL IDENTIFIER (Cache-first + Claude AI fallback) ───────────────────
+const PILL_INDEX_PATH = require('path').join(__dirname, 'cache', 'pill-index.json');
+let pillIndex = null;
+
+function loadPillIndex() {
+  try {
+    if (!pillIndex && require('fs').existsSync(PILL_INDEX_PATH)) {
+      pillIndex = JSON.parse(require('fs').readFileSync(PILL_INDEX_PATH, 'utf8'));
+      console.log('[PILL] Index loaded:', Object.keys(pillIndex).length, 'imprint codes');
+    }
+  } catch(e) { console.error('[PILL] Index load error:', e.message); }
+}
+loadPillIndex();
+
+// ── PILL IDENTIFIER (Cache-first + Claude AI fallback) ───────────────────
+const PILL_INDEX_PATH = require('path').join(__dirname, 'cache', 'pill-index.json');
+let pillIndex = null;
+
+function loadPillIndex() {
+  try {
+    if (!pillIndex && require('fs').existsSync(PILL_INDEX_PATH)) {
+      pillIndex = JSON.parse(require('fs').readFileSync(PILL_INDEX_PATH, 'utf8'));
+      console.log('[PILL] Index loaded:', Object.keys(pillIndex).length, 'imprint codes');
+    }
+  } catch(e) { console.error('[PILL] Index load error:', e.message); }
+}
+loadPillIndex();
+
 app.post('/api/pill-identify', async (req, res) => {
   const { shape, color1, color2, imprint, coating, size } = req.body;
   try {
     let matches = [];
-    const apiKey = process.env.ANTHROPIC_API_KEY;
-    if (!apiKey) { return res.json({ matches: [], error: 'API key not configured' }); }
+    let source = 'none';
 
-    const parts = [];
-    if (imprint) parts.push('Imprint code: ' + imprint);
-    if (shape && shape !== 'Any') parts.push('Shape: ' + shape);
-    if (color1 && color1 !== 'Any') parts.push('Primary color: ' + color1);
-    if (color2 && color2 !== 'Any') parts.push('Secondary color: ' + color2);
-    if (size) parts.push('Size: approximately ' + size + 'mm');
-    if (coating && coating !== 'Any') parts.push('Coating: ' + coating);
-
-    if (!parts.length) { return res.json({ matches: [], error: 'Please enter at least one characteristic' }); }
-
-    const promptText = [
-      'You are a pharmaceutical pill identification expert with knowledge of US prescription and OTC medications.',
-      'Identify pills matching these characteristics: ' + parts.join(', ') + '.',
-      'Focus on common US medications. If the imprint is a well-known code (like L484=Tylenol, M357=Hydrocodone, etc.), identify it confidently.',
-      'Return ONLY valid JSON, no markdown, no explanation:',
-      '{"matches":[{"drug_name":"<brand name>","generic_name":"<generic name>","strength":"<dose and units>","confidence":"<high|medium|low>","note":"<shape, color, coating if known>","imageUrl":""}]}',
-      'Return up to 5 matches ranked by likelihood. If you cannot identify the pill, return an empty matches array.'
-    ].join(' ');
-
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 12000);
-    let aiResp;
-    try {
-      const r = await fetch('https://api.anthropic.com/v1/messages', {
-        signal: ctrl.signal,
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-        body: JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 800, messages: [{ role: 'user', content: promptText }] })
-      });
-      aiResp = await r.json();
-    } finally { clearTimeout(t); }
-
-    if (aiResp && aiResp.content && aiResp.content[0]) {
-      const raw = aiResp.content[0].text.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
-      const m = raw.match(/{[\s\S]*}/);
-      if (m) {
-        const parsed = JSON.parse(m[0]);
-        if (parsed.matches) matches = parsed.matches;
+    // Step 1: Cache lookup by imprint (instant, <1ms)
+    if (imprint && pillIndex) {
+      const key = imprint.toString().toUpperCase().replace(/\s+/g, '');
+      let cacheHits = pillIndex[key] || [];
+      if (shape && shape !== 'Any') {
+        const filtered = cacheHits.filter(m => !m.shape || m.shape.toLowerCase() === shape.toLowerCase());
+        if (filtered.length) cacheHits = filtered;
+      }
+      if (color1 && color1 !== 'Any') {
+        const filtered = cacheHits.filter(m => !m.colors || m.colors.some(c => c.toLowerCase().includes(color1.toLowerCase())));
+        if (filtered.length) cacheHits = filtered;
+      }
+      if (cacheHits.length) {
+        matches = cacheHits.map(function(m) {
+          return {
+            drug_name: m.drug_name,
+            generic_name: m.generic_name,
+            strength: m.strength,
+            confidence: 'high',
+            note: [m.shape, (m.colors||[]).join('/'), m.coating].filter(Boolean).join(', '),
+            imageUrl: m.imageUrl || '',
+            labeler: m.manufacturer || '',
+            drug_class: m.drug_class || ''
+          };
+        });
+        source = 'cache';
       }
     }
 
-    res.json({ matches });
+    // Step 2: Claude AI fallback for cache misses
+    if (!matches.length) {
+      const apiKey = process.env.ANTHROPIC_API_KEY;
+      if (apiKey) {
+        const parts = [];
+        if (imprint) parts.push('Imprint code: ' + imprint);
+        if (shape && shape !== 'Any') parts.push('Shape: ' + shape);
+        if (color1 && color1 !== 'Any') parts.push('Primary color: ' + color1);
+        if (color2 && color2 !== 'Any') parts.push('Secondary color: ' + color2);
+        if (size) parts.push('Size: approximately ' + size + 'mm');
+        if (coating && coating !== 'Any') parts.push('Coating: ' + coating);
+        if (parts.length) {
+          const promptText = 'You are a pharmaceutical pill identification expert. Identify pills matching: ' + parts.join(', ') + '. If the imprint is a well-known code (L484=Tylenol, M357=Hydrocodone, etc.), identify it confidently. Return ONLY valid JSON no markdown: {"matches":[{"drug_name":"<brand>","generic_name":"<generic>","strength":"<dose>","confidence":"<high|medium|low>","note":"<description>","imageUrl":"","labeler":"<manufacturer>"}]} Up to 5 matches.';
+          const ctrl = new AbortController();
+          const t = setTimeout(() => ctrl.abort(), 12000);
+          try {
+            const r = await fetch('https://api.anthropic.com/v1/messages', {
+              signal: ctrl.signal,
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+              body: JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 800, messages: [{ role: 'user', content: promptText }] })
+            });
+            const data = await r.json();
+            clearTimeout(t);
+            if (data.content && data.content[0]) {
+              const raw = data.content[0].text.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
+              const m = raw.match(/{[\s\S]*}/);
+              if (m) { const parsed = JSON.parse(m[0]); if (parsed.matches) { matches = parsed.matches; source = 'ai'; } }
+            }
+          } catch(ae) { clearTimeout(t); console.error('[PILL] AI error:', ae.message); }
+        }
+      }
+    }
+    res.json({ matches, source });
   } catch(e) {
-    console.error('Pill identify error:', e.message);
+    console.error('[PILL] Error:', e.message);
     res.json({ matches: [], error: e.message });
   }
 });

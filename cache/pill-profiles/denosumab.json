@@ -1,0 +1,27 @@
+{
+  "drug_name": "Denosumab",
+  "generic_name": "denosumab",
+  "drug_class": "Monoclonal antibody (RANKL inhibitor)",
+  "note": "Denosumab is a subcutaneous injection, not an oral medication; therefore, no pill physical characteristics exist",
+  "variants": [
+    {
+      "brand_name": "Prolia",
+      "strength": "60 mg/1 mL",
+      "formulation_type": "subcutaneous injection",
+      "route": "subcutaneous",
+      "manufacturer": "Amgen Inc.",
+      "frequency": "Once every 6 months",
+      "indication": "Osteoporosis in postmenopausal women and men"
+    },
+    {
+      "brand_name": "Xgeva",
+      "strength": "120 mg/1.7 mL",
+      "formulation_type": "subcutaneous injection",
+      "route": "subcutaneous",
+      "manufacturer": "Amgen Inc.",
+      "frequency": "Every 4 weeks",
+      "indication": "Prevention of skeletal-related events in patients with bone metastases from solid tumors"
+    }
+  ],
+  "important_note": "Denosumab is NOT available as an oral tablet or capsule in the United States. It is exclusively formulated as a subcutaneous injection. Therefore, this database entry cannot provide pill physical characteristics such as shape, color, imprints, or size, as these characteristics do not apply to this medication."
+}

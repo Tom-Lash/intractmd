@@ -1,0 +1,82 @@
+{
+  "drug_name": "Isoniazid",
+  "generic_name": "Isoniazid",
+  "drug_class": "Antimycobacterial Agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "INH 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "INH 300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "INH 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Lannett",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Lannett",
+      "scored": false
+    }
+  ]
+}

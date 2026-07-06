@@ -1,0 +1,90 @@
+{
+  "drug_name": "Dicyclomine",
+  "generic_name": "dicyclomine hydrochloride",
+  "drug_class": "Anticholinergic/Antispasmodic",
+  "variants": [
+    {
+      "brand_name": "Bentyl",
+      "strength": "10 mg",
+      "imprints": [
+        "BENTYL",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Axcan Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Bentyl",
+      "strength": "20 mg",
+      "imprints": [
+        "BENTYL",
+        "20"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Axcan Pharma",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "DICYCLOMINE",
+        "20"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "DIC",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

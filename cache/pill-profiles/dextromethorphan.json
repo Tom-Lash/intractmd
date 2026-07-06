@@ -1,0 +1,84 @@
+{
+  "drug_name": "Dextromethorphan",
+  "generic_name": "Dextromethorphan Hydrobromide",
+  "drug_class": "Antitussive (Cough Suppressant)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "DM5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "DM10",
+        "DM 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "DM15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Robitussin",
+      "strength": "15 mg",
+      "imprints": [
+        "ROBITUSSIN 15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "DelsymTM",
+      "strength": "30 mg",
+      "imprints": [
+        "DELSYM"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    }
+  ]
+}

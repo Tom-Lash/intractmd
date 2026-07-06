@@ -1,0 +1,102 @@
+{
+  "drug_name": "Fexofenadine",
+  "generic_name": "Fexofenadine Hydrochloride",
+  "drug_class": "Non-sedating Histamine H1-receptor Antagonist (Second-generation Antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Allegra",
+      "strength": "30 mg",
+      "imprints": [
+        "ALLEGRA",
+        "30"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Allegra",
+      "strength": "60 mg",
+      "imprints": [
+        "ALLEGRA",
+        "60"
+      ],
+      "shape": "oval",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Allegra",
+      "strength": "180 mg",
+      "imprints": [
+        "ALLEGRA",
+        "180"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fexofenadine HCl)",
+      "strength": "30 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Mylan, Teva, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fexofenadine HCl)",
+      "strength": "60 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "peach",
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple (Mylan, Teva, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fexofenadine HCl)",
+      "strength": "180 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Mylan, Teva, Sandoz, etc.)",
+      "scored": false
+    }
+  ]
+}

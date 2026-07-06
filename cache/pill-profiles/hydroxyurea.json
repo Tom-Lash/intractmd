@@ -1,0 +1,171 @@
+{
+  "drug_name": "Hydroxyurea",
+  "generic_name": "Hydroxyurea",
+  "drug_class": "Antineoplastic agent; Antisickling agent",
+  "variants": [
+    {
+      "brand_name": "Droxia",
+      "strength": "200 mg",
+      "imprints": [
+        "DROXIA",
+        "200 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Droxia",
+      "strength": "300 mg",
+      "imprints": [
+        "DROXIA",
+        "300 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Droxia",
+      "strength": "400 mg",
+      "imprints": [
+        "DROXIA",
+        "400 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Hydrea",
+      "strength": "500 mg",
+      "imprints": [
+        "HYDREA",
+        "500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "HU 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "HU 300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "HU 400"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "HU 500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Siklos",
+      "strength": "100 mg",
+      "imprints": [
+        "SIK",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Addmedica",
+      "scored": false
+    },
+    {
+      "brand_name": "Siklos",
+      "strength": "1000 mg",
+      "imprints": [
+        "SIK",
+        "1000"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Addmedica",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "drug_name": "Lamivudine",
+  "generic_name": "Lamivudine",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "variants": [
+    {
+      "brand_name": "Epivir",
+      "strength": "150 mg",
+      "imprints": [
+        "GX623"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Epivir",
+      "strength": "300 mg",
+      "imprints": [
+        "GX621"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lamivudine",
+      "strength": "150 mg",
+      "imprints": [
+        "Various manufacturer-specific"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple (Aurobindo, Cipla, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lamivudine",
+      "strength": "300 mg",
+      "imprints": [
+        "Various manufacturer-specific"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple (Aurobindo, Cipla, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Epivir Oral Solution",
+      "strength": "10 mg/mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    }
+  ]
+}

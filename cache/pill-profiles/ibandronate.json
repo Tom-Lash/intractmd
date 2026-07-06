@@ -1,0 +1,69 @@
+{
+  "drug_name": "Ibandronate",
+  "generic_name": "ibandronate sodium",
+  "drug_class": "Bisphosphonate",
+  "variants": [
+    {
+      "brand_name": "Boniva",
+      "strength": "2.5 mg",
+      "imprints": [
+        "BONIVA",
+        "2.5 mg"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Roche/GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Boniva",
+      "strength": "150 mg",
+      "imprints": [
+        "BONIVA",
+        "150 mg"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Roche/GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, others)",
+      "scored": false
+    }
+  ]
+}

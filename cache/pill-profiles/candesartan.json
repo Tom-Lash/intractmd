@@ -1,0 +1,131 @@
+{
+  "drug_name": "Candesartan",
+  "generic_name": "Candesartan cilexetil",
+  "drug_class": "Angiotensin II receptor blocker (ARB)",
+  "variants": [
+    {
+      "brand_name": "Atacand",
+      "strength": "4 mg",
+      "imprints": [
+        "ATC",
+        "4"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Atacand",
+      "strength": "8 mg",
+      "imprints": [
+        "ATC",
+        "8"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Atacand",
+      "strength": "16 mg",
+      "imprints": [
+        "ATC",
+        "16"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Atacand",
+      "strength": "32 mg",
+      "imprints": [
+        "ATC",
+        "32"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "4"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "8"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "16 mg",
+      "imprints": [
+        "16"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "32 mg",
+      "imprints": [
+        "32"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

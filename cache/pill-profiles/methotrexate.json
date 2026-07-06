@@ -1,0 +1,268 @@
+{
+  "drug_name": "Methotrexate",
+  "generic_name": "methotrexate",
+  "drug_class": "Antimetabolite/Immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "MT2.5",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "MT5",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "MT7.5",
+        "7.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "MT10",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Otrexup",
+      "strength": "7.5 mg/0.4 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Antares Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Otrexup",
+      "strength": "10 mg/0.4 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Antares Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Otrexup",
+      "strength": "12.5 mg/0.4 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Antares Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Otrexup",
+      "strength": "15 mg/0.4 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Antares Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Rasuvo",
+      "strength": "10 mg/0.2 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Medac",
+      "scored": false
+    },
+    {
+      "brand_name": "Rasuvo",
+      "strength": "12.5 mg/0.25 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Medac",
+      "scored": false
+    },
+    {
+      "brand_name": "Rasuvo",
+      "strength": "15 mg/0.3 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Medac",
+      "scored": false
+    },
+    {
+      "brand_name": "Rasuvo",
+      "strength": "17.5 mg/0.35 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Medac",
+      "scored": false
+    },
+    {
+      "brand_name": "Rasuvo",
+      "strength": "20 mg/0.4 mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "Medac",
+      "scored": false
+    },
+    {
+      "brand_name": "Trexall",
+      "strength": "5 mg",
+      "imprints": [
+        "TREXALL 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Barr Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "Trexall",
+      "strength": "7.5 mg",
+      "imprints": [
+        "TREXALL 7.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Barr Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Trexall",
+      "strength": "10 mg",
+      "imprints": [
+        "TREXALL 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Barr Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Trexall",
+      "strength": "15 mg",
+      "imprints": [
+        "TREXALL 15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Barr Laboratories",
+      "scored": false
+    }
+  ]
+}

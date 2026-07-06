@@ -1,0 +1,56 @@
+{
+  "drug_name": "Insulin Aspart",
+  "generic_name": "Insulin Aspart",
+  "drug_class": "Rapid-acting insulin",
+  "variants": [
+    {
+      "brand_name": "NovoLog",
+      "strength": "100 units/mL",
+      "form": "Injectable solution",
+      "imprints": [],
+      "shape": "vial",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "note": "Available in 10 mL vials"
+    },
+    {
+      "brand_name": "NovoLog",
+      "strength": "100 units/mL",
+      "form": "Injectable solution",
+      "imprints": [],
+      "shape": "prefilled_pen",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "note": "FlexPen delivery device, 3 mL cartridge"
+    },
+    {
+      "brand_name": "NovoLog",
+      "strength": "100 units/mL",
+      "form": "Injectable solution",
+      "imprints": [],
+      "shape": "prefilled_pen",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "note": "FlexTouch delivery device, 3 mL cartridge"
+    }
+  ],
+  "important_note": "Insulin Aspart is NOT available as a pill/tablet formulation. It is a parenteral injectable medication available only as liquid solutions in vials and prefilled pens. No oral tablet formulations exist for this rapid-acting insulin."
+}

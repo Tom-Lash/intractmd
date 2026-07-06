@@ -1,0 +1,118 @@
+{
+  "drug_name": "Docusate",
+  "generic_name": "Docusate Sodium",
+  "drug_class": "Stool Softener (Emollient Laxative)",
+  "variants": [
+    {
+      "brand_name": "Colace",
+      "strength": "50 mg",
+      "imprints": [
+        "COLACE",
+        "50 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Colace",
+      "strength": "100 mg",
+      "imprints": [
+        "COLACE",
+        "100 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Colace Clear",
+      "strength": "100 mg",
+      "imprints": [
+        "COLACE CLEAR"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Docusate Sodium",
+      "strength": "50 mg",
+      "imprints": [
+        "50 mg",
+        "Various manufacturer codes"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Teva, Perrigo, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Docusate Sodium",
+      "strength": "100 mg",
+      "imprints": [
+        "100 mg",
+        "Various manufacturer codes"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple (Teva, Perrigo, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Colace Liquid",
+      "strength": "150 mg/15mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "liquid",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Docusate Sodium (Generic Tablet)",
+      "strength": "100 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

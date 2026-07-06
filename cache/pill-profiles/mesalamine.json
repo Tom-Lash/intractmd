@@ -1,0 +1,166 @@
+{
+  "drug_name": "Mesalamine",
+  "generic_name": "mesalamine (5-aminosalicylic acid)",
+  "drug_class": "Aminosalicylate; Anti-inflammatory Agent",
+  "variants": [
+    {
+      "brand_name": "Asacol",
+      "strength": "400 mg",
+      "imprints": [
+        "ASACOL 400"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 10,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Asacol HD",
+      "strength": "800 mg",
+      "imprints": [
+        "ASACOL HD 800"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 12,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Delzicol",
+      "strength": "400 mg",
+      "imprints": [
+        "DZ 400"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Pentasa",
+      "strength": "250 mg",
+      "imprints": [
+        "PENTASA 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "clear",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Pentasa",
+      "strength": "500 mg",
+      "imprints": [
+        "PENTASA 500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "clear",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Pentasa",
+      "strength": "1000 mg",
+      "imprints": [
+        "PENTASA 1000"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Apriso",
+      "strength": "375 mg",
+      "imprints": [
+        "APR 375"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Lialda",
+      "strength": "1.2 g",
+      "imprints": [
+        "LIALDA"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mesalamine",
+      "strength": "400 mg",
+      "imprints": [
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mesalamine",
+      "strength": "800 mg",
+      "imprints": [
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 12,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    }
+  ]
+}

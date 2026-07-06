@@ -1,0 +1,145 @@
+{
+  "drug_name": "Potassium Chloride",
+  "generic_name": "Potassium Chloride",
+  "drug_class": "Electrolyte Supplement",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "10 mEq",
+      "imprints": [
+        "KCL 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mEq",
+      "imprints": [
+        "K-TAB",
+        "KLOR-CON"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Upsher-Smith",
+      "scored": false
+    },
+    {
+      "brand_name": "Klor-Con",
+      "strength": "8 mEq",
+      "imprints": [
+        "KLOR-CON 8"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Upsher-Smith",
+      "scored": false
+    },
+    {
+      "brand_name": "Klor-Con",
+      "strength": "10 mEq",
+      "imprints": [
+        "KLOR-CON 10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Upsher-Smith",
+      "scored": false
+    },
+    {
+      "brand_name": "K-Dur",
+      "strength": "20 mEq",
+      "imprints": [
+        "K-DUR 20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Schering",
+      "scored": false
+    },
+    {
+      "brand_name": "Micro-K",
+      "strength": "10 mEq",
+      "imprints": [
+        "MICRO-K 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mEq",
+      "imprints": [
+        "KCL 15"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mEq",
+      "imprints": [
+        "KCL 25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Liquid/Solution",
+      "strength": "20 mEq/15mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

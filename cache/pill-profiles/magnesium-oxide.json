@@ -1,0 +1,86 @@
+{
+  "drug_name": "Magnesium Oxide",
+  "generic_name": "magnesium oxide",
+  "drug_class": "mineral supplement, osmotic laxative",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "blank",
+        "various manufacturer specific"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "blank",
+        "various manufacturer specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Mag-Ox 400",
+      "strength": "400 mg",
+      "imprints": [
+        "MAG OX 400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Blaine Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Uro-Mag",
+      "strength": "140 mg",
+      "imprints": [
+        "URO-MAG"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Blaine Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "blank",
+        "various manufacturer specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "multiple",
+      "scored": false
+    }
+  ]
+}

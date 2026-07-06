@@ -1,0 +1,67 @@
+{
+  "drug_name": "Prasugrel",
+  "generic_name": "Prasugrel hydrochloride",
+  "drug_class": "Antiplatelet agent (thienopyridine P2Y12 inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Effient",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Effient",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Prasugrel)",
+      "strength": "5 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Prasugrel)",
+      "strength": "10 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

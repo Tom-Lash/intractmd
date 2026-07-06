@@ -1,0 +1,40 @@
+{
+  "drug_name": "Bimatoprost",
+  "generic_name": "Bimatoprost",
+  "drug_class": "Prostaglandin F analog (ophthalmic agent)",
+  "variants": [
+    {
+      "brand_name": "Lumigan",
+      "strength": "0.03%",
+      "form": "Ophthalmic solution",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless to slightly yellow"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false,
+      "notes": "5 mL bottle"
+    },
+    {
+      "brand_name": "Latisse",
+      "strength": "0.03%",
+      "form": "Topical solution",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false,
+      "notes": "3 mL bottle with applicator brush"
+    }
+  ],
+  "important_note": "Bimatoprost is NOT available as an oral tablet/pill in the United States. It is only available as an ophthalmic solution (Lumigan) for glaucoma/ocular hypertension treatment and as a topical solution (Latisse) for eyelash growth. There are no pill formulations to catalog."
+}

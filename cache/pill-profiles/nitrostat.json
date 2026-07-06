@@ -1,0 +1,52 @@
+{
+  "drug_name": "Nitrostat",
+  "generic_name": "nitroglycerin",
+  "drug_class": "nitrate vasodilator",
+  "variants": [
+    {
+      "brand_name": "Nitrostat",
+      "strength": "0.3 mg",
+      "imprints": [
+        "NITROSTAT 0.3"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Nitrostat",
+      "strength": "0.6 mg",
+      "imprints": [
+        "NITROSTAT 0.6"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Nitrostat",
+      "strength": "1 mg",
+      "imprints": [
+        "NITROSTAT 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ]
+}

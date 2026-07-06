@@ -1,0 +1,75 @@
+{
+  "drug_name": "Adalimumab",
+  "generic_name": "adalimumab",
+  "drug_class": "Tumor Necrosis Factor (TNF) Inhibitor - Monoclonal Antibody",
+  "note": "Adalimumab is a biologic medication administered by injection (subcutaneous), NOT available as an oral pill/tablet form in the United States",
+  "variants": [
+    {
+      "brand_name": "Humira",
+      "strength": "40 mg/0.8 mL",
+      "formulation_type": "prefilled syringe",
+      "route": "subcutaneous injection",
+      "manufacturer": "AbbVie Inc.",
+      "package_options": [
+        "single dose syringe",
+        "prefilled pen"
+      ]
+    },
+    {
+      "brand_name": "Humira",
+      "strength": "20 mg/0.4 mL",
+      "formulation_type": "prefilled syringe",
+      "route": "subcutaneous injection",
+      "manufacturer": "AbbVie Inc.",
+      "package_options": [
+        "single dose syringe"
+      ]
+    },
+    {
+      "brand_name": "Humira",
+      "strength": "10 mg/0.2 mL",
+      "formulation_type": "prefilled syringe",
+      "route": "subcutaneous injection",
+      "manufacturer": "AbbVie Inc.",
+      "package_options": [
+        "single dose syringe"
+      ]
+    },
+    {
+      "brand_name": "Humira Pen",
+      "strength": "40 mg/0.8 mL",
+      "formulation_type": "prefilled pen",
+      "route": "subcutaneous injection",
+      "manufacturer": "AbbVie Inc."
+    },
+    {
+      "brand_name": "Cyltezo",
+      "strength": "40 mg/0.8 mL",
+      "formulation_type": "prefilled syringe",
+      "route": "subcutaneous injection",
+      "manufacturer": "Sandoz Inc."
+    },
+    {
+      "brand_name": "Hadlima",
+      "strength": "40 mg/0.8 mL",
+      "formulation_type": "prefilled syringe",
+      "route": "subcutaneous injection",
+      "manufacturer": "Fresenius Kabi USA LLC"
+    },
+    {
+      "brand_name": "Hyrimoz",
+      "strength": "40 mg/0.8 mL",
+      "formulation_type": "prefilled syringe",
+      "route": "subcutaneous injection",
+      "manufacturer": "Boehringer Ingelheim Pharmaceuticals Inc."
+    },
+    {
+      "brand_name": "Idacio",
+      "strength": "40 mg/0.8 mL",
+      "formulation_type": "prefilled syringe/pen",
+      "route": "subcutaneous injection",
+      "manufacturer": "Fresenius Kabi USA LLC"
+    }
+  ],
+  "important_note": "Adalimumab is ONLY available as an injectable biologic. There are NO oral pill formulations. The physical characteristics requested (imprints, shapes, colors, tablets, coating) do not apply to this medication. If you are looking for an oral medication, please verify the drug name."
+}

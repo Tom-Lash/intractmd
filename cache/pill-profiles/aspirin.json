@@ -1,0 +1,160 @@
+{
+  "drug_name": "Aspirin",
+  "generic_name": "acetylsalicylic acid",
+  "drug_class": "Nonsteroidal anti-inflammatory drug (NSAID), analgesic, antipyretic, antiplatelet agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "325 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Bayer",
+      "strength": "325 mg",
+      "imprints": [
+        "BAYER"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Bayer HealthCare LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Bayer Low Dose",
+      "strength": "81 mg",
+      "imprints": [
+        "BAYER"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 7,
+      "manufacturer": "Bayer HealthCare LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Bayer Extra Strength",
+      "strength": "500 mg",
+      "imprints": [
+        "BAYER",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Bayer HealthCare LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Ecotrin",
+      "strength": "81 mg",
+      "imprints": [
+        "ECOTRIN"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Ecotrin",
+      "strength": "325 mg",
+      "imprints": [
+        "ECOTRIN"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Ecotrin",
+      "strength": "500 mg",
+      "imprints": [
+        "ECOTRIN"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 11,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "St. Joseph",
+      "strength": "81 mg",
+      "imprints": [
+        "SJ",
+        "81"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "McNeil-PPC Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "81 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

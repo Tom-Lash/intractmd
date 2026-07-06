@@ -1,0 +1,99 @@
+{
+  "drug_name": "Rasagiline",
+  "generic_name": "Rasagiline mesylate",
+  "drug_class": "Monoamine oxidase inhibitor (MAOi), specifically MAO-B inhibitor",
+  "variants": [
+    {
+      "brand_name": "Azilect",
+      "strength": "0.5 mg",
+      "imprints": [
+        "AST",
+        "0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Azilect",
+      "strength": "1 mg",
+      "imprints": [
+        "AST",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "KV 113"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Kvk-Tech",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "KV 114"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Kvk-Tech",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "R 113"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Rising Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "R 114"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Rising Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

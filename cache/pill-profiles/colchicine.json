@@ -1,0 +1,165 @@
+{
+  "drug_name": "Colchicine",
+  "generic_name": "Colchicine",
+  "drug_class": "Anti-inflammatory Agent; Uricosuric Agent",
+  "variants": [
+    {
+      "brand_name": "Colcrys",
+      "strength": "0.5 mg",
+      "imprints": [
+        "COLCRYS",
+        "0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Colcrys",
+      "strength": "0.6 mg",
+      "imprints": [
+        "COLCRYS",
+        "0.6"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.5 mg",
+      "imprints": [
+        "M18"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.6 mg",
+      "imprints": [
+        "M19"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.5 mg",
+      "imprints": [
+        "WATSON",
+        "861"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.6 mg",
+      "imprints": [
+        "WATSON",
+        "862"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.5 mg",
+      "imprints": [
+        "54",
+        "092"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.6 mg",
+      "imprints": [
+        "54",
+        "093"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.5 mg",
+      "imprints": [
+        "DRL",
+        "1540"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Darlington Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colchicine",
+      "strength": "0.6 mg",
+      "imprints": [
+        "DRL",
+        "1541"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Darlington Pharma",
+      "scored": false
+    }
+  ]
+}

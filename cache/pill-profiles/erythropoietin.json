@@ -1,0 +1,64 @@
+{
+  "drug_name": "Erythropoietin",
+  "generic_name": "epoetin alfa, epoetin beta, darbepoetin alfa",
+  "drug_class": "Erythropoiesis-stimulating agent (ESA)",
+  "note": "Erythropoietin is NOT available as an oral pill formulation in the United States. All FDA-approved erythropoietin products are administered via injection only (subcutaneous or intravenous).",
+  "available_formulations": [
+    {
+      "brand_name": "Epogen (epoetin alfa)",
+      "route": "Injection (IV or SC)",
+      "strengths": [
+        "2,000 units/mL",
+        "3,000 units/mL",
+        "4,000 units/mL",
+        "10,000 units/mL",
+        "20,000 units/mL",
+        "40,000 units/mL"
+      ],
+      "manufacturer": "Amgen",
+      "form": "Solution for injection"
+    },
+    {
+      "brand_name": "Procrit (epoetin alfa)",
+      "route": "Injection (IV or SC)",
+      "strengths": [
+        "2,000 units/mL",
+        "3,000 units/mL",
+        "4,000 units/mL",
+        "10,000 units/mL",
+        "20,000 units/mL",
+        "40,000 units/mL"
+      ],
+      "manufacturer": "Janssen Pharmaceuticals",
+      "form": "Solution for injection"
+    },
+    {
+      "brand_name": "Aranesp (darbepoetin alfa)",
+      "route": "Injection (IV or SC)",
+      "strengths": [
+        "25 mcg/0.42 mL",
+        "40 mcg/0.4 mL",
+        "60 mcg/0.3 mL",
+        "100 mcg/0.5 mL",
+        "150 mcg/0.3 mL",
+        "300 mcg/0.6 mL"
+      ],
+      "manufacturer": "Amgen",
+      "form": "Solution for injection"
+    },
+    {
+      "brand_name": "Retacrit (epoetin alfa-epbx)",
+      "route": "Injection (IV or SC)",
+      "strengths": [
+        "2,000 units/mL",
+        "3,000 units/mL",
+        "10,000 units/mL",
+        "20,000 units/mL",
+        "40,000 units/mL"
+      ],
+      "manufacturer": "Pfizer",
+      "form": "Solution for injection"
+    }
+  ],
+  "pill_variants": []
+}

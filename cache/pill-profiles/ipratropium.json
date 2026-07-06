@@ -1,0 +1,30 @@
+{
+  "drug_name": "Ipratropium",
+  "generic_name": "Ipratropium bromide",
+  "drug_class": "Anticholinergic bronchodilator",
+  "note": "Ipratropium is NOT available as an oral tablet or pill in the United States. It is only available in the following forms:",
+  "available_formulations": [
+    {
+      "formulation_type": "Inhalation solution",
+      "strength": "0.02% (500 mcg/2.5 mL)",
+      "route": "nebulizer",
+      "brand_name": "Atrovent",
+      "manufacturer": "Boehringer Ingelheim"
+    },
+    {
+      "formulation_type": "Metered dose inhaler (MDI)",
+      "strength": "17 mcg/actuation",
+      "route": "oral inhalation",
+      "brand_name": "Atrovent HFA",
+      "manufacturer": "Boehringer Ingelheim"
+    },
+    {
+      "formulation_type": "Nasal spray",
+      "strength": "0.03% or 0.06%",
+      "route": "intranasal",
+      "brand_name": "Atrovent Nasal Spray",
+      "manufacturer": "Boehringer Ingelheim"
+    }
+  ],
+  "variants": []
+}

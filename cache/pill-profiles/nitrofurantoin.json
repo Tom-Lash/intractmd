@@ -1,0 +1,156 @@
+{
+  "drug_name": "Nitrofurantoin",
+  "generic_name": "Nitrofurantoin",
+  "drug_class": "Nitrofuran antibiotic",
+  "variants": [
+    {
+      "brand_name": "Macrobid",
+      "strength": "100 mg",
+      "imprints": [
+        "MACROBID",
+        "100 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Alva Pharmaceuticals (subsidiary of Noven)",
+      "scored": false
+    },
+    {
+      "brand_name": "Macrodantin",
+      "strength": "25 mg",
+      "imprints": [
+        "MACRODANTIN",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "black"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Macrodantin",
+      "strength": "50 mg",
+      "imprints": [
+        "MACRODANTIN",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Macrodantin",
+      "strength": "100 mg",
+      "imprints": [
+        "MACRODANTIN",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Furadantin",
+      "strength": "100 mg",
+      "imprints": [
+        "FURADANTIN",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "sugar-coated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "GG 848"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "NITROFURANTOIN",
+        "100MG"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "N100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "GG 846"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

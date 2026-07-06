@@ -1,0 +1,25 @@
+{
+  "drug_name": "Brinzolamide",
+  "generic_name": "Brinzolamide",
+  "drug_class": "Carbonic Anhydrase Inhibitor (Ophthalmic)",
+  "note": "Brinzolamide is exclusively available as an ophthalmic suspension/eye drop formulation. It is not manufactured as an oral tablet or capsule in the United States. Therefore, no pill physical characteristics exist.",
+  "variants": [
+    {
+      "brand_name": "Azopt",
+      "strength": "1% ophthalmic suspension",
+      "formulation_type": "Ophthalmic Suspension",
+      "manufacturer": "Alcon Laboratories",
+      "container": "5mL or 10mL bottle with dropper",
+      "note": "Not a tablet or capsule - cannot provide pill characteristics"
+    },
+    {
+      "brand_name": "Generic Brinzolamide",
+      "strength": "1% ophthalmic suspension",
+      "formulation_type": "Ophthalmic Suspension",
+      "manufacturer": "Multiple manufacturers (Apotex, Dr. Reddy's, Teva, Valeant, others)",
+      "container": "5mL or 10mL bottle with dropper",
+      "note": "Not a tablet or capsule - cannot provide pill characteristics"
+    }
+  ],
+  "important_information": "Brinzolamide is formulated exclusively as an ophthalmic (eye drop) suspension for treating elevated intraocular pressure in glaucoma and ocular hypertension. It does not exist as an oral solid dosage form (tablet, capsule, or pill) in the United States market. Therefore, imprints, shapes, colors, sizes, and coating information are not applicable."
+}

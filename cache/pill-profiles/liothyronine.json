@@ -1,0 +1,100 @@
+{
+  "drug_name": "Liothyronine",
+  "generic_name": "Liothyronine Sodium",
+  "drug_class": "Thyroid Hormone (T3)",
+  "variants": [
+    {
+      "brand_name": "Cytomel",
+      "strength": "5 mcg",
+      "imprints": [
+        "CYTOMEL",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cytomel",
+      "strength": "25 mcg",
+      "imprints": [
+        "CYTOMEL",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cytomel",
+      "strength": "50 mcg",
+      "imprints": [
+        "CYTOMEL",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "drug_name": "Ertugliflozin",
+  "generic_name": "Ertugliflozin",
+  "drug_class": "SGLT2 Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Steglatro",
+      "strength": "5 mg",
+      "imprints": [
+        "322"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Steglatro",
+      "strength": "15 mg",
+      "imprints": [
+        "323"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ertugliflozin",
+      "strength": "5 mg",
+      "imprints": [
+        "E5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ertugliflozin",
+      "strength": "15 mg",
+      "imprints": [
+        "E15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

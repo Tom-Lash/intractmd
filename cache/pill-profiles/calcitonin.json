@@ -1,0 +1,21 @@
+{
+  "drug_name": "Calcitonin",
+  "generic_name": "calcitonin (salmon)",
+  "drug_class": "Calcitonin",
+  "variants": [
+    {
+      "brand_name": "Miacalcin",
+      "strength": "200 IU/spray",
+      "imprints": [],
+      "shape": "nasal spray",
+      "colors": [
+        "colorless to clear"
+      ],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Calcitonin is primarily available as a nasal spray formulation in the US market. Injectable formulations (subcutaneous or intramuscular) were previously available but have been largely discontinued or withdrawn from the US market. The nasal spray is the main commercially available dosage form. Oral tablet formulations of calcitonin are not available in the United States. No pill/tablet physical characteristics are available for US formulations as calcitonin is not currently marketed as an oral solid dosage form in the US."
+}

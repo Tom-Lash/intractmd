@@ -1,0 +1,176 @@
+{
+  "drug_name": "Methocarbamol",
+  "generic_name": "Methocarbamol",
+  "drug_class": "Muscle Relaxant (Skeletal Muscle Relaxant)",
+  "variants": [
+    {
+      "brand_name": "Robaxin",
+      "strength": "500 mg",
+      "imprints": [
+        "ROBAXIN",
+        "500"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": true
+    },
+    {
+      "brand_name": "Robaxin",
+      "strength": "750 mg",
+      "imprints": [
+        "ROBAXIN",
+        "750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "M 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "4211",
+        "V"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Qualitest",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "GG 299"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "IP 466"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Amneal",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "ZC 16"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Zydus",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "M 750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "4212",
+        "V"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Qualitest",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "GG 300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "IP 467"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Amneal",
+      "scored": false
+    }
+  ]
+}

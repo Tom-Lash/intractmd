@@ -1,0 +1,69 @@
+{
+  "drug_name": "Tamoxifen",
+  "generic_name": "Tamoxifen Citrate",
+  "drug_class": "Selective Estrogen Receptor Modulator (SERM)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Nolvadex",
+      "strength": "10 mg",
+      "imprints": [
+        "NOLVADEX",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Nolvadex",
+      "strength": "20 mg",
+      "imprints": [
+        "NOLVADEX",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    }
+  ]
+}

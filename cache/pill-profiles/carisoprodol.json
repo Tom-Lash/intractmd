@@ -1,0 +1,103 @@
+{
+  "drug_name": "Carisoprodol",
+  "generic_name": "Carisoprodol",
+  "drug_class": "Skeletal muscle relaxant",
+  "variants": [
+    {
+      "brand_name": "Soma",
+      "strength": "250 mg",
+      "imprints": [
+        "SOMA",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Soma",
+      "strength": "350 mg",
+      "imprints": [
+        "SOMA",
+        "350"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "751"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "93",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "350 mg",
+      "imprints": [
+        "M",
+        "752"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "350 mg",
+      "imprints": [
+        "93",
+        "151"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

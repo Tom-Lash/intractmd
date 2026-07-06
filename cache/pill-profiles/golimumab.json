@@ -1,0 +1,80 @@
+{
+  "drug_name": "Golimumab",
+  "generic_name": "golimumab",
+  "drug_class": "Tumor Necrosis Factor (TNF) Inhibitor - Monoclonal Antibody",
+  "variants": [
+    {
+      "brand_name": "Simponi",
+      "strength": "50 mg/0.5 mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "subcutaneous injection - prefilled syringe"
+    },
+    {
+      "brand_name": "Simponi",
+      "strength": "100 mg/1 mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "subcutaneous injection - prefilled syringe"
+    },
+    {
+      "brand_name": "Simponi",
+      "strength": "50 mg/0.5 mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "subcutaneous injection - prefilled autoinjector pen"
+    },
+    {
+      "brand_name": "Simponi",
+      "strength": "100 mg/1 mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "subcutaneous injection - prefilled autoinjector pen"
+    },
+    {
+      "brand_name": "Simponi Aria",
+      "strength": "50 mg/4 mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "intravenous injection - vial"
+    },
+    {
+      "brand_name": "Simponi Aria",
+      "strength": "100 mg/10 mL",
+      "imprints": [],
+      "shape": "injection",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech, Inc.",
+      "scored": false,
+      "formulation": "intravenous injection - vial"
+    }
+  ],
+  "note": "Golimumab is a biologic medication available only as injectable formulations (subcutaneous or intravenous). No oral pill forms exist for this medication in the US market. All variants are parenteral solutions for injection."
+}

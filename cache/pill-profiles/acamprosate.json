@@ -1,0 +1,67 @@
+{
+  "drug_name": "Acamprosate",
+  "generic_name": "acamprosate calcium",
+  "drug_class": "GABA analog; alcohol use disorder treatment",
+  "variants": [
+    {
+      "brand_name": "Campral",
+      "strength": "666 mg",
+      "imprints": [
+        "CDT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Forest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acamprosate",
+      "strength": "666 mg",
+      "imprints": [
+        "SZ 666"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acamprosate",
+      "strength": "666 mg",
+      "imprints": [
+        "A 666"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Cipla Limited",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acamprosate",
+      "strength": "666 mg",
+      "imprints": [
+        "M A666"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

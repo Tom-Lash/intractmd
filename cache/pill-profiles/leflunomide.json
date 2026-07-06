@@ -1,0 +1,103 @@
+{
+  "drug_name": "Leflunomide",
+  "generic_name": "Leflunomide",
+  "drug_class": "Immunosuppressant, Disease-modifying antirheumatic drug (DMARD)",
+  "variants": [
+    {
+      "brand_name": "Arava",
+      "strength": "10 mg",
+      "imprints": [
+        "ARAVA",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Arava",
+      "strength": "20 mg",
+      "imprints": [
+        "ARAVA",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Arava",
+      "strength": "100 mg",
+      "imprints": [
+        "ARAVA",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "LEF 10",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "LEF 20",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "LEF 100",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "drug_name": "Naproxen",
+  "generic_name": "Naproxen",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "220 mg",
+      "imprints": [
+        "NAPROXEN 220"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "NAPROXEN 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "375 mg",
+      "imprints": [
+        "NAPROXEN 375"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "NAPROXEN 500",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Naprosyn",
+      "strength": "250 mg",
+      "imprints": [
+        "NAPROSYN 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Naprosyn",
+      "strength": "375 mg",
+      "imprints": [
+        "NAPROSYN 375"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Naprosyn",
+      "strength": "500 mg",
+      "imprints": [
+        "NAPROSYN 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Anaprox",
+      "strength": "275 mg",
+      "imprints": [
+        "ANAPROX 275"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Anaprox DS",
+      "strength": "550 mg",
+      "imprints": [
+        "ANAPROX DS 550"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "E 144"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 10,
+      "manufacturer": "Hikma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "375 mg",
+      "imprints": [
+        "AN 375"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Aurobindo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "AN 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "AN 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Aurobindo",
+      "scored": false
+    }
+  ]
+}

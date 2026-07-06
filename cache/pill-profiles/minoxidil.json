@@ -1,0 +1,41 @@
+{
+  "drug_name": "Minoxidil",
+  "generic_name": "Minoxidil",
+  "drug_class": "Vasodilator (Topical and Oral)",
+  "note": "Minoxidil is primarily available as a topical solution/foam for hair loss treatment. Oral formulations are rarely prescribed in the US for hypertension due to potent side effects. Pill/tablet forms are not standard commercial products in current US markets.",
+  "variants": [
+    {
+      "brand_name": "Loniten",
+      "strength": "2.5 mg",
+      "imprints": [
+        "UPJOHN 11"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Upjohn Company",
+      "scored": false,
+      "availability": "Discontinued/Limited"
+    },
+    {
+      "brand_name": "Loniten",
+      "strength": "10 mg",
+      "imprints": [
+        "UPJOHN 12"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Upjohn Company",
+      "scored": false,
+      "availability": "Discontinued/Limited"
+    }
+  ],
+  "important_note": "Oral minoxidil tablets are not widely available in current US pharmaceutical markets. The drug is primarily marketed as Rogaine and generic equivalents in topical formulations (solution, foam) for androgenetic alopecia. Oral formulations require special compounding or are imported. For current availability, consult a pharmacist or physician."
+}

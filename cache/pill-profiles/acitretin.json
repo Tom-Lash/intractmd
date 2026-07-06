@@ -1,0 +1,75 @@
+{
+  "drug_name": "Acitretin",
+  "generic_name": "Acitretin",
+  "drug_class": "Retinoid (second-generation)",
+  "variants": [
+    {
+      "brand_name": "Soriatane",
+      "strength": "10 mg",
+      "imprints": [
+        "Roche",
+        "10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Roche Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Soriatane",
+      "strength": "25 mg",
+      "imprints": [
+        "Roche",
+        "25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Roche Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "APO",
+        "ACT",
+        "10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "APO",
+        "ACT",
+        "25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex Corp",
+      "scored": false
+    }
+  ]
+}

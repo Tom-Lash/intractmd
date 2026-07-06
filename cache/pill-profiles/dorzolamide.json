@@ -1,0 +1,31 @@
+{
+  "drug_name": "Dorzolamide",
+  "generic_name": "Dorzolamide Hydrochloride",
+  "drug_class": "Carbonic Anhydrase Inhibitor (Ophthalmic)",
+  "note": "Dorzolamide is available exclusively as an ophthalmic solution in the United States, not as oral tablets or capsules",
+  "variants": [
+    {
+      "brand_name": "Trusopt",
+      "strength": "2% ophthalmic solution",
+      "form": "Liquid eye drops",
+      "manufacturer": "Merck Sharp & Dohme",
+      "volume_ml": 10,
+      "container_type": "plastic dropper bottle",
+      "color": "clear to slightly yellow",
+      "preservative": "Benzalkonium chloride"
+    },
+    {
+      "brand_name": "Generic Dorzolamide",
+      "strength": "2% ophthalmic solution",
+      "form": "Liquid eye drops",
+      "manufacturers": [
+        "Multiple manufacturers including Bausch + Lomb, Alcon, and others"
+      ],
+      "volume_ml": 10,
+      "container_type": "plastic dropper bottle",
+      "color": "clear to slightly yellow",
+      "preservative": "Benzalkonium chloride"
+    }
+  ],
+  "important_note": "Dorzolamide is not formulated as oral solid dosage forms (tablets/capsules) in the United States. It is exclusively available as a topical ophthalmic solution for treating elevated intraocular pressure and glaucoma. No pill physical characteristics exist for this medication."
+}

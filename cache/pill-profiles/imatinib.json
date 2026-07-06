@@ -1,0 +1,75 @@
+{
+  "drug_name": "Imatinib",
+  "generic_name": "Imatinib mesylate",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Gleevec",
+      "strength": "100 mg",
+      "imprints": [
+        "Gleevec",
+        "100"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Gleevec",
+      "strength": "400 mg",
+      "imprints": [
+        "Gleevec",
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "Imatinib 100 mg",
+        "manufacturer specific"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple (Cipla, Natco, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "Imatinib 400 mg",
+        "manufacturer specific"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Cipla, Natco, Teva, others)",
+      "scored": false
+    }
+  ]
+}

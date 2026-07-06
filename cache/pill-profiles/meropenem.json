@@ -1,0 +1,30 @@
+{
+  "drug_name": "Meropenem",
+  "generic_name": "Meropenem",
+  "drug_class": "Carbapenem antibiotic",
+  "note": "Meropenem is primarily available as an injectable formulation (intravenous or intramuscular) and is NOT available as an oral tablet or capsule in the United States. Therefore, no pill physical characteristics exist for this medication.",
+  "available_formulations": [
+    {
+      "formulation_type": "Intravenous/Intramuscular Injection (powder for reconstitution)",
+      "brand_name": "Merrem IV",
+      "strengths": [
+        "250 mg vial",
+        "500 mg vial",
+        "1 g vial"
+      ],
+      "manufacturer": "AstraZeneca",
+      "route": "IV/IM"
+    },
+    {
+      "formulation_type": "Intravenous Infusion (powder for reconstitution)",
+      "brand_name": "Generic Meropenem",
+      "strengths": [
+        "500 mg vial",
+        "1 g vial"
+      ],
+      "manufacturer": "Multiple generic manufacturers",
+      "route": "IV"
+    }
+  ],
+  "variants": []
+}

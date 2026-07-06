@@ -1,0 +1,68 @@
+{
+  "drug_name": "Phytonadione",
+  "generic_name": "Phytonadione (Vitamin K1)",
+  "drug_class": "Vitamin K (Fat-soluble vitamin)",
+  "variants": [
+    {
+      "brand_name": "Mephyton",
+      "strength": "5 mg",
+      "imprints": [
+        "MEPHYTON",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Merck Sharp & Dohme Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Phytonadione",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Phytonadione",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Actavis Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Phytonadione",
+      "strength": "5 mg",
+      "imprints": [
+        "AN 383"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    }
+  ]
+}

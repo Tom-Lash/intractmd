@@ -1,0 +1,167 @@
+{
+  "drug_name": "Digoxin",
+  "generic_name": "digoxin",
+  "drug_class": "Cardiac glycoside; Inotropic agent",
+  "variants": [
+    {
+      "brand_name": "Lanoxin",
+      "strength": "0.125 mg",
+      "imprints": [
+        "LANOXIN",
+        "125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Lanoxin",
+      "strength": "0.25 mg",
+      "imprints": [
+        "LANOXIN",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Lanoxin",
+      "strength": "0.5 mg",
+      "imprints": [
+        "LANOXIN",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.125 mg",
+      "imprints": [
+        "DG",
+        "125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.25 mg",
+      "imprints": [
+        "DG",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.5 mg",
+      "imprints": [
+        "DG",
+        "500"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.125 mg",
+      "imprints": [
+        "DIGITEK",
+        "DG125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Savient Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.25 mg",
+      "imprints": [
+        "DIGITEK",
+        "DG250"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Savient Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.125 mg",
+      "imprints": [
+        "54",
+        "342"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Digoxin",
+      "strength": "0.25 mg",
+      "imprints": [
+        "54",
+        "343"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    }
+  ]
+}

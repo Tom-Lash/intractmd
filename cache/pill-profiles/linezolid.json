@@ -1,0 +1,135 @@
+{
+  "drug_name": "Linezolid",
+  "generic_name": "Linezolid",
+  "drug_class": "Oxazolidinone antibiotic",
+  "variants": [
+    {
+      "brand_name": "Zyvox",
+      "strength": "600 mg",
+      "imprints": [
+        "ZY",
+        "VX600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linezolid",
+      "strength": "600 mg",
+      "imprints": [
+        "G3",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linezolid",
+      "strength": "600 mg",
+      "imprints": [
+        "RX",
+        "657"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linezolid",
+      "strength": "600 mg",
+      "imprints": [
+        "54",
+        "783"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linezolid",
+      "strength": "600 mg",
+      "imprints": [
+        "UL",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Ulkor Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyvox",
+      "strength": "400 mg",
+      "imprints": [
+        "ZY",
+        "VX400"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linezolid",
+      "strength": "400 mg",
+      "imprints": [
+        "G2",
+        "400"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linezolid",
+      "strength": "400 mg",
+      "imprints": [
+        "RX",
+        "656"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Luye Pharma",
+      "scored": false
+    }
+  ]
+}

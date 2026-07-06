@@ -1,0 +1,185 @@
+{
+  "drug_name": "Zolpidem",
+  "generic_name": "Zolpidem Tartrate",
+  "drug_class": "Sedative-Hypnotic (Imidazopyridine)",
+  "variants": [
+    {
+      "brand_name": "Ambien",
+      "strength": "5 mg",
+      "imprints": [
+        "AMB 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Ambien",
+      "strength": "10 mg",
+      "imprints": [
+        "AMB 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Ambien CR",
+      "strength": "6.25 mg",
+      "imprints": [
+        "AMB",
+        "6.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Ambien CR",
+      "strength": "12.5 mg",
+      "imprints": [
+        "AMB",
+        "12.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Intermezzo",
+      "strength": "1.75 mg",
+      "imprints": [
+        "1.75"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Intermezzo",
+      "strength": "3.5 mg",
+      "imprints": [
+        "3.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Edluar",
+      "strength": "5 mg",
+      "imprints": [
+        "E 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Edluar",
+      "strength": "10 mg",
+      "imprints": [
+        "E 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Zolpimist",
+      "strength": "5 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 0,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "GG",
+        "G3",
+        "LU",
+        "ML",
+        "93",
+        "Z5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Teva, Actavis, Mylan, Lupin, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "GG",
+        "G4",
+        "LU",
+        "ML",
+        "Z10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Actavis, Mylan, Lupin, others)",
+      "scored": false
+    }
+  ]
+}

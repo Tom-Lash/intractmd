@@ -1,0 +1,131 @@
+{
+  "drug_name": "Empagliflozin",
+  "generic_name": "Empagliflozin",
+  "drug_class": "Sodium-Glucose Cotransporter-2 (SGLT2) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Jardiance",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Jardiance",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Empagliflozin",
+      "strength": "10 mg",
+      "imprints": [
+        "E10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Empagliflozin",
+      "strength": "25 mg",
+      "imprints": [
+        "E25"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Empagliflozin",
+      "strength": "10 mg",
+      "imprints": [
+        "SUN",
+        "380"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Empagliflozin",
+      "strength": "25 mg",
+      "imprints": [
+        "SUN",
+        "379"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Empagliflozin",
+      "strength": "10 mg",
+      "imprints": [
+        "AN",
+        "380"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Amneal Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Empagliflozin",
+      "strength": "25 mg",
+      "imprints": [
+        "AN",
+        "379"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Amneal Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "drug_name": "Citalopram",
+  "generic_name": "citalopram hydrobromide",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "variants": [
+    {
+      "brand_name": "Celexa",
+      "strength": "10 mg",
+      "imprints": [
+        "CELEXA 10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Celexa",
+      "strength": "20 mg",
+      "imprints": [
+        "CELEXA 20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Celexa",
+      "strength": "40 mg",
+      "imprints": [
+        "CELEXA 40"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Various (Cipla, Dr. Reddy's, Teva, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20",
+        "CIT 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Various (Cipla, Dr. Reddy's, Teva, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "40",
+        "CIT 40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various (Cipla, Dr. Reddy's, Teva, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "C10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "C20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "C40"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

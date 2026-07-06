@@ -1,0 +1,218 @@
+{
+  "drug_name": "Propranolol",
+  "generic_name": "Propranolol hydrochloride",
+  "drug_class": "Beta-adrenergic blocking agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "PROPRANOLOL",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20",
+        "PROPRANOLOL",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "40",
+        "PROPRANOLOL",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow",
+        "orange",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "60",
+        "PROPRANOLOL",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "80",
+        "PROPRANOLOL",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue",
+        "red",
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": true
+    },
+    {
+      "brand_name": "Inderal LA",
+      "strength": "60 mg",
+      "imprints": [
+        "INDERAL LA 60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Aktshaul/Akrimax",
+      "scored": false
+    },
+    {
+      "brand_name": "Inderal LA",
+      "strength": "80 mg",
+      "imprints": [
+        "INDERAL LA 80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Aktshaul/Akrimax",
+      "scored": false
+    },
+    {
+      "brand_name": "Inderal LA",
+      "strength": "120 mg",
+      "imprints": [
+        "INDERAL LA 120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Aktshaul/Akrimax",
+      "scored": false
+    },
+    {
+      "brand_name": "Inderal LA",
+      "strength": "160 mg",
+      "imprints": [
+        "INDERAL LA 160"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Aktshaul/Akrimax",
+      "scored": false
+    },
+    {
+      "brand_name": "InnoPran XL",
+      "strength": "80 mg",
+      "imprints": [
+        "InnoPran XL 80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Noven",
+      "scored": false
+    },
+    {
+      "brand_name": "InnoPran XL",
+      "strength": "120 mg",
+      "imprints": [
+        "InnoPran XL 120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Noven",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "120",
+        "PROPRANOLOL",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": true
+    }
+  ]
+}

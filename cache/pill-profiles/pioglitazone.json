@@ -1,0 +1,100 @@
+{
+  "drug_name": "Pioglitazone",
+  "generic_name": "Pioglitazone hydrochloride",
+  "drug_class": "Thiazolidinedione (insulin sensitizer)",
+  "variants": [
+    {
+      "brand_name": "Actos",
+      "strength": "15 mg",
+      "imprints": [
+        "ACTOS",
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Actos",
+      "strength": "30 mg",
+      "imprints": [
+        "ACTOS",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Actos",
+      "strength": "45 mg",
+      "imprints": [
+        "ACTOS",
+        "45"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Various (Mylan, Teva, Sandoz, Aurobindo, Dr. Reddy's)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various (Mylan, Teva, Sandoz, Aurobindo, Dr. Reddy's)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "45 mg",
+      "imprints": [
+        "45"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various (Mylan, Teva, Sandoz, Aurobindo, Dr. Reddy's)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "drug_name": "Darifenacin",
+  "generic_name": "Darifenacin hydrobromide",
+  "drug_class": "Anticholinergic (Muscarinic receptor antagonist)",
+  "variants": [
+    {
+      "brand_name": "Enablex",
+      "strength": "7.5 mg",
+      "imprints": [
+        "Enablex",
+        "7.5"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Enablex",
+      "strength": "15 mg",
+      "imprints": [
+        "Enablex",
+        "15"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "APO",
+        "D75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "APO",
+        "D15"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "PAR",
+        "717"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Par Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "PAR",
+        "715"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Par Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

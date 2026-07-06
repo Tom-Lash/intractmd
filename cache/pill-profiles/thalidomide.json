@@ -1,0 +1,135 @@
+{
+  "drug_name": "Thalidomide",
+  "generic_name": "thalidomide",
+  "drug_class": "Immunomodulatory agent (IMiD)",
+  "variants": [
+    {
+      "brand_name": "Thalomid",
+      "strength": "50 mg",
+      "imprints": [
+        "THALOMID 50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Thalomid",
+      "strength": "100 mg",
+      "imprints": [
+        "THALOMID 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Thalomid",
+      "strength": "150 mg",
+      "imprints": [
+        "THALOMID 150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Thalomid",
+      "strength": "200 mg",
+      "imprints": [
+        "THALOMID 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "THALIDOMIDE 50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various (Teva, Hikma, Natco)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "THALIDOMIDE 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various (Teva, Hikma, Natco)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "THALIDOMIDE 150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various (Teva, Hikma, Natco)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "THALIDOMIDE 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Various (Teva, Hikma, Natco)",
+      "scored": false
+    }
+  ]
+}

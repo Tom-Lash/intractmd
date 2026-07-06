@@ -1,0 +1,100 @@
+{
+  "drug_name": "Irbesartan",
+  "generic_name": "Irbesartan",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "variants": [
+    {
+      "brand_name": "Avapro",
+      "strength": "75 mg",
+      "imprints": [
+        "2771",
+        "75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Avapro",
+      "strength": "150 mg",
+      "imprints": [
+        "2772",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Avapro",
+      "strength": "300 mg",
+      "imprints": [
+        "2773",
+        "300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    }
+  ]
+}

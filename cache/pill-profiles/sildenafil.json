@@ -1,0 +1,167 @@
+{
+  "drug_name": "Sildenafil",
+  "generic_name": "Sildenafil Citrate",
+  "drug_class": "Phosphodiesterase-5 (PDE-5) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Viagra",
+      "strength": "25 mg",
+      "imprints": [
+        "VIAGRA 25"
+      ],
+      "shape": "diamond",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Viagra",
+      "strength": "50 mg",
+      "imprints": [
+        "VIAGRA 50"
+      ],
+      "shape": "diamond",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Viagra",
+      "strength": "100 mg",
+      "imprints": [
+        "VIAGRA 100"
+      ],
+      "shape": "diamond",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Revatio",
+      "strength": "20 mg",
+      "imprints": [
+        "REVATIO 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Sildenafil Citrate)",
+      "strength": "20 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue",
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Teva, Aurobindo, Dr. Reddy's, Mylan, Lupin, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Sildenafil Citrate)",
+      "strength": "25 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Teva, Aurobindo, Dr. Reddy's, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Sildenafil Citrate)",
+      "strength": "50 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue",
+        "purple"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Aurobindo, Dr. Reddy's, Mylan, Lupin, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Sildenafil Citrate)",
+      "strength": "100 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue",
+        "purple",
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Aurobindo, Dr. Reddy's, Mylan, Lupin, Greenstone, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Sildenafil Citrate)",
+      "strength": "150 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Teva, Aurobindo, Dr. Reddy's, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Sildenafil Citrate)",
+      "strength": "200 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple (Teva, Aurobindo, Dr. Reddy's, etc.)",
+      "scored": false
+    }
+  ]
+}

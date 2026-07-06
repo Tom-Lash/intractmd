@@ -1,0 +1,150 @@
+{
+  "drug_name": "Pseudoephedrine",
+  "generic_name": "Pseudoephedrine Hydrochloride",
+  "drug_class": "Decongestant (Sympathomimetic Amine)",
+  "variants": [
+    {
+      "brand_name": "Sudafed",
+      "strength": "30 mg",
+      "imprints": [
+        "SUDAFED 30"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Sudafed",
+      "strength": "60 mg",
+      "imprints": [
+        "SUDAFED 60"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Sudafed PE",
+      "strength": "10 mg",
+      "imprints": [
+        "SUDAFED PE"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "G 30",
+        "30"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various (Perrigo, Major, Actavis, Tris Pharma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "60",
+        "G 60"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white",
+        "orange",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various (Perrigo, Major, Actavis, Tris Pharma)",
+      "scored": false
+    },
+    {
+      "brand_name": "Sudafed 12-Hour",
+      "strength": "120 mg",
+      "imprints": [
+        "SUDAFED 12H"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Sudafed 24-Hour",
+      "strength": "240 mg",
+      "imprints": [
+        "SUDAFED 24H"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various (Perrigo, Major, Actavis)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "240 mg",
+      "imprints": [
+        "240"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various (Perrigo, Major, Actavis)",
+      "scored": false
+    }
+  ]
+}

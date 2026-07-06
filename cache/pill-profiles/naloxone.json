@@ -1,0 +1,83 @@
+{
+  "drug_name": "Naloxone",
+  "generic_name": "Naloxone Hydrochloride",
+  "drug_class": "Opioid Antagonist",
+  "variants": [
+    {
+      "brand_name": "Narcan",
+      "strength": "2 mg",
+      "imprints": [
+        "NARCAN 2mg"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Emergent BioSolutions",
+      "scored": false
+    },
+    {
+      "brand_name": "Narcan",
+      "strength": "4 mg",
+      "imprints": [
+        "NARCAN 4mg"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Emergent BioSolutions",
+      "scored": false
+    },
+    {
+      "brand_name": "Kloxxado",
+      "strength": "8 mg",
+      "imprints": [
+        "8"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "white",
+        "grey"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Naloxone",
+      "strength": "0.4 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Naloxone",
+      "strength": "2 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

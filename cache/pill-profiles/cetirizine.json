@@ -1,0 +1,90 @@
+{
+  "drug_name": "Cetirizine",
+  "generic_name": "Cetirizine hydrochloride",
+  "drug_class": "Second-generation selective H1-receptor antagonist (antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Zyrtec",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyrtec",
+      "strength": "10 mg",
+      "imprints": [
+        "ZYRTEC",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Multiple Manufacturers)",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "CTZ",
+        "APO5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Multiple Manufacturers)",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "CTZ",
+        "APO",
+        "G",
+        "ZC",
+        "CET 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyrtec-D",
+      "strength": "5 mg/120 mg",
+      "imprints": [
+        "ZYRTEC-D"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "drug_name": "Benzonatate",
+  "generic_name": "Benzonatate",
+  "drug_class": "Non-narcotic antitussive",
+  "variants": [
+    {
+      "brand_name": "Tessalon",
+      "strength": "100 mg",
+      "imprints": [
+        "TESSALON",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Tessalon",
+      "strength": "200 mg",
+      "imprints": [
+        "TESSALON",
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "M 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "M 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "50383"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Hikma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "50384"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Hikma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "44-404"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "44-405"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "GG 240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "GG 241"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

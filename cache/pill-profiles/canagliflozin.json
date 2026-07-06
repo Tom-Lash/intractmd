@@ -1,0 +1,97 @@
+{
+  "drug_name": "Canagliflozin",
+  "generic_name": "canagliflozin",
+  "drug_class": "Sodium-Glucose Cotransporter 2 (SGLT2) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Invokana",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Invokana",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "AN 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "AN 300"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "C 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "C 300"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Cipla",
+      "scored": false
+    }
+  ]
+}

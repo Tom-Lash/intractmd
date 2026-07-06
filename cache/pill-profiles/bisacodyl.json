@@ -1,0 +1,87 @@
+{
+  "drug_name": "Bisacodyl",
+  "generic_name": "Bisacodyl",
+  "drug_class": "Stimulant Laxative",
+  "variants": [
+    {
+      "brand_name": "Dulcolax",
+      "strength": "5 mg",
+      "imprints": [
+        "DULCOLAX"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Correctol",
+      "strength": "5 mg",
+      "imprints": [
+        "CORRECTOL"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Prestige Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Bisacodyl",
+      "strength": "5 mg",
+      "imprints": [
+        "DIN 02231856",
+        "Various manufacturer codes"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Dulcolax",
+      "strength": "10 mg",
+      "imprints": [
+        "DULCOLAX"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Bisacodyl",
+      "strength": "10 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Mylan, Actavis, others)",
+      "scored": false
+    }
+  ]
+}

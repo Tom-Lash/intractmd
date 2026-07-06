@@ -1,0 +1,99 @@
+{
+  "drug_name": "Nateglinide",
+  "generic_name": "Nateglinide",
+  "drug_class": "Meglitinide (rapid-acting insulin secretagogue)",
+  "variants": [
+    {
+      "brand_name": "Starlix",
+      "strength": "60 mg",
+      "imprints": [
+        "STARLIX",
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Starlix",
+      "strength": "120 mg",
+      "imprints": [
+        "STARLIX",
+        "120"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "N 60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "N 120"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "SZ 256"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "SZ 257"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

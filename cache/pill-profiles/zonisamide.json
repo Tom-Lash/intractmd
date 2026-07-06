@@ -1,0 +1,154 @@
+{
+  "drug_name": "Zonisamide",
+  "generic_name": "Zonisamide",
+  "drug_class": "Sulfonamide anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Zonegran",
+      "strength": "25 mg",
+      "imprints": [
+        "ZONEGRAN",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Zonegran",
+      "strength": "50 mg",
+      "imprints": [
+        "ZONEGRAN",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Zonegran",
+      "strength": "100 mg",
+      "imprints": [
+        "ZONEGRAN",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "KU 135"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Kudco Drug Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "KU 136"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Kudco Drug Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "KU 137"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Kudco Drug Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "ZNS 25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "ZNS 50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "ZNS 100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

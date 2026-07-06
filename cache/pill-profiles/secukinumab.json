@@ -1,0 +1,76 @@
+{
+  "drug_name": "Secukinumab",
+  "generic_name": "secukinumab",
+  "drug_class": "Interleukin-17A Inhibitor (Monoclonal Antibody)",
+  "variants": [
+    {
+      "brand_name": "Cosentyx",
+      "strength": "75 mg/mL",
+      "form": "Subcutaneous injection (prefilled syringe)",
+      "imprints": [
+        "COSENTYX 75mg"
+      ],
+      "shape": "not applicable",
+      "colors": [
+        "clear to slightly opalescent"
+      ],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false,
+      "notes": "Prefilled syringe for injection"
+    },
+    {
+      "brand_name": "Cosentyx",
+      "strength": "150 mg/mL",
+      "form": "Subcutaneous injection (prefilled syringe)",
+      "imprints": [
+        "COSENTYX 150mg"
+      ],
+      "shape": "not applicable",
+      "colors": [
+        "clear to slightly opalescent"
+      ],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false,
+      "notes": "Prefilled syringe for injection"
+    },
+    {
+      "brand_name": "Cosentyx",
+      "strength": "150 mg/mL",
+      "form": "Subcutaneous injection (prefilled pen/Sensoready pen)",
+      "imprints": [
+        "COSENTYX 150mg"
+      ],
+      "shape": "not applicable",
+      "colors": [
+        "clear to slightly opalescent"
+      ],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false,
+      "notes": "Prefilled autoinjector pen"
+    },
+    {
+      "brand_name": "Cosentyx",
+      "strength": "300 mg/mL",
+      "form": "Intravenous injection (vial)",
+      "imprints": [
+        "COSENTYX 300mg"
+      ],
+      "shape": "not applicable",
+      "colors": [
+        "clear to slightly opalescent"
+      ],
+      "coating": "not applicable",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false,
+      "notes": "Single-dose vial for IV administration"
+    }
+  ],
+  "important_note": "Secukinumab is a biologic monoclonal antibody medication available ONLY as injectable formulations (subcutaneous or intravenous). There are NO oral tablets or capsules available in the United States. All formulations are parenteral (injection-based) solutions manufactured by Novartis under the brand name Cosentyx."
+}

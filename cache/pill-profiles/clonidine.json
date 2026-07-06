@@ -1,0 +1,130 @@
+{
+  "drug_name": "Clonidine",
+  "generic_name": "clonidine hydrochloride",
+  "drug_class": "Alpha-2 adrenergic agonist",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "0.1 mg",
+      "imprints": [
+        "CLONIDINE 0.1",
+        "M C11"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.2 mg",
+      "imprints": [
+        "CLONIDINE 0.2",
+        "M C12"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.3 mg",
+      "imprints": [
+        "CLONIDINE 0.3",
+        "M C13"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Kapvay",
+      "strength": "0.1 mg",
+      "imprints": [
+        "KA 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Shionogi Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Kapvay",
+      "strength": "0.2 mg",
+      "imprints": [
+        "KA 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Shionogi Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.1 mg",
+      "imprints": [
+        "138"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.2 mg",
+      "imprints": [
+        "139"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.3 mg",
+      "imprints": [
+        "140"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

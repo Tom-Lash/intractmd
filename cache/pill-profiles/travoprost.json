@@ -1,0 +1,47 @@
+{
+  "drug_name": "Travoprost",
+  "generic_name": "travoprost",
+  "drug_class": "Prostaglandin F analog (ophthalmic)",
+  "note": "Travoprost is exclusively available as an ophthalmic solution/drops, not as oral tablets or capsules",
+  "variants": [
+    {
+      "brand_name": "Travatan Z",
+      "strength": "0.004%",
+      "formulation": "Ophthalmic solution",
+      "container": "2.5 mL bottle",
+      "manufacturer": "Alcon",
+      "physical_form": "Liquid solution",
+      "color": "Clear, colorless to light yellow",
+      "preserved": true,
+      "preservative": "Zinc chloride"
+    },
+    {
+      "brand_name": "Travatan",
+      "strength": "0.004%",
+      "formulation": "Ophthalmic solution",
+      "container": "2.5 mL bottle",
+      "manufacturer": "Alcon",
+      "physical_form": "Liquid solution",
+      "color": "Clear, colorless to light yellow",
+      "preserved": true,
+      "preservative": "Benzalkonium chloride"
+    },
+    {
+      "brand_name": "Generic Travoprost",
+      "strength": "0.004%",
+      "formulation": "Ophthalmic solution",
+      "container": "2.5 mL bottle",
+      "manufacturers": [
+        "Apotex",
+        "Sandoz",
+        "Sun Pharmaceutical",
+        "Various other generic manufacturers"
+      ],
+      "physical_form": "Liquid solution",
+      "color": "Clear, colorless to light yellow",
+      "preserved": true,
+      "preservative": "Benzalkonium chloride (varies by manufacturer)"
+    }
+  ],
+  "important_note": "Travoprost is NOT available as oral pills/tablets. It is only available as an ophthalmic (eye drop) solution. There are no physical pill characteristics (shape, imprint, scoring) as the drug is administered directly to the eye as liquid drops."
+}

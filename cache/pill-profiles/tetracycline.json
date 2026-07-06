@@ -1,0 +1,55 @@
+{
+  "drug_name": "Tetracycline",
+  "generic_name": "Tetracycline Hydrochloride",
+  "drug_class": "Tetracycline Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "TETRACYCLINE 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various (Actavis, Teva, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "TETRACYCLINE 500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various (Actavis, Teva, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "TCN 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ]
+}

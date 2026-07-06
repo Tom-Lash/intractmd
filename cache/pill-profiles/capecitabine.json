@@ -1,0 +1,166 @@
+{
+  "drug_name": "Capecitabine",
+  "generic_name": "Capecitabine",
+  "drug_class": "Antimetabolite (Pyrimidine analog)",
+  "variants": [
+    {
+      "brand_name": "Xeloda",
+      "strength": "500 mg",
+      "imprints": [
+        "XELODA",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "peach",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Actavis/Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "500 mg",
+      "imprints": [
+        "APO",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "500 mg",
+      "imprints": [
+        "GG",
+        "839"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "500 mg",
+      "imprints": [
+        "R",
+        "U"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Xeloda",
+      "strength": "150 mg",
+      "imprints": [
+        "XELODA",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Actavis/Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "150 mg",
+      "imprints": [
+        "APO",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "150 mg",
+      "imprints": [
+        "GG",
+        "838"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Capecitabine",
+      "strength": "150 mg",
+      "imprints": [
+        "R",
+        "T"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

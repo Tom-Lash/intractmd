@@ -1,0 +1,273 @@
+{
+  "drug_name": "Valsartan",
+  "generic_name": "Valsartan",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "variants": [
+    {
+      "brand_name": "Diovan",
+      "strength": "80 mg",
+      "imprints": [
+        "Diovan",
+        "80"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan",
+      "strength": "160 mg",
+      "imprints": [
+        "Diovan",
+        "160"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan",
+      "strength": "320 mg",
+      "imprints": [
+        "Diovan",
+        "320"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan",
+      "strength": "40 mg",
+      "imprints": [
+        "V40"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan",
+      "strength": "80 mg",
+      "imprints": [
+        "V80",
+        "3573"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan",
+      "strength": "160 mg",
+      "imprints": [
+        "V160",
+        "3574"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan",
+      "strength": "320 mg",
+      "imprints": [
+        "V320",
+        "3575"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan HCT",
+      "strength": "80 mg/12.5 mg",
+      "imprints": [
+        "Diovan HCT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan HCT",
+      "strength": "160 mg/12.5 mg",
+      "imprints": [
+        "Diovan HCT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan HCT",
+      "strength": "160 mg/25 mg",
+      "imprints": [
+        "Diovan HCT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan HCT",
+      "strength": "320 mg/12.5 mg",
+      "imprints": [
+        "Diovan HCT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Diovan HCT",
+      "strength": "320 mg/25 mg",
+      "imprints": [
+        "Diovan HCT"
+      ],
+      "shape": "oval",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan/HCTZ",
+      "strength": "80 mg/12.5 mg",
+      "imprints": [
+        "V80H"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan/HCTZ",
+      "strength": "160 mg/12.5 mg",
+      "imprints": [
+        "V160H"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan/HCTZ",
+      "strength": "160 mg/25 mg",
+      "imprints": [
+        "V160H25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan/HCTZ",
+      "strength": "320 mg/12.5 mg",
+      "imprints": [
+        "V320H"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valsartan/HCTZ",
+      "strength": "320 mg/25 mg",
+      "imprints": [
+        "V320H25"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

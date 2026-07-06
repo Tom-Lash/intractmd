@@ -1,0 +1,106 @@
+{
+  "drug_name": "Temazepam",
+  "generic_name": "Temazepam",
+  "drug_class": "Benzodiazepine",
+  "variants": [
+    {
+      "brand_name": "Restoril",
+      "strength": "7.5 mg",
+      "imprints": [
+        "RESTORIL",
+        "7.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bausch Health/Valeant",
+      "scored": false
+    },
+    {
+      "brand_name": "Restoril",
+      "strength": "15 mg",
+      "imprints": [
+        "RESTORIL",
+        "15"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bausch Health/Valeant",
+      "scored": false
+    },
+    {
+      "brand_name": "Restoril",
+      "strength": "30 mg",
+      "imprints": [
+        "RESTORIL",
+        "30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Bausch Health/Valeant",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "7.5 mg",
+      "imprints": [
+        "7.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various (Actavis, Teva, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various (Actavis, Teva, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various (Actavis, Teva, Mylan, others)",
+      "scored": false
+    }
+  ]
+}

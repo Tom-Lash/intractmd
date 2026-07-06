@@ -1,0 +1,74 @@
+{
+  "drug_name": "Rituximab",
+  "generic_name": "rituximab",
+  "drug_class": "Monoclonal Antibody (Anti-CD20)",
+  "note": "Rituximab is a monoclonal antibody administered exclusively as an intravenous or subcutaneous injection. It is NOT available in oral pill form in any strength or from any US manufacturer.",
+  "available_formulations": [
+    {
+      "brand_name": "Rituxan",
+      "generic_name": "rituximab",
+      "strength": "10 mg/mL",
+      "route": "intravenous injection",
+      "formulation_type": "solution for injection",
+      "vial_sizes": [
+        "1 mL",
+        "10 mL",
+        "50 mL"
+      ],
+      "manufacturer": "Genentech/Roche",
+      "notes": "Supplied as sterile solution in single-dose vials"
+    },
+    {
+      "brand_name": "Rituxan Hycela",
+      "generic_name": "rituximab and hyaluronidase human",
+      "strength": "1200 mg/7200 units per 6 mL",
+      "route": "subcutaneous injection",
+      "formulation_type": "solution for injection",
+      "manufacturer": "Genentech/Roche",
+      "notes": "Fixed-dose subcutaneous formulation"
+    },
+    {
+      "brand_name": "Truxima",
+      "generic_name": "rituximab (biosimilar)",
+      "strength": "10 mg/mL",
+      "route": "intravenous injection",
+      "formulation_type": "solution for injection",
+      "vial_sizes": [
+        "1 mL",
+        "10 mL",
+        "50 mL"
+      ],
+      "manufacturer": "Celltrion/Pfizer",
+      "notes": "Biosimilar to Rituxan"
+    },
+    {
+      "brand_name": "Ruxience",
+      "generic_name": "rituximab (biosimilar)",
+      "strength": "10 mg/mL",
+      "route": "intravenous injection",
+      "formulation_type": "solution for injection",
+      "vial_sizes": [
+        "1 mL",
+        "10 mL",
+        "50 mL"
+      ],
+      "manufacturer": "Pfizer",
+      "notes": "Biosimilar to Rituxan"
+    },
+    {
+      "brand_name": "Riabni",
+      "generic_name": "rituximab (biosimilar)",
+      "strength": "10 mg/mL",
+      "route": "intravenous injection",
+      "formulation_type": "solution for injection",
+      "vial_sizes": [
+        "1 mL",
+        "10 mL",
+        "50 mL"
+      ],
+      "manufacturer": "Sandoz",
+      "notes": "Biosimilar to Rituxan"
+    }
+  ],
+  "clarification": "No pill formulations exist for rituximab. This is a monoclonal antibody requiring parenteral administration only."
+}

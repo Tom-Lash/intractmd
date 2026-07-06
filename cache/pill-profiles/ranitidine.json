@@ -1,0 +1,101 @@
+{
+  "drug_name": "Ranitidine",
+  "generic_name": "ranitidine hydrochloride",
+  "drug_class": "H2-receptor antagonist",
+  "note": "Ranitidine was voluntarily withdrawn from the US market in 2020 due to NDMA (N-nitrosodimethylamine) contamination concerns. No formulations are currently available for purchase in the United States. Historical data below reflects pre-withdrawal products.",
+  "variants": [
+    {
+      "brand_name": "Zantac",
+      "strength": "75 mg",
+      "imprints": [
+        "ZANTAC",
+        "75"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Zantac",
+      "strength": "150 mg",
+      "imprints": [
+        "ZANTAC",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Zantac",
+      "strength": "300 mg",
+      "imprints": [
+        "ZANTAC",
+        "300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ranitidine",
+      "strength": "75 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ranitidine",
+      "strength": "150 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ranitidine",
+      "strength": "300 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

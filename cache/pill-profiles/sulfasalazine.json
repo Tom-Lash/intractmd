@@ -1,0 +1,72 @@
+{
+  "drug_name": "Sulfasalazine",
+  "generic_name": "sulfasalazine",
+  "drug_class": "Aminosalicylate; Disease-Modifying Antirheumatic Drug (DMARD)",
+  "variants": [
+    {
+      "brand_name": "Azulfidine",
+      "strength": "500 mg",
+      "imprints": [
+        "AZULFIDINE",
+        "500"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "yellow",
+        "tan"
+      ],
+      "coating": "sugar-coated",
+      "size_mm": 13,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Azulfidine EN-tabs",
+      "strength": "500 mg",
+      "imprints": [
+        "AZULFIDINE",
+        "EN-500"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 13,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "SZ 500"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "sugar-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "Various manufacturer-specific imprints"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

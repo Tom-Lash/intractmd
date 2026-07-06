@@ -1,0 +1,106 @@
+{
+  "drug_name": "Oxcarbazepine",
+  "generic_name": "Oxcarbazepine",
+  "drug_class": "Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Trileptal",
+      "strength": "150 mg",
+      "imprints": [
+        "TRILEPTAL",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Trileptal",
+      "strength": "300 mg",
+      "imprints": [
+        "TRILEPTAL",
+        "300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Trileptal",
+      "strength": "600 mg",
+      "imprints": [
+        "TRILEPTAL",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "OXC 150",
+        "OX 150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Various (Mylan, Teva, Hikma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "OXC 300",
+        "OX 300"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Various (Mylan, Teva, Hikma, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "OXC 600",
+        "OX 600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Various (Mylan, Teva, Hikma, others)",
+      "scored": false
+    }
+  ]
+}

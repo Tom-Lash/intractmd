@@ -1,0 +1,97 @@
+{
+  "drug_name": "Lapatinib",
+  "generic_name": "lapatinib ditosylate",
+  "drug_class": "Tyrosine kinase inhibitor (TKI); HER2/EGFR inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tykerb",
+      "strength": "250 mg",
+      "imprints": [
+        "GS MES"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Tykerb",
+      "strength": "500 mg",
+      "imprints": [
+        "GS ZJ5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Lapatinib ditosylate",
+      "strength": "250 mg",
+      "imprints": [
+        "SUN 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Lapatinib ditosylate",
+      "strength": "500 mg",
+      "imprints": [
+        "SUN 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Lapatinib ditosylate",
+      "strength": "250 mg",
+      "imprints": [
+        "APO 250"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Lapatinib ditosylate",
+      "strength": "500 mg",
+      "imprints": [
+        "APO 500"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "drug_name": "Tenofovir",
+  "generic_name": "tenofovir disoproxil fumarate (TDF)",
+  "drug_class": "Nucleotide reverse transcriptase inhibitor (NtRTI)",
+  "variants": [
+    {
+      "brand_name": "Viread",
+      "strength": "150 mg",
+      "imprints": [
+        "GILEAD",
+        "150"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Viread",
+      "strength": "200 mg",
+      "imprints": [
+        "GILEAD",
+        "200"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Viread",
+      "strength": "250 mg",
+      "imprints": [
+        "GILEAD",
+        "250"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Viread",
+      "strength": "300 mg",
+      "imprints": [
+        "GILEAD",
+        "300"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple (Aurobindo, Cipla, Mylan, Teva, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple (Aurobindo, Cipla, Mylan, Teva, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Aurobindo, Cipla, Mylan, Teva, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "triangle",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Multiple (Aurobindo, Cipla, Mylan, Teva, etc.)",
+      "scored": false
+    }
+  ]
+}

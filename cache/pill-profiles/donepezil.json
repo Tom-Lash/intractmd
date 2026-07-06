@@ -1,0 +1,195 @@
+{
+  "drug_name": "Donepezil",
+  "generic_name": "Donepezil Hydrochloride",
+  "drug_class": "Acetylcholinesterase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Aricept",
+      "strength": "5 mg",
+      "imprints": [
+        "ARICEPT",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Aricept",
+      "strength": "10 mg",
+      "imprints": [
+        "ARICEPT",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Aricept ODT",
+      "strength": "5 mg",
+      "imprints": [
+        "ARICEPT",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Aricept ODT",
+      "strength": "10 mg",
+      "imprints": [
+        "ARICEPT",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Aricept",
+      "strength": "23 mg",
+      "imprints": [
+        "ARICEPT 23"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "5 mg",
+      "imprints": [
+        "DP",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "10 mg",
+      "imprints": [
+        "DP",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "23 mg",
+      "imprints": [
+        "23"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "5 mg",
+      "imprints": [
+        "E",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Sun Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Donepezil",
+      "strength": "10 mg",
+      "imprints": [
+        "E",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

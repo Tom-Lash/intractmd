@@ -1,0 +1,22 @@
+{
+  "drug_name": "Pimecrolimus",
+  "generic_name": "Pimecrolimus",
+  "drug_class": "Calcineurin inhibitor (topical immunosuppressant)",
+  "variants": [
+    {
+      "brand_name": "Elidel",
+      "strength": "1%",
+      "imprints": [],
+      "shape": "cream",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "topical cream formulation",
+      "size_mm": null,
+      "manufacturer": "Viatris",
+      "scored": false
+    }
+  ],
+  "note": "Pimecrolimus is exclusively available as a topical cream formulation (Elidel 1%) in the United States. It is not manufactured as an oral tablet or capsule in any US-approved formulation. The drug is indicated for short-term and intermittent long-term treatment of mild to moderate atopic dermatitis in non-immunocompromised patients aged 2 years and older. There are no pill variants with imprints, shapes, or scored characteristics to report. Pimecrolimus is not available in oral dosage forms."
+}

@@ -1,0 +1,136 @@
+{
+  "drug_name": "Selegiline",
+  "generic_name": "Selegiline hydrochloride",
+  "drug_class": "Monoamine oxidase inhibitor (MAOI), selective irreversible MAO-B inhibitor",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "MYLAN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "MYLAN",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Emsam",
+      "strength": "6 mg/24 hours",
+      "imprints": [
+        "EMSAM",
+        "6"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "tan",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Noven Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Emsam",
+      "strength": "9 mg/24 hours",
+      "imprints": [
+        "EMSAM",
+        "9"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "tan",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Noven Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Emsam",
+      "strength": "12 mg/24 hours",
+      "imprints": [
+        "EMSAM",
+        "12"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "tan",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Noven Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Zelapar",
+      "strength": "1.25 mg",
+      "imprints": [
+        "ZELAPAR",
+        "1.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

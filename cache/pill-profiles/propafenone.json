@@ -1,0 +1,151 @@
+{
+  "drug_name": "Propafenone",
+  "generic_name": "Propafenone hydrochloride",
+  "drug_class": "Class IC antiarrhythmic agent",
+  "variants": [
+    {
+      "brand_name": "Rythmol",
+      "strength": "150 mg",
+      "imprints": [
+        "KNOLL",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Rythmol",
+      "strength": "225 mg",
+      "imprints": [
+        "KNOLL",
+        "225"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Rythmol",
+      "strength": "300 mg",
+      "imprints": [
+        "KNOLL",
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Rythmol SR",
+      "strength": "225 mg",
+      "imprints": [
+        "RYTHMOL SR",
+        "225"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Rythmol SR",
+      "strength": "325 mg",
+      "imprints": [
+        "RYTHMOL SR",
+        "325"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Rythmol SR",
+      "strength": "425 mg",
+      "imprints": [
+        "RYTHMOL SR",
+        "425"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "225 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, etc.)",
+      "scored": false
+    }
+  ]
+}

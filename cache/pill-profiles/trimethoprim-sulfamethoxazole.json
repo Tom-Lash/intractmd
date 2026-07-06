@@ -1,0 +1,261 @@
+{
+  "drug_name": "Trimethoprim-Sulfamethoxazole",
+  "generic_name": "Trimethoprim-Sulfamethoxazole (TMP-SMX)",
+  "drug_class": "Sulfonamide Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Bactrim",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "ROCHE",
+        "BACTRIM"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Bactrim DS",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "ROCHE",
+        "BACTRIM DS"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Septra",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "SEPTRA"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Septra DS",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "SEPTRA DS"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Mylan",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "M",
+        "72"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Mylan",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "M",
+        "73"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Teva",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "TV",
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Teva",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "TV",
+        "401"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Actavis",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "AP",
+        "120"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Actavis",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "AP",
+        "121"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Lupin",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "L",
+        "160"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Lupin",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "L",
+        "320"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Lupin",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Ranbaxy",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "RAN",
+        "160"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Ranbaxy",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "RAN",
+        "320"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Ranbaxy",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Sun Pharma",
+      "strength": "160mg-800mg",
+      "imprints": [
+        "SUN",
+        "160"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Sun Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Sun Pharma",
+      "strength": "320mg-1600mg",
+      "imprints": [
+        "SUN",
+        "320"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Sun Pharma",
+      "scored": false
+    }
+  ]
+}

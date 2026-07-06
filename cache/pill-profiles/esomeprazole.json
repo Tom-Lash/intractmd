@@ -1,0 +1,167 @@
+{
+  "drug_name": "Esomeprazole",
+  "generic_name": "Esomeprazole magnesium",
+  "drug_class": "Proton pump inhibitor (PPI)",
+  "variants": [
+    {
+      "brand_name": "Nexium",
+      "strength": "20 mg",
+      "imprints": [
+        "NEXIUM 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Nexium",
+      "strength": "40 mg",
+      "imprints": [
+        "NEXIUM 40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "E20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "SZ 274"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "E40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Teva Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "SZ 275"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "APO 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "APO 40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "20 mg",
+      "imprints": [
+        "NOR 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Northstar Rx",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Esomeprazole",
+      "strength": "40 mg",
+      "imprints": [
+        "NOR 40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Northstar Rx",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "drug_name": "Certolizumab",
+  "generic_name": "certolizumab pegol",
+  "drug_class": "Tumor Necrosis Factor (TNF) Inhibitor - Monoclonal Antibody Fragment",
+  "note": "Certolizumab is a biologic medication administered via subcutaneous injection. It is not available as an oral tablet or pill in any formulation. Therefore, physical pill characteristics do not apply.",
+  "available_formulations": [
+    {
+      "brand_name": "Cimzia",
+      "strength": "200 mg/mL",
+      "route": "subcutaneous injection",
+      "delivery_system": "prefilled syringe",
+      "manufacturer": "UCB Inc."
+    },
+    {
+      "brand_name": "Cimzia",
+      "strength": "200 mg/mL",
+      "route": "subcutaneous injection",
+      "delivery_system": "prefilled pen (SureClick autoinjector)",
+      "manufacturer": "UCB Inc."
+    }
+  ],
+  "variants": []
+}

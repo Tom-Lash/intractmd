@@ -1,0 +1,52 @@
+{
+  "drug_name": "Bictegravir",
+  "generic_name": "bictegravir sodium",
+  "drug_class": "HIV integrase strand transfer inhibitor (INSTI)",
+  "variants": [
+    {
+      "brand_name": "Biktarvy",
+      "strength": "50 mg",
+      "imprints": [
+        "GSI"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Bictegravir",
+      "strength": "50 mg",
+      "imprints": [
+        "BIC 50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Bictegravir",
+      "strength": "50 mg",
+      "imprints": [
+        "M B50"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

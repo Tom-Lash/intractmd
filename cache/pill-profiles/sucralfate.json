@@ -1,0 +1,52 @@
+{
+  "drug_name": "Sucralfate",
+  "generic_name": "Sucralfate",
+  "drug_class": "Gastrointestinal Protectant",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "1 gram",
+      "imprints": [
+        "SUCRALFATE 1G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various (Teva, Mylan, Lupin, Actavis, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 gram",
+      "imprints": [
+        "1G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Carafate",
+      "strength": "1 gram",
+      "imprints": [
+        "CARAFATE 1G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Aptalis/Allergan (original brand)",
+      "scored": false
+    }
+  ]
+}

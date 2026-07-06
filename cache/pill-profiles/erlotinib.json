@@ -1,0 +1,104 @@
+{
+  "drug_name": "Erlotinib",
+  "generic_name": "erlotinib hydrochloride",
+  "drug_class": "Epidermal Growth Factor Receptor (EGFR) Inhibitor; Tyrosine Kinase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tarceva",
+      "strength": "25 mg",
+      "imprints": [
+        "TARCEVA",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Tarceva",
+      "strength": "100 mg",
+      "imprints": [
+        "TARCEVA",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Tarceva",
+      "strength": "150 mg",
+      "imprints": [
+        "TARCEVA",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Erlotinib",
+      "strength": "25 mg",
+      "imprints": [
+        "Various per manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Sandoz, Mylan, Cipla, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Erlotinib",
+      "strength": "100 mg",
+      "imprints": [
+        "Various per manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Sandoz, Mylan, Cipla, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Erlotinib",
+      "strength": "150 mg",
+      "imprints": [
+        "Various per manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Sandoz, Mylan, Cipla, others)",
+      "scored": false
+    }
+  ]
+}

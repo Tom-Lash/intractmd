@@ -1,0 +1,55 @@
+{
+  "drug_name": "Apremilast",
+  "generic_name": "apremilast",
+  "drug_class": "Phosphodiesterase-4 (PDE-4) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Otezla",
+      "strength": "10 mg",
+      "imprints": [
+        "APR",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Otezla",
+      "strength": "20 mg",
+      "imprints": [
+        "APR",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Otezla",
+      "strength": "30 mg",
+      "imprints": [
+        "APR",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    }
+  ]
+}

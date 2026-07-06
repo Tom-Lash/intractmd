@@ -1,0 +1,116 @@
+{
+  "drug_name": "Prednisolone",
+  "generic_name": "Prednisolone",
+  "drug_class": "Corticosteroid",
+  "variants": [
+    {
+      "brand_name": "Rayos",
+      "strength": "1 mg",
+      "imprints": [
+        "RAYOS",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 6,
+      "manufacturer": "Naurex Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Rayos",
+      "strength": "2 mg",
+      "imprints": [
+        "RAYOS",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 7,
+      "manufacturer": "Naurex Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Rayos",
+      "strength": "5 mg",
+      "imprints": [
+        "RAYOS",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Naurex Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

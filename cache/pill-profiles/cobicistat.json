@@ -1,0 +1,23 @@
+{
+  "drug_name": "Cobicistat",
+  "generic_name": "Cobicistat",
+  "drug_class": "Pharmacokinetic Booster (CYP3A Inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Tybassit",
+      "strength": "150 mg",
+      "imprints": [
+        "GSI",
+        "150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    }
+  ]
+}

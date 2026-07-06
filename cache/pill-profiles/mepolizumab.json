@@ -1,0 +1,37 @@
+{
+  "drug_name": "Mepolizumab",
+  "generic_name": "mepolizumab",
+  "drug_class": "Monoclonal antibody (IL-5 antagonist)",
+  "note": "Mepolizumab is a biologic medication available only as an injection, not as oral tablets or capsules",
+  "variants": [
+    {
+      "brand_name": "Nucala",
+      "strength": "100 mg/mL",
+      "formulation": "Subcutaneous injection",
+      "manufacturer": "GlaxoSmithKline",
+      "package_size": "Single-dose prefilled syringe or autoinjector",
+      "imprints": "N/A - biologic injection",
+      "shape": "N/A - injection",
+      "colors": "N/A - injection",
+      "coating": "N/A - injection",
+      "size_mm": "N/A - injection",
+      "scored": false,
+      "route": "Subcutaneous"
+    },
+    {
+      "brand_name": "Nucala",
+      "strength": "40 mg/0.4 mL",
+      "formulation": "Subcutaneous injection",
+      "manufacturer": "GlaxoSmithKline",
+      "package_size": "Single-dose prefilled syringe",
+      "imprints": "N/A - biologic injection",
+      "shape": "N/A - injection",
+      "colors": "N/A - injection",
+      "coating": "N/A - injection",
+      "size_mm": "N/A - injection",
+      "scored": false,
+      "route": "Subcutaneous"
+    }
+  ],
+  "important_note": "Mepolizumab (Nucala) is a recombinant DNA-derived humanized monoclonal antibody administered via subcutaneous injection. It is NOT available as an oral solid dosage form (tablets or capsules). Therefore, physical characteristics such as shape, color, imprints, and size do not apply to this medication."
+}

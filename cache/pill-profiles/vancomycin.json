@@ -1,0 +1,105 @@
+{
+  "drug_name": "Vancomycin",
+  "generic_name": "Vancomycin Hydrochloride",
+  "drug_class": "Glycopeptide Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Vancocin",
+      "strength": "125 mg",
+      "imprints": [
+        "VANCOCIN 125 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "purple",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Vancocin",
+      "strength": "250 mg",
+      "imprints": [
+        "VANCOCIN 250 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "purple",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vancomycin",
+      "strength": "125 mg",
+      "imprints": [
+        "VCM 125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "purple",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vancomycin",
+      "strength": "250 mg",
+      "imprints": [
+        "VCM 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "purple",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vancomycin",
+      "strength": "125 mg",
+      "imprints": [
+        "4128",
+        "125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "purple",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vancomycin",
+      "strength": "250 mg",
+      "imprints": [
+        "4129",
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "purple",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

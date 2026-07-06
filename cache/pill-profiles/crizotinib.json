@@ -1,0 +1,105 @@
+{
+  "drug_name": "Crizotinib",
+  "generic_name": "crizotinib",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Xalkori",
+      "strength": "200 mg",
+      "imprints": [
+        "Xalkori",
+        "200 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Xalkori",
+      "strength": "250 mg",
+      "imprints": [
+        "Xalkori",
+        "250 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "C200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "C250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "CRZ200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "CRZ250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

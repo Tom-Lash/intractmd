@@ -1,0 +1,95 @@
+{
+  "drug_name": "Fluticasone",
+  "generic_name": "Fluticasone Propionate",
+  "drug_class": "Corticosteroid (Inhaled)",
+  "variants": [
+    {
+      "brand_name": "Flovent HFA",
+      "strength": "44 mcg/actuation",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "form": "metered dose inhaler"
+    },
+    {
+      "brand_name": "Flovent HFA",
+      "strength": "110 mcg/actuation",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "form": "metered dose inhaler"
+    },
+    {
+      "brand_name": "Flovent HFA",
+      "strength": "220 mcg/actuation",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "form": "metered dose inhaler"
+    },
+    {
+      "brand_name": "Arnuity Ellipta",
+      "strength": "100 mcg/inhalation",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "beige",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "form": "dry powder inhaler"
+    },
+    {
+      "brand_name": "Arnuity Ellipta",
+      "strength": "200 mcg/inhalation",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "beige",
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "form": "dry powder inhaler"
+    },
+    {
+      "brand_name": "Veramyst",
+      "strength": "27.5 mcg/spray",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "form": "nasal spray"
+    }
+  ],
+  "note": "Fluticasone is primarily available as inhalers and nasal sprays in the US market. Oral tablet formulations are not available in standard pharmaceutical databases for US distribution. The variants listed above represent the major brand formulations currently available."
+}

@@ -1,0 +1,138 @@
+{
+  "drug_name": "Prednisone",
+  "generic_name": "Prednisone",
+  "drug_class": "Corticosteroid (Glucocorticoid)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5",
+        "PREDNISONE 2.5 MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Hikma, Actavis, Teva, West-ward, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "PREDNISONE 5 MG",
+        "54 612",
+        "54 760"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Hikma, Actavis, Teva, West-ward, Sandoz, others)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "PREDNISONE 10 MG",
+        "54 092",
+        "54 760"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Hikma, Actavis, Teva, West-ward, Sandoz, others)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20",
+        "PREDNISONE 20 MG",
+        "54 092",
+        "54 760"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Hikma, Actavis, Teva, West-ward, Sandoz, others)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "50",
+        "PREDNISONE 50 MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Hikma, Actavis, Teva, West-ward, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Rayos",
+      "strength": "1 mg",
+      "imprints": [
+        "RAYOS 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 5,
+      "manufacturer": "Naurex (AbbVie)",
+      "scored": false
+    },
+    {
+      "brand_name": "Rayos",
+      "strength": "2 mg",
+      "imprints": [
+        "RAYOS 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 6,
+      "manufacturer": "Naurex (AbbVie)",
+      "scored": false
+    },
+    {
+      "brand_name": "Rayos",
+      "strength": "5 mg",
+      "imprints": [
+        "RAYOS 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 7,
+      "manufacturer": "Naurex (AbbVie)",
+      "scored": false
+    }
+  ]
+}

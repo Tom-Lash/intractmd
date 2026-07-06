@@ -1,0 +1,127 @@
+{
+  "drug_name": "Abacavir",
+  "generic_name": "abacavir sulfate",
+  "drug_class": "Nucleoside reverse transcriptase inhibitor (NRTI)",
+  "variants": [
+    {
+      "brand_name": "Ziagen",
+      "strength": "300 mg",
+      "imprints": [
+        "GX 623"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Abacavir",
+      "strength": "300 mg",
+      "imprints": [
+        "M A300"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Abacavir",
+      "strength": "300 mg",
+      "imprints": [
+        "APO ABC300"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Abacavir",
+      "strength": "300 mg",
+      "imprints": [
+        "TEVA 3122"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Ziagen",
+      "strength": "600 mg",
+      "imprints": [
+        "GX 621"
+      ],
+      "shape": "oblong",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "ViiV Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Abacavir",
+      "strength": "600 mg",
+      "imprints": [
+        "M A600"
+      ],
+      "shape": "oblong",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Abacavir",
+      "strength": "600 mg",
+      "imprints": [
+        "APO ABC600"
+      ],
+      "shape": "oblong",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Abacavir",
+      "strength": "600 mg",
+      "imprints": [
+        "TEVA 3123"
+      ],
+      "shape": "oblong",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

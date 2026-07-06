@@ -1,0 +1,44 @@
+{
+  "drug_name": "Exenatide",
+  "generic_name": "Exenatide",
+  "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Byetta",
+      "strength": "5 mcg/dose",
+      "imprints": [],
+      "shape": "other",
+      "colors": [],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false,
+      "formulation_type": "injectable pen solution"
+    },
+    {
+      "brand_name": "Byetta",
+      "strength": "10 mcg/dose",
+      "imprints": [],
+      "shape": "other",
+      "colors": [],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false,
+      "formulation_type": "injectable pen solution"
+    },
+    {
+      "brand_name": "Bydureon",
+      "strength": "2 mg/week",
+      "imprints": [],
+      "shape": "other",
+      "colors": [],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false,
+      "formulation_type": "injectable extended-release suspension"
+    }
+  ],
+  "note": "Exenatide is available exclusively as injectable formulations (pens and vials for Byetta; extended-release injection for Bydureon). No oral tablet or capsule forms exist in the US market. Physical characteristics for injectable solutions are not applicable in the traditional pill format database structure."
+}

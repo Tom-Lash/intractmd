@@ -1,0 +1,145 @@
+{
+  "drug_name": "Hyoscyamine",
+  "generic_name": "hyoscyamine sulfate",
+  "drug_class": "Anticholinergic/Antispasmodic",
+  "variants": [
+    {
+      "brand_name": "Levsin",
+      "strength": "0.125 mg",
+      "imprints": [
+        "LEVSIN",
+        "0.125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Alva-Amco Pharmacal Companies",
+      "scored": false
+    },
+    {
+      "brand_name": "Levsin/SL",
+      "strength": "0.125 mg",
+      "imprints": [
+        "LEVSIN/SL"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Alva-Amco Pharmacal Companies",
+      "scored": false
+    },
+    {
+      "brand_name": "NuLev",
+      "strength": "0.125 mg",
+      "imprints": [
+        "NuLev"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Schwarz Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.125 mg",
+      "imprints": [
+        "M 0121"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.125 mg",
+      "imprints": [
+        "DAN 5320"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Levsinex",
+      "strength": "0.375 mg",
+      "imprints": [
+        "LEVSINEX"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Alva-Amco Pharmacal Companies",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.375 mg",
+      "imprints": [
+        "M 0122"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Levbid",
+      "strength": "0.375 mg",
+      "imprints": [
+        "LEVBID"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Alva-Amco Pharmacal Companies",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.375 mg",
+      "imprints": [
+        "DAN 5321"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

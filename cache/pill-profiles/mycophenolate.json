@@ -1,0 +1,131 @@
+{
+  "drug_name": "Mycophenolate",
+  "generic_name": "Mycophenolate mofetil (MMF) / Mycophenolic acid (MPA)",
+  "drug_class": "Immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "CellCept",
+      "strength": "250 mg",
+      "imprints": [
+        "CellCept 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Roche/Genentech",
+      "scored": false
+    },
+    {
+      "brand_name": "CellCept",
+      "strength": "500 mg",
+      "imprints": [
+        "CellCept 500"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "lavender"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Roche/Genentech",
+      "scored": true
+    },
+    {
+      "brand_name": "CellCept",
+      "strength": "1000 mg",
+      "imprints": [
+        "CellCept 1000"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "lavender"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Roche/Genentech",
+      "scored": true
+    },
+    {
+      "brand_name": "Myfortic",
+      "strength": "180 mg",
+      "imprints": [
+        "MYFORTIC 180"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Myfortic",
+      "strength": "360 mg",
+      "imprints": [
+        "MYFORTIC 360"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 14,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple (Apotex, Teva, Hikma, etc.)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "lavender",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Apotex, Teva, Hikma, Sandoz, etc.)",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "lavender",
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Multiple (Apotex, Teva, Hikma, Sandoz, etc.)",
+      "scored": true
+    }
+  ]
+}

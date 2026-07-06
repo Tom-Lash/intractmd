@@ -1,0 +1,71 @@
+{
+  "drug_name": "Prochlorperazine",
+  "generic_name": "Prochlorperazine Maleate",
+  "drug_class": "Phenothiazine Antipsychotic/Antiemetic",
+  "variants": [
+    {
+      "brand_name": "Compazine",
+      "strength": "5 mg",
+      "imprints": [
+        "COMPAZINE",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Compazine",
+      "strength": "10 mg",
+      "imprints": [
+        "COMPAZINE",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "PROCHLORPERAZINE",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "PROCHLORPERAZINE",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

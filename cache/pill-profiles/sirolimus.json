@@ -1,0 +1,100 @@
+{
+  "drug_name": "Sirolimus",
+  "generic_name": "Sirolimus",
+  "drug_class": "mTOR inhibitor, immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Rapamune",
+      "strength": "0.5 mg",
+      "imprints": [
+        "RAPAMUNE",
+        "0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Rapamune",
+      "strength": "1 mg",
+      "imprints": [
+        "RAPAMUNE",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Rapamune",
+      "strength": "2 mg",
+      "imprints": [
+        "RAPAMUNE",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sirolimus",
+      "strength": "0.5 mg",
+      "imprints": [
+        "Various manufacturer specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sirolimus",
+      "strength": "1 mg",
+      "imprints": [
+        "Various manufacturer specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Sirolimus",
+      "strength": "2 mg",
+      "imprints": [
+        "Various manufacturer specific"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Teva, Mylan, Sandoz, others)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "drug_name": "Eletriptan",
+  "generic_name": "Eletriptan Hydrobromide",
+  "drug_class": "Triptan (5-HT1B/1D receptor agonist)",
+  "variants": [
+    {
+      "brand_name": "Relpax",
+      "strength": "20 mg",
+      "imprints": [
+        "RELPAX",
+        "20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Relpax",
+      "strength": "40 mg",
+      "imprints": [
+        "RELPAX",
+        "40"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Eletriptan",
+      "strength": "20 mg",
+      "imprints": [
+        "E20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Eletriptan",
+      "strength": "40 mg",
+      "imprints": [
+        "E40"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

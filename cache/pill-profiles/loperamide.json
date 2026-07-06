@@ -1,0 +1,156 @@
+{
+  "drug_name": "Loperamide",
+  "generic_name": "Loperamide hydrochloride",
+  "drug_class": "Antidiarrheal Agent (Opioid Agonist)",
+  "variants": [
+    {
+      "brand_name": "Imodium A-D",
+      "strength": "2 mg",
+      "imprints": [
+        "IMODIUM"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "L544"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Kroger Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "A-D"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Actavis Elizabeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "M732"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "SZ 266"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "LOPERAMIDE 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "G 023"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide",
+      "strength": "2 mg",
+      "imprints": [
+        "93 3109"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Imodium Liquid",
+      "strength": "1 mg/5 mL",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "n/a",
+      "size_mm": null,
+      "manufacturer": "McNeil Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Loperamide Liquid",
+      "strength": "1 mg/5 mL",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "n/a",
+      "size_mm": null,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    }
+  ]
+}

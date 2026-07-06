@@ -1,0 +1,109 @@
+{
+  "drug_name": "Zaleplon",
+  "generic_name": "Zaleplon",
+  "drug_class": "Sedative-Hypnotic (Pyrazolopyrimidine)",
+  "variants": [
+    {
+      "brand_name": "Sonata",
+      "strength": "5 mg",
+      "imprints": [
+        "SONATA",
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Sonata",
+      "strength": "10 mg",
+      "imprints": [
+        "SONATA",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "ZP",
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "ZP",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "APO",
+        "ZP5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Apotex Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "APO",
+        "ZP10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Apotex Corp",
+      "scored": false
+    }
+  ]
+}

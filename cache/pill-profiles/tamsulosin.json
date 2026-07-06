@@ -1,0 +1,136 @@
+{
+  "drug_name": "Tamsulosin",
+  "generic_name": "Tamsulosin hydrochloride",
+  "drug_class": "Alpha-1A adrenergic receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Flomax",
+      "strength": "0.4 mg",
+      "imprints": [
+        "FLOMAX",
+        "0.4"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "G 0406"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "AN 447"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "IP 272"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Intas Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "M T1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "TEVA 4085"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "Watson 785"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tamsulosin",
+      "strength": "0.4 mg",
+      "imprints": [
+        "SZ 399"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

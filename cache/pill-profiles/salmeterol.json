@@ -1,0 +1,54 @@
+{
+  "drug_name": "Salmeterol",
+  "generic_name": "Salmeterol xinafoate",
+  "drug_class": "Long-acting beta-2 adrenergic agonist (LABA)",
+  "note": "Salmeterol is not available as a standalone oral tablet in the United States. It is only available in combination inhalers or as part of combination products.",
+  "variants": [
+    {
+      "brand_name": "Serevent Diskus",
+      "strength": "50 mcg per inhalation",
+      "form": "Inhalation powder",
+      "imprints": [
+        "Not applicable - powder formulation"
+      ],
+      "shape": "Not applicable",
+      "colors": [],
+      "coating": "Not applicable",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "note": "This is an inhaled powder, not an oral tablet"
+    },
+    {
+      "brand_name": "Advair Diskus",
+      "strength": "50/100 mcg, 50/250 mcg",
+      "form": "Inhalation powder (salmeterol/fluticasone combination)",
+      "imprints": [
+        "Not applicable - powder formulation"
+      ],
+      "shape": "Not applicable",
+      "colors": [],
+      "coating": "Not applicable",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "note": "This is an inhaled powder combination product, not an oral tablet"
+    },
+    {
+      "brand_name": "Advair HFA",
+      "strength": "45/230 mcg, 115/21 mcg",
+      "form": "Metered dose inhaler (salmeterol/fluticasone combination)",
+      "imprints": [
+        "Not applicable - inhaler formulation"
+      ],
+      "shape": "Not applicable",
+      "colors": [],
+      "coating": "Not applicable",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false,
+      "note": "This is a metered dose inhaler combination product, not an oral tablet"
+    }
+  ],
+  "important_note": "Salmeterol xinafoate is NOT formulated as an oral tablet or pill in the United States market. All US formulations are inhaled delivery systems (powder or aerosol). There are no pill/tablet physical characteristics to document as requested. This medication is exclusively available as respiratory inhalation products, either as monotherapy (Serevent Diskus) or in combination with inhaled corticosteroids (Advair products)."
+}

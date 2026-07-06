@@ -1,0 +1,131 @@
+{
+  "drug_name": "Afatinib",
+  "generic_name": "afatinib dimaleate",
+  "drug_class": "Epidermal growth factor receptor (EGFR) inhibitor; tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Gilotrif",
+      "strength": "20 mg",
+      "imprints": [
+        "BOEH",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Gilotrif",
+      "strength": "30 mg",
+      "imprints": [
+        "BOEH",
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "pale yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Gilotrif",
+      "strength": "40 mg",
+      "imprints": [
+        "BOEH",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Gilotrif",
+      "strength": "50 mg",
+      "imprints": [
+        "BOEH",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "dark yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "pale yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "dark yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    }
+  ]
+}

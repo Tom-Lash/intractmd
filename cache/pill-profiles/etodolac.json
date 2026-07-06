@@ -1,0 +1,177 @@
+{
+  "drug_name": "Etodolac",
+  "generic_name": "Etodolac",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "EP 200",
+        "ETH 200",
+        "MP 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "EP 300",
+        "ETH 300",
+        "MP 300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "EP 400",
+        "ETH 400",
+        "MP 400",
+        "GG 120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "EP 500",
+        "ETH 500",
+        "MP 500",
+        "GG 121"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600 mg",
+      "imprints": [
+        "EP 600",
+        "ETH 600",
+        "MP 600",
+        "GG 122"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Lodine",
+      "strength": "200 mg",
+      "imprints": [
+        "LODINE 200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Lodine",
+      "strength": "300 mg",
+      "imprints": [
+        "LODINE 300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Lodine XL",
+      "strength": "400 mg",
+      "imprints": [
+        "LODINE XL 400"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Lodine XL",
+      "strength": "500 mg",
+      "imprints": [
+        "LODINE XL 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Lodine XL",
+      "strength": "600 mg",
+      "imprints": [
+        "LODINE XL 600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Wyeth",
+      "scored": false
+    }
+  ]
+}

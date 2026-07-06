@@ -1,0 +1,97 @@
+{
+  "drug_name": "Bismuth Subsalicylate",
+  "generic_name": "Bismuth Subsalicylate",
+  "drug_class": "Antidiarrheal/Gastrointestinal Agent",
+  "variants": [
+    {
+      "brand_name": "Pepto-Bismol",
+      "strength": "262 mg",
+      "imprints": [
+        "PEPTO BISMOL"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Pepto-Bismol",
+      "strength": "262 mg",
+      "imprints": [
+        "PEPTO"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Pepto-Bismol Maximum Strength",
+      "strength": "525 mg",
+      "imprints": [
+        "PEPTO BISMOL MAXIMUM"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Bismuth Subsalicylate",
+      "strength": "262 mg",
+      "imprints": [
+        "262"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Bismuth Subsalicylate",
+      "strength": "525 mg",
+      "imprints": [
+        "525"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Kaopectate",
+      "strength": "262 mg",
+      "imprints": [
+        "KAOPECTATE"
+      ],
+      "shape": "caplet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Chattem",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "drug_name": "Tocilizumab",
+  "generic_name": "tocilizumab",
+  "drug_class": "Interleukin-6 (IL-6) receptor antagonist; monoclonal antibody",
+  "note": "Tocilizumab is not available in oral pill form in the United States. It is exclusively available as injectable formulations.",
+  "available_formulations": [
+    {
+      "route": "Intravenous infusion",
+      "brand_name": "Actemra",
+      "strength": "20 mg/mL",
+      "presentation": "Solution for infusion in vials",
+      "vial_sizes": [
+        "4 mL (80 mg)",
+        "10 mL (200 mg)",
+        "20 mL (400 mg)"
+      ],
+      "manufacturer": "Genentech/Roche"
+    },
+    {
+      "route": "Subcutaneous injection",
+      "brand_name": "Actemra",
+      "strength": "162 mg/0.9 mL",
+      "presentation": "Pre-filled syringe or pre-filled pen",
+      "manufacturer": "Genentech/Roche"
+    },
+    {
+      "route": "Subcutaneous injection",
+      "brand_name": "Generic tocilizumab",
+      "strength": "162 mg/0.9 mL",
+      "presentation": "Pre-filled syringe",
+      "manufacturer": "Multiple (biosimilars available)"
+    }
+  ],
+  "clarification": "Tocilizumab is a biologic monoclonal antibody administered by injection only. No oral tablet, capsule, or pill formulations exist in any country's pharmaceutical market."
+}

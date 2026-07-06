@@ -1,0 +1,226 @@
+{
+  "drug_name": "Everolimus",
+  "generic_name": "Everolimus",
+  "drug_class": "mTOR inhibitor (mammalian target of rapamycin inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Afinitor",
+      "strength": "0.25 mg",
+      "imprints": [
+        "NVR",
+        "LCL"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor",
+      "strength": "0.5 mg",
+      "imprints": [
+        "NVR",
+        "LCS"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor",
+      "strength": "1 mg",
+      "imprints": [
+        "NVR",
+        "LCT"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor",
+      "strength": "2.5 mg",
+      "imprints": [
+        "NVR",
+        "LCU"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor",
+      "strength": "5 mg",
+      "imprints": [
+        "NVR",
+        "LCV"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor",
+      "strength": "10 mg",
+      "imprints": [
+        "NVR",
+        "LCW"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor Disperz",
+      "strength": "2 mg",
+      "imprints": [
+        "NVR",
+        "LDL"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor Disperz",
+      "strength": "3 mg",
+      "imprints": [
+        "NVR",
+        "LDM"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Afinitor Disperz",
+      "strength": "5 mg",
+      "imprints": [
+        "NVR",
+        "LDN"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Everolimus",
+      "strength": "0.5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Accord, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Everolimus",
+      "strength": "1 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple (Accord, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Everolimus",
+      "strength": "2.5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Accord, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Everolimus",
+      "strength": "5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple (Accord, Teva, Sandoz, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Everolimus",
+      "strength": "10 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple (Accord, Teva, Sandoz, others)",
+      "scored": false
+    }
+  ]
+}

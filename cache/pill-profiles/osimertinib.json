@@ -1,0 +1,55 @@
+{
+  "drug_name": "Osimertinib",
+  "generic_name": "Osimertinib mesylate",
+  "drug_class": "Tyrosine kinase inhibitor (TKI), EGFR inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tagrisso",
+      "strength": "40 mg",
+      "imprints": [
+        "AZD",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "AstraZeneca Pharmaceuticals LP",
+      "scored": false
+    },
+    {
+      "brand_name": "Tagrisso",
+      "strength": "80 mg",
+      "imprints": [
+        "AZD",
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "AstraZeneca Pharmaceuticals LP",
+      "scored": false
+    },
+    {
+      "brand_name": "Tagrisso",
+      "strength": "160 mg",
+      "imprints": [
+        "AZD",
+        "160"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "AstraZeneca Pharmaceuticals LP",
+      "scored": false
+    }
+  ]
+}

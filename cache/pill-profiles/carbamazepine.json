@@ -1,0 +1,202 @@
+{
+  "drug_name": "Carbamazepine",
+  "generic_name": "Carbamazepine",
+  "drug_class": "Anticonvulsant, Antiepileptic, Mood Stabilizer",
+  "variants": [
+    {
+      "brand_name": "Tegretol",
+      "strength": "200 mg",
+      "imprints": [
+        "TEGRETOL",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tegretol",
+      "strength": "400 mg",
+      "imprints": [
+        "TEGRETOL",
+        "400"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tegretol XR",
+      "strength": "100 mg",
+      "imprints": [
+        "TEG",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tegretol XR",
+      "strength": "200 mg",
+      "imprints": [
+        "TEG",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tegretol XR",
+      "strength": "400 mg",
+      "imprints": [
+        "TEG",
+        "400"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Equetro",
+      "strength": "100 mg",
+      "imprints": [
+        "EQUETRO",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Inseam Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Equetro",
+      "strength": "200 mg",
+      "imprints": [
+        "EQUETRO",
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Inseam Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Equetro",
+      "strength": "300 mg",
+      "imprints": [
+        "EQUETRO",
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Inseam Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "C",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Taro Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "C",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Taro Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "93",
+        "71"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "93",
+        "72"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

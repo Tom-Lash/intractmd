@@ -1,0 +1,190 @@
+{
+  "drug_name": "Guaifenesin",
+  "generic_name": "Guaifenesin",
+  "drug_class": "Expectorant",
+  "variants": [
+    {
+      "brand_name": "Mucinex",
+      "strength": "200mg",
+      "imprints": [
+        "M200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    },
+    {
+      "brand_name": "Mucinex",
+      "strength": "400mg",
+      "imprints": [
+        "M400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    },
+    {
+      "brand_name": "Mucinex",
+      "strength": "600mg",
+      "imprints": [
+        "M600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    },
+    {
+      "brand_name": "Mucinex Maximum Strength",
+      "strength": "1200mg",
+      "imprints": [
+        "M1200"
+      ],
+      "shape": "oblong",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200mg",
+      "imprints": [
+        "GG200",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400mg",
+      "imprints": [
+        "GG400",
+        "400"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "600mg",
+      "imprints": [
+        "GG600",
+        "600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Robitussin",
+      "strength": "200mg",
+      "imprints": [
+        "ROBITUSSIN"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Robitussin Peak Cold",
+      "strength": "400mg",
+      "imprints": [
+        "ROBITUSSIN"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Mucinex Junior",
+      "strength": "100mg",
+      "imprints": [
+        "M100"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    },
+    {
+      "brand_name": "Mucinex DM",
+      "strength": "600mg/30mg",
+      "imprints": [
+        "M627"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    },
+    {
+      "brand_name": "Mucinex DM Extended-Release",
+      "strength": "1200mg/60mg",
+      "imprints": [
+        "M1233"
+      ],
+      "shape": "oblong",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Reckitt Benckiser",
+      "scored": false
+    }
+  ]
+}

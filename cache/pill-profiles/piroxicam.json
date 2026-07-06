@@ -1,0 +1,109 @@
+{
+  "drug_name": "Piroxicam",
+  "generic_name": "Piroxicam",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Feldene",
+      "strength": "10 mg",
+      "imprints": [
+        "FELDENE",
+        "10 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Feldene",
+      "strength": "20 mg",
+      "imprints": [
+        "FELDENE",
+        "20 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "AP",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "AP",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "WAR",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Watson",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "WAR",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Watson",
+      "scored": false
+    }
+  ]
+}

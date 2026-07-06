@@ -1,0 +1,191 @@
+{
+  "drug_name": "Semaglutide",
+  "generic_name": "semaglutide",
+  "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Ozempic",
+      "strength": "0.25 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Ozempic",
+      "strength": "0.5 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Ozempic",
+      "strength": "1 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Ozempic",
+      "strength": "2 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Wegovy",
+      "strength": "0.25 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Wegovy",
+      "strength": "0.5 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Wegovy",
+      "strength": "1 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Wegovy",
+      "strength": "1.7 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Wegovy",
+      "strength": "2.4 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "clear",
+        "colorless"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "pre-filled pen injection"
+    },
+    {
+      "brand_name": "Rybelsus",
+      "strength": "3 mg",
+      "imprints": [
+        "NX3"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "oral tablet"
+    },
+    {
+      "brand_name": "Rybelsus",
+      "strength": "7 mg",
+      "imprints": [
+        "NX7"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "oral tablet"
+    },
+    {
+      "brand_name": "Rybelsus",
+      "strength": "14 mg",
+      "imprints": [
+        "NX14"
+      ],
+      "shape": "rectangle",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novo Nordisk",
+      "scored": false,
+      "form": "oral tablet"
+    }
+  ],
+  "note": "Semaglutide is NOT available as traditional oral pills in the US market. Ozempic and Wegovy are subcutaneous injectable formulations only. Rybelsus is the only oral tablet formulation available. No generic semaglutide tablets are currently available in the US market."
+}

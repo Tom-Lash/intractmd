@@ -1,0 +1,197 @@
+{
+  "drug_name": "Pantoprazole",
+  "generic_name": "Pantoprazole Sodium",
+  "drug_class": "Proton Pump Inhibitor (PPI)",
+  "variants": [
+    {
+      "brand_name": "Protonix",
+      "strength": "20 mg",
+      "imprints": [
+        "PROTONIX",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Protonix",
+      "strength": "40 mg",
+      "imprints": [
+        "PROTONIX",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "G032"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Glenmark",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "G033"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Glenmark",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "PAR",
+        "535"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Par Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "PAR",
+        "536"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Par Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "EC",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "EC",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "TEVA",
+        "7375"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "TEVA",
+        "7376"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "SUN",
+        "P21"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 8,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "SUN",
+        "P40"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 9,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

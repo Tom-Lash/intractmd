@@ -1,0 +1,65 @@
+{
+  "drug_name": "Fluocinolone",
+  "generic_name": "Fluocinolone Acetonide",
+  "drug_class": "Topical Corticosteroid (Class III-IV potency)",
+  "note": "Fluocinolone is primarily available as a topical formulation (cream, ointment, oil, solution) and is not manufactured as an oral tablet or capsule in the United States. The following represents available topical products.",
+  "variants": [
+    {
+      "brand_name": "Synalar",
+      "strength": "0.01%",
+      "form": "Cream",
+      "manufacturer": "Medimetriks Pharmaceuticals",
+      "not_applicable": "Topical - no pill characteristics"
+    },
+    {
+      "brand_name": "Synalar",
+      "strength": "0.025%",
+      "form": "Cream",
+      "manufacturer": "Medimetriks Pharmaceuticals",
+      "not_applicable": "Topical - no pill characteristics"
+    },
+    {
+      "brand_name": "Synalar",
+      "strength": "0.01%",
+      "form": "Ointment",
+      "manufacturer": "Medimetriks Pharmaceuticals",
+      "not_applicable": "Topical - no pill characteristics"
+    },
+    {
+      "brand_name": "Synalar",
+      "strength": "0.025%",
+      "form": "Ointment",
+      "manufacturer": "Medimetriks Pharmaceuticals",
+      "not_applicable": "Topical - no pill characteristics"
+    },
+    {
+      "brand_name": "Synalar",
+      "strength": "0.01%",
+      "form": "Solution",
+      "manufacturer": "Medimetriks Pharmaceuticals",
+      "not_applicable": "Topical - no pill characteristics"
+    },
+    {
+      "brand_name": "Capex",
+      "strength": "0.01%",
+      "form": "Shampoo",
+      "manufacturer": "Galderma",
+      "not_applicable": "Topical - no pill characteristics"
+    },
+    {
+      "brand_name": "Retisert",
+      "strength": "0.59 mg",
+      "form": "Intracameral implant",
+      "manufacturer": "Bausch + Lomb",
+      "not_applicable": "Implant - no pill characteristics"
+    },
+    {
+      "brand_name": "Iluvien",
+      "strength": "0.19 mg",
+      "form": "Intravitreal implant",
+      "manufacturer": "Alcon",
+      "not_applicable": "Implant - no pill characteristics"
+    }
+  ],
+  "summary": "Fluocinolone acetonide is not available as an oral tablet or capsule in the United States. All pharmaceutical formulations are topical (applied to skin or eye). Therefore, pill physical characteristics (shape, color, imprints, scoring) are not applicable."
+}

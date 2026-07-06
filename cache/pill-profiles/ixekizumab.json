@@ -1,0 +1,42 @@
+{
+  "drug_name": "Ixekizumab",
+  "generic_name": "ixekizumab",
+  "drug_class": "Interleukin-17A antagonist (monoclonal antibody)",
+  "variants": [
+    {
+      "brand_name": "Taltz",
+      "strength": "80 mg/mL",
+      "formulation": "Prefilled syringe",
+      "imprints": [
+        "Not applicable - injection"
+      ],
+      "shape": "N/A",
+      "colors": [
+        "Clear to slightly opalescent, colorless to slightly yellow liquid"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "note": "Ixekizumab is a biologic medication administered by subcutaneous injection only. It does not exist in pill or tablet form."
+    },
+    {
+      "brand_name": "Taltz",
+      "strength": "80 mg/mL",
+      "formulation": "Prefilled pen (autoinjector)",
+      "imprints": [
+        "Not applicable - injection"
+      ],
+      "shape": "N/A",
+      "colors": [
+        "Clear to slightly opalescent, colorless to slightly yellow liquid"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "note": "Ixekizumab is a biologic medication administered by subcutaneous injection only. It does not exist in pill or tablet form."
+    }
+  ],
+  "important_note": "Ixekizumab is a monoclonal antibody biologic therapeutic that is ONLY available as a parenteral injection (subcutaneous). There are NO oral tablets or pills of ixekizumab available in the United States or any other market. This query cannot be fulfilled as requested because the medication does not exist in pill form."
+}

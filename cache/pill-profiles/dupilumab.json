@@ -1,0 +1,26 @@
+{
+  "drug_name": "Dupilumab",
+  "generic_name": "dupilumab",
+  "drug_class": "Monoclonal antibody; interleukin-4 receptor alpha antagonist",
+  "note": "Dupilumab is a biologic medication administered via subcutaneous injection. It is NOT available in pill form. No oral tablet, capsule, or other solid oral dosage formulations exist for this medication in the United States.",
+  "variants": [
+    {
+      "brand_name": "Dupixent",
+      "strength": "200 mg/1.14 mL",
+      "formulation_type": "subcutaneous injection (prefilled syringe)",
+      "manufacturer": "Sanofi Genzyme"
+    },
+    {
+      "brand_name": "Dupixent",
+      "strength": "300 mg/2 mL",
+      "formulation_type": "subcutaneous injection (prefilled syringe)",
+      "manufacturer": "Sanofi Genzyme"
+    },
+    {
+      "brand_name": "Dupixent",
+      "strength": "300 mg/2 mL",
+      "formulation_type": "subcutaneous injection (prefilled pen)",
+      "manufacturer": "Sanofi Genzyme"
+    }
+  ]
+}

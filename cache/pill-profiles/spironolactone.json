@@ -1,0 +1,187 @@
+{
+  "drug_name": "Spironolactone",
+  "generic_name": "spironolactone",
+  "drug_class": "Potassium-sparing diuretic and aldosterone antagonist",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "ALDACTONE 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various (Actavis, Hikma, Mylan, Teva, Torrent, Westward)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "M 71"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "SPIRO 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "ALDACTONE 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various (Actavis, Hikma, Mylan, Teva, Torrent, Westward)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "M 72"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "SPIRO 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "ALDACTONE 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various (Actavis, Hikma, Mylan, Teva, Torrent, Westward)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "M 73"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "SPIRO 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Aldactone",
+      "strength": "25 mg",
+      "imprints": [
+        "ALDACTONE 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Aldactone",
+      "strength": "50 mg",
+      "imprints": [
+        "ALDACTONE 50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Aldactone",
+      "strength": "100 mg",
+      "imprints": [
+        "ALDACTONE 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ]
+}

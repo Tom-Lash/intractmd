@@ -1,0 +1,159 @@
+{
+  "drug_name": "Finasteride",
+  "generic_name": "Finasteride",
+  "drug_class": "5-alpha reductase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Propecia",
+      "strength": "1 mg",
+      "imprints": [
+        "PROPECIA",
+        "1 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Proscar",
+      "strength": "5 mg",
+      "imprints": [
+        "PROSCAR",
+        "5 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Merck",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "1 mg",
+      "imprints": [
+        "G 126"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Glenmark",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "1 mg",
+      "imprints": [
+        "A 74"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "1 mg",
+      "imprints": [
+        "TL 170"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Torrent",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "5 mg",
+      "imprints": [
+        "G 127"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Glenmark",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "5 mg",
+      "imprints": [
+        "A 75"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Aurobindo",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "5 mg",
+      "imprints": [
+        "TL 171"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Torrent",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "1 mg",
+      "imprints": [
+        "M F1"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Finasteride",
+      "strength": "5 mg",
+      "imprints": [
+        "M F5"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": true
+    }
+  ]
+}

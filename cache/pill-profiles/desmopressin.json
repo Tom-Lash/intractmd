@@ -1,0 +1,114 @@
+{
+  "drug_name": "Desmopressin",
+  "generic_name": "Desmopressin acetate",
+  "drug_class": "Vasopressin analog, antidiuretic hormone (ADH)",
+  "variants": [
+    {
+      "brand_name": "DDAVP",
+      "strength": "0.1 mg",
+      "imprints": [
+        "DDAVP",
+        "0.1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "DDAVP",
+      "strength": "0.2 mg",
+      "imprints": [
+        "DDAVP",
+        "0.2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Melt (Desmopressin melt)",
+      "strength": "60 mcg",
+      "imprints": [
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Ferring",
+      "scored": false
+    },
+    {
+      "brand_name": "Melt (Desmopressin melt)",
+      "strength": "120 mcg",
+      "imprints": [
+        "120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Ferring",
+      "scored": false
+    },
+    {
+      "brand_name": "Melt (Desmopressin melt)",
+      "strength": "240 mcg",
+      "imprints": [
+        "240"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Ferring",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desmopressin",
+      "strength": "0.1 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Multiple (Mylan, Teva, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desmopressin",
+      "strength": "0.2 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Mylan, Teva, others)",
+      "scored": false
+    }
+  ]
+}

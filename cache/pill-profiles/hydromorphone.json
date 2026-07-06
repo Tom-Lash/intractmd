@@ -1,0 +1,187 @@
+{
+  "drug_name": "Hydromorphone",
+  "generic_name": "Hydromorphone Hydrochloride",
+  "drug_class": "Opioid Analgesic",
+  "variants": [
+    {
+      "brand_name": "Dilaudid",
+      "strength": "2 mg",
+      "imprints": [
+        "DILAUDID 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Purdue Pharma",
+      "scored": true
+    },
+    {
+      "brand_name": "Dilaudid",
+      "strength": "4 mg",
+      "imprints": [
+        "DILAUDID 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Purdue Pharma",
+      "scored": true
+    },
+    {
+      "brand_name": "Dilaudid",
+      "strength": "8 mg",
+      "imprints": [
+        "DILAUDID 8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Purdue Pharma",
+      "scored": true
+    },
+    {
+      "brand_name": "Exalgo",
+      "strength": "8 mg",
+      "imprints": [
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Exalgo",
+      "strength": "16 mg",
+      "imprints": [
+        "16"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Exalgo",
+      "strength": "32 mg",
+      "imprints": [
+        "32"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "54 262"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Roxane/West-Ward",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "54 263"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane/West-Ward",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "54 264"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane/West-Ward",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "M 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "M 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "M 8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    }
+  ]
+}

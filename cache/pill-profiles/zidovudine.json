@@ -1,0 +1,106 @@
+{
+  "drug_name": "Zidovudine",
+  "generic_name": "Zidovudine (AZT)",
+  "drug_class": "Nucleoside Reverse Transcriptase Inhibitor (NRTI)",
+  "variants": [
+    {
+      "brand_name": "Retrovir",
+      "strength": "100 mg",
+      "imprints": [
+        "RETROVIR",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Retrovir",
+      "strength": "250 mg",
+      "imprints": [
+        "RETROVIR",
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Retrovir",
+      "strength": "300 mg",
+      "imprints": [
+        "RETROVIR",
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zidovudine",
+      "strength": "100 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zidovudine",
+      "strength": "250 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zidovudine",
+      "strength": "300 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

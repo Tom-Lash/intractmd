@@ -1,0 +1,120 @@
+{
+  "drug_name": "Theophylline",
+  "generic_name": "Theophylline",
+  "drug_class": "Xanthine Bronchodilator",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "300 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Theo-24",
+      "strength": "100 mg",
+      "imprints": [
+        "THEO-24",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Theo-24",
+      "strength": "200 mg",
+      "imprints": [
+        "THEO-24",
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Theo-24",
+      "strength": "300 mg",
+      "imprints": [
+        "THEO-24",
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 22,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Theo-24",
+      "strength": "400 mg",
+      "imprints": [
+        "THEO-24",
+        "400"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "film-coated",
+      "size_mm": 24,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    }
+  ]
+}

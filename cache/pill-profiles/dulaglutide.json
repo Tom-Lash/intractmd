@@ -1,0 +1,64 @@
+{
+  "drug_name": "Dulaglutide",
+  "generic_name": "dulaglutide",
+  "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Trulicity",
+      "strength": "0.75 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "form": "prefilled pen/syringe"
+    },
+    {
+      "brand_name": "Trulicity",
+      "strength": "1.5 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "form": "prefilled pen/syringe"
+    },
+    {
+      "brand_name": "Trulicity",
+      "strength": "3 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "form": "prefilled pen/syringe"
+    },
+    {
+      "brand_name": "Trulicity",
+      "strength": "4.5 mg",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false,
+      "form": "prefilled pen/syringe"
+    }
+  ],
+  "note": "Dulaglutide is a biologic medication available only as injectable prefilled pens/syringes. No tablet or capsule formulations exist in the US market. The medication is a once-weekly subcutaneous injection. Physical characteristics listed represent the injection device, not a traditional oral dosage form."
+}

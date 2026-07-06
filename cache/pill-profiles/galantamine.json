@@ -1,0 +1,148 @@
+{
+  "drug_name": "Galantamine",
+  "generic_name": "Galantamine hydrobromide",
+  "drug_class": "Cholinesterase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Razadyne",
+      "strength": "4 mg",
+      "imprints": [
+        "RZ 4"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Razadyne",
+      "strength": "8 mg",
+      "imprints": [
+        "RZ 8"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Razadyne",
+      "strength": "12 mg",
+      "imprints": [
+        "RZ 12"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Razadyne ER",
+      "strength": "8 mg",
+      "imprints": [
+        "JANSSEN",
+        "8 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Razadyne ER",
+      "strength": "16 mg",
+      "imprints": [
+        "JANSSEN",
+        "16 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Razadyne ER",
+      "strength": "24 mg",
+      "imprints": [
+        "JANSSEN",
+        "24 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Galantamine",
+      "strength": "4 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Galantamine",
+      "strength": "8 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Galantamine",
+      "strength": "12 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

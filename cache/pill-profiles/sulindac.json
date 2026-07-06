@@ -1,0 +1,67 @@
+{
+  "drug_name": "Sulindac",
+  "generic_name": "Sulindac",
+  "drug_class": "Nonsteroidal Anti-inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "MSD 931"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Merck",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "MSD 932"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Merck",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "SULINDAC 150"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "SULINDAC 200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    }
+  ]
+}

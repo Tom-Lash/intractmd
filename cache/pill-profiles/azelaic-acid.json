@@ -1,0 +1,60 @@
+{
+  "drug_name": "Azelaic Acid",
+  "generic_name": "Azelaic Acid",
+  "drug_class": "Dicarboxylic acid antimicrobial and anti-inflammatory agent",
+  "variants": [
+    {
+      "brand_name": "Azelaic Acid",
+      "strength": "15% topical foam",
+      "imprints": [],
+      "shape": "foam",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "LEO Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Azelaic Acid",
+      "strength": "20% topical cream",
+      "imprints": [],
+      "shape": "cream",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Finacea",
+      "strength": "15% topical foam",
+      "imprints": [],
+      "shape": "foam",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "LEO Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Finacea",
+      "strength": "20% topical cream",
+      "imprints": [],
+      "shape": "cream",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "LEO Pharma",
+      "scored": false
+    }
+  ],
+  "note": "Azelaic Acid is not available as oral tablets or capsules in the US. All FDA-approved formulations are topical (cream and foam) for dermatological use. No pill/tablet forms with imprints exist for this medication."
+}

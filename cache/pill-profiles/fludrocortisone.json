@@ -1,0 +1,87 @@
+{
+  "drug_name": "Fludrocortisone",
+  "generic_name": "Fludrocortisone Acetate",
+  "drug_class": "Mineralocorticoid/Glucocorticoid",
+  "variants": [
+    {
+      "brand_name": "Florinef",
+      "strength": "0.1 mg",
+      "imprints": [
+        "FLORINEF",
+        "0.1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Monarch Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fludrocortisone Acetate)",
+      "strength": "0.1 mg",
+      "imprints": [
+        "G",
+        "369"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fludrocortisone Acetate)",
+      "strength": "0.1 mg",
+      "imprints": [
+        "WATSON",
+        "653"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fludrocortisone Acetate)",
+      "strength": "0.1 mg",
+      "imprints": [
+        "M",
+        "F1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Fludrocortisone Acetate)",
+      "strength": "0.1 mg",
+      "imprints": [
+        "54",
+        "092"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    }
+  ]
+}

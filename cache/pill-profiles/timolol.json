@@ -1,0 +1,103 @@
+{
+  "drug_name": "Timolol",
+  "generic_name": "timolol maleate",
+  "drug_class": "Beta-adrenergic blocking agent",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "TIMOLOL 5MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "TIMOLOL 10MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "20",
+        "TIMOLOL 20MG"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Betimol",
+      "strength": "5 mg",
+      "imprints": [
+        "BETIMOL",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Bausch & Lomb",
+      "scored": false
+    },
+    {
+      "brand_name": "Betimol",
+      "strength": "10 mg",
+      "imprints": [
+        "BETIMOL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Bausch & Lomb",
+      "scored": false
+    },
+    {
+      "brand_name": "Betimol",
+      "strength": "20 mg",
+      "imprints": [
+        "BETIMOL",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Bausch & Lomb",
+      "scored": false
+    }
+  ]
+}

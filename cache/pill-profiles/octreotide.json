@@ -1,0 +1,87 @@
+{
+  "drug_name": "Octreotide",
+  "generic_name": "octreotide acetate",
+  "drug_class": "Somatostatin analog",
+  "note": "Octreotide is primarily available as injectable formulations in the US. Oral tablet formulations are not standard US pharmaceutical products. The following represents available injectable forms:",
+  "variants": [
+    {
+      "brand_name": "Sandostatin",
+      "formulation_type": "Subcutaneous/Intramuscular Injection",
+      "strength": "50 mcg/mL",
+      "route": "Injectable",
+      "manufacturer": "Novartis",
+      "vial_size_mL": 1,
+      "scored": false
+    },
+    {
+      "brand_name": "Sandostatin",
+      "formulation_type": "Subcutaneous/Intramuscular Injection",
+      "strength": "100 mcg/mL",
+      "route": "Injectable",
+      "manufacturer": "Novartis",
+      "vial_size_mL": 1,
+      "scored": false
+    },
+    {
+      "brand_name": "Sandostatin",
+      "formulation_type": "Subcutaneous/Intramuscular Injection",
+      "strength": "500 mcg/mL",
+      "route": "Injectable",
+      "manufacturer": "Novartis",
+      "vial_size_mL": 1,
+      "scored": false
+    },
+    {
+      "brand_name": "Sandostatin LAR",
+      "formulation_type": "Intramuscular Injection (Long-acting)",
+      "strength": "10 mg",
+      "route": "Injectable",
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Sandostatin LAR",
+      "formulation_type": "Intramuscular Injection (Long-acting)",
+      "strength": "20 mg",
+      "route": "Injectable",
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Sandostatin LAR",
+      "formulation_type": "Intramuscular Injection (Long-acting)",
+      "strength": "30 mg",
+      "route": "Injectable",
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Octreotide",
+      "formulation_type": "Subcutaneous/Intramuscular Injection",
+      "strength": "50 mcg/mL",
+      "route": "Injectable",
+      "manufacturer": "Multiple generic manufacturers",
+      "vial_size_mL": 1,
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Octreotide",
+      "formulation_type": "Subcutaneous/Intramuscular Injection",
+      "strength": "100 mcg/mL",
+      "route": "Injectable",
+      "manufacturer": "Multiple generic manufacturers",
+      "vial_size_mL": 1,
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Octreotide",
+      "formulation_type": "Subcutaneous/Intramuscular Injection",
+      "strength": "500 mcg/mL",
+      "route": "Injectable",
+      "manufacturer": "Multiple generic manufacturers",
+      "vial_size_mL": 1,
+      "scored": false
+    }
+  ],
+  "important_note": "Octreotide is not available as oral tablets in the United States. All US formulations are injectable. An oral form (Mycapssa) exists but is not a standard tablet. Pill physical characteristics (shape, color, imprint) do not apply to octreotide products available in the US market."
+}

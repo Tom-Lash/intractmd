@@ -1,0 +1,55 @@
+{
+  "drug_name": "Tiotropium",
+  "generic_name": "tiotropium bromide",
+  "drug_class": "Long-acting anticholinergic bronchodilator",
+  "variants": [
+    {
+      "brand_name": "Spiriva HandiHaler",
+      "strength": "18 mcg",
+      "imprints": [
+        "SPIRIVA",
+        "18"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Spiriva Respimat",
+      "strength": "2.5 mcg per actuation",
+      "imprints": [],
+      "shape": "other",
+      "colors": [
+        "gray",
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Tiotropium",
+      "strength": "18 mcg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple (Cipla, Sandoz, Hikma, others)",
+      "scored": false
+    }
+  ],
+  "note": "Tiotropium is primarily available as an inhalation powder in capsule form (HandiHaler) or as a liquid inhalation spray (Respimat). It is NOT available as an oral tablet pill in the US market. The capsules are intended for inhalation only via the HandiHaler device and should not be swallowed whole."
+}

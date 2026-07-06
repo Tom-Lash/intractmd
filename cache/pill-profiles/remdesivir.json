@@ -1,0 +1,22 @@
+{
+  "drug_name": "Remdesivir",
+  "generic_name": "remdesivir",
+  "drug_class": "Antiviral nucleotide analog",
+  "variants": [
+    {
+      "brand_name": "Veklury",
+      "strength": "100 mg/vial",
+      "imprints": [],
+      "shape": "vial",
+      "colors": [
+        "clear to slightly yellow"
+      ],
+      "coating": "N/A - lyophilized powder for injection",
+      "size_mm": null,
+      "manufacturer": "Gilead Sciences",
+      "scored": false,
+      "formulation_type": "Intravenous injection - lyophilized powder for reconstitution"
+    }
+  ],
+  "notes": "Remdesivir is only available as an intravenous (IV) medication in the United States. It does not exist as an oral tablet or capsule formulation. The drug is supplied as a lyophilized (freeze-dried) powder in single-dose vials that must be reconstituted with sterile diluent before administration. There is only one strength (100 mg) available in the US market. Remdesivir is not available in oral pill form and therefore does not have imprints, specific shapes, colors, or sizes typical of tablets or capsules."
+}

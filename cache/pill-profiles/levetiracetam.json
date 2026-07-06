@@ -1,0 +1,135 @@
+{
+  "drug_name": "Levetiracetam",
+  "generic_name": "Levetiracetam",
+  "drug_class": "Antiepileptic Agent",
+  "variants": [
+    {
+      "brand_name": "Keppra",
+      "strength": "250 mg",
+      "imprints": [
+        "LEV 250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Keppra",
+      "strength": "500 mg",
+      "imprints": [
+        "LEV 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Keppra",
+      "strength": "750 mg",
+      "imprints": [
+        "LEV 750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Keppra",
+      "strength": "1000 mg",
+      "imprints": [
+        "LEV 1000"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "E 250",
+        "L 250",
+        "APO LEV250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple (Apotex, Mylan, Teva, Sandoz, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "E 500",
+        "L 500",
+        "APO LEV500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple (Apotex, Mylan, Teva, Sandoz, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "750 mg",
+      "imprints": [
+        "E 750",
+        "L 750",
+        "APO LEV750"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple (Apotex, Mylan, Teva, Sandoz, Aurobindo)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "E 1000",
+        "L 1000",
+        "APO LEV1000"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple (Apotex, Mylan, Teva, Sandoz, Aurobindo)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "drug_name": "Ustekinumab",
+  "generic_name": "ustekinumab",
+  "drug_class": "Monoclonal Antibody (IL-12/IL-23 Inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Stelara",
+      "strength": "45 mg/0.5 mL",
+      "formulation_type": "Subcutaneous Injection",
+      "route": "Subcutaneous",
+      "imprints": [],
+      "shape": "Liquid in prefilled syringe",
+      "colors": [
+        "Clear",
+        "Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech",
+      "scored": false,
+      "notes": "Prefilled syringe or pen"
+    },
+    {
+      "brand_name": "Stelara",
+      "strength": "90 mg/1 mL",
+      "formulation_type": "Subcutaneous Injection",
+      "route": "Subcutaneous",
+      "imprints": [],
+      "shape": "Liquid in prefilled syringe",
+      "colors": [
+        "Clear",
+        "Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech",
+      "scored": false,
+      "notes": "Prefilled syringe or pen"
+    },
+    {
+      "brand_name": "Stelara",
+      "strength": "130 mg/26 mL",
+      "formulation_type": "Intravenous Infusion",
+      "route": "Intravenous",
+      "imprints": [],
+      "shape": "Liquid in vial",
+      "colors": [
+        "Clear",
+        "Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Janssen Biotech",
+      "scored": false,
+      "notes": "IV infusion vial"
+    }
+  ],
+  "important_note": "Ustekinumab is a biologic monoclonal antibody administered by injection (subcutaneous or intravenous). It is NOT available as an oral tablet or capsule. Therefore, there are no pill imprints, shapes, or colors in the traditional sense. All US formulations are injectable solutions only."
+}

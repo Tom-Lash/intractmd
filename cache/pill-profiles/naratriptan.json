@@ -1,0 +1,71 @@
+{
+  "drug_name": "Naratriptan",
+  "generic_name": "Naratriptan hydrochloride",
+  "drug_class": "Selective 5-HT1B/1D receptor agonist (triptan)",
+  "variants": [
+    {
+      "brand_name": "Amerge",
+      "strength": "1 mg",
+      "imprints": [
+        "AMERGE",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Amerge",
+      "strength": "2.5 mg",
+      "imprints": [
+        "AMERGE",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "N",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "N",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

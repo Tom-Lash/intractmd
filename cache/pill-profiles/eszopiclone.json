@@ -1,0 +1,190 @@
+{
+  "drug_name": "Eszopiclone",
+  "generic_name": "Eszopiclone",
+  "drug_class": "Non-benzodiazepine hypnotic (pyrazolopyrimidine)",
+  "variants": [
+    {
+      "brand_name": "Lunesta",
+      "strength": "1 mg",
+      "imprints": [
+        "L1"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Lunesta",
+      "strength": "2 mg",
+      "imprints": [
+        "L2"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Lunesta",
+      "strength": "3 mg",
+      "imprints": [
+        "L3"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "G4960",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "G4961",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "3 mg",
+      "imprints": [
+        "G4962",
+        "3"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "SL 382"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "SL 383"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "3 mg",
+      "imprints": [
+        "SL 384"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "E 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Sandoz Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "E 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "3 mg",
+      "imprints": [
+        "E 3"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz Inc.",
+      "scored": false
+    }
+  ]
+}

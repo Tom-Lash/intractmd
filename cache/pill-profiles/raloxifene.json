@@ -1,0 +1,87 @@
+{
+  "drug_name": "Raloxifene",
+  "generic_name": "Raloxifene Hydrochloride",
+  "drug_class": "Selective Estrogen Receptor Modulator (SERM)",
+  "variants": [
+    {
+      "brand_name": "Evista",
+      "strength": "60 mg",
+      "imprints": [
+        "LILLY",
+        "4165"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Raloxifene HCl)",
+      "strength": "60 mg",
+      "imprints": [
+        "E",
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Raloxifene HCl)",
+      "strength": "60 mg",
+      "imprints": [
+        "AN",
+        "601"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Raloxifene HCl)",
+      "strength": "60 mg",
+      "imprints": [
+        "APO",
+        "RAL 60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Raloxifene HCl)",
+      "strength": "60 mg",
+      "imprints": [
+        "barr",
+        "957"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

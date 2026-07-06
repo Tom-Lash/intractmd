@@ -1,0 +1,135 @@
+{
+  "drug_name": "Azathioprine",
+  "generic_name": "azathioprine",
+  "drug_class": "Immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Imuran",
+      "strength": "50 mg",
+      "imprints": [
+        "IMURAN",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Prometheus Laboratories Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "54",
+        "453"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "APO",
+        "AZA"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Apotex Corp",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "PUREPAC",
+        "325"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Purepac Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "54",
+        "454"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "54",
+        "455"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Imuran",
+      "strength": "100 mg",
+      "imprints": [
+        "IMURAN",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Prometheus Laboratories Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "APO",
+        "AZA"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Apotex Corp",
+      "scored": false
+    }
+  ]
+}

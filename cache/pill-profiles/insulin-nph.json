@@ -1,0 +1,57 @@
+{
+  "drug_name": "Insulin NPH",
+  "generic_name": "Insulin isophane (NPH)",
+  "drug_class": "Intermediate-acting insulin",
+  "note": "Insulin NPH is a liquid injectable suspension, not available as oral tablets or pills in the United States",
+  "variants": [
+    {
+      "brand_name": "Humulin N",
+      "strength": "100 units/mL",
+      "formulation_type": "injectable suspension",
+      "container_type": "10 mL vial",
+      "manufacturer": "Eli Lilly",
+      "appearance": "Cloudy white suspension",
+      "imprints": [
+        "None - vial label only"
+      ],
+      "scored": false
+    },
+    {
+      "brand_name": "Humulin N",
+      "strength": "100 units/mL",
+      "formulation_type": "injectable suspension",
+      "container_type": "KwikPen (prefilled pen)",
+      "manufacturer": "Eli Lilly",
+      "appearance": "Cloudy white suspension",
+      "imprints": [
+        "None - pen label only"
+      ],
+      "scored": false
+    },
+    {
+      "brand_name": "ReliOn NPH",
+      "strength": "100 units/mL",
+      "formulation_type": "injectable suspension",
+      "container_type": "10 mL vial",
+      "manufacturer": "Novo Nordisk",
+      "appearance": "Cloudy white suspension",
+      "imprints": [
+        "None - vial label only"
+      ],
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Insulin NPH",
+      "strength": "100 units/mL",
+      "formulation_type": "injectable suspension",
+      "container_type": "10 mL vial",
+      "manufacturer": "Multiple manufacturers (Novo Nordisk, Eli Lilly, others)",
+      "appearance": "Cloudy white suspension",
+      "imprints": [
+        "None - vial label only"
+      ],
+      "scored": false
+    }
+  ],
+  "important_note": "Insulin NPH is NOT available as an oral tablet or pill formulation in the United States. It is exclusively available as an injectable suspension in vials and prefilled pens. All NPH insulin products are parenteral medications administered via subcutaneous injection."
+}

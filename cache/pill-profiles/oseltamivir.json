@@ -1,0 +1,103 @@
+{
+  "drug_name": "Oseltamivir",
+  "generic_name": "Oseltamivir phosphate",
+  "drug_class": "Antiviral (Neuraminidase inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Tamiflu",
+      "strength": "30 mg",
+      "imprints": [
+        "ROCHE 30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Roche Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tamiflu",
+      "strength": "45 mg",
+      "imprints": [
+        "ROCHE 45"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "grey"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Roche Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tamiflu",
+      "strength": "75 mg",
+      "imprints": [
+        "ROCHE 75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Roche Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple (Hikma, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "45 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "grey"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple (Hikma, Mylan, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Multiple (Hikma, Mylan, others)",
+      "scored": false
+    }
+  ]
+}

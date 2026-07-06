@@ -1,0 +1,42 @@
+{
+  "drug_name": "Gefitinib",
+  "generic_name": "Gefitinib",
+  "drug_class": "Epidermal Growth Factor Receptor (EGFR) Tyrosine Kinase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Iressa",
+      "strength": "250 mg",
+      "imprints": [
+        "IRESSA",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Gefitinib",
+      "strength": "250 mg",
+      "imprints": [
+        "GEF 250",
+        "Various manufacturer imprints"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown",
+        "tan",
+        "beige"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple (Cipla, Natco, Mylan, others)",
+      "scored": false
+    }
+  ],
+  "notes": "Gefitinib is primarily available in the 250 mg strength in the US market. The 250 mg dose is the standard therapeutic dose for non-small cell lung cancer (NSCLC) treatment. Limited generic competition exists in the US market. Appearance may vary slightly between manufacturers but all are film-coated round tablets. No lower-strength variants (such as 125 mg) are currently marketed in the US."
+}

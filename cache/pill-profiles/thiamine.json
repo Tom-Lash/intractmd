@@ -1,0 +1,135 @@
+{
+  "drug_name": "Thiamine",
+  "generic_name": "Thiamine Hydrochloride (Vitamin B1)",
+  "drug_class": "Vitamin B Complex",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white",
+        "off-white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Thiamilate",
+      "strength": "100 mg",
+      "imprints": [
+        "THIAMILATE",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "M",
+        "T1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "AN",
+        "368"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Amneal",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "CV",
+        "9600"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Cipla",
+      "scored": false
+    }
+  ]
+}

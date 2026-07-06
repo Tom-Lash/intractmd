@@ -1,0 +1,71 @@
+{
+  "drug_name": "Ampicillin",
+  "generic_name": "Ampicillin",
+  "drug_class": "Beta-lactam antibiotic (Penicillin)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "AMPICILLIN 250",
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "AMPICILLIN 500",
+        "500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "AP 250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 14,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "AP 500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

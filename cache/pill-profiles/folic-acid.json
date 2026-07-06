@@ -1,0 +1,99 @@
+{
+  "drug_name": "Folic Acid",
+  "generic_name": "Folic Acid",
+  "drug_class": "Vitamin B Complex",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "0.4 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.8 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Folvite",
+      "strength": "1 mg",
+      "imprints": [
+        "FOLVITE 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Lederle",
+      "scored": false
+    },
+    {
+      "brand_name": "Folvite",
+      "strength": "5 mg",
+      "imprints": [
+        "FOLVITE 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Lederle",
+      "scored": false
+    }
+  ]
+}

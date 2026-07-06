@@ -1,0 +1,157 @@
+{
+  "drug_name": "Psyllium",
+  "generic_name": "Psyllium husk",
+  "drug_class": "Bulk-forming laxative / Dietary fiber supplement",
+  "variants": [
+    {
+      "brand_name": "Metamucil",
+      "strength": "3.4g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Metamucil",
+      "strength": "3.4g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "red"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Metamucil",
+      "strength": "3.4g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Metamucil Capsules",
+      "strength": "0.52g per capsule",
+      "imprints": [
+        "M520"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Konsyl",
+      "strength": "6g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Konsyl Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Konsyl",
+      "strength": "6g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "unflavored"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Konsyl Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Benefiber",
+      "strength": "3g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Psyllium",
+      "strength": "3.4g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "beige",
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Psyllium Capsules",
+      "strength": "0.52g per capsule",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Citrucel",
+      "strength": "2g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Fiberall",
+      "strength": "3.5g per packet",
+      "imprints": [],
+      "shape": "packet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": null,
+      "manufacturer": "Twinlab",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "drug_name": "Ergocalciferol",
+  "generic_name": "Ergocalciferol (Vitamin D2)",
+  "drug_class": "Vitamin D analog",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "50000 IU",
+      "imprints": [
+        ""
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1.25 mg (50000 IU)",
+      "imprints": [
+        ""
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "tan"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Drisdol",
+      "strength": "50000 IU",
+      "imprints": [
+        "DRISDOL"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 15,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 IU",
+      "imprints": [
+        ""
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 IU",
+      "imprints": [
+        ""
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2000 IU",
+      "imprints": [
+        ""
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

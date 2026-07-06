@@ -1,0 +1,55 @@
+{
+  "drug_name": "Baricitinib",
+  "generic_name": "baricitinib",
+  "drug_class": "Janus kinase (JAK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Olumiant",
+      "strength": "1 mg",
+      "imprints": [
+        "Lilly",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Olumiant",
+      "strength": "2 mg",
+      "imprints": [
+        "Lilly",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Olumiant",
+      "strength": "4 mg",
+      "imprints": [
+        "Lilly",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "drug_name": "Erythromycin",
+  "generic_name": "Erythromycin",
+  "drug_class": "Macrolide Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "E",
+        "EE",
+        "93/747"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Actavis)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "333 mg",
+      "imprints": [
+        "E333",
+        "ERYTHROMYCIN 333"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "E500",
+        "500",
+        "93/749"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Various (Teva, Mylan, Sandoz, Actavis)",
+      "scored": false
+    },
+    {
+      "brand_name": "Eryc",
+      "strength": "250 mg",
+      "imprints": [
+        "ERYC 250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Eryc",
+      "strength": "333 mg",
+      "imprints": [
+        "ERYC 333"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Eryc",
+      "strength": "500 mg",
+      "imprints": [
+        "ERYC 500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 21,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "EES",
+      "strength": "400 mg",
+      "imprints": [
+        "EES 400"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Erythrocin",
+      "strength": "250 mg",
+      "imprints": [
+        "ERYTHROCIN 250"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Erythrocin",
+      "strength": "500 mg",
+      "imprints": [
+        "ERYTHROCIN 500"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Abbott",
+      "scored": false
+    }
+  ]
+}

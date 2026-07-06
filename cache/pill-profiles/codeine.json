@@ -1,0 +1,82 @@
+{
+  "drug_name": "Codeine",
+  "generic_name": "Codeine Phosphate / Codeine Sulfate",
+  "drug_class": "Opioid Analgesic / Antitussive",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg with Acetaminophen 300 mg",
+      "imprints": [
+        "TYLENOL 3"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg with Acetaminophen 300 mg",
+      "imprints": [
+        "TYLENOL 4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

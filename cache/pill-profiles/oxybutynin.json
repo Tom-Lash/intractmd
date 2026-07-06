@@ -1,0 +1,223 @@
+{
+  "drug_name": "Oxybutynin",
+  "generic_name": "Oxybutynin chloride",
+  "drug_class": "Anticholinergic antispasmodic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "WATSON",
+        "862"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "barr",
+        "533"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "WATSON",
+        "863"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "barr",
+        "534"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Ditropan",
+      "strength": "5 mg",
+      "imprints": [
+        "DITROPAN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Ortho McNeil",
+      "scored": false
+    },
+    {
+      "brand_name": "Ditropan",
+      "strength": "10 mg",
+      "imprints": [
+        "DITROPAN",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Ortho McNeil",
+      "scored": false
+    },
+    {
+      "brand_name": "Ditropan XL",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Ortho McNeil",
+      "scored": false
+    },
+    {
+      "brand_name": "Ditropan XL",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Ortho McNeil",
+      "scored": false
+    },
+    {
+      "brand_name": "Ditropan XL",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Ortho McNeil",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic XL",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic XL",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic XL",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "drug_name": "Rifampin",
+  "generic_name": "Rifampin",
+  "drug_class": "Antibiotic (Rifamycin)",
+  "variants": [
+    {
+      "brand_name": "Rifadin",
+      "strength": "150 mg",
+      "imprints": [
+        "RIFADIN",
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Sanofi Pasteur",
+      "scored": false
+    },
+    {
+      "brand_name": "Rifadin",
+      "strength": "300 mg",
+      "imprints": [
+        "RIFADIN",
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Sanofi Pasteur",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rifampin",
+      "strength": "150 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Multiple (Teva, Hikma, Lupin, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rifampin",
+      "strength": "300 mg",
+      "imprints": [
+        "Various manufacturer codes"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 22,
+      "manufacturer": "Multiple (Teva, Hikma, Lupin, others)",
+      "scored": false
+    }
+  ]
+}

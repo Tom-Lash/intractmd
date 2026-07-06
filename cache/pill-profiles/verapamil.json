@@ -1,0 +1,226 @@
+{
+  "drug_name": "Verapamil",
+  "generic_name": "verapamil hydrochloride",
+  "drug_class": "Calcium channel blocker",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "80 mg",
+      "imprints": [
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "120 mg",
+      "imprints": [
+        "120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Calan",
+      "strength": "40 mg",
+      "imprints": [
+        "CALAN",
+        "40"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Calan",
+      "strength": "80 mg",
+      "imprints": [
+        "CALAN",
+        "80"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Calan",
+      "strength": "120 mg",
+      "imprints": [
+        "CALAN",
+        "120"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Calan SR",
+      "strength": "120 mg",
+      "imprints": [
+        "CALAN SR",
+        "120"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Calan SR",
+      "strength": "180 mg",
+      "imprints": [
+        "CALAN SR",
+        "180"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Calan SR",
+      "strength": "240 mg",
+      "imprints": [
+        "CALAN SR",
+        "240"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Isoptin SR",
+      "strength": "120 mg",
+      "imprints": [
+        "ISOPTIN SR",
+        "120"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "Knoll",
+      "scored": false
+    },
+    {
+      "brand_name": "Isoptin SR",
+      "strength": "180 mg",
+      "imprints": [
+        "ISOPTIN SR",
+        "180"
+      ],
+      "shape": "oval",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Knoll",
+      "scored": false
+    },
+    {
+      "brand_name": "Isoptin SR",
+      "strength": "240 mg",
+      "imprints": [
+        "ISOPTIN SR",
+        "240"
+      ],
+      "shape": "oval",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Knoll",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "180 mg",
+      "imprints": [
+        "180"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "240 mg",
+      "imprints": [
+        "240"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

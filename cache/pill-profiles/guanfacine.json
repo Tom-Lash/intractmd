@@ -1,0 +1,169 @@
+{
+  "drug_name": "Guanfacine",
+  "generic_name": "guanfacine hydrochloride",
+  "drug_class": "Alpha-2 adrenergic agonist (antihypertensive)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "ANDRX",
+        "1",
+        "1 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "ANDRX",
+        "2",
+        "2 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Intuniv",
+      "strength": "1 mg",
+      "imprints": [
+        "Intuniv",
+        "1 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Shire/Takeda",
+      "scored": false
+    },
+    {
+      "brand_name": "Intuniv",
+      "strength": "2 mg",
+      "imprints": [
+        "Intuniv",
+        "2 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Shire/Takeda",
+      "scored": false
+    },
+    {
+      "brand_name": "Intuniv",
+      "strength": "3 mg",
+      "imprints": [
+        "Intuniv",
+        "3 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Shire/Takeda",
+      "scored": false
+    },
+    {
+      "brand_name": "Intuniv",
+      "strength": "4 mg",
+      "imprints": [
+        "Intuniv",
+        "4 mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Shire/Takeda",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "M",
+        "72"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "M",
+        "73"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "SZ",
+        "269"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "SZ",
+        "270"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}
