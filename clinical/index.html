@@ -804,23 +804,102 @@ function renderDDIResult() {
   const tierColor = tier==='Critical'?'#8B0000':tier==='High'?'#C05020':tier==='Moderate'?'#D4860A':'#2E7D4F';
   if(ph) ph.style.display = 'none';
   el.style.display = 'block';
-  const warns = (ddiData.warnings||[]).filter(w=>w.severity==='Critical'||w.severity==='High').slice(0,4);
-  el.innerHTML = '<div class="ddi-result">' +
-    '<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">' +
-    '<div><div class="ddi-score" style="color:' + tierColor + '">' + pcprs + '</div><div style="font-size:10px;color:var(--text3);">/ 100</div></div>' +
-    '<div><div class="ddi-tier" style="color:' + tierColor + '">' + tier + ' Supplement Risk</div>' +
-    '<div style="font-size:12px;color:var(--text3);">' + (ddiData.risk_title||'') + '</div></div>' +
-    '<div style="margin-left:auto;font-size:11px;padding:4px 8px;background:var(--confirmed-lt);color:var(--confirmed);border-radius:4px;font-weight:700;">cache: ' + (ddiData.from_cache?'✓':'live') + '</div>' +
-    '</div>' +
-    (warns.length ? '<div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;margin-bottom:6px;">Top Warnings</div>' +
-    '<div class="interaction-list">' + warns.map(w =>
-      '<div class="interaction-item"><span class="sev ' + w.severity.toLowerCase() + '">' + w.severity + '</span>' +
-      ' · <strong>' + w.drug + '</strong> + <strong>' + w.interacts_with + '</strong>' +
-      '<div style="margin-top:3px;color:var(--text3);font-size:11px;">' + w.mechanism + '</div></div>'
-    ).join('') + '</div>'
-    : '<div style="font-size:13px;color:var(--text3);">No Critical or High severity interactions identified.</div>') +
-    '</div>';
+
+  const sevOrder = {Critical:0,High:1,Moderate:2,Low:3,Minimal:4};
+  const allItems = [];
+  (ddiData.drug_interactions||[]).forEach(w=>{
+    allItems.push({severity:w.severity||'Moderate',
+      label:(w.drug_a||w.drug||'')+' + '+(w.drug_b||w.interacts_with||''),
+      mechanism:w.mechanism||'',action:w.action||'',
+      catLabel:'Drug-Drug',catColor:'#1B6EC2',catBg:'#EBF5FC'});
+  });
+  (ddiData.warnings||[]).forEach(w=>{
+    const isSupp=w.category==='supplement';
+    allItems.push({severity:w.severity||'Moderate',
+      label:(w.drug||'')+' + '+(w.interacts_with||''),
+      mechanism:w.mechanism||'',action:w.action||'',
+      catLabel:isSupp?'Supplement':'Food',
+      catColor:isSupp?'#6A4C93':'#2E6B4A',catBg:isSupp?'#F3EEF9':'#E8F5ED'});
+  });
+  allItems.sort((a,b)=>(sevOrder[a.severity]||4)-(sevOrder[b.severity]||4));
+
+  const nCrit=allItems.filter(x=>x.severity==='Critical').length;
+  const nHigh=allItems.filter(x=>x.severity==='High').length;
+  const nMod=allItems.filter(x=>x.severity==='Moderate').length;
+  const critItems=allItems.filter(x=>x.severity==='Critical');
+  const nonCritItems=allItems.filter(x=>x.severity!=='Critical');
+
+  let html = '<div class="ddi-result">';
+
+  // Score header
+  html += '<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;">'
+    + '<div><div class="ddi-score" style="color:'+tierColor+'">'+pcprs+'</div><div style="font-size:10px;color:var(--text3);">/ 100</div></div>'
+    + '<div><div class="ddi-tier" style="color:'+tierColor+'">'+tier+' Risk</div>'
+    + '<div style="font-size:12px;color:var(--text3);">'+(ddiData.risk_title||'')+'</div></div>'
+    + '<div style="margin-left:auto;font-size:11px;padding:4px 8px;background:var(--confirmed-lt);color:var(--confirmed);border-radius:4px;font-weight:700;">cache: '+(ddiData.from_cache?'&#10003;':'live')+'</div>'
+    + '</div>';
+
+  // Count badges
+  html += '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">'
+    + (nCrit>0?'<span style="padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0">'+nCrit+' Critical</span>':'')
+    + (nHigh>0?'<span style="padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700;background:#fdeee8;color:#C05020;border:1px solid #e8b090">'+nHigh+' High</span>':'')
+    + (nMod>0?'<span style="padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700;background:#fdf3e3;color:#D4860A;border:1px solid #e8cc80">'+nMod+' Moderate</span>':'')
+    + '</div>';
+
+  // Critical banner
+  if(critItems.length){
+    html += '<div style="margin-bottom:12px;padding:12px 14px;border-radius:10px;background:#fce8e8;border:2px solid #CC0000;">'
+      + '<div style="font-weight:700;color:#8B0000;font-size:14px;margin-bottom:8px;">&#128680; CRITICAL &mdash; Immediate attention required</div>'
+      + critItems.map(x=>'<div style="padding:8px 10px;margin-bottom:6px;border-radius:6px;background:#fff;border-left:4px solid #CC0000;">'
+        + '<div style="font-weight:700;font-size:13px;color:#8B0000;margin-bottom:3px;">'+x.label
+        + ' <span style="font-size:11px;padding:2px 6px;border-radius:10px;background:#fce8e8;color:#8B0000;">'+x.catLabel+'</span></div>'
+        + '<div style="font-size:12px;color:#5a2020;margin-bottom:3px;">'+x.mechanism+'</div>'
+        + '<div style="font-size:12px;color:#8B0000;font-weight:600;">&rarr; '+x.action+'</div></div>'
+      ).join('') + '</div>';
+  }
+
+  // Non-critical sorted list
+  if(nonCritItems.length){
+    html += '<div id="clinDDIList">';
+    let mlCount = 0;
+    const SHOW_MAX = 5;
+    nonCritItems.forEach(function(w){
+      const sc=(w.severity||'Moderate').toLowerCase();
+      const isHigh=w.severity==='High';
+      const hidden=!isHigh && mlCount>=SHOW_MAX;
+      if(!isHigh) mlCount++;
+      html += '<div class="interaction-item" style="'+(hidden?'display:none;':'')+'" data-clin-extra="'+hidden+'">'
+        + '<div style="cursor:pointer;" onclick="var d=this.nextElementSibling,a=this.querySelector('span.arr');if(d){var o=d.style.display==='block';d.style.display=o?'none':'block';if(a)a.textContent=o?'&#9660;':'&#9650;'}">'
+        + '<span class="sev '+sc+'">'+w.severity+'</span> '
+        + '<strong style="font-size:13px;">'+w.label+'</strong> '
+        + '<span style="font-size:11px;padding:2px 6px;border-radius:10px;background:'+w.catBg+';color:'+w.catColor+';">'+w.catLabel+'</span>'
+        + '<span class="arr" style="float:right;font-size:11px;color:#aaa;">&#9660;</span></div>'
+        + '<div style="display:none;padding:8px 0 4px 8px;">'
+        + '<div style="font-size:12px;color:var(--text2);margin-bottom:4px;">'+w.mechanism+'</div>'
+        + '<div style="font-size:12px;color:var(--text3);">&rarr; '+w.action+'</div></div></div>';
+    });
+    const extraCount = Math.max(0, nonCritItems.filter(x=>x.severity!=='High').length - SHOW_MAX);
+    if(extraCount>0){
+      html += '<div id="clinShowMore" onclick="clinToggleMore()" style="text-align:center;padding:8px;cursor:pointer;font-size:13px;font-weight:600;color:var(--navy);border:1px solid #ddd;border-radius:8px;margin-top:6px;background:#f8f9fa;">&#9660; Show '+extraCount+' more</div>';
+    }
+    html += '</div>';
+  }
+
+  if(!allItems.length){
+    html += '<div style="font-size:13px;color:var(--text3);">No significant interactions identified for this medication combination.</div>';
+  }
+  html += '</div>';
+  el.innerHTML = html;
 }
+
+function clinToggleMore(){
+  const extras=document.querySelectorAll('[data-clin-extra="true"]');
+  const btn=document.getElementById('clinShowMore');
+  const showing=extras[0]&&extras[0].style.display!=='none';
+  extras.forEach(e=>{e.style.display=showing?'none':'';});
+  if(btn)btn.textContent=showing?'&#9660; Show '+extras.length+' more':'&#9650; Show fewer';
+}
+
 
 function renderSupplementResults() {
   const el = document.getElementById('supplementResults');
