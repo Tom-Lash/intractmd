@@ -823,11 +823,18 @@ app.post('/api/pill-identify', async (req, res) => {
       'Return up to 5 matches ranked by likelihood. If you cannot identify the pill, return an empty matches array.'
     ].join(' ');
 
-    const aiResp = await safeFetch('https://api.anthropic.com/v1/messages', 12000, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 800, messages: [{ role: 'user', content: promptText }] })
-    });
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 12000);
+    let aiResp;
+    try {
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        signal: ctrl.signal,
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+        body: JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 800, messages: [{ role: 'user', content: promptText }] })
+      });
+      aiResp = await r.json();
+    } finally { clearTimeout(t); }
 
     if (aiResp && aiResp.content && aiResp.content[0]) {
       const raw = aiResp.content[0].text.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
