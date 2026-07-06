@@ -812,19 +812,6 @@ function loadPillIndex() {
 loadPillIndex();
 
 // ── PILL IDENTIFIER (Cache-first + Claude AI fallback) ───────────────────
-const PILL_INDEX_PATH = require('path').join(__dirname, 'cache', 'pill-index.json');
-let pillIndex = null;
-
-function loadPillIndex() {
-  try {
-    if (!pillIndex && require('fs').existsSync(PILL_INDEX_PATH)) {
-      pillIndex = JSON.parse(require('fs').readFileSync(PILL_INDEX_PATH, 'utf8'));
-      console.log('[PILL] Index loaded:', Object.keys(pillIndex).length, 'imprint codes');
-    }
-  } catch(e) { console.error('[PILL] Index load error:', e.message); }
-}
-loadPillIndex();
-
 app.post('/api/pill-identify', async (req, res) => {
   const { shape, color1, color2, imprint, coating, size } = req.body;
   try {
