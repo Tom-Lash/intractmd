@@ -1,0 +1,57 @@
+{
+  "drug_name": "Talazoparib",
+  "generic_name": "talazoparib tosylate",
+  "drug_class": "PARP inhibitor",
+  "variants": [
+    {
+      "brand_name": "Talzenna",
+      "strength": "0.25 mg",
+      "imprints": [
+        "BioMarin",
+        "TALZENNA 0.25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 14,
+      "manufacturer": "BioMarin Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Talzenna",
+      "strength": "0.5 mg",
+      "imprints": [
+        "BioMarin",
+        "TALZENNA 0.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 14,
+      "manufacturer": "BioMarin Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Talzenna",
+      "strength": "1 mg",
+      "imprints": [
+        "BioMarin",
+        "TALZENNA 1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 14,
+      "manufacturer": "BioMarin Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

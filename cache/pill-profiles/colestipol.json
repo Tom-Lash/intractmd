@@ -1,0 +1,71 @@
+{
+  "drug_name": "Colestipol",
+  "generic_name": "colestipol hydrochloride",
+  "drug_class": "Bile acid sequestrant",
+  "variants": [
+    {
+      "brand_name": "Colestid",
+      "strength": "1 gram",
+      "imprints": [
+        "COLESTID",
+        "1G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Pharmacia & Upjohn",
+      "scored": false
+    },
+    {
+      "brand_name": "Colestid",
+      "strength": "5 gram",
+      "imprints": [
+        "COLESTID",
+        "5G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Pharmacia & Upjohn",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colestipol",
+      "strength": "1 gram",
+      "imprints": [
+        "COLESTIPOL",
+        "1G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 13,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Colestipol",
+      "strength": "5 gram",
+      "imprints": [
+        "COLESTIPOL",
+        "5G"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "drug_name": "Moclobemide",
+  "generic_name": "Moclobemide",
+  "drug_class": "Monoamine Oxidase Inhibitor (MAOI), Reversible",
+  "variants": [
+    {
+      "brand_name": "Aurorix",
+      "strength": "150 mg",
+      "imprints": [
+        "AURORIX",
+        "150"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Aurorix",
+      "strength": "300 mg",
+      "imprints": [
+        "AURORIX",
+        "300"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moclobemide",
+      "strength": "150 mg",
+      "imprints": [
+        "M150"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moclobemide",
+      "strength": "300 mg",
+      "imprints": [
+        "M300"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "drug_name": "Esketamine",
+  "generic_name": "Esketamine hydrochloride",
+  "drug_class": "Dissociative anesthetic, NMDA receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Spravato",
+      "strength": "28 mg",
+      "imprints": [
+        "SPRAVATO 28"
+      ],
+      "shape": "Circular",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Spravato",
+      "strength": "56 mg",
+      "imprints": [
+        "SPRAVATO 56"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10.5,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Spravato",
+      "strength": "84 mg",
+      "imprints": [
+        "SPRAVATO 84"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Esketamine is primarily available as Spravato nasal spray for FDA approval. Oral tablet formulations listed above represent limited availability. Most clinical use involves intranasal administration rather than oral tablets."
+}

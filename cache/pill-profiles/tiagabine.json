@@ -1,0 +1,131 @@
+{
+  "drug_name": "Tiagabine",
+  "generic_name": "Tiagabine hydrochloride",
+  "drug_class": "Anticonvulsant/Antiepileptic",
+  "variants": [
+    {
+      "brand_name": "Gabitril",
+      "strength": "2 mg",
+      "imprints": [
+        "2",
+        "Gabitril"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Gabitril",
+      "strength": "4 mg",
+      "imprints": [
+        "4",
+        "Gabitril"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Light blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Gabitril",
+      "strength": "12 mg",
+      "imprints": [
+        "12",
+        "Gabitril"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Gabitril",
+      "strength": "16 mg",
+      "imprints": [
+        "16",
+        "Gabitril"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Cephalon",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "4"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Light blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "12 mg",
+      "imprints": [
+        "12"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "16 mg",
+      "imprints": [
+        "16"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

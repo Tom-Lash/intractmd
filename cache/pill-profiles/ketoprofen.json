@@ -1,0 +1,136 @@
+{
+  "drug_name": "Ketoprofen",
+  "generic_name": "Ketoprofen",
+  "drug_class": "NSAID (Nonsteroidal Anti-inflammatory Drug)",
+  "variants": [
+    {
+      "brand_name": "Orudis",
+      "strength": "25 mg",
+      "imprints": [
+        "ORUDIS",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Orudis",
+      "strength": "50 mg",
+      "imprints": [
+        "ORUDIS",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Green",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Orudis",
+      "strength": "75 mg",
+      "imprints": [
+        "ORUDIS",
+        "75"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Oruvail",
+      "strength": "100 mg",
+      "imprints": [
+        "ORUVAIL",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 19,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Oruvail",
+      "strength": "150 mg",
+      "imprints": [
+        "ORUVAIL",
+        "150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 20,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Oruvail",
+      "strength": "200 mg",
+      "imprints": [
+        "ORUVAIL",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Purple"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 20,
+      "manufacturer": "Wyeth",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ketoprofen",
+      "strength": "50 mg",
+      "imprints": [
+        "KP 50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Ketoprofen",
+      "strength": "75 mg",
+      "imprints": [
+        "KP 75"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

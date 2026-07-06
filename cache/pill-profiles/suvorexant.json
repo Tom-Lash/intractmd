@@ -1,0 +1,137 @@
+{
+  "drug_name": "Suvorexant",
+  "generic_name": "suvorexant",
+  "drug_class": "Orexin receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Belsomra",
+      "strength": "5 mg",
+      "imprints": [
+        "MK",
+        "5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 17.9,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Belsomra",
+      "strength": "10 mg",
+      "imprints": [
+        "MK",
+        "10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19.4,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Belsomra",
+      "strength": "15 mg",
+      "imprints": [
+        "MK",
+        "15"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19.4,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Belsomra",
+      "strength": "20 mg",
+      "imprints": [
+        "MK",
+        "20"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 20.9,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Suvorexant",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 17.9,
+      "manufacturer": "Generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Suvorexant",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19.4,
+      "manufacturer": "Generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Suvorexant",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19.4,
+      "manufacturer": "Generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Suvorexant",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 20.9,
+      "manufacturer": "Generic manufacturers",
+      "scored": false
+    }
+  ]
+}

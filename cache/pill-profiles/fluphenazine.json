@@ -1,0 +1,131 @@
+{
+  "drug_name": "Fluphenazine",
+  "generic_name": "Fluphenazine hydrochloride",
+  "drug_class": "Typical antipsychotic (phenothiazine)",
+  "variants": [
+    {
+      "brand_name": "Prolixin",
+      "strength": "1 mg",
+      "imprints": [
+        "PROLIXIN",
+        "1"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Prolixin",
+      "strength": "2.5 mg",
+      "imprints": [
+        "PROLIXIN",
+        "2.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Prolixin",
+      "strength": "5 mg",
+      "imprints": [
+        "PROLIXIN",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Prolixin",
+      "strength": "10 mg",
+      "imprints": [
+        "PROLIXIN",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "54 092"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "54 093"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "54 094"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "54 095"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    }
+  ]
+}

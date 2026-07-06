@@ -1,0 +1,86 @@
+{
+  "drug_name": "Colesevelam",
+  "generic_name": "Colesevelam hydrochloride",
+  "drug_class": "Bile acid sequestrant",
+  "variants": [
+    {
+      "brand_name": "Welchol",
+      "strength": "625 mg",
+      "imprints": [
+        "WC",
+        "625"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    },
+    {
+      "brand_name": "Welchol",
+      "strength": "3.75 g",
+      "imprints": [
+        "Welchol"
+      ],
+      "shape": "Packet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "625 mg",
+      "imprints": [
+        "GG",
+        "C25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "625 mg",
+      "imprints": [
+        "APO",
+        "C625"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "625 mg",
+      "imprints": [
+        "M",
+        "C625"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

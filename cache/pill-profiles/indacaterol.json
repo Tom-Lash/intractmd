@@ -1,0 +1,56 @@
+{
+  "drug_name": "Indacaterol",
+  "generic_name": "Indacaterol maleate",
+  "drug_class": "Long-acting beta-2 adrenergic agonist (LABA)",
+  "variants": [
+    {
+      "brand_name": "Arcapta Neohaler",
+      "strength": "75 mcg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6.5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Arcapta Neohaler",
+      "strength": "150 mcg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6.5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Arcapta Neohaler",
+      "strength": "300 mcg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6.5,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ],
+  "note": "Indacaterol is exclusively available as inhalation capsules for use with the Neohaler device. No oral tablets exist in the US market. The drug is not available as generic capsules in the United States."
+}

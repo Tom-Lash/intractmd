@@ -1,0 +1,92 @@
+{
+  "drug_name": "Fingolimod",
+  "generic_name": "Fingolimod hydrochloride",
+  "drug_class": "Sphingosine 1-phosphate receptor modulator",
+  "variants": [
+    {
+      "brand_name": "Gilenya",
+      "strength": "0.5 mg",
+      "imprints": [
+        "GIL",
+        "0.5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Gilenya",
+      "strength": "1.25 mg",
+      "imprints": [
+        "GIL",
+        "1.25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Violet"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fingolimod",
+      "strength": "0.5 mg",
+      "imprints": [
+        "FIN",
+        "0.5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fingolimod",
+      "strength": "0.5 mg",
+      "imprints": [
+        "M",
+        "F50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 16,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fingolimod",
+      "strength": "1.25 mg",
+      "imprints": [
+        "FIN",
+        "1.25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Violet"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

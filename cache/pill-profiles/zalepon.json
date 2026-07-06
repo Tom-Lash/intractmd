@@ -1,0 +1,105 @@
+{
+  "drug_name": "Zaleplon",
+  "generic_name": "Zaleplon",
+  "drug_class": "Nonbenzodiazepine hypnotic (pyrazolopyrimidine)",
+  "variants": [
+    {
+      "brand_name": "Sonata",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Sonata",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zaleplon",
+      "strength": "5 mg",
+      "imprints": [
+        "ZP 5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zaleplon",
+      "strength": "10 mg",
+      "imprints": [
+        "ZP 10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zaleplon",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "Teva"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Zaleplon",
+      "strength": "10 mg",
+      "imprints": [
+        "10",
+        "Teva"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

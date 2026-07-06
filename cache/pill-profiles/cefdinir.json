@@ -1,0 +1,109 @@
+{
+  "drug_name": "Cefdinir",
+  "generic_name": "Cefdinir",
+  "drug_class": "Cephalosporin Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Omnicef",
+      "strength": "300 mg",
+      "imprints": [
+        "OMNICEF",
+        "300 mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Abbott Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefdinir",
+      "strength": "300 mg",
+      "imprints": [
+        "C",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefdinir",
+      "strength": "300 mg",
+      "imprints": [
+        "WC",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "West-Ward Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefdinir",
+      "strength": "300 mg",
+      "imprints": [
+        "APO",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefdinir",
+      "strength": "300 mg",
+      "imprints": [
+        "GG",
+        "959"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefdinir",
+      "strength": "300 mg",
+      "imprints": [
+        "LU",
+        "H20"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Lupin",
+      "scored": false
+    }
+  ]
+}

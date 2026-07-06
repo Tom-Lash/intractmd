@@ -1,0 +1,37 @@
+{
+  "drug_name": "Caspofungin",
+  "generic_name": "Caspofungin Acetate",
+  "drug_class": "Echinocandin Antifungal",
+  "note": "Caspofungin is primarily available as an intravenous (IV) powder for injection, not as oral pills/tablets. There are no standard US oral pill variants.",
+  "variants": [
+    {
+      "brand_name": "Cancidas",
+      "strength": "50 mg",
+      "form": "IV powder for injection",
+      "imprints": [
+        "Cancidas 50"
+      ],
+      "manufacturer": "Merck Sharp & Dohme",
+      "vial_size_ml": 10.8,
+      "route": "Intravenous"
+    },
+    {
+      "brand_name": "Cancidas",
+      "strength": "70 mg",
+      "form": "IV powder for injection",
+      "imprints": [
+        "Cancidas 70"
+      ],
+      "manufacturer": "Merck Sharp & Dohme",
+      "vial_size_ml": 10.8,
+      "route": "Intravenous"
+    },
+    {
+      "brand_name": "Generic Caspofungin",
+      "strength": "50 mg",
+      "form": "IV powder for injection",
+      "manufacturer": "Multiple manufacturers",
+      "route": "Intravenous"
+    }
+  ]
+}

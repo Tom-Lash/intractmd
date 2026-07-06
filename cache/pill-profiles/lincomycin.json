@@ -1,0 +1,56 @@
+{
+  "drug_name": "Lincomycin",
+  "generic_name": "Lincomycin hydrochloride",
+  "drug_class": "Lincosamide antibiotic",
+  "variants": [
+    {
+      "brand_name": "Lincocin",
+      "strength": "500 mg",
+      "imprints": [
+        "LINCOCIN",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Black",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Upjohn",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lincomycin HCl",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Green",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 17,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lincomycin HCl",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Black",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

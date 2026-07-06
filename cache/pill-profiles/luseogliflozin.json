@@ -1,0 +1,23 @@
+{
+  "drug_name": "Luseogliflozin",
+  "generic_name": "luseogliflozin",
+  "drug_class": "SGLT2 Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Luseogliflozin",
+      "strength": "2.5 mg",
+      "imprints": [
+        "Not widely available in US market"
+      ],
+      "shape": "Unknown",
+      "colors": [
+        "Unknown"
+      ],
+      "coating": "Unknown",
+      "size_mm": null,
+      "manufacturer": "Unknown",
+      "scored": false
+    }
+  ],
+  "note": "Luseogliflozin is not FDA-approved for use in the United States. It is primarily available in Asian markets (Japan, China, India) under various brand names such as Luseogra. US pharmaceutical databases do not contain standard pill variants for this drug. For accurate information on available formulations, please consult international pharmaceutical references or the drug's approved markets."
+}

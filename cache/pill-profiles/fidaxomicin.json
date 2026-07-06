@@ -1,0 +1,53 @@
+{
+  "drug_name": "Fidaxomicin",
+  "generic_name": "fidaxomicin",
+  "drug_class": "Macrolide antibiotic",
+  "variants": [
+    {
+      "brand_name": "Difici",
+      "strength": "200 mg",
+      "imprints": [
+        "DIFICI",
+        "200 mg"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fidaxomicin",
+      "strength": "200 mg",
+      "imprints": [
+        "FDX 200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fidaxomicin",
+      "strength": "200 mg",
+      "imprints": [
+        "F 200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 17,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

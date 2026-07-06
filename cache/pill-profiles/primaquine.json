@@ -1,0 +1,52 @@
+{
+  "drug_name": "Primaquine",
+  "generic_name": "Primaquine phosphate",
+  "drug_class": "Antimalarial (8-aminoquinoline)",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "26.3 mg",
+      "imprints": [
+        "PRIMAQUINE 26.3"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "26.3 mg",
+      "imprints": [
+        "PQ 26.3"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg base",
+      "imprints": [
+        "PRIMAQUINE"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

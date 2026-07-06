@@ -1,0 +1,100 @@
+{
+  "drug_name": "Brigatinib",
+  "generic_name": "brigatinib",
+  "drug_class": "Tyrosine kinase inhibitor (TKI)",
+  "variants": [
+    {
+      "brand_name": "Alunbrig",
+      "strength": "30 mg",
+      "imprints": [
+        "ALU",
+        "30"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Alunbrig",
+      "strength": "60 mg",
+      "imprints": [
+        "ALU",
+        "60"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Alunbrig",
+      "strength": "90 mg",
+      "imprints": [
+        "ALU",
+        "90"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Brigatinib",
+      "strength": "30 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Brigatinib",
+      "strength": "60 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Brigatinib",
+      "strength": "90 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

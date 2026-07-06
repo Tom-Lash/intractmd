@@ -1,0 +1,55 @@
+{
+  "drug_name": "Carfilzomib",
+  "generic_name": "carfilzomib",
+  "drug_class": "Proteasome Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Kyprolis",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Amgen",
+      "scored": false
+    },
+    {
+      "brand_name": "Kyprolis",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Amgen",
+      "scored": false
+    },
+    {
+      "brand_name": "Kyprolis",
+      "strength": "60 mg",
+      "imprints": [
+        "60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Amgen",
+      "scored": false
+    }
+  ]
+}

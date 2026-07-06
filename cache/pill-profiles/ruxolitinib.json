@@ -1,0 +1,125 @@
+{
+  "drug_name": "Ruxolitinib",
+  "generic_name": "ruxolitinib phosphate",
+  "drug_class": "Janus kinase (JAK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Jakafi",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Jakafi",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Jakafi",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Jakafi",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Jakafi",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ruxolitinib",
+      "strength": "5 mg",
+      "imprints": [
+        "RUX 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ruxolitinib",
+      "strength": "10 mg",
+      "imprints": [
+        "RUX 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Opzelura",
+      "strength": "1.5% cream",
+      "imprints": [],
+      "shape": "topical",
+      "colors": [
+        "white"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    }
+  ]
+}

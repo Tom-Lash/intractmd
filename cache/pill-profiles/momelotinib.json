@@ -1,0 +1,54 @@
+{
+  "drug_name": "Momelotinib",
+  "generic_name": "momelotinib",
+  "drug_class": "JAK Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Ojjaara",
+      "strength": "50 mg",
+      "imprints": [
+        "GS50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Ojjaara",
+      "strength": "100 mg",
+      "imprints": [
+        "GS100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Ojjaara",
+      "strength": "150 mg",
+      "imprints": [
+        "GS150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 22,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    }
+  ]
+}

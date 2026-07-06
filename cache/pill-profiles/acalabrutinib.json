@@ -1,0 +1,55 @@
+{
+  "drug_name": "Acalabrutinib",
+  "generic_name": "acalabrutinib",
+  "drug_class": "Bruton's tyrosine kinase (BTK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Calquence",
+      "strength": "100 mg",
+      "imprints": [
+        "ACP-196"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Calquence",
+      "strength": "400 mg",
+      "imprints": [
+        "ACP-196"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 23,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acalabrutinib",
+      "strength": "100 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "multiple",
+      "scored": false
+    }
+  ]
+}

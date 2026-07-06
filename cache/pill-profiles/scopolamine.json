@@ -1,0 +1,52 @@
+{
+  "drug_name": "Scopolamine",
+  "generic_name": "Scopolamine Hydrobromide",
+  "drug_class": "Anticholinergic",
+  "variants": [
+    {
+      "brand_name": "Transderm Scop",
+      "strength": "1.5 mg",
+      "imprints": [
+        "CIBA"
+      ],
+      "shape": "Patch (Transdermal)",
+      "colors": [
+        "tan"
+      ],
+      "coating": "Adhesive patch",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Scopolamine HBr",
+      "strength": "0.3 mg",
+      "imprints": [
+        "Generic"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Scopolamine HBr",
+      "strength": "0.6 mg",
+      "imprints": [
+        "Generic"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

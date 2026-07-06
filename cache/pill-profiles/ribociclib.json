@@ -1,0 +1,89 @@
+{
+  "drug_name": "Ribociclib",
+  "generic_name": "ribociclib succinate",
+  "drug_class": "Cyclin-dependent kinase 4/6 inhibitor",
+  "variants": [
+    {
+      "brand_name": "Kisqali",
+      "strength": "200 mg",
+      "imprints": [
+        "LEE",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "None",
+      "size_mm": 21.3,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Kisqali",
+      "strength": "400 mg",
+      "imprints": [
+        "LEE",
+        "400"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "pink"
+      ],
+      "coating": "None",
+      "size_mm": 23.5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Kisqali",
+      "strength": "600 mg",
+      "imprints": [
+        "LEE",
+        "600"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "None",
+      "size_mm": 25.4,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Kisqali Femara Co-Pack",
+      "strength": "200 mg",
+      "imprints": [
+        "LEE",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "None",
+      "size_mm": 21.3,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ribociclib",
+      "strength": "200 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "None",
+      "size_mm": 21.3,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

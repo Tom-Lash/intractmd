@@ -1,0 +1,81 @@
+{
+  "drug_name": "Apomorphine",
+  "generic_name": "Apomorphine Hydrochloride",
+  "drug_class": "Dopamine Agonist",
+  "variants": [
+    {
+      "brand_name": "Apokyn",
+      "strength": "10 mg/mL",
+      "imprints": [],
+      "shape": "Liquid (Injection)",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Apokyn",
+      "strength": "30 mg/3mL",
+      "imprints": [],
+      "shape": "Liquid (Cartridge/Pen)",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Apomorphine",
+      "strength": "10 mg",
+      "imprints": [
+        "APO",
+        "10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various Generic",
+      "scored": true
+    },
+    {
+      "brand_name": "Apomorphine",
+      "strength": "5 mg",
+      "imprints": [
+        "APO",
+        "5"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various Generic",
+      "scored": false
+    },
+    {
+      "brand_name": "Gocovri",
+      "strength": "111.8 mg",
+      "imprints": [
+        "GOCOVRI"
+      ],
+      "shape": "Capsule (Extended-Release)",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Capsule",
+      "size_mm": 19,
+      "manufacturer": "Adlon Therapeutics",
+      "scored": false
+    }
+  ]
+}

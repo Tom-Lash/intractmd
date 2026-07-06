@@ -1,0 +1,25 @@
+{
+  "drug_name": "Entinostat",
+  "generic_name": "entinostat",
+  "drug_class": "Histone Deacetylase (HDAC) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "ROTIVANT",
+      "strength": "1 mg",
+      "imprints": [
+        "ROTIVANT",
+        "1 mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 16,
+      "manufacturer": "Aytu BioPharma",
+      "scored": false
+    }
+  ],
+  "note": "Entinostat is a prescription anticancer agent with limited US commercial availability. As of current FDA records, there is minimal pill variant diversity in the US market. The drug is primarily available as the branded formulation shown above. Additional variants may exist in clinical trial or investigational settings, but standard commercial US pill variants are extremely limited. For the most current and complete information, consult the FDA Orange Book or verify with Aytu BioPharma directly."
+}

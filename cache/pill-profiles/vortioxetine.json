@@ -1,0 +1,127 @@
+{
+  "drug_name": "Vortioxetine",
+  "generic_name": "Vortioxetine hydrobromide",
+  "drug_class": "Serotonin modulator and stimulator (SMS)",
+  "variants": [
+    {
+      "brand_name": "Brintellix",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Brintellix",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Brintellix",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Brintellix",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vortioxetine",
+      "strength": "5 mg",
+      "imprints": [
+        "VOR 5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vortioxetine",
+      "strength": "10 mg",
+      "imprints": [
+        "VOR 10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vortioxetine",
+      "strength": "15 mg",
+      "imprints": [
+        "VOR 15"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vortioxetine",
+      "strength": "20 mg",
+      "imprints": [
+        "VOR 20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "drug_name": "Ublituximab",
+  "generic_name": "ublituximab",
+  "drug_class": "Monoclonal Antibody (CD20-directed cytolytic)",
+  "note": "Ublituximab is a monoclonal antibody administered as an intravenous infusion. It is NOT available as an oral pill/tablet form in the United States.",
+  "variants": [
+    {
+      "brand_name": "Briumvi",
+      "formulation": "Intravenous Infusion Solution",
+      "strength": "150 mg/25 mL",
+      "route": "IV",
+      "concentration": "6 mg/mL",
+      "manufacturer": "TG Therapeutics",
+      "indication": "Relapsing forms of multiple sclerosis"
+    }
+  ],
+  "important_clarification": "Ublituximab does not have pill/tablet variants. It is exclusively formulated as an intravenous infusion solution and cannot be taken orally. The JSON structure requested is not applicable to this drug."
+}

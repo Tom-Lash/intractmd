@@ -1,0 +1,69 @@
+{
+  "drug_name": "Pentazocine",
+  "generic_name": "Pentazocine lactate",
+  "drug_class": "Opioid analgesic (mixed agonist-antagonist)",
+  "variants": [
+    {
+      "brand_name": "Talwin",
+      "strength": "50 mg",
+      "imprints": [
+        "TALWIN",
+        "50"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pentazocine",
+      "strength": "25 mg",
+      "imprints": [
+        "P025"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pentazocine",
+      "strength": "50 mg",
+      "imprints": [
+        "P050"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Talwin with Naloxone",
+      "strength": "50 mg / 0.5 mg",
+      "imprints": [
+        "TALWIN",
+        "NX"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 17,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    }
+  ]
+}

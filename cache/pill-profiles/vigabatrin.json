@@ -1,0 +1,68 @@
+{
+  "drug_name": "Vigabatrin",
+  "generic_name": "Vigabatrin",
+  "drug_class": "Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Sabril",
+      "strength": "500 mg",
+      "imprints": [
+        "VGB",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vigabatrin",
+      "strength": "500 mg",
+      "imprints": [
+        "V500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vigabatrin",
+      "strength": "250 mg",
+      "imprints": [
+        "V250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 14,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Sabril",
+      "strength": "500 mg",
+      "imprints": [
+        "SABRIL"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 20,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    }
+  ]
+}

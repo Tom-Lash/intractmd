@@ -1,0 +1,138 @@
+{
+  "drug_name": "Fluvoxamine",
+  "generic_name": "Fluvoxamine Maleate",
+  "drug_class": "Selective Serotonin Reuptake Inhibitor (SSRI)",
+  "variants": [
+    {
+      "brand_name": "Luvox",
+      "strength": "25 mg",
+      "imprints": [
+        "LUVOX",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Jazz Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Luvox",
+      "strength": "50 mg",
+      "imprints": [
+        "LUVOX",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Jazz Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Luvox",
+      "strength": "100 mg",
+      "imprints": [
+        "LUVOX",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Brown"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Jazz Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "APO",
+        "FL 25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "APO",
+        "FL 50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "APO",
+        "FL 100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "TEVA",
+        "5382"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "TEVA",
+        "5383"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    }
+  ]
+}

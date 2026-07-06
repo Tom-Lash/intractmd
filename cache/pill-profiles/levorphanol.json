@@ -1,0 +1,71 @@
+{
+  "drug_name": "Levorphanol",
+  "generic_name": "levorphanol tartrate",
+  "drug_class": "Opioid Analgesic",
+  "variants": [
+    {
+      "brand_name": "Levo-Dromoran",
+      "strength": "2 mg",
+      "imprints": [
+        "LEVO-DROMORAN",
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levorphanol",
+      "strength": "2 mg",
+      "imprints": [
+        "M",
+        "360"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Levo-Dromoran",
+      "strength": "3 mg",
+      "imprints": [
+        "LEVO-DROMORAN",
+        "3"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levorphanol",
+      "strength": "3 mg",
+      "imprints": [
+        "M",
+        "361"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    }
+  ]
+}

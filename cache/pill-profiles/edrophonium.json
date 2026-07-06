@@ -1,0 +1,34 @@
+{
+  "drug_name": "Edrophonium",
+  "generic_name": "Edrophonium Chloride",
+  "drug_class": "Acetylcholinesterase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Enlon",
+      "strength": "10 mg/mL",
+      "imprints": [],
+      "shape": "Liquid (Injectable)",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Baxter International",
+      "scored": false
+    },
+    {
+      "brand_name": "Reversol",
+      "strength": "10 mg/mL",
+      "imprints": [],
+      "shape": "Liquid (Injectable)",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Aton Pharma",
+      "scored": false
+    }
+  ],
+  "note": "Edrophonium is primarily available as an injectable solution (10 mg/mL for IV/IM administration). Oral tablet formulations are not commonly manufactured or available in current US markets. The drug is used diagnostically (Tensilon test) and therapeutically for myasthenia gravis management."
+}

@@ -1,0 +1,129 @@
+{
+  "drug_name": "Phenobarbital",
+  "generic_name": "Phenobarbital",
+  "drug_class": "Barbiturate",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "15 mg",
+      "imprints": [
+        "015"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Green"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "30 mg",
+      "imprints": [
+        "030"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "60 mg",
+      "imprints": [
+        "060"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Luminal",
+      "strength": "15 mg",
+      "imprints": [
+        "LUMINAL",
+        "15"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Green"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Winthrop",
+      "scored": false
+    },
+    {
+      "brand_name": "Luminal",
+      "strength": "30 mg",
+      "imprints": [
+        "LUMINAL",
+        "30"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Winthrop",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "32.4 mg",
+      "imprints": [
+        "32.4"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "97.2 mg",
+      "imprints": [
+        "97.2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

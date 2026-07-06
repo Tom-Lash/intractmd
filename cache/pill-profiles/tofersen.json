@@ -1,0 +1,22 @@
+{
+  "drug_name": "Tofersen",
+  "generic_name": "tofersen sodium",
+  "drug_class": "Antisense Oligonucleotide",
+  "variants": [
+    {
+      "brand_name": "Qalsody",
+      "strength": "12 mg/0.2 mL",
+      "imprints": [],
+      "shape": "Injection solution",
+      "colors": [
+        "Clear",
+        "Colorless"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Biogen",
+      "scored": false
+    }
+  ],
+  "note": "Tofersen (Qalsody) is available only as a subcutaneous injection solution, not as oral pills or tablets. No pill variants exist in the US market. The single formulation is a 12 mg/0.2 mL prefilled syringe for intrathecal administration."
+}

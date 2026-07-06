@@ -1,0 +1,85 @@
+{
+  "drug_name": "Desloratadine",
+  "generic_name": "Desloratadine",
+  "drug_class": "Selective H1-receptor antagonist (antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Clarinex",
+      "strength": "5 mg",
+      "imprints": [
+        "CLARINEX",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Schering-Plough",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desloratadine",
+      "strength": "5 mg",
+      "imprints": [
+        "Desloratadine",
+        "5mg"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Clarinex RediTabs",
+      "strength": "2.5 mg",
+      "imprints": [
+        "CLARINEX"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated (orally disintegrating tablet)",
+      "size_mm": 8,
+      "manufacturer": "Schering-Plough",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desloratadine",
+      "strength": "5 mg",
+      "imprints": [
+        "5 mg"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desloratadine",
+      "strength": "5 mg",
+      "imprints": [
+        "DES",
+        "5"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Cipla",
+      "scored": false
+    }
+  ]
+}

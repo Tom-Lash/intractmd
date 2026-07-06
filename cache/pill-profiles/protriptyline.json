@@ -1,0 +1,103 @@
+{
+  "drug_name": "Protriptyline",
+  "generic_name": "protriptyline hydrochloride",
+  "drug_class": "Tricyclic antidepressant",
+  "variants": [
+    {
+      "brand_name": "Vivactil",
+      "strength": "5 mg",
+      "imprints": [
+        "VIVACTIL",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Elanco",
+      "scored": false
+    },
+    {
+      "brand_name": "Vivactil",
+      "strength": "10 mg",
+      "imprints": [
+        "VIVACTIL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Elanco",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "MP",
+        "73"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "MP",
+        "74"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "WATSON",
+        "332"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Watson",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "WATSON",
+        "333"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Watson",
+      "scored": false
+    }
+  ]
+}

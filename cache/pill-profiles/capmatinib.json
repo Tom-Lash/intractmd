@@ -1,0 +1,37 @@
+{
+  "drug_name": "Capmatinib",
+  "generic_name": "capmatinib dihydrochloride",
+  "drug_class": "Tyrosine kinase inhibitor (MET inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Tabrecta",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13.5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tabrecta",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "drug_name": "Trimetazidine",
+  "generic_name": "Trimetazidine dihydrochloride",
+  "drug_class": "Anti-anginal agent",
+  "variants": [
+    {
+      "brand_name": "Ranexa",
+      "strength": "500 mg",
+      "imprints": [
+        "RANEXA",
+        "500"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Lexicon Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Ranexa",
+      "strength": "750 mg",
+      "imprints": [
+        "RANEXA",
+        "750"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 20,
+      "manufacturer": "Lexicon Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trimetazidine",
+      "strength": "500 mg",
+      "imprints": [
+        "TMZ",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trimetazidine",
+      "strength": "750 mg",
+      "imprints": [
+        "TMZ",
+        "750"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    }
+  ]
+}

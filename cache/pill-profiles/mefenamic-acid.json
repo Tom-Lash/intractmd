@@ -1,0 +1,93 @@
+{
+  "drug_name": "Mefenamic Acid",
+  "generic_name": "Mefenamic Acid",
+  "drug_class": "NSAID (Nonsteroidal Anti-inflammatory Drug)",
+  "variants": [
+    {
+      "brand_name": "Ponstel",
+      "strength": "250 mg",
+      "imprints": [
+        "PARKE",
+        "DAVIS",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefenamic Acid",
+      "strength": "250 mg",
+      "imprints": [
+        "G",
+        "37"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Novopharm",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefenamic Acid",
+      "strength": "250 mg",
+      "imprints": [
+        "GG",
+        "625"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefenamic Acid",
+      "strength": "250 mg",
+      "imprints": [
+        "WATSON",
+        "3010"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefenamic Acid",
+      "strength": "250 mg",
+      "imprints": [
+        "Logo",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Actavis",
+      "scored": false
+    }
+  ]
+}

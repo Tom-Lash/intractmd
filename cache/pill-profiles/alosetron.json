@@ -1,0 +1,99 @@
+{
+  "drug_name": "Alosetron",
+  "generic_name": "Alosetron hydrochloride",
+  "drug_class": "5-HT3 receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Lotronex",
+      "strength": "0.5 mg",
+      "imprints": [
+        "LOTRONEX",
+        "0.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Prometheus Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Lotronex",
+      "strength": "1 mg",
+      "imprints": [
+        "LOTRONEX",
+        "1"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Prometheus Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alosetron",
+      "strength": "0.5 mg",
+      "imprints": [
+        "E 122"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alosetron",
+      "strength": "1 mg",
+      "imprints": [
+        "E 123"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alosetron",
+      "strength": "0.5 mg",
+      "imprints": [
+        "A 22"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alosetron",
+      "strength": "1 mg",
+      "imprints": [
+        "A 23"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    }
+  ]
+}

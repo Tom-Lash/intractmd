@@ -1,0 +1,38 @@
+{
+  "drug_name": "Thiabendazole",
+  "generic_name": "thiabendazole",
+  "drug_class": "Anthelmintic",
+  "variants": [
+    {
+      "brand_name": "Mintezol",
+      "strength": "500 mg",
+      "imprints": [
+        "MINTEZOL",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 16,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thiabendazole",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "drug_name": "Cefprozil",
+  "generic_name": "Cefprozil",
+  "drug_class": "Second-generation Cephalosporin",
+  "variants": [
+    {
+      "brand_name": "Cefzil",
+      "strength": "250 mg",
+      "imprints": [
+        "CEFZIL",
+        "250"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Cefzil",
+      "strength": "500 mg",
+      "imprints": [
+        "CEFZIL",
+        "500"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefprozil",
+      "strength": "250 mg",
+      "imprints": [
+        "GG",
+        "640"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefprozil",
+      "strength": "500 mg",
+      "imprints": [
+        "GG",
+        "641"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 18,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefprozil",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "C16"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefprozil",
+      "strength": "500 mg",
+      "imprints": [
+        "M",
+        "C17"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 18,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

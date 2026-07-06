@@ -1,0 +1,62 @@
+{
+  "drug_name": "Pyrantel",
+  "generic_name": "Pyrantel Pamoate",
+  "drug_class": "Anthelmintic",
+  "variants": [
+    {
+      "brand_name": "Pin-X",
+      "strength": "180 mg/mL",
+      "imprints": [],
+      "shape": "Liquid",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Prestige Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Reese's Pinworm Medicine",
+      "strength": "180 mg/mL",
+      "imprints": [],
+      "shape": "Liquid",
+      "colors": [
+        "Colorless to light yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Reese Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pyrantel Pamoate",
+      "strength": "250 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White",
+        "Tan"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pyrantel Pamoate",
+      "strength": "180 mg/mL",
+      "imprints": [],
+      "shape": "Suspension",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

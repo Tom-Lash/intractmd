@@ -1,0 +1,21 @@
+{
+  "drug_name": "Onasemnogene",
+  "generic_name": "onasemnogene abeparvovec-xioi",
+  "drug_class": "Gene Therapy Agent",
+  "variants": [
+    {
+      "brand_name": "Zolgensma",
+      "strength": "1.1 × 10^13 vg/mL",
+      "imprints": [],
+      "shape": "Liquid intravenous infusion",
+      "colors": [
+        "Clear to slightly opalescent"
+      ],
+      "coating": "None - liquid formulation",
+      "size_mm": null,
+      "manufacturer": "Novartis Gene Therapies",
+      "scored": false
+    }
+  ],
+  "note": "Onasemnogene abeparvovec-xioi (Zolgensma) is a one-time intravenous gene therapy and does not have oral pill variants. It is supplied as a single-dose vial for intravenous infusion only. No tablet or capsule formulations exist for this medication."
+}

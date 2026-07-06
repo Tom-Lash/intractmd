@@ -1,0 +1,56 @@
+{
+  "drug_name": "Pictilisib",
+  "generic_name": "pictilisib",
+  "drug_class": "Phosphatidylinositol 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Pictilisib",
+      "strength": "150 mg",
+      "imprints": [
+        "GDC-0941"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Pictilisib",
+      "strength": "100 mg",
+      "imprints": [
+        "GDC-0941"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Pictilisib",
+      "strength": "50 mg",
+      "imprints": [
+        "GDC-0941"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    }
+  ],
+  "note": "Pictilisib (GDC-0941) is a research/investigational agent with limited US commercial availability. Formulations listed are from clinical trial data. Commercial variants may be limited."
+}

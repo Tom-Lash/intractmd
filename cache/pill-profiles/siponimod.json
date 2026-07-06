@@ -1,0 +1,71 @@
+{
+  "drug_name": "Siponimod",
+  "generic_name": "siponimod",
+  "drug_class": "Sphingosine 1-phosphate receptor modulator",
+  "variants": [
+    {
+      "brand_name": "Mayzent",
+      "strength": "0.25 mg",
+      "imprints": [
+        "S1",
+        "0.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Mayzent",
+      "strength": "0.5 mg",
+      "imprints": [
+        "S1",
+        "0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "light blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Mayzent",
+      "strength": "1 mg",
+      "imprints": [
+        "S1",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "dark blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Mayzent",
+      "strength": "2 mg",
+      "imprints": [
+        "S1",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

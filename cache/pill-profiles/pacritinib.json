@@ -1,0 +1,39 @@
+{
+  "drug_name": "Pacritinib",
+  "generic_name": "pacritinib",
+  "drug_class": "Janus kinase (JAK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Vonjo",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 21.5,
+      "manufacturer": "CTI BioPharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Vonjo",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "light gray"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "CTI BioPharma",
+      "scored": false
+    }
+  ]
+}

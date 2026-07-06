@@ -1,0 +1,55 @@
+{
+  "drug_name": "Stiripentol",
+  "generic_name": "stiripentol",
+  "drug_class": "Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Diacomit",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Biocodex",
+      "scored": false
+    },
+    {
+      "brand_name": "Diacomit",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 22,
+      "manufacturer": "Biocodex",
+      "scored": false
+    },
+    {
+      "brand_name": "Diacomit",
+      "strength": "1000 mg",
+      "imprints": [
+        "1000"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 24,
+      "manufacturer": "Biocodex",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "drug_name": "Alemtuzumab",
+  "generic_name": "Alemtuzumab",
+  "drug_class": "Monoclonal Antibody (CD52 antagonist)",
+  "note": "Alemtuzumab is a biologic monoclonal antibody administered via intravenous infusion or subcutaneous injection. It is NOT available as an oral pill/tablet form in the United States.",
+  "variants": [
+    {
+      "brand_name": "Campath",
+      "formulation_type": "Intravenous Infusion",
+      "strength": "30 mg/30 mL",
+      "route": "IV",
+      "manufacturer": "Genzyme Corporation"
+    },
+    {
+      "brand_name": "Lemtrada",
+      "formulation_type": "Subcutaneous Injection",
+      "strength": "12 mg/0.4 mL prefilled syringe",
+      "route": "Subcutaneous",
+      "manufacturer": "Sanofi Genzyme"
+    }
+  ],
+  "availability_note": "No pill variants exist. Alemtuzumab is exclusively available as an injectable biologic product."
+}

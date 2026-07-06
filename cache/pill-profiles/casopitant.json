@@ -1,0 +1,40 @@
+{
+  "drug_name": "Casopitant",
+  "generic_name": "casopitant mesylate",
+  "drug_class": "Neurokinin-1 (NK1) receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "AcuTrial",
+      "strength": "50 mg",
+      "imprints": [
+        "GW679"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Acurial",
+      "strength": "100 mg",
+      "imprints": [
+        "GW680"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    }
+  ],
+  "note": "Casopitant (Acurial) had limited US market availability and was discontinued. Complete variant data is sparse in public databases. Only confirmed formulations are listed."
+}

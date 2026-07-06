@@ -1,0 +1,20 @@
+{
+  "drug_name": "Umeclidinium",
+  "generic_name": "Umeclidinium bromide",
+  "drug_class": "Long-acting muscarinic antagonist (LAMA)",
+  "variants": [
+    {
+      "brand_name": "Incruse Ellipta",
+      "strength": "62.5 mcg",
+      "imprints": [],
+      "shape": "Powder for inhalation",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false,
+      "route": "Inhalation"
+    }
+  ],
+  "note": "Umeclidinium is exclusively formulated as an inhalation powder (Incruse Ellipta 62.5 mcg). It is not available as an oral tablet or pill in the United States. The drug is dispensed as a dry powder inhaler device rather than traditional pill variants. No additional pill variants exist for this medication."
+}

@@ -1,0 +1,54 @@
+{
+  "drug_name": "Diethylcarbamazine",
+  "generic_name": "Diethylcarbamazine citrate",
+  "drug_class": "Anthelmintic",
+  "variants": [
+    {
+      "brand_name": "Hetrazan",
+      "strength": "50 mg",
+      "imprints": [
+        "HETRAZAN",
+        "50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Lederle",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "DEC 50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "DEC 100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Diethylcarbamazine is limited availability in the US. Most variants are generic formulations. Brand name Hetrazan is no longer widely manufactured. Current availability primarily through specialized pharmaceutical suppliers."
+}

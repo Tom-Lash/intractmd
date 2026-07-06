@@ -1,0 +1,41 @@
+{
+  "drug_name": "Pralsetinib",
+  "generic_name": "pralsetinib",
+  "drug_class": "RET kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Gavreto",
+      "strength": "100 mg",
+      "imprints": [
+        "BLU",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Blueprint Medicines Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Gavreto",
+      "strength": "200 mg",
+      "imprints": [
+        "BLU",
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "light blue"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "Blueprint Medicines Corporation",
+      "scored": false
+    }
+  ]
+}

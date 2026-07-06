@@ -1,0 +1,54 @@
+{
+  "drug_name": "Oxaprozin",
+  "generic_name": "Oxaprozin",
+  "drug_class": "NSAID (Nonsteroidal Anti-inflammatory Drug)",
+  "variants": [
+    {
+      "brand_name": "Daypro",
+      "strength": "600 mg",
+      "imprints": [
+        "DAYPRO",
+        "600"
+      ],
+      "shape": "Caplet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Warner-Lambert",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Oxaprozin",
+      "strength": "600 mg",
+      "imprints": [
+        "600"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Oxaprozin",
+      "strength": "600 mg",
+      "imprints": [
+        "WL",
+        "1202"
+      ],
+      "shape": "Caplet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ]
+}

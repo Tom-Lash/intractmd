@@ -1,0 +1,69 @@
+{
+  "drug_name": "Ketoconazole",
+  "generic_name": "ketoconazole",
+  "drug_class": "Azole Antifungal",
+  "variants": [
+    {
+      "brand_name": "Nizoral",
+      "strength": "200 mg",
+      "imprints": [
+        "NIZORAL",
+        "200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ketoconazole",
+      "strength": "200 mg",
+      "imprints": [
+        "K200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ketoconazole",
+      "strength": "200 mg",
+      "imprints": [
+        "KE200"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ketoconazole",
+      "strength": "200 mg",
+      "imprints": [
+        "APO",
+        "200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

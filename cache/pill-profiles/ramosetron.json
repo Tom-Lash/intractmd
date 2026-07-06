@@ -1,0 +1,22 @@
+{
+  "drug_name": "Ramosetron",
+  "generic_name": "Ramosetron hydrochloride",
+  "drug_class": "5-HT3 receptor antagonist (antiemetic)",
+  "availability_note": "Ramosetron is NOT FDA-approved for use in the United States. It is primarily available in Japan, South Korea, and other Asian markets under brand names like Nasea.",
+  "variants": [
+    {
+      "brand_name": "Not available in US market",
+      "strength": "0.3 mg",
+      "imprints": [],
+      "shape": "Unknown",
+      "colors": [],
+      "coating": "Unknown",
+      "size_mm": null,
+      "manufacturer": "Various (Astellas, others - Japan/Asia only)",
+      "scored": false,
+      "note": "Available in Japan as injection and oral formulations"
+    }
+  ],
+  "us_availability": "NOT approved by FDA for US pharmaceutical market",
+  "regulatory_status": "Ramosetron has not been approved by the FDA and is not legally available as a pharmaceutical product in the United States. It may only be obtained through international sources or clinical trials."
+}

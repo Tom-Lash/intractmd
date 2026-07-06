@@ -1,0 +1,17 @@
+{
+  "drug_name": "Anifrolumab",
+  "generic_name": "anifrolumab-fnia",
+  "drug_class": "Monoclonal Antibody (Type I Interferon Receptor Antagonist)",
+  "note": "Anifrolumab is a monoclonal antibody administered as an intravenous infusion and is NOT available in oral pill form in the United States",
+  "variants": [
+    {
+      "brand_name": "Saphnelo",
+      "strength": "150 mg/mL",
+      "formulation_type": "Intravenous Solution",
+      "route": "IV Infusion",
+      "container": "Single-dose vial",
+      "manufacturer": "AstraZeneca",
+      "indication": "Systemic Lupus Erythematosus (SLE)"
+    }
+  ]
+}

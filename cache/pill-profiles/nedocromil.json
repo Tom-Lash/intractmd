@@ -1,0 +1,33 @@
+{
+  "drug_name": "Nedocromil",
+  "generic_name": "Nedocromil sodium",
+  "drug_class": "Mast cell stabilizer",
+  "variants": [
+    {
+      "brand_name": "Tilade",
+      "strength": "1.75 mg/actuation",
+      "imprints": [],
+      "shape": "Aerosol inhaler",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Alocril",
+      "strength": "2%",
+      "imprints": [],
+      "shape": "Ophthalmic solution",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "drug_name": "Miconazole",
+  "generic_name": "Miconazole nitrate",
+  "drug_class": "Azole antifungal",
+  "variants": [
+    {
+      "brand_name": "Monistat 1",
+      "strength": "1200 mg",
+      "imprints": [],
+      "shape": "Oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Prestige Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Monistat 3",
+      "strength": "200 mg",
+      "imprints": [],
+      "shape": "Oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "None",
+      "size_mm": 17,
+      "manufacturer": "Prestige Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Monistat 7",
+      "strength": "100 mg",
+      "imprints": [],
+      "shape": "Oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "None",
+      "size_mm": 15,
+      "manufacturer": "Prestige Consumer Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Miconazole",
+      "strength": "200 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "None",
+      "size_mm": 17,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

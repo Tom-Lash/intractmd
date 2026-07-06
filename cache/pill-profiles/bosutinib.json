@@ -1,0 +1,97 @@
+{
+  "drug_name": "Bosutinib",
+  "generic_name": "bosutinib",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Bosulif",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Bosulif",
+      "strength": "400 mg",
+      "imprints": [
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Bosulif",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Bosutinib",
+      "strength": "100 mg",
+      "imprints": [
+        "Bosutinib 100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Bosutinib",
+      "strength": "400 mg",
+      "imprints": [
+        "Bosutinib 400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Bosutinib",
+      "strength": "500 mg",
+      "imprints": [
+        "Bosutinib 500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

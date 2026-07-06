@@ -1,0 +1,87 @@
+{
+  "drug_name": "Trihexyphenidyl",
+  "generic_name": "Trihexyphenidyl hydrochloride",
+  "drug_class": "Anticholinergic",
+  "variants": [
+    {
+      "brand_name": "Artane",
+      "strength": "2 mg",
+      "imprints": [
+        "ARTANE",
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Lederle",
+      "scored": true
+    },
+    {
+      "brand_name": "Artane",
+      "strength": "5 mg",
+      "imprints": [
+        "ARTANE",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Lederle",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "1",
+        "TRIHEX"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "2",
+        "TRIHEX"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "5",
+        "TRIHEX"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

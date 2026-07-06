@@ -1,0 +1,86 @@
+{
+  "drug_name": "Cefpodoxime",
+  "generic_name": "Cefpodoxime proxetil",
+  "drug_class": "Third-generation cephalosporin antibiotic",
+  "variants": [
+    {
+      "brand_name": "Vantin",
+      "strength": "100 mg",
+      "imprints": [
+        "VANTIN",
+        "100"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Vantin",
+      "strength": "200 mg",
+      "imprints": [
+        "VANTIN",
+        "200"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 17,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "APO",
+        "CEFPODOXIME"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

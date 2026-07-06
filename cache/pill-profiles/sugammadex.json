@@ -1,0 +1,53 @@
+{
+  "drug_name": "Sugammadex",
+  "generic_name": "Sugammadex sodium",
+  "drug_class": "Selective relaxant binding agent",
+  "variants": [
+    {
+      "brand_name": "Bridion",
+      "strength": "100 mg/mL",
+      "imprints": [
+        "None - Injectable"
+      ],
+      "shape": "Liquid solution",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Bridion",
+      "strength": "200 mg/2mL",
+      "imprints": [
+        "None - Injectable"
+      ],
+      "shape": "Liquid solution",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Bridion",
+      "strength": "500 mg/5mL",
+      "imprints": [
+        "None - Injectable"
+      ],
+      "shape": "Liquid solution",
+      "colors": [
+        "Clear/Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    }
+  ],
+  "note": "Sugammadex is available ONLY as injectable formulations. No oral pill variants exist in the US market. All US formulations are intravenous solutions."
+}

@@ -1,0 +1,87 @@
+{
+  "drug_name": "Terbinafine",
+  "generic_name": "Terbinafine hydrochloride",
+  "drug_class": "Antifungal (Allylamine)",
+  "variants": [
+    {
+      "brand_name": "Lamisil",
+      "strength": "250 mg",
+      "imprints": [
+        "LAMISIL",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Terbinafine",
+      "strength": "250 mg",
+      "imprints": [
+        "T250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Terbinafine",
+      "strength": "250 mg",
+      "imprints": [
+        "APO",
+        "TRB",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Terbinafine",
+      "strength": "250 mg",
+      "imprints": [
+        "TERBINAFINE",
+        "250"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 11,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Terbinafine",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "T250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

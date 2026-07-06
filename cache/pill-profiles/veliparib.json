@@ -1,0 +1,73 @@
+{
+  "drug_name": "Veliparib",
+  "generic_name": "Veliparib",
+  "drug_class": "PARP Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Belviq",
+      "strength": "10 mg",
+      "imprints": [
+        "ABT",
+        "10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Belviq",
+      "strength": "25 mg",
+      "imprints": [
+        "ABT",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Veliparib",
+      "strength": "10 mg",
+      "imprints": [
+        "V",
+        "10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various generic manufacturers",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Veliparib",
+      "strength": "25 mg",
+      "imprints": [
+        "V",
+        "25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various generic manufacturers",
+      "scored": true
+    }
+  ]
+}

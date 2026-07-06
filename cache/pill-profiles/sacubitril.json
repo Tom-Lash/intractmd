@@ -1,0 +1,56 @@
+{
+  "drug_name": "Sacubitril",
+  "generic_name": "Sacubitril",
+  "drug_class": "Neprilysin Inhibitor",
+  "note": "Sacubitril is not marketed as a monotherapy in the US. It is only available in combination with valsartan under the brand name Entresto.",
+  "variants": [
+    {
+      "brand_name": "Entresto",
+      "strength": "24 mg/26 mg (sacubitril/valsartan)",
+      "imprints": [
+        "NVR",
+        "LZ1"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Entresto",
+      "strength": "49 mg/51 mg (sacubitril/valsartan)",
+      "imprints": [
+        "NVR",
+        "LZ2"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Entresto",
+      "strength": "97 mg/103 mg (sacubitril/valsartan)",
+      "imprints": [
+        "NVR",
+        "LZ3"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 17,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ]
+}

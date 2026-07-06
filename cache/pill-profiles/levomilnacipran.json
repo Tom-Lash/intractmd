@@ -1,0 +1,139 @@
+{
+  "drug_name": "Levomilnacipran",
+  "generic_name": "levomilnacipran hydrochloride",
+  "drug_class": "Serotonin-norepinephrine reuptake inhibitor (SNRI)",
+  "variants": [
+    {
+      "brand_name": "Fetzima",
+      "strength": "20 mg",
+      "imprints": [
+        "FTZ",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Fetzima",
+      "strength": "40 mg",
+      "imprints": [
+        "FTZ",
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Fetzima",
+      "strength": "80 mg",
+      "imprints": [
+        "FTZ",
+        "80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Fetzima",
+      "strength": "120 mg",
+      "imprints": [
+        "FTZ",
+        "120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levomilnacipran",
+      "strength": "20 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levomilnacipran",
+      "strength": "40 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levomilnacipran",
+      "strength": "80 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levomilnacipran",
+      "strength": "120 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "extended-release",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

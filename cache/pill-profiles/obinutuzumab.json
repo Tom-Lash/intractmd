@@ -1,0 +1,17 @@
+{
+  "drug_name": "Obinutuzumab",
+  "generic_name": "obinutuzumab",
+  "drug_class": "Monoclonal Antibody (Anti-CD20)",
+  "note": "Obinutuzumab is a monoclonal antibody administered exclusively as an intravenous infusion. No oral pill variants exist in the United States.",
+  "variants": [],
+  "formulations_available": [
+    {
+      "type": "Intravenous Infusion",
+      "brand_name": "Gazyva",
+      "strength": "1000 mg/40 mL (25 mg/mL)",
+      "route": "IV",
+      "manufacturer": "Genentech/Roche",
+      "indication": "CLL, Follicular Lymphoma, DLBCL"
+    }
+  ]
+}

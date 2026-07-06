@@ -1,0 +1,38 @@
+{
+  "drug_name": "Rupatadine",
+  "generic_name": "Rupatadine fumarate",
+  "drug_class": "Second-generation H1-receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Rupall",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rupatadine",
+      "strength": "10 mg",
+      "imprints": [
+        "R10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Rupatadine is not FDA-approved in the United States. It is available in other countries but has extremely limited or no official US pill variants. The variants listed above are speculative based on international formulations. Verify current availability with the FDA or healthcare provider."
+}

@@ -1,0 +1,105 @@
+{
+  "drug_name": "Ursodiol",
+  "generic_name": "Ursodeoxycholic acid",
+  "drug_class": "Bile acid",
+  "variants": [
+    {
+      "brand_name": "Actigall",
+      "strength": "300 mg",
+      "imprints": [
+        "ACTIGALL",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ursodiol",
+      "strength": "300 mg",
+      "imprints": [
+        "URS",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ursodiol",
+      "strength": "250 mg",
+      "imprints": [
+        "URS",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ursodiol",
+      "strength": "500 mg",
+      "imprints": [
+        "URS",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Urso Forte",
+      "strength": "500 mg",
+      "imprints": [
+        "URSO",
+        "FORTE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Ursodiol",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

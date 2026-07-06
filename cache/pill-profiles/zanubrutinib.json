@@ -1,0 +1,41 @@
+{
+  "drug_name": "Zanubrutinib",
+  "generic_name": "zanubrutinib",
+  "drug_class": "Bruton's Tyrosine Kinase (BTK) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Calquence",
+      "strength": "80 mg",
+      "imprints": [
+        "BGB-3111",
+        "80"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "BeiGene",
+      "scored": false
+    },
+    {
+      "brand_name": "Calquence",
+      "strength": "160 mg",
+      "imprints": [
+        "BGB-3111",
+        "160"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "Blue"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "BeiGene",
+      "scored": false
+    }
+  ]
+}

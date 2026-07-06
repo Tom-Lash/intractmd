@@ -1,0 +1,101 @@
+{
+  "drug_name": "Primidone",
+  "generic_name": "Primidone",
+  "drug_class": "Barbiturate (Anticonvulsant)",
+  "variants": [
+    {
+      "brand_name": "Mysoline",
+      "strength": "50 mg",
+      "imprints": [
+        "MYSOLINE",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Mysoline",
+      "strength": "250 mg",
+      "imprints": [
+        "MYSOLINE",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "MP",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "MP",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "5059"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Caraco Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "5060"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Caraco Pharmaceutical",
+      "scored": true
+    }
+  ]
+}

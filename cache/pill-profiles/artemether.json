@@ -1,0 +1,22 @@
+{
+  "drug_name": "Artemether",
+  "generic_name": "artemether",
+  "drug_class": "Antimalarial Agent",
+  "variants": [
+    {
+      "brand_name": "Artether",
+      "strength": "80 mg/mL",
+      "imprints": [],
+      "shape": "Ampule",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Artecef/Various",
+      "scored": false,
+      "formulation_note": "Injectable solution only - not available as oral pill in US"
+    }
+  ],
+  "note": "Artemether is NOT available as an oral pill/tablet form in the United States. It is only approved and marketed as an intramuscular or intravenous injection (typically 80 mg/mL ampules). There are no US pill variants with the physical characteristics requested. Artemether was never approved by the FDA for oral administration in pill form."
+}

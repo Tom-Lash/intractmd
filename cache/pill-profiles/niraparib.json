@@ -1,0 +1,87 @@
+{
+  "drug_name": "Niraparib",
+  "generic_name": "niraparib tosylate monohydrate",
+  "drug_class": "PARP inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zejula",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Zejula",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Zejula",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Niraparib",
+      "strength": "100 mg",
+      "imprints": [
+        "NIRA",
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Niraparib",
+      "strength": "200 mg",
+      "imprints": [
+        "NIRA",
+        "200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "multiple",
+      "scored": true
+    }
+  ]
+}

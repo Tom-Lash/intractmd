@@ -1,0 +1,23 @@
+{
+  "drug_name": "Eteplirsen",
+  "generic_name": "eteplirsen",
+  "drug_class": "Antisense Oligonucleotide",
+  "note": "Eteplirsen is a injectable solution, not available as oral pills or tablets",
+  "variants": [
+    {
+      "brand_name": "Exondys 51",
+      "strength": "100 mg/mL",
+      "formulation": "Intravenous injection solution",
+      "vial_size_mL": 2,
+      "manufacturer": "Sarepta Therapeutics",
+      "route": "Intravenous infusion",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [
+        "Clear to slightly opalescent"
+      ],
+      "coating": "N/A",
+      "scored": false
+    }
+  ]
+}

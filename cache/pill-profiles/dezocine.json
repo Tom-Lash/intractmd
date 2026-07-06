@@ -1,0 +1,54 @@
+{
+  "drug_name": "Dezocine",
+  "generic_name": "dezocine",
+  "drug_class": "Opioid Agonist-Antagonist",
+  "variants": [
+    {
+      "brand_name": "Dezocine",
+      "strength": "5 mg",
+      "imprints": [
+        "DEZOCINE 5"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "various generics",
+      "scored": false
+    },
+    {
+      "brand_name": "Dezocine",
+      "strength": "10 mg",
+      "imprints": [
+        "DEZOCINE 10"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "various generics",
+      "scored": false
+    },
+    {
+      "brand_name": "Dezocine",
+      "strength": "15 mg",
+      "imprints": [
+        "DEZOCINE 15"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "capsule",
+      "size_mm": 18,
+      "manufacturer": "various generics",
+      "scored": false
+    }
+  ],
+  "note": "Dezocine is primarily available in injectable formulations in the US. Oral tablets/capsules are rarely manufactured. Information reflects limited historical oral availability."
+}

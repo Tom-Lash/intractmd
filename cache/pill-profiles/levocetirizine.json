@@ -1,0 +1,134 @@
+{
+  "drug_name": "Levocetirizine",
+  "generic_name": "Levocetirizine dihydrochloride",
+  "drug_class": "Second-generation selective H1-receptor antagonist (antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Xyzal",
+      "strength": "5 mg",
+      "imprints": [
+        "XYZAL",
+        "5"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levocetirizine",
+      "strength": "5 mg",
+      "imprints": [
+        "L",
+        "544"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levocetirizine",
+      "strength": "5 mg",
+      "imprints": [
+        "E",
+        "523"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Xyzal",
+      "strength": "10 mg",
+      "imprints": [
+        "XYZAL",
+        "10"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levocetirizine",
+      "strength": "10 mg",
+      "imprints": [
+        "L",
+        "545"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levocetirizine",
+      "strength": "10 mg",
+      "imprints": [
+        "E",
+        "524"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Xyzal Allergy 24HR",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "UCB Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levocetirizine",
+      "strength": "5 mg",
+      "imprints": [
+        "RP",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

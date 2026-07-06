@@ -1,0 +1,54 @@
+{
+  "drug_name": "Tolbutamide",
+  "generic_name": "Tolbutamide",
+  "drug_class": "Sulfonylurea (Antidiabetic)",
+  "variants": [
+    {
+      "brand_name": "Orinase",
+      "strength": "500 mg",
+      "imprints": [
+        "ORINASE",
+        "500"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Upjohn",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Tolbutamide",
+      "strength": "500 mg",
+      "imprints": [
+        "GG 658"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tolbutamide",
+      "strength": "500 mg",
+      "imprints": [
+        "TOLBUTAMIDE",
+        "500"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

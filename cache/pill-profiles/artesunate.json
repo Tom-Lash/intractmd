@@ -1,0 +1,35 @@
+{
+  "drug_name": "Artesunate",
+  "generic_name": "artesunate",
+  "drug_class": "Antimalarial - Artemisinin derivative",
+  "note": "Artesunate is primarily available as an intravenous or intramuscular formulation in the US. Oral tablet formulations are limited in US availability.",
+  "variants": [
+    {
+      "brand_name": "Generic Artesunate",
+      "strength": "50 mg",
+      "imprints": [],
+      "shape": "Not typically available as oral tablet in US",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Various (IV/IM formulation)",
+      "scored": false,
+      "formulation_type": "Intravenous injection",
+      "availability_note": "FDA-approved for severe malaria; primarily IV formulation"
+    },
+    {
+      "brand_name": "Generic Artesunate",
+      "strength": "60 mg",
+      "imprints": [],
+      "shape": "Not typically available as oral tablet in US",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Various (IV/IM formulation)",
+      "scored": false,
+      "formulation_type": "Intramuscular injection",
+      "availability_note": "Alternative IV route"
+    }
+  ],
+  "disclaimer": "Artesunate oral tablets are not FDA-approved in the United States. The drug is available through FDA emergency protocols for severe malaria as an injectable formulation. Oral formulations may be available internationally but are not standard US pharmaceutical variants."
+}

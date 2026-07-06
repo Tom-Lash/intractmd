@@ -1,0 +1,59 @@
+{
+  "drug_name": "Hyoscine",
+  "generic_name": "Scopolamine Hydrobromide",
+  "drug_class": "Anticholinergic/Antispasmodic",
+  "variants": [
+    {
+      "brand_name": "Transderm Scop",
+      "strength": "1.5 mg",
+      "imprints": [],
+      "shape": "Patch (circular)",
+      "colors": [
+        "tan"
+      ],
+      "coating": "Transdermal patch",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Scopolamine HBr",
+      "strength": "0.4 mg",
+      "imprints": [],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Scopolamine HBr",
+      "strength": "0.6 mg",
+      "imprints": [],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Hyoscine HBr Injectable",
+      "strength": "0.3 mg/mL",
+      "imprints": [],
+      "shape": "Liquid (ampule)",
+      "colors": [
+        "clear"
+      ],
+      "coating": "N/A",
+      "size_mm": 1,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

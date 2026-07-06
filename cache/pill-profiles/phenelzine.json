@@ -1,0 +1,70 @@
+{
+  "drug_name": "Phenelzine",
+  "generic_name": "Phenelzine Sulfate",
+  "drug_class": "Monoamine Oxidase Inhibitor (MAOI)",
+  "variants": [
+    {
+      "brand_name": "Nardil",
+      "strength": "15 mg",
+      "imprints": [
+        "NARDIL",
+        "15"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Phenelzine",
+      "strength": "15 mg",
+      "imprints": [
+        "PZ",
+        "15"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Nardil",
+      "strength": "15 mg",
+      "imprints": [
+        "NARDIL"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Phenelzine",
+      "strength": "15 mg",
+      "imprints": [
+        "54",
+        "375"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7.5,
+      "manufacturer": "Roxane",
+      "scored": false
+    }
+  ]
+}

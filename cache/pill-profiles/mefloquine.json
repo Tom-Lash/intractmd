@@ -1,0 +1,87 @@
+{
+  "drug_name": "Mefloquine",
+  "generic_name": "Mefloquine hydrochloride",
+  "drug_class": "Antimalarial (Quinoline methanol)",
+  "variants": [
+    {
+      "brand_name": "Lariam",
+      "strength": "250 mg",
+      "imprints": [
+        "ROCHE",
+        "LARIAM"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Roche Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefloquine",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "2195"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefloquine",
+      "strength": "250 mg",
+      "imprints": [
+        "R",
+        "190"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Dr. Reddy's",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefloquine",
+      "strength": "250 mg",
+      "imprints": [
+        "G",
+        "3722"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mefloquine",
+      "strength": "250 mg",
+      "imprints": [
+        "CIPLA",
+        "M250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Cipla",
+      "scored": false
+    }
+  ]
+}

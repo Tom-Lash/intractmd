@@ -1,0 +1,35 @@
+{
+  "drug_name": "Atovaquone",
+  "generic_name": "Atovaquone",
+  "drug_class": "Antiprotozoal",
+  "variants": [
+    {
+      "brand_name": "Mepron",
+      "strength": "750 mg/5 mL",
+      "imprints": [
+        "Mepron"
+      ],
+      "shape": "Oral Suspension",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Atovaquone",
+      "strength": "750 mg/5 mL",
+      "imprints": [],
+      "shape": "Oral Suspension",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

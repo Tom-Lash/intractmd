@@ -1,0 +1,107 @@
+{
+  "drug_name": "Cariprazine",
+  "generic_name": "cariprazine hydrochloride",
+  "drug_class": "atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Vraylar",
+      "strength": "1.5 mg",
+      "imprints": [
+        "CAR",
+        "1.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 14.2,
+      "manufacturer": "Allergan/Otsuka",
+      "scored": false
+    },
+    {
+      "brand_name": "Vraylar",
+      "strength": "3 mg",
+      "imprints": [
+        "CAR",
+        "3"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 14.2,
+      "manufacturer": "Allergan/Otsuka",
+      "scored": false
+    },
+    {
+      "brand_name": "Vraylar",
+      "strength": "4.5 mg",
+      "imprints": [
+        "CAR",
+        "4.5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "none",
+      "size_mm": 14.2,
+      "manufacturer": "Allergan/Otsuka",
+      "scored": false
+    },
+    {
+      "brand_name": "Vraylar",
+      "strength": "6 mg",
+      "imprints": [
+        "CAR",
+        "6"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "none",
+      "size_mm": 14.2,
+      "manufacturer": "Allergan/Otsuka",
+      "scored": false
+    },
+    {
+      "brand_name": "Cariprazine Generic",
+      "strength": "1.5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 14.2,
+      "manufacturer": "multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Cariprazine Generic",
+      "strength": "3 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 14.2,
+      "manufacturer": "multiple",
+      "scored": false
+    }
+  ]
+}

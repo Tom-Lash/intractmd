@@ -1,0 +1,38 @@
+{
+  "drug_name": "Edaravone",
+  "generic_name": "Edaravone",
+  "drug_class": "Free Radical Scavenger",
+  "variants": [
+    {
+      "brand_name": "Radicava",
+      "strength": "30 mg/3 mL",
+      "imprints": [
+        "None - Injectable Solution"
+      ],
+      "shape": "Liquid",
+      "colors": [
+        "Clear to slightly yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Mitsubishi Tanabe Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Radicava ORS",
+      "strength": "30 mg packet",
+      "imprints": [
+        "None - Oral Solution Packet"
+      ],
+      "shape": "Powder packet",
+      "colors": [
+        "White to off-white"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Mitsubishi Tanabe Pharma",
+      "scored": false
+    }
+  ],
+  "note": "Edaravone is primarily available as an intravenous injection (Radicava) or oral solution (Radicava ORS) in the United States. Oral solid dosage forms (tablets/capsules) of edaravone are not FDA-approved or commercially available in the US market. No pill variants exist for this medication."
+}

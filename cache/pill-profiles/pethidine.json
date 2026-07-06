@@ -1,0 +1,71 @@
+{
+  "drug_name": "Pethidine",
+  "generic_name": "Meperidine Hydrochloride",
+  "drug_class": "Opioid Analgesic",
+  "variants": [
+    {
+      "brand_name": "Demerol",
+      "strength": "50 mg",
+      "imprints": [
+        "DEMEROL",
+        "50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Demerol",
+      "strength": "100 mg",
+      "imprints": [
+        "DEMEROL",
+        "100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Meperidine",
+      "strength": "50 mg",
+      "imprints": [
+        "M",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Meperidine",
+      "strength": "100 mg",
+      "imprints": [
+        "M",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

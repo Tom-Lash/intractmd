@@ -1,0 +1,40 @@
+{
+  "drug_name": "Infigratinib",
+  "generic_name": "infigratinib",
+  "drug_class": "Fibroblast Growth Factor Receptor (FGFR) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Peafowl",
+      "strength": "125 mg",
+      "imprints": [
+        "125"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 20,
+      "manufacturer": "Turning Point Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "Peafowl",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "Hard gelatin",
+      "size_mm": 22,
+      "manufacturer": "Turning Point Therapeutics",
+      "scored": false
+    }
+  ],
+  "note": "Infigratinib (Peafowl) has limited US market availability. Only two main dose variants are commercially available. Additional formulations or generic versions may become available following patent expiration or market expansion."
+}

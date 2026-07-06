@@ -1,0 +1,67 @@
+{
+  "drug_name": "Lorlatinib",
+  "generic_name": "lorlatinib",
+  "drug_class": "Tyrosine kinase inhibitor (ALK inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Lorbrena",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lorbrena",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lorbrena",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lorbrena",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ]
+}

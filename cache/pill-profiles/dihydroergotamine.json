@@ -1,0 +1,47 @@
+{
+  "drug_name": "Dihydroergotamine",
+  "generic_name": "Dihydroergotamine Mesylate",
+  "drug_class": "Ergot Alkaloid Derivative",
+  "variants": [
+    {
+      "brand_name": "D.H.E. 45",
+      "strength": "1 mg/mL",
+      "imprints": [],
+      "shape": "Liquid (Injectable)",
+      "colors": [
+        "Colorless to pale yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Migranal",
+      "strength": "4 mg/mL",
+      "imprints": [],
+      "shape": "Nasal Spray",
+      "colors": [
+        "Colorless"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dihydroergotamine",
+      "strength": "1 mg/mL",
+      "imprints": [],
+      "shape": "Injectable Solution",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Dihydroergotamine is primarily available as parenteral formulations (injection and nasal spray). Oral tablet forms are not commonly manufactured or available in the US market. The variants listed represent the standard pharmaceutical presentations available."
+}

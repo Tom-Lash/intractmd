@@ -1,0 +1,17 @@
+{
+  "drug_name": "Olodaterol",
+  "generic_name": "olodaterol",
+  "drug_class": "Long-acting beta-2 adrenergic agonist (LABA)",
+  "note": "Olodaterol is not available as a standalone oral pill in the US. It is only marketed as an inhalation solution for oral inhalation via the Respimat inhaler device.",
+  "variants": [
+    {
+      "brand_name": "Striverdi Respimat",
+      "strength": "2.5 mcg/actuation",
+      "formulation_type": "inhalation solution",
+      "device": "Respimat soft mist inhaler",
+      "manufacturer": "Boehringer Ingelheim",
+      "container": "60 actuations per cartridge",
+      "note": "No oral tablet form exists in the US market"
+    }
+  ]
+}

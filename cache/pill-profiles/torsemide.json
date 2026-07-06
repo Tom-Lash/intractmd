@@ -1,0 +1,131 @@
+{
+  "drug_name": "Torsemide",
+  "generic_name": "Torsemide",
+  "drug_class": "Loop Diuretic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Demadex",
+      "strength": "5mg",
+      "imprints": [
+        "DEMADEX",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6.5,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Demadex",
+      "strength": "10mg",
+      "imprints": [
+        "DEMADEX",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Demadex",
+      "strength": "20mg",
+      "imprints": [
+        "DEMADEX",
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Demadex",
+      "strength": "100mg",
+      "imprints": [
+        "DEMADEX",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Roche",
+      "scored": false
+    }
+  ]
+}

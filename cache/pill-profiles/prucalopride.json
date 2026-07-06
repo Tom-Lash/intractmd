@@ -1,0 +1,67 @@
+{
+  "drug_name": "Prucalopride",
+  "generic_name": "Prucalopride succinate",
+  "drug_class": "Prokinetic agent / 5-HT4 receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Motegrity",
+      "strength": "1 mg",
+      "imprints": [
+        "P1"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Shire Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Motegrity",
+      "strength": "2 mg",
+      "imprints": [
+        "P2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Shire Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Prucalopride",
+      "strength": "1 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Prucalopride",
+      "strength": "2 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

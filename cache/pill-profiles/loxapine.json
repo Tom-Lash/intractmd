@@ -1,0 +1,86 @@
+{
+  "drug_name": "Loxapine",
+  "generic_name": "Loxapine succinate",
+  "drug_class": "Atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "LOXAPINE 5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Green",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "LOXAPINE 10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "LOXAPINE 25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "LOXAPINE 50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Green",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Adasuve",
+      "strength": "9.1 mg (inhaled)",
+      "imprints": [
+        "ADASUVE"
+      ],
+      "shape": "Powder packet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Naurex",
+      "scored": false
+    }
+  ]
+}

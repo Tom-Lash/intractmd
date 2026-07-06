@@ -1,0 +1,40 @@
+{
+  "drug_name": "Taselisib",
+  "generic_name": "taselisib",
+  "drug_class": "Phosphatidylinositol 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Taselisib",
+      "strength": "4 mg",
+      "imprints": [
+        "GDC",
+        "0276"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Taselisib",
+      "strength": "6 mg",
+      "imprints": [
+        "GDC",
+        "0277"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    }
+  ],
+  "note": "Taselisib has limited US oral formulations. Only 4mg and 6mg tablet strengths are commercially available. The drug was approved by FDA in May 2019 for breast cancer treatment and has restricted distribution through specialty pharmacies."
+}

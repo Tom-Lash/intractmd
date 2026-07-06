@@ -1,0 +1,71 @@
+{
+  "drug_name": "Quinine",
+  "generic_name": "Quinine Sulfate",
+  "drug_class": "Antimalarial, Antiarrhythmic",
+  "variants": [
+    {
+      "brand_name": "Qualaquin",
+      "strength": "324 mg",
+      "imprints": [
+        "QUALAQUIN",
+        "324"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Gray"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Mutual Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Quinine Sulfate",
+      "strength": "200 mg",
+      "imprints": [
+        "QU 200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Quinine Sulfate",
+      "strength": "300 mg",
+      "imprints": [
+        "300",
+        "QU"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Quinine Sulfate",
+      "strength": "325 mg",
+      "imprints": [
+        "325"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

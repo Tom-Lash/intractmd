@@ -1,0 +1,91 @@
+{
+  "drug_name": "Alpelisib",
+  "generic_name": "Alpelisib",
+  "drug_class": "Phosphatidylinositol 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Piqray",
+      "strength": "50 mg",
+      "imprints": [
+        "NVS",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Piqray",
+      "strength": "150 mg",
+      "imprints": [
+        "NVS",
+        "150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 21,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Piqray",
+      "strength": "200 mg",
+      "imprints": [
+        "NVS",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 21,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Piqray",
+      "strength": "250 mg",
+      "imprints": [
+        "NVS",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 21,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Alpelisib",
+      "strength": "50 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple generics available",
+      "scored": false
+    }
+  ]
+}

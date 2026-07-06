@@ -1,0 +1,71 @@
+{
+  "drug_name": "Posaconazole",
+  "generic_name": "posaconazole",
+  "drug_class": "Triazole Antifungal",
+  "variants": [
+    {
+      "brand_name": "Noxafil",
+      "strength": "100 mg",
+      "imprints": [
+        "NOXAFIL",
+        "100 mg"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Noxafil",
+      "strength": "200 mg",
+      "imprints": [
+        "NOXAFIL",
+        "200 mg"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Posaconazole",
+      "strength": "100 mg",
+      "imprints": [
+        "RX",
+        "100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Posaconazole",
+      "strength": "200 mg",
+      "imprints": [
+        "RX",
+        "200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

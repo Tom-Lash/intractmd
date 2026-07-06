@@ -1,0 +1,39 @@
+{
+  "drug_name": "Tolfenamic Acid",
+  "generic_name": "Tolfenamic Acid",
+  "drug_class": "Nonsteroidal Anti-Inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Tolgic",
+      "strength": "200 mg",
+      "imprints": [
+        "Tolgic 200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tolfenamic Acid",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple manufacturers",
+      "scored": true
+    }
+  ],
+  "note": "Tolfenamic Acid has limited availability in the United States. It is not FDA-approved and is rarely marketed in US pharmaceutical markets. Most variants listed represent historical or potential formulations. Current availability should be verified with licensed pharmacies or the FDA drug database. The drug is more commonly available in European markets."
+}

@@ -1,0 +1,100 @@
+{
+  "drug_name": "Trametinib",
+  "generic_name": "Trametinib",
+  "drug_class": "Mitogen-Activated Protein Kinase (MAPK) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Mekinist",
+      "strength": "0.5 mg",
+      "imprints": [
+        "GS",
+        "DBL"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Mekinist",
+      "strength": "1 mg",
+      "imprints": [
+        "GS",
+        "TBL"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Mekinist",
+      "strength": "2 mg",
+      "imprints": [
+        "GS",
+        "J3L"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trametinib",
+      "strength": "0.5 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 5,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trametinib",
+      "strength": "1 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trametinib",
+      "strength": "2 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

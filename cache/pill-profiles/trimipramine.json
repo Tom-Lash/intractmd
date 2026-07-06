@@ -1,0 +1,106 @@
+{
+  "drug_name": "Trimipramine",
+  "generic_name": "Trimipramine Maleate",
+  "drug_class": "Tricyclic Antidepressant",
+  "variants": [
+    {
+      "brand_name": "Surmontil",
+      "strength": "25 mg",
+      "imprints": [
+        "SURMONTIL",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Cornerstone BioPharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Surmontil",
+      "strength": "50 mg",
+      "imprints": [
+        "SURMONTIL",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 20,
+      "manufacturer": "Cornerstone BioPharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Surmontil",
+      "strength": "100 mg",
+      "imprints": [
+        "SURMONTIL",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 22,
+      "manufacturer": "Cornerstone BioPharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "M",
+        "T25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "M",
+        "T50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "M",
+        "T100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "drug_name": "Ceftriaxone",
+  "generic_name": "Ceftriaxone sodium",
+  "drug_class": "Third-generation cephalosporin antibiotic",
+  "note": "Ceftriaxone is primarily available as injectable formulations (IV/IM) and is NOT commonly available as oral pills in the United States. Oral cephalosporins exist (cephalexin, cefdinir, etc.) but ceftriaxone specifically is not formulated as a standard oral tablet or capsule.",
+  "variants": [
+    {
+      "brand_name": "Rocephin",
+      "strength": "250 mg/vial",
+      "formulation": "Injectable powder for reconstitution (IV/IM)",
+      "route": "Intravenous or Intramuscular",
+      "manufacturer": "Roche Pharmaceuticals"
+    },
+    {
+      "brand_name": "Rocephin",
+      "strength": "500 mg/vial",
+      "formulation": "Injectable powder for reconstitution (IV/IM)",
+      "route": "Intravenous or Intramuscular",
+      "manufacturer": "Roche Pharmaceuticals"
+    },
+    {
+      "brand_name": "Rocephin",
+      "strength": "1 g/vial",
+      "formulation": "Injectable powder for reconstitution (IV/IM)",
+      "route": "Intravenous or Intramuscular",
+      "manufacturer": "Roche Pharmaceuticals"
+    },
+    {
+      "brand_name": "Rocephin",
+      "strength": "2 g/vial",
+      "formulation": "Injectable powder for reconstitution (IV/IM)",
+      "route": "Intravenous or Intramuscular",
+      "manufacturer": "Roche Pharmaceuticals"
+    }
+  ],
+  "disclaimer": "Ceftriaxone does not have FDA-approved oral pill/tablet/capsule variants in the US market. All formulations listed are injectable. For oral cephalosporin options, alternative agents like cephalexin or cefdinir should be consulted."
+}

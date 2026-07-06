@@ -1,0 +1,52 @@
+{
+  "drug_name": "Rucaparib",
+  "generic_name": "rucaparib camsylate",
+  "drug_class": "PARP inhibitor",
+  "variants": [
+    {
+      "brand_name": "Rubraca",
+      "strength": "200 mg",
+      "imprints": [
+        "RUC 200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Clovis Oncology",
+      "scored": false
+    },
+    {
+      "brand_name": "Rubraca",
+      "strength": "250 mg",
+      "imprints": [
+        "RUC 250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Clovis Oncology",
+      "scored": false
+    },
+    {
+      "brand_name": "Rubraca",
+      "strength": "500 mg",
+      "imprints": [
+        "RUC 500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Clovis Oncology",
+      "scored": false
+    }
+  ]
+}

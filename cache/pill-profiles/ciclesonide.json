@@ -1,0 +1,33 @@
+{
+  "drug_name": "Ciclesonide",
+  "generic_name": "ciclesonide",
+  "drug_class": "Inhaled Corticosteroid",
+  "note": "Ciclesonide is primarily available as an inhalation aerosol and is not manufactured as oral tablets/pills in the US market",
+  "variants": [
+    {
+      "brand_name": "Alvesco",
+      "strength": "80 mcg/actuation",
+      "form": "Inhalation Aerosol",
+      "imprints": [],
+      "manufacturer": "Cozeall Pharmaceuticals",
+      "package_size": "6.1g canister (120 actuations)"
+    },
+    {
+      "brand_name": "Alvesco",
+      "strength": "160 mcg/actuation",
+      "form": "Inhalation Aerosol",
+      "imprints": [],
+      "manufacturer": "Cozeall Pharmaceuticals",
+      "package_size": "12.6g canister (120 actuations)"
+    },
+    {
+      "brand_name": "Omnaris",
+      "strength": "50 mcg/spray",
+      "form": "Nasal Spray",
+      "imprints": [],
+      "manufacturer": "Naurex (now AstraZeneca)",
+      "package_size": "12.6g bottle (120 sprays)"
+    }
+  ],
+  "availability_note": "Ciclesonide is NOT available as oral tablets/pills in the United States. It is formulated only as inhalation aerosol (Alvesco) for asthma and nasal spray (Omnaris) for allergic rhinitis."
+}

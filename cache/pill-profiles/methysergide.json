@@ -1,0 +1,69 @@
+{
+  "drug_name": "Methysergide",
+  "generic_name": "methysergide maleate",
+  "drug_class": "serotonin antagonist",
+  "variants": [
+    {
+      "brand_name": "Sansert",
+      "strength": "1 mg",
+      "imprints": [
+        "SANSERT",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": true
+    },
+    {
+      "brand_name": "Sansert",
+      "strength": "2 mg",
+      "imprints": [
+        "SANSERT",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Novartis",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "M 71"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        "M 72"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

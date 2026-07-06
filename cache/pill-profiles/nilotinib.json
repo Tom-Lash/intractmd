@@ -1,0 +1,85 @@
+{
+  "drug_name": "Nilotinib",
+  "generic_name": "nilotinib",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tasigna",
+      "strength": "150 mg",
+      "imprints": [
+        "nilotinib 150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tasigna",
+      "strength": "200 mg",
+      "imprints": [
+        "nilotinib 200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "red"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tasigna",
+      "strength": "50 mg",
+      "imprints": [
+        "nilotinib 50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nilotinib",
+      "strength": "150 mg",
+      "imprints": [
+        "NIL 150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "red",
+        "yellow"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Various (Cipla, Lupin, Natco)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nilotinib",
+      "strength": "200 mg",
+      "imprints": [
+        "NIL 200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "red"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Various (Cipla, Lupin, Natco)",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "drug_name": "Lubiprostone",
+  "generic_name": "Lubiprostone",
+  "drug_class": "Chloride Channel Activator",
+  "variants": [
+    {
+      "brand_name": "Amitiza",
+      "strength": "8 mcg",
+      "imprints": [
+        "SB",
+        "8"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Soft gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Amitiza",
+      "strength": "24 mcg",
+      "imprints": [
+        "SB",
+        "24"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Soft gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Takeda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lubiprostone",
+      "strength": "8 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Soft gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Multiple generics",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lubiprostone",
+      "strength": "24 mcg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Soft gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Multiple generics",
+      "scored": false
+    }
+  ]
+}

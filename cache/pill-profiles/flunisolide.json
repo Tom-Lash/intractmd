@@ -1,0 +1,65 @@
+{
+  "drug_name": "Flunisolide",
+  "generic_name": "flunisolide",
+  "drug_class": "Corticosteroid (Intranasal)",
+  "note": "Flunisolide is primarily available as a nasal spray and oral inhaler, not as oral tablets/pills in the US market",
+  "variants": [
+    {
+      "brand_name": "Aerospan HFA",
+      "strength": "80 mcg/actuation",
+      "form": "Oral Inhalation Aerosol",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [
+        "White"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aerospan HFA",
+      "strength": "160 mcg/actuation",
+      "form": "Oral Inhalation Aerosol",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [
+        "White"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Nasalide",
+      "strength": "29 mcg/spray",
+      "form": "Nasal Spray Solution",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Omnaris",
+      "strength": "50 mcg/spray",
+      "form": "Nasal Spray Suspension",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [
+        "White"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Naurex (Allergan)",
+      "scored": false
+    }
+  ],
+  "disclaimer": "Flunisolide is not manufactured as oral pills/tablets in the US. Available forms are inhalers and nasal sprays only."
+}

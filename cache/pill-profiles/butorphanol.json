@@ -1,0 +1,40 @@
+{
+  "drug_name": "Butorphanol",
+  "generic_name": "Butorphanol Tartrate",
+  "drug_class": "Opioid Agonist-Antagonist",
+  "variants": [
+    {
+      "brand_name": "Stadol",
+      "strength": "1 mg/mL",
+      "form": "Injectable Solution",
+      "imprints": [],
+      "manufacturer": "Bristol Myers Squibb",
+      "route": "IV/IM/SC"
+    },
+    {
+      "brand_name": "Stadol",
+      "strength": "2 mg/mL",
+      "form": "Injectable Solution",
+      "imprints": [],
+      "manufacturer": "Bristol Myers Squibb",
+      "route": "IV/IM/SC"
+    },
+    {
+      "brand_name": "Stadol NS",
+      "strength": "1 mg/spray",
+      "form": "Nasal Spray",
+      "imprints": [],
+      "manufacturer": "Bristol Myers Squibb",
+      "route": "Intranasal"
+    },
+    {
+      "brand_name": "Stadol NS",
+      "strength": "2 mg/spray",
+      "form": "Nasal Spray",
+      "imprints": [],
+      "manufacturer": "Bristol Myers Squibb",
+      "route": "Intranasal"
+    }
+  ],
+  "note": "Butorphanol is not available as oral tablets in the US market. FDA-approved formulations are limited to injectable and nasal spray forms only."
+}

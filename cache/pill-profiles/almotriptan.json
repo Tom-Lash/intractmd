@@ -1,0 +1,135 @@
+{
+  "drug_name": "Almotriptan",
+  "generic_name": "Almotriptan Malate",
+  "drug_class": "Triptan (5-HT1B/1D Receptor Agonist)",
+  "variants": [
+    {
+      "brand_name": "Axert",
+      "strength": "6.25 mg",
+      "imprints": [
+        "AXERT",
+        "6.25"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Axert",
+      "strength": "12.5 mg",
+      "imprints": [
+        "AXERT",
+        "12.5"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Light Blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Almotriptan",
+      "strength": "6.25 mg",
+      "imprints": [
+        "APO",
+        "AL6"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Almotriptan",
+      "strength": "12.5 mg",
+      "imprints": [
+        "APO",
+        "AL12"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Almotriptan",
+      "strength": "6.25 mg",
+      "imprints": [
+        "M",
+        "A6"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Almotriptan",
+      "strength": "12.5 mg",
+      "imprints": [
+        "M",
+        "A12"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Almotriptan",
+      "strength": "6.25 mg",
+      "imprints": [
+        "G",
+        "AL6"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Almotriptan",
+      "strength": "12.5 mg",
+      "imprints": [
+        "G",
+        "AL12"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Greenstone",
+      "scored": false
+    }
+  ]
+}

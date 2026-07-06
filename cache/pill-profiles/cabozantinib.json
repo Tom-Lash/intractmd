@@ -1,0 +1,131 @@
+{
+  "drug_name": "Cabozantinib",
+  "generic_name": "cabozantinib",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Cometriq",
+      "strength": "20 mg",
+      "imprints": [
+        "XL184",
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 17.5,
+      "manufacturer": "Exelixis",
+      "scored": false
+    },
+    {
+      "brand_name": "Cometriq",
+      "strength": "80 mg",
+      "imprints": [
+        "XL184",
+        "80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 21.7,
+      "manufacturer": "Exelixis",
+      "scored": false
+    },
+    {
+      "brand_name": "Cabometyx",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Exelixis",
+      "scored": false
+    },
+    {
+      "brand_name": "Cabometyx",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Exelixis",
+      "scored": false
+    },
+    {
+      "brand_name": "Cabometyx",
+      "strength": "60 mg",
+      "imprints": [
+        "60"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 13,
+      "manufacturer": "Exelixis",
+      "scored": false
+    },
+    {
+      "brand_name": "Cabometyx",
+      "strength": "140 mg",
+      "imprints": [
+        "140"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Exelixis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cabozantinib",
+      "strength": "20 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cabozantinib",
+      "strength": "40 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

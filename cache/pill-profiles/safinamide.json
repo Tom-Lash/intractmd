@@ -1,0 +1,37 @@
+{
+  "drug_name": "Safinamide",
+  "generic_name": "Safinamide mesylate",
+  "drug_class": "Monoamine oxidase inhibitor (MAOI)",
+  "variants": [
+    {
+      "brand_name": "Xadago",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Zambon",
+      "scored": false
+    },
+    {
+      "brand_name": "Xadago",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Zambon",
+      "scored": false
+    }
+  ]
+}

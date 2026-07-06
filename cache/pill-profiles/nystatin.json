@@ -1,0 +1,67 @@
+{
+  "drug_name": "Nystatin",
+  "generic_name": "Nystatin",
+  "drug_class": "Antifungal",
+  "variants": [
+    {
+      "brand_name": "Generic Nystatin",
+      "strength": "500,000 units",
+      "imprints": [
+        "NYSTATIN 500000"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nystatin",
+      "strength": "1,000,000 units",
+      "imprints": [
+        "NYSTATIN 1000000"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 11,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Mycostatin",
+      "strength": "500,000 units",
+      "imprints": [
+        "MYCOSTATIN 500000"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Nilstat",
+      "strength": "500,000 units",
+      "imprints": [
+        "NILSTAT"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Lederle",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "drug_name": "Bilastine",
+  "generic_name": "Bilastine",
+  "drug_class": "Second-generation H1-receptor antagonist (antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Ilixa",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Faes Farma",
+      "scored": false
+    }
+  ],
+  "note": "Bilastine (Ilixa) has limited US availability. As of 2024, bilastine is not FDA-approved for marketing in the United States. The drug is approved in Europe and other markets but has not completed the US FDA approval process. Therefore, authentic US pharmaceutical variants cannot be definitively listed. Any bilastine products in the US market would be imported or investigational."
+}

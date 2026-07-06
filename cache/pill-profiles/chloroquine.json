@@ -1,0 +1,71 @@
+{
+  "drug_name": "Chloroquine",
+  "generic_name": "Chloroquine Phosphate",
+  "drug_class": "Antimalarial, Immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Aralen",
+      "strength": "250 mg",
+      "imprints": [
+        "ARALEN",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Aralen",
+      "strength": "500 mg",
+      "imprints": [
+        "ARALEN",
+        "500"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Sanofi",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Chloroquine Phosphate",
+      "strength": "250 mg",
+      "imprints": [
+        "CP",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Chloroquine Phosphate",
+      "strength": "500 mg",
+      "imprints": [
+        "CP",
+        "500"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

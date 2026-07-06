@@ -1,0 +1,35 @@
+{
+  "drug_name": "Aclidinium",
+  "generic_name": "Aclidinium bromide",
+  "drug_class": "Anticholinergic bronchodilator",
+  "variants": [
+    {
+      "brand_name": "Tudorza Pressair",
+      "strength": "400 mcg",
+      "imprints": [],
+      "shape": "Powder inhaler device",
+      "colors": [
+        "White",
+        "Gray"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Forest Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Tudorza Genuair",
+      "strength": "400 mcg",
+      "imprints": [],
+      "shape": "Powder inhaler device",
+      "colors": [
+        "Blue",
+        "Gray"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    }
+  ]
+}

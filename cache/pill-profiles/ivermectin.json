@@ -1,0 +1,84 @@
+{
+  "drug_name": "Ivermectin",
+  "generic_name": "ivermectin",
+  "drug_class": "Antiparasitic Agent",
+  "variants": [
+    {
+      "brand_name": "Stromectol",
+      "strength": "3 mg",
+      "imprints": [
+        "STROMECTOL",
+        "3"
+      ],
+      "shape": "Oblong",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Stromectol",
+      "strength": "6 mg",
+      "imprints": [
+        "STROMECTOL",
+        "6"
+      ],
+      "shape": "Oblong",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Ivermectin",
+      "strength": "3 mg",
+      "imprints": [
+        "3"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Ivermectin",
+      "strength": "6 mg",
+      "imprints": [
+        "6"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Ivermectin",
+      "strength": "12 mg",
+      "imprints": [
+        "12"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

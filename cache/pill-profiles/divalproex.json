@@ -1,0 +1,141 @@
+{
+  "drug_name": "Divalproex",
+  "generic_name": "Divalproex Sodium",
+  "drug_class": "Anticonvulsant/Mood Stabilizer",
+  "variants": [
+    {
+      "brand_name": "Depakote",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote",
+      "strength": "500 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 22,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Divalproex",
+      "strength": "250 mg",
+      "imprints": [
+        "APO",
+        "DVP",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Divalproex",
+      "strength": "500 mg",
+      "imprints": [
+        "WATSON",
+        "DVP",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 22,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote Sprinkle",
+      "strength": "125 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "125"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Colorless"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 14,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Divalproex",
+      "strength": "125 mg",
+      "imprints": [
+        "DVP",
+        "125"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Colorless"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 14,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Divalproex Tablet",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Divalproex Tablet",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

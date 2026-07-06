@@ -1,0 +1,97 @@
+{
+  "drug_name": "Moxonidine",
+  "generic_name": "Moxonidine",
+  "drug_class": "Imidazoline receptor agonist (antihypertensive)",
+  "variants": [
+    {
+      "brand_name": "Physiotens",
+      "strength": "0.2 mg",
+      "imprints": [
+        "0.2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Solvay Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Physiotens",
+      "strength": "0.3 mg",
+      "imprints": [
+        "0.3"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Solvay Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Physiotens",
+      "strength": "0.4 mg",
+      "imprints": [
+        "0.4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Solvay Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxonidine",
+      "strength": "0.2 mg",
+      "imprints": [
+        "M 0.2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxonidine",
+      "strength": "0.3 mg",
+      "imprints": [
+        "M 0.3"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxonidine",
+      "strength": "0.4 mg",
+      "imprints": [
+        "M 0.4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

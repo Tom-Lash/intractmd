@@ -1,0 +1,105 @@
+{
+  "drug_name": "Acetazolamide",
+  "generic_name": "Acetazolamide",
+  "drug_class": "Carbonic Anhydrase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Diamox",
+      "strength": "250 mg",
+      "imprints": [
+        "DIAMOX",
+        "250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Diamox Sequels",
+      "strength": "500 mg",
+      "imprints": [
+        "DIAMOX",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Clear",
+        "White"
+      ],
+      "coating": "Sustained-Release",
+      "size_mm": 21,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acetazolamide",
+      "strength": "125 mg",
+      "imprints": [
+        "APO",
+        "125"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acetazolamide",
+      "strength": "250 mg",
+      "imprints": [
+        "Logo",
+        "250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Mylan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Acetazolamide",
+      "strength": "250 mg",
+      "imprints": [
+        "LEDERLE",
+        "ACETAZOLAMIDE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 11,
+      "manufacturer": "Lederle",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acetazolamide",
+      "strength": "500 mg",
+      "imprints": [
+        "Watson",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Clear",
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 20,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "drug_name": "Lumefantrine",
+  "generic_name": "Lumefantrine",
+  "drug_class": "Antimalarial",
+  "variants": [
+    {
+      "brand_name": "Coartem",
+      "strength": "20mg/120mg (Artemether/Lumefantrine)",
+      "imprints": [
+        "COARTEM"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Coartem",
+      "strength": "20mg/120mg (Artemether/Lumefantrine)",
+      "imprints": [
+        "COARTEM"
+      ],
+      "shape": "Oblong",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 20,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Lumefantrine is primarily available in the United States as a combination drug (Coartem - artemether/lumefantrine). Standalone lumefantrine tablets are not FDA-approved as monotherapy in the US market. The variants listed above represent the main commercial formulations available."
+}

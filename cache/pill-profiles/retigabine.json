@@ -1,0 +1,71 @@
+{
+  "drug_name": "Retigabine",
+  "generic_name": "retigabine",
+  "drug_class": "Potassium channel opener; anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Potiga",
+      "strength": "50 mg",
+      "imprints": [
+        "GD",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Potiga",
+      "strength": "100 mg",
+      "imprints": [
+        "GD",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Potiga",
+      "strength": "200 mg",
+      "imprints": [
+        "GD",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Potiga",
+      "strength": "300 mg",
+      "imprints": [
+        "GD",
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    }
+  ]
+}

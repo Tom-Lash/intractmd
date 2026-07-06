@@ -1,0 +1,35 @@
+{
+  "drug_name": "Revefenacin",
+  "generic_name": "Revefenacin",
+  "drug_class": "Long-acting muscarinic antagonist (LAMA)",
+  "variants": [
+    {
+      "brand_name": "Yupelri",
+      "strength": "175 mcg/3 mL",
+      "imprints": [],
+      "shape": "Solution for inhalation",
+      "colors": [
+        "Clear to slightly yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Mylan Specialty L.P.",
+      "scored": false,
+      "notes": "Single-dose vial, nebulizer solution"
+    },
+    {
+      "brand_name": "Yupelri",
+      "strength": "175 mcg per actuation",
+      "imprints": [],
+      "shape": "Metered-dose inhaler",
+      "colors": [
+        "Clear solution"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Mylan Specialty L.P.",
+      "scored": false,
+      "notes": "Breath-actuated inhaler formulation"
+    }
+  ]
+}

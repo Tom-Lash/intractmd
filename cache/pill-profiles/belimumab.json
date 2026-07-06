@@ -1,0 +1,30 @@
+{
+  "drug_name": "Belimumab",
+  "generic_name": "belimumab",
+  "drug_class": "Monoclonal Antibody (B-lymphocyte stimulator inhibitor)",
+  "note": "Belimumab is a monoclonal antibody administered via intravenous infusion or subcutaneous injection. It is NOT available as an oral pill/tablet formulation in the United States.",
+  "variants": [
+    {
+      "brand_name": "Benlysta (IV)",
+      "strength": "120 mg/vial",
+      "form": "Lyophilized powder for intravenous infusion",
+      "manufacturer": "GlaxoSmithKline",
+      "route": "Intravenous"
+    },
+    {
+      "brand_name": "Benlysta (IV)",
+      "strength": "400 mg/vial",
+      "form": "Lyophilized powder for intravenous infusion",
+      "manufacturer": "GlaxoSmithKline",
+      "route": "Intravenous"
+    },
+    {
+      "brand_name": "Benlysta (SC)",
+      "strength": "200 mg/mL",
+      "form": "Subcutaneous injection solution in prefilled syringe",
+      "manufacturer": "GlaxoSmithKline",
+      "route": "Subcutaneous"
+    }
+  ],
+  "availability_note": "Belimumab is NOT available as oral tablets or capsules. The requested pill variant data cannot be provided as this drug has no pill formulation."
+}

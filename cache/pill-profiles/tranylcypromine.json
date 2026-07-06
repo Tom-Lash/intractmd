@@ -1,0 +1,71 @@
+{
+  "drug_name": "Tranylcypromine",
+  "generic_name": "Tranylcypromine Sulfate",
+  "drug_class": "Monoamine Oxidase Inhibitor (MAOI)",
+  "variants": [
+    {
+      "brand_name": "Parnate",
+      "strength": "10 mg",
+      "imprints": [
+        "SKF",
+        "A70"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tranylcypromine",
+      "strength": "10 mg",
+      "imprints": [
+        "M",
+        "T10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tranylcypromine",
+      "strength": "10 mg",
+      "imprints": [
+        "54",
+        "582"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tranylcypromine",
+      "strength": "10 mg",
+      "imprints": [
+        "TRAN",
+        "10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

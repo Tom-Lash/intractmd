@@ -1,0 +1,58 @@
+{
+  "drug_name": "Chloramphenicol",
+  "generic_name": "Chloramphenicol",
+  "drug_class": "Antibiotic (Phenicol)",
+  "variants": [
+    {
+      "brand_name": "Chloromycetin",
+      "strength": "250 mg",
+      "imprints": [
+        "CHLOROMYCETIN",
+        "250mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Gray",
+        "Yellow"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Parke-Davis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Chloramphenicol",
+      "strength": "250 mg",
+      "imprints": [
+        "C",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Gray",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Chloramphenicol",
+      "strength": "500 mg",
+      "imprints": [
+        "500",
+        "C"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Gray",
+        "Red"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 21,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

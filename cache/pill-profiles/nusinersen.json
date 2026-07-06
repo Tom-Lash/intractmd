@@ -1,0 +1,19 @@
+{
+  "drug_name": "Nusinersen",
+  "generic_name": "nusinersen",
+  "drug_class": "Antisense Oligonucleotide",
+  "note": "Nusinersen is not available as oral pills/tablets. It is exclusively administered as an injectable solution.",
+  "variants": [
+    {
+      "brand_name": "Spinraza",
+      "strength": "12 mg/5 mL",
+      "form": "Intrathecal injection solution",
+      "route": "Intrathecal",
+      "imprints": [
+        "none - injectable"
+      ],
+      "manufacturer": "Biogen",
+      "packaging": "Single-dose vial"
+    }
+  ]
+}

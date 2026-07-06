@@ -1,0 +1,82 @@
+{
+  "drug_name": "Moxifloxacin",
+  "generic_name": "moxifloxacin hydrochloride",
+  "drug_class": "Fluoroquinolone antibiotic",
+  "variants": [
+    {
+      "brand_name": "Avelox",
+      "strength": "400 mg",
+      "imprints": [
+        "400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxifloxacin",
+      "strength": "400 mg",
+      "imprints": [
+        "M400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxifloxacin",
+      "strength": "400 mg",
+      "imprints": [
+        "A400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxifloxacin",
+      "strength": "400 mg",
+      "imprints": [
+        "54 893"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Roxane",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Moxifloxacin",
+      "strength": "400 mg",
+      "imprints": [
+        "MOXIFLOXACIN 400"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

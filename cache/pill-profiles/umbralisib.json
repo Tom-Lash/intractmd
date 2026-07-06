@@ -1,0 +1,41 @@
+{
+  "drug_name": "Umbralisib",
+  "generic_name": "umbralisib",
+  "drug_class": "Phosphoinositide 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Ukoniq",
+      "strength": "100 mg",
+      "imprints": [
+        "TG",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "TG Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "Ukoniq",
+      "strength": "200 mg",
+      "imprints": [
+        "TG",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "TG Therapeutics",
+      "scored": false
+    }
+  ]
+}

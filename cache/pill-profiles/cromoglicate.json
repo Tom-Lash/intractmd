@@ -1,0 +1,41 @@
+{
+  "drug_name": "Cromoglicate",
+  "generic_name": "Cromolyn Sodium",
+  "drug_class": "Mast Cell Stabilizer",
+  "variants": [
+    {
+      "brand_name": "Gastrocrom",
+      "strength": "100 mg",
+      "imprints": [
+        "GASTROCROM",
+        "100mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Bausch Health",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cromolyn Sodium",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Cromoglicate (Cromolyn Sodium) is primarily marketed as oral capsules for systemic use (Gastrocrom) and inhalation solutions/sprays. Oral pill variants are limited in the US market. Inhalation and nasal spray formulations are also available but are not oral tablets/capsules."
+}

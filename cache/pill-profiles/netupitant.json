@@ -1,0 +1,40 @@
+{
+  "drug_name": "Netupitant",
+  "generic_name": "Netupitant",
+  "drug_class": "Substance P/Neurokinin-1 (NK1) Receptor Antagonist",
+  "variants": [
+    {
+      "brand_name": "Akynzeo (combination with palonosetron)",
+      "strength": "300 mg netupitant / 0.5 mg palonosetron",
+      "imprints": [
+        "NP1"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 22,
+      "manufacturer": "Helsinn Healthcare",
+      "scored": false
+    },
+    {
+      "brand_name": "Akynzeo (generic - netupitant/palonosetron)",
+      "strength": "300 mg / 0.5 mg",
+      "imprints": [
+        "Various by manufacturer"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 22,
+      "manufacturer": "Multiple generic manufacturers",
+      "scored": false
+    }
+  ],
+  "note": "Netupitant is primarily marketed and available only in the fixed-dose combination product Akynzeo (netupitant/palonosetron). No single-entity netupitant formulations are currently approved or marketed in the United States. Limited variants exist due to combination drug status."
+}

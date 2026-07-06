@@ -1,0 +1,69 @@
+{
+  "drug_name": "Ebastine",
+  "generic_name": "Ebastine",
+  "drug_class": "Selective H1-receptor antagonist (antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Ebastel",
+      "strength": "10 mg",
+      "imprints": [
+        "EBASTEL",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Almirall",
+      "scored": false
+    },
+    {
+      "brand_name": "Ebastel",
+      "strength": "20 mg",
+      "imprints": [
+        "EBASTEL",
+        "20"
+      ],
+      "shape": "Oblong",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Almirall",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ebastine",
+      "strength": "10 mg",
+      "imprints": [
+        "E10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ebastine",
+      "strength": "20 mg",
+      "imprints": [
+        "E20"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

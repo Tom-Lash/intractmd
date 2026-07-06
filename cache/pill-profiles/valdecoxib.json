@@ -1,0 +1,41 @@
+{
+  "drug_name": "Valdecoxib",
+  "generic_name": "valdecoxib",
+  "drug_class": "COX-2 selective inhibitor (NSAID)",
+  "note": "Valdecoxib (Bextra) was withdrawn from the US market in 2005 due to safety concerns. Limited pill variant data is available from pre-withdrawal period.",
+  "variants": [
+    {
+      "brand_name": "Bextra",
+      "strength": "10 mg",
+      "imprints": [
+        "BEXTRA",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6.5,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Bextra",
+      "strength": "20 mg",
+      "imprints": [
+        "BEXTRA",
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ],
+  "market_status": "Discontinued - Withdrawn from US market September 30, 2005"
+}

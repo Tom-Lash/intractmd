@@ -1,0 +1,41 @@
+{
+  "drug_name": "Opicapone",
+  "generic_name": "opicapone",
+  "drug_class": "Catechol-O-methyltransferase (COMT) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Ongentys",
+      "strength": "25 mg",
+      "imprints": [
+        "OPC",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Neurochem Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Ongentys",
+      "strength": "50 mg",
+      "imprints": [
+        "OPC",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 21,
+      "manufacturer": "Neurochem Pharma",
+      "scored": false
+    }
+  ]
+}

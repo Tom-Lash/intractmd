@@ -1,0 +1,119 @@
+{
+  "drug_name": "Maprotiline",
+  "generic_name": "Maprotiline hydrochloride",
+  "drug_class": "Tetracyclic antidepressant",
+  "variants": [
+    {
+      "brand_name": "Ludiomil",
+      "strength": "10 mg",
+      "imprints": [
+        "LUDIOMIL",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "CIBA",
+      "scored": false
+    },
+    {
+      "brand_name": "Ludiomil",
+      "strength": "25 mg",
+      "imprints": [
+        "LUDIOMIL",
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "CIBA",
+      "scored": false
+    },
+    {
+      "brand_name": "Ludiomil",
+      "strength": "50 mg",
+      "imprints": [
+        "LUDIOMIL",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "CIBA",
+      "scored": false
+    },
+    {
+      "brand_name": "Ludiomil",
+      "strength": "75 mg",
+      "imprints": [
+        "LUDIOMIL",
+        "75"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "CIBA",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "MP",
+        "25"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8.5,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "MP",
+        "50"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9.5,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "MP",
+        "75"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 10.5,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

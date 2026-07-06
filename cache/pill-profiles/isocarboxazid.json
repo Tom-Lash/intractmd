@@ -1,0 +1,55 @@
+{
+  "drug_name": "Isocarboxazid",
+  "generic_name": "Isocarboxazid",
+  "drug_class": "Monoamine Oxidase Inhibitor (MAOI)",
+  "variants": [
+    {
+      "brand_name": "Marplan",
+      "strength": "10 mg",
+      "imprints": [
+        "MARPLAN",
+        "10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Oxford Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Isocarboxazid",
+      "strength": "10 mg",
+      "imprints": [
+        "54",
+        "092"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Isocarboxazid",
+      "strength": "10 mg",
+      "imprints": [
+        "WATSON",
+        "657"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7.5,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

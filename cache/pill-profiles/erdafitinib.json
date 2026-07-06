@@ -1,0 +1,52 @@
+{
+  "drug_name": "Erdafitinib",
+  "generic_name": "erdafitinib",
+  "drug_class": "Fibroblast Growth Factor Receptor (FGFR) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Balversa",
+      "strength": "3 mg",
+      "imprints": [
+        "BLV 3"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Balversa",
+      "strength": "4 mg",
+      "imprints": [
+        "BLV 4"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Balversa",
+      "strength": "5 mg",
+      "imprints": [
+        "BLV 5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

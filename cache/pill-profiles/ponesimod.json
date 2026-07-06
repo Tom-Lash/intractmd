@@ -1,0 +1,97 @@
+{
+  "drug_name": "Ponesimod",
+  "generic_name": "ponesimod",
+  "drug_class": "Sphingosine 1-phosphate receptor modulator",
+  "variants": [
+    {
+      "brand_name": "Ponvory",
+      "strength": "2 mg",
+      "imprints": [
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6.5,
+      "manufacturer": "Celltrion",
+      "scored": false
+    },
+    {
+      "brand_name": "Ponvory",
+      "strength": "3 mg",
+      "imprints": [
+        "3"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Celltrion",
+      "scored": false
+    },
+    {
+      "brand_name": "Ponvory",
+      "strength": "4 mg",
+      "imprints": [
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Celltrion",
+      "scored": false
+    },
+    {
+      "brand_name": "Ponvory",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Celltrion",
+      "scored": false
+    },
+    {
+      "brand_name": "Ponvory",
+      "strength": "7 mg",
+      "imprints": [
+        "7"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Celltrion",
+      "scored": false
+    },
+    {
+      "brand_name": "Ponvory",
+      "strength": "8 mg",
+      "imprints": [
+        "8"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Celltrion",
+      "scored": false
+    }
+  ]
+}

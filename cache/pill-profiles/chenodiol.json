@@ -1,0 +1,39 @@
+{
+  "drug_name": "Chenodiol",
+  "generic_name": "chenodeoxycholic acid",
+  "drug_class": "bile acid",
+  "variants": [
+    {
+      "brand_name": "Chenodal",
+      "strength": "250 mg",
+      "imprints": [
+        "CHENODAL",
+        "250 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Ask Pharm",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Chenodiol",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

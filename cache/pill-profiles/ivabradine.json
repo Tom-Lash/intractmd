@@ -1,0 +1,67 @@
+{
+  "drug_name": "Ivabradine",
+  "generic_name": "Ivabradine hydrochloride",
+  "drug_class": "Cardiac pacemaker current inhibitor",
+  "variants": [
+    {
+      "brand_name": "Corlanor",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Servier",
+      "scored": false
+    },
+    {
+      "brand_name": "Corlanor",
+      "strength": "7.5 mg",
+      "imprints": [
+        "7.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Servier",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ivabradine",
+      "strength": "5 mg",
+      "imprints": [
+        "I5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ivabradine",
+      "strength": "7.5 mg",
+      "imprints": [
+        "I7.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

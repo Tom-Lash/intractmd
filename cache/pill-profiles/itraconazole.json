@@ -1,0 +1,88 @@
+{
+  "drug_name": "Itraconazole",
+  "generic_name": "Itraconazole",
+  "drug_class": "Azole Antifungal",
+  "variants": [
+    {
+      "brand_name": "Sporanox",
+      "strength": "100 mg",
+      "imprints": [
+        "JANSSEN",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Itraconazole",
+      "strength": "100 mg",
+      "imprints": [
+        "ITC 100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Itraconazole",
+      "strength": "200 mg",
+      "imprints": [
+        "ITC 200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Tolsura",
+      "strength": "65 mg",
+      "imprints": [
+        "TOLSURA",
+        "65"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 15,
+      "manufacturer": "Mayland",
+      "scored": false
+    },
+    {
+      "brand_name": "Tolsura",
+      "strength": "130 mg",
+      "imprints": [
+        "TOLSURA",
+        "130"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 17,
+      "manufacturer": "Mayland",
+      "scored": false
+    }
+  ]
+}

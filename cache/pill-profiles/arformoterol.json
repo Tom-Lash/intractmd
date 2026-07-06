@@ -1,0 +1,34 @@
+{
+  "drug_name": "Arformoterol",
+  "generic_name": "Arformoterol tartrate",
+  "drug_class": "Long-acting beta-2 adrenergic agonist (LABA)",
+  "variants": [
+    {
+      "brand_name": "Brovana",
+      "strength": "15 mcg/2 mL",
+      "imprints": [],
+      "shape": "Solution for inhalation",
+      "colors": [
+        "Colorless to slightly yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Sunovion Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Arformoterol",
+      "strength": "15 mcg/2 mL",
+      "imprints": [],
+      "shape": "Solution for inhalation",
+      "colors": [
+        "Colorless to slightly yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Arformoterol is primarily available as an inhalation solution (nebulizer formulation) in the US. It is NOT available as oral tablets or capsules. No pill variants exist for this medication."
+}

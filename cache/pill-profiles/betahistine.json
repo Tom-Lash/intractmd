@@ -1,0 +1,84 @@
+{
+  "drug_name": "Betahistine",
+  "generic_name": "Betahistine dihydrochloride",
+  "drug_class": "Histamine analogue",
+  "variants": [
+    {
+      "brand_name": "Serc",
+      "strength": "8 mg",
+      "imprints": [
+        "SERC",
+        "8"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Solvay Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Serc",
+      "strength": "16 mg",
+      "imprints": [
+        "SERC",
+        "16"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Solvay Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betahistine",
+      "strength": "8 mg",
+      "imprints": [
+        "BH8"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betahistine",
+      "strength": "16 mg",
+      "imprints": [
+        "BH16"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Betahistine",
+      "strength": "24 mg",
+      "imprints": [
+        "BH24"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

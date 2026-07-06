@@ -1,0 +1,38 @@
+{
+  "drug_name": "Teneligliptin",
+  "generic_name": "Teneligliptin hydrobromide",
+  "drug_class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tenelia",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    },
+    {
+      "brand_name": "Tenelia",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Daiichi Sankyo",
+      "scored": false
+    }
+  ],
+  "note": "Teneligliptin has limited FDA approval in the United States. The variants listed represent the primary commercially available formulations. As of current data, US availability is restricted compared to other markets, particularly in Japan and Asia where it is more widely distributed."
+}

@@ -1,0 +1,56 @@
+{
+  "drug_name": "Tianeptine",
+  "generic_name": "Tianeptine",
+  "drug_class": "Atypical Antidepressant",
+  "variants": [
+    {
+      "brand_name": "Stablon",
+      "strength": "12.5 mg",
+      "imprints": [
+        "STABLON",
+        "12.5"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Servier",
+      "scored": false
+    },
+    {
+      "brand_name": "Stablon",
+      "strength": "25 mg",
+      "imprints": [
+        "STABLON",
+        "25"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Servier",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tianeptine",
+      "strength": "12.5 mg",
+      "imprints": [
+        "TIA",
+        "12.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Tianeptine is not FDA-approved in the United States. The variants listed represent international formulations. No legitimate US pharmaceutical variants currently exist in regulated markets. Tianeptine is available in some US states as a dietary supplement or through unregulated channels, but these are not pharmaceutical-grade products with standardized characteristics."
+}

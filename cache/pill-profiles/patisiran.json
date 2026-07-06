@@ -1,0 +1,22 @@
+{
+  "drug_name": "Patisiran",
+  "generic_name": "patisiran",
+  "drug_class": "RNAi therapeutic (small interfering RNA)",
+  "variants": [
+    {
+      "brand_name": "Onpattro",
+      "strength": "0.3 mg/mL intravenous infusion",
+      "imprints": [],
+      "shape": "liquid infusion",
+      "colors": [
+        "clear to translucent"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Ionis Pharmaceuticals/Akcea Therapeutics",
+      "scored": false,
+      "notes": "Single-dose vial formulation, not an oral pill"
+    }
+  ],
+  "note": "Patisiran (Onpattro) is exclusively formulated as an intravenous infusion solution and does not have any oral pill or tablet variants available in the United States. It is administered as a diluted infusion in glucose solution and is not available in solid dosage forms."
+}

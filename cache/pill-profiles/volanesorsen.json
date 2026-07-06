@@ -1,0 +1,21 @@
+{
+  "drug_name": "Volanesorsen",
+  "generic_name": "volanesorsen sodium",
+  "drug_class": "Antisense oligonucleotide",
+  "variants": [
+    {
+      "brand_name": "Waylivra",
+      "strength": "285 mg/1.5 mL",
+      "imprints": [],
+      "shape": "Prefilled syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Ionis Pharmaceuticals/Akcea Therapeutics",
+      "scored": false
+    }
+  ],
+  "note": "Volanesorsen (Waylivra) is administered as a subcutaneous injection only. It is not available as an oral tablet or pill in any dosage form. The drug is supplied exclusively as a prefilled syringe for weekly subcutaneous self-administration. No pill variants exist in the US market."
+}

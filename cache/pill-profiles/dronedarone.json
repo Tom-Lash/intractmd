@@ -1,0 +1,87 @@
+{
+  "drug_name": "Dronedarone",
+  "generic_name": "dronedarone hydrochloride",
+  "drug_class": "Antiarrhythmic Agent (Class III)",
+  "variants": [
+    {
+      "brand_name": "Multaq",
+      "strength": "400 mg",
+      "imprints": [
+        "MULTAQ",
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dronedarone",
+      "strength": "400 mg",
+      "imprints": [
+        "DR",
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Various (Teva, Mylan, Actavis)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dronedarone",
+      "strength": "400 mg",
+      "imprints": [
+        "G",
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dronedarone",
+      "strength": "400 mg",
+      "imprints": [
+        "A",
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Actavis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dronedarone",
+      "strength": "400 mg",
+      "imprints": [
+        "M",
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "drug_name": "Lumasiran",
+  "generic_name": "lumasiran",
+  "drug_class": "RNAi therapeutic (small interfering RNA)",
+  "variants": [
+    {
+      "brand_name": "Oxlumo",
+      "strength": "94.5 mg/0.5 mL injection",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Alnylam Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Lumasiran (Oxlumo) is formulated as a subcutaneous injection solution, not as oral tablets or pills. No pill variants exist in the US market. The drug is administered as an injectable therapeutic for primary hyperoxaluria type 1 (PH1)."
+}

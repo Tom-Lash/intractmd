@@ -1,0 +1,71 @@
+{
+  "drug_name": "Tinidazole",
+  "generic_name": "tinidazole",
+  "drug_class": "Antiprotozoal/Antimicrobial",
+  "variants": [
+    {
+      "brand_name": "Tindamax",
+      "strength": "250 mg",
+      "imprints": [
+        "TINDAMAX",
+        "250"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 15,
+      "manufacturer": "Prelis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Tindamax",
+      "strength": "500 mg",
+      "imprints": [
+        "TINDAMAX",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Prelis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tinidazole",
+      "strength": "250 mg",
+      "imprints": [
+        "G",
+        "250"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tinidazole",
+      "strength": "500 mg",
+      "imprints": [
+        "G",
+        "500"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "drug_name": "Rifaximin",
+  "generic_name": "rifaximin",
+  "drug_class": "Antibiotic (non-systemic)",
+  "variants": [
+    {
+      "brand_name": "Xifaxan",
+      "strength": "200 mg",
+      "imprints": [
+        "XIFAXAN",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Salix Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Xifaxan",
+      "strength": "550 mg",
+      "imprints": [
+        "XIFAXAN",
+        "550"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Salix Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rifaximin",
+      "strength": "200 mg",
+      "imprints": [
+        "RI",
+        "200"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rifaximin",
+      "strength": "550 mg",
+      "imprints": [
+        "RI",
+        "550"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rifaximin",
+      "strength": "550 mg",
+      "imprints": [
+        "RIF",
+        "550"
+      ],
+      "shape": "oval",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "drug_name": "Agomelatine",
+  "generic_name": "Agomelatine",
+  "drug_class": "Melatonergic antidepressant",
+  "variants": [
+    {
+      "brand_name": "Valdoxan",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Servier",
+      "scored": false
+    },
+    {
+      "brand_name": "Valdoxan",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Servier",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "AGO 25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "AGO 50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "drug_name": "Melatonin",
+  "generic_name": "Melatonin",
+  "drug_class": "Melatonin Receptor Agonist",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "3 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Round",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Round",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Round",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Natrol",
+      "strength": "3 mg",
+      "imprints": [
+        "Natrol"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Natrol Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Nature Made",
+      "strength": "5 mg",
+      "imprints": [
+        "NM"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Pharmavite",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 5,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

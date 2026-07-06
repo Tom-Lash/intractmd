@@ -1,0 +1,37 @@
+{
+  "drug_name": "Obeticholic Acid",
+  "generic_name": "obeticholic acid",
+  "drug_class": "Farnesoid X receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Ocaliva",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Intercept Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Ocaliva",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Intercept Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

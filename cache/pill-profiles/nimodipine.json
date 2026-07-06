@@ -1,0 +1,72 @@
+{
+  "drug_name": "Nimodipine",
+  "generic_name": "Nimodipine",
+  "drug_class": "Calcium Channel Blocker",
+  "variants": [
+    {
+      "brand_name": "Nimotop",
+      "strength": "30 mg",
+      "imprints": [
+        "NIMOTOP",
+        "30"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 15,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nimodipine",
+      "strength": "30 mg",
+      "imprints": [
+        "N30"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 15,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nimodipine",
+      "strength": "30 mg",
+      "imprints": [
+        "M30"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 15,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Nimodipine",
+      "strength": "30 mg",
+      "imprints": [
+        "A30"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Yellow",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 15,
+      "manufacturer": "Actavis",
+      "scored": false
+    }
+  ]
+}

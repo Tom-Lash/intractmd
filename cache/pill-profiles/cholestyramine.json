@@ -1,0 +1,67 @@
+{
+  "drug_name": "Cholestyramine",
+  "generic_name": "Cholestyramine Resin",
+  "drug_class": "Bile Acid Sequestrant",
+  "variants": [
+    {
+      "brand_name": "Questran",
+      "strength": "4g powder packet",
+      "imprints": [
+        "QUESTRAN"
+      ],
+      "shape": "powder",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Questran Light",
+      "strength": "4g powder packet",
+      "imprints": [
+        "QUESTRAN LIGHT"
+      ],
+      "shape": "powder",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cholestyramine",
+      "strength": "4g powder packet",
+      "imprints": [
+        "CHOLESTYRAMINE"
+      ],
+      "shape": "powder",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Prevalite",
+      "strength": "4g powder packet",
+      "imprints": [
+        "PREVALITE"
+      ],
+      "shape": "powder",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Upsher-Smith",
+      "scored": false
+    }
+  ]
+}

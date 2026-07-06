@@ -1,0 +1,58 @@
+{
+  "drug_name": "Vorinostat",
+  "generic_name": "vorinostat",
+  "drug_class": "Histone Deacetylase (HDAC) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zolinza",
+      "strength": "100 mg",
+      "imprints": [
+        "ZOLINZA",
+        "100 mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vorinostat",
+      "strength": "100 mg",
+      "imprints": [
+        "V",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Various (Cipla, Natco, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vorinostat",
+      "strength": "100 mg",
+      "imprints": [
+        "VORINOSTAT",
+        "100 MG"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    }
+  ]
+}

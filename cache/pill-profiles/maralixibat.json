@@ -1,0 +1,42 @@
+{
+  "drug_name": "Maralixibat",
+  "generic_name": "maralixibat",
+  "drug_class": "Ileal Bile Acid Transporter (IBAT) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Livmarli",
+      "strength": "0.75 mg",
+      "imprints": [
+        "ALBIREO",
+        "0.75"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Capsule",
+      "size_mm": 18.8,
+      "manufacturer": "Albireo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Livmarli",
+      "strength": "1.2 mg",
+      "imprints": [
+        "ALBIREO",
+        "1.2"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Capsule",
+      "size_mm": 19.4,
+      "manufacturer": "Albireo Pharma",
+      "scored": false
+    }
+  ],
+  "note": "Maralixibat (Livmarli) is available in limited oral formulations. Only 2 approved capsule strengths currently available in the US market as of 2024. Additional variants may exist in clinical development or international markets."
+}

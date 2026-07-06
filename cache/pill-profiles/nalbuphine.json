@@ -1,0 +1,23 @@
+{
+  "drug_name": "Nalbuphine",
+  "generic_name": "nalbuphine hydrochloride",
+  "drug_class": "opioid agonist-antagonist analgesic",
+  "note": "Nalbuphine is primarily available as an injectable solution (IV, IM, SC). Oral tablet formulations are not standard US pharmaceutical products. The drug is not commonly manufactured as oral pills in the United States market.",
+  "variants": [
+    {
+      "brand_name": "Nubain (Injectable)",
+      "strength": "10 mg/mL",
+      "formulation": "Injectable Solution",
+      "route": "IV/IM/SC",
+      "manufacturer": "Endo Pharmaceuticals"
+    },
+    {
+      "brand_name": "Nubain (Injectable)",
+      "strength": "20 mg/mL",
+      "formulation": "Injectable Solution",
+      "route": "IV/IM/SC",
+      "manufacturer": "Endo Pharmaceuticals"
+    }
+  ],
+  "availability_note": "No FDA-approved oral tablet formulations of nalbuphine exist in the current US market. Nalbuphine is exclusively available as parenteral injections for hospital and clinical use."
+}

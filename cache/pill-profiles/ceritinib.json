@@ -1,0 +1,71 @@
+{
+  "drug_name": "Ceritinib",
+  "generic_name": "ceritinib",
+  "drug_class": "Anaplastic lymphoma kinase (ALK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zykadia",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "none",
+      "size_mm": 22,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Zykadia",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Zykadia",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Zykadia",
+      "strength": "250 mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "none",
+      "size_mm": 24,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ]
+}

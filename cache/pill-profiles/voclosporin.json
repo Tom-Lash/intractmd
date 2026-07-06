@@ -1,0 +1,41 @@
+{
+  "drug_name": "Voclosporin",
+  "generic_name": "voclosporin",
+  "drug_class": "Calcineurin inhibitor immunosuppressant",
+  "variants": [
+    {
+      "brand_name": "Lupkynis",
+      "strength": "7.7 mg",
+      "imprints": [
+        "LupkyNIS",
+        "7.7mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Aurinia Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Lupkynis",
+      "strength": "1.9 mg",
+      "imprints": [
+        "LupkyNIS",
+        "1.9mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Aurinia Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

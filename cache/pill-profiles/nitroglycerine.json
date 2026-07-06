@@ -1,0 +1,130 @@
+{
+  "drug_name": "Nitroglycerin",
+  "generic_name": "Nitroglycerin",
+  "drug_class": "Nitrate vasodilator",
+  "variants": [
+    {
+      "brand_name": "Nitrostat",
+      "strength": "0.3 mg",
+      "imprints": [
+        "NITROSTAT",
+        "0.3"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Pfizer",
+      "scored": true
+    },
+    {
+      "brand_name": "Nitrostat",
+      "strength": "0.6 mg",
+      "imprints": [
+        "NITROSTAT",
+        "0.6"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.3 mg",
+      "imprints": [
+        "GG 225"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Sandoz",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.6 mg",
+      "imprints": [
+        "GG 226"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Sandoz",
+      "scored": true
+    },
+    {
+      "brand_name": "Minitran",
+      "strength": "0.3 mg/hr",
+      "imprints": [
+        "MINITRAN"
+      ],
+      "shape": "Transdermal patch",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "Transdermal",
+      "size_mm": 10,
+      "manufacturer": "3M",
+      "scored": false
+    },
+    {
+      "brand_name": "Transderm-Nitro",
+      "strength": "0.2 mg/hr",
+      "imprints": [
+        "TRANSDERM-NITRO"
+      ],
+      "shape": "Transdermal patch",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "Transdermal",
+      "size_mm": 5,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Isordil",
+      "strength": "5 mg",
+      "imprints": [
+        "ISORDIL",
+        "5"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Wyeth",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.4 mg",
+      "imprints": [
+        "GG 227"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Sandoz",
+      "scored": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "drug_name": "Omarigliptin",
+  "generic_name": "Omarigliptin",
+  "drug_class": "Dipeptidyl Peptidase-4 (DPP-4) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Marizev",
+      "strength": "25 mg",
+      "imprints": [
+        "MRZ",
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    }
+  ],
+  "note": "Omarigliptin (Marizev) has limited US market availability. Only one strength (25 mg) is currently approved and marketed in the United States. Additional variants may exist in other markets or may have been discontinued. This database reflects information current to early 2024."
+}

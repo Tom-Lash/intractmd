@@ -1,0 +1,71 @@
+{
+  "drug_name": "Lemborexant",
+  "generic_name": "Lemborexant",
+  "drug_class": "Orexin Receptor Antagonist",
+  "variants": [
+    {
+      "brand_name": "Dayvigo",
+      "strength": "5 mg",
+      "imprints": [
+        "DV",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.8,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Dayvigo",
+      "strength": "10 mg",
+      "imprints": [
+        "DV",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8.9,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Lemborexant Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "LEM",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Lemborexant Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "LEM",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8.9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

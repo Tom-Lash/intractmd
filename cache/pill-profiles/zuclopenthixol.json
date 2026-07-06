@@ -1,0 +1,56 @@
+{
+  "drug_name": "Zuclopenthixol",
+  "generic_name": "Zuclopenthixol",
+  "drug_class": "Thioxanthene Antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Clopixol",
+      "strength": "2 mg",
+      "imprints": [
+        "Clopixol",
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Clopixol",
+      "strength": "10 mg",
+      "imprints": [
+        "Clopixol",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Brown"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Clopixol",
+      "strength": "25 mg",
+      "imprints": [
+        "Clopixol",
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    }
+  ],
+  "note": "Zuclopenthixol has limited availability in the United States. It is not FDA-approved and is primarily available in European and other international markets. The variants listed are based on formulations available outside the US. Availability in the US market is minimal to non-existent through standard pharmaceutical channels."
+}

@@ -1,0 +1,92 @@
+{
+  "drug_name": "Ethosuximide",
+  "generic_name": "Ethosuximide",
+  "drug_class": "Succinimide (Anticonvulsant)",
+  "variants": [
+    {
+      "brand_name": "Zarontin",
+      "strength": "250 mg",
+      "imprints": [
+        "ZARONTIN",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ethosuximide",
+      "strength": "250 mg",
+      "imprints": [
+        "ETH",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ethosuximide",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "E250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ethosuximide",
+      "strength": "250 mg",
+      "imprints": [
+        "WATSON",
+        "251"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Pink",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ethosuximide",
+      "strength": "250 mg",
+      "imprints": [
+        "PUREPAC",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Purepac Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

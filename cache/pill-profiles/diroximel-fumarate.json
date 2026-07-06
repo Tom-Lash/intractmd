@@ -1,0 +1,41 @@
+{
+  "drug_name": "Diroximel Fumarate",
+  "generic_name": "Diroximel Fumarate",
+  "drug_class": "Immunomodulator (Fumarate)",
+  "variants": [
+    {
+      "brand_name": "Vumerity",
+      "strength": "231 mg",
+      "imprints": [
+        "BG",
+        "231"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Enteric-coated pellets",
+      "size_mm": 20,
+      "manufacturer": "Biogen",
+      "scored": false
+    },
+    {
+      "brand_name": "Vumerity",
+      "strength": "462 mg",
+      "imprints": [
+        "BG",
+        "462"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Enteric-coated pellets",
+      "size_mm": 22,
+      "manufacturer": "Biogen",
+      "scored": false
+    }
+  ]
+}

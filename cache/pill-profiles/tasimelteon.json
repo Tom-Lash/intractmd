@@ -1,0 +1,57 @@
+{
+  "drug_name": "Tasimelteon",
+  "generic_name": "Tasimelteon",
+  "drug_class": "Melatonin Receptor Agonist",
+  "variants": [
+    {
+      "brand_name": "Hetlioz",
+      "strength": "20 mg",
+      "imprints": [
+        "HETLIOZ",
+        "20"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Vanda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Hetlioz HP",
+      "strength": "20 mg",
+      "imprints": [
+        "HETLIOZ",
+        "HP"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Colorless",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Vanda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tasimelteon",
+      "strength": "20 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

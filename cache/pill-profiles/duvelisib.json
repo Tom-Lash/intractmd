@@ -1,0 +1,58 @@
+{
+  "drug_name": "Duvelisib",
+  "generic_name": "duvelisib",
+  "drug_class": "Phosphoinositide 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Copiktra",
+      "strength": "15 mg",
+      "imprints": [
+        "GILEAD",
+        "15"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Copiktra",
+      "strength": "25 mg",
+      "imprints": [
+        "GILEAD",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Copiktra",
+      "strength": "5 mg",
+      "imprints": [
+        "GILEAD",
+        "5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Gray"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Gilead Sciences",
+      "scored": false
+    }
+  ]
+}

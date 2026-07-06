@@ -1,0 +1,57 @@
+{
+  "drug_name": "Isavuconazole",
+  "generic_name": "isavuconazole",
+  "drug_class": "Azole antifungal",
+  "variants": [
+    {
+      "brand_name": "Cresemba",
+      "strength": "100 mg",
+      "imprints": [
+        "CRESEMBA",
+        "100 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "gelatin",
+      "size_mm": 19,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Cresemba",
+      "strength": "50 mg",
+      "imprints": [
+        "CRESEMBA",
+        "50 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin",
+      "size_mm": 18,
+      "manufacturer": "Astellas Pharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Isavuconazole",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "gelatin",
+      "size_mm": 19,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "drug_name": "Thioridazine",
+  "generic_name": "Thioridazine",
+  "drug_class": "Typical Antipsychotic (Phenothiazine)",
+  "variants": [
+    {
+      "brand_name": "Mellaril",
+      "strength": "10 mg",
+      "imprints": [
+        "MELLARIL",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Mellaril",
+      "strength": "25 mg",
+      "imprints": [
+        "MELLARIL",
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Mellaril",
+      "strength": "50 mg",
+      "imprints": [
+        "MELLARIL",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Green"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Mellaril",
+      "strength": "100 mg",
+      "imprints": [
+        "MELLARIL",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thioridazine",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thioridazine",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thioridazine",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thioridazine",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

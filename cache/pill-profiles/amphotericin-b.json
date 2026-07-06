@@ -1,0 +1,44 @@
+{
+  "drug_name": "Amphotericin B",
+  "generic_name": "amphotericin B",
+  "drug_class": "Antifungal",
+  "note": "Amphotericin B is primarily available as intravenous and topical formulations, not oral pills",
+  "variants": [
+    {
+      "brand_name": "Fungizone (IV)",
+      "strength": "50 mg/vial",
+      "formulation": "Intravenous injection",
+      "manufacturer": "Bristol-Myers Squibb",
+      "route": "IV"
+    },
+    {
+      "brand_name": "AmBisome",
+      "strength": "50 mg/vial",
+      "formulation": "Liposomal IV injection",
+      "manufacturer": "Gilead Sciences",
+      "route": "IV"
+    },
+    {
+      "brand_name": "Abelcet",
+      "strength": "100 mg/20 mL",
+      "formulation": "Lipid complex IV injection",
+      "manufacturer": "Sigma-Tau",
+      "route": "IV"
+    },
+    {
+      "brand_name": "Amphotericin B (Generic)",
+      "strength": "50 mg/vial",
+      "formulation": "IV powder for injection",
+      "manufacturer": "Multiple",
+      "route": "IV"
+    },
+    {
+      "brand_name": "Fungizone Cream/Lotion",
+      "strength": "3%",
+      "formulation": "Topical cream/lotion",
+      "manufacturer": "Bristol-Myers Squibb",
+      "route": "Topical"
+    }
+  ],
+  "disclaimer": "Amphotericin B does not have oral pill formulations in the US market. Available forms are IV injections (conventional, liposomal, lipid complex) and topical preparations."
+}

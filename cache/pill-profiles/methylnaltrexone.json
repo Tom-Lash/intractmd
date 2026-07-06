@@ -1,0 +1,71 @@
+{
+  "drug_name": "Methylnaltrexone",
+  "generic_name": "methylnaltrexone bromide",
+  "drug_class": "Opioid antagonist",
+  "variants": [
+    {
+      "brand_name": "Relistor",
+      "strength": "12 mg",
+      "imprints": [
+        "12"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Relistor",
+      "strength": "8 mg",
+      "imprints": [
+        "8"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Methylnaltrexone",
+      "strength": "12 mg",
+      "imprints": [
+        "M12"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Methylnaltrexone",
+      "strength": "8 mg",
+      "imprints": [
+        "M8"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

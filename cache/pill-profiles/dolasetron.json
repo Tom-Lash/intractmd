@@ -1,0 +1,69 @@
+{
+  "drug_name": "Dolasetron",
+  "generic_name": "Dolasetron mesylate",
+  "drug_class": "5-HT3 receptor antagonist (antiemetic)",
+  "variants": [
+    {
+      "brand_name": "Anzemet",
+      "strength": "50 mg",
+      "imprints": [
+        "ANZEMET",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Hospira",
+      "scored": false
+    },
+    {
+      "brand_name": "Anzemet",
+      "strength": "100 mg",
+      "imprints": [
+        "ANZEMET",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Hospira",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dolasetron",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dolasetron",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

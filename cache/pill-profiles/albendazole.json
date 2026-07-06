@@ -1,0 +1,83 @@
+{
+  "drug_name": "Albendazole",
+  "generic_name": "albendazole",
+  "drug_class": "Anthelmintic",
+  "variants": [
+    {
+      "brand_name": "Albenza",
+      "strength": "200mg",
+      "imprints": [
+        "ALBENZA",
+        "200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "GSK (GlaxoSmithKline)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Albendazole",
+      "strength": "200mg",
+      "imprints": [
+        "ALB 200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 13,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Albendazole",
+      "strength": "400mg",
+      "imprints": [
+        "ALB 400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Albendazole",
+      "strength": "200mg",
+      "imprints": [
+        "A 200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Albendazole",
+      "strength": "400mg",
+      "imprints": [
+        "A 400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

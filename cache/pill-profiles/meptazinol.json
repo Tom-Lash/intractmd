@@ -1,0 +1,24 @@
+{
+  "drug_name": "Meptazinol",
+  "generic_name": "meptazinol hydrochloride",
+  "drug_class": "Analgesic (Mixed opioid agonist-antagonist)",
+  "variants": [
+    {
+      "brand_name": "Meptazinol",
+      "strength": "200 mg",
+      "imprints": [
+        "MEPTAZINOL 200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Meptazinol is not currently approved or marketed in the United States. It is available in select international markets (particularly UK, Europe, and Asia). No valid US pill variants exist in current pharmaceutical databases. The variant listed above represents the primary formulation available outside the US for reference purposes only."
+}

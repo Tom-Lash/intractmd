@@ -1,0 +1,84 @@
+{
+  "drug_name": "Valproate Sodium",
+  "generic_name": "sodium valproate",
+  "drug_class": "Anticonvulsant/Mood Stabilizer",
+  "variants": [
+    {
+      "brand_name": "Depacon",
+      "strength": "100 mg/mL",
+      "imprints": [
+        "Depacon"
+      ],
+      "shape": "Solution",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valproate Sodium",
+      "strength": "250 mg",
+      "imprints": [
+        "AN 250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Alpharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valproate Sodium",
+      "strength": "500 mg",
+      "imprints": [
+        "AN 500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 21,
+      "manufacturer": "Alpharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Valproate Sodium",
+      "strength": "250 mg",
+      "imprints": [
+        "WATSON 347"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Valproate Sodium",
+      "strength": "500 mg",
+      "imprints": [
+        "WATSON 348"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": true
+    }
+  ]
+}

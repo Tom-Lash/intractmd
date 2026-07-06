@@ -1,0 +1,88 @@
+{
+  "drug_name": "Griseofulvin",
+  "generic_name": "Griseofulvin",
+  "drug_class": "Antifungal",
+  "variants": [
+    {
+      "brand_name": "Grifulvin V",
+      "strength": "500 mg",
+      "imprints": [
+        "GRIFULVIN",
+        "V"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Deprecated/Historical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Griseofulvin",
+      "strength": "500 mg",
+      "imprints": [
+        "GG",
+        "501"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Griseofulvin",
+      "strength": "250 mg",
+      "imprints": [
+        "GG",
+        "251"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 13,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Griseofulvin Microsize",
+      "strength": "500 mg",
+      "imprints": [
+        "GRIS",
+        "PEG"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Griseofulvin",
+      "strength": "125 mg",
+      "imprints": [
+        "125",
+        "GG"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

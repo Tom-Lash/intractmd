@@ -1,0 +1,100 @@
+{
+  "drug_name": "Vilazodone",
+  "generic_name": "vilazodone hydrochloride",
+  "drug_class": "Serotonin Partial Agonist Reuptake Inhibitor (SPARI)",
+  "variants": [
+    {
+      "brand_name": "Viibryd",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Forest Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Viibryd",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Forest Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Viibryd",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Forest Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vilazodone",
+      "strength": "10 mg",
+      "imprints": [
+        "VZ 10"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vilazodone",
+      "strength": "20 mg",
+      "imprints": [
+        "VZ 20"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vilazodone",
+      "strength": "40 mg",
+      "imprints": [
+        "VZ 40"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

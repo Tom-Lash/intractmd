@@ -1,0 +1,71 @@
+{
+  "drug_name": "Guanabenz",
+  "generic_name": "Guanabenz acetate",
+  "drug_class": "Alpha-2 adrenergic agonist (antihypertensive)",
+  "variants": [
+    {
+      "brand_name": "Wytensin",
+      "strength": "4 mg",
+      "imprints": [
+        "WYTENSIN",
+        "4"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Wyeth Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Wytensin",
+      "strength": "8 mg",
+      "imprints": [
+        "WYTENSIN",
+        "8"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Wyeth Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "4 mg",
+      "imprints": [
+        "GBZ",
+        "4"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "8 mg",
+      "imprints": [
+        "GBZ",
+        "8"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

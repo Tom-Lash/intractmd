@@ -1,0 +1,71 @@
+{
+  "drug_name": "Abemaciclib",
+  "generic_name": "abemaciclib",
+  "drug_class": "Cyclin-dependent kinase 4 and 6 inhibitor",
+  "variants": [
+    {
+      "brand_name": "Verzenio",
+      "strength": "50 mg",
+      "imprints": [
+        "LY",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Verzenio",
+      "strength": "100 mg",
+      "imprints": [
+        "LY",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Verzenio",
+      "strength": "150 mg",
+      "imprints": [
+        "LY",
+        "150"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10.5,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Verzenio",
+      "strength": "200 mg",
+      "imprints": [
+        "LY",
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    }
+  ]
+}

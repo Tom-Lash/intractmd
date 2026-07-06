@@ -1,0 +1,86 @@
+{
+  "drug_name": "Mometasone",
+  "generic_name": "Mometasone furoate",
+  "drug_class": "Corticosteroid (Inhaled)",
+  "variants": [
+    {
+      "brand_name": "Asmanex Twisthaler",
+      "strength": "110 mcg",
+      "imprints": [],
+      "shape": "Powder for inhalation",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Asmanex Twisthaler",
+      "strength": "220 mcg",
+      "imprints": [],
+      "shape": "Powder for inhalation",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Nasonex",
+      "strength": "50 mcg/spray",
+      "imprints": [],
+      "shape": "Nasal spray",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Elocon",
+      "strength": "0.1%",
+      "imprints": [],
+      "shape": "Topical cream",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Elocon",
+      "strength": "0.1%",
+      "imprints": [],
+      "shape": "Topical ointment",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Elocon",
+      "strength": "0.1%",
+      "imprints": [],
+      "shape": "Topical lotion",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck",
+      "scored": false
+    }
+  ],
+  "note": "Mometasone is primarily available as inhaled powder, nasal spray, and topical formulations. Oral tablet forms are not standard US formulations. Data represents most common commercial variants."
+}

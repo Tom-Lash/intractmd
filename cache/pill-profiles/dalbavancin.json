@@ -1,0 +1,32 @@
+{
+  "drug_name": "Dalbavancin",
+  "generic_name": "dalbavancin",
+  "drug_class": "Lipoglycopeptide antibiotic",
+  "variants": [
+    {
+      "brand_name": "Dalvance",
+      "strength": "500 mg",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false,
+      "form": "intravenous powder for injection"
+    },
+    {
+      "brand_name": "Dalvance",
+      "strength": "250 mg",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false,
+      "form": "intravenous powder for injection"
+    }
+  ],
+  "note": "Dalbavancin is exclusively available as an intravenous injection powder and is NOT manufactured as oral tablets or capsules in the United States. No pill variants exist for this medication."
+}

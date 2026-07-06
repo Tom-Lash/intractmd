@@ -1,0 +1,52 @@
+{
+  "drug_name": "Secnidazole",
+  "generic_name": "Secnidazole",
+  "drug_class": "Nitroimidazole Antimicrobial",
+  "variants": [
+    {
+      "brand_name": "Solosec",
+      "strength": "2g",
+      "imprints": [
+        "Solosec"
+      ],
+      "shape": "Granule packet",
+      "colors": [
+        "White to off-white"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Allergan/AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Secnidazole",
+      "strength": "500mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Secnidazole",
+      "strength": "250mg",
+      "imprints": [
+        "250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

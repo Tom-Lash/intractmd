@@ -1,0 +1,38 @@
+{
+  "drug_name": "Parecoxib",
+  "generic_name": "Parecoxib sodium",
+  "drug_class": "Selective COX-2 inhibitor (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Dynastat",
+      "strength": "40 mg",
+      "imprints": [
+        "DYNASTAT 40"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Dynastat",
+      "strength": "20 mg",
+      "imprints": [
+        "DYNASTAT 20"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Pfizer",
+      "scored": false
+    }
+  ],
+  "note": "Parecoxib is not FDA-approved for oral use in the United States. It is available only as an intravenous or intramuscular injection (Dynastat) in most countries outside the US. No US pill variants exist in standard pharmaceutical databases. The variants listed above represent the only approved formulations available internationally."
+}

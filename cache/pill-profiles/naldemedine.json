@@ -1,0 +1,23 @@
+{
+  "drug_name": "Naldemedine",
+  "generic_name": "Naldemedine tosylate",
+  "drug_class": "Opioid antagonist",
+  "variants": [
+    {
+      "brand_name": "Symproic",
+      "strength": "0.2 mg",
+      "imprints": [
+        "N",
+        "0.2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Shionogi Inc.",
+      "scored": false
+    }
+  ]
+}

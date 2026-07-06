@@ -1,0 +1,71 @@
+{
+  "drug_name": "Tegaserod",
+  "generic_name": "Tegaserod maleate",
+  "drug_class": "5-HT4 receptor agonist",
+  "variants": [
+    {
+      "brand_name": "Zelnorm",
+      "strength": "2 mg",
+      "imprints": [
+        "ZELNORM",
+        "2mg"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Zelnorm",
+      "strength": "6 mg",
+      "imprints": [
+        "ZELNORM",
+        "6mg"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tegaserod",
+      "strength": "2 mg",
+      "imprints": [
+        "TEG",
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tegaserod",
+      "strength": "6 mg",
+      "imprints": [
+        "TEG",
+        "6"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

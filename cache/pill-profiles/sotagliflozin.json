@@ -1,0 +1,38 @@
+{
+  "drug_name": "Sotagliflozin",
+  "generic_name": "Sotagliflozin",
+  "drug_class": "SGLT1/SGLT2 Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zynquista",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lexicon Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Zynquista",
+      "strength": "400 mg",
+      "imprints": [
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Lexicon Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "notes": "Sotagliflozin (Zynquista) has limited US variant availability. Only 200 mg and 400 mg oral tablets are FDA-approved formulations. Additional variants may be in clinical development or available in other markets."
+}

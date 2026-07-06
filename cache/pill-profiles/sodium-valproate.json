@@ -1,0 +1,137 @@
+{
+  "drug_name": "Sodium Valproate",
+  "generic_name": "sodium valproate",
+  "drug_class": "Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Depakote",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "250"
+      ],
+      "shape": "Sprinkle capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote",
+      "strength": "125 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "125"
+      ],
+      "shape": "Sprinkle capsule",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote",
+      "strength": "500 mg",
+      "imprints": [
+        "DEPAKOTE",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Abbott",
+      "scored": true
+    },
+    {
+      "brand_name": "Depakote ER",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE ER",
+        "250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 16,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Depakote ER",
+      "strength": "500 mg",
+      "imprints": [
+        "DEPAKOTE ER",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 18,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "250",
+        "VPA"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "500",
+        "VPA"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Depakote",
+      "strength": "250 mg",
+      "imprints": [
+        "DEPAKOTE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "tan"
+      ],
+      "coating": "Delayed-release",
+      "size_mm": 17,
+      "manufacturer": "Abbott",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "drug_name": "Palonosetron",
+  "generic_name": "Palonosetron Hydrochloride",
+  "drug_class": "5-HT3 Receptor Antagonist (Antiemetic)",
+  "variants": [
+    {
+      "brand_name": "Aloxi",
+      "strength": "0.25 mg",
+      "imprints": [
+        "ALOXI",
+        "0.25mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Helsinn Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aloxi",
+      "strength": "0.5 mg",
+      "imprints": [
+        "ALOXI",
+        "0.5mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Helsinn Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palonosetron",
+      "strength": "0.25 mg",
+      "imprints": [
+        "APO",
+        "PAL 0.25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Apotex Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palonosetron",
+      "strength": "0.5 mg",
+      "imprints": [
+        "APO",
+        "PAL 0.5"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Apotex Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palonosetron",
+      "strength": "0.25 mg",
+      "imprints": [
+        "TZ",
+        "PAL25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Light Blue"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 18,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palonosetron",
+      "strength": "0.5 mg",
+      "imprints": [
+        "TZ",
+        "PAL50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Light Orange"
+      ],
+      "coating": "Hard Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

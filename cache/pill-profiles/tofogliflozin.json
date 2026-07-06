@@ -1,0 +1,38 @@
+{
+  "drug_name": "Tofogliflozin",
+  "generic_name": "tofogliflozin hydrate",
+  "drug_class": "SGLT2 inhibitor",
+  "variants": [
+    {
+      "brand_name": "Deberza",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Chugai Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Deberza",
+      "strength": "40 mg",
+      "imprints": [
+        "40"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Chugai Pharmaceutical",
+      "scored": false
+    }
+  ],
+  "note": "Tofogliflozin (Deberza) has limited US availability. It is approved in Japan and other Asian markets but has restricted distribution in the United States. Only major variants documented for US pharmaceutical database."
+}

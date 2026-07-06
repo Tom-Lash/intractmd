@@ -1,0 +1,55 @@
+{
+  "drug_name": "Ixazomib",
+  "generic_name": "ixazomib citrate",
+  "drug_class": "Proteasome inhibitor",
+  "variants": [
+    {
+      "brand_name": "Ninlaro",
+      "strength": "2.3 mg",
+      "imprints": [
+        "2.3"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Ninlaro",
+      "strength": "3 mg",
+      "imprints": [
+        "3"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Green"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Ninlaro",
+      "strength": "4 mg",
+      "imprints": [
+        "4"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

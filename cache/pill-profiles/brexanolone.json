@@ -1,0 +1,16 @@
+{
+  "drug_name": "Brexanolone",
+  "generic_name": "brexanolone",
+  "drug_class": "Neuroactive steroid (GABA-A receptor positive allosteric modulator)",
+  "note": "Brexanolone is primarily available as an intravenous injection (Zulresso) for postpartum depression. Oral pill variants are not currently FDA-approved or widely available in the United States market.",
+  "variants": [
+    {
+      "brand_name": "Zulresso",
+      "strength": "90 mg/vial (IV infusion)",
+      "formulation_type": "Intravenous injection concentrate",
+      "route": "IV",
+      "manufacturer": "Sage Therapeutics",
+      "note": "No oral pill formulations currently approved for US market"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "drug_name": "Givosiran",
+  "generic_name": "givosiran",
+  "drug_class": "Oligonucleotide, RNAi therapeutic",
+  "variants": [
+    {
+      "brand_name": "Fabhalta",
+      "strength": "189 mg/0.63 mL subcutaneous injection",
+      "imprints": [],
+      "shape": "prefilled syringe",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Alnylam Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Givosiran (Fabhalta) is exclusively available as a subcutaneous injection formulation. It is not manufactured as an oral tablet or pill. The drug is administered as a prefilled single-dose syringe containing 189 mg of givosiran in 0.63 mL of solution. No pill/tablet variants exist for this medication."
+}

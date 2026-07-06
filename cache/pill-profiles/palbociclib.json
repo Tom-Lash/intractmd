@@ -1,0 +1,106 @@
+{
+  "drug_name": "Palbociclib",
+  "generic_name": "palbociclib",
+  "drug_class": "Cyclin-dependent kinase 4/6 inhibitor",
+  "variants": [
+    {
+      "brand_name": "Ibrance",
+      "strength": "75 mg",
+      "imprints": [
+        "IBR",
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "hard gelatin",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Ibrance",
+      "strength": "100 mg",
+      "imprints": [
+        "IBR",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "coating": "hard gelatin",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Ibrance",
+      "strength": "125 mg",
+      "imprints": [
+        "IBR",
+        "125"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "hard gelatin",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palbociclib",
+      "strength": "75 mg",
+      "imprints": [
+        "PLC",
+        "75"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palbociclib",
+      "strength": "100 mg",
+      "imprints": [
+        "PLC",
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "multiple generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Palbociclib",
+      "strength": "125 mg",
+      "imprints": [
+        "PLC",
+        "125"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "multiple generic manufacturers",
+      "scored": false
+    }
+  ]
+}

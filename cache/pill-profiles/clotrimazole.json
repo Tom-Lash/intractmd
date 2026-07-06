@@ -1,0 +1,74 @@
+{
+  "drug_name": "Clotrimazole",
+  "generic_name": "Clotrimazole",
+  "drug_class": "Azole Antifungal",
+  "variants": [
+    {
+      "brand_name": "Lotrimin",
+      "strength": "1% Cream",
+      "imprints": [],
+      "shape": "Cream",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Schering-Plough",
+      "scored": false
+    },
+    {
+      "brand_name": "Mycelex",
+      "strength": "10 mg Troche",
+      "imprints": [
+        "MYCELEX 10"
+      ],
+      "shape": "Lozenge",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Clotrimazole",
+      "strength": "1% Solution",
+      "imprints": [],
+      "shape": "Liquid",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Clotrimazole",
+      "strength": "2% Vaginal Cream",
+      "imprints": [],
+      "shape": "Cream",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Clotrimazole",
+      "strength": "100 mg Vaginal Tablet",
+      "imprints": [],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

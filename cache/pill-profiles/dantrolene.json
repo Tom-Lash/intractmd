@@ -1,0 +1,109 @@
+{
+  "drug_name": "Dantrolene",
+  "generic_name": "Dantrolene Sodium",
+  "drug_class": "Skeletal Muscle Relaxant",
+  "variants": [
+    {
+      "brand_name": "Dantrium",
+      "strength": "25 mg",
+      "imprints": [
+        "DANTRIUM",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Procter & Gamble Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Dantrium",
+      "strength": "50 mg",
+      "imprints": [
+        "DANTRIUM",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Procter & Gamble Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Dantrium",
+      "strength": "100 mg",
+      "imprints": [
+        "DANTRIUM",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Brown"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Procter & Gamble Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dantrolene",
+      "strength": "25 mg",
+      "imprints": [
+        "DAN",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dantrolene",
+      "strength": "50 mg",
+      "imprints": [
+        "DAN",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dantrolene",
+      "strength": "100 mg",
+      "imprints": [
+        "DAN",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Brown"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Various Generic Manufacturers",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "drug_name": "Bortezomib",
+  "generic_name": "bortezomib",
+  "drug_class": "Proteasome Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Velcade",
+      "strength": "3.5 mg/vial",
+      "imprints": [],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Velcade",
+      "strength": "1 mg/vial",
+      "imprints": [],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Bortezomib",
+      "strength": "0.7 mg/vial",
+      "imprints": [],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Ninlaro",
+      "strength": "2.3 mg",
+      "imprints": [
+        "NLR"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Ninlaro",
+      "strength": "1.3 mg",
+      "imprints": [
+        "NLR"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

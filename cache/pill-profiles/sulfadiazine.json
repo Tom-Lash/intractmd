@@ -1,0 +1,23 @@
+{
+  "drug_name": "Sulfadiazine",
+  "generic_name": "Sulfadiazine",
+  "drug_class": "Sulfonamide Antibiotic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        ""
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Sulfadiazine is primarily available as a generic formulation. Modern US pharmaceutical databases show limited current commercial availability of branded variants. The drug is primarily manufactured by multiple generic manufacturers with minimal physical characteristic variation. Specific imprint codes and detailed specifications vary by manufacturer and batch. For current and complete pill identification, consult FDA Orange Book or contact pharmaceutical manufacturers directly, as Sulfadiazine is not widely marketed as a branded product in the contemporary US market."
+}

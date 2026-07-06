@@ -1,0 +1,85 @@
+{
+  "drug_name": "Linaclotide",
+  "generic_name": "linaclotide",
+  "drug_class": "Guanylate cyclase-C agonist",
+  "variants": [
+    {
+      "brand_name": "Linzess",
+      "strength": "145 mcg",
+      "imprints": [
+        "145"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Linzess",
+      "strength": "290 mcg",
+      "imprints": [
+        "290"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gray"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Linzess",
+      "strength": "72 mcg",
+      "imprints": [
+        "72"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "light gray"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 16,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linaclotide",
+      "strength": "145 mcg",
+      "imprints": [
+        "145"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Linaclotide",
+      "strength": "290 mcg",
+      "imprints": [
+        "290"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gray"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

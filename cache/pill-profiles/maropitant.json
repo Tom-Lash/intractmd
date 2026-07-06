@@ -1,0 +1,41 @@
+{
+  "drug_name": "Maropitant",
+  "generic_name": "Maropitant citrate",
+  "drug_class": "Antiemetic (NK1 receptor antagonist)",
+  "note": "Maropitant is primarily available as a veterinary medication (Cerenia) for dogs and cats. It is NOT FDA-approved for human use in the United States. Human pharmaceutical variants in pill form are not available in the US market.",
+  "variants": [
+    {
+      "brand_name": "Cerenia (Veterinary - Dogs)",
+      "strength": "10 mg",
+      "form": "Tablet",
+      "imprints": [
+        "Not standardized"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Zoetis",
+      "scored": false
+    },
+    {
+      "brand_name": "Cerenia (Veterinary - Cats)",
+      "strength": "4 mg",
+      "form": "Tablet",
+      "imprints": [
+        "Not standardized"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Zoetis",
+      "scored": false
+    }
+  ],
+  "availability_note": "Maropitant is available in the US only as a veterinary injection (IV, IM, SC) and veterinary tablets. No human oral pharmaceutical variants exist in the US market."
+}

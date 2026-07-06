@@ -1,0 +1,101 @@
+{
+  "drug_name": "Olaparib",
+  "generic_name": "olaparib",
+  "drug_class": "PARP inhibitor",
+  "variants": [
+    {
+      "brand_name": "Lynparza",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Lynparza",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Lynparza",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Lynparza",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Olaparib",
+      "strength": "100 mg",
+      "imprints": [
+        "OLA",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Olaparib",
+      "strength": "150 mg",
+      "imprints": [
+        "OLA",
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "multiple",
+      "scored": false
+    }
+  ]
+}

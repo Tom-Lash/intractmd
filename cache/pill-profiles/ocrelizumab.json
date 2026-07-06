@@ -1,0 +1,27 @@
+{
+  "drug_name": "Ocrelizumab",
+  "generic_name": "ocrelizumab",
+  "drug_class": "Monoclonal Antibody (CD20 antagonist)",
+  "note": "Ocrelizumab is a monoclonal antibody administered intravenously. It is NOT available as an oral pill/tablet form in the United States.",
+  "variants": [
+    {
+      "brand_name": "Ocrevus",
+      "strength": "300 mg/10 mL",
+      "form": "Injectable solution",
+      "route": "Intravenous infusion",
+      "concentration": "30 mg/mL",
+      "manufacturer": "Genentech/Roche",
+      "indication": "Multiple sclerosis, primary progressive multiple sclerosis"
+    },
+    {
+      "brand_name": "Ocrevus",
+      "strength": "600 mg/20 mL",
+      "form": "Injectable solution",
+      "route": "Intravenous infusion",
+      "concentration": "30 mg/mL",
+      "manufacturer": "Genentech/Roche",
+      "indication": "Multiple sclerosis, primary progressive multiple sclerosis"
+    }
+  ],
+  "availability_note": "No pill variants exist. Ocrelizumab is exclusively available as an intravenous infusion solution."
+}

@@ -1,0 +1,75 @@
+{
+  "drug_name": "Triamterene",
+  "generic_name": "Triamterene",
+  "drug_class": "Potassium-sparing diuretic",
+  "variants": [
+    {
+      "brand_name": "Dyrenium",
+      "strength": "50 mg",
+      "imprints": [
+        "DYRENIUM",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Wellspring Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Dyrenium",
+      "strength": "100 mg",
+      "imprints": [
+        "DYRENIUM",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Wellspring Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Triamterene",
+      "strength": "50 mg",
+      "imprints": [
+        "MP",
+        "717"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Triamterene",
+      "strength": "100 mg",
+      "imprints": [
+        "MP",
+        "718"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Mallinckrodt Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

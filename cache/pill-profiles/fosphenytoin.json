@@ -1,0 +1,48 @@
+{
+  "drug_name": "Fosphenytoin",
+  "generic_name": "Fosphenytoin Sodium",
+  "drug_class": "Hydantoin Anticonvulsant",
+  "note": "Fosphenytoin is primarily available as an intravenous or intramuscular injection solution, not as oral tablets or capsules in the US market.",
+  "variants": [
+    {
+      "brand_name": "Cerebyx",
+      "formulation": "Injectable Solution",
+      "strength": "75 mg/mL",
+      "route": "IV/IM",
+      "container": "Vial",
+      "volume_mL": 2,
+      "manufacturer": "Pfizer",
+      "available": true
+    },
+    {
+      "brand_name": "Cerebyx",
+      "formulation": "Injectable Solution",
+      "strength": "75 mg/mL",
+      "route": "IV/IM",
+      "container": "Vial",
+      "volume_mL": 10,
+      "manufacturer": "Pfizer",
+      "available": true
+    },
+    {
+      "brand_name": "Generic Fosphenytoin Sodium",
+      "formulation": "Injectable Solution",
+      "strength": "75 mg/mL",
+      "route": "IV/IM",
+      "container": "Vial",
+      "volume_mL": 2,
+      "manufacturer": "Multiple",
+      "available": true
+    },
+    {
+      "brand_name": "Generic Fosphenytoin Sodium",
+      "formulation": "Injectable Solution",
+      "strength": "75 mg/mL",
+      "route": "IV/IM",
+      "container": "Vial",
+      "volume_mL": 10,
+      "manufacturer": "Multiple",
+      "available": true
+    }
+  ]
+}

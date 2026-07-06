@@ -1,0 +1,58 @@
+{
+  "drug_name": "Panobinostat",
+  "generic_name": "Panobinostat",
+  "drug_class": "Histone Deacetylase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Farydak",
+      "strength": "10 mg",
+      "imprints": [
+        "LBH589",
+        "10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Farydak",
+      "strength": "15 mg",
+      "imprints": [
+        "LBH589",
+        "15"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Farydak",
+      "strength": "20 mg",
+      "imprints": [
+        "LBH589",
+        "20"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 21,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

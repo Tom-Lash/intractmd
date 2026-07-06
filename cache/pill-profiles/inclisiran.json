@@ -1,0 +1,21 @@
+{
+  "drug_name": "Inclisiran",
+  "generic_name": "Inclisiran sodium",
+  "drug_class": "Antisense oligonucleotide (PCSK9 inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Leqvio",
+      "strength": "284 mg/1.5 mL",
+      "imprints": [],
+      "shape": "Prefilled syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ],
+  "note": "Inclisiran is administered as a subcutaneous injection only. No oral pill variants exist in the US market. Leqvio is the only FDA-approved formulation (approved December 2021), supplied as a prefilled syringe for injection, not as tablets or capsules."
+}

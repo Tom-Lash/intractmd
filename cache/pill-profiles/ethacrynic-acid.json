@@ -1,0 +1,71 @@
+{
+  "drug_name": "Ethacrynic Acid",
+  "generic_name": "ethacrynic acid",
+  "drug_class": "Loop Diuretic",
+  "variants": [
+    {
+      "brand_name": "Edecrin",
+      "strength": "25 mg",
+      "imprints": [
+        "EDECRIN",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Edecrin",
+      "strength": "50 mg",
+      "imprints": [
+        "EDECRIN",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "DH",
+        "75"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "DH",
+        "74"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

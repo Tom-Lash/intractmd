@@ -1,0 +1,82 @@
+{
+  "drug_name": "Micafungin",
+  "generic_name": "Micafungin sodium",
+  "drug_class": "Echinocandin antifungal",
+  "variants": [
+    {
+      "brand_name": "Mycamine",
+      "strength": "50 mg",
+      "imprints": [
+        "Mycamine 50"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Astellas Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Mycamine",
+      "strength": "100 mg",
+      "imprints": [
+        "Mycamine 100"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Astellas Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Mycamine",
+      "strength": "150 mg",
+      "imprints": [
+        "Mycamine 150"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Astellas Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Micafungin",
+      "strength": "50 mg",
+      "imprints": [
+        "50 mg"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Micafungin",
+      "strength": "100 mg",
+      "imprints": [
+        "100 mg"
+      ],
+      "shape": "Vial",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

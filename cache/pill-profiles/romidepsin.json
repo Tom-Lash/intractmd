@@ -1,0 +1,23 @@
+{
+  "drug_name": "Romidepsin",
+  "generic_name": "romidepsin",
+  "drug_class": "Histone Deacetylase (HDAC) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Istodax",
+      "strength": "10 mg",
+      "imprints": [
+        "Istodax"
+      ],
+      "shape": "vial",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    }
+  ],
+  "note": "Romidepsin (Istodax) is primarily available as an intravenous (IV) infusion solution for injection. It is NOT marketed as oral tablets or capsules in the United States. The drug is supplied as a sterile lyophilized powder in single-use vials for IV administration only. No pill variants exist for this medication."
+}

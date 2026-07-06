@@ -1,0 +1,75 @@
+{
+  "drug_name": "Vemurafenib",
+  "generic_name": "vemurafenib",
+  "drug_class": "BRAF kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zelboraf",
+      "strength": "240 mg",
+      "imprints": [
+        "ZELBORAF",
+        "240"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink",
+        "brown"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vemurafenib",
+      "strength": "240 mg",
+      "imprints": [
+        "VEM",
+        "240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "Mylan/Viatris",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vemurafenib",
+      "strength": "240 mg",
+      "imprints": [
+        "SUN",
+        "VEM 240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vemurafenib",
+      "strength": "240 mg",
+      "imprints": [
+        "AUROBINDO",
+        "240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    }
+  ]
+}

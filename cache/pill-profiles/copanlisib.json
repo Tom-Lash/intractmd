@@ -1,0 +1,25 @@
+{
+  "drug_name": "Copanlisib",
+  "generic_name": "copanlisib hydrochloride",
+  "drug_class": "Phosphoinositide 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Aliqopa",
+      "strength": "60 mg",
+      "imprints": [
+        "ALIQOPA",
+        "60"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Bayer",
+      "scored": false
+    }
+  ],
+  "note": "Copanlisib (Aliqopa) is primarily available as an intravenous infusion formulation (60 mg vial), not as oral pills/tablets. No standard oral pill variants with imprints currently exist in the US market. The drug is administered as an IV infusion for treatment of relapsed follicular lymphoma."
+}

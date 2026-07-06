@@ -1,0 +1,127 @@
+{
+  "drug_name": "Iloperidone",
+  "generic_name": "iloperidone",
+  "drug_class": "Atypical Antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Fanapt",
+      "strength": "1 mg",
+      "imprints": [
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Vanda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Fanapt",
+      "strength": "2 mg",
+      "imprints": [
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Vanda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Fanapt",
+      "strength": "4 mg",
+      "imprints": [
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Vanda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Fanapt",
+      "strength": "6 mg",
+      "imprints": [
+        "6"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Vanda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Iloperidone",
+      "strength": "1 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Iloperidone",
+      "strength": "2 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Iloperidone",
+      "strength": "4 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Iloperidone",
+      "strength": "6 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

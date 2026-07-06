@@ -1,0 +1,75 @@
+{
+  "drug_name": "Alvimopan",
+  "generic_name": "Alvimopan",
+  "drug_class": "Peripheral Mu Opioid Receptor Antagonist",
+  "variants": [
+    {
+      "brand_name": "Entereg",
+      "strength": "6 mg",
+      "imprints": [
+        "SB",
+        "657"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Entereg",
+      "strength": "12 mg",
+      "imprints": [
+        "SB",
+        "658"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "6 mg",
+      "imprints": [
+        "AL",
+        "6"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "12 mg",
+      "imprints": [
+        "AL",
+        "12"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

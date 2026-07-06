@@ -1,0 +1,40 @@
+{
+  "drug_name": "Vismodegib",
+  "generic_name": "vismodegib",
+  "drug_class": "Hedgehog pathway inhibitor",
+  "variants": [
+    {
+      "brand_name": "Erivedge",
+      "strength": "150 mg",
+      "imprints": [
+        "GDC",
+        "0449"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Vismodegib Generic",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

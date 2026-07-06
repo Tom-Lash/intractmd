@@ -1,0 +1,39 @@
+{
+  "drug_name": "Asciminib",
+  "generic_name": "asciminib",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Scemblix",
+      "strength": "20 mg",
+      "imprints": [
+        "ASC",
+        "20"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Scemblix",
+      "strength": "40 mg",
+      "imprints": [
+        "ASC",
+        "40"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Novartis Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

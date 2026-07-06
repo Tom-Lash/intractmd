@@ -1,0 +1,53 @@
+{
+  "drug_name": "Proguanil",
+  "generic_name": "Proguanil hydrochloride",
+  "drug_class": "Antimalarial agent",
+  "variants": [
+    {
+      "brand_name": "Paludrine",
+      "strength": "100 mg",
+      "imprints": [
+        "PALUDRINE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Amodiaquine Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Proguanil",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Paludrine/Avloclor",
+      "strength": "100 mg",
+      "imprints": [
+        "PALUDRINE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Amodiaquine Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Proguanil availability is limited in the US. Most variants listed are from international or historical US pharmaceutical records. Current US distribution is minimal; primarily available through specialized antimalarial suppliers or international pharmacies."
+}

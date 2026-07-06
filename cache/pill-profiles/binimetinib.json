@@ -1,0 +1,52 @@
+{
+  "drug_name": "Binimetinib",
+  "generic_name": "binimetinib",
+  "drug_class": "Mitogen-activated protein kinase (MEK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Mektovi",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Array BioPharma Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Mektovi",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Array BioPharma Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Mektovi",
+      "strength": "75 mg",
+      "imprints": [
+        "75"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Brown"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Array BioPharma Inc.",
+      "scored": false
+    }
+  ]
+}

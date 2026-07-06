@@ -1,0 +1,40 @@
+{
+  "drug_name": "Selpercatinib",
+  "generic_name": "selpercatinib",
+  "drug_class": "RET kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Retevmo",
+      "strength": "40 mg",
+      "imprints": [
+        "LOXO 40"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "hard gelatin",
+      "size_mm": 19,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    },
+    {
+      "brand_name": "Retevmo",
+      "strength": "80 mg",
+      "imprints": [
+        "LOXO 80"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "hard gelatin",
+      "size_mm": 21,
+      "manufacturer": "Eli Lilly and Company",
+      "scored": false
+    }
+  ],
+  "note": "Selpercatinib (Retevmo) is available in limited oral formulations. Only 40 mg and 80 mg capsule strengths are currently FDA-approved for US market. Additional dosing is achieved through capsule combinations rather than separate pill variants."
+}

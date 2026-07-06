@@ -1,0 +1,55 @@
+{
+  "drug_name": "Pemigatinib",
+  "generic_name": "pemigatinib",
+  "drug_class": "Fibroblast Growth Factor Receptor (FGFR) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Pemazyre",
+      "strength": "13.5 mg",
+      "imprints": [
+        "INCB054828",
+        "13.5"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Pemazyre",
+      "strength": "4.5 mg",
+      "imprints": [
+        "INCB054828",
+        "4.5"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Pemazyre",
+      "strength": "3 mg",
+      "imprints": [
+        "INCB054828",
+        "3"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Incyte Corporation",
+      "scored": false
+    }
+  ]
+}

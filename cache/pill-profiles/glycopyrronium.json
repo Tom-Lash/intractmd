@@ -1,0 +1,108 @@
+{
+  "drug_name": "Glycopyrronium",
+  "generic_name": "Glycopyrrolate",
+  "drug_class": "Anticholinergic",
+  "variants": [
+    {
+      "brand_name": "Cuvposa",
+      "strength": "1 mg/5 mL",
+      "imprints": [],
+      "shape": "Liquid",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Shionogi Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Glycopyrrolate",
+      "strength": "1 mg",
+      "imprints": [
+        "54 092"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Roxane Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Glycopyrrolate",
+      "strength": "2 mg",
+      "imprints": [
+        "54 093"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Glycopyrrolate",
+      "strength": "1 mg",
+      "imprints": [
+        "WATSON 825"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Glycopyrrolate",
+      "strength": "2 mg",
+      "imprints": [
+        "WATSON 826"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Glycopyrrolate",
+      "strength": "1 mg",
+      "imprints": [
+        "GG 263"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6.5,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Glycopyrronium Injection",
+      "strength": "0.2 mg/mL",
+      "imprints": [],
+      "shape": "Injectable Solution",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

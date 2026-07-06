@@ -1,0 +1,46 @@
+{
+  "drug_name": "Vilanterol",
+  "generic_name": "vilanterol trifenatate",
+  "drug_class": "Long-acting beta-2 agonist (LABA)",
+  "variants": [
+    {
+      "brand_name": "Breo Ellipta",
+      "strength": "25 mcg/100 mcg (vilanterol/fluticasone furoate)",
+      "imprints": [],
+      "shape": "Powder for inhalation",
+      "colors": [
+        "White to off-white"
+      ],
+      "coating": "None - inhalation powder",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Breo Ellipta",
+      "strength": "25 mcg/200 mcg (vilanterol/fluticasone furoate)",
+      "imprints": [],
+      "shape": "Powder for inhalation",
+      "colors": [
+        "White to off-white"
+      ],
+      "coating": "None - inhalation powder",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Breo Ellipta",
+      "strength": "25 mcg/50 mcg (vilanterol/fluticasone furoate)",
+      "imprints": [],
+      "shape": "Powder for inhalation",
+      "colors": [
+        "White to off-white"
+      ],
+      "coating": "None - inhalation powder",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "drug_name": "Selumetinib",
+  "generic_name": "selumetinib",
+  "drug_class": "Mitogen-activated protein kinase (MAPK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Koselugo",
+      "strength": "10 mg",
+      "imprints": [
+        "GSK",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Koselugo",
+      "strength": "25 mg",
+      "imprints": [
+        "GSK",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    }
+  ]
+}

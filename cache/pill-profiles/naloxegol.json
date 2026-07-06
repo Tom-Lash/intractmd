@@ -1,0 +1,67 @@
+{
+  "drug_name": "Naloxegol",
+  "generic_name": "Naloxegol",
+  "drug_class": "Opioid Antagonist",
+  "variants": [
+    {
+      "brand_name": "Movantik",
+      "strength": "12.5 mg",
+      "imprints": [
+        "12.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Movantik",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Naloxegol",
+      "strength": "12.5 mg",
+      "imprints": [
+        "G 12.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Naloxegol",
+      "strength": "25 mg",
+      "imprints": [
+        "G 25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "drug_name": "Acetohexamide",
+  "generic_name": "Acetohexamide",
+  "drug_class": "Sulfonylurea (Antidiabetic)",
+  "variants": [
+    {
+      "brand_name": "Dymelor",
+      "strength": "250 mg",
+      "imprints": [
+        "DYMELOR",
+        "250"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Dymelor",
+      "strength": "500 mg",
+      "imprints": [
+        "DYMELOR",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acetohexamide",
+      "strength": "250 mg",
+      "imprints": [
+        "APO",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Acetohexamide",
+      "strength": "500 mg",
+      "imprints": [
+        "APO",
+        "500"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

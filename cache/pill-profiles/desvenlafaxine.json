@@ -1,0 +1,127 @@
+{
+  "drug_name": "Desvenlafaxine",
+  "generic_name": "Desvenlafaxine Succinate",
+  "drug_class": "Serotonin-Norepinephrine Reuptake Inhibitor (SNRI)",
+  "variants": [
+    {
+      "brand_name": "Pristiq",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Pristiq",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Pristiq",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desvenlafaxine",
+      "strength": "25 mg",
+      "imprints": [
+        "DVS 25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6.5,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desvenlafaxine",
+      "strength": "50 mg",
+      "imprints": [
+        "DVS 50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "None",
+      "size_mm": 7.5,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desvenlafaxine",
+      "strength": "100 mg",
+      "imprints": [
+        "DVS 100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8.5,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Khedezla",
+      "strength": "100 mg",
+      "imprints": [
+        "KHE 100"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Noven Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Desvenlafaxine",
+      "strength": "75 mg",
+      "imprints": [
+        "DVS 75"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    }
+  ]
+}

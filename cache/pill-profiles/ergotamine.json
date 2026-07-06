@@ -1,0 +1,83 @@
+{
+  "drug_name": "Ergotamine",
+  "generic_name": "Ergotamine Tartrate",
+  "drug_class": "Ergot Alkaloid Vasoconstrictor",
+  "variants": [
+    {
+      "brand_name": "Cafergot",
+      "strength": "1mg/100mg (Ergotamine/Caffeine)",
+      "imprints": [
+        "CAFERGOT"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Brown"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Ergomar",
+      "strength": "2mg",
+      "imprints": [
+        "ERGOMAR",
+        "2"
+      ],
+      "shape": "Sublingual Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Medic Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ergotamine Tartrate",
+      "strength": "1mg",
+      "imprints": [
+        "Generic"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Cafergot",
+      "strength": "2mg/200mg (Ergotamine/Caffeine)",
+      "imprints": [
+        "CAFERGOT-PB"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Brown"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 11,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Wigraine",
+      "strength": "1mg/100mg (Ergotamine/Caffeine)",
+      "imprints": [
+        "WIGRAINE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Tan"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

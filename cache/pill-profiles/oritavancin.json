@@ -1,0 +1,26 @@
+{
+  "drug_name": "Oritavancin",
+  "generic_name": "oritavancin diphosphate",
+  "drug_class": "Lipoglycopeptide antibiotic",
+  "note": "Oritavancin is available only as an intravenous (IV) infusion solution and is NOT available in oral pill form in the United States",
+  "variants": [
+    {
+      "brand_name": "Orbactiv",
+      "strength": "400 mg/vial",
+      "form": "IV powder for infusion",
+      "imprints": [
+        "None - powder vial"
+      ],
+      "shape": "N/A",
+      "colors": [
+        "White to off-white powder"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "The Medicines Company",
+      "scored": false,
+      "route": "Intravenous"
+    }
+  ],
+  "availability_note": "Oritavancin (Orbactiv) is exclusively manufactured as an intravenous infusion and has no oral pill variants. It is used to treat acute bacterial skin and skin structure infections (ABSSSI) caused by susceptible gram-positive bacteria and must be administered by healthcare professionals in clinical settings."
+}

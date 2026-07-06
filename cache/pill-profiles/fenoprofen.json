@@ -1,0 +1,107 @@
+{
+  "drug_name": "Fenoprofen",
+  "generic_name": "Fenoprofen Calcium",
+  "drug_class": "Nonsteroidal Anti-Inflammatory Drug (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Nalfon",
+      "strength": "200 mg",
+      "imprints": [
+        "NALFON",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Pendopharm",
+      "scored": false
+    },
+    {
+      "brand_name": "Nalfon",
+      "strength": "300 mg",
+      "imprints": [
+        "NALFON",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 20,
+      "manufacturer": "Pendopharm",
+      "scored": false
+    },
+    {
+      "brand_name": "Nalfon",
+      "strength": "600 mg",
+      "imprints": [
+        "NALFON",
+        "600"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Pendopharm",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Fenoprofen",
+      "strength": "200 mg",
+      "imprints": [
+        "FEN",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fenoprofen",
+      "strength": "300 mg",
+      "imprints": [
+        "FEN",
+        "300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 20,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fenoprofen",
+      "strength": "600 mg",
+      "imprints": [
+        "FEN",
+        "600"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

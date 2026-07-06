@@ -1,0 +1,56 @@
+{
+  "drug_name": "Fedratinib",
+  "generic_name": "Fedratinib",
+  "drug_class": "Janus kinase (JAK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "INREBIC",
+      "strength": "100 mg",
+      "imprints": [
+        "INREBIC",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "INREBIC",
+      "strength": "400 mg",
+      "imprints": [
+        "INREBIC",
+        "400"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 22,
+      "manufacturer": "Celgene Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fedratinib",
+      "strength": "100 mg",
+      "imprints": [
+        "FED 100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "Hard gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

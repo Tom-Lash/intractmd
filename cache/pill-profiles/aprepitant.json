@@ -1,0 +1,106 @@
+{
+  "drug_name": "Aprepitant",
+  "generic_name": "Aprepitant",
+  "drug_class": "Neurokinin-1 (NK1) Receptor Antagonist",
+  "variants": [
+    {
+      "brand_name": "Emend",
+      "strength": "125 mg",
+      "imprints": [
+        "EMEND",
+        "125mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Gray"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Emend",
+      "strength": "80 mg",
+      "imprints": [
+        "EMEND",
+        "80mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Caramel"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Emend",
+      "strength": "40 mg",
+      "imprints": [
+        "EMEND",
+        "40mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Aprepitant",
+      "strength": "125 mg",
+      "imprints": [
+        "APR 125"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Gray"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 20,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Aprepitant",
+      "strength": "80 mg",
+      "imprints": [
+        "APR 80"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Caramel"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Aprepitant",
+      "strength": "40 mg",
+      "imprints": [
+        "APR 40"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "drug_name": "Natalizumab",
+  "generic_name": "natalizumab",
+  "drug_class": "Monoclonal Antibody (Integrin Receptor Antagonist)",
+  "note": "Natalizumab is a biologic medication administered by intravenous infusion only. It is NOT available as an oral pill/tablet form in the United States or any other country.",
+  "variants": [
+    {
+      "brand_name": "Tysabri",
+      "strength": "300 mg/15 mL",
+      "form": "Intravenous infusion concentrate",
+      "route": "IV",
+      "manufacturer": "Biogen",
+      "packaging": "Single-use vial"
+    }
+  ],
+  "important_information": "Natalizumab is exclusively available as an injectable biologic therapy for intravenous administration. No pill, tablet, or oral variants exist. It is used to treat multiple sclerosis and Crohn's disease and requires enrollment in the TOUCH Prescription Program for safety monitoring due to PML risk."
+}

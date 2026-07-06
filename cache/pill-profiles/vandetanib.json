@@ -1,0 +1,69 @@
+{
+  "drug_name": "Vandetanib",
+  "generic_name": "vandetanib",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Caprelsa",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Caprelsa",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vandetanib",
+      "strength": "100 mg",
+      "imprints": [
+        "VAN",
+        "100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Red"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Vandetanib",
+      "strength": "300 mg",
+      "imprints": [
+        "VAN",
+        "300"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

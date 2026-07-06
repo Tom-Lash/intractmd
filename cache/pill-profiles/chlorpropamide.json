@@ -1,0 +1,71 @@
+{
+  "drug_name": "Chlorpropamide",
+  "generic_name": "Chlorpropamide",
+  "drug_class": "Sulfonylurea (Antidiabetic)",
+  "variants": [
+    {
+      "brand_name": "Diabinese",
+      "strength": "100 mg",
+      "imprints": [
+        "DIABINESE",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Diabinese",
+      "strength": "250 mg",
+      "imprints": [
+        "DIABINESE",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "CPM",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "250 mg",
+      "imprints": [
+        "CPM",
+        "250"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

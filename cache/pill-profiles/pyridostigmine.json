@@ -1,0 +1,87 @@
+{
+  "drug_name": "Pyridostigmine",
+  "generic_name": "Pyridostigmine Bromide",
+  "drug_class": "Cholinesterase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Mestinon",
+      "strength": "60 mg",
+      "imprints": [
+        "MESTINON",
+        "60"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Mestinon",
+      "strength": "180 mg",
+      "imprints": [
+        "MESTINON",
+        "180"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "sustained-release",
+      "size_mm": 10,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pyridostigmine",
+      "strength": "60 mg",
+      "imprints": [
+        "57",
+        "344"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Pyridostigmine",
+      "strength": "60 mg",
+      "imprints": [
+        "DAN",
+        "5552"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Pyridostigmine",
+      "strength": "30 mg",
+      "imprints": [
+        "57",
+        "345"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

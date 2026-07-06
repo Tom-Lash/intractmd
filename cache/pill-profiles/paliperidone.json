@@ -1,0 +1,127 @@
+{
+  "drug_name": "Paliperidone",
+  "generic_name": "Paliperidone",
+  "drug_class": "Atypical Antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Invega",
+      "strength": "1 mg",
+      "imprints": [
+        "1"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Invega",
+      "strength": "2 mg",
+      "imprints": [
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Invega",
+      "strength": "3 mg",
+      "imprints": [
+        "3"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Beige"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Invega",
+      "strength": "6 mg",
+      "imprints": [
+        "6"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Invega",
+      "strength": "9 mg",
+      "imprints": [
+        "9"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paliperidone",
+      "strength": "1 mg",
+      "imprints": [
+        "1 mg"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paliperidone",
+      "strength": "3 mg",
+      "imprints": [
+        "3 mg"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Beige"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Paliperidone",
+      "strength": "6 mg",
+      "imprints": [
+        "6 mg"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

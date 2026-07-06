@@ -1,0 +1,67 @@
+{
+  "drug_name": "Azelastine",
+  "generic_name": "Azelastine hydrochloride",
+  "drug_class": "Selective H1-receptor antagonist (antihistamine)",
+  "variants": [
+    {
+      "brand_name": "Astelin",
+      "strength": "137 mcg/spray nasal spray",
+      "imprints": [
+        "Astelin"
+      ],
+      "shape": "Spray bottle",
+      "colors": [
+        "Clear/colorless"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Optivar",
+      "strength": "0.05% ophthalmic solution",
+      "imprints": [
+        "Optivar"
+      ],
+      "shape": "Eye drop bottle",
+      "colors": [
+        "Clear/colorless"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Meda Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Azelastine",
+      "strength": "137 mcg/spray nasal spray",
+      "imprints": [
+        "Various manufacturers"
+      ],
+      "shape": "Spray bottle",
+      "colors": [
+        "Clear/colorless"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple (Mylan, Akorn, others)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Azelastine",
+      "strength": "0.05% ophthalmic solution",
+      "imprints": [
+        "Various manufacturers"
+      ],
+      "shape": "Eye drop bottle",
+      "colors": [
+        "Clear/colorless"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

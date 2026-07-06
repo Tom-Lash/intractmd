@@ -1,0 +1,101 @@
+{
+  "drug_name": "Molindone",
+  "generic_name": "Molindone hydrochloride",
+  "drug_class": "Antipsychotic (Dihydroindolone)",
+  "variants": [
+    {
+      "brand_name": "Moban",
+      "strength": "5 mg",
+      "imprints": [
+        "MOBAN",
+        "5"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Moban",
+      "strength": "10 mg",
+      "imprints": [
+        "MOBAN",
+        "10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Green"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Moban",
+      "strength": "25 mg",
+      "imprints": [
+        "MOBAN",
+        "25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Moban",
+      "strength": "50 mg",
+      "imprints": [
+        "MOBAN",
+        "50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 11,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Molindone",
+      "strength": "5 mg",
+      "imprints": [
+        "M5"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Molindone",
+      "strength": "10 mg",
+      "imprints": [
+        "M10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Green"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "drug_name": "Pimavanserin",
+  "generic_name": "pimavanserin tartrate",
+  "drug_class": "Atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "NUPLAZID",
+      "strength": "17 mg",
+      "imprints": [
+        "NUPLAZID",
+        "17 mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "ACADIA Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "NUPLAZID",
+      "strength": "34 mg",
+      "imprints": [
+        "NUPLAZID",
+        "34 mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "ACADIA Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Pimavanserin",
+      "strength": "17 mg",
+      "imprints": [
+        "APD",
+        "017"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Pimavanserin",
+      "strength": "34 mg",
+      "imprints": [
+        "APD",
+        "034"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Hikma Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

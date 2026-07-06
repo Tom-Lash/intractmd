@@ -1,0 +1,27 @@
+{
+  "drug_name": "Ziconotide",
+  "generic_name": "ziconotide",
+  "drug_class": "Analgesic (N-type calcium channel blocker)",
+  "note": "Ziconotide is available exclusively as an injectable solution for intrathecal use, not as oral pills or tablets",
+  "variants": [
+    {
+      "brand_name": "Prialt",
+      "strength": "25 mcg/mL",
+      "formulation": "Injectable solution (vial)",
+      "volume_mL": 1,
+      "concentration": "25 mcg/mL",
+      "manufacturer": "Elan Pharmaceuticals",
+      "route": "Intrathecal"
+    },
+    {
+      "brand_name": "Prialt",
+      "strength": "100 mcg/mL",
+      "formulation": "Injectable solution (vial)",
+      "volume_mL": 1,
+      "concentration": "100 mcg/mL",
+      "manufacturer": "Elan Pharmaceuticals",
+      "route": "Intrathecal"
+    }
+  ],
+  "important_note": "Ziconotide does not have oral pill or tablet variants. It is only available as an injectable intrathecal solution for severe chronic pain management. No imprints, shapes, or colors apply as there are no solid dosage forms."
+}

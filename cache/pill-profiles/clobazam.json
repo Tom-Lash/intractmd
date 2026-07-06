@@ -1,0 +1,100 @@
+{
+  "drug_name": "Clobazam",
+  "generic_name": "Clobazam",
+  "drug_class": "Benzodiazepine",
+  "variants": [
+    {
+      "brand_name": "Onfi",
+      "strength": "5 mg",
+      "imprints": [
+        "C",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Onfi",
+      "strength": "10 mg",
+      "imprints": [
+        "C",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Onfi",
+      "strength": "20 mg",
+      "imprints": [
+        "C",
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Clobazam",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Clobazam",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Clobazam",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

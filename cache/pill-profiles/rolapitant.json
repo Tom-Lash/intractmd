@@ -1,0 +1,75 @@
+{
+  "drug_name": "Rolapitant",
+  "generic_name": "rolapitant hydrochloride",
+  "drug_class": "NK1 receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Varubi",
+      "strength": "0.3 mg",
+      "imprints": [
+        "Varubi",
+        "0.3 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Tesaro Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Varubi",
+      "strength": "1 mg",
+      "imprints": [
+        "Varubi",
+        "1 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "gelatin",
+      "size_mm": 18,
+      "manufacturer": "Tesaro Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rolapitant",
+      "strength": "0.3 mg",
+      "imprints": [
+        "RLP",
+        "0.3"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Rolapitant",
+      "strength": "1 mg",
+      "imprints": [
+        "RLP",
+        "1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "gelatin",
+      "size_mm": 18,
+      "manufacturer": "Various manufacturers",
+      "scored": false
+    }
+  ]
+}

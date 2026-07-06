@@ -1,0 +1,41 @@
+{
+  "drug_name": "Glasdegib",
+  "generic_name": "glasdegib maleate",
+  "drug_class": "Hedgehog pathway inhibitor",
+  "variants": [
+    {
+      "brand_name": "Daurismo",
+      "strength": "25 mg",
+      "imprints": [
+        "GDC",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 16,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Daurismo",
+      "strength": "100 mg",
+      "imprints": [
+        "GDC",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "gelatin capsule",
+      "size_mm": 19,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    }
+  ]
+}

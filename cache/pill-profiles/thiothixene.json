@@ -1,0 +1,139 @@
+{
+  "drug_name": "Thiothixene",
+  "generic_name": "thiothixene",
+  "drug_class": "typical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Navane",
+      "strength": "1 mg",
+      "imprints": [
+        "NAVANE",
+        "1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Navane",
+      "strength": "2 mg",
+      "imprints": [
+        "NAVANE",
+        "2"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Navane",
+      "strength": "5 mg",
+      "imprints": [
+        "NAVANE",
+        "5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Navane",
+      "strength": "10 mg",
+      "imprints": [
+        "NAVANE",
+        "10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thiothixene",
+      "strength": "1 mg",
+      "imprints": [
+        "THX 1"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thiothixene",
+      "strength": "2 mg",
+      "imprints": [
+        "THX 2"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thiothixene",
+      "strength": "5 mg",
+      "imprints": [
+        "THX 5"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Thiothixene",
+      "strength": "10 mg",
+      "imprints": [
+        "THX 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "various",
+      "scored": false
+    }
+  ]
+}

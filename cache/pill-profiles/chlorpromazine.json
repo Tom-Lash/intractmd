@@ -1,0 +1,135 @@
+{
+  "drug_name": "Chlorpromazine",
+  "generic_name": "chlorpromazine hydrochloride",
+  "drug_class": "Phenothiazine antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Thorazine",
+      "strength": "10 mg",
+      "imprints": [
+        "THORAZINE",
+        "10"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Thorazine",
+      "strength": "25 mg",
+      "imprints": [
+        "THORAZINE",
+        "25"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Thorazine",
+      "strength": "50 mg",
+      "imprints": [
+        "THORAZINE",
+        "50"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Thorazine",
+      "strength": "100 mg",
+      "imprints": [
+        "THORAZINE",
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 11,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Thorazine",
+      "strength": "200 mg",
+      "imprints": [
+        "THORAZINE",
+        "200"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 12,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "54",
+        "142"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "54",
+        "143"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "54",
+        "144"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    }
+  ]
+}

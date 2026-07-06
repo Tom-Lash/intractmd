@@ -1,0 +1,103 @@
+{
+  "drug_name": "Amiloride",
+  "generic_name": "amiloride hydrochloride",
+  "drug_class": "potassium-sparing diuretic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "MYLAN",
+        "147"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "BARR",
+        "528"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Barr Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "93",
+        "5064"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "MYLAN",
+        "148"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "BARR",
+        "529"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Barr Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "93",
+        "5065"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Teva",
+      "scored": false
+    }
+  ]
+}

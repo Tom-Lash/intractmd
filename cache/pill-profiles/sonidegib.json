@@ -1,0 +1,23 @@
+{
+  "drug_name": "Sonidegib",
+  "generic_name": "sonidegib",
+  "drug_class": "Hedgehog pathway inhibitor",
+  "variants": [
+    {
+      "brand_name": "Odomzo",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 23,
+      "manufacturer": "Sun Pharmaceutical Industries",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "drug_name": "Dabrafenib",
+  "generic_name": "dabrafenib mesylate",
+  "drug_class": "BRAF kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Tafinlar",
+      "strength": "50 mg",
+      "imprints": [
+        "GS",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Tafinlar",
+      "strength": "75 mg",
+      "imprints": [
+        "GS",
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dabrafenib",
+      "strength": "50 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Dabrafenib",
+      "strength": "75 mg",
+      "imprints": [
+        "various"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

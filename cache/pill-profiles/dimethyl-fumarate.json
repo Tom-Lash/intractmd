@@ -1,0 +1,107 @@
+{
+  "drug_name": "Dimethyl Fumarate",
+  "generic_name": "dimethyl fumarate",
+  "drug_class": "Immunomodulator",
+  "variants": [
+    {
+      "brand_name": "Tecfidera",
+      "strength": "120 mg",
+      "imprints": [
+        "120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Biogen",
+      "scored": false
+    },
+    {
+      "brand_name": "Tecfidera",
+      "strength": "240 mg",
+      "imprints": [
+        "240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 23,
+      "manufacturer": "Biogen",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Apotex)",
+      "strength": "120 mg",
+      "imprints": [
+        "APX",
+        "120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Mylan)",
+      "strength": "120 mg",
+      "imprints": [
+        "M",
+        "DMF120"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Mylan)",
+      "strength": "240 mg",
+      "imprints": [
+        "M",
+        "DMF240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 23,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic (Apotex)",
+      "strength": "240 mg",
+      "imprints": [
+        "APX",
+        "240"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "black",
+        "blue"
+      ],
+      "coating": "enteric-coated",
+      "size_mm": 23,
+      "manufacturer": "Apotex",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "drug_name": "Risdiplam",
+  "generic_name": "Risdiplam",
+  "drug_class": "Survival Motor Neuron (SMN) Protein Enhancer",
+  "variants": [
+    {
+      "brand_name": "Evrysdi",
+      "strength": "0.75 mg/mL",
+      "imprints": [],
+      "shape": "Liquid",
+      "colors": [
+        "Clear to slightly yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Evrysdi",
+      "strength": "1.75 mg",
+      "imprints": [
+        "EVRYSDI",
+        "1.75"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Evrysdi",
+      "strength": "2.4 mg",
+      "imprints": [
+        "EVRYSDI",
+        "2.4"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Evrysdi",
+      "strength": "3 mg",
+      "imprints": [
+        "EVRYSDI",
+        "3"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    }
+  ]
+}

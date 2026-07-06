@@ -1,0 +1,35 @@
+{
+  "drug_name": "Cladribine",
+  "generic_name": "cladribine",
+  "drug_class": "Antimetabolite/Purine Analog",
+  "variants": [
+    {
+      "brand_name": "Mavenclad",
+      "strength": "10 mg",
+      "imprints": [
+        "clad 10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "EMD Serono",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cladribine",
+      "strength": "1 mg/mL",
+      "imprints": [],
+      "shape": "Injection Solution",
+      "colors": [
+        "Colorless to clear"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

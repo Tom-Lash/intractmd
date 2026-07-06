@@ -1,0 +1,86 @@
+{
+  "drug_name": "Viloxazine",
+  "generic_name": "viloxazine hydrochloride",
+  "drug_class": "Serotonin-norepinephrine reuptake inhibitor (SNRI)",
+  "variants": [
+    {
+      "brand_name": "Vivii",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Naurex/Emis Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Vivii",
+      "strength": "150 mg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": 21,
+      "manufacturer": "Naurex/Emis Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Vivii",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": 22,
+      "manufacturer": "Naurex/Emis Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Vivii",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "gray",
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": 24,
+      "manufacturer": "Naurex/Emis Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

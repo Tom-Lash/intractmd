@@ -1,0 +1,40 @@
+{
+  "drug_name": "Lumiracoxib",
+  "generic_name": "lumiracoxib",
+  "drug_class": "Selective COX-2 Inhibitor (NSAID)",
+  "variants": [
+    {
+      "brand_name": "Prexige",
+      "strength": "100 mg",
+      "imprints": [
+        "PREXIGE",
+        "100"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Novartis",
+      "scored": false
+    },
+    {
+      "brand_name": "Prexige",
+      "strength": "400 mg",
+      "imprints": [
+        "PREXIGE",
+        "400"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 12,
+      "manufacturer": "Novartis",
+      "scored": false
+    }
+  ],
+  "note": "Lumiracoxib (Prexige) was withdrawn from the US market in 2007 due to hepatotoxicity concerns. Limited US pill variants were available. Only major documented variants included above."
+}

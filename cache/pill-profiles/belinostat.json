@@ -1,0 +1,24 @@
+{
+  "drug_name": "Belinostat",
+  "generic_name": "belinostat",
+  "drug_class": "Histone Deacetylase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Beleodaq",
+      "strength": "500 mg",
+      "imprints": [
+        "BL 500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 22,
+      "manufacturer": "Spectrum Pharmaceuticals",
+      "scored": false
+    }
+  ],
+  "note": "Belinostat is a specialized oncology drug primarily available as an intravenous formulation (Beleodaq IV). Oral capsule variants are limited. The 500 mg capsule listed above represents the main commercially available solid oral dosage form in the US market. Most clinical use involves IV administration rather than oral pills."
+}

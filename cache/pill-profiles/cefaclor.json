@@ -1,0 +1,136 @@
+{
+  "drug_name": "Cefaclor",
+  "generic_name": "Cefaclor",
+  "drug_class": "Second-generation Cephalosporin",
+  "variants": [
+    {
+      "brand_name": "Ceclor",
+      "strength": "250 mg",
+      "imprints": [
+        "CECLOR",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Purple",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Ceclor",
+      "strength": "500 mg",
+      "imprints": [
+        "CECLOR",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Purple"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefaclor",
+      "strength": "250 mg",
+      "imprints": [
+        "M",
+        "C250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefaclor",
+      "strength": "500 mg",
+      "imprints": [
+        "M",
+        "C500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Ceclor CD",
+      "strength": "375 mg",
+      "imprints": [
+        "CECLOR CD",
+        "375"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 18,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Ceclor CD",
+      "strength": "500 mg",
+      "imprints": [
+        "CECLOR CD",
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 20,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefaclor",
+      "strength": "375 mg",
+      "imprints": [
+        "APO",
+        "CF375"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 18,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefaclor",
+      "strength": "125 mg/5mL",
+      "imprints": [
+        "Oral Suspension"
+      ],
+      "shape": "Liquid",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

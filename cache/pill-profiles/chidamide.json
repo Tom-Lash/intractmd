@@ -1,0 +1,25 @@
+{
+  "drug_name": "Chidamide",
+  "generic_name": "Chidamide",
+  "drug_class": "Histone Deacetylase (HDAC) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Epidaza",
+      "strength": "5 mg",
+      "imprints": [
+        "EPIDAZA",
+        "5mg"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Clear"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 15,
+      "manufacturer": "Chipscreen Biosciences",
+      "scored": false
+    }
+  ],
+  "note": "Chidamide (brand name Epidaza) is primarily approved and available in China and select international markets. It has NOT been approved by the FDA for use in the United States as of the latest available data. Therefore, no validated US pill variants with complete pharmaceutical database verification are available. The variant listed above represents the known marketed formulation, but distribution in the US market is not established."
+}

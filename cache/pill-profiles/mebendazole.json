@@ -1,0 +1,128 @@
+{
+  "drug_name": "Mebendazole",
+  "generic_name": "mebendazole",
+  "drug_class": "Anthelmintic",
+  "variants": [
+    {
+      "brand_name": "Emverm",
+      "strength": "100 mg",
+      "imprints": [
+        "JANSSEN",
+        "717"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 13,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "M72"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "54 492"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "GG 641"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Sandoz",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "CIPLA 100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Cipla",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "WW 450"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Westward Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "TEVA 3105"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Mebendazole",
+      "strength": "100 mg",
+      "imprints": [
+        "MP 272"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mikart",
+      "scored": false
+    }
+  ]
+}

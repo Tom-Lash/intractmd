@@ -1,0 +1,65 @@
+{
+  "drug_name": "Ketotifen",
+  "generic_name": "Ketotifen fumarate",
+  "drug_class": "Mast cell stabilizer / H1 receptor antagonist",
+  "variants": [
+    {
+      "brand_name": "Zaditor",
+      "strength": "0.025%",
+      "imprints": [],
+      "shape": "liquid",
+      "colors": [
+        "clear"
+      ],
+      "coating": "none",
+      "size_mm": null,
+      "manufacturer": "Allergan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ketotifen",
+      "strength": "1 mg",
+      "imprints": [
+        "K1"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Ketotifen",
+      "strength": "1 mg",
+      "imprints": [
+        "K"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 5.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Ketotifen Fumarate",
+      "strength": "1 mg",
+      "imprints": [
+        "KT1"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 6.5,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

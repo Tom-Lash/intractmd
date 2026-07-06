@@ -1,0 +1,40 @@
+{
+  "drug_name": "Neostigmine",
+  "generic_name": "Neostigmine Bromide",
+  "drug_class": "Cholinesterase Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Prostigmin",
+      "strength": "15 mg",
+      "imprints": [
+        "PROSTIGMIN",
+        "15"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "ICN Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Neostigmine Bromide",
+      "strength": "15 mg",
+      "imprints": [
+        "N",
+        "15"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Neostigmine is primarily available as an injectable formulation (IV/IM/SC) in clinical practice. Oral tablet formulations are limited in the current US market. Prostigmin 15 mg tablets are the most historically documented oral variant, though availability may be limited. Most modern neostigmine use involves parenteral administration."
+}

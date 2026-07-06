@@ -1,0 +1,135 @@
+{
+  "drug_name": "Metolazone",
+  "generic_name": "metolazone",
+  "drug_class": "Thiazide-like diuretic",
+  "variants": [
+    {
+      "brand_name": "Zaroxolyn",
+      "strength": "2.5 mg",
+      "imprints": [
+        "ZAROXOLYN",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Pennwest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Zaroxolyn",
+      "strength": "5 mg",
+      "imprints": [
+        "ZAROXOLYN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Pennwest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Zaroxolyn",
+      "strength": "10 mg",
+      "imprints": [
+        "ZAROXOLYN",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Pennwest Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "M",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "M",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "54",
+        "582"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Roxane",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "54",
+        "583"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Roxane",
+      "scored": false
+    }
+  ]
+}

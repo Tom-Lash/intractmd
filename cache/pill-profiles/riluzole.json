@@ -1,0 +1,103 @@
+{
+  "drug_name": "Riluzole",
+  "generic_name": "riluzole",
+  "drug_class": "Aminobenzoic acid derivative, glutamate antagonist",
+  "variants": [
+    {
+      "brand_name": "Rilutek",
+      "strength": "50 mg",
+      "imprints": [
+        "Rilutek",
+        "50 mg"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 12,
+      "manufacturer": "Sanofi US",
+      "scored": false
+    },
+    {
+      "brand_name": "Riluzole",
+      "strength": "50 mg",
+      "imprints": [
+        "54",
+        "292"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Riluzole",
+      "strength": "50 mg",
+      "imprints": [
+        "M",
+        "R50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Riluzole",
+      "strength": "50 mg",
+      "imprints": [
+        "AN",
+        "520"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Alpharma US",
+      "scored": false
+    },
+    {
+      "brand_name": "Riluzole",
+      "strength": "50 mg",
+      "imprints": [
+        "TEVA",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 9,
+      "manufacturer": "TEVA Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Riluzole",
+      "strength": "50 mg",
+      "imprints": [
+        "G",
+        "322"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "drug_name": "Fosaprepitant",
+  "generic_name": "Fosaprepitant dimeglumine",
+  "drug_class": "Neurokinin-1 (NK1) Receptor Antagonist",
+  "variants": [
+    {
+      "brand_name": "Emend IV",
+      "strength": "150 mg/mL",
+      "imprints": [],
+      "shape": "Injectable solution",
+      "colors": [
+        "Clear to slightly opalescent"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Merck Sharp & Dohme",
+      "scored": false
+    }
+  ],
+  "note": "Fosaprepitant is primarily available as an intravenous formulation (Emend IV). Unlike aprepitant (the oral form), fosaprepitant does not have multiple US pill/tablet variants. It is formulated exclusively as an IV injection for antiemetic prophylaxis. No oral tablet or capsule variants exist in the US pharmaceutical market."
+}

@@ -1,0 +1,110 @@
+{
+  "drug_name": "Atropine",
+  "generic_name": "Atropine Sulfate",
+  "drug_class": "Anticholinergic/Antispasmodic",
+  "variants": [
+    {
+      "brand_name": "Generic",
+      "strength": "0.4 mg",
+      "imprints": [
+        "54",
+        "403"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.5 mg",
+      "imprints": [
+        "54",
+        "574"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1 mg",
+      "imprints": [
+        "54",
+        "092"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Atropen Auto-Injector",
+      "strength": "0.25 mg",
+      "imprints": [],
+      "shape": "Cylindrical Pen",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Meridian Medical Technologies",
+      "scored": false
+    },
+    {
+      "brand_name": "Atropen Auto-Injector",
+      "strength": "0.5 mg",
+      "imprints": [],
+      "shape": "Cylindrical Pen",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Meridian Medical Technologies",
+      "scored": false
+    },
+    {
+      "brand_name": "Atropen Auto-Injector",
+      "strength": "1 mg",
+      "imprints": [],
+      "shape": "Cylindrical Pen",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 12,
+      "manufacturer": "Meridian Medical Technologies",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "0.4 mg",
+      "imprints": [
+        "ATROPINE",
+        "0.4mg"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

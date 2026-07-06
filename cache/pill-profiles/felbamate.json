@@ -1,0 +1,85 @@
+{
+  "drug_name": "Felbamate",
+  "generic_name": "Felbamate",
+  "drug_class": "Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Felbatol",
+      "strength": "400 mg",
+      "imprints": [
+        "WALLACE",
+        "2100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Wallace Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Felbatol",
+      "strength": "600 mg",
+      "imprints": [
+        "WALLACE",
+        "2101"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 18,
+      "manufacturer": "Wallace Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Felbamate",
+      "strength": "400 mg",
+      "imprints": [
+        "4H8"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Felbamate",
+      "strength": "600 mg",
+      "imprints": [
+        "6H8"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 18,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Felbamate",
+      "strength": "400 mg",
+      "imprints": [
+        "SZ",
+        "327"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 15,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

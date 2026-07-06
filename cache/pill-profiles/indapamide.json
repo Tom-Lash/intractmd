@@ -1,0 +1,135 @@
+{
+  "drug_name": "Indapamide",
+  "generic_name": "Indapamide",
+  "drug_class": "Thiazide-like diuretic",
+  "variants": [
+    {
+      "brand_name": "Lozol",
+      "strength": "1.25 mg",
+      "imprints": [
+        "LOZOL",
+        "1.25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lozol",
+      "strength": "2.5 mg",
+      "imprints": [
+        "LOZOL",
+        "2.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1.25 mg",
+      "imprints": [
+        "APO",
+        "IND 1.25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6.5,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "APO",
+        "IND 2.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7.5,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1.25 mg",
+      "imprints": [
+        "1.25",
+        "IND"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "2.5",
+        "IND"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Mylan",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1.25 mg",
+      "imprints": [
+        "G",
+        "4701"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 6.5,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "2.5 mg",
+      "imprints": [
+        "G",
+        "4702"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7.5,
+      "manufacturer": "Greenstone",
+      "scored": false
+    }
+  ]
+}

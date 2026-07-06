@@ -1,0 +1,37 @@
+{
+  "drug_name": "Tepotinib",
+  "generic_name": "Tepotinib",
+  "drug_class": "Tyrosine Kinase Inhibitor (MET inhibitor)",
+  "variants": [
+    {
+      "brand_name": "Tepmetko",
+      "strength": "225 mg",
+      "imprints": [
+        "225"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "EMD Serono",
+      "scored": false
+    },
+    {
+      "brand_name": "Tepmetko",
+      "strength": "450 mg",
+      "imprints": [
+        "450"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 19.5,
+      "manufacturer": "EMD Serono",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "drug_name": "Idelalisib",
+  "generic_name": "Idelalisib",
+  "drug_class": "Phosphatidylinositol 3-kinase (PI3K) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zydelig",
+      "strength": "100 mg",
+      "imprints": [
+        "GSK",
+        "100"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Zydelig",
+      "strength": "150 mg",
+      "imprints": [
+        "GSK",
+        "150"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Brown"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Idelalisib",
+      "strength": "100 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink",
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 14,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Idelalisib",
+      "strength": "150 mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Brown",
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 15,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

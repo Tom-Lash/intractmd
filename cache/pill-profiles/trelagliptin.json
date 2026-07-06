@@ -1,0 +1,23 @@
+{
+  "drug_name": "Trelagliptin",
+  "generic_name": "trelagliptin succinate",
+  "drug_class": "Dipeptidyl Peptidase-4 (DPP-4) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Zafatek",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    }
+  ],
+  "note": "Trelagliptin (Zafatek) has limited US availability. It is primarily available in Japan and select Asian markets. The 100 mg once-weekly formulation is the main US variant. Additional variants may exist in other markets but are not widely distributed in the United States. Comprehensive US pill variant data for this medication is limited due to restricted market availability."
+}

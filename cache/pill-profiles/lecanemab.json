@@ -1,0 +1,19 @@
+{
+  "drug_name": "Lecanemab",
+  "generic_name": "lecanemab",
+  "drug_class": "Monoclonal Antibody (Anti-amyloid)",
+  "note": "Lecanemab is administered as an intravenous infusion only. No oral pill variants exist.",
+  "variants": [
+    {
+      "brand_name": "Leqembi",
+      "formulation": "Intravenous Infusion",
+      "strength": "100 mg/10 mL",
+      "route": "IV",
+      "concentration": "10 mg/mL",
+      "manufacturer": "Eli Lilly and Company",
+      "package_type": "Single-dose vial",
+      "storage": "2-8°C (refrigerated)"
+    }
+  ],
+  "important_note": "Lecanemab (Leqembi) is a monoclonal antibody treatment for Alzheimer's disease that is ONLY available as an intravenous infusion administered in healthcare settings. No oral tablets, capsules, or other pill variants exist for this medication."
+}

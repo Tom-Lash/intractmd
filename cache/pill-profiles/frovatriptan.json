@@ -1,0 +1,84 @@
+{
+  "drug_name": "Frovatriptan",
+  "generic_name": "Frovatriptan Succinate",
+  "drug_class": "Triptan (5-HT1B/1D Receptor Agonist)",
+  "variants": [
+    {
+      "brand_name": "Frova",
+      "strength": "2.5 mg",
+      "imprints": [
+        "FROVA",
+        "2.5"
+      ],
+      "shape": "Triangular",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Endo Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Frovatriptan",
+      "strength": "2.5 mg",
+      "imprints": [
+        "G 251"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Greenstone LLC",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Frovatriptan",
+      "strength": "2.5 mg",
+      "imprints": [
+        "A 214"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Frovatriptan",
+      "strength": "2.5 mg",
+      "imprints": [
+        "APO",
+        "FRV 2.5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Frovatriptan",
+      "strength": "2.5 mg",
+      "imprints": [
+        "RX 726"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Rexahn Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

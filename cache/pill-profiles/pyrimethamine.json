@@ -1,0 +1,71 @@
+{
+  "drug_name": "Pyrimethamine",
+  "generic_name": "Pyrimethamine",
+  "drug_class": "Antifolate antimalarial and antiprotozoal",
+  "variants": [
+    {
+      "brand_name": "Daraprim",
+      "strength": "25 mg",
+      "imprints": [
+        "DARAPRIM",
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pyrimethamine",
+      "strength": "25 mg",
+      "imprints": [
+        "MP",
+        "71"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Mutual Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pyrimethamine",
+      "strength": "25 mg",
+      "imprints": [
+        "54",
+        "092"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Roxane Laboratories",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pyrimethamine",
+      "strength": "25 mg",
+      "imprints": [
+        "LEDERLE",
+        "PYRIMETHAMINE 25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Lederle Laboratories",
+      "scored": false
+    }
+  ]
+}

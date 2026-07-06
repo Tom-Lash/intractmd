@@ -1,0 +1,85 @@
+{
+  "drug_name": "Beclomethasone",
+  "generic_name": "Beclomethasone dipropionate",
+  "drug_class": "Corticosteroid (Inhaled)",
+  "variants": [
+    {
+      "brand_name": "QVAR RediHaler",
+      "strength": "40 mcg/actuation",
+      "imprints": [],
+      "shape": "Inhaler",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "QVAR RediHaler",
+      "strength": "80 mcg/actuation",
+      "imprints": [],
+      "shape": "Inhaler",
+      "colors": [
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Arnuity Ellipta",
+      "strength": "100 mcg/inhalation",
+      "imprints": [],
+      "shape": "Dry powder inhaler",
+      "colors": [
+        "Gray/Green"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Arnuity Ellipta",
+      "strength": "200 mcg/inhalation",
+      "imprints": [],
+      "shape": "Dry powder inhaler",
+      "colors": [
+        "Gray/Purple"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Beclomethasone",
+      "strength": "40 mcg/actuation",
+      "imprints": [],
+      "shape": "Metered dose inhaler",
+      "colors": [
+        "Various"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Beclomethasone",
+      "strength": "80 mcg/actuation",
+      "imprints": [],
+      "shape": "Metered dose inhaler",
+      "colors": [
+        "Various"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

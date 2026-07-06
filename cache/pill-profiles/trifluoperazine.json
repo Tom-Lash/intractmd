@@ -1,0 +1,119 @@
+{
+  "drug_name": "Trifluoperazine",
+  "generic_name": "Trifluoperazine hydrochloride",
+  "drug_class": "Typical Antipsychotic (Phenothiazine)",
+  "variants": [
+    {
+      "brand_name": "Stelazine",
+      "strength": "1 mg",
+      "imprints": [
+        "STELAZINE",
+        "1"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Stelazine",
+      "strength": "2 mg",
+      "imprints": [
+        "STELAZINE",
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Stelazine",
+      "strength": "5 mg",
+      "imprints": [
+        "STELAZINE",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trifluoperazine",
+      "strength": "1 mg",
+      "imprints": [
+        "TRF",
+        "1"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trifluoperazine",
+      "strength": "2 mg",
+      "imprints": [
+        "TRF",
+        "2"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trifluoperazine",
+      "strength": "5 mg",
+      "imprints": [
+        "TRF",
+        "5"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Trifluoperazine",
+      "strength": "10 mg",
+      "imprints": [
+        "TRF",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

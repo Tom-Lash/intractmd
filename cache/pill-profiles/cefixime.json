@@ -1,0 +1,106 @@
+{
+  "drug_name": "Cefixime",
+  "generic_name": "Cefixime",
+  "drug_class": "Third-generation Cephalosporin",
+  "variants": [
+    {
+      "brand_name": "Suprax",
+      "strength": "200 mg",
+      "imprints": [
+        "SUPRAX",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Suprax",
+      "strength": "400 mg",
+      "imprints": [
+        "SUPRAX",
+        "400"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefixime",
+      "strength": "200 mg",
+      "imprints": [
+        "AN",
+        "200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Amneal Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefixime",
+      "strength": "400 mg",
+      "imprints": [
+        "TV",
+        "5701"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefixime",
+      "strength": "200 mg",
+      "imprints": [
+        "RI",
+        "4"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Red"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Rising Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Cefixime",
+      "strength": "400 mg",
+      "imprints": [
+        "WC",
+        "841"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "West-Ward Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

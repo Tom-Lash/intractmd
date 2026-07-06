@@ -1,0 +1,24 @@
+{
+  "drug_name": "Satralizumab",
+  "generic_name": "satralizumab-mmyy",
+  "drug_class": "Monoclonal Antibody (IL-6 receptor antagonist)",
+  "note": "Satralizumab is a monoclonal antibody administered via subcutaneous injection. It is NOT available as an oral pill/tablet in the United States.",
+  "variants": [
+    {
+      "brand_name": "Enspryng",
+      "strength": "120 mg/mL",
+      "form": "Subcutaneous injection (prefilled syringe)",
+      "imprints": [],
+      "shape": "N/A",
+      "colors": [
+        "Clear to slightly opalescent"
+      ],
+      "coating": "N/A",
+      "size_mm": null,
+      "manufacturer": "Roche/Genentech",
+      "scored": false,
+      "route": "Subcutaneous"
+    }
+  ],
+  "availability_status": "No oral pill variants exist. Satralizumab is exclusively available as a subcutaneous injection."
+}

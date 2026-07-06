@@ -1,0 +1,60 @@
+{
+  "drug_name": "Selenium Sulfide",
+  "generic_name": "Selenium Sulfide",
+  "drug_class": "Antifungal/Antiseborheic Agent",
+  "variants": [
+    {
+      "brand_name": "Selsun",
+      "strength": "2.5%",
+      "imprints": [],
+      "shape": "Liquid/Suspension",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Abbott",
+      "scored": false
+    },
+    {
+      "brand_name": "Selsun Blue",
+      "strength": "1%",
+      "imprints": [],
+      "shape": "Shampoo",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Chattem Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Head & Shoulders Intensive Solutions",
+      "strength": "1%",
+      "imprints": [],
+      "shape": "Shampoo",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Procter & Gamble",
+      "scored": false
+    },
+    {
+      "brand_name": "Exsel",
+      "strength": "2.5%",
+      "imprints": [],
+      "shape": "Lotion",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": null,
+      "manufacturer": "Medicis",
+      "scored": false
+    }
+  ],
+  "note": "Selenium Sulfide is primarily available as topical formulations (shampoos, lotions, suspensions). Oral pill variants are not commonly manufactured in the US market."
+}

@@ -1,0 +1,58 @@
+{
+  "drug_name": "Ozanimod",
+  "generic_name": "ozanimod",
+  "drug_class": "Sphingosine 1-phosphate receptor modulator",
+  "variants": [
+    {
+      "brand_name": "Zeposia",
+      "strength": "0.23 mg",
+      "imprints": [
+        "ZEP",
+        "0.23"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Zeposia",
+      "strength": "0.46 mg",
+      "imprints": [
+        "ZEP",
+        "0.46"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Zeposia",
+      "strength": "0.92 mg",
+      "imprints": [
+        "ZEP",
+        "0.92"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "None",
+      "size_mm": 20,
+      "manufacturer": "Bristol Myers Squibb",
+      "scored": false
+    }
+  ]
+}

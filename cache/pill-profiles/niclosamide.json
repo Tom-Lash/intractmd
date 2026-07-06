@@ -1,0 +1,39 @@
+{
+  "drug_name": "Niclosamide",
+  "generic_name": "niclosamide",
+  "drug_class": "Anthelmintic",
+  "variants": [
+    {
+      "brand_name": "Niclocide",
+      "strength": "500 mg",
+      "imprints": [
+        "NICLOCIDE"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Bayer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Niclosamide",
+      "strength": "500 mg",
+      "imprints": [
+        "500"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White",
+        "Cream"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 14,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ],
+  "note": "Niclosamide availability in the US has been limited. Niclocide was the primary branded formulation, now largely discontinued. Current availability is primarily through compounding pharmacies or limited generic sources. Comprehensive variant data is constrained by limited current US market presence."
+}

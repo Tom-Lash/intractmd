@@ -1,0 +1,71 @@
+{
+  "drug_name": "Tedizolid",
+  "generic_name": "Tedizolid phosphate",
+  "drug_class": "Oxazolidinone antibiotic",
+  "variants": [
+    {
+      "brand_name": "Sivextro",
+      "strength": "200 mg",
+      "imprints": [
+        "SVX",
+        "200"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Cubist Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Sivextro",
+      "strength": "600 mg",
+      "imprints": [
+        "SVX",
+        "600"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Cubist Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Tedizolid",
+      "strength": "200 mg",
+      "imprints": [
+        "TDZ",
+        "200"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic - Tedizolid",
+      "strength": "600 mg",
+      "imprints": [
+        "TDZ",
+        "600"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Multiple manufacturers",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "drug_name": "Nalmefene",
+  "generic_name": "Nalmefene hydrochloride",
+  "drug_class": "Opioid antagonist",
+  "variants": [
+    {
+      "brand_name": "Selincro",
+      "strength": "18 mg",
+      "imprints": [
+        "18"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lundbeck",
+      "scored": false
+    },
+    {
+      "brand_name": "Revex",
+      "strength": "0.1 mg/mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "Injection solution",
+      "colors": [
+        "Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "DuPont",
+      "scored": false
+    },
+    {
+      "brand_name": "Revex",
+      "strength": "1 mg/mL",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "Injection solution",
+      "colors": [
+        "Colorless"
+      ],
+      "coating": "N/A",
+      "size_mm": 0,
+      "manufacturer": "DuPont",
+      "scored": false
+    }
+  ]
+}

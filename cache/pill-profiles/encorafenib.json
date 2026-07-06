@@ -1,0 +1,40 @@
+{
+  "drug_name": "Encorafenib",
+  "generic_name": "encorafenib",
+  "drug_class": "BRAF inhibitor; kinase inhibitor",
+  "variants": [
+    {
+      "brand_name": "Braftovi",
+      "strength": "50 mg",
+      "imprints": [
+        "BDB",
+        "50"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Array BioPharma Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Braftovi",
+      "strength": "75 mg",
+      "imprints": [
+        "BDB",
+        "75"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink"
+      ],
+      "coating": "none",
+      "size_mm": 20,
+      "manufacturer": "Array BioPharma Inc.",
+      "scored": false
+    }
+  ]
+}

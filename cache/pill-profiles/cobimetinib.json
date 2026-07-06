@@ -1,0 +1,39 @@
+{
+  "drug_name": "Cobimetinib",
+  "generic_name": "cobimetinib fumarate",
+  "drug_class": "Mitogen-activated protein kinase (MEK) inhibitor",
+  "variants": [
+    {
+      "brand_name": "Cotellic",
+      "strength": "20 mg",
+      "imprints": [
+        "COTELLIC",
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    },
+    {
+      "brand_name": "Cotellic",
+      "strength": "20 mg",
+      "imprints": [
+        "COTELLIC",
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Genentech/Roche",
+      "scored": false
+    }
+  ]
+}

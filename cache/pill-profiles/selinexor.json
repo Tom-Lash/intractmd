@@ -1,0 +1,39 @@
+{
+  "drug_name": "Selinexor",
+  "generic_name": "selinexor",
+  "drug_class": "Selective Inhibitor of Nuclear Export (SINE)",
+  "variants": [
+    {
+      "brand_name": "XPOVIO",
+      "strength": "20 mg",
+      "imprints": [
+        "SLX",
+        "20"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Karyopharm Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "XPOVIO",
+      "strength": "10 mg",
+      "imprints": [
+        "SLX",
+        "10"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 7,
+      "manufacturer": "Karyopharm Therapeutics",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "drug_name": "Flucytosine",
+  "generic_name": "Flucytosine",
+  "drug_class": "Antifungal",
+  "variants": [
+    {
+      "brand_name": "Ancobon",
+      "strength": "250 mg",
+      "imprints": [
+        "ANCOBON",
+        "250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 17,
+      "manufacturer": "Viatris (formerly Mylan)",
+      "scored": false
+    },
+    {
+      "brand_name": "Ancobon",
+      "strength": "500 mg",
+      "imprints": [
+        "ANCOBON",
+        "500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 21,
+      "manufacturer": "Viatris (formerly Mylan)",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Flucytosine",
+      "strength": "250 mg",
+      "imprints": [
+        "GPI",
+        "F250"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 17,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Flucytosine",
+      "strength": "500 mg",
+      "imprints": [
+        "GPI",
+        "F500"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Red",
+        "White"
+      ],
+      "coating": "Gelatin capsule",
+      "size_mm": 21,
+      "manufacturer": "Various generic manufacturers",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "drug_name": "Rufinamide",
+  "generic_name": "Rufinamide",
+  "drug_class": "Antiepileptic Agent",
+  "variants": [
+    {
+      "brand_name": "Banzel",
+      "strength": "200 mg",
+      "imprints": [
+        "RUF",
+        "200"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Banzel",
+      "strength": "400 mg",
+      "imprints": [
+        "RUF",
+        "400"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Eisai Inc.",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "200 mg",
+      "imprints": [
+        "RUF 200"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 16,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "400 mg",
+      "imprints": [
+        "RUF 400"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

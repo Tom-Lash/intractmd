@@ -1,0 +1,33 @@
+{
+  "drug_name": "Ofatumumab",
+  "generic_name": "Ofatumumab",
+  "drug_class": "Monoclonal Antibody (CD20 antagonist)",
+  "note": "Ofatumumab is a monoclonal antibody administered by injection (intravenous or subcutaneous), not available as oral pills/tablets",
+  "variants": [
+    {
+      "brand_name": "Arzerra",
+      "formulation_type": "Intravenous Infusion",
+      "strength": "100 mg/5 mL",
+      "route": "IV",
+      "manufacturer": "Novartis",
+      "indication": "Chronic lymphocytic leukemia"
+    },
+    {
+      "brand_name": "Arzerra",
+      "formulation_type": "Intravenous Infusion",
+      "strength": "1000 mg/50 mL",
+      "route": "IV",
+      "manufacturer": "Novartis",
+      "indication": "Chronic lymphocytic leukemia"
+    },
+    {
+      "brand_name": "Kesimpta",
+      "formulation_type": "Subcutaneous Injection (Pre-filled Pen/Syringe)",
+      "strength": "20 mg/0.4 mL",
+      "route": "Subcutaneous",
+      "manufacturer": "Novartis",
+      "indication": "Relapsing multiple sclerosis"
+    }
+  ],
+  "important_note": "Ofatumumab is NOT available as oral pills or tablets. All US formulations are injectable solutions for IV or subcutaneous administration."
+}
