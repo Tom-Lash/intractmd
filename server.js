@@ -1381,7 +1381,7 @@ COPY RULES — follow exactly:
 - PREDICTIVE: Name each supplement/food SPECIFICALLY by name. Use: "Based on your medications, you may want to avoid [SPECIFIC NAME] because..." NEVER imply the patient IS currently taking a predictive item.
 - Confirmed foods/supplements must appear PROMINENTLY early in the letter, not buried.
 - No raw lab values, no risk score numbers, no terms like eGFR, LFT, PCPRS, polypharmacy, frail, non-adherent
-- Always end with warm call to action referencing ${caseManagerName} and phone/portal contact
+- Always end with a warm closing referencing ${caseManagerName}. Do NOT include phone numbers, portal links, or any placeholder tokens like [PHONE] or [PORTAL]. The case manager will add contact details before sending.
 - Keep the message hopeful and action-oriented, not alarming
 
 Generate THREE versions:
