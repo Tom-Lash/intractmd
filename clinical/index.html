@@ -869,7 +869,7 @@ function renderDDIResult() {
       const hidden=!isHigh && mlCount>=SHOW_MAX;
       if(!isHigh) mlCount++;
       html += '<div class="interaction-item" style="'+(hidden?'display:none;':'')+'" data-clin-extra="'+hidden+'">'
-        + '<div style="cursor:pointer;" onclick="var d=this.nextElementSibling,a=this.querySelector('span.arr');if(d){var o=d.style.display==='block';d.style.display=o?'none':'block';if(a)a.textContent=o?'&#9660;':'&#9650;'}">'
+        + '<div style="cursor:pointer;" onclick="clinItemToggle(this)">' 
         + '<span class="sev '+sc+'">'+w.severity+'</span> '
         + '<strong style="font-size:13px;">'+w.label+'</strong> '
         + '<span style="font-size:11px;padding:2px 6px;border-radius:10px;background:'+w.catBg+';color:'+w.catColor+';">'+w.catLabel+'</span>'
@@ -892,6 +892,12 @@ function renderDDIResult() {
   el.innerHTML = html;
 }
 
+function clinItemToggle(el){
+  var d=el.parentElement.querySelector('[style*="display:none"],[style*="display: none"]')||el.nextElementSibling;
+  if(!d)d=el.parentElement.children[1];
+  if(d){var o=d.style.display==='block';d.style.display=o?'none':'block';
+  var a=el.querySelector('.arr');if(a)a.textContent=o?'\u25bc':'\u25b2';}
+}
 function clinToggleMore(){
   const extras=document.querySelectorAll('[data-clin-extra="true"]');
   const btn=document.getElementById('clinShowMore');
