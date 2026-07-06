@@ -1375,14 +1375,14 @@ PREDICTIVE FINDINGS (conditional language ONLY — inferred, not confirmed):
 ${predictiveFindings.length ? predictiveFindings.map(f => '- ' + f.finding + ': ' + f.action).join('\n') : 'None identified.'}
 
 COPY RULES — follow exactly:
-- CONFIRMED: Declarative. "Your records show [finding]..." or "We see that..."
+- CONFIRMED (drug interactions): Strong declarative. "We see that you are taking [Drug A] and [Drug B] together — this combination requires careful monitoring because..."
+- CONFIRMED (patient-reported foods/supplements): Strong and specific. "Because you regularly consume [food/supplement], this is important: [specific risk and why it matters for your specific medication]. You should [specific action]." Name the specific drug it interacts with.
 - COMPUTED: Pattern framing. "Our medication review identified..." or "Based on your current regimen..."
-- PREDICTIVE: Name each supplement/food SPECIFICALLY. Use: "Based on your medications, you may want to avoid [NAME] because..." or "If you take [NAME], let your pharmacist know." Always list each supplement by specific name — never say 'certain supplements' or 'some vitamins'. NEVER say the patient IS currently taking a supplement.
+- PREDICTIVE: Name each supplement/food SPECIFICALLY by name. Use: "Based on your medications, you may want to avoid [SPECIFIC NAME] because..." NEVER imply the patient IS currently taking a predictive item.
+- Confirmed foods/supplements must appear PROMINENTLY early in the letter, not buried.
 - No raw lab values, no risk score numbers, no terms like eGFR, LFT, PCPRS, polypharmacy, frail, non-adherent
 - Always end with warm call to action referencing ${caseManagerName} and phone/portal contact
 - Keep the message hopeful and action-oriented, not alarming
-
-${langInstr}
 
 Generate THREE versions:
 1. EMAIL — 150-200 words, subject line included, warm and professional
