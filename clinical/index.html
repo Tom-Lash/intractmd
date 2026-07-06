@@ -342,6 +342,76 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div class="factor-grid" id="regimenFactors">
           <!-- Populated by JS -->
         </div>
+
+        <!-- PATIENT SELF-REPORT: Foods & Supplements -->
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid #eee;">
+          <div style="font-size:12px;font-weight:700;color:var(--confirmed);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
+            <i class="ti ti-user-check"></i> Patient Self-Report (upgrades to CONFIRMED)
+          </div>
+          <div style="font-size:12px;color:var(--text3);margin-bottom:12px;">Check any items the patient reports regularly consuming — these upgrade from PREDICTIVE to CONFIRMED in the outreach message.</div>
+
+          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Foods & Beverages:</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;" id="foodReportGrid">
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('grapefruit','Grapefruit / grapefruit juice',this.checked)"> Grapefruit juice
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('alcohol','Alcohol (regular consumption)',this.checked)"> Alcohol
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('leafy_greens','High vitamin K foods (spinach, kale, broccoli)',this.checked)"> High vitamin K foods
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('dairy','Dairy products (high calcium)',this.checked)"> Dairy / high calcium
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('tyramine','Tyramine-rich foods (aged cheese, cured meats)',this.checked)"> Tyramine-rich foods
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('cranberry','Cranberry juice',this.checked)"> Cranberry juice
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('caffeine','Excessive caffeine',this.checked)"> Excessive caffeine
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleFoodReport('high_fat','High fat meals',this.checked)"> High fat meals
+            </label>
+          </div>
+
+          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Supplements:</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;" id="suppReportGrid">
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('fish_oil','Fish Oil / Omega-3',this.checked)"> Fish Oil / Omega-3
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('vitamin_e','Vitamin E',this.checked)"> Vitamin E
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('vitamin_k','Vitamin K',this.checked)"> Vitamin K
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('st_johns_wort','St. John's Wort',this.checked)"> St. John's Wort
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('ginkgo','Ginkgo Biloba',this.checked)"> Ginkgo Biloba
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('garlic','Garlic supplements',this.checked)"> Garlic supplements
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('melatonin','Melatonin',this.checked)"> Melatonin
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('magnesium','Magnesium',this.checked)"> Magnesium
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('coq10','CoQ10',this.checked)"> CoQ10
+            </label>
+            <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
+              <input type="checkbox" onchange="toggleSuppReport('turmeric','Turmeric / Curcumin',this.checked)"> Turmeric / Curcumin
+            </label>
+          </div>
+        </div>
       </div>
 
       <!-- STEP 5: SUPPLEMENT/FOOD RISKS -->
@@ -477,6 +547,54 @@ function ensureSelected(id) {
   if(card && !card.classList.contains('selected')) {
     toggleFactor(id);
   }
+}
+
+// ── PATIENT SELF-REPORT FOODS & SUPPLEMENTS ──────────────────────────────
+const patientFoods = {};
+const patientSupps = {};
+
+function toggleFoodReport(id, label, checked) {
+  if(checked){
+    patientFoods[id] = {
+      factorId: 'food_' + id, tier: 'CONFIRMED',
+      label: 'Patient reports: ' + label,
+      plainLanguage: 'Patient confirms regular consumption of ' + label,
+      action: 'Confirm interaction risk and include in outreach as CONFIRMED finding.',
+      value: label, category: 'food_confirmed'
+    };
+    // Update the label style to show confirmed
+    event.target.closest('label').style.borderColor = 'var(--confirmed-bd)';
+    event.target.closest('label').style.background = 'var(--confirmed-lt)';
+  } else {
+    delete patientFoods[id];
+    event.target.closest('label').style.borderColor = '#ddd';
+    event.target.closest('label').style.background = '#fafafa';
+  }
+  // Merge into selectedFactors
+  Object.keys(patientFoods).forEach(k => selectedFactors['food_'+k] = patientFoods[k]);
+  Object.keys(patientSupps).forEach(k => selectedFactors['supp_'+k] = patientSupps[k]);
+  updateCounts();
+}
+
+function toggleSuppReport(id, label, checked) {
+  if(checked){
+    patientSupps[id] = {
+      factorId: 'supp_' + id, tier: 'CONFIRMED',
+      label: 'Patient reports: ' + label,
+      plainLanguage: 'Patient confirms regular use of ' + label,
+      action: 'Confirm supplement interaction risk and include in outreach as CONFIRMED finding.',
+      value: label, category: 'supp_confirmed'
+    };
+    event.target.closest('label').style.borderColor = 'var(--confirmed-bd)';
+    event.target.closest('label').style.background = 'var(--confirmed-lt)';
+  } else {
+    delete patientSupps[id];
+    event.target.closest('label').style.borderColor = '#ddd';
+    event.target.closest('label').style.background = '#fafafa';
+  }
+  Object.keys(patientFoods).forEach(k => selectedFactors['food_'+k] = patientFoods[k]);
+  Object.keys(patientSupps).forEach(k => selectedFactors['supp_'+k] = patientSupps[k]);
+  updateCounts();
 }
 
 // ── AUTO-COMPUTE RISK FACTORS FROM DRUG REGIMEN ─────────────────────────
