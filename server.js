@@ -801,37 +801,66 @@ app.post('/api/pill-identify', async (req, res) => {
   const { shape, color1, color2, imprint, coating, size } = req.body;
   try {
     let matches = [];
-    // Build OpenFDA query from available fields
-    let filters = [];
-    if (imprint) filters.push('imprint:"' + imprint + '"');
-    if (shape && shape !== 'Any') filters.push('shape:"' + shape + '"');
-    if (color1 && color1 !== 'Any') filters.push('color:"' + color1 + '"');
-    if (coating && coating !== 'Any') filters.push('coating:"' + coating + '"');
 
-    if (filters.length > 0) {
-      const query = filters.join('+AND+');
-      const url = 'https://api.fda.gov/drug/ndc.json?search=' + query + '&limit=10';
-      try {
-        const r = await safeFetch(url, 8000);
-        if (r && r.results && r.results.length) {
-          matches = r.results.map(function(d) {
+    // Step 1: NLM RxImage (has pill photos, most reliable)
+    try {
+      let rxParams = [];
+      if (imprint) rxParams.push('imprint=' + encodeURIComponent(imprint));
+      if (shape && shape !== 'Any') rxParams.push('shape=' + encodeURIComponent(shape));
+      if (color1 && color1 !== 'Any') rxParams.push('color=' + encodeURIComponent(color1));
+      if (coating && coating !== 'Any') rxParams.push('coating=' + encodeURIComponent(coating));
+      rxParams.push('includeMpc=true');
+      rxParams.push('rLimit=8');
+      rxParams.push('resolution=300');
+      if (rxParams.length > 2) {
+        const rxUrl = 'https://rximage.nlm.nih.gov/api/rximage/1/rxbase?' + rxParams.join('&');
+        const rxData = await safeFetch(rxUrl, 8000);
+        if (rxData && rxData.nlmRxImages && rxData.nlmRxImages.length) {
+          matches = rxData.nlmRxImages.map(function(p) {
             return {
-              name: d.brand_name || d.generic_name || 'Unknown',
-              generic: d.generic_name || '',
-              imprint: imprint || '',
-              shape: shape || '',
-              color: color1 || '',
-              confidence: imprint ? 'high' : 'medium',
-              labeler: d.labeler_name || '',
-              dosage_form: d.dosage_form || '',
-              strength: (d.active_ingredients || []).map(function(a){ return a.name + ' ' + a.strength; }).join(', ')
+              drug_name: p.name || 'Unknown',
+              generic_name: p.ingredientName || '',
+              strength: p.strength || '',
+              imprint: p.imprint || imprint || '',
+              confidence: imprint && p.imprint && p.imprint.toLowerCase().includes((imprint||'').toLowerCase()) ? 'high' : 'medium',
+              imageUrl: p.imageUrl || '',
+              labeler: p.labeler || '',
+              note: [p.shape, p.colorText ? p.colorText.join('/') : ''].filter(Boolean).join(', ')
             };
           });
         }
-      } catch(fe) { console.error('OpenFDA pill error:', fe.message); }
+      }
+    } catch(rxe) { console.error('RxImage error:', rxe.message); }
+
+    // Step 2: OpenFDA NDC fallback
+    if (!matches.length) {
+      let filters = [];
+      if (imprint) filters.push('imprint:"' + imprint + '"');
+      if (shape && shape !== 'Any') filters.push('shape:"' + shape + '"');
+      if (color1 && color1 !== 'Any') filters.push('color:"' + color1 + '"');
+      if (filters.length > 0) {
+        try {
+          const url = 'https://api.fda.gov/drug/ndc.json?search=' + filters.join('+AND+') + '&limit=8';
+          const r = await safeFetch(url, 8000);
+          if (r && r.results && r.results.length) {
+            matches = r.results.map(function(d) {
+              return {
+                drug_name: d.brand_name || d.generic_name || 'Unknown',
+                generic_name: d.generic_name || '',
+                imprint: imprint || '',
+                confidence: imprint ? 'medium' : 'low',
+                imageUrl: '',
+                labeler: d.labeler_name || '',
+                strength: (d.active_ingredients || []).map(function(a){ return a.name + ' ' + a.strength; }).join(', '),
+                note: d.dosage_form || ''
+              };
+            });
+          }
+        } catch(fe) { console.error('OpenFDA pill error:', fe.message); }
+      }
     }
 
-    // Fallback to Claude AI if no OpenFDA results
+    // Step 3: Claude AI fallback
     if (!matches.length) {
       const apiKey = process.env.ANTHROPIC_API_KEY;
       if (apiKey) {
@@ -840,10 +869,8 @@ app.post('/api/pill-identify', async (req, res) => {
         if (shape && shape !== 'Any') parts.push('Shape: ' + shape);
         if (color1 && color1 !== 'Any') parts.push('Color: ' + color1);
         if (color2 && color2 !== 'Any') parts.push('Secondary color: ' + color2);
-        if (size) parts.push('Size (mm): ' + size);
-        if (coating && coating !== 'Any') parts.push('Coating: ' + coating);
-        const desc = parts.join(', ');
-        const promptText = 'You are a pharmaceutical pill identification expert. Identify a pill described as: ' + desc + '. Return ONLY valid JSON no markdown: {"matches":[{"name":"<brand>","generic":"<generic>","strength":"<strength>","confidence":"<high|medium|low>","note":"<brief note>"}]}';
+        if (size) parts.push('Size: ' + size + 'mm');
+        const promptText = 'Identify a pill: ' + parts.join(', ') + '. Return ONLY JSON: {"matches":[{"drug_name":"<brand>","generic_name":"<generic>","strength":"<dose>","confidence":"<high|medium|low>","note":"<brief note>","imageUrl":""}]}';
         try {
           const aiResp = await safeFetch('https://api.anthropic.com/v1/messages', 8000, {
             method: 'POST',
