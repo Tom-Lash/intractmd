@@ -2268,59 +2268,54 @@ function renderPillResults(d){
   var matches=d.matches||[];
   var h='';
   if(!matches.length){
-    document.getElementById('pi-results').innerHTML='<div class="empty"><i class="ti ti-search-off"></i><p>No matches found. Try a different imprint, color, or shape.</p></div>';
+    document.getElementById('pi-results').innerHTML='<div class="empty"><i class="ti ti-search-off"></i><p>No matches found. Try adding an imprint or adjusting the description.</p></div>';
     return;
   }
   matches.forEach(function(m){
     var conf=(m.confidence||'low').toLowerCase();
-    var confLabel=conf==='high'?'High Confidence':conf==='medium'?'Medium Confidence':'Low Confidence';
-    var confColor=conf==='high'?'var(--grn)':conf==='medium'?'var(--amb)':'var(--tx3)';
-    var name=m.name||m.drug_name||'Unknown';
-    var generic=m.generic||m.generic_name||m.ingredientName||'';
-    var strength=m.strength||'';
-    var labeler=m.labeler||'';
-    var note=m.note||m.dosage_form||'';
-    var imageUrl=m.imageUrl||'';
-    var nameSafe=name.replace(/"/g,'');
-    var genSafe=(generic||name).replace(/"/g,'');
-
-    h+='<div class="pill-match-card '+conf+'" style="margin-bottom:12px;padding:12px 14px;border-radius:10px;border:1px solid #e8e8e8;border-left:4px solid '+confColor+';">';
-    h+='<div style="display:flex;align-items:flex-start;gap:12px;">';
-
-    // Pill photo if available
-    if(imageUrl){
-      h+='<img src="'+imageUrl+'" alt="Pill image" style="width:80px;height:80px;object-fit:contain;border-radius:8px;border:1px solid #eee;background:#f8f8f8;flex-shrink:0;" onerror="this.style.display='none'"/>';
+    var confLabel=conf==='high'?'High':conf==='medium'?'Medium':'Low';
+    var drugSafe=(m.drug_name||'').replace(/"/g,'');
+    var genSafe=(m.generic_name||m.drug_name||'').replace(/"/g,'');
+    h+='<div class="pill-match-card '+conf+'">';
+    h+='<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:6px">';
+    h+='<div><strong style="font-size:14px">'+(m.drug_name||'')+'</strong>';
+    if(m.strength){h+=' <span style="font-size:12px;color:var(--tx2)">'+m.strength+'</span>';}
+    h+='</div><span class="conf-badge '+conf+'">'+confLabel+'</span></div>';
+    if(m.generic_name&&m.generic_name!==m.drug_name){
+      h+='<div style="font-size:12px;color:var(--tx2);margin-bottom:5px">Generic: '+m.generic_name+'</div>';
     }
-
-    h+='<div style="flex:1;">';
-    h+='<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">';
-    h+='<strong style="font-size:14px;color:var(--tx)">'+name+'</strong>';
-    h+='<span style="font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;background:'+confColor+'20;color:'+confColor+';">'+confLabel+'</span>';
+    if(m.imprint_confirmed){
+      h+='<div style="font-size:11px;color:var(--grn);margin-bottom:5px"><i class="ti ti-check" style="margin-right:3px"></i>Imprint confirmed</div>';
+    }
+    if(m.description){h+='<div style="font-size:13px;color:var(--tx);margin-bottom:8px">'+m.description+'</div>';}
+    if(m.warning){h+='<div style="font-size:12px;color:var(--amb);margin-bottom:8px"><i class="ti ti-alert-triangle" style="margin-right:4px"></i>'+m.warning+'</div>';}
+    h+='<button class="btn-s" style="font-size:12px;display:inline-flex;align-items:center;gap:4px" data-drug="'+drugSafe+'" data-generic="'+genSafe+'" onclick="addPillDrugFromBtn(this)"><i class="ti ti-plus"></i> Add to Drug List</button>';
     h+='</div>';
-    if(generic && generic!==name) h+='<div style="font-size:12px;color:var(--tx2);margin-bottom:3px;">Generic: '+generic+'</div>';
-    if(strength) h+='<div style="font-size:12px;color:var(--tx2);margin-bottom:3px;">Strength: '+strength+'</div>';
-    if(labeler) h+='<div style="font-size:12px;color:var(--tx3);margin-bottom:3px;">Manufacturer: '+labeler+'</div>';
-    if(note) h+='<div style="font-size:12px;color:var(--tx3);margin-bottom:6px;">'+note+'</div>';
-    h+='<div style="display:flex;gap:8px;margin-top:8px;">';
-    h+='<button class="btn-s" onclick="addPillDrugFromBtn(this)" data-drug="'+nameSafe+'" data-generic="'+genSafe+'" style="font-size:12px;padding:5px 10px;"><i class="ti ti-plus"></i> Add to drug list</button>';
-    h+='</div>';
-    h+='</div></div></div>';
   });
-
-  if(d.source==='rximage'){
-    h+='<div style="margin-top:8px;font-size:11px;color:var(--tx3);text-align:right;">Source: NLM RxImage Database</div>';
-  } else if(d.source==='openfda'){
-    h+='<div style="margin-top:8px;font-size:11px;color:var(--tx3);text-align:right;">Source: FDA NDC Database</div>';
-  }
-
-  var el=document.getElementById('pi-results');
-  el.innerHTML=h;
+  h+='<div style="margin-top:14px;padding:11px 13px;background:var(--amb-lt);border:0.5px solid var(--amb-bd);border-radius:var(--r)">';
+  h+='<div style="font-size:11px;font-weight:700;color:var(--amb);margin-bottom:4px"><i class="ti ti-alert-circle" style="margin-right:4px"></i>Disclaimer</div>';
+  h+='<div style="font-size:12px;color:var(--amb)">'+(d.disclaimer||'Pill identification is for reference only. Always confirm with a licensed pharmacist before taking any medication.')+'</div>';
+  if(d.search_tip){h+='<div style="font-size:11px;color:var(--tx2);margin-top:5px">Tip: '+d.search_tip+'</div>';}
+  h+='</div>';
+  h+='<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">';
+  h+='<a href="https://dailymed.nlm.nih.gov/dailymed/" target="_blank" rel="noopener" class="btn-s" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:12px"><i class="ti ti-external-link"></i> NIH DailyMed</a>';
+  h+='<a href="https://www.drugs.com/pill_identification.html" target="_blank" rel="noopener" class="btn-s" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:12px"><i class="ti ti-external-link"></i> Drugs.com Pill Identifier</a>';
+  h+='</div>';
+  document.getElementById('pi-results').innerHTML=h;
   document.getElementById('pi-disclaimer').style.display='block';
-  document.getElementById('pi-disclaimer2').style.display='block';
-  el.querySelectorAll('.pill-match-card button').forEach(function(btn){
-    btn.addEventListener('click',function(){addPillDrugFromBtn(this);});
-  });
+  if(matches.length>=2){
+    window._pillIdLast=d;
+    var fbBtn=document.createElement('button');
+    fbBtn.className='btn-s';
+    fbBtn.style.cssText='display:inline-flex;align-items:center;gap:5px;font-size:12px;margin-top:8px';
+    fbBtn.innerHTML='<i class="ti ti-book-2"></i> View '+matches.length+' matches as FlipBook';
+    fbBtn.onclick=function(){openFlipbookWith(buildPillIdPages(window._pillIdLast));};
+    document.getElementById('pi-results').appendChild(fbBtn);
+  }
 }
+
+
+// IFU modal
 function openIFU(){
   document.getElementById('ifu-modal').classList.add('open');
   setTimeout(function(){document.getElementById('ifu-input').focus();},80);
