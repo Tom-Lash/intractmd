@@ -1,0 +1,127 @@
+{
+  "drug_name": "Enoxaparin",
+  "generic_name": "Enoxaparin Sodium",
+  "drug_class": "Low Molecular Weight Heparin (LMWH)",
+  "variants": [
+    {
+      "brand_name": "Lovenox",
+      "strength": "30 mg/0.3 mL",
+      "imprints": [
+        "Lovenox 30"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lovenox",
+      "strength": "40 mg/0.4 mL",
+      "imprints": [
+        "Lovenox 40"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lovenox",
+      "strength": "60 mg/0.6 mL",
+      "imprints": [
+        "Lovenox 60"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lovenox",
+      "strength": "80 mg/0.8 mL",
+      "imprints": [
+        "Lovenox 80"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lovenox",
+      "strength": "100 mg/1 mL",
+      "imprints": [
+        "Lovenox 100"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lovenox",
+      "strength": "120 mg/0.8 mL",
+      "imprints": [
+        "Lovenox 120"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Lovenox",
+      "strength": "150 mg/1 mL",
+      "imprints": [
+        "Lovenox 150"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Sanofi-Aventis",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Enoxaparin",
+      "strength": "100 mg/1 mL",
+      "imprints": [
+        "Generic"
+      ],
+      "shape": "Prefilled Syringe",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 25,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

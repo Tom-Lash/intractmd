@@ -1,0 +1,136 @@
+{
+  "drug_name": "Levothyroxine",
+  "generic_name": "levothyroxine sodium",
+  "drug_class": "Thyroid hormone",
+  "variants": [
+    {
+      "brand_name": "Synthroid",
+      "strength": "50 mcg",
+      "imprints": [
+        "SYNTHROID",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Synthroid",
+      "strength": "75 mcg",
+      "imprints": [
+        "SYNTHROID",
+        "75"
+      ],
+      "shape": "round",
+      "colors": [
+        "purple"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Synthroid",
+      "strength": "100 mcg",
+      "imprints": [
+        "SYNTHROID",
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AbbVie",
+      "scored": false
+    },
+    {
+      "brand_name": "Levoxyl",
+      "strength": "50 mcg",
+      "imprints": [
+        "LEVOXYL",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7.5,
+      "manufacturer": "Lloyd Inc",
+      "scored": false
+    },
+    {
+      "brand_name": "Unithroid",
+      "strength": "75 mcg",
+      "imprints": [
+        "UNITHROID",
+        "75"
+      ],
+      "shape": "round",
+      "colors": [
+        "purple"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Lannett",
+      "scored": false
+    },
+    {
+      "brand_name": "Tirosint",
+      "strength": "25 mcg",
+      "imprints": [
+        "TIROSINT",
+        "25"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "liquid-filled",
+      "size_mm": 13,
+      "manufacturer": "IBSA",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levothyroxine",
+      "strength": "125 mcg",
+      "imprints": [
+        "M",
+        "L25"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Levothyroxine",
+      "strength": "150 mcg",
+      "imprints": [
+        "M",
+        "L27"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Sandoz",
+      "scored": false
+    }
+  ]
+}

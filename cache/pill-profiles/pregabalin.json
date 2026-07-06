@@ -1,0 +1,134 @@
+{
+  "drug_name": "Pregabalin",
+  "generic_name": "Pregabalin",
+  "drug_class": "Anticonvulsant, Anxiolytic",
+  "variants": [
+    {
+      "brand_name": "Lyrica",
+      "strength": "25 mg",
+      "imprints": [
+        "PGN 25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lyrica",
+      "strength": "50 mg",
+      "imprints": [
+        "PGN 50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 15,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lyrica",
+      "strength": "75 mg",
+      "imprints": [
+        "PGN 75"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lyrica",
+      "strength": "150 mg",
+      "imprints": [
+        "PGN 150"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 17,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lyrica",
+      "strength": "200 mg",
+      "imprints": [
+        "PGN 200"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lyrica",
+      "strength": "225 mg",
+      "imprints": [
+        "PGN 225"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Lyrica",
+      "strength": "300 mg",
+      "imprints": [
+        "PGN 300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Pregabalin",
+      "strength": "150 mg",
+      "imprints": [
+        "GG 592"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 17,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

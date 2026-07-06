@@ -1,0 +1,135 @@
+{
+  "drug_name": "Topiramate",
+  "generic_name": "topiramate",
+  "drug_class": "Anticonvulsant",
+  "variants": [
+    {
+      "brand_name": "Topamax",
+      "strength": "25 mg",
+      "imprints": [
+        "TOPAMAX",
+        "25"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Topamax",
+      "strength": "50 mg",
+      "imprints": [
+        "TOPAMAX",
+        "50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Topamax",
+      "strength": "100 mg",
+      "imprints": [
+        "TOPAMAX",
+        "100"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Topamax",
+      "strength": "200 mg",
+      "imprints": [
+        "TOPAMAX",
+        "200"
+      ],
+      "shape": "Round",
+      "colors": [
+        "Salmon"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Topiramate",
+      "strength": "25 mg",
+      "imprints": [
+        "TOP",
+        "25"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Topiramate",
+      "strength": "100 mg",
+      "imprints": [
+        "TOP",
+        "100"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Aurobindo Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Topiramate",
+      "strength": "50 mg",
+      "imprints": [
+        "M T50"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Topiramate",
+      "strength": "200 mg",
+      "imprints": [
+        "M T200"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Mylan Pharmaceuticals",
+      "scored": true
+    }
+  ]
+}

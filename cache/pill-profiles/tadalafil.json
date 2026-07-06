@@ -1,0 +1,127 @@
+{
+  "drug_name": "Tadalafil",
+  "generic_name": "tadalafil",
+  "drug_class": "Phosphodiesterase 5 (PDE5) Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Cialis",
+      "strength": "2.5mg",
+      "imprints": [
+        "C02"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Cialis",
+      "strength": "5mg",
+      "imprints": [
+        "C05"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Cialis",
+      "strength": "10mg",
+      "imprints": [
+        "C10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Cialis",
+      "strength": "20mg",
+      "imprints": [
+        "C20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Tadalafil",
+      "strength": "5mg",
+      "imprints": [
+        "5mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Tadalafil",
+      "strength": "10mg",
+      "imprints": [
+        "10mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Tadalafil",
+      "strength": "20mg",
+      "imprints": [
+        "20mg"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Adcirca",
+      "strength": "20mg",
+      "imprints": [
+        "Adcirca 20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    }
+  ]
+}

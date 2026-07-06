@@ -1,0 +1,131 @@
+{
+  "drug_name": "Fluoxetine",
+  "generic_name": "Fluoxetine hydrochloride",
+  "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "variants": [
+    {
+      "brand_name": "Prozac",
+      "strength": "10 mg",
+      "imprints": [
+        "DISTA 3104"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Prozac",
+      "strength": "20 mg",
+      "imprints": [
+        "DISTA 3105"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Prozac",
+      "strength": "40 mg",
+      "imprints": [
+        "DISTA 3106"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "coating": "gelatin",
+      "size_mm": 16,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Fluoxetine",
+      "strength": "20 mg",
+      "imprints": [
+        "APO FL20"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Fluoxetine",
+      "strength": "10 mg",
+      "imprints": [
+        "MYLAN 216"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Sarafem",
+      "strength": "10 mg",
+      "imprints": [
+        "SARAFEM 10"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "lavender"
+      ],
+      "coating": "gelatin",
+      "size_mm": 15,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Sarafem",
+      "strength": "20 mg",
+      "imprints": [
+        "SARAFEM 20"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "pink"
+      ],
+      "coating": "gelatin",
+      "size_mm": 15,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Prozac Weekly",
+      "strength": "90 mg",
+      "imprints": [
+        "PROZAC WEEKLY 90mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "gelatin",
+      "size_mm": 20,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    }
+  ]
+}

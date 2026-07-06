@@ -1,0 +1,127 @@
+{
+  "drug_name": "Quetiapine",
+  "generic_name": "quetiapine fumarate",
+  "drug_class": "atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Seroquel",
+      "strength": "25 mg",
+      "imprints": [
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "AstraZeneca",
+      "scored": true
+    },
+    {
+      "brand_name": "Seroquel",
+      "strength": "100 mg",
+      "imprints": [
+        "100"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "AstraZeneca",
+      "scored": true
+    },
+    {
+      "brand_name": "Seroquel",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9.5,
+      "manufacturer": "AstraZeneca",
+      "scored": true
+    },
+    {
+      "brand_name": "Seroquel",
+      "strength": "300 mg",
+      "imprints": [
+        "300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10.5,
+      "manufacturer": "AstraZeneca",
+      "scored": true
+    },
+    {
+      "brand_name": "Seroquel XR",
+      "strength": "50 mg",
+      "imprints": [
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "tan"
+      ],
+      "coating": "extended-release",
+      "size_mm": 7,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Seroquel XR",
+      "strength": "200 mg",
+      "imprints": [
+        "200"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "extended-release",
+      "size_mm": 9,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "generic Quetiapine",
+      "strength": "100 mg",
+      "imprints": [
+        "QUE 100"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "generic Quetiapine",
+      "strength": "300 mg",
+      "imprints": [
+        "QUE 300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 10,
+      "manufacturer": "multiple",
+      "scored": true
+    }
+  ]
+}

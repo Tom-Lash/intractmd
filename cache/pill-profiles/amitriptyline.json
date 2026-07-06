@@ -1,0 +1,135 @@
+{
+  "drug_name": "Amitriptyline",
+  "generic_name": "amitriptyline hydrochloride",
+  "drug_class": "Tricyclic Antidepressant",
+  "variants": [
+    {
+      "brand_name": "Elavil",
+      "strength": "10 mg",
+      "imprints": [
+        "ELAVIL",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Elavil",
+      "strength": "25 mg",
+      "imprints": [
+        "ELAVIL",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Elavil",
+      "strength": "50 mg",
+      "imprints": [
+        "ELAVIL",
+        "50"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "M",
+        "12"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "25 mg",
+      "imprints": [
+        "M",
+        "77"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Mallinckrodt",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "50 mg",
+      "imprints": [
+        "G",
+        "3300"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Greenstone",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "75 mg",
+      "imprints": [
+        "54",
+        "142"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Roxane",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "100 mg",
+      "imprints": [
+        "G",
+        "3301"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "none",
+      "size_mm": 9,
+      "manufacturer": "Greenstone",
+      "scored": false
+    }
+  ]
+}

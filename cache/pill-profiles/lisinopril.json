@@ -1,0 +1,127 @@
+{
+  "drug_name": "Lisinopril",
+  "generic_name": "lisinopril",
+  "drug_class": "ACE Inhibitor",
+  "variants": [
+    {
+      "brand_name": "Prinivil",
+      "strength": "10 mg",
+      "imprints": [
+        "PRINIVIL 10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Zestril",
+      "strength": "20 mg",
+      "imprints": [
+        "ZESTRIL 20"
+      ],
+      "shape": "oval",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lisinopril",
+      "strength": "5 mg",
+      "imprints": [
+        "LUPIN 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Lupin Pharmaceuticals",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Lisinopril",
+      "strength": "40 mg",
+      "imprints": [
+        "Watson 861"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 11,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Prinivil",
+      "strength": "2.5 mg",
+      "imprints": [
+        "PRINIVIL 2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lisinopril",
+      "strength": "30 mg",
+      "imprints": [
+        "LL B10"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Zestril",
+      "strength": "5 mg",
+      "imprints": [
+        "ZESTRIL 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "AstraZeneca",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Lisinopril",
+      "strength": "10 mg",
+      "imprints": [
+        "K 25"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Karlix",
+      "scored": true
+    }
+  ]
+}

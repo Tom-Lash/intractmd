@@ -1,0 +1,138 @@
+{
+  "drug_name": "Diltiazem",
+  "generic_name": "diltiazem hydrochloride",
+  "drug_class": "Calcium Channel Blocker",
+  "variants": [
+    {
+      "brand_name": "Cardizem",
+      "strength": "30 mg",
+      "imprints": [
+        "CARDIZEM",
+        "30"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem",
+      "strength": "60 mg",
+      "imprints": [
+        "CARDIZEM",
+        "60"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem",
+      "strength": "90 mg",
+      "imprints": [
+        "CARDIZEM",
+        "90"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Blue"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem CD",
+      "strength": "120 mg",
+      "imprints": [
+        "CARDIZEM CD",
+        "120"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 18,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem CD",
+      "strength": "180 mg",
+      "imprints": [
+        "CARDIZEM CD",
+        "180"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 20,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem CD",
+      "strength": "240 mg",
+      "imprints": [
+        "CARDIZEM CD",
+        "240"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Blue",
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 21,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem LA",
+      "strength": "180 mg",
+      "imprints": [
+        "CARDIZEM LA",
+        "180"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 14,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Cardizem LA",
+      "strength": "240 mg",
+      "imprints": [
+        "CARDIZEM LA",
+        "240"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 15,
+      "manufacturer": "Valeant Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

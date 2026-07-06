@@ -1,0 +1,128 @@
+{
+  "drug_name": "Hydrocodone",
+  "generic_name": "Hydrocodone Bitartrate",
+  "drug_class": "Opioid Analgesic",
+  "variants": [
+    {
+      "brand_name": "Norco",
+      "strength": "5mg/325mg",
+      "imprints": [
+        "NORCO 5|325"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Norco",
+      "strength": "7.5mg/325mg",
+      "imprints": [
+        "NORCO 7.5|325"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 15,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Norco",
+      "strength": "10mg/325mg",
+      "imprints": [
+        "NORCO 10|325"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "Allergan",
+      "scored": true
+    },
+    {
+      "brand_name": "Vicodin",
+      "strength": "5mg/500mg",
+      "imprints": [
+        "VICODIN"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 14,
+      "manufacturer": "Abbott",
+      "scored": true
+    },
+    {
+      "brand_name": "Vicodin ES",
+      "strength": "7.5mg/750mg",
+      "imprints": [
+        "VICODIN ES"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 15,
+      "manufacturer": "Abbott",
+      "scored": true
+    },
+    {
+      "brand_name": "Lortab",
+      "strength": "10mg/500mg",
+      "imprints": [
+        "LORTAB 10|500"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 16,
+      "manufacturer": "UCB Pharma",
+      "scored": true
+    },
+    {
+      "brand_name": "Hysingla ER",
+      "strength": "20mg",
+      "imprints": [
+        "ER 20"
+      ],
+      "shape": "Oval",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 18,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Zohydro ER",
+      "strength": "10mg",
+      "imprints": [
+        "Z 10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Pernix Therapeutics",
+      "scored": false
+    }
+  ]
+}

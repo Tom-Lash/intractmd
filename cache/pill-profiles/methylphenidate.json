@@ -1,0 +1,135 @@
+{
+  "drug_name": "Methylphenidate",
+  "generic_name": "methylphenidate hydrochloride",
+  "drug_class": "Central Nervous System Stimulant",
+  "variants": [
+    {
+      "brand_name": "Ritalin",
+      "strength": "10 mg",
+      "imprints": [
+        "CIBA",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Novartis",
+      "scored": true
+    },
+    {
+      "brand_name": "Ritalin",
+      "strength": "20 mg",
+      "imprints": [
+        "CIBA",
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Novartis",
+      "scored": true
+    },
+    {
+      "brand_name": "Concerta",
+      "strength": "18 mg",
+      "imprints": [
+        "ALZA",
+        "18"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Concerta",
+      "strength": "36 mg",
+      "imprints": [
+        "ALZA",
+        "36"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Adhansia XR",
+      "strength": "25 mg",
+      "imprints": [
+        "NLS",
+        "382"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Neos Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "Cotempla XR-ODT",
+      "strength": "13.3 mg",
+      "imprints": [
+        "NPS",
+        "380"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Neos Therapeutics",
+      "scored": false
+    },
+    {
+      "brand_name": "Daytrana",
+      "strength": "10 mg/9 hours",
+      "imprints": [
+        "DAYTRANA"
+      ],
+      "shape": "patch",
+      "colors": [
+        "tan"
+      ],
+      "coating": "transdermal",
+      "size_mm": 30,
+      "manufacturer": "Hisamitsu Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Methylin",
+      "strength": "5 mg",
+      "imprints": [
+        "METHYLIN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 5,
+      "manufacturer": "Shionogi Inc.",
+      "scored": true
+    }
+  ]
+}

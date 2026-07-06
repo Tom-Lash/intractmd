@@ -1,0 +1,127 @@
+{
+  "drug_name": "Aripiprazole",
+  "generic_name": "aripiprazole",
+  "drug_class": "Atypical Antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Abilify",
+      "strength": "5 mg",
+      "imprints": [
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Otsuka Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Abilify",
+      "strength": "10 mg",
+      "imprints": [
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Otsuka Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Abilify",
+      "strength": "15 mg",
+      "imprints": [
+        "15"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Otsuka Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Abilify",
+      "strength": "20 mg",
+      "imprints": [
+        "20"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Otsuka Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Abilify",
+      "strength": "30 mg",
+      "imprints": [
+        "30"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Otsuka Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Aripiprazole Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "A-005"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aripiprazole Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "A-010"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Teva Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Aripiprazole Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "A-020"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Cipla",
+      "scored": false
+    }
+  ]
+}

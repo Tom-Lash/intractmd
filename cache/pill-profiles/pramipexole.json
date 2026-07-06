@@ -1,0 +1,135 @@
+{
+  "drug_name": "Pramipexole",
+  "generic_name": "pramipexole dihydrochloride",
+  "drug_class": "dopamine agonist",
+  "variants": [
+    {
+      "brand_name": "Mirapex",
+      "strength": "0.125 mg",
+      "imprints": [
+        "BOEHRINGER INGELHEIM",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Mirapex",
+      "strength": "0.25 mg",
+      "imprints": [
+        "BOEHRINGER INGELHEIM",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Mirapex",
+      "strength": "0.5 mg",
+      "imprints": [
+        "BOEHRINGER INGELHEIM",
+        "3"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Mirapex",
+      "strength": "1 mg",
+      "imprints": [
+        "BOEHRINGER INGELHEIM",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Mirapex ER",
+      "strength": "0.375 mg",
+      "imprints": [
+        "BI",
+        "P2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Mirapex ER",
+      "strength": "0.75 mg",
+      "imprints": [
+        "BI",
+        "P3"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": false
+    },
+    {
+      "brand_name": "Pramipexole",
+      "strength": "0.5 mg",
+      "imprints": [
+        "APO",
+        "PRA 0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Apotex",
+      "scored": true
+    },
+    {
+      "brand_name": "Pramipexole",
+      "strength": "1 mg",
+      "imprints": [
+        "APO",
+        "PRA 1.0"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Apotex",
+      "scored": true
+    }
+  ]
+}

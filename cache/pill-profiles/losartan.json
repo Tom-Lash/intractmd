@@ -1,0 +1,127 @@
+{
+  "drug_name": "Losartan",
+  "generic_name": "Losartan Potassium",
+  "drug_class": "Angiotensin II Receptor Blocker (ARB)",
+  "variants": [
+    {
+      "brand_name": "Cozaar",
+      "strength": "25 mg",
+      "imprints": [
+        "952"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 8,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Cozaar",
+      "strength": "50 mg",
+      "imprints": [
+        "951"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Cozaar",
+      "strength": "100 mg",
+      "imprints": [
+        "957"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Merck",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Losartan",
+      "strength": "25 mg",
+      "imprints": [
+        "L25"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Losartan",
+      "strength": "50 mg",
+      "imprints": [
+        "L50"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 8.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Losartan",
+      "strength": "100 mg",
+      "imprints": [
+        "L100"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Uncoated",
+      "size_mm": 9.5,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Losartan HCTZ Combination",
+      "strength": "50/12.5 mg",
+      "imprints": [
+        "HCTZ"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": false
+    },
+    {
+      "brand_name": "Losartan HCTZ Combination",
+      "strength": "100/25 mg",
+      "imprints": [
+        "HCTZ"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film-coated",
+      "size_mm": 10,
+      "manufacturer": "Various",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "drug_name": "Estradiol",
+  "generic_name": "estradiol",
+  "drug_class": "Estrogen",
+  "variants": [
+    {
+      "brand_name": "Estrace",
+      "strength": "0.5 mg",
+      "imprints": [
+        "ESTRACE 0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Warner Chilcott",
+      "scored": false
+    },
+    {
+      "brand_name": "Estrace",
+      "strength": "1 mg",
+      "imprints": [
+        "ESTRACE 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Warner Chilcott",
+      "scored": false
+    },
+    {
+      "brand_name": "Estrace",
+      "strength": "2 mg",
+      "imprints": [
+        "ESTRACE 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Warner Chilcott",
+      "scored": false
+    },
+    {
+      "brand_name": "Femtrace",
+      "strength": "0.45 mg",
+      "imprints": [
+        "FEMTRACE"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 5,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Femtrace",
+      "strength": "0.9 mg",
+      "imprints": [
+        "FEMTRACE"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Estradiol",
+      "strength": "1 mg",
+      "imprints": [
+        "E1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Estradiol",
+      "strength": "2 mg",
+      "imprints": [
+        "E2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Menest",
+      "strength": "0.625 mg",
+      "imprints": [
+        "MENEST"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 5,
+      "manufacturer": "King Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

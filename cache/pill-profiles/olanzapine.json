@@ -1,0 +1,136 @@
+{
+  "drug_name": "Olanzapine",
+  "generic_name": "olanzapine",
+  "drug_class": "Atypical Antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Zyprexa",
+      "strength": "5 mg",
+      "imprints": [
+        "LILLY",
+        "4115"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 19,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyprexa",
+      "strength": "10 mg",
+      "imprints": [
+        "LILLY",
+        "4116"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Blue"
+      ],
+      "coating": "None",
+      "size_mm": 21,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyprexa",
+      "strength": "15 mg",
+      "imprints": [
+        "LILLY",
+        "4117"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 22,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Zyprexa",
+      "strength": "20 mg",
+      "imprints": [
+        "LILLY",
+        "4118"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Pink"
+      ],
+      "coating": "None",
+      "size_mm": 23,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "5 mg",
+      "imprints": [
+        "513"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 7,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "10 mg",
+      "imprints": [
+        "512"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Zyprexa Zydis",
+      "strength": "10 mg",
+      "imprints": [
+        "ZYPREXA",
+        "ZYDIS"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Yellow"
+      ],
+      "coating": "None",
+      "size_mm": 10,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "20 mg",
+      "imprints": [
+        "514"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 9,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

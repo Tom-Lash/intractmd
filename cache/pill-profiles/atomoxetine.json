@@ -1,0 +1,144 @@
+{
+  "drug_name": "Atomoxetine",
+  "generic_name": "atomoxetine hydrochloride",
+  "drug_class": "selective norepinephrine reuptake inhibitor (SNRI)",
+  "variants": [
+    {
+      "brand_name": "Strattera",
+      "strength": "10 mg",
+      "imprints": [
+        "Lilly",
+        "3228",
+        "10 mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Strattera",
+      "strength": "18 mg",
+      "imprints": [
+        "LY",
+        "3229"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Strattera",
+      "strength": "25 mg",
+      "imprints": [
+        "LY",
+        "3230"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Strattera",
+      "strength": "40 mg",
+      "imprints": [
+        "LY",
+        "3231"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Strattera",
+      "strength": "60 mg",
+      "imprints": [
+        "LY",
+        "3232"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Eli Lilly",
+      "scored": false
+    },
+    {
+      "brand_name": "Atomoxetine (Generic)",
+      "strength": "18 mg",
+      "imprints": [
+        "APO",
+        "018"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Apotex",
+      "scored": false
+    },
+    {
+      "brand_name": "Atomoxetine (Generic)",
+      "strength": "25 mg",
+      "imprints": [
+        "TEVA",
+        "3230"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gray"
+      ],
+      "coating": "none",
+      "size_mm": 14.3,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Atomoxetine (Generic)",
+      "strength": "80 mg",
+      "imprints": [
+        "SUN",
+        "3234"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Sun Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

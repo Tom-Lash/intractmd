@@ -1,0 +1,133 @@
+{
+  "drug_name": "Risperidone",
+  "generic_name": "risperidone",
+  "drug_class": "atypical antipsychotic",
+  "variants": [
+    {
+      "brand_name": "Risperdal",
+      "strength": "0.5 mg",
+      "imprints": [
+        "RISPERDAL",
+        "0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Risperdal",
+      "strength": "1 mg",
+      "imprints": [
+        "RISPERDAL",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Risperdal",
+      "strength": "2 mg",
+      "imprints": [
+        "RISPERDAL",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Risperdal",
+      "strength": "3 mg",
+      "imprints": [
+        "RISPERDAL",
+        "3"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Risperdal",
+      "strength": "4 mg",
+      "imprints": [
+        "RISPERDAL",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Risperidone",
+      "strength": "1 mg",
+      "imprints": [
+        "R 1"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Risperidone",
+      "strength": "2 mg",
+      "imprints": [
+        "R 2"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Risperdal M-Tab",
+      "strength": "1 mg",
+      "imprints": [
+        "RISPERDAL",
+        "M-TAB"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Janssen Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "drug_name": "Gabapentin",
+  "generic_name": "Gabapentin",
+  "drug_class": "Anticonvulsant, Neuropathic Pain Agent",
+  "variants": [
+    {
+      "brand_name": "Neurontin",
+      "strength": "300 mg",
+      "imprints": [
+        "Neurontin 300"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Neurontin",
+      "strength": "400 mg",
+      "imprints": [
+        "Neurontin 400"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 20,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Neurontin",
+      "strength": "800 mg",
+      "imprints": [
+        "Neurontin 800"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film",
+      "size_mm": 18,
+      "manufacturer": "Pfizer",
+      "scored": true
+    },
+    {
+      "brand_name": "Gralise",
+      "strength": "300 mg",
+      "imprints": [
+        "GS 300"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film",
+      "size_mm": 11,
+      "manufacturer": "Depomed",
+      "scored": false
+    },
+    {
+      "brand_name": "Horizant",
+      "strength": "600 mg",
+      "imprints": [
+        "H 600"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "Pink"
+      ],
+      "coating": "Film",
+      "size_mm": 14,
+      "manufacturer": "Serica Technologies",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Gabapentin",
+      "strength": "600 mg",
+      "imprints": [
+        "G 31 75"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film",
+      "size_mm": 13,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Gabapentin",
+      "strength": "100 mg",
+      "imprints": [
+        "54 092"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Yellow"
+      ],
+      "coating": "Gelatin",
+      "size_mm": 16,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Gabapentin",
+      "strength": "500 mg",
+      "imprints": [
+        "A 215"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film",
+      "size_mm": 12,
+      "manufacturer": "Multiple",
+      "scored": false
+    }
+  ]
+}

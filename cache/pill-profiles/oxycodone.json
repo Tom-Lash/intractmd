@@ -1,0 +1,135 @@
+{
+  "drug_name": "Oxycodone",
+  "generic_name": "oxycodone hydrochloride",
+  "drug_class": "Opioid Analgesic",
+  "variants": [
+    {
+      "brand_name": "OxyContin",
+      "strength": "10mg",
+      "imprints": [
+        "OC",
+        "10"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 8,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "OxyContin",
+      "strength": "20mg",
+      "imprints": [
+        "OC",
+        "20"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "pink"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 9,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "OxyContin",
+      "strength": "40mg",
+      "imprints": [
+        "OC",
+        "40"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 10,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "OxyContin",
+      "strength": "80mg",
+      "imprints": [
+        "OC",
+        "80"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "green"
+      ],
+      "coating": "Extended-release",
+      "size_mm": 11,
+      "manufacturer": "Purdue Pharma",
+      "scored": false
+    },
+    {
+      "brand_name": "Roxicodone",
+      "strength": "5mg",
+      "imprints": [
+        "ROXANE",
+        "5054"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Immediate-release",
+      "size_mm": 7,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": true
+    },
+    {
+      "brand_name": "Roxicodone",
+      "strength": "15mg",
+      "imprints": [
+        "ROXANE",
+        "5055"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "green"
+      ],
+      "coating": "Immediate-release",
+      "size_mm": 8,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": true
+    },
+    {
+      "brand_name": "Roxicodone",
+      "strength": "30mg",
+      "imprints": [
+        "ROXANE",
+        "5056"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "blue"
+      ],
+      "coating": "Immediate-release",
+      "size_mm": 9,
+      "manufacturer": "Boehringer Ingelheim",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic Oxycodone",
+      "strength": "5mg",
+      "imprints": [
+        "M",
+        "582"
+      ],
+      "shape": "Tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "Immediate-release",
+      "size_mm": 7,
+      "manufacturer": "Mallinckrodt",
+      "scored": true
+    }
+  ]
+}

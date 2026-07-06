@@ -1,0 +1,129 @@
+{
+  "drug_name": "Amphetamine",
+  "generic_name": "amphetamine sulfate",
+  "drug_class": "Stimulant (CNS)",
+  "variants": [
+    {
+      "brand_name": "Adderall",
+      "strength": "5mg",
+      "imprints": [
+        "AD 5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Adderall",
+      "strength": "10mg",
+      "imprints": [
+        "AD 10"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Adderall",
+      "strength": "20mg",
+      "imprints": [
+        "AD 20"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Adderall XR",
+      "strength": "10mg",
+      "imprints": [
+        "Adderall XR 10mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Adderall XR",
+      "strength": "20mg",
+      "imprints": [
+        "Adderall XR 20mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Shire",
+      "scored": false
+    },
+    {
+      "brand_name": "Dexedrine",
+      "strength": "5mg",
+      "imprints": [
+        "SKF D5"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Dexedrine",
+      "strength": "10mg",
+      "imprints": [
+        "SKF D10"
+      ],
+      "shape": "round",
+      "colors": [
+        "brown"
+      ],
+      "coating": "none",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Adzenys XR-ODT",
+      "strength": "6.3mg",
+      "imprints": [
+        "6.3"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Neos Therapeutics",
+      "scored": false
+    }
+  ]
+}

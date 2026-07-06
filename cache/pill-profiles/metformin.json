@@ -1,0 +1,127 @@
+{
+  "drug_name": "Metformin",
+  "generic_name": "metformin hydrochloride",
+  "drug_class": "Biguanide antidiabetic",
+  "variants": [
+    {
+      "brand_name": "Glucophage",
+      "strength": "500 mg",
+      "imprints": [
+        "1467"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 19,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": true
+    },
+    {
+      "brand_name": "Glucophage",
+      "strength": "850 mg",
+      "imprints": [
+        "1468"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 21,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": true
+    },
+    {
+      "brand_name": "Glucophage XR",
+      "strength": "500 mg",
+      "imprints": [
+        "1470"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 20,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Glucophage XR",
+      "strength": "750 mg",
+      "imprints": [
+        "1471"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 22,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Fortamet",
+      "strength": "500 mg",
+      "imprints": [
+        "4331"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 19,
+      "manufacturer": "Andrx Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Fortamet",
+      "strength": "1000 mg",
+      "imprints": [
+        "4332"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 21,
+      "manufacturer": "Andrx Corporation",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "500 mg",
+      "imprints": [
+        "MP52"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 17,
+      "manufacturer": "Various",
+      "scored": true
+    },
+    {
+      "brand_name": "Generic",
+      "strength": "1000 mg",
+      "imprints": [
+        "MP57"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 18,
+      "manufacturer": "Various",
+      "scored": true
+    }
+  ]
+}

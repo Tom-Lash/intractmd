@@ -1,0 +1,135 @@
+{
+  "drug_name": "Ropinirole",
+  "generic_name": "ropinirole hydrochloride",
+  "drug_class": "dopamine agonist",
+  "variants": [
+    {
+      "brand_name": "Requip",
+      "strength": "0.25 mg",
+      "imprints": [
+        "REQUIP",
+        "0.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 6,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip",
+      "strength": "0.5 mg",
+      "imprints": [
+        "REQUIP",
+        "0.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip",
+      "strength": "1 mg",
+      "imprints": [
+        "REQUIP",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7.5,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip",
+      "strength": "2 mg",
+      "imprints": [
+        "REQUIP",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "orange"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip",
+      "strength": "3 mg",
+      "imprints": [
+        "REQUIP",
+        "3"
+      ],
+      "shape": "round",
+      "colors": [
+        "red"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8.5,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip",
+      "strength": "4 mg",
+      "imprints": [
+        "REQUIP",
+        "4"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip XL",
+      "strength": "2 mg",
+      "imprints": [
+        "REQUIP XL",
+        "2"
+      ],
+      "shape": "oval",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 14,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    },
+    {
+      "brand_name": "Requip XL",
+      "strength": "8 mg",
+      "imprints": [
+        "REQUIP XL",
+        "8"
+      ],
+      "shape": "oval",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 16,
+      "manufacturer": "GlaxoSmithKline",
+      "scored": false
+    }
+  ]
+}

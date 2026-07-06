@@ -1,0 +1,143 @@
+{
+  "drug_name": "Lisdexamfetamine",
+  "generic_name": "lisdexamfetamine dimesylate",
+  "drug_class": "Stimulant",
+  "variants": [
+    {
+      "brand_name": "Vyvanse",
+      "strength": "10 mg",
+      "imprints": [
+        "S489",
+        "10"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 14.3,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "20 mg",
+      "imprints": [
+        "S489",
+        "20"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 15.8,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "30 mg",
+      "imprints": [
+        "S489",
+        "30"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 16.9,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "40 mg",
+      "imprints": [
+        "S489",
+        "40"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 18.4,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "50 mg",
+      "imprints": [
+        "S489",
+        "50"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 19.4,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "60 mg",
+      "imprints": [
+        "S489",
+        "60"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 20.5,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "70 mg",
+      "imprints": [
+        "S489",
+        "70"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "White",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 21.6,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    },
+    {
+      "brand_name": "Vyvanse",
+      "strength": "80 mg",
+      "imprints": [
+        "S489",
+        "80"
+      ],
+      "shape": "Capsule",
+      "colors": [
+        "Orange",
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 22.7,
+      "manufacturer": "Takeda Pharmaceutical",
+      "scored": false
+    }
+  ]
+}

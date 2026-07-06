@@ -1,0 +1,131 @@
+{
+  "drug_name": "Carvedilol",
+  "generic_name": "carvedilol",
+  "drug_class": "Beta-blocker",
+  "variants": [
+    {
+      "brand_name": "Coreg",
+      "strength": "3.125 mg",
+      "imprints": [
+        "COREG",
+        "3.125"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Coreg",
+      "strength": "6.25 mg",
+      "imprints": [
+        "COREG",
+        "6.25"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Coreg",
+      "strength": "12.5 mg",
+      "imprints": [
+        "COREG",
+        "12.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Coreg",
+      "strength": "25 mg",
+      "imprints": [
+        "COREG",
+        "25"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "GSK",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carvedilol",
+      "strength": "3.125 mg",
+      "imprints": [
+        "E 101"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 7,
+      "manufacturer": "Sandoz",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carvedilol",
+      "strength": "6.25 mg",
+      "imprints": [
+        "M C6"
+      ],
+      "shape": "round",
+      "colors": [
+        "blue"
+      ],
+      "coating": "film-coated",
+      "size_mm": 8,
+      "manufacturer": "Mylan",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carvedilol",
+      "strength": "12.5 mg",
+      "imprints": [
+        "2088"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "film-coated",
+      "size_mm": 9,
+      "manufacturer": "Teva",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Carvedilol",
+      "strength": "25 mg",
+      "imprints": [
+        "5624"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "film-coated",
+      "size_mm": 10,
+      "manufacturer": "Northstar",
+      "scored": false
+    }
+  ]
+}

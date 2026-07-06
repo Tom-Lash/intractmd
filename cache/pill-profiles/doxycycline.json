@@ -1,0 +1,138 @@
+{
+  "drug_name": "Doxycycline",
+  "generic_name": "doxycycline hyclate",
+  "drug_class": "Tetracycline antibiotic",
+  "variants": [
+    {
+      "brand_name": "Vibramycin",
+      "strength": "100 mg",
+      "imprints": [
+        "VIBRAMYCIN",
+        "100mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Pfizer",
+      "scored": false
+    },
+    {
+      "brand_name": "Doryx",
+      "strength": "100 mg",
+      "imprints": [
+        "DORYX",
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "delayed-release",
+      "size_mm": 7,
+      "manufacturer": "Warner Chilcott",
+      "scored": false
+    },
+    {
+      "brand_name": "Oracea",
+      "strength": "40 mg",
+      "imprints": [
+        "ORACEA",
+        "40mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "white",
+        "gold"
+      ],
+      "coating": "none",
+      "size_mm": 16,
+      "manufacturer": "Galderma",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Doxycycline",
+      "strength": "50 mg",
+      "imprints": [
+        "50mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "green",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Doxycycline",
+      "strength": "75 mg",
+      "imprints": [
+        "75mg"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 18,
+      "manufacturer": "Multiple",
+      "scored": false
+    },
+    {
+      "brand_name": "Monodox",
+      "strength": "100 mg",
+      "imprints": [
+        "MONODOX",
+        "100"
+      ],
+      "shape": "capsule",
+      "colors": [
+        "brown",
+        "yellow"
+      ],
+      "coating": "none",
+      "size_mm": 19,
+      "manufacturer": "Oclassen",
+      "scored": false
+    },
+    {
+      "brand_name": "Adoxa",
+      "strength": "100 mg",
+      "imprints": [
+        "ADOXA",
+        "100"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "white"
+      ],
+      "coating": "none",
+      "size_mm": 8,
+      "manufacturer": "Medicis",
+      "scored": true
+    },
+    {
+      "brand_name": "Periostat",
+      "strength": "20 mg",
+      "imprints": [
+        "PERIOSTAT",
+        "20"
+      ],
+      "shape": "tablet",
+      "colors": [
+        "orange"
+      ],
+      "coating": "none",
+      "size_mm": 6,
+      "manufacturer": "CollaGenex",
+      "scored": false
+    }
+  ]
+}

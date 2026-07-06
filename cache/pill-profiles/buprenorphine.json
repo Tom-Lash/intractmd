@@ -1,0 +1,128 @@
+{
+  "drug_name": "Buprenorphine",
+  "generic_name": "Buprenorphine HCl",
+  "drug_class": "Opioid Agonist-Antagonist",
+  "variants": [
+    {
+      "brand_name": "Suboxone",
+      "strength": "8mg/2mg",
+      "imprints": [
+        "N8"
+      ],
+      "shape": "Octagonal",
+      "colors": [
+        "Orange"
+      ],
+      "coating": "Film",
+      "size_mm": 19,
+      "manufacturer": "Indivior",
+      "scored": false
+    },
+    {
+      "brand_name": "Suboxone",
+      "strength": "2mg/0.5mg",
+      "imprints": [
+        "N2"
+      ],
+      "shape": "Octagonal",
+      "colors": [
+        "White"
+      ],
+      "coating": "Film",
+      "size_mm": 13,
+      "manufacturer": "Indivior",
+      "scored": false
+    },
+    {
+      "brand_name": "Subutex",
+      "strength": "8mg",
+      "imprints": [
+        "54 411"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Indivior",
+      "scored": true
+    },
+    {
+      "brand_name": "Subutex",
+      "strength": "2mg",
+      "imprints": [
+        "54 375"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White"
+      ],
+      "coating": "None",
+      "size_mm": 6,
+      "manufacturer": "Indivior",
+      "scored": true
+    },
+    {
+      "brand_name": "Bunavail",
+      "strength": "4.2mg/0.7mg",
+      "imprints": [
+        "B4"
+      ],
+      "shape": "Rectangular",
+      "colors": [
+        "White"
+      ],
+      "coating": "Buccal Film",
+      "size_mm": 24,
+      "manufacturer": "BioDelivery Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Belbuca",
+      "strength": "150mcg",
+      "imprints": [
+        "150"
+      ],
+      "shape": "Rectangular",
+      "colors": [
+        "White"
+      ],
+      "coating": "Buccal Film",
+      "size_mm": 15,
+      "manufacturer": "BioDelivery Sciences",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Buprenorphine",
+      "strength": "8mg",
+      "imprints": [
+        "Various"
+      ],
+      "shape": "Round",
+      "colors": [
+        "White",
+        "Orange"
+      ],
+      "coating": "None",
+      "size_mm": 8,
+      "manufacturer": "Multiple",
+      "scored": true
+    },
+    {
+      "brand_name": "Sublocade",
+      "strength": "300mg",
+      "imprints": [
+        "N/A"
+      ],
+      "shape": "Injectable",
+      "colors": [
+        "Clear"
+      ],
+      "coating": "None",
+      "size_mm": 0,
+      "manufacturer": "Indivior",
+      "scored": false
+    }
+  ]
+}

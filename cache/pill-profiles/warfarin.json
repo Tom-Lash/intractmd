@@ -1,0 +1,135 @@
+{
+  "drug_name": "Warfarin",
+  "generic_name": "warfarin sodium",
+  "drug_class": "Anticoagulant",
+  "variants": [
+    {
+      "brand_name": "Coumadin",
+      "strength": "1 mg",
+      "imprints": [
+        "COUMADIN",
+        "1"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Coumadin",
+      "strength": "2 mg",
+      "imprints": [
+        "COUMADIN",
+        "2"
+      ],
+      "shape": "round",
+      "colors": [
+        "lavender"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Coumadin",
+      "strength": "2.5 mg",
+      "imprints": [
+        "COUMADIN",
+        "2.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "green"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Coumadin",
+      "strength": "5 mg",
+      "imprints": [
+        "COUMADIN",
+        "5"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Coumadin",
+      "strength": "7.5 mg",
+      "imprints": [
+        "COUMADIN",
+        "7.5"
+      ],
+      "shape": "round",
+      "colors": [
+        "yellow"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Coumadin",
+      "strength": "10 mg",
+      "imprints": [
+        "COUMADIN",
+        "10"
+      ],
+      "shape": "round",
+      "colors": [
+        "white"
+      ],
+      "coating": "uncoated",
+      "size_mm": 8,
+      "manufacturer": "Bristol-Myers Squibb",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Warfarin",
+      "strength": "1 mg",
+      "imprints": [
+        "BARR",
+        "555"
+      ],
+      "shape": "round",
+      "colors": [
+        "pink"
+      ],
+      "coating": "uncoated",
+      "size_mm": 6,
+      "manufacturer": "Barr Pharmaceuticals",
+      "scored": false
+    },
+    {
+      "brand_name": "Generic Warfarin",
+      "strength": "5 mg",
+      "imprints": [
+        "WATSON",
+        "862"
+      ],
+      "shape": "round",
+      "colors": [
+        "peach"
+      ],
+      "coating": "uncoated",
+      "size_mm": 7,
+      "manufacturer": "Watson Pharmaceuticals",
+      "scored": false
+    }
+  ]
+}
