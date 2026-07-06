@@ -794,6 +794,77 @@ app.post('/api/drug-ifu', async (req, res) => {
 
 console.log('[STARTUP] All routes configured');
 
+
+
+// ── PILL IDENTIFIER ──────────────────────────────────────────────────────
+app.post('/api/pill-identify', async (req, res) => {
+  const { shape, color1, color2, imprint, coating, size } = req.body;
+  try {
+    let matches = [];
+    // Build OpenFDA query from available fields
+    let filters = [];
+    if (imprint) filters.push('imprint:"' + imprint + '"');
+    if (shape && shape !== 'Any') filters.push('shape:"' + shape + '"');
+    if (color1 && color1 !== 'Any') filters.push('color:"' + color1 + '"');
+    if (coating && coating !== 'Any') filters.push('coating:"' + coating + '"');
+
+    if (filters.length > 0) {
+      const query = filters.join('+AND+');
+      const url = 'https://api.fda.gov/drug/ndc.json?search=' + query + '&limit=10';
+      try {
+        const r = await safeFetch(url, 8000);
+        if (r && r.results && r.results.length) {
+          matches = r.results.map(function(d) {
+            return {
+              name: d.brand_name || d.generic_name || 'Unknown',
+              generic: d.generic_name || '',
+              imprint: imprint || '',
+              shape: shape || '',
+              color: color1 || '',
+              confidence: imprint ? 'high' : 'medium',
+              labeler: d.labeler_name || '',
+              dosage_form: d.dosage_form || '',
+              strength: (d.active_ingredients || []).map(function(a){ return a.name + ' ' + a.strength; }).join(', ')
+            };
+          });
+        }
+      } catch(fe) { console.error('OpenFDA pill error:', fe.message); }
+    }
+
+    // Fallback to Claude AI if no OpenFDA results
+    if (!matches.length) {
+      const apiKey = process.env.ANTHROPIC_API_KEY;
+      if (apiKey) {
+        const parts = [];
+        if (imprint) parts.push('Imprint: ' + imprint);
+        if (shape && shape !== 'Any') parts.push('Shape: ' + shape);
+        if (color1 && color1 !== 'Any') parts.push('Color: ' + color1);
+        if (color2 && color2 !== 'Any') parts.push('Secondary color: ' + color2);
+        if (size) parts.push('Size (mm): ' + size);
+        if (coating && coating !== 'Any') parts.push('Coating: ' + coating);
+        const desc = parts.join(', ');
+        const promptText = 'You are a pharmaceutical pill identification expert. Identify a pill described as: ' + desc + '. Return ONLY valid JSON no markdown: {"matches":[{"name":"<brand>","generic":"<generic>","strength":"<strength>","confidence":"<high|medium|low>","note":"<brief note>"}]}';
+        try {
+          const aiResp = await safeFetch('https://api.anthropic.com/v1/messages', 8000, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+            body: JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 500, messages: [{ role: 'user', content: promptText }] })
+          });
+          if (aiResp && aiResp.content && aiResp.content[0]) {
+            const raw = aiResp.content[0].text.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
+            const m = raw.match(/{[\s\S]*}/);
+            if (m) { const parsed = JSON.parse(m[0]); if (parsed.matches) matches = parsed.matches; }
+          }
+        } catch(ae) { console.error('AI pill error:', ae.message); }
+      }
+    }
+    res.json({ matches });
+  } catch(e) {
+    console.error('Pill identify error:', e.message);
+    res.json({ matches: [], error: e.message });
+  }
+});
+
 app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
