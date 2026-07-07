@@ -1425,6 +1425,43 @@ Return ONLY valid JSON (no markdown):
     if (!m) throw new Error('No JSON in response');
 
     const result = JSON.parse(m[0]);
+
+    // Step 2: Translate to Spanish if requested (English-first for clinical accuracy)
+    if (language === 'es' && result.email && result.sms) {
+      const translatePrompt = `Translate this patient medication outreach from English to Spanish. Keep all drug names in English/generic form. Keep clinical facts identical. Closing must be "Atentamente, ${caseManagerName}". SMS under 160 chars.
+
+Email subject: ${JSON.stringify(result.email.subject)}
+Email body: ${JSON.stringify(result.email.body)}
+SMS: ${JSON.stringify(result.sms.body)}
+Script opening: ${JSON.stringify(result.case_manager_script?.opening||'')}
+Script points: ${JSON.stringify(result.case_manager_script?.key_points||[])}
+Script closing: ${JSON.stringify(result.case_manager_script?.closing||'')}
+
+Return ONLY valid JSON: {"email":{"subject":"<es>","body":"<es>"},"sms":{"body":"<es>"},"case_manager_script":{"opening":"<es>","key_points":["<es>"],"closing":"<es>"}}`;
+      try {
+        const tr = await fetch('https://api.anthropic.com/v1/messages', {
+          method:'POST',
+          headers:{'Content-Type':'application/json','x-api-key':k,'anthropic-version':'2023-06-01'},
+          body:JSON.stringify({model:'claude-haiku-4-5-20251001',max_tokens:2000,messages:[{role:'user',content:translatePrompt}]})
+        });
+        if(tr.ok){
+          const td = await tr.json();
+          const traw = td.content?.[0]?.text||'';
+          const tm = traw.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim().match(/\{[\s\S]*\}/);
+          if(tm){
+            const translated = JSON.parse(tm[0]);
+            result.email_en = result.email;
+            result.sms_en = result.sms;
+            result.case_manager_script_en = result.case_manager_script;
+            result.email = translated.email || result.email;
+            result.sms = translated.sms || result.sms;
+            result.case_manager_script = translated.case_manager_script || result.case_manager_script;
+            result.translated = true;
+          }
+        }
+      } catch(te){ console.error('Translation error:',te.message); }
+    }
+
     result.drugs = drugs;
     result.risk_tier = ddiResults.risk_tier;
     result.generated_at = new Date().toISOString();
