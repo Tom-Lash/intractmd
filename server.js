@@ -888,6 +888,57 @@ app.post('/api/pill-identify', async (req, res) => {
 });
 
 
+
+// ── INTRACTMD HELP CHATBOT ────────────────────────────────────────────────
+app.post('/api/chat', async (req, res) => {
+  try {
+    const { message, history } = req.body;
+    if (!message) return res.status(400).json({ error: 'No message' });
+    const k = process.env.ANTHROPIC_API_KEY;
+    if (!k) return res.status(401).json({ error: 'No API key' });
+
+    const SYSTEM = `You are the IntractMD Help Assistant — a friendly guide for the IntractMD medication safety app by Resolve Medical. Answer questions ONLY about how to use IntractMD and what results mean.
+
+You can answer questions about:
+- Drug Interaction Score (0-20 Minimal, 21-40 Low, 41-60 Moderate, 61-80 High, 81-100 Critical)
+- Risk dimensions: Bleeding, Cardiac, CNS/Sedation, Serotonin, Renal, Hepatic, QT Interval, Drug Level
+- What Critical/High/Moderate/Low severity means
+- Supplements and foods to avoid (proactive engine)
+- CONFIRMED/COMPUTED/PREDICTIVE confidence tiers
+- How to add medications (type, voice, scan)
+- Pill identifier (752 drugs, 2571 imprint codes)
+- Privacy (no PHI stored, no account required, free)
+- App limitations
+
+RULES:
+1. Never give personalized medical advice about specific combinations or doses
+2. Always recommend consulting a pharmacist or physician for medical decisions
+3. Stay on topic — if asked something unrelated say: "I can only help with questions about the IntractMD app."
+4. Keep answers to 2-4 sentences for simple questions, up to 8 for complex ones
+5. Use plain English — avoid jargon unless explaining a term the user mentioned
+6. Be warm and reassuring — users may be anxious about their medications
+
+IntractMD is made by Resolve Medical LLC, Cleveland OH. Contact: info@resolve.med / 216-509-0672. It is a clinical decision support tool, NOT a substitute for professional medical advice.`;
+
+    const messages = [
+      ...(history || []).slice(-8),
+      { role: 'user', content: message }
+    ];
+
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-api-key': k, 'anthropic-version': '2023-06-01' },
+      body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 400, system: SYSTEM, messages })
+    });
+    const d = await r.json();
+    const reply = d.content?.[0]?.text || 'Sorry, I could not generate a response.';
+    res.json({ reply });
+  } catch(e) {
+    console.error('[CHAT]', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
 app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
