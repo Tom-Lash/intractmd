@@ -3459,8 +3459,7 @@ setLang(uiLang);
     var msgs=document.getElementById('chatbot-messages');
     var d=document.createElement('div');
     d.className='cb-msg cb-'+(role==='user'?'user':'bot');
-    d.innerHTML='<div class="cb-bubble">'+text.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/
-/g,'<br>')+'</div>';
+    d.innerHTML='<div class="cb-bubble">'+text.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')+'</div>';
     msgs.appendChild(d);
     setTimeout(function(){msgs.scrollTop=msgs.scrollHeight;},50);
   }
