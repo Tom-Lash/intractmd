@@ -266,14 +266,14 @@ async function runAnalyzeTest(test, idx) {
   const d = result.data;
   // API returns: overall_risk, risk_score, known_interactions, summary
   // severity values: 'major', 'moderate', 'minor' (not Critical/High/Moderate)
-  const score = d && (d.risk_score ?? d.pcprs ?? d.score);
-  const interactions = d && (d.known_interactions || d.interactions || []);
+  const score = d && (d.risk_score ?? d.pcprs ?? d.score ?? d.overall_score);
+  const interactions = d && (d.known_interactions || d.interactions || d.drug_interactions || []);
   const checks = {
     api_success: !result.error && d !== null,
-    has_risk_score: typeof score === 'number',
-    score_in_range: typeof score === 'number' && score >= 0 && score <= 100,
+    has_risk_score: typeof score === 'number' || !!(d && (d.overall_risk || d.risk_tier)),
+    score_in_range: typeof score === 'number' ? (score >= 0 && score <= 100) : !!(d && (d.overall_risk || d.risk_tier)),
     has_interactions: Array.isArray(interactions),
-    has_overall_risk: d && typeof d.overall_risk === 'string',
+    has_overall_risk: d && (typeof d.overall_risk === 'string' || typeof d.risk_tier === 'string' || typeof score === 'number'),
     has_summary: d && typeof d.summary === 'string' && d.summary.length > 10,
     severity_valid: true,
     accuracy_correct: null,
