@@ -496,7 +496,13 @@ input::placeholder{color:#6b6b66}
 <div class="sb-tools-label">OTHER TOOLS</div><div class="sb-tools-grid"><button class="sidebar-btn sb-info" onclick="openDrugInfo()"><i class="ti ti-pill"></i><span class="btn-full">Drug Info</span><span class="btn-short">Drug Info</span><span class="sb-sub">Look up any medication</span></button>
 <button class="sidebar-btn sb-pharm" onclick="openPharmacy()"><i class="ti ti-map-pin"></i><span class="btn-full">Find Pharmacy</span><span class="btn-short">Find Pharmacy</span><span class="sb-sub">Nearby locations</span></button>
 <button class="sidebar-btn sb-pill" onclick="openPillId()"><i class="ti ti-search"></i><span class="btn-full">Pill Identifier</span><span class="btn-short">Pill ID</span><span class="sb-sub">Identify unknown pills</span></button>
-<button class="sidebar-btn sb-ifu" onclick="openIFU()"><i class="ti ti-info-circle"></i><span class="btn-full">IFU Summary</span><span class="btn-short">IFU Summary</span><span class="sb-sub">How to take your med</span></button></div>
+<button class="sidebar-btn sb-ifu" onclick="openIFU()"><i class="ti ti-info-circle"></i><span class="btn-full">IFU Summary</span><span class="btn-short">IFU Summary</span><span class="sb-sub">How to take your med</span></button>
+<button class="sidebar-btn sb-chat" onclick="chatbotToggle()" style="border-color:#00B4D8;color:#00B4D8;margin-top:2px">
+  <span style="font-size:22px;line-height:1">&#x1F469;&#x200D;&#x2695;&#xFE0F;</span>
+  <span class="btn-full">Q&amp;A Assistant</span>
+  <span class="btn-short">Q&amp;A</span>
+  <span class="sb-sub">Ask about results</span>
+</button></div>
 </div>
 </div>
 </div>
@@ -3366,11 +3372,7 @@ setLang(uiLang);
 </script>
 
 <!-- ── INTRACTMD HELP CHATBOT ────────────────────────────── -->
-<div id="chatbot-fab" onclick="chatbotToggle()" title="Ask IntractMD Assistant">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-  </svg>
-</div>
+
 <div id="chatbot-panel">
   <div id="chatbot-header">
     <div style="display:flex;align-items:center;gap:10px">
@@ -3398,10 +3400,11 @@ setLang(uiLang);
 </div>
 
 <style>
-#chatbot-fab{position:fixed;bottom:22px;right:22px;z-index:9000;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#0D3B6E,#1B6EC2);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(13,59,110,.4);transition:transform .2s;}
-#chatbot-fab:hover{transform:scale(1.08);}
-#chatbot-panel{position:fixed;bottom:86px;right:22px;z-index:9000;width:340px;max-height:520px;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.18);display:none;flex-direction:column;overflow:hidden;font-family:system-ui,sans-serif;}
+/* chatbot-fab removed — now in sidebar */
+
+#chatbot-panel{position:fixed;bottom:80px;right:130px;z-index:9000;width:340px;max-height:540px;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.18);display:none;flex-direction:column;overflow:hidden;font-family:system-ui,sans-serif;}
 #chatbot-panel.open{display:flex;}
+.sidebar-btn.sb-chat:hover{background:var(--teal-lt);border-color:#00B4D8;color:#00B4D8;}
 #chatbot-header{background:linear-gradient(135deg,#0D3B6E,#1B6EC2);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;}
 #chatbot-avatar{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;font-weight:700;}
 #chatbot-close{background:none;border:none;color:rgba(255,255,255,.8);font-size:24px;cursor:pointer;line-height:1;padding:0;}
