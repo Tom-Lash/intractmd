@@ -3442,7 +3442,7 @@ setLang(uiLang);
     addMsg('user',msg);
     document.getElementById('chatbot-suggestions').style.display='none';
     var tid=addTyping();
-    fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:msg,history:cbHistory})})
+    fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:msg,history:cbHistory,language:document.documentElement.lang||'en'})})
       .then(function(r){return r.json();})
       .then(function(d){
         removeTyping(tid);

@@ -892,12 +892,16 @@ app.post('/api/pill-identify', async (req, res) => {
 // ── INTRACTMD HELP CHATBOT ────────────────────────────────────────────────
 app.post('/api/chat', async (req, res) => {
   try {
-    const { message, history } = req.body;
+    const { message, history, language } = req.body;
     if (!message) return res.status(400).json({ error: 'No message' });
     const k = process.env.ANTHROPIC_API_KEY;
     if (!k) return res.status(401).json({ error: 'No API key' });
 
-    const SYSTEM = `You are the IntractMD Help Assistant — a friendly guide for the IntractMD medication safety app by Resolve Medical. Answer questions ONLY about how to use IntractMD and what results mean.
+    const langNote = language === 'es'
+      ? 'IMPORTANT: The user is using the Spanish version of the app. Respond ENTIRELY in Spanish. Keep drug names in English/generic form.'
+      : 'Respond in English.';
+
+    const SYSTEM = `You are the IntractMD Help Assistant — a friendly guide for the IntractMD medication safety app by Resolve Medical. Answer questions ONLY about how to use IntractMD and what results mean. ${langNote}
 
 You can answer questions about:
 - Drug Interaction Score (0-20 Minimal, 21-40 Low, 41-60 Moderate, 61-80 High, 81-100 Critical)
@@ -1439,6 +1443,7 @@ COPY RULES — follow exactly:
 - CONFIRMED (patient-reported foods/supplements): Strong, urgent, and specific. "Because you regularly consume/use [food/supplement], this is important: [specific risk]. You should [strong action — use words like stop, avoid, discontinue, or discuss stopping immediately with your doctor]." Always recommend stopping or discussing with doctor for High/Critical risk items. Name the specific drug it interacts with.
 - COMPUTED: Pattern framing. "Our medication review identified..." or "Based on your current regimen..."
 - PREDICTIVE: Name each supplement/food SPECIFICALLY by name. Use: "Based on your medications, you may want to avoid [SPECIFIC NAME] because..." NEVER imply the patient IS currently taking a predictive item.
+- CRITICAL: Supplements and foods are things like Fish Oil, Vitamin E, Ginkgo Biloba, St. John's Wort, grapefruit juice, alcohol, leafy greens. NEVER list prescription drugs (like Morphine, Oxycodone, Warfarin, etc.) as supplements or foods to avoid — those are medications, not supplements.
 - Confirmed foods/supplements must appear PROMINENTLY early in the letter, not buried.
 - No raw lab values, no risk score numbers, no terms like eGFR, LFT, PCPRS, polypharmacy, frail, non-adherent
 - End the email with ONLY this closing — no modifications, no additions, no placeholders: "Please reach out to us with any questions. Warm regards, ${caseManagerName}". Do NOT add phone numbers, portal links, brackets, or any other tokens after this closing.
