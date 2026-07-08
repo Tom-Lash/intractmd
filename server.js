@@ -891,7 +891,16 @@ app.post('/api/pill-identify', async (req, res) => {
 app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
-    const { drugs, prompt } = req.body;
+    const { drugs } = req.body;
+    const defaultPrompt = `You are a clinical pharmacologist AI for IntractMD Proactive.
+
+The patient medication regimen is: ${(drugs||[]).join(', ')}.
+
+Perform TWO analyses: (1) drug-drug interactions, (2) supplement and food warnings.
+
+Return ONLY valid JSON:
+{"pcprs":<0-100>,"risk_tier":"<Minimal|Low|Moderate|High|Critical>","risk_title":"<one sentence>","drug_interactions":[{"drug_a":"<drug>","drug_b":"<drug>","severity":"<Critical|High|Moderate>","mechanism":"<text>","action":"<text>"}],"warnings":[{"drug":"<drug>","interacts_with":"<supplement or food>","category":"<supplement|food>","severity":"<Critical|High|Moderate>","mechanism":"<text>","action":"<text>"}],"avoid_supplements":["<name>"],"caution_supplements":["<name>"],"avoid_foods":["<name>"],"monitoring_notes":"<text>"}`;
+    const prompt = req.body.prompt || defaultPrompt;
     if (!drugs || drugs.length < 1) return res.status(400).json({ error: 'Need at least 1 drug' });
 
     // ── FAST PATH: Check proactive profile cache first ──────────────────────
