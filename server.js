@@ -1444,7 +1444,6 @@ COPY RULES — follow exactly:
 - COMPUTED: Pattern framing. "Our medication review identified..." or "Based on your current regimen..."
 - PREDICTIVE: Name each supplement/food SPECIFICALLY by name. Use: "Based on your medications, you may want to avoid [SPECIFIC NAME] because..." NEVER imply the patient IS currently taking a predictive item.
 - CRITICAL: Supplements and foods are things like Fish Oil, Vitamin E, Ginkgo Biloba, St. John's Wort, grapefruit juice, alcohol, leafy greens. NEVER list prescription drugs (like Morphine, Oxycodone, Warfarin, etc.) as supplements or foods to avoid — those are medications, not supplements.
-- CRITICAL: Supplements and foods are things like Fish Oil, Vitamin E, Ginkgo Biloba, St. John's Wort, grapefruit juice, alcohol, leafy greens. NEVER list prescription drugs (like Morphine, Oxycodone, Warfarin, etc.) as supplements or foods to avoid — those are medications, not supplements.
 - Confirmed foods/supplements must appear PROMINENTLY early in the letter, not buried.
 - No raw lab values, no risk score numbers, no terms like eGFR, LFT, PCPRS, polypharmacy, frail, non-adherent
 - End the email with ONLY this closing — no modifications, no additions, no placeholders: "Please reach out to us with any questions. Warm regards, ${caseManagerName}". Do NOT add phone numbers, portal links, brackets, or any other tokens after this closing.
