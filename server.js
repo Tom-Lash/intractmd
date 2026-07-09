@@ -36,10 +36,13 @@ app.get('/healthz', (req, res) => res.status(200).send('OK'));
 const basicAuth = require('express-basic-auth');
 
 if (process.env.SITE_LOCKED === 'true') {
-  app.use(basicAuth({
-    users: { [process.env.SITE_USER]: process.env.SITE_PASSWORD },
-    challenge: true,
-  }));
+  app.use((req, res, next) => {
+    if (req.path.startsWith('/api/') || req.path === '/healthz') return next();
+    basicAuth({
+      users: { [process.env.SITE_USER]: process.env.SITE_PASSWORD },
+      challenge: true,
+    })(req, res, next);
+  });
 }
 
 // ── File-based response cache ──────────────────────────────────────────────
