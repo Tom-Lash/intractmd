@@ -376,7 +376,7 @@ function tryParseJSON(raw) {
   return null;
 }
 
-async function safeFetch(url, ms = 5000) {
+async function safeFetch(url, ms = 8000) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), ms);
   try { return await fetch(url, { signal: ctrl.signal, headers: { Accept: 'application/json' } }); }
@@ -475,18 +475,21 @@ async function fetchDrugData(drugName) {
 }
 
 function buildGroundingContext(drugDataArr) {
+  const isLarge = drugDataArr.length >= 5;
   const lines = [];
   for (const d of drugDataArr) {
     const parts = [];
     if (d.drugClass) parts.push(`Class: ${d.drugClass}`);
-    if (d.warnings) parts.push(`FDA Warnings: ${d.warnings}`);
-    if (d.interactions) parts.push(`FDA Drug Interactions: ${d.interactions}`);
-    if (d.contraindications) parts.push(`FDA Contraindications: ${d.contraindications}`);
+    if (d.warnings) parts.push(`FDA Warnings: ${d.warnings.slice(0, isLarge ? 200 : 9999)}`);
+    if (d.interactions) parts.push(`FDA Drug Interactions: ${d.interactions.slice(0, isLarge ? 200 : 9999)}`);
+    if (d.contraindications) parts.push(`FDA Contraindications: ${d.contraindications.slice(0, isLarge ? 200 : 9999)}`);
     if (d.rxnormInteractions.length) parts.push(`RxNorm documented interactions: ${d.rxnormInteractions.slice(0, 3).join(' | ')}`);
     if (parts.length) lines.push(`${d.name}: ${parts.join('. ')}`);
   }
   if (!lines.length) return '';
-  return `REAL-TIME FDA AND RXNORM DATA (use as primary grounding source):\n${lines.join('\n')}\n\n`;
+  const fullText = lines.join('\n');
+  const cappedText = isLarge && fullText.length > 4000 ? fullText.slice(0, 4000) + '\n[Truncated]' : fullText;
+  return `REAL-TIME FDA AND RXNORM DATA (use as primary grounding source):\n${cappedText}\n\n`;
 }
 
 async function callClaude(k, prompt, maxTok = 1500, lang = 'en') {
@@ -568,13 +571,13 @@ app.post('/api/analyze', async (req, res) => {
     if (splitCalls && foods.length > 0) {
       [raw, rawF] = await Promise.all([callClaude(k, mainPrompt, 1500, language), callClaude(k, foodOnlyPrompt, 1000, language)]);
     } else {
-      raw = await callClaude(k, mainPrompt, 4000, language);
+      raw = await callClaude(k, mainPrompt, drugs.length >= 8 ? 6000 : drugs.length >= 5 ? 4000 : 3000, language);
     }
 
     let result = tryParseJSON(raw);
     if (!result) {
       const retryPrompt = 'IMPORTANT: Return raw JSON only, starting with { ending with }. No markdown, no backticks.\n\nDrug interactions for: ' + drugs.join(',') + (supplements.length ? ', supps:' + supplements.join(',') : '') + (includeFoodInMain && foods.length ? ', foods:' + foods.join(',') : '') + '.\n\n' + mainPrompt;
-      raw = await callClaude(k, retryPrompt, 4000, language);
+      raw = await callClaude(k, retryPrompt, drugs.length >= 8 ? 6000 : drugs.length >= 5 ? 4000 : 3000, language);
       result = tryParseJSON(raw);
       if (!result) {
         return res.status(500).json({ error: 'AI response could not be parsed after two attempts. Please try again.' });
