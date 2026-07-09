@@ -568,13 +568,13 @@ app.post('/api/analyze', async (req, res) => {
     if (splitCalls && foods.length > 0) {
       [raw, rawF] = await Promise.all([callClaude(k, mainPrompt, 1500, language), callClaude(k, foodOnlyPrompt, 1000, language)]);
     } else {
-      raw = await callClaude(k, mainPrompt, 1500, language);
+      raw = await callClaude(k, mainPrompt, 4000, language);
     }
 
     let result = tryParseJSON(raw);
     if (!result) {
       const retryPrompt = 'IMPORTANT: Return raw JSON only, starting with { ending with }. No markdown, no backticks.\n\nDrug interactions for: ' + drugs.join(',') + (supplements.length ? ', supps:' + supplements.join(',') : '') + (includeFoodInMain && foods.length ? ', foods:' + foods.join(',') : '') + '.\n\n' + mainPrompt;
-      raw = await callClaude(k, retryPrompt, 1500, language);
+      raw = await callClaude(k, retryPrompt, 4000, language);
       result = tryParseJSON(raw);
       if (!result) {
         return res.status(500).json({ error: 'AI response could not be parsed after two attempts. Please try again.' });
