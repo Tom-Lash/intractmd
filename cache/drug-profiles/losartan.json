@@ -1,0 +1,13 @@
+{
+  "name": "losartan",
+  "rxcui": "52175",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Hypotension: Correct volume or salt depletion prior to administration of losartan potassium. (5.2) • Monitor renal function and potassium in susceptible patients. (5.3 , 5.4) 5.1 Fetal Toxicity Losartan potassium can cause fetal harm when administered to a pregnant woman",
+  "interactions": "7 DRUG INTERACTIONS • Agents Increasing Serum Potassium: Risk of hyperkalemia. (7.1) • Lithium: Risk of lithium toxicity. (7.2) • NSAIDs: Increased risk of renal impairment and reduced diuretic, natriuretic, and antihypertensive effects. (7.3) • Dual Inhibition of the Renin-Angiotensin System: Incre",
+  "contraindications": "4 CONTRAINDICATIONS Losartan potassium is contraindicated: • In patients who are hypersensitive to any component of this product. • For coadministration with aliskiren in patients with diabetes. • Hyp",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

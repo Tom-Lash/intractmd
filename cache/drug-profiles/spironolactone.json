@@ -1,0 +1,13 @@
+{
+  "name": "spironolactone",
+  "rxcui": "9997",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hyperkalemia: Monitor serum potassium within one week of initiation and regularly thereafter ( 5.1 ). Hypotension and Worsening Renal Function: Monitor volume status and renal function periodically ( 5.2 ). Electrolyte and Metabolic Abnormalities: Monitor serum electrolyte",
+  "interactions": "7 DRUG INTERACTIONS Agents increasing serum potassium: Concomitant administration can lead to hyperkalemia ( 5.1 , 7.1 ). Lithium: Increased risk of lithium toxicity ( 7.2 ). NSAIDs: May reduce the diuretic, natriuretic and antihypertensive effect of spironolactone ( 7.3 ). Digoxin: spironolactone c",
+  "contraindications": "4 CONTRAINDICATIONS Spironolactone is contraindicated in the patients with: Hyperkalemia Addison’s disease Concomitant use of eplerenone Spironolactone is contraindicated in patients with ( 4 ): Hyper",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

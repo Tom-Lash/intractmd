@@ -1,0 +1,13 @@
+{
+  "name": "escitalopram",
+  "rxcui": "321988",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serotonin Syndrome: Increased risk when co-administered with other serotonergic agents, but also when taken alone. If it occurs, discontinue escitalopram and serotonergic agents and initiate supportive treatment ( 4 , 5.2 ) Discontinuation syndrome: When discontinuing esci",
+  "interactions": "7 DRUG INTERACTIONS Table 6 presents clinically important drug interactions with escitalopram. TABLE 6 Clinically Important Drug Interactions with Escitalopram Monoamine Oxidase Inhibitors (MAOIs) Clinical Impact: Concomitant use of SSRIs, including escitalopram, and MAOIs increases the risk of sero",
+  "contraindications": "4 CONTRAINDICATIONS Escitalopram is contraindicated in patients: taking MAOIs with escitalopram or within 14 days of stopping treatment with escitalopram because of an increased risk of serotonin synd",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

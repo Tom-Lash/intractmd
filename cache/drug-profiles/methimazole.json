@@ -1,0 +1,13 @@
+{
+  "name": "methimazole",
+  "rxcui": "6835",
+  "drugClass": null,
+  "warnings": "WARNINGS First Trimester Use of Methimazole and Congenital Malformations Methimazole crosses the placental membranes and can cause fetal harm when administered in the first trimester of pregnancy. Rare instances of congenital defects, including aplasia cutis, craniofacial malformations (facial dysmo",
+  "interactions": "Drug Interactions Anticoagulants (oral) Due to potential inhibition of vitamin K activity by methimazole, the activity of oral anticoagulants (e.g., warfarin) may be increased; additional monitoring of PT/INR should be considered, especially before surgical procedures. ß-adrenergic blocking agents H",
+  "contraindications": "CONTRAINDICATIONS",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

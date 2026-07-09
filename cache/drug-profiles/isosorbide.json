@@ -1,0 +1,13 @@
+{
+  "name": "isosorbide",
+  "rxcui": "6057",
+  "drugClass": null,
+  "warnings": "WARNINGS Amplification of the vasodilatory effects of isosorbide mononitrate by sildenafil can result in severe hypotension. The time course and dose dependence of this interaction have not been studied. Appropriate supportive care has not been studied, but it seems reasonable to treat this as a nit",
+  "interactions": "Drug Interactions Concomitant use of isosorbide mononitrate with phosphodiesterase inhibitors in any form is contraindicated (see CONTRAINDICATIONS ). Concomitant use of isosorbide mononitrate with riociguat, a soluble guanylate cyclase stimulator, is contraindicated (see CONTRAINDICATIONS ). The va",
+  "contraindications": "CONTRAINDICATIONS Isosorbide mononitrate is contraindicated in patients who are allergic to it. Do not use isosorbide mononitrate in patients who are taking certain drugs for erectile dysfunction (pho",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

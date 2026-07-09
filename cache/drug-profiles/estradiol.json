@@ -1,0 +1,13 @@
+{
+  "name": "estradiol",
+  "rxcui": "4083",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Vascular risks: Stop if a thrombotic or thromboembolic event occurs. Stop at least 4 weeks before and through 2 weeks after major surgery. Start no earlier than 4 weeks after delivery, in women who are not breastfeeding. Consider cardiovascular risk factors before initiati",
+  "interactions": "7 DRUG INTERACTIONS The sections below provide information on substances for which data on drug interactions with COCs are available. There is little information available about the clinical effect of most drug interactions that may affect COCs. However, based on the known pharmacokinetic effects of",
+  "contraindications": "4 CONTRAINDICATIONS Iclevia is contraindicated in females who are known to have or develop the following conditions: A high risk of arterial or venous thrombotic diseases. Examples include females who",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

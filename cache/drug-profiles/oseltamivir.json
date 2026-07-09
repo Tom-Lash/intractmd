@@ -1,0 +1,13 @@
+{
+  "name": "oseltamivir",
+  "rxcui": "260101",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serious skin/hypersensitivity reactions such as Stevens-Johnson Syndrome, toxic epidermal necrolysis and erythema multiforme: Discontinue oseltamivir phosphate for oral suspension and initiate appropriate treatment if allergic-like reactions occur or are suspected. ( 5.1 )",
+  "interactions": "7 DRUG INTERACTIONS Live attenuated influenza vaccine (LAIV), intranasal: Avoid administration of LAIV within 2 weeks before or 48 hours after oseltamivir phosphate for oral suspension use, unless medically indicated. ( 7 ) 7.1 Influenza Vaccines Live Attenuated Influenza Vaccine The concurrent use ",
+  "contraindications": "4 CONTRAINDICATIONS Oseltamivir phosphate for oral suspension is contraindicated in patients with known serious hypersensitivity to oseltamivir or any component of the product. Severe allergic reactio",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

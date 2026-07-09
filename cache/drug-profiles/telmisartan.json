@@ -1,0 +1,13 @@
+{
+  "name": "telmisartan",
+  "rxcui": "73494",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Avoid fetal or neonatal exposure ( 5.1 ) Hypotension: Correct any volume or salt depletion before initiating therapy. Observe for signs and symptoms of hypotension ( 5.2 ) Monitor carefully in patients with impaired hepatic ( 5.4 ) or renal function ( 5.5 ) Avoid concomita",
+  "interactions": "7 DRUG INTERACTIONS Aliskiren: Do not co-administer aliskiren with telmisartan in patients with diabetes. Avoid use of aliskiren with telmisartan in patients with renal impairment (GFR <60 mL/min). Digoxin: When telmisartan was co-administered with digoxin, median increases in digoxin peak plasma co",
+  "contraindications": "4 CONTRAINDICATIONS Telmisartan is contraindicated in patients with known hypersensitivity (e.g., anaphylaxis or angioedema) to telmisartan or any other component of this product [see Adverse Reaction",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

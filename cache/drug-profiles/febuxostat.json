@@ -1,0 +1,13 @@
+{
+  "name": "febuxostat",
+  "rxcui": "73689",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Gout Flares : An increase in gout flares is frequently observed after initiation of febuxostat. If a gout flare occurs during treatment, febuxostat need not be discontinued. Prophylactic therapy (i.e., non-steroidal anti-inflammatory drug or colchicine) upon initiation of ",
+  "interactions": "7 DRUG INTERACTIONS Concomitant administration of febuxostat with XO substrate drugs, azathioprine or mercaptopurine could increase plasma concentrations of these drugs resulting in severe toxicity. ( 7 ) 7.1 Xanthine Oxidase Substrate Drugs Febuxostat is an XO inhibitor. Based on a drug interaction",
+  "contraindications": "4 CONTRAINDICATIONS Febuxostat tablets are contraindicated in patients being treated with azathioprine or mercaptopurine [see Drug Interactions (7) ] . Febuxostat tablets are contraindicated in patien",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "rizatriptan",
+  "rxcui": "88014",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Myocardial ischemia, myocardial infarction, and Prinzmetal's angina: Perform cardiac evaluation in patients with multiple cardiovascular risk factors ( 5.1 ) Arrhythmias: Discontinue dosing if occurs ( 5.2 ) Chest/throat/neck/jaw pain, tightness, pressure, or heaviness; Ge",
+  "interactions": "7 DRUG INTERACTIONS 7.1 Propranolol The dose of MAXALT should be adjusted in propranolol-treated patients, as propranolol has been shown to increase the plasma AUC of rizatriptan by 70% [see Dosage and Administration (2.4) and Clinical Pharmacology (12.3) ] . 7.2 Ergot-Containing Drugs Ergot-contain",
+  "contraindications": "4 CONTRAINDICATIONS MAXALT is contraindicated in patients with: Ischemic coronary artery disease (angina pectoris, history of myocardial infarction, or documented silent ischemia), or other significan",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

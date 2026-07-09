@@ -1,0 +1,13 @@
+{
+  "name": "morphine",
+  "rxcui": "7052",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Opioid-Induced Hyperalgesia and Allodynia: Opioid-Induced Hyperalgesia (OIH) occurs when an opioid analgesic paradoxically causes an increase in pain, or an increase in sensitivity to pain. If OIH is suspected, carefully consider appropriately decreasing the dose of the cu",
+  "interactions": "7 DRUG INTERACTIONS Table 1 includes clinically significant drug interactions with morphine sulfate tablets. Table 1: Clinically Significant Drug Interactions with Morphine sulfate tablets Benzodiazepines and Other Central Nervous System (CNS) Depressants Clinical Impact: Due to additive pharmacolog",
+  "contraindications": "4 CONTRAINDICATIONS Morphine sulfate tablets are contraindicated in patients with: Significant respiratory depression [see Warnings and Precautions ( 5.2 )]. Acute or severe bronchial asthma in an unm",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

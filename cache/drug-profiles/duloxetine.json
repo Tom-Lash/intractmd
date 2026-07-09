@@ -1,0 +1,13 @@
+{
+  "name": "duloxetine",
+  "rxcui": "72625",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hepatotoxicity : Hepatic failure, sometimes fatal, has been reported. Discontinue Duloxetine delayed-release capsules in patients who develop jaundice or other evidence of clinically significant liver dysfunction and should not be resumed unless another cause can be establ",
+  "interactions": "7 DRUG INTERACTIONS Both CYP1A2 and CYP2D6 are responsible for duloxetine metabolism. Potent inhibitors of CYP1A2 should be avoided ( 7.1 ) Potent inhibitors of CYP2D6 may increase Duloxetine delayed-release capsules concentrations ( 7.2 ) Duloxetine delayed-release capsules is a moderate inhibitor ",
+  "contraindications": "4 CONTRAINDICATIONS The use of MAOIs intended to treat psychiatric disorders with Duloxetine delayed-release capsules or within 5 days of stopping treatment with Duloxetine delayed-release capsules is",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

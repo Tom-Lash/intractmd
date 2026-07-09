@@ -1,0 +1,13 @@
+{
+  "name": "gemfibrozil",
+  "rxcui": "4719",
+  "drugClass": null,
+  "warnings": "WARNINGS 1. Because of chemical, pharmacological, and clinical similarities between gemfibrozil and clofibrate, the adverse findings with clofibrate in two large clinical studies may also apply to gemfibrozil. In the first of those studies, the Coronary Drug Project, 1,000 subjects with previous myo",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Hepatic or severe renal dysfunction, including primary biliary cirrhosis. Preexisting gallbladder disease (see WARNINGS ). Hypersensitivity to gemfibrozil. Combination therapy of gem",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

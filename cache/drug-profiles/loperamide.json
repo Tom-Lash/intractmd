@@ -1,0 +1,13 @@
+{
+  "name": "loperamide",
+  "rxcui": "6468",
+  "drugClass": null,
+  "warnings": "Warnings Allergy alert: Do not use if you have ever had a rash or other allergic reaction to loperamide HCl Heart alert: Taking more than directed can cause serious heart problems or death Do not use if you have bloody or black stool Ask a doctor before use if you have • fever • mucus in the stool •",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "pravastatin",
+  "rxcui": "42463",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Skeletal muscle effects (e.g., myopathy and rhabdomyolysis): predisposing factors include advanced age (≥65), uncontrolled hypothyroidism, and renal impairment. Patients should be advised to promptly report to their physician any unexplained and/or persistent muscle pain, ",
+  "interactions": "7 DRUG INTERACTIONS For the concurrent therapy of either cyclosporine, fibrates, niacin (nicotinic acid), or erythromycin, the risk of myopathy increases [see Warnings and Precautions (5.1) and Clinical Pharmacology (12.3) ]. Concomitant lipid-lowering therapies: use with fibrates or lipid-modifying",
+  "contraindications": "4 CONTRAINDICATIONS Hypersensitivity to any component of this medication. (4.1, 6.2, 11) Active liver disease or unexplained, persistent elevations of serum transaminases. (4.2, 5.3 ) Pregnancy (4.3, ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

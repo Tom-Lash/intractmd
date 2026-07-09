@@ -1,0 +1,13 @@
+{
+  "name": "promethazine",
+  "rxcui": "8745",
+  "drugClass": null,
+  "warnings": "WARNINGS PROMETHAZINE HCl SUPPOSITORIES SHOULD NOT BE USED IN PEDIATRIC PATIENTS LESS THAN 2 YEARS OF AGE BECAUSE OF THE POTENTIAL FOR FATAL RESPIRATORY DEPRESSION. POSTMARKETING CASES OF RESPIRATORY DEPRESSION, INCLUDING FATALITIES, HAVE BEEN REPORTED WITH USE OF PROMETHAZINE HCl SUPPOSITORIES IN P",
+  "interactions": "Drug Interactions CNS Depressants - Promethazine HCl Suppositories may increase, prolong, or intensify the sedative action of other central-nervous-system depressants, such as alcohol, sedatives/hypnotics (including barbiturates), narcotics, narcotic analgesics, general anesthetics, tricyclic antide",
+  "contraindications": "CONTRAINDICATIONS Promethazine HCl Suppositories are contraindicated for use in pediatric patients less than two years of age. Promethazine HCl Suppositories are contraindicated in comatose states, an",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

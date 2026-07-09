@@ -1,0 +1,13 @@
+{
+  "name": "risedronate",
+  "rxcui": "73056",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Products Containing Same Active Ingredient : Patients receiving Actonel should not be treated with risedronate sodium delayed-release tablets (5.1) • Upper Gastrointestinal Adverse Reactions can occur. Instruct patients to follow dosing instructions. Discontinue use if n",
+  "interactions": "7 DRUG INTERACTIONS Risedronate is not metabolized and does not induce or inhibit hepatic microsomal drug-metabolizing enzymes (for example, Cytochrome P450). Calcium supplements, antacids, proton pump inhibitors (PPIs), H 2 blockers, magnesium-based supplements or laxatives, and iron preparations i",
+  "contraindications": "4 CONTRAINDICATIONS Risedronate sodium delayed-release tablets contraindicated in patients with the following conditions: 1. Abnormalities of the esophagus which delay esophageal emptying such as stri",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

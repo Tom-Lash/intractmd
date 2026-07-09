@@ -1,0 +1,13 @@
+{
+  "name": "pioglitazone",
+  "rxcui": "33738",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Congestive heart failure: Fluid retention may occur and can exacerbate or lead to congestive heart failure. Combination use with insulin and use in congestive heart failure NYHA Class I and II may increase risk. Monitor patients for signs and symptoms. (5.1) Hypoglycemia: ",
+  "interactions": "7 DRUG INTERACTIONS Strong CYP2C8 inhibitors (e.g., gemfibrozil) increase pioglitazone concentrations. Limit pioglitazone dose to 15 mg daily. (2.3 , 7.1) CYP2C8 inducers (e.g., rifampin) may decrease pioglitazone concentrations. (7.2) Topiramate may decrease pioglitazone concentrations. ( 7.3 ) 7.1",
+  "contraindications": "4 CONTRAINDICATIONS Initiation in patients with established NYHA Class III or IV heart failure [see Boxed Warning ]. Use in patients with known hypersensitivity to pioglitazone or any other component ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

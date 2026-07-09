@@ -1,0 +1,13 @@
+{
+  "name": "ramipril",
+  "rxcui": "35296",
+  "drugClass": null,
+  "warnings": "5. WARNINGS AND PRECAUTIONS ACE inhibitor use has been associated with the following: • Angioedema, with increased risk in patients with a prior history ( 5.1 ) • Hypotension and hyperkalemia ( 5.5 , 5.8 ) • Renal impairment: monitor renal function during therapy ( 5.3 ) • Increased risk of renal im",
+  "interactions": "7. DRUG INTERACTIONS • Diuretics: Possibility of excessive hypotension ( 7.1 ). • Lithium: Use with caution ( 7.3 ). • Gold: Nitritoid reactions have been reported ( 7.4 ). • NSAIDS use may lead to increased risk of renal impairment and loss of antihypertensive effect ( 7.5 ). 7.1 Diuretics Patients",
+  "contraindications": "4. CONTRAINDICATIONS Angioedema related to previous treatment with an ACE inhibitor, or a history of hereditary or idiopathic angioedema.( 4 ). Ramipril is contraindicated in patients who are hypersen",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ranitidine",
+  "rxcui": "9143",
+  "drugClass": null,
+  "warnings": "Warnings Allergy alert: Do not use if you are allergic to ranitidine or other acid reducers Do not use if you have trouble or pain swallowing food, vomiting with blood, or bloody or black stools.These may be signs of a serious condition. See your doctor. with other acid reducers Ask a doctor before ",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

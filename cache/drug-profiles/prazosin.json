@@ -1,0 +1,13 @@
+{
+  "name": "prazosin",
+  "rxcui": "8629",
+  "drugClass": null,
+  "warnings": "WARNINGS As with all alpha-blockers, prazosin hydrochloride may cause syncope with sudden loss of consciousness. In most cases, this is believed to be due to an excessive postural hypotensive effect, although occasionally the syncopal episode has been preceded by a bout of severe tachycardia with he",
+  "interactions": "Drug Interactions Prazosin hydrochloride has been administered without any adverse drug interaction in limited clinical experience to date with the following: (1) cardiac glycosides– digitalis and digoxin; (2) hypoglycemics–insulin, chlorpropamide, phenformin, tolazamide, and tolbutamide; (3) tranqu",
+  "contraindications": "CONTRAINDICATIONS Prazosin hydrochloride capsules are contraindicated in patients with known sensitivity to quinazolines, prazosin, or any of the inert ingredients.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

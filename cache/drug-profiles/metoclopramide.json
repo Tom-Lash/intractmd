@@ -1,0 +1,13 @@
+{
+  "name": "metoclopramide",
+  "rxcui": "6915",
+  "drugClass": null,
+  "warnings": "WARNINGS Mental depression has occurred in patients with and without prior history of depression. Symptoms have ranged from mild to severe and have included suicidal ideation and suicide. Metoclopramide should be given to patients with a prior history of depression only if the expected benefits outw",
+  "interactions": "Drug Interactions The effects of metoclopramide on gastrointestinal motility are antagonized by anticholinergic drugs and narcotic analgesics. Additive sedative effects can occur when metoclopramide is given with alcohol, sedatives, hypnotics, narcotics, or tranquilizers. The finding that metoclopra",
+  "contraindications": "CONTRAINDICATIONS Metoclopramide should not be used whenever stimulation of gastrointestinal motility might be dangerous, e.g., in the presence of gastrointestinal hemorrhage, mechanical obstruction, ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

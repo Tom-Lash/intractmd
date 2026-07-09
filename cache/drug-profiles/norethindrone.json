@@ -1,0 +1,13 @@
+{
+  "name": "norethindrone",
+  "rxcui": "7514",
+  "drugClass": null,
+  "warnings": "WARNINGS The use of oral contraceptives is associated with increased risks of several serious conditions including myocardial infarction, thromboembolism, stroke, hepatic neoplasia, and gallbladder disease, although the risk of serious morbidity or mortality is very small in healthy women without un",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Oral contraceptives are contraindicated in women who currently have the following conditions: • Thrombophlebitis or thromboembolic disorders • A past history of deep vein thrombophle",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

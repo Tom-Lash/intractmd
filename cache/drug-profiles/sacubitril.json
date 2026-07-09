@@ -1,0 +1,13 @@
+{
+  "name": "sacubitril",
+  "rxcui": "1656328",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Observe for signs and symptoms of angioedema and hypotension. ( 5.2 , 5.3 ) Monitor renal function and potassium in susceptible patients. ( 5.4 , 5.5 ) 5.1 Fetal Toxicity ENTRESTO can cause fetal harm when administered to a pregnant woman. Use of drugs that act on the reni",
+  "interactions": "7 DRUG INTERACTIONS Avoid concomitant use with aliskiren in patients with estimated glomerular filtration rate (eGFR) less than 60. ( 7.1 ) Potassium-sparing diuretics: May lead to increased serum potassium. ( 7.2 ) Nonsteroidal Anti-Inflammatory Drugs (NSAIDs): May lead to increased risk of renal i",
+  "contraindications": "4 CONTRAINDICATIONS ENTRESTO is contraindicated: in patients with hypersensitivity to any component in patients with a history of angioedema related to previous ACE inhibitor or ARB therapy [see Warni",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

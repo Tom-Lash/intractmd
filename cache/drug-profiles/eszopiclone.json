@@ -1,0 +1,13 @@
+{
+  "name": "eszopiclone",
+  "rxcui": "461016",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • CNS Depressant Effects Impaired alertness and motor coordination, including risk of morning impairment. Risk increases with dose and use with other CNS depressants and alcohol. Caution patients taking 3 mg dose against driving and against activities requiring complete me",
+  "interactions": "7 DRUG INTERACTIONS • CNS Depressants Additive CNS-depressant effects with combination use. Use with ethanol causes additive psychomotor impairment ( 7.1 ) • Rifampicin Combination use may decrease exposure and effects of eszopiclone tablets ( 7.2 ) • Ketoconazole Combination use increases exposure ",
+  "contraindications": "4 CONTRAINDICATIONS • Eszopiclonetablet is contraindicated in patients who have experienced complex sleep behaviors after taking eszopiclone tablets [see Warnings and Precautions (5.1) ]. • Eszopiclon",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

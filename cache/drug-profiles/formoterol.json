@@ -1,0 +1,13 @@
+{
+  "name": "formoterol",
+  "rxcui": "25255",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS LABA as monotherapy (without inhaled corticosteroid) for asthma increases the risk of serious asthma-related events. ( 5.1 ) Do not initiate formoterol fumarate inhalation solution in acutely deteriorating patients. ( 5.2 ) Do not use for relief of acute symptoms. Concomit",
+  "interactions": "7 DRUG INTERACTIONS Other adrenergic drugs may potentiate effect. Use with caution. ( 5.3 , 7.1 ) Xanthine derivatives, steroids, diuretics, or non-potassium sparing diuretics may potentiate hypokalemia or ECG changes. Use with caution. ( 5.7 , 7.2 , 7.3 ) MAO inhibitors, tricyclic antidepressants a",
+  "contraindications": "4 CONTRAINDICATIONS Use of a LABA, including formoterol fumarate, without an inhaled corticosteroid is contraindicated in patients with asthma [see WARNINGS and PRECAUTIONS ( 5.1 )]. Formoterol fumara",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

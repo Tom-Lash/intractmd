@@ -1,0 +1,13 @@
+{
+  "name": "diltiazem",
+  "rxcui": "3443",
+  "drugClass": null,
+  "warnings": "WARNINGS Cardiac Conduction : Diltiazem hydrochloride prolongs AV node refractory periods without significantly prolonging sinus node recovery time, except in patients with sick sinus syndrome. This effect may rarely result in abnormally slow heart rates (particularly in patients with sick sinus syn",
+  "interactions": "Drug Interactions Because of the potential for additive effects, slow titration is warranted in patients receiving diltiazem hydrochloride concomitantly with other agents known to affect cardiac contractility and/or conduction (see WARNINGS ). Pharmacologic studies indicate that there may be additiv",
+  "contraindications": "CONTRAINDICATIONS Diltiazem hydrochloride is contraindicated in (1) patients with sick sinus syndrome except in the presence of a functioning ventricular pacemaker, (2) patients with second- or third-",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

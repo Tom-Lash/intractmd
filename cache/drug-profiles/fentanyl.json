@@ -1,0 +1,13 @@
+{
+  "name": "fentanyl",
+  "rxcui": "4337",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Risks of Skeletal Muscle Rigidity and Skeletal Muscle Movement : Manage with neuromuscular blocking agent. See full prescribing information for more detail on managing these risks. ( 5.5 ) • Severe Cardiovascular Depression : Monitor during dosage initiation and titratio",
+  "interactions": "7 DRUG INTERACTIONS Table 2 includes clinically significant drug interactions with Fentanyl Citrate Injection. Table 2: Clinically Significant Drug Interactions with Fentanyl Citrate Injection Inhibitors of CYP3A4 Clinical Impact: The concomitant use of Fentanyl Citrate Injection and CYP3A4 inhibito",
+  "contraindications": "4 CONTRAINDICATIONS Fentanyl Citrate Injection is contraindicated in patients with: • Hypersensitivity to fentanyl (e.g., anaphylaxis) [See Adverse Reactions ( 6 )] • Hypersensitivity to fentanyl ( 4 ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

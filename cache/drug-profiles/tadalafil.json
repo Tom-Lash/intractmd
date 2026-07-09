@@ -1,0 +1,13 @@
+{
+  "name": "tadalafil",
+  "rxcui": "358263",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Evaluation of erectile dysfunction and BPH should include an appropriate medical assessment to identify potential underlying causes, as well as treatment options. Before prescribing tadalafil tablets, it is important to note the following: Patients should not use tadalafil",
+  "interactions": "7 DRUG INTERACTIONS Tadalafil tablets can potentiate the hypotensive effects of nitrates, alpha-blockers, antihypertensives or alcohol ( 7.1 ). CYP3A4 inhibitors (e.g. ketoconazole, ritonavir) increase tadalafil exposure ( 2.7 , 5.10 , 7.2 ) requiring dose adjustment: Tadalafil tablets for use as ne",
+  "contraindications": "4 CONTRAINDICATIONS Administration of tadalafil tablets to patients using any form of organic nitrate is contraindicated. Tadalafil was shown to potentiate the hypotensive effect of nitrates ( 4.1 ). ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

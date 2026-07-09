@@ -1,0 +1,13 @@
+{
+  "name": "nitrofurantoin",
+  "rxcui": "7454",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hypersensitivity Reactions: Serious and occasionally fatal hypersensitivity (anaphylactic) reactions have been reported in patients receiving nitrofurantoin. If signs and symptoms of a hypersensitivity reaction occurs, immediately discontinue nitrofurantoin. (5.1) Pulmonar",
+  "interactions": "7 DRUG INTERACTIONS Antacids : Decreased absorption of nitrofurantoin. (7.1) Uricosuric drugs: Inhibit renal tubular secretion of nitrofurantoin. (7.2) 7.1 Antacids Antacids containing magnesium trisilicate, when administered concomitantly with nitrofurantoin, reduce both the rate and extent of abso",
+  "contraindications": "4 CONTRAINDICATIONS Nitrofurantoin is contraindicated in: patients with known hypersensitivity to nitrofurantoin [see Warnings and Precautions (5.1)]. patients with a previous history of cholestatic j",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

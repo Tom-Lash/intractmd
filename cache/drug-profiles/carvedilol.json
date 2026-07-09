@@ -1,0 +1,13 @@
+{
+  "name": "carvedilol",
+  "rxcui": "20352",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Acute exacerbation of coronary artery disease upon cessation of therapy: Do not abruptly discontinue. ( 5.1 ) Bradycardia, hypotension, worsening heart failure/fluid retention may occur. Reduce the dose as needed. ( 5.2 , 5.3 , 5.4 ) Non-allergic bronchospasm (e.g., chroni",
+  "interactions": "7 DRUG INTERACTIONS CYP P450 2D6 enzyme inhibitors may increase and rifampin may decrease carvedilol levels. ( 7.1 , 7.5 ) Hypotensive agents (e.g., reserpine, MAO inhibitors, clonidine) may increase the risk of hypotension and/or severe bradycardia. ( 7.4 ) Cyclosporine or digoxin levels may increa",
+  "contraindications": "4 CONTRAINDICATIONS Bronchial asthma or related bronchospastic conditions. ( 4 ) Second- or third-degree AV block. ( 4 ) Sick sinus syndrome. ( 4 ) Severe bradycardia (unless permanent pacemaker in pl",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

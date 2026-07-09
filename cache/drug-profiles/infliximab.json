@@ -1,0 +1,13 @@
+{
+  "name": "infliximab",
+  "rxcui": "191831",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Serious infections – do not give INFLECTRA during an active infection. If an infection develops, monitor carefully and stop INFLECTRA if infection becomes serious. ( 5.1 ) • Invasive fungal infections – for patients who develop a systemic illness on INFLECTRA, consider e",
+  "interactions": "7 DRUG INTERACTIONS Other Biological Products – increased risk of serious infections ( 7.1 ) 7.1 Other Biological Products The combination of INFLECTRA with other biological products used to treat the same conditions as INFLECTRA is not recommended [see Warnings and Precautions (5.10) ]. An increase",
+  "contraindications": "4 CONTRAINDICATIONS The use of INFLECTRA at doses >5 mg/kg is contraindicated in patients with moderate or severe heart failure [see Warnings and Precautions (5.5) and Adverse Reactions (6.1) ]. INFLE",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ibuprofen",
+  "rxcui": "5640",
+  "drugClass": null,
+  "warnings": "Warnings Allergy alert: Ibuprofen may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include: rash facial swelling asthma (wheezing) hives skin reddening shock blisters If an allergic reaction occurs, stop use and seek medical help right away. Stomach bleedi",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "tramadol",
+  "rxcui": "10689",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Opioid Induced Hyperalgesia (OIH) and Allodynia: Opioid-Induced Hyperalgesia (OIH) occurs when an opioid analgesic paradoxically causes an increase in pain, or an increase in sensitivity to pain. If OIH is suspected, carefully consider appropriately decreasing the dose of ",
+  "interactions": "7 DRUG INTERACTIONS Table 2 includes clinically significant drug interactions with tramadol hydrochloride extended-release tablets. Table 2: Clinically Significant Drug Interactions with Tramadol Hydrochloride Extended-Release Tablets Inhibitors of CYP2D6 Clinical Impact: The concomitant use of tram",
+  "contraindications": "4 CONTRAINDICATIONS Tramadol hydrochloride extended-release tablets are contraindicated for: all children younger than 12 years of age [see Warnings and Precautions (5.4)] post-operative management in",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

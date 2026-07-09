@@ -1,0 +1,13 @@
+{
+  "name": "bismuth subsalicylate",
+  "rxcui": "19478",
+  "drugClass": null,
+  "warnings": "Warnings Reye's syndrome: Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product. when using this product , if changes in behavior with nausea and vomiting occur, consult a doctor because these symptoms could be an early sign of Reye's syn",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

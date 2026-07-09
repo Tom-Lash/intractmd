@@ -1,0 +1,13 @@
+{
+  "name": "montelukast",
+  "rxcui": "88249",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Do not prescribe montelukast sodium to treat an acute asthma attack ( 5.2 ). • Advise patients to have appropriate rescue medication available ( 5.2 ). • Inhaled corticosteroid may be reduced gradually. Do not abruptly substitute montelukast sodium for inhaled or oral co",
+  "interactions": "7 DRUG INTERACTIONS No dose adjustment is needed when montelukast sodium is co-administered with theophylline, prednisone, prednisolone, oral contraceptives, terfenadine, digoxin, warfarin, gemfibrozil, itraconazole, thyroid hormones, sedative hypnotics, non-steroidal anti-inflammatory agents, benzo",
+  "contraindications": "4 CONTRAINDICATIONS • Hypersensitivity to any component of this product. • Hypersensitivity to any component of this product ( 4 ).",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

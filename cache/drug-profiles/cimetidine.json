@@ -1,0 +1,13 @@
+{
+  "name": "cimetidine",
+  "rxcui": "2541",
+  "drugClass": null,
+  "warnings": null,
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Cimetidine tablets are contraindicated for patients known to have hypersensitivity to the product.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

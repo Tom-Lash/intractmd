@@ -1,0 +1,13 @@
+{
+  "name": "cyclobenzaprine",
+  "rxcui": "21949",
+  "drugClass": null,
+  "warnings": "WARNINGS Serotonin Syndrome The development of a potentially life-threatening serotonin syndrome has been reported with cyclobenzaprine hydrochloride when used in combination with other drugs, such as selective serotonin reuptake inhibitors (SSRIs), serotonin norepinephrine reuptake inhibitors (SNRI",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity to any component of this product. Concomitant use of monoamine oxidase (MAO) inhibitors or within 14 days after their discontinuation. Hyperpyretic crisis seizures a",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

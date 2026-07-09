@@ -1,0 +1,13 @@
+{
+  "name": "buspirone",
+  "rxcui": "1827",
+  "drugClass": null,
+  "warnings": "WARNINGS The administration of buspirone hydrochloride tablets to a patient taking a monoamine oxidase inhibitor (MAOI) may pose a hazard. There have been reports of the occurrence of elevated blood pressure when buspirone hydrochloride has been added to a regimen including an MAOI. Therefore, it is",
+  "interactions": "Drug Interactions",
+  "contraindications": "CONTRAINDICATIONS Buspirone hydrochloride tablets are contraindicated in patients hypersensitive to buspirone hydrochloride. The use of monoamine oxidase inhibitors (MAOIs) intended to treat depressio",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

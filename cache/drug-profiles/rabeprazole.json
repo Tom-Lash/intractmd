@@ -1,0 +1,13 @@
+{
+  "name": "rabeprazole",
+  "rxcui": "114979",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Gastric Malignancy : In adults, symptomatic response to therapy with rabeprazole does not preclude the presence of gastric malignancy. Consider additional follow-up and diagnostic testing ( 5.1 ). Use with Warfarin : Monitor for increases in INR and prothrombin time ( 5.2 ",
+  "interactions": "7 DRUG INTERACTIONS See full prescribing information for a list of clinically important drug interactions ( 7 ). Table 2 includes drugs with clinically important drug interactions and interaction with diagnostics when administered concomitantly with rabeprazole sodium delayed-release tablets and ins",
+  "contraindications": "4 CONTRAINDICATIONS Patients with a history of hypersensitivity to rabeprazole ( 4 ). PPIs, including rabeprazole sodium delayed-release tablets, are contraindicated in patients receiving rilpivirine-",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

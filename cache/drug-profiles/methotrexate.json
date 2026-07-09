@@ -1,0 +1,13 @@
+{
+  "name": "methotrexate",
+  "rxcui": "6851",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Serious Infections : Monitor patients for infection during and after treatment with methotrexate. Withhold or discontinue methotrexate for serious infections as appropriate. (5.11) • Neurotoxicity : Monitor patients for neurotoxicity and withhold or discontinue methotrex",
+  "interactions": "7 DRUG INTERACTIONS Refer to the full prescribing information for drug interactions with methotrexate. (7) 7.1 Effects of Other Drugs on Methotrexate Drugs that Increase Methotrexate Exposure Coadministration of methotrexate with the following products may increase methotrexate plasma concentrations",
+  "contraindications": "4 CONTRAINDICATIONS Methotrexate tablets are contraindicated in: • Pregnant women receiving methotrexate tablets for treatment of non-neoplastic diseases [see Warnings and Precautions (5.1), and Use i",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

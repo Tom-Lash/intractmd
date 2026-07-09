@@ -1,0 +1,13 @@
+{
+  "name": "methocarbamol",
+  "rxcui": "6845",
+  "drugClass": null,
+  "warnings": "WARNINGS Since methocarbamol may possess a general CNS depressant effect, patients receiving Methocarbamol tablets, USP should be cautioned about combined effects with alcohol and other CNS depressants. Safe use of Methocarbamol tablets, USP has not been established with regard to possible adverse e",
+  "interactions": "Drug interactions See Warnings and Precautions for interaction with CNS drugs and alcohol. Methocarbamol may inhibit the effect of pyridostigmine bromide. Therefore, methocarbamol should be used with caution in patients with myasthenia gravis receiving anticholinesterase agents.",
+  "contraindications": "CONTRAINDICATIONS Methocarbamol tablets, USP are contraindicated in patients hypersensitive to methocarbamol or to any of the tablet components.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "medroxyprogesterone",
+  "rxcui": "6691",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Thromboembolic Disorders: Discontinue medroxyprogesterone acetate injectable suspension in patients who develop thrombosis. ( 5.2 ) Cancer Risks: Monitor women with a strong family history of breast cancer carefully. ( 5.3 ) Ectopic Pregnancy: Consider ectopic pregnancy if",
+  "interactions": "7 DRUG INTERACTIONS Drugs or herbal products that induce certain enzymes, including CYP3A4, may decrease the effectiveness of contraceptive drug products. Counsel patients to use a back-up method or alternative method of contraception when enzyme inducers are used with medroxyprogesterone acetate in",
+  "contraindications": "4 CONTRAINDICATIONS The use of medroxyprogesterone acetate injectable suspension is contraindicated in the following conditions: Known or suspected pregnancy or as a diagnostic test for pregnancy. Act",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

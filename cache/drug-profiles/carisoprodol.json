@@ -1,0 +1,13 @@
+{
+  "name": "carisoprodol",
+  "rxcui": "2101",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Due to sedative properties, may impair ability to perform hazardous tasks such as driving or operating machinery (5.1) Additive sedative effects when used with other CNS depressants including alcohol (5.1) Cases of abuse, dependence and withdrawal ( 5.2 , 9.2 , 9.3 ) Seizu",
+  "interactions": "7 DRUG INTERACTIONS CNS depressants (e.g., alcohol, benzodiazepines, opioids, tricyclic antidepressants) - additive sedative effects ( 5.1 , 7.1 ) 7.1 CNS Depressants The sedative effects of carisoprodol and other CNS depressants (e.g., alcohol, benzodiazepines, opioids, tricyclic antidepressants) m",
+  "contraindications": "4 CONTRAINDICATIONS Carisoprodol is contraindicated in patients with a history of acute intermittent porphyria or a hypersensitivity reaction to a carbamate such as meprobamate. Acute intermittent por",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "hydralazine",
+  "rxcui": "5470",
+  "drugClass": null,
+  "warnings": "WARNINGS ​ In a few patients hydrALAZINE may produce a clinical picture simulating systemic lupus erythematosus including glomerulonephritis. In such patients hydrALAZINE should be discontinued unless the benefit-to-risk determination requires continued antihypertensive therapy with this drug. Sympt",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity to hydrALAZINE; coronary artery disease; mitral valvular rheumatic heart disease.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

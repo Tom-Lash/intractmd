@@ -1,0 +1,13 @@
+{
+  "name": "famotidine",
+  "rxcui": "4278",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Central Nervous System (CNS) Adverse Reactions: Elderly patients and patients with renal impairment at increased risk; reduce the dosage. ( 2.2 , 5.1 , 8.5 , 8.6 ) • GI Malignancy: Absence of GI symptoms does not preclude the presence of gastric malignancy; evaluate prio",
+  "interactions": "7 DRUG INTERACTIONS • Drugs Dependent on Gastric pH for Absorption: Systemic exposure of the concomitant drug may be significantly reduced leading to loss of efficacy. See full prescribing information for a list of interacting drugs. ( 7.1 ) • Tizanidine (CYP1A2) Substrate: Potential for substantial",
+  "contraindications": "4 CONTRAINDICATIONS Famotidine tablets are contraindicated in patients with a history of serious hypersensitivity reactions (e.g., anaphylaxis) to famotidine or other histamine-2 (H 2 ) receptor antag",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

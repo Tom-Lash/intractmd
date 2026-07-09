@@ -1,0 +1,13 @@
+{
+  "name": "tacrolimus",
+  "rxcui": "42316",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Not Interchangeable with Other Tacrolimus Products-Medication Errors: Instruct patients or caregivers to recognize the appearance of tacrolimus extended-release capsules. ( 5.4 ) New onset diabetes after transplant: Monitor blood glucose. ( 5.5 ) Nephrotoxicity (acute and/",
+  "interactions": "7 DRUG INTERACTIONS Risk of rejection with strong CYP3A inducers and risk of serious adverse reactions with strong CYP3A inhibitors: Adjust dose and monitor tacrolimus concentrations. ( 2.4 , 5.10 , 7.2 ) Therapeutic drug monitoring and dose reduction for tacrolimus extended-release capsules should ",
+  "contraindications": "4 CONTRAINDICATIONS Tacrolimus extended-release capsules is contraindicated in patients with known hypersensitivity to tacrolimus [see Adverse Reactions ( 6.2 )] . Known hypersensitivity to tacrolimus",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

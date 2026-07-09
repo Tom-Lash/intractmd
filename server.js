@@ -376,6 +376,21 @@ function tryParseJSON(raw) {
   return null;
 }
 
+// ── DRUG PROFILE CACHE ────────────────────────────────────────────────────
+const DRUG_PROFILE_DIR = require('path').join(__dirname, 'cache', 'drug-profiles');
+function loadDrugProfile(drugName) {
+  try {
+    const fname = drugName.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') + '.json';
+    const file = require('path').join(DRUG_PROFILE_DIR, fname);
+    if (require('fs').existsSync(file)) {
+      const p = JSON.parse(require('fs').readFileSync(file, 'utf8'));
+      p.sources = p.sources || ['ProfileCache'];
+      return p;
+    }
+  } catch(e) {}
+  return null;
+}
+
 async function safeFetch(url, ms = 8000) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), ms);
@@ -384,6 +399,10 @@ async function safeFetch(url, ms = 8000) {
 }
 
 async function fetchDrugData(drugName) {
+  // Check profile cache first — skips all FDA API calls
+  const cached = loadDrugProfile(drugName);
+  if (cached) return cached;
+
   const cacheKey = drugName.toLowerCase().trim();
   const cached = drugDataCache.get(cacheKey);
   if (cached && Date.now() < cached.expires) {

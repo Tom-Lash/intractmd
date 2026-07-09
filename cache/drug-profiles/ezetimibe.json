@@ -1,0 +1,13 @@
+{
+  "name": "ezetimibe",
+  "rxcui": "341248",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Patients should be advised of the increased risk of myopathy, including rhabdomyolysis, with the 10 mg/80 mg dose. ( 5.1 ) Patients should be advised to report promptly any unexplained and/or persistent muscle pain, tenderness, or weakness. Ezetimibe and simvastatin tablet",
+  "interactions": "7 DRUG INTERACTIONS [ See Clinical Pharmacology ( 12.3 ). ] Ezetimibe and Simvastatin Tablets Drug Interactions Associated With Increased Risk of Myopathy/Rhabdomyolysis ( 2.3 , 2.4 , 4 , 5.1 , 7.1 , 7.2 , 7.3 , 7.8 , 12.3 ) Interacting Agents Prescribing Recommendations Strong CYP3A4 Inhibitors, (e",
+  "contraindications": "4 CONTRAINDICATIONS Ezetimibe and simvastatin tablets are contraindicated in the following conditions: • Concomitant administration of strong CYP3A4 inhibitors (e.g., itraconazole, ketoconazole, posac",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

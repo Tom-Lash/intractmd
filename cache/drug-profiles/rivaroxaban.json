@@ -1,0 +1,13 @@
+{
+  "name": "rivaroxaban",
+  "rxcui": "1114195",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Risk of bleeding: XARELTO can cause serious and fatal bleeding ( 5.2 ) Pregnancy-related hemorrhage: Use XARELTO with caution in pregnant women due to the potential for obstetric hemorrhage and/or emergent delivery ( 5.7 , 8.1 ) Prosthetic heart valves: XARELTO use not rec",
+  "interactions": "7 DRUG INTERACTIONS Avoid combined P-gp and strong CYP3A inhibitors and inducers ( 7.2 , 7.3 ) Anticoagulants: Avoid concomitant use ( 7.4 ) 7.1 General Inhibition and Induction Properties Rivaroxaban is a substrate of CYP3A4/5, CYP2J2, and the P-gp and ATP-binding cassette G2 (ABCG2) transporters, ",
+  "contraindications": "4 CONTRAINDICATIONS XARELTO is contraindicated in patients with: active pathological bleeding [see Warnings and Precautions (5.2) ] severe hypersensitivity reaction to XARELTO (e.g., anaphylactic reac",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

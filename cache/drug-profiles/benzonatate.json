@@ -1,0 +1,13 @@
+{
+  "name": "benzonatate",
+  "rxcui": "18993",
+  "drugClass": null,
+  "warnings": "WARNINGS Hypersensitivity Severe hypersensitivity reactions (including bronchospasm, laryngospasm and cardiovascular collapse) have been reported which are possibly related to local anesthesia from sucking or chewing the capsule instead of swallowing it. Severe reactions have required intervention w",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity to benzonatate or related compounds.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

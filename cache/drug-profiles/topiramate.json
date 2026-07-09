@@ -1,0 +1,13 @@
+{
+  "name": "topiramate",
+  "rxcui": "38404",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Acute myopia and secondary angle closure glaucoma: can lead to permanent visual loss; discontinue topiramate as soon as possible (5.1) Visual field defects: consider discontinuation of topiramate (5.2) Oligohidrosis and hyperthermia: monitor decreased sweating and increase",
+  "interactions": "7 DRUG INTERACTIONS • Contraceptives: decreased contraceptive efficacy and increased breakthrough bleeding, especially at doses greater than 200 mg/day (7.4) • Monitor lithium levels if lithium is used with high-dose topiramate (7.7) 7.1 Antiepileptic Drugs Concomitant administration of phenytoin or",
+  "contraindications": "4 CONTRAINDICATIONS Topiramate is contraindicated in patients with a history of hypersensitivity reaction to topiramate, topiramate tablet or any of the inactive ingredients of topiramate tablet. Anap",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

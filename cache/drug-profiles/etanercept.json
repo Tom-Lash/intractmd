@@ -1,0 +1,13 @@
+{
+  "name": "etanercept",
+  "rxcui": "214555",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Do not start Enbrel during an active infection. If an infection develops, monitor carefully and stop Enbrel if infection becomes serious. ( 5.1 ) Consider empiric anti-fungal therapy for patients at risk for invasive fungal infections who develop a severe systemic illness ",
+  "interactions": "7 DRUG INTERACTIONS Specific drug interaction studies have not been conducted with Enbrel. Live vaccines – Avoid concurrent administration with Enbrel ( 5.8 , 7.1 ) Anakinra – Increased risk of serious infection ( 5.12 , 7.2 ) Abatacept – Increased risk of serious adverse events, including infection",
+  "contraindications": "4 CONTRAINDICATIONS Enbrel is contraindicated in patients with sepsis. Enbrel is contraindicated in patients with sepsis. ( 4 )",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

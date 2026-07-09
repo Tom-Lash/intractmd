@@ -1,0 +1,13 @@
+{
+  "name": "trimethoprim",
+  "rxcui": "10829",
+  "drugClass": null,
+  "warnings": "WARNINGS Embryofetal Toxicity Some epidemiologic studies suggest that exposure to sulfamethoxazole and trimethoprim during pregnancy may be associated with an increased risk of congenital malformations, particularly neural tube defects, cardiovascular malformations, urinary tract defects, oral cleft",
+  "interactions": "Drug Interactions Potential for Sulfamethoxazole and Trimethoprim to Affect Other Drugs Trimethoprim is an inhibitor of CYP2C8 as well as OCT2 transporter. Sulfamethoxazole is an inhibitor of CYP2C9. Caution is recommended when sulfamethoxazole and trimethoprim is co-administered with drugs that are",
+  "contraindications": "CONTRAINDICATIONS Sulfamethoxazole and trimethoprim tablets are contraindicated in patients with a known hypersensitivity to trimethoprim or sulfonamides, in patients with a history of drug-induced im",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

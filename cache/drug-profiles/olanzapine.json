@@ -1,0 +1,13 @@
+{
+  "name": "olanzapine",
+  "rxcui": "61381",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS When using olanzapine and fluoxetine in combination, also refer to the Warnings and Precautions section of the package insert for Symbyax. Elderly Patients with Dementia-Related Psychosis: Increased risk of death and increased incidence of cerebrovascular adverse events (e",
+  "interactions": "7 DRUG INTERACTIONS The risks of using olanzapine in combination with other drugs have not been extensively evaluated in systematic studies. Diazepam: May potentiate orthostatic hypotension. ( 7.1 , 7.2 ) Alcohol: May potentiate orthostatic hypotension. ( 7.1 ) Carbamazepine: Increased clearance of ",
+  "contraindications": "4 CONTRAINDICATIONS None with olanzapine monotherapy. When using olanzapine and fluoxetine in combination, also refer to the Contraindications section of the package insert for Symbyax. For specific i",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fexofenadine",
+  "rxcui": "87636",
+  "drugClass": null,
+  "warnings": "Severe Allergy Warning: Get emergency help immediately if you have hives along with any of the following symptoms:  trouble swallowing  dizziness or loss of consciousness  swelling of tongue  swelling in or around mouth  trouble speaking  wheezing or problems breathing  drooling These symptom",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

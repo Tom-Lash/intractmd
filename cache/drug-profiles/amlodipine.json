@@ -1,0 +1,13 @@
+{
+  "name": "amlodipine",
+  "rxcui": "17767",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Symptomatic hypotension is possible, particularly in patients with severe aortic stenosis. However, acute hypotension is unlikely. ( 5.1 ) Worsening angina and acute myocardial infarction can develop after starting or increasing the dose of amlodipine, particularly in pati",
+  "interactions": "7 DRUG INTERACTIONS Do not exceed doses greater than 20 mg daily of simvastatin. ( 7.2 ) 7.1 Impact of Other Drugs on Amlodipine CYP3A Inhibitors Co-administration with CYP3A inhibitors (moderate and strong) results in increased systemic exposure to amlodipine and may require dose reduction. Monitor",
+  "contraindications": "4 CONTRAINDICATIONS Known sensitivity to amlodipine ( 4 ) Amlodipine besylate tablets are contraindicated in patients with known sensitivity to amlodipine.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dutasteride",
+  "rxcui": "228790",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Orthostatic hypotension and/or syncope can occur. Advise patients of symptoms related to postural hypotension and to avoid situations where injury could result if syncope occurs. ( 5.1 ) Do not use dutasteride and tamsulosin hydrochloride capsules with other alpha-adrenerg",
+  "interactions": "7 DRUG INTERACTIONS There have been no drug interaction trials using dutasteride and tamsulosin hydrochloride capsules. The following sections reflect information available for the individual components. 7.1 Cytochrome P450 Inhibition Dutasteride Dutasteride is extensively metabolized in humans by t",
+  "contraindications": "4 CONTRAINDICATIONS Dutasteride and tamsulosin hydrochloride capsules are contraindicated for use in: Pregnancy. Dutasteride use is contraindicated in females who are pregnant. In animal reproduction ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

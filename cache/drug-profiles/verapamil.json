@@ -1,0 +1,13 @@
+{
+  "name": "verapamil",
+  "rxcui": "11170",
+  "drugClass": null,
+  "warnings": "WARNINGS Heart failure: Verapamil has a negative inotropic effect, which in most patients is compensated by its afterload reduction (decreased systemic vascular resistance) properties without a net impairment of ventricular performance. In clinical experience with 4,954 patients, 87 (1.8%) developed",
+  "interactions": "Drug interactions Cytochrome inducers/inhibitors: In vitro metabolic studies indicate that verapamil is metabolized by cytochrome P450 CYP3A4, CYP1A2, CYP2C8, CYP2C9, and CYP2C18. Clinically significant interactions have been reported with inhibitors of CYP3A4 (e.g., erythromycin, ritonavir) causing",
+  "contraindications": "CONTRAINDICATIONS Verapamil Hydrochloride Tablets are contraindicated in: 1. Severe left ventricular dysfunction (see WARNINGS ) 2. Hypotension (systolic pressure less than 90 mm Hg) or cardiogenic sh",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

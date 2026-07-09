@@ -1,0 +1,13 @@
+{
+  "name": "dabigatran",
+  "rxcui": "1546356",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Bleeding: Dabigatran etexilate can cause serious and fatal bleeding ( 5.2 ) Bioprosthetic heart valves: Dabigatran etexilate use not recommended ( 5.4 ) Increased Risk of Thrombosis in Patients with Triple-Positive Antiphospholipid Syndrome: Dabigatran etexilate use not re",
+  "interactions": "7 DRUG INTERACTIONS • P-gp inducers: Avoid coadministration with dabigatran etexilate capsules ( 5.5 ) • P-gp inhibitors in adult patients with CrCl 30 to 50 mL/min: Reduce dosage or avoid ( 7 ) • P-gp inhibitors in adult patients with CrCl <30 mL/min: Not recommended ( 7 ) 7.1 Reduction of Risk of ",
+  "contraindications": "4 CONTRAINDICATIONS Dabigatran etexilate capsules are contraindicated in patients with: • Active pathological bleeding [see Warnings and Precautions (5.2) and Adverse Reactions (6.1)] • History of a s",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

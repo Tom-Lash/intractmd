@@ -1,0 +1,13 @@
+{
+  "name": "diphenhydramine",
+  "rxcui": "3498",
+  "drugClass": null,
+  "warnings": "Warnings Do not use ■ with any other product containing diphenhydramine, even one used on skin ■ to make a child sleepy Ask a doctor before use if the child has ■ glaucoma ■ a breathing problem such as chronic bronchitis",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

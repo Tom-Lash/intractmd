@@ -1,0 +1,13 @@
+{
+  "name": "lansoprazole",
+  "rxcui": "17128",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Gastric Malignancy : In adults, symptomatic response with lansoprazole does not preclude the presence of gastric malignancy. Consider additional follow-up and diagnostic testing ( 5.1 ) Acute Tubulointerstitial Nephritis : Discontinue treatment and evaluate patients. ( 5.2",
+  "interactions": "7 DRUG INTERACTIONS Tables 2 and 3 include drugs with clinically important drug interactions and interaction with diagnostics when administered concomitantly with lansoprazole delayed release capsules and instructions for preventing or managing them. Consult the labeling of concomitantly used drugs ",
+  "contraindications": "4 CONTRAINDICATIONS Lansoprazole delayed-release capsules are contraindicated in patients with known hypersensitivity to any component of the formulation. Hypersensitivity reactions may include anaphy",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

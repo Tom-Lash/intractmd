@@ -1,0 +1,13 @@
+{
+  "name": "quetiapine",
+  "rxcui": "51272",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS · Cerebrovascular Adverse Reactions: Increased incidence of cerebrovascular adverse reactions (e.g., stroke, transient ischemic attack) has been seen in elderly patients with dementia-related psychoses treated with atypical antipsychotic drugs ( 5.3 ) · Neuroleptic Maligna",
+  "interactions": "7 DRUG INTERACTIONS Concomitant use of strong CYP3A4 inhibitors: Reduce quetiapine dose to one sixth when coadministered with strong CYP3A4 inhibitors (e.g., ketoconazole, ritonavir) ( 2.5 , 7.1 , 12.3 ) Concomitant use of strong CYP3A4 inducers: Increase quetiapine dose up to 5 fold when used in co",
+  "contraindications": "4 CONTRAINDICATIONS Hypersensitivity to quetiapine or to any excipients in the quetiapine formulation. Anaphylactic reactions have been reported in patients treated with quetiapine. Known hypersensiti",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "beclomethasone",
+  "rxcui": "1347",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Oropharyngeal candidiasis: Candida albicans infection of the mouth and throat may occur. Monitor patients periodically for signs of adverse effects on the oral cavity. Advise patients to rinse the mouth with water without swallowing after inhalation to help reduce the risk",
+  "interactions": null,
+  "contraindications": "4 CONTRAINDICATIONS QVAR REDIHALER is contraindicated in: the primary treatment of status asthmaticus or other acute episodes of asthma where intensive measures are required [see Warnings and Precauti",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

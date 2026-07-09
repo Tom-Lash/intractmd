@@ -1,0 +1,13 @@
+{
+  "name": "hydrocodone",
+  "rxcui": "5489",
+  "drugClass": null,
+  "warnings": "WARNINGS Addiction, Abuse, and Misuse Hydrocodone bitartrate and acetaminophen tablets contain hydrocodone, a Schedule II controlled substance. As an opioid, hydrocodone bitartrate and acetaminophen tablets expose users to the risks of addiction, abuse, and misuse [see DRUG ABUSE AND DEPENDENCE ]. A",
+  "interactions": "Drug Interactions Inhibitors of CYP3A4 and CYP2D6 The concomitant use of hydrocodone bitartrate and acetaminophen tablets and CYP3A4 inhibitors, such as macrolide antibiotics (e.g., erythromycin), azole-antifungal agents (e.g., ketoconazole), and protease inhibitors (e.g., ritonavir), can increase t",
+  "contraindications": "CONTRAINDICATIONS Hydrocodone bitartrate and acetaminophen tablets are contraindicated in patients with: Significant respiratory depression [see WARNINGS ] Acute or severe bronchial asthma in an unmon",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "methadone",
+  "rxcui": "6813",
+  "drugClass": null,
+  "warnings": "WARNINGS Addiction, Abuse and Misuse Methadone Hydrochloride Injection contains methadone, a Schedule II controlled substance. As an opioid, Methadone Hydrochloride Injection exposes users to the risks of addiction, abuse, and misuse. Although the risk of addiction in any individual is unknown, it c",
+  "interactions": "Drug Interactions Table 1: Clinically Significant Drug Interactions with Methadone Hydrochloride Injection Inhibitors of CYP3A4, CYP2B6, CYP2C19, CYP2C9, or CYP2D6 Clinical Impact: Methadone undergoes hepatic N-demethylation by several cytochrome P450 (CYP) isoforms, including CYP3A4, CYP2B6, CYP2C1",
+  "contraindications": "CONTRAINDICATIONS Methadone Hydrochloride Injection is contraindicated in patients with: • Significant respiratory depression • Acute or severe bronchial asthma in an unmonitored setting or in the abs",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

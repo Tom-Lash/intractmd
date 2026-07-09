@@ -1,0 +1,13 @@
+{
+  "name": "amitriptyline",
+  "rxcui": "704",
+  "drugClass": null,
+  "warnings": "WARNINGS Clinical Worsening and Suicide Risk Patients with major depressive disorder (MDD), both adult and pediatric, may experience worsening of their depression and/or the emergence of suicidal ideation and behavior (suicidality) or unusual changes in behavior, whether or not they are taking antid",
+  "interactions": "Drug Interactions Topiramate Some patients may experience a large increase in amitriptyline concentration in the presence of topiramate and any adjustments in amitriptyline dose should be made according to the patient's clinical response and not on the basis of plasma levels. Drugs Metabolized by P4",
+  "contraindications": "CONTRAINDICATIONS Amitriptyline hydrochloride is contraindicated in patients who have shown prior hypersensitivity to it. It should not be given concomitantly with monoamine oxidase inhibitors. Hyperp",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

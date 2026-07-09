@@ -1,0 +1,13 @@
+{
+  "name": "timolol",
+  "rxcui": "10600",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Potentiation of Respiratory Reactions Including Asthma ( 5.1 ) Cardiac Failure ( 5.2 ) Sulfonamide Hypersensitivity ( 5.3 ) Obstructive Pulmonary Disease ( 5.4 ) Increased Reactivity to Allergens ( 5.5 ) Potentiation of Muscle Weakness ( 5.6 ) Masking of Hypoglycemic Sympt",
+  "interactions": "7 DRUG INTERACTIONS Potential additive effect of oral carbonic anhydrase inhibitor with dorzolamide hydrochloride and timolol maleate ophthalmic solution. ( 7.1 ) Potential acid-base and electrolyte disturbances. ( 7.2 ) Concomitant use with systemic beta-blockers may potentiate systemic beta-blocka",
+  "contraindications": "4 CONTRAINDICATIONS Dorzolamide hydrochloride and timolol maleate ophthalmic solution is contraindicated in patients with: Bronchial asthma or a history of bronchial asthma, severe chronic obstructive",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

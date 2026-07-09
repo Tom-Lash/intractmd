@@ -1,0 +1,13 @@
+{
+  "name": "acyclovir",
+  "rxcui": "281",
+  "drugClass": null,
+  "warnings": "WARNINGS Acyclovir capsules are intended for oral ingestion only. Renal failure, in some cases resulting in death, has been observed with acyclovir therapy (see ADVERSE REACTIONS: Observed During Clinical Practice and OVERDOSAGE ). Thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/H",
+  "interactions": "Drug Interactions: See CLINICAL PHARMACOLOGY: Pharmacokinetics .",
+  "contraindications": "CONTRAINDICATIONS Acyclovir is contraindicated for patients who develop hypersensitivity to acyclovir or valacyclovir.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

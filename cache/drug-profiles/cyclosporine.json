@@ -1,0 +1,13 @@
+{
+  "name": "cyclosporine",
+  "rxcui": "3008",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Care should be taken to not touch the eye or other surfaces with the bottle tip to avoid potential for eye injury and/or contamination. ( 5.1 ) 5.1 Potential for Eye Injury and Contamination To avoid the potential for eye injury and/or contamination, patients should not to",
+  "interactions": null,
+  "contraindications": "4 CONTRAINDICATIONS None. None. ( 4 )",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

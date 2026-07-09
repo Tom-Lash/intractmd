@@ -1,0 +1,13 @@
+{
+  "name": "mometasone",
+  "rxcui": "108118",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Reversible HPA axis suppression with the potential for glucocorticosteroid insufficiency after withdrawal of treatment, Cushing’s syndrome, and hyperglycemia may occur due to systemic absorption. Patients applying a topical steroid to a large surface area or to areas und",
+  "interactions": "7 DRUG INTERACTIONS No drug-drug interaction studies have been conducted with mometasone furoate cream.",
+  "contraindications": "4 CONTRAINDICATIONS Mometasone furoate cream, 0.1% is contraindicated in those patients with a history of hypersensitivity to any of the components in the preparation. Mometasone furoate cream, 0.1% i",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

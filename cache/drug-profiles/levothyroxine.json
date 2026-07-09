@@ -1,0 +1,13 @@
+{
+  "name": "levothyroxine",
+  "rxcui": "10582",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serious risks related to overtreatment or undertreatment with levothyroxine sodium tablets: Titrate the dose of levothyroxine sodium carefully and monitor response to titration. (5.1) Cardiac adverse reactions in the elderly and in patients with underlying cardiovascular d",
+  "interactions": "7 DRUG INTERACTIONS See full prescribing information for drugs that affect thyroid hormone pharmacokinetics and metabolism (e.g., absorption, synthesis, secretion, catabolism, protein binding, and target tissue response) and may alter the therapeutic response to levothyroxine sodium. (7) 7.1 Drugs K",
+  "contraindications": "4 CONTRAINDICATIONS Levothyroxine sodium tablets are contraindicated in patients with uncorrected adrenal insufficiency [see Warnings and Precautions (5.4) ]. Uncorrected adrenal insufficiency. (4)",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

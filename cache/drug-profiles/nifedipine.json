@@ -1,0 +1,13 @@
+{
+  "name": "nifedipine",
+  "rxcui": "7417",
+  "drugClass": null,
+  "warnings": "WARNINGS Excessive Hypotension Although in most angina patients the hypotensive effect of nifedipine is modest and well tolerated, occasional patients have had excessive and poorly tolerated hypotension. These responses have usually occurred during initial titration or at the time of subsequent upwa",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Known hypersensitivity reaction to nifedipine.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

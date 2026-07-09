@@ -1,0 +1,13 @@
+{
+  "name": "terazosin",
+  "rxcui": "37798",
+  "drugClass": null,
+  "warnings": "WARNINGS Syncope and “First-dose” Effect Terazosin capsules, like other alpha-adrenergic blocking agents, can cause marked lowering of blood pressure, especially postural hypotension, and syncope in association with the first dose or first few days of therapy. A similar effect can be anticipated if ",
+  "interactions": "Drug Interactions In controlled trials, terazosin have been added to diuretics, and several beta-adrenergic blockers; no unexpected interactions were observed. Terazosin has also been used in patients on a variety of concomitant therapies; while these were not formal interaction studies, no interact",
+  "contraindications": "CONTRAINDICATIONS Terazosin capsules are contraindicated in patients known to be hypersensitive to terazosin hydrochloride.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

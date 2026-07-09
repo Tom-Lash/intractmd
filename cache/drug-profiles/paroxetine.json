@@ -1,0 +1,13 @@
+{
+  "name": "paroxetine",
+  "rxcui": "32937",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serotonin Syndrome: Increased risk when co-administered with other serotonergic agents, but also when taken alone. If occurs, discontinue paroxetine and serotonergic agents and initiate supportive measures. ( 5.2 ) Embryofetal Toxicity: May cause fetal harm. Meta-analyses ",
+  "interactions": "7 DRUG INTERACTIONS Table 9 presents clinically significant drug interactions with paroxetine. Table 9 Clinically Significant Drug Interactions with Paroxetine Monoamine Oxidase Inhibitors (MAOIs) Clinical Impact The concomitant use of SSRIs, including paroxetine, and MAOIs increases the risk of ser",
+  "contraindications": "4 CONTRAINDICATIONS Paroxetine tablets are contraindicated in patients: Taking, or within 14 days of stopping, MAOIs (including the MAOIs linezolid and intravenous methylene blue) because of an increa",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

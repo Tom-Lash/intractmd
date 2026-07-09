@@ -1,0 +1,13 @@
+{
+  "name": "azithromycin",
+  "rxcui": "18631",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Serious (including fatal) allergic and skin reactions: Discontinue azithromycin if reaction occurs. () • Hepatotoxicity: Severe, and sometimes fatal, hepatotoxicity has been reported. Discontinue azithromycin immediately if signs and symptoms of hepatitis occur. () • Inf",
+  "interactions": "7 DRUG INTERACTIONS • Nelfinavir: Close monitoring for known adverse reactions of azithromycin, such as liver enzyme abnormalities and hearing impairment, is warranted. () • Warfarin: Use with azithromycin may increase coagulation times; monitor prothrombin time. () 7.1 Nelfinavir Co-administration ",
+  "contraindications": "4 CONTRAINDICATIONS • Patients with known hypersensitivity to azithromycin, erythromycin, any macrolide or ketolide drug. () • Patients with a history of cholestatic jaundice/hepatic dysfunction assoc",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

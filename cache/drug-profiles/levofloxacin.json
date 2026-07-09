@@ -1,0 +1,13 @@
+{
+  "name": "levofloxacin",
+  "rxcui": "82122",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Anaphylactic reactions and allergic skin reactions, serious, occasionally fatal, may occur after first dose ( 4 , 5.7 ) Hematologic (including agranulocytosis, thrombocytopenia), and renal toxicities may occur after multiple doses ( 5.6 ) Hepatotoxicity: Severe, and someti",
+  "interactions": "7 DRUG INTERACTIONS Interacting Drug Interaction Multivalent cation-containing products including antacids, metal cations or didanosine Absorption of levofloxacin is decreased when the tablets are taken within 2 hours of these products. (2.4, 7.1) Warfarin Effect may be enhanced. Monitor prothrombin",
+  "contraindications": "4 CONTRAINDICATIONS Levofloxacin tablets are contraindicated in persons with known hypersensitivity to levofloxacin, or other quinolone antibacterials [see Warnings and Precautions ( 5.3 )]. Known hyp",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "prednisone",
+  "rxcui": "8640",
+  "drugClass": null,
+  "warnings": "WARNINGS In patients on corticosteroid therapy subjected to unusual stress, increased dosage of rapidly acting corticosteroids before, during, and after the stressful situation is indicated. Corticosteroids may mask some signs of infection, and new infections may appear during their use. There may b",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Systemic fungal infections and known hypersensitivity to components.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

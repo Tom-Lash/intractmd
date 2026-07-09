@@ -1,0 +1,13 @@
+{
+  "name": "naloxone",
+  "rxcui": "7242",
+  "drugClass": null,
+  "warnings": "WARNINGS Addiction, Abuse, and Misuse Pentazocine and Naloxone Tablets contain pentazocine, a Schedule IV controlled substance. As an opioid, Pentazocine and Naloxone Tablets expose users to the risks of addiction, abuse, and misuse [see DRUG ABUSE AND DEPENDENCE ]. Although the risk of addiction in",
+  "interactions": "DRUG INTERACTIONS Benzodiazepines and Other Central Nervous System (CNS) Depressants Due to additive pharmacologic effect, the concomitant use of benzodiazepines or other CNS depressants including alcohol, benzodiazepines and other sedative hypnotics, anxiolytics, and tranquilizers, muscle relaxants",
+  "contraindications": "CONTRAINDICATIONS Pentazocine and Naloxone Tablets are contraindicated in patients with: Significant respiratory depression [see WARNINGS ] Acute or severe bronchial asthma in an unmonitored setting o",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

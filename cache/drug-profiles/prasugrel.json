@@ -1,0 +1,13 @@
+{
+  "name": "prasugrel",
+  "rxcui": "613391",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS CABG-related bleeding: Risk increases in patients receiving prasugrel who undergo CABG (5.2) . Discontinuation of Prasugrel: Premature discontinuation increases risk of stent thrombosis, MI, and death (5.3) . Thrombotic thrombocytopenic purpura (TTP): TTP has been reported",
+  "interactions": "7 DRUG INTERACTIONS Opioids: Decreased exposure to prasugrel. Consider use of parenteral antiplatelet agent (7.3). 7.1 Warfarin Coadministration of prasugrel and warfarin increases the risk of bleeding [see Warnings and Precautions (5.1) and Clinical Pharmacology (12.3) ] . 7.2 Nonsteroidal Anti-Inf",
+  "contraindications": "4 CONTRAINDICATIONS Active pathological bleeding (4.1) Prior transient ischemic attack or stroke (4.2) Hypersensitivity to prasugrel or any component of the product (4.3) 4.1 Active Bleeding Prasugrel",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

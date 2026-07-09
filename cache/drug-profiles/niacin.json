@@ -1,0 +1,13 @@
+{
+  "name": "niacin",
+  "rxcui": "7393",
+  "drugClass": null,
+  "warnings": "WARNING Keep out of the reach of children. In case of accidental overdose, seek professional assistance or contact a Poison Control Center immediately. CAUTION Do not eat or drink dairy products within one hour of fluoride administration. Should be chewed. This product, as all chewable tablets, is n",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ticagrelor",
+  "rxcui": "1116632",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Dyspnea was reported more frequently with ticagrelor than with control agents in clinical trials. Dyspnea from ticagrelor is self-limiting. ( 5.3 ) •Severe Hepatic Impairment: Likely increase in exposure to ticagrelor. ( 5.5 ) •Laboratory Test Interference: False negativ",
+  "interactions": "7 DRUG INTERACTIONS • Avoid use with strong CYP3A inhibitors or CYP3A inducers. ( 7.1 , 7.2 ) • Opioids: Decreased exposure to ticagrelor. Consider use of parenteral anti-platelet agent. ( 7.3) • Patients receiving more than 40 mg per day of simvastatin or lovastatin or more than 20 mg per day of ro",
+  "contraindications": "4 CONTRAINDICATIONS • History of intracranial hemorrhage. ( 4.1 ) • Active pathological bleeding. ( 4.2 ) • Hypersensitivity to ticagrelor or any component of the product. ( 4.3 ) 4.1 History of Intra",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

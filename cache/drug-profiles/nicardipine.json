@@ -1,0 +1,13 @@
+{
+  "name": "nicardipine",
+  "rxcui": "7396",
+  "drugClass": null,
+  "warnings": "WARNINGS Increased Angina About 7% of patients in short-term, placebo-controlled angina trials have developed increased frequency, duration or severity of angina on starting nicardipine hydrochloride capsules or at the time of dosage increases, compared with 4% of patients on placebo. Comparisons wi",
+  "interactions": "Drug Interactions Beta Blockers In controlled clinical studies, adrenergic beta-receptor blockers have been frequently administered concomitantly with nicardipine hydrochloride capsules. The combination is well tolerated. Cimetidine Cimetidine increases nicardipine hydrochloride capsules plasma leve",
+  "contraindications": "CONTRAINDICATIONS Nicardipine hydrochloride capsules are contraindicated in patients with hypersensitivity to the drug. Because part of the effect of nicardipine hydrochloride capsules are secondary t",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

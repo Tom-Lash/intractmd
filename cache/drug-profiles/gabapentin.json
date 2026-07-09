@@ -1,0 +1,13 @@
+{
+  "name": "gabapentin",
+  "rxcui": "25480",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Drug Reaction with Eosinophilia and Systemic Symptoms (Multiorgan hypersensitivity): Discontinue if alternative etiology is not be established (5.1) Anaphylaxis and Angioedema: Discontinue and evaluate patient immediately (5.2) Driving impairment; Somnolence/Sedation and D",
+  "interactions": "7 DRUG INTERACTIONS Concentrations increased by morphine; may need dose adjustment (5.4, 7.1 ) 7.1 Opioids Respiratory depression and sedation, sometimes resulting in death, have been reported following coadministration of gabapentin with opioids (e.g., morphine, hydrocodone, oxycodone, buprenorphin",
+  "contraindications": "4 CONTRAINDICATIONS Gabapentin is contraindicated in patients who have demonstrated hypersensitivity to the drug or its ingredients. Known hypersensitivity to gabapentin or its ingredients (4)",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

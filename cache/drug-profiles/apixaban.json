@@ -1,0 +1,13 @@
+{
+  "name": "apixaban",
+  "rxcui": "1364430",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Apixaban can cause serious, potentially fatal, bleeding. Promptly evaluate signs and symptoms of blood loss. An agent to reverse the anti-factor Xa activity of apixaban is available ( 5.2 ) Prosthetic heart valves: Apixaban use not recommended. ( 5.4 ) Increased Risk of Th",
+  "interactions": "7 DRUG INTERACTIONS Apixaban is a substrate of both CYP3A4 and P-gp. Inhibitors of CYP3A4 and P-gp increase exposure to apixaban and increase the risk of bleeding. Inducers of CYP3A4 and P-gp decrease exposure to apixaban and increase the risk of stroke and other thromboembolic events. Combined P-gp",
+  "contraindications": "4 CONTRAINDICATIONS Apixaban tablets are contraindicated in patients with the following conditions: • Active pathological bleeding [see Warnings and Precautions ( 5.2 ) and Adverse Reactions( 6.1) ] •",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

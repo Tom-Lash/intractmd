@@ -1,0 +1,13 @@
+{
+  "name": "trazodone",
+  "rxcui": "10737",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serotonin Syndrome: Increased risk when co-administered with other serotonergic agents (e.g., SSRI, SNRI, triptans), but also when taken alone. If it occurs, discontinue trazodone and initiate supportive treatment ( 5.2 ). Cardiac Arrhythmias: Increases the QT interval. Av",
+  "interactions": "7 DRUG INTERACTIONS CNS Depressants: Trazodone may enhance effects of alcohol, barbiturates, or other CNS depressants ( 7 ). CYP3A4 Inhibitors: Consider trazodone dose reduction based on tolerability ( 2.5 , 7 ). CYP3A4 Inducers: Increase in trazodone dosage may be necessary ( 2.5 , 7 ). Digoxin or ",
+  "contraindications": "4 CONTRAINDICATIONS None ( 4 ). Concomitant use of monoamine oxidase inhibitors (MAOIs), or use within 14 days of stopping MAOIs ( 4 ). Trazodone hydrochloride tablets are contraindicated in: Patients",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

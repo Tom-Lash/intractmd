@@ -1,0 +1,13 @@
+{
+  "name": "brimonidine",
+  "rxcui": "134615",
+  "drugClass": null,
+  "warnings": "Warnings For external use only Do not use if solution changes color or becomes cloudy Stop use and ask a doctor if you experience eye pain, changes in vision, continued redness or irritation of the eye condition worsens or persists for more than 3 days If pregnant or breast-feeding, ask a health pro",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

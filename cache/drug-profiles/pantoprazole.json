@@ -1,0 +1,13 @@
+{
+  "name": "pantoprazole",
+  "rxcui": "40790",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Gastric Malignancy : In adults, symptomatic response to therapy with pantoprazole sodium does not preclude the presence of gastric malignancy. Consider additional follow-up and diagnostic testing. ( 5.1 ) Injection Site Reactions : Thrombophlebitis is associated with the a",
+  "interactions": "7 DRUG INTERACTIONS See the full prescribing information for a list of clinically important drug interactions. ( 7 ) Table 3 includes drugs with clinically important drug interactions and interaction with diagnostics when administered concomitantly with pantoprazole sodium and instructions for preve",
+  "contraindications": "4 CONTRAINDICATIONS Pantoprazole sodium is contraindicated in patients with known hypersensitivity reactions including anaphylaxis to the formulation or any substituted benzimidazole. Hypersensitivity",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

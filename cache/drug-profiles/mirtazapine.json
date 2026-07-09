@@ -1,0 +1,13 @@
+{
+  "name": "mirtazapine",
+  "rxcui": "15996",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Agranulocytosis: If sore throat, fever, stomatitis or signs of infection occur, along with a low white blood cell count, treatment with mirtazapine should be discontinued and the patient should be closely monitored. ( 5.2 ) • Serotonin Syndrome: Increased risk when co-ad",
+  "interactions": "7 DRUG INTERACTIONS Table 5 includes clinically important drug interactions with mirtazapine [see Clinical Pharmacology (12.3) ]. Table 5: Clinically Important Drug Interactions with Mirtazapine Monoamine Oxidase Inhibitors (MAOIs) Clinical Impact The concomitant use of serotonergic drugs, including",
+  "contraindications": "4 CONTRAINDICATIONS Mirtazapine tablets are contraindicated in patients: • Taking, or within 14 days of stopping, MAOIs (including the MAOIs linezolid and intravenous methylene blue) because of an inc",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "enalapril",
+  "rxcui": "3827",
+  "drugClass": null,
+  "warnings": "WARNINGS Anaphylactoid and Possibly Related Reactions Presumably because angiotensin-converting enzyme inhibitors affect the metabolism of eicosanoids and polypeptides, including endogenous bradykinin, patients receiving ACE inhibitors (including enalapril maleate) may be subject to a variety of adv",
+  "interactions": "Drug Interactions Neprilysin Inhibitors Patients taking concomitant neprilysin inhibitors may be at increased risk for angioedema (see WARNINGS ). Dual Blockade of the Renin-Angiotensin System (RAS) Dual blockade of the RAS with angiotensin receptor blockers, ACE inhibitors, or aliskiren is associat",
+  "contraindications": "CONTRAINDICATIONS Enalapril maleate is contraindicated in patients who are hypersensitive to this product and in patients with a history of angioedema related to previous treatment with an angiotensin",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

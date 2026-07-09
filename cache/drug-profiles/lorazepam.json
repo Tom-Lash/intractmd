@@ -1,0 +1,13 @@
+{
+  "name": "lorazepam",
+  "rxcui": "6470",
+  "drugClass": null,
+  "warnings": "WARNINGS Risks from Concomitant Use with Opioids Concomitant use of benzodiazepines, including lorazepam, and opioids may result in profound sedation, respiratory depression, coma, and death. Because of these risks, reserve concomitant prescribing of these drugs in patients for whom alternative trea",
+  "interactions": "Drug Interactions The concomitant use of benzodiazepines and opioids increases the risk of respiratory depression because of actions at different receptor sites in the CNS that control respiration. Benzodiazepines interact at GABA A sites and opioids interact primarily at mu receptors. When benzodia",
+  "contraindications": "CONTRAINDICATIONS Lorazepam is contraindicated in patients with: • hypersensitivity to benzodiazepines or to any components of the formulation • acute narrow-angle glaucoma.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "atenolol",
+  "rxcui": "1202",
+  "drugClass": null,
+  "warnings": "WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta-blockade carries the potential hazard of further depressing myocardial contractility and precipitating more severe failure. In patients with acute myocardial infarct",
+  "interactions": "Drug Interactions Catecholamine-depleting drugs (e.g., reserpine) may have an additive effect when given with beta-blocking agents. Patients treated with atenolol plus a catecholamine depletor should therefore be closely observed for evidence of hypotension and/or marked bradycardia which may produc",
+  "contraindications": "CONTRAINDICATIONS Atenolol tablets are contraindicated in sinus bradycardia, heart block greater than first degree, cardiogenic shock, and overt cardiac failure. (See WARNINGS .) Atenolol tablets are ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

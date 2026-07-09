@@ -1,0 +1,13 @@
+{
+  "name": "fluvastatin",
+  "rxcui": "41127",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Skeletal muscle effects (e.g., myopathy and rhabdomyolysis): Risks increase with advanced age (≥ 65), uncontrolled hypothyroidism, renal impairment, and combination use with cyclosporine,or gemfibrozil. Advise patients to promptly report to their physician unexplained and/",
+  "interactions": "7 DRUG INTERACTIONS Cyclosporine: Combination increases fluvastatin exposure. Limit fluvastatin dose to 20 mg ( 2.4 , 7.1 ) Fluconazole: Combination increases fluvastatin exposure. Limit fluvastatin dose to 20 mg ( 2.5 , 7.2 ) Concomitant lipid-lowering therapies: Use with fibrates or lipid-modifyin",
+  "contraindications": "4 CONTRAINDICATIONS Hypersensitivity to any component of this medication ( 4 ) Active liver disease or unexplained, persistent elevations in serum transaminases ( 4 , 5.3 ) Women who are pregnant or m",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

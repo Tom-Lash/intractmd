@@ -1,0 +1,13 @@
+{
+  "name": "zolpidem",
+  "rxcui": "39993",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS CNS-Depressant Effects: Impairs alertness and motor coordination including risk of morning impairment. Risk increases with dose and use with other CNS depressants and alcohol. Caution patients against driving and other activities requiring mental alertness the morning afte",
+  "interactions": "7 DRUG INTERACTIONS CNS depressants, including alcohol: Possible adverse additive CNS- depressant effects ( 5.1 , 7.1 ) Opioids: Concomitant use may increase risk of respiratory depression ( 5.7 , 7.1 ) Imipramine: Decreased alertness observed ( 7.1 ) Chlorpromazine: Impaired alertness and psychomot",
+  "contraindications": "4 CONTRAINDICATIONS Zolpidem Tartrate Tablets is contraindicated in patients who have experienced complex sleep behaviors after taking Zolpidem Tartrate Tablets [see Warnings and Precautions ( 5.1 )] ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

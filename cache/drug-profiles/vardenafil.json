@@ -1,0 +1,13 @@
+{
+  "name": "vardenafil",
+  "rxcui": "306674",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS The evaluation of erectile dysfunction should include a medical assessment, a determination of potential underlying causes and the identification of appropriate treatment. Before prescribing vardenafil hydrochloride tablets, it is important to note the following: Cardiovas",
+  "interactions": "7 DRUG INTERACTIONS Vardenafil hydrochloride tablets can potentiate the hypotensive effects of nitrates, alpha- blockers, and antihypertensives. ( 7.1 ) 7.1 Potential for Pharmacodynamic Interactions with Vardenafil Hydrochloride Tablets Nitrates: Concomitant use of vardenafil hydrochloride tablets ",
+  "contraindications": "4 CONTRAINDICATIONS Administration with nitrates and nitric oxide donors ( 2.4 , 4.1 ) Administration with guanylate cyclase (GC) stimulators, such as riociguat ( 2.4 , 4.2 ) 4.1 Nitrates Administrati",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ivabradine",
+  "rxcui": "1649480",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Fetal toxicity: Females should use effective contraception. ( 5.1 ) Monitor patients for atrial fibrillation. ( 5.2 ) Monitor heart rate decreases and bradycardia symptoms during treatment. ( 5.3 ) Not recommended in patients with 2 nd degree AV block. ( 5.3 ) 5.1 Fetal To",
+  "interactions": "7 DRUG INTERACTIONS Avoid CYP3A4 inhibitors or inducers. ( 7.1 ) Negative chronotropes increase risk of bradycardia; monitor heart rate. ( 7.2 ) 7.1 Cytochrome P450-Based Interactions Ivabradine is primarily metabolized by CYP3A4. Concomitant use of CYP3A4 inhibitors increases ivabradine plasma conc",
+  "contraindications": "4 CONTRAINDICATIONS Ivabradine tablets are contraindicated in patients with: Acute decompensated heart failure Clinically significant hypotension Sick sinus syndrome, sinoatrial block or 3 rd degree A",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

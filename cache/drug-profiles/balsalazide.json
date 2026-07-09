@@ -1,0 +1,13 @@
+{
+  "name": "balsalazide",
+  "rxcui": "18747",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Renal Impairment: Assess renal function at the beginning of treatment and periodically during treatment. Evaluate the risks and benefits in patients with known renal impairment or taking nephrotoxic drugs; monitor renal function. Discontinue if renal function deteriorates.",
+  "interactions": "7 DRUG INTERACTIONS Nephrotoxic Agents including NSAIDs : Increased risk of nephrotoxicity; monitor for changes in renal function and mesalamine-related adverse reactions. ( 7.1 ) Azathioprine or 6-Mercaptopurine : Increased risk of blood disorders; monitor complete blood cell counts and platelet co",
+  "contraindications": "4 CONTRAINDICATIONS Balsalazide disodium capsules are contraindicated in patients with known or suspected hypersensitivity to salicylates, aminosalicylates, or to any of the components of balsalazide ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

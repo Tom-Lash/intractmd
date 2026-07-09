@@ -1,0 +1,13 @@
+{
+  "name": "liraglutide",
+  "rxcui": "475968",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Acute Pancreatitis : Has been observed in patients treated with GLP-1 receptor agonists, including liraglutide injection. Discontinue if pancreatitis is suspected. ( 5.2 ) Never Share a liraglutide injection Pen Between Patients, even if the needle is changed. ( 5.3 ) Hypo",
+  "interactions": "7 DRUG INTERACTIONS Effects of delayed gastric emptying on oral medications: Liraglutide injection delays gastric emptying and may impact absorption of concomitantly administered oral medications. ( 7 ) 7.1 Effects of Delayed Gastric Emptying on Oral Medications Liraglutide injection causes a delay ",
+  "contraindications": "4 CONTRAINDICATIONS Liraglutide injection is contraindicated in patients with a: personal or family history of medullary thyroid carcinoma (MTC) or in patients with Multiple Endocrine Neoplasia syndro",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

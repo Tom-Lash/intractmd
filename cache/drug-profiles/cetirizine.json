@@ -1,0 +1,13 @@
+{
+  "name": "cetirizine",
+  "rxcui": "20610",
+  "drugClass": null,
+  "warnings": "Warnings Do not use if you have ever had an allergic reaction to this product or any of its ingredients or to an antihistamine containing hydroxyzine. Ask a doctor before use if you have liver or kidney disease. Your doctor should determine if you need a different dose. Ask a doctor or pharmacist be",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

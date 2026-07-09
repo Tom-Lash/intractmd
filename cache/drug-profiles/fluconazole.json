@@ -1,0 +1,13 @@
+{
+  "name": "fluconazole",
+  "rxcui": "4450",
+  "drugClass": null,
+  "warnings": "WARNINGS (1) Hepatic injury: Fluconazole should be administered with caution to patients with liver dysfunction. Fluconazole has been associated with rare cases of serious hepatic toxicity, including fatalities primarily in patients with serious underlying medical conditions. In cases of fluconazole",
+  "interactions": "Drug Interaction Studies (See PRECAUTIONS, Drug Interactions) Oral contraceptives: Oral contraceptives were administered as a single dose both before and after the oral administration of fluconazole 50 mg once daily for 10 days in 10 healthy women. There was no significant difference in ethinyl estr",
+  "contraindications": "CONTRAINDICATIONS Fluconazole tablets are contraindicated in patients who have shown hypersensitivity to fluconazole or to any of its excipients. There is no information regarding cross-hypersensitivi",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

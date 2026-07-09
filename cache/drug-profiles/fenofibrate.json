@@ -1,0 +1,13 @@
+{
+  "name": "fenofibrate",
+  "rxcui": "8703",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hepatotoxicity : Serious drug-induced liver injury, including liver transplantation and death, has been reported with fenofibrate. Monitor patient's liver function, including serum ALT, AST, and total bilirubin, atbaseline and periodically for the duration of therapy. Disc",
+  "interactions": "7 DRUG INTERACTIONS Coumarin anticoagulants: ( 7.1 ). Immunosuppressants: ( 7.2 ). Bile acid resins: ( 7.3 ). 7.1 Coumarin Anticoagulants Potentiation of coumarin-type anticoagulant effects has been observed with prolongation of the PT/INR. Caution should be exercised when coumarin anticoagulants ar",
+  "contraindications": "4 CONTRAINDICATIONS Severe renal dysfunction, including dialysis patients ( 4 , 8.6 , 12.3 ). Active liver disease ( 4 , 5.3 ). Gallbladder disease ( 4 , 5.5 ). Known hypersensitivity to fenofibrate (",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

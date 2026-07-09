@@ -1,0 +1,13 @@
+{
+  "name": "omeprazole",
+  "rxcui": "7646",
+  "drugClass": null,
+  "warnings": "Warnings Allergy alert: do not use if you are allergic to omeprazole omeprazole may cause severe skin reactions. Symptoms may include: skin reddening blisters rash If an allergic reaction occurs, stop use and seek medical help right away. Do not use if you have: trouble or pain swallowing food, vomi",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

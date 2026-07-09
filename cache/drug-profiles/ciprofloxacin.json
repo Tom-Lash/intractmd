@@ -1,0 +1,13 @@
+{
+  "name": "ciprofloxacin",
+  "rxcui": "2551",
+  "drugClass": null,
+  "warnings": "WARNINGS NOT FOR INJECTION INTO THE EYE. Serious and occasionally fatal hypersensitivity (anaphylactic) reactions, some following the first dose, have been reported in patients receiving systemic quinolone therapy. Some reactions were accompanied by cardiovascular collapse, loss of consciousness, ti",
+  "interactions": "Drug Interactions: Specific drug interaction studies have not been conducted with ophthalmic ciprofloxacin. However, the systemic administration of some quinolones has been shown to elevate plasma concentrations of theophylline, interfere with the metabolism of caffeine, enhance the effects of the o",
+  "contraindications": "CONTRAINDICATIONS A history of hypersensitivity to ciprofloxacin or any other component of the medication is a contraindication to its use. A history of hypersensitivity to other quinolones may also c",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

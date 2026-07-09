@@ -1,0 +1,13 @@
+{
+  "name": "dipyridamole",
+  "rxcui": "3521",
+  "drugClass": null,
+  "warnings": null,
+  "interactions": "Drug Interactions No pharmacokinetic drug-drug interaction studies were conducted with dipyridamole tablets. The following information was obtained from the literature. Adenosinergic agents (e.g., adenosine, regadenoson) Dipyridamole has been reported to increase the plasma levels and cardiovascular",
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity to dipyridamole and any of the other components.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

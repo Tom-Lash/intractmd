@@ -1,0 +1,13 @@
+{
+  "name": "dexlansoprazole",
+  "rxcui": "816346",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Gastric Malignancy: In adults, symptomatic response with dexlansoprazole does not preclude the presence of gastric malignancy. Consider additional follow-up and diagnostic testing. ( 5.1 ) • Acute Tubulointerstitial Nephritis : Discontinue treatment and evaluate patients",
+  "interactions": "7 DRUG INTERACTIONS Tables 3 and 4 include drugs with clinically important drug interactions and interaction with diagnostics when administered concomitantly with dexlansoprazole and instructions for preventing or managing them. Consult the labeling of concomitantly used drugs to obtain further info",
+  "contraindications": "4 CONTRAINDICATIONS • Dexlansoprazole delayed-release capsules are contraindicated in patients with known hypersensitivity to any component of the formulation [see Description (11)] . Hypersensitivity",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

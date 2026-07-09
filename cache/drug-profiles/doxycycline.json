@@ -1,0 +1,13 @@
+{
+  "name": "doxycycline",
+  "rxcui": "3640",
+  "drugClass": null,
+  "warnings": "WARNINGS The use of drugs of the tetracycline class during tooth development (last half of pregnancy, infancy and childhood to the age of 8 years) may cause permanent discoloration of the teeth (yellow-gray-brown). This adverse reaction is more common during long-term use of the drugs, but it has be",
+  "interactions": "Drug Interactions Because tetracyclines have been shown to depress plasma prothrombin activity, patients who are on anticoagulant therapy may require downward adjustment of their anticoagulant dosage. Since bacteriostatic drugs may interfere with the bactericidal action of penicillin, it is advisabl",
+  "contraindications": "CONTRAINDICATIONS This drug is contraindicated in persons who have shown hypersensitivity to any of the tetracyclines.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

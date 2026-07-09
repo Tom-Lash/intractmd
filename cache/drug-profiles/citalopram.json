@@ -1,0 +1,13 @@
+{
+  "name": "citalopram",
+  "rxcui": "2556",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS QT-Prolongation and Torsade de Pointes : Dose-dependent QTc prolongation, Torsade de pointes, ventricular tachycardia, and sudden death have occurred. Avoid use of citalopram in patients with congenital long QT syndrome, bradycardia, hypokalemia or hypomagnesemia, recent a",
+  "interactions": "7 DRUG INTERACTIONS Table 5 presents clinically important drug interactions with citalopram. Table 5: Clinically Important Drug Interactions with Citalopram Monoamine Oxidase Inhibitors (MAOIs) Clinical Impact Concomitant use of SSRIs, including citalopram, and MAOIs increases the risk of serotonin ",
+  "contraindications": "4 CONTRAINDICATIONS Citalopram tablets are contraindicated in patients: taking, or within 14 days of stopping, MAOIs (including MAOIs such as linezolid or intravenous methylene blue) because of an inc",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

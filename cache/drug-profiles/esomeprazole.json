@@ -1,0 +1,13 @@
+{
+  "name": "esomeprazole",
+  "rxcui": "283742",
+  "drugClass": null,
+  "warnings": "Warnings Allergy alert : Do not use if you are allergic to esomeprazole. Esomeprazole may cause severe skin reactions. Symptoms may include: skin reddening blisters rash If an allergic reaction occurs, stop use and seek medical help right away.",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

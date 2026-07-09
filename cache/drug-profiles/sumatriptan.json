@@ -1,0 +1,13 @@
+{
+  "name": "sumatriptan",
+  "rxcui": "37418",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Myocardial ischemia/infarction and Prinzmetal’s angina: Perform cardiac evaluation in patients with multiple cardiovascular risk factors (5.1) • Arrhythmias: Discontinue Sumatriptan Injection if occurs (5.2) • Chest/throat/neck/jaw pain, tightness, pressure, or heaviness",
+  "interactions": "7 DRUG INTERACTIONS 7.1 Ergot-Containing Drugs Ergot-containing drugs have been reported to cause prolonged vasospastic reactions. Because these effects may be additive, use of ergotamine-containing or ergot-type medications (like dihydroergotamine or methysergide) and sumatriptan injection within 2",
+  "contraindications": "4 CONTRAINDICATIONS Sumatriptan Injection is contraindicated in patients with: • Ischemic coronary artery disease (CAD) (angina pectoris, history of myocardial infarction, or documented silent ischemi",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

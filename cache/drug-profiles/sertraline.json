@@ -1,0 +1,13 @@
+{
+  "name": "sertraline",
+  "rxcui": "36437",
+  "drugClass": null,
+  "warnings": "WARNINGS Clinical Worsening and Suicide Risk Patients with major depressive disorder (MDD), both adult and pediatric, may experience worsening of their depression and/or the emergence of suicidal ideation and behavior (suicidality) or unusual changes in behavior, whether or not they are taking antid",
+  "interactions": "Drug Interactions Potential Effects of Coadministration of Drugs Highly Bound to Plasma Proteins –Because sertraline is tightly bound to plasma protein, the administration of sertraline hydrochloride to a patient taking another drug which is tightly bound to protein (e.g., warfarin, digitoxin) may c",
+  "contraindications": "CONTRAINDICATIONS All Dosage Forms of Sertraline: The use of MAOIs intended to treat psychiatric disorders with Sertraline hydrochloride or within 14 days of stopping treatment with Sertraline hydroch",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

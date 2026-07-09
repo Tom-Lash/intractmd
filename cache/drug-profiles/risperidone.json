@@ -1,0 +1,13 @@
+{
+  "name": "risperidone",
+  "rxcui": "35636",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Cerebrovascular events, including stroke, in elderly patients with dementia-related psychosis: Risperidone tablets are not approved for use in patients with dementia-related psychosis ( 5.2 ) Neuroleptic Malignant Syndrome: Manage with immediate discontinuation of risperid",
+  "interactions": "7 DRUG INTERACTIONS Carbamazepine and other enzyme inducers decrease plasma concentrations of risperidone. Increase the risperidone tablets dose up to double the patient’s usual dose. Titrate slowly. ( 7.1 ) Fluoxetine, paroxetine, and other CYP 2D6 enzyme inhibitors increase plasma concentrations o",
+  "contraindications": "4 CONTRAINDICATIONS Risperidone tablets are contraindicated in patients with a known hypersensitivity to either risperidone or paliperidone, or to any of the excipients in the risperidone tablets form",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

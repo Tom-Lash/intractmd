@@ -1,0 +1,13 @@
+{
+  "name": "lactulose",
+  "rxcui": "6218",
+  "drugClass": null,
+  "warnings": "WARNINGS A theoretical hazard may exist for patients being treated with lactulose solution who may be required to undergo electrocautery procedures during proctoscopy or colonoscopy. Accumulation of H 2 gas in significant concentration in the presence of an electrical spark may result in an explosiv",
+  "interactions": "Drug Interactions There have been conflicting reports about the concomitant use of neomycin and lactulose solution. Theoretically, the elimination of certain colonic bacteria by neomycin and possibly other anti-infective agents may interfere with the desired degradation of lactulose and thus prevent",
+  "contraindications": "CONTRAINDICATIONS Since lactulose solution contains galactose (less than 1.6 g/15 mL), it is contraindicated in patients who require a low galactose diet.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

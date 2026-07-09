@@ -1,0 +1,13 @@
+{
+  "name": "valacyclovir",
+  "rxcui": "73645",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS): Has occurred in patients with advanced HIV-1 disease and in allogenic bone marrow transplant and renal transplant patients receiving 8 grams per day of valacyclovir tablets in clinical trials. Discont",
+  "interactions": "7 DRUG INTERACTIONS No clinically significant drug-drug or drug-food interactions with valacyclovir tablets are known [see Clinical Pharmacology (12.3) ].",
+  "contraindications": "4 CONTRAINDICATIONS Valacyclovir tablets are contraindicated in patients who have had a demonstrated clinically significant hypersensitivity reaction [e.g., anaphylaxis, severe cutaneous adverse react",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

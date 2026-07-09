@@ -1,0 +1,13 @@
+{
+  "name": "mycophenolate",
+  "rxcui": "265323",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Blood Dyscrasias (Neutropenia, Red Blood Cell Aplasia): Monitor with blood tests; consider treatment interruption or dose reduction. ( 5.4 ) Gastrointestinal Complications: Monitor for complications such as bleeding, ulceration and perforations, particularly in patients wi",
+  "interactions": "7 DRUG INTERACTIONS See FPI for drugs that may interfere with systemic exposure and reduce mycophenolate mofetil efficacy: antacids with magnesium or aluminum hydroxide, proton pump inhibitors, drugs that interfere with enterohepatic recirculation, telmisartan, calcium-free phosphate binders. ( 7.1 ",
+  "contraindications": "4 CONTRAINDICATIONS Allergic reactions to mycophenolate mofetil have been observed; therefore, mycophenolate mofetil is contraindicated in patients with a hypersensitivity to mycophenolate mofetil (MM",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dorzolamide",
+  "rxcui": "60207",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Sulfonamide Hypersensitivity ( 5.1 ) Bacterial Keratitis ( 5.2 ) Corneal Endothelium ( 5.3 ) Allergic Reactions ( 5.4 ) Acute Angle-Closure Glaucoma ( 5.5 ) 5.1 Sulfonamide Hypersensitivity Dorzolamide Hydrochloride Ophthalmic Solution contains dorzolamide, a sulfonamide; ",
+  "interactions": "7 DRUG INTERACTIONS Potential additive effect of oral carbonic anhydrase inhibitor with Dorzolamide Hydrochloride Ophthalmic Solution. ( 7.1 ) Potential acid-base and electrolyte disturbances. ( 7.2 ) 7.1 Oral Carbonic Anhydrase Inhibitors There is a potential for an additive effect on the known sys",
+  "contraindications": "4 CONTRAINDICATIONS Dorzolamide Hydrochloride Ophthalmic Solution is contraindicated in patients who are hypersensitive to any component of this product [see Warnings and Precautions ( 5.1 )]. Dorzola",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

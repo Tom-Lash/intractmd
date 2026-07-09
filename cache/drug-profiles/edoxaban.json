@@ -1,0 +1,13 @@
+{
+  "name": "edoxaban",
+  "rxcui": "1599538",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Bleeding: Serious and potentially fatal bleeding. Promptly evaluate signs and symptoms of blood loss ( 5.3 ) Mechanical Heart Valves or Moderate to Severe Mitral Stenosis: Use is not recommended ( 5.5 ) Increased Risk of Thrombosis in Patients with Triple Positive Antiphos",
+  "interactions": "7 DRUG INTERACTIONS Anticoagulants, Antiplatelets, Thrombolytics, and Selective Serotonin Reuptake Inhibitors (SSRIs)/Serotonin Norepinephrine Reuptake Inhibitors (SNRIs): Avoid concomitant use due to increased risk of bleeding. ( 7.1 ) Rifampin: Avoid concomitant use ( 7.2 ) 7.1 Anticoagulants, Ant",
+  "contraindications": "4 CONTRAINDICATIONS SAVAYSA is contraindicated in patients with: Active pathological bleeding [see Warnings and Precautions (5.3) and Adverse Reactions (6.1) ] . Active pathological bleeding ( 4 )",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

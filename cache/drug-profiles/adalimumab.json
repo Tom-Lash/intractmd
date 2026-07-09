@@ -1,0 +1,13 @@
+{
+  "name": "adalimumab",
+  "rxcui": "327361",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Serious infections: Do not start IDACIO during an active infection. If an infection develops, monitor carefully, and stop IDACIO if infection becomes serious. ( 5.1 ) • Invasive fungal infections: For patients who develop a systemic illness on IDACIO, consider empiric an",
+  "interactions": "7 DRUG INTERACTIONS • Abatacept: Increased risk of serious infection. ( 5.1 , 5.11 , 7.2 ) • Anakinra: Increased risk of serious infection. ( 5.1 , 5.7 , 7.2 ) • Live vaccines: Avoid use with IDACIO. ( 5.10 , 7.3 ) 7.1 Methotrexate Adalimumab has been studied in rheumatoid arthritis (RA) patients ta",
+  "contraindications": "4 CONTRAINDICATIONS None. None.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

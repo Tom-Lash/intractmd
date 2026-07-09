@@ -1,0 +1,13 @@
+{
+  "name": "cephalexin",
+  "rxcui": "2231",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serious hypersensitivity (anaphylactic) reactions : Prior to use, inquire regarding history of hypersensitivity to beta-lactam antibacterial drugs. Discontinue the drug if signs or symptoms of an allergic reaction occur and institute supportive measures. ( 5.1 ) Clostridiu",
+  "interactions": "7 DRUG INTERACTIONS Metformin: increased metformin concentrations. Monitor for hypoglycemia. ( 7.1 ) Probenecid-The renal excretion of cephalexin is inhibited by probenecid. Co-administration of probenecid with cephalexin is not recommended. ( 7.2 ) Administration of cephalexin may result in a false",
+  "contraindications": "4 CONTRAINDICATIONS Cephalexin capsules are contraindicated in patients with known hypersensitivity to cephalexin or other members of the cephalosporin class of antibacterial drugs. Patients with know",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

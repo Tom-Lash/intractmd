@@ -1,0 +1,13 @@
+{
+  "name": "naltrexone",
+  "rxcui": "7243",
+  "drugClass": null,
+  "warnings": "WARNINGS Vulnerability to Opioid Overdose After opioid detoxification, patients are likely to have reduced tolerance to opioids. As the blockade of exogenous opioids provided by naltrexone hydrochloride wanes and eventually dissipates completely, patients who have been treated with naltrexone hydroc",
+  "interactions": "Drug Interactions Studies to evaluate possible interactions between naltrexone hydrochloride and drugs other than opiates have not been performed. Consequently, caution is advised if the concomitant administration of naltrexone hydrochloride and other drugs is required. The safety and efficacy of co",
+  "contraindications": "CONTRAINDICATIONS Naltrexone hydrochloride is contraindicated in Patients receiving opioid analgesics. Patients currently dependent on opioids, including those currently maintained on opiate agonists ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

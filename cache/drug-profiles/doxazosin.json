@@ -1,0 +1,13 @@
+{
+  "name": "doxazosin",
+  "rxcui": "49276",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Postural hypotension with or without syncope may occur. ( 5.1 ) • Risk of Intraoperative Floppy Iris Syndrome during cataract surgery. ( 5.2 ) • Screen for the presence of prostate cancer prior to treatment for BPH and at regular intervals afterwards. ( 5.3 ) 5.1 Postura",
+  "interactions": "7 DRUG INTERACTIONS • Strong cytochrome P450 (CYP) 3A inhibitors may increase exposure to doxazosin and increased risk of hypotension. ( 7.1 ) • Concomitant administration of doxazosin tablets with a phosphodiesterase-5 (PDE-5) inhibitor can result in additive blood pressure lowering effects and sym",
+  "contraindications": "4 CONTRAINDICATIONS The use of doxazosin tablets is contraindicated in patients with a hypersensitivity to doxazosin, other quinazolines (e.g., prazosin, terazosin), or any of its components. • Hypers",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

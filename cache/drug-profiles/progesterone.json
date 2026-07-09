@@ -1,0 +1,13 @@
+{
+  "name": "progesterone",
+  "rxcui": "8727",
+  "drugClass": null,
+  "warnings": "WARNINGS See BOXED WARNING . 1. Cardiovascular disorders An increased risk of pulmonary embolism, deep vein thrombosis (DVT), stroke, and myocardial infarction has been reported with estrogen plus progestin therapy. Should any of these occur or be suspected, estrogen with progestin therapy should be",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Progesterone capsules should not be used in women with any of the following conditions: Progesterone capsules should not be used in patients with known hypersensitivity to its ingred",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "clindamycin",
+  "rxcui": "2582",
+  "drugClass": null,
+  "warnings": "WARNINGS Orally and parenterally administered clindamycin has been associated with severe colitis which may result in patient death. Use of the topical formulation of clindamycin results in absorption of the antibiotic from the skin surface. Diarrhea, bloody diarrhea, and colitis (including pseudome",
+  "interactions": "Drug Interactions Clindamycin has been shown to have neuromuscular blocking properties that may enhance the action of other neuromuscular blocking agents. Therefore, it should be used with caution in patients receiving such agents.",
+  "contraindications": "CONTRAINDICATIONS Clindamycin phosphate topical lotion is contraindicated in individuals with a history of hypersensitivity to preparations containing clindamycin or lincomycin, a history of regional ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

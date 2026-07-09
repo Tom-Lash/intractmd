@@ -1,0 +1,13 @@
+{
+  "name": "insulin aspart",
+  "rxcui": "51428",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Never share an ADMELOG SoloStar disposable prefilled pen or syringe between patients, even if the needle is changed. ( 5.1 ) Hyperglycemia or Hypoglycemia with Changes in Insulin Regimen: Make changes to a patient's insulin regimen (e.g., insulin strength, manufacturer, ty",
+  "interactions": "7 DRUG INTERACTIONS Table 2 presents clinically significant drug interactions with ADMELOG. Table 2: Clinically Significant Drug Interactions with ADMELOG Drugs That May Increase the Risk of Hypoglycemia Drugs: Antidiabetic agents, ACE inhibitors, angiotensin II receptor blocking agents, disopyramid",
+  "contraindications": "4 CONTRAINDICATIONS ADMELOG is contraindicated: during episodes of hypoglycemia [see Warnings and Precautions (5.3) ] . in patients who are hypersensitive to insulin lispro or to any of the excipients",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sitagliptin",
+  "rxcui": "593411",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Lactic Acidosis: See boxed warning . ( 5.1 ) Pancreatitis: There have been postmarketing reports of acute pancreatitis, including fatal and non-fatal hemorrhagic or necrotizing pancreatitis. If pancreatitis is suspected, promptly discontinue ZITUVIMET. ( 5.2 ) Heart Failur",
+  "interactions": "7 DRUG INTERACTIONS Table 4 presents clinically significant drug interactions with ZITUVIMET: Table 4: Clinically Significant Drug Interactions with ZITUVIMET Carbonic Anhydrase Inhibitors Clinical Impact: Carbonic anhydrase inhibitors frequently cause a decrease in serum bicarbonate and induce non-",
+  "contraindications": "4 CONTRAINDICATIONS Severe renal impairment: (eGFR below 30 mL/min/1.73 m 2 ) ( 4) Metabolic acidosis, including diabetic ketoacidosis. ( 4 ) History of a serious hypersensitivity reaction to ZITUVIME",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

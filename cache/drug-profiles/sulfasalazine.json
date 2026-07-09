@@ -1,0 +1,13 @@
+{
+  "name": "sulfasalazine",
+  "rxcui": "9524",
+  "drugClass": null,
+  "warnings": "WARNINGS Hepatic, Renal, and Hematologic Toxicity or Other Conditions Only after critical appraisal should Sulfasalazine Tablets be given to patients with hepatic or renal damage or blood dyscrasias. Deaths associated with the administration of sulfasalazine have been reported from hypersensitivity ",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Sulfasalazine Tablets are contraindicated in: Patients with intestinal or urinary obstruction, Patients with porphyria as sulfonamides have been reported to precipitate an acute atta",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

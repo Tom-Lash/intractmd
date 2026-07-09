@@ -1,0 +1,13 @@
+{
+  "name": "bupropion",
+  "rxcui": "42347",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Neuropsychiatric Adverse Events During Smoking Cessation: Postmarketing reports of serious or clinically significant neuropsychiatric adverse events have included changes in mood (including depression and mania), psychosis, hallucinations, paranoia, delusions, homicidal id",
+  "interactions": "7 DRUG INTERACTIONS CYP2B6 inducers: Dose increase may be necessary if coadministered with CYP2B6 inducers (e.g., ritonavir, lopinavir, efavirenz, carbamazepine, phenobarbital, and phenytoin) based on clinical exposure, but should not exceed the maximum recommended dose. ( 7.1 ) Drugs metabolized by",
+  "contraindications": "4 CONTRAINDICATIONS Bupropion hydrochloride extended-release tablets (XL) are contraindicated in patients with seizure disorder. Bupropion hydrochloride extended-release tablets (XL) are contraindicat",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

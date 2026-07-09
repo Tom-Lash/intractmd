@@ -1,0 +1,13 @@
+{
+  "name": "glipizide",
+  "rxcui": "4821",
+  "drugClass": null,
+  "warnings": "WARNINGS SPECIAL WARNING ON INCREASED RISK OF CARDIOVASCULAR MORTALITY The administration of oral hypoglycemic drugs has been reported to be associated with increased cardiovascular mortality as compared to treatment with diet alone or diet plus insulin. This warning is based on the study conducted ",
+  "interactions": "Drug Interactions The hypoglycemic action of sulfonylureas may be potentiated by certain drugs including non-steroidal anti-inflammatory agents, some azoles, and other drugs that are highly protein bound, salicylates, sulfonamides, chloramphenicol, probenecid, coumarins, monoamine oxidase inhibitors",
+  "contraindications": "CONTRAINDICATIONS Glipizide is contraindicated in patients with: 1. Known hypersensitivity to the drug. 2. Type 1 diabetes mellitus, diabetic ketoacidosis, with or without coma. This condition should ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

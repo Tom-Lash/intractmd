@@ -1,0 +1,13 @@
+{
+  "name": "levetiracetam",
+  "rxcui": "114477",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Behavioral abnormalities including psychotic symptoms, suicidal ideation, irritability, and aggressive behavior have been observed; monitor patients for psychiatric signs and symptoms (5.1) Suicidal Behavior and Ideation: Monitor patients for new or worsening depression, s",
+  "interactions": null,
+  "contraindications": "4 CONTRAINDICATIONS Levetiracetam tablets are contraindicated in patients with a hypersensitivity to levetiracetam. Reactions have included anaphylaxis and angioedema [see Warnings and Precautions (5.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

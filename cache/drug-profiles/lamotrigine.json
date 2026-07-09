@@ -1,0 +1,13 @@
+{
+  "name": "lamotrigine",
+  "rxcui": "28439",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Life-threatening serious rash and/or rash-related death: Discontinue at the first sign of rash, unless the rash is clearly not drug related. ( Boxed Warning , 5.1 ) Hemophagocytic lymphohistiocytosis: Consider this diagnosis and evaluate patients immediately if they develo",
+  "interactions": "7 DRUG INTERACTIONS Significant drug interactions with lamotrigine are summarized in this section. Uridine 5´-diphospho-glucuronyl transferases (UGT) have been identified as the enzymes responsible for metabolism of lamotrigine. Drugs that induce or inhibit glucuronidation may, therefore, affect the",
+  "contraindications": "4 CONTRAINDICATIONS Lamotrigine is contraindicated in patients who have demonstrated hypersensitivity (e.g., rash, angioedema, acute urticaria, extensive pruritus, mucosal ulceration) to the drug or i",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

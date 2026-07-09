@@ -1,0 +1,13 @@
+{
+  "name": "alendronate",
+  "rxcui": "46041",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Upper Gastrointestinal Adverse Reactions can occur. Instruct patients to follow dosing instructions. Discontinue if new or worsening symptoms occur. ( 5.1 ) Hypocalcemia can worsen and must be corrected prior to use. ( 5.2 ) Severe Bone, Joint, Muscle Pain may occur. Disco",
+  "interactions": "7 DRUG INTERACTIONS Calcium supplements, antacids or oral medications containing multivalent cations interfere with absorption of alendronate. ( 7.1 ) Use caution when co-prescribing aspirin/nonsteroidal anti- inflammatory drugs that may worsen gastrointestinal irritation. ( 7.2 , 7.3 ) 7.1 Calcium ",
+  "contraindications": "4 CONTRAINDICATIONS BINOSTO is contraindicated in patients with the following conditions: Abnormalities of the esophagus which delay esophageal emptying such as stricture or achalasia [see Warnings an",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

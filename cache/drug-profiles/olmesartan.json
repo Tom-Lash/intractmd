@@ -1,0 +1,13 @@
+{
+  "name": "olmesartan",
+  "rxcui": "321064",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hypotension: Correct volume-depletion prior to administration. ( 5.2 ) Monitor renal function and potassium in susceptible patients ( 5.3 ) Observe for signs of fluid or electrolyte imbalance. ( 5.4 ) Acute angle-closure glaucoma ( 5.5 ) Sprue-like enteropathy has been rep",
+  "interactions": "7 DRUG INTERACTIONS Lithium: Risk of lithium toxicity ( 7.2 ) Non-Steroidal Anti-Inflammatory Drugs (NSAIDs): Reduced diuretic, natriuretic and antihypotensive effects; increased risk of renal toxicity ( 7.3 ) Dual inhibition of the renin-angiotensin system: Increased risk of renal impairment, hypot",
+  "contraindications": "4 CONTRAINDICATIONS Olmesartan medoxomil and hydrochlorothiazide is contraindicated: In patients with hypersensitivity to any component of olmesartan medoxomil and hydrochlorothiazide [see Adverse Rea",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

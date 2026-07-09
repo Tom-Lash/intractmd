@@ -1,0 +1,13 @@
+{
+  "name": "dextromethorphan",
+  "rxcui": "3289",
+  "drugClass": null,
+  "warnings": "Warnings Liver warning: This product contains acetaminophen. Severe liver damage may occur if you take: more than 4,000 mg of acetaminophen in 24 hours with other drugs containing acetaminophen 3 or more alcoholic drinks every day while using this product Allergy alert: Acetaminophen may cause sever",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

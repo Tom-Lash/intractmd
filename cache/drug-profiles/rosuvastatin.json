@@ -1,0 +1,13 @@
+{
+  "name": "rosuvastatin",
+  "rxcui": "301542",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Myopathy and Rhabdomyolysis : Risk factors include age 65 years or greater, uncontrolled hypothyroidism, renal impairment, concomitant use with certain other drugs, and higher rosuvastatin dosage. Asian patients may be at higher risk for myopathy. Discontinue rosuvastatin ",
+  "interactions": "7 DRUG INTERACTIONS See full prescribing information for details regarding concomitant use of rosuvastatin with other drugs that increase the risk of myopathy and rhabdomyolysis. ( 7.1 ) Aluminum and Magnesium Hydroxide Combination Antacids : Administer rosuvastatin at least 2 hours before the antac",
+  "contraindications": "4 CONTRAINDICATIONS Rosuvastatin tablets is contraindicated in the following conditions: Acute liver failure or decompensated cirrhosis [see Warnings and Precautions ( 5.3 )] . Hypersensitivity to ros",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

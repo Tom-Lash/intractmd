@@ -1,0 +1,13 @@
+{
+  "name": "senna",
+  "rxcui": "36387",
+  "drugClass": null,
+  "warnings": "Warnings Do not use if you are now taking mineral oil, unless directed by a doctor laxative products for longer than 1 week unless directed by a doctor Ask a doctor before use if you have stomach pain nausea vomiting noticed a sudden change in bowel habits that lasts over 2 weeks Stop use and ask a ",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

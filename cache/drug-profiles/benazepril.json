@@ -1,0 +1,13 @@
+{
+  "name": "benazepril",
+  "rxcui": "18867",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Angioedema: Discontinue benazepril hydrochloride and treat appropriately. ( 5.2 ) • Monitor renal function periodically. ( 5.3 ) • Monitor blood pressure after initiation. ( 5.4 ) • Hyperkalemia: Monitor serum potassium periodically. ( 5.5 ) • Hepatic toxicity: Monitor f",
+  "interactions": "7 DRUG INTERACTIONS • Diuretics: Excessive drop in blood pressure ( 7.1 ) • Antidiabetics: Increased risk of hypoglycaemia ( 7.2 ) • NSAIDS: Increased risk of renal impairment and loss of antihypertensive efficacy ( 7.3 ) • Dual inhibition of the renin-angiotensin system: Increased risk of renal imp",
+  "contraindications": "4 CONTRAINDICATIONS Benazepril hydrochloride tablets are contraindicated in patients: • who are hypersensitive to benazepril or to any other ACE inhibitor • with a history of angioedema with or withou",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

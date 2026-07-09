@@ -1,0 +1,13 @@
+{
+  "name": "buprenorphine",
+  "rxcui": "1819",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Addiction, Abuse, and Misuse: Buprenorphine can be abused in a similar manner to other opioids. Monitor patients for conditions indicative of diversion or progression of opioid dependence and addictive behaviors. Multiple refills should not be prescribed early in treatment",
+  "interactions": "7 DRUG INTERACTIONS Table 3 includes clinically significant drug interactions with buprenorphine. Table 3. Clinically Significant Drug Interactions Benzodiazepines or other Central Nervous System (CNS) Depressants Clinical Impact: Due to additive pharmacologic effects, the concomitant use of benzodi",
+  "contraindications": "4 CONTRAINDICATIONS Buprenorphine sublingual tablet is contraindicated in patients with a history of hypersensitivity to buprenorphine, as serious adverse reactions, including anaphylactic shock, have",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

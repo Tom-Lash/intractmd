@@ -1,0 +1,13 @@
+{
+  "name": "aripiprazole",
+  "rxcui": "89013",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Cerebrovascular Adverse Reactions in Elderly Patients with Dementia-Related Psychosis: Increased incidence of cerebrovascular adverse reactions (e.g., stroke, transient ischemic attack, including fatalities) (5.2) • Neuroleptic Malignant Syndrome: Manage with immediate d",
+  "interactions": "7 DRUG INTERACTIONS Dosage adjustment due to drug interactions (7.1): Factors Dosage Adjustments for Aripiprazole Known CYP2D6 Poor Metabolizers Administer half of usual dose Known CYP2D6 Poor Metabolizers and strong CYP3A4 inhibitors Administer a quarter of usual dose Strong CYP2D6 or CYP3A4 inhibi",
+  "contraindications": "4 CONTRAINDICATIONS Aripiprazole is contraindicated in patients with a history of a hypersensitivity reaction to aripiprazole. Reactions have ranged from pruritus/urticaria to anaphylaxis [see Adverse",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

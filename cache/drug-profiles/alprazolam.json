@@ -1,0 +1,13 @@
+{
+  "name": "alprazolam",
+  "rxcui": "596",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Effects on Driving and Operating Machinery: Patients receiving alprazolam should be cautioned against operating machinery or driving a motor vehicle, as well as avoiding concomitant use of alcohol and other central nervous system (CNS) depressant drugs. ( 5.4 ) Patients wi",
+  "interactions": "7 DRUG INTERACTIONS Use with Opioids: Increase the risk of respiratory depression. ( 7.1 ) Use with Other CNS Depressants: Produces additive CNS depressant effects. ( 7.1 ) Use with Digoxin: Increase the risk of digoxin toxicity. ( 7.1 ) Use with CYP3A Inhibitors (except ritonavir): Increase the ris",
+  "contraindications": "4 CONTRAINDICATIONS Alprazolam tablets are contraindicated in patients: with known hypersensitivity to alprazolam or other benzodiazepines. Angioedema has been reported [see Adverse Reactions (6.2) ] ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

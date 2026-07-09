@@ -1,0 +1,13 @@
+{
+  "name": "finasteride",
+  "rxcui": "25025",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Finasteride tablets USP are not indicated for use in women or pediatric patients ( 5.1 , 5.4 ). • Women should not handle crushed or broken finasteride tablets USP when they are pregnant or may potentially be pregnant due to potential risk to a male fetus ( 5.1 , 8.1 , 16 ",
+  "interactions": "7 DRUG INTERACTIONS 7.1 Cytochrome P450-Linked Drug Metabolizing Enzyme System No drug interactions of clinical importance have been identified. Finasteride does not appear to affect the cytochrome P450-linked drug-metabolizing enzyme system. Compounds that have been tested in man include antipyrine",
+  "contraindications": "4 CONTRAINDICATIONS Finasteride tablets USP are contraindicated in the following: • Pregnancy. Finasteride use is contraindicated in women when they are or may potentially be pregnant. Because of the ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

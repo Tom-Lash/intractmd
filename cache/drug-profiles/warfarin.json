@@ -1,0 +1,13 @@
+{
+  "name": "warfarin",
+  "rxcui": "11289",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Tissue necrosis: Necrosis or gangrene of skin or other tissues can occur, with severe cases requiring debridement or amputation. Discontinue warfarin sodium and consider alternative anticoagulants if necessary. ( 5.2 ) Calciphylaxis: Fatal and serious cases have occurred. ",
+  "interactions": "7 DRUG INTERACTIONS Concomitant use of drugs that increase bleeding risk, antibiotics, antifungals, botanical (herbal) products, and inhibitors and inducers of CYP2C9, 1A2, or 3A4. ( 7 ) Consult labeling of all concurrently used drugs for complete information about interactions with warfarin sodium ",
+  "contraindications": "4 CONTRAINDICATIONS Warfarin sodium is contraindicated in: Pregnancy Warfarin sodium is contraindicated in women who are pregnant except in pregnant women with mechanical heart valves, who are at high",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

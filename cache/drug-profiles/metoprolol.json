@@ -1,0 +1,13 @@
+{
+  "name": "metoprolol",
+  "rxcui": "6918",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Abrupt cessation may exacerbate myocardial ischemia. ( 5.1 ) Heart Failure: Worsening cardiac failure may occur. ( 5.2 ) Bronchospastic Disease: Avoid beta-blockers. ( 5.3 ) Pheochromocytoma: Initiate therapy with an alpha blocker. ( 5.4 ) Major Surgery: Avoid initiation o",
+  "interactions": "7 DRUG INTERACTIONS Catecholamine-depleting drugs may have an additive effect when given with beta-blocking agents. ( 7.1 ) Patients may be unresponsive to the usual doses of epinephrine used to treat allergic reaction. ( 7.2 ) CYP2D6 Inhibitors are likely to increase metoprolol concentration. ( 7.3",
+  "contraindications": "4 CONTRAINDICATIONS Metoprolol tartrate tablets are contraindicated in severe bradycardia, second- or third-degree heart block, cardiogenic shock, systolic blood pressure <100, decompensated heart fai",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

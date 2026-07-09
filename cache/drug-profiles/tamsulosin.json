@@ -1,0 +1,13 @@
+{
+  "name": "tamsulosin",
+  "rxcui": "77492",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Advise patients about the possibility of symptoms related to postural hypotension and to avoid situations where injury could result should syncope occur (5.1) Should not be used in combination with strong inhibitors of CYP3A4. Use with caution in combination with moderate ",
+  "interactions": "7 DRUG INTERACTIONS • Tamsulosin hydrochloride capsules 0.4 mg should not be used with strong inhibitors of CYP3A4 (e.g., ketoconazole). Tamsulosin hydrochloride capsules should be used with caution in combination with moderate inhibitors of CYP3A4 (e.g., erythromycin), in combination with strong (e",
+  "contraindications": "4 CONTRAINDICATIONS Tamsulosin hydrochloride capsules are contraindicated in patients known to be hypersensitive to tamsulosin hydrochloride or any component of tamsulosin hydrochloride capsules. Reac",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

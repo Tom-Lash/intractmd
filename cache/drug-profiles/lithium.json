@@ -1,0 +1,13 @@
+{
+  "name": "lithium",
+  "rxcui": "6448",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Lithium-Induced Polyuria: May develop during initiation of treatment. Increases risk of lithium toxicity. Educate patient to avoid dehydration. Monitor for lithium toxicity and metabolic acidosis. Discontinue lithium or treat with amiloride as a therapeutic agent ( 5.2 )",
+  "interactions": "7 DRUG INTERACTIONS • Diuretics, NSAID, renin-angiotensin system antagonists, or metronidazole may increase lithium serum concentrations. Recommend frequent monitoring of serum lithium concentration and adjust dosage when necessary. ( 2.3 , 7.1 ) • Serotonergic Agents: Increased risk of serotonin sy",
+  "contraindications": "4 CONTRAINDICATIONS Lithium is contraindicated in patients with known hypersensitivity to any inactive ingredient in the lithium carbonate capsule or lithium citrate products [see Adverse Reactions ( ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

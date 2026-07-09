@@ -1,0 +1,13 @@
+{
+  "name": "azathioprine",
+  "rxcui": "1256",
+  "drugClass": null,
+  "warnings": "WARNINGS Malignancy Patients receiving immunosuppressants, including azathioprine, are at increased risk of developing lymphoma and other malignancies, particularly of the skin. Physicians should inform patients of the risk of malignancy with azathioprine. As usual for patients with increased risk f",
+  "interactions": "Drug Interactions Use with xanthine oxidase (XO) inhibitors: One of the pathways for inactivation of azathioprine is inhibited by XO inhibitors (allopurinol or febuxostat). Patients receiving azathioprine and allopurinol concomitantly should have a dose reduction of azathioprine, to approximately 1/",
+  "contraindications": "CONTRAINDICATIONS Azathioprine tablets should not be given to patients who have shown hypersensitivity to the drug. Azathioprine tablets should not be used for treating rheumatoid arthritis in pregnan",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

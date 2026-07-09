@@ -1,0 +1,13 @@
+{
+  "name": "ethinyl estradiol",
+  "rxcui": "4124",
+  "drugClass": null,
+  "warnings": "WARNINGS Suicidal Behavior and Ideation Antiepileptic drugs (AEDs), including gabapentin, increase the risk of suicidal thoughts or behavior in patients taking these drugs for any indication. Patients treated with any AED for any indication should be monitored for the emergence or worsening of depre",
+  "interactions": "Drug Interactions In vitro studies were conducted to investigate the potential of gabapentin to inhibit the major cytochrome P450 enzymes (CYP1A2, CYP2A6, CYP2C9, CYP2C19, CYP2D6, CYP2E1, and CYP3A4) that mediate drug and xenobiotic metabolism using isoform selective marker substrates and human live",
+  "contraindications": "CONTRAINDICATIONS Gabapentin tablets USP are contraindicated in patients who have demonstrated hypersensitivity to the drug or its ingredients.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

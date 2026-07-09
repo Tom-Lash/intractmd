@@ -1,0 +1,13 @@
+{
+  "name": "prochlorperazine",
+  "rxcui": "8704",
+  "drugClass": null,
+  "warnings": "Increased Mortality in Elderly Patients with Dementia-Related Psychosis Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death. Prochlorperazine maleate is not approved for the treatment of patients with dementia-related psychosis (see BOX",
+  "interactions": null,
+  "contraindications": "Do not use in patients with known hypersensitivity to phenothiazines. Do not use in comatose states or in the presence of large amounts of central nervous system depressants (alcohol, barbiturates, na",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

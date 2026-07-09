@@ -1,0 +1,13 @@
+{
+  "name": "latanoprost",
+  "rxcui": "43611",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Pigmentation : Pigmentation of the iris, periorbital tissue (eyelid) and eyelashes can occur. Iris pigmentation likely to be permanent. (5.1) Eyelash Changes : Gradual change to eyelashes including increased length, thickness and number of lashes. Usually reversible. (5.2)",
+  "interactions": null,
+  "contraindications": "4 CONTRAINDICATIONS Known hypersensitivity to latanoprost, benzalkonium chloride, or any other ingredients in this product. Known hypersensitivity to latanoprost, benzalkonium chloride, or any other i",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "enoxaparin",
+  "rxcui": "67108",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Increased risk of hemorrhage: Monitor for signs of bleeding ( 5.1 , 5.2 , 5.3 ) Risk of Heparin-Induced Thrombocytopenia with or without Thrombosis ( 5.4 ) Thrombocytopenia: Monitor platelet count closely ( 5.5 ) Interchangeability with other heparins: Do not exchange with",
+  "interactions": "7 DRUG INTERACTIONS Whenever possible, agents which may enhance the risk of hemorrhage should be discontinued prior to initiation of enoxaparin sodium therapy. These agents include medications such as: anticoagulants, platelet inhibitors including acetylsalicylic acid, salicylates, NSAIDs (including",
+  "contraindications": "4 CONTRAINDICATIONS Enoxaparin sodium injection is contraindicated in patients with: • Active major bleeding • History of immune-mediated heparin-induced thrombocytopenia (HIT) within the past 100 day",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

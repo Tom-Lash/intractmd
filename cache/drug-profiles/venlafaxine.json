@@ -1,0 +1,13 @@
+{
+  "name": "venlafaxine",
+  "rxcui": "39786",
+  "drugClass": null,
+  "warnings": "WARNINGS Clinical Worsening and Suicide Risk Patients with major depressive disorder (MDD), both adult and pediatric, may experience worsening of their depression and/or the emergence of suicidal ideation and behavior (suicidality) or unusual changes in behavior, whether or not they are taking antid",
+  "interactions": "Drug Interactions As with all drugs, the potential for interaction by a variety of mechanisms is a possibility. Alcohol A single dose of ethanol (0.5 g/kg) had no effect on the pharmacokinetics of venlafaxine or ODV when venlafaxine was administered at 150 mg/day in 15 healthy male subjects. Additio",
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity to venlafaxine hydrochloride or to any excipients in the formulation. The use of MAOIs intended to treat psychiatric disorders with venlafaxine tablets or within 7 d",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

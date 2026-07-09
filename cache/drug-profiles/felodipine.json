@@ -1,0 +1,13 @@
+{
+  "name": "felodipine",
+  "rxcui": "4316",
+  "drugClass": null,
+  "warnings": null,
+  "interactions": "Drug Interactions CYP3A4 Inhibitors Felodipine is metabolized by CYP3A4. Co-administration of CYP3A4 inhibitors (e.g., ketoconazole, itraconazole, erythromycin, grapefruit juice, cimetidine) with felodipine may lead to several-fold increases in the plasma levels of felodipine, either due to an incre",
+  "contraindications": "CONTRAINDICATIONS Felodipine extended-release tablets, USP are contraindicated in patients who are hypersensitive to this product.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

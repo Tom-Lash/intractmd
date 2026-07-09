@@ -1,0 +1,13 @@
+{
+  "name": "ondansetron",
+  "rxcui": "26225",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hypersensitivity Reactions, Including Anaphylaxis and Bronchospasm : Discontinue ondansetron if suspected. Monitor and treat promptly per standard of care until signs and symptoms resolve ( 5.1 ) QT Interval Prolongation and Torsade de Pointes : Avoid ondansetron tablets i",
+  "interactions": "7 DRUG INTERACTIONS 7.1 Serotonergic Drugs Serotonin syndrome (including altered mental status, autonomic instability, and neuromuscular symptoms) has been described following the concomitant use of 5-HT 3 receptor antagonists and other serotonergic drugs, including SSRIs and SNRIs. Monitor for the ",
+  "contraindications": "4 CONTRAINDICATIONS Ondansetron is contraindicated in patients: known to have hypersensitivity (e.g., anaphylaxis) to ondansetron or any of the components of the formulation [see Adverse Reactions (6.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

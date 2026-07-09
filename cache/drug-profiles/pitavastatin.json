@@ -1,0 +1,13 @@
+{
+  "name": "pitavastatin",
+  "rxcui": "861634",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Myopathy and Rhabdomyolysis: Risk factors include age 65 or greater, renal impairment, uncontrolled hypothyroidism, concomitant use with certain other drugs, and higher doses of pitavastatin tablets. Discontinue pitavastatin tablets if markedly elevated CK levels occur or ",
+  "interactions": "7 DRUG INTERACTIONS Table 2 includes a list of drugs that increase the risk of myopathy and rhabdomyolysis when administered concomitantly with pitavastatin tablets and instructions for preventing or managing drug interactions [see Warnings and Precautions ( 5.1 ), Clinical Pharmacology ( 12.3 )]. T",
+  "contraindications": "4 CONTRAINDICATIONS Pitavastatin tablets are contraindicated in the following conditions: Concomitant use of cyclosporine [see Drug Interactions ( 7 )] . Acute liver failure or decompensated cirrhosis",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

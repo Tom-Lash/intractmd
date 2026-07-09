@@ -1,0 +1,13 @@
+{
+  "name": "fluoxetine",
+  "rxcui": "4493",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS When using fluoxetine and olanzapine in combination, also refer to the Warnings and Precautions section of the package insert for Symbyax. Suicidal thoughts and Behaviors in Children, Adolescents, and Young Adults: Monitor for clinical worsening and suicidal thinking and b",
+  "interactions": "7 DRUG INTERACTIONS As with all drugs, the potential for interaction by a variety of mechanisms (e.g., pharmacodynamic, pharmacokinetic drug inhibition or enhancement, etc.) is a possibility. Monoamine Oxidase Inhibitors (MAOIs): ( 2.9 , 2.10 , 4.1 , 5.2 ) Drugs Metabolized by CYP2D6: Fluoxetine is ",
+  "contraindications": "4 CONTRAINDICATIONS When using fluoxetine capsules and olanzapine in combination, also refer to the Contraindications section of the package insert for Symbyax. Serotonin Syndrome and MAOIs: Do not us",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

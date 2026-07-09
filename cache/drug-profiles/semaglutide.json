@@ -1,0 +1,13 @@
+{
+  "name": "semaglutide",
+  "rxcui": "1991302",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Acute Pancreatitis : Has been observed in patients treated with GLP-1 receptor agonists, including RYBELSUS or OZEMPIC tablets. Discontinue if pancreatitis is suspected. ( 5.2 ) • Diabetic Retinopathy Complications : Has been reported in a cardiovascular outcomes trial w",
+  "interactions": "7 DRUG INTERACTIONS Other Oral Drugs : RYBELSUS and OZEMPIC tablets delay gastric emptying. Consider increased clinical or laboratory monitoring when co-administered with other oral medications that have a narrow therapeutic index or that require clinical monitoring. ( 7.2 ) 7.1 Concomitant Use with",
+  "contraindications": "4 CONTRAINDICATIONS RYBELSUS and OZEMPIC tablets are contraindicated in patients with: • A personal or family history of medullary thyroid carcinoma (MTC) or in patients with Multiple Endocrine Neopla",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "captopril",
+  "rxcui": "1998",
+  "drugClass": null,
+  "warnings": "WARNINGS Captopril : Anaphylactoid and Possible Related Reactions : Presumably because angiotensin-converting enzyme inhibitors affect the metabolism of eicosanoids and polypeptides, including endogenous bradykinin, patients receiving ACE inhibitors (including captopril) may be subject to a variety ",
+  "interactions": "Drug Interactions: Captopril : Hypotension—Patients On Diuretic Therapy : Patients on diuretics and especially those in whom diuretic therapy was recently instituted, as well as those on severe dietary salt restrictions or dialysis, may occasionally experience a precipitous reduction of blood pressu",
+  "contraindications": "CONTRAINDICATIONS Captopril : This product is contraindicated in patients who are hypersensitive to captopril or any other angiotensin-converting enzyme inhibitor (e.g., a patient who has experienced ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

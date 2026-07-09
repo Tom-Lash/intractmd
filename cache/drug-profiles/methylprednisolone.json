@@ -1,0 +1,13 @@
+{
+  "name": "methylprednisolone",
+  "rxcui": "6902",
+  "drugClass": null,
+  "warnings": "WARNINGS Serious Neurologic Adverse Reactions with Epidural Administration Serious neurologic events, some resulting in death, have been reported with epidural injection of corticosteroids. Specific events reported include, but are not limited to, spinal cord infarction, paraplegia, quadriplegia, co",
+  "interactions": "7 DRUG INTERACTIONS Local Anesthetics : The toxic effects of local anesthetics are additive. Monitor for neurologic and cardiovascular effects when additional local anesthetics are administered. ( 7.1 ) Monoamine Oxidase Inhibitors and Tricyclic Antidepressants : Administration of Bupivacaine Hydroc",
+  "contraindications": "4 CONTRAINDICATIONS Bupivacaine Hydrochloride Injection/Bupivacaine Hydrochloride and Epinephrine Injection is contraindicated in: obstetrical paracervical block anesthesia. Its use in this technique ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

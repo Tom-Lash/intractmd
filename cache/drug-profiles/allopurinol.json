@@ -1,0 +1,13 @@
+{
+  "name": "allopurinol",
+  "rxcui": "519",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Skin Rash and Hypersensitivity: Allopurinol has been associated with serious and sometimes fatal dermatological reactions. Discontinue allopurinol tablets at the first appearance of skin rash or other signs of hypersensitivity reaction. ( 5.1 ) Gout Flares: May occur durin",
+  "interactions": "7 DRUG INTERACTIONS The following drugs may increase the risk of serious skin reactions: bendamustine, thiazide diuretics, ampicillin and amoxicillin. ( 7.1 ) Capecitabine: Avoid concomitant use. ( 7.2 ) Mercaptopurine or Azathioprine: Reduce mercaptopurine or azathioprine dose as recommended in the",
+  "contraindications": "4 CONTRAINDICATIONS Allopurinol tablets are contraindicated in patients with a history of hypersensitivity reaction to allopurinol or to any of the ingredients of allopurinol tablets. Known hypersensi",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

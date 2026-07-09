@@ -1,0 +1,13 @@
+{
+  "name": "clopidogrel",
+  "rxcui": "32968",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS CYP2C19 inhibitors: Avoid concomitant use of omeprazole or esomeprazole. (5.1) Bleeding: Clopidogrel increases risk of bleeding. (5.2) Discontinuation: Premature discontinuation increases risk of cardiovascular events. Discontinue 5 days prior to elective surgery that has ",
+  "interactions": "7 DRUG INTERACTIONS CYP2C19 inducers: Increases levels of clopidogrel active metabolite and increases platelet inhibition. ( 7.1 ) Opioids: Decreased exposure to clopidogrel. Consider use of parenteral antiplatelet agent. ( 7.3 ) Nonsteroidal anti-inflammatory drugs (NSAIDs), warfarin, selective ser",
+  "contraindications": "4 CONTRAINDICATIONS Active pathological bleeding, such as peptic ulcer or intracranial hemorrhage (4.1) Hypersensitivity to clopidogrel or any component of the product (4.2) 4.1 Active Bleeding Clopid",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

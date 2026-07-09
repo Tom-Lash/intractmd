@@ -1,0 +1,13 @@
+{
+  "name": "fluticasone",
+  "rxcui": "41126",
+  "drugClass": null,
+  "warnings": "Warnings Only for use in the nose. Do not spray into your eyes or mouth.",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "glyburide",
+  "rxcui": "4815",
+  "drugClass": null,
+  "warnings": null,
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Glyburide tablets are contraindicated in patients with: Known hypersensitivity or allergy to the drug. Diabetic ketoacidosis, with or without coma. This condition should be treated w",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

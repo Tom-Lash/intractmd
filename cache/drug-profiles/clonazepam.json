@@ -1,0 +1,13 @@
+{
+  "name": "clonazepam",
+  "rxcui": "2598",
+  "drugClass": null,
+  "warnings": "WARNINGS Risks from Concomitant Use with Opioids: Concomitant use of benzodiazepines, including clonazepam tablets, and opioids may result in profound sedation, respiratory depression, coma, and death. Because of these risks, reserve concomitant prescribing of benzodiazepines and opioids for patient",
+  "interactions": "Drug Interactions: Effect of Concomitant Use of Benzodiazepines and Opioids: The concomitant use of benzodiazepines and opioids increases the risk of respiratory depression because of actions at different receptor sites in the CNS that control respiration. Benzodiazepines interact at GABAA sites, an",
+  "contraindications": "CONTRAINDICATIONS Clonazepam tablets are contraindicated in patients with the following conditions: History of sensitivity to benzodiazepines Clinical or biochemical evidence of significant liver dise",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

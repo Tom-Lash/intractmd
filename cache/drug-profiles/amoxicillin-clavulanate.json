@@ -1,0 +1,13 @@
+{
+  "name": "amoxicillin-clavulanate",
+  "rxcui": "19711",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Serious (including fatal) hypersensitivity reactions: Discontinue Amoxicillin and Clavulanate Potassium if a reaction occurs. ( 5.1 ) Severe Cutaneous Adverse Reactions (SCAR): Monitor closely. Discontinue if rash progresses. ( 5.2 ) Hepatic dysfunction and cholestatic jau",
+  "interactions": "7 DRUG INTERACTIONS Co‑administration with probenecid is not recommended. ( 7.1 ) Concomitant use of Amoxicillin and Clavulanate Potassium and oral anticoagulants may increase the prolongation of prothrombin time.( 7.2 ) Co-administration with allopurinol increases the risk of rash. ( 7.3 ) Amoxicil",
+  "contraindications": "4 CONTRAINDICATIONS History of a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens-Johnson syndrome) to Amoxicillin and Clavulanate Potassium or to other beta‑lactams (e.g., penicillins ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

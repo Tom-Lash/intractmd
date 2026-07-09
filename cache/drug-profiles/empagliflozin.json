@@ -1,0 +1,13 @@
+{
+  "name": "empagliflozin",
+  "rxcui": "1545653",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Diabetic Ketoacidosis in Patients with Type 1 Diabetes Mellitus and Other Ketoacidosis: Consider ketone monitoring in patients at risk of ketoacidosis, as indicated. Assess for ketoacidosis regardless of presenting blood glucose levels and discontinue SYNJARDY or SYNJARDY ",
+  "interactions": "7 DRUG INTERACTIONS See Table 4 for clinically relevant interactions with SYNJARDY or SYNJARDY XR. Table 4 Clinically Relevant Interactions with SYNJARDY or SYNJARDY XR Carbonic Anhydrase Inhibitors Clinical Impact Topiramate or other carbonic anhydrase inhibitors (e.g., zonisamide, acetazolamide or",
+  "contraindications": "4 CONTRAINDICATIONS SYNJARDY and SYNJARDY XR are contraindicated in patients with: severe renal impairment (eGFR less than 30 mL/min/1.73 m 2 ) [see Warnings and Precautions (5.1) and Use in Specific ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

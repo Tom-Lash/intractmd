@@ -1,0 +1,13 @@
+{
+  "name": "carbamazepine",
+  "rxcui": "2002",
+  "drugClass": null,
+  "warnings": "WARNINGS Serious Dermatologic Reactions Serious and sometimes fatal dermatologic reactions, including toxic epidermal necrolysis (TEN) and Stevens-Johnson syndrome (SJS), have been reported with carbamazepine treatment. The risk of these events is estimated to be about 1 to 6 per 10,000 new users in",
+  "interactions": "Drug Interactions There has been a report of a patient who passed an orange rubbery precipitate in his stool the day after ingesting carbamazepine suspension immediately followed by Thorazine solution. Subsequent testing has shown that mixing carbamazepine suspension and chlorpromazine solution (bot",
+  "contraindications": "CONTRAINDICATIONS Carbamazepine should not be used in patients with a history of previous bone marrow depression, hypersensitivity to the drug, or known sensitivity to any of the tricyclic compounds, ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

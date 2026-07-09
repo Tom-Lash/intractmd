@@ -1,0 +1,13 @@
+{
+  "name": "ibandronate",
+  "rxcui": "115264",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Upper gastrointestinal Adverse Reactions can occur. Instruct patients to follow dosing instructions and discontinue use if new or worsening symptoms occur. ( 5.1 ) Hypocalcemia may worsen during treatment. Correct hypocalcemia before use. ( 5.2 ) Severe Bone, Joint, and Mu",
+  "interactions": "7 DRUG INTERACTIONS Calcium supplements, antacids and some oral medications may interfere with absorption of ibandronate. Do not take within 60 minutes of dosing ( 7.1 ) Use caution when co-prescribing aspirin/nonsteroidal anti-inflammatory drugs that may worsen gastrointestinal irritation. ( 7.2 ) ",
+  "contraindications": "4 CONTRAINDICATIONS Ibandronate sodium tablets are contraindicated in patients with the following conditions: Abnormalities of the esophagus which delay esophageal emptying such as stricture or achala",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

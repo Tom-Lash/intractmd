@@ -1,0 +1,13 @@
+{
+  "name": "phenytoin",
+  "rxcui": "8183",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Withdrawal Precipitated Seizure : May precipitate status epilepticus. Dose reductions or discontinuation should be done gradually. ( 5.2 ) Serious Dermatologic Reactions : Discontinue phenytoin at the first sign of a rash, unless the rash is clearly not drug-related. If si",
+  "interactions": "7 DRUG INTERACTIONS Phenytoin is extensively bound to plasma proteins and is prone to competitive displacement. Phenytoin is primarily metabolized by hepatic cytochrome P450 enzymes CYP2C9 and to a lesser extent by CYP2C19 and is particularly susceptible to inhibitory drug interactions because it is",
+  "contraindications": "4 CONTRAINDICATIONS Phenytoin Sodium Injection is contraindicated in patients with: A history of hypersensitivity to phenytoin, its inactive ingredients, or other hydantoins [see Warnings and Precauti",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

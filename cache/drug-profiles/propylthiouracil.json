@@ -1,0 +1,13 @@
+{
+  "name": "propylthiouracil",
+  "rxcui": "8794",
+  "drugClass": null,
+  "warnings": "WARNINGS Liver Toxicity Liver injury resulting in liver failure, liver transplantation, or death, has been reported with propylthiouracil therapy in adult and pediatric patients. No cases of liver failure have been reported with the use of methimazole in pediatric patients. For this reason, propylth",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Propylthiouracil is contraindicated in patients who have demonstrated hypersensitivity to the drug or any of the other product components.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

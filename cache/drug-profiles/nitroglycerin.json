@@ -1,0 +1,13 @@
+{
+  "name": "nitroglycerin",
+  "rxcui": "4917",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Tolerance: Excessive use may lead to tolerance. ( 5.1 ) • Hypotension: Severe hypotension may occur. ( 5.2 ) 5.1 Tolerance Excessive use may lead to the development of tolerance. Only the smallest dose required for effective relief of the acute angina attack should be us",
+  "interactions": "7 DRUG INTERACTIONS Ergotamine: increased bioavailability of ergotamine. Avoid concomitant use. ( 7.2 ) 7.1 PDE-5-Inhibitors and sGC-Stimulators Nitroglycerin sublingual tablets are contraindicated in patients who are using a selective inhibitor of cyclic guanosine monophosphate (cGMP)-specific phos",
+  "contraindications": "4 CONTRAINDICATIONS • Use of phosphodiesterase type 5 (PDE-5) inhibitors, such as avanafil, sildenafil, tadalafil, or vardenafil, or soluble guanylate cyclase (sGC) stimulators. ( 4.1 , 7.1 ) • Severe",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

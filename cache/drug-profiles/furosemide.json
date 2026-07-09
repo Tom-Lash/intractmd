@@ -1,0 +1,13 @@
+{
+  "name": "furosemide",
+  "rxcui": "4603",
+  "drugClass": null,
+  "warnings": "WARNING Furosemide is a potent diuretic which, if given in excessive amounts, can lead to a profound diuresis with water and electrolyte depletion. Therefore, careful medical supervision is required and dose and dose schedule must be adjusted to the individual patient's needs (see DOSAGE AND ADMINIS",
+  "interactions": "Drug Interactions Furosemide may increase the ototoxic potential of aminoglycoside antibiotics, especially in the presence of impaired renal function. Except in life-threatening situations, avoid this combination. Furosemide should not be used concomitantly with ethacrynic acid because of the possib",
+  "contraindications": "CONTRAINDICATIONS Furosemide tablets are contraindicated in patients with anuria and in patients with a history of hypersensitivity to furosemide.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

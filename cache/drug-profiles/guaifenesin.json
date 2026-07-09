@@ -1,0 +1,13 @@
+{
+  "name": "guaifenesin",
+  "rxcui": "5032",
+  "drugClass": null,
+  "warnings": "Warnings Do not use in child who is taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric, or emotional condition, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your child’s prescription drug contains an MAOI",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

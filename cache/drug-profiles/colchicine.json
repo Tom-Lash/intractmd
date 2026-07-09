@@ -1,0 +1,13 @@
+{
+  "name": "colchicine",
+  "rxcui": "2683",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS • Fatal overdoses have been reported with colchicine in adults and children. Keep colchicine tablets out of the reach of children ( Error! Hyperlink reference not valid. , Error! Hyperlink reference not valid. ). • Blood dyscrasias: myelosuppression, leukopenia, granulocyt",
+  "interactions": "7 DRUG INTERACTIONS Colchicine is a substrate of the efflux transporter P-glycoprotein (P-gp). Of the cytochrome P450 enzymes tested, CYP3A4 was mainly involved in the metabolism of colchicine. If colchicine tablets are administered with drugs that inhibit P-gp, most of which also inhibit CYP3A4, in",
+  "contraindications": "4 CONTRAINDICATIONS Patients with renal or hepatic impairment should not be given colchicine tablets in conjunction with P-gp or strong CYP3A4 inhibitors (this includes all protease inhibitors except ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

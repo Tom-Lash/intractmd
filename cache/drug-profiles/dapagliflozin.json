@@ -1,0 +1,13 @@
+{
+  "name": "dapagliflozin",
+  "rxcui": "1488564",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Diabetic Ketoacidosis in Patients with Type 1 Diabetes Mellitus and Other Ketoacidosis: Consider ketone monitoring in patients with type 1 diabetes mellitus and consider ketone monitoring in others at risk for ketoacidosis, as indicated. Assess for ketoacidosis regardless ",
+  "interactions": "7 DRUG INTERACTIONS Table 4: Clinically Relevant Interactions with Dapagliflozin Insulin or Insulin Secretagogues Clinical Impact The risk of hypoglycemia may be increased when dapagliflozin is used concomitantly with insulin or insulin secretagogues (e.g., sulfonylurea) [see Warnings and Precaution",
+  "contraindications": "4 CONTRAINDICATIONS Dapagliflozin is contraindicated in patients with a history of a serious hypersensitivity reaction to dapagliflozin or any of the excipients in dapagliflozin. Serious hypersensitiv",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

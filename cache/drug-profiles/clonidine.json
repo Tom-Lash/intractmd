@@ -1,0 +1,13 @@
+{
+  "name": "clonidine",
+  "rxcui": "2599",
+  "drugClass": null,
+  "warnings": "WARNINGS Withdrawal Patients should be instructed not to discontinue therapy without consulting their physician. Sudden cessation of clonidine treatment has, in some cases, resulted in symptoms such as nervousness, agitation, headache, and tremor accompanied or followed by a rapid rise in blood pres",
+  "interactions": "Drug Interactions Clonidine may potentiate the CNS-depressive effects of alcohol, barbiturates or other sedating drugs. If a patient receiving clonidine hydrochloride is also taking tricyclic antidepressants, the hypotensive effect of clonidine may be reduced, necessitating an increase in the clonid",
+  "contraindications": "CONTRAINDICATIONS Clonidine hydrochloride tablets should not be used in patients with known hypersensitivity to clonidine (see PRECAUTIONS ).",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

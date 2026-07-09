@@ -1,0 +1,13 @@
+{
+  "name": "rituximab",
+  "rxcui": "121191",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Hypersensitivity and other administration reactions: Local cutaneous reactions may occur more than 24 hours after administration. Interrupt injection if severe reaction develops. Premedicate before injection. ( 5.4 ) Tumor lysis syndrome: Administer aggressive intravenous ",
+  "interactions": "Renal toxicity when used in combination with cisplatin. ( 5.8 )",
+  "contraindications": "4 CONTRAINDICATIONS None None.",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

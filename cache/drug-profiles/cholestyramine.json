@@ -1,0 +1,13 @@
+{
+  "name": "cholestyramine",
+  "rxcui": "2447",
+  "drugClass": null,
+  "warnings": "WARNINGS PHENYLKETONURICS: CHOLESTYRAMINE FOR ORAL SUSPENSION, USP LIGHT POWDER CONTAINS 22.4 mg PHENYLALANINE PER 5.7 GRAM DOSE.",
+  "interactions": "Drug Interactions Cholestyramine resin may delay or reduce the absorption of concomitant oral medication such as phenylbutazone, warfarin, thiazide diuretics (acidic) or propranolol (basic), as well as tetracycline, penicillin G, phenobarbital, thyroid and thyroxine preparations, estrogens and proge",
+  "contraindications": "CONTRAINDICATIONS Cholestyramine for Oral Suspension, USP Light powder is contraindicated in patients with complete biliary obstruction where bile is not secreted into the intestine and in those indiv",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

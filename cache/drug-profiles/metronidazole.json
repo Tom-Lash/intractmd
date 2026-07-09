@@ -1,0 +1,13 @@
+{
+  "name": "metronidazole",
+  "rxcui": "6922",
+  "drugClass": null,
+  "warnings": "WARNINGS Hypersensitivity Reactions Hypersensitivity reactions including severe cutaneous adverse reactions (SCARs) can be serious and potentially life threatening (see ADVERSE REACTIONS ). Severe Cutaneous Adverse Reactions Severe cutaneous adverse reactions (SCARs) including toxic epidermal necrol",
+  "interactions": "Drug Interactions Disulfiram Psychotic reactions have been reported in alcoholic patients who are using metronidazole and disulfiram concurrently. Metronidazole should not be given to patients who have taken disulfiram within the last two weeks (see CONTRAINDICATIONS ). Alcoholic Beverages Abdominal",
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity Metronidazole tablet are contraindicated in patients with a prior history of hypersensitivity to metronidazole or other nitroimidazole derivatives. In patients with ",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

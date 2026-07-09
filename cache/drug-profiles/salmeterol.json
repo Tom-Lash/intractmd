@@ -1,0 +1,13 @@
+{
+  "name": "salmeterol",
+  "rxcui": "36117",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS LABA monotherapy increases the risk of serious asthma-related events. ( 5.1 ) Deterioration of asthma and acute episodes: Do not use for relief of acute symptoms. Patients require immediate re-evaluation during rapidly deteriorating asthma. ( 5.2 ) Do not use in combinatio",
+  "interactions": "7 DRUG INTERACTIONS Fluticasone Propionate/Salmeterol MDPI has been used concomitantly with other drugs, including short‑acting beta 2 ‑agonists, and intranasal corticosteroids, commonly used in patients with asthma without adverse drug reactions [see Clinical Pharmacology ( 12.2 )] . No formal drug",
+  "contraindications": "4 CONTRAINDICATIONS Fluticasone Propionate/Salmeterol MDPI is contraindicated in: the primary treatment of status asthmaticus or other acute episodes of asthma where intensive measures are required [s",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

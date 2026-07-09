@@ -1,0 +1,13 @@
+{
+  "name": "hydroxyzine",
+  "rxcui": "5553",
+  "drugClass": null,
+  "warnings": "WARNINGS Nursing Mothers It is not known whether this drug is excreted in human milk. Since many drugs are so excreted, hydroxyzine should not be given to nursing mothers.",
+  "interactions": null,
+  "contraindications": "CONTRAINDICATIONS Hydroxyzine, when administered to the pregnant mouse, rat, and rabbit, induced fetal abnormalities in the rat and mouse at doses substantially above the human therapeutic range. Clin",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

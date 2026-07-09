@@ -1,0 +1,13 @@
+{
+  "name": "lisinopril",
+  "rxcui": "29046",
+  "drugClass": null,
+  "warnings": "WARNINGS General Lisinopril Anaphylactoid and Possibly Related Reactions: Presumably because angiotensin-converting enzyme inhibitors affect the metabolism of eicosanoids and polypeptides, including endogenous bradykinin, patients receiving ACE inhibitors (including lisinopril and hydrochlorothiazid",
+  "interactions": "Drug Interactions Lisinopril Hypotension - Patients on Diuretic Therapy: Patients on diuretics, and especially those in whom diuretic therapy was recently instituted, may occasionally experience an excessive reduction of blood pressure after initiation of therapy with lisinopril. The possibility of ",
+  "contraindications": "CONTRAINDICATIONS Lisinopril and hydrochlorothiazide tablets are contraindicated in patients who are hypersensitive to any component of this product and in patients with a history of angioedema relate",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

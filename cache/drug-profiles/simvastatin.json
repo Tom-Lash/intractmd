@@ -1,0 +1,13 @@
+{
+  "name": "simvastatin",
+  "rxcui": "36567",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Myopathy and Rhabdomyolysis: Risk factors include age 65 years or greater, uncontrolled hypothyroidism, renal impairment, concomitant use with certain other drugs, and higher simvastatin dosage. Chinese patients may be at higher risk for myopathy. Discontinue simvastatin i",
+  "interactions": "7 DRUG INTERACTIONS See full prescribing information for details regarding concomitant use of simvastatin with other drugs or grapefruit juice that increase the risk of myopathy and rhabdomyolysis. ( 2.5 , 7.1 ) Coumarin Anticoagulants: Obtain INR before simvastatin initiation and monitor INR during",
+  "contraindications": "4 CONTRAINDICATIONS Simvastatin is contraindicated in the following conditions: Concomitant use of strong CYP3A4 inhibitors (select azole anti-fungals, macrolide antibiotics, anti-viral medications, a",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

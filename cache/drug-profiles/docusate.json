@@ -1,0 +1,13 @@
+{
+  "name": "docusate",
+  "rxcui": "82003",
+  "drugClass": null,
+  "warnings": "Warnings Do not use if you are presently taking mineral oil, unless told to do so by a doctor Ask a doctor before use if you have stomach pain nausea vomiting noticed a sudden change in bowel habits that lasts over 2 weeks Stop use and ask a doctor if you have rectal bleeding or fail to have bowel m",
+  "interactions": null,
+  "contraindications": null,
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "lovastatin",
+  "rxcui": "6472",
+  "drugClass": null,
+  "warnings": "WARNINGS Myopathy/Rhabdomyolysis Lovastatin, like other inhibitors of HMG-CoA reductase, occasionally causes myopathy manifested as muscle pain, tenderness or weakness with creatine kinase (CK) above ten times the upper limit of normal (ULN). Myopathy sometimes takes the form of rhabdomyolysis with ",
+  "interactions": "Drug Interactions CYP3A4 Interactions Lovastatin is metabolized by CYP3A4 but has no CYP3A4 inhibitory activity; therefore it is not expected to affect the plasma concentrations of other drugs metabolized by CYP3A4. Strong inhibitors of CYP3A4 (e.g., itraconazole, ketoconazole, posaconazole, voricon",
+  "contraindications": "CONTRAINDICATIONS Hypersensitivity to any component of this medication. Active liver disease or unexplained persistent elevations of serum transaminases (see WARNINGS ). Concomitant administration wit",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

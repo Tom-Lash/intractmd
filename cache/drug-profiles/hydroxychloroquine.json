@@ -1,0 +1,13 @@
+{
+  "name": "hydroxychloroquine",
+  "rxcui": "5521",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Cardiomyopathy and Ventricular Arrhythmias : Fatal or life-threatening cardiomyopathy and ventricular arrhythmias were reported. ( 5.1 ) Retinal Toxicity : Irreversible retinal damage is related to cumulative dosage and treatment duration. Baseline retinal exam and exams d",
+  "interactions": "7 DRUG INTERACTIONS Drugs Prolonging QT Interval and Other Arrhythmogenic Drugs. ( 7.1 ) See FPI for more important drug interactions. ( 7 ) 7.1 Drugs Prolonging QT Interval and Other Arrhythmogenic Drugs Hydroxychloroquine sulfate tablets prolongs the QT interval. There may be an increased risk of ",
+  "contraindications": "4 CONTRAINDICATIONS Hydroxychloroquine sulfate tablets are contraindicated in patients with known hypersensitivity to 4-aminoquinoline compounds. Patients with hypersensitivity to 4-aminoquinoline com",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

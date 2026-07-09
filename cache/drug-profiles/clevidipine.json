@@ -1,0 +1,13 @@
+{
+  "name": "clevidipine",
+  "rxcui": "233603",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Maintain aseptic technique. Discard unused portion 12 hours after stopper puncture. (5.1) Hypotension and reflex tachycardia are potential consequences of rapid upward titration of Cleviprex. (5.2) Dihydropyridine calcium channel blockers can produce negative inotropic eff",
+  "interactions": "7 DRUG INTERACTIONS No clinical drug interaction studies were conducted. Clevidipine and its major dihydropyridine metabolite do not have the potential for blocking or inducing any CYP enzyme. At clinically relevant concentrations, clevidipine and its metabolites do not inhibit or induce any CYP450 ",
+  "contraindications": "4 CONTRAINDICATIONS Cleviprex is contraindicated in patients with: Allergy to soy or eggs (4.1) Defective lipid metabolism (4.2) Severe aortic stenosis (4.3) 4.1 Known Allergy Cleviprex is contraindic",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}

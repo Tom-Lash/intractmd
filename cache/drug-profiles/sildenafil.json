@@ -1,0 +1,13 @@
+{
+  "name": "sildenafil",
+  "rxcui": "136411",
+  "drugClass": null,
+  "warnings": "5 WARNINGS AND PRECAUTIONS Patients should not use sildenafil if sexual activity is inadvisable due to cardiovascular status ( 5.1 ) Patients should seek emergency treatment if an erection lasts >4 hours. Use sildenafil with caution in patients predisposed to priapism ( 5.2 ) Patients should stop si",
+  "interactions": "7 DRUG INTERACTIONS Sildenafil can potentiate the hypotensive effects of nitrates, alpha blockers, and anti-hypertensives ( 4.1 , 5.5 , 7.1 , 7.2 , 7.3 , 12.2 ) With concomitant use of alpha blockers, initiate sildenafil at 25 mg dose ( 2.3 ) CYP3A4 inhibitors (e.g., ritonavir, ketoconazole, itracon",
+  "contraindications": "4 CONTRAINDICATIONS Administration of sildenafil tablets to patients using nitric oxide donors, such as organic nitrates or organic nitrites in any form. Sildenafil tablets was shown to potentiate the",
+  "rxnormInteractions": [],
+  "sources": [
+    "RxNorm",
+    "OpenFDA"
+  ]
+}
