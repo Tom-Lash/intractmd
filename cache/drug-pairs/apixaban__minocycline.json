@@ -1,0 +1,1 @@
+{"drugA":"apixaban","drugB":"minocycline","hasInteraction":false,"severity":"Low","mechanism":null,"action":null,"dimensions":{"Bleeding Risk":5,"Cardiac Risk":0,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":5,"CYP450 Risk":0,"Renal/Hepatic":10,"Pharmacodynamic":0},"computedAt":"2026-07-09T14:27:37.884Z","source":"generated-batch-v3"}

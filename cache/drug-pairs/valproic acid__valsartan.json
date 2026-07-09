@@ -1,0 +1,1 @@
+{"drugA":"valproic acid","drugB":"valsartan","hasInteraction":false,"severity":"Low","mechanism":null,"action":null,"dimensions":{"Bleeding Risk":5,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":15,"CYP450 Risk":5,"Renal/Hepatic":20,"Pharmacodynamic":10},"computedAt":"2026-07-09T13:45:55.813Z","source":"generated-batch-v3"}

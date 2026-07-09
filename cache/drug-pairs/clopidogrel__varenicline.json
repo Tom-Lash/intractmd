@@ -1,0 +1,1 @@
+{"drugA":"clopidogrel","drugB":"varenicline","hasInteraction":false,"severity":"Low","mechanism":null,"action":null,"dimensions":{"Bleeding Risk":5,"Cardiac Risk":10,"Serotonin Risk":0,"NTI Conflict":0,"CNS Risk":15,"CYP450 Risk":5,"Renal/Hepatic":0,"Pharmacodynamic":10},"computedAt":"2026-07-09T13:29:38.073Z","source":"generated-batch-v3"}
