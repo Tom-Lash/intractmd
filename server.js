@@ -564,7 +564,9 @@ app.post('/api/analyze', async (req, res) => {
 
   // Fast path: skip FDA calls if all DD pairs cached and no supplements/foods to analyze
   const allDDCached = missingDDPairs.length === 0 && supplements.length === 0 && foods.length === 0;
-  const drugDataArr = allDDCached ? drugs.map(name => ({ name, rxcui: null, drugClass: null, warnings: null, interactions: null, contraindications: null, rxnormInteractions: [], sources: ['PairCache'] })) : await Promise.all(drugs.map(fetchDrugData));
+  const drugDataArr = allDDCached
+    ? drugs.map(name => loadDrugProfile(name) || { name, rxcui: null, drugClass: null, warnings: null, interactions: null, contraindications: null, rxnormInteractions: [], sources: ['PairCache'] })
+    : await Promise.all(drugs.map(fetchDrugData));
   if (allDDCached) console.log('[FASTPATH] All DD pairs cached — skipping FDA API calls');
   const realtimeSourcesSet = new Set();
   drugDataArr.forEach(d => d.sources.forEach(s => realtimeSourcesSet.add(s)));
