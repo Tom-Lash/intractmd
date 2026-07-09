@@ -568,6 +568,65 @@ app.post('/api/analyze', async (req, res) => {
     ? drugs.map(name => loadDrugProfile(name) || { name, rxcui: null, drugClass: null, warnings: null, interactions: null, contraindications: null, rxnormInteractions: [], sources: ['PairCache'] })
     : await Promise.all(drugs.map(fetchDrugData));
   if (allDDCached) console.log('[FASTPATH] All DD pairs cached — skipping FDA API calls');
+
+  // ── ULTRA FAST PATH: Build response entirely from cache (no Claude call) ──
+  if (allDDCached && !supplements.length && !foods.length) {
+    const interactions = cachedDDInteractions.map(p => ({
+      drugs: p.drugA + ' + ' + p.drugB,
+      severity: p.severity,
+      mechanism: p.mechanism || '',
+      action: p.action || 'Consult your pharmacist or physician.'
+    }));
+
+    // Compute overall risk from dimensions
+    const maxBleeding = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Bleeding Risk'] || 0));
+    const maxCardiac  = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Cardiac Risk'] || 0));
+    const maxSerotonin= Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Serotonin Risk'] || 0));
+    const maxNTI      = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['NTI Conflict'] || 0));
+    const maxCNS      = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['CNS Risk'] || 0));
+    const maxCYP      = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['CYP450 Risk'] || 0));
+    const maxRenal    = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Renal/Hepatic'] || 0));
+    const maxPD       = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Pharmacodynamic'] || 0));
+
+    const riskScore = Math.round((maxBleeding*0.25 + maxCardiac*0.15 + maxSerotonin*0.15 +
+      maxNTI*0.15 + maxCNS*0.10 + maxCYP*0.08 + maxRenal*0.07 + maxPD*0.05));
+
+    const overallRisk = riskScore >= 80 ? 'CRITICAL' : riskScore >= 60 ? 'HIGH' :
+      riskScore >= 40 ? 'MODERATE' : riskScore >= 20 ? 'LOW' : 'MINIMAL';
+
+    const criticalPairs = cachedDDInteractions.filter(p => p.severity === 'Critical' || p.severity === 'High');
+    const topConcern = criticalPairs.length > 0
+      ? criticalPairs[0].drugA + ' + ' + criticalPairs[0].drugB + ': ' + criticalPairs[0].mechanism
+      : (interactions.length > 0 ? interactions[0].drugs + ': ' + interactions[0].mechanism : 'Review full interaction list');
+
+    console.log('[CACHE RESPONSE] Returning full response from pair cache — no Claude call needed');
+    return res.json({
+      overall_risk: overallRisk,
+      risk_score: riskScore,
+      summary: interactions.length > 0
+        ? criticalPairs.length + ' significant interaction(s) identified among ' + drugs.length + ' medications. ' + (criticalPairs[0] ? criticalPairs[0].drugA + ' + ' + criticalPairs[0].drugB + ' carries the highest risk.' : '')
+        : 'No significant drug-drug interactions identified among the ' + drugs.length + ' medications in this regimen.',
+      known_interactions: interactions,
+      predictive_interactions: [],
+      polypharmacy_assessment: {
+        overall_burden: drugs.length >= 8 ? 'High polypharmacy burden with ' + drugs.length + ' concurrent medications.' : 'Moderate polypharmacy with ' + drugs.length + ' medications.',
+        cumulative_risks: 'Bleeding Risk: ' + maxBleeding + ', Cardiac: ' + maxCardiac + ', CNS: ' + maxCNS,
+        shared_pathways: 'See individual interaction details above.',
+        cascade_risks: 'Monitor for cumulative effects especially with anticoagulants and CNS agents.',
+        recommendations: 'Review with pharmacist; monitor for bleeding, CNS depression, and cardiac effects.'
+      },
+      dimensions: {
+        'Bleeding Risk': maxBleeding, 'Cardiac Risk': maxCardiac, 'Serotonin Risk': maxSerotonin,
+        'NTI Conflict': maxNTI, 'CNS Risk': maxCNS, 'CYP450 Risk': maxCYP,
+        'Renal/Hepatic': maxRenal, 'Pharmacodynamic': maxPD
+      },
+      key_concern: topConcern,
+      contraindicated: cachedDDInteractions.some(p => p.severity === 'Critical'),
+      executive_summary: overallRisk + ' risk regimen with ' + interactions.length + ' drug interactions identified from ' + drugs.length + ' medications. ' + (criticalPairs.length > 0 ? criticalPairs.length + ' high-priority interaction(s) require attention.' : 'No critical interactions identified.'),
+      data_sources: ['PreComputedCache', 'RxNorm', 'OpenFDA']
+    });
+  }
+
   const realtimeSourcesSet = new Set();
   drugDataArr.forEach(d => d.sources.forEach(s => realtimeSourcesSet.add(s)));
   const realtimeSources = [...realtimeSourcesSet];
