@@ -400,8 +400,8 @@ async function safeFetch(url, ms = 8000) {
 
 async function fetchDrugData(drugName) {
   // Check profile cache first — skips all FDA API calls
-  const cached = loadDrugProfile(drugName);
-  if (cached) return cached;
+  const profileHit = loadDrugProfile(drugName);
+  if (profileHit) return profileHit;
 
   const cacheKey = drugName.toLowerCase().trim();
   const cached = drugDataCache.get(cacheKey);
