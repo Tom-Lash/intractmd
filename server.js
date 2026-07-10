@@ -1036,6 +1036,26 @@ IntractMD is made by Resolve Medical LLC, Cleveland OH. Contact: info@resolve.me
   }
 });
 
+// Computes PCPRS/risk_tier/dimensions from cached DD pairs — shared by the
+// ultra-fast cache path and the slow-path timeout fallback below.
+function calcPcprsFromDD(cachedDDInteractions) {
+  const dims = {
+    'Bleeding Risk':  Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Bleeding Risk'] || 0)),
+    'Cardiac Risk':   Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Cardiac Risk'] || 0)),
+    'Serotonin Risk': Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Serotonin Risk'] || 0)),
+    'CNS Risk':       Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['CNS Risk'] || 0)),
+    'CYP450 Risk':    Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['CYP450 Risk'] || 0)),
+    'Pharmacodynamic':Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Pharmacodynamic'] || 0)),
+  };
+  const pcprs = Math.min(100, Math.round(
+    dims['Bleeding Risk']*0.30 + dims['Cardiac Risk']*0.20 + dims['Serotonin Risk']*0.20 +
+    dims['CNS Risk']*0.15 + dims['CYP450 Risk']*0.10 + dims['Pharmacodynamic']*0.05
+  ));
+  const risk_tier = pcprs >= 80 ? 'Critical' : pcprs >= 60 ? 'High' :
+    pcprs >= 40 ? 'Moderate' : pcprs >= 20 ? 'Low' : 'Minimal';
+  return { pcprs, risk_tier, dimensions: dims };
+}
+
 app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
@@ -1044,10 +1064,10 @@ app.post('/api/proactive-analyze', async (req, res) => {
 
 The patient medication regimen is: ${(drugs||[]).join(', ')}.
 
-Perform TWO analyses: (1) drug-drug interactions, (2) supplement and food warnings.
+Perform TWO analyses: (1) drug-drug interactions, (2) supplement and food warnings. Keep ALL text fields (mechanism, action, risk_title, monitoring_notes) to 1 sentence max.
 
 Return ONLY valid JSON:
-{"pcprs":<0-100>,"risk_tier":"<Minimal|Low|Moderate|High|Critical>","risk_title":"<one sentence>","drug_interactions":[{"drug_a":"<drug>","drug_b":"<drug>","severity":"<Critical|High|Moderate>","mechanism":"<text>","action":"<text>"}],"warnings":[{"drug":"<drug>","interacts_with":"<supplement or food>","category":"<supplement|food>","severity":"<Critical|High|Moderate>","mechanism":"<text>","action":"<text>"}],"avoid_supplements":["<name>"],"caution_supplements":["<name>"],"avoid_foods":["<name>"],"monitoring_notes":"<text>"}`;
+{"pcprs":<0-100>,"risk_tier":"<Minimal|Low|Moderate|High|Critical>","risk_title":"<1 sentence>","drug_interactions":[{"drug_a":"<drug>","drug_b":"<drug>","severity":"<Critical|High|Moderate>","mechanism":"<1 sentence>","action":"<1 sentence>"}],"warnings":[{"drug":"<drug>","interacts_with":"<supplement or food>","category":"<supplement|food>","severity":"<Critical|High|Moderate>","mechanism":"<1 sentence>","action":"<1 sentence>"}],"avoid_supplements":["<name>"],"caution_supplements":["<name>"],"avoid_foods":["<name>"],"monitoring_notes":"<1 sentence>"}`;
     const prompt = req.body.prompt || defaultPrompt;
     if (!drugs || drugs.length < 1) return res.status(400).json({ error: 'Need at least 1 drug' });
 
@@ -1089,19 +1109,151 @@ Return ONLY valid JSON:
       : await Promise.all(drugs.map(fetchDrugData));
     if (allCached) console.log('[PROACTIVE FASTPATH] Skipping FDA calls — all pairs cached');
 
+  // ── ULTRA FAST PATH: Build proactive response from pair cache (no Claude) ──
+  if (allCached && drugs.length >= 2) {
+    const ddInteractions = cachedDDInteractions.map(p => ({
+      drug_a: p.drugA, drug_b: p.drugB, severity: p.severity,
+      mechanism: p.mechanism || '', action: p.action || 'Consult your pharmacist or physician.'
+    }));
+
+    const { pcprs, risk_tier, dimensions } = calcPcprsFromDD(cachedDDInteractions);
+    const criticals = cachedDDInteractions.filter(p => p.severity === 'Critical' || p.severity === 'High');
+
+    // Build supplement warnings from known drug profiles
+    const knownSupplWarnings = {
+      'warfarin':     [{ interacts_with:"Fish Oil", severity:'High', mechanism:'Additive antiplatelet effect increases bleeding risk.', action:'Avoid Fish Oil while taking Warfarin.' },
+                       { interacts_with:"Vitamin E", severity:'Moderate', mechanism:'May potentiate anticoagulant effect.', action:'Limit Vitamin E supplementation.' },
+                       { interacts_with:"Ginkgo Biloba", severity:'High', mechanism:'Antiplatelet properties increase hemorrhagic risk.', action:'Avoid Ginkgo Biloba.' },
+                       { interacts_with:"St. John's Wort", severity:'Critical', mechanism:'CYP2C9 inducer significantly reduces warfarin levels.', action:"Do not take St. John's Wort." }],
+      'fluoxetine':   [{ interacts_with:"St. John's Wort", severity:'Critical', mechanism:'Serotonin syndrome risk.', action:"Avoid St. John's Wort." }],
+      'clopidogrel':  [{ interacts_with:"Fish Oil", severity:'Moderate', mechanism:'Additive antiplatelet effect.', action:'Discuss with physician before taking Fish Oil.' },
+                       { interacts_with:"Turmeric", severity:'Moderate', mechanism:'Antiplatelet properties may increase bleeding risk.', action:'Use caution with Turmeric supplements.' },
+                       { interacts_with:"Garlic", severity:'Moderate', mechanism:'Antiplatelet effect may be additive.', action:'Discuss Garlic supplements with physician.' }],
+      'methotrexate':  [{ interacts_with:"Echinacea", severity:'Moderate', mechanism:'May stimulate immune system counteracting methotrexate.', action:'Avoid Echinacea while on Methotrexate.' },
+                        { interacts_with:"Cats Claw", severity:'Moderate', mechanism:'Immunostimulant may interfere with therapy.', action:'Avoid Cats Claw.' }],
+      'levothyroxine': [{ interacts_with:"Biotin", severity:'Moderate', mechanism:'High-dose biotin may interfere with thyroid lab tests.', action:'Stop Biotin 2 days before thyroid tests.' },
+                        { interacts_with:"Iron", severity:'High', mechanism:'Iron chelates levothyroxine reducing absorption.', action:'Separate Iron and Levothyroxine by at least 4 hours.' },
+                        { interacts_with:"Magnesium", severity:'Moderate', mechanism:'May reduce levothyroxine absorption.', action:'Separate Magnesium and Levothyroxine by 4 hours.' },
+                        { interacts_with:"Calcium", severity:'High', mechanism:'Calcium carbonate significantly reduces levothyroxine absorption.', action:'Take Levothyroxine 4 hours apart from Calcium.' }],
+      'prednisone':    [{ interacts_with:"Licorice Root", severity:'High', mechanism:'May potentiate corticosteroid effects.', action:'Avoid Licorice Root while on Prednisone.' },
+                        { interacts_with:"DHEA", severity:'Moderate', mechanism:'Hormonal interaction may alter effects.', action:'Discuss DHEA with physician.' },
+                        { interacts_with:"Ginseng", severity:'Moderate', mechanism:'May affect immune modulation.', action:'Use caution with Ginseng.' }],
+      'furosemide':    [{ interacts_with:"Hawthorn", severity:'Moderate', mechanism:'Additive hypotensive and diuretic effects.', action:'Monitor blood pressure carefully with Hawthorn.' },
+                        { interacts_with:"Potassium", severity:'Low', mechanism:'Furosemide causes potassium loss — supplementation may be appropriate.', action:'Discuss Potassium supplementation with physician.' }],
+      'sertraline':    [{ interacts_with:"St. John's Wort", severity:'Critical', mechanism:'Combined serotonergic effect may cause serotonin syndrome.', action:"Do not take St. John's Wort." },
+                        { interacts_with:"SAMe", severity:'High', mechanism:'SAMe has serotonergic properties — combination risk.', action:'Avoid SAMe with Sertraline.' },
+                        { interacts_with:"5-HTP", severity:'High', mechanism:'Serotonin precursor increases serotonin syndrome risk.', action:'Avoid 5-HTP with Sertraline.' }],
+      'simvastatin':   [{ interacts_with:"Red Yeast Rice", severity:'High', mechanism:'Additive HMG-CoA reductase inhibition increases myopathy risk.', action:'Avoid Red Yeast Rice.' },
+                        { interacts_with:"CoQ10", severity:'Low', mechanism:'Statins deplete CoQ10 — supplementation may be beneficial.', action:'CoQ10 supplementation is generally considered safe.' },
+                        { interacts_with:"Niacin", severity:'High', mechanism:'Combined risk of myopathy and hepatotoxicity.', action:'Avoid high-dose Niacin with Simvastatin.' }],
+      'aspirin':      [{ interacts_with:"Fish Oil", severity:'Moderate', mechanism:'Additive antiplatelet effect increases bleeding risk.', action:'Use caution with Fish Oil.' }],
+      'metformin':    [{ interacts_with:"Chromium", severity:'Moderate', mechanism:'May enhance hypoglycemic effect.', action:'Monitor blood sugar carefully.' }],
+      'lisinopril':   [{ interacts_with:"Potassium", severity:'High', mechanism:'ACE inhibitors increase potassium retention.', action:'Avoid potassium supplements.' }],
+      'digoxin':      [{ interacts_with:"St. John's Wort", severity:'Critical', mechanism:'P-gp inducer reduces digoxin levels significantly.', action:"Do not take St. John's Wort." }],
+      'metoprolol':   [{ interacts_with:"CoQ10", severity:'Low', mechanism:'Possible interaction with cardiac beta receptors.', action:'Inform physician if taking CoQ10.' }],
+      'atorvastatin': [{ interacts_with:"Red Yeast Rice", severity:'High', mechanism:'Additive HMG-CoA reductase inhibition increases myopathy risk.', action:'Avoid Red Yeast Rice.' }],
+    };
+
+    const warnings = [];
+    const avoid_supplements = new Set();
+    const caution_supplements = new Set();
+    const avoid_foods = [];
+
+    drugs.forEach(drug => {
+      const key = drug.toLowerCase();
+      const supps = knownSupplWarnings[key] || [];
+      supps.forEach(w => {
+        warnings.push({ drug, ...w, category: 'supplement' });
+        if (w.severity === 'Critical' || w.severity === 'High') avoid_supplements.add(w.interacts_with);
+        else caution_supplements.add(w.interacts_with);
+      });
+    });
+
+    // Add grapefruit warning for statins/CCBs
+    const grapefruitDrugs = ['atorvastatin','simvastatin','lovastatin','amlodipine','nifedipine','diltiazem','verapamil'];
+    const hasGrapefruitDrug = drugs.some(d => grapefruitDrugs.includes(d.toLowerCase()));
+    if (hasGrapefruitDrug) {
+      avoid_foods.push('Grapefruit and grapefruit juice');
+      warnings.push({ drug: drugs.find(d => grapefruitDrugs.includes(d.toLowerCase())), interacts_with: 'Grapefruit juice', category: 'food', severity: 'High', mechanism: 'CYP3A4 inhibition increases drug levels.', action: 'Avoid grapefruit and grapefruit juice.' });
+    }
+
+    console.log('[PROACTIVE CACHE RESPONSE] Returning from pair cache — no Claude call');
+    return res.json({
+      pcprs,
+      risk_tier,
+      risk_title: criticals.length > 0
+        ? criticals.length + ' significant drug interaction(s) identified — review with pharmacist'
+        : 'Drug regimen analyzed — ' + ddInteractions.length + ' interaction(s) found',
+      drug_interactions: ddInteractions,
+      warnings,
+      avoid_supplements: [...avoid_supplements],
+      caution_supplements: [...caution_supplements],
+      avoid_foods,
+      monitoring_notes: pcprs >= 60
+        ? 'High-risk regimen. Regular monitoring recommended. Consult pharmacist before adding any supplements.'
+        : 'Moderate monitoring recommended. Discuss any new supplements with your pharmacist.',
+      dimensions
+    });
+  }
+
     const grounding = buildGroundingContext(drugDataArr);
     const groundedPrompt = grounding + cachedSummary + prompt;
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: (drugs||[]).length >= 10 ? 5000 : 3000, messages: [{ role: 'user', content: groundedPrompt }] })
-    });
-    const d = await r.json();
-    const raw = d.content?.[0]?.text || '';
+
+    // Falls back to a cache-derived response (drug-drug data only) if the AI
+    // call times out or returns unparseable JSON, so large regimens never hang
+    // past the client's timeout with nothing to show.
+    const buildProactiveFallback = () => {
+      const { pcprs, risk_tier, dimensions } = calcPcprsFromDD(cachedDDInteractions);
+      return {
+        pcprs, risk_tier,
+        risk_title: risk_tier + ' risk based on known drug-drug interactions (supplement/food analysis unavailable — please retry).',
+        drug_interactions: cachedDDInteractions.map(p => ({
+          drug_a: p.drugA, drug_b: p.drugB, severity: p.severity,
+          mechanism: p.mechanism || '', action: p.action || 'Consult your pharmacist or physician.'
+        })),
+        warnings: [],
+        avoid_supplements: [],
+        caution_supplements: [],
+        avoid_foods: [],
+        monitoring_notes: 'Full supplement/food analysis is taking longer than expected — please retry shortly for complete results.',
+        dimensions,
+        partial: true
+      };
+    };
+
+    let raw;
+    try {
+      const ctrl = new AbortController();
+      const abortTimer = setTimeout(() => ctrl.abort(), 25000);
+      try {
+        const r = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          signal: ctrl.signal,
+          headers: { 'Content-Type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
+          body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: (drugs||[]).length >= 10 ? 5000 : 3000, messages: [{ role: 'user', content: groundedPrompt }] })
+        });
+        const d = await r.json();
+        raw = d.content?.[0]?.text || '';
+      } finally {
+        clearTimeout(abortTimer);
+      }
+    } catch (fetchErr) {
+      console.error('[PROACTIVE] AI call failed/timed out:', fetchErr.message);
+      return res.json(buildProactiveFallback());
+    }
+
     const clean = raw.replace(/```json[\s]*/g,'').replace(/```[\s]*/g,'').trim();
     const m = clean.match(/{[\s\S]*}/);
-    if (!m) { console.error('[PROACTIVE] No JSON:', raw.slice(0,200)); throw new Error('No JSON'); }
-    res.json(JSON.parse(m[0]));
+    if (!m) {
+      console.error('[PROACTIVE] No JSON:', raw.slice(0,200));
+      return res.json(buildProactiveFallback());
+    }
+    try {
+      res.json(JSON.parse(m[0]));
+    } catch (parseErr) {
+      console.error('[PROACTIVE] JSON parse failed:', parseErr.message);
+      res.json(buildProactiveFallback());
+    }
   } catch(e) {
     console.error('[PROACTIVE]', e.message);
     res.status(500).json({ error: e.message });
