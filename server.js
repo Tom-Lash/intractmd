@@ -591,8 +591,15 @@ app.post('/api/analyze', async (req, res) => {
     const maxRenal    = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Renal/Hepatic'] || 0));
     const maxPD       = Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Pharmacodynamic'] || 0));
 
-    const riskScore = Math.round((maxBleeding*0.25 + maxCardiac*0.15 + maxSerotonin*0.15 +
+    const weightedScore = Math.round((maxBleeding*0.25 + maxCardiac*0.15 + maxSerotonin*0.15 +
       maxNTI*0.15 + maxCNS*0.10 + maxCYP*0.08 + maxRenal*0.07 + maxPD*0.05));
+
+    // Regimen-level risk must never rate below its most severe individual
+    // interaction — a low dimension-weight (e.g. CYP450 at 8%) can otherwise
+    // dilute a High/Critical-severity pair down to a misleadingly low score.
+    const severityFloor = { Critical: 80, High: 60, Moderate: 40, Low: 20, Minimal: 0 };
+    const maxSeverityScore = Math.max(0, ...cachedDDInteractions.map(p => severityFloor[p.severity] || 0));
+    const riskScore = Math.max(weightedScore, maxSeverityScore);
 
     const overallRisk = riskScore >= 80 ? 'CRITICAL' : riskScore >= 60 ? 'HIGH' :
       riskScore >= 40 ? 'MODERATE' : riskScore >= 20 ? 'LOW' : 'MINIMAL';
@@ -1047,10 +1054,17 @@ function calcPcprsFromDD(cachedDDInteractions) {
     'CYP450 Risk':    Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['CYP450 Risk'] || 0)),
     'Pharmacodynamic':Math.max(0, ...cachedDDInteractions.map(p => p.dimensions?.['Pharmacodynamic'] || 0)),
   };
-  const pcprs = Math.min(100, Math.round(
+  const weightedPcprs = Math.round(
     dims['Bleeding Risk']*0.30 + dims['Cardiac Risk']*0.20 + dims['Serotonin Risk']*0.20 +
     dims['CNS Risk']*0.15 + dims['CYP450 Risk']*0.10 + dims['Pharmacodynamic']*0.05
-  ));
+  );
+
+  // Same floor as calcPcprsFromDD's analyze-endpoint counterpart: a regimen's
+  // PCPRS must never rate below its most severe individual interaction.
+  const severityFloor = { Critical: 80, High: 60, Moderate: 40, Low: 20, Minimal: 0 };
+  const maxSeverityScore = Math.max(0, ...cachedDDInteractions.map(p => severityFloor[p.severity] || 0));
+  const pcprs = Math.min(100, Math.max(weightedPcprs, maxSeverityScore));
+
   const risk_tier = pcprs >= 80 ? 'Critical' : pcprs >= 60 ? 'High' :
     pcprs >= 40 ? 'Moderate' : pcprs >= 20 ? 'Low' : 'Minimal';
   return { pcprs, risk_tier, dimensions: dims };
