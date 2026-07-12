@@ -538,7 +538,7 @@ app.post('/api/analyze', async (req, res) => {
 
   const { drugs = [], patient, supplements = [], foods = [], language = 'en' } = req.body;
   const meds = drugs.length + supplements.length;
-  if (meds + foods.length < 2 || meds < 1) return res.status(400).json({ error: 'At least 2 medications/supplements required' });
+  if (meds + foods.length < 1) return res.status(400).json({ error: 'At least 1 medication/supplement required' });
 
   const ptL = [];
   if (patient) {
