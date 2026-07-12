@@ -25,6 +25,9 @@ const TREND_FILE = path.join(RESULTS_DIR, 'trend.json');
 const args = process.argv.slice(2);
 const SCHEDULE_MODE = args.includes('--schedule');
 const REPORT_MODE = args.includes('--report');
+const PROACTIVE_ONLY = args.includes('--proactive-only');
+const ANALYZE_ONLY = args.includes('--analyze-only');
+const RESUME_MODE = args.includes('--resume');
 
 if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
 
@@ -186,7 +189,7 @@ const PLAN_NAMES = ['Blue Cross Blue Shield','UnitedHealthcare','Aetna','Cigna',
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-async function apiCall(endpoint, body, timeoutMs = 35000) {
+async function apiCall(endpoint, body, timeoutMs = 35000, _retried = false) {
   const start = Date.now();
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
@@ -201,6 +204,10 @@ async function apiCall(endpoint, body, timeoutMs = 35000) {
     return { data, ms: Date.now() - start, error: null, status: r.status };
   } catch(e) {
     clearTimeout(t);
+    // A single transient prod hiccup (mid-deploy blip, brief edge error page)
+    // can return non-JSON for one request out of thousands — retry once
+    // before counting it as a real failure.
+    if (!_retried) return apiCall(endpoint, body, timeoutMs, true);
     return { data: null, ms: Date.now() - start, error: e.message, status: 0 };
   }
 }
@@ -279,12 +286,11 @@ async function runAnalyzeTest(test, idx) {
     accuracy_correct: null,
     response_fast: result.ms < 30000,
   };
-  const validSev = ['major','moderate','minor','Critical','High','Moderate','Low','Minimal'];
-  if(interactions && interactions.length > 0) checks.severity_valid = interactions.every(i => validSev.includes(i.severity));
+  // Normalize severity: cache uses Critical/High/Moderate/Low/Minimal, Claude uses major/moderate/minor(/minimal/none)
+  const sevMap = { 'critical': 'major', 'high': 'major', 'major': 'major', 'moderate': 'moderate', 'low': 'minor', 'minor': 'minor', 'minimal': 'minor', 'none': 'minor' };
+  if(interactions && interactions.length > 0) checks.severity_valid = interactions.every(i => (i.severity || '').toLowerCase() in sevMap);
   if(test.expect && interactions && interactions.length > 0) {
     const rawSev = (interactions[0]?.severity || '').toLowerCase();
-    // Normalize severity: cache uses High/Moderate/Low, Claude uses major/moderate/minor
-    const sevMap = { 'critical': 'major', 'high': 'major', 'major': 'major', 'moderate': 'moderate', 'low': 'minor', 'minor': 'minor', 'minimal': 'minor', 'none': 'minor' };
     const topSev = sevMap[rawSev] || rawSev;
     const expectedLow = (test.expect || '').toLowerCase();
     const normExpected = sevMap[expectedLow] || expectedLow;
@@ -490,8 +496,17 @@ async function runAllTests() {
   const dateStr = new Date().toISOString().slice(0,10);
   const jsonFile = path.join(RESULTS_DIR, `results_${dateStr}.json`);
   const reportFile = path.join(RESULTS_DIR, `report_${dateStr}.txt`);
+  const checkpointFile = path.join(RESULTS_DIR, `checkpoint_${dateStr}.json`);
   const allResults = { analyze: [], proactive: [], outreach: [] };
   const startTime = Date.now();
+
+  if (RESUME_MODE && fs.existsSync(checkpointFile)) {
+    const cp = JSON.parse(fs.readFileSync(checkpointFile, 'utf8'));
+    ['analyze','proactive','outreach'].forEach(k => {
+      if (Array.isArray(cp[k]) && cp[k].length === 500) allResults[k] = cp[k];
+    });
+    console.log(`[RESUME] Loaded checkpoint — analyze:${allResults.analyze.length} proactive:${allResults.proactive.length} outreach:${allResults.outreach.length}`);
+  }
 
   console.log('╔══════════════════════════════════════════════════════════════╗');
   console.log('║     IntractMD Automated Pressure Test Suite v2               ║');
@@ -501,6 +516,9 @@ async function runAllTests() {
   console.log('╚══════════════════════════════════════════════════════════════╝\n');
 
   // SURFACE 1
+  if (allResults.analyze.length === 500) {
+    console.log('━━━ SURFACE 1: Main App (/api/analyze) — SKIPPED (from checkpoint) ━━━');
+  } else {
   console.log('━━━ SURFACE 1: Main App (/api/analyze) ━━━━━━━━━━━━━━━━━━━━━━━');
   const analyzeTests = buildAnalyzeTests();
   for(let i = 0; i < analyzeTests.length; i++) {
@@ -514,8 +532,13 @@ async function runAllTests() {
     await sleep(DELAY_MS);
   }
   console.log('\n');
+  }
+  fs.writeFileSync(path.join(RESULTS_DIR, `checkpoint_${dateStr}.json`), JSON.stringify(allResults, null, 2));
 
   // SURFACE 2
+  if (allResults.proactive.length === 500) {
+    console.log('━━━ SURFACE 2: Proactive (/api/proactive-analyze) — SKIPPED (from checkpoint) ━━━');
+  } else {
   console.log('━━━ SURFACE 2: Proactive (/api/proactive-analyze) ━━━━━━━━━━━━');
   const proactiveTests = buildProactiveTests();
   for(let i = 0; i < proactiveTests.length; i++) {
@@ -529,8 +552,13 @@ async function runAllTests() {
     await sleep(DELAY_MS);
   }
   console.log('\n');
+  }
+  fs.writeFileSync(path.join(RESULTS_DIR, `checkpoint_${dateStr}.json`), JSON.stringify(allResults, null, 2));
 
   // SURFACE 3
+  if (allResults.outreach.length === 500) {
+    console.log('━━━ SURFACE 3: Clinical Outreach (/api/generate-outreach) — SKIPPED (from checkpoint) ━━━');
+  } else {
   console.log('━━━ SURFACE 3: Clinical Outreach (/api/generate-outreach) ━━━━');
   const outreachTests = buildOutreachTests();
   for(let i = 0; i < outreachTests.length; i++) {
@@ -544,6 +572,8 @@ async function runAllTests() {
     await sleep(DELAY_MS);
   }
   console.log('\n');
+  }
+  fs.writeFileSync(path.join(RESULTS_DIR, `checkpoint_${dateStr}.json`), JSON.stringify(allResults, null, 2));
 
   // SUMMARY
   const totalElapsed = Math.round((Date.now() - startTime) / 1000);
@@ -600,12 +630,70 @@ OVERALL SUMMARY
   return runSummary;
 }
 
+async function runProactiveOnly() {
+  const dateStr = new Date().toISOString().slice(0,10);
+  const startTime = Date.now();
+  console.log(`━━━ SURFACE 2 ONLY: Proactive (/api/proactive-analyze) — Seed ${SEED} ━━━`);
+  const proactiveTests = buildProactiveTests();
+  const results = [];
+  for(let i = 0; i < proactiveTests.length; i++) {
+    const r = await runProactiveTest(proactiveTests[i], i+1);
+    results.push(r);
+    process.stdout.write(r.passed ? '.' : 'x');
+    if((i+1) % 50 === 0) {
+      const p = results.filter(x=>x.passed).length;
+      console.log(` [${i+1}/${proactiveTests.length}] ${(p/(i+1)*100).toFixed(1)}%`);
+    }
+    await sleep(DELAY_MS);
+  }
+  console.log('\n');
+
+  const elapsedSec = Math.round((Date.now() - startTime) / 1000);
+  const report = `IntractMD Proactive-Only Test Report\nDate: ${dateStr}  |  Seed: ${SEED}  |  Runtime: ${Math.floor(elapsedSec/60)}m ${elapsedSec%60}s\n`
+    + generateReport('IntractMD Proactive (/api/proactive-analyze)', results);
+  const reportFile = path.join(RESULTS_DIR, `proactive_only_${dateStr}.txt`);
+  fs.writeFileSync(reportFile, report);
+  console.log(report);
+  console.log(`\nReport: ${reportFile}`);
+}
+
+async function runAnalyzeOnly() {
+  const dateStr = new Date().toISOString().slice(0,10);
+  const startTime = Date.now();
+  console.log(`━━━ SURFACE 1 ONLY: Main App (/api/analyze) — Seed ${SEED} ━━━`);
+  const analyzeTests = buildAnalyzeTests();
+  const results = [];
+  for(let i = 0; i < analyzeTests.length; i++) {
+    const r = await runAnalyzeTest(analyzeTests[i], i+1);
+    results.push(r);
+    process.stdout.write(r.passed ? '.' : 'x');
+    if((i+1) % 50 === 0) {
+      const p = results.filter(x=>x.passed).length;
+      console.log(` [${i+1}/${analyzeTests.length}] ${(p/(i+1)*100).toFixed(1)}%`);
+    }
+    await sleep(DELAY_MS);
+  }
+  console.log('\n');
+
+  const elapsedSec = Math.round((Date.now() - startTime) / 1000);
+  const report = `IntractMD Analyze-Only Test Report\nDate: ${dateStr}  |  Seed: ${SEED}  |  Runtime: ${Math.floor(elapsedSec/60)}m ${elapsedSec%60}s\n`
+    + generateReport('IntractMD Main App (/api/analyze)', results);
+  const reportFile = path.join(RESULTS_DIR, `analyze_only_${dateStr}.txt`);
+  fs.writeFileSync(reportFile, report);
+  console.log(report);
+  console.log(`\nReport: ${reportFile}`);
+}
+
 // ── ENTRY POINT ───────────────────────────────────────────────────────────
 
 if(REPORT_MODE) {
   printTrendOnly();
 } else if(SCHEDULE_MODE) {
   scheduleNightly();
+} else if(PROACTIVE_ONLY) {
+  runProactiveOnly().catch(e => { console.error('Fatal:', e); process.exit(1); });
+} else if(ANALYZE_ONLY) {
+  runAnalyzeOnly().catch(e => { console.error('Fatal:', e); process.exit(1); });
 } else {
   runAllTests().catch(e => { console.error('Fatal:', e); process.exit(1); });
 }

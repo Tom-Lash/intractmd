@@ -1263,7 +1263,14 @@ Return ONLY valid JSON:
       return res.json(buildProactiveFallback());
     }
     try {
-      res.json(JSON.parse(m[0]));
+      const parsed = JSON.parse(m[0]);
+      try {
+        extractProactiveProfiles(drugs, profileLookup.missing, parsed.warnings)
+          .forEach(profile => writeProactiveProfile(profile.drug, profile));
+      } catch (cacheWriteErr) {
+        console.error('[PROACTIVE CACHE WRITE]', cacheWriteErr.message);
+      }
+      res.json(parsed);
     } catch (parseErr) {
       console.error('[PROACTIVE] JSON parse failed:', parseErr.message);
       res.json(buildProactiveFallback());
@@ -1293,6 +1300,35 @@ function loadProactiveProfile(drugName) {
     } catch(e) { return null; }
   }
   return null;
+}
+
+// Persist an AI-fallback-computed profile so the next request for this drug
+// (from a nightly test run or a real user) is a cache hit instead of another
+// Claude call — mirrors writePairCache's self-healing behavior for pairs.
+function writeProactiveProfile(drugName, profile) {
+  try {
+    const key = slugDrug(drugName);
+    fs.writeFileSync(path.join(PROACTIVE_CACHE_DIR, key + '.json'), JSON.stringify(profile, null, 2), 'utf8');
+    proactiveProfileCache.set(key, profile);
+  } catch(e) { console.error('[PROACTIVE CACHE WRITE ERROR]', e.message); }
+}
+
+// Split the AI's regimen-level warnings back into per-drug profiles for
+// each drug that was a cache miss, so writeProactiveProfile can persist them.
+function extractProactiveProfiles(drugs, missingDrugs, warnings) {
+  const missingLower = new Set((missingDrugs || []).map(d => d.toLowerCase()));
+  const isAvoid = sev => sev === 'Critical' || sev === 'High';
+  return drugs.filter(d => missingLower.has(d.toLowerCase())).map(drug => {
+    const dWarnings = (warnings || []).filter(w => (w.drug || '').toLowerCase() === drug.toLowerCase());
+    const toItem = w => ({ name: w.interacts_with, severity: w.severity, mechanism: w.mechanism, action: w.action });
+    return {
+      drug,
+      avoid_supplements: dWarnings.filter(w => w.category === 'supplement' && isAvoid(w.severity)).map(toItem),
+      caution_supplements: dWarnings.filter(w => w.category === 'supplement' && !isAvoid(w.severity)).map(toItem),
+      avoid_foods: dWarnings.filter(w => w.category === 'food' && isAvoid(w.severity)).map(toItem),
+      caution_foods: dWarnings.filter(w => w.category === 'food' && !isAvoid(w.severity)).map(toItem),
+    };
+  });
 }
 
 
