@@ -1648,6 +1648,96 @@ app.get('/clinical', (req, res) => {
 // ── END CLINICAL ROUTE ────────────────────────────────────────────────────
 
 // ── STEP 6: OUTREACH MESSAGE GENERATOR ──────────────────────────────────────
+
+// Deterministic, non-AI outreach message built from the already-computed
+// findings — used when the AI call fails or returns malformed JSON, so a
+// rare generation hiccup never surfaces as a hard failure to the user.
+// Mirrors buildProactiveFallback's role for /api/proactive-analyze.
+function buildOutreachFallback(drugs, confirmedFindings, computedFindings, predictiveFindings, patientName, caseManagerName, planName, language) {
+  const isEs = language === 'es';
+  const bullets = [];
+
+  confirmedFindings.forEach(f => {
+    bullets.push(isEs
+      ? `Vemos que usted está tomando esta combinación de medicamentos: ${f.finding}. Esto requiere supervisión cuidadosa. ${f.action}`
+      : `We see that you are taking this combination: ${f.finding} — this requires careful monitoring. ${f.action}`);
+  });
+
+  computedFindings.forEach(f => {
+    const patientReported = /patient confirms regular consumption of/i.test(f.finding);
+    if (patientReported) {
+      const item = f.finding.replace(/^Patient confirms regular consumption of /i, '');
+      bullets.push(isEs
+        ? `Debido a que usted consume regularmente ${item}, esto es importante: hable con su médico o farmacéutico. ${f.action}`
+        : `Because you regularly consume ${item}, this is important: please discuss it with your doctor or pharmacist. ${f.action}`);
+    } else {
+      bullets.push(isEs
+        ? `Nuestra revisión de medicamentos identificó lo siguiente: ${f.finding}. ${f.action}`
+        : `Our medication review identified the following: ${f.finding}. ${f.action}`);
+    }
+  });
+
+  predictiveFindings.slice(0, 5).forEach(f => {
+    const name = f.finding.split(' (')[0];
+    bullets.push(isEs
+      ? `Según sus medicamentos, es posible que deba evitar ${name}. ${f.action}`
+      : `Based on your medications, you may want to avoid ${name}. ${f.action}`);
+  });
+
+  if (bullets.length === 0) {
+    bullets.push(isEs
+      ? 'Hemos revisado sus medicamentos actuales; no se identificaron problemas urgentes en este momento.'
+      : 'We reviewed your current medications; no urgent concerns were identified at this time.');
+  }
+
+  const closingLine = isEs
+    ? `Por favor comuníquese con nosotros si tiene alguna pregunta. Atentamente, ${caseManagerName}`
+    : `Please reach out to us with any questions. Warm regards, ${caseManagerName}`;
+
+  const emailBody = [
+    isEs ? `Estimado/a ${patientName},` : `Dear ${patientName},`,
+    '',
+    isEs
+      ? 'Hemos completado una revisión de sus medicamentos actuales y queremos compartir información importante.'
+      : "We've completed a review of your current medications and wanted to share some important information.",
+    '',
+    bullets.map(b => '- ' + b).join('\n'),
+    '',
+    isEs
+      ? 'Estamos aquí para apoyar su salud. Si tiene alguna pregunta, no dude en comunicarse con nosotros.'
+      : "We're here to support your health. If you have any questions, please don't hesitate to reach out.",
+    '',
+    closingLine
+  ].join('\n');
+
+  const smsBody = (
+    (isEs ? `Hola ${patientName} – Revisamos sus medicamentos. ` : `Hi ${patientName} – We reviewed your medications. `) +
+    (isEs ? 'Por favor comuníquese con nosotros si tiene preguntas.' : "Questions? We're here to help.")
+  ).slice(0, 155);
+
+  return {
+    email: {
+      subject: isEs ? `${patientName} – Revisión Importante de Medicamentos` : `${patientName} – Important Medication Review`,
+      body: emailBody
+    },
+    sms: { body: smsBody },
+    case_manager_script: {
+      opening: isEs
+        ? `Hola ${patientName}, le llamo de su equipo de farmacia en ${planName}.`
+        : `Hi ${patientName}, I'm calling from your pharmacy team at ${planName}.`,
+      key_points: bullets,
+      closing: closingLine
+    },
+    confidence_summary: {
+      confirmed_count: confirmedFindings.length,
+      computed_count: computedFindings.length,
+      predictive_count: predictiveFindings.length,
+      highest_tier_used: confirmedFindings.length > 0 ? 'CONFIRMED' : computedFindings.length > 0 ? 'COMPUTED' : 'PREDICTIVE'
+    },
+    fallback: true
+  };
+}
+
 app.post('/api/generate-outreach', async (req, res) => {
   try {
     const {
@@ -1766,28 +1856,31 @@ Return ONLY valid JSON (no markdown):
   }
 }`;
 
-    const claudeResp = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': k, 'anthropic-version': '2023-06-01' },
-      body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 2000,
-        messages: [{ role: 'user', content: prompt }] })
-    });
+    let result;
+    try {
+      const claudeResp = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': k, 'anthropic-version': '2023-06-01' },
+        body: JSON.stringify({ model: 'claude-haiku-4-5-20251001', max_tokens: 2000,
+          messages: [{ role: 'user', content: prompt }] })
+      });
+      if (!claudeResp.ok) throw new Error('AI API error: ' + claudeResp.status);
 
-    if (!claudeResp.ok) {
-      const err = await claudeResp.text();
-      return res.status(502).json({ error: 'AI API error' });
+      const claudeData = await claudeResp.json();
+      const raw = claudeData.content?.[0]?.text || '';
+      const clean = raw.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
+      const m = clean.match(/\{[\s\S]*\}/);
+      if (!m) throw new Error('No JSON in response');
+
+      result = JSON.parse(m[0]);
+    } catch (genErr) {
+      console.error('[OUTREACH] AI generation failed, using fallback:', genErr.message);
+      result = buildOutreachFallback(drugs, confirmedFindings, computedFindings, predictiveFindings, patientName, caseManagerName, planName, language);
     }
 
-    const claudeData = await claudeResp.json();
-    const raw = claudeData.content?.[0]?.text || '';
-    const clean = raw.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
-    const m = clean.match(/\{[\s\S]*\}/);
-    if (!m) throw new Error('No JSON in response');
-
-    const result = JSON.parse(m[0]);
-
     // Step 2: Translate to Spanish if requested (English-first for clinical accuracy)
-    if (language === 'es' && result.email && result.sms) {
+    // Skip for the fallback path — it's already localized directly in buildOutreachFallback.
+    if (language === 'es' && result.email && result.sms && !result.fallback) {
       const translatePrompt = `Translate this patient medication outreach from English to Spanish. Keep all drug names in English/generic form. Keep clinical facts identical. Closing must be "Atentamente, ${caseManagerName}". SMS under 160 chars.
 
 Email subject: ${JSON.stringify(result.email.subject)}

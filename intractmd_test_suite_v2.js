@@ -276,7 +276,7 @@ async function runAnalyzeTest(test, idx) {
   const score = d && (d.risk_score ?? d.pcprs ?? d.score ?? d.overall_score ?? (typeof d.overall_risk === "string" ? 50 : null));
   const interactions = d && (d.known_interactions || d.interactions || d.drug_interactions || []);
   const checks = {
-    api_success: !result.error && d !== null,
+    api_success: !result.error && d !== null && result.status < 400,
     has_risk_score: !!(d && (typeof d.risk_score === 'number' || typeof d.overall_risk === 'string' || typeof d.risk_tier === 'string')),
     score_in_range: !!(d && (typeof d.overall_risk === 'string' || (typeof d.risk_score === 'number' && d.risk_score >= 0 && d.risk_score <= 100))),
     has_interactions: Array.isArray(interactions),
@@ -306,7 +306,7 @@ async function runProactiveTest(test, idx) {
   const result = await apiCall('/api/proactive-analyze', { drugs: test.drugs });
   const d = result.data;
   const checks = {
-    api_success: !result.error && d !== null,
+    api_success: !result.error && d !== null && result.status < 400,
     has_pcprs: d && typeof d.pcprs === 'number',
     score_in_range: d && d.pcprs >= 0 && d.pcprs <= 100,
     has_warnings_array: d && Array.isArray(d.warnings),
@@ -337,7 +337,7 @@ async function runOutreachTest(test, idx) {
   const d = result.data;
   const emailBody = (d && d.email && d.email.body) || '';
   const checks = {
-    api_success: !result.error && d !== null,
+    api_success: !result.error && d !== null && result.status < 400,
     has_email: !!(d && d.email),
     has_sms: !!(d && d.sms),
     has_script: !!(d && d.case_manager_script),
