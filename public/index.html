@@ -471,7 +471,7 @@ button.sidebar-btn.sb-video:hover{background:#0D4F9E !important;border-color:#0D
 <div class="lbl" style="margin-bottom:10px" data-i18n="pt.optional">Optional - improves AI analysis</div>
 <div class="grid2">
 <div class="fg"><label data-i18n="pt.age">Age</label><input type="number" id="p-age" placeholder="e.g. 68"/></div>
-<div class="fg"><label data-i18n="pt.wt">Weight (kg)</label><input type="number" id="p-wt" placeholder="e.g. 75"/></div>
+<div class="fg"><label data-i18n="pt.wt">Weight (lbs)</label><input type="number" id="p-wt" placeholder="e.g. 165"/></div>
 <div class="fg"><label data-i18n="pt.sex">Sex</label><select id="p-sex"><option value="">Not specified</option><option>Male</option><option>Female</option><option>Other</option></select></div>
 <div class="fg"><label data-i18n="pt.ren">Renal function</label><select id="p-ren"><option value="">Not specified</option><option>Normal</option><option>Mild impairment</option><option>Moderate impairment</option><option>Severe impairment</option><option>End-stage</option></select></div>
 <div class="fg"><label data-i18n="pt.hep">Hepatic function</label><select id="p-hep"><option value="">Not specified</option><option>Normal</option><option>Mild (Child-Pugh A)</option><option>Moderate (Child-Pugh B)</option><option>Severe (Child-Pugh C)</option></select></div>
@@ -724,7 +724,7 @@ var TR={
   'speak.listening':{en:'Listening...',es:'Escuchando...'},
   'pt.optional':{en:'Optional - improves AI analysis',es:'Opcional — mejora el análisis de IA'},
   'pt.age':{en:'Age',es:'Edad'},
-  'pt.wt':{en:'Weight (kg)',es:'Peso (kg)'},
+  'pt.wt':{en:'Weight (lbs)',es:'Peso (lbs)'},
   'pt.sex':{en:'Sex',es:'Sexo'},
   'pt.ren':{en:'Renal function',es:'Función renal'},
   'pt.hep':{en:'Hepatic function',es:'Función hepática'},
@@ -1489,7 +1489,7 @@ function buildPrintReport(ai){
   var pt=getPatient();
   var ptL=[];
   if(pt.age)ptL.push('Age: '+pt.age);
-  if(pt.weight)ptL.push('Weight: '+pt.weight+' kg');
+  if(pt.weight)ptL.push('Weight: '+pt.weight+' lbs');
   if(pt.sex)ptL.push('Sex: '+pt.sex);
   if(pt.renal)ptL.push('Renal: '+pt.renal);
   if(pt.hepatic)ptL.push('Hepatic: '+pt.hepatic);
@@ -2957,7 +2957,7 @@ function buildPatientProfilePages(){
   });
   var demoFields=[];
   if(pt.age)demoFields.push({lbl:'Age',v:pt.age+' years'});
-  if(pt.weight)demoFields.push({lbl:'Weight',v:pt.weight+' kg'});
+  if(pt.weight)demoFields.push({lbl:'Weight',v:pt.weight+' lbs'});
   if(pt.sex)demoFields.push({lbl:'Sex',v:pt.sex});
   if(demoFields.length){
     pages.push({
