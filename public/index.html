@@ -2493,26 +2493,6 @@ function printIFU(){
   if(d.special_populations){h+='<div class="special">'+d.special_populations+'</div>';}
   h+='<div class="disc"><strong>Disclaimer:</strong> This summary is for informational purposes only and does not replace the official prescribing information or advice from your pharmacist or physician. Always read the medication guide provided with your prescription.</div>';
   h+='
-<!-- ── LETS INTRACT VIDEO MODAL ─────────────────────────────── -->
-<div id="video-modal" onclick="if(event.target===this)closeVideoModal()">
-  <div class="vm-inner">
-    <button class="vm-close" onclick="closeVideoModal()">&times;</button>
-    <iframe id="video-iframe" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
-<script>
-function openVideoModal(){
-  document.getElementById('video-iframe').src='https://player.vimeo.com/video/1209576076?h=de3fb84cfc&autoplay=1&title=0&byline=0&portrait=0&badge=0';
-  document.getElementById('video-modal').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeVideoModal(){
-  document.getElementById('video-modal').classList.remove('open');
-  document.getElementById('video-iframe').src='';
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoModal();});
-</script>
 </body></html>';
   var w=window.open('','_blank');
   w.document.write(h);
@@ -3523,6 +3503,28 @@ setLang(uiLang);
     sugg.style.display='flex';
   }
 })();
+</script>
+
+
+<!-- ── LETS INTRACT VIDEO MODAL ─────────────────────────────── -->
+<div id="video-modal" onclick="if(event.target===this)closeVideoModal()">
+  <div class="vm-inner">
+    <button class="vm-close" onclick="closeVideoModal()">&times;</button>
+    <iframe id="video-iframe" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+function openVideoModal(){
+  document.getElementById('video-iframe').src='https://player.vimeo.com/video/1209576076?h=de3fb84cfc&autoplay=1&title=0&byline=0&portrait=0&badge=0';
+  document.getElementById('video-modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeVideoModal(){
+  document.getElementById('video-modal').classList.remove('open');
+  document.getElementById('video-iframe').src='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoModal();});
 </script>
 </body>
 </html>
