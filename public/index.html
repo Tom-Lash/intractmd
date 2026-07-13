@@ -217,6 +217,7 @@ input::placeholder{color:#6b6b66}
 .sidebar-btn.sb-pharm:hover{background:var(--blu-lt);border-color:var(--accent-blue);color:var(--accent-blue)}
 .sidebar-btn.sb-pill:hover{background:var(--pur-lt);border-color:var(--pur-md);color:var(--pur)}
 .sidebar-btn.sb-ifu:hover{background:var(--org-lt);border-color:var(--org);color:var(--org)}
+.sidebar-btn.sb-video:hover{background:var(--teal-lt);border-color:var(--teal);color:var(--teal)}
 @media(max-width:640px){
   .card-body{flex-direction:column}
   .sidebar-tools{width:100%;flex-direction:row;order:-1;border-left:none;border-bottom:0.5px solid var(--br);border-top:none;overflow-x:auto;padding:8px 10px;gap:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -270,6 +271,11 @@ input::placeholder{color:#6b6b66}
   .loading p{font-size:14px}
 }
 /* ===== FLIPBOOK ===== */
+#video-modal{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:3000;display:none;align-items:center;justify-content:center}
+#video-modal.open{display:flex}
+#video-modal .vm-inner{position:relative;width:90vw;max-width:860px;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:16/9}
+#video-modal .vm-inner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#video-modal .vm-close{position:absolute;top:-36px;right:0;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;line-height:1}
 #fb-overlay{position:fixed;inset:0;background:rgba(0,0,0,.84);z-index:2000;display:none;flex-direction:column;align-items:center;justify-content:center;padding:12px 0}
 .fb-toolbar{width:100%;max-width:580px;display:flex;align-items:center;gap:6px;padding:0 12px 10px;flex-wrap:wrap;justify-content:center}
 .fb-tool{display:inline-flex;align-items:center;gap:4px;padding:6px 11px;border-radius:6px;font-size:12px;font-weight:500;cursor:pointer;background:rgba(255,255,255,.1);border:0.5px solid rgba(255,255,255,.22);color:#e8e8e8;white-space:nowrap;min-height:36px;min-width:36px;justify-content:center}
@@ -497,6 +503,12 @@ input::placeholder{color:#6b6b66}
 <button class="sidebar-btn sb-pharm" onclick="openPharmacy()"><i class="ti ti-map-pin"></i><span class="btn-full">Find Pharmacy</span><span class="btn-short">Find Pharmacy</span><span class="sb-sub">Nearby locations</span></button>
 <button class="sidebar-btn sb-pill" onclick="openPillId()"><i class="ti ti-search"></i><span class="btn-full">Pill Identifier</span><span class="btn-short">Pill ID</span><span class="sb-sub">Identify unknown pills</span></button>
 <button class="sidebar-btn sb-ifu" onclick="openIFU()"><i class="ti ti-info-circle"></i><span class="btn-full">IFU Summary</span><span class="btn-short">IFU Summary</span><span class="sb-sub">How to take your med</span></button>
+<button class="sidebar-btn sb-video" onclick="openVideoModal()" style="border-color:var(--teal);color:var(--teal);margin-top:2px">
+  <i class="ti ti-player-play"></i>
+  <span class="btn-full">Let's Intract!</span>
+  <span class="btn-short">Video</span>
+  <span class="sb-sub">How to use the app</span>
+</button>
 <button class="sidebar-btn sb-chat" onclick="chatbotToggle()" style="border-color:#00B4D8;color:#00B4D8;margin-top:2px">
   <span style="font-size:22px;line-height:1">&#x1F469;&#x200D;&#x2695;&#xFE0F;</span>
   <span class="btn-full">Q&amp;A Assistant</span>
@@ -2480,7 +2492,28 @@ function printIFU(){
   });
   if(d.special_populations){h+='<div class="special">'+d.special_populations+'</div>';}
   h+='<div class="disc"><strong>Disclaimer:</strong> This summary is for informational purposes only and does not replace the official prescribing information or advice from your pharmacist or physician. Always read the medication guide provided with your prescription.</div>';
-  h+='</body></html>';
+  h+='
+<!-- ── LETS INTRACT VIDEO MODAL ─────────────────────────────── -->
+<div id="video-modal" onclick="if(event.target===this)closeVideoModal()">
+  <div class="vm-inner">
+    <button class="vm-close" onclick="closeVideoModal()">&times;</button>
+    <iframe id="video-iframe" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+function openVideoModal(){
+  document.getElementById('video-iframe').src='https://player.vimeo.com/video/1209576076?h=de3fb84cfc&autoplay=1&title=0&byline=0&portrait=0&badge=0';
+  document.getElementById('video-modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeVideoModal(){
+  document.getElementById('video-modal').classList.remove('open');
+  document.getElementById('video-iframe').src='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoModal();});
+</script>
+</body></html>';
   var w=window.open('','_blank');
   w.document.write(h);
   w.document.close();
