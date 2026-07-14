@@ -184,10 +184,36 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
     Clinical
   </a>
 </div>
-  <div style="margin-bottom:16px;">
-    <div style="font-size:22px;font-weight:800;color:var(--navy);">Patient Outreach Message Generator</div>
-    <div style="font-size:13px;color:var(--text3);margin-top:4px;">Step 6 of the IntractMD Clinical Workflow · Generates tiered patient messages based on confirmed, computed, and predictive findings</div>
+  <div style="margin-bottom:16px;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+    <div>
+      <div style="font-size:22px;font-weight:800;color:var(--navy);">Patient Outreach Message Generator</div>
+      <div style="font-size:13px;color:var(--text3);margin-top:4px;">Step 6 of the IntractMD Clinical Workflow · Generates tiered patient messages based on confirmed, computed, and predictive findings</div>
+    </div>
+    <button onclick="openClinicalVideo()" style="background:#1B6EC2;border:none;border-radius:8px;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;">
+      <span style="font-size:16px;">&#9654;</span> Proactive/Clinical IntractMD Introduction
+    </button>
   </div>
+
+  <!-- Clinical Video Modal -->
+  <div id="clinical-video-modal" onclick="if(event.target===this)closeClinicalVideo()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:3000;align-items:center;justify-content:center;">
+    <div style="position:relative;width:90vw;max-width:860px;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:16/9;">
+      <button onclick="closeClinicalVideo()" style="position:absolute;top:-36px;right:0;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;line-height:1;">&times;</button>
+      <iframe id="clinical-video-iframe" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
+    </div>
+  </div>
+  <script>
+  function openClinicalVideo(){
+    document.getElementById('clinical-video-iframe').src='https://player.vimeo.com/video/1209720658?h=auto&autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1';
+    var m=document.getElementById('clinical-video-modal');
+    m.style.display='flex';document.body.style.overflow='hidden';
+  }
+  function closeClinicalVideo(){
+    document.getElementById('clinical-video-modal').style.display='none';
+    document.getElementById('clinical-video-iframe').src='';
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeClinicalVideo();});
+  </script>
 
   <div class="workflow">
 
