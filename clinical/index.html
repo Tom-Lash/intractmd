@@ -150,6 +150,17 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
   .confidence-summary{grid-template-columns:1fr;}
 }
 </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG4JFDNRBN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FG4JFDNRBN', {
+    'custom_map': {'dimension1': 'app_surface'}
+  });
+  gtag('event', 'page_view', {'app_surface': 'clinical'});
+</script>
 </head>
 <body>
 
