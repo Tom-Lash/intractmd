@@ -206,13 +206,38 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 
 <div class="page">
 
-  <div class="intro-banner">
-    <i class="ti ti-shield-exclamation intro-icon"></i>
-    <div>
-      <div class="intro-title">Proactive Drug, Supplement & Food Interaction Engine</div>
-      <div class="intro-body">Enter your known prescriptions and this engine <strong style="color:var(--amber-lt)">checks drug-drug interactions</strong> in your regimen AND proactively identifies every supplement and food you should <strong style="color:var(--amber-lt)">avoid or limit</strong> — before any adverse event occurs. Unlike standard checkers that wait for you to ask, this tool warns you about risks you didn't know to look for.</div>
+  <div class="intro-banner" style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:flex-start;gap:12px;flex:1;">
+      <i class="ti ti-shield-exclamation intro-icon"></i>
+      <div>
+        <div class="intro-title">Proactive Drug, Supplement & Food Interaction Engine</div>
+        <div class="intro-body">Enter your known prescriptions and this engine <strong style="color:var(--amber-lt)">checks drug-drug interactions</strong> in your regimen AND proactively identifies every supplement and food you should <strong style="color:var(--amber-lt)">avoid or limit</strong> — before any adverse event occurs. Unlike standard checkers that wait for you to ask, this tool warns you about risks you didn't know to look for.</div>
+      </div>
+    </div>
+    <button onclick="openProactiveVideo()" style="background:#1B6EC2;border:none;border-radius:8px;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;">
+      <span style="font-size:16px;">&#9654;</span> Proactive/Clinical IntractMD Introduction
+    </button>
+  </div>
+
+  <div id="proactive-video-modal" onclick="if(event.target===this)closeProactiveVideo()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:3000;align-items:center;justify-content:center;">
+    <div style="position:relative;width:90vw;max-width:860px;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:16/9;">
+      <button onclick="closeProactiveVideo()" style="position:absolute;top:-36px;right:0;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;line-height:1;">&times;</button>
+      <iframe id="proactive-video-iframe" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
     </div>
   </div>
+  <script>
+  function openProactiveVideo(){
+    document.getElementById('proactive-video-iframe').src='https://player.vimeo.com/video/1209720658?h=a8eef8befe&autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1';
+    var m=document.getElementById('proactive-video-modal');
+    m.style.display='flex';document.body.style.overflow='hidden';
+  }
+  function closeProactiveVideo(){
+    document.getElementById('proactive-video-modal').style.display='none';
+    document.getElementById('proactive-video-iframe').src='';
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeProactiveVideo();});
+  </script>
 
   <div style="display:flex;align-items:center;gap:0;background:#0a2040;border-bottom:2px solid #00B4D8;padding:0 1rem;">
   <a href="https://www.intractmd.com" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;">
