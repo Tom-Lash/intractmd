@@ -1053,6 +1053,47 @@ app.post('/api/pill-identify', async (req, res) => {
       }
     }
 
+    // PRIORITY 2.5 — Live FDA NSDE lookup for cache misses
+    if (!matches.length && imprint) {
+      try {
+        const enc = encodeURIComponent(imprint.trim());
+        const nsdeUrl = `https://api.fda.gov/other/nsde.json?search=imprint_code:"${enc}"&limit=5`;
+        const ctrl2 = new AbortController();
+        const t2 = setTimeout(() => ctrl2.abort(), 6000);
+        const nsdeResp = await fetch(nsdeUrl, { signal: ctrl2.signal });
+        clearTimeout(t2);
+        if (nsdeResp.ok) {
+          const nsdeData = await nsdeResp.json();
+          if (nsdeData.results && nsdeData.results.length) {
+            let hits = nsdeData.results;
+            if (color1 && color1 !== 'Any') {
+              const cf = hits.filter(r => r.color_text && r.color_text.toLowerCase().includes(color1.toLowerCase()));
+              if (cf.length) hits = cf;
+            }
+            if (shape && shape !== 'Any') {
+              const sf = hits.filter(r => r.shape_text && r.shape_text.toLowerCase().includes(shape.toLowerCase()));
+              if (sf.length) hits = sf;
+            }
+            matches = hits.slice(0,3).map(r => ({
+              drug_name:    r.proprietaryname || r.nonproprietaryname || 'Unknown',
+              generic_name: r.nonproprietaryname || '',
+              strength:     r.active_numerator_strength
+                              ? r.active_numerator_strength + ' ' + (r.active_ingred_unit||'')
+                              : '',
+              confidence:   'high',
+              note:         [r.shape_text, r.color_text, r.coating_text].filter(Boolean).join(', '),
+              imageUrl:     '',
+              labeler:      r.labelername || '',
+              drug_class:   ''
+            }));
+            source = 'fda_nsde';
+          }
+        }
+      } catch(nsdeErr) {
+        console.error('[PILL] NSDE lookup error:', nsdeErr.message);
+      }
+    }
+
     // PRIORITY 3 — Claude AI fallback
     if (!matches.length) {
       const apiKey = process.env.ANTHROPIC_API_KEY;
