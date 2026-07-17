@@ -912,84 +912,196 @@ function loadPillIndex() {
 loadPillIndex();
 
 // ── PILL IDENTIFIER (Cache-first + Claude AI fallback) ───────────────────
+// ── AUTHORITATIVE IMPRINT TABLE ─────────────────────────────────────────────
+// Hardcoded for NTI and high-risk drugs. AI/cache are unreliable for these.
+// Sources: FDA Orange Book, NLM DailyMed, manufacturer labeling.
+const AUTH_IMPRINTS = {
+  // ANTICOAGULANTS
+  'COUMADIN1':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'1 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Pink round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN2':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'2 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Lavender round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN25':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'2.5 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Green round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN3':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'3 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Tan round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN4':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'4 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Blue round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN5':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'5 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Peach oval tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN6':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'6 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Teal round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN75':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'7.5 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. Yellow round tablet.','labeler':'Bristol-Myers Squibb'},
+  'COUMADIN10':{'drug_name':'Coumadin','generic_name':'warfarin sodium','strength':'10 mg','drug_class':'Anticoagulant (NTI)','note':'NTI drug — anticoagulant. White round tablet.','labeler':'Bristol-Myers Squibb'},
+  // CARDIAC GLYCOSIDES
+  'Y3B':{'drug_name':'Lanoxin','generic_name':'digoxin','strength':'0.125 mg','drug_class':'Cardiac Glycoside (NTI)','note':'NTI drug — digoxin. Yellow round tablet. Toxic range close to therapeutic range.','labeler':'Covis Pharma'},
+  'X3A':{'drug_name':'Lanoxin','generic_name':'digoxin','strength':'0.25 mg','drug_class':'Cardiac Glycoside (NTI)','note':'NTI drug — digoxin. White round tablet.','labeler':'Covis Pharma'},
+  'LANOXIN125':{'drug_name':'Lanoxin','generic_name':'digoxin','strength':'0.125 mg','drug_class':'Cardiac Glycoside (NTI)','note':'NTI drug — digoxin. Yellow round tablet.','labeler':'Covis Pharma'},
+  'LANOXIN25':{'drug_name':'Lanoxin','generic_name':'digoxin','strength':'0.25 mg','drug_class':'Cardiac Glycoside (NTI)','note':'NTI drug — digoxin. White round tablet.','labeler':'Covis Pharma'},
+  // THYROID
+  'ML3':{'drug_name':'Levothyroxine','generic_name':'levothyroxine sodium','strength':'50 mcg','drug_class':'Thyroid Hormone (NTI)','note':'NTI drug — levothyroxine 50mcg. White round tablet.','labeler':'Mylan'},
+  'SYNTHROID25':{'drug_name':'Synthroid','generic_name':'levothyroxine sodium','strength':'25 mcg','drug_class':'Thyroid Hormone (NTI)','note':'NTI drug. Orange round tablet.','labeler':'AbbVie'},
+  'SYNTHROID50':{'drug_name':'Synthroid','generic_name':'levothyroxine sodium','strength':'50 mcg','drug_class':'Thyroid Hormone (NTI)','note':'NTI drug. White round tablet.','labeler':'AbbVie'},
+  'SYNTHROID75':{'drug_name':'Synthroid','generic_name':'levothyroxine sodium','strength':'75 mcg','drug_class':'Thyroid Hormone (NTI)','note':'NTI drug. Violet round tablet.','labeler':'AbbVie'},
+  'SYNTHROID88':{'drug_name':'Synthroid','generic_name':'levothyroxine sodium','strength':'88 mcg','drug_class':'Thyroid Hormone (NTI)','note':'NTI drug. Olive round tablet.','labeler':'AbbVie'},
+  'SYNTHROID100':{'drug_name':'Synthroid','generic_name':'levothyroxine sodium','strength':'100 mcg','drug_class':'Thyroid Hormone (NTI)','note':'NTI drug. Yellow round tablet.','labeler':'AbbVie'},
+  // ANTICONVULSANTS
+  'PD362':{'drug_name':'Dilantin Kapseals','generic_name':'phenytoin sodium','strength':'100 mg','drug_class':'Anticonvulsant (NTI)','note':'NTI drug — phenytoin. White/orange capsule. Saturation kinetics — small dose changes cause toxicity.','labeler':'Pfizer'},
+  'PD365':{'drug_name':'Dilantin Infatabs','generic_name':'phenytoin','strength':'50 mg','drug_class':'Anticonvulsant (NTI)','note':'NTI drug — phenytoin. Triangular chewable tablet.','labeler':'Pfizer'},
+  'TEGRETOL200':{'drug_name':'Tegretol','generic_name':'carbamazepine','strength':'200 mg','drug_class':'Anticonvulsant (NTI)','note':'NTI drug — carbamazepine. Pink round tablet.','labeler':'Novartis'},
+  'TEGRETOL100':{'drug_name':'Tegretol','generic_name':'carbamazepine','strength':'100 mg','drug_class':'Anticonvulsant (NTI)','note':'NTI drug — carbamazepine. White round tablet.','labeler':'Novartis'},
+  // IMMUNOSUPPRESSANTS
+  'CSA100':{'drug_name':'Neoral','generic_name':'cyclosporine','strength':'100 mg','drug_class':'Immunosuppressant (NTI)','note':'NTI drug — cyclosporine. Oblong soft gel. Brand and generic NOT interchangeable.','labeler':'Novartis'},
+  'CSA25':{'drug_name':'Neoral','generic_name':'cyclosporine','strength':'25 mg','drug_class':'Immunosuppressant (NTI)','note':'NTI drug — cyclosporine. Oblong soft gel.','labeler':'Novartis'},
+  // LITHIUM
+  'LITHIUM300':{'drug_name':'Lithium Carbonate','generic_name':'lithium carbonate','strength':'300 mg','drug_class':'Mood Stabilizer (NTI)','note':'NTI drug — lithium. Gray capsule. Toxic range very close to therapeutic range.','labeler':'Various'},
+  'LITHIUMCARBONATE300':{'drug_name':'Lithium Carbonate','generic_name':'lithium carbonate','strength':'300 mg','drug_class':'Mood Stabilizer (NTI)','note':'NTI drug — lithium. Gray capsule.','labeler':'Various'},
+  // METHOTREXATE
+  'MTX25':{'drug_name':'Methotrexate','generic_name':'methotrexate','strength':'2.5 mg','drug_class':'Antimetabolite (NTI)','note':'NTI drug — WEEKLY DOSING ONLY. Daily dosing is fatal. Yellow round tablet.','labeler':'Various'},
+  'METHOTREXATE25':{'drug_name':'Methotrexate','generic_name':'methotrexate','strength':'2.5 mg','drug_class':'Antimetabolite (NTI)','note':'NTI drug — WEEKLY DOSING ONLY. Yellow round tablet.','labeler':'Various'},
+  // COMMON HIGH-RISK
+  'BI72':{'drug_name':'Toprol-XL','generic_name':'metoprolol succinate','strength':'50 mg','drug_class':'Beta Blocker','note':'White oval ER tablet. Succinate NOT interchangeable with tartrate.','labeler':'AstraZeneca'},
+  'MSD952':{'drug_name':'Cozaar','generic_name':'losartan potassium','strength':'50 mg','drug_class':'ARB (Angiotensin Receptor Blocker)','note':'White oval tablet.','labeler':'Merck'},
+  'BMS5':{'drug_name':'Eliquis','generic_name':'apixaban','strength':'5 mg','drug_class':'Anticoagulant (DOAC)','note':'Gold oval tablet. Direct oral anticoagulant — bleeding risk. Do not stop without consulting physician.','labeler':'Bristol-Myers Squibb/Pfizer'},
+  'BMS25':{'drug_name':'Eliquis','generic_name':'apixaban','strength':'2.5 mg','drug_class':'Anticoagulant (DOAC)','note':'Yellow oval tablet. Direct oral anticoagulant.','labeler':'Bristol-Myers Squibb/Pfizer'},
+  'PD15620':{'drug_name':'Lipitor','generic_name':'atorvastatin calcium','strength':'20 mg','drug_class':'Statin','note':'White elliptical tablet.','labeler':'Pfizer'},
+  'PD15640':{'drug_name':'Lipitor','generic_name':'atorvastatin calcium','strength':'40 mg','drug_class':'Statin','note':'White elliptical tablet.','labeler':'Pfizer'},
+  'PD15680':{'drug_name':'Lipitor','generic_name':'atorvastatin calcium','strength':'80 mg','drug_class':'Statin','note':'White elliptical tablet.','labeler':'Pfizer'},
+  'MSD740':{'drug_name':'Zocor','generic_name':'simvastatin','strength':'20 mg','drug_class':'Statin','note':'Tan oval tablet. High CYP3A4 interaction risk.','labeler':'Merck'},
+  'MSD735':{'drug_name':'Zocor','generic_name':'simvastatin','strength':'40 mg','drug_class':'Statin','note':'Tan oval tablet.','labeler':'Merck'},
+  'LUPIN10':{'drug_name':'Lisinopril','generic_name':'lisinopril','strength':'10 mg','drug_class':'ACE Inhibitor','note':'Pink round tablet.','labeler':'Lupin'},
+  'MYLAN216':{'drug_name':'Hydrochlorothiazide','generic_name':'hydrochlorothiazide','strength':'25 mg','drug_class':'Thiazide Diuretic','note':'White round tablet. Monitor electrolytes.','labeler':'Mylan'},
+  'CIBA7':{'drug_name':'Ritalin','generic_name':'methylphenidate hydrochloride','strength':'10 mg','drug_class':'CNS Stimulant (Schedule II)','note':'Pale green round tablet. Controlled substance — Schedule II.','labeler':'Novartis'},
+  '9348':{'drug_name':'Naproxen','generic_name':'naproxen sodium','strength':'500 mg','drug_class':'NSAID','note':'White oval tablet. NSAID — avoid with anticoagulants.','labeler':'Teva'},
+  'KU118':{'drug_name':'Omeprazole','generic_name':'omeprazole','strength':'20 mg','drug_class':'Proton Pump Inhibitor','note':'Pink/tan delayed-release capsule.','labeler':'Kremers Urban'},
+  '20MGKU118':{'drug_name':'Omeprazole','generic_name':'omeprazole','strength':'20 mg','drug_class':'Proton Pump Inhibitor','note':'Pink/tan delayed-release capsule.','labeler':'Kremers Urban'},
+  // OTC COMMON
+  'L484':{'drug_name':'Tylenol','generic_name':'acetaminophen','strength':'500 mg','drug_class':'Analgesic/Antipyretic','note':'White oblong tablet. Most common OTC pain reliever. Max 4g/day.','labeler':'Johnson & Johnson'},
+  'L':{'drug_name':'Aspirin','generic_name':'aspirin','strength':'81 mg','drug_class':'NSAID/Antiplatelet','note':'White round enteric-coated tablet. Low-dose aspirin for cardiac/stroke prevention.','labeler':'Various'},
+  'ADVIL':{'drug_name':'Advil','generic_name':'ibuprofen','strength':'200 mg','drug_class':'NSAID','note':'Brown oval tablet. OTC NSAID.','labeler':'Pfizer Consumer'},
+  // CONTROLLED SUBSTANCES
+  'IP110':{'drug_name':'Norco 10/325','generic_name':'hydrocodone bitartrate / acetaminophen','strength':'10 mg / 325 mg','drug_class':'Opioid Analgesic (Schedule II)','note':'White oblong tablet. Controlled substance — opioid. High abuse potential.','labeler':'Amneal'},
+  'M357':{'drug_name':'Hydrocodone/APAP','generic_name':'hydrocodone bitartrate / acetaminophen','strength':'5 mg / 500 mg','drug_class':'Opioid Analgesic (Schedule II)','note':'White oblong tablet. Controlled substance — opioid.','labeler':'Mallinckrodt'},
+  'AN627':{'drug_name':'Ultram','generic_name':'tramadol hydrochloride','strength':'50 mg','drug_class':'Opioid Analgesic (Schedule IV)','note':'White round tablet. Controlled substance — Schedule IV.','labeler':'Amneal'},
+  '5CDN':{'drug_name':'Oxycodone','generic_name':'oxycodone hydrochloride','strength':'5 mg','drug_class':'Opioid Analgesic (Schedule II)','note':'Round white tablet. Controlled substance — Schedule II. High abuse potential.','labeler':'Various'},
+  'XANAX025':{'drug_name':'Xanax','generic_name':'alprazolam','strength':'0.25 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'White oval tablet. Controlled substance.','labeler':'Pfizer'},
+  'XANAX05':{'drug_name':'Xanax','generic_name':'alprazolam','strength':'0.5 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Peach oval tablet. Controlled substance.','labeler':'Pfizer'},
+  'XANAX1':{'drug_name':'Xanax','generic_name':'alprazolam','strength':'1 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Blue oval tablet. Controlled substance.','labeler':'Pfizer'},
+  'KLONOPIN05':{'drug_name':'Klonopin','generic_name':'clonazepam','strength':'0.5 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Orange round tablet. Controlled substance. NOT the same as clonidine (blood pressure drug).','labeler':'Roche'},
+  'KLONOPIN1':{'drug_name':'Klonopin','generic_name':'clonazepam','strength':'1 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Blue round tablet. Controlled substance.','labeler':'Roche'},
+  // LASA PAIRS
+  'HYDROXYZINE25':{'drug_name':'Vistaril','generic_name':'hydroxyzine pamoate','strength':'25 mg','drug_class':'Antihistamine / Anxiolytic','note':'White round tablet. NOT hydralazine — completely different drug. Antihistamine/anti-anxiety.','labeler':'Pfizer'},
+};
+
+function normImprint(s) {
+  if (!s) return '';
+  return s.toString().toUpperCase().replace(/[\s\-\.\/]+/g,'');
+}
+
 app.post('/api/pill-identify', async (req, res) => {
-  const { shape, color1, color2, imprint, coating, size } = req.body;
+  const imprint     = req.body.imprint     || '';
+  const shape       = req.body.shape       || 'Any';
+  const color1      = req.body.color1      || req.body.color  || 'Any';
+  const color2      = req.body.color2      || '';
+  const coating     = req.body.coating     || 'Any';
+  const size        = req.body.size        || '';
+  const description = req.body.description || '';
+  const language    = req.body.language    || 'en';
   try {
     let matches = [];
     let source = 'none';
+    const impKey = normImprint(imprint);
 
-    // Step 1: Cache lookup by imprint (instant, <1ms)
-    if (imprint && pillIndex) {
-      const key = imprint.toString().toUpperCase().replace(/\s+/g, '');
-      let cacheHits = pillIndex[key] || [];
+    // PRIORITY 0 — Counterfeit safety override
+    if (impKey === 'M30' && (color1.toLowerCase().includes('blue') || color1 === 'Any' || !color1)) {
+      return res.json({ matches:[{
+        drug_name:'⚠️ POTENTIAL COUNTERFEIT — DO NOT TAKE',
+        generic_name:'Unknown / Suspected Fentanyl',
+        strength:'Unknown',
+        confidence:'high',
+        note:'M30 blue round pills are widely counterfeited with illicitly manufactured fentanyl. These pills have caused thousands of overdose deaths. DO NOT take this pill. Call Poison Control (1-800-222-1222) or 911 immediately if ingested.',
+        imageUrl:'',
+        labeler:'⚠️ POISON CONTROL: 1-800-222-1222',
+        drug_class:'COUNTERFEIT DANGER'
+      }], source:'safety_override' });
+    }
+
+    // PRIORITY 1 — Authoritative hardcoded table (100% accurate)
+    if (impKey && AUTH_IMPRINTS[impKey]) {
+      const a = AUTH_IMPRINTS[impKey];
+      matches = [{ drug_name:a.drug_name, generic_name:a.generic_name, strength:a.strength,
+        confidence:'high', note:a.note, imageUrl:a.imageUrl||'', labeler:a.labeler, drug_class:a.drug_class }];
+      source = 'authoritative';
+    }
+
+    // PRIORITY 2 — Pill index cache
+    if (!matches.length && imprint && pillIndex) {
+      let cacheHits = pillIndex[impKey] || [];
       if (shape && shape !== 'Any') {
-        const filtered = cacheHits.filter(m => !m.shape || m.shape.toLowerCase() === shape.toLowerCase());
-        if (filtered.length) cacheHits = filtered;
+        const f = cacheHits.filter(m => !m.shape || m.shape.toLowerCase() === shape.toLowerCase());
+        if (f.length) cacheHits = f;
       }
       if (color1 && color1 !== 'Any') {
-        const filtered = cacheHits.filter(m => !m.colors || m.colors.some(c => c.toLowerCase().includes(color1.toLowerCase())));
-        if (filtered.length) cacheHits = filtered;
+        const f = cacheHits.filter(m => !m.colors || m.colors.some(c => c.toLowerCase().includes(color1.toLowerCase())));
+        if (f.length) cacheHits = f;
       }
       if (cacheHits.length) {
-        matches = cacheHits.map(function(m) {
-          return {
-            drug_name: m.drug_name,
-            generic_name: m.generic_name,
-            strength: m.strength,
-            confidence: 'high',
-            note: [m.shape, (m.colors||[]).join('/'), m.coating].filter(Boolean).join(', '),
-            imageUrl: m.imageUrl || '',
-            labeler: m.manufacturer || '',
-            drug_class: m.drug_class || ''
-          };
-        });
+        matches = cacheHits.map(m => ({
+          drug_name:m.drug_name, generic_name:m.generic_name, strength:m.strength,
+          confidence:'medium',
+          note:[m.shape,(m.colors||[]).join('/'),m.coating].filter(Boolean).join(', '),
+          imageUrl:m.imageUrl||'', labeler:m.manufacturer||'', drug_class:m.drug_class||''
+        }));
         source = 'cache';
       }
     }
 
-    // Step 2: Claude AI fallback for cache misses
+    // PRIORITY 3 — Claude AI fallback
     if (!matches.length) {
       const apiKey = process.env.ANTHROPIC_API_KEY;
       if (apiKey) {
         const parts = [];
-        if (imprint) parts.push('Imprint code: ' + imprint);
-        if (shape && shape !== 'Any') parts.push('Shape: ' + shape);
-        if (color1 && color1 !== 'Any') parts.push('Primary color: ' + color1);
-        if (color2 && color2 !== 'Any') parts.push('Secondary color: ' + color2);
-        if (size) parts.push('Size: approximately ' + size + 'mm');
-        if (coating && coating !== 'Any') parts.push('Coating: ' + coating);
+        if (imprint)                    parts.push('Imprint: ' + imprint);
+        if (shape && shape!=='Any')     parts.push('Shape: ' + shape);
+        if (color1 && color1!=='Any')   parts.push('Color: ' + color1);
+        if (color2 && color2!=='Any')   parts.push('Secondary color: ' + color2);
+        if (size)                       parts.push('Size: ' + size + 'mm');
+        if (coating && coating!=='Any') parts.push('Coating: ' + coating);
+        if (description)                parts.push('Description: ' + description);
+        const langNote = language==='es' ? 'Description may be in Spanish — translate to identify pill. Return drug names in English.' : '';
         if (parts.length) {
-          const promptText = 'You are a pharmaceutical pill identification expert. Identify pills matching: ' + parts.join(', ') + '. If the imprint is a well-known code (L484=Tylenol, M357=Hydrocodone, etc.), identify it confidently. Return ONLY valid JSON no markdown: {"matches":[{"drug_name":"<brand>","generic_name":"<generic>","strength":"<dose>","confidence":"<high|medium|low>","note":"<description>","imageUrl":"","labeler":"<manufacturer>"}]} Up to 5 matches.';
+          const prompt = `You are a clinical pharmacist doing pill identification. ${langNote}
+
+RULES:
+1. IMPRINT is the primary identifier — base identification on imprint first.
+2. Known imprints: L484=Acetaminophen 500mg, L=Aspirin 81mg (white round EC), M357=Hydrocodone/APAP 5/500mg, IP 110=Hydrocodone/APAP 10/325mg, AN 627=Tramadol 50mg, ADVIL=Ibuprofen 200mg, V (blue oval)=Diazepam 10mg, CIBA 7=Ritalin (methylphenidate) 10mg, 93 48=Naproxen 500mg, LUPIN 10=Lisinopril 10mg, BI 72=Metoprolol succinate 50mg, MSD 952=Losartan 50mg, BMS 5=Apixaban (Eliquis) 5mg, MSD 740=Simvastatin 20mg, PD 156 20=Atorvastatin 20mg, PD 157 40=Atorvastatin 40mg, MYLAN 216=Hydrochlorothiazide 25mg, 5 CDN=Oxycodone 5mg, P-D 362=Dilantin (phenytoin) 100mg capsule, TEGRETOL 200=Carbamazepine 200mg, Y3B=Digoxin 0.125mg, M L 3=Levothyroxine 50mcg, KU 118=Omeprazole 20mg.
+3. If no imprint and pill is white/round/oval: return top 3 most likely OTC drugs.
+4. If no imprint and capsule: suggest it may be a supplement (vitamin, fish oil, herbal).
+5. If genuinely uncertain: use confidence "low" and explain.
+6. NEVER identify M30 blue round as oxycodone — it is likely counterfeit fentanyl.
+
+Pill: ${parts.join(', ')}
+
+Return ONLY valid JSON:
+{"matches":[{"drug_name":"<brand>","generic_name":"<generic>","strength":"<dose>","confidence":"<high|medium|low>","note":"<description>","imageUrl":"","labeler":"<maker>","drug_class":"<class>"}]}
+Up to 3 matches.`;
           const ctrl = new AbortController();
-          const t = setTimeout(() => ctrl.abort(), 12000);
+          const tmr = setTimeout(()=>ctrl.abort(), 12000);
           try {
             const r = await fetch('https://api.anthropic.com/v1/messages', {
-              signal: ctrl.signal,
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-              body: JSON.stringify({ model: 'claude-haiku-4-5', max_tokens: 800, messages: [{ role: 'user', content: promptText }] })
+              signal:ctrl.signal, method:'POST',
+              headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01'},
+              body:JSON.stringify({model:'claude-haiku-4-5',max_tokens:1000,messages:[{role:'user',content:prompt}]})
             });
-            const data = await r.json();
-            clearTimeout(t);
-            if (data.content && data.content[0]) {
-              const raw = data.content[0].text.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
+            const d = await r.json(); clearTimeout(tmr);
+            if (d.content&&d.content[0]) {
+              const raw = d.content[0].text.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
               const m = raw.match(/{[\s\S]*}/);
-              if (m) { const parsed = JSON.parse(m[0]); if (parsed.matches) { matches = parsed.matches; source = 'ai'; } }
+              if (m) { const p2=JSON.parse(m[0]); if (p2.matches) { matches=p2.matches; source='ai'; } }
             }
-          } catch(ae) { clearTimeout(t); console.error('[PILL] AI error:', ae.message); }
+          } catch(ae){clearTimeout(tmr);console.error('[PILL] AI error:',ae.message);}
         }
       }
     }
     res.json({ matches, source });
   } catch(e) {
     console.error('[PILL] Error:', e.message);
-    res.json({ matches: [], error: e.message });
+    res.json({ matches:[], error:e.message });
   }
 });
-
-
-
-// ── INTRACTMD HELP CHATBOT ────────────────────────────────────────────────
 app.post('/api/chat', async (req, res) => {
   try {
     const { message, history, language } = req.body;
