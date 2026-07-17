@@ -982,6 +982,10 @@ const AUTH_IMPRINTS = {
   'XANAX1':{'drug_name':'Xanax','generic_name':'alprazolam','strength':'1 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Blue oval tablet. Controlled substance.','labeler':'Pfizer'},
   'KLONOPIN05':{'drug_name':'Klonopin','generic_name':'clonazepam','strength':'0.5 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Orange round tablet. Controlled substance. NOT the same as clonidine (blood pressure drug).','labeler':'Roche'},
   'KLONOPIN1':{'drug_name':'Klonopin','generic_name':'clonazepam','strength':'1 mg','drug_class':'Benzodiazepine (Schedule IV)','note':'Blue round tablet. Controlled substance.','labeler':'Roche'},
+  // METHOTREXATE additional imprint
+  'M10':{'drug_name':'Methotrexate','generic_name':'methotrexate','strength':'2.5 mg','drug_class':'Antimetabolite (NTI)','note':'NTI drug — WEEKLY DOSING ONLY. Daily dosing is fatal. Yellow round tablet. Confirm dosing schedule with prescriber.','labeler':'Roxane/Hikma'},
+  // AMBIGUOUS IMPRINTS
+  'V':{'drug_name':'Multiple possibilities — see note','generic_name':'diazepam OR oxycodone OR sildenafil','strength':'Varies','drug_class':'AMBIGUOUS — requires further identification','note':'V imprint on blue oval may be: Diazepam 10mg (Valium, blue oval), Oxycodone 5mg (blue oval, Schedule II), or Sildenafil 50mg (blue diamond). Color and exact shape are critical for differentiation. Consult pharmacist.','labeler':'Multiple manufacturers'},
   // LASA PAIRS
   'HYDROXYZINE25':{'drug_name':'Vistaril','generic_name':'hydroxyzine pamoate','strength':'25 mg','drug_class':'Antihistamine / Anxiolytic','note':'White round tablet. NOT hydralazine — completely different drug. Antihistamine/anti-anxiety.','labeler':'Pfizer'},
 };
