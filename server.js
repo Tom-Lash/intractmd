@@ -31,6 +31,11 @@ const fs = require('fs');
 
 const app = express();
 
+
+// Terms of Use
+app.get('/terms', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'terms.html'));
+});
 app.get('/healthz', (req, res) => res.status(200).send('OK'));
 
 const basicAuth = require('express-basic-auth');
