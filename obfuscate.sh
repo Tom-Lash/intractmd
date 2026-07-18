@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "IntractMD Obfuscator"
-echo "Source:  public/index.html → Output: public/index.prod.html"
+echo "Source:  public/index.src.html → Output: public/index.prod.html"
 cp public/index.prod.html public/index.prod.html.bak 2>/dev/null || true
 node -e "
 const fs = require('fs');
 const JavaScriptObfuscator = require('javascript-obfuscator');
-const html = fs.readFileSync('public/index.html', 'utf8');
+const html = fs.readFileSync('public/index.src.html', 'utf8');
 const obfuscated = html.replace(/<script>([\s\S]*?)<\/script>/g, (match, js) => {
   if (js.trim().length < 100) return match;
   try {
@@ -28,7 +28,7 @@ const obfuscated = html.replace(/<script>([\s\S]*?)<\/script>/g, (match, js) => 
   }
 });
 fs.writeFileSync('public/index.prod.html', obfuscated);
-const srcKB = Math.round(fs.statSync('public/index.html').size/1024);
+const srcKB = Math.round(fs.statSync('public/index.src.html').size/1024);
 const outKB = Math.round(fs.statSync('public/index.prod.html').size/1024);
 console.log('Done — ' + srcKB + 'KB → ' + outKB + 'KB');
 "

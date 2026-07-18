@@ -342,7 +342,7 @@ app.get('/health', (req, res) => {
 
 // Root
 app.get('/', (req, res) => {
-  const fs_=require('fs'),pf=path.join(__dirname,'public','index.prod.html'),df=path.join(__dirname,'public','index.html');res.sendFile(fs_.existsSync(pf)?pf:df);
+  const fs_=require('fs'),pf=path.join(__dirname,'public','index.prod.html'),df=path.join(__dirname,'public','index.src.html');res.sendFile(fs_.existsSync(pf)?pf:df);
 });
 
 // Serve local drug list for instant frontend autocomplete
