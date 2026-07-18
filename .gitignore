@@ -14,4 +14,3 @@ obfuscate_frontend.js
 precompute_proactive_cache.js
 main
 public/index.dev.html
-public/index.prod.html
