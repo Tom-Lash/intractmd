@@ -1788,7 +1788,7 @@ checkBtn.addEventListener("click",async function(){
   if(drugs.length)itemDesc.push(drugs.length+" drug"+(drugs.length!==1?"s":""));
   if(supplements.length)itemDesc.push(supplements.length+" supplement"+(supplements.length!==1?"s":""));
   if(foods.length)itemDesc.push(foods.length+" food/dietary factor"+(foods.length!==1?"s":""));
-  resEl.innerHTML="<div class=\"loading\" id=\"check-loading-div\"><i class=\"ti ti-brain\"></i><p><span class=\"spin\"></span>Analyzing your medications... this can take up to a minute for complex regimens.</p><p style=\"font-size:12px;color:#3a3a36;font-weight:500\">Please don’t close this window — your results are being generated.</p></div>";
+  resEl.innerHTML="<div class=\"loading\" id=\"check-loading-div\"><i class=\"ti ti-brain\"></i><p><img src="/resolve-logo-shape.png" style="width:48px;height:48px;animation:spin 1.6s linear infinite;display:inline-block;vertical-align:middle;margin-right:10px;" alt="">Analyzing your medications... this can take up to a minute for complex regimens.</p><p style=\"font-size:12px;color:#3a3a36;font-weight:500\">Please don’t close this window — your results are being generated.</p></div>";
   checkBtn.disabled=true;
   var loadingTimer=setTimeout(function(){var ld=document.getElementById('check-loading-div');if(ld){ld.innerHTML='<i class="ti ti-brain"></i><p><span class="spin"></span>Running AI clinical analysis across all drug pairs... this may take 30-60 seconds.</p><p style="font-size:12px;color:#3a3a36;font-weight:500">Please don\'t close this window — your results are being generated.</p>';}},15000);
   try{
@@ -1797,7 +1797,7 @@ checkBtn.addEventListener("click",async function(){
     var streamRes=await fetch("/api/analyze-stream",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":API_KEY},body:payload});
     clearTimeout(loadingTimer);
     if(!streamRes.ok||!streamRes.body){var r2=await fetch("/api/analyze",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":API_KEY},body:payload});var ai2=await r2.json();if(ai2.error){resEl.innerHTML="<div class=\"empty\"><p>Error: "+ai2.error+"</p></div>";}else{renderResults(ai2);}checkBtn.disabled=false;return;}
-    resEl.innerHTML='<div style="padding:20px;text-align:center"><div class="spinner" style="margin:0 auto 12px"></div><p id="stream-status" style="color:#666;font-size:13px">Connecting to AI...</p><div id="stream-risk" style="display:none;margin-top:16px;padding:12px;background:#EBF5FC;border-radius:8px;font-size:14px;font-weight:500;color:#0D3B6E"></div></div>';
+    resEl.innerHTML='<div style="padding:20px;text-align:center"><img src="/resolve-logo-shape.png" style="width:64px;height:64px;animation:spin 1.6s linear infinite;display:block;margin:0 auto 16px;" alt="Analyzing..."><p id="stream-status" style="color:#666;font-size:13px">Connecting to AI...</p><div id="stream-risk" style="display:none;margin-top:16px;padding:12px;background:#EBF5FC;border-radius:8px;font-size:14px;font-weight:500;color:#0D3B6E"></div></div>';
     var statusEl=document.getElementById("stream-status");
     var riskEl=document.getElementById("stream-risk");
     var reader=streamRes.body.getReader();
