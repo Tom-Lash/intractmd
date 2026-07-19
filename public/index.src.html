@@ -1788,7 +1788,7 @@ checkBtn.addEventListener("click",async function(){
   if(drugs.length)itemDesc.push(drugs.length+" drug"+(drugs.length!==1?"s":""));
   if(supplements.length)itemDesc.push(supplements.length+" supplement"+(supplements.length!==1?"s":""));
   if(foods.length)itemDesc.push(foods.length+" food/dietary factor"+(foods.length!==1?"s":""));
-  resEl.innerHTML="<div class=\"loading\" id=\"check-loading-div\"><i class=\"ti ti-brain\"></i><p><img src="/resolve-logo-shape.png" style="width:48px;height:48px;animation:spin 1.6s linear infinite;display:inline-block;vertical-align:middle;margin-right:10px;" alt="">Analyzing your medications... this can take up to a minute for complex regimens.</p><p style=\"font-size:12px;color:#3a3a36;font-weight:500\">Please don’t close this window — your results are being generated.</p></div>";
+  resEl.innerHTML="<div class=\"loading\" id=\"check-loading-div\"><i class=\"ti ti-brain\"></i><p><img src=\"/resolve-logo-shape.png\" style=\"width:48px;height:48px;animation:spin 1.6s linear infinite;display:inline-block;vertical-align:middle;margin-right:10px;\" alt=\"\">Analyzing your medications... this can take up to a minute for complex regimens.</p><p style=\"font-size:12px;color:#3a3a36;font-weight:500\">Please don’t close this window — your results are being generated.</p></div>";
   checkBtn.disabled=true;
   var loadingTimer=setTimeout(function(){var ld=document.getElementById('check-loading-div');if(ld){ld.innerHTML='<i class="ti ti-brain"></i><p><span class="spin"></span>Running AI clinical analysis across all drug pairs... this may take 30-60 seconds.</p><p style="font-size:12px;color:#3a3a36;font-weight:500">Please don\'t close this window — your results are being generated.</p>';}},15000);
   try{
