@@ -2090,7 +2090,6 @@ Return ONLY valid JSON: {"email":{"subject":"<es>","body":"<es>"},"sms":{"body":
 // ── END STEP 6 ────────────────────────────────────────────────────────────
 
 const port = process.env.PORT || 3000;
-const server = app.listen(port, () => { console.log(`Server running on port ${port}`); });
 
 // Schedule: check every hour, run at 2am UTC
 setInterval(function() {
