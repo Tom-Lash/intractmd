@@ -2133,7 +2133,7 @@ app.get('/test-status', function(req, res) {
   }
 });
 
-app.listen(port, '0.0.0.0', () => {
+const server = app.listen(port, '0.0.0.0', () => {
   console.log(`[STARTUP] Server listening on port ${port}`);
 });
 
