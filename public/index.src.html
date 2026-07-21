@@ -3213,8 +3213,10 @@ function fbToggleHC(){
 }
 
 // TTS
+var _fbTtsGen=0;
 function fbTtsRead(text){
   fbTtsStop();
+  var myGen=++_fbTtsGen;
 
   // Try OpenAI TTS first (much better quality), fall back to browser TTS
   var useOpenAI = true; // set to false to always use browser TTS
@@ -3235,6 +3237,7 @@ function fbTtsRead(text){
       return r.arrayBuffer();
     })
     .then(function(buf){
+      if(myGen!==_fbTtsGen){return;}
       if(btn){btn.disabled=false;fbUpdateTtsBtn();}
       var ctx=new (window.AudioContext||window.webkitAudioContext)();
       return ctx.decodeAudioData(buf).then(function(decoded){
@@ -3377,8 +3380,9 @@ function fbSetRate(r){
     b.classList.toggle('active',parseFloat(b.dataset.rate)===fbTtsRate);
   });
   if(fbTtsPlaying){
+    fbTtsStop();
     var page=fbPages[fbIdx];
-    if(page){fbTtsRead(page.text);}
+    if(page){setTimeout(function(){fbTtsRead(page.text);},150);}
   }
 }
 // Initialise language on load
