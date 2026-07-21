@@ -2090,7 +2090,51 @@ Return ONLY valid JSON: {"email":{"subject":"<es>","body":"<es>"},"sms":{"body":
 // ── END STEP 6 ────────────────────────────────────────────────────────────
 
 const port = process.env.PORT || 3000;
-const server = app.listen(port, '0.0.0.0', () => {
+const server = app.listen(port, () => { console.log(`Server running on port ${port}`); });
+
+// Schedule: check every hour, run at 2am UTC
+setInterval(function() {
+  const h = new Date().getUTCHours();
+  const m = new Date().getUTCMinutes();
+  if (h === 2 && m < 5) {
+    runScheduledTests();
+  }
+}, 300000); // check every 5 minutes
+
+// Run once on startup after 60s delay (confirms scheduler is working)
+setTimeout(function() {
+  console.log('[Scheduler] Initialized — daily tests will run at 2:00 AM UTC');
+  console.log('[Scheduler] Next run: check /test-status for latest results');
+}, 60000);
+
+// ── TEST STATUS ENDPOINT ──────────────────────────────────────────────────────
+app.get('/test-status', function(req, res) {
+  const latestPath = require('path').join(__dirname, 'logs', 'latest.json');
+  if (require('fs').existsSync(latestPath)) {
+    const data = JSON.parse(require('fs').readFileSync(latestPath, 'utf8'));
+    const fc = data.feature_check || {};
+    const ts = data.test_suite || {};
+    const allGreen = fc.failed === '0' && (ts.failed === '0' || ts.failed === 0);
+    res.json({
+      status: allGreen ? 'ALL PASSING' : 'FAILURES DETECTED',
+      last_run: data.date,
+      feature_health_check: {
+        passed: fc.passed,
+        failed: fc.failed,
+        runtime_seconds: fc.runtime_seconds
+      },
+      test_suite_1500: {
+        passed: ts.passed,
+        failed: ts.failed,
+        runtime: ts.runtime
+      }
+    });
+  } else {
+    res.json({ status: 'No results yet — first run scheduled for 2:00 AM UTC', note: 'Results will appear here after first scheduled run' });
+  }
+});
+
+app.listen(port, '0.0.0.0', () => {
   console.log(`[STARTUP] Server listening on port ${port}`);
 });
 
