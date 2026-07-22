@@ -766,11 +766,42 @@ async function initMemberSchema() {
   console.log('[DB] v2 member/consent/feed schema ready');
 }
 
+// Durable storage for the nightly test runner. Render's filesystem is
+// ephemeral, so logs/latest.json is wiped by every deploy and restart and
+// /test-status would revert to "No results yet" until the next 02:00 UTC run.
+// Postgres survives both.
+async function initTestResultSchema() {
+  if (!pool) return;
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS scheduled_test_runs (
+      id               SERIAL PRIMARY KEY,
+      run_day          DATE NOT NULL,
+      trigger          TEXT NOT NULL,
+      target           TEXT,
+      all_green        BOOLEAN,
+      feature_check    JSONB,
+      test_suite       JSONB,
+      duration_seconds INTEGER,
+      error            TEXT,
+      started_at       TIMESTAMPTZ,
+      finished_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_test_runs_finished ON scheduled_test_runs(finished_at DESC)`
+  );
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_test_runs_day ON scheduled_test_runs(run_day, trigger)`
+  );
+  console.log('[DB] scheduled_test_runs ready');
+}
+
 async function bootstrapV2Schema() {
   if (!pool) return;
   try {
     await initPartnerSchema();
     await initMemberSchema();
+    await initTestResultSchema();
   } catch (e) {
     console.error('[DB] v2 schema bootstrap failed:', e.message);
   }
@@ -3945,6 +3976,73 @@ const LOGS_DIR = path.join(__dirname, 'logs');
 // and a once-per-day guard are needed.
 const scheduledTestState = { running: false, startedAt: null, lastCompletedDay: null };
 
+// One definition of "green", shared by the persistence path and /test-status so
+// the stored verdict and the rendered verdict can never disagree. A suite that
+// was disabled or produced no artifact is not green.
+function evaluateAllGreen(fc, ts) {
+  const clean = function (x) { return x && x.status === 'complete' && Number(x.failed) === 0; };
+  const considered = [fc, ts].filter(function (x) { return x && x.status !== 'disabled'; });
+  return considered.length > 0 && considered.every(clean);
+}
+
+async function persistTestRun(summary) {
+  if (!pool) return { persisted: false, reason: 'no database configured' };
+  try {
+    await pool.query(
+      `INSERT INTO scheduled_test_runs
+         (run_day, trigger, target, all_green, feature_check, test_suite,
+          duration_seconds, error, started_at, finished_at)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, NOW())`,
+      [
+        summary.date.slice(0, 10),
+        summary.trigger,
+        summary.target,
+        evaluateAllGreen(summary.feature_check, summary.test_suite),
+        JSON.stringify(summary.feature_check || {}),
+        JSON.stringify(summary.test_suite || {}),
+        summary.duration_seconds || 0,
+        summary.error || null,
+        summary.date,
+      ]
+    );
+    return { persisted: true };
+  } catch (e) {
+    // Never fatal: a database problem must not lose the run or crash the timer.
+    console.error('[Scheduler] Could not persist run to Postgres:', e.message);
+    return { persisted: false, reason: e.message };
+  }
+}
+
+async function loadLatestTestRun() {
+  if (!pool) return null;
+  try {
+    const { rows } = await pool.query(
+      `SELECT * FROM scheduled_test_runs ORDER BY finished_at DESC LIMIT 1`
+    );
+    return rows[0] || null;
+  } catch (e) {
+    console.error('[Scheduler] Could not read run from Postgres:', e.message);
+    return null;
+  }
+}
+
+// Restart-proof once-per-day guard. The in-memory flag is lost whenever the
+// process restarts, so a restart inside the 02:00-02:04 window could otherwise
+// start a second run on top of the first.
+async function scheduledRunCompletedToday(day) {
+  if (!pool) return false;
+  try {
+    const { rows } = await pool.query(
+      `SELECT 1 FROM scheduled_test_runs
+        WHERE run_day = $1 AND trigger = 'scheduled' LIMIT 1`,
+      [day]
+    );
+    return rows.length > 0;
+  } catch (e) {
+    return false;
+  }
+}
+
 function formatDuration(totalSeconds) {
   const s = Math.max(0, Math.round(totalSeconds || 0));
   const h = Math.floor(s / 3600);
@@ -4047,7 +4145,8 @@ async function runScheduledTests(trigger) {
       new Date(scheduledTestState.startedAt).toISOString() + ' is still in progress');
     return { skipped: true, reason: 'already running' };
   }
-  if (trigger === 'scheduled' && scheduledTestState.lastCompletedDay === today) {
+  if (trigger === 'scheduled' &&
+      (scheduledTestState.lastCompletedDay === today || await scheduledRunCompletedToday(today))) {
     console.log('[Scheduler] Skipped — already completed a run today');
     return { skipped: true, reason: 'already ran today' };
   }
@@ -4135,16 +4234,27 @@ async function runScheduledTests(trigger) {
     summary.duration_seconds = Math.round((Date.now() - runStartedAt) / 1000);
     summary.duration = formatDuration(summary.duration_seconds);
 
-    if (!fs.existsSync(LOGS_DIR)) fs.mkdirSync(LOGS_DIR, { recursive: true });
-    fs.writeFileSync(path.join(LOGS_DIR, 'latest.json'), JSON.stringify(summary, null, 2));
-    // Dated copy so history survives the next run overwriting latest.json.
-    fs.writeFileSync(
-      path.join(LOGS_DIR, 'scheduled-run-' + today + '.json'),
-      JSON.stringify(summary, null, 2)
-    );
+    // Postgres is the system of record — it is the only one of the two that
+    // survives a deploy or restart.
+    const stored = await persistTestRun(summary);
+    summary.persisted = stored.persisted;
+
+    // The files remain as a local mirror, and as the fallback /test-status uses
+    // when no database is configured.
+    try {
+      if (!fs.existsSync(LOGS_DIR)) fs.mkdirSync(LOGS_DIR, { recursive: true });
+      fs.writeFileSync(path.join(LOGS_DIR, 'latest.json'), JSON.stringify(summary, null, 2));
+      fs.writeFileSync(
+        path.join(LOGS_DIR, 'scheduled-run-' + today + '.json'),
+        JSON.stringify(summary, null, 2)
+      );
+    } catch (e) {
+      console.error('[Scheduler] Could not write log files:', e.message);
+    }
 
     scheduledTestState.lastCompletedDay = today;
-    console.log('[Scheduler] Run complete in ' + summary.duration + ' — wrote logs/latest.json');
+    console.log('[Scheduler] Run complete in ' + summary.duration +
+      ' — persisted=' + stored.persisted + (stored.reason ? ' (' + stored.reason + ')' : ''));
     return summary;
   } catch (e) {
     // Nothing here may propagate: this runs from a timer.
@@ -4177,32 +4287,71 @@ setInterval(function () {
 
 // Run once on startup after 60s delay (confirms scheduler is working)
 setTimeout(function() {
-  console.log('[Scheduler] Initialized — daily tests will run at 2:00 AM UTC');
-  console.log('[Scheduler] Next run: check /test-status for latest results');
+  // Reflects the actual configuration rather than a hardcoded hour, so the
+  // boot log cannot disagree with SCHEDULED_TEST_HOUR_UTC.
+  console.log('[Scheduler] Initialized — daily tests run at ' +
+    String(SCHEDULED_TEST_HOUR_UTC).padStart(2, '0') + ':00 UTC ' +
+    '(feature check: ' + (RUN_FEATURE_CHECK ? 'on' : 'off') +
+    ', 1500-test suite: ' + (RUN_TEST_SUITE ? 'on' : 'off') + ')');
+  console.log('[Scheduler] Results persist to Postgres; check /test-status');
 }, 60000);
 
 // ── TEST STATUS ENDPOINT ──────────────────────────────────────────────────────
-app.get('/test-status', function(req, res) {
+// Manual trigger. Returns immediately: a full run can exceed 90 minutes, far
+// longer than any sensible HTTP timeout. Poll /test-status for the result.
+app.post('/api/admin/run-tests', requireAdmin, function (req, res) {
+  if (scheduledTestState.running) {
+    return res.status(409).json({
+      error: 'A test run is already in progress',
+      started_at: new Date(scheduledTestState.startedAt).toISOString(),
+    });
+  }
+  runScheduledTests('manual').catch(function (e) {
+    console.error('[Scheduler] Manual run error:', e && e.message);
+  });
+  res.status(202).json({
+    accepted: true,
+    note: 'Run started in the background. Poll /test-status for results.',
+    suites: {
+      feature_check: RUN_FEATURE_CHECK ? 'enabled' : 'disabled',
+      test_suite: RUN_TEST_SUITE ? 'enabled' : 'disabled',
+    },
+  });
+});
+
+app.get('/test-status', async function(req, res) {
+  // Postgres first — it is the only store that survives a deploy or restart.
+  const row = await loadLatestTestRun();
   const latestPath = require('path').join(__dirname, 'logs', 'latest.json');
-  if (require('fs').existsSync(latestPath)) {
-    let data;
+
+  let data = null;
+  let source = null;
+  if (row) {
+    data = {
+      date: row.finished_at,
+      trigger: row.trigger,
+      target: row.target,
+      duration: formatDuration(row.duration_seconds),
+      feature_check: row.feature_check || {},
+      test_suite: row.test_suite || {},
+    };
+    source = 'database';
+  } else if (require('fs').existsSync(latestPath)) {
     try {
       data = JSON.parse(require('fs').readFileSync(latestPath, 'utf8'));
+      source = 'file';
     } catch (e) {
       return res.status(500).json({ status: 'UNREADABLE', error: e.message });
     }
+  }
+
+  if (data) {
     const fc = data.feature_check || {};
     const ts = data.test_suite || {};
-
-    // Compared numerically. This previously tested `fc.failed === '0'` against a
-    // string, so any run reporting a numeric 0 was misread as a failure.
-    // A suite that was disabled or never produced an artifact is not "green".
-    const ran = function (x) { return x && x.status === 'complete'; };
-    const clean = function (x) { return ran(x) && Number(x.failed) === 0; };
-    const considered = [fc, ts].filter(function (x) { return x && x.status !== 'disabled'; });
-    const allGreen = considered.length > 0 && considered.every(clean);
+    const allGreen = evaluateAllGreen(fc, ts);
 
     res.json({
+      source: source,
       status: allGreen ? 'ALL PASSING' : 'FAILURES DETECTED',
       last_run: data.date,
       trigger: data.trigger,
