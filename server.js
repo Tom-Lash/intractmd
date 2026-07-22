@@ -3903,13 +3903,276 @@ Return ONLY valid JSON: {"email":{"subject":"<es>","body":"<es>"},"sms":{"body":
 
 const port = process.env.PORT || 3000;
 
-// Schedule: check every hour, run at 2am UTC
-setInterval(function() {
-  const h = new Date().getUTCHours();
-  const m = new Date().getUTCMinutes();
-  if (h === 2 && m < 5) {
-    runScheduledTests();
+// ════════════════════════════════════════════════════════════════════════════
+// DAILY SCHEDULED TEST RUNNER
+// ════════════════════════════════════════════════════════════════════════════
+// The scheduler below previously called runScheduledTests(), which was never
+// defined anywhere in the repository. Because an uncaught throw inside a
+// setInterval callback terminates the Node process and there is no
+// uncaughtException handler, the server crashed every night inside the
+// 02:00-02:04 UTC window and was restarted by the platform — which is also why
+// logs/latest.json was never written and /test-status always reported
+// "No results yet".
+//
+// This implements the function the scheduler was always calling. Both suites
+// are run as child processes; each one already writes an authoritative JSON
+// artifact, so results are read from those files rather than scraped from
+// stdout. Everything is defensive: runScheduledTests never rejects and never
+// throws, so it cannot take the server down again.
+// ════════════════════════════════════════════════════════════════════════════
+
+const { spawn } = require('child_process');
+
+const SCHEDULED_TEST_HOUR_UTC = Number(process.env.SCHEDULED_TEST_HOUR_UTC) || 2;
+const SCHEDULED_TEST_TARGET = process.env.SCHEDULED_TEST_TARGET || 'https://www.intractmd.com';
+
+// The 1,500-test suite legitimately runs for over an hour (the most recent
+// recorded run took 5,692s), so its ceiling is deliberately high. The feature
+// check normally finishes in about a minute.
+const FEATURE_CHECK_TIMEOUT_MS = Number(process.env.FEATURE_CHECK_TIMEOUT_MS) || 15 * 60 * 1000;
+const TEST_SUITE_TIMEOUT_MS = Number(process.env.TEST_SUITE_TIMEOUT_MS) || 3 * 60 * 60 * 1000;
+
+// Either suite can be turned off without a deploy. The 1,500-test suite issues
+// live API calls against the target, including billable AI endpoints, so being
+// able to disable it independently matters.
+const RUN_FEATURE_CHECK = process.env.SCHEDULED_FEATURE_CHECK !== 'false';
+const RUN_TEST_SUITE = process.env.SCHEDULED_TEST_SUITE !== 'false';
+
+const LOGS_DIR = path.join(__dirname, 'logs');
+
+// Concurrency guard. A run can outlast the 5-minute scheduler tick, and the
+// 02:00-02:04 window can be hit by more than one tick, so both a re-entry guard
+// and a once-per-day guard are needed.
+const scheduledTestState = { running: false, startedAt: null, lastCompletedDay: null };
+
+function formatDuration(totalSeconds) {
+  const s = Math.max(0, Math.round(totalSeconds || 0));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  return (h ? h + 'h ' : '') + (h || m ? m + 'm ' : '') + sec + 's';
+}
+
+// Runs one suite to completion. Resolves with an outcome — never rejects — so a
+// failing suite degrades into a recorded status instead of an exception.
+function runSuiteProcess(spec) {
+  return new Promise(function (resolve) {
+    const startedAt = Date.now();
+    let child;
+    try {
+      child = spawn(process.execPath, [spec.script].concat(spec.args || []), {
+        cwd: __dirname,
+        env: process.env,
+        stdio: ['ignore', 'pipe', 'pipe'],
+      });
+    } catch (e) {
+      return resolve({ status: 'error', error: e.message, elapsedSec: 0, tail: '' });
+    }
+
+    // Keep only the tail of the output. The 1,500-test suite prints a progress
+    // dot per test plus a full report, which must not accumulate in memory.
+    let tail = '';
+    const TAIL_LIMIT = 8000;
+    const collect = function (buf) {
+      tail = (tail + buf.toString()).slice(-TAIL_LIMIT);
+    };
+    child.stdout.on('data', collect);
+    child.stderr.on('data', collect);
+
+    let timedOut = false;
+    let killTimer = null;
+    const timer = setTimeout(function () {
+      timedOut = true;
+      console.error('[Scheduler] ' + spec.label + ' exceeded ' +
+        formatDuration(spec.timeoutMs / 1000) + ' — terminating');
+      try { child.kill('SIGTERM'); } catch (e) {}
+      // Escalate if it ignores SIGTERM.
+      killTimer = setTimeout(function () {
+        try { child.kill('SIGKILL'); } catch (e) {}
+      }, 10000);
+    }, spec.timeoutMs);
+
+    child.on('error', function (e) {
+      clearTimeout(timer);
+      if (killTimer) clearTimeout(killTimer);
+      resolve({ status: 'error', error: e.message, elapsedSec: Math.round((Date.now() - startedAt) / 1000), tail: tail });
+    });
+
+    child.on('close', function (code, signal) {
+      clearTimeout(timer);
+      if (killTimer) clearTimeout(killTimer);
+      const elapsedSec = Math.round((Date.now() - startedAt) / 1000);
+      resolve({
+        status: timedOut ? 'timeout' : (code === 0 ? 'ok' : 'nonzero_exit'),
+        exitCode: code,
+        signal: signal,
+        elapsedSec: elapsedSec,
+        tail: tail,
+        error: timedOut ? 'Timed out after ' + formatDuration(spec.timeoutMs / 1000)
+             : (code === 0 ? null : 'Exited with code ' + code),
+      });
+    });
+  });
+}
+
+// Locates the JSON artifact a suite wrote during this run. Matching on mtime
+// rather than on a computed filename keeps this correct when a run crosses
+// midnight UTC, which a 95-minute suite starting at 02:00 could plausibly do
+// if the hour were reconfigured.
+function findFreshArtifact(dir, prefix, sinceMs) {
+  try {
+    if (!fs.existsSync(dir)) return null;
+    const candidates = fs.readdirSync(dir)
+      .filter(function (f) { return f.startsWith(prefix) && f.endsWith('.json'); })
+      .map(function (f) {
+        const full = path.join(dir, f);
+        try { return { full: full, mtime: fs.statSync(full).mtimeMs }; } catch (e) { return null; }
+      })
+      .filter(function (x) { return x && x.mtime >= sinceMs - 1000; })
+      .sort(function (a, b) { return b.mtime - a.mtime; });
+    if (!candidates.length) return null;
+    return JSON.parse(fs.readFileSync(candidates[0].full, 'utf8'));
+  } catch (e) {
+    console.error('[Scheduler] Could not read artifact from ' + dir + ':', e.message);
+    return null;
   }
+}
+
+async function runScheduledTests(trigger) {
+  trigger = trigger || 'scheduled';
+  const today = new Date().toISOString().slice(0, 10);
+
+  if (scheduledTestState.running) {
+    console.warn('[Scheduler] Skipped — a run started at ' +
+      new Date(scheduledTestState.startedAt).toISOString() + ' is still in progress');
+    return { skipped: true, reason: 'already running' };
+  }
+  if (trigger === 'scheduled' && scheduledTestState.lastCompletedDay === today) {
+    console.log('[Scheduler] Skipped — already completed a run today');
+    return { skipped: true, reason: 'already ran today' };
+  }
+
+  scheduledTestState.running = true;
+  scheduledTestState.startedAt = Date.now();
+  const runStartedAt = Date.now();
+  console.log('[Scheduler] Starting daily test run (trigger=' + trigger + ', target=' + SCHEDULED_TEST_TARGET + ')');
+
+  const summary = {
+    date: new Date().toISOString(),
+    trigger: trigger,
+    target: SCHEDULED_TEST_TARGET,
+    feature_check: { status: 'disabled' },
+    test_suite: { status: 'disabled' },
+  };
+
+  try {
+    // ── Suite 1: feature health check ──────────────────────────────────────
+    if (RUN_FEATURE_CHECK) {
+      const startedAt = Date.now();
+      const outcome = await runSuiteProcess({
+        label: 'feature health check',
+        script: path.join(__dirname, 'intractmd_feature_health_check.js'),
+        args: ['--target=' + SCHEDULED_TEST_TARGET],
+        timeoutMs: FEATURE_CHECK_TIMEOUT_MS,
+      });
+      // A non-zero exit is expected here: the suite exits 1 when any check
+      // fails, which is a result to record, not an error to discard.
+      const data = findFreshArtifact(path.join(__dirname, 'health-check'), 'data_', startedAt);
+      summary.feature_check = data ? {
+        status: outcome.status === 'timeout' ? 'timeout' : 'complete',
+        total: data.total,
+        passed: data.passed,
+        failed: data.failed,
+        warned: data.warned,
+        runtime_seconds: data.runtime_seconds,
+        runtime: formatDuration(data.runtime_seconds),
+        error: outcome.status === 'timeout' ? outcome.error : null,
+      } : {
+        status: outcome.status === 'ok' ? 'no_artifact' : outcome.status,
+        error: outcome.error || 'Suite produced no JSON artifact',
+        runtime_seconds: outcome.elapsedSec,
+        runtime: formatDuration(outcome.elapsedSec),
+        tail: (outcome.tail || '').slice(-600),
+      };
+      console.log('[Scheduler] Feature check: ' + summary.feature_check.status +
+        ' (' + (summary.feature_check.passed != null
+          ? summary.feature_check.passed + '/' + summary.feature_check.total + ' passed' : 'no data') + ')');
+    }
+
+    // ── Suite 2: 1,500-test pressure suite ─────────────────────────────────
+    if (RUN_TEST_SUITE) {
+      const startedAt = Date.now();
+      const outcome = await runSuiteProcess({
+        label: '1500-test suite',
+        script: path.join(__dirname, 'intractmd_test_suite_v2.js'),
+        args: [],
+        timeoutMs: TEST_SUITE_TIMEOUT_MS,
+      });
+      const data = findFreshArtifact(path.join(__dirname, 'test_results'), 'results_', startedAt);
+      const s = data && data.summary;
+      summary.test_suite = s ? {
+        status: outcome.status === 'timeout' ? 'timeout' : 'complete',
+        total: s.totalTests,
+        passed: s.totalPassed,
+        failed: s.totalTests - s.totalPassed,
+        pass_rate: s.overall,
+        avg_ms: s.avgMs,
+        runtime_seconds: s.elapsedSec,
+        runtime: formatDuration(s.elapsedSec),
+        error: outcome.status === 'timeout' ? outcome.error : null,
+      } : {
+        status: outcome.status === 'ok' ? 'no_artifact' : outcome.status,
+        error: outcome.error || 'Suite produced no JSON artifact',
+        runtime_seconds: outcome.elapsedSec,
+        runtime: formatDuration(outcome.elapsedSec),
+        tail: (outcome.tail || '').slice(-600),
+      };
+      console.log('[Scheduler] Test suite: ' + summary.test_suite.status +
+        ' (' + (summary.test_suite.passed != null
+          ? summary.test_suite.passed + '/' + summary.test_suite.total + ' passed' : 'no data') + ')');
+    }
+
+    summary.duration_seconds = Math.round((Date.now() - runStartedAt) / 1000);
+    summary.duration = formatDuration(summary.duration_seconds);
+
+    if (!fs.existsSync(LOGS_DIR)) fs.mkdirSync(LOGS_DIR, { recursive: true });
+    fs.writeFileSync(path.join(LOGS_DIR, 'latest.json'), JSON.stringify(summary, null, 2));
+    // Dated copy so history survives the next run overwriting latest.json.
+    fs.writeFileSync(
+      path.join(LOGS_DIR, 'scheduled-run-' + today + '.json'),
+      JSON.stringify(summary, null, 2)
+    );
+
+    scheduledTestState.lastCompletedDay = today;
+    console.log('[Scheduler] Run complete in ' + summary.duration + ' — wrote logs/latest.json');
+    return summary;
+  } catch (e) {
+    // Nothing here may propagate: this runs from a timer.
+    console.error('[Scheduler] Run failed:', e.message);
+    try {
+      if (!fs.existsSync(LOGS_DIR)) fs.mkdirSync(LOGS_DIR, { recursive: true });
+      summary.error = e.message;
+      summary.duration_seconds = Math.round((Date.now() - runStartedAt) / 1000);
+      fs.writeFileSync(path.join(LOGS_DIR, 'latest.json'), JSON.stringify(summary, null, 2));
+    } catch (writeErr) {
+      console.error('[Scheduler] Could not write failure record:', writeErr.message);
+    }
+    return summary;
+  } finally {
+    scheduledTestState.running = false;
+    scheduledTestState.startedAt = null;
+  }
+}
+
+// Schedule: check every 5 minutes, run once inside the configured UTC hour.
+setInterval(function () {
+  const now = new Date();
+  if (now.getUTCHours() !== SCHEDULED_TEST_HOUR_UTC || now.getUTCMinutes() >= 5) return;
+  // runScheduledTests already swallows its own errors; this catch exists so a
+  // future change to it can never again terminate the process from a timer.
+  runScheduledTests('scheduled').catch(function (e) {
+    console.error('[Scheduler] Unexpected scheduler error:', e && e.message);
+  });
 }, 300000); // check every 5 minutes
 
 // Run once on startup after 60s delay (confirms scheduler is working)
@@ -3922,26 +4185,55 @@ setTimeout(function() {
 app.get('/test-status', function(req, res) {
   const latestPath = require('path').join(__dirname, 'logs', 'latest.json');
   if (require('fs').existsSync(latestPath)) {
-    const data = JSON.parse(require('fs').readFileSync(latestPath, 'utf8'));
+    let data;
+    try {
+      data = JSON.parse(require('fs').readFileSync(latestPath, 'utf8'));
+    } catch (e) {
+      return res.status(500).json({ status: 'UNREADABLE', error: e.message });
+    }
     const fc = data.feature_check || {};
     const ts = data.test_suite || {};
-    const allGreen = fc.failed === '0' && (ts.failed === '0' || ts.failed === 0);
+
+    // Compared numerically. This previously tested `fc.failed === '0'` against a
+    // string, so any run reporting a numeric 0 was misread as a failure.
+    // A suite that was disabled or never produced an artifact is not "green".
+    const ran = function (x) { return x && x.status === 'complete'; };
+    const clean = function (x) { return ran(x) && Number(x.failed) === 0; };
+    const considered = [fc, ts].filter(function (x) { return x && x.status !== 'disabled'; });
+    const allGreen = considered.length > 0 && considered.every(clean);
+
     res.json({
       status: allGreen ? 'ALL PASSING' : 'FAILURES DETECTED',
       last_run: data.date,
+      trigger: data.trigger,
+      target: data.target,
+      duration: data.duration,
       feature_health_check: {
+        status: fc.status,
         passed: fc.passed,
         failed: fc.failed,
-        runtime_seconds: fc.runtime_seconds
+        warned: fc.warned,
+        total: fc.total,
+        runtime_seconds: fc.runtime_seconds,
+        error: fc.error || undefined
       },
       test_suite_1500: {
+        status: ts.status,
         passed: ts.passed,
         failed: ts.failed,
-        runtime: ts.runtime
+        total: ts.total,
+        pass_rate: ts.pass_rate,
+        avg_ms: ts.avg_ms,
+        runtime: ts.runtime,
+        error: ts.error || undefined
       }
     });
   } else {
-    res.json({ status: 'No results yet — first run scheduled for 2:00 AM UTC', note: 'Results will appear here after first scheduled run' });
+    res.json({
+      status: 'No results yet — first run scheduled for ' +
+        String(SCHEDULED_TEST_HOUR_UTC).padStart(2, '0') + ':00 UTC',
+      note: 'Results will appear here after first scheduled run'
+    });
   }
 });
 
