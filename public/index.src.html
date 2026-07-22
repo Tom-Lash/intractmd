@@ -3556,7 +3556,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoMo
 <div style="text-align:center;padding:12px;font-size:11px;color:#888;border-top:1px solid #e5e5e5;margin-top:8px">&#169; 2026 Resolve Medical, LLC &nbsp;|&nbsp; <a href="/terms" style="color:#1B6EC2;text-decoration:none;">Terms of Use</a></div>
 
 <script>
-/* ── IntractMD v2 — Clerk authentication (partner data feed) ────────────────
+/* ── IntractMD v2 — Clerk authentication (browser sign-in) ──────────────────
    Additive: the public drug checker works fine signed-out. If Clerk is not
    configured or its script fails to load, the auth slot simply stays hidden. */
 (function(){
@@ -3565,8 +3565,14 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoMo
   var signedIn  = document.getElementById('auth-signed-in');
   var userEl    = document.getElementById('auth-user');
 
-  // window.IntractAuth is the handle Phase 2 partner-feed calls will use to
-  // attach a bearer token: fetch(url, {headers:{Authorization:'Bearer '+token}})
+  // window.IntractAuth exposes the signed-in Clerk session to browser code, for
+  // Clerk-protected routes such as GET /api/partner/me.
+  //
+  // It is NOT how the partner data feed authenticates. Feed clients are health
+  // plan care management systems that pull server-to-server and never sit in a
+  // browser, so they present an issued partner API key
+  // (Authorization: Bearer imd_...) which is checked against a stored SHA-256
+  // digest. See the phase 5 block in server.js.
   window.IntractAuth = {
     ready: false,
     isSignedIn: function(){ return !!(window.Clerk && window.Clerk.user); },
