@@ -24,6 +24,10 @@
 
 console.log('[STARTUP] Process started');
 
+// Load .env before anything reads process.env. Does not override vars that are
+// already set, so Render's dashboard config still wins in production.
+require('dotenv').config();
+
 const express = require('express');
 const fetch = require('node-fetch');
 const path = require('path');
@@ -337,6 +341,1814 @@ function writeFileCache(dir, slug, data) {
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD v2 — PARTNER DATA FEED · PHASE 1: AUTH + DATABASE
+// ════════════════════════════════════════════════════════════════════════════
+// Clerk handles identity; Postgres holds partner records keyed by Clerk user id.
+// Both are OPTIONAL at boot: if the env vars are missing the server still starts
+// and every existing public route keeps working unauthenticated. Only the
+// /api/partner/* routes require a signed-in user.
+// ════════════════════════════════════════════════════════════════════════════
+
+const { clerkMiddleware, getAuth, clerkClient } = require('@clerk/express');
+
+const CLERK_ENABLED = !!(process.env.CLERK_SECRET_KEY && process.env.CLERK_PUBLISHABLE_KEY);
+
+if (CLERK_ENABLED) {
+  // Attaches req.auth to every request. It does NOT block anything on its own —
+  // unauthenticated visitors simply get a null userId, so the public drug
+  // checker is unaffected.
+  app.use(clerkMiddleware());
+  console.log('[CLERK] Middleware active (' +
+    (process.env.CLERK_PUBLISHABLE_KEY.startsWith('pk_live_') ? 'live' : 'test') + ' instance)');
+} else {
+  console.warn('[CLERK] Disabled — CLERK_SECRET_KEY / CLERK_PUBLISHABLE_KEY not set');
+}
+
+// ── Postgres pool ───────────────────────────────────────────────────────────
+const { Pool } = require('pg');
+
+let pool = null;
+
+if (process.env.DATABASE_URL) {
+  const isInternal = /\.internal\b/.test(process.env.DATABASE_URL);
+  pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    // Render's external Postgres endpoint terminates TLS with a certificate our
+    // Node trust store can't chain to, so verification is relaxed there. The
+    // internal (private-network) endpoint doesn't use TLS at all.
+    ssl: isInternal ? false : { rejectUnauthorized: false },
+    max: 10,
+    idleTimeoutMillis: 30000,
+    connectionTimeoutMillis: 10000,
+  });
+
+  // A dropped backend connection emits on the pool; without a listener Node
+  // treats it as an unhandled error event and kills the process.
+  pool.on('error', (err) => console.error('[DB] Idle client error:', err.message));
+
+  pool.query('SELECT 1')
+    .then(() => console.log('[DB] Connected'))
+    .catch((e) => console.error('[DB] Initial connection failed:', e.message));
+} else {
+  console.warn('[DB] Disabled — DATABASE_URL not set');
+}
+
+// Idempotent schema bootstrap. Every partner is one Clerk user; this table is
+// where partner-specific feed config will hang off in Phase 2.
+async function initPartnerSchema() {
+  if (!pool) return;
+  try {
+    await pool.query(`
+      CREATE TABLE IF NOT EXISTS partner_accounts (
+        id             SERIAL PRIMARY KEY,
+        clerk_user_id  TEXT UNIQUE NOT NULL,
+        email          TEXT,
+        organization   TEXT,
+        status         TEXT NOT NULL DEFAULT 'pending',
+        created_at     TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+        last_seen_at   TIMESTAMPTZ
+      )
+    `);
+    console.log('[DB] partner_accounts ready');
+  } catch (e) {
+    console.error('[DB] Schema bootstrap failed:', e.message);
+  }
+}
+// Phase 2 extends this with the member/consent/feed tables. Chained rather than
+// fired in parallel because member_consents carries an FK onto member_profiles.
+bootstrapV2Schema();
+
+// ── Auth/database status endpoints ──────────────────────────────────────────
+
+// The frontend pulls its publishable key from here rather than having it baked
+// into index.src.html, so test/live keys switch with the environment.
+app.get('/api/auth/config', (req, res) => {
+  res.json({
+    enabled: CLERK_ENABLED,
+    publishableKey: process.env.CLERK_PUBLISHABLE_KEY || null,
+  });
+});
+
+app.get('/api/db/health', async (req, res) => {
+  if (!pool) return res.status(503).json({ ok: false, error: 'DATABASE_URL not configured' });
+  try {
+    const { rows } = await pool.query('SELECT NOW() AS now');
+    res.json({ ok: true, now: rows[0].now });
+  } catch (e) {
+    res.status(503).json({ ok: false, error: e.message });
+  }
+});
+
+// ── Protected partner routes ────────────────────────────────────────────────
+// Deliberately not Clerk's requireAuth(): that redirects browsers to a sign-in
+// page (302), which is wrong for a data feed. API clients need a JSON 401.
+// This also avoids the deprecated requireAuth() helper.
+function protect(req, res, next) {
+  if (!CLERK_ENABLED) {
+    return res.status(503).json({ error: 'Authentication is not configured on this server' });
+  }
+  const auth = getAuth(req);
+  if (!auth || !auth.userId) {
+    return res.status(401).json({ error: 'Authentication required' });
+  }
+  next();
+}
+
+// Returns the signed-in user and upserts their partner_accounts row.
+app.get('/api/partner/me', protect, async (req, res) => {
+  try {
+    const { userId } = getAuth(req);
+    const user = await clerkClient.users.getUser(userId);
+    const email = user.primaryEmailAddress ? user.primaryEmailAddress.emailAddress : null;
+
+    let account = null;
+    if (pool) {
+      const { rows } = await pool.query(
+        `INSERT INTO partner_accounts (clerk_user_id, email, last_seen_at)
+         VALUES ($1, $2, NOW())
+         ON CONFLICT (clerk_user_id)
+         DO UPDATE SET email = EXCLUDED.email, last_seen_at = NOW()
+         RETURNING id, clerk_user_id, email, organization, status, created_at`,
+        [userId, email]
+      );
+      account = rows[0];
+    }
+
+    res.json({
+      userId,
+      email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      imageUrl: user.imageUrl,
+      account,
+    });
+  } catch (e) {
+    console.error('[PARTNER] /me failed:', e.message);
+    res.status(500).json({ error: 'Failed to load partner profile' });
+  }
+});
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD v2 · PHASE 2: DATABASE SCHEMA
+// ════════════════════════════════════════════════════════════════════════════
+// Implements the storage layer for FIG. 13 of the specification:
+//
+//   step 1306  member_profiles         PHI-free persistent medication profile
+//   steps 1302/1304  member_consents   two-tier, independently revocable consent
+//   steps 1308/1310  member_risk_history   longitudinal risk continuity
+//   step 1322  partner_brand_configs   per-partner brand object (multi-tenant)
+//   steps 1320/1324  outreach_events   delta-triggered outreach log
+//   step 1318  reanalysis_runs         scheduled population re-analysis audit
+//
+// Every statement is idempotent so the server can boot against a fresh database
+// or one that already has some of these tables.
+// ════════════════════════════════════════════════════════════════════════════
+
+const crypto = require('crypto');
+
+// ── PHI exclusion ───────────────────────────────────────────────────────────
+// Spec 1306: the schema "contains no fields for name, date of birth, address,
+// member identification number, or any other personal identifier ... such that
+// the system is architecturally incapable of storing such information rather
+// than merely configured to avoid collecting it."
+//
+// Two mechanisms enforce that here:
+//   1. member_profiles has no column any such value could land in. The three
+//      substance columns are normalised to arrays of plain strings on write
+//      (normalizeSubstanceList), so an object carrying PHI cannot survive.
+//   2. Request bodies are scanned for PHI-shaped keys and rejected outright,
+//      so a client cannot even attempt the write.
+const PHI_KEY_PATTERN = new RegExp(
+  '^(' +
+  'name|first_?name|last_?name|full_?name|middle_?name|' +
+  'dob|date_?of_?birth|birth_?date|age|' +
+  'ssn|social_?security|mrn|medical_?record_?number|' +
+  'member_?id|member_?number|subscriber_?id|patient_?id|insurance_?id|' +
+  'address|street|address_?line_?[12]|city|state|zip|zipcode|postal_?code|' +
+  'phone|phone_?number|mobile|email|email_?address|' +
+  'gender|sex|race|ethnicity' +
+  ')$', 'i'
+);
+
+// Walks a request body and reports the first PHI-shaped key it finds.
+function findPhiKey(value, path) {
+  path = path || '';
+  if (!value || typeof value !== 'object') return null;
+  if (Array.isArray(value)) {
+    for (let i = 0; i < value.length; i++) {
+      const hit = findPhiKey(value[i], path + '[' + i + ']');
+      if (hit) return hit;
+    }
+    return null;
+  }
+  for (const key of Object.keys(value)) {
+    if (PHI_KEY_PATTERN.test(key)) return (path ? path + '.' : '') + key;
+    const hit = findPhiKey(value[key], (path ? path + '.' : '') + key);
+    if (hit) return hit;
+  }
+  return null;
+}
+
+// Express middleware form of the above. Applied to every member write route.
+function rejectPhi(req, res, next) {
+  const offending = findPhiKey(req.body, '');
+  if (offending) {
+    return res.status(400).json({
+      error: 'Personal identifiers are not accepted by this endpoint',
+      field: offending,
+      detail: 'Member profiles are stored PHI-free against an anonymous session token.',
+    });
+  }
+  next();
+}
+
+// Collapses whatever a client sends into a de-duplicated array of trimmed
+// substance-name strings. Objects are reduced to their name-ish field, which is
+// what makes the PHI-free guarantee structural rather than advisory.
+function normalizeSubstanceList(input, max) {
+  max = max || 60;
+  if (!Array.isArray(input)) return [];
+  const out = [];
+  const seen = new Set();
+  for (const entry of input) {
+    let label = null;
+    if (typeof entry === 'string') label = entry;
+    else if (entry && typeof entry === 'object') {
+      label = entry.name || entry.drug || entry.substance || entry.label || null;
+    }
+    if (typeof label !== 'string') continue;
+    label = label.trim().slice(0, 120);
+    if (!label) continue;
+    const key = label.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(label);
+    if (out.length >= max) break;
+  }
+  return out;
+}
+
+async function initMemberSchema() {
+  if (!pool) return;
+
+  // NOTE: no name / dob / address / member-number column exists here, and none
+  // may be added — see the PHI exclusion note above.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS member_profiles (
+      id               SERIAL PRIMARY KEY,
+      session_token    TEXT UNIQUE NOT NULL,
+      partner_id       INTEGER REFERENCES partner_accounts(id) ON DELETE SET NULL,
+      medications      JSONB NOT NULL DEFAULT '[]'::jsonb,
+      supplements      JSONB NOT NULL DEFAULT '[]'::jsonb,
+      food_factors     JSONB NOT NULL DEFAULT '[]'::jsonb,
+      created_at       TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+      updated_at       TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+      last_analyzed_at TIMESTAMPTZ
+    )
+  `);
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_member_profiles_partner ON member_profiles(partner_id)`
+  );
+
+  // Spec 1302/1304: two consents, separate rows of state, independently
+  // revocable. Tier 1 gates persistence; tier 2 gates outbound transmission
+  // only and never affects the stored profile.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS member_consents (
+      session_token         TEXT PRIMARY KEY
+                              REFERENCES member_profiles(session_token) ON DELETE CASCADE,
+      tier1_persist_granted BOOLEAN NOT NULL DEFAULT FALSE,
+      tier1_granted_at      TIMESTAMPTZ,
+      tier1_revoked_at      TIMESTAMPTZ,
+      tier2_share_granted   BOOLEAN NOT NULL DEFAULT FALSE,
+      tier2_granted_at      TIMESTAMPTZ,
+      tier2_revoked_at      TIMESTAMPTZ,
+      updated_at            TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+
+  // Append-only consent audit trail. Revocation must remain provable after the
+  // fact even though member_consents only holds current state.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS member_consent_events (
+      id            SERIAL PRIMARY KEY,
+      session_token TEXT NOT NULL,
+      tier          SMALLINT NOT NULL CHECK (tier IN (1, 2)),
+      action        TEXT NOT NULL CHECK (action IN ('grant', 'revoke')),
+      occurred_at   TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_consent_events_token ON member_consent_events(session_token, occurred_at DESC)`
+  );
+
+  // Spec 1308/1310: every computed score is retained so the risk-continuity
+  // module can compare the current tier against the previous cycle's tier.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS member_risk_history (
+      id                SERIAL PRIMARY KEY,
+      session_token     TEXT NOT NULL,
+      cprs              SMALLINT NOT NULL,
+      risk_tier         TEXT NOT NULL,
+      dimensions        JSONB,
+      interaction_count SMALLINT NOT NULL DEFAULT 0,
+      cycle             TEXT NOT NULL DEFAULT 'session',
+      computed_at       TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_risk_history_token ON member_risk_history(session_token, computed_at DESC)`
+  );
+
+  // Spec 1322: one brand configuration object per licensed health plan partner.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS partner_brand_configs (
+      partner_id                  INTEGER PRIMARY KEY
+                                    REFERENCES partner_accounts(id) ON DELETE CASCADE,
+      organization_name           TEXT,
+      member_services_contact     TEXT,
+      clinical_escalation_pathway TEXT,
+      tone_profile                TEXT DEFAULT 'warm, professional, plain-language',
+      language                    TEXT NOT NULL DEFAULT 'en',
+      updated_at                  TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+
+  // Spec 1320/1324: one row per delta-triggered outreach event. Rows are only
+  // created on an upward tier change — that condition is the whole point.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS outreach_events (
+      id           SERIAL PRIMARY KEY,
+      session_token TEXT NOT NULL,
+      partner_id   INTEGER REFERENCES partner_accounts(id) ON DELETE SET NULL,
+      prior_tier   TEXT,
+      new_tier     TEXT NOT NULL,
+      prior_cprs   SMALLINT,
+      new_cprs     SMALLINT NOT NULL,
+      package      JSONB,
+      status       TEXT NOT NULL DEFAULT 'pending',
+      error        TEXT,
+      created_at   TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_outreach_partner ON outreach_events(partner_id, created_at DESC)`
+  );
+
+  // Spec 1318: audit of each scheduled population re-analysis cycle.
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS reanalysis_runs (
+      id                 SERIAL PRIMARY KEY,
+      partner_id         INTEGER REFERENCES partner_accounts(id) ON DELETE CASCADE,
+      trigger            TEXT NOT NULL DEFAULT 'scheduled',
+      status             TEXT NOT NULL DEFAULT 'running',
+      members_analyzed   INTEGER NOT NULL DEFAULT 0,
+      tier_upgrades      INTEGER NOT NULL DEFAULT 0,
+      outreach_generated INTEGER NOT NULL DEFAULT 0,
+      error              TEXT,
+      started_at         TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+      finished_at        TIMESTAMPTZ
+    )
+  `);
+
+  // Partner-configured re-analysis schedule (spec 1318). Added to the Phase 1
+  // table rather than a new one, since it is per-partner configuration.
+  await pool.query(`
+    ALTER TABLE partner_accounts
+      ADD COLUMN IF NOT EXISTS feed_enabled            BOOLEAN NOT NULL DEFAULT TRUE,
+      ADD COLUMN IF NOT EXISTS reanalysis_enabled      BOOLEAN NOT NULL DEFAULT FALSE,
+      ADD COLUMN IF NOT EXISTS reanalysis_hour_utc     SMALLINT NOT NULL DEFAULT 3,
+      ADD COLUMN IF NOT EXISTS reanalysis_cadence_days SMALLINT NOT NULL DEFAULT 1,
+      ADD COLUMN IF NOT EXISTS last_reanalysis_at      TIMESTAMPTZ
+  `);
+
+  // Phase 5 authenticates partners with an issued API key rather than a Clerk
+  // session, because a health plan care management system pulls the feed
+  // server-to-server and never sits in a browser. Only the SHA-256 of the key
+  // is stored; the plaintext is shown once at issue time and is unrecoverable.
+  await pool.query(`
+    ALTER TABLE partner_accounts
+      ADD COLUMN IF NOT EXISTS api_key_hash      TEXT,
+      ADD COLUMN IF NOT EXISTS api_key_prefix    TEXT,
+      ADD COLUMN IF NOT EXISTS api_key_issued_at TIMESTAMPTZ,
+      ADD COLUMN IF NOT EXISTS api_key_last_used_at TIMESTAMPTZ
+  `);
+  await pool.query(
+    `CREATE INDEX IF NOT EXISTS idx_partner_api_key ON partner_accounts(api_key_hash)`
+  );
+
+  // Partners provisioned by an administrator have no Clerk user, so the Phase 1
+  // NOT NULL on clerk_user_id no longer holds. The UNIQUE constraint stays —
+  // Postgres permits multiple NULLs under it.
+  try {
+    await pool.query(`ALTER TABLE partner_accounts ALTER COLUMN clerk_user_id DROP NOT NULL`);
+  } catch (e) {
+    console.error('[DB] clerk_user_id nullability migration skipped:', e.message);
+  }
+
+  // Enrollment code: how an anonymous member session is associated with the
+  // partner whose feed it belongs to, without the member ever being identified.
+  // Separate statement so a pre-existing conflicting column cannot take the
+  // rest of the migration down with it. gen_random_uuid() is built in on the
+  // Postgres 18 instance backing this, so no pgcrypto extension is required.
+  try {
+    await pool.query(`
+      ALTER TABLE partner_accounts
+        ADD COLUMN IF NOT EXISTS enrollment_code TEXT UNIQUE
+        DEFAULT replace(gen_random_uuid()::text, '-', '')
+    `);
+  } catch (e) {
+    console.error('[DB] enrollment_code migration skipped:', e.message);
+  }
+
+  console.log('[DB] v2 member/consent/feed schema ready');
+}
+
+async function bootstrapV2Schema() {
+  if (!pool) return;
+  try {
+    await initPartnerSchema();
+    await initMemberSchema();
+  } catch (e) {
+    console.error('[DB] v2 schema bootstrap failed:', e.message);
+  }
+}
+
+// ── Shared helpers ──────────────────────────────────────────────────────────
+
+// Resolves the Clerk-authenticated caller to their partner_accounts row.
+// protect() has already guaranteed a userId by the time this runs.
+async function getPartnerAccount(req) {
+  if (!pool) return null;
+  const { userId } = getAuth(req);
+  const { rows } = await pool.query(
+    `SELECT * FROM partner_accounts WHERE clerk_user_id = $1`,
+    [userId]
+  );
+  return rows[0] || null;
+}
+
+// Ranking used for every tier comparison in phases 3-6. Kept in one place so
+// the feed, the continuity module and the delta trigger cannot drift apart.
+const RISK_TIER_RANK = { Minimal: 0, Low: 1, Moderate: 2, High: 3, Critical: 4 };
+
+function tierRank(tier) {
+  return RISK_TIER_RANK[tier] != null ? RISK_TIER_RANK[tier] : 0;
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD v2 · PHASE 3: MEMBER PROFILE PERSISTENCE
+// ════════════════════════════════════════════════════════════════════════════
+// Spec FIG. 13 steps 1306, 1308 and 1310.
+//
+// A member is an ANONYMOUS SESSION TOKEN and nothing else. There is no login,
+// no Clerk user, no identifier of any kind — Clerk authenticates *partners*
+// (phase 1), never members. The token is the only handle on a profile, so it is
+// generated with 32 bytes of CSPRNG entropy and is unguessable.
+//
+// step 1308: the CPRS engine recomputes a composite score from the persisted
+//            lists on each session initialisation.
+// step 1310: the risk-continuity module compares that score against the score
+//            stored for the same token last cycle and reports any tier change,
+//            giving longitudinal tracking with no identity linkage whatsoever.
+// ════════════════════════════════════════════════════════════════════════════
+
+const SESSION_TOKEN_BYTES = 32;
+
+function mintSessionToken() {
+  return crypto.randomBytes(SESSION_TOKEN_BYTES).toString('hex');
+}
+
+// The codebase carries three different tier cut-off sets (calcPcprsFromDD uses
+// 80/60/40/20, the proactive path uses 70/50/30/10). Phases 3-6 standardise on
+// analyzeRegimenHybrid's thresholds so that a tier stored by /api/member/analyze
+// is directly comparable to one computed by the scheduled re-analysis.
+function classifyRiskTier(cprs) {
+  if (cprs >= 81) return 'Critical';
+  if (cprs >= 61) return 'High';
+  if (cprs >= 41) return 'Moderate';
+  if (cprs >= 21) return 'Low';
+  return 'Minimal';
+}
+
+const SEVERITY_SCORE = { Critical: 85, High: 65, Moderate: 40, Low: 15, Minimal: 0 };
+
+// Loose containment match in both directions, so a member's "Fish Oil" matches
+// a profile entry of "Fish Oil (Omega-3)" and vice versa.
+function substanceMatches(memberEntry, profileEntry) {
+  const a = String(memberEntry || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  const b = String(profileEntry || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (!a || !b) return false;
+  if (a === b) return true;
+  // Containment only counts when the shorter side is substantial enough to be a
+  // real substance name. Without this, a member entry of "K" or "B6" matches
+  // half the profile catalogue and manufactures findings that do not exist.
+  if (Math.min(a.length, b.length) < 4) return false;
+  return a.includes(b) || b.includes(a);
+}
+
+// Resolves a member session from the X-Session-Token header (body.sessionToken
+// is accepted as a fallback for clients that cannot set headers). Attaches
+// req.member — the profile row — and req.consent.
+async function resolveMember(req, res, next) {
+  if (!pool) return res.status(503).json({ error: 'DATABASE_URL not configured' });
+  const token = req.get('X-Session-Token') || (req.body && req.body.sessionToken);
+  if (!token || typeof token !== 'string') {
+    return res.status(401).json({ error: 'Missing session token' });
+  }
+  try {
+    const { rows } = await pool.query(
+      `SELECT p.*,
+              c.tier1_persist_granted, c.tier2_share_granted,
+              c.tier1_granted_at, c.tier1_revoked_at,
+              c.tier2_granted_at, c.tier2_revoked_at
+         FROM member_profiles p
+         LEFT JOIN member_consents c ON c.session_token = p.session_token
+        WHERE p.session_token = $1`,
+      [token]
+    );
+    if (!rows.length) return res.status(404).json({ error: 'Unknown session token' });
+    req.member = rows[0];
+    req.sessionToken = token;
+    next();
+  } catch (e) {
+    console.error('[MEMBER] resolve failed:', e.message);
+    res.status(500).json({ error: 'Session lookup failed' });
+  }
+}
+
+// Tier 1 gate. Persistence of a medication profile is only lawful once the
+// member has granted the first consent (spec 1302).
+function requireTier1(req, res, next) {
+  if (!req.member || !req.member.tier1_persist_granted) {
+    return res.status(403).json({
+      error: 'Tier 1 consent required',
+      detail: 'Grant consent at POST /api/member/consent {"tier":1,"granted":true} before storing a medication profile.',
+    });
+  }
+  next();
+}
+
+// ── step 1308: composite risk from the persisted profile ────────────────────
+// Cache-only by design (spec FIG. 11): drug-drug severity comes from the
+// pre-computed pair cache and supplement/food severity from the pre-computed
+// proactive profile cache. No AI call, so this is cheap enough to run on every
+// session init and across a whole population on a schedule (phase 6).
+function computeMemberRisk(profile) {
+  const medications = Array.isArray(profile.medications) ? profile.medications : [];
+  const supplements = Array.isArray(profile.supplements) ? profile.supplements : [];
+  const foodFactors = Array.isArray(profile.food_factors) ? profile.food_factors : [];
+  const totalSubstances = medications.length + supplements.length + foodFactors.length;
+
+  // Drug-drug leg — pre-computed pair cache.
+  const { found, missing, totalPairs } = lookupPairsFromCache(medications);
+  const ddComposite = computeCompositeFromPairs(found, totalSubstances);
+  const ddInteractions = found.filter(p => p.hasInteraction).map(p => ({
+    kind: 'drug-drug',
+    drug_a: p.drugA,
+    drug_b: p.drugB,
+    severity: p.severity,
+    mechanism: p.mechanism || '',
+    action: p.action || '',
+  }));
+
+  // Supplement/food leg — the member's OWN supplements and foods matched
+  // against each medication's proactive profile. Spec 1312 is explicit that the
+  // finding must involve a substance in that member's profile, not merely a
+  // substance the medication could theoretically interact with.
+  const sfFindings = [];
+  const seenFinding = new Set();
+  const memberSubstances = supplements.map(s => ({ name: s, category: 'supplement' }))
+    .concat(foodFactors.map(f => ({ name: f, category: 'food' })));
+
+  for (const med of medications) {
+    const prof = loadProactiveProfile(med);
+    if (!prof) continue;
+    const buckets = [
+      { list: prof.avoid_supplements, category: 'supplement' },
+      { list: prof.caution_supplements, category: 'supplement' },
+      { list: prof.avoid_foods, category: 'food' },
+      { list: prof.caution_foods, category: 'food' },
+    ];
+    for (const bucket of buckets) {
+      for (const item of bucket.list || []) {
+        if (!item || !item.name) continue;
+        const owned = memberSubstances.find(
+          ms => ms.category === bucket.category && substanceMatches(ms.name, item.name)
+        );
+        if (!owned) continue;
+        const key = (med + '|' + owned.name).toLowerCase();
+        if (seenFinding.has(key)) continue;
+        seenFinding.add(key);
+        sfFindings.push({
+          kind: 'drug-' + bucket.category,
+          medication: med,
+          substance: owned.name,
+          matched_profile_entry: item.name,
+          category: bucket.category,
+          severity: item.severity || 'Moderate',
+          mechanism: item.mechanism || '',
+          action: item.action || '',
+        });
+      }
+    }
+  }
+
+  // Composite. computeCompositeFromPairs already folds in the polypharmacy
+  // factor and the critical-severity floor, so phi is applied to the
+  // supplement/food leg separately and the two legs are then maxed rather than
+  // summed — consistent with the conservative max-not-sum rule used there.
+  const phi = 1 + 0.05 * Math.max(0, totalSubstances - 4);
+  const sfWorst = sfFindings.reduce(
+    (worst, f) => (tierRank(f.severity) > tierRank(worst) ? f.severity : worst),
+    'Minimal'
+  );
+  const sfCprs = Math.min(100, Math.round((SEVERITY_SCORE[sfWorst] || 0) * phi));
+  const cprs = Math.min(100, Math.max(ddComposite.cprs, sfCprs));
+
+  return {
+    cprs,
+    risk_tier: classifyRiskTier(cprs),
+    dimensions: ddComposite.dimensions,
+    drug_interactions: ddInteractions,
+    supplement_food_findings: sfFindings,
+    worst_supplement_food_severity: sfWorst,
+    substance_counts: {
+      medications: medications.length,
+      supplements: supplements.length,
+      food_factors: foodFactors.length,
+    },
+    coverage: {
+      pairs_total: totalPairs,
+      pairs_cached: found.length,
+      pairs_missing: missing.length,
+      // Surfaced honestly: a low hit rate means the score is based on partial
+      // pair coverage, which the caller may want to resolve via /api/analyze.
+      pair_hit_rate: totalPairs > 0 ? Math.round((found.length / totalPairs) * 100) : 100,
+    },
+  };
+}
+
+// ── step 1310: risk continuity ──────────────────────────────────────────────
+// Compares against the most recent stored score for the SAME anonymous token.
+async function getPreviousRisk(sessionToken) {
+  const { rows } = await pool.query(
+    `SELECT cprs, risk_tier, computed_at, cycle
+       FROM member_risk_history
+      WHERE session_token = $1
+      ORDER BY computed_at DESC
+      LIMIT 1`,
+    [sessionToken]
+  );
+  return rows[0] || null;
+}
+
+function buildContinuity(previous, current) {
+  if (!previous) {
+    return {
+      is_first_analysis: true,
+      previous_tier: null,
+      previous_cprs: null,
+      current_tier: current.risk_tier,
+      current_cprs: current.cprs,
+      tier_changed: false,
+      direction: 'baseline',
+      cprs_delta: 0,
+    };
+  }
+  const delta = tierRank(current.risk_tier) - tierRank(previous.risk_tier);
+  return {
+    is_first_analysis: false,
+    previous_tier: previous.risk_tier,
+    previous_cprs: previous.cprs,
+    previous_computed_at: previous.computed_at,
+    current_tier: current.risk_tier,
+    current_cprs: current.cprs,
+    tier_changed: delta !== 0,
+    direction: delta > 0 ? 'increased' : delta < 0 ? 'decreased' : 'unchanged',
+    cprs_delta: current.cprs - previous.cprs,
+  };
+}
+
+// Runs step 1308 + 1310 and appends to the history table. Shared verbatim by
+// the member-initiated route below and the scheduled population re-analysis in
+// phase 6, so a scheduled tier is always comparable to a session tier.
+async function analyzeAndRecord(profile, cycle) {
+  const risk = computeMemberRisk(profile);
+  const previous = await getPreviousRisk(profile.session_token);
+  const continuity = buildContinuity(previous, risk);
+
+  await pool.query(
+    `INSERT INTO member_risk_history
+       (session_token, cprs, risk_tier, dimensions, interaction_count, cycle)
+     VALUES ($1, $2, $3, $4, $5, $6)`,
+    [
+      profile.session_token,
+      risk.cprs,
+      risk.risk_tier,
+      JSON.stringify(risk.dimensions || {}),
+      risk.drug_interactions.length + risk.supplement_food_findings.length,
+      cycle || 'session',
+    ]
+  );
+  await pool.query(
+    `UPDATE member_profiles SET last_analyzed_at = NOW() WHERE session_token = $1`,
+    [profile.session_token]
+  );
+
+  return { risk, continuity, previous };
+}
+
+// ── Member routes ───────────────────────────────────────────────────────────
+
+// Mints an anonymous session. Optionally associates it with a partner via that
+// partner's enrollment code — the only link between a member and a health plan,
+// and still not an identifier of the member.
+app.post('/api/member/session', rejectPhi, async (req, res) => {
+  if (!pool) return res.status(503).json({ error: 'DATABASE_URL not configured' });
+  try {
+    let partnerId = null;
+    let partnerName = null;
+    const code = req.body && req.body.enrollmentCode;
+    if (code) {
+      const { rows } = await pool.query(
+        `SELECT id, organization FROM partner_accounts WHERE enrollment_code = $1`,
+        [String(code)]
+      );
+      if (!rows.length) return res.status(404).json({ error: 'Unknown enrollment code' });
+      partnerId = rows[0].id;
+      partnerName = rows[0].organization;
+    }
+
+    const token = mintSessionToken();
+    await pool.query(
+      `INSERT INTO member_profiles (session_token, partner_id) VALUES ($1, $2)`,
+      [token, partnerId]
+    );
+    // Consent row starts with both tiers false — nothing is persisted or shared
+    // until the member affirmatively grants each one (phase 4).
+    await pool.query(
+      `INSERT INTO member_consents (session_token) VALUES ($1)`,
+      [token]
+    );
+
+    res.status(201).json({
+      sessionToken: token,
+      partner: partnerId ? { id: partnerId, organization: partnerName } : null,
+      consent: { tier1_persist: false, tier2_share: false },
+      notice: 'Store this token client-side. It is the only handle on this profile and cannot be recovered.',
+    });
+  } catch (e) {
+    console.error('[MEMBER] session create failed:', e.message);
+    res.status(500).json({ error: 'Could not create member session' });
+  }
+});
+
+app.get('/api/member/profile', resolveMember, async (req, res) => {
+  const m = req.member;
+  try {
+    const latest = await getPreviousRisk(m.session_token);
+    res.json({
+      sessionToken: m.session_token,
+      partnerId: m.partner_id,
+      profile: {
+        medications: m.medications || [],
+        supplements: m.supplements || [],
+        food_factors: m.food_factors || [],
+      },
+      consent: {
+        tier1_persist: !!m.tier1_persist_granted,
+        tier2_share: !!m.tier2_share_granted,
+      },
+      created_at: m.created_at,
+      updated_at: m.updated_at,
+      last_analyzed_at: m.last_analyzed_at,
+      latest_risk: latest || null,
+    });
+  } catch (e) {
+    console.error('[MEMBER] profile read failed:', e.message);
+    res.status(500).json({ error: 'Could not load profile' });
+  }
+});
+
+// step 1306 write path. rejectPhi runs before requireTier1 so an attempt to
+// store a personal identifier is refused on its own terms, not merely gated.
+app.put('/api/member/profile', rejectPhi, resolveMember, requireTier1, async (req, res) => {
+  try {
+    const medications = normalizeSubstanceList(req.body.medications);
+    const supplements = normalizeSubstanceList(req.body.supplements);
+    const foodFactors = normalizeSubstanceList(req.body.food_factors || req.body.foodFactors);
+
+    const { rows } = await pool.query(
+      `UPDATE member_profiles
+          SET medications = $2, supplements = $3, food_factors = $4, updated_at = NOW()
+        WHERE session_token = $1
+        RETURNING medications, supplements, food_factors, updated_at`,
+      [
+        req.sessionToken,
+        JSON.stringify(medications),
+        JSON.stringify(supplements),
+        JSON.stringify(foodFactors),
+      ]
+    );
+
+    res.json({ ok: true, profile: rows[0] });
+  } catch (e) {
+    console.error('[MEMBER] profile write failed:', e.message);
+    res.status(500).json({ error: 'Could not save profile' });
+  }
+});
+
+// Full erasure. Cascades to consents; history and outreach rows are removed
+// explicitly since they are keyed by token rather than by foreign key.
+app.delete('/api/member/profile', resolveMember, async (req, res) => {
+  try {
+    await pool.query(`DELETE FROM member_risk_history WHERE session_token = $1`, [req.sessionToken]);
+    await pool.query(`DELETE FROM outreach_events WHERE session_token = $1`, [req.sessionToken]);
+    await pool.query(`DELETE FROM member_consent_events WHERE session_token = $1`, [req.sessionToken]);
+    await pool.query(`DELETE FROM member_profiles WHERE session_token = $1`, [req.sessionToken]);
+    res.json({ ok: true, deleted: true });
+  } catch (e) {
+    console.error('[MEMBER] profile delete failed:', e.message);
+    res.status(500).json({ error: 'Could not delete profile' });
+  }
+});
+
+// steps 1308 + 1310 on demand — called by the client at session initialisation.
+app.post('/api/member/analyze', resolveMember, requireTier1, async (req, res) => {
+  try {
+    const { risk, continuity } = await analyzeAndRecord(req.member, 'session');
+    res.json({ ok: true, risk, continuity });
+  } catch (e) {
+    console.error('[MEMBER] analyze failed:', e.message);
+    res.status(500).json({ error: 'Analysis failed' });
+  }
+});
+
+// Longitudinal series for the member's own view.
+app.get('/api/member/history', resolveMember, async (req, res) => {
+  try {
+    const { rows } = await pool.query(
+      `SELECT cprs, risk_tier, interaction_count, cycle, computed_at
+         FROM member_risk_history
+        WHERE session_token = $1
+        ORDER BY computed_at DESC
+        LIMIT 50`,
+      [req.sessionToken]
+    );
+    res.json({ sessionToken: req.sessionToken, history: rows });
+  } catch (e) {
+    console.error('[MEMBER] history failed:', e.message);
+    res.status(500).json({ error: 'Could not load history' });
+  }
+});
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD v2 · PHASE 4: TWO-TIER CONSENT FLOW
+// ════════════════════════════════════════════════════════════════════════════
+// Spec FIG. 13 steps 1302, 1304 and 1314.
+//
+//   Tier 1 — authorises local persistence of the medication profile.
+//   Tier 2 — authorises outbound transmission of derived risk data to a
+//            licensed health plan partner. Separate and independently
+//            revocable.
+//
+// The two properties the specification actually turns on:
+//
+//   1. Tier 2 status NEVER affects persistence. Granting, withholding or
+//      revoking tier 2 leaves member_profiles completely untouched, so a member
+//      gets longitudinal tracking without ever sharing anything.
+//
+//   2. Revoking tier 2 suppresses the member from the partner feed
+//      automatically, as a property of the architecture rather than an
+//      administrative step. That is why the phase 5 feed query filters on
+//      tier2_share_granted inside the SQL that selects feed rows: there is no
+//      code path that can emit a record for a member whose tier 2 consent is
+//      currently false, and no batch job that has to remember to exclude them.
+//
+// Direction of dependency, which the spec leaves to the implementation:
+//   - Tier 2 may only be granted while tier 1 stands — there is nothing to
+//     transmit from an unpersisted profile.
+//   - Revoking tier 1 withdraws authorisation to hold the data at all, so the
+//     persisted lists and derived history are purged, and tier 2 is revoked
+//     with it (recorded as its own audit event). Both movements are toward
+//     less data retention and less sharing.
+// ════════════════════════════════════════════════════════════════════════════
+
+async function readConsent(sessionToken) {
+  const { rows } = await pool.query(
+    `SELECT * FROM member_consents WHERE session_token = $1`,
+    [sessionToken]
+  );
+  return rows[0] || null;
+}
+
+async function recordConsentEvent(sessionToken, tier, action) {
+  await pool.query(
+    `INSERT INTO member_consent_events (session_token, tier, action) VALUES ($1, $2, $3)`,
+    [sessionToken, tier, action]
+  );
+}
+
+function shapeConsent(row) {
+  if (!row) return null;
+  return {
+    tier1_persist: {
+      granted: !!row.tier1_persist_granted,
+      granted_at: row.tier1_granted_at,
+      revoked_at: row.tier1_revoked_at,
+      authorizes: 'Persistence of your medication, supplement and food list against an anonymous token.',
+    },
+    tier2_share: {
+      granted: !!row.tier2_share_granted,
+      granted_at: row.tier2_granted_at,
+      revoked_at: row.tier2_revoked_at,
+      authorizes: 'Transmission of derived interaction risk data to your health plan partner.',
+      independently_revocable: true,
+      revocation_effect: 'Immediately suppresses you from the partner feed. Your stored profile is not affected.',
+    },
+    updated_at: row.updated_at,
+  };
+}
+
+app.get('/api/member/consent', resolveMember, async (req, res) => {
+  try {
+    const row = await readConsent(req.sessionToken);
+    const { rows: events } = await pool.query(
+      `SELECT tier, action, occurred_at
+         FROM member_consent_events
+        WHERE session_token = $1
+        ORDER BY occurred_at DESC
+        LIMIT 50`,
+      [req.sessionToken]
+    );
+    res.json({ sessionToken: req.sessionToken, consent: shapeConsent(row), audit_trail: events });
+  } catch (e) {
+    console.error('[CONSENT] read failed:', e.message);
+    res.status(500).json({ error: 'Could not load consent state' });
+  }
+});
+
+app.post('/api/member/consent', rejectPhi, resolveMember, async (req, res) => {
+  const tier = Number(req.body.tier);
+  const granted = req.body.granted;
+
+  if (tier !== 1 && tier !== 2) {
+    return res.status(400).json({ error: 'tier must be 1 or 2' });
+  }
+  if (typeof granted !== 'boolean') {
+    return res.status(400).json({ error: 'granted must be a boolean' });
+  }
+
+  try {
+    const before = await readConsent(req.sessionToken);
+    if (!before) return res.status(404).json({ error: 'No consent record for this session' });
+
+    const currently = tier === 1 ? !!before.tier1_persist_granted : !!before.tier2_share_granted;
+
+    // Idempotent: re-asserting the current state is a no-op and must not stamp
+    // a fresh granted_at or add a spurious audit event.
+    if (currently === granted) {
+      const row = await readConsent(req.sessionToken);
+      return res.json({ ok: true, unchanged: true, consent: shapeConsent(row) });
+    }
+
+    if (tier === 2 && granted && !before.tier1_persist_granted) {
+      return res.status(409).json({
+        error: 'Tier 1 consent required before Tier 2',
+        detail: 'There is no persisted profile to derive shareable risk data from.',
+      });
+    }
+
+    const effects = [];
+
+    if (tier === 1) {
+      if (granted) {
+        await pool.query(
+          `UPDATE member_consents
+              SET tier1_persist_granted = TRUE, tier1_granted_at = NOW(),
+                  tier1_revoked_at = NULL, updated_at = NOW()
+            WHERE session_token = $1`,
+          [req.sessionToken]
+        );
+        await recordConsentEvent(req.sessionToken, 1, 'grant');
+        effects.push('Profile persistence authorised.');
+      } else {
+        // Authorisation to hold the data is withdrawn: purge it.
+        await pool.query(
+          `UPDATE member_consents
+              SET tier1_persist_granted = FALSE, tier1_revoked_at = NOW(),
+                  tier2_share_granted = FALSE,
+                  tier2_revoked_at = CASE WHEN tier2_share_granted
+                                          THEN NOW() ELSE tier2_revoked_at END,
+                  updated_at = NOW()
+            WHERE session_token = $1`,
+          [req.sessionToken]
+        );
+        await recordConsentEvent(req.sessionToken, 1, 'revoke');
+        if (before.tier2_share_granted) {
+          await recordConsentEvent(req.sessionToken, 2, 'revoke');
+          effects.push('Tier 2 sharing revoked as a consequence.');
+        }
+        await pool.query(
+          `UPDATE member_profiles
+              SET medications = '[]'::jsonb, supplements = '[]'::jsonb,
+                  food_factors = '[]'::jsonb, updated_at = NOW()
+            WHERE session_token = $1`,
+          [req.sessionToken]
+        );
+        await pool.query(
+          `DELETE FROM member_risk_history WHERE session_token = $1`,
+          [req.sessionToken]
+        );
+        effects.push('Persisted medication profile and derived risk history purged.');
+      }
+    } else {
+      if (granted) {
+        await pool.query(
+          `UPDATE member_consents
+              SET tier2_share_granted = TRUE, tier2_granted_at = NOW(),
+                  tier2_revoked_at = NULL, updated_at = NOW()
+            WHERE session_token = $1`,
+          [req.sessionToken]
+        );
+        await recordConsentEvent(req.sessionToken, 2, 'grant');
+        effects.push('Partner feed transmission authorised.');
+      } else {
+        // Step 1314. Outbound gate only — member_profiles is deliberately not
+        // touched here, which is the property the specification requires.
+        await pool.query(
+          `UPDATE member_consents
+              SET tier2_share_granted = FALSE, tier2_revoked_at = NOW(), updated_at = NOW()
+            WHERE session_token = $1`,
+          [req.sessionToken]
+        );
+        await recordConsentEvent(req.sessionToken, 2, 'revoke');
+        effects.push('Suppressed from the partner feed with immediate effect.');
+        effects.push('Persisted medication profile retained and unaffected.');
+      }
+    }
+
+    const after = await readConsent(req.sessionToken);
+    res.json({ ok: true, tier, granted, effects, consent: shapeConsent(after) });
+  } catch (e) {
+    console.error('[CONSENT] update failed:', e.message);
+    res.status(500).json({ error: 'Could not update consent' });
+  }
+});
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD v2 · PHASE 5: PARTNER DATA FEED API
+// ════════════════════════════════════════════════════════════════════════════
+// Spec FIG. 13 steps 1312, 1314 and 1316.
+//
+// Authentication (step 1316, "secure authenticated API endpoint"): partners are
+// health plan care management SYSTEMS, not browser users, so the feed is
+// authenticated with an issued API key presented as a bearer token. Keys are
+// provisioned by an administrator and stored only as SHA-256 digests.
+//
+// Member identity: the feed emits an HMAC pseudonym, never the session token.
+// The session token is the member's own credential — handing it to a partner
+// would let the partner read, rewrite or delete that member's profile. The
+// pseudonym is stable for a given member so a partner can track them across
+// cycles, but it authenticates nothing.
+//
+// Consent gate (step 1314): tier2_share_granted is tested inside the SQL that
+// selects feed candidates. There is no code path that can emit a record for a
+// member whose tier 2 consent is currently false — revocation suppresses them
+// on the very next request, with no batch job to run and nothing to remember.
+// ════════════════════════════════════════════════════════════════════════════
+
+// A changed secret silently rotates every pseudonym and breaks partner-side
+// longitudinal tracking, so fall back to a value that is at least stable across
+// restarts rather than to something random per boot.
+const FEED_ID_SECRET = process.env.FEED_MEMBER_ID_SECRET || (() => {
+  if (process.env.DATABASE_URL || process.env.CLERK_SECRET_KEY) {
+    console.warn('[FEED] FEED_MEMBER_ID_SECRET not set — deriving a stable fallback. ' +
+      'Set it explicitly before going to production.');
+    return crypto.createHash('sha256')
+      .update('intractmd-feed-v2|' + (process.env.DATABASE_URL || '') + '|' + (process.env.CLERK_SECRET_KEY || ''))
+      .digest('hex');
+  }
+  console.warn('[FEED] No secret material available — member pseudonyms are NOT stable.');
+  return crypto.randomBytes(32).toString('hex');
+})();
+
+function feedMemberId(sessionToken) {
+  return crypto.createHmac('sha256', FEED_ID_SECRET).update(sessionToken).digest('hex').slice(0, 32);
+}
+
+function hashApiKey(key) {
+  return crypto.createHash('sha256').update(key).digest('hex');
+}
+
+function issueApiKey() {
+  // Prefixed so it is recognisable in logs and greppable in a partner's config.
+  const raw = 'imd_' + crypto.randomBytes(24).toString('hex');
+  return { raw, hash: hashApiKey(raw), prefix: raw.slice(0, 12) };
+}
+
+// ── Administrative provisioning ─────────────────────────────────────────────
+function requireAdmin(req, res, next) {
+  const configured = process.env.ADMIN_API_KEY;
+  if (!configured) {
+    return res.status(503).json({ error: 'ADMIN_API_KEY is not configured on this server' });
+  }
+  const presented = req.get('X-Admin-Key') || '';
+  // Constant-time compare; length is checked first because timingSafeEqual
+  // throws on a length mismatch.
+  const a = Buffer.from(presented);
+  const b = Buffer.from(configured);
+  if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) {
+    return res.status(401).json({ error: 'Invalid admin key' });
+  }
+  next();
+}
+
+app.post('/api/admin/partners', requireAdmin, async (req, res) => {
+  if (!pool) return res.status(503).json({ error: 'DATABASE_URL not configured' });
+  const organization = (req.body && req.body.organization || '').trim();
+  if (!organization) return res.status(400).json({ error: 'organization is required' });
+  try {
+    const key = issueApiKey();
+    const { rows } = await pool.query(
+      `INSERT INTO partner_accounts
+         (organization, email, status, api_key_hash, api_key_prefix, api_key_issued_at)
+       VALUES ($1, $2, 'active', $3, $4, NOW())
+       RETURNING id, organization, status, enrollment_code, created_at`,
+      [organization, (req.body.email || null), key.hash, key.prefix]
+    );
+    res.status(201).json({
+      partner: rows[0],
+      apiKey: key.raw,
+      notice: 'This API key is shown once and is not recoverable. Store it now.',
+    });
+  } catch (e) {
+    console.error('[ADMIN] partner create failed:', e.message);
+    res.status(500).json({ error: 'Could not create partner' });
+  }
+});
+
+app.get('/api/admin/partners', requireAdmin, async (req, res) => {
+  if (!pool) return res.status(503).json({ error: 'DATABASE_URL not configured' });
+  try {
+    const { rows } = await pool.query(
+      `SELECT id, organization, email, status, enrollment_code, api_key_prefix,
+              api_key_issued_at, api_key_last_used_at, feed_enabled,
+              reanalysis_enabled, reanalysis_hour_utc, reanalysis_cadence_days,
+              last_reanalysis_at, created_at
+         FROM partner_accounts ORDER BY id`
+    );
+    res.json({ partners: rows });
+  } catch (e) {
+    console.error('[ADMIN] partner list failed:', e.message);
+    res.status(500).json({ error: 'Could not list partners' });
+  }
+});
+
+app.post('/api/admin/partners/:id/rotate-key', requireAdmin, async (req, res) => {
+  if (!pool) return res.status(503).json({ error: 'DATABASE_URL not configured' });
+  try {
+    const key = issueApiKey();
+    const { rows } = await pool.query(
+      `UPDATE partner_accounts
+          SET api_key_hash = $2, api_key_prefix = $3, api_key_issued_at = NOW(),
+              api_key_last_used_at = NULL
+        WHERE id = $1
+        RETURNING id, organization`,
+      [req.params.id, key.hash, key.prefix]
+    );
+    if (!rows.length) return res.status(404).json({ error: 'Unknown partner' });
+    res.json({
+      partner: rows[0],
+      apiKey: key.raw,
+      notice: 'The previous key stopped working immediately.',
+    });
+  } catch (e) {
+    console.error('[ADMIN] key rotation failed:', e.message);
+    res.status(500).json({ error: 'Could not rotate key' });
+  }
+});
+
+// ── Partner authentication ──────────────────────────────────────────────────
+async function partnerAuth(req, res, next) {
+  if (!pool) return res.status(503).json({ error: 'DATABASE_URL not configured' });
+  const header = req.get('Authorization') || '';
+  const bearer = header.startsWith('Bearer ') ? header.slice(7).trim() : null;
+  const key = bearer || req.get('X-Api-Key');
+  if (!key) {
+    return res.status(401).json({
+      error: 'Authentication required',
+      detail: 'Present your partner API key as: Authorization: Bearer <key>',
+    });
+  }
+  try {
+    // Looked up by digest, so the plaintext key is never compared in the
+    // database and a dump of partner_accounts yields no usable credential.
+    const { rows } = await pool.query(
+      `SELECT * FROM partner_accounts WHERE api_key_hash = $1`,
+      [hashApiKey(key)]
+    );
+    if (!rows.length) return res.status(401).json({ error: 'Invalid API key' });
+    const partner = rows[0];
+    if (partner.status !== 'active') {
+      return res.status(403).json({ error: 'Partner account is not active', status: partner.status });
+    }
+    req.partner = partner;
+    pool.query(`UPDATE partner_accounts SET api_key_last_used_at = NOW() WHERE id = $1`, [partner.id])
+      .catch(() => {});
+    next();
+  } catch (e) {
+    console.error('[PARTNER] auth failed:', e.message);
+    res.status(500).json({ error: 'Authentication failed' });
+  }
+}
+
+// ── Feed construction (step 1312) ───────────────────────────────────────────
+const CLINICALLY_SIGNIFICANT = { Moderate: 2, High: 3, Critical: 4 };
+
+// Selects the members eligible to appear in a partner's feed. The tier 2 gate
+// lives here, in the candidate query itself — see step 1314 note above.
+async function selectFeedCandidates(partnerId, limit, offset) {
+  const { rows } = await pool.query(
+    `SELECT p.session_token, p.medications, p.supplements, p.food_factors,
+            p.updated_at, p.last_analyzed_at
+       FROM member_profiles p
+       JOIN member_consents c ON c.session_token = p.session_token
+      WHERE p.partner_id = $1
+        AND c.tier2_share_granted = TRUE
+        AND c.tier1_persist_granted = TRUE
+        AND jsonb_array_length(p.medications) > 0
+      ORDER BY p.updated_at DESC
+      LIMIT $2 OFFSET $3`,
+    [partnerId, limit, offset]
+  );
+  return rows;
+}
+
+// Builds one structured feed record per spec: member identifier, composite
+// score, risk tier, the specific supplement/food factor giving rise to the
+// interaction, and the prescription medication involved.
+function buildFeedRecord(profile, risk, minSeverityRank) {
+  const findings = risk.supplement_food_findings.filter(
+    f => (CLINICALLY_SIGNIFICANT[f.severity] || 0) >= minSeverityRank
+  );
+  if (!findings.length) return null;
+
+  return {
+    member_identifier: feedMemberId(profile.session_token),
+    composite_risk_score: risk.cprs,
+    risk_tier: risk.risk_tier,
+    medication_count: risk.substance_counts.medications,
+    supplement_food_interactions: findings.map(f => ({
+      substance: f.substance,
+      substance_category: f.category,
+      interacting_medication: f.medication,
+      severity: f.severity,
+      mechanism: f.mechanism,
+      recommended_action: f.action,
+    })),
+    highest_severity: findings.reduce(
+      (worst, f) => (tierRank(f.severity) > tierRank(worst) ? f.severity : worst),
+      'Minimal'
+    ),
+    drug_drug_interaction_count: risk.drug_interactions.length,
+    profile_updated_at: profile.updated_at,
+    last_analyzed_at: profile.last_analyzed_at,
+  };
+}
+
+app.get('/api/partner/feed', partnerAuth, async (req, res) => {
+  if (!req.partner.feed_enabled) {
+    return res.status(403).json({ error: 'Feed is disabled for this partner account' });
+  }
+  const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 100, 1), 500);
+  const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
+  const minSeverity = req.query.minSeverity || 'Moderate';
+  const minSeverityRank = CLINICALLY_SIGNIFICANT[minSeverity] || CLINICALLY_SIGNIFICANT.Moderate;
+
+  try {
+    const candidates = await selectFeedCandidates(req.partner.id, limit, offset);
+
+    // Scored from the pre-computed caches (spec FIG. 11) — no AI call, so a
+    // whole page of members costs only local cache reads.
+    const records = [];
+    for (const profile of candidates) {
+      const risk = computeMemberRisk(profile);
+      const record = buildFeedRecord(profile, risk, minSeverityRank);
+      // Spec 1312: a member appears only if at least one supplement or food
+      // factor in their own profile interacts with one of their own
+      // medications. Consented members with no such finding are not emitted.
+      if (record) records.push(record);
+    }
+
+    res.json({
+      partner: { id: req.partner.id, organization: req.partner.organization },
+      generated_at: new Date().toISOString(),
+      criteria: {
+        consent: 'Tier 2 sharing consent currently granted',
+        minimum_severity: minSeverity,
+        inclusion: 'At least one supplement or food factor interacting with a prescription medication in the same profile',
+      },
+      paging: { limit, offset, candidates_scanned: candidates.length, records_returned: records.length },
+      records,
+    });
+  } catch (e) {
+    console.error('[FEED] generation failed:', e.message);
+    res.status(500).json({ error: 'Feed generation failed' });
+  }
+});
+
+// Population-level aggregation across the consented cohort.
+app.get('/api/partner/feed/stats', partnerAuth, async (req, res) => {
+  try {
+    const { rows: counts } = await pool.query(
+      `SELECT
+         COUNT(*) FILTER (WHERE c.tier1_persist_granted)                          AS persisted,
+         COUNT(*) FILTER (WHERE c.tier2_share_granted)                            AS sharing,
+         COUNT(*) FILTER (WHERE c.tier1_persist_granted AND NOT c.tier2_share_granted) AS suppressed
+       FROM member_profiles p
+       JOIN member_consents c ON c.session_token = p.session_token
+      WHERE p.partner_id = $1`,
+      [req.partner.id]
+    );
+
+    const candidates = await selectFeedCandidates(req.partner.id, 500, 0);
+    const tierCounts = {};
+    const substanceCounts = {};
+    const medicationCounts = {};
+    let withFindings = 0;
+
+    for (const profile of candidates) {
+      const risk = computeMemberRisk(profile);
+      const findings = risk.supplement_food_findings.filter(
+        f => (CLINICALLY_SIGNIFICANT[f.severity] || 0) >= CLINICALLY_SIGNIFICANT.Moderate
+      );
+      if (!findings.length) continue;
+      withFindings++;
+      tierCounts[risk.risk_tier] = (tierCounts[risk.risk_tier] || 0) + 1;
+      for (const f of findings) {
+        substanceCounts[f.substance] = (substanceCounts[f.substance] || 0) + 1;
+        medicationCounts[f.medication] = (medicationCounts[f.medication] || 0) + 1;
+      }
+    }
+
+    const top = (obj) => Object.entries(obj)
+      .sort((a, b) => b[1] - a[1]).slice(0, 10)
+      .map(([name, members]) => ({ name, members }));
+
+    res.json({
+      partner: { id: req.partner.id, organization: req.partner.organization },
+      generated_at: new Date().toISOString(),
+      population: {
+        profiles_persisted: Number(counts[0].persisted),
+        sharing_consent_granted: Number(counts[0].sharing),
+        suppressed_by_consent: Number(counts[0].suppressed),
+        included_in_feed: withFindings,
+      },
+      risk_tier_distribution: tierCounts,
+      top_supplements_and_foods: top(substanceCounts),
+      top_implicated_medications: top(medicationCounts),
+      note: 'Aggregated over at most 500 consented members per call.',
+    });
+  } catch (e) {
+    console.error('[FEED] stats failed:', e.message);
+    res.status(500).json({ error: 'Stats generation failed' });
+  }
+});
+
+// The code a partner distributes so member sessions associate with their feed.
+app.get('/api/partner/enrollment', partnerAuth, async (req, res) => {
+  res.json({
+    partner: { id: req.partner.id, organization: req.partner.organization },
+    enrollment_code: req.partner.enrollment_code,
+    usage: 'POST /api/member/session {"enrollmentCode":"<code>"}',
+  });
+});
+
+// ════════════════════════════════════════════════════════════════════════════
+// INTRACTMD v2 · PHASE 6: SCHEDULED POPULATION RE-ANALYSIS
+// ════════════════════════════════════════════════════════════════════════════
+// Spec FIG. 13 steps 1318, 1320, 1322 and 1324.
+//
+// step 1318  Population-level re-analysis on a PARTNER-CONFIGURED schedule,
+//            not in response to a member session. Reuses analyzeAndRecord() so
+//            a scheduled tier is computed identically to a session tier and the
+//            two are directly comparable.
+//
+// step 1320  DELTA TRIGGER. An outreach package is generated if and only if the
+//            member's risk tier moved UPWARD against the prior cycle. Unchanged
+//            or improved members generate nothing. This is the whole point of
+//            the design — it holds outreach volume down and keeps every outreach
+//            event clinically meaningful — so the condition is enforced in one
+//            place and short-circuits before any generation work happens.
+//
+// step 1322  Per-partner brand configuration object.
+//
+// step 1324  The brand object is inserted INTO the prompt before submission, so
+//            the model writes the plan's identity, tone and escalation pathway
+//            throughout the output. There is deliberately no post-generation
+//            find-and-replace of brand tokens.
+//
+// Re-analysis covers every tier-1 member of the partner, because recomputing a
+// member's own longitudinal risk is a tier-1 activity. Partner-branded outreach
+// is additionally gated on tier 2, since that is outbound partner involvement.
+// ════════════════════════════════════════════════════════════════════════════
+
+const DEFAULT_BRAND = {
+  organization_name: 'your health plan',
+  member_services_contact: 'your plan member services line',
+  clinical_escalation_pathway: 'Advise the member to contact their prescriber or pharmacist.',
+  tone_profile: 'warm, professional, plain-language',
+  language: 'en',
+};
+
+async function getBrandConfig(partnerId) {
+  const { rows } = await pool.query(
+    `SELECT b.*, p.organization
+       FROM partner_accounts p
+       LEFT JOIN partner_brand_configs b ON b.partner_id = p.id
+      WHERE p.id = $1`,
+    [partnerId]
+  );
+  const row = rows[0] || {};
+  return {
+    organization_name: row.organization_name || row.organization || DEFAULT_BRAND.organization_name,
+    member_services_contact: row.member_services_contact || DEFAULT_BRAND.member_services_contact,
+    clinical_escalation_pathway: row.clinical_escalation_pathway || DEFAULT_BRAND.clinical_escalation_pathway,
+    tone_profile: row.tone_profile || DEFAULT_BRAND.tone_profile,
+    language: row.language || DEFAULT_BRAND.language,
+    configured: !!row.partner_id,
+  };
+}
+
+// step 1324. The brand object is part of the instruction the model receives —
+// not a set of tokens swapped into its output afterwards.
+function buildBrandedOutreachPrompt(brand, continuity, findings, ddInteractions) {
+  const sf = findings.slice(0, 6).map(f =>
+    '- ' + f.substance + ' (' + f.category + ') with ' + f.medication +
+    ' — severity ' + f.severity + (f.mechanism ? '. ' + f.mechanism : '')
+  ).join('\n') || 'None identified.';
+
+  const dd = ddInteractions.slice(0, 5).map(i =>
+    '- ' + i.drug_a + ' + ' + i.drug_b + ' — severity ' + i.severity +
+    (i.mechanism ? '. ' + i.mechanism : '')
+  ).join('\n') || 'None identified.';
+
+  return `You are a clinical pharmacist writing member outreach on behalf of the health plan described below.
+
+HEALTH PLAN BRAND PROFILE — write AS this organisation. Its identity, tone and
+escalation pathway must be carried throughout every message you generate. Do not
+leave placeholders or bracketed tokens for any of these values; write them in
+naturally as you compose.
+  Organisation: ${brand.organization_name}
+  Member services contact: ${brand.member_services_contact}
+  Clinical escalation pathway: ${brand.clinical_escalation_pathway}
+  Tone profile: ${brand.tone_profile}
+  Language: ${brand.language === 'es' ? 'Spanish (español)' : 'English'}
+
+WHY THIS MEMBER IS BEING CONTACTED NOW
+Their medication interaction risk tier rose from ${continuity.previous_tier} to ${continuity.current_tier} at the latest review. Outreach is triggered only by such an increase.
+
+SUPPLEMENT AND FOOD INTERACTIONS FOUND IN THEIR OWN PROFILE:
+${sf}
+
+DRUG-DRUG INTERACTIONS IN THEIR REGIMEN:
+${dd}
+
+WRITING RULES — follow exactly:
+- The member is ANONYMOUS. You have no name, age, or any personal detail, and you must not invent one. Open with a neutral greeting appropriate to ${brand.organization_name}.
+- Name each specific supplement or food and the medication it interacts with.
+- Never print a numeric risk score, a risk tier label, or clinical jargon such as CPRS, polypharmacy, or pharmacokinetic.
+- Be specific and action-oriented about what to do next, routing the member through the escalation pathway above.
+- Warm and encouraging, never alarming.
+
+Generate THREE versions:
+1. EMAIL — 150-200 words including a subject line
+2. SMS — 160 characters maximum
+3. CASE_MANAGER_SCRIPT — talking points for a phone call
+
+Return ONLY valid JSON:
+{"email":{"subject":"<subject>","body":"<body>"},"sms":{"body":"<max 160 chars>"},"case_manager_script":{"opening":"<line>","key_points":["<p1>","<p2>","<p3>"],"closing":"<line>"}}`;
+}
+
+async function generateOutreachPackage(brand, continuity, findings, ddInteractions) {
+  const k = process.env.ANTHROPIC_API_KEY;
+  if (!k) return { status: 'skipped', error: 'ANTHROPIC_API_KEY not configured', package: null };
+  try {
+    const prompt = buildBrandedOutreachPrompt(brand, continuity, findings, ddInteractions);
+    const raw = await callClaude(k, prompt, 1800, brand.language);
+    const parsed = tryParseJSON(raw);
+    if (!parsed || !parsed.email) {
+      return { status: 'failed', error: 'Model returned unparseable output', package: null };
+    }
+    parsed.brand_applied = {
+      organization_name: brand.organization_name,
+      language: brand.language,
+      injected_into_prompt: true,
+    };
+    return { status: 'generated', error: null, package: parsed };
+  } catch (e) {
+    return { status: 'failed', error: e.message, package: null };
+  }
+}
+
+// One partner may only have one cycle in flight at a time.
+const reanalysisInFlight = new Set();
+
+async function runReanalysisForPartner(partner, trigger) {
+  if (!pool) return { skipped: true, reason: 'no database' };
+  if (reanalysisInFlight.has(partner.id)) {
+    return { skipped: true, reason: 'a re-analysis for this partner is already running' };
+  }
+  reanalysisInFlight.add(partner.id);
+
+  const { rows: runRows } = await pool.query(
+    `INSERT INTO reanalysis_runs (partner_id, trigger) VALUES ($1, $2) RETURNING id, started_at`,
+    [partner.id, trigger || 'scheduled']
+  );
+  const runId = runRows[0].id;
+
+  let analyzed = 0, upgrades = 0, generated = 0;
+  const upgradedMembers = [];
+
+  try {
+    const { rows: members } = await pool.query(
+      `SELECT p.*, c.tier2_share_granted
+         FROM member_profiles p
+         JOIN member_consents c ON c.session_token = p.session_token
+        WHERE p.partner_id = $1
+          AND c.tier1_persist_granted = TRUE
+          AND jsonb_array_length(p.medications) > 0`,
+      [partner.id]
+    );
+
+    const brand = await getBrandConfig(partner.id);
+
+    for (const member of members) {
+      const { risk, continuity } = await analyzeAndRecord(member, 'scheduled');
+      analyzed++;
+
+      // ── step 1320: the delta gate ──────────────────────────────────────
+      // Everything below this line is reachable ONLY on an upward tier move.
+      if (continuity.direction !== 'increased') continue;
+      upgrades++;
+
+      upgradedMembers.push({
+        member_identifier: feedMemberId(member.session_token),
+        from_tier: continuity.previous_tier,
+        to_tier: continuity.current_tier,
+      });
+
+      // Partner-branded outreach is outbound partner involvement, so it also
+      // requires tier 2. The tier change is still recorded for the member.
+      if (!member.tier2_share_granted) continue;
+
+      const { rows: evRows } = await pool.query(
+        `INSERT INTO outreach_events
+           (session_token, partner_id, prior_tier, new_tier, prior_cprs, new_cprs, status)
+         VALUES ($1, $2, $3, $4, $5, $6, 'pending')
+         RETURNING id`,
+        [
+          member.session_token, partner.id,
+          continuity.previous_tier, continuity.current_tier,
+          continuity.previous_cprs, continuity.current_cprs,
+        ]
+      );
+      const eventId = evRows[0].id;
+
+      const result = await generateOutreachPackage(
+        brand, continuity, risk.supplement_food_findings, risk.drug_interactions
+      );
+      await pool.query(
+        `UPDATE outreach_events SET package = $2, status = $3, error = $4 WHERE id = $1`,
+        [eventId, result.package ? JSON.stringify(result.package) : null, result.status, result.error]
+      );
+      if (result.status === 'generated') generated++;
+    }
+
+    await pool.query(
+      `UPDATE reanalysis_runs
+          SET status = 'complete', finished_at = NOW(), members_analyzed = $2,
+              tier_upgrades = $3, outreach_generated = $4
+        WHERE id = $1`,
+      [runId, analyzed, upgrades, generated]
+    );
+    await pool.query(
+      `UPDATE partner_accounts SET last_reanalysis_at = NOW() WHERE id = $1`,
+      [partner.id]
+    );
+
+    console.log('[REANALYSIS] partner=' + partner.id + ' analyzed=' + analyzed +
+      ' upgrades=' + upgrades + ' outreach=' + generated);
+
+    return {
+      run_id: runId, trigger: trigger || 'scheduled',
+      members_analyzed: analyzed, tier_upgrades: upgrades,
+      outreach_generated: generated, upgraded_members: upgradedMembers,
+    };
+  } catch (e) {
+    console.error('[REANALYSIS] partner=' + partner.id + ' failed:', e.message);
+    await pool.query(
+      `UPDATE reanalysis_runs SET status = 'failed', finished_at = NOW(), error = $2,
+              members_analyzed = $3, tier_upgrades = $4, outreach_generated = $5
+        WHERE id = $1`,
+      [runId, e.message, analyzed, upgrades, generated]
+    ).catch(() => {});
+    throw e;
+  } finally {
+    reanalysisInFlight.delete(partner.id);
+  }
+}
+
+// ── step 1318: the scheduler ────────────────────────────────────────────────
+// Ticks every five minutes and runs any partner whose configured UTC hour has
+// arrived and whose cadence has elapsed. The cadence test doubles as the
+// guard against running twice inside the same hour window.
+async function runDueReanalyses() {
+  if (!pool) return;
+  try {
+    const hour = new Date().getUTCHours();
+    const { rows: due } = await pool.query(
+      `SELECT * FROM partner_accounts
+        WHERE reanalysis_enabled = TRUE
+          AND status = 'active'
+          AND reanalysis_hour_utc = $1
+          AND (last_reanalysis_at IS NULL
+               OR last_reanalysis_at < NOW() - (reanalysis_cadence_days || ' days')::interval)`,
+      [hour]
+    );
+    for (const partner of due) {
+      try {
+        await runReanalysisForPartner(partner, 'scheduled');
+      } catch (e) {
+        // One partner's failure must not stop the others.
+        console.error('[REANALYSIS] scheduled run failed for partner', partner.id, e.message);
+      }
+    }
+  } catch (e) {
+    console.error('[REANALYSIS] scheduler tick failed:', e.message);
+  }
+}
+
+setInterval(runDueReanalyses, 5 * 60 * 1000);
+
+// ── Partner configuration routes ────────────────────────────────────────────
+
+app.get('/api/partner/brand', partnerAuth, async (req, res) => {
+  try {
+    res.json({ partner_id: req.partner.id, brand: await getBrandConfig(req.partner.id) });
+  } catch (e) {
+    console.error('[BRAND] read failed:', e.message);
+    res.status(500).json({ error: 'Could not load brand configuration' });
+  }
+});
+
+app.put('/api/partner/brand', partnerAuth, async (req, res) => {
+  const b = req.body || {};
+  const language = b.language === 'es' ? 'es' : 'en';
+  try {
+    await pool.query(
+      `INSERT INTO partner_brand_configs
+         (partner_id, organization_name, member_services_contact,
+          clinical_escalation_pathway, tone_profile, language, updated_at)
+       VALUES ($1, $2, $3, $4, $5, $6, NOW())
+       ON CONFLICT (partner_id) DO UPDATE SET
+         organization_name = EXCLUDED.organization_name,
+         member_services_contact = EXCLUDED.member_services_contact,
+         clinical_escalation_pathway = EXCLUDED.clinical_escalation_pathway,
+         tone_profile = EXCLUDED.tone_profile,
+         language = EXCLUDED.language,
+         updated_at = NOW()`,
+      [
+        req.partner.id,
+        b.organization_name || null,
+        b.member_services_contact || null,
+        b.clinical_escalation_pathway || null,
+        b.tone_profile || null,
+        language,
+      ]
+    );
+    res.json({ ok: true, brand: await getBrandConfig(req.partner.id) });
+  } catch (e) {
+    console.error('[BRAND] write failed:', e.message);
+    res.status(500).json({ error: 'Could not save brand configuration' });
+  }
+});
+
+app.get('/api/partner/schedule', partnerAuth, (req, res) => {
+  res.json({
+    partner_id: req.partner.id,
+    schedule: {
+      enabled: req.partner.reanalysis_enabled,
+      hour_utc: req.partner.reanalysis_hour_utc,
+      cadence_days: req.partner.reanalysis_cadence_days,
+      last_run_at: req.partner.last_reanalysis_at,
+    },
+  });
+});
+
+app.put('/api/partner/schedule', partnerAuth, async (req, res) => {
+  const b = req.body || {};
+  const hour = b.hour_utc === undefined ? req.partner.reanalysis_hour_utc : parseInt(b.hour_utc, 10);
+  const cadence = b.cadence_days === undefined
+    ? req.partner.reanalysis_cadence_days : parseInt(b.cadence_days, 10);
+
+  if (!Number.isInteger(hour) || hour < 0 || hour > 23) {
+    return res.status(400).json({ error: 'hour_utc must be an integer 0-23' });
+  }
+  if (!Number.isInteger(cadence) || cadence < 1 || cadence > 365) {
+    return res.status(400).json({ error: 'cadence_days must be an integer 1-365' });
+  }
+
+  try {
+    const { rows } = await pool.query(
+      `UPDATE partner_accounts
+          SET reanalysis_enabled = COALESCE($2, reanalysis_enabled),
+              reanalysis_hour_utc = $3, reanalysis_cadence_days = $4
+        WHERE id = $1
+        RETURNING reanalysis_enabled, reanalysis_hour_utc,
+                  reanalysis_cadence_days, last_reanalysis_at`,
+      [
+        req.partner.id,
+        typeof b.enabled === 'boolean' ? b.enabled : null,
+        hour, cadence,
+      ]
+    );
+    res.json({ ok: true, schedule: rows[0] });
+  } catch (e) {
+    console.error('[SCHEDULE] write failed:', e.message);
+    res.status(500).json({ error: 'Could not save schedule' });
+  }
+});
+
+// Manual trigger — same code path as the scheduled run.
+app.post('/api/partner/reanalysis/run', partnerAuth, async (req, res) => {
+  try {
+    const result = await runReanalysisForPartner(req.partner, 'manual');
+    if (result.skipped) return res.status(409).json({ error: result.reason });
+    res.json({ ok: true, ...result });
+  } catch (e) {
+    console.error('[REANALYSIS] manual run failed:', e.message);
+    res.status(500).json({ error: 'Re-analysis failed', detail: e.message });
+  }
+});
+
+app.get('/api/partner/reanalysis/runs', partnerAuth, async (req, res) => {
+  try {
+    const { rows } = await pool.query(
+      `SELECT id, trigger, status, members_analyzed, tier_upgrades,
+              outreach_generated, error, started_at, finished_at
+         FROM reanalysis_runs
+        WHERE partner_id = $1
+        ORDER BY started_at DESC
+        LIMIT 50`,
+      [req.partner.id]
+    );
+    res.json({ partner_id: req.partner.id, runs: rows });
+  } catch (e) {
+    console.error('[REANALYSIS] run history failed:', e.message);
+    res.status(500).json({ error: 'Could not load run history' });
+  }
+});
+
+// Delta-triggered outreach packages. Member identity is pseudonymised here for
+// exactly the same reason it is in the feed.
+app.get('/api/partner/outreach', partnerAuth, async (req, res) => {
+  const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 50, 1), 200);
+  try {
+    const { rows } = await pool.query(
+      `SELECT id, session_token, prior_tier, new_tier, prior_cprs, new_cprs,
+              package, status, error, created_at
+         FROM outreach_events
+        WHERE partner_id = $1
+        ORDER BY created_at DESC
+        LIMIT $2`,
+      [req.partner.id, limit]
+    );
+    res.json({
+      partner_id: req.partner.id,
+      trigger_rule: 'Generated only on an upward risk tier change (spec step 1320).',
+      events: rows.map(r => ({
+        id: r.id,
+        member_identifier: feedMemberId(r.session_token),
+        prior_tier: r.prior_tier,
+        new_tier: r.new_tier,
+        prior_cprs: r.prior_cprs,
+        new_cprs: r.new_cprs,
+        status: r.status,
+        error: r.error,
+        package: r.package,
+        created_at: r.created_at,
+      })),
+    });
+  } catch (e) {
+    console.error('[OUTREACH] list failed:', e.message);
+    res.status(500).json({ error: 'Could not load outreach events' });
+  }
+});
 
 console.log('[STARTUP] Middleware configured');
 

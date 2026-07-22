@@ -31,6 +31,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;backgroun
 .lang-btn.active{background:var(--teal-md);color:#fff}
 .lang-btn:hover:not(.active){background:var(--teal-lt)}
 @media(max-width:640px){.lang-btn{padding:3px 8px;font-size:10px}}
+/* ── Clerk auth slot (IntractMD v2 partner feed) ── */
+.auth-slot{display:none;align-items:center;gap:8px;align-self:center;flex-shrink:0;margin-left:10px}
+.auth-slot.ready{display:flex}
+.auth-btn{padding:6px 14px;font-size:12px;font-weight:600;border-radius:20px;cursor:pointer;line-height:1.4;white-space:nowrap;transition:background .15s,color .15s,border-color .15s}
+.auth-btn.ghost{background:none;border:1.5px solid rgba(0,180,216,.5);color:var(--teal)}
+.auth-btn.ghost:hover{background:var(--teal-lt)}
+.auth-btn.solid{background:var(--teal-md);border:1.5px solid var(--teal-md);color:#fff}
+.auth-btn.solid:hover{background:var(--teal);border-color:var(--teal)}
+#auth-user{display:flex;align-items:center}
+@media(max-width:640px){.auth-slot{gap:6px;margin-left:6px}.auth-btn{padding:4px 10px;font-size:11px}}
 .panel{display:none;padding:1.5rem}.panel.active{display:block}
 .help-step{display:flex;gap:13px;align-items:flex-start;margin-bottom:14px}
 .help-step-num{min-width:32px;height:32px;border-radius:50%;background:var(--amb-bd);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
@@ -404,6 +414,15 @@ button.sidebar-btn.sb-video:hover{background:#0D4F9E !important;border-color:#0D
 <div class="lang-toggle" id="lang-toggle" aria-label="Language selector">
   <button class="lang-btn active" id="lang-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
   <button class="lang-btn" id="lang-es" onclick="setLang('es')" aria-label="Cambiar a español">ES</button>
+</div>
+<div class="auth-slot" id="auth-slot">
+  <div id="auth-signed-out" style="display:none">
+    <button class="auth-btn ghost" id="auth-signin-btn">Sign in</button>
+    <button class="auth-btn solid" id="auth-signup-btn" style="margin-left:8px">Sign up</button>
+  </div>
+  <div id="auth-signed-in" style="display:none">
+    <div id="auth-user"></div>
+  </div>
 </div>
 </div>
 
@@ -3535,6 +3554,84 @@ function closeVideoModal(){
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoModal();});
 </script>
 <div style="text-align:center;padding:12px;font-size:11px;color:#888;border-top:1px solid #e5e5e5;margin-top:8px">&#169; 2026 Resolve Medical, LLC &nbsp;|&nbsp; <a href="/terms" style="color:#1B6EC2;text-decoration:none;">Terms of Use</a></div>
+
+<script>
+/* ── IntractMD v2 — Clerk authentication (partner data feed) ────────────────
+   Additive: the public drug checker works fine signed-out. If Clerk is not
+   configured or its script fails to load, the auth slot simply stays hidden. */
+(function(){
+  var slot      = document.getElementById('auth-slot');
+  var signedOut = document.getElementById('auth-signed-out');
+  var signedIn  = document.getElementById('auth-signed-in');
+  var userEl    = document.getElementById('auth-user');
+
+  // window.IntractAuth is the handle Phase 2 partner-feed calls will use to
+  // attach a bearer token: fetch(url, {headers:{Authorization:'Bearer '+token}})
+  window.IntractAuth = {
+    ready: false,
+    isSignedIn: function(){ return !!(window.Clerk && window.Clerk.user); },
+    getToken: function(){
+      if (!window.Clerk || !window.Clerk.session) return Promise.resolve(null);
+      return window.Clerk.session.getToken();
+    }
+  };
+
+  // The Clerk frontend API host is encoded in the publishable key:
+  // pk_test_<base64 of "host$">
+  function frontendApiFrom(key){
+    try {
+      var decoded = atob(key.split('_').slice(2).join('_'));
+      return decoded.replace(/\$+$/, '');
+    } catch (e) { return null; }
+  }
+
+  function loadScript(src, publishableKey){
+    return new Promise(function(resolve, reject){
+      var s = document.createElement('script');
+      s.src = src;
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.setAttribute('data-clerk-publishable-key', publishableKey);
+      s.onload = resolve;
+      s.onerror = function(){ reject(new Error('Clerk script failed to load')); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function render(){
+    if (!window.Clerk) return;
+    slot.classList.add('ready');
+    if (window.Clerk.user) {
+      signedOut.style.display = 'none';
+      signedIn.style.display  = 'block';
+      userEl.innerHTML = '';
+      window.Clerk.mountUserButton(userEl, { afterSignOutUrl: '/' });
+    } else {
+      signedIn.style.display  = 'none';
+      signedOut.style.display = 'flex';
+      userEl.innerHTML = '';
+    }
+  }
+
+  fetch('/api/auth/config')
+    .then(function(r){ return r.json(); })
+    .then(function(cfg){
+      if (!cfg.enabled || !cfg.publishableKey) return;      // auth off — stay hidden
+      var host = frontendApiFrom(cfg.publishableKey);
+      if (!host) throw new Error('Could not derive Clerk frontend API host');
+      return loadScript('https://' + host + '/npm/@clerk/clerk-js@5/dist/clerk.browser.js', cfg.publishableKey)
+        .then(function(){ return window.Clerk.load(); })
+        .then(function(){
+          window.IntractAuth.ready = true;
+          document.getElementById('auth-signin-btn').onclick = function(){ window.Clerk.openSignIn(); };
+          document.getElementById('auth-signup-btn').onclick = function(){ window.Clerk.openSignUp(); };
+          window.Clerk.addListener(render);                 // fires on sign-in/out
+          render();
+        });
+    })
+    .catch(function(e){ console.warn('[auth] unavailable:', e.message); });
+})();
+</script>
 
 </body>
 </html>
