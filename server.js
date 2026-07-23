@@ -4252,6 +4252,89 @@ async function runScheduledTests(trigger) {
       console.error('[Scheduler] Could not write log files:', e.message);
     }
 
+
+    // Send nightly results email via Resend
+    try {
+      if (process.env.RESEND_API_KEY) {
+        const fc = summary.feature_health_check || {};
+        const ts = summary.test_suite_1500 || {};
+        const allGreen = fc.failed === 0 && (ts.status === 'disabled' || ts.failed === 0);
+        const emoji = allGreen ? '\u2705' : '\u274c';
+        const totalPassed = (fc.passed || 0) + (ts.passed || 0);
+        const totalTests = (fc.total || 0) + (ts.total || 0);
+        const statusLine = allGreen ? 'ALL CHECKS PASSING' : 'FAILURES DETECTED';
+        const runDate = new Date().toLocaleDateString('en-US', {weekday:'long',year:'numeric',month:'long',day:'numeric'});
+        const runTime = new Date().toLocaleTimeString('en-US', {hour:'2-digit',minute:'2-digit',timeZone:'UTC'}) + ' UTC';
+        const fcColor = fc.failed > 0 ? '#A32D2D' : '#2E7D4F';
+        const tsColor = ts.failed > 0 ? '#A32D2D' : '#2E7D4F';
+        const borderColor = allGreen ? '#2E7D4F' : '#A32D2D';
+        const fcPassed = (fc.passed || 0) + '/' + (fc.total || 0);
+        const tsPassed = ts.status === 'disabled' ? 'disabled' : (ts.passed || 0) + '/' + (ts.total || 0);
+        const tsFailed = ts.status === 'disabled' ? '-' : String(ts.failed || 0);
+        const tsRuntime = ts.runtime || '-';
+        const avgMs = (ts.avg_ms ? ts.avg_ms + 'ms' : '-');
+        const trigger = summary.trigger || 'scheduled';
+        const failureAlert = fc.failed > 0 ? '<div style="margin-top:16px;padding:12px;background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:4px;font-size:13px;color:#A32D2D"><strong>Failed checks require attention.</strong> View full results at intractmd.com/test-status</div>' : '';
+
+        const html = '<div style="font-family:Calibri,Arial,sans-serif;max-width:600px;margin:0 auto">'
+          + '<div style="background:#0D3B6E;padding:24px 28px;border-radius:6px 6px 0 0">'
+          + '<h1 style="color:#00B4D8;margin:0;font-size:22px">IntractMD\u2122 Nightly Test Results</h1>'
+          + '<p style="color:#A8C8E8;margin:6px 0 0;font-size:14px">' + runDate + ' &nbsp;\u00b7&nbsp; Run completed at ' + runTime + '</p>'
+          + '</div>'
+          + '<div style="background:#f4f8fd;padding:24px 28px;border-left:4px solid ' + borderColor + '">'
+          + '<h2 style="color:' + borderColor + ';margin:0 0 16px;font-size:20px">' + emoji + ' ' + statusLine + ' \u2014 ' + totalPassed + '/' + totalTests + '</h2>'
+          + '<table style="width:100%;border-collapse:collapse;font-size:14px">'
+          + '<tr style="background:#0D3B6E;color:#fff">'
+          + '<th style="padding:8px 12px;text-align:left">Suite</th>'
+          + '<th style="padding:8px 12px;text-align:center">Passed</th>'
+          + '<th style="padding:8px 12px;text-align:center">Failed</th>'
+          + '<th style="padding:8px 12px;text-align:right">Runtime</th>'
+          + '</tr>'
+          + '<tr style="background:#fff">'
+          + '<td style="padding:8px 12px;border-bottom:1px solid #e5e5e5">Feature Health Check</td>'
+          + '<td style="padding:8px 12px;text-align:center;color:#2E7D4F;font-weight:700;border-bottom:1px solid #e5e5e5">' + fcPassed + '</td>'
+          + '<td style="padding:8px 12px;text-align:center;color:' + fcColor + ';font-weight:700;border-bottom:1px solid #e5e5e5">' + String(fc.failed || 0) + '</td>'
+          + '<td style="padding:8px 12px;text-align:right;color:#666;border-bottom:1px solid #e5e5e5">' + (fc.runtime_seconds ? fc.runtime_seconds + 's' : '-') + '</td>'
+          + '</tr>'
+          + '<tr style="background:#f4f8fd">'
+          + '<td style="padding:8px 12px">1,500-Test Suite</td>'
+          + '<td style="padding:8px 12px;text-align:center;color:#2E7D4F;font-weight:700">' + tsPassed + '</td>'
+          + '<td style="padding:8px 12px;text-align:center;color:' + tsColor + ';font-weight:700">' + tsFailed + '</td>'
+          + '<td style="padding:8px 12px;text-align:right;color:#666">' + tsRuntime + '</td>'
+          + '</tr>'
+          + '</table>'
+          + failureAlert
+          + '<p style="margin:16px 0 0;font-size:13px;color:#666">Average response time: ' + avgMs + ' &nbsp;\u00b7&nbsp; Trigger: ' + trigger + ' &nbsp;\u00b7&nbsp; Source: database</p>'
+          + '</div>'
+          + '<div style="background:#0D3B6E;padding:14px 28px;border-radius:0 0 6px 6px;text-align:center">'
+          + '<a href="https://www.intractmd.com/test-status" style="color:#00B4D8;font-size:13px;text-decoration:none">View full results at intractmd.com/test-status</a>'
+          + '<p style="color:#6688AA;font-size:11px;margin:6px 0 0">\u00a9 2026 Resolve Medical, LLC &nbsp;\u00b7&nbsp; IntractMD\u2122</p>'
+          + '</div>'
+          + '</div>';
+
+        const emailRes = await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + process.env.RESEND_API_KEY },
+          body: JSON.stringify({
+            from: 'IntractMD Results <info@mail.resolve.med>',
+            to: ['tom@resolve.med'],
+            subject: emoji + ' IntractMD Nightly Tests \u2014 ' + totalPassed + '/' + totalTests + ' ' + statusLine + ' \u2014 ' + runDate,
+            html: html
+          })
+        });
+        const emailData = await emailRes.json();
+        if (emailData.id) {
+          console.log('[Scheduler] Results email sent to tom@resolve.med — id:', emailData.id);
+        } else {
+          console.error('[Scheduler] Email send failed:', JSON.stringify(emailData));
+        }
+      } else {
+        console.log('[Scheduler] RESEND_API_KEY not set — skipping email notification');
+      }
+    } catch (emailErr) {
+      console.error('[Scheduler] Email notification error:', emailErr.message);
+    }
+
     scheduledTestState.lastCompletedDay = today;
     console.log('[Scheduler] Run complete in ' + summary.duration +
       ' — persisted=' + stored.persisted + (stored.reason ? ' (' + stored.reason + ')' : ''));
