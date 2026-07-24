@@ -4379,6 +4379,94 @@ setTimeout(function() {
   console.log('[Scheduler] Results persist to Postgres; check /test-status');
 }, 60000);
 
+// ════════════════════════════════════════════════════════════════════════════
+// NIGHTLY GOOGLE ANALYTICS REPORT
+// ════════════════════════════════════════════════════════════════════════════
+// Same shape as the test scheduler above: a 5-minute tick that fires once
+// inside a configured UTC hour, with a re-entry guard and a once-per-day
+// guard. It runs an hour after the tests by default so the two emails do not
+// arrive at the same moment.
+//
+// Kept deliberately separate from runScheduledTests: the 1,500-test suite can
+// run for three hours, and the analytics digest should not be held behind it.
+// ════════════════════════════════════════════════════════════════════════════
+
+const ANALYTICS_REPORT_HOUR_UTC = Number(process.env.ANALYTICS_REPORT_HOUR_UTC) || 3;
+const ANALYTICS_REPORT_ENABLED = process.env.ANALYTICS_REPORT !== 'false';
+
+const analyticsReportState = { running: false, startedAt: null, lastCompletedDay: null, last: null };
+
+async function runAnalyticsReportJob(trigger) {
+  if (analyticsReportState.running) {
+    console.log('[Analytics] Skipped — a report started at ' +
+      new Date(analyticsReportState.startedAt).toISOString() + ' is still in progress');
+    return { ok: false, error: 'already running' };
+  }
+  const today = new Date().toISOString().slice(0, 10);
+  if (trigger === 'scheduled' && analyticsReportState.lastCompletedDay === today) {
+    console.log('[Analytics] Skipped — already reported today (' + today + ')');
+    return { ok: false, error: 'already ran today' };
+  }
+
+  analyticsReportState.running = true;
+  analyticsReportState.startedAt = Date.now();
+  try {
+    const { runAnalyticsReport } = require('./scripts/analytics-report');
+    const summary = await runAnalyticsReport({ trigger: trigger });
+    analyticsReportState.last = summary;
+    // Only a successful run claims the day, so a transient GA outage at 03:00
+    // does not suppress the retry on the next tick.
+    if (summary.ok) analyticsReportState.lastCompletedDay = today;
+    return summary;
+  } catch (e) {
+    // runAnalyticsReport swallows its own errors; this covers a failure to
+    // even load the module (e.g. a missing dependency after a bad deploy).
+    console.error('[Analytics] Job failed:', e && e.message);
+    return { ok: false, error: e && e.message };
+  } finally {
+    analyticsReportState.running = false;
+    analyticsReportState.startedAt = null;
+  }
+}
+
+if (ANALYTICS_REPORT_ENABLED) {
+  setInterval(function () {
+    const now = new Date();
+    if (now.getUTCHours() !== ANALYTICS_REPORT_HOUR_UTC || now.getUTCMinutes() >= 5) return;
+    runAnalyticsReportJob('scheduled').catch(function (e) {
+      console.error('[Analytics] Unexpected scheduler error:', e && e.message);
+    });
+  }, 300000);
+
+  setTimeout(function () {
+    console.log('[Analytics] Initialized — daily GA report at ' +
+      String(ANALYTICS_REPORT_HOUR_UTC).padStart(2, '0') + ':00 UTC ' +
+      '(property: ' + (process.env.GA4_PROPERTY_ID || 'NOT SET') + ')');
+  }, 60000);
+} else {
+  console.log('[Analytics] Disabled via ANALYTICS_REPORT=false');
+}
+
+// Manual trigger. Fast enough (a few seconds) to await inline, unlike the test
+// suites, so the caller gets the actual result rather than a 202.
+app.post('/api/admin/run-analytics-report', requireAdmin, async function (req, res) {
+  const summary = await runAnalyticsReportJob('manual');
+  res.status(summary.ok ? 200 : 500).json(summary);
+});
+
+// Last report's numbers, without re-querying Google.
+app.get('/api/admin/analytics-status', requireAdmin, function (req, res) {
+  res.json({
+    enabled: ANALYTICS_REPORT_ENABLED,
+    hour_utc: ANALYTICS_REPORT_HOUR_UTC,
+    property_configured: Boolean(process.env.GA4_PROPERTY_ID),
+    credentials_configured: Boolean(process.env.GA_SERVICE_ACCOUNT_JSON || process.env.GOOGLE_APPLICATION_CREDENTIALS),
+    running: analyticsReportState.running,
+    last_completed_day: analyticsReportState.lastCompletedDay,
+    last: analyticsReportState.last,
+  });
+});
+
 // ── TEST STATUS ENDPOINT ──────────────────────────────────────────────────────
 // Manual trigger. Returns immediately: a full run can exceed 90 minutes, far
 // longer than any sensible HTTP timeout. Poll /test-status for the result.
