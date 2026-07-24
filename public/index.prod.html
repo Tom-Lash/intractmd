@@ -743,14 +743,11 @@ button.sidebar-btn.sb-video:hover{background:#0D4F9E !important;border-color:#0D
 
 
 <script>
-// PDF export fix — 400ms delay ensures content renders before print dialog
+// PDF export fix — intercept window.print to ensure content renders first
 (function(){
-  var _origExport = window.exportPDF;
-  window.exportPDF = function(){
-    if(typeof lastAnalysis === 'undefined' || !lastAnalysis) return;
-    var el = document.getElementById('print-report');
-    if(el) el.innerHTML = (typeof buildPrintReport === 'function') ? buildPrintReport(lastAnalysis) : '';
-    setTimeout(function(){ window.print(); }, 400);
+  var _origPrint = window.print.bind(window);
+  window.print = function(){
+    setTimeout(_origPrint, 400);
   };
 })();
 </script>
