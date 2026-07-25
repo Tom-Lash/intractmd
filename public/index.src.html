@@ -1652,7 +1652,9 @@ function buildPrintReport(ai){
 
 function exportPDF(){
   if(!lastAnalysis)return;
-  document.getElementById('print-report').innerHTML=buildPrintReport(lastAnalysis);
+  var pr=document.getElementById('print-report');
+  pr.innerHTML=buildPrintReport(lastAnalysis);
+  document.body.appendChild(pr);
   setTimeout(function(){window.print();},400);
 }
 
