@@ -777,5 +777,43 @@ window.exportPDF = function(){
   setTimeout(function(){ window.print(); }, 400);
 };
 </script>
+
+<script>
+// Rename Risk Score tab to AI Polypharmacy Risk Score
+(function(){
+  function renameRiskTab(){
+    var tab = document.getElementById('tab-risk');
+    if(tab){
+      var full = tab.querySelector('.tab-full');
+      if(full && full.textContent === 'Risk Score'){
+        full.textContent = 'AI Polypharmacy Risk Score';
+      }
+    }
+  }
+  // Run immediately and after DOM settles
+  renameRiskTab();
+  document.addEventListener('DOMContentLoaded', renameRiskTab);
+  setTimeout(renameRiskTab, 500);
+})();
+</script>
+
+<script>
+// Rename Risk Score tab to AI Polypharmacy Risk Score
+(function(){
+  function renameRiskTab(){
+    var tab = document.getElementById('tab-risk');
+    if(tab){
+      var full = tab.querySelector('.tab-full');
+      if(full && full.textContent === 'Risk Score'){
+        full.textContent = 'AI Polypharmacy Risk Score';
+      }
+    }
+  }
+  // Run immediately and after DOM settles
+  renameRiskTab();
+  document.addEventListener('DOMContentLoaded', renameRiskTab);
+  setTimeout(renameRiskTab, 500);
+})();
+</script>
 </body>
 </html>
