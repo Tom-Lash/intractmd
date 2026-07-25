@@ -4486,3 +4486,37 @@ process.on('SIGTERM', () => {
 // Keep process alive
 setInterval(() => {}, 30000);
 
+// ── Analytics report scheduler ────────────────────────────────────────────────
+// Runs once daily at ANALYTICS_REPORT_HOUR_UTC (default 4 AM UTC, after test suite)
+const ANALYTICS_REPORT_HOUR_UTC = Number(process.env.ANALYTICS_REPORT_HOUR_UTC) || 4;
+let analyticsLastRun = null;
+
+setInterval(function() {
+  const now = new Date();
+  const today = now.toISOString().slice(0, 10);
+  if (now.getUTCHours() !== ANALYTICS_REPORT_HOUR_UTC) return;
+  if (now.getUTCMinutes() >= 5) return;
+  if (analyticsLastRun === today) return;
+  analyticsLastRun = today;
+
+  console.log('[Analytics] Starting daily analytics report');
+  const { execFile } = require('child_process');
+  const path = require('path');
+  const scriptPath = path.join(__dirname, 'scripts', 'analytics-report.js');
+  execFile('node', [scriptPath], {
+    env: process.env,
+    timeout: 60000
+  }, function(err, stdout, stderr) {
+    if (err) {
+      console.error('[Analytics] Report failed:', err.message);
+    } else {
+      console.log('[Analytics] Report completed');
+    }
+    if (stdout) console.log('[Analytics]', stdout.trim());
+    if (stderr) console.error('[Analytics] stderr:', stderr.trim());
+  });
+}, 300000); // check every 5 minutes
+
+console.log('[Analytics] Report scheduler active — runs at ' +
+  String(ANALYTICS_REPORT_HOUR_UTC).padStart(2, '0') + ':00 UTC daily');
+
