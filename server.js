@@ -4256,8 +4256,8 @@ async function runScheduledTests(trigger) {
     // Send nightly results email via Resend
     try {
       if (process.env.RESEND_API_KEY) {
-        const fc = summary.feature_health_check || {};
-        const ts = summary.test_suite_1500 || {};
+        const fc = summary.feature_check || {};
+        const ts = summary.test_suite || {};
         const allGreen = fc.failed === 0 && (ts.status === 'disabled' || ts.failed === 0);
         const emoji = allGreen ? '\u2705' : '\u274c';
         const totalPassed = (fc.passed || 0) + (ts.passed || 0);
