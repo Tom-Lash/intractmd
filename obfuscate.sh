@@ -20,18 +20,45 @@ const obfuscated = html.replace(/<script>([\s\S]*?)<\/script>/g, (match, js) => 
     return match;
   }
   try {
-    const result = JavaScriptObfuscator.obfuscate(js, {
-      compact: true,
-      controlFlowFlattening: false,
-      deadCodeInjection: false,
-      identifierNamesGenerator: 'hexadecimal',
-      renameGlobals: false,
-      selfDefending: false,
-      stringArray: true,
-      stringArrayEncoding: ['base64'],
-      stringArrayThreshold: 0.75,
-      unicodeEscapeSequence: false
-    });
+    // Try with strict parser first, fall back to loose parsing
+    let result;
+    try {
+      result = JavaScriptObfuscator.obfuscate(js, {
+        compact: false,
+        controlFlowFlattening: false,
+        deadCodeInjection: false,
+        identifierNamesGenerator: 'hexadecimal',
+        renameGlobals: false,
+        selfDefending: false,
+        stringArray: false,
+        unicodeEscapeSequence: false,
+        transformObjectKeys: false,
+        splitStrings: false,
+        target: 'browser'
+      });
+    } catch(e1) {
+      // If standard parse fails, try wrapping in async function context
+      try {
+        const wrapped = '(async function(){' + js + '})();';
+        const wrappedResult = JavaScriptObfuscator.obfuscate(wrapped, {
+          compact: false,
+          controlFlowFlattening: false,
+          deadCodeInjection: false,
+          identifierNamesGenerator: 'hexadecimal',
+          renameGlobals: false,
+          selfDefending: false,
+          stringArray: false,
+          unicodeEscapeSequence: false,
+          target: 'browser'
+        });
+        // Unwrap — remove the outer async wrapper
+        let code = wrappedResult.getObfuscatedCode();
+        code = code.replace(/^\(async function\(\)\{/,'').replace(/\}\)\(\);?$/,'');
+        return '<script>' + code + '</script>';
+      } catch(e2) {
+        throw e1; // re-throw original error
+      }
+    }
     const code = result.getObfuscatedCode();
     console.log('  Block ' + blockNum + ': obfuscated (' + Math.round(trimmed.length/1024) + 'KB → ' + Math.round(code.length/1024) + 'KB)');
     obfCount++;
