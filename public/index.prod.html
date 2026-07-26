@@ -779,13 +779,13 @@ window.exportPDF = function(){
 </script>
 
 <script>
-// Rename Risk Score tab to AI Polypharmacy Risk Score
+// Rename Risk Score tab to AI Polypharmacy Risk Score — persists across language switches
 (function(){
   function renameRiskTab(){
     var tab = document.getElementById('tab-risk');
     if(tab){
       var full = tab.querySelector('.tab-full');
-      if(full && full.textContent === 'Risk Score'){
+      if(full && (full.textContent === 'Risk Score' || full.textContent === 'Puntuacion de riesgo' || full.textContent === 'Puntuación de riesgo')){
         full.textContent = 'AI Polypharmacy Risk Score';
       }
     }
@@ -794,17 +794,23 @@ window.exportPDF = function(){
   renameRiskTab();
   document.addEventListener('DOMContentLoaded', renameRiskTab);
   setTimeout(renameRiskTab, 500);
+  // Hook into language switch by watching tab text changes
+  var observer = new MutationObserver(function(){ renameRiskTab(); });
+  setTimeout(function(){
+    var tab = document.getElementById('tab-risk');
+    if(tab) observer.observe(tab, {childList:true, subtree:true, characterData:true});
+  }, 1000);
 })();
 </script>
 
 <script>
-// Rename Risk Score tab to AI Polypharmacy Risk Score
+// Rename Risk Score tab to AI Polypharmacy Risk Score — persists across language switches
 (function(){
   function renameRiskTab(){
     var tab = document.getElementById('tab-risk');
     if(tab){
       var full = tab.querySelector('.tab-full');
-      if(full && full.textContent === 'Risk Score'){
+      if(full && (full.textContent === 'Risk Score' || full.textContent === 'Puntuacion de riesgo' || full.textContent === 'Puntuación de riesgo')){
         full.textContent = 'AI Polypharmacy Risk Score';
       }
     }
@@ -813,6 +819,12 @@ window.exportPDF = function(){
   renameRiskTab();
   document.addEventListener('DOMContentLoaded', renameRiskTab);
   setTimeout(renameRiskTab, 500);
+  // Hook into language switch by watching tab text changes
+  var observer = new MutationObserver(function(){ renameRiskTab(); });
+  setTimeout(function(){
+    var tab = document.getElementById('tab-risk');
+    if(tab) observer.observe(tab, {childList:true, subtree:true, characterData:true});
+  }, 1000);
 })();
 </script>
 </body>
