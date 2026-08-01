@@ -3645,6 +3645,170 @@ app.post('/api/tts', async (req, res) => {
 
 
 // ── CLINICAL WORKFLOW ROUTE ───────────────────────────────────────────────
+app.get('/deprescribing', (req, res) => {
+  res.sendFile(require('path').join(__dirname, 'deprescribing', 'index.html'));
+});
+
+// ── Deprescribing analysis endpoint ──────────────────────────────────────────
+// Runs N+1 CPRS calculations: one baseline + one per drug removed.
+// Returns ranked candidates by CPRS delta (highest risk reduction first).
+app.post('/api/deprescribing-analyze', async (req, res) => {
+  const { drugs } = req.body || {};
+  if (!drugs || !Array.isArray(drugs) || drugs.length < 2) {
+    return res.status(400).json({ error: 'At least 2 medications required.' });
+  }
+  if (drugs.length > 20) {
+    return res.status(400).json({ error: 'Maximum 20 medications per analysis.' });
+  }
+
+  // Drug class map for display
+  const DRUG_CLASSES = {
+    'warfarin':'Anticoagulant','aspirin':'Antiplatelet/NSAID','clopidogrel':'Antiplatelet',
+    'apixaban':'Anticoagulant','rivaroxaban':'Anticoagulant','ibuprofen':'NSAID',
+    'naproxen':'NSAID','celecoxib':'NSAID','prednisone':'Corticosteroid',
+    'methotrexate':'DMARD','sertraline':'SSRI','fluoxetine':'SSRI','paroxetine':'SSRI',
+    'citalopram':'SSRI','escitalopram':'SSRI','venlafaxine':'SNRI','duloxetine':'SNRI',
+    'tramadol':'Opioid analgesic','oxycodone':'Opioid analgesic','morphine':'Opioid analgesic',
+    'fentanyl':'Opioid analgesic','hydrocodone':'Opioid analgesic',
+    'alprazolam':'Benzodiazepine','lorazepam':'Benzodiazepine','clonazepam':'Benzodiazepine',
+    'diazepam':'Benzodiazepine','temazepam':'Benzodiazepine','zolpidem':'Z-hypnotic',
+    'amiodarone':'Antiarrhythmic','digoxin':'Cardiac glycoside','diltiazem':'CCB',
+    'verapamil':'CCB','amlodipine':'CCB','nifedipine':'CCB','metoprolol':'Beta-blocker',
+    'atenolol':'Beta-blocker','carvedilol':'Beta-blocker','bisoprolol':'Beta-blocker',
+    'lisinopril':'ACE inhibitor','ramipril':'ACE inhibitor','losartan':'ARB',
+    'valsartan':'ARB','spironolactone':'Potassium-sparing diuretic',
+    'furosemide':'Loop diuretic','hydrochlorothiazide':'Thiazide diuretic',
+    'atorvastatin':'Statin','simvastatin':'Statin','rosuvastatin':'Statin',
+    'pravastatin':'Statin','omeprazole':'PPI','pantoprazole':'PPI',
+    'metformin':'Biguanide','glipizide':'Sulfonylurea','insulin':'Insulin',
+    'levothyroxine':'Thyroid hormone','gabapentin':'Anticonvulsant/neuropathic',
+    'pregabalin':'Anticonvulsant/neuropathic','carbamazepine':'Anticonvulsant',
+    'valproic acid':'Anticonvulsant','phenytoin':'Anticonvulsant',
+    'quetiapine':'Atypical antipsychotic','olanzapine':'Atypical antipsychotic',
+    'haloperidol':'Typical antipsychotic','donepezil':'Cholinesterase inhibitor',
+    'memantine':'NMDA antagonist','lithium':'Mood stabilizer',
+    'sildenafil':'PDE5 inhibitor','tamsulosin':'Alpha-blocker',
+    'doxazosin':'Alpha-blocker','finasteride':'5-alpha reductase inhibitor',
+    'ciprofloxacin':'Fluoroquinolone','azithromycin':'Macrolide',
+    'fluconazole':'Azole antifungal','trazodone':'SARI antidepressant',
+    'bupropion':'NDRI antidepressant','mirtazapine':'NaSSA antidepressant',
+    'topiramate':'Anticonvulsant/migraine','nitrostat':'Nitrate',
+    'acetaminophen':'Analgesic/antipyretic'
+  };
+
+  // Beers/STOPP criteria map
+  const CRITERIA = {
+    'alprazolam':['Beers Criteria: Benzodiazepines in older adults — increased fall/fracture risk','STOPP B5: Benzodiazepine — CNS depression, motor incoordination'],
+    'lorazepam':['Beers Criteria: Benzodiazepines in older adults — increased fall/fracture risk','STOPP B5: Benzodiazepine — CNS depression, motor incoordination'],
+    'clonazepam':['Beers Criteria: Benzodiazepines in older adults — increased fall/fracture risk','STOPP B5: Benzodiazepine — CNS depression, motor incoordination'],
+    'diazepam':['Beers Criteria: Benzodiazepines in older adults — increased fall/fracture risk','STOPP B5: Benzodiazepine — CNS depression, motor incoordination'],
+    'temazepam':['Beers Criteria: Benzodiazepines in older adults — increased fall/fracture risk','STOPP B5: Benzodiazepine — CNS depression, motor incoordination'],
+    'zolpidem':['Beers Criteria: Z-drugs in older adults — delirium, falls, fractures','STOPP B6: Z-hypnotic — same risks as benzodiazepines in older adults'],
+    'quetiapine':['Beers Criteria: Antipsychotics in older adults — increased mortality in dementia','STOPP D8: Antipsychotic — risk of stroke, excessive sedation, falls'],
+    'olanzapine':['Beers Criteria: Antipsychotics in older adults — increased mortality in dementia','STOPP D8: Antipsychotic — risk of stroke, excessive sedation, falls'],
+    'haloperidol':['Beers Criteria: Antipsychotics in older adults — increased mortality in dementia','STOPP D8: Antipsychotic — risk of stroke, excessive sedation, falls'],
+    'amiodarone':['Beers Criteria: Amiodarone — high risk of toxicity, thyroid/pulmonary/hepatic','STOPP H2: First-line antiarrhythmic — safer alternatives preferred'],
+    'digoxin':['Beers Criteria: Digoxin >0.125mg/day in HF — no mortality benefit, narrow TI','STOPP I1: Digoxin in HF — toxicity risk without mortality benefit'],
+    'omeprazole':['STOPP J4: PPI without gastroprotection indication — C. diff risk, hypomagnesemia','Canadian Deprescribing Network: PPI deprescribing guideline 2017'],
+    'pantoprazole':['STOPP J4: PPI without gastroprotection indication — C. diff risk, hypomagnesemia','Canadian Deprescribing Network: PPI deprescribing guideline 2017'],
+    'simvastatin':['STOPP K1: Statin in limited life expectancy <1yr or frailty — benefit not realized','CMS polypharmacy measure: High-risk medications in older adults'],
+    'doxazosin':['Beers Criteria: Alpha-blockers as antihypertensives — high risk of orthostatic hypotension','STOPP C7: Alpha-1 blocker antihypertensive — safer alternatives preferred'],
+    'oxycodone':['Beers Criteria: Opioids in older adults without pain specialist input — falls, fractures','CMS: Concurrent Use of Opioids and Benzodiazepines (Star Ratings measure D09)'],
+    'hydrocodone':['Beers Criteria: Opioids in older adults — falls, fractures, delirium','CMS: Concurrent Use of Opioids and Benzodiazepines (Star Ratings measure D09)'],
+    'morphine':['Beers Criteria: Opioids in older adults — falls, fractures, delirium','CMS: Concurrent Use of Opioids and Benzodiazepines (Star Ratings measure D09)'],
+    'paroxetine':['Beers Criteria: Paroxetine — strong anticholinergic, avoid in older adults','CMS: Polypharmacy — Multiple Anticholinergic Medications (Star Ratings measure D10)'],
+    'diphenhydramine':['Beers Criteria: First-gen antihistamines — highly anticholinergic','CMS: Polypharmacy — Multiple Anticholinergic Medications (Star Ratings measure D10)'],
+  };
+
+  try {
+    // Call the existing /api/analyze endpoint for each scenario
+    const baseUrl = 'http://localhost:' + (process.env.PORT || 3000);
+
+    async function runAnalysis(drugList) {
+      const response = await fetch(baseUrl + '/api/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': 'intractmd-2024' },
+        body: JSON.stringify({ drugs: drugList, supplements: [], foods: [], patient: {}, language: 'en' })
+      });
+      return response.json();
+    }
+
+    // Extract CPRS and dimensions from analysis result
+    function extractScores(result) {
+      const dims = { bleeding:0, cardiac:0, serotonin:0, nti:0, cns:0, pharmacokinetic:0, renal_hepatic:0, pharmacodynamic:0 };
+      const cprs = result.risk_score || 0;
+      // Try to extract dimensional scores from predictive_interactions or polypharmacy_assessment
+      if (result.polypharmacy_assessment) {
+        const pa = result.polypharmacy_assessment;
+        if (pa.bleeding_risk) dims.bleeding = Math.min(10, Math.round(pa.bleeding_risk * 10));
+        if (pa.cardiac_risk) dims.cardiac = Math.min(10, Math.round(pa.cardiac_risk * 10));
+        if (pa.serotonin_risk) dims.serotonin = Math.min(10, Math.round(pa.serotonin_risk * 10));
+        if (pa.nti_risk) dims.nti = Math.min(10, Math.round(pa.nti_risk * 10));
+        if (pa.cns_risk) dims.cns = Math.min(10, Math.round(pa.cns_risk * 10));
+        if (pa.pharmacokinetic_risk) dims.pharmacokinetic = Math.min(10, Math.round(pa.pharmacokinetic_risk * 10));
+        if (pa.renal_hepatic_risk) dims.renal_hepatic = Math.min(10, Math.round(pa.renal_hepatic_risk * 10));
+        if (pa.pharmacodynamic_risk) dims.pharmacodynamic = Math.min(10, Math.round(pa.pharmacodynamic_risk * 10));
+      }
+      return { cprs, dimensions: dims };
+    }
+
+    // Run baseline analysis
+    const baselineResult = await runAnalysis(drugs);
+    const baseline = extractScores(baselineResult);
+
+    // Run removal simulations in parallel (max 8 at a time)
+    const candidates = [];
+    const batchSize = 8;
+    for (let i = 0; i < drugs.length; i += batchSize) {
+      const batch = drugs.slice(i, i + batchSize);
+      const batchResults = await Promise.all(batch.map(async function(drug, j) {
+        const remaining = drugs.filter(function(d, idx){ return idx !== (i + j); });
+        if (remaining.length < 2) return null;
+        const result = await runAnalysis(remaining);
+        const scores = extractScores(result);
+        const delta = baseline.cprs - scores.cprs;
+        const drugLower = drug.toLowerCase();
+        const criteria = CRITERIA[drugLower] || [];
+        const criteriaLabels = criteria.map(function(c){
+          if(c.startsWith('Beers')) return 'Beers Criteria';
+          if(c.startsWith('STOPP')) return c.split(':')[0];
+          if(c.startsWith('CMS')) return 'CMS Star Ratings';
+          if(c.startsWith('Canadian')) return 'CDN Deprescribing';
+          return c;
+        });
+        return {
+          drug,
+          drug_class: DRUG_CLASSES[drugLower] || 'Medication',
+          cprs_after: scores.cprs,
+          cprs_delta: Math.max(0, delta),
+          dimensions_after: scores.dimensions,
+          criteria: [...new Set(criteriaLabels)],
+          evidence: criteria,
+          rationale: delta > 0
+            ? 'Removing ' + drug + ' from this regimen is estimated to reduce the Composite Polypharmacy Risk Score by ' + Math.max(0, delta) + ' points (from ' + baseline.cprs + ' to ' + scores.cprs + '). ' + (criteria.length ? 'This medication appears in established deprescribing criteria.' : '')
+            : 'Removing ' + drug + ' does not significantly reduce composite risk in this regimen context.'
+        };
+      }));
+      batchResults.forEach(function(r){ if(r) candidates.push(r); });
+    }
+
+    // Sort by delta descending, filter to meaningful reductions
+    candidates.sort(function(a,b){ return b.cprs_delta - a.cprs_delta; });
+    const meaningful = candidates.filter(function(c){ return c.cprs_delta > 0; });
+
+    return res.json({
+      baseline,
+      candidates: meaningful,
+      drug_count: drugs.length,
+      simulations_run: candidates.length
+    });
+
+  } catch(e) {
+    console.error('[Deprescribing] Error:', e.message);
+    return res.status(500).json({ error: 'Analysis failed: ' + e.message });
+  }
+});
+
 app.get('/clinical', (req, res) => {
   res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate');
   res.setHeader('Surrogate-Control', 'no-store');

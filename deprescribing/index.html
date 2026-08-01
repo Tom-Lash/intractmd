@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>IntractMD™ Deprescribing Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<style>
+:root{
+  --navy:#0D3B6E;--blue:#1B6EC2;--cyan:#00B4D8;
+  --bg:#f8f9fb;--card:#fff;--br:#e2e6ea;
+  --tx:#1a1a2e;--tx2:#555566;--tx3:#888899;
+  --green:#2E7D4F;--green-lt:#E8F5ED;
+  --amber:#D97706;--amber-lt:#FDF3E3;
+  --red:#A32D2D;--red-lt:#FCEBEB;
+  --blue-lt:#EBF5FC;
+  --rl:10px;--shadow:0 2px 12px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+
+/* Header */
+.header{background:var(--navy);padding:14px 24px;display:flex;align-items:center;gap:12px}
+.header-logo{font-size:20px;font-weight:700;color:var(--cyan);letter-spacing:-.02em}
+.header-logo sup{font-size:11px;vertical-align:super}
+.header-badge{background:rgba(0,180,216,.2);border:1px solid rgba(0,180,216,.4);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:600;color:var(--cyan);text-transform:uppercase;letter-spacing:.06em}
+.header-sub{margin-left:auto;font-size:12px;color:rgba(255,255,255,.5)}
+
+/* Layout */
+.main{max-width:900px;margin:0 auto;padding:24px 16px}
+
+/* Intro card */
+.intro{background:linear-gradient(135deg,var(--navy) 0%,#1a4d8f 100%);border-radius:var(--rl);padding:24px 28px;margin-bottom:20px;color:#fff}
+.intro h1{font-size:20px;font-weight:700;color:var(--cyan);margin-bottom:8px}
+.intro p{font-size:13px;color:rgba(255,255,255,.78);line-height:1.6;max-width:640px}
+.intro-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.intro-tag{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:3px 10px;font-size:11px;color:rgba(255,255,255,.8)}
+
+/* Card */
+.card{background:var(--card);border:0.5px solid var(--br);border-radius:var(--rl);box-shadow:var(--shadow);padding:20px 24px;margin-bottom:16px}
+.card-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.card-title i{color:var(--cyan);font-size:16px}
+
+/* Drug input */
+.input-row{display:flex;gap:8px;margin-bottom:10px}
+.drug-input{flex:1;padding:9px 12px;border:1.5px solid var(--br);border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;outline:none;transition:border-color .15s}
+.drug-input:focus{border-color:var(--cyan)}
+.btn{padding:9px 18px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:600;font-family:'Inter',sans-serif;display:inline-flex;align-items:center;gap:6px;transition:opacity .15s}
+.btn:hover{opacity:.88}
+.btn-primary{background:var(--cyan);color:#fff}
+.btn-secondary{background:var(--bg);border:1.5px solid var(--br);color:var(--tx2)}
+.btn-analyze{background:var(--navy);color:#fff;width:100%;justify-content:center;padding:12px;font-size:15px;margin-top:8px}
+.btn-analyze:disabled{opacity:.5;cursor:not-allowed}
+
+/* Tags */
+.tags{display:flex;flex-wrap:wrap;gap:6px;min-height:32px}
+.tag{display:inline-flex;align-items:center;gap:5px;background:var(--blue-lt);border:1px solid #C0DFF5;border-radius:20px;padding:4px 10px;font-size:12px;font-weight:500;color:var(--blue)}
+.tag-rm{background:none;border:none;cursor:pointer;color:var(--tx3);font-size:14px;padding:0 2px;line-height:1}
+.tag-rm:hover{color:var(--red)}
+
+/* Autocomplete */
+.ac-wrap{position:relative}
+.ac-drop{position:absolute;top:100%;left:0;right:0;background:#fff;border:1.5px solid var(--cyan);border-radius:8px;box-shadow:var(--shadow);z-index:100;max-height:200px;overflow-y:auto;display:none}
+.ac-item{padding:8px 12px;font-size:13px;cursor:pointer;color:var(--tx)}
+.ac-item:hover,.ac-item.active{background:var(--blue-lt);color:var(--blue)}
+
+/* Results */
+.results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.results-title{font-size:16px;font-weight:700;color:var(--navy)}
+.cprs-badge{display:inline-flex;align-items:center;gap:8px;background:var(--navy);border-radius:8px;padding:8px 16px}
+.cprs-val{font-size:28px;font-weight:700;color:#fff}
+.cprs-label{font-size:11px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em}
+
+/* Dimension grid */
+.dim-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
+.dim-card{background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:10px 12px;text-align:center}
+.dim-card.highlight{border-color:var(--cyan);background:var(--blue-lt)}
+.dim-val{font-size:20px;font-weight:700;color:var(--navy)}
+.dim-name{font-size:10px;color:var(--tx3);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+
+/* Candidate table */
+.candidate{border:1.5px solid var(--br);border-radius:var(--rl);margin-bottom:14px;overflow:hidden}
+.candidate-header{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:14px 18px;background:var(--card);cursor:pointer;transition:background .12s}
+.candidate-header:hover{background:var(--bg)}
+.candidate-rank{width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.candidate-name{font-size:15px;font-weight:600;color:var(--tx)}
+.candidate-class{font-size:12px;color:var(--tx3);margin-top:2px}
+.delta-badge{background:var(--green-lt);border:1px solid #A8D5B8;border-radius:8px;padding:6px 14px;text-align:center;flex-shrink:0}
+.delta-val{font-size:18px;font-weight:700;color:var(--green)}
+.delta-label{font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:.05em}
+.criteria-pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.criteria-pill{background:var(--amber-lt);border:1px solid #F6CC85;border-radius:12px;padding:2px 8px;font-size:10px;font-weight:600;color:var(--amber)}
+
+.candidate-body{border-top:1px solid var(--br);padding:16px 18px;background:var(--bg);display:none}
+.candidate-body.open{display:block}
+
+/* Dimension comparison table */
+.dim-compare{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px}
+.dim-compare th{background:var(--navy);color:#fff;padding:7px 12px;text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.dim-compare td{padding:7px 12px;border-bottom:1px solid var(--br)}
+.dim-compare tr:last-child td{border-bottom:none}
+.dim-compare tr:nth-child(even) td{background:var(--card)}
+.dim-compare tr:nth-child(odd) td{background:var(--bg)}
+.td-curr{color:var(--tx);font-weight:500}
+.td-new{color:var(--green);font-weight:600}
+.td-delta{color:var(--green);font-weight:700}
+.td-delta.neg{color:var(--red)}
+.td-delta.zero{color:var(--tx3)}
+
+.evidence-box{background:var(--amber-lt);border:1px solid #F6CC85;border-radius:8px;padding:12px 14px;margin-top:8px}
+.evidence-title{font-size:12px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.evidence-item{font-size:12px;color:#6B4C0A;line-height:1.5;padding:3px 0;border-bottom:1px solid rgba(246,204,133,.4)}
+.evidence-item:last-child{border-bottom:none}
+
+.disclaimer{background:var(--blue-lt);border:1px solid #C0DFF5;border-radius:8px;padding:12px 14px;margin-top:20px;font-size:11px;color:var(--tx2);line-height:1.6}
+.disclaimer strong{color:var(--navy)}
+
+/* Loading */
+.loading{text-align:center;padding:40px 20px;color:var(--tx3)}
+.spin{display:inline-block;animation:spin 1.4s linear infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* Empty */
+.empty{text-align:center;padding:32px;color:var(--tx3);font-size:14px}
+.empty i{font-size:36px;display:block;margin-bottom:10px;color:var(--br)}
+
+@media(max-width:600px){
+  .dim-grid{grid-template-columns:repeat(2,1fr)}
+  .candidate-header{grid-template-columns:auto 1fr}
+  .delta-badge{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">IntractMD<sup>™</sup></div>
+  <div class="header-badge">Deprescribing Intelligence</div>
+  <div class="header-sub">by Resolve Medical, LLC · Pilot Preview</div>
+</div>
+
+<div class="main">
+
+  <div class="intro">
+    <h1><i class="ti ti-trending-down" style="margin-right:6px"></i>AI-Powered Deprescribing Risk Analysis</h1>
+    <p>Enter a patient's medication list below. IntractMD will calculate the current Composite Polypharmacy Risk Score across all eight clinical dimensions, then simulate removing each medication to identify which removals would produce the greatest risk reduction — ranked by impact.</p>
+    <div class="intro-tags">
+      <span class="intro-tag"><i class="ti ti-flask"></i> Risk-Delta Simulation</span>
+      <span class="intro-tag"><i class="ti ti-shield-check"></i> 8-Dimensional CPRS</span>
+      <span class="intro-tag"><i class="ti ti-certificate"></i> Beers &amp; STOPP Criteria</span>
+      <span class="intro-tag"><i class="ti ti-info-circle"></i> For Pharmacist &amp; Prescriber Review</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><i class="ti ti-pill"></i> Enter Medications</div>
+    <div class="ac-wrap">
+      <div class="input-row">
+        <input type="text" id="drug-input" class="drug-input" placeholder="Type a medication name and press Enter or Add…" autocomplete="off"/>
+        <button class="btn btn-secondary" onclick="addDrug()"><i class="ti ti-plus"></i> Add</button>
+      </div>
+      <div class="ac-drop" id="ac-drop"></div>
+    </div>
+    <div class="tags" id="drug-tags"></div>
+    <button class="btn btn-analyze" id="analyze-btn" onclick="analyze()" disabled>
+      <i class="ti ti-brain"></i> Analyze Deprescribing Opportunities
+    </button>
+  </div>
+
+  <div id="results"></div>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> IntractMD™ Deprescribing Intelligence is an analytics information tool for pharmacist and prescriber review. It does not constitute medical advice, does not recommend discontinuing any medication, and does not replace clinical judgment. All deprescribing decisions must involve the patient's prescribing physician. Pilot preview — not for clinical use without pharmacist supervision.
+  </div>
+
+</div>
+
+<script>
+const API_KEY = 'intractmd-2024';
+const DIMS = ['bleeding','cardiac','serotonin','nti','cns','pharmacokinetic','renal_hepatic','pharmacodynamic'];
+const DIM_LABELS = {
+  bleeding:'Bleeding',cardiac:'Cardiac',serotonin:'Serotonin',nti:'NTI Conflict',
+  cns:'CNS',pharmacokinetic:'Pharmacokinetic',renal_hepatic:'Renal/Hepatic',pharmacodynamic:'Pharmacodynamic'
+};
+
+// Drug name database for autocomplete (top 100 most common)
+const DRUG_LIST = [
+  'Acetaminophen','Amlodipine','Amoxicillin','Atorvastatin','Azithromycin',
+  'Carvedilol','Clopidogrel','Digoxin','Diltiazem','Escitalopram',
+  'Fluoxetine','Furosemide','Gabapentin','Hydrochlorothiazide','Ibuprofen',
+  'Lisinopril','Losartan','Metformin','Metoprolol','Metronidazole',
+  'Naproxen','Omeprazole','Oxycodone','Pantoprazole','Prednisone',
+  'Quetiapine','Sertraline','Simvastatin','Spironolactone','Tramadol',
+  'Warfarin','Alprazolam','Amiodarone','Aspirin','Atenolol',
+  'Carbamazepine','Ciprofloxacin','Clonazepam','Clopidogrel','Doxazosin',
+  'Duloxetine','Finasteride','Fluconazole','Haloperidol','Hydrocodone',
+  'Levothyroxine','Lithium','Lorazepam','Meloxicam','Memantine',
+  'Montelukast','Morphine','Nifedipine','Nitrostat','Paroxetine',
+  'Phenytoin','Pravastatin','Ramipril','Rivaroxaban','Rosuvastatin',
+  'Sildenafil','Tamsulosin','Temazepam','Trazodone','Valsartan',
+  'Venlafaxine','Verapamil','Zolpidem','Apixaban','Bisoprolol',
+  'Citalopram','Donepezil','Fentanyl','Glipizide','Insulin',
+  'Methotrexate','Olanzapine','Oxcarbazepine','Pantoprazole','Rivaroxaban',
+  'Topiramate','Valproic Acid','Bupropion','Celecoxib','Dexamethasone'
+];
+
+let drugs = [];
+let acTimer = null;
+let acResults = [];
+let acSel = -1;
+
+const dInput = document.getElementById('drug-input');
+const acDrop = document.getElementById('ac-drop');
+const tagsEl = document.getElementById('drug-tags');
+const analyzeBtn = document.getElementById('analyze-btn');
+
+dInput.addEventListener('input', function(){
+  clearTimeout(acTimer);
+  const v = dInput.value.trim();
+  if(v.length < 2){acDrop.style.display='none';return;}
+  acTimer = setTimeout(function(){
+    acResults = DRUG_LIST.filter(function(d){return d.toLowerCase().startsWith(v.toLowerCase());}).slice(0,8);
+    if(!acResults.length){acDrop.style.display='none';return;}
+    acDrop.innerHTML = acResults.map(function(d,i){
+      return '<div class="ac-item" onclick="selectAc('+i+')">'+d+'</div>';
+    }).join('');
+    acDrop.style.display = 'block';
+    acSel = -1;
+  }, 120);
+});
+
+dInput.addEventListener('keydown', function(e){
+  if(e.key==='ArrowDown'){acSel=Math.min(acSel+1,acResults.length-1);highlightAc();}
+  else if(e.key==='ArrowUp'){acSel=Math.max(acSel-1,-1);highlightAc();}
+  else if(e.key==='Enter'){
+    if(acSel>=0&&acResults[acSel]){dInput.value=acResults[acSel];acDrop.style.display='none';}
+    addDrug();
+  }
+});
+
+function highlightAc(){
+  document.querySelectorAll('.ac-item').forEach(function(el,i){el.classList.toggle('active',i===acSel);});
+}
+
+function selectAc(i){
+  dInput.value=acResults[i];
+  acDrop.style.display='none';
+  addDrug();
+}
+
+function addDrug(){
+  const v = dInput.value.trim();
+  if(!v) return;
+  if(drugs.includes(v)){dInput.value='';return;}
+  drugs.push(v);
+  dInput.value='';
+  acDrop.style.display='none';
+  renderTags();
+  analyzeBtn.disabled = drugs.length < 2;
+}
+
+function removeDrug(i){
+  drugs.splice(i,1);
+  renderTags();
+  analyzeBtn.disabled = drugs.length < 2;
+}
+
+function renderTags(){
+  tagsEl.innerHTML = drugs.map(function(d,i){
+    return '<span class="tag"><i class="ti ti-pill" style="font-size:11px"></i>'+d
+      +'<button class="tag-rm" onclick="removeDrug('+i+')">&times;</button></span>';
+  }).join('');
+}
+
+async function analyze(){
+  if(drugs.length < 2) return;
+  analyzeBtn.disabled = true;
+  const resultsEl = document.getElementById('results');
+  resultsEl.innerHTML = '<div class="loading"><span class="spin"><i class="ti ti-brain" style="font-size:32px"></i></span><p style="margin-top:12px">Running deprescribing analysis across '+drugs.length+' medications…<br/><span style="font-size:12px;color:#aaa">Simulating '+drugs.length+' removal scenarios</span></p></div>';
+
+  try {
+    const res = await fetch('/api/deprescribing-analyze', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':API_KEY},
+      body: JSON.stringify({drugs:drugs})
+    });
+    const data = await res.json();
+    if(data.error){
+      resultsEl.innerHTML='<div class="card"><div class="empty"><i class="ti ti-alert-circle"></i><p>'+data.error+'</p></div></div>';
+    } else {
+      renderResults(data);
+    }
+  } catch(e) {
+    resultsEl.innerHTML='<div class="card"><div class="empty"><i class="ti ti-wifi-off"></i><p>Connection error. Please try again.</p></div></div>';
+  }
+  analyzeBtn.disabled = false;
+}
+
+function scoreColor(s){
+  if(s>=70) return 'var(--red)';
+  if(s>=40) return 'var(--amber)';
+  return 'var(--green)';
+}
+
+function renderResults(data){
+  const baseline = data.baseline;
+  const candidates = data.candidates;
+  const resultsEl = document.getElementById('results');
+
+  let html = '<div class="card">';
+  html += '<div class="results-header">';
+  html += '<div class="results-title">Current Risk Profile</div>';
+  html += '<div class="cprs-badge"><div><div class="cprs-val" style="color:'+scoreColor(baseline.cprs)+'">'+baseline.cprs+'</div><div class="cprs-label">CPRS / 100</div></div></div>';
+  html += '</div>';
+
+  // Dimension grid
+  html += '<div class="dim-grid">';
+  DIMS.forEach(function(d){
+    const val = baseline.dimensions[d]||0;
+    html += '<div class="dim-card'+(val>0?' highlight':'')+'"><div class="dim-val" style="color:'+(val>0?scoreColor(val*10):'var(--tx3)')+'">'+val+'</div><div class="dim-name">'+DIM_LABELS[d]+'</div></div>';
+  });
+  html += '</div>';
+  html += '</div>';
+
+  // Candidates
+  if(!candidates||!candidates.length){
+    html += '<div class="card"><div class="empty"><i class="ti ti-shield-check"></i><p>No significant deprescribing opportunities identified for this regimen.</p></div></div>';
+  } else {
+    html += '<div class="card-title" style="padding:0 0 12px;font-size:15px;font-weight:700;color:var(--navy)"><i class="ti ti-trending-down" style="color:var(--cyan)"></i> Deprescribing Candidates — Ranked by Risk Reduction</div>';
+    candidates.forEach(function(c, i){
+      const crit = c.criteria||[];
+      html += '<div class="candidate">';
+      html += '<div class="candidate-header" onclick="toggleCandidate('+i+')">';
+      html += '<div style="display:flex;align-items:center;gap:12px">';
+      html += '<div class="candidate-rank">'+(i+1)+'</div>';
+      html += '<div><div class="candidate-name">'+c.drug+'</div>';
+      html += '<div class="candidate-class">'+c.drug_class+'</div>';
+      if(crit.length){
+        html += '<div class="criteria-pills">'+crit.map(function(cr){return '<span class="criteria-pill">'+cr+'</span>';}).join('')+'</div>';
+      }
+      html += '</div></div>';
+      html += '<div class="delta-badge"><div class="delta-val">−'+c.cprs_delta+'</div><div class="delta-label">CPRS points</div></div>';
+      html += '</div>';
+
+      // Expanded body — dimension comparison
+      html += '<div class="candidate-body" id="candidate-body-'+i+'">';
+      html += '<table class="dim-compare"><thead><tr><th>Dimension</th><th>Current</th><th>If Removed</th><th>Δ Change</th></tr></thead><tbody>';
+      DIMS.forEach(function(d){
+        const curr = baseline.dimensions[d]||0;
+        const after = c.dimensions_after[d]||0;
+        const delta = after - curr;
+        const dClass = delta<0?'td-delta':delta>0?'td-delta neg':'td-delta zero';
+        const dStr = delta<0?'−'+Math.abs(delta):delta>0?'+'+delta:'—';
+        html += '<tr><td>'+DIM_LABELS[d]+'</td><td class="td-curr">'+curr+'</td><td class="td-new">'+after+'</td><td class="'+dClass+'">'+dStr+'</td></tr>';
+      });
+      html += '<tr style="font-weight:700"><td>COMPOSITE (CPRS)</td><td class="td-curr">'+baseline.cprs+'</td><td class="td-new">'+(baseline.cprs-c.cprs_delta)+'</td><td class="td-delta">−'+c.cprs_delta+'</td></tr>';
+      html += '</tbody></table>';
+
+      if(c.rationale){
+        html += '<div style="font-size:13px;color:var(--tx2);margin-bottom:10px;line-height:1.6">'+c.rationale+'</div>';
+      }
+
+      if(c.evidence&&c.evidence.length){
+        html += '<div class="evidence-box"><div class="evidence-title"><i class="ti ti-certificate"></i> Supporting Evidence</div>';
+        c.evidence.forEach(function(ev){
+          html += '<div class="evidence-item">'+ev+'</div>';
+        });
+        html += '</div>';
+      }
+
+      html += '<div style="margin-top:10px;font-size:11px;color:var(--tx3);font-style:italic">⚠ This analysis is for pharmacist and prescriber review only. Do not discontinue any medication without consulting the prescribing physician.</div>';
+      html += '</div>';
+      html += '</div>';
+    });
+  }
+
+  resultsEl.innerHTML = html;
+}
+
+function toggleCandidate(i){
+  const body = document.getElementById('candidate-body-'+i);
+  if(body) body.classList.toggle('open');
+}
+</script>
+</body>
+</html>
