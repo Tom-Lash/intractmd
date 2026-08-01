@@ -251,12 +251,19 @@ function selectAc(i){
 }
 
 function addDrug(){
+  // If dropdown is visible and nothing explicitly selected, use first result
+  if(acDrop.style.display !== 'none' && acResults.length > 0) {
+    const sel = acSel >= 0 ? acResults[acSel] : acResults[0];
+    dInput.value = sel;
+    acDrop.style.display = 'none';
+  }
   const v = dInput.value.trim();
   if(!v) return;
-  if(drugs.includes(v)){dInput.value='';return;}
+  if(drugs.includes(v)){dInput.value='';acDrop.style.display='none';return;}
   drugs.push(v);
   dInput.value='';
   acDrop.style.display='none';
+  acSel = -1;
   renderTags();
   analyzeBtn.disabled = drugs.length < 2;
 }
