@@ -3737,17 +3737,17 @@ app.post('/api/deprescribing-analyze', async (req, res) => {
     function extractScores(result) {
       const dims = { bleeding:0, cardiac:0, serotonin:0, nti:0, cns:0, pharmacokinetic:0, renal_hepatic:0, pharmacodynamic:0 };
       const cprs = result.risk_score || 0;
-      // Try to extract dimensional scores from predictive_interactions or polypharmacy_assessment
-      if (result.polypharmacy_assessment) {
-        const pa = result.polypharmacy_assessment;
-        if (pa.bleeding_risk) dims.bleeding = Math.min(10, Math.round(pa.bleeding_risk * 10));
-        if (pa.cardiac_risk) dims.cardiac = Math.min(10, Math.round(pa.cardiac_risk * 10));
-        if (pa.serotonin_risk) dims.serotonin = Math.min(10, Math.round(pa.serotonin_risk * 10));
-        if (pa.nti_risk) dims.nti = Math.min(10, Math.round(pa.nti_risk * 10));
-        if (pa.cns_risk) dims.cns = Math.min(10, Math.round(pa.cns_risk * 10));
-        if (pa.pharmacokinetic_risk) dims.pharmacokinetic = Math.min(10, Math.round(pa.pharmacokinetic_risk * 10));
-        if (pa.renal_hepatic_risk) dims.renal_hepatic = Math.min(10, Math.round(pa.renal_hepatic_risk * 10));
-        if (pa.pharmacodynamic_risk) dims.pharmacodynamic = Math.min(10, Math.round(pa.pharmacodynamic_risk * 10));
+      // Map API response dimension keys to our internal keys
+      if (result.dimensions) {
+        const d = result.dimensions;
+        dims.bleeding    = d['Bleeding Risk']      || d['bleeding']        || 0;
+        dims.cardiac     = d['Cardiac Risk']       || d['cardiac']         || 0;
+        dims.serotonin   = d['Serotonin Risk']     || d['serotonin']       || 0;
+        dims.nti         = d['NTI Conflict']       || d['nti']             || 0;
+        dims.cns         = d['CNS Risk']           || d['cns']             || 0;
+        dims.pharmacokinetic = d['Pharmacokinetic Risk'] || d['pharmacokinetic'] || 0;
+        dims.renal_hepatic   = d['Renal/Hepatic Risk']  || d['renal_hepatic']   || 0;
+        dims.pharmacodynamic = d['Pharmacodynamic Risk'] || d['pharmacodynamic'] || 0;
       }
       return { cprs, dimensions: dims };
     }
