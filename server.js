@@ -3558,8 +3558,8 @@ app.post('/api/analyze-stream', async (req, res) => {
 
               // Try to parse partial JSON and send risk score as soon as available
               if (fullText.includes('"risk_score"')) {
-                const scoreMatch = fullText.match(/"risk_score"s*:s*(d+)/);
-                const riskMatch = fullText.match(/"overall_risk"s*:s*"([^"]+)"/);
+                const scoreMatch = fullText.match(/"risk_score"\s*:\s*(\d+)/);
+                const riskMatch = fullText.match(/"overall_risk"\s*:\s*"([^"]+)"/);    
                 if (scoreMatch && riskMatch) {
                   send('risk', { score: parseInt(scoreMatch[1]), tier: riskMatch[1] });
                 }
