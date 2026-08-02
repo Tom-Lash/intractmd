@@ -1,1 +1,72 @@
+# Rebuild drug-list.json from RxNorm and open a pull request.
+#
+# Run it from the browser: repo -> Actions -> "Rebuild drug list from RxNorm"
+# -> "Run workflow". No terminal needed.
+#
+# The workflow never commits to main. It opens a PR you review and merge,
+# which keeps the existing branch-protection rule in force.
 
+name: Rebuild drug list from RxNorm
+
+on:
+  workflow_dispatch:        # manual button only — never automatic
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rebuild drug-list.json from RxNorm
+        run: node scripts/rebuild-drug-list.js
+
+      - name: Verify list integrity
+        # Fails the run on any wrong-drug condition, so a bad list cannot
+        # reach a pull request.
+        run: node scripts/drug_list_integrity_test.js
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: rebuild/drug-list-rxnorm
+          delete-branch: true
+          commit-message: "Rebuild drug-list.json from RxNorm"
+          title: "Rebuild drug-list.json from RxNorm"
+          body: |
+            Rebuilds `drug-list.json` from RxNorm (NLM).
+
+            **Why:** the 2 Aug 2026 audit found the previous file mapped brands
+            to the wrong ingredients throughout — Lantus to insulin aspart,
+            Novolin N to eplerenone, Narcan to prednisone, Insulin Glargine to
+            atorvastatin. The corruption originated upstream and could not be
+            patched row by row with confidence.
+
+            **What changed:** every brand-to-ingredient relation now comes from
+            RxNorm, where NLM asserts it. Nothing was carried over from the old
+            file.
+
+            **Checks that already passed in CI:**
+            - required-drug gate in the rebuild script
+            - `drug_list_integrity_test.js` (self-match, name collisions,
+              required drugs, duplicates)
+
+            See `drug-list-rebuild-report.txt` for counts.
+
+            ### Before merging
+            Spot-check a few entries in the diff — Lantus should resolve to
+            insulin glargine, Humalog to insulin lispro, Narcan to naloxone.
+          add-paths: |
+            drug-list.json
+            drug-list-rebuild-report.txt
