@@ -37,7 +37,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = 'https://rxnav.nlm.nih.gov/REST';
-const OUT = path.join(__dirname, '..', 'drug-list.json');
+const OUT = path.join(__dirname, '..', 'data', 'drug-list.json');
 const SEED = path.join(__dirname, 'seed-ingredients.txt');
 const REPORT = path.join(__dirname, '..', 'drug-list-rebuild-report.txt');
 
