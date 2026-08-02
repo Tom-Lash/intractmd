@@ -149,6 +149,166 @@ function lookupPairsFromCache(drugList) {
   return { found, missing, totalPairs: pairs.length };
 }
 
+// ── MECHANISM GROUPING ───────────────────────────────────────────────────────
+// Collapses pairwise findings into one finding per CPRS dimension so that a
+// regimen with several agents sharing a mechanism produces one clinical finding
+// rather than N-choose-2 alerts.
+//
+// Does NOT touch risk_score or dimension scores. computeCompositeFromPairs()
+// keeps its existing max-per-dimension semantics. This is display shaping only.
+//
+// Paste this near lookupPairsFromCache() in server.js.
+ 
+// Dimension names as used in CPRS_WEIGHTS and in cached pair.dimensions objects.
+const GROUPABLE_DIMENSIONS = [
+  'Bleeding Risk',
+  'Cardiac Risk',
+  'Serotonin Risk',
+  'CNS Risk'
+];
+ 
+// Dimensions deliberately NOT grouped: 'NTI Conflict', 'CYP450 Risk',
+// 'Renal/Hepatic', 'Pharmacodynamic'. These are pair-specific — a narrow
+// therapeutic index conflict or a specific CYP inhibition is about those two
+// drugs, not an additive burden across the regimen. Collapsing them would
+// lose the clinically relevant detail.
+ 
+const SEVERITY_RANK = { major: 3, moderate: 2, minor: 1, none: 0 };
+ 
+// A finding is grouped only if its dominant dimension is groupable AND that
+// dimension score clears this floor. Prevents trivial contributions from
+// inflating the contributing-agent count.
+const DIMENSION_FLOOR = 3;
+ 
+function severityOf(finding) {
+  return SEVERITY_RANK[String(finding.severity || '').toLowerCase()] || 0;
+}
+ 
+// Pull individual substance names out of a "A+B" drugs string.
+function agentsOf(finding) {
+  return String(finding.drugs || '')
+    .split('+')
+    .map(s => s.trim())
+    .filter(Boolean);
+}
+ 
+// Given a cached pair, return the dimension carrying the highest score,
+// or null if nothing clears the floor.
+function dominantDimension(pair) {
+  const dims = pair && pair.dimensions;
+  if (!dims) return null;
+  let best = null;
+  let bestScore = 0;
+  for (const dim of GROUPABLE_DIMENSIONS) {
+    const score = Number(dims[dim]) || 0;
+    if (score > bestScore) {
+      bestScore = score;
+      best = dim;
+    }
+  }
+  return bestScore >= DIMENSION_FLOOR ? best : null;
+}
+ 
+// Build a lookup from "druga|drugb" -> cached pair, for attaching dimension
+// data to model-returned findings.
+function indexPairs(foundPairs) {
+  const idx = {};
+  for (const p of foundPairs || []) {
+    if (!p || !p.drugA || !p.drugB) continue;
+    const a = String(p.drugA).toLowerCase();
+    const b = String(p.drugB).toLowerCase();
+    idx[a + '|' + b] = p;
+    idx[b + '|' + a] = p;
+  }
+  return idx;
+}
+ 
+/**
+ * Group a flat array of findings by shared mechanism.
+ *
+ * @param {Array}  findings   known_interactions from the model
+ * @param {Array}  foundPairs cached pairs from lookupPairsFromCache().found
+ * @returns {Array} findings, grouped where warranted, ordered for display
+ */
+function groupFindingsByMechanism(findings, foundPairs) {
+  if (!Array.isArray(findings) || findings.length === 0) return findings || [];
+ 
+  const pairIdx = indexPairs(foundPairs);
+  const buckets = {};   // dimension -> array of findings
+  const ungrouped = [];
+ 
+  for (const f of findings) {
+    const agents = agentsOf(f);
+    let dim = null;
+ 
+    if (agents.length === 2) {
+      const key = agents[0].toLowerCase() + '|' + agents[1].toLowerCase();
+      const pair = pairIdx[key];
+      if (pair) dim = dominantDimension(pair);
+    }
+ 
+    if (dim) {
+      (buckets[dim] = buckets[dim] || []).push(f);
+    } else {
+      ungrouped.push(f);
+    }
+  }
+ 
+  const grouped = [];
+ 
+  for (const [dim, members] of Object.entries(buckets)) {
+    // A single finding in a bucket is not a group — pass it through untouched
+    // so we don't rewrite a normal one-pair interaction into group phrasing.
+    if (members.length < 2) {
+      ungrouped.push(members[0]);
+      continue;
+    }
+ 
+    // Collect distinct contributing agents across the bucket.
+    const agentSet = [];
+    const seen = {};
+    for (const m of members) {
+      for (const a of agentsOf(m)) {
+        const k = a.toLowerCase();
+        if (!seen[k]) { seen[k] = 1; agentSet.push(a); }
+      }
+    }
+ 
+    // The group inherits the highest severity present among its members, and
+    // the narrative fields from that worst member.
+    const worst = members.reduce((acc, m) => severityOf(m) > severityOf(acc) ? m : acc, members[0]);
+ 
+    grouped.push({
+      drugs: dim.replace(/ Risk$/, '') + ' — ' + agentSet.length + ' contributing agents',
+      type: worst.type || 'drug-drug',
+      severity: worst.severity,
+      grouped: true,
+      dimension: dim,
+      contributing_agents: agentSet,
+      component_count: members.length,
+      mechanism: worst.mechanism,
+      clinical_effect: worst.clinical_effect,
+      evidence: worst.evidence,
+      monitoring: worst.monitoring,
+      action: worst.action,
+      patient_specific: worst.patient_specific,
+      components: members
+    });
+  }
+ 
+  // Order: severity first, then grouped findings ahead of singletons at equal
+  // severity (a shared mechanism across several agents outranks one pair).
+  const all = grouped.concat(ungrouped);
+  all.sort((a, b) => {
+    const s = severityOf(b) - severityOf(a);
+    if (s !== 0) return s;
+    return (b.grouped ? 1 : 0) - (a.grouped ? 1 : 0);
+  });
+ 
+  return all;
+}
+ 
+
 
 // ── COMPOSITE SCORING FROM CACHED PAIRS (NO AI CALL) ────────────────────────
 // This implements the same weighting logic as your CPRS algorithm spec,
@@ -285,7 +445,7 @@ Return ONLY valid JSON — an array with one object per pair, in the same order:
     },
     body: JSON.stringify({
       model: 'claude-haiku-4-5-20251001',
-      max_tokens: 3000,
+      max_tokens: 8000,
       messages: [{ role: 'user', content: prompt }]
     })
   });
