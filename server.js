@@ -149,7 +149,7 @@ function lookupPairsFromCache(drugList) {
   return { found, missing, totalPairs: pairs.length };
 }
 
-/ ── MECHANISM GROUPING ───────────────────────────────────────────────────────
+// ── MECHANISM GROUPING ───────────────────────────────────────────────────────
 // Collapses pairwise findings into one finding per CPRS dimension so that a
 // regimen with several agents sharing a mechanism produces one clinical finding
 // rather than N-choose-2 alerts.
