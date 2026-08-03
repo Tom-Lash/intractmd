@@ -43,6 +43,7 @@ const JSON_OUT = process.argv.includes('--json');
 
 // ── Locate drug-list.json ────────────────────────────────────────────────────
 const CANDIDATES = [
+  path.join(__dirname, '..', 'data', 'drug-list.json'),
   path.join(__dirname, 'drug-list.json'),
   path.join(__dirname, '..', 'drug-list.json'),
   path.join(process.cwd(), 'drug-list.json'),
