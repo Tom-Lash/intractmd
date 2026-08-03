@@ -3915,7 +3915,7 @@ const SOURCES = {
   CDN_PPI: 'Canadian Deprescribing Network — proton pump inhibitor deprescribing guideline (2017)',
 };
 
- = {
+ const CRITERIA = {
   // ── Benzodiazepines ───────────────────────────────────────────────────────
   'alprazolam': { tier:'AVOID', geriatric:true,
     concern:'Benzodiazepine. Older adults clear these drugs more slowly and are more sensitive to their sedative effect, raising the risk of falls, fractures, confusion and motor impairment.',
