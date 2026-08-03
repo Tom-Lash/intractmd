@@ -465,91 +465,152 @@ async function analyze(){
   analyzeBtn.disabled = false;
 }
 
+  // ── RESULTS RENDERING ────────────────────────────────────────────────────────
+// Matches the criteria-based response from /api/deprescribing-analyze.
+//
+// Changed from the CPRS-delta version:
+//   - the badge shows a tier label, not a point delta
+//   - the expanded body shows citations, not a dimension comparison table
+//   - the age disclosure appears once under the section header
+//   - excluded medications (rescue, antidote, replacement) are listed so the
+//     absence of e.g. naloxone from the ranking is visible rather than silent
+//
+// The Current Risk Profile card is unchanged — CPRS and its dimensions are
+// still displayed, they are simply no longer used to order the candidates.
+
+const TIER_STYLE = {
+  AVOID:      { bg:'var(--red-lt)',   bd:'#E8B4B4', fg:'var(--red)'   },
+  CAUTION:    { bg:'var(--amber-lt)', bd:'#F6CC85', fg:'var(--amber)' },
+  INTERACTION:{ bg:'var(--amber-lt)', bd:'#F6CC85', fg:'var(--amber)' },
+  MEASURE:    { bg:'var(--blue-lt)',  bd:'#C0DFF5', fg:'var(--blue)'  },
+};
+
 function scoreColor(s){
   if(s>=70) return 'var(--red)';
   if(s>=40) return 'var(--amber)';
   return 'var(--green)';
 }
 
+function esc(s){
+  return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+    return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
+  });
+}
+
 function renderResults(data){
-  const baseline = data.baseline;
-  const candidates = data.candidates;
-  const resultsEl = document.getElementById('results');
+  const baseline   = data.baseline || { cprs:0, dimensions:{} };
+  const candidates = data.candidates || [];
+  const excluded   = data.excluded || [];
+  const resultsEl  = document.getElementById('results');
 
   let html = '<div class="card">';
   html += '<div class="results-header">';
   html += '<div class="results-title">Current Risk Profile</div>';
-  html += '<div class="cprs-badge"><div><div class="cprs-val" style="color:'+scoreColor(baseline.cprs)+'">'+baseline.cprs+'</div><div class="cprs-label">CPRS / 100</div></div></div>';
+  html += '<div class="cprs-badge"><div><div class="cprs-val" style="color:'
+        + scoreColor(baseline.cprs) + '">' + esc(baseline.cprs)
+        + '</div><div class="cprs-label">CPRS / 100</div></div></div>';
   html += '</div>';
 
-  // Dimension grid
   html += '<div class="dim-grid">';
   DIMS.forEach(function(d){
-    const val = baseline.dimensions[d]||0;
-    html += '<div class="dim-card'+(val>0?' highlight':'')+'"><div class="dim-val" style="color:'+(val>0?scoreColor(val*10):'var(--tx3)')+'">'+val+'</div><div class="dim-name">'+DIM_LABELS[d]+'</div></div>';
+    const val = (baseline.dimensions && baseline.dimensions[d]) || 0;
+    html += '<div class="dim-card' + (val > 0 ? ' highlight' : '') + '">'
+          + '<div class="dim-val" style="color:' + (val > 0 ? scoreColor(val*10) : 'var(--tx3)') + '">'
+          + esc(val) + '</div><div class="dim-name">' + DIM_LABELS[d] + '</div></div>';
   });
-  html += '</div>';
-  html += '</div>';
+  html += '</div></div>';
 
-  // Candidates
-  if(!candidates||!candidates.length){
-    html += '<div class="card"><div class="empty"><i class="ti ti-shield-check"></i><p>No significant deprescribing opportunities identified for this regimen.</p></div></div>';
+  // ── Candidates ─────────────────────────────────────────────────────────────
+  html += '<div class="card-title" style="padding:0 0 6px;font-size:15px;font-weight:700;color:var(--navy)">'
+        + '<i class="ti ti-clipboard-check" style="color:var(--cyan)"></i> '
+        + 'Medications Flagged in Published Deprescribing Criteria</div>';
+
+  html += '<div style="font-size:12px;color:var(--tx2);line-height:1.55;margin:0 0 6px">'
+        + 'Each medication below appears in published criteria used to review prescribing in older adults. '
+        + 'Ranking reflects the strength of the published recommendation — it is not a recommendation to stop any medication.'
+        + '</div>';
+
+  if (data.age_disclosure) {
+    html += '<div style="font-size:11.5px;color:var(--tx3);line-height:1.5;margin:0 0 14px;font-style:italic">'
+          + esc(data.age_disclosure) + '</div>';
   } else {
-    html += '<div class="card-title" style="padding:0 0 12px;font-size:15px;font-weight:700;color:var(--navy)"><i class="ti ti-trending-down" style="color:var(--cyan)"></i> Deprescribing Candidates — Ranked by Risk Reduction</div>';
+    html += '<div style="margin-bottom:14px"></div>';
+  }
+
+  if (!candidates.length) {
+    html += '<div class="card"><div class="empty"><i class="ti ti-shield-check"></i>'
+          + '<p>No medication in this regimen appears in the deprescribing criteria currently loaded.</p>'
+          + '<p style="font-size:12px;margin-top:6px">This does not mean the regimen carries no risk — '
+          + 'see the risk profile above, and note that the criteria set does not cover every medication.</p>'
+          + '</div></div>';
+  } else {
     candidates.forEach(function(c, i){
-      const crit = c.criteria||[];
+      const style = TIER_STYLE[c.tier] || TIER_STYLE.MEASURE;
       html += '<div class="candidate">';
-      html += '<div class="candidate-header" onclick="toggleCandidate('+i+')">';
+      html += '<div class="candidate-header" onclick="toggleCandidate(' + i + ')">';
       html += '<div style="display:flex;align-items:center;gap:12px">';
-      html += '<div class="candidate-rank">'+(i+1)+'</div>';
-      html += '<div><div class="candidate-name">'+c.drug+'</div>';
-      html += '<div class="candidate-class">'+c.drug_class+'</div>';
-      if(crit.length){
-        html += '<div class="criteria-pills">'+crit.map(function(cr){return '<span class="criteria-pill">'+cr+'</span>';}).join('')+'</div>';
-      }
+      html += '<div class="candidate-rank">' + (i+1) + '</div>';
+      html += '<div><div class="candidate-name">' + esc(c.drug) + '</div>';
+      html += '<div class="candidate-class">' + esc(c.drug_class || 'Medication') + '</div>';
+      html += '<div class="criteria-pills">'
+            + '<span class="criteria-pill">' + esc(c.criteria_count)
+            + (c.criteria_count === 1 ? ' citation' : ' citations') + '</span>'
+            + (c.age_conditional
+                ? '<span class="criteria-pill" style="background:var(--bg);border-color:var(--br);color:var(--tx3)">Age 65+</span>'
+                : '')
+            + '</div>';
       html += '</div></div>';
-      html += '<div class="delta-badge"><div class="delta-val">−'+c.cprs_delta+'</div><div class="delta-label">CPRS points</div></div>';
+
+      // Tier badge replaces the old CPRS delta badge
+      html += '<div class="delta-badge" style="background:' + style.bg + ';border-color:' + style.bd + '">'
+            + '<div class="delta-val" style="color:' + style.fg + ';font-size:13px;line-height:1.3">'
+            + esc(c.tier_label) + '</div>'
+            + '<div class="delta-label" style="color:' + style.fg + '">per criteria</div></div>';
       html += '</div>';
 
-      // Expanded body — dimension comparison
-      html += '<div class="candidate-body" id="candidate-body-'+i+'">';
-      html += '<table class="dim-compare"><thead><tr><th>Dimension</th><th>Current</th><th>If Removed</th><th>Δ Change</th></tr></thead><tbody>';
-      DIMS.forEach(function(d){
-        const curr = baseline.dimensions[d]||0;
-        const after = c.dimensions_after[d]||0;
-        const delta = after - curr;
-        const dClass = delta<0?'td-delta':delta>0?'td-delta neg':'td-delta zero';
-        const dStr = delta<0?'−'+Math.abs(delta):delta>0?'+'+delta:'—';
-        html += '<tr><td>'+DIM_LABELS[d]+'</td><td class="td-curr">'+curr+'</td><td class="td-new">'+after+'</td><td class="'+dClass+'">'+dStr+'</td></tr>';
-      });
-      html += '<tr style="font-weight:700"><td>COMPOSITE (CPRS)</td><td class="td-curr">'+baseline.cprs+'</td><td class="td-new">'+(baseline.cprs-c.cprs_delta)+'</td><td class="td-delta">−'+c.cprs_delta+'</td></tr>';
-      html += '</tbody></table>';
-
-      if(c.rationale){
-        html += '<div style="font-size:13px;color:var(--tx2);margin-bottom:10px;line-height:1.6">'+c.rationale+'</div>';
+      // Expanded body — citations, not a dimension table
+      html += '<div class="candidate-body" id="candidate-body-' + i + '">';
+      if (c.rationale) {
+        html += '<div style="font-size:13px;color:var(--tx2);margin-bottom:12px;line-height:1.6">'
+              + esc(c.rationale) + '</div>';
       }
-
-      if(c.evidence&&c.evidence.length){
-        html += '<div class="evidence-box"><div class="evidence-title"><i class="ti ti-certificate"></i> Supporting Evidence</div>';
+      if (c.evidence && c.evidence.length) {
+        html += '<div class="evidence-box"><div class="evidence-title">'
+              + '<i class="ti ti-certificate"></i> Published Criteria</div>';
         c.evidence.forEach(function(ev){
-          html += '<div class="evidence-item">'+ev+'</div>';
+          html += '<div class="evidence-item">' + esc(ev) + '</div>';
         });
         html += '</div>';
       }
-
-      html += '<div style="margin-top:10px;font-size:11px;color:var(--tx3);font-style:italic">⚠ This analysis is for pharmacist and prescriber review only. Do not discontinue any medication without consulting the prescribing physician.</div>';
-      html += '</div>';
-      html += '</div>';
+      html += '<div style="margin-top:10px;font-size:11px;color:var(--tx3);font-style:italic">'
+            + '⚠ For pharmacist and prescriber review only. Do not discontinue any medication '
+            + 'without consulting the prescribing physician.</div>';
+      html += '</div></div>';
     });
+  }
+
+  // ── Excluded ───────────────────────────────────────────────────────────────
+  // Shown so a clinician can see WHY a drug is absent from the ranking, rather
+  // than wondering whether the tool missed it.
+  if (excluded.length) {
+    html += '<div class="card" style="margin-top:16px">';
+    html += '<div class="card-title" style="font-size:13px"><i class="ti ti-shield-lock"></i> '
+          + 'Not Assessed for Deprescribing</div>';
+    html += '<div style="font-size:12px;color:var(--tx2);line-height:1.6">';
+    excluded.forEach(function(e){
+      html += '<div style="padding:4px 0"><strong>' + esc(e.drug) + '</strong> — ' + esc(e.reason) + '</div>';
+    });
+    html += '</div></div>';
   }
 
   resultsEl.innerHTML = html;
 }
 
 function toggleCandidate(i){
-  const body = document.getElementById('candidate-body-'+i);
-  if(body) body.classList.toggle('open');
+  const body = document.getElementById('candidate-body-' + i);
+  if (body) body.classList.toggle('open');
 }
+  
 </script>
 </body>
 </html>
