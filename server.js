@@ -1,5 +1,5 @@
 /* =============================================================================
-   IntractMD™ — AI-Powered Drug Interaction & Polypharmacy Risk Platform
+   IntractMD™ — AI-Powered Drug Interaction & Polypharmacy Risk Platform 
    Copyright © 2026 Resolve Medical, LLC. All rights reserved.
    700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113
    tom@resolve.med | 216-509-0672 | intractmd.com
