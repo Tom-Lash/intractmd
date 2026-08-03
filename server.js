@@ -3916,53 +3916,24 @@ app.post('/api/deprescribing-analyze', async (req, res) => {
     const baselineResult = await runAnalysis(drugs);
     const baseline = extractScores(baselineResult);
 
-    // Run removal simulations in parallel (max 8 at a time)
-    const candidates = [];
-    const batchSize = 8;
-    for (let i = 0; i < drugs.length; i += batchSize) {
-      const batch = drugs.slice(i, i + batchSize);
-      const batchResults = await Promise.all(batch.map(async function(drug, j) {
-        const remaining = drugs.filter(function(d, idx){ return idx !== (i + j); });
-        if (remaining.length < 2) return null;
-        const result = await runAnalysis(remaining);
-        const scores = extractScores(result);
-        const delta = baseline.cprs - scores.cprs;
-        const drugLower = drug.toLowerCase();
-        const criteria = CRITERIA[drugLower] || [];
-        const criteriaLabels = criteria.map(function(c){
-          if(c.startsWith('Beers')) return 'Beers Criteria';
-          if(c.startsWith('STOPP')) return c.split(':')[0];
-          if(c.startsWith('CMS')) return 'CMS Star Ratings';
-          if(c.startsWith('Canadian')) return 'CDN Deprescribing';
-          return c;
-        });
-        return {
-          drug,
-          drug_class: DRUG_CLASSES[drugLower] || 'Medication',
-          cprs_after: scores.cprs,
-          cprs_delta: Math.max(0, delta),
-          dimensions_after: scores.dimensions,
-          criteria: [...new Set(criteriaLabels)],
-          evidence: criteria,
-          rationale: delta > 0
-            ? 'Removing ' + drug + ' from this regimen is estimated to reduce the Composite Polypharmacy Risk Score by ' + Math.max(0, delta) + ' points (from ' + baseline.cprs + ' to ' + scores.cprs + '). ' + (criteria.length ? 'This medication appears in established deprescribing criteria.' : '')
-            : 'Removing ' + drug + ' does not significantly reduce composite risk in this regimen context.'
-        };
-      }));
-      batchResults.forEach(function(r){ if(r) candidates.push(r); });
-    }
-
-    // Sort by delta descending, filter to meaningful reductions
-    candidates.sort(function(a,b){ return b.cprs_delta - a.cprs_delta; });
-    const meaningful = candidates.filter(function(c){ return c.cprs_delta > 0; });
+// Rank by published criteria rather than CPRS delta.
+    const ranked = rankByCriteria(drugs, req.body.age ?? null);
+    ranked.candidates.forEach(function(c){
+      c.drug_class = DRUG_CLASSES[c.drug.toLowerCase()] || 'Medication';
+    });
 
     return res.json({
       baseline,
-      candidates: meaningful,
+      candidates: ranked.candidates,
+      excluded: ranked.excluded,
+      age_disclosure: ranked.age_disclosure,
+      age_known: ranked.ageKnown,
       drug_count: drugs.length,
-      simulations_run: candidates.length
+      ranking_basis: 'published_criteria'
     });
 
+
+     
   } catch(e) {
     console.error('[Deprescribing] Error:', e.message);
     return res.status(500).json({ error: 'Analysis failed: ' + e.message });
