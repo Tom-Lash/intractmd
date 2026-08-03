@@ -68,5 +68,5 @@ jobs:
             Spot-check a few entries in the diff — Lantus should resolve to
             insulin glargine, Humalog to insulin lispro, Narcan to naloxone.
           add-paths: |
-            drug-list.json
+            data/drug-list.json
             drug-list-rebuild-report.txt
