@@ -113,6 +113,112 @@ async function fetchAllIngredients() {
   return list; // [{rxcui, name, tty}]
 }
 
+// ── BRAND NAME HANDLING ──────────────────────────────────────────────────────
+// Replaces fetchBrands() in scripts/rebuild-drug-list.js.
+//
+// WHY THE CHANGE
+// --------------
+// The original capped brands at 8 in whatever order RxNorm returned them, and
+// used brands[0] as the displayed label. RxNorm does not order by prominence,
+// so acetaminophen came back as:
+//
+//   Little Fevers, Bactimicina, Pamprin Max Formula, Pamprin Multi-Symptom,
+//   Pamprin Cramp Formula, Percogesic, Premsyn PMS, Panadol PM
+//
+// — no Tylenol, and "acetaminophen (Little Fevers)" as the autocomplete label.
+// A user typing the most recognisable OTC brand in the US got no match.
+//
+// This affects every ingredient with many brand names, which skews toward
+// exactly the OTC drugs patients name by brand rather than by ingredient.
+//
+// TWO FIXES
+//   1. Raise the cap from 8 to 25. Eight was arbitrary; the file-size cost of
+//      more is trivial against the cost of missing a common brand.
+//   2. Sort by a curated prominence list so recognisable brands rank first and
+//      become the displayed label. RxNorm cannot tell us which brand a patient
+//      is likely to say — that is editorial and has to be asserted here.
+//
+// ⚠ The prominence list below is a starting set. It is not exhaustive and
+// should be extended whenever a "not found" report comes in for a brand.
+
+const BRAND_CAP = 25;
+
+// Brands a patient or clinician is likely to type. Order within the list does
+// not matter — presence is what promotes a brand to the front.
+// Keyed lowercase for matching; the RxNorm spelling is what gets stored.
+const PROMINENT_BRANDS = new Set([
+  // OTC analgesia
+  'tylenol', 'advil', 'motrin', 'aleve', 'bayer', 'bufferin', 'excedrin',
+  'ecotrin', 'midol', 'goody', 'bc powder',
+  // OTC allergy / cold
+  'benadryl', 'claritin', 'zyrtec', 'allegra', 'xyzal', 'sudafed', 'mucinex',
+  'robitussin', 'delsym', 'dimetapp', 'nyquil', 'dayquil', 'afrin', 'flonase',
+  'nasacort', 'rhinocort',
+  // OTC GI
+  'prilosec', 'nexium', 'prevacid', 'zantac', 'pepcid', 'tums', 'rolaids',
+  'imodium', 'pepto-bismol', 'miralax', 'dulcolax', 'colace', 'senokot',
+  'metamucil', 'gas-x', 'mylanta', 'maalox',
+  // OTC sleep / misc
+  'unisom', 'zzzquil', 'melatonin', 'dramamine', 'bonine',
+  // Cardiovascular
+  'lipitor', 'crestor', 'zocor', 'pravachol', 'lopid', 'zetia', 'vytorin',
+  'repatha', 'praluent', 'coumadin', 'jantoven', 'eliquis', 'xarelto',
+  'pradaxa', 'savaysa', 'plavix', 'brilinta', 'effient', 'lopressor',
+  'toprol', 'toprol xl', 'coreg', 'tenormin', 'bystolic', 'zestril',
+  'prinivil', 'vasotec', 'altace', 'cozaar', 'diovan', 'benicar', 'avapro',
+  'micardis', 'norvasc', 'cardizem', 'calan', 'lasix', 'demadex', 'aldactone',
+  'microzide', 'lanoxin', 'cordarone', 'pacerone', 'betapace', 'entresto',
+  'nitrostat', 'imdur',
+  // Diabetes
+  'glucophage', 'glucotrol', 'amaryl', 'januvia', 'janumet', 'jardiance',
+  'farxiga', 'invokana', 'ozempic', 'wegovy', 'rybelsus', 'trulicity',
+  'victoza', 'mounjaro', 'zepbound', 'lantus', 'levemir', 'tresiba',
+  'toujeo', 'basaglar', 'semglee', 'humalog', 'novolog', 'apidra', 'fiasp',
+  'humulin', 'novolin', 'admelog', 'lyumjev',
+  // Psychiatry / neurology
+  'prozac', 'zoloft', 'paxil', 'celexa', 'lexapro', 'effexor', 'cymbalta',
+  'pristiq', 'wellbutrin', 'remeron', 'trintellix', 'viibryd', 'desyrel',
+  'abilify', 'seroquel', 'zyprexa', 'risperdal', 'latuda', 'geodon',
+  'rexulti', 'vraylar', 'clozaril', 'lithobid', 'lamictal', 'depakote',
+  'tegretol', 'trileptal', 'keppra', 'dilantin', 'topamax', 'neurontin',
+  'lyrica', 'gralise', 'xanax', 'ativan', 'klonopin', 'valium', 'restoril',
+  'ambien', 'lunesta', 'sonata', 'belsomra', 'aricept', 'namenda', 'exelon',
+  'sinemet', 'mirapex', 'requip', 'azilect',
+  // Analgesia / opioids
+  'oxycontin', 'percocet', 'roxicodone', 'vicodin', 'norco', 'lortab',
+  'dilaudid', 'ms contin', 'duragesic', 'ultram', 'nucynta', 'suboxone',
+  'subutex', 'sublocade', 'narcan', 'zubsolv', 'dolophine', 'methadose',
+  'celebrex', 'mobic', 'voltaren', 'flexeril', 'robaxin', 'zanaflex',
+  'soma', 'lioresal',
+  // Respiratory
+  'ventolin', 'proair', 'proventil', 'xopenex', 'symbicort', 'advair',
+  'breo', 'dulera', 'trelegy', 'spiriva', 'incruse', 'anoro', 'atrovent',
+  'combivent', 'qvar', 'pulmicort', 'flovent', 'singulair', 'xolair',
+  'dupixent', 'nucala', 'fasenra',
+  // Anti-infective
+  'amoxil', 'augmentin', 'keflex', 'zithromax', 'cipro', 'levaquin', 'avelox',
+  'bactrim', 'septra', 'macrobid', 'macrodantin', 'flagyl', 'diflucan',
+  'valtrex', 'zovirax', 'tamiflu', 'paxlovid', 'vibramycin', 'doryx',
+  // Endocrine / other
+  'synthroid', 'levoxyl', 'unithroid', 'tirosint', 'cytomel', 'armour thyroid',
+  'np thyroid', 'prednisone intensol', 'deltasone', 'medrol', 'fosamax',
+  'boniva', 'actonel', 'prolia', 'forteo', 'evista', 'premarin', 'estrace',
+  'vagifem', 'depo-provera', 'flomax', 'proscar', 'propecia', 'avodart',
+  'cialis', 'viagra', 'levitra', 'ditropan', 'detrol', 'vesicare', 'myrbetriq',
+  'zyloprim', 'uloric', 'colcrys', 'plaquenil', 'humira', 'enbrel',
+  'methotrexate', 'imuran', 'cellcept', 'prograf', 'neoral',
+  // GI prescription
+  'protonix', 'aciphex', 'dexilant', 'carafate', 'linzess', 'amitiza',
+  'trulance', 'xifaxan', 'zofran', 'reglan', 'phenergan',
+]);
+
+/**
+ * Fetch brand names for an ingredient, ordered so that recognisable brands
+ * come first.
+ *
+ * Returns up to BRAND_CAP names. brands[0] becomes the displayed label, so the
+ * ordering matters more than the cap does.
+ */
 async function fetchBrands(rxcui) {
   const data = await getJSON(`${BASE}/rxcui/${rxcui}/related.json?tty=BN`);
   const groups = data?.relatedGroup?.conceptGroup || [];
@@ -122,8 +228,31 @@ async function fetchBrands(rxcui) {
       if (c.name) out.push(c.name);
     }
   }
-  // Dedupe, preserve order, cap so one ingredient can't dominate the file
-  return [...new Set(out)].slice(0, 8);
+
+  const unique = [...new Set(out)];
+
+  // Score each brand. Higher sorts first.
+  //   3  exact match against the prominence list
+  //   2  first word matches (catches "Tylenol PM", "Advil Liqui-Gels")
+  //   1  everything else
+  // Within a tier, shorter names first — "Tylenol" over "Tylenol Extra
+  // Strength Rapid Release" — then alphabetical for a stable rebuild.
+  function score(name) {
+    const n = String(name).toLowerCase().trim();
+    if (PROMINENT_BRANDS.has(n)) return 3;
+    const first = n.split(/[\s\-]/)[0];
+    if (PROMINENT_BRANDS.has(first)) return 2;
+    return 1;
+  }
+
+  unique.sort((a, b) => {
+    const s = score(b) - score(a);
+    if (s !== 0) return s;
+    if (a.length !== b.length) return a.length - b.length;
+    return a.localeCompare(b);
+  });
+
+  return unique.slice(0, BRAND_CAP);
 }
 
 async function main() {
