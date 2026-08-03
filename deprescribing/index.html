@@ -178,33 +178,129 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 </div>
 
 <script>
-const API_KEY = 'intractmd-2024';
+// ── DRUG INPUT ───────────────────────────────────────────────────────────────
+// Loads the authoritative list from /api/drug-list (RxNorm-sourced) instead of
+// a hardcoded array. Two behaviours matter clinically:
+//
+//   1. A name that is not a confirmed match CANNOT be added. Typing "warfrin"
+//      previously created a tag and was sent to the analysis endpoint. It now
+//      shows "no match" and refuses.
+//   2. Enter never auto-selects. Previously, typing "met" and pressing Enter
+//      silently added whichever result sorted first — Metformin or Metoprolol.
+//      A suggestion must now be chosen deliberately.
+//
+// Matching is exact, then generic-prefix, then brand-prefix, then substring,
+// with word-boundary awareness so "citalopram" cannot be outranked by
+// "escitalopram".
+
+const API_KEY = 'intractmd-2024';   // used by analyze() below — do not remove
+
 const DIMS = ['bleeding','cardiac','serotonin','nti','cns','pharmacokinetic','renal_hepatic','pharmacodynamic'];
 const DIM_LABELS = {
   bleeding:'Bleeding',cardiac:'Cardiac',serotonin:'Serotonin',nti:'NTI Conflict',
   cns:'CNS',pharmacokinetic:'Pharmacokinetic',renal_hepatic:'Renal/Hepatic',pharmacodynamic:'Pharmacodynamic'
 };
 
-// Drug name database for autocomplete (top 100 most common)
-const DRUG_LIST = [
-  'Acetaminophen','Amlodipine','Amoxicillin','Atorvastatin','Azithromycin',
-  'Carvedilol','Clopidogrel','Digoxin','Diltiazem','Escitalopram',
-  'Fluoxetine','Furosemide','Gabapentin','Hydrochlorothiazide','Ibuprofen',
-  'Lisinopril','Losartan','Metformin','Metoprolol','Metronidazole',
-  'Naproxen','Omeprazole','Oxycodone','Pantoprazole','Prednisone',
-  'Quetiapine','Sertraline','Simvastatin','Spironolactone','Tramadol',
-  'Warfarin','Alprazolam','Amiodarone','Aspirin','Atenolol',
-  'Carbamazepine','Ciprofloxacin','Clonazepam','Clopidogrel','Doxazosin',
-  'Duloxetine','Finasteride','Fluconazole','Haloperidol','Hydrocodone',
-  'Levothyroxine','Lithium','Lorazepam','Meloxicam','Memantine',
-  'Montelukast','Morphine','Nifedipine','Nitrostat','Paroxetine',
-  'Phenytoin','Pravastatin','Ramipril','Rivaroxaban','Rosuvastatin',
-  'Sildenafil','Tamsulosin','Temazepam','Trazodone','Valsartan',
-  'Venlafaxine','Verapamil','Zolpidem','Apixaban','Bisoprolol',
-  'Citalopram','Donepezil','Fentanyl','Glipizide','Insulin',
-  'Methotrexate','Olanzapine','Oxcarbazepine','Pantoprazole','Rivaroxaban',
-  'Topiramate','Valproic Acid','Bupropion','Celecoxib','Dexamethasone'
-];
+let DRUG_LIST = [];        // [{generic, brand, brands[]}]
+let drugListReady = false;
+let drugListError = false;
+
+// Salt/ester suffixes are stripped for display and matching so "Warfarin
+// Sodium" is offered as "Warfarin".
+const _SALTS = /\s+(calcium|sodium|hydrochloride|hcl|sulfate|bisulfate|maleate|tartrate|oxalate|mesylate|besylate|succinate|fumarate|phosphate|acetate|chloride|bromide|potassium|magnesium|zinc|citrate|gluconate|tannate|stearate|valerate|benzoate|propionate|decanoate|hyclate)\b.*/i;
+
+async function loadDrugList(){
+  try {
+    const r = await fetch('/api/drug-list');
+    const j = await r.json();
+    if (Array.isArray(j) && j.length) {
+      DRUG_LIST = j;
+      drugListReady = true;
+    } else {
+      drugListError = true;
+    }
+  } catch (e) {
+    drugListError = true;
+  }
+  updateInputState();
+}
+
+function updateInputState(){
+  const inp = document.getElementById('drug-input');
+  if (!inp) return;
+  if (drugListError) {
+    inp.placeholder = 'Medication list unavailable — reload the page';
+    inp.disabled = true;
+  } else if (drugListReady) {
+    inp.placeholder = 'Type a medication name, then choose from the list…';
+    inp.disabled = false;
+  } else {
+    inp.placeholder = 'Loading medication list…';
+    inp.disabled = true;
+  }
+}
+
+function baseName(s){
+  return String(s || '').replace(_SALTS, '').trim();
+}
+
+/**
+ * Rank matches. Returns [{name, label}] where `name` is what gets submitted
+ * for analysis (always the generic ingredient) and `label` is what is shown.
+ */
+function matchDrugs(query, limit){
+  limit = limit || 8;
+  const q = String(query || '').trim().toLowerCase();
+  if (q.length < 2 || !DRUG_LIST.length) return [];
+
+  const scored = [];
+  const seen = {};
+
+  for (const entry of DRUG_LIST) {
+    const generic = baseName(entry.generic);
+    if (!generic) continue;
+    const g = generic.toLowerCase();
+
+    // Collect brand names — the rebuilt list carries `brands` as an array.
+    const brands = Array.isArray(entry.brands) && entry.brands.length
+      ? entry.brands
+      : (entry.brand ? [entry.brand] : []);
+
+    let score = 0;
+    let label = null;
+
+    if (g === q) {
+      score = 1000;
+    } else if (g.indexOf(q) === 0) {
+      score = 800 - g.length;
+    } else {
+      for (const b of brands) {
+        const bl = String(b).toLowerCase();
+        if (bl === q) { score = 950; label = generic + ' (' + b + ')'; break; }
+        if (bl.indexOf(q) === 0) {
+          const s = 700 - bl.length;
+          if (s > score) { score = s; label = generic + ' (' + b + ')'; }
+        }
+      }
+    }
+
+    // Substring only as a last resort, and never above an exact or prefix hit.
+    if (!score && g.indexOf(q) !== -1) score = 300 - g.length;
+
+    if (!score) continue;
+    if (seen[g]) continue;
+    seen[g] = 1;
+
+    if (!label) {
+      const b0 = brands[0];
+      label = (b0 && String(b0).toLowerCase() !== g) ? generic + ' (' + b0 + ')' : generic;
+    }
+    scored.push({ name: generic, label: label, score: score });
+  }
+
+  scored.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+  return scored.slice(0, limit);
+}
 
 let drugs = [];
 let acTimer = null;
@@ -216,15 +312,33 @@ const acDrop = document.getElementById('ac-drop');
 const tagsEl = document.getElementById('drug-tags');
 const analyzeBtn = document.getElementById('analyze-btn');
 
+function hideAc(){ acDrop.style.display = 'none'; acSel = -1; }
+
+function showNoMatch(q){
+  acDrop.innerHTML =
+    '<div class="ac-item" style="color:var(--tx3);cursor:default">' +
+    'No medication matching &ldquo;' + escapeHtml(q) + '&rdquo;. ' +
+    'Check the spelling, or try the generic name.' +
+    '</div>';
+  acDrop.style.display = 'block';
+  acSel = -1;
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, function(c){
+    return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
+  });
+}
+
 dInput.addEventListener('input', function(){
   clearTimeout(acTimer);
   const v = dInput.value.trim();
-  if(v.length < 2){acDrop.style.display='none';return;}
+  if (v.length < 2) { hideAc(); return; }
   acTimer = setTimeout(function(){
-    acResults = DRUG_LIST.filter(function(d){return d.toLowerCase().startsWith(v.toLowerCase());}).slice(0,8);
-    if(!acResults.length){acDrop.style.display='none';return;}
-    acDrop.innerHTML = acResults.map(function(d,i){
-      return '<div class="ac-item" onclick="selectAc('+i+')">'+d+'</div>';
+    acResults = matchDrugs(v, 8);
+    if (!acResults.length) { showNoMatch(v); return; }
+    acDrop.innerHTML = acResults.map(function(r, i){
+      return '<div class="ac-item" onclick="selectAc(' + i + ')">' + escapeHtml(r.label) + '</div>';
     }).join('');
     acDrop.style.display = 'block';
     acSel = -1;
@@ -232,54 +346,100 @@ dInput.addEventListener('input', function(){
 });
 
 dInput.addEventListener('keydown', function(e){
-  if(e.key==='ArrowDown'){acSel=Math.min(acSel+1,acResults.length-1);highlightAc();}
-  else if(e.key==='ArrowUp'){acSel=Math.max(acSel-1,-1);highlightAc();}
-  else if(e.key==='Enter'){
-    if(acSel>=0&&acResults[acSel]){dInput.value=acResults[acSel];acDrop.style.display='none';}
-    addDrug();
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    acSel = Math.min(acSel + 1, acResults.length - 1);
+    highlightAc();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    acSel = Math.max(acSel - 1, -1);
+    highlightAc();
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    // Enter adds ONLY an explicitly highlighted suggestion. It never picks a
+    // result for the user — "met" must not silently become Metformin.
+    if (acSel >= 0 && acResults[acSel]) {
+      addDrug(acResults[acSel].name);
+    } else if (acResults.length) {
+      highlightAc(0);
+    } else {
+      showNoMatch(dInput.value.trim());
+    }
+  } else if (e.key === 'Escape') {
+    hideAc();
   }
 });
 
-function highlightAc(){
-  document.querySelectorAll('.ac-item').forEach(function(el,i){el.classList.toggle('active',i===acSel);});
+function highlightAc(force){
+  if (typeof force === 'number') acSel = force;
+  document.querySelectorAll('.ac-item').forEach(function(el, i){
+    el.classList.toggle('active', i === acSel);
+  });
 }
 
 function selectAc(i){
-  dInput.value=acResults[i];
-  acDrop.style.display='none';
-  addDrug();
+  if (!acResults[i]) return;
+  addDrug(acResults[i].name);
 }
 
-function addDrug(){
-  // If dropdown is visible and nothing explicitly selected, use first result
-  if(acDrop.style.display !== 'none' && acResults.length > 0) {
-    const sel = acSel >= 0 ? acResults[acSel] : acResults[0];
-    dInput.value = sel;
-    acDrop.style.display = 'none';
+/**
+ * Add a medication. `confirmedName` must come from a chosen suggestion —
+ * free text is never accepted.
+ */
+function addDrug(confirmedName){
+  let name = confirmedName;
+
+  // Called from the Add button with nothing chosen: accept only an
+  // unambiguous exact match, otherwise refuse and explain.
+  if (!name) {
+    const v = dInput.value.trim();
+    if (!v) return;
+    const m = matchDrugs(v, 2);
+    const exact = m.length && m[0].name.toLowerCase() === v.toLowerCase();
+    if (exact) {
+      name = m[0].name;
+    } else if (m.length) {
+      acResults = matchDrugs(v, 8);
+      acDrop.innerHTML = acResults.map(function(r, i){
+        return '<div class="ac-item" onclick="selectAc(' + i + ')">' + escapeHtml(r.label) + '</div>';
+      }).join('');
+      acDrop.style.display = 'block';
+      highlightAc(0);
+      return;                       // make the user choose
+    } else {
+      showNoMatch(v);
+      return;                       // refuse unknown names
+    }
   }
-  const v = dInput.value.trim();
-  if(!v) return;
-  if(drugs.includes(v)){dInput.value='';acDrop.style.display='none';return;}
-  drugs.push(v);
-  dInput.value='';
-  acDrop.style.display='none';
-  acSel = -1;
+
+  if (drugs.indexOf(name) !== -1) { dInput.value = ''; hideAc(); return; }
+
+  drugs.push(name);
+  dInput.value = '';
+  hideAc();
   renderTags();
   analyzeBtn.disabled = drugs.length < 2;
 }
 
 function removeDrug(i){
-  drugs.splice(i,1);
+  drugs.splice(i, 1);
   renderTags();
   analyzeBtn.disabled = drugs.length < 2;
 }
 
 function renderTags(){
-  tagsEl.innerHTML = drugs.map(function(d,i){
-    return '<span class="tag"><i class="ti ti-pill" style="font-size:11px"></i>'+d
-      +'<button class="tag-rm" onclick="removeDrug('+i+')">&times;</button></span>';
+  tagsEl.innerHTML = drugs.map(function(d, i){
+    return '<span class="tag"><i class="ti ti-pill" style="font-size:11px"></i>' + escapeHtml(d)
+      + '<button class="tag-rm" onclick="removeDrug(' + i + ')">&times;</button></span>';
   }).join('');
 }
+
+document.addEventListener('click', function(e){
+  if (!e.target.closest('.ac-wrap')) hideAc();
+});
+
+updateInputState();
+loadDrugList();
 
 async function analyze(){
   if(drugs.length < 2) return;
