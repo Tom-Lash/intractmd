@@ -1,12 +1,12 @@
 [
  {
   "generic": "abacavir",
-  "brand": "Triumeq",
+  "brand": "Ziagen",
   "brands": [
-   "Triumeq",
    "Ziagen",
-   "Trizivir",
-   "Epzicom"
+   "Epzicom",
+   "Triumeq",
+   "Trizivir"
   ],
   "rxcui": "190521",
   "source": "RxNorm"
@@ -40,11 +40,11 @@
  },
  {
   "generic": "abiraterone",
-  "brand": "Zytiga",
+  "brand": "Yonsa",
   "brands": [
-   "Zytiga",
    "Yonsa",
    "Akeega",
+   "Zytiga",
    "Abirtega"
   ],
   "rxcui": "1100072",
@@ -93,16 +93,33 @@
  },
  {
   "generic": "acetaminophen",
-  "brand": "Little Fevers",
+  "brand": "Norco",
   "brands": [
-   "Little Fevers",
-   "Bactimicina",
-   "Pamprin Max Formula",
-   "Pamprin Multi-Symptom",
-   "Pamprin Cramp Formula",
-   "Percogesic Reformulated Jan 2011",
-   "Premsyn PMS",
-   "Panadol PM"
+   "Norco",
+   "Tylenol",
+   "Excedrin",
+   "Percocet",
+   "Tylenol PM",
+   "Excedrin PM",
+   "Excedrin Quick Tab",
+   "Tylenol with Codeine",
+   "Excedrin Mild Headache",
+   "Unisom with Pain Relief",
+   "Excedrin PM Triple Action",
+   "Excedrin Tension Headache",
+   "Tylenol Gelcap Extra Strength",
+   "Vtol",
+   "Bupap",
+   "Esgic",
+   "Hycet",
+   "Mapap",
+   "Repan",
+   "Ringl",
+   "Anabar",
+   "Apadaz",
+   "Saleto",
+   "Tencon",
+   "Trezix"
   ],
   "rxcui": "161",
   "source": "RxNorm"
@@ -116,11 +133,11 @@
  },
  {
   "generic": "acetic acid",
-  "brand": "Mal-A-Ket",
+  "brand": "Fem pH",
   "brands": [
-   "Mal-A-Ket",
    "Fem pH",
-   "Relagard"
+   "Relagard",
+   "Mal-A-Ket"
   ],
   "rxcui": "168",
   "source": "RxNorm"
@@ -159,10 +176,10 @@
  },
  {
   "generic": "aclidinium",
-  "brand": "Tudorza",
+  "brand": "Duaklir",
   "brands": [
-   "Tudorza",
-   "Duaklir"
+   "Duaklir",
+   "Tudorza"
   ],
   "rxcui": "1303098",
   "source": "RxNorm"
@@ -172,20 +189,20 @@
   "brand": "Actidose",
   "brands": [
    "Actidose",
-   "Insta-Char",
-   "CharcoCaps"
+   "CharcoCaps",
+   "Insta-Char"
   ],
   "rxcui": "272",
   "source": "RxNorm"
  },
  {
   "generic": "acyclovir",
-  "brand": "Sitavig",
+  "brand": "Zovirax",
   "brands": [
-   "Sitavig",
    "Zovirax",
+   "Xerese",
    "Avaclyr",
-   "Xerese"
+   "Sitavig"
   ],
   "rxcui": "281",
   "source": "RxNorm"
@@ -201,12 +218,12 @@
  },
  {
   "generic": "adapalene",
-  "brand": "Differin",
+  "brand": "Epiduo",
   "brands": [
-   "Differin",
+   "Epiduo",
    "Cabtreo",
-   "Differin Epiduo",
-   "Epiduo"
+   "Differin",
+   "Differin Epiduo"
   ],
   "rxcui": "60223",
   "source": "RxNorm"
@@ -231,26 +248,43 @@
  },
  {
   "generic": "alanine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "426",
   "source": "RxNorm"
  },
  {
   "generic": "albendazole",
-  "brand": "Valbazen",
+  "brand": "Albenza",
   "brands": [
-   "Valbazen",
    "Albenza",
+   "Valbazen",
    "Albendamax"
   ],
   "rxcui": "430",
@@ -258,13 +292,13 @@
  },
  {
   "generic": "albuterol",
-  "brand": "Combivent",
+  "brand": "ProAir",
   "brands": [
+   "ProAir",
+   "Ventolin",
    "Combivent",
    "Proventil",
-   "Airsupra",
-   "ProAir",
-   "Ventolin"
+   "Airsupra"
   ],
   "rxcui": "435",
   "source": "RxNorm"
@@ -287,10 +321,10 @@
  },
  {
   "generic": "alemtuzumab",
-  "brand": "Lemtrada",
+  "brand": "Campath",
   "brands": [
-   "Lemtrada",
-   "Campath"
+   "Campath",
+   "Lemtrada"
   ],
   "rxcui": "117055",
   "source": "RxNorm"
@@ -300,8 +334,8 @@
   "brand": "Fosamax",
   "brands": [
    "Fosamax",
-   "Binosto",
-   "Fosamax Plus D"
+   "Fosamax Plus D",
+   "Binosto"
   ],
   "rxcui": "46041",
   "source": "RxNorm"
@@ -379,15 +413,15 @@
  },
  {
   "generic": "allantoin",
-  "brand": "Chamois Glide",
+  "brand": "Shing-Releev",
   "brands": [
-   "Chamois Glide",
-   "Anbesol Cold Sore Therapy",
-   "Blister Armour",
    "Shing-Releev",
+   "Chamois Glide",
+   "Blister Armour",
+   "Mederma for Kids",
    "Mederma Advanced Scar",
    "Berberex Wound Cleanser",
-   "Mederma for Kids"
+   "Anbesol Cold Sore Therapy"
   ],
   "rxcui": "508",
   "source": "RxNorm"
@@ -425,11 +459,11 @@
  },
  {
   "generic": "alogliptin",
-  "brand": "Nesina",
+  "brand": "Oseni",
   "brands": [
-   "Nesina",
+   "Oseni",
    "Kazano",
-   "Oseni"
+   "Nesina"
   ],
   "rxcui": "1368001",
   "source": "RxNorm"
@@ -543,16 +577,22 @@
  },
  {
   "generic": "amlodipine",
-  "brand": "Tribenzor",
+  "brand": "Norvasc",
   "brands": [
-   "Tribenzor",
-   "Exforge HCT",
-   "Twynsta",
-   "Prestalia",
-   "Consensi",
+   "Norvasc",
+   "Azor",
+   "Caduet",
    "Lotrel",
+   "Sdamlo",
+   "Exforge",
+   "Twynsta",
+   "Consensi",
    "Katerzia",
-   "Norliqva"
+   "Norliqva",
+   "Widaplik",
+   "Prestalia",
+   "Tribenzor",
+   "Exforge HCT"
   ],
   "rxcui": "17767",
   "source": "RxNorm"
@@ -566,16 +606,20 @@
  },
  {
   "generic": "amoxicillin",
-  "brand": "Amoxi-tabs",
+  "brand": "Augmentin",
   "brands": [
-   "Amoxi-tabs",
    "Augmentin",
-   "Clavacillin",
    "Biomox",
+   "Kesium",
    "Trimox",
+   "Moxatag",
    "Talicia",
+   "Clavamox",
+   "Betacilin",
    "Umbrellin",
-   "Betacilin"
+   "Amoxi Drop",
+   "Amoxi-tabs",
+   "Clavacillin"
   ],
   "rxcui": "723",
   "source": "RxNorm"
@@ -585,20 +629,20 @@
   "brand": "Evekeo",
   "brands": [
    "Evekeo",
-   "Dyanavel",
    "Adzenys",
    "Mydayis",
-   "Adderall"
+   "Adderall",
+   "Dyanavel"
   ],
   "rxcui": "725",
   "source": "RxNorm"
  },
  {
   "generic": "ampicillin",
-  "brand": "Polyflex",
+  "brand": "Unasyn",
   "brands": [
-   "Polyflex",
-   "Unasyn"
+   "Unasyn",
+   "Polyflex"
   ],
   "rxcui": "733",
   "source": "RxNorm"
@@ -659,11 +703,10 @@
  },
  {
   "generic": "apomorphine",
-  "brand": "Kynmobi",
+  "brand": "Apokyn",
   "brands": [
-   "Kynmobi",
-   "Onapgo",
-   "Apokyn"
+   "Apokyn",
+   "Onapgo"
   ],
   "rxcui": "1043",
   "source": "RxNorm"
@@ -688,11 +731,11 @@
  },
  {
   "generic": "aprepitant",
-  "brand": "Cinvanti",
+  "brand": "Emend",
   "brands": [
-   "Cinvanti",
+   "Emend",
    "Aponvie",
-   "Emend"
+   "Cinvanti"
   ],
   "rxcui": "358255",
   "source": "RxNorm"
@@ -715,16 +758,33 @@
  },
  {
   "generic": "arginine",
-  "brand": "CanineAid",
+  "brand": "Prosol",
   "brands": [
+   "Prosol",
+   "PremaSol",
+   "SwineAid",
    "CanineAid",
-   "FelineAid",
    "EquineAid",
+   "FelineAid",
+   "Plenamine",
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
    "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %"
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10"
   ],
   "rxcui": "1091",
   "source": "RxNorm"
@@ -759,10 +819,10 @@
  },
  {
   "generic": "aripiprazole",
-  "brand": "Opipza",
+  "brand": "Abilify",
   "brands": [
-   "Opipza",
-   "Abilify"
+   "Abilify",
+   "Opipza"
   ],
   "rxcui": "89013",
   "source": "RxNorm"
@@ -805,26 +865,43 @@
  },
  {
   "generic": "ascorbic acid",
-  "brand": "Ferocon",
+  "brand": "Ascor",
   "brands": [
-   "Ferocon",
-   "Ferraplus",
-   "Folivane-F",
+   "Ascor",
    "Hemax",
-   "Icar-C Plus",
+   "C-Time",
    "Icar C",
-   "Macuvite with Lutein",
-   "Multi-Delyn"
+   "Ferocon",
+   "Folitab",
+   "Ocuvite",
+   "Infuvite",
+   "Lactocal",
+   "MoviPrep",
+   "Ferraplus",
+   "Hematogen",
+   "Integra F",
+   "Rena-Vite",
+   "Concept OB",
+   "Folivane-F",
+   "Tri-Vi-Sol",
+   "Cemill 1000",
+   "Ferralet 90",
+   "Icar-C Plus",
+   "Multi-Delyn",
+   "Poly-Vi-Sol",
+   "Vitafol-One",
+   "MVC-Fluoride",
+   "PreserVision"
   ],
   "rxcui": "1151",
   "source": "RxNorm"
  },
  {
   "generic": "asenapine",
-  "brand": "Secuado",
+  "brand": "Saphris",
   "brands": [
-   "Secuado",
-   "Saphris"
+   "Saphris",
+   "Secuado"
   ],
   "rxcui": "784649",
   "source": "RxNorm"
@@ -882,16 +959,33 @@
  },
  {
   "generic": "aspirin",
-  "brand": "Pamprin Max Formula",
+  "brand": "Ecotrin",
   "brands": [
-   "Pamprin Max Formula",
-   "Stanback Headache Powder Reformulated Jan 2011",
-   "BC Arthritis",
-   "BC Original Formula",
-   "Arthriten Inflammatory Pain",
-   "Bromo Seltzer Antacid Pain Reliever",
+   "Ecotrin",
+   "Bufferin",
+   "Excedrin",
+   "Bayer Aspirin",
+   "Excedrin PM Triple Action",
+   "Anacin",
+   "Ascomp",
+   "Saleto",
+   "Durlaza",
    "Exaprin",
-   "Backaid IPF"
+   "Aspergum",
+   "Aspi-Cor",
+   "Miniprin",
+   "Norgesic",
+   "Vanquish",
+   "Vazalore",
+   "Yosprala",
+   "Equagesic",
+   "Backaid IPF",
+   "Orphengesic",
+   "Alka-Seltzer",
+   "BC Arthritis",
+   "Exaprin Plus",
+   "Norwich Aspirin",
+   "St. Joseph Aspirin"
   ],
   "rxcui": "1191",
   "source": "RxNorm"
@@ -950,8 +1044,8 @@
   "brand": "Lipitor",
   "brands": [
    "Lipitor",
-   "Atorvaliq",
-   "Caduet"
+   "Caduet",
+   "Atorvaliq"
   ],
   "rxcui": "83367",
   "source": "RxNorm"
@@ -968,14 +1062,14 @@
  },
  {
   "generic": "atropine",
-  "brand": "Donnatal",
+  "brand": "Atropen",
   "brands": [
-   "Donnatal",
-   "Phenohytro",
-   "Motofen",
-   "Lomotil",
    "Atropen",
    "Duodote",
+   "Lomotil",
+   "Motofen",
+   "Donnatal",
+   "Phenohytro",
    "Isopto Atropine"
   ],
   "rxcui": "1223",
@@ -1083,10 +1177,10 @@
  },
  {
   "generic": "azelastine",
-  "brand": "Dymista",
+  "brand": "Astepro",
   "brands": [
-   "Dymista",
-   "Astepro"
+   "Astepro",
+   "Dymista"
   ],
   "rxcui": "18603",
   "source": "RxNorm"
@@ -1106,24 +1200,28 @@
   "brand": "Azactam",
   "brands": [
    "Azactam",
-   "Emblaveo",
-   "Cayston"
+   "Cayston",
+   "Emblaveo"
   ],
   "rxcui": "1272",
   "source": "RxNorm"
  },
  {
   "generic": "bacitracin",
-  "brand": "Rash Relief Antibacterial",
+  "brand": "Polycin",
   "brands": [
-   "Rash Relief Antibacterial",
+   "Polycin",
+   "Baciguent",
+   "Lanabiotic",
+   "Polysporin",
+   "Cuadriderma",
+   "Neo-Polycin",
    "Tri Biozene",
    "Neo-Polycin HC",
-   "Neo-Polycin",
-   "Cuadriderma",
-   "Baciguent",
-   "Polycin",
-   "Lanabiotic"
+   "Spectrocin Plus",
+   "Bactine Antibiotic",
+   "Rash Relief Antibacterial",
+   "Mycitracin Plus Pain Reliever"
   ],
   "rxcui": "1291",
   "source": "RxNorm"
@@ -1137,13 +1235,13 @@
  },
  {
   "generic": "baclofen",
-  "brand": "Gablofen",
+  "brand": "Lioresal",
   "brands": [
-   "Gablofen",
    "Lioresal",
    "Ozobax",
-   "Lyvispah",
-   "Fleqsuvy"
+   "Fleqsuvy",
+   "Gablofen",
+   "Lyvispah"
   ],
   "rxcui": "1292",
   "source": "RxNorm"
@@ -1186,11 +1284,12 @@
  },
  {
   "generic": "beclomethasone",
-  "brand": "Qnasl",
+  "brand": "Qvar",
   "brands": [
+   "Qvar",
    "Qnasl",
-   "Beconase",
-   "Qvar"
+   "Trimbow",
+   "Beconase"
   ],
   "rxcui": "1347",
   "source": "RxNorm"
@@ -1252,12 +1351,12 @@
  },
  {
   "generic": "benazepril",
-  "brand": "Lotensin",
+  "brand": "Lotrel",
   "brands": [
-   "Lotensin",
-   "Lotensin HCT",
    "Lotrel",
-   "Cardalis"
+   "Cardalis",
+   "Lotensin",
+   "Lotensin HCT"
   ],
   "rxcui": "18867",
   "source": "RxNorm"
@@ -1267,9 +1366,9 @@
   "brand": "Bendeka",
   "brands": [
    "Bendeka",
+   "Treanda",
    "Belrapzo",
-   "Vivimusta",
-   "Treanda"
+   "Vivimusta"
   ],
   "rxcui": "134547",
   "source": "RxNorm"
@@ -1285,16 +1384,16 @@
  },
  {
   "generic": "benzethonium",
-  "brand": "Lanacane",
+  "brand": "NoRisc",
   "brands": [
+   "NoRisc",
+   "Calagel",
    "Lanacane",
    "Bedside-Care",
-   "New-Skin Liquid Bandage",
+   "StaphAseptic",
    "Berberex Wound Cleanser",
-   "NoRisc",
-   "Dermoplast Antibacterial",
-   "Calagel",
-   "StaphAseptic"
+   "New-Skin Liquid Bandage",
+   "Dermoplast Antibacterial"
   ],
   "rxcui": "1390",
   "source": "RxNorm"
@@ -1310,16 +1409,33 @@
  },
  {
   "generic": "benzoyl peroxide",
-  "brand": "Fostex",
+  "brand": "NuOx",
   "brands": [
+   "NuOx",
+   "Inova",
+   "Neuac",
+   "Triaz",
+   "Acanya",
+   "Benzac",
+   "Epiduo",
    "Fostex",
+   "Oscion",
+   "Pacnex",
+   "Twyneo",
+   "Cabtreo",
+   "Desquam",
+   "Epsolay",
+   "Onexton",
    "Relovox",
-   "Benzamycin",
-   "Clenziderm Lotion",
-   "Myhelper",
+   "Anti Bac",
    "Benzepro",
-   "Effaclar Duo",
-   "Phisoderm Clear Confidence Spot Treatment"
+   "Del-Aqua",
+   "Myhelper",
+   "Seba-Gel",
+   "Benzefoam",
+   "Clearplex",
+   "Clearskin",
+   "Inova 8-2"
   ],
   "rxcui": "1418",
   "source": "RxNorm"
@@ -1367,16 +1483,24 @@
  },
  {
   "generic": "betamethasone",
-  "brand": "Gentacalm",
+  "brand": "Luxiq",
   "brands": [
-   "Gentacalm",
+   "Luxiq",
+   "Attero",
+   "Duotic",
    "Genone",
-   "Betavet",
    "Otomax",
-   "Enstilar",
+   "Betavet",
+   "Osurnia",
    "Sernivo",
+   "Wynzora",
    "Del-Beta",
-   "Diprolene"
+   "Enstilar",
+   "GentaVed",
+   "Taclonex",
+   "Diprolene",
+   "Gentacalm",
+   "Celestone Soluspan"
   ],
   "rxcui": "1514",
   "source": "RxNorm"
@@ -1429,9 +1553,9 @@
   "brand": "Durysta",
   "brands": [
    "Durysta",
-   "Zolymbus",
+   "Latisse",
    "Lumigan",
-   "Latisse"
+   "Zolymbus"
   ],
   "rxcui": "283810",
   "source": "RxNorm"
@@ -1450,12 +1574,14 @@
   "brand": "Hemax",
   "brands": [
    "Hemax",
-   "Irospan Tablet",
-   "Infuvite",
-   "Infuvite Pediatric",
-   "Concept OB",
    "Lexinal",
+   "Appearex",
+   "Infuvite",
+   "Concept OB",
    "Dialyvite 800",
+   "Irospan Tablet",
+   "Infuvite Pediatric",
+   "Dialyvite 800 with Iron",
    "Dialyvite 800 with Zinc"
   ],
   "rxcui": "1588",
@@ -1466,26 +1592,28 @@
   "brand": "Dulcolax",
   "brands": [
    "Dulcolax",
-   "Bisac-Evac",
-   "Correct (New Formula)",
    "Laxomil",
-   "The Magic Bullet",
+   "Bisac-Evac",
    "Ex-lax Ultra",
+   "The Magic Bullet",
+   "Correct (New Formula)",
    "Alophen Reformulated Jan 2008",
-   "Evac-U-Gen Reformulated Jan 2008"
+   "Evac-U-Gen Reformulated Jan 2008",
+   "Feen-A-Mint Reformulated Jan 2008",
+   "Correctol laxative Reformulated Feb 2008"
   ],
   "rxcui": "1596",
   "source": "RxNorm"
  },
  {
   "generic": "bismuth subsalicylate",
-  "brand": "Bismusal",
+  "brand": "Pepto-bismol",
   "brands": [
-   "Bismusal",
-   "Percy Medicine",
-   "Estomaquil",
-   "Bismarex",
    "Pepto-bismol",
+   "Bismarex",
+   "Bismusal",
+   "Estomaquil",
+   "Percy Medicine",
    "Kaopectate Reformulated Aug 2006"
   ],
   "rxcui": "19478",
@@ -1595,14 +1723,14 @@
  },
  {
   "generic": "botulinum toxin type A",
-  "brand": "Xeomin",
+  "brand": "Botox",
   "brands": [
-   "Xeomin",
-   "Dysport",
    "Botox",
-   "Jeuveau",
-   "Daxxify",
    "Letybo",
+   "Xeomin",
+   "Daxxify",
+   "Dysport",
+   "Jeuveau",
    "Botox Cosmetic"
   ],
   "rxcui": "1712",
@@ -1646,24 +1774,24 @@
  },
  {
   "generic": "brimonidine",
-  "brand": "Simbrinza",
+  "brand": "Lumify",
   "brands": [
-   "Simbrinza",
-   "Mirvaso",
-   "Alphagan",
    "Lumify",
+   "Mirvaso",
    "Yuvezzi",
-   "Combigan"
+   "Alphagan",
+   "Combigan",
+   "Simbrinza"
   ],
   "rxcui": "134615",
   "source": "RxNorm"
  },
  {
   "generic": "brinzolamide",
-  "brand": "Simbrinza",
+  "brand": "Azopt",
   "brands": [
-   "Simbrinza",
-   "Azopt"
+   "Azopt",
+   "Simbrinza"
   ],
   "rxcui": "194881",
   "source": "RxNorm"
@@ -1688,33 +1816,33 @@
  },
  {
   "generic": "bromfenac",
-  "brand": "Prolensa",
+  "brand": "Bromsite",
   "brands": [
-   "Prolensa",
-   "Bromsite"
+   "Bromsite",
+   "Prolensa"
   ],
   "rxcui": "19737",
   "source": "RxNorm"
  },
  {
   "generic": "bromocriptine",
-  "brand": "Parlodel",
+  "brand": "Cycloset",
   "brands": [
-   "Parlodel",
-   "Cycloset"
+   "Cycloset",
+   "Parlodel"
   ],
   "rxcui": "1760",
   "source": "RxNorm"
  },
  {
   "generic": "brompheniramine",
-  "brand": "Bromfed DM",
+  "brand": "M-End PE",
   "brands": [
-   "Bromfed DM",
+   "M-End PE",
    "Respa-BR",
    "BroveX CB",
+   "Bromfed DM",
    "Brovex PBC",
-   "M-End PE",
    "Mar-cof BP"
   ],
   "rxcui": "1767",
@@ -1722,16 +1850,19 @@
  },
  {
   "generic": "budesonide",
-  "brand": "Uceris",
+  "brand": "Pulmicort",
   "brands": [
-   "Uceris",
-   "Entocort",
    "Pulmicort",
    "Rhinocort",
-   "Ortikos",
+   "Symbicort",
+   "Breyna",
+   "Uceris",
    "Breztri",
+   "Eohilia",
+   "Ortikos",
    "Tarpeyo",
-   "Breyna"
+   "Airsupra",
+   "Entocort"
   ],
   "rxcui": "19831",
   "source": "RxNorm"
@@ -1748,16 +1879,18 @@
  },
  {
   "generic": "bupivacaine",
-  "brand": "Marcaine",
+  "brand": "Nocita",
   "brands": [
-   "Marcaine",
-   "Exparel",
-   "Marcaine with Epinephrine",
-   "Sensorcaine",
    "Nocita",
-   "Sensorcaine with Epinephrine",
+   "Exparel",
+   "Posimir",
+   "Marcaine",
    "Xaracoll",
-   "Zynrelef"
+   "Zynrelef",
+   "Vivacaine",
+   "Sensorcaine",
+   "Marcaine with Epinephrine",
+   "Sensorcaine with Epinephrine"
   ],
   "rxcui": "1815",
   "source": "RxNorm"
@@ -1767,26 +1900,28 @@
   "brand": "Zubsolv",
   "brands": [
    "Zubsolv",
-   "Bunavail",
-   "Simbadol",
-   "Belbuca",
+   "Suboxone",
    "Sublocade",
-   "Buprenex",
+   "Belbuca",
+   "Brixadi",
+   "BuTrans",
    "Zorbium",
-   "Brixadi"
+   "Bunavail",
+   "Buprenex",
+   "Simbadol"
   ],
   "rxcui": "1819",
   "source": "RxNorm"
  },
  {
   "generic": "bupropion",
-  "brand": "Forfivo",
+  "brand": "Wellbutrin",
   "brands": [
-   "Forfivo",
-   "Contrave",
-   "Auvelity",
    "Wellbutrin",
-   "Aplenzin"
+   "Forfivo",
+   "Aplenzin",
+   "Auvelity",
+   "Contrave"
   ],
   "rxcui": "42347",
   "source": "RxNorm"
@@ -1803,16 +1938,21 @@
  },
  {
   "generic": "butalbital",
-  "brand": "Capacet",
+  "brand": "Vtol",
   "brands": [
-   "Capacet",
-   "Ascomp",
-   "Vanatol",
-   "Fioricet",
+   "Vtol",
    "Bupap",
    "Esgic",
-   "Fioricet with Codeine",
-   "Marten-Tab"
+   "Repan",
+   "Ascomp",
+   "Tencon",
+   "Capacet",
+   "Vanatol",
+   "Zebutal",
+   "Allzital",
+   "Fioricet",
+   "Marten-Tab",
+   "Fioricet with Codeine"
   ],
   "rxcui": "19860",
   "source": "RxNorm"
@@ -1840,9 +1980,9 @@
   "brand": "Butorphic",
   "brands": [
    "Butorphic",
+   "Vetorphic",
    "Torbugesic",
    "Torphadine",
-   "Vetorphic",
    "Dolorex Solution"
   ],
   "rxcui": "1841",
@@ -1866,10 +2006,10 @@
  },
  {
   "generic": "cabotegravir",
-  "brand": "Vocabria",
+  "brand": "Apretude",
   "brands": [
-   "Vocabria",
-   "Apretude"
+   "Apretude",
+   "Vocabria"
   ],
   "rxcui": "2475077",
   "source": "RxNorm"
@@ -1886,16 +2026,33 @@
  },
  {
   "generic": "caffeine",
-  "brand": "Pamprin Max Formula",
+  "brand": "Excedrin",
   "brands": [
-   "Pamprin Max Formula",
-   "Stanback Headache Powder Reformulated Jan 2011",
+   "Excedrin",
+   "Excedrin Quick Tab",
+   "Excedrin Mild Headache",
+   "Excedrin Tension Headache",
+   "Vtol",
+   "Esgic",
+   "Repan",
+   "Anacin",
+   "Ascomp",
+   "Cafcit",
+   "No Doz",
+   "Saleto",
+   "Trezix",
    "Capacet",
-   "BC Arthritis",
-   "BC Original Formula",
-   "Arthriten Inflammatory Pain",
    "Exaprin",
-   "Backaid IPF"
+   "Sed-Max",
+   "Vanatol",
+   "Vivarin",
+   "Zebutal",
+   "Backprin",
+   "Cafergot",
+   "Fioricet",
+   "Migergot",
+   "Norgesic",
+   "Pep-Back"
   ],
   "rxcui": "1886",
   "source": "RxNorm"
@@ -1911,25 +2068,26 @@
  },
  {
   "generic": "calcipotriene",
-  "brand": "Calcitrene",
+  "brand": "Attero",
   "brands": [
-   "Calcitrene",
-   "Sorilux",
-   "Enstilar",
-   "Dovonex",
-   "Wynzora",
+   "Attero",
    "Pellix",
-   "Taclonex"
+   "Dovonex",
+   "Sorilux",
+   "Wynzora",
+   "Enstilar",
+   "Taclonex",
+   "Calcitrene"
   ],
   "rxcui": "29365",
   "source": "RxNorm"
  },
  {
   "generic": "calcitriol",
-  "brand": "Rocaltrol",
+  "brand": "Vectical",
   "brands": [
-   "Rocaltrol",
-   "Vectical"
+   "Vectical",
+   "Rocaltrol"
   ],
   "rxcui": "1894",
   "source": "RxNorm"
@@ -1943,13 +2101,13 @@
  },
  {
   "generic": "calcium acetate",
-  "brand": "Phoslyra",
+  "brand": "Phoslo",
   "brands": [
-   "Phoslyra",
-   "Domeboro",
-   "Nutrilyte",
-   "Calphron",
    "Phoslo",
+   "Calphron",
+   "Domeboro",
+   "Phoslyra",
+   "Nutrilyte",
    "ProcalAmine 3"
   ],
   "rxcui": "214342",
@@ -1992,14 +2150,14 @@
  },
  {
   "generic": "calcium ascorbate",
-  "brand": "Ferrex 150 Forte Plus",
+  "brand": "Multigen",
   "brands": [
-   "Ferrex 150 Forte Plus",
-   "Niferex-150",
    "Multigen",
+   "Niferex-150",
    "Multigen Plus",
    "Encora AM Tablet",
-   "Encora PM Tablet"
+   "Encora PM Tablet",
+   "Ferrex 150 Forte Plus"
   ],
   "rxcui": "142407",
   "source": "RxNorm"
@@ -2041,16 +2199,33 @@
  },
  {
   "generic": "calcium carbonate",
-  "brand": "Folbecal",
+  "brand": "Tums",
   "brands": [
+   "Tums",
+   "Pepcid Complete",
+   "Tums Dual Action",
+   "Tums with Gas Relief",
+   "Maalox Max Quick Dissolve",
+   "Rolaids Reformulated Aug 2006",
+   "Chooz",
+   "D-Cal",
+   "Alkums",
+   "Monocal",
+   "Oysco D",
+   "Cal Gest",
+   "Caltrate",
+   "Florical",
    "Folbecal",
-   "Folgard OS",
-   "Oysco 500 with D",
    "Lactocal",
-   "Os-Cal 500 with D",
-   "Viactiv Calcium Plus D",
-   "Slow-Mag Reformulated Feb 2012",
-   "Cal-Quick"
+   "Nutralox",
+   "Titralac",
+   "Cal-Quick",
+   "MagneBind",
+   "OsCal 500",
+   "Alka-Mints",
+   "Duo Fusion",
+   "Folgard OS",
+   "Ostercal-D"
   ],
   "rxcui": "1897",
   "source": "RxNorm"
@@ -2071,15 +2246,22 @@
  },
  {
   "generic": "calcium chloride",
-  "brand": "Clinimix E 4.25/10",
+  "brand": "Extraneal",
   "brands": [
-   "Clinimix E 4.25/10",
    "Extraneal",
    "Nutrilyte II",
-   "Dianeal PD-2/4.25",
-   "Dianeal PD-2/2.5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
    "Dianeal PD-2/1.5",
+   "Dianeal PD-2/2.5",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Dianeal PD-2/4.25",
+   "Clinimix E 4.25/10",
+   "BSS Ophthalmic Solution",
    "Dianeal Low Calcium 1.5",
+   "Dianeal Low Calcium 2.5",
    "Dianeal Low Calcium 4.25"
   ],
   "rxcui": "1901",
@@ -2305,11 +2487,11 @@
  },
  {
   "generic": "calcium polycarbophil",
-  "brand": "Equalactin",
+  "brand": "FiberCon",
   "brands": [
-   "Equalactin",
+   "FiberCon",
    "Fiber Tab",
-   "FiberCon"
+   "Equalactin"
   ],
   "rxcui": "20063",
   "source": "RxNorm"
@@ -2386,27 +2568,44 @@
  },
  {
   "generic": "calcium threonate",
-  "brand": "Ferrex 150 Forte Plus",
+  "brand": "Multigen",
   "brands": [
-   "Ferrex 150 Forte Plus",
    "Multigen",
-   "Multigen Plus"
+   "Multigen Plus",
+   "Ferrex 150 Forte Plus"
   ],
   "rxcui": "273888",
   "source": "RxNorm"
  },
  {
   "generic": "camphor",
-  "brand": "Mentholatum",
+  "brand": "Benadryl Children's Anti-Itch",
   "brands": [
-   "Mentholatum",
+   "Benadryl Children's Anti-Itch",
+   "Rhuli",
+   "Aulief",
+   "Dragon",
    "Katinko",
+   "Vaporex",
    "Boroleum",
-   "Anbesol Cold Sore Therapy",
-   "Polar Freeze",
+   "Eucamint",
+   "Arcticzen",
+   "Cartilade",
+   "China-Gel",
+   "Freeze It",
+   "Jointflex",
+   "DermaSarra",
+   "Camphor Ice",
+   "Fast Freeze",
+   "Mentholatum",
    "Ortho-Nesic",
-   "SOMBRA Warm Pain Relieving Gel",
-   "Inflammation OTC Deep Pain Care"
+   "Polar Freeze",
+   "Sore No More",
+   "Wong To Yick",
+   "Ivy-Dry Cream",
+   "Campho-Phenique",
+   "Flexall Ultra Plus",
+   "Inflammation OTC Bruise"
   ],
   "rxcui": "1952",
   "source": "RxNorm"
@@ -2513,16 +2712,33 @@
  },
  {
   "generic": "capsaicin",
-  "brand": "Dendracin Neurodendraxcin",
+  "brand": "Medrox",
   "brands": [
-   "Dendracin Neurodendraxcin",
-   "WellPatch",
    "Medrox",
-   "ZIKS Pain Relief",
    "Arth-RX",
-   "Medi-Derm",
+   "LidoPro",
+   "Qutenza",
+   "Red Hot",
    "Xoten-C",
-   "Arthur Itis"
+   "Zostrix",
+   "Cartilade",
+   "Medi-Derm",
+   "WellPatch",
+   "Capzasin-P",
+   "Arthur Itis",
+   "Atomic Balm",
+   "Capzasin-HP",
+   "Satogesic Hot",
+   "Zostrix Sports",
+   "Castiva Warming",
+   "Sloan's Liniment",
+   "ZIKS Pain Relief",
+   "Equi-Block Original",
+   "Capzasin Quick Relief",
+   "Doloracin with Lidocaine",
+   "Medi-Derm with Lidocaine",
+   "Dendracin Neurodendraxcin",
+   "Arthricare for Women Moisturizing"
   ],
   "rxcui": "1992",
   "source": "RxNorm"
@@ -2540,45 +2756,45 @@
   "brands": [
    "Tegretol",
    "Epitol",
-   "Carbatrol",
-   "Equetro"
+   "Equetro",
+   "Carbatrol"
   ],
   "rxcui": "2002",
   "source": "RxNorm"
  },
  {
   "generic": "carbidopa",
-  "brand": "Stalevo",
+  "brand": "Sinemet",
   "brands": [
-   "Stalevo",
-   "Rytary",
-   "Duopa",
-   "Lodosyn",
+   "Sinemet",
    "Dhivy",
-   "Crexont",
+   "Duopa",
+   "Rytary",
    "Vyalev",
-   "Sinemet"
+   "Crexont",
+   "Lodosyn",
+   "Stalevo"
   ],
   "rxcui": "2019",
   "source": "RxNorm"
  },
  {
   "generic": "carbinoxamine",
-  "brand": "Karbinal",
+  "brand": "Ryvent",
   "brands": [
-   "Karbinal",
    "Ryvent",
-   "Carbzah"
+   "Carbzah",
+   "Karbinal"
   ],
   "rxcui": "20220",
   "source": "RxNorm"
  },
  {
   "generic": "carboplatin",
-  "brand": "Paraplatin",
+  "brand": "Kyxata",
   "brands": [
-   "Paraplatin",
-   "Kyxata"
+   "Kyxata",
+   "Paraplatin"
   ],
   "rxcui": "40048",
   "source": "RxNorm"
@@ -2682,10 +2898,10 @@
  },
  {
   "generic": "cefepime",
-  "brand": "Exblifep",
+  "brand": "Zaynich",
   "brands": [
-   "Exblifep",
-   "Zaynich"
+   "Zaynich",
+   "Exblifep"
   ],
   "rxcui": "20481",
   "source": "RxNorm"
@@ -2767,13 +2983,13 @@
  },
  {
   "generic": "celecoxib",
-  "brand": "Consensi",
+  "brand": "Celebrex",
   "brands": [
-   "Consensi",
    "Celebrex",
    "Elyxyb",
-   "Seglentis",
-   "Vyscoxa"
+   "Vyscoxa",
+   "Consensi",
+   "Seglentis"
   ],
   "rxcui": "140587",
   "source": "RxNorm"
@@ -2789,10 +3005,10 @@
  },
  {
   "generic": "cephalexin",
-  "brand": "Rilexine",
+  "brand": "Keflex",
   "brands": [
-   "Rilexine",
-   "Keflex"
+   "Keflex",
+   "Rilexine"
   ],
   "rxcui": "2231",
   "source": "RxNorm"
@@ -2817,16 +3033,18 @@
  },
  {
   "generic": "cetirizine",
-  "brand": "Wal-Zyr",
+  "brand": "Zyrtec",
   "brands": [
-   "Wal-Zyr",
-   "Wal Zyr 24 Hour Allergy",
-   "Zerviate",
-   "Quzyttir",
-   "Zyrtec-D",
    "Zyrtec",
+   "Zyrtec-D",
+   "Wal-Zyr",
+   "Alleroff",
+   "Quzyttir",
+   "Zerviate",
    "Aller-Tec",
-   "Aller-Tec D"
+   "Wal Zyr D",
+   "Aller-Tec D",
+   "Wal Zyr 24 Hour Allergy"
   ],
   "rxcui": "20610",
   "source": "RxNorm"
@@ -2869,16 +3087,33 @@
  },
  {
   "generic": "chlorhexidine",
-  "brand": "CHG Teat Dip",
+  "brand": "Keto-C",
   "brands": [
-   "CHG Teat Dip",
+   "Keto-C",
+   "Paroex",
    "Avagard",
+   "Exidine",
    "Malaseb",
-   "E-Z Scrub",
+   "Otodine",
+   "Peridex",
    "Supreme",
-   "Bactoshield",
-   "Tru-Blu C-Hex 110",
-   "Tru-Blu Chlor Hex-Wash"
+   "Betasept",
+   "Dyna-Hex",
+   "Nolvasan",
+   "Soluprep",
+   "E-Z Scrub",
+   "Hibiclens",
+   "Ketochlor",
+   "Mal-A-Ket",
+   "Maxiclens",
+   "Nolvadent",
+   "PerioChip",
+   "Periogard",
+   "Suffusion",
+   "ChloraPrep",
+   "Oro Clense",
+   "Prevantics",
+   "Scrub-Stat"
   ],
   "rxcui": "2358",
   "source": "RxNorm"
@@ -2901,16 +3136,20 @@
  },
  {
   "generic": "chlorpheniramine",
-  "brand": "Zodryl DAC",
+  "brand": "Tuxarin",
   "brands": [
-   "Zodryl DAC",
-   "Zodryl AC",
-   "Tuzistra",
-   "Chlor-Trimeton",
    "Tuxarin",
-   "Aller-Chlor",
    "Ventuss",
-   "Clorrelief"
+   "Tuzistra",
+   "Tussionex",
+   "Zodryl AC",
+   "Clorrelief",
+   "Wal-finate",
+   "Zodryl DAC",
+   "Aller-Chlor",
+   "Tannic-12 S",
+   "Poly Hist PD",
+   "Chlor-Trimeton"
   ],
   "rxcui": "2400",
   "source": "RxNorm"
@@ -2924,12 +3163,12 @@
  },
  {
   "generic": "chlorthalidone",
-  "brand": "Edarbyclor",
+  "brand": "Hemiclor",
   "brands": [
-   "Edarbyclor",
-   "Thalitone",
    "Hemiclor",
-   "Tenoretic"
+   "Tenoretic",
+   "Thalitone",
+   "Edarbyclor"
   ],
   "rxcui": "2409",
   "source": "RxNorm"
@@ -2945,16 +3184,33 @@
  },
  {
   "generic": "cholecalciferol",
-  "brand": "Folgard OS",
+  "brand": "Fosamax Plus D",
   "brands": [
-   "Folgard OS",
-   "Multi-Delyn",
-   "Oysco 500 with D",
+   "Fosamax Plus D",
+   "Calcet",
+   "Decara",
    "D3 Dots",
-   "Lactocal",
+   "Oysco D",
    "Thera-D",
+   "D-Vi-Sol",
+   "Delta D3",
+   "Folditam",
+   "Folixate",
+   "Infuvite",
+   "Lactocal",
+   "Cal-Quick",
+   "Folgard OS",
+   "Maximum D3",
+   "Ostercal-D",
+   "Tri-Vi-Sol",
+   "Decalcitrol",
+   "Multi-Delyn",
+   "Poly-Vi-Sol",
+   "Replesta NX",
    "Vitafol-One",
-   "Animi-3 with Vitamin D"
+   "MVC-Fluoride",
+   "ReliOn Glucose",
+   "Vital E- Repro"
   ],
   "rxcui": "2418",
   "source": "RxNorm"
@@ -2980,23 +3236,23 @@
  },
  {
   "generic": "chorionic gonadotropin",
-  "brand": "Chorulon",
+  "brand": "Novarel",
   "brands": [
-   "Chorulon",
-   "Pregnyl",
    "Novarel",
-   "Ovidrel"
+   "Ovidrel",
+   "Pregnyl",
+   "Chorulon"
   ],
   "rxcui": "4986",
   "source": "RxNorm"
  },
  {
   "generic": "ciclesonide",
-  "brand": "Zetonna",
+  "brand": "Alvesco",
   "brands": [
-   "Zetonna",
    "Alvesco",
-   "Omnaris"
+   "Omnaris",
+   "Zetonna"
   ],
   "rxcui": "274964",
   "source": "RxNorm"
@@ -3010,10 +3266,10 @@
  },
  {
   "generic": "cilastatin",
-  "brand": "Recarbrio",
+  "brand": "Primaxin",
   "brands": [
-   "Recarbrio",
-   "Primaxin"
+   "Primaxin",
+   "Recarbrio"
   ],
   "rxcui": "2540",
   "source": "RxNorm"
@@ -3045,15 +3301,15 @@
  },
  {
   "generic": "ciprofloxacin",
-  "brand": "Otovel",
+  "brand": "Cipro",
   "brands": [
-   "Otovel",
    "Cipro",
-   "Ciloxan",
    "Cipro HC",
-   "Ciprodex",
+   "Otovel",
+   "Ciloxan",
    "Proquin",
-   "Cetraxal"
+   "Cetraxal",
+   "Ciprodex"
   ],
   "rxcui": "2551",
   "source": "RxNorm"
@@ -3106,24 +3362,24 @@
   "brand": "Augmentin",
   "brands": [
    "Augmentin",
-   "Clavacillin",
-   "Umbrellin",
-   "Betacilin",
    "Kesium",
-   "Clavamox"
+   "Clavamox",
+   "Betacilin",
+   "Umbrellin",
+   "Clavacillin"
   ],
   "rxcui": "48203",
   "source": "RxNorm"
  },
  {
   "generic": "clemastine",
-  "brand": "Dayhist-1",
+  "brand": "Tavist",
   "brands": [
-   "Dayhist-1",
-   "Wal-Hist 12 HR Relief",
+   "Tavist",
    "Clemasz",
    "Clemsza",
-   "Tavist"
+   "Dayhist-1",
+   "Wal-Hist 12 HR Relief"
   ],
   "rxcui": "2578",
   "source": "RxNorm"
@@ -3139,16 +3395,27 @@
  },
  {
   "generic": "clindamycin",
-  "brand": "ClindaCure",
+  "brand": "Neuac",
   "brands": [
-   "ClindaCure",
-   "Clindacin",
-   "Zydaclin",
    "Neuac",
-   "Onexton",
+   "Ziana",
+   "Acanya",
+   "Veltin",
+   "Cabtreo",
    "Cleocin",
-   "Clinda-Guard",
-   "Xaciato"
+   "Evoclin",
+   "Onexton",
+   "Xaciato",
+   "ANTIROBE",
+   "Clintabs",
+   "Zydaclin",
+   "Cleocin-T",
+   "Clindacin",
+   "Clindagel",
+   "Clindamax",
+   "Clindesse",
+   "ClindaCure",
+   "Clinda-Guard"
   ],
   "rxcui": "2582",
   "source": "RxNorm"
@@ -3165,16 +3432,16 @@
  },
  {
   "generic": "clobetasol",
-  "brand": "Temovate",
+  "brand": "Olux",
   "brands": [
-   "Temovate",
+   "Olux",
+   "Tovet",
+   "Clobex",
    "Clodan",
    "Impoyz",
-   "Tovet",
-   "Impeklo",
    "Byqlovi",
-   "Olux",
-   "Clobex"
+   "Impeklo",
+   "Temovate"
   ],
   "rxcui": "2590",
   "source": "RxNorm"
@@ -3191,11 +3458,11 @@
  },
  {
   "generic": "clomipramine",
-  "brand": "Caniquell",
+  "brand": "Calmera",
   "brands": [
-   "Caniquell",
    "Calmera",
    "Anafranil",
+   "Caniquell",
    "Clomicalm"
   ],
   "rxcui": "2597",
@@ -3212,14 +3479,14 @@
  },
  {
   "generic": "clonidine",
-  "brand": "Kapvay",
+  "brand": "Onyda",
   "brands": [
+   "Onyda",
    "Kapvay",
-   "Nexiclon",
+   "Javadin",
    "Catapres",
    "Duraclon",
-   "Onyda",
-   "Javadin"
+   "Nexiclon"
   ],
   "rxcui": "2599",
   "source": "RxNorm"
@@ -3235,40 +3502,47 @@
  },
  {
   "generic": "clotrimazole",
-  "brand": "Fungicure Solution",
+  "brand": "Clotic",
   "brands": [
-   "Fungicure Solution",
-   "Dermatin",
-   "Aardora Anti-Fungal Maximum Strength",
-   "Alevazol",
-   "Motazol",
+   "Clotic",
    "Otomax",
+   "Motazol",
+   "Alevazol",
+   "Dermatin",
+   "Jock-Eze",
+   "Lotrimin",
+   "Fungistat",
    "Mometamax",
-   "Fungistat"
+   "Mometavet",
+   "Trimazole",
+   "Lasolex Liquid",
+   "Cruex Antifungal",
+   "Fungicure Solution",
+   "Aardora Anti-Fungal Maximum Strength"
   ],
   "rxcui": "2623",
   "source": "RxNorm"
  },
  {
   "generic": "clozapine",
-  "brand": "Versacloz",
+  "brand": "Clozaril",
   "brands": [
-   "Versacloz",
-   "Clozaril"
+   "Clozaril",
+   "Versacloz"
   ],
   "rxcui": "2626",
   "source": "RxNorm"
  },
  {
   "generic": "cobicistat",
-  "brand": "Stribild",
+  "brand": "Evotaz",
   "brands": [
-   "Stribild",
-   "Tybost",
-   "Prezcobix",
    "Evotaz",
+   "Tybost",
    "Genvoya",
-   "Symtuza"
+   "Symtuza",
+   "Stribild",
+   "Prezcobix"
   ],
   "rxcui": "1306284",
   "source": "RxNorm"
@@ -3284,28 +3558,43 @@
  },
  {
   "generic": "codeine",
-  "brand": "Lortuss EX",
+  "brand": "Tylenol with Codeine",
   "brands": [
-   "Lortuss EX",
-   "M-End Max D",
+   "Tylenol with Codeine",
    "Ascomp",
-   "Zodryl DEC",
-   "Zodryl DAC",
+   "Brontex",
+   "Tuxarin",
+   "M-End PE",
+   "Tuzistra",
+   "Biotussin",
+   "BroveX CB",
    "Zodryl AC",
+   "Ambifed CD",
+   "Brovex PBC",
+   "Lortuss EX",
+   "M-Clear WC",
+   "Mar-cof BP",
+   "Mar-cof CG",
+   "Zodryl DAC",
+   "Zodryl DEC",
+   "Cheratussin",
+   "M-End Max D",
    "Ninjacof XG",
-   "Tuzistra"
+   "Ambifed-G CD",
+   "Maxiphen CDX",
+   "Fioricet with Codeine"
   ],
   "rxcui": "2670",
   "source": "RxNorm"
  },
  {
   "generic": "colchicine",
-  "brand": "Mitigare",
+  "brand": "Colcrys",
   "brands": [
-   "Mitigare",
-   "Gloperba",
+   "Colcrys",
    "Lodoco",
-   "Colcrys"
+   "Gloperba",
+   "Mitigare"
   ],
   "rxcui": "2683",
   "source": "RxNorm"
@@ -3408,11 +3697,11 @@
  },
  {
   "generic": "cyclobenzaprine",
-  "brand": "Tonmya",
+  "brand": "Amrix",
   "brands": [
-   "Tonmya",
+   "Amrix",
    "Fexmid",
-   "Amrix"
+   "Tonmya"
   ],
   "rxcui": "21949",
   "source": "RxNorm"
@@ -3439,16 +3728,20 @@
  },
  {
   "generic": "cyclosporine",
-  "brand": "Optimmune",
+  "brand": "Neoral",
   "brands": [
-   "Optimmune",
-   "Sandimmune",
    "Neoral",
    "Cequa",
-   "Cyclavance",
-   "Verkazia",
+   "Vevye",
+   "Atopica",
    "Gengraf",
-   "Vevye"
+   "Modulis",
+   "Restasis",
+   "Verkazia",
+   "Optimmune",
+   "Sporimune",
+   "Cyclavance",
+   "Sandimmune"
   ],
   "rxcui": "3008",
   "source": "RxNorm"
@@ -3462,11 +3755,11 @@
  },
  {
   "generic": "cysteamine",
-  "brand": "Cystaran",
+  "brand": "Cystagon",
   "brands": [
+   "Cystagon",
    "Cystaran",
    "Procysbi",
-   "Cystagon",
    "Cystadrops"
   ],
   "rxcui": "3022",
@@ -3559,8 +3852,8 @@
   "brand": "Revonto",
   "brands": [
    "Revonto",
-   "Ryanodex",
-   "Dantrium"
+   "Dantrium",
+   "Ryanodex"
   ],
   "rxcui": "3105",
   "source": "RxNorm"
@@ -3570,8 +3863,8 @@
   "brand": "Farxiga",
   "brands": [
    "Farxiga",
-   "Xigduo",
-   "Qtern"
+   "Qtern",
+   "Xigduo"
   ],
   "rxcui": "1488564",
   "source": "RxNorm"
@@ -3587,10 +3880,10 @@
  },
  {
   "generic": "daptomycin",
-  "brand": "Dapzura",
+  "brand": "Cubicin",
   "brands": [
-   "Dapzura",
-   "Cubicin"
+   "Cubicin",
+   "Dapzura"
   ],
   "rxcui": "22299",
   "source": "RxNorm"
@@ -3643,11 +3936,11 @@
  },
  {
   "generic": "darunavir",
-  "brand": "Prezcobix",
+  "brand": "Symtuza",
   "brands": [
-   "Prezcobix",
    "Symtuza",
-   "Prezista"
+   "Prezista",
+   "Prezcobix"
   ],
   "rxcui": "460132",
   "source": "RxNorm"
@@ -3683,10 +3976,10 @@
  },
  {
   "generic": "deferasirox",
-  "brand": "Jadenu",
+  "brand": "Exjade",
   "brands": [
-   "Jadenu",
-   "Exjade"
+   "Exjade",
+   "Jadenu"
   ],
   "rxcui": "614373",
   "source": "RxNorm"
@@ -3727,16 +4020,28 @@
  },
  {
   "generic": "denosumab",
-  "brand": "Xgeva",
+  "brand": "Prolia",
   "brands": [
-   "Xgeva",
+   "Prolia",
+   "Enoby",
    "Wyost",
-   "Jubbonti",
-   "Conexxence",
+   "Xbryk",
+   "Xgeva",
+   "Bosaya",
+   "Aukelso",
+   "Bildyos",
+   "Jubereq",
+   "Ospomyv",
+   "Osvyrti",
+   "Oziltus",
+   "Xtrenbo",
    "Bomyntra",
-   "Stoboclo",
+   "Boncresa",
+   "Jubbonti",
    "Osenvelt",
-   "Bilprevda"
+   "Stoboclo",
+   "Bilprevda",
+   "Conexxence"
   ],
   "rxcui": "993449",
   "source": "RxNorm"
@@ -3762,12 +4067,13 @@
  },
  {
   "generic": "desmopressin",
-  "brand": "Noctiva",
+  "brand": "DDAVP",
   "brands": [
-   "Noctiva",
    "DDAVP",
-   "Nocdurna",
-   "Desmoda"
+   "Desmoda",
+   "Noctiva",
+   "Stimate",
+   "Nocdurna"
   ],
   "rxcui": "3251",
   "source": "RxNorm"
@@ -3781,13 +4087,13 @@
  },
  {
   "generic": "desonide",
-  "brand": "Desowen",
+  "brand": "Desrx",
   "brands": [
-   "Desowen",
    "Desrx",
-   "Tridesilon",
    "Lokara",
-   "Verdeso"
+   "Desowen",
+   "Verdeso",
+   "Tridesilon"
   ],
   "rxcui": "3254",
   "source": "RxNorm"
@@ -3803,10 +4109,10 @@
  },
  {
   "generic": "desvenlafaxine",
-  "brand": "Khedezla",
+  "brand": "Pristiq",
   "brands": [
-   "Khedezla",
-   "Pristiq"
+   "Pristiq",
+   "Khedezla"
   ],
   "rxcui": "734064",
   "source": "RxNorm"
@@ -3831,16 +4137,22 @@
  },
  {
   "generic": "dexamethasone",
-  "brand": "Tresaderm",
+  "brand": "Dexium",
   "brands": [
-   "Tresaderm",
    "Dexium",
-   "Maxitrol",
-   "Dexasone",
-   "Maxidex",
+   "Dexlyt",
    "Dexycu",
+   "Hemady",
+   "Maxidex",
+   "Ozurdex",
+   "Ciprodex",
+   "Decadron",
+   "Dexasone",
    "Dextenza",
-   "Poly-Dex"
+   "Maxitrol",
+   "Poly-Dex",
+   "Tobradex",
+   "Tresaderm"
   ],
   "rxcui": "3264",
   "source": "RxNorm"
@@ -3859,53 +4171,62 @@
   "brand": "Sileo",
   "brands": [
    "Sileo",
-   "Dexmedesed",
-   "Sedexodine",
-   "Dexased",
    "Igalmi",
+   "Dexased",
    "Precedex",
    "Dexmedvet",
-   "Dexdomitor"
+   "Dexdomitor",
+   "Dexmedesed",
+   "Sedexodine"
   ],
   "rxcui": "48937",
   "source": "RxNorm"
  },
  {
   "generic": "dexmethylphenidate",
-  "brand": "Azstarys",
+  "brand": "Focalin",
   "brands": [
-   "Azstarys",
-   "Focalin"
+   "Focalin",
+   "Azstarys"
   ],
   "rxcui": "352372",
   "source": "RxNorm"
  },
  {
   "generic": "dextroamphetamine",
-  "brand": "Zenzedi",
+  "brand": "Mydayis",
   "brands": [
-   "Zenzedi",
-   "Dexedrine",
    "Mydayis",
+   "Zenzedi",
+   "Adderall",
    "Xelstrym",
-   "ProCentra",
-   "Adderall"
+   "Dexedrine",
+   "ProCentra"
   ],
   "rxcui": "3288",
   "source": "RxNorm"
  },
  {
   "generic": "dextromethorphan",
-  "brand": "Cepacol Sore Throat Plus Cough",
+  "brand": "Delsym",
   "brands": [
-   "Cepacol Sore Throat Plus Cough",
-   "Nuedexta",
-   "Chloraseptic Sore Throat + Cough",
-   "Mielim Y Mas",
+   "Delsym",
    "DayQuil Cough",
+   "Auvelity",
+   "Nuedexta",
+   "Babee Cof",
+   "Bromfed DM",
+   "Creomulsion",
+   "Zicam Cough",
+   "Mielim Y Mas",
+   "Robafen Cough",
+   "Elixsure Cough",
    "Scot-tussin Diabetic CF",
    "Buckley's Cough Suppressant",
-   "Cepastat Sore Throat & Cough"
+   "Cepastat Sore Throat & Cough",
+   "Scot-Tussin DM Cough Chasers",
+   "Cepacol Sore Throat Plus Cough",
+   "Chloraseptic Sore Throat + Cough"
   ],
   "rxcui": "3289",
   "source": "RxNorm"
@@ -3924,25 +4245,25 @@
  },
  {
   "generic": "diazoxide",
-  "brand": "Proglycem",
+  "brand": "Vykat",
   "brands": [
-   "Proglycem",
-   "Vykat"
+   "Vykat",
+   "Proglycem"
   ],
   "rxcui": "3327",
   "source": "RxNorm"
  },
  {
   "generic": "dibasic potassium phosphate",
-  "brand": "Clinimix E 4.25/10",
+  "brand": "Isolyte P",
   "brands": [
-   "Clinimix E 4.25/10",
-   "Clinimix E 4.25/5",
-   "Clinimix E 2.75/5",
+   "Isolyte P",
    "Clinimix E 5/15",
    "Clinimix E 5/20",
    "Clinimix E 5/25",
-   "Isolyte P"
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "55018",
   "source": "RxNorm"
@@ -3959,16 +4280,22 @@
  },
  {
   "generic": "diclofenac",
-  "brand": "Surpass Anti-Inflammatory",
+  "brand": "Voltaren",
   "brands": [
-   "Surpass Anti-Inflammatory",
-   "Flector",
-   "Zorvolex",
    "Voltaren",
-   "Cataflam",
-   "Licart",
    "Aleve Arthritis Pain",
-   "Lofena"
+   "Xiclo",
+   "Cambia",
+   "Licart",
+   "Lofena",
+   "Zipsor",
+   "Flector",
+   "Trifena",
+   "Cataflam",
+   "Pennsaid",
+   "Zorvolex",
+   "Arthrotec",
+   "Surpass Anti-Inflammatory"
   ],
   "rxcui": "3355",
   "source": "RxNorm"
@@ -4025,10 +4352,10 @@
  },
  {
   "generic": "digoxin",
-  "brand": "Digox",
+  "brand": "Lanoxin",
   "brands": [
-   "Digox",
    "Lanoxin",
+   "Digox",
    "Digitek"
   ],
   "rxcui": "3407",
@@ -4045,28 +4372,28 @@
  },
  {
   "generic": "dihydroergotamine",
-  "brand": "Trudhesa",
+  "brand": "Atzumi",
   "brands": [
-   "Trudhesa",
    "Atzumi",
    "Brekiya",
-   "Migranal"
+   "Migranal",
+   "Trudhesa"
   ],
   "rxcui": "3418",
   "source": "RxNorm"
  },
  {
   "generic": "diltiazem",
-  "brand": "Matzim",
+  "brand": "Cardizem",
   "brands": [
-   "Matzim",
-   "Tiadylt",
    "Cardizem",
-   "Tiazac",
-   "Taztia",
-   "Cartia",
    "Dilt",
-   "Diltzac"
+   "Cartia",
+   "Matzim",
+   "Taztia",
+   "Tiazac",
+   "Diltzac",
+   "Tiadylt"
   ],
   "rxcui": "3443",
   "source": "RxNorm"
@@ -4247,16 +4574,33 @@
  },
  {
   "generic": "diphenhydramine",
-  "brand": "Percogesic Reformulated Jan 2011",
+  "brand": "Zzzquil",
   "brands": [
-   "Percogesic Reformulated Jan 2011",
-   "Wal-Dryl",
+   "Zzzquil",
+   "Benadryl",
+   "Aleve PM",
+   "Motrin PM",
+   "Tylenol PM",
+   "Excedrin PM",
+   "Unisom Sleep",
+   "Benadryl Itch Stopping",
+   "Unisom with Pain Relief",
+   "Excedrin PM Triple Action",
+   "Benadryl-D Allergy and Sinus",
+   "Benadryl Allergy Plus Congestion",
+   "Tact",
+   "Nytol",
    "Compoz",
-   "Wal-Dryl Childrens",
-   "Wal-Dryl-D",
-   "Wal-Dryl Allergy",
-   "Wal-Som Maximum Strength",
-   "Nytol"
+   "Dormin",
+   "Calagel",
+   "Sominex",
+   "Twilite",
+   "Wal-Som",
+   "Z-Sleep",
+   "Banophen",
+   "Doans PM",
+   "Genahist",
+   "Siladryl"
   ],
   "rxcui": "3498",
   "source": "RxNorm"
@@ -4306,10 +4650,10 @@
  },
  {
   "generic": "docetaxel",
-  "brand": "Docivyx",
+  "brand": "Beizray",
   "brands": [
-   "Docivyx",
-   "Beizray"
+   "Beizray",
+   "Docivyx"
   ],
   "rxcui": "72962",
   "source": "RxNorm"
@@ -4323,16 +4667,28 @@
  },
  {
   "generic": "docusate",
-  "brand": "Ferraplus",
+  "brand": "Colace",
   "brands": [
-   "Ferraplus",
+   "Colace",
+   "SENOKOT-S",
+   "Colace w/Sennosides",
+   "DOK",
    "Hemax",
-   "Pedia-Lax Liquid",
-   "Promolaxin",
+   "Docusol",
    "Enemeez",
+   "Laxacin",
    "Pet-ema",
+   "Prolaxa",
    "Doculase",
-   "Colace w/Sennosides"
+   "Ferraplus",
+   "Senexon S",
+   "Promolaxin",
+   "SenoSol-SS",
+   "Ferralet 90",
+   "Enemeez Plus",
+   "Pedia-Lax Liquid",
+   "Surfak Stool Softener",
+   "Phillips Stool Softener"
   ],
   "rxcui": "82003",
   "source": "RxNorm"
@@ -4348,12 +4704,12 @@
  },
  {
   "generic": "dolutegravir",
-  "brand": "Tivicay",
+  "brand": "Dovato",
   "brands": [
-   "Tivicay",
-   "Triumeq",
+   "Dovato",
    "Juluca",
-   "Dovato"
+   "Tivicay",
+   "Triumeq"
   ],
   "rxcui": "1433868",
   "source": "RxNorm"
@@ -4363,19 +4719,19 @@
   "brand": "Aricept",
   "brands": [
    "Aricept",
-   "Namzaric",
-   "Adlarity"
+   "Adlarity",
+   "Namzaric"
   ],
   "rxcui": "135447",
   "source": "RxNorm"
  },
  {
   "generic": "doravirine",
-  "brand": "Pifeltro",
+  "brand": "Idvynso",
   "brands": [
+   "Idvynso",
    "Pifeltro",
-   "Delstrigo",
-   "Idvynso"
+   "Delstrigo"
   ],
   "rxcui": "2055755",
   "source": "RxNorm"
@@ -4409,11 +4765,11 @@
  },
  {
   "generic": "doxepin",
-  "brand": "Prudoxin",
+  "brand": "Silenor",
   "brands": [
-   "Prudoxin",
    "Silenor",
-   "Zonalon"
+   "Zonalon",
+   "Prudoxin"
   ],
   "rxcui": "3638",
   "source": "RxNorm"
@@ -4429,52 +4785,58 @@
  },
  {
   "generic": "doxorubicin",
-  "brand": "Caelyx",
+  "brand": "Doxil",
   "brands": [
+   "Doxil",
    "Caelyx",
-   "Adriamycin",
-   "Doxil"
+   "Adriamycin"
   ],
   "rxcui": "3639",
   "source": "RxNorm"
  },
  {
   "generic": "doxycycline",
-  "brand": "Morgidox",
+  "brand": "Doryx",
   "brands": [
+   "Doryx",
+   "Vibramycin",
+   "Doxy",
+   "Adoxa",
+   "Okebo",
+   "Alodox",
+   "Oracea",
+   "Avidoxy",
+   "Monodox",
    "Morgidox",
+   "Targadox",
    "Acticlate",
    "Mondoxyne",
-   "Targadox",
-   "Vibramycin",
-   "Okebo",
-   "Doryx",
-   "Monodox"
+   "Periostat"
   ],
   "rxcui": "3640",
   "source": "RxNorm"
  },
  {
   "generic": "doxylamine",
-  "brand": "Diclegis",
+  "brand": "Unisom",
   "brands": [
-   "Diclegis",
-   "Wal-Som (doxylamine)",
-   "Bonjesta",
    "Unisom",
-   "Nocto",
    "Zzzquil Ultra",
-   "Aldex AN"
+   "Nocto",
+   "Aldex AN",
+   "Bonjesta",
+   "Diclegis",
+   "Wal-Som (doxylamine)"
   ],
   "rxcui": "3642",
   "source": "RxNorm"
  },
  {
   "generic": "dronabinol",
-  "brand": "Syndros",
+  "brand": "Marinol",
   "brands": [
-   "Syndros",
-   "Marinol"
+   "Marinol",
+   "Syndros"
   ],
   "rxcui": "10402",
   "source": "RxNorm"
@@ -4515,11 +4877,11 @@
  },
  {
   "generic": "duloxetine",
-  "brand": "Irenka",
+  "brand": "Cymbalta",
   "brands": [
+   "Cymbalta",
    "Irenka",
-   "Drizalma",
-   "Cymbalta"
+   "Drizalma"
   ],
   "rxcui": "72625",
   "source": "RxNorm"
@@ -4717,27 +5079,29 @@
  },
  {
   "generic": "emtricitabine",
-  "brand": "Complera",
+  "brand": "Atripla",
   "brands": [
-   "Complera",
-   "Stribild",
+   "Atripla",
+   "Descovy",
+   "Emtriva",
    "Genvoya",
    "Odefsey",
-   "Descovy",
-   "Biktarvy",
    "Symtuza",
-   "Emtriva"
+   "Truvada",
+   "Biktarvy",
+   "Complera",
+   "Stribild"
   ],
   "rxcui": "276237",
   "source": "RxNorm"
  },
  {
   "generic": "enalapril",
-  "brand": "Epaned",
+  "brand": "Vasotec",
   "brands": [
+   "Vasotec",
    "Epaned",
-   "Vaseretic",
-   "Vasotec"
+   "Vaseretic"
   ],
   "rxcui": "3827",
   "source": "RxNorm"
@@ -4787,10 +5151,10 @@
  },
  {
   "generic": "entacapone",
-  "brand": "Stalevo",
+  "brand": "Comtan",
   "brands": [
-   "Stalevo",
-   "Comtan"
+   "Comtan",
+   "Stalevo"
   ],
   "rxcui": "60307",
   "source": "RxNorm"
@@ -4831,16 +5195,26 @@
  },
  {
   "generic": "epinephrine",
-  "brand": "Auvi-Q",
+  "brand": "Neffy",
   "brands": [
+   "Neffy",
    "Auvi-Q",
-   "Marcaine with Epinephrine",
+   "Epipen",
    "Orabloc",
-   "Adrenalin",
-   "Ultacan",
    "Symjepi",
+   "Ultacan",
+   "Flavalta",
+   "Zorcaine",
+   "Adrenalin",
+   "Lignospan",
+   "Vivacaine",
+   "Articadent",
+   "Septocaine",
    "Citanest Forte",
-   "Primatene Mist Inhaler"
+   "Primatene Mist Inhaler",
+   "Marcaine with Epinephrine",
+   "Xylocaine with Epinephrine",
+   "Sensorcaine with Epinephrine"
   ],
   "rxcui": "3992",
   "source": "RxNorm"
@@ -4859,18 +5233,18 @@
   "brand": "Epogen",
   "brands": [
    "Epogen",
-   "Retacrit",
-   "Procrit"
+   "Procrit",
+   "Retacrit"
   ],
   "rxcui": "105694",
   "source": "RxNorm"
  },
  {
   "generic": "epoprostenol",
-  "brand": "Veletri",
+  "brand": "Flolan",
   "brands": [
-   "Veletri",
-   "Flolan"
+   "Flolan",
+   "Veletri"
   ],
   "rxcui": "8814",
   "source": "RxNorm"
@@ -4895,20 +5269,20 @@
  },
  {
   "generic": "ergocalciferol",
-  "brand": "Calcidol",
+  "brand": "Drisdol",
   "brands": [
-   "Calcidol",
-   "Drisdol"
+   "Drisdol",
+   "Calcidol"
   ],
   "rxcui": "4018",
   "source": "RxNorm"
  },
  {
   "generic": "ergotamine",
-  "brand": "Cafergot",
+  "brand": "Ergomar",
   "brands": [
-   "Cafergot",
    "Ergomar",
+   "Cafergot",
    "Migergot"
   ],
   "rxcui": "4025",
@@ -4943,27 +5317,32 @@
  },
  {
   "generic": "ertugliflozin",
-  "brand": "Segluromet",
+  "brand": "Steglatro",
   "brands": [
-   "Segluromet",
    "Steglatro",
-   "Steglujan"
+   "Steglujan",
+   "Segluromet"
   ],
   "rxcui": "1992672",
   "source": "RxNorm"
  },
  {
   "generic": "erythromycin",
-  "brand": "Benzamycin",
+  "brand": "Ery",
   "brands": [
-   "Benzamycin",
-   "Ery-Tab",
+   "Ery",
+   "Emgel",
+   "E.E.S.",
    "Erygel",
    "EryPed",
-   "Emgel",
-   "Theramycin",
+   "Ery-Tab",
+   "Maracyn",
    "Eyemycin",
-   "Emcin Clear"
+   "Benzamycin",
+   "Erythrocin",
+   "Theramycin",
+   "Emcin Clear",
+   "Erythrocin Stearate"
   ],
   "rxcui": "4053",
   "source": "RxNorm"
@@ -4997,10 +5376,10 @@
  },
  {
   "generic": "esomeprazole",
-  "brand": "Vimovo",
+  "brand": "Nexium",
   "brands": [
-   "Vimovo",
-   "Nexium"
+   "Nexium",
+   "Vimovo"
   ],
   "rxcui": "283742",
   "source": "RxNorm"
@@ -5014,16 +5393,33 @@
  },
  {
   "generic": "estradiol",
-  "brand": "Minivelle",
+  "brand": "Estrace",
   "brands": [
-   "Minivelle",
-   "Estring",
+   "Estrace",
    "Vagifem",
-   "Synovex",
-   "Synovex C",
+   "Alora",
+   "Dotti",
+   "Bijuva",
+   "Climara",
+   "Divigel",
+   "Estring",
+   "Evamist",
+   "Femring",
+   "Imvexxy",
+   "Lyllana",
    "Revalor",
+   "Synovex",
+   "Vivelle",
    "Yuvafem",
-   "Estrace"
+   "Elestrin",
+   "Estrogel",
+   "Menostar",
+   "Compudose",
+   "Minivelle",
+   "Myfembree",
+   "Synovex C",
+   "Synovex H",
+   "Synovex S"
   ],
   "rxcui": "4083",
   "source": "RxNorm"
@@ -5085,16 +5481,20 @@
  },
  {
   "generic": "ethinyl estradiol",
-  "brand": "Jinteli",
+  "brand": "Femhrt",
   "brands": [
-   "Jinteli",
-   "Jevantique",
-   "Xulane",
-   "Fyavolv",
-   "Annovera",
-   "EluRyng",
+   "Femhrt",
    "Twirla",
-   "Zafemy"
+   "Xulane",
+   "Zafemy",
+   "EluRyng",
+   "Fyavolv",
+   "Jinteli",
+   "Annovera",
+   "Haloette",
+   "NuvaRing",
+   "Enilloring",
+   "Jevantique"
   ],
   "rxcui": "4124",
   "source": "RxNorm"
@@ -5119,24 +5519,24 @@
  },
  {
   "generic": "etonogestrel",
-  "brand": "Nexplanon",
+  "brand": "EluRyng",
   "brands": [
-   "Nexplanon",
    "EluRyng",
    "Haloette",
-   "Enilloring",
-   "NuvaRing"
+   "NuvaRing",
+   "Nexplanon",
+   "Enilloring"
   ],
   "rxcui": "14584",
   "source": "RxNorm"
  },
  {
   "generic": "etoposide",
-  "brand": "Vepesid",
+  "brand": "Avopef",
   "brands": [
-   "Vepesid",
-   "Toposar",
    "Avopef",
+   "Toposar",
+   "Vepesid",
    "Etopophos"
   ],
   "rxcui": "4179",
@@ -5166,9 +5566,9 @@
   "brand": "Torpenz",
   "brands": [
    "Torpenz",
-   "Yulithira",
    "Afinitor",
-   "Zortress"
+   "Zortress",
+   "Yulithira"
   ],
   "rxcui": "141704",
   "source": "RxNorm"
@@ -5193,22 +5593,22 @@
  },
  {
   "generic": "exenatide",
-  "brand": "Bydureon",
+  "brand": "Byetta",
   "brands": [
-   "Bydureon",
-   "Byetta"
+   "Byetta",
+   "Bydureon"
   ],
   "rxcui": "60548",
   "source": "RxNorm"
  },
  {
   "generic": "ezetimibe",
-  "brand": "Nexlizet",
+  "brand": "Zetia",
   "brands": [
-   "Nexlizet",
-   "Roszet",
    "Zetia",
-   "Vytorin"
+   "Vytorin",
+   "Roszet",
+   "Nexlizet"
   ],
   "rxcui": "341248",
   "source": "RxNorm"
@@ -5222,15 +5622,15 @@
  },
  {
   "generic": "famotidine",
-  "brand": "Calmicid",
+  "brand": "Pepcid",
   "brands": [
-   "Calmicid",
-   "Duexis",
-   "Duo Fusion",
    "Pepcid",
-   "Zantac Reformulated Aug 2022",
    "Pepcid Complete",
-   "Tums Dual Action"
+   "Tums Dual Action",
+   "Zantac Reformulated Aug 2022",
+   "Duexis",
+   "Calmicid",
+   "Duo Fusion"
   ],
   "rxcui": "4278",
   "source": "RxNorm"
@@ -5280,36 +5680,36 @@
  },
  {
   "generic": "fenofibrate",
-  "brand": "Tricor",
+  "brand": "Antara",
   "brands": [
-   "Tricor",
    "Antara",
+   "Tricor",
    "Lipofen",
-   "Fenoglide",
+   "Fibricor",
    "Trilipix",
-   "Fibricor"
+   "Fenoglide"
   ],
   "rxcui": "8703",
   "source": "RxNorm"
  },
  {
   "generic": "fenoprofen",
-  "brand": "Fenopron",
+  "brand": "Nalfon",
   "brands": [
-   "Fenopron",
-   "Nalfon"
+   "Nalfon",
+   "Fenopron"
   ],
   "rxcui": "4331",
   "source": "RxNorm"
  },
  {
   "generic": "fentanyl",
-  "brand": "Abstral",
+  "brand": "Actiq",
   "brands": [
-   "Abstral",
-   "Subsys",
-   "Ionsys",
    "Actiq",
+   "Ionsys",
+   "Subsys",
+   "Abstral",
    "Fentora"
   ],
   "rxcui": "4337",
@@ -5338,12 +5738,12 @@
  },
  {
   "generic": "ferrous asparto glycinate",
-  "brand": "Ferrex 150 Forte Plus",
+  "brand": "Multigen",
   "brands": [
-   "Ferrex 150 Forte Plus",
-   "Niferex-150",
    "Multigen",
-   "Multigen Plus"
+   "Niferex-150",
+   "Multigen Plus",
+   "Ferrex 150 Forte Plus"
   ],
   "rxcui": "644718",
   "source": "RxNorm"
@@ -5408,26 +5808,33 @@
  },
  {
   "generic": "ferrous fumarate",
-  "brand": "Ferocon",
+  "brand": "TANDEM",
   "brands": [
+   "TANDEM",
    "Ferocon",
-   "Folivane-F",
-   "Hemocyte Plus",
+   "Hemocyte",
    "Lactocal",
-   "Concept OB",
-   "Tandem Plus",
+   "Ferrocite",
    "Hematogen",
-   "Hemocyte-F"
+   "Integra F",
+   "Concept OB",
+   "Folivane-F",
+   "Hemocyte-F",
+   "Tandem Plus",
+   "Ferrimin 150",
+   "Hemocyte Plus",
+   "Multigen Plus",
+   "Dialyvite 800 with Iron"
   ],
   "rxcui": "24941",
   "source": "RxNorm"
  },
  {
   "generic": "ferrous gluconate",
-  "brand": "Fergon",
+  "brand": "Ferate",
   "brands": [
-   "Fergon",
-   "Ferate"
+   "Ferate",
+   "Fergon"
   ],
   "rxcui": "24942",
   "source": "RxNorm"
@@ -5490,12 +5897,12 @@
  },
  {
   "generic": "ferrous sulfate",
-  "brand": "Slow-Fe",
+  "brand": "Feosol",
   "brands": [
-   "Slow-Fe",
    "Feosol",
-   "Fer-in-Sol",
-   "Folitab"
+   "Folitab",
+   "Slow-Fe",
+   "Fer-in-Sol"
   ],
   "rxcui": "24947",
   "source": "RxNorm"
@@ -5518,12 +5925,12 @@
  },
  {
   "generic": "fexofenadine",
-  "brand": "Wal-Fex",
+  "brand": "Allegra",
   "brands": [
-   "Wal-Fex",
-   "Wal-Fex D",
+   "Allegra",
    "Allegra-D",
-   "Allegra"
+   "Wal-Fex",
+   "Wal-Fex D"
   ],
   "rxcui": "87636",
   "source": "RxNorm"
@@ -5548,14 +5955,15 @@
  },
  {
   "generic": "filgrastim",
-  "brand": "Granix",
+  "brand": "Filkri",
   "brands": [
+   "Filkri",
    "Granix",
+   "Nypozi",
    "Zarxio",
-   "Nivestym",
-   "Neupogen",
    "Releuko",
-   "Nypozi"
+   "Neupogen",
+   "Nivestym"
   ],
   "rxcui": "68442",
   "source": "RxNorm"
@@ -5645,16 +6053,20 @@
  },
  {
   "generic": "fluocinolone",
-  "brand": "Synotic",
+  "brand": "Flac",
   "brands": [
-   "Synotic",
-   "Neo-Synalar",
-   "Iluvien",
-   "Otovel",
    "Flac",
+   "Capex",
    "Yutiq",
+   "Otovel",
+   "Iluvien",
    "Synalar",
-   "Capex"
+   "Synotic",
+   "Dermotic",
+   "Retisert",
+   "Tri-Luma",
+   "Neo-Synalar",
+   "Derma-Smoothe FS"
   ],
   "rxcui": "25126",
   "source": "RxNorm"
@@ -5670,10 +6082,10 @@
  },
  {
   "generic": "fluorometholone",
-  "brand": "Flarex",
+  "brand": "FML",
   "brands": [
-   "Flarex",
    "FML",
+   "Flarex",
    "FML Forte Liquifilm"
   ],
   "rxcui": "4491",
@@ -5681,24 +6093,24 @@
  },
  {
   "generic": "fluorouracil",
-  "brand": "Tolak",
+  "brand": "Carac",
   "brands": [
+   "Carac",
    "Tolak",
-   "Adrucil",
-   "Fluoroplex",
    "Efudex",
+   "Adrucil",
    "Favlyxa",
-   "Carac"
+   "Fluoroplex"
   ],
   "rxcui": "4492",
   "source": "RxNorm"
  },
  {
   "generic": "fluoxetine",
-  "brand": "Symbyax",
+  "brand": "Prozac",
   "brands": [
-   "Symbyax",
    "Prozac",
+   "Symbyax",
    "RECONCILE"
   ],
   "rxcui": "4493",
@@ -5725,24 +6137,34 @@
   "brand": "Ansaid",
   "brands": [
    "Ansaid",
+   "Ocufen",
    "Lurbipr",
-   "Lurbiro",
-   "Ocufen"
+   "Lurbiro"
   ],
   "rxcui": "4502",
   "source": "RxNorm"
  },
  {
   "generic": "fluticasone",
-  "brand": "Cutivate",
+  "brand": "Breo",
   "brands": [
-   "Cutivate",
-   "Dymista",
    "Breo",
-   "Arnuity",
-   "Clarispray",
-   "Aller-Flo",
+   "Advair",
+   "Flonase",
+   "Flovent",
+   "Trelegy",
    "Flonase Sensimist",
+   "Beser",
+   "AirDuo",
+   "Wixela",
+   "Xhance",
+   "Arnuity",
+   "Dymista",
+   "Armonair",
+   "Cutivate",
+   "Aller-Flo",
+   "Fluticare",
+   "Clarispray",
    "Nasopro 24"
   ],
   "rxcui": "41126",
@@ -5773,16 +6195,33 @@
  },
  {
   "generic": "folic acid",
-  "brand": "Ferocon",
+  "brand": "Hemax",
   "brands": [
+   "Hemax",
+   "Folbee",
+   "Folbic",
    "Ferocon",
-   "Ferraplus",
-   "Ferrex 150 Forte Plus",
+   "Folacin",
+   "Folgard",
+   "Folitab",
+   "Foltabs",
+   "NicAzel",
+   "Quiofic",
    "Folbecal",
+   "Folditam",
+   "Foltrate",
+   "Infuvite",
+   "Lactocal",
+   "Nicomide",
+   "Niva-Fol",
+   "Ferraplus",
+   "Hematogen",
+   "Integra F",
+   "Rena-Vite",
+   "Concept OB",
    "Folgard OS",
    "Folivane-F",
-   "Hemocyte Plus",
-   "Hemax"
+   "Hemocyte-F"
   ],
   "rxcui": "4511",
   "source": "RxNorm"
@@ -5801,11 +6240,12 @@
   "brand": "Dulera",
   "brands": [
    "Dulera",
-   "Bevespi",
-   "Duaklir",
-   "Breztri",
-   "Breyna",
    "Symbicort",
+   "Breyna",
+   "Bevespi",
+   "Breztri",
+   "Duaklir",
+   "Trimbow",
    "Perforomist"
   ],
   "rxcui": "25255",
@@ -5879,20 +6319,20 @@
  },
  {
   "generic": "fulvestrant",
-  "brand": "Faslodex",
+  "brand": "Cligavyx",
   "brands": [
-   "Faslodex",
-   "Cligavyx"
+   "Cligavyx",
+   "Faslodex"
   ],
   "rxcui": "282357",
   "source": "RxNorm"
  },
  {
   "generic": "furosemide",
-  "brand": "Disal",
+  "brand": "Lasix",
   "brands": [
-   "Disal",
    "Lasix",
+   "Disal",
    "Furoscix",
    "Salix - substance"
   ],
@@ -5913,10 +6353,10 @@
   "brand": "Gralise",
   "brands": [
    "Gralise",
-   "Horizant",
    "Neurontin",
-   "Relgaabi",
-   "Gabarone"
+   "Gabarone",
+   "Horizant",
+   "Relgaabi"
   ],
   "rxcui": "25480",
   "source": "RxNorm"
@@ -5964,10 +6404,10 @@
  },
  {
   "generic": "gemcitabine",
-  "brand": "Infugem",
+  "brand": "Avgemsi",
   "brands": [
-   "Infugem",
    "Avgemsi",
+   "Infugem",
    "Inlexzo"
   ],
   "rxcui": "12574",
@@ -5984,16 +6424,18 @@
  },
  {
   "generic": "gentamicin",
-  "brand": "Gentacalm",
+  "brand": "Genone",
   "brands": [
-   "Gentacalm",
    "Genone",
-   "Motazol",
-   "Otomax",
-   "Mometamax",
-   "Garasol",
    "Gentak",
-   "Mometavet"
+   "Otomax",
+   "Garasol",
+   "Motazol",
+   "GentaVed",
+   "Gentacalm",
+   "Mometamax",
+   "Mometavet",
+   "Mometamax Single"
   ],
   "rxcui": "1596450",
   "source": "RxNorm"
@@ -6027,10 +6469,10 @@
  },
  {
   "generic": "glatiramer",
-  "brand": "Copaxone",
+  "brand": "Glatopa",
   "brands": [
-   "Copaxone",
-   "Glatopa"
+   "Glatopa",
+   "Copaxone"
   ],
   "rxcui": "214582",
   "source": "RxNorm"
@@ -6065,11 +6507,11 @@
  },
  {
   "generic": "glucagon",
-  "brand": "GlucaGen",
+  "brand": "Gvoke",
   "brands": [
-   "GlucaGen",
+   "Gvoke",
    "Baqsimi",
-   "Gvoke"
+   "GlucaGen"
   ],
   "rxcui": "4832",
   "source": "RxNorm"
@@ -6117,16 +6559,33 @@
  },
  {
   "generic": "glycine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "4919",
   "source": "RxNorm"
@@ -6154,15 +6613,18 @@
  },
  {
   "generic": "glycopyrronium",
-  "brand": "Glycate",
+  "brand": "Glyrx",
   "brands": [
-   "Glycate",
-   "Robinul",
-   "Bevespi",
-   "Lonhala",
-   "Qbrexza",
    "Glyrx",
+   "Bevespi",
    "Breztri",
+   "Cuvposa",
+   "Glycate",
+   "Lonhala",
+   "Prevduo",
+   "Qbrexza",
+   "Robinul",
+   "Trimbow",
    "Dartisla"
   ],
   "rxcui": "1546438",
@@ -6219,8 +6681,8 @@
   "brand": "Sustol",
   "brands": [
    "Sustol",
-   "Granisol",
-   "Sancuso"
+   "Sancuso",
+   "Granisol"
   ],
   "rxcui": "26237",
   "source": "RxNorm"
@@ -6237,16 +6699,33 @@
  },
  {
   "generic": "guaifenesin",
-  "brand": "Refenesen",
+  "brand": "Mucinex",
   "brands": [
-   "Refenesen",
+   "Mucinex",
+   "Dilaudid Cough",
+   "Bidex",
+   "Brontex",
+   "Obredon",
+   "Robafen",
+   "Bronkaid",
+   "Liquibid",
+   "Allfen CX",
+   "Allfen Jr",
+   "Biotussin",
    "Cough Out",
-   "Kids-Eeze Chest Relief",
-   "Rompe Pecho",
+   "Hycofenix",
+   "Refenesen",
+   "Siltussin",
+   "Ambifed CD",
    "Lortuss EX",
+   "M-Clear WC",
+   "Mar-cof CG",
    "Zodryl DEC",
+   "Cheratussin",
    "Ninjacof XG",
-   "Obredon"
+   "Rompe Pecho",
+   "Scot-Tussin",
+   "Ambifed-G CD"
   ],
   "rxcui": "5032",
   "source": "RxNorm"
@@ -6283,8 +6762,8 @@
   "brand": "Bryhali",
   "brands": [
    "Bryhali",
-   "Lexette",
    "Duobrii",
+   "Lexette",
    "Ultravate"
   ],
   "rxcui": "41208",
@@ -6352,16 +6831,33 @@
  },
  {
   "generic": "histidine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "5340",
   "source": "RxNorm"
@@ -6396,16 +6892,20 @@
  },
  {
   "generic": "hyaluronidase",
-  "brand": "Rituxan Hycela",
+  "brand": "Phesgo",
   "brands": [
-   "Rituxan Hycela",
-   "Herceptin Hylecta",
-   "Darzalex Faspro",
    "Phesgo",
-   "Vyvgart Hytrulo",
+   "Hylenex",
+   "Vitrase",
+   "Amphadase",
    "Ocrevus Zunovo",
-   "Tecentriq Hybreza",
-   "Opdivo Qvantig"
+   "Opdivo Qvantig",
+   "Rituxan Hycela",
+   "Darzalex Faspro",
+   "Vyvgart Hytrulo",
+   "Rybrevant Faspro",
+   "Herceptin Hylecta",
+   "Tecentriq Hybreza"
   ],
   "rxcui": "5464",
   "source": "RxNorm"
@@ -6421,48 +6921,82 @@
  },
  {
   "generic": "hydrochlorothiazide",
-  "brand": "Tribenzor",
+  "brand": "Diovan HCT",
   "brands": [
-   "Tribenzor",
-   "Exforge HCT",
-   "Tekturna HCT",
-   "Accuretic",
-   "Aldactazide",
-   "Vaseretic",
    "Diovan HCT",
-   "Hyzaar"
+   "Benicar HCT",
+   "Micardis-HCT",
+   "Lopressor HCT",
+   "Ziac",
+   "Hyzaar",
+   "Avalide",
+   "Dyazide",
+   "Inzirqo",
+   "Maxzide",
+   "Accuretic",
+   "Tribenzor",
+   "Vaseretic",
+   "Zestoretic",
+   "Atacand HCT",
+   "Exforge HCT",
+   "Lotensin HCT",
+   "Tekturna HCT"
   ],
   "rxcui": "5487",
   "source": "RxNorm"
  },
  {
   "generic": "hydrocodone",
-  "brand": "Ibudone",
+  "brand": "Norco",
   "brands": [
+   "Norco",
+   "Hycet",
+   "Hy-KXP",
+   "Hycodan",
    "Ibudone",
+   "Obredon",
+   "Ventuss",
    "Zohydro",
    "Hydromet",
-   "Verdrocet",
    "Hysingla",
-   "Obredon",
    "Hycofenix",
-   "Norco"
+   "Reprexain",
+   "Tussionex",
+   "Verdrocet",
+   "Vicoprofen"
   ],
   "rxcui": "5489",
   "source": "RxNorm"
  },
  {
   "generic": "hydrocortisone",
-  "brand": "Ana-Lex",
+  "brand": "Cipro HC",
   "brands": [
+   "Cipro HC",
+   "Cortef",
+   "Evesse",
+   "Hemril",
+   "Locoid",
+   "Nucort",
+   "Pandel",
+   "U-Cort",
+   "Vytone",
+   "Xerese",
+   "Alkindi",
    "Ana-Lex",
-   "Scalpicin Itch Relief",
-   "Vagisil Satin",
    "Beta-HC",
-   "Procort 1.85/1.15",
-   "Neo-Polycin HC",
-   "Monistat Itch Relief",
-   "Alcortin A"
+   "Cortaid",
+   "Epifoam",
+   "Kera-HC",
+   "Ala-Cort",
+   "Alcortin",
+   "Gynecort",
+   "Hemmorex",
+   "Khindivi",
+   "Novacort",
+   "Texacort",
+   "Westcort",
+   "Ala-Scalp"
   ],
   "rxcui": "5492",
   "source": "RxNorm"
@@ -6479,13 +7013,13 @@
  },
  {
   "generic": "hydroquinone",
-  "brand": "Neova Complex HQ Plus",
+  "brand": "Lustra",
   "brands": [
-   "Neova Complex HQ Plus",
    "Lustra",
    "Tri-Luma",
+   "Remergent HQ",
    "EpiQuin Micro",
-   "Remergent HQ"
+   "Neova Complex HQ Plus"
   ],
   "rxcui": "5509",
   "source": "RxNorm"
@@ -6502,12 +7036,12 @@
  },
  {
   "generic": "hydroxyurea",
-  "brand": "Hydrea",
+  "brand": "Xromi",
   "brands": [
-   "Hydrea",
-   "Siklos",
+   "Xromi",
    "Droxia",
-   "Xromi"
+   "Hydrea",
+   "Siklos"
   ],
   "rxcui": "5552",
   "source": "RxNorm"
@@ -6523,16 +7057,32 @@
  },
  {
   "generic": "hyoscyamine",
-  "brand": "Hyophen",
+  "brand": "Digex",
   "brands": [
-   "Hyophen",
-   "Phosphasal",
+   "Digex",
+   "Nulev",
+   "Symax",
+   "Utira",
+   "Levbid",
+   "Levsin",
+   "Urelle",
+   "Uribel",
    "Ustell",
+   "Anaspaz",
+   "Digenyx",
+   "Ed Spaz",
+   "Hyophen",
    "Oscimin",
+   "Urin DS",
    "Donnatal",
+   "Uro-Blue",
    "Prosed DS",
-   "Urogesic Blue Reformulated Apr 2012",
-   "Urimar Reformulated Oct 2013"
+   "Phenohytro",
+   "Phosphasal",
+   "Uretron DS",
+   "Uribel Tabs",
+   "Urimar Reformulated Oct 2013",
+   "Urogesic Blue Reformulated Apr 2012"
   ],
   "rxcui": "153970",
   "source": "RxNorm"
@@ -6557,16 +7107,26 @@
  },
  {
   "generic": "ibuprofen",
-  "brand": "Duexis",
+  "brand": "Advil",
   "brands": [
-   "Duexis",
-   "Counteract IB",
-   "Proprinal",
-   "Ibudone",
    "Advil",
    "Motrin",
+   "Motrin PM",
+   "Ibu",
+   "Duexis",
    "Genpril",
-   "Ibu"
+   "Ibudone",
+   "Addaprin",
+   "Caldolor",
+   "Ibuprohm",
+   "Samson 8",
+   "Neoprofen",
+   "Proprinal",
+   "Reprexain",
+   "Combogesic",
+   "Vicoprofen",
+   "Wal-Profen",
+   "Counteract IB"
   ],
   "rxcui": "5640",
   "source": "RxNorm"
@@ -6619,10 +7179,10 @@
  },
  {
   "generic": "imatinib",
-  "brand": "Imkeldi",
+  "brand": "Gleevec",
   "brands": [
-   "Imkeldi",
-   "Gleevec"
+   "Gleevec",
+   "Imkeldi"
   ],
   "rxcui": "282388",
   "source": "RxNorm"
@@ -6638,10 +7198,10 @@
  },
  {
   "generic": "imipenem",
-  "brand": "Recarbrio",
+  "brand": "Primaxin",
   "brands": [
-   "Recarbrio",
-   "Primaxin"
+   "Primaxin",
+   "Recarbrio"
   ],
   "rxcui": "5690",
   "source": "RxNorm"
@@ -6682,22 +7242,22 @@
  },
  {
   "generic": "indomethacin",
-  "brand": "Tivorbex",
+  "brand": "Indocin",
   "brands": [
-   "Tivorbex",
-   "Indocin"
+   "Indocin",
+   "Tivorbex"
   ],
   "rxcui": "5781",
   "source": "RxNorm"
  },
  {
   "generic": "infliximab",
-  "brand": "Inflectra",
+  "brand": "Avsola",
   "brands": [
+   "Avsola",
+   "Remicade",
    "Inflectra",
    "Renflexis",
-   "Remicade",
-   "Avsola",
    "Zymfentra"
   ],
   "rxcui": "191831",
@@ -6751,24 +7311,25 @@
  },
  {
   "generic": "insulin glargine",
-  "brand": "Toujeo",
+  "brand": "Lantus",
   "brands": [
+   "Lantus",
    "Toujeo",
+   "Semglee",
    "Basaglar",
    "Soliqua",
-   "Semglee",
-   "Rezvoglar",
-   "Lantus"
+   "Langlara",
+   "Rezvoglar"
   ],
   "rxcui": "274783",
   "source": "RxNorm"
  },
  {
   "generic": "insulin lispro",
-  "brand": "Humalog",
+  "brand": "Admelog",
   "brands": [
-   "Humalog",
    "Admelog",
+   "Humalog",
    "Lyumjev",
    "Humalog Mix"
   ],
@@ -6786,20 +7347,20 @@
  },
  {
   "generic": "interferon beta-1a",
-  "brand": "Avonex",
+  "brand": "Rebif",
   "brands": [
-   "Avonex",
-   "Rebif"
+   "Rebif",
+   "Avonex"
   ],
   "rxcui": "75917",
   "source": "RxNorm"
  },
  {
   "generic": "interferon beta-1b",
-  "brand": "Betaseron",
+  "brand": "Extavia",
   "brands": [
-   "Betaseron",
-   "Extavia"
+   "Extavia",
+   "Betaseron"
   ],
   "rxcui": "72257",
   "source": "RxNorm"
@@ -6897,16 +7458,33 @@
  },
  {
   "generic": "isoleucine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "6033",
   "source": "RxNorm"
@@ -6920,23 +7498,23 @@
  },
  {
   "generic": "isopropyl alcohol",
-  "brand": "DuraPrep",
+  "brand": "Numstat",
   "brands": [
-   "DuraPrep",
-   "Prevantics",
-   "Soluprep",
    "Numstat",
-   "ChloraPrep"
+   "DuraPrep",
+   "Soluprep",
+   "ChloraPrep",
+   "Prevantics"
   ],
   "rxcui": "797541",
   "source": "RxNorm"
  },
  {
   "generic": "isosorbide dinitrate",
-  "brand": "Isordil",
+  "brand": "Bidil",
   "brands": [
-   "Isordil",
    "Bidil",
+   "Isordil",
    "Isochron",
    "IsoDitrate"
   ],
@@ -6945,15 +7523,15 @@
  },
  {
   "generic": "isotretinoin",
-  "brand": "Myorisan",
+  "brand": "Sotret",
   "brands": [
-   "Myorisan",
-   "Absorica",
-   "Zenatane",
-   "Accutane",
-   "Amnesteem",
    "Sotret",
-   "Claravis"
+   "Absorica",
+   "Accutane",
+   "Claravis",
+   "Myorisan",
+   "Zenatane",
+   "Amnesteem"
   ],
   "rxcui": "6064",
   "source": "RxNorm"
@@ -6976,10 +7554,10 @@
  },
  {
   "generic": "itraconazole",
-  "brand": "Sporanox",
+  "brand": "Tolsura",
   "brands": [
-   "Sporanox",
-   "Tolsura"
+   "Tolsura",
+   "Sporanox"
   ],
   "rxcui": "28031",
   "source": "RxNorm"
@@ -6995,26 +7573,43 @@
  },
  {
   "generic": "ivacaftor",
-  "brand": "Kalydeco",
+  "brand": "ORKAMBI",
   "brands": [
-   "Kalydeco",
-   "ORKAMBI"
+   "ORKAMBI",
+   "Kalydeco"
   ],
   "rxcui": "1243041",
   "source": "RxNorm"
  },
  {
   "generic": "ivermectin",
-  "brand": "Heartgard Plus",
+  "brand": "Ivomec",
   "brands": [
-   "Heartgard Plus",
-   "Agrimectin",
+   "Ivomec",
    "Sklice",
+   "Equimax",
+   "Ivermax",
+   "Bimectin",
+   "Iverhart",
+   "Vetrimec",
    "Promectin",
-   "Privermectin",
-   "Tri-Heart Plus",
+   "Soolantra",
+   "Agrimectin",
    "DuraMectin",
-   "Soolantra"
+   "Noromectin",
+   "Stromectol",
+   "Zimecterin",
+   "Ivomec Plus",
+   "Prazimectin",
+   "Strideguard",
+   "Ivermax Plus",
+   "Privermectin",
+   "Bimectin Plus",
+   "Iverhart Plus",
+   "Vetrimec Plus",
+   "Heartgard Plus",
+   "Tri-Heart Plus",
+   "Noromectin Plus"
   ],
   "rxcui": "6069",
   "source": "RxNorm"
@@ -7048,15 +7643,20 @@
  },
  {
   "generic": "ketoconazole",
-  "brand": "T8 Keto Flush",
+  "brand": "Kuric",
   "brands": [
-   "T8 Keto Flush",
-   "Ketodan",
-   "Mal-A-Ket",
-   "Ketochlor",
+   "Kuric",
+   "Extina",
    "Keto-C",
-   "Malacetic",
+   "Ketodan",
    "Nizoral",
+   "Xolegel",
+   "Recorlev",
+   "Ketochlor",
+   "Mal-A-Ket",
+   "Malacetic",
+   "Suffusion",
+   "T8 Keto Flush",
    "Mal-A-Ket Wipes"
   ],
   "rxcui": "6135",
@@ -7064,25 +7664,25 @@
  },
  {
   "generic": "ketoprofen",
-  "brand": "Ketofen",
+  "brand": "Orudis",
   "brands": [
-   "Ketofen",
    "Orudis",
-   "Draxxin KP",
+   "Ketofen",
    "Ketomed",
-   "Kiprofen"
+   "Kiprofen",
+   "Draxxin KP"
   ],
   "rxcui": "6142",
   "source": "RxNorm"
  },
  {
   "generic": "ketotifen",
-  "brand": "Wal-Zyr Itchy Eye",
+  "brand": "Claritin Eye",
   "brands": [
-   "Wal-Zyr Itchy Eye",
-   "Zaditor",
+   "Claritin Eye",
    "Alaway",
-   "Claritin Eye"
+   "Zaditor",
+   "Wal-Zyr Itchy Eye"
   ],
   "rxcui": "6146",
   "source": "RxNorm"
@@ -7119,10 +7719,10 @@
  },
  {
   "generic": "lacosamide",
-  "brand": "Motpoly",
+  "brand": "Vimpat",
   "brands": [
-   "Motpoly",
-   "Vimpat"
+   "Vimpat",
+   "Motpoly"
   ],
   "rxcui": "623400",
   "source": "RxNorm"
@@ -7143,11 +7743,11 @@
  },
  {
   "generic": "lactulose",
-  "brand": "Constulose",
+  "brand": "Enulose",
   "brands": [
-   "Constulose",
    "Enulose",
    "Generlac",
+   "Constulose",
    "Kristalose"
   ],
   "rxcui": "6218",
@@ -7155,16 +7755,18 @@
  },
  {
   "generic": "lamivudine",
-  "brand": "Triumeq",
+  "brand": "Symfi",
   "brands": [
+   "Symfi",
+   "Cimduo",
+   "Dovato",
+   "Epivir",
+   "Epzicom",
+   "Temixys",
    "Triumeq",
    "Combivir",
-   "Epivir",
-   "Cimduo",
-   "Symfi",
-   "Delstrigo",
-   "Dovato",
-   "Temixys"
+   "Trizivir",
+   "Delstrigo"
   ],
   "rxcui": "68244",
   "source": "RxNorm"
@@ -7265,12 +7867,12 @@
  },
  {
   "generic": "latanoprost",
-  "brand": "Xalatan",
+  "brand": "Iyuzeh",
   "brands": [
+   "Iyuzeh",
    "Xalatan",
    "Xelpros",
-   "Rocklatan",
-   "Iyuzeh"
+   "Rocklatan"
   ],
   "rxcui": "43611",
   "source": "RxNorm"
@@ -7327,10 +7929,10 @@
  },
  {
   "generic": "lenacapavir",
-  "brand": "Sunlenca",
+  "brand": "Yeztugo",
   "brands": [
-   "Sunlenca",
-   "Yeztugo"
+   "Yeztugo",
+   "Sunlenca"
   ],
   "rxcui": "2625651",
   "source": "RxNorm"
@@ -7373,16 +7975,33 @@
  },
  {
   "generic": "leucine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "6308",
   "source": "RxNorm"
@@ -7401,11 +8020,11 @@
   "brand": "Lupron",
   "brands": [
    "Lupron",
-   "Fensolvi",
    "Camcevi",
+   "Eligard",
    "Lutrate",
-   "Vabrinty",
-   "Eligard"
+   "Fensolvi",
+   "Vabrinty"
   ],
   "rxcui": "42375",
   "source": "RxNorm"
@@ -7421,12 +8040,12 @@
  },
  {
   "generic": "levetiracetam",
-  "brand": "Elepsia",
+  "brand": "Keppra",
   "brands": [
+   "Keppra",
    "Elepsia",
-   "Roweepra",
    "Spritam",
-   "Keppra"
+   "Roweepra"
   ],
   "rxcui": "114477",
   "source": "RxNorm"
@@ -7442,26 +8061,26 @@
  },
  {
   "generic": "levocarnitine",
-  "brand": "Carni Q-Gel Forte",
+  "brand": "Carnitor",
   "brands": [
-   "Carni Q-Gel Forte",
-   "Carnitor"
+   "Carnitor",
+   "Carni Q-Gel Forte"
   ],
   "rxcui": "42955",
   "source": "RxNorm"
  },
  {
   "generic": "levodopa",
-  "brand": "Stalevo",
+  "brand": "Sinemet",
   "brands": [
-   "Stalevo",
-   "Rytary",
-   "Duopa",
-   "Inbrija",
+   "Sinemet",
    "Dhivy",
-   "Crexont",
+   "Duopa",
+   "Rytary",
    "Vyalev",
-   "Sinemet"
+   "Crexont",
+   "Inbrija",
+   "Stalevo"
   ],
   "rxcui": "6375",
   "source": "RxNorm"
@@ -7477,10 +8096,10 @@
  },
  {
   "generic": "levoleucovorin",
-  "brand": "Khapzory",
+  "brand": "Fusilev",
   "brands": [
-   "Khapzory",
-   "Fusilev"
+   "Fusilev",
+   "Khapzory"
   ],
   "rxcui": "877015",
   "source": "RxNorm"
@@ -7496,16 +8115,33 @@
  },
  {
   "generic": "levonorgestrel",
-  "brand": "Next Choice One Dose",
+  "brand": "Curae",
   "brands": [
-   "Next Choice One Dose",
+   "Curae",
+   "E-Con",
+   "Julie",
+   "React",
    "Skyla",
-   "My Way",
-   "Take Action",
+   "Aftera",
    "Mirena",
+   "My Way",
+   "Twirla",
+   "EContra",
+   "Kyleena",
+   "Liletta",
+   "New Day",
+   "Restart",
+   "Shewise",
+   "Option 2",
    "Afterpill",
-   "Opcicon One-Step",
-   "Aftera"
+   "AfterPlan",
+   "Her Style",
+   "Ithappenz",
+   "My Choice",
+   "Fem Choice",
+   "Preventeza",
+   "Climara Pro",
+   "Take Action"
   ],
   "rxcui": "6373",
   "source": "RxNorm"
@@ -7521,16 +8157,20 @@
  },
  {
   "generic": "levothyroxine",
-  "brand": "Thyro-Tabs",
+  "brand": "Levoxyl",
   "brands": [
-   "Thyro-Tabs",
-   "ThyroKare",
-   "Euthyrox",
-   "Levo-T",
    "Levoxyl",
+   "Tirosint",
    "Synthroid",
+   "Unithroid",
+   "Ermeza",
+   "Levo-T",
+   "Euthyrox",
+   "Thyrolar",
+   "Thyrocryn",
+   "ThyroKare",
    "Thyquidity",
-   "Ermeza"
+   "Thyro-Tabs"
   ],
   "rxcui": "10582",
   "source": "RxNorm"
@@ -7540,13 +8180,30 @@
   "brand": "LMX",
   "brands": [
    "LMX",
-   "Ana-Lex",
-   "Regenecare",
+   "Akten",
+   "Glydo",
    "Lidum",
-   "Cutiecaine",
-   "Burn Jel Plus",
-   "Hexa-Caine",
-   "Band-Aid Hurt-Free"
+   "Zensa",
+   "Zingo",
+   "Keepan",
+   "Lydexa",
+   "Oraqix",
+   "Synera",
+   "Unburn",
+   "Xolido",
+   "Zcaine",
+   "ZTlido",
+   "Alocane",
+   "Ana-Lex",
+   "Bactine",
+   "Lidocan",
+   "LidoPro",
+   "Lidozen",
+   "Relador",
+   "Trifena",
+   "Workvie",
+   "AneCream",
+   "Bio-Kool"
   ],
   "rxcui": "6387",
   "source": "RxNorm"
@@ -7562,12 +8219,12 @@
  },
  {
   "generic": "linagliptin",
-  "brand": "Tradjenta",
+  "brand": "Glyxambi",
   "brands": [
-   "Tradjenta",
-   "Jentadueto",
    "Glyxambi",
-   "Trijardy"
+   "Trijardy",
+   "Tradjenta",
+   "Jentadueto"
   ],
   "rxcui": "1100699",
   "source": "RxNorm"
@@ -7590,10 +8247,10 @@
  },
  {
   "generic": "liothyronine",
-  "brand": "Liomny",
+  "brand": "Cytomel",
   "brands": [
-   "Liomny",
    "Cytomel",
+   "Liomny",
    "Thyrolar"
   ],
   "rxcui": "10814",
@@ -7601,22 +8258,22 @@
  },
  {
   "generic": "liraglutide",
-  "brand": "Saxenda",
+  "brand": "Victoza",
   "brands": [
+   "Victoza",
    "Saxenda",
-   "Xultophy",
-   "Victoza"
+   "Xultophy"
   ],
   "rxcui": "475968",
   "source": "RxNorm"
  },
  {
   "generic": "lisinopril",
-  "brand": "Qbrelis",
+  "brand": "Zestril",
   "brands": [
-   "Qbrelis",
    "Zestril",
    "Prinivil",
+   "Qbrelis",
    "Zestoretic"
   ],
   "rxcui": "29046",
@@ -7776,12 +8433,12 @@
  },
  {
   "generic": "loperamide",
-  "brand": "Imodium Multi-Symptom Relief",
+  "brand": "Imodium",
   "brands": [
-   "Imodium Multi-Symptom Relief",
    "Imodium",
-   "Diamode",
-   "Imodium Advanced"
+   "Imodium Advanced",
+   "Imodium Multi-Symptom Relief",
+   "Diamode"
   ],
   "rxcui": "6468",
   "source": "RxNorm"
@@ -7797,16 +8454,19 @@
  },
  {
   "generic": "loratadine",
-  "brand": "Wal-itin D",
+  "brand": "Claritin",
   "brands": [
-   "Wal-itin D",
-   "Loradamed",
-   "Wal-vert",
-   "Allerclear",
-   "Cleartime Indoor & Outdoor Allergies",
    "Claritin",
    "Claritin-D",
-   "Alavert"
+   "Alavert",
+   "Wal-itin",
+   "Wal-vert",
+   "Alavert D",
+   "Loradamed",
+   "Allerclear",
+   "Wal-itin D",
+   "Tavist Non-Sedating",
+   "Cleartime Indoor & Outdoor Allergies"
   ],
   "rxcui": "28889",
   "source": "RxNorm"
@@ -7835,31 +8495,31 @@
   "brand": "Cozaar",
   "brands": [
    "Cozaar",
-   "Hyzaar",
-   "Arbli"
+   "Arbli",
+   "Hyzaar"
   ],
   "rxcui": "52175",
   "source": "RxNorm"
  },
  {
   "generic": "loteprednol etabonate",
-  "brand": "Inveltys",
+  "brand": "Alrex",
   "brands": [
-   "Inveltys",
    "Alrex",
-   "Lotemax",
+   "Zylet",
    "Eysuvis",
-   "Zylet"
+   "Lotemax",
+   "Inveltys"
   ],
   "rxcui": "52177",
   "source": "RxNorm"
  },
  {
   "generic": "lotilaner",
-  "brand": "Credelio",
+  "brand": "Xdemvy",
   "brands": [
-   "Credelio",
-   "Xdemvy"
+   "Xdemvy",
+   "Credelio"
   ],
   "rxcui": "1998841",
   "source": "RxNorm"
@@ -7947,16 +8607,33 @@
  },
  {
   "generic": "lysine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
+   "L-Formula",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5"
   ],
   "rxcui": "6536",
   "source": "RxNorm"
@@ -7989,13 +8666,13 @@
  },
  {
   "generic": "magnesium acetate",
-  "brand": "Plasma-Lyte 56 in 5 % Dextrose",
+  "brand": "Nutrilyte",
   "brands": [
-   "Plasma-Lyte 56 in 5 % Dextrose",
    "Nutrilyte",
    "Normosol-M",
    "ProcalAmine 3",
-   "Aminosyn 3.5 % M, Sulfite Free"
+   "Aminosyn 3.5 % M, Sulfite Free",
+   "Plasma-Lyte 56 in 5 % Dextrose"
   ],
   "rxcui": "314718",
   "source": "RxNorm"
@@ -8069,15 +8746,15 @@
  },
  {
   "generic": "magnesium carbonate",
-  "brand": "Medi-Lyte",
+  "brand": "Gaviscon",
   "brands": [
-   "Medi-Lyte",
    "Gaviscon",
-   "Magonate Reformulated May 2022",
    "Acid Gone",
-   "Renacidin",
    "MagneBind",
-   "MagneBind 400 Rx"
+   "Medi-Lyte",
+   "Renacidin",
+   "MagneBind 400 Rx",
+   "Magonate Reformulated May 2022"
   ],
   "rxcui": "29155",
   "source": "RxNorm"
@@ -8105,16 +8782,33 @@
  },
  {
   "generic": "magnesium chloride",
-  "brand": "Clinimix E 4.25/10",
+  "brand": "Mag 64",
   "brands": [
-   "Clinimix E 4.25/10",
+   "Mag 64",
+   "Chloromag",
    "Extraneal",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Isolyte S in 5 % Dextrose",
-   "Normosol-R in 5 % Dextrose",
-   "Slow-Mag Reformulated Feb 2012",
-   "Nutrilyte II"
+   "Isolyte P",
+   "Isolyte S",
+   "Physiosol",
+   "Ionosol-MB",
+   "Normosol-R",
+   "Physiolyte",
+   "Nutrilyte II",
+   "Plasmalyte A",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Plasma-lyte 148",
+   "Dianeal PD-2/1.5",
+   "Dianeal PD-2/2.5",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Dianeal PD-2/4.25",
+   "Clinimix E 4.25/10",
+   "BSS Ophthalmic Solution",
+   "Dianeal Low Calcium 1.5",
+   "Dianeal Low Calcium 2.5",
+   "Dianeal Low Calcium 4.25"
   ],
   "rxcui": "6579",
   "source": "RxNorm"
@@ -8169,16 +8863,24 @@
  },
  {
   "generic": "magnesium hydroxide",
-  "brand": "Milantex",
+  "brand": "Maalox Max",
   "brands": [
+   "Maalox Max",
+   "Maalox Plus",
+   "Pepcid Complete",
+   "Tums Dual Action",
+   "Rolaids Reformulated Aug 2006",
+   "Gelusil",
+   "Almacone",
    "Milantex",
-   "Pedia-Lax Chewable",
+   "Mirafast",
+   "Duo Fusion",
+   "Comfort Gel",
+   "Mintox Plus",
    "Inon Ace Tablet",
    "Inon Ace Solution",
-   "Maalox Plus",
-   "Duo Fusion",
-   "Almacone",
-   "Mintox Plus"
+   "Pedia-Lax Chewable",
+   "Phillips Milk of Magnesia"
   ],
   "rxcui": "6581",
   "source": "RxNorm"
@@ -8243,16 +8945,18 @@
  },
  {
   "generic": "magnesium oxide",
-  "brand": "Folgard OS",
+  "brand": "Beelith",
   "brands": [
-   "Folgard OS",
-   "Lactocal",
-   "Vitafol-One",
-   "Somnicin",
-   "Clenpiq",
    "Beelith",
-   "Phillips' Cramp-free",
-   "Magmilax"
+   "Clenpiq",
+   "Uro-Mag",
+   "Lactocal",
+   "Magmilax",
+   "Somnicin",
+   "Folgard OS",
+   "Mag-Ox 400",
+   "Vitafol-One",
+   "Phillips' Cramp-free"
   ],
   "rxcui": "6582",
   "source": "RxNorm"
@@ -8308,15 +9012,15 @@
  },
  {
   "generic": "magnesium salicylate",
-  "brand": "Pamprin Cramp Formula",
+  "brand": "Doans",
   "brands": [
-   "Pamprin Cramp Formula",
-   "Percogesic Backache",
    "Doans",
+   "MST 600",
+   "Backprin",
    "Doans PM",
    "Nuprin Backache",
-   "MST 600",
-   "Backprin"
+   "Percogesic Backache",
+   "Pamprin Cramp Formula"
   ],
   "rxcui": "52364",
   "source": "RxNorm"
@@ -8330,14 +9034,14 @@
  },
  {
   "generic": "magnesium sulfate",
-  "brand": "Hemocyte Plus",
+  "brand": "Sutab",
   "brands": [
-   "Hemocyte Plus",
-   "Concept OB",
-   "Tis-U-Sol",
    "Sutab",
+   "Tis-U-Sol",
+   "Concept OB",
+   "Eldertonic",
    "Ellis Tonic",
-   "Eldertonic"
+   "Hemocyte Plus"
   ],
   "rxcui": "6585",
   "source": "RxNorm"
@@ -8502,16 +9206,17 @@
  },
  {
   "generic": "manganese sulfate",
-  "brand": "Hemocyte Plus",
+  "brand": "Multrys",
   "brands": [
-   "Hemocyte Plus",
+   "Multrys",
+   "Tralement",
    "Concept OB",
+   "Eldertonic",
+   "Ellis Tonic",
    "Tandem Plus",
    "Multitrace-4",
    "Multitrace-5",
-   "Multrys",
-   "Tralement",
-   "Ellis Tonic"
+   "Hemocyte Plus"
   ],
   "rxcui": "29268",
   "source": "RxNorm"
@@ -8587,10 +9292,10 @@
  },
  {
   "generic": "measles virus vaccine live, Enders' attenuated Edmonston strain",
-  "brand": "M-M-R II",
+  "brand": "ProQuad",
   "brands": [
-   "M-M-R II",
-   "ProQuad"
+   "ProQuad",
+   "M-M-R II"
   ],
   "rxcui": "804179",
   "source": "RxNorm"
@@ -8616,16 +9321,16 @@
  },
  {
   "generic": "meclizine",
-  "brand": "Verticalm",
+  "brand": "Bonine",
   "brands": [
+   "Bonine",
+   "Dramamine Less Drowsy",
+   "Dramamine Nausea Relief",
+   "Zentrip",
+   "Antivert",
    "Verticalm",
    "Wal-Dram 2",
-   "Bonine",
-   "Dramamine Nausea Relief",
-   "Pepto Nausea",
-   "Dramamine Less Drowsy",
-   "Antivert",
-   "Zentrip"
+   "Pepto Nausea"
   ],
   "rxcui": "6676",
   "source": "RxNorm"
@@ -8667,50 +9372,74 @@
   "brand": "Restone",
   "brands": [
    "Restone",
-   "Melatonex",
-   "Somnicin"
+   "Somnicin",
+   "Melatonex"
   ],
   "rxcui": "6711",
   "source": "RxNorm"
  },
  {
   "generic": "meloxicam",
-  "brand": "Metacam",
+  "brand": "Mobic",
   "brands": [
-   "Metacam",
-   "Loxicom",
-   "Meloxidyl",
-   "Ostilox",
    "Mobic",
-   "Vivlodex",
    "Qmiiz",
-   "Alloxate"
+   "Zybic",
+   "Anjeso",
+   "Xifyrm",
+   "Loxicom",
+   "Metacam",
+   "Ostilox",
+   "Qamzova",
+   "Alloxate",
+   "Symbravo",
+   "Vivlodex",
+   "Zynrelef",
+   "Meloxidyl",
+   "Meloxivet"
   ],
   "rxcui": "41493",
   "source": "RxNorm"
  },
  {
   "generic": "memantine",
-  "brand": "Namzaric",
+  "brand": "Namenda",
   "brands": [
-   "Namzaric",
-   "Namenda"
+   "Namenda",
+   "Namzaric"
   ],
   "rxcui": "6719",
   "source": "RxNorm"
  },
  {
   "generic": "menthol",
-  "brand": "Fisherman's Friend",
+  "brand": "Alo",
   "brands": [
-   "Fisherman's Friend",
-   "Canker Complete",
-   "Sucrets Complete",
-   "Lantiseptic Multi-Purpose",
-   "Little Ouchies",
-   "Dendracin Neurodendraxcin",
-   "Mentholatum",
-   "Perform"
+   "Alo",
+   "Halls",
+   "N'ICE",
+   "Rhuli",
+   "Xoten",
+   "Aulief",
+   "Dragon",
+   "Lypsyl",
+   "Medrox",
+   "Ricola",
+   "Flexall",
+   "Katinko",
+   "LidoPro",
+   "Lidozen",
+   "Luden's",
+   "Numstat",
+   "Perform",
+   "Stopain",
+   "Trifena",
+   "Vaporex",
+   "Workvie",
+   "Xoten-C",
+   "ActivICE",
+   "Bigeloil",
+   "Boroleum"
   ],
   "rxcui": "6750",
   "source": "RxNorm"
@@ -8769,14 +9498,14 @@
  },
  {
   "generic": "mesalamine",
-  "brand": "Delzicol",
+  "brand": "Apriso",
   "brands": [
-   "Delzicol",
+   "Apriso",
    "Canasa",
-   "Pentasa",
-   "Rowasa",
    "Lialda",
-   "Apriso"
+   "Rowasa",
+   "Pentasa",
+   "Delzicol"
   ],
   "rxcui": "52582",
   "source": "RxNorm"
@@ -8801,26 +9530,32 @@
  },
  {
   "generic": "metformin",
-  "brand": "Kazano",
+  "brand": "Janumet",
   "brands": [
-   "Kazano",
-   "Jentadueto",
-   "Kombiglyze",
    "Janumet",
    "Glucophage",
-   "Invokamet",
+   "Kazano",
+   "Riomet",
    "Xigduo",
-   "Synjardy"
+   "Glumetza",
+   "Synjardy",
+   "Trijardy",
+   "Invokamet",
+   "Zituvimet",
+   "Jentadueto",
+   "Kombiglyze",
+   "Segluromet",
+   "Actoplus Met"
   ],
   "rxcui": "6809",
   "source": "RxNorm"
  },
  {
   "generic": "methadone",
-  "brand": "Methadose",
+  "brand": "Dolophine",
   "brands": [
-   "Methadose",
    "Dolophine",
+   "Methadose",
    "Diskets"
   ],
   "rxcui": "6813",
@@ -8844,10 +9579,10 @@
  },
  {
   "generic": "methimazole",
-  "brand": "Felanorm",
+  "brand": "Reguzol",
   "brands": [
-   "Felanorm",
    "Reguzol",
+   "Felanorm",
    "Felimazole"
   ],
   "rxcui": "6835",
@@ -8855,16 +9590,33 @@
  },
  {
   "generic": "methionine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "6837",
   "source": "RxNorm"
@@ -8882,14 +9634,14 @@
  },
  {
   "generic": "methotrexate",
-  "brand": "Otrexup",
+  "brand": "Rasuvo",
   "brands": [
-   "Otrexup",
    "Rasuvo",
    "Xatmep",
-   "Reditrex",
    "Jylamvo",
-   "Trexall"
+   "Otrexup",
+   "Trexall",
+   "Reditrex"
   ],
   "rxcui": "6851",
   "source": "RxNorm"
@@ -8941,51 +9693,54 @@
  },
  {
   "generic": "methylphenidate",
-  "brand": "Quillivant",
+  "brand": "Jornay",
   "brands": [
-   "Quillivant",
-   "Aptensio",
-   "QuilliChew",
-   "Cotempla",
-   "Relexxii",
    "Jornay",
    "Ritalin",
-   "Methylin"
+   "Aptensio",
+   "Concerta",
+   "Cotempla",
+   "Daytrana",
+   "Metadate",
+   "Methylin",
+   "Relexxii",
+   "QuilliChew",
+   "Quillivant"
   ],
   "rxcui": "6901",
   "source": "RxNorm"
  },
  {
   "generic": "methylprednisolone",
-  "brand": "HybriSil",
+  "brand": "Medrol",
   "brands": [
-   "HybriSil",
    "Medrol",
-   "Solu-Medrol",
-   "Depo-Medrol"
+   "HybriSil",
+   "Depo-Medrol",
+   "Solu-Medrol"
   ],
   "rxcui": "6902",
   "source": "RxNorm"
  },
  {
   "generic": "methyltestosterone",
-  "brand": "Estratest",
+  "brand": "Covaryx",
   "brands": [
+   "Covaryx",
    "Estratest",
-   "Methitest",
-   "Covaryx"
+   "Methitest"
   ],
   "rxcui": "6904",
   "source": "RxNorm"
  },
  {
   "generic": "metoclopramide",
-  "brand": "Pileran",
+  "brand": "Reglan",
   "brands": [
-   "Pileran",
+   "Reglan",
    "Gimoti",
-   "Metozolv",
-   "Reglan"
+   "Pileran",
+   "Metozolv"
   ],
   "rxcui": "6915",
   "source": "RxNorm"
@@ -8999,12 +9754,12 @@
  },
  {
   "generic": "metoprolol",
-  "brand": "Lopressor",
+  "brand": "Toprol",
   "brands": [
+   "Toprol",
    "Lopressor",
-   "Kapspargo",
    "Lopressor HCT",
-   "Toprol"
+   "Kapspargo"
   ],
   "rxcui": "6918",
   "source": "RxNorm"
@@ -9020,16 +9775,19 @@
  },
  {
   "generic": "metronidazole",
-  "brand": "Rosadan",
+  "brand": "Flagyl",
   "brands": [
-   "Rosadan",
-   "Nuvessa",
    "Flagyl",
+   "Likmez",
+   "Pylera",
+   "Nuvessa",
+   "Nydamax",
+   "Rosadan",
    "MetroGel",
-   "MetroCream",
-   "MetroLotion",
    "Noritate",
-   "Likmez"
+   "Vandazole",
+   "MetroCream",
+   "MetroLotion"
   ],
   "rxcui": "6922",
   "source": "RxNorm"
@@ -9077,16 +9835,33 @@
  },
  {
   "generic": "miconazole",
-  "brand": "Hongo Killer Ultra",
+  "brand": "Baza",
   "brands": [
-   "Hongo Killer Ultra",
-   "Rash Relief Antifungal",
+   "Baza",
    "Inzo",
-   "Malaseb",
-   "Femmesil",
+   "Oravig",
+   "Vusion",
+   "Desenex",
+   "Fungoid",
+   "Lagicam",
+   "Lasolex",
    "MacerRx",
+   "Malaseb",
+   "Micatin",
+   "Surolan",
    "Zeasorb",
-   "Lagicam"
+   "Femmesil",
+   "Fungizyl",
+   "Micaderm",
+   "Monistat",
+   "Vagistat",
+   "Dermagran",
+   "Ony-Clear",
+   "Tetterine",
+   "DermaFungal",
+   "Micro-Guard",
+   "Silka Powder",
+   "MiconaHex+Triz"
   ],
   "rxcui": "6932",
   "source": "RxNorm"
@@ -9135,10 +9910,10 @@
  },
  {
   "generic": "miglustat",
-  "brand": "Yargesa",
+  "brand": "Opfolda",
   "brands": [
-   "Yargesa",
    "Opfolda",
+   "Yargesa",
    "Zavesca"
   ],
   "rxcui": "402316",
@@ -9162,16 +9937,17 @@
  },
  {
   "generic": "minocycline",
-  "brand": "Ximino",
+  "brand": "Zilxi",
   "brands": [
-   "Ximino",
-   "Minocin",
-   "Minolira",
-   "Amzeeq",
    "Zilxi",
+   "Amzeeq",
    "Emrosi",
+   "Ximino",
    "Arestin",
-   "Solodyn"
+   "Minocin",
+   "Solodyn",
+   "Minolira",
+   "Cleeravue-M"
   ],
   "rxcui": "6980",
   "source": "RxNorm"
@@ -9217,22 +9993,22 @@
  },
  {
   "generic": "mitapivat",
-  "brand": "Pyrukynd",
+  "brand": "Aqvesme",
   "brands": [
-   "Pyrukynd",
-   "Aqvesme"
+   "Aqvesme",
+   "Pyrukynd"
   ],
   "rxcui": "2594468",
   "source": "RxNorm"
  },
  {
   "generic": "mitomycin",
-  "brand": "Mitosol",
+  "brand": "Jelmyto",
   "brands": [
-   "Mitosol",
-   "Mutamycin",
    "Jelmyto",
-   "Zusduri"
+   "Mitosol",
+   "Zusduri",
+   "Mutamycin"
   ],
   "rxcui": "632",
   "source": "RxNorm"
@@ -9298,16 +10074,21 @@
  },
  {
   "generic": "mometasone",
-  "brand": "Propel",
+  "brand": "Dulera",
   "brands": [
-   "Propel",
    "Dulera",
-   "Nasonex",
-   "Motazol",
-   "Mometamax",
+   "Klentz",
+   "Propel",
    "Sinuva",
+   "Asmanex",
+   "Motazol",
+   "Nasonex",
    "Posatex",
-   "Ryaltris"
+   "Ryaltris",
+   "Simplera",
+   "Mometamax",
+   "Mometavet",
+   "Mometamax Single"
   ],
   "rxcui": "108118",
   "source": "RxNorm"
@@ -9339,13 +10120,13 @@
  },
  {
   "generic": "morphine",
-  "brand": "Kadian",
+  "brand": "MS Contin",
   "brands": [
-   "Kadian",
    "MS Contin",
+   "Kadian",
+   "Mitigo",
    "Duramorph",
-   "Infumorph",
-   "Mitigo"
+   "Infumorph"
   ],
   "rxcui": "7052",
   "source": "RxNorm"
@@ -9404,12 +10185,12 @@
  },
  {
   "generic": "mupirocin",
-  "brand": "Muricin",
+  "brand": "Pirnuo",
   "brands": [
-   "Muricin",
-   "Bactroban",
    "Pirnuo",
-   "Centany"
+   "Centany",
+   "Muricin",
+   "Bactroban"
   ],
   "rxcui": "42372",
   "source": "RxNorm"
@@ -9494,16 +10275,16 @@
  },
  {
   "generic": "naloxone",
-  "brand": "Zubsolv",
+  "brand": "Narcan",
   "brands": [
-   "Zubsolv",
-   "Bunavail",
    "Narcan",
-   "Kloxxado",
+   "Zubsolv",
+   "Suboxone",
    "Zimhi",
    "Rextovy",
-   "Rezenopy",
-   "Suboxone"
+   "Bunavail",
+   "Kloxxado",
+   "Rezenopy"
   ],
   "rxcui": "7242",
   "source": "RxNorm"
@@ -9521,16 +10302,16 @@
  },
  {
   "generic": "naproxen",
-  "brand": "Vimovo",
+  "brand": "Aleve",
   "brands": [
-   "Vimovo",
-   "Aleve PM",
-   "Anaprox",
-   "Naprosyn",
    "Aleve",
+   "Aleve PM",
+   "Vimovo",
+   "Anaprox",
    "Naprelan",
-   "Wal-Proxen",
-   "Treximet"
+   "Naprosyn",
+   "Treximet",
+   "Wal-Proxen"
   ],
   "rxcui": "7258",
   "source": "RxNorm"
@@ -9560,10 +10341,10 @@
  },
  {
   "generic": "nebivolol",
-  "brand": "Byvalson",
+  "brand": "Bystolic",
   "brands": [
-   "Byvalson",
-   "Bystolic"
+   "Bystolic",
+   "Byvalson"
   ],
   "rxcui": "31555",
   "source": "RxNorm"
@@ -9586,16 +10367,24 @@
  },
  {
   "generic": "neomycin",
-  "brand": "Tresaderm",
+  "brand": "Neovet",
   "brands": [
-   "Tresaderm",
-   "Tri Biozene",
-   "Neo-Polycin HC",
-   "Neo-Polycin",
-   "Maxitrol",
    "Neovet",
+   "Maxitrol",
+   "Poly-Dex",
+   "Oticin HC",
+   "Tresaderm",
+   "Lanabiotic",
+   "Neo-Predef",
+   "Cortisporin",
+   "Cuadriderma",
+   "Neo-Polycin",
    "Neo-Synalar",
-   "Neo-Predef"
+   "Tri Biozene",
+   "Cortisporin-TC",
+   "Neo-Polycin HC",
+   "Spectrocin Plus",
+   "Mycitracin Plus Pain Reliever"
   ],
   "rxcui": "7299",
   "source": "RxNorm"
@@ -9649,32 +10438,43 @@
  },
  {
   "generic": "niacin",
-  "brand": "Folivane-F",
+  "brand": "Niacor",
   "brands": [
-   "Folivane-F",
-   "Endur-Acin",
-   "Irospan Tablet",
-   "Vitafol-One",
+   "Niacor",
+   "Niaspan",
    "Concept OB",
+   "Endur-Acin",
+   "Folivane-F",
+   "Slo-Niacin",
    "Endur-Amide",
    "Endur-Thine",
-   "Niacor"
+   "Poly-Vi-Sol",
+   "Vitafol-One",
+   "MVC-Fluoride",
+   "Irospan Tablet"
   ],
   "rxcui": "7393",
   "source": "RxNorm"
  },
  {
   "generic": "niacinamide",
-  "brand": "Hemocyte Plus",
+  "brand": "NicAzel",
   "brands": [
-   "Hemocyte Plus",
-   "Multi-Delyn",
-   "Lactocal",
    "NicAzel",
    "Infuvite",
-   "Infuvite Pediatric",
+   "Lactocal",
+   "Nicomide",
+   "Integra F",
+   "Rena-Vite",
+   "Eldertonic",
+   "Ellis Tonic",
+   "Multi-Delyn",
    "Tandem Plus",
-   "Nicomide"
+   "Dialyvite 800",
+   "Hemocyte Plus",
+   "Infuvite Pediatric",
+   "Dialyvite 800 with Iron",
+   "Dialyvite 800 with Zinc"
   ],
   "rxcui": "7405",
   "source": "RxNorm"
@@ -9707,10 +10507,11 @@
  },
  {
   "generic": "nilotinib",
-  "brand": "Danziten",
+  "brand": "Tasigna",
   "brands": [
-   "Danziten",
-   "Tasigna"
+   "Tasigna",
+   "Cavhanza",
+   "Danziten"
   ],
   "rxcui": "662281",
   "source": "RxNorm"
@@ -9726,10 +10527,10 @@
  },
  {
   "generic": "nimodipine",
-  "brand": "Nymalize",
+  "brand": "Nimotop",
   "brands": [
-   "Nymalize",
-   "Nimotop"
+   "Nimotop",
+   "Nymalize"
   ],
   "rxcui": "7426",
   "source": "RxNorm"
@@ -9745,10 +10546,10 @@
  },
  {
   "generic": "niraparib",
-  "brand": "Zejula",
+  "brand": "Akeega",
   "brands": [
-   "Zejula",
-   "Akeega"
+   "Akeega",
+   "Zejula"
   ],
   "rxcui": "1918231",
   "source": "RxNorm"
@@ -9791,15 +10592,15 @@
  },
  {
   "generic": "nitroglycerin",
-  "brand": "Rectiv",
+  "brand": "Nitrostat",
   "brands": [
-   "Rectiv",
-   "Nitrolingual",
-   "Gonitro",
-   "Nitro-Dur",
-   "Nitro-Bid",
    "Nitrostat",
-   "NitroMist"
+   "Rectiv",
+   "Gonitro",
+   "Nitro-Bid",
+   "Nitro-Dur",
+   "NitroMist",
+   "Nitrolingual"
   ],
   "rxcui": "4917",
   "source": "RxNorm"
@@ -9834,16 +10635,16 @@
  },
  {
   "generic": "norethindrone",
-  "brand": "Jinteli",
+  "brand": "Femhrt",
   "brands": [
-   "Jinteli",
-   "Jevantique",
+   "Femhrt",
    "Fyavolv",
+   "Jinteli",
    "Aygestin",
-   "Combipatch",
-   "Myfembree",
    "Gallifrey",
-   "Femhrt"
+   "Myfembree",
+   "Combipatch",
+   "Jevantique"
   ],
   "rxcui": "7514",
   "source": "RxNorm"
@@ -9889,11 +10690,11 @@
  },
  {
   "generic": "nystatin",
-  "brand": "Bio-Statin",
+  "brand": "Nyamyc",
   "brands": [
-   "Bio-Statin",
+   "Nyamyc",
    "Nystop",
-   "Nyamyc"
+   "Bio-Statin"
   ],
   "rxcui": "7597",
   "source": "RxNorm"
@@ -9942,21 +10743,21 @@
  },
  {
   "generic": "octreotide",
-  "brand": "Sandostatin",
+  "brand": "Bynfezia",
   "brands": [
-   "Sandostatin",
    "Bynfezia",
-   "Mycapssa"
+   "Mycapssa",
+   "Sandostatin"
   ],
   "rxcui": "7617",
   "source": "RxNorm"
  },
  {
   "generic": "ofatumumab",
-  "brand": "Kesimpta",
+  "brand": "Arzerra",
   "brands": [
-   "Kesimpta",
-   "Arzerra"
+   "Arzerra",
+   "Kesimpta"
   ],
   "rxcui": "712566",
   "source": "RxNorm"
@@ -9992,21 +10793,21 @@
  },
  {
   "generic": "olodaterol",
-  "brand": "Striverdi",
+  "brand": "Stiolto",
   "brands": [
-   "Striverdi",
-   "Stiolto"
+   "Stiolto",
+   "Striverdi"
   ],
   "rxcui": "1546059",
   "source": "RxNorm"
  },
  {
   "generic": "olopatadine",
-  "brand": "Ryaltris",
+  "brand": "Pataday",
   "brands": [
-   "Ryaltris",
    "Pataday",
-   "PATANASE"
+   "PATANASE",
+   "Ryaltris"
   ],
   "rxcui": "135391",
   "source": "RxNorm"
@@ -10049,10 +10850,10 @@
  },
  {
   "generic": "omalizumab",
-  "brand": "Omlyclo",
+  "brand": "Xolair",
   "brands": [
-   "Omlyclo",
-   "Xolair"
+   "Xolair",
+   "Omlyclo"
   ],
   "rxcui": "302379",
   "source": "RxNorm"
@@ -10068,16 +10869,16 @@
  },
  {
   "generic": "omeprazole",
-  "brand": "Yosprala",
+  "brand": "Prilosec",
   "brands": [
-   "Yosprala",
    "Prilosec",
    "Talicia",
    "Konvomep",
-   "Primeguard",
+   "Yosprala",
    "Gastrobim",
-   "Zegerid Reformulated Aug 2006",
-   "UlcerGard"
+   "UlcerGard",
+   "Primeguard",
+   "Zegerid Reformulated Aug 2006"
   ],
   "rxcui": "7646",
   "source": "RxNorm"
@@ -10100,10 +10901,10 @@
  },
  {
   "generic": "orlistat",
-  "brand": "Xenical",
+  "brand": "Alli",
   "brands": [
-   "Xenical",
-   "Alli"
+   "Alli",
+   "Xenical"
   ],
   "rxcui": "37925",
   "source": "RxNorm"
@@ -10231,10 +11032,10 @@
  },
  {
   "generic": "oxcarbazepine",
-  "brand": "Oxtellar",
+  "brand": "Trileptal",
   "brands": [
-   "Oxtellar",
-   "Trileptal"
+   "Trileptal",
+   "Oxtellar"
   ],
   "rxcui": "32624",
   "source": "RxNorm"
@@ -10261,32 +11062,41 @@
  },
  {
   "generic": "oxycodone",
-  "brand": "Primlev",
+  "brand": "Percocet",
   "brands": [
-   "Primlev",
-   "Oxaydo",
-   "Xtampza",
-   "Roxybond",
-   "Nalocet",
-   "Endocet",
+   "Percocet",
    "Oxycontin",
-   "Roxicodone"
+   "Roxicodone",
+   "Oxaydo",
+   "Endocet",
+   "Nalocet",
+   "Primlev",
+   "Prolate",
+   "Xtampza",
+   "Roxybond"
   ],
   "rxcui": "7804",
   "source": "RxNorm"
  },
  {
   "generic": "oxymetazoline",
-  "brand": "Sinufrin Plus",
+  "brand": "Afrin",
   "brands": [
-   "Sinufrin Plus",
-   "Qlearquil Nasal Decongestant",
-   "Kovanaze",
-   "Rhofade",
    "Afrin",
-   "Allerest 12 Hour Nasal Spray",
+   "Sudafed OM",
+   "Upneeq",
+   "Rhofade",
+   "Four-Way",
+   "Kovanaze",
+   "Nostrilla",
    "Duramist Plus",
-   "Four-Way"
+   "Sinufrin Plus",
+   "Sinex Long-Acting",
+   "Zicam Sinus Relief",
+   "Neo-Synephrine 12 Hour",
+   "Dristan 12-Hour Nasal Spray",
+   "Allerest 12 Hour Nasal Spray",
+   "Qlearquil Nasal Decongestant"
   ],
   "rxcui": "7812",
   "source": "RxNorm"
@@ -10336,10 +11146,10 @@
  },
  {
   "generic": "paliperidone",
-  "brand": "Erzofri",
+  "brand": "Invega",
   "brands": [
-   "Erzofri",
-   "Invega"
+   "Invega",
+   "Erzofri"
   ],
   "rxcui": "679314",
   "source": "RxNorm"
@@ -10447,10 +11257,10 @@
  },
  {
   "generic": "pegcetacoplan",
-  "brand": "Empaveli",
+  "brand": "Syfovre",
   "brands": [
-   "Empaveli",
-   "Syfovre"
+   "Syfovre",
+   "Empaveli"
   ],
   "rxcui": "2557372",
   "source": "RxNorm"
@@ -10521,27 +11331,28 @@
  },
  {
   "generic": "penicillamine",
-  "brand": "Cuprimine",
+  "brand": "Depen",
   "brands": [
-   "Cuprimine",
    "Depen",
-   "Aagylur"
+   "Aagylur",
+   "Cuprimine"
   ],
   "rxcui": "7975",
   "source": "RxNorm"
  },
  {
   "generic": "penicillin G",
-  "brand": "Bactracillin G",
+  "brand": "Albadry",
   "brands": [
-   "Bactracillin G",
-   "Norocillin",
    "Albadry",
-   "Quartermaster",
-   "Bicillin L-A",
    "Bicillin",
+   "Pfizerpen",
+   "Lentocilin",
+   "Norocillin",
+   "Bicillin L-A",
    "Extencilline",
-   "Lentocilin"
+   "Quartermaster",
+   "Bactracillin G"
   ],
   "rxcui": "7980",
   "source": "RxNorm"
@@ -10615,10 +11426,10 @@
  },
  {
   "generic": "pertuzumab",
-  "brand": "Perjeta",
+  "brand": "Phesgo",
   "brands": [
-   "Perjeta",
-   "Phesgo"
+   "Phesgo",
+   "Perjeta"
   ],
   "rxcui": "1298944",
   "source": "RxNorm"
@@ -10634,13 +11445,13 @@
  },
  {
   "generic": "phenazopyridine",
-  "brand": "Azo Urinary Pain Relief",
+  "brand": "Uricalm",
   "brands": [
-   "Azo Urinary Pain Relief",
-   "Baridium",
-   "Uristat",
    "Uricalm",
-   "Pyridium"
+   "Uristat",
+   "Baridium",
+   "Pyridium",
+   "Azo Urinary Pain Relief"
   ],
   "rxcui": "8120",
   "source": "RxNorm"
@@ -10656,12 +11467,12 @@
  },
  {
   "generic": "phenobarbital",
-  "brand": "Donnatal",
+  "brand": "Sezaby",
   "brands": [
-   "Donnatal",
-   "Phenohytro",
    "Sezaby",
-   "Fidoquel"
+   "Donnatal",
+   "Fidoquel",
+   "Phenohytro"
   ],
   "rxcui": "8134",
   "source": "RxNorm"
@@ -10695,44 +11506,78 @@
  },
  {
   "generic": "phenylalanine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "8156",
   "source": "RxNorm"
  },
  {
   "generic": "phenylephrine",
-  "brand": "Wal-Dryl-D",
+  "brand": "Sudafed PE",
   "brands": [
-   "Wal-Dryl-D",
-   "Wal-Four",
-   "Wal-Phed PE",
-   "Dallergy Reformulated Nov 2011",
-   "Sudo-Tab",
-   "Nasopen PE",
+   "Sudafed PE",
+   "Benadryl-D Allergy and Sinus",
+   "Benadryl Allergy Plus Congestion",
+   "Nasop",
+   "Mydfrin",
+   "Omidria",
+   "Rhinall",
+   "Ventuss",
    "Biorphen",
-   "Omidria"
+   "M-End PE",
+   "Mydcombi",
+   "Sudo-Tab",
+   "Vazculep",
+   "Wal-Four",
+   "Alahist D",
+   "Brovex PBC",
+   "Immphentiv",
+   "Nasopen PE",
+   "Wal-Dryl-D",
+   "Cyclomydril",
+   "Wal-Dryl PE",
+   "Wal-Phed PE",
+   "Maxiphen CDX",
+   "Poly Hist PD",
+   "Neo-Synephrine"
   ],
   "rxcui": "8163",
   "source": "RxNorm"
  },
  {
   "generic": "phenytoin",
-  "brand": "Euthasol",
+  "brand": "Dilantin",
   "brands": [
-   "Euthasol",
    "Dilantin",
-   "Euthaphen",
-   "Phenytek"
+   "Euthasol",
+   "Phenytek",
+   "Euthaphen"
   ],
   "rxcui": "8183",
   "source": "RxNorm"
@@ -10748,12 +11593,12 @@
  },
  {
   "generic": "pilocarpine",
-  "brand": "Salagen",
+  "brand": "Qlosi",
   "brands": [
-   "Salagen",
-   "Pilocar",
-   "Vuity",
    "Qlosi",
+   "Vuity",
+   "Pilocar",
+   "Salagen",
    "Isoptocarpine"
   ],
   "rxcui": "8328",
@@ -10793,12 +11638,12 @@
  },
  {
   "generic": "pioglitazone",
-  "brand": "Oseni",
+  "brand": "Actos",
   "brands": [
-   "Oseni",
    "Actos",
-   "Actoplus Met",
-   "Duetact"
+   "Oseni",
+   "Duetact",
+   "Actoplus Met"
   ],
   "rxcui": "33738",
   "source": "RxNorm"
@@ -10841,11 +11686,11 @@
  },
  {
   "generic": "pitavastatin",
-  "brand": "Zypitamag",
+  "brand": "Livalo",
   "brands": [
-   "Zypitamag",
+   "Livalo",
    "Nikita",
-   "Livalo"
+   "Zypitamag"
   ],
   "rxcui": "861634",
   "source": "RxNorm"
@@ -10897,16 +11742,23 @@
  },
  {
   "generic": "polyethylene glycol 3350",
-  "brand": "PureLax",
+  "brand": "Miralax",
   "brands": [
-   "PureLax",
-   "GentleLax",
-   "HealthyLax",
-   "Gavilyte-H",
    "Miralax",
+   "Dulcolax Osmotic",
+   "Gavilax",
+   "PureLax",
+   "TriLyte",
+   "ClearLax",
    "Golytely",
+   "MoviPrep",
+   "GentleLax",
    "Comfortlax",
-   "Dulcolax Osmotic"
+   "GaviLyte-C",
+   "Gavilyte-G",
+   "Gavilyte-H",
+   "GaviLyte-N",
+   "HealthyLax"
   ],
   "rxcui": "221147",
   "source": "RxNorm"
@@ -10922,16 +11774,23 @@
  },
  {
   "generic": "polymyxin B",
-  "brand": "Tri Biozene",
+  "brand": "Polycin",
   "brands": [
+   "Polycin",
+   "Surolan",
+   "Maxitrol",
+   "Poly-Dex",
+   "Oticin HC",
+   "Lanabiotic",
+   "Polysporin",
+   "Cortisporin",
+   "Cuadriderma",
+   "Neo-Polycin",
    "Tri Biozene",
    "Neo-Polycin HC",
-   "Neo-Polycin",
-   "Maxitrol",
-   "Cuadriderma",
-   "Cortisporin",
-   "Poly-Dex",
-   "Polycin"
+   "Spectrocin Plus",
+   "Bactine Antibiotic",
+   "Mycitracin Plus Pain Reliever"
   ],
   "rxcui": "8536",
   "source": "RxNorm"
@@ -10986,11 +11845,11 @@
  },
  {
   "generic": "posaconazole",
-  "brand": "Posatex",
+  "brand": "Noxafil",
   "brands": [
+   "Noxafil",
    "Posatex",
-   "Mometamax Single",
-   "Noxafil"
+   "Mometamax Single"
   ],
   "rxcui": "282446",
   "source": "RxNorm"
@@ -11004,13 +11863,13 @@
  },
  {
   "generic": "potassium acetate",
-  "brand": "Plasma-Lyte 56 in 5 % Dextrose",
+  "brand": "Nutrilyte",
   "brands": [
-   "Plasma-Lyte 56 in 5 % Dextrose",
    "Nutrilyte",
-   "Nutrilyte II",
    "Normosol-M",
-   "Aminosyn 3.5 % M, Sulfite Free"
+   "Nutrilyte II",
+   "Aminosyn 3.5 % M, Sulfite Free",
+   "Plasma-Lyte 56 in 5 % Dextrose"
   ],
   "rxcui": "54987",
   "source": "RxNorm"
@@ -11069,10 +11928,10 @@
  },
  {
   "generic": "potassium bitartrate",
-  "brand": "Phexxi",
+  "brand": "Phexx",
   "brands": [
-   "Phexxi",
    "Phexx",
+   "Phexxi",
    "Ceo-Two"
   ],
   "rxcui": "223779",
@@ -11110,16 +11969,33 @@
  },
  {
   "generic": "potassium chloride",
-  "brand": "Medi-Lyte",
+  "brand": "K-Tab",
   "brands": [
+   "K-Tab",
+   "Sutab",
+   "Pokonza",
+   "TriLyte",
+   "Golytely",
+   "Klor-Con",
+   "MoviPrep",
+   "Isolyte P",
+   "Isolyte S",
    "Medi-Lyte",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Isolyte S in 5 % Dextrose",
-   "Normosol-R in 5 % Dextrose",
    "Nutrilyte",
+   "Physiosol",
+   "Tis-U-Sol",
+   "GaviLyte-C",
+   "Gavilyte-G",
    "Gavilyte-H",
-   "Isolyte S"
+   "GaviLyte-N",
+   "Ionosol-MB",
+   "Normosol-R",
+   "Physiolyte",
+   "Thermotabs",
+   "Plasmalyte A",
+   "ProcalAmine 3",
+   "Plasma-lyte 148",
+   "BSS Ophthalmic Solution"
   ],
   "rxcui": "8591",
   "source": "RxNorm"
@@ -11210,14 +12086,14 @@
  },
  {
   "generic": "potassium iodide",
-  "brand": "ThyroSafe",
+  "brand": "Iosat",
   "brands": [
-   "ThyroSafe",
    "Iosat",
    "Lactocal",
+   "ThyroSafe",
+   "ThyroShield",
    "Vitafol-One",
-   "SSKI brand of Potassium Iodide",
-   "ThyroShield"
+   "SSKI brand of Potassium Iodide"
   ],
   "rxcui": "8597",
   "source": "RxNorm"
@@ -11252,13 +12128,13 @@
  },
  {
   "generic": "potassium nitrate",
-  "brand": "Styptstix",
+  "brand": "Avoca",
   "brands": [
-   "Styptstix",
    "Avoca",
+   "Styptstix",
    "Fluorimax Sensitive",
-   "Fluoridex Daily Defense Sensitivity",
-   "Prevident 5000 Sensitive"
+   "Prevident 5000 Sensitive",
+   "Fluoridex Daily Defense Sensitivity"
   ],
   "rxcui": "34316",
   "source": "RxNorm"
@@ -11314,16 +12190,16 @@
  },
  {
   "generic": "potassium phosphate",
-  "brand": "Isolyte S in 5 % Dextrose",
+  "brand": "K-Phos",
   "brands": [
-   "Isolyte S in 5 % Dextrose",
-   "Isolyte S",
-   "K-Phos Neutral",
-   "K-Phos No 2",
-   "Tis-U-Sol",
    "K-Phos",
+   "Isolyte S",
+   "Tis-U-Sol",
+   "Ionosol-MB",
+   "K-Phos No 2",
+   "K-Phos Neutral",
    "Phospha 250 Neutral",
-   "Ionosol-MB"
+   "Isolyte S in 5 % Dextrose"
   ],
   "rxcui": "34322",
   "source": "RxNorm"
@@ -11431,16 +12307,25 @@
  },
  {
   "generic": "praziquantel",
-  "brand": "Sentinel Spectrum",
+  "brand": "Droncit",
   "brands": [
-   "Sentinel Spectrum",
-   "Quest Plus",
+   "Droncit",
+   "Drontal",
+   "Equimax",
+   "Iverhart",
+   "Giarcidia",
+   "Profender",
    "Virbantel",
    "Biltricide",
-   "Droncit",
+   "Quest Plus",
+   "Prazimectin",
+   "Drontal Plus",
+   "NexGard Combo",
+   "Triple Wormer",
+   "Zimecterin Gold",
    "Interceptor Plus",
-   "Iverhart",
-   "NexGard Combo"
+   "Sentinel Spectrum",
+   "Sentry HC Worm X Plus"
   ],
   "rxcui": "8628",
   "source": "RxNorm"
@@ -11465,36 +12350,39 @@
  },
  {
   "generic": "prednisolone",
-  "brand": "Prednistab",
+  "brand": "Orapred",
   "brands": [
-   "Prednistab",
-   "Pred Forte",
-   "Pred Mild",
-   "Blephamide",
-   "Pediapred",
-   "Cortamine",
    "Orapred",
-   "MILLIPRED"
+   "Surolan",
+   "Veripred",
+   "Cortamine",
+   "MILLIPRED",
+   "Pediapred",
+   "Pred Mild",
+   "Temaril-P",
+   "Blephamide",
+   "Pred Forte",
+   "Prednistab"
   ],
   "rxcui": "8638",
   "source": "RxNorm"
  },
  {
   "generic": "prednisone",
-  "brand": "Rayos",
+  "brand": "Deltasone",
   "brands": [
-   "Rayos",
-   "Deltasone"
+   "Deltasone",
+   "Rayos"
   ],
   "rxcui": "8640",
   "source": "RxNorm"
  },
  {
   "generic": "pregabalin",
-  "brand": "Bonqat",
+  "brand": "Lyrica",
   "brands": [
-   "Bonqat",
-   "Lyrica"
+   "Lyrica",
+   "Bonqat"
   ],
   "rxcui": "187832",
   "source": "RxNorm"
@@ -11508,12 +12396,12 @@
  },
  {
   "generic": "prilocaine",
-  "brand": "Citanest",
+  "brand": "Oraqix",
   "brands": [
-   "Citanest",
+   "Oraqix",
    "Relador",
-   "Citanest Forte",
-   "Oraqix"
+   "Citanest",
+   "Citanest Forte"
   ],
   "rxcui": "8686",
   "source": "RxNorm"
@@ -11554,41 +12442,58 @@
  },
  {
   "generic": "prochlorperazine",
-  "brand": "Compazine",
+  "brand": "Compro",
   "brands": [
-   "Compazine",
-   "Compro"
+   "Compro",
+   "Compazine"
   ],
   "rxcui": "8704",
   "source": "RxNorm"
  },
  {
   "generic": "progesterone",
-  "brand": "Eazi-Breed CIDR",
+  "brand": "Bijuva",
   "brands": [
-   "Eazi-Breed CIDR",
+   "Bijuva",
    "Crinone",
    "Synovex C",
-   "Bijuva",
    "Synovex S",
+   "Endometrin",
    "Prometrium",
-   "Endometrin"
+   "Eazi-Breed CIDR"
   ],
   "rxcui": "8727",
   "source": "RxNorm"
  },
  {
   "generic": "proline",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "8737",
   "source": "RxNorm"
@@ -11598,8 +12503,8 @@
   "brand": "Phenergan",
   "brands": [
    "Phenergan",
-   "Promethegan",
-   "Phenadoz"
+   "Phenadoz",
+   "Promethegan"
   ],
   "rxcui": "8745",
   "source": "RxNorm"
@@ -11626,11 +12531,11 @@
  },
  {
   "generic": "propranolol",
-  "brand": "Hemangeol",
+  "brand": "Inderal",
   "brands": [
-   "Hemangeol",
    "Inderal",
-   "InnoPran"
+   "InnoPran",
+   "Hemangeol"
   ],
   "rxcui": "8787",
   "source": "RxNorm"
@@ -11667,16 +12572,33 @@
  },
  {
   "generic": "pseudoephedrine",
-  "brand": "Wal-Act",
+  "brand": "Sudafed",
   "brands": [
+   "Sudafed",
+   "Zyrtec-D",
+   "Allegra-D",
+   "Claritin-D",
+   "Q-Fed",
+   "Nexafed",
+   "Vi-Sudo",
    "Wal-Act",
-   "Wal-itin D",
-   "Lortuss EX",
+   "Aphedrid",
+   "Genaphed",
+   "Sudogest",
+   "Wal-Phed",
+   "A-Phedrin",
+   "Alavert D",
+   "Biotussin",
+   "Hycofenix",
+   "Wal Zyr D",
    "Wal-Fex D",
-   "M-End Max D",
-   "Stahist AD",
    "Zephrex-D",
-   "Nexafed"
+   "Allerclear",
+   "Ambifed CD",
+   "Bromfed DM",
+   "Clarinex-D",
+   "Lortuss EX",
+   "Mar-cof BP"
   ],
   "rxcui": "8896",
   "source": "RxNorm"
@@ -11690,26 +12612,43 @@
  },
  {
   "generic": "pyridostigmine",
-  "brand": "Mestinon",
+  "brand": "Regonol",
   "brands": [
-   "Mestinon",
-   "Regonol"
+   "Regonol",
+   "Mestinon"
   ],
   "rxcui": "9000",
   "source": "RxNorm"
  },
  {
   "generic": "pyridoxine",
-  "brand": "Folbecal",
+  "brand": "Beelith",
   "brands": [
+   "Beelith",
+   "NicAzel",
+   "Bonjesta",
+   "Diclegis",
    "Folbecal",
-   "Folgard OS",
-   "Hemocyte Plus",
-   "Multi-Delyn",
-   "Irospan Tablet",
+   "Infuvite",
    "Lactocal",
+   "Melatonex",
+   "Rena-Vite",
+   "Concept OB",
+   "Eldertonic",
+   "Folgard OS",
+   "Vita-Respa",
+   "Ellis Tonic",
+   "Multi-Delyn",
+   "Tandem Plus",
    "Vitafol-One",
-   "NicAzel"
+   "Dialyvite 800",
+   "Hemocyte Plus",
+   "Irospan Tablet",
+   "Encora AM Tablet",
+   "Encora PM Tablet",
+   "Infuvite Pediatric",
+   "Animi-3 with Vitamin D",
+   "Dialyvite 800 with Iron"
   ],
   "rxcui": "684879",
   "source": "RxNorm"
@@ -11723,10 +12662,10 @@
  },
  {
   "generic": "pyrimethamine",
-  "brand": "Rebalance",
+  "brand": "Daraprim",
   "brands": [
-   "Rebalance",
-   "Daraprim"
+   "Daraprim",
+   "Rebalance"
   ],
   "rxcui": "9010",
   "source": "RxNorm"
@@ -11756,10 +12695,10 @@
  },
  {
   "generic": "quinapril",
-  "brand": "Accuretic",
+  "brand": "Accupril",
   "brands": [
-   "Accuretic",
-   "Accupril"
+   "Accupril",
+   "Accuretic"
   ],
   "rxcui": "35208",
   "source": "RxNorm"
@@ -11862,10 +12801,10 @@
  },
  {
   "generic": "ranolazine",
-  "brand": "Aspruzyo",
+  "brand": "Ranexa",
   "brands": [
-   "Aspruzyo",
-   "Ranexa"
+   "Ranexa",
+   "Aspruzyo"
   ],
   "rxcui": "35829",
   "source": "RxNorm"
@@ -11966,12 +12905,12 @@
  },
  {
   "generic": "ribavirin",
-  "brand": "Moderiba",
+  "brand": "RibaTab",
   "brands": [
+   "RibaTab",
    "Moderiba",
    "Virazole",
-   "Ribasphere",
-   "RibaTab"
+   "Ribasphere"
   ],
   "rxcui": "9344",
   "source": "RxNorm"
@@ -11994,26 +12933,35 @@
  },
  {
   "generic": "riboflavin",
-  "brand": "Hemocyte Plus",
+  "brand": "Infuvite",
   "brands": [
-   "Hemocyte Plus",
-   "Multi-Delyn",
-   "Irospan Tablet",
-   "Lactocal",
-   "Vitafol-One",
    "Infuvite",
+   "Lactocal",
+   "Rena-Vite",
+   "Concept OB",
+   "Eldertonic",
+   "Ellis Tonic",
+   "Multi-Delyn",
+   "Poly-Vi-Sol",
+   "Tandem Plus",
+   "Vitafol-One",
+   "MVC-Fluoride",
+   "Dialyvite 800",
+   "Hemocyte Plus",
+   "Irospan Tablet",
    "Infuvite Pediatric",
-   "Concept OB"
+   "Dialyvite 800 with Iron",
+   "Dialyvite 800 with Zinc"
   ],
   "rxcui": "9346",
   "source": "RxNorm"
  },
  {
   "generic": "riboflavin 5'-phosphate",
-  "brand": "Photrexa",
+  "brand": "Epioxa",
   "brands": [
-   "Photrexa",
-   "Epioxa"
+   "Epioxa",
+   "Photrexa"
   ],
   "rxcui": "1925821",
   "source": "RxNorm"
@@ -12066,12 +13014,12 @@
  },
  {
   "generic": "rilpivirine",
-  "brand": "Edurant",
+  "brand": "Juluca",
   "brands": [
+   "Juluca",
    "Edurant",
-   "Complera",
    "Odefsey",
-   "Juluca"
+   "Complera"
   ],
   "rxcui": "1102270",
   "source": "RxNorm"
@@ -12081,9 +13029,9 @@
   "brand": "Rilutek",
   "brands": [
    "Rilutek",
-   "Tiglutik",
    "Exservan",
-   "Teglutik"
+   "Teglutik",
+   "Tiglutik"
   ],
   "rxcui": "35623",
   "source": "RxNorm"
@@ -12147,9 +13095,9 @@
   "brand": "Risperdal",
   "brands": [
    "Risperdal",
-   "Perseris",
    "Uzedy",
-   "Rykindo"
+   "Rykindo",
+   "Perseris"
   ],
   "rxcui": "35636",
   "source": "RxNorm"
@@ -12195,10 +13143,10 @@
  },
  {
   "generic": "roflumilast",
-  "brand": "Daliresp",
+  "brand": "Zoryve",
   "brands": [
-   "Daliresp",
-   "Zoryve"
+   "Zoryve",
+   "Daliresp"
   ],
   "rxcui": "1091836",
   "source": "RxNorm"
@@ -12255,11 +13203,11 @@
  },
  {
   "generic": "rosuvastatin",
-  "brand": "Ezallor",
+  "brand": "Crestor",
   "brands": [
-   "Ezallor",
+   "Crestor",
    "Roszet",
-   "Crestor"
+   "Ezallor"
   ],
   "rxcui": "301542",
   "source": "RxNorm"
@@ -12330,28 +13278,45 @@
  },
  {
   "generic": "salicylic acid",
-  "brand": "Sebobalance",
+  "brand": "P & S",
   "brands": [
-   "Sebobalance",
-   "Noxzema Clean",
-   "St. Ives Blemish & Blackhead Control",
+   "P & S",
+   "Sebex",
+   "Xalix",
+   "Bensal",
+   "Cystex",
+   "Salvax",
+   "Acnevir",
+   "Duofilm",
+   "Exoderm",
+   "Keralyt",
+   "Rayasal",
+   "Salycim",
+   "Sebulex",
+   "Stridex",
+   "Virasal",
+   "Acneclir",
    "AcneWorx",
-   "Psoriasin Wash",
-   "Fostex Bar",
-   "Clearskin Blemish",
-   "Pernox Scrub Cleanser"
+   "Duoplant",
+   "Freezone",
+   "Glycylic",
+   "Salyntra",
+   "Sebasorb",
+   "Stri-Dex",
+   "Ultrasal",
+   "Ala Seb T"
   ],
   "rxcui": "9525",
   "source": "RxNorm"
  },
  {
   "generic": "salmeterol",
-  "brand": "AirDuo",
+  "brand": "Advair",
   "brands": [
+   "Advair",
    "AirDuo",
-   "Serevent",
    "Wixela",
-   "Advair"
+   "Serevent"
   ],
   "rxcui": "36117",
   "source": "RxNorm"
@@ -12394,11 +13359,11 @@
  },
  {
   "generic": "saxagliptin",
-  "brand": "Kombiglyze",
+  "brand": "Qtern",
   "brands": [
-   "Kombiglyze",
    "Qtern",
-   "Onglyza"
+   "Onglyza",
+   "Kombiglyze"
   ],
   "rxcui": "857974",
   "source": "RxNorm"
@@ -12437,8 +13402,8 @@
   "brand": "Emsam",
   "brands": [
    "Emsam",
-   "Zelapar",
-   "Anipryl"
+   "Anipryl",
+   "Zelapar"
   ],
   "rxcui": "9639",
   "source": "RxNorm"
@@ -12462,10 +13427,10 @@
   "brand": "SelRx",
   "brands": [
    "SelRx",
-   "Head & Shoulders Clinical Strength",
    "Dandrex",
+   "Tersi Foam",
    "Selsun Blue",
-   "Tersi Foam"
+   "Head & Shoulders Clinical Strength"
   ],
   "rxcui": "36345",
   "source": "RxNorm"
@@ -12508,11 +13473,11 @@
  },
  {
   "generic": "semaglutide",
-  "brand": "Ozempic",
+  "brand": "Wegovy",
   "brands": [
+   "Wegovy",
    "Ozempic",
-   "Rybelsus",
-   "Wegovy"
+   "Rybelsus"
   ],
   "rxcui": "1991302",
   "source": "RxNorm"
@@ -12528,16 +13493,33 @@
  },
  {
   "generic": "serine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "9671",
   "source": "RxNorm"
@@ -12576,8 +13558,8 @@
   "brands": [
    "Viagra",
    "Liqrev",
-   "Vybrique",
-   "Revatio"
+   "Revatio",
+   "Vybrique"
   ],
   "rxcui": "136411",
   "source": "RxNorm"
@@ -12596,22 +13578,22 @@
   "brand": "SSD",
   "brands": [
    "SSD",
-   "Thermazene",
    "Silvadene",
-   "Enrosite Silver",
+   "Thermazene",
+   "Baytril Otic",
    "Enropro Silver",
-   "Baytril Otic"
+   "Enrosite Silver"
   ],
   "rxcui": "9793",
   "source": "RxNorm"
  },
  {
   "generic": "simvastatin",
-  "brand": "Flolipid",
+  "brand": "Zocor",
   "brands": [
-   "Flolipid",
    "Zocor",
-   "Vytorin"
+   "Vytorin",
+   "Flolipid"
   ],
   "rxcui": "36567",
   "source": "RxNorm"
@@ -12636,12 +13618,12 @@
  },
  {
   "generic": "sirolimus",
-  "brand": "Rapamune",
+  "brand": "Fyarro",
   "brands": [
-   "Rapamune",
    "Fyarro",
    "Hyftor",
-   "Felycin"
+   "Felycin",
+   "Rapamune"
   ],
   "rxcui": "35302",
   "source": "RxNorm"
@@ -12651,11 +13633,11 @@
   "brand": "Janumet",
   "brands": [
    "Janumet",
-   "Steglujan",
+   "Januvia",
    "Zituvio",
-   "Zituvimet",
    "Brynovin",
-   "Januvia"
+   "Steglujan",
+   "Zituvimet"
   ],
   "rxcui": "593411",
   "source": "RxNorm"
@@ -12669,27 +13651,44 @@
  },
  {
   "generic": "sodium ascorbate",
-  "brand": "Hemocyte Plus",
+  "brand": "MoviPrep",
   "brands": [
-   "Hemocyte Plus",
+   "MoviPrep",
    "Tandem Plus",
-   "MoviPrep"
+   "Hemocyte Plus"
   ],
   "rxcui": "267366",
   "source": "RxNorm"
  },
  {
   "generic": "sodium fluoride",
-  "brand": "Clinpro 5000",
+  "brand": "Crest",
   "brands": [
-   "Clinpro 5000",
-   "Listerine",
    "Crest",
-   "FluoriSHIELD",
-   "Neutramaxx",
-   "Zooby Fluoride Foam",
+   "Allday",
+   "Kolorz",
+   "Ludent",
+   "Colgate",
+   "Epiflur",
+   "Dentagel",
    "Duraflor",
-   "PCxx Neutral Foam"
+   "Florical",
+   "Nafrinse",
+   "Fluorabon",
+   "Fluoridex",
+   "Fluorimax",
+   "Fluorinse",
+   "Fluoritab",
+   "Listerine",
+   "Phos-Flur",
+   "Prevident",
+   "CTx3 Rinse",
+   "Neutracare",
+   "NeutraGard",
+   "Neutramaxx",
+   "Clinpro 5000",
+   "FluoriSHIELD",
+   "MVC-Fluoride"
   ],
   "rxcui": "9873",
   "source": "RxNorm"
@@ -12715,12 +13714,12 @@
  },
  {
   "generic": "sofosbuvir",
-  "brand": "Sovaldi",
+  "brand": "Vosevi",
   "brands": [
-   "Sovaldi",
-   "Harvoni",
+   "Vosevi",
    "Epclusa",
-   "Vosevi"
+   "Harvoni",
+   "Sovaldi"
   ],
   "rxcui": "1484911",
   "source": "RxNorm"
@@ -12745,16 +13744,17 @@
  },
  {
   "generic": "somatropin",
-  "brand": "Zomacton",
+  "brand": "Saizen",
   "brands": [
-   "Zomacton",
-   "Humatrope",
-   "Genotropin",
-   "Norditropin",
    "Saizen",
    "Nutropin",
+   "Serostim",
+   "Zomacton",
    "Zorbtive",
-   "Omnitrope"
+   "Humatrope",
+   "Omnitrope",
+   "Genotropin",
+   "Norditropin"
   ],
   "rxcui": "61148",
   "source": "RxNorm"
@@ -12788,11 +13788,11 @@
  },
  {
   "generic": "sotalol",
-  "brand": "Sotylize",
+  "brand": "Betapace",
   "brands": [
-   "Sotylize",
    "Betapace",
-   "Sorine"
+   "Sorine",
+   "Sotylize"
   ],
   "rxcui": "9947",
   "source": "RxNorm"
@@ -12808,11 +13808,11 @@
  },
  {
   "generic": "soybean oil",
-  "brand": "Nutrilipid",
+  "brand": "Clinolipid",
   "brands": [
-   "Nutrilipid",
    "Clinolipid",
-   "Intralipid"
+   "Intralipid",
+   "Nutrilipid"
   ],
   "rxcui": "9949",
   "source": "RxNorm"
@@ -12842,9 +13842,8 @@
   "brand": "Aldactone",
   "brands": [
    "Aldactone",
-   "Aldactazide",
-   "Carospir",
-   "Cardalis"
+   "Cardalis",
+   "Carospir"
   ],
   "rxcui": "9997",
   "source": "RxNorm"
@@ -12894,16 +13893,22 @@
  },
  {
   "generic": "sulfacetamide",
-  "brand": "Sumadan Wash",
+  "brand": "Avar",
   "brands": [
-   "Sumadan Wash",
+   "Avar",
+   "Ovace",
+   "Clenia",
+   "Klaron",
+   "Rosula",
+   "Plexion",
+   "Rosanil",
+   "Sumaxin",
    "Bleph-10",
    "Blephamide",
-   "Klaron",
+   "BP 10-Wash",
    "Carmol Scalp",
-   "Ovace",
-   "Plexion",
-   "Rosanil"
+   "Sumadan Wash",
+   "BP Cleansing Wash"
   ],
   "rxcui": "10169",
   "source": "RxNorm"
@@ -12929,16 +13934,31 @@
  },
  {
   "generic": "sulfur",
-  "brand": "Fostex Bar",
+  "brand": "Avar",
   "brands": [
-   "Fostex Bar",
-   "Pernox Scrub Cleanser",
-   "End-Zit",
-   "Sumadan Wash",
-   "Liquimat",
+   "Avar",
+   "NuOx",
+   "Sebex",
+   "Clenia",
+   "Rosula",
    "Thylox",
+   "Acnomel",
+   "End-Zit",
+   "Plexion",
+   "Rezamid",
+   "Rosanil",
+   "Sebulex",
+   "Sulfoam",
+   "Sumaxin",
+   "Liquimat",
+   "Sulfo-Lo",
    "Ala Seb T",
-   "Acnomel"
+   "BP 10-Wash",
+   "Fostex Bar",
+   "Sulpho-Lac",
+   "Sumadan Wash",
+   "BP Cleansing Wash",
+   "Pernox Scrub Cleanser"
   ],
   "rxcui": "10223",
   "source": "RxNorm"
@@ -12952,13 +13972,13 @@
  },
  {
   "generic": "sumatriptan",
-  "brand": "Zembrace",
+  "brand": "Imitrex",
   "brands": [
-   "Zembrace",
-   "Onzetra",
    "Imitrex",
+   "Onzetra",
    "Tosymra",
-   "Treximet"
+   "Treximet",
+   "Zembrace"
   ],
   "rxcui": "37418",
   "source": "RxNorm"
@@ -12983,25 +14003,25 @@
  },
  {
   "generic": "tacrolimus",
-  "brand": "Astagraf",
+  "brand": "Prograf",
   "brands": [
+   "Prograf",
    "Astagraf",
-   "Envarsus",
-   "Prograf"
+   "Envarsus"
   ],
   "rxcui": "42316",
   "source": "RxNorm"
  },
  {
   "generic": "tadalafil",
-  "brand": "Alyq",
+  "brand": "Cialis",
   "brands": [
-   "Alyq",
-   "Entadfi",
-   "Tadliq",
-   "Opsynvi",
    "Cialis",
-   "Adcirca"
+   "Alyq",
+   "Tadliq",
+   "Adcirca",
+   "Entadfi",
+   "Opsynvi"
   ],
   "rxcui": "358263",
   "source": "RxNorm"
@@ -13109,12 +14129,12 @@
  },
  {
   "generic": "tazarotene",
-  "brand": "Fabior",
+  "brand": "Arazlo",
   "brands": [
+   "Arazlo",
    "Fabior",
    "Duobrii",
    "Tazorac",
-   "Arazlo",
    "Trilitas"
   ],
   "rxcui": "83947",
@@ -13131,10 +14151,10 @@
  },
  {
   "generic": "tazobactam",
-  "brand": "Zerbaxa",
+  "brand": "Zosyn",
   "brands": [
-   "Zerbaxa",
-   "Zosyn"
+   "Zosyn",
+   "Zerbaxa"
   ],
   "rxcui": "37617",
   "source": "RxNorm"
@@ -13168,13 +14188,13 @@
  },
  {
   "generic": "telmisartan",
-  "brand": "Twynsta",
+  "brand": "Micardis",
   "brands": [
+   "Micardis",
+   "Micardis-HCT",
    "Twynsta",
    "Semintra",
-   "Micardis",
-   "Widaplik",
-   "Micardis-HCT"
+   "Widaplik"
   ],
   "rxcui": "73494",
   "source": "RxNorm"
@@ -13218,16 +14238,17 @@
  },
  {
   "generic": "tenofovir disoproxil",
-  "brand": "Complera",
+  "brand": "Symfi",
   "brands": [
+   "Symfi",
+   "Cimduo",
+   "Viread",
+   "Atripla",
+   "Temixys",
+   "Truvada",
    "Complera",
    "Stribild",
-   "Cimduo",
-   "Symfi",
-   "Delstrigo",
-   "Temixys",
-   "Viread",
-   "Truvada"
+   "Delstrigo"
   ],
   "rxcui": "300195",
   "source": "RxNorm"
@@ -13252,14 +14273,14 @@
  },
  {
   "generic": "terbinafine",
-  "brand": "Silka Cream",
+  "brand": "Duotic",
   "brands": [
-   "Silka Cream",
-   "Lamisil",
-   "Simplera",
    "Duotic",
+   "Klentz",
+   "Lamisil",
    "Osurnia",
-   "Klentz"
+   "Simplera",
+   "Silka Cream"
   ],
   "rxcui": "37801",
   "source": "RxNorm"
@@ -13289,11 +14310,11 @@
  },
  {
   "generic": "teriparatide",
-  "brand": "Yorvipath",
+  "brand": "Forteo",
   "brands": [
-   "Yorvipath",
+   "Forteo",
    "Bonsity",
-   "Forteo"
+   "Yorvipath"
   ],
   "rxcui": "32915",
   "source": "RxNorm"
@@ -13309,16 +14330,24 @@
  },
  {
   "generic": "testosterone",
-  "brand": "Fortesta",
+  "brand": "Aveed",
   "brands": [
-   "Fortesta",
    "Aveed",
-   "Vogelxo",
-   "Natesto",
-   "Xyosted",
+   "Azmiro",
+   "Testim",
+   "Tlando",
    "Jatenzo",
+   "Natesto",
+   "Vogelxo",
+   "Xyosted",
+   "Androgel",
+   "Fortesta",
+   "Kyzatrex",
+   "Testopel",
    "Androderm",
-   "Tlando"
+   "Synovex H",
+   "Undecatrex",
+   "Depo-testosterone"
   ],
   "rxcui": "10379",
   "source": "RxNorm"
@@ -13348,27 +14377,28 @@
  },
  {
   "generic": "tetracaine",
-  "brand": "Neo-Predef",
+  "brand": "Synera",
   "brands": [
-   "Neo-Predef",
+   "Synera",
    "Numfast",
    "Kovanaze",
-   "Cetacaine",
-   "Pontocaine",
+   "Pliaglis",
    "Tetcaine",
    "Altacaine",
-   "Synera"
+   "Cetacaine",
+   "Neo-Predef",
+   "Pontocaine"
   ],
   "rxcui": "10391",
   "source": "RxNorm"
  },
  {
   "generic": "tetracycline",
-  "brand": "Viabecline",
+  "brand": "Pylera",
   "brands": [
-   "Viabecline",
+   "Pylera",
    "Vitastem",
-   "Pylera"
+   "Viabecline"
   ],
   "rxcui": "10395",
   "source": "RxNorm"
@@ -13403,16 +14433,25 @@
  },
  {
   "generic": "thiamine",
-  "brand": "Hemocyte Plus",
+  "brand": "Infuvite",
   "brands": [
-   "Hemocyte Plus",
-   "Multi-Delyn",
-   "Irospan Tablet",
-   "Lactocal",
-   "Vitafol-One",
    "Infuvite",
+   "Lactocal",
+   "Rena-Vite",
+   "Concept OB",
+   "Eldertonic",
+   "Ellis Tonic",
+   "Multi-Delyn",
+   "Poly-Vi-Sol",
+   "Tandem Plus",
+   "Vitafol-One",
+   "MVC-Fluoride",
+   "Dialyvite 800",
+   "Hemocyte Plus",
+   "Irospan Tablet",
    "Infuvite Pediatric",
-   "Concept OB"
+   "Dialyvite 800 with Iron",
+   "Dialyvite 800 with Zinc"
   ],
   "rxcui": "10454",
   "source": "RxNorm"
@@ -13456,16 +14495,33 @@
  },
  {
   "generic": "threonine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "10524",
   "source": "RxNorm"
@@ -13531,16 +14587,18 @@
  },
  {
   "generic": "thyroid (USP)",
-  "brand": "WP Thyroid",
+  "brand": "NP Thyroid",
   "brands": [
-   "WP Thyroid",
    "NP Thyroid",
    "Armour Thyroid",
-   "Westhroid",
-   "Niva Thyroid",
    "Adthyza",
+   "Westhroid",
    "Renthyroid",
-   "Evexithroid"
+   "WP Thyroid",
+   "Amerithroid",
+   "Evexithroid",
+   "Niva Thyroid",
+   "Nature-Throid"
   ],
   "rxcui": "10572",
   "source": "RxNorm"
@@ -13583,13 +14641,13 @@
  },
  {
   "generic": "timolol",
-  "brand": "Timoptic",
+  "brand": "Cosopt",
   "brands": [
-   "Timoptic",
-   "Betimol",
    "Cosopt",
+   "Betimol",
    "Istalol",
-   "Combigan"
+   "Combigan",
+   "Timoptic"
   ],
   "rxcui": "10600",
   "source": "RxNorm"
@@ -13608,17 +14666,18 @@
   "brand": "Thiola",
   "brands": [
    "Thiola",
-   "Venxxiva"
+   "Venxxiva",
+   "Tiocystin"
   ],
   "rxcui": "6765",
   "source": "RxNorm"
  },
  {
   "generic": "tiotropium",
-  "brand": "Stiolto",
+  "brand": "Spiriva",
   "brands": [
-   "Stiolto",
-   "Spiriva"
+   "Spiriva",
+   "Stiolto"
   ],
   "rxcui": "69120",
   "source": "RxNorm"
@@ -13681,14 +14740,14 @@
  },
  {
   "generic": "tobramycin",
-  "brand": "Bethkis",
+  "brand": "Tobi",
   "brands": [
+   "Tobi",
+   "Zylet",
+   "Tobrex",
    "Bethkis",
    "Kitabis",
-   "Tobi",
-   "Tobradex",
-   "Tobrex",
-   "Zylet"
+   "Tobradex"
   ],
   "rxcui": "10627",
   "source": "RxNorm"
@@ -13698,9 +14757,9 @@
   "brand": "Tyenne",
   "brands": [
    "Tyenne",
-   "Tofidence",
+   "Actemra",
    "Avtozma",
-   "Actemra"
+   "Tofidence"
   ],
   "rxcui": "612865",
   "source": "RxNorm"
@@ -13741,23 +14800,23 @@
  },
  {
   "generic": "tolvaptan",
-  "brand": "Jynarque",
+  "brand": "Samsca",
   "brands": [
-   "Jynarque",
-   "Samsca"
+   "Samsca",
+   "Jynarque"
   ],
   "rxcui": "358257",
   "source": "RxNorm"
  },
  {
   "generic": "topiramate",
-  "brand": "Qsymia",
+  "brand": "Topamax",
   "brands": [
-   "Qsymia",
-   "Trokendi",
-   "Qudexy",
    "Topamax",
-   "Eprontia"
+   "Qsymia",
+   "Qudexy",
+   "Eprontia",
+   "Trokendi"
   ],
   "rxcui": "38404",
   "source": "RxNorm"
@@ -13792,8 +14851,9 @@
  },
  {
   "generic": "trabectedin",
-  "brand": "Yondelis",
+  "brand": "Evdi",
   "brands": [
+   "Evdi",
    "Yondelis"
   ],
   "rxcui": "1716278",
@@ -13801,13 +14861,13 @@
  },
  {
   "generic": "tramadol",
-  "brand": "ConZip",
+  "brand": "Ultram",
   "brands": [
-   "ConZip",
    "Ultram",
    "Qdolo",
-   "Seglentis",
-   "Ultracet"
+   "ConZip",
+   "Ultracet",
+   "Seglentis"
   ],
   "rxcui": "10689",
   "source": "RxNorm"
@@ -13830,10 +14890,10 @@
  },
  {
   "generic": "tranexamic acid",
-  "brand": "Cyklokapron",
+  "brand": "Lysteda",
   "brands": [
-   "Cyklokapron",
-   "Lysteda"
+   "Lysteda",
+   "Cyklokapron"
   ],
   "rxcui": "10691",
   "source": "RxNorm"
@@ -13868,42 +14928,50 @@
  },
  {
   "generic": "treprostinil",
-  "brand": "Orenitram",
+  "brand": "Tyvaso",
   "brands": [
-   "Orenitram",
+   "Tyvaso",
    "Yutrepia",
-   "Remodulin",
-   "Tyvaso"
+   "Orenitram",
+   "Remodulin"
   ],
   "rxcui": "343048",
   "source": "RxNorm"
  },
  {
   "generic": "tretinoin",
-  "brand": "Retin-A",
+  "brand": "Avita",
   "brands": [
-   "Retin-A",
-   "Altreno",
    "Avita",
-   "Twyneo",
-   "Tri-Luma",
-   "Tretin X",
    "Ziana",
-   "Atralin"
+   "Renova",
+   "Twyneo",
+   "Veltin",
+   "Altreno",
+   "Atralin",
+   "Refissa",
+   "Retin-A",
+   "Tretin X",
+   "Tri-Luma"
   ],
   "rxcui": "10753",
   "source": "RxNorm"
  },
  {
   "generic": "triamcinolone",
-  "brand": "Trianex",
+  "brand": "Nasacort",
   "brands": [
-   "Trianex",
    "Nasacort",
+   "Xipere",
    "Genesis",
-   "Zilretta",
    "Kenalog",
+   "Kourzeq",
+   "Oralone",
+   "Trianex",
    "Triderm",
+   "Zilretta",
+   "AllerNaze",
+   "Triesence",
    "Aller-Cort",
    "Hexatrione"
   ],
@@ -13912,11 +14980,11 @@
  },
  {
   "generic": "triamterene",
-  "brand": "Dyrenium",
+  "brand": "Dyazide",
   "brands": [
-   "Dyrenium",
    "Dyazide",
-   "Maxzide"
+   "Maxzide",
+   "Dyrenium"
   ],
   "rxcui": "10763",
   "source": "RxNorm"
@@ -13932,10 +15000,10 @@
  },
  {
   "generic": "trientine",
-  "brand": "Syprine",
+  "brand": "Cuvrior",
   "brands": [
-   "Syprine",
-   "Cuvrior"
+   "Cuvrior",
+   "Syprine"
   ],
   "rxcui": "10798",
   "source": "RxNorm"
@@ -13995,10 +15063,10 @@
   "brand": "Bactrim",
   "brands": [
    "Bactrim",
-   "Equisul SDT",
-   "Sulfatrim",
    "Primsol",
-   "Uniprim"
+   "Uniprim",
+   "Sulfatrim",
+   "Equisul SDT"
   ],
   "rxcui": "10829",
   "source": "RxNorm"
@@ -14012,10 +15080,10 @@
  },
  {
   "generic": "triptorelin",
-  "brand": "Triptodur",
+  "brand": "Trelstar",
   "brands": [
-   "Triptodur",
-   "Trelstar"
+   "Trelstar",
+   "Triptodur"
   ],
   "rxcui": "38782",
   "source": "RxNorm"
@@ -14038,11 +15106,11 @@
  },
  {
   "generic": "tropicamide",
-  "brand": "Mydriacyl",
+  "brand": "Paremyd",
   "brands": [
-   "Mydriacyl",
    "Paremyd",
-   "Mydcombi"
+   "Mydcombi",
+   "Mydriacyl"
   ],
   "rxcui": "10869",
   "source": "RxNorm"
@@ -14058,16 +15126,33 @@
  },
  {
   "generic": "tryptophan",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
+   "Prosol",
    "Restone",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
+   "PremaSol",
+   "Somnicin",
+   "Plenamine",
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
    "Trophamine 6 %",
-   "Somnicin"
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5"
   ],
   "rxcui": "10898",
   "source": "RxNorm"
@@ -14083,16 +15168,33 @@
  },
  {
   "generic": "tyrosine",
-  "brand": "Clinimix E 4.25/10",
+  "brand": "Prosol",
   "brands": [
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
-   "Plenamine",
    "Prosol",
-   "PremaSol"
+   "PremaSol",
+   "Plenamine",
+   "Clinisol 15",
+   "Travasol 10",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10",
+   "Aminosyn 10%, Sulfite-Free",
+   "Aminosyn 8.5%, Sulfite-Free",
+   "Aminosyn 3.5 % M, Sulfite Free"
   ],
   "rxcui": "10962",
   "source": "RxNorm"
@@ -14117,15 +15219,16 @@
  },
  {
   "generic": "ustekinumab",
-  "brand": "Steqeyma",
+  "brand": "Otulfi",
   "brands": [
-   "Steqeyma",
-   "Wezlana",
    "Otulfi",
-   "Selarsdi",
-   "Pyzchiva",
-   "Yesintek",
+   "Stelara",
+   "Wezlana",
    "Imuldosa",
+   "Pyzchiva",
+   "Selarsdi",
+   "Steqeyma",
+   "Yesintek",
    "Starjemza"
   ],
   "rxcui": "847083",
@@ -14160,16 +15263,33 @@
  },
  {
   "generic": "valine",
-  "brand": "Freamine III 10",
+  "brand": "Prosol",
   "brands": [
-   "Freamine III 10",
-   "Clinimix E 4.25/10",
-   "Aminosyn II 8.5 % with Electrolytes, Sulfite-Free",
-   "Aminosyn 8.5 % with Electrolytes, Sulfite-Free",
-   "Trophamine 10 %",
-   "Trophamine 6 %",
+   "Prosol",
+   "PremaSol",
    "Plenamine",
-   "Prosol"
+   "Clinisol 15",
+   "Travasol 10",
+   "Hepatamine 8",
+   "Clinimix 5/15",
+   "Clinimix 5/20",
+   "Clinimix 5/25",
+   "ProcalAmine 3",
+   "Aminosyn-PF 7%",
+   "Trophamine 6 %",
+   "Aminosyn II 15%",
+   "Clinimix 4.25/5",
+   "Clinimix E 5/15",
+   "Clinimix E 5/20",
+   "Clinimix E 5/25",
+   "Freamine III 10",
+   "Trophamine 10 %",
+   "Aminosyn II 10 %",
+   "Clinimix 4.25/10",
+   "Clinimix 4.25/25",
+   "Clinimix E 2.75/5",
+   "Clinimix E 4.25/5",
+   "Clinimix E 4.25/10"
   ],
   "rxcui": "11115",
   "source": "RxNorm"
@@ -14185,14 +15305,14 @@
  },
  {
   "generic": "valsartan",
-  "brand": "Exforge HCT",
+  "brand": "Diovan",
   "brands": [
-   "Exforge HCT",
-   "Entresto",
-   "Byvalson",
    "Diovan",
+   "Entresto",
    "Diovan HCT",
-   "Exforge"
+   "Exforge",
+   "Byvalson",
+   "Exforge HCT"
   ],
   "rxcui": "69749",
   "source": "RxNorm"
@@ -14202,8 +15322,8 @@
   "brand": "Firvanq",
   "brands": [
    "Firvanq",
-   "Vancocin",
-   "Tyzavan"
+   "Tyzavan",
+   "Vancocin"
   ],
   "rxcui": "11124",
   "source": "RxNorm"
@@ -14229,10 +15349,10 @@
  },
  {
   "generic": "varenicline",
-  "brand": "Tyrvaya",
+  "brand": "Chantix",
   "brands": [
-   "Tyrvaya",
-   "Chantix"
+   "Chantix",
+   "Tyrvaya"
   ],
   "rxcui": "591622",
   "source": "RxNorm"
@@ -14257,10 +15377,10 @@
  },
  {
   "generic": "velpatasvir",
-  "brand": "Epclusa",
+  "brand": "Vosevi",
   "brands": [
-   "Epclusa",
-   "Vosevi"
+   "Vosevi",
+   "Epclusa"
   ],
   "rxcui": "1799206",
   "source": "RxNorm"
@@ -14294,10 +15414,10 @@
  },
  {
   "generic": "verapamil",
-  "brand": "Isoptin",
+  "brand": "Calan",
   "brands": [
-   "Isoptin",
    "Calan",
+   "Isoptin",
    "Verelan"
   ],
   "rxcui": "11170",
@@ -14317,9 +15437,9 @@
   "brand": "Sabril",
   "brands": [
    "Sabril",
-   "Vigadrone",
+   "Vigafyde",
    "Vigpoder",
-   "Vigafyde"
+   "Vigadrone"
   ],
   "rxcui": "14851",
   "source": "RxNorm"
@@ -14372,32 +15492,50 @@
  },
  {
   "generic": "vitamin B12",
-  "brand": "Ferocon",
+  "brand": "Dodex",
   "brands": [
-   "Ferocon",
-   "Ferraplus",
-   "Ferrex 150 Forte Plus",
-   "Folbecal",
-   "Folgard OS",
-   "Hemocyte Plus",
+   "Dodex",
    "Hemax",
-   "Icar-C Plus"
+   "Folbee",
+   "Folbic",
+   "Ferocon",
+   "Folgard",
+   "Foltabs",
+   "Folbecal",
+   "Foltrate",
+   "Infuvite",
+   "Lactocal",
+   "Multigen",
+   "Nascobal",
+   "Niva-Fol",
+   "Ferraplus",
+   "Hematogen",
+   "Rena-Vite",
+   "Concept OB",
+   "Eldertonic",
+   "Folgard OS",
+   "Vita-Respa",
+   "Ellis Tonic",
+   "Ferralet 90",
+   "Icar-C Plus",
+   "MTX Support"
   ],
   "rxcui": "11248",
   "source": "RxNorm"
  },
  {
   "generic": "vitamin B6",
-  "brand": "Folgard",
+  "brand": "Folbee",
   "brands": [
-   "Folgard",
-   "B-Natal",
-   "Somnicin",
-   "Niva-Fol",
-   "Poly-Vi-Sol",
    "Folbee",
    "Folbic",
-   "Foltabs"
+   "B-Natal",
+   "Folgard",
+   "Foltabs",
+   "Niva-Fol",
+   "Somnicin",
+   "Poly-Vi-Sol",
+   "MVC-Fluoride"
   ],
   "rxcui": "42954",
   "source": "RxNorm"
@@ -14411,16 +15549,27 @@
  },
  {
   "generic": "vitamin E",
-  "brand": "Q-Gel",
+  "brand": "Q-Up",
   "brands": [
-   "Q-Gel",
-   "Q-Gel with Lipoic Acid",
-   "Hemax",
-   "Liq-10",
-   "Macuvite with Lutein",
    "Q-Up",
+   "Hemax",
+   "Q-Gel",
+   "Liq-10",
+   "NeoQ10",
+   "Ocuvite",
+   "Lactocal",
+   "Aquasol E",
    "Multi-Delyn",
-   "Lactocal"
+   "Poly-Vi-Sol",
+   "Replesta NX",
+   "Vitafol-One",
+   "MVC-Fluoride",
+   "PreserVision",
+   "Encora Capsule",
+   "Ocuvite Lutein",
+   "Macuvite with Lutein",
+   "Q-Gel with Lipoic Acid",
+   "PreserVision with Lutein"
   ],
   "rxcui": "11256",
   "source": "RxNorm"
@@ -14570,16 +15719,33 @@
  },
  {
   "generic": "zinc oxide",
-  "brand": "Lantiseptic Multi-Purpose",
+  "brand": "Z-Bum",
   "brands": [
-   "Lantiseptic Multi-Purpose",
-   "Manzatin-E",
-   "Baza-Protect",
+   "Z-Bum",
+   "Balmex",
+   "Calmol",
+   "Vusion",
+   "Desitin",
+   "NicAzel",
+   "Ocuvite",
+   "Z-Guard",
+   "Delazinc",
    "Flanders",
+   "Nicomide",
    "Risamine",
+   "Booty Goo",
+   "Caldesene",
+   "Calmodrox",
    "PeriGuard",
-   "Rash Relief Antibacterial",
-   "Rash Relief Antifungal"
+   "Calprotect",
+   "Manzatin-E",
+   "Vitafol-One",
+   "Baza-Protect",
+   "Calmoseptine",
+   "PreserVision",
+   "Triple Paste",
+   "Dynashield ZO",
+   "Ocuvite Lutein"
   ],
   "rxcui": "11423",
   "source": "RxNorm"
@@ -14630,10 +15796,10 @@
  },
  {
   "generic": "zonisamide",
-  "brand": "Zonisade",
+  "brand": "Zonegran",
   "brands": [
-   "Zonisade",
-   "Zonegran"
+   "Zonegran",
+   "Zonisade"
   ],
   "rxcui": "39998",
   "source": "RxNorm"

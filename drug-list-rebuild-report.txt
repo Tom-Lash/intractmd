@@ -1,7 +1,7 @@
-DRUG LIST REBUILD — 2026-08-03T01:18:10.199Z
+DRUG LIST REBUILD — 2026-08-03T19:02:33.084Z
 ============================================================
 Source                RxNorm (NLM), TTY=IN with TTY=BN brand relations
-RxNorm ingredients    14648
+RxNorm ingredients    14663
 Seed terms            1550
 Entries written       1527
 With a brand name     1101
