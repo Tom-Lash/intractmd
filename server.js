@@ -4300,8 +4300,10 @@ app.post('/api/deprescribing-analyze', async (req, res) => {
         dims.serotonin   = d['Serotonin Risk']     || d['serotonin']       || 0;
         dims.nti         = d['NTI Conflict']       || d['nti']             || 0;
         dims.cns         = d['CNS Risk']           || d['cns']             || 0;
-        dims.pharmacokinetic = d['Pharmacokinetic Risk'] || d['pharmacokinetic'] || 0;
-        dims.renal_hepatic   = d['Renal/Hepatic Risk']  || d['renal_hepatic']   || 0;
+        // Cache and CPRS_WEIGHTS both use 'CYP450 Risk' and 'Renal/Hepatic'.
+        // The earlier spellings never matched, so both dimensions read as zero.
+        dims.pharmacokinetic = d['CYP450 Risk'] || d['Pharmacokinetic Risk'] || d['pharmacokinetic'] || 0;
+        dims.renal_hepatic   = d['Renal/Hepatic'] || d['Renal/Hepatic Risk'] || d['renal_hepatic'] || 0;
         dims.pharmacodynamic = d['Pharmacodynamic Risk'] || d['pharmacodynamic'] || 0;
       }
       return { cprs, dimensions: dims };
