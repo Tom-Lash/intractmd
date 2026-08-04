@@ -255,6 +255,79 @@ async function fetchBrands(rxcui) {
   return unique.slice(0, BRAND_CAP);
 }
 
+// ── FLATTEN BRANDS INTO SEARCHABLE ENTRIES ───────────────────────────────────
+// Add to scripts/rebuild-drug-list.js, immediately after the entry-building
+// loop and BEFORE the "Verify REQUIRED" block.
+//
+// WHY
+// ---
+// The app's autocomplete reads only `entry.generic` and `entry.brand`. The
+// string 'brands' does not appear anywhere in public/index.prod.html — the
+// array is never read.
+//
+// So of the up to 25 brand names stored per ingredient, exactly one is
+// findable: whichever sits in brands[0]. A patient typing "Advil" finds
+// ibuprofen; a patient typing "Motrin" does not. Same drug, same list, one
+// works.
+//
+// Sunday's brand fix worked for a narrower reason than intended — raising the
+// cap from 8 to 25 changed nothing on its own. What made Tylenol findable was
+// the prominence sort moving it into position zero.
+//
+// Two ways to fix this. Teach the matcher to read brands[] — correct, but it
+// means editing the obfuscated file. Or emit one entry per searchable name, so
+// the existing matcher finds every brand without being changed. This is the
+// second. No front-end change, no risk to index.prod.html.
+//
+// Cost: the file grows from ~1,500 entries to ~4,000. At roughly 150 bytes an
+// entry that is under a megabyte, served once and cached. Negligible against a
+// patient not finding their medication.
+
+/**
+ * Expand one entry per (generic, brand) pair.
+ *
+ * The canonical generic-only row is kept first so that typing the ingredient
+ * name still resolves to the plain generic rather than to a branded variant.
+ * Every brand then gets its own row carrying the same generic, so whichever
+ * name the user types, the analysis receives the ingredient.
+ */
+function flattenBrands(entries) {
+  const out = [];
+  const seen = new Set();
+
+  for (const e of entries) {
+    const generic = e.generic;
+    const gKey = generic.toLowerCase();
+
+    // 1. Canonical row — generic with its most recognisable brand as the label.
+    if (!seen.has(gKey + '|')) {
+      seen.add(gKey + '|');
+      out.push({
+        generic,
+        brand: e.brand || '',
+        rxcui: e.rxcui,
+        source: 'RxNorm',
+      });
+    }
+
+    // 2. One row per additional brand, so each is independently searchable.
+    for (const b of (e.brands || [])) {
+      const bKey = String(b).toLowerCase();
+      if (!bKey || bKey === (e.brand || '').toLowerCase()) continue;  // already covered
+      const pairKey = gKey + '|' + bKey;
+      if (seen.has(pairKey)) continue;
+      seen.add(pairKey);
+      out.push({
+        generic,
+        brand: b,
+        rxcui: e.rxcui,
+        source: 'RxNorm',
+      });
+    }
+  }
+  return out;
+}
+
 async function main() {
   const seed = loadSeed();
   console.log(`Seed list: ${seed.size} ingredient names\n`);
@@ -299,8 +372,13 @@ async function main() {
     await sleep(REQ_DELAY_MS);
   }
 
+  // The app's matcher reads only `generic` and `brand` — never `brands`.
+  // Flatten so every brand name is independently searchable.
+  const flat = flattenBrands(entries);
+  console.log(`Flattened ${entries.length} ingredients into ${flat.length} searchable entries.`);
+
   // ── Verify REQUIRED before writing anything ─────────────────────────────
-  const have = new Set(entries.map(e => e.generic.toLowerCase()));
+  const have = new Set(flat.map(e => e.generic.toLowerCase()));
   const missing = REQUIRED.filter(r =>
     !have.has(r) && ![...have].some(h => h.startsWith(r + ' ')));
 
@@ -311,9 +389,9 @@ async function main() {
     process.exit(1);
   }
 
-  fs.writeFileSync(OUT, JSON.stringify(entries, null, 1));
+  fs.writeFileSync(OUT, JSON.stringify(flat, null, 1));
 
-  const withBrand = entries.filter(e => e.brand).length;
+  const withBrand = flat.filter(e => e.brand).length;
   const report =
 `DRUG LIST REBUILD — ${new Date().toISOString()}
 ${'='.repeat(60)}
