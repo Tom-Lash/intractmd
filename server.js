@@ -3869,6 +3869,66 @@ const NEVER_DEPRESCRIBE = new Set([
   'insulin detemir', 'insulin degludec', 'insulin human',
   'levothyroxine',                        // replacement therapy, not surplus
 ]);
+// ── DEPRESCRIBING CANDIDATE RANKING (criteria-based) ─────────────────────────
+//
+// Replaces the CPRS-delta ranking on /api/deprescribing-analyze.
+//
+// WHY THE CHANGE
+// --------------
+// The delta ranking called /api/analyze once per removal and ranked by the drop
+// in composite score. Because computeCompositeFromPairs takes the MAX per
+// dimension rather than the sum, removing any drug in the dominant pair
+// collapses that dimension to zero — so multiple drugs produce identical
+// deltas and the ranking cannot discriminate. Observed 3 Aug 2026: a
+// metformin / oxycodone / naloxone regimen returned −60 for two different
+// drugs on a baseline of 60.
+//
+// Ranking now uses published deprescribing criteria (Beers, STOPP, CMS Star
+// Ratings measures). These are peer-reviewed, periodically updated, and already
+// what pharmacists use. The output is defensible by citation rather than by
+// trusting an internal score. The CPRS is left untouched and is still shown as
+// the current risk profile.
+//
+// ⚠ CLINICAL REVIEW REQUIRED
+// The criteria content below must be verified by a pharmacist before pilot.
+// The mechanism is sound; the completeness and wording of individual entries
+// are not something to take on faith. Beers 2023 covers well over 100
+// medications and classes — this map is a starting subset.
+
+// ── Age conditionality ───────────────────────────────────────────────────────
+// The AGS Beers Criteria apply to adults 65+. STOPP is likewise geriatric.
+// Applying them to a 40-year-old is wrong. Where patient age is unknown the
+// tool must say so rather than imply the criteria have been met.
+const GERIATRIC_AGE = 65;
+
+// ── Tiers ────────────────────────────────────────────────────────────────────
+// Ordering reflects strength of the published recommendation, not our opinion.
+const TIER = {
+  AVOID:      { rank: 4, label: 'Avoid',              note: 'Listed as a medication to avoid' },
+  CAUTION:    { rank: 3, label: 'Use with caution',   note: 'Listed with cautions or conditions' },
+  INTERACTION:{ rank: 2, label: 'Interaction flag',   note: 'Flagged in combination with another drug in this regimen' },
+  MEASURE:    { rank: 1, label: 'Quality measure',    note: 'Appears in a CMS Star Ratings measure' },
+};
+
+// ── Never candidates ─────────────────────────────────────────────────────────
+// Rescue and antidote medications protect against the risks of other drugs in
+// the regimen. Ranking naloxone as a deprescribing candidate on a regimen
+// containing oxycodone is backwards and would destroy clinician trust in the
+// tool. These are excluded from candidacy outright.
+const NEVER_DEPRESCRIBE = new Set([
+  'naloxone', 'naloxone hydrochloride', 'narcan',
+  'epinephrine', 'epinephrine auto-injector', 'epipen',
+  'glucagon',
+  'albuterol', 'levalbuterol',            // rescue inhalers
+  'nitroglycerin', 'nitrostat',           // rescue antianginal
+  'diazepam rectal', 'midazolam nasal',   // rescue anticonvulsants
+  'flumazenil', 'sugammadex',
+  'activated charcoal', 'acetylcysteine', // antidotes
+  'hydroxocobalamin', 'pralidoxime',
+  'insulin', 'insulin glargine', 'insulin aspart', 'insulin lispro',
+  'insulin detemir', 'insulin degludec', 'insulin human',
+  'levothyroxine',                        // replacement therapy, not surplus
+]);
 
 // ── CRITERIA MAP — cite, do not quote ────────────────────────────────────────
 //
@@ -3908,139 +3968,147 @@ const NEVER_DEPRESCRIBE = new Set([
 
 // Bibliographic pointers, defined once and referenced by key.
 const SOURCES = {
-  BEERS: 'AGS Beers Criteria 2023 — J Am Geriatr Soc 2023;71(7):2052–2081',
-  STOPP: 'STOPP/START v3 — Eur Geriatr Med 2023;14(4):625–632',
-  CMS_D09: 'CMS Star Ratings measure D09 — concurrent use of opioids and benzodiazepines',
-  CMS_D10: 'CMS Star Ratings measure D10 — use of multiple anticholinergic medications',
-  CDN_PPI: 'Canadian Deprescribing Network — proton pump inhibitor deprescribing guideline (2017)',
+  // ── Explicit criteria sets — three continents, developed independently ────
+  BEERS:    'AGS Beers Criteria 2023 — J Am Geriatr Soc 2023;71(7):2052–2081',
+  STOPP:    'STOPP/START v3 — Eur Geriatr Med 2023;14(4):625–632',
+  EU7_PIM:  'EU(7)-PIM list — Eur J Clin Pharmacol 2015;71(7):861–875 (seven-country European expert consensus)',
+
+  // ── Deprescribing guidelines — tapering and discontinuation ───────────────
+  CFP_PPI:  'Deprescribing proton pump inhibitors — Farrell et al., Can Fam Physician 2017;63:354–364',
+  CFP_BZRA: 'Deprescribing benzodiazepine receptor agonists — Pottie et al., Can Fam Physician 2018;64:339–351',
+  CFP_AP:   'Deprescribing antipsychotics for behavioural and psychological symptoms of dementia and insomnia — Bjerre et al., Can Fam Physician 2018;64:17–27',
+
+  // ── US quality measures ───────────────────────────────────────────────────
+  CMS_D09:  'CMS Star Ratings measure D09 — concurrent use of opioids and benzodiazepines',
+  CMS_D10:  'CMS Star Ratings measure D10 — use of multiple anticholinergic medications',
 };
 
- const CRITERIA = {
+const CRITERIA = {
   // ── Benzodiazepines ───────────────────────────────────────────────────────
   'alprazolam': { tier:'AVOID', geriatric:true,
     concern:'Benzodiazepine. Older adults clear these drugs more slowly and are more sensitive to their sedative effect, raising the risk of falls, fractures, confusion and motor impairment.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_BZRA'] },
   'lorazepam': { tier:'AVOID', geriatric:true,
     concern:'Benzodiazepine. Older adults clear these drugs more slowly and are more sensitive to their sedative effect, raising the risk of falls, fractures, confusion and motor impairment.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_BZRA'] },
   'clonazepam': { tier:'AVOID', geriatric:true,
     concern:'Long-acting benzodiazepine. Accumulation with repeated dosing compounds the sedation, fall and cognitive risks already elevated in older adults.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_BZRA'] },
   'diazepam': { tier:'AVOID', geriatric:true,
     concern:'Long-acting benzodiazepine with active metabolites. Accumulates in older adults, prolonging sedation and fall risk well beyond the dosing interval.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_BZRA'] },
   'temazepam': { tier:'AVOID', geriatric:true,
     concern:'Benzodiazepine hypnotic. Sedation carrying into the following day contributes to falls and impaired daytime function in older adults.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_BZRA'] },
 
   // ── Z-hypnotics ───────────────────────────────────────────────────────────
   'zolpidem': { tier:'AVOID', geriatric:true,
     concern:'Non-benzodiazepine hypnotic acting at the same receptor. Carries a comparable profile of falls, fractures, delirium and next-day impairment despite the different chemical class.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_BZRA'] },
   'eszopiclone': { tier:'AVOID', geriatric:true,
     concern:'Non-benzodiazepine hypnotic. Sedation, fall risk and cognitive effects in older adults are comparable to benzodiazepines.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM','CFP_BZRA'] },
   'zaleplon': { tier:'AVOID', geriatric:true,
     concern:'Non-benzodiazepine hypnotic. Short half-life reduces but does not remove the fall and confusion risk in older adults.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM','CFP_BZRA'] },
 
   // ── Antipsychotics ────────────────────────────────────────────────────────
   'quetiapine': { tier:'AVOID', geriatric:true,
     concern:'Atypical antipsychotic. Use for behavioural symptoms of dementia carries increased mortality; also causes sedation, orthostatic hypotension and falls.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_AP'] },
   'olanzapine': { tier:'AVOID', geriatric:true,
     concern:'Atypical antipsychotic. Use for behavioural symptoms of dementia carries increased mortality; also causes sedation, metabolic effects and falls.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_AP'] },
   'risperidone': { tier:'AVOID', geriatric:true,
     concern:'Atypical antipsychotic. Associated with increased mortality and cerebrovascular events when used for dementia-related behavioural symptoms.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM','CFP_AP'] },
   'haloperidol': { tier:'AVOID', geriatric:true,
     concern:'Typical antipsychotic. Increased mortality in dementia, plus extrapyramidal effects and QT prolongation that are more pronounced in older adults.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM','CFP_AP'] },
 
   // ── Anticholinergic burden ────────────────────────────────────────────────
   'diphenhydramine': { tier:'AVOID', geriatric:true,
     concern:'First-generation antihistamine with strong anticholinergic activity. Causes confusion, dry mouth, constipation, urinary retention and sedation; tolerance to the sedative effect develops but the anticholinergic burden does not.',
-    sources:['BEERS','CMS_D10'] },
+    sources:['BEERS','EU7_PIM','CMS_D10'] },
   'hydroxyzine': { tier:'AVOID', geriatric:true,
     concern:'First-generation antihistamine with strong anticholinergic activity. Contributes to confusion, sedation and peripheral anticholinergic effects in older adults.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'amitriptyline': { tier:'AVOID', geriatric:true,
     concern:'Tertiary tricyclic antidepressant. Among the most anticholinergic of the antidepressants; also sedating and a cause of orthostatic hypotension and falls.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'paroxetine': { tier:'AVOID', geriatric:true,
     concern:'SSRI with meaningful anticholinergic activity, unusual within its class. Adds to total anticholinergic burden alongside its other effects.',
-    sources:['BEERS','CMS_D10'] },
+    sources:['BEERS','EU7_PIM','CMS_D10'] },
   'oxybutynin': { tier:'AVOID', geriatric:true,
     concern:'Oral antimuscarinic for overactive bladder. Crosses the blood–brain barrier readily and may worsen cognition; alternatives with less CNS penetration exist.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'cyclobenzaprine': { tier:'AVOID', geriatric:true,
     concern:'Skeletal muscle relaxant, structurally a tricyclic. Anticholinergic and sedating, with poor evidence of benefit at doses tolerated by older adults.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
 
   // ── Cardiovascular ────────────────────────────────────────────────────────
   'amiodarone': { tier:'CAUTION', geriatric:true,
     concern:'Antiarrhythmic with a very long half-life and cumulative thyroid, pulmonary, hepatic and ocular toxicity. Generally reserved rather than used first-line for atrial fibrillation.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM'] },
   'digoxin': { tier:'CAUTION', geriatric:true,
     concern:'Narrow therapeutic index and renal clearance that declines with age, so toxicity can develop on a stable dose as renal function falls. Higher doses offer no added benefit in heart failure.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM'] },
   'doxazosin': { tier:'CAUTION', geriatric:true,
     concern:'Peripheral alpha-1 blocker. Causes orthostatic hypotension, a direct contributor to falls; not a preferred antihypertensive in older adults.',
-    sources:['BEERS','STOPP'] },
+    sources:['BEERS','STOPP','EU7_PIM'] },
   'terazosin': { tier:'CAUTION', geriatric:true,
     concern:'Peripheral alpha-1 blocker. Orthostatic hypotension and syncope risk, particularly at initiation and after dose increases.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
 
   // ── Gastrointestinal ──────────────────────────────────────────────────────
   'omeprazole': { tier:'CAUTION', geriatric:false,
     concern:'Proton pump inhibitor. Continued beyond the indicated course, associated with C. difficile infection, fracture and low magnesium. Worth confirming an ongoing indication exists.',
-    sources:['STOPP','CDN_PPI'] },
+    sources:['STOPP','CFP_PPI','EU7_PIM'] },
   'pantoprazole': { tier:'CAUTION', geriatric:false,
     concern:'Proton pump inhibitor. Continued beyond the indicated course, associated with C. difficile infection, fracture and low magnesium. Worth confirming an ongoing indication exists.',
-    sources:['STOPP','CDN_PPI'] },
+    sources:['STOPP','CFP_PPI','EU7_PIM'] },
   'esomeprazole': { tier:'CAUTION', geriatric:false,
     concern:'Proton pump inhibitor. Long-term use without a documented ongoing indication is a common target for deprescribing review.',
-    sources:['STOPP','CDN_PPI'] },
+    sources:['STOPP','CFP_PPI'] },
 
   // ── Analgesia ─────────────────────────────────────────────────────────────
   'oxycodone': { tier:'CAUTION', geriatric:true,
     concern:'Opioid analgesic. Sedation and impaired balance raise fall and fracture risk; respiratory depression risk rises sharply when combined with other CNS depressants.',
-    sources:['BEERS','CMS_D09'] },
+    sources:['BEERS','EU7_PIM','CMS_D09'] },
   'hydrocodone': { tier:'CAUTION', geriatric:true,
     concern:'Opioid analgesic. Sedation and impaired balance raise fall and fracture risk; respiratory depression risk rises sharply when combined with other CNS depressants.',
-    sources:['BEERS','CMS_D09'] },
+    sources:['BEERS','EU7_PIM','CMS_D09'] },
   'morphine': { tier:'CAUTION', geriatric:true,
     concern:'Opioid analgesic with renally cleared active metabolites that accumulate as renal function declines, prolonging sedation and respiratory depression.',
-    sources:['BEERS','CMS_D09'] },
+    sources:['BEERS','EU7_PIM','CMS_D09'] },
   'tramadol': { tier:'CAUTION', geriatric:true,
     concern:'Opioid analgesic with serotonergic and seizure-threshold effects. Also a recognised cause of hyponatraemia in older adults.',
-    sources:['BEERS','CMS_D09'] },
+    sources:['BEERS','EU7_PIM','CMS_D09'] },
   'meperidine': { tier:'AVOID', geriatric:true,
     concern:'Opioid whose metabolite normeperidine accumulates and is neurotoxic, causing tremor and seizures. Poor oral analgesic efficacy; better alternatives exist.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
 
   // ── NSAIDs ────────────────────────────────────────────────────────────────
   'ibuprofen': { tier:'CAUTION', geriatric:true,
     concern:'Non-selective NSAID. Chronic use raises the risk of GI bleeding and peptic ulcer in older adults, and can worsen renal function and blood pressure.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'naproxen': { tier:'CAUTION', geriatric:true,
     concern:'Non-selective NSAID. Chronic use raises the risk of GI bleeding and peptic ulcer in older adults, and can worsen renal function and blood pressure.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'ketorolac': { tier:'AVOID', geriatric:true,
     concern:'Potent NSAID with a high rate of GI bleeding and acute kidney injury; risk is greater in older adults and rises with duration of use.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'indomethacin': { tier:'AVOID', geriatric:true,
     concern:'NSAID with the highest rate of CNS adverse effects in its class, including confusion and headache, on top of the usual GI and renal risks.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
 
   // ── Endocrine ─────────────────────────────────────────────────────────────
   'glyburide': { tier:'AVOID', geriatric:true,
     concern:'Long-acting sulfonylurea. Prolonged hypoglycaemia in older adults, made worse by declining renal clearance; shorter-acting alternatives are preferred.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'chlorpropamide': { tier:'AVOID', geriatric:true,
     concern:'Long-acting sulfonylurea. Very long half-life causing prolonged hypoglycaemia, and a recognised cause of SIADH and hyponatraemia.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
 
   // ── Other ─────────────────────────────────────────────────────────────────
   'simvastatin': { tier:'MEASURE', geriatric:false,
@@ -4048,10 +4116,10 @@ const SOURCES = {
     sources:['STOPP'] },
   'nitrofurantoin': { tier:'CAUTION', geriatric:true,
     concern:'Urinary antibacterial requiring adequate renal function to reach therapeutic concentrations in urine; long-term use carries pulmonary and hepatic toxicity risk.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
   'megestrol': { tier:'AVOID', geriatric:true,
     concern:'Progestational appetite stimulant. Minimal effect on weight or appetite in older adults, with an increased risk of venous thromboembolism.',
-    sources:['BEERS'] },
+    sources:['BEERS','EU7_PIM'] },
 };
 
 // ── Combination flags ────────────────────────────────────────────────────────
@@ -4083,6 +4151,132 @@ function buildEvidence(concern, sourceKeys) {
   }
   return out;
 }
+
+const CLASS_OF = {
+  opioid: ['oxycodone','hydrocodone','morphine','tramadol','fentanyl','methadone','meperidine','codeine','hydromorphone'],
+  benzodiazepine: ['alprazolam','lorazepam','clonazepam','diazepam','temazepam','chlordiazepoxide'],
+  gabapentinoid: ['gabapentin','pregabalin'],
+  anticholinergic: ['diphenhydramine','hydroxyzine','amitriptyline','paroxetine','oxybutynin','cyclobenzaprine','tolterodine','benztropine'],
+};
+
+function classesPresent(drugsLower) {
+  const present = {};
+  for (const [cls, members] of Object.entries(CLASS_OF)) {
+    present[cls] = drugsLower.filter(d => members.includes(d));
+  }
+  return present;
+}
+
+/**
+ * Rank deprescribing candidates by published criteria.
+ *
+ * @param {string[]} drugs      medication names as entered
+ * @param {number|null} age     patient age, or null if not collected
+ * @returns {{candidates:Array, excluded:Array, ageApplied:boolean}}
+ */
+function rankByCriteria(drugs, age) {
+  const lower = drugs.map(d => String(d).toLowerCase().trim());
+  const geriatric = typeof age === 'number' && age >= GERIATRIC_AGE;
+  const ageKnown = typeof age === 'number';
+  const present = classesPresent(lower);
+
+  // Combination citations, keyed by drug
+  // Each entry is {concern, sources} so the combination statement keeps the
+  // same shape as a single-drug one.
+  const comboCites = {};
+  function addCombo(drug, flag) {
+    (comboCites[drug] = comboCites[drug] || []).push(flag);
+  }
+  for (const flag of COMBINATION_FLAGS) {
+    const [a, b] = flag.drugs;
+    if (a === b) {
+      if ((present[a] || []).length >= 2) present[a].forEach(d => addCombo(d, flag));
+    } else if ((present[a] || []).length && (present[b] || []).length) {
+      [...present[a], ...present[b]].forEach(d => addCombo(d, flag));
+    }
+  }
+
+  const candidates = [];
+  const excluded = [];
+
+  drugs.forEach((drug, i) => {
+    const d = lower[i];
+
+    if (NEVER_DEPRESCRIBE.has(d)) {
+      excluded.push({ drug, reason: 'Rescue, antidote or replacement therapy — not a deprescribing candidate' });
+      return;
+    }
+
+    const entry = CRITERIA[d];
+    const combos = comboCites[d] || [];
+    if (!entry && !combos.length) return;          // no published criteria — not listed
+
+    let tierKey = entry ? entry.tier : 'INTERACTION';
+    if (combos.length && TIER[tierKey].rank < TIER.INTERACTION.rank) tierKey = 'INTERACTION';
+
+    // Our clinical statements first, then the source pointers. buildEvidence
+    // keeps the two separated so no reproduced rationale text can creep in.
+    const cites = [];
+    if (entry) cites.push(...buildEvidence(entry.concern, entry.sources));
+    for (const flag of combos) cites.push(...buildEvidence(flag.concern, flag.sources));
+    const concernCount = (entry ? 1 : 0) + combos.length;
+
+    candidates.push({
+      drug,
+      drug_class: null,                 // filled by the caller's DRUG_CLASSES map
+      tier: tierKey,
+      tier_label: TIER[tierKey].label,
+      tier_rank: TIER[tierKey].rank,
+      criteria_count: concernCount,   // clinical statements, not source lines
+      age_conditional: !!(entry && entry.geriatric),
+      evidence: cites,
+      rationale: buildRationale(drug, tierKey, concernCount),
+    });
+  });
+
+  // Sort: tier first, then number of criteria, then alphabetically for stability.
+  candidates.sort((a, b) =>
+    b.tier_rank - a.tier_rank ||
+    b.criteria_count - a.criteria_count ||
+    a.drug.localeCompare(b.drug));
+
+  return {
+    candidates,
+    excluded,
+    ageApplied: geriatric,
+    ageKnown,
+    age_disclosure: buildAgeDisclosure(candidates, age),
+  };
+}
+
+function buildRationale(drug, tierKey, n) {
+  const lead = {
+    AVOID:      drug + ' appears in published criteria as a medication to avoid in this population.',
+    CAUTION:    drug + ' appears in published criteria as a medication to use with caution or to review.',
+    INTERACTION:drug + ' is flagged in combination with another medication in this regimen.',
+    MEASURE:    drug + ' appears in a quality measure used to assess prescribing.',
+  }[tierKey];
+  const cite = n === 1 ? 'One concern is noted below, with its source.'
+                       : n + ' concerns are noted below, each with its source.';
+  const caution = 'This is a prompt to review with the prescriber, not a recommendation to discontinue.';
+  return [lead, cite, caution].join(' ');
+}
+
+/**
+ * One age disclosure for the whole result set, shown under the section header
+ * rather than repeated on every card. Returns null when no listed criterion is
+ * age-conditional, so the line does not appear when it would be irrelevant.
+ */
+function buildAgeDisclosure(candidates, age) {
+  if (!candidates.some(c => c.age_conditional)) return null;
+  const base = 'Criteria shown are drawn from AGS Beers and STOPP, which apply to adults 65 and over.';
+  if (typeof age !== 'number') return base + ' Patient age was not collected for this analysis.';
+  if (age >= GERIATRIC_AGE) return base;
+  return base + ' This patient is ' + age + '; these criteria may not apply.';
+}
+
+module.exports = { rankByCriteria, buildAgeDisclosure, NEVER_DEPRESCRIBE, CRITERIA, TIER, GERIATRIC_AGE };
+
 
 const CLASS_OF = {
   opioid: ['oxycodone','hydrocodone','morphine','tramadol','fentanyl','methadone','meperidine','codeine','hydromorphone'],
