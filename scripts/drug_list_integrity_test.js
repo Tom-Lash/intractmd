@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node 
 /**
  * IntractMD — Drug List Integrity Test
  *
@@ -240,6 +240,175 @@ for (const d of DRUGS) {
   }
 }
 
+// ── BRAND NAME RESOLUTION CHECK ──────────────────────────────────────────────
+// Add to scripts/drug_list_integrity_test.js, after the existing TEST 6 block
+// and before the "Output" section.
+//
+// WHY THIS EXISTS
+// ---------------
+// On 3 Aug 2026 a user typed "Tylenol" and got no match. Acetaminophen was in
+// the list; its brands were Little Fevers, Bactimicina, Pamprin Max Formula,
+// Pamprin Multi-Symptom, Pamprin Cramp Formula, Percogesic, Premsyn PMS and
+// Panadol PM. No Tylenol. The brand cap was 8, applied in whatever order
+// RxNorm returned, so the most recognisable OTC brand in the US was cut.
+//
+// Every automated gate passed: 1,527 entries, 53/53 required drugs present,
+// integrity test clean. The gap was found by someone typing a word.
+//
+// The existing checks verify that a drug NAME resolves to the right ingredient.
+// Nothing verified that a patient can find their medication by the name printed
+// on the bottle. That is a different assertion and this is it.
+//
+// Patients and clinicians say "Tylenol", "Advil", "Eliquis" — not
+// "acetaminophen", "ibuprofen", "apixaban". A polypharmacy tool that cannot
+// match a brand name is not usable by the people it is built for.
+
+// Brand → expected ingredient. Only entries where the mapping is unambiguous.
+// Extend this whenever a "not found" report comes in for a brand — one line each.
+const BRAND_EXPECTATIONS = {
+  // OTC analgesia — the category the Tylenol gap exposed
+  'tylenol':      'acetaminophen',
+  'advil':        'ibuprofen',
+  'motrin':       'ibuprofen',
+  'aleve':        'naproxen',
+  'celebrex':     'celecoxib',
+
+  // OTC allergy, cold, GI — patients name these by brand almost exclusively
+  'benadryl':     'diphenhydramine',
+  'claritin':     'loratadine',
+  'zyrtec':       'cetirizine',
+  'allegra':      'fexofenadine',
+  'prilosec':     'omeprazole',
+  'nexium':       'esomeprazole',
+  'pepcid':       'famotidine',
+  'imodium':      'loperamide',
+
+  // Anticoagulants and antiplatelets — highest interaction burden
+  'coumadin':     'warfarin',
+  'eliquis':      'apixaban',
+  'xarelto':      'rivaroxaban',
+  'plavix':       'clopidogrel',
+  'brilinta':     'ticagrelor',
+
+  // Cardiovascular
+  'lipitor':      'atorvastatin',
+  'crestor':      'rosuvastatin',
+  'zocor':        'simvastatin',
+  'norvasc':      'amlodipine',
+  'toprol':       'metoprolol',
+  'lopressor':    'metoprolol',
+  'coreg':        'carvedilol',
+  'zestril':      'lisinopril',
+  'cozaar':       'losartan',
+  'diovan':       'valsartan',
+  'lasix':        'furosemide',
+  'lanoxin':      'digoxin',
+  'pacerone':     'amiodarone',
+  'entresto':     'sacubitril',
+
+  // Insulins — the class where a wrong match is most dangerous
+  'lantus':       'insulin glargine',
+  'toujeo':       'insulin glargine',
+  'basaglar':     'insulin glargine',
+  'levemir':      'insulin detemir',
+  'tresiba':      'insulin degludec',
+  'humalog':      'insulin lispro',
+  'novolog':      'insulin aspart',
+
+  // Diabetes
+  'glucophage':   'metformin',
+  'januvia':      'sitagliptin',
+  'jardiance':    'empagliflozin',
+  'farxiga':      'dapagliflozin',
+  'ozempic':      'semaglutide',
+  'trulicity':    'dulaglutide',
+
+  // Psychiatry and neurology
+  'celexa':       'citalopram',
+  'lexapro':      'escitalopram',
+  'zoloft':       'sertraline',
+  'prozac':       'fluoxetine',
+  'paxil':        'paroxetine',
+  'cymbalta':     'duloxetine',
+  'effexor':      'venlafaxine',
+  'wellbutrin':   'bupropion',
+  'abilify':      'aripiprazole',
+  'seroquel':     'quetiapine',
+  'zyprexa':      'olanzapine',
+  'lamictal':     'lamotrigine',
+  'depakote':     'divalproex',
+  'keppra':       'levetiracetam',
+  'neurontin':    'gabapentin',
+  'lyrica':       'pregabalin',
+  'xanax':        'alprazolam',
+  'ativan':       'lorazepam',
+  'klonopin':     'clonazepam',
+  'ambien':       'zolpidem',
+  'aricept':      'donepezil',
+  'namenda':      'memantine',
+
+  // Opioids and reversal
+  'oxycontin':    'oxycodone',
+  'percocet':     'oxycodone',
+  'norco':        'hydrocodone',
+  'ultram':       'tramadol',
+  'narcan':       'naloxone',
+  'suboxone':     'buprenorphine',
+
+  // Respiratory
+  'ventolin':     'albuterol',
+  'proair':       'albuterol',
+  'singulair':    'montelukast',
+  'spiriva':      'tiotropium',
+
+  // Endocrine and other
+  'synthroid':    'levothyroxine',
+  'prednisone':   'prednisone',
+  'fosamax':      'alendronate',
+  'flomax':       'tamsulosin',
+  'zyloprim':     'allopurinol',
+  'plaquenil':    'hydroxychloroquine',
+  'protonix':     'pantoprazole',
+  'zofran':       'ondansetron',
+  'cipro':        'ciprofloxacin',
+  'levaquin':     'levofloxacin',
+  'zithromax':    'azithromycin',
+  'augmentin':    'amoxicillin',
+  'valtrex':      'valacyclovir',
+  'diflucan':     'fluconazole',
+};
+
+// TEST 7 — brand names resolve to their ingredient
+//
+// A brand passes if EITHER:
+//   (a) typing it returns an entry whose generic is the expected ingredient, or
+//   (b) the expected ingredient's entry lists that brand in its brands array
+//
+// (b) matters because the matcher may rank differently than the list stores.
+// Both routes mean a user typing the brand can reach the drug.
+let brandMissing = [];
+let brandWrong = [];
+
+for (const [brand, expected] of Object.entries(BRAND_EXPECTATIONS)) {
+  // The app's matcher reads `generic` and `brand` only — it never reads a
+  // `brands` array. This check mirrors that exactly, so a pass here means a
+  // user really can find the drug by typing this brand.
+  const hits = matchDrugs(brand, DRUGS, 5);
+  if (!hits.length) {
+    brandMissing.push({ brand, expected });
+    fail('critical', 'brand_missing',
+      `"${brand}" returns no result — a user typing this brand cannot find ${expected}`);
+    continue;
+  }
+
+  const top = hits[0].generic.toLowerCase();
+  if (top !== expected && !top.startsWith(expected + ' ')) {
+    brandWrong.push({ brand, expected, got: hits[0].generic });
+    fail('critical', 'brand_wrong',
+      `"${brand}" returns "${hits[0].generic}" — expected ${expected}`);
+  }
+}
+
 // ── Output ───────────────────────────────────────────────────────────────────
 const summary = {
   list_path: LIST_PATH,
@@ -249,6 +418,8 @@ const summary = {
   collisions_found: collisions.length,
   self_match_failures: selfMatchFails,
   missing_required: missing,
+  brands_missing: brandMissing,
+  brands_wrong: brandWrong,
   passed: failures.critical.length === 0,
 };
 
@@ -264,6 +435,7 @@ if (JSON_OUT) {
   console.log(`CRITICAL        ${failures.critical.length}`);
   console.log(`Warnings        ${failures.warning.length}`);
   console.log(`Collisions      ${collisions.length}  (name contained in another name)`);
+  console.log(`Brands checked  ${Object.keys(BRAND_EXPECTATIONS).length}  (missing ${brandMissing.length}, wrong ${brandWrong.length})`);
   console.log(line);
 
   if (failures.critical.length) {
