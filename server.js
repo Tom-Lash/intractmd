@@ -3869,66 +3869,6 @@ const NEVER_DEPRESCRIBE = new Set([
   'insulin detemir', 'insulin degludec', 'insulin human',
   'levothyroxine',                        // replacement therapy, not surplus
 ]);
-// ── DEPRESCRIBING CANDIDATE RANKING (criteria-based) ─────────────────────────
-//
-// Replaces the CPRS-delta ranking on /api/deprescribing-analyze.
-//
-// WHY THE CHANGE
-// --------------
-// The delta ranking called /api/analyze once per removal and ranked by the drop
-// in composite score. Because computeCompositeFromPairs takes the MAX per
-// dimension rather than the sum, removing any drug in the dominant pair
-// collapses that dimension to zero — so multiple drugs produce identical
-// deltas and the ranking cannot discriminate. Observed 3 Aug 2026: a
-// metformin / oxycodone / naloxone regimen returned −60 for two different
-// drugs on a baseline of 60.
-//
-// Ranking now uses published deprescribing criteria (Beers, STOPP, CMS Star
-// Ratings measures). These are peer-reviewed, periodically updated, and already
-// what pharmacists use. The output is defensible by citation rather than by
-// trusting an internal score. The CPRS is left untouched and is still shown as
-// the current risk profile.
-//
-// ⚠ CLINICAL REVIEW REQUIRED
-// The criteria content below must be verified by a pharmacist before pilot.
-// The mechanism is sound; the completeness and wording of individual entries
-// are not something to take on faith. Beers 2023 covers well over 100
-// medications and classes — this map is a starting subset.
-
-// ── Age conditionality ───────────────────────────────────────────────────────
-// The AGS Beers Criteria apply to adults 65+. STOPP is likewise geriatric.
-// Applying them to a 40-year-old is wrong. Where patient age is unknown the
-// tool must say so rather than imply the criteria have been met.
-const GERIATRIC_AGE = 65;
-
-// ── Tiers ────────────────────────────────────────────────────────────────────
-// Ordering reflects strength of the published recommendation, not our opinion.
-const TIER = {
-  AVOID:      { rank: 4, label: 'Avoid',              note: 'Listed as a medication to avoid' },
-  CAUTION:    { rank: 3, label: 'Use with caution',   note: 'Listed with cautions or conditions' },
-  INTERACTION:{ rank: 2, label: 'Interaction flag',   note: 'Flagged in combination with another drug in this regimen' },
-  MEASURE:    { rank: 1, label: 'Quality measure',    note: 'Appears in a CMS Star Ratings measure' },
-};
-
-// ── Never candidates ─────────────────────────────────────────────────────────
-// Rescue and antidote medications protect against the risks of other drugs in
-// the regimen. Ranking naloxone as a deprescribing candidate on a regimen
-// containing oxycodone is backwards and would destroy clinician trust in the
-// tool. These are excluded from candidacy outright.
-const NEVER_DEPRESCRIBE = new Set([
-  'naloxone', 'naloxone hydrochloride', 'narcan',
-  'epinephrine', 'epinephrine auto-injector', 'epipen',
-  'glucagon',
-  'albuterol', 'levalbuterol',            // rescue inhalers
-  'nitroglycerin', 'nitrostat',           // rescue antianginal
-  'diazepam rectal', 'midazolam nasal',   // rescue anticonvulsants
-  'flumazenil', 'sugammadex',
-  'activated charcoal', 'acetylcysteine', // antidotes
-  'hydroxocobalamin', 'pralidoxime',
-  'insulin', 'insulin glargine', 'insulin aspart', 'insulin lispro',
-  'insulin detemir', 'insulin degludec', 'insulin human',
-  'levothyroxine',                        // replacement therapy, not surplus
-]);
 
 // ── CRITERIA MAP — cite, do not quote ────────────────────────────────────────
 //
@@ -5284,4 +5224,3 @@ setInterval(function() {
 
 console.log('[Analytics] Report scheduler active — runs at ' +
   String(ANALYTICS_REPORT_HOUR_UTC).padStart(2, '0') + ':00 UTC daily');
-
