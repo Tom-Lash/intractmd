@@ -499,6 +499,99 @@ function writeFileCache(dir, slug, data) {
   try { fs.writeFileSync(path.join(dir, slug + '.json'), JSON.stringify(data), 'utf8'); } catch (e) {}
 }
 
+// ── PILOT ACCESS GATE ────────────────────────────────────────────────────────
+// Password-protects the three institutional surfaces. The patient app at / and
+// intractmd.com stays open to anyone.
+//
+//   /proactive      Proactive Engine
+//   /clinical       Clinical Workflow
+//   /deprescribing  Deprescribing Review
+//
+// WHAT IS AND IS NOT PROTECTED
+// ----------------------------
+// This gates the PAGES, not the API endpoints behind them. The endpoints are
+// left open deliberately: /api/analyze and several others are shared with the
+// patient app, and locking a shared endpoint would break the public tool.
+// Someone who knows an API URL could still call it directly.
+//
+// That is an acceptable trade for a pilot gate — the purpose here is to stop
+// the surfaces being browsable, not to secure the compute. Locking the
+// institutional-only endpoints is a sensible second step once the live patient
+// app's API usage has been confirmed.
+//
+// CREDENTIALS
+// -----------
+// Set PILOT_USERS in Render as a comma-separated list, so each pilot partner
+// can have its own login and one can be revoked without disturbing the others:
+//
+//   PILOT_USERS = mercy:8Kd2mQx7,banner:pT4vR9wL,demo:Xy7nB3kR
+//
+// A single PILOT_USER / PILOT_PASSWORD pair also works if you prefer one login.
+//
+// FAIL CLOSED
+// -----------
+// If no credentials are configured the surfaces return 503 rather than opening
+// to the public. A forgotten environment variable should not silently expose an
+// unreviewed clinical tool.
+
+const PILOT_PATHS = ['/proactive', '/clinical', '/deprescribing'];
+
+function loadPilotUsers() {
+  const users = {};
+  const list = (process.env.PILOT_USERS || '').trim();
+  if (list) {
+    for (const entry of list.split(',')) {
+      const i = entry.indexOf(':');
+      if (i < 1) continue;
+      const u = entry.slice(0, i).trim();
+      const p = entry.slice(i + 1).trim();
+      if (u && p) users[u] = p;
+    }
+  }
+  if (process.env.PILOT_USER && process.env.PILOT_PASSWORD) {
+    users[process.env.PILOT_USER] = process.env.PILOT_PASSWORD;
+  }
+  return users;
+}
+
+const PILOT_USERS = loadPilotUsers();
+const PILOT_USER_COUNT = Object.keys(PILOT_USERS).length;
+
+if (PILOT_USER_COUNT > 0) {
+  console.log('[PILOT GATE] Active on ' + PILOT_PATHS.join(', ') +
+    ' — ' + PILOT_USER_COUNT + ' credential' + (PILOT_USER_COUNT === 1 ? '' : 's') + ' configured');
+} else {
+  console.warn('[PILOT GATE] No PILOT_USERS configured — institutional surfaces will return 503. ' +
+    'Set PILOT_USERS in the environment to enable access.');
+}
+
+const pilotAuth = basicAuth({
+  users: PILOT_USERS,
+  challenge: true,
+  realm: 'IntractMD Pilot Access',
+  unauthorizedResponse: () =>
+    'This IntractMD surface is available to pilot participants. ' +
+    'Contact Resolve Medical at 216-509-0672 or info@resolve.med for access.',
+});
+
+app.use((req, res, next) => {
+  // Match the path itself and anything beneath it, but not merely a shared
+  // prefix — /deprescribing-info should not be gated by /deprescribing.
+  const gated = PILOT_PATHS.some(
+    p => req.path === p || req.path.startsWith(p + '/')
+  );
+  if (!gated) return next();
+
+  if (PILOT_USER_COUNT === 0) {
+    return res.status(503).send(
+      'This IntractMD surface is not currently available. ' +
+      'Contact Resolve Medical at 216-509-0672 or info@resolve.med.'
+    );
+  }
+  return pilotAuth(req, res, next);
+});
+// ── END PILOT ACCESS GATE ────────────────────────────────────────────────────
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -5224,3 +5317,4 @@ setInterval(function() {
 
 console.log('[Analytics] Report scheduler active — runs at ' +
   String(ANALYTICS_REPORT_HOUR_UTC).padStart(2, '0') + ':00 UTC daily');
+
