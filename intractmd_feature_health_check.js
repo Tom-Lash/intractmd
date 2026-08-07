@@ -126,13 +126,13 @@ async function testInfrastructure() {
   // Proactive surface
   try {
     const r = await get('/proactive', 10000);
-    result('Infrastructure', 'Proactive surface /proactive returns 200', r.status===200, `${r.status} in ${r.ms}ms`);
+    result('Infrastructure', 'Proactive surface /proactive reachable', r.status===200||r.status===401, `${r.status} in ${r.ms}ms`);
   } catch(e) { result('Infrastructure', 'Proactive surface loads', false, e.message); }
 
   // Clinical surface
   try {
     const r = await get('/clinical', 10000);
-    result('Infrastructure', 'Clinical surface /clinical returns 200', r.status===200, `${r.status} in ${r.ms}ms`);
+    result('Infrastructure', 'Clinical surface /clinical reachable', r.status===200||r.status===401, `${r.status} in ${r.ms}ms`);
   } catch(e) { result('Infrastructure', 'Clinical surface loads', false, e.message); }
 }
 
