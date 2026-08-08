@@ -125,42 +125,115 @@ function getTopDimension(report, n) {
   });
 }
 
+// Sites are separated on the hostName dimension. Both streams feed one GA4
+// property, so without this the consumer traffic on intractmd.com swamps the
+// handful of visits that matter on resolve.med.
+const SITES = [
+  { host: 'intractmd.com',  label: 'IntractMD',       note: 'Patient app and pilot surfaces' },
+  { host: 'resolve.med',    label: 'Resolve Medical', note: 'Corporate site' },
+];
+
+// GA4 reports www.intractmd.com and intractmd.com as distinct hostnames, so
+// match on suffix rather than equality.
+function hostMatches(rowHost, site) {
+  const h = String(rowHost || '').toLowerCase().replace(/^www\./, '');
+  return h === site || h.endsWith('.' + site);
+}
+
+const CORE_METRICS = ['activeUsers','newUsers','sessions','engagedSessions',
+                      'screenPageViews','averageSessionDuration','engagementRate','eventCount'];
+
+// Turn a hostName-dimensioned report into { host: {metric: value} }.
+function byHost(report) {
+  const out = {};
+  if (!report || !report.rows) return out;
+  const mIdx = {};
+  (report.metricHeaders || []).forEach(function(h, i) { mIdx[h.name] = i; });
+  report.rows.forEach(function(row) {
+    const host = row.dimensionValues[0].value;
+    const rec = {};
+    CORE_METRICS.forEach(function(m) {
+      rec[m] = mIdx[m] != null ? (parseFloat(row.metricValues[mIdx[m]].value) || 0) : 0;
+    });
+    out[host] = rec;
+  });
+  return out;
+}
+
+// Sum every hostname belonging to one site. Rates and durations are averaged
+// weighted by sessions rather than summed, which would be meaningless.
+function forSite(hostMap, site) {
+  const rec = {};
+  CORE_METRICS.forEach(function(m) { rec[m] = 0; });
+  let weighted = { averageSessionDuration: 0, engagementRate: 0 }, sess = 0;
+  Object.keys(hostMap).forEach(function(h) {
+    if (!hostMatches(h, site)) return;
+    const r = hostMap[h];
+    ['activeUsers','newUsers','sessions','engagedSessions','screenPageViews','eventCount']
+      .forEach(function(m) { rec[m] += r[m] || 0; });
+    const sPart = r.sessions || 0;
+    sess += sPart;
+    weighted.averageSessionDuration += (r.averageSessionDuration || 0) * sPart;
+    weighted.engagementRate       += (r.engagementRate || 0) * sPart;
+  });
+  rec.averageSessionDuration = sess ? weighted.averageSessionDuration / sess : 0;
+  rec.engagementRate        = sess ? weighted.engagementRate / sess : 0;
+  return rec;
+}
+
+// Rows of a two-dimension report [hostName, X] filtered to one site.
+function dimForSite(report, site, n) {
+  if (!report || !report.rows) return [];
+  const agg = {};
+  report.rows.forEach(function(row) {
+    if (!hostMatches(row.dimensionValues[0].value, site)) return;
+    const label = row.dimensionValues[1].value;
+    agg[label] = (agg[label] || 0) + (parseInt(row.metricValues[0].value) || 0);
+  });
+  return Object.keys(agg).map(function(k) { return { label: k, value: agg[k] }; })
+    .sort(function(a, b) { return b.value - a.value; }).slice(0, n);
+}
+
 async function fetchAnalytics(token) {
   const yd = yesterday();
   const db = daysAgo(2);
   const w1start = daysAgo(7);
   const w2start = daysAgo(14);
 
-  const coreMetrics = ['activeUsers','newUsers','sessions','engagedSessions','screenPageViews','averageSessionDuration','engagementRate','eventCount'];
-
-  const [ydReport, dbReport, w1Report, w2Report, pagesReport, channelsReport, devicesReport, countriesReport] = await Promise.all([
-    runReport(token, {startDate:yd, endDate:yd}, [], coreMetrics),
-    runReport(token, {startDate:db, endDate:db}, [], coreMetrics),
-    runReport(token, {startDate:w1start, endDate:yd}, [], coreMetrics),
-    runReport(token, {startDate:w2start, endDate:db}, [], coreMetrics),
-    runReport(token, {startDate:yd, endDate:yd}, ['pagePath'], ['screenPageViews']),
-    runReport(token, {startDate:yd, endDate:yd}, ['sessionDefaultChannelGroup'], ['sessions']),
-    runReport(token, {startDate:yd, endDate:yd}, ['deviceCategory'], ['sessions']),
-    runReport(token, {startDate:yd, endDate:yd}, ['country'], ['activeUsers']),
+  const [ydR, dbR, w1R, w2R, pagesR, chanR, devR, ctryR] = await Promise.all([
+    runReport(token, {startDate:yd,      endDate:yd}, ['hostName'], CORE_METRICS),
+    runReport(token, {startDate:db,      endDate:db}, ['hostName'], CORE_METRICS),
+    runReport(token, {startDate:w1start, endDate:yd}, ['hostName'], CORE_METRICS),
+    runReport(token, {startDate:w2start, endDate:db}, ['hostName'], CORE_METRICS),
+    runReport(token, {startDate:yd, endDate:yd}, ['hostName','pagePath'], ['screenPageViews']),
+    runReport(token, {startDate:yd, endDate:yd}, ['hostName','sessionDefaultChannelGroup'], ['sessions']),
+    runReport(token, {startDate:yd, endDate:yd}, ['hostName','deviceCategory'], ['sessions']),
+    runReport(token, {startDate:yd, endDate:yd}, ['hostName','country'], ['activeUsers']),
   ]);
 
-  function extract(report) {
-    const obj = {};
-    coreMetrics.forEach(function(m) { obj[m] = getMetricVal(report, m); });
-    return obj;
-  }
+  const ydH = byHost(ydR), dbH = byHost(dbR), w1H = byHost(w1R), w2H = byHost(w2R);
 
-  return {
-    date: yd,
-    yesterday: extract(ydReport),
-    day_before: extract(dbReport),
-    week: extract(w1Report),
-    prior_week: extract(w2Report),
-    top_pages: getTopDimension(pagesReport, 5),
-    channels: getTopDimension(channelsReport, 5),
-    devices: getTopDimension(devicesReport, 5),
-    countries: getTopDimension(countriesReport, 5),
-  };
+  const sites = SITES.map(function(s) {
+    return {
+      host: s.host, label: s.label, note: s.note,
+      yesterday:  forSite(ydH, s.host),
+      day_before: forSite(dbH, s.host),
+      week:       forSite(w1H, s.host),
+      prior_week: forSite(w2H, s.host),
+      top_pages:  dimForSite(pagesR, s.host, 5),
+      channels:   dimForSite(chanR,  s.host, 5),
+      devices:    dimForSite(devR,   s.host, 5),
+      countries:  dimForSite(ctryR,  s.host, 5),
+    };
+  });
+
+  // Any hostname not matching a configured site — a preview deploy, or a new
+  // domain someone tagged. Surfaced rather than silently dropped.
+  const known = Object.keys(ydH).filter(function(h) {
+    return !SITES.some(function(s) { return hostMatches(h, s.host); });
+  });
+
+  return { date: yd, sites: sites, unmatched_hosts: known };
 }
 
 function fmt(n, isTime) {
@@ -175,6 +248,9 @@ function fmt(n, isTime) {
 }
 
 function delta(curr, prev) {
+  // Coerce first — engagement rate used to arrive here as '45%' strings,
+  // which made the subtraction NaN and rendered '▼ NaN%' in every email.
+  curr = parseFloat(curr) || 0; prev = parseFloat(prev) || 0;
   if (!prev || prev === 0) return curr > 0 ? ' <span style="color:#2E7D4F">▲ new</span>' : '';
   const pct = Math.round((curr - prev) / prev * 100);
   if (pct === 0) return ' <span style="color:#888">—</span>';
@@ -184,19 +260,17 @@ function delta(curr, prev) {
 }
 
 function buildEmail(data, reportDate) {
-  const d = data.yesterday;
-  const db = data.day_before;
-  const w = data.week;
-  const pw = data.prior_week;
-
-  const noData = d.sessions === 0 && d.activeUsers === 0;
-
-  const rowStyle = 'padding:8px 12px;border-bottom:1px solid #e5e5e5;font-size:14px;';
+  const rowStyle  = 'padding:8px 12px;border-bottom:1px solid #e5e5e5;font-size:14px;';
   const labelStyle = rowStyle + 'color:#555;';
-  const valStyle = rowStyle + 'color:#1a1a2e;font-weight:600;text-align:right;';
+  const valStyle   = rowStyle + 'color:#1a1a2e;font-weight:600;text-align:right;';
 
-  function metricRow(label, curr, prev, isTime) {
-    return '<tr><td style="'+labelStyle+'">'+label+'</td><td style="'+valStyle+'">'+fmt(curr,isTime)+delta(curr,prev)+'</td></tr>';
+  function metricRow(label, curr, prev, kind) {
+    var shown;
+    if (kind === 'time') shown = fmt(curr, true);
+    else if (kind === 'pct') shown = Math.round((curr || 0) * 100) + '%';
+    else shown = fmt(curr);
+    return '<tr><td style="'+labelStyle+'">'+label+'</td><td style="'+valStyle+'">'
+      + shown + delta(curr, prev) + '</td></tr>';
   }
 
   function topList(items) {
@@ -204,64 +278,87 @@ function buildEmail(data, reportDate) {
     return items.map(function(item) {
       return '<div style="display:flex;justify-content:space-between;padding:4px 0;font-size:13px;border-bottom:1px solid #f0f0f0">'
         + '<span style="color:#555">'+item.label+'</span>'
-        + '<span style="color:#1B6EC2;font-weight:600">'+item.value+'</span>'
-        + '</div>';
+        + '<span style="color:#1B6EC2;font-weight:600">'+item.value+'</span></div>';
     }).join('');
   }
 
-  const html = '<div style="font-family:Calibri,Arial,sans-serif;max-width:640px;margin:0 auto">'
+  // One block per site. Each is self-contained so a site with no traffic reads
+  // as "nothing yesterday" rather than as a broken report.
+  function siteBlock(site, tint) {
+    const d = site.yesterday, db = site.day_before, w = site.week, pw = site.prior_week;
+    const quiet = d.sessions === 0 && d.activeUsers === 0;
+    return '<div style="background:'+tint+';padding:20px 28px;border-top:3px solid #0D3B6E">'
+      + '<h2 style="color:#0D3B6E;font-size:17px;margin:0 0 2px">'+site.label+'</h2>'
+      + '<p style="color:#8195a8;font-size:12px;margin:0 0 14px">'+site.host+' &nbsp;·&nbsp; '+site.note+'</p>'
+      + (quiet
+          ? '<p style="background:#FDF3E3;border-left:3px solid #D97706;padding:10px 14px;margin:0 0 14px;'
+            + 'color:#854F0B;font-size:13px">No traffic recorded yesterday.</p>'
+          : '')
+      + '<table style="width:100%;border-collapse:collapse;margin-bottom:16px">'
+      + '<tr><td colspan="2" style="padding:0 0 6px;font-size:12px;color:#8195a8;'
+      + 'text-transform:uppercase;letter-spacing:.04em">Yesterday vs day before</td></tr>'
+      + metricRow('Active Users', d.activeUsers, db.activeUsers)
+      + metricRow('New Users', d.newUsers, db.newUsers)
+      + metricRow('Sessions', d.sessions, db.sessions)
+      + metricRow('Page Views', d.screenPageViews, db.screenPageViews)
+      + metricRow('Avg Session Duration', d.averageSessionDuration, db.averageSessionDuration, 'time')
+      + metricRow('Engagement Rate', d.engagementRate, db.engagementRate, 'pct')
+      + '</table>'
+      + '<table style="width:100%;border-collapse:collapse;margin-bottom:16px">'
+      + '<tr><td colspan="2" style="padding:0 0 6px;font-size:12px;color:#8195a8;'
+      + 'text-transform:uppercase;letter-spacing:.04em">Last 7 days vs prior 7</td></tr>'
+      + metricRow('Active Users', w.activeUsers, pw.activeUsers)
+      + metricRow('Sessions', w.sessions, pw.sessions)
+      + metricRow('Page Views', w.screenPageViews, pw.screenPageViews)
+      + '</table>'
+      + '<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">'
+      + '<div><h3 style="color:#0D3B6E;font-size:13px;margin:0 0 6px">Top Pages</h3>'+topList(site.top_pages)+'</div>'
+      + '<div><h3 style="color:#0D3B6E;font-size:13px;margin:0 0 6px">Channels</h3>'+topList(site.channels)+'</div>'
+      + '<div><h3 style="color:#0D3B6E;font-size:13px;margin:0 0 6px">Devices</h3>'+topList(site.devices)+'</div>'
+      + '<div><h3 style="color:#0D3B6E;font-size:13px;margin:0 0 6px">Countries</h3>'+topList(site.countries)+'</div>'
+      + '</div></div>';
+  }
+
+  const totalUsers = data.sites.reduce(function(a, s) { return a + s.yesterday.activeUsers; }, 0);
+  const summary = data.sites.map(function(s) {
+    return s.label + ' ' + s.yesterday.activeUsers;
+  }).join(' &nbsp;·&nbsp; ');
+
+  const unmatched = (data.unmatched_hosts && data.unmatched_hosts.length)
+    ? '<div style="background:#FDF3E3;padding:12px 28px;border-left:4px solid #D97706">'
+      + '<p style="color:#854F0B;margin:0;font-size:13px"><strong>Traffic from unrecognised hostnames:</strong> '
+      + data.unmatched_hosts.join(', ')
+      + '. Add these to SITES in scripts/analytics-report.js to report them separately.</p></div>'
+    : '';
+
+  const tints = ['#f4f8fd', '#ffffff'];
+
+  return '<div style="font-family:Calibri,Arial,sans-serif;max-width:640px;margin:0 auto">'
     + '<div style="background:#0D3B6E;padding:24px 28px;border-radius:6px 6px 0 0">'
-    + '<h1 style="color:#00B4D8;margin:0;font-size:20px">IntractMD™ Analytics Report</h1>'
-    + '<p style="color:#A8C8E8;margin:6px 0 0;font-size:13px">'+reportDate+' &nbsp;·&nbsp; intractmd.com &nbsp;·&nbsp; GA4 Property 542871195</p>'
+    + '<h1 style="color:#00B4D8;margin:0;font-size:20px">Resolve Medical — Site Analytics</h1>'
+    + '<p style="color:#A8C8E8;margin:6px 0 0;font-size:13px">'+reportDate
+    + ' &nbsp;·&nbsp; GA4 property '+PROPERTY_ID+'</p>'
+    + '<p style="color:#7FB3DC;margin:8px 0 0;font-size:13px">Active users yesterday — '+summary+'</p>'
     + '</div>'
-
-    + (noData
-      ? '<div style="background:#FDF3E3;padding:20px 28px;border-left:4px solid #D97706"><p style="color:#854F0B;margin:0;font-size:14px"><strong>No traffic recorded yesterday.</strong> This is normal during early outreach phase. Data will appear once pilot recipients visit the site.</p></div>'
-      : '')
-
-    + '<div style="background:#f4f8fd;padding:20px 28px">'
-    + '<h2 style="color:#0D3B6E;font-size:16px;margin:0 0 12px">Yesterday vs Day Before</h2>'
-    + '<table style="width:100%;border-collapse:collapse">'
-    + metricRow('Active Users', d.activeUsers, db.activeUsers)
-    + metricRow('New Users', d.newUsers, db.newUsers)
-    + metricRow('Sessions', d.sessions, db.sessions)
-    + metricRow('Page Views', d.screenPageViews, db.screenPageViews)
-    + metricRow('Avg Session Duration', d.averageSessionDuration||0, db.averageSessionDuration||0, true)
-    + metricRow('Engagement Rate', Math.round((d.engagementRate||0)*100)+'%', Math.round((db.engagementRate||0)*100)+'%')
-    + '</table></div>'
-
-    + '<div style="background:#fff;padding:20px 28px">'
-    + '<h2 style="color:#0D3B6E;font-size:16px;margin:0 0 12px">Last 7 Days vs Prior 7 Days</h2>'
-    + '<table style="width:100%;border-collapse:collapse">'
-    + metricRow('Active Users', w.activeUsers, pw.activeUsers)
-    + metricRow('New Users', w.newUsers, pw.newUsers)
-    + metricRow('Sessions', w.sessions, pw.sessions)
-    + metricRow('Page Views', w.screenPageViews, pw.screenPageViews)
-    + metricRow('Avg Session Duration', w.averageSessionDuration||0, pw.averageSessionDuration||0, true)
-    + '</table></div>'
-
-    + '<div style="background:#f4f8fd;padding:20px 28px;display:grid;grid-template-columns:1fr 1fr;gap:20px">'
-    + '<div><h3 style="color:#0D3B6E;font-size:14px;margin:0 0 8px">Top Pages</h3>'+topList(data.top_pages)+'</div>'
-    + '<div><h3 style="color:#0D3B6E;font-size:14px;margin:0 0 8px">Channels</h3>'+topList(data.channels)+'</div>'
-    + '<div><h3 style="color:#0D3B6E;font-size:14px;margin:0 0 8px">Devices</h3>'+topList(data.devices)+'</div>'
-    + '<div><h3 style="color:#0D3B6E;font-size:14px;margin:0 0 8px">Countries</h3>'+topList(data.countries)+'</div>'
-    + '</div>'
-
+    + unmatched
+    + data.sites.map(function(s, i) { return siteBlock(s, tints[i % tints.length]); }).join('')
     + '<div style="background:#0D3B6E;padding:14px 28px;border-radius:0 0 6px 6px;text-align:center">'
     + '<a href="https://analytics.google.com" style="color:#00B4D8;font-size:13px;text-decoration:none">Open Google Analytics</a>'
-    + '<p style="color:#6688AA;font-size:11px;margin:6px 0 0">© 2026 Resolve Medical, LLC · IntractMD™ Analytics</p>'
+    + '<p style="color:#6688AA;font-size:11px;margin:6px 0 0">© 2026 Resolve Medical, LLC</p>'
     + '</div></div>';
-
-  return html;
 }
 
 async function sendEmail(html, reportDate, data) {
   if (!RESEND_API_KEY) throw new Error('RESEND_API_KEY not set');
-  const d = data.yesterday;
-  const hasTraffic = d.sessions > 0 || d.activeUsers > 0;
-  const subject = hasTraffic
-    ? '📊 IntractMD Analytics — ' + d.activeUsers + ' users, ' + d.sessions + ' sessions — ' + reportDate
-    : '📊 IntractMD Analytics — No traffic yesterday — ' + reportDate;
+  const parts = data.sites.map(function(s) {
+    return s.label + ' ' + s.yesterday.activeUsers + 'u/' + s.yesterday.sessions + 's';
+  });
+  const anyTraffic = data.sites.some(function(s) {
+    return s.yesterday.sessions > 0 || s.yesterday.activeUsers > 0;
+  });
+  const subject = anyTraffic
+    ? '📊 Site Analytics — ' + parts.join(' · ') + ' — ' + reportDate
+    : '📊 Site Analytics — No traffic yesterday — ' + reportDate;
 
   const res = await httpsPost('api.resend.com', '/emails', {
     from: 'IntractMD Analytics <info@mail.resolve.med>',
@@ -270,11 +367,8 @@ async function sendEmail(html, reportDate, data) {
     html: html
   }, { Authorization: 'Bearer ' + RESEND_API_KEY });
 
-  if (res.id) {
-    console.log('[Analytics] Email sent — id:', res.id);
-  } else {
-    console.error('[Analytics] Email failed:', JSON.stringify(res));
-  }
+  if (res.id) console.log('[Analytics] Email sent — id:', res.id);
+  else console.error('[Analytics] Email failed:', JSON.stringify(res));
   return res;
 }
 
@@ -284,7 +378,10 @@ async function main() {
     const token = await getAccessToken();
     console.log('[Analytics] Access token obtained');
     const data = await fetchAnalytics(token);
-    console.log('[Analytics] Data fetched — yesterday sessions:', data.yesterday.sessions, 'users:', data.yesterday.activeUsers);
+    data.sites.forEach(function(st) {
+      console.log('[Analytics] ' + st.label + ' (' + st.host + ') — sessions:', st.yesterday.sessions, 'users:', st.yesterday.activeUsers);
+    });
+    if (data.unmatched_hosts.length) console.warn('[Analytics] Unrecognised hostnames:', data.unmatched_hosts.join(', '));
     const html = buildEmail(data, data.date);
     if (DRY_RUN) {
       console.log('[Analytics] Dry run — email not sent');
