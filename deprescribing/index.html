@@ -60,6 +60,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 .tag-rm{background:none;border:none;cursor:pointer;color:var(--tx3);font-size:14px;padding:0 2px;line-height:1}
 .tag-rm:hover{color:var(--red)}
 
+/* Quick-pick chips */
+.qp-label{font-size:11px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 7px}
+.qp-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.qp{background:#fff;border:1px solid var(--br);border-radius:20px;padding:5px 11px;font-size:12px;font-weight:500;font-family:'Inter',sans-serif;color:var(--tx2);cursor:pointer;white-space:nowrap;transition:border-color .15s,color .15s,background .15s}
+.qp:hover{border-color:var(--cyan);color:var(--blue)}
+.qp.on{background:var(--blue-lt);border-color:#C0DFF5;color:var(--blue)}
+.qp.on::before{content:'\2713';font-weight:700;margin-right:4px}
+
 /* Autocomplete */
 .ac-wrap{position:relative}
 .ac-drop{position:absolute;top:100%;left:0;right:0;background:#fff;border:1.5px solid var(--cyan);border-radius:8px;box-shadow:var(--shadow);z-index:100;max-height:200px;overflow-y:auto;display:none}
@@ -127,6 +135,8 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 .empty i{font-size:36px;display:block;margin-bottom:10px;color:var(--br)}
 
 @media(max-width:600px){
+.qp-row{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);justify-content:start;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.qp-row::-webkit-scrollbar{display:none}
   .dim-grid{grid-template-columns:repeat(2,1fr)}
   .candidate-header{grid-template-columns:auto 1fr}
   .delta-badge{display:none}
@@ -163,6 +173,8 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
       </div>
       <div class="ac-drop" id="ac-drop"></div>
     </div>
+    <div class="qp-label">Common medications — tap to add</div>
+    <div class="qp-row" id="qp-row"></div>
     <div class="tags" id="drug-tags"></div>
     <button class="btn btn-analyze" id="analyze-btn" onclick="analyze()" disabled>
       <i class="ti ti-brain"></i> Analyze Deprescribing Opportunities
@@ -432,7 +444,37 @@ function renderTags(){
     return '<span class="tag"><i class="ti ti-pill" style="font-size:11px"></i>' + escapeHtml(d)
       + '<button class="tag-rm" onclick="removeDrug(' + i + ')">&times;</button></span>';
   }).join('');
+  syncQuickPicks();
 }
+
+/* Quick-pick chips - most common medications in adults 65+ */
+const QUICK_PICKS = ['atorvastatin','rosuvastatin','lisinopril','losartan','amlodipine',
+  'metoprolol','hydrochlorothiazide','furosemide','metformin','levothyroxine',
+  'omeprazole','pantoprazole','gabapentin','sertraline','trazodone',
+  'tramadol','apixaban','aspirin','tamsulosin','albuterol'];
+
+function renderQuickPicks(){
+  const row = document.getElementById('qp-row');
+  if (!row) return;
+  row.innerHTML = QUICK_PICKS.map(function(n){
+    return '<button type="button" class="qp" data-drug="' + n + '" onclick="toggleQuickPick(\'' + n + '\')">' + n + '</button>';
+  }).join('');
+}
+
+function toggleQuickPick(name){
+  const i = drugs.indexOf(name);
+  if (i === -1) { addDrug(name); } else { removeDrug(i); }
+}
+
+function syncQuickPicks(){
+  const row = document.getElementById('qp-row');
+  if (!row) return;
+  Array.prototype.forEach.call(row.querySelectorAll('.qp'), function(b){
+    b.classList.toggle('on', drugs.indexOf(b.getAttribute('data-drug')) !== -1);
+  });
+}
+
+renderQuickPicks();
 
 document.addEventListener('click', function(e){
   if (!e.target.closest('.ac-wrap')) hideAc();
