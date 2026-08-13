@@ -537,6 +537,14 @@ function renderResults(data){
     html += '<div style="margin-bottom:14px"></div>';
   }
 
+  // Interpretive guide shown above candidate list
+  html += '<div style="background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:10px 14px;margin:0 0 14px;font-size:12.5px;color:var(--tx2);line-height:1.65">'
+        + '<strong style="color:var(--navy)">How to read these results:</strong> '
+        + 'Each medication is ranked by the strength of its published deprescribing evidence — shown in the <strong>colored badge</strong> (AVOID, CAUTION, or MEASURE). '
+        + 'The <strong>gray badge</strong> shows the estimated CPRS point reduction if that medication were removed from the regimen. '
+        + 'A larger drop indicates greater impact on overall polypharmacy risk. '
+        + 'This is a prompt for pharmacist and prescriber review — not a recommendation to discontinue any medication.</div>';
+
   if (!candidates.length) {
     html += '<div class="card"><div class="empty"><i class="ti ti-shield-check"></i>'
           + '<p>No medication in this regimen appears in the deprescribing criteria currently loaded.</p>'
