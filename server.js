@@ -4419,20 +4419,42 @@ app.post('/api/deprescribing-analyze', async (req, res) => {
     const baselineResult = await runAnalysis(drugs);
     const baseline = extractScores(baselineResult);
 
-// Rank by published criteria rather than CPRS delta.
+// Rank by published criteria, then enrich each candidate with CPRS delta.
     const ranked = rankByCriteria(drugs, req.body.age ?? null);
-    ranked.candidates.forEach(function(c){
-      c.drug_class = DRUG_CLASSES[c.drug.toLowerCase()] || 'Medication';
+    // Run N+1 counterfactual: remove one drug at a time and measure CPRS drop.
+    const enriched = await Promise.all(ranked.candidates.map(async function(c){
+      const reduced = drugs.filter(d => d.toLowerCase() !== c.drug.toLowerCase());
+      let cprs_after = baseline.cprs;
+      if (reduced.length >= 1) {
+        try {
+          const r = await runAnalysis(reduced);
+          cprs_after = extractScores(r).cprs;
+        } catch(e) { /* keep baseline if simulation fails */ }
+      }
+      return Object.assign({}, c, {
+        drug_class: DRUG_CLASSES[c.drug.toLowerCase()] || 'Medication',
+        cprs_before: baseline.cprs,
+        cprs_after: cprs_after,
+        cprs_delta: Math.round((baseline.cprs - cprs_after) * 10) / 10
+      });
+    }));
+    // Secondary sort: within same tier, highest delta first.
+    enriched.sort(function(a,b){
+      const tierOrder = {AVOID:0,CAUTION:1,INTERACTION:2,MEASURE:3};
+      const ta = tierOrder[a.tier] ?? 4;
+      const tb = tierOrder[b.tier] ?? 4;
+      if (ta !== tb) return ta - tb;
+      return b.cprs_delta - a.cprs_delta;
     });
 
     return res.json({
       baseline,
-      candidates: ranked.candidates,
+      candidates: enriched,
       excluded: ranked.excluded,
       age_disclosure: ranked.age_disclosure,
       age_known: ranked.ageKnown,
       drug_count: drugs.length,
-      ranking_basis: 'published_criteria'
+      ranking_basis: 'published_criteria_with_delta'
     });
 
 

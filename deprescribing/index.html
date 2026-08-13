@@ -561,11 +561,23 @@ function renderResults(data){
             + '</div>';
       html += '</div></div>';
 
-      // Tier badge replaces the old CPRS delta badge
+      // Tier badge + CPRS delta side by side
+      const hasDelta = typeof c.cprs_delta === 'number';
+      const deltaSign = (hasDelta && c.cprs_delta > 0) ? '-' : '';
+      const deltaColor = (hasDelta && c.cprs_delta > 0) ? 'var(--green)' : 'var(--tx3)';
+      html += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0">';
       html += '<div class="delta-badge" style="background:' + style.bg + ';border-color:' + style.bd + '">'
             + '<div class="delta-val" style="color:' + style.fg + ';font-size:13px;line-height:1.3">'
             + esc(c.tier_label) + '</div>'
             + '<div class="delta-label" style="color:' + style.fg + '">per criteria</div></div>';
+      if (hasDelta) {
+        html += '<div class="delta-badge" style="background:var(--bg);border-color:var(--br)">'
+              + '<div class="delta-val" style="color:' + deltaColor + ';font-size:13px;line-height:1.3">'
+              + deltaSign + Math.abs(c.cprs_delta) + ' pts</div>'
+              + '<div class="delta-label" style="color:var(--tx3)">'
+              + esc(c.cprs_before) + ' → ' + esc(c.cprs_after) + '</div></div>';
+      }
+      html += '</div>';
       html += '</div>';
 
       // Expanded body — citations, not a dimension table
