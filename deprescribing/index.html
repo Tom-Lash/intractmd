@@ -79,6 +79,20 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 .dim-card.highlight{border-color:var(--cyan);background:var(--blue-lt)}
 .dim-val{font-size:20px;font-weight:700;color:var(--navy)}
 .dim-name{font-size:10px;color:var(--tx3);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+.dim-card{cursor:pointer;transition:box-shadow .15s}
+.dim-card:hover{box-shadow:0 2px 10px rgba(0,180,216,.18)}
+.dim-info{font-size:9px;color:var(--cyan);margin-top:4px;letter-spacing:.04em}
+/* Dim explanation modal */
+.dim-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center;padding:16px}
+.dim-modal-overlay.open{display:flex}
+.dim-modal{background:#fff;border-radius:12px;padding:24px;max-width:420px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,.18);position:relative}
+.dim-modal-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.dim-modal-subtitle{font-size:11px;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
+.dim-modal-desc{font-size:13px;color:var(--tx2);line-height:1.65;margin-bottom:14px}
+.dim-modal-scale{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.dim-modal-scale-row{display:flex;align-items:center;gap:10px;font-size:12px}
+.dim-modal-scale-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.dim-modal-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:var(--tx3);line-height:1}
 
 /* Candidate table */
 .candidate{border:1.5px solid var(--br);border-radius:var(--rl);margin-bottom:14px;overflow:hidden}
@@ -514,9 +528,10 @@ function renderResults(data){
   html += '<div class="dim-grid">';
   DIMS.forEach(function(d){
     const val = (baseline.dimensions && baseline.dimensions[d]) || 0;
-    html += '<div class="dim-card' + (val > 0 ? ' highlight' : '') + '">'
+    html += '<div class="dim-card' + (val > 0 ? ' highlight' : '') + '" onclick="showDimInfo('' + d + '',' + val + ')" title="Click for explanation">'
           + '<div class="dim-val" style="color:' + (val > 0 ? scoreColor(val*10) : 'var(--tx3)') + '">'
-          + esc(val) + '</div><div class="dim-name">' + DIM_LABELS[d] + '</div></div>';
+          + esc(val) + '</div><div class="dim-name">' + DIM_LABELS[d] + '</div>'
+          + '<div class="dim-info">tap to explain</div></div>';
   });
   html += '</div></div>';
 
@@ -626,11 +641,92 @@ function renderResults(data){
   resultsEl.innerHTML = html;
 }
 
+const DIM_INFO = {
+  bleeding:{
+    full:'Bleeding Risk',
+    desc:'Measures the risk of serious or life-threatening bleeding caused by drug combinations that thin the blood, inhibit platelet function, or increase anticoagulant effect. Common contributors include warfarin, aspirin, NSAIDs, SSRIs, and anticoagulants like apixaban or rivaroxaban.',
+    scale:[[0,'No detected bleeding risk interactions','#2E7D4F'],[1,3,'Low — monitor for unusual bruising or bleeding','#D97706'],[4,7,'Moderate — increased clinical vigilance recommended','#E65C00'],[8,10,'High — significant bleeding risk; review regimen urgently','#A32D2D']]
+  },
+  cardiac:{
+    full:'Cardiac Risk',
+    desc:'Reflects risk of cardiac arrhythmia, QT interval prolongation, bradycardia, or other heart rhythm disturbances caused by drug interactions. High-risk combinations may include antiarrhythmics, some antibiotics, antipsychotics, and drugs affecting electrolyte balance.',
+    scale:[[0,'No detected cardiac risk interactions','#2E7D4F'],[1,3,'Low — baseline cardiac monitoring appropriate','#D97706'],[4,7,'Moderate — consider ECG monitoring','#E65C00'],[8,10,'High — potentially life-threatening arrhythmia risk','#A32D2D']]
+  },
+  serotonin:{
+    full:'Serotonin Risk',
+    desc:'Indicates risk of serotonin syndrome — a potentially dangerous excess of serotonin activity caused by combining medications that increase serotonin levels. Common contributors include SSRIs, SNRIs, tramadol, triptans, linezolid, and MAOIs.',
+    scale:[[0,'No detected serotonin risk','#2E7D4F'],[1,3,'Low — monitor for serotonin-related symptoms','#D97706'],[4,7,'Moderate — symptoms may include agitation, tremor, diaphoresis','#E65C00'],[8,10,'High — serotonin syndrome risk; urgent review required','#A32D2D']]
+  },
+  nti:{
+    full:'Narrow Therapeutic Index (NTI) Conflict',
+    desc:'NTI drugs have a very small margin between a therapeutic dose and a toxic dose. Any interaction affecting their blood levels is clinically significant. Common NTI drugs include warfarin, digoxin, lithium, phenytoin, and levothyroxine.',
+    scale:[[0,'No NTI conflict detected','#2E7D4F'],[1,3,'Low — monitor NTI drug levels','#D97706'],[4,7,'Moderate — drug level monitoring and dose adjustment may be needed','#E65C00'],[8,10,'High — serious toxicity risk from NTI drug level disruption','#A32D2D']]
+  },
+  cns:{
+    full:'CNS (Central Nervous System) Risk',
+    desc:'Measures additive central nervous system depression from combinations of sedatives, opioids, benzodiazepines, antipsychotics, sleep aids, antihistamines, and other CNS-active drugs. High scores indicate risk of excessive sedation, respiratory depression, cognitive impairment, and falls.',
+    scale:[[0,'No detected CNS depression risk','#2E7D4F'],[1,3,'Low — mild sedation possible; caution with driving','#D97706'],[4,7,'Moderate — significant sedation and fall risk','#E65C00'],[8,10,'High — respiratory depression and serious CNS toxicity risk','#A32D2D']]
+  },
+  pharmacokinetic:{
+    full:'Pharmacokinetic Risk (CYP450)',
+    desc:'Reflects drug interactions involving the CYP450 enzyme system in the liver, which metabolizes most medications. When one drug inhibits or induces these enzymes, it alters blood levels of other drugs — potentially causing toxicity or treatment failure.',
+    scale:[[0,'No significant CYP450 interactions detected','#2E7D4F'],[1,3,'Low — minor enzyme effects; monitor for efficacy changes','#D97706'],[4,7,'Moderate — drug levels may be significantly altered','#E65C00'],[8,10,'High — major enzyme inhibition or induction; dose adjustment likely needed','#A32D2D']]
+  },
+  renal_hepatic:{
+    full:'Renal / Hepatic Risk',
+    desc:'Identifies drugs that are cleared by the kidneys or metabolized by the liver where combinations may overwhelm these organs or accumulate to toxic levels in patients with impaired renal or hepatic function. Particularly important in older adults.',
+    scale:[[0,'No detected renal or hepatic risk','#2E7D4F'],[1,3,'Low — standard monitoring appropriate','#D97706'],[4,7,'Moderate — renal/hepatic function monitoring recommended','#E65C00'],[8,10,'High — significant accumulation or organ stress risk','#A32D2D']]
+  },
+  pharmacodynamic:{
+    full:'Pharmacodynamic Risk',
+    desc:'Captures interactions where two drugs produce additive or synergistic effects on the same physiological system — even without a direct chemical interaction. Examples include two blood pressure-lowering drugs causing dangerous hypotension, or two anticholinergic drugs compounding cognitive side effects.',
+    scale:[[0,'No detected pharmacodynamic interactions','#2E7D4F'],[1,3,'Low — additive effects possible; monitor symptoms','#D97706'],[4,7,'Moderate — meaningful additive effect on target system','#E65C00'],[8,10,'High — dangerous synergistic effect; clinical review needed','#A32D2D']]
+  }
+};
+
+function showDimInfo(dim, val){
+  const info = DIM_INFO[dim];
+  if (!info) return;
+  document.getElementById('dimModalTitle').textContent = info.full;
+  document.getElementById('dimModalSubtitle').textContent = 'Score: ' + val + ' / 10';
+  document.getElementById('dimModalDesc').textContent = info.desc;
+  // Build scale
+  let scaleHtml = '<div style="font-size:11px;font-weight:600;color:var(--tx2);margin-bottom:6px">Score Guide</div>';
+  info.scale.forEach(function(row){
+    const isActive = (row.length === 3 && val === 0 && row[0] === 0) ||
+                     (row.length === 4 && val >= row[0] && val <= row[1]);
+    scaleHtml += '<div class="dim-modal-scale-row" style="' + (isActive ? 'font-weight:600' : 'opacity:.8') + '">'
+      + '<div class="dim-modal-scale-dot" style="background:' + row[row.length-1] + ';' + (isActive ? 'box-shadow:0 0 0 2px ' + row[row.length-1] + '44' : '') + '"></div>'
+      + '<span style="color:' + row[row.length-1] + '">' + row[row.length-2] + '</span></div>';
+  });
+  document.getElementById('dimModalScale').innerHTML = scaleHtml;
+  document.getElementById('dimModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDimModal(){
+  document.getElementById('dimModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') closeDimModal();
+});
+
 function toggleCandidate(i){
   const body = document.getElementById('candidate-body-' + i);
   if (body) body.classList.toggle('open');
 }
   
 </script>
+<div class="dim-modal-overlay" id="dimModal">
+  <div class="dim-modal">
+    <button class="dim-modal-close" onclick="closeDimModal()" aria-label="Close">&times;</button>
+    <div class="dim-modal-title" id="dimModalTitle"></div>
+    <div class="dim-modal-subtitle" id="dimModalSubtitle"></div>
+    <div class="dim-modal-desc" id="dimModalDesc"></div>
+    <div class="dim-modal-scale" id="dimModalScale"></div>
+  </div>
+</div>
 </body>
 </html>
