@@ -585,7 +585,7 @@ function renderResults(data){
   html += '<div class="dim-grid">';
   DIMS.forEach(function(d){
     const val = (baseline.dimensions && baseline.dimensions[d]) || 0;
-    html += '<div class="dim-card' + (val > 0 ? ' highlight' : '') + '" onclick="showDimInfo('' + d + '',' + val + ')" title="Click for explanation">'
+    html += '<div class="dim-card' + (val > 0 ? ' highlight' : '') + '" onclick="showDimInfo(\'' + d + '\',' + val + ')" title="Click for explanation">'
           + '<div class="dim-val" style="color:' + (val > 0 ? scoreColor(val*10) : 'var(--tx3)') + '">'
           + esc(val) + '</div><div class="dim-name">' + DIM_LABELS[d] + '</div>'
           + '<div class="dim-info">tap to explain</div></div>';
