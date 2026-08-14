@@ -135,11 +135,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 /* Print styles */
 @media print{
   @page{margin:1.25in 0.75in}
+  #print-header-standalone{display:block!important}
+  .print-header{display:none!important}
   .header,.intro,.card:first-of-type,.btn-download,.qp-label,.qp-row,.tags,#drug-tags,.input-row,.ac-wrap,.btn-analyze{display:none!important}
   body{background:#fff;color:#000;font-size:11pt}
   .main{padding:0 0.25in;max-width:100%;box-sizing:border-box}
   /* Print header */
   .print-header{display:none}
+  #print-header-standalone{display:none}
   @media print{
     .print-header{display:block;text-align:center;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid #0D3B6E}
     .print-header-title{font-size:16pt;font-weight:700;color:#0D3B6E;letter-spacing:-.01em}
@@ -250,6 +253,17 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
   <div class="header-sub">by Resolve Medical, LLC · Pilot Preview</div>
 </div>
 
+<div id="print-header-standalone" style="display:none">
+  <div style="text-align:center;padding-bottom:14px;border-bottom:2px solid #0D3B6E;margin-bottom:20px">
+    <div style="font-size:16pt;font-weight:700;color:#0D3B6E">IntractMD&#8482; Deprescribing Intelligence Analysis</div>
+    <div style="font-size:10pt;color:#555;margin-top:5px">Resolve Medical, LLC &middot; intractmd.com &middot; 216-509-0672</div>
+    <div id="print-header-date" style="font-size:9pt;color:#888;margin-top:3px"></div>
+  </div>
+  <div id="print-drugs-list" style="background:#f4f7fb;border:1px solid #ddd;border-radius:6px;padding:10px 14px;margin-bottom:18px">
+    <div style="font-size:9pt;font-weight:700;color:#0D3B6E;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Medications Analyzed</div>
+    <div id="print-drugs-tags"></div>
+  </div>
+</div>
 <div class="main">
 
   <div class="intro">
@@ -827,14 +841,7 @@ function renderResults(data){
     html += '</div></div>';
   }
 
-  const now = new Date();
-  const dateStr = now.toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
-  const printHeader = '<div class="print-header">'
-    + '<div class="print-header-title">IntractMD™ Deprescribing Intelligence Analysis</div>'
-    + '<div class="print-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>'
-    + '<div class="print-header-date">Generated: ' + dateStr + ' · For pharmacist and prescriber review only · Not for clinical use without supervision</div>'
-    + '</div>';
-  resultsEl.innerHTML = printHeader + html;
+  resultsEl.innerHTML = html;
 }
 
 const DIM_INFO = {
@@ -1004,6 +1011,16 @@ function buildReport(data, drugs){
 }
 
 function downloadSummary(){
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
+  const dateEl = document.getElementById('print-header-date');
+  if (dateEl) dateEl.textContent = 'Generated: ' + dateStr + ' · For pharmacist and prescriber review only · Not for clinical use without supervision';
+  const tagsEl = document.getElementById('print-drugs-tags');
+  if (tagsEl && window._lastAnalysisDrugs) {
+    tagsEl.innerHTML = window._lastAnalysisDrugs.map(function(d){
+      return '<span style="display:inline-block;background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 10px;font-size:10pt;font-weight:600;color:#0D3B6E;margin:2px 4px 2px 0">' + d + '</span>';
+    }).join('');
+  }
   window.print();
 }
 
