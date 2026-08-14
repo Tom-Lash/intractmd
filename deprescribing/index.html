@@ -105,6 +105,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
   .header,.intro,.card:first-of-type,.btn-download,.qp-label,.qp-row,.tags,#drug-tags,.input-row,.ac-wrap,.btn-analyze{display:none!important}
   body{background:#fff;color:#000;font-size:11pt}
   .main{padding:0;max-width:100%}
+  /* Print header */
+  .print-header{display:none}
+  @media print{
+    .print-header{display:block;text-align:center;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid #0D3B6E}
+    .print-header-title{font-size:16pt;font-weight:700;color:#0D3B6E;letter-spacing:-.01em}
+    .print-header-sub{font-size:10pt;color:#555;margin-top:4px}
+    .print-header-date{font-size:9pt;color:#888;margin-top:3px}
+  }
   /* Summary card — white background, dark text for print */
   .summary-card{background:#fff!important;border:1.5px solid #0D3B6E!important;border-radius:6px;padding:16px 20px;color:#000!important}
   .summary-card h3{color:#0D3B6E!important;font-size:13pt;border-bottom:1px solid #0D3B6E;padding-bottom:6px;margin-bottom:10px}
@@ -781,7 +789,14 @@ function renderResults(data){
     html += '</div></div>';
   }
 
-  resultsEl.innerHTML = html;
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
+  const printHeader = '<div class="print-header">'
+    + '<div class="print-header-title">IntractMD™ Deprescribing Intelligence Analysis</div>'
+    + '<div class="print-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>'
+    + '<div class="print-header-date">Generated: ' + dateStr + ' · For pharmacist and prescriber review only · Not for clinical use without supervision</div>'
+    + '</div>';
+  resultsEl.innerHTML = printHeader + html;
 }
 
 const DIM_INFO = {
