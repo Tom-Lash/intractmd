@@ -575,7 +575,6 @@ async function analyze(){
       body: JSON.stringify({drugs:drugs})
     });
     const data = await res.json();
-    console.log('[deprescribing] API response candidates[0]:', JSON.stringify(data.candidates && data.candidates[0]));
     if(data.error){
       resultsEl.innerHTML='<div class="card"><div class="empty"><i class="ti ti-alert-circle"></i><p>'+data.error+'</p></div></div>';
     } else {
