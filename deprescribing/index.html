@@ -102,7 +102,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 /* Print styles */
 @media print{
   @page{margin:1.1in 0.9in}
-  .header,.intro,.card:first-of-type,.btn-download,.qp-label,.qp-row,.tags,#drug-tags,.input-row,.ac-wrap,.btn-analyze,.candidate,.summary-card+*{display:none!important}
+  .header,.intro,.card:first-of-type,.btn-download,.qp-label,.qp-row,.tags,#drug-tags,.input-row,.ac-wrap,.btn-analyze{display:none!important}
   body{background:#fff;color:#000;font-size:11pt}
   .main{padding:0;max-width:100%}
   /* Summary card — white background, dark text for print */
@@ -117,6 +117,16 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
   .summary-table td{padding:5px 8px;border-bottom:1px solid #ddd;color:#000!important}
   .summary-table tr:nth-child(even) td{background:#f4f7fb!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .summary-tier{border:1px solid #999;background:#fff!important;color:#000!important;font-size:8pt;padding:1px 6px}
+  /* Show all candidate cards and expand bodies for print */
+  .candidate{border:1px solid #ddd;border-radius:6px;margin-bottom:10px;padding:10px 12px;page-break-inside:avoid}
+  .candidate-header{cursor:default}
+  .candidate-body{display:block!important;max-height:none!important;padding:8px 0 0}
+  .candidate-rank{background:#0D3B6E!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .delta-badge{border:1px solid #ddd!important;background:#fff!important}
+  .delta-val,.delta-label{color:#000!important}
+  .evidence-box{background:#f4f7fb!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;border-radius:4px;padding:8px}
+  .evidence-title{color:#0D3B6E!important;font-weight:600}
+  .evidence-item{color:#333!important;font-size:9pt}
   /* Narrative text */
   .summary-card>div{color:#333!important;line-height:1.6}
   /* Footer note */
