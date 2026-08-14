@@ -149,6 +149,48 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
   .form-row,.factor-grid{grid-template-columns:1fr;}
   .confidence-summary{grid-template-columns:1fr;}
 }
+/* ── EXECUTIVE SUMMARY REPORT ── */
+.exec-report-overlay{display:none;position:fixed;inset:0;background:#f4f7fb;z-index:2000;overflow-y:auto}
+.exec-report-overlay.open{display:block}
+.exec-report-doc{max-width:800px;margin:0 auto;padding:40px 48px;background:#fff;min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.08)}
+.exec-report-close{position:fixed;top:18px;right:24px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:600;font-family:"Inter",sans-serif;cursor:pointer;z-index:2001;display:flex;align-items:center;gap:6px}
+.exec-report-close:hover{opacity:.85}
+.er-header{text-align:center;border-bottom:2px solid var(--navy);padding-bottom:16px;margin-bottom:20px}
+.er-header-title{font-size:20px;font-weight:700;color:var(--navy)}
+.er-header-sub{font-size:12px;color:#555;margin-top:5px}
+.er-header-date{font-size:11px;color:#888;margin-top:3px}
+.er-section{margin-bottom:20px}
+.er-section-title{font-size:14px;font-weight:700;color:var(--navy);padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.er-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.er-info-box{background:#f4f7fb;border-radius:8px;padding:10px 14px}
+.er-info-label{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.er-info-value{font-size:13px;font-weight:600;color:var(--navy)}
+.er-drug-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.er-drug-tag{background:#fff;border:1.5px solid var(--cyan);border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:var(--navy)}
+.er-score-row{display:flex;align-items:center;gap:16px;background:#f4f7fb;border-radius:8px;padding:14px 16px;margin-bottom:14px}
+.er-score-val{font-size:32px;font-weight:700}
+.er-score-label{font-size:11px;color:#888;margin-top:2px}
+.er-table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:14px}
+.er-table th{background:var(--navy);color:#fff;padding:7px 10px;text-align:left;font-size:11px}
+.er-table td{padding:6px 10px;border-bottom:1px solid #e2e6ea;vertical-align:top}
+.er-table tr:nth-child(even) td{background:#f8f9fb}
+.er-sev{display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700}
+.er-outreach-box{background:#f4f7fb;border-radius:8px;padding:14px 16px;margin-bottom:12px}
+.er-outreach-label{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.er-outreach-body{font-size:12px;color:#333;line-height:1.7;white-space:pre-wrap}
+.er-footer{margin-top:30px;padding-top:12px;border-top:1px solid #e2e6ea;text-align:center;font-size:10px;color:#aaa;line-height:1.6}
+.btn-exec-report{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.5);border-radius:8px;font-size:13px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:opacity .15s;margin-left:10px}
+.btn-exec-report:hover{background:rgba(255,255,255,.25)}
+.btn-dl-report{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;background:var(--cyan);color:var(--navy);border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:opacity .15s}
+.btn-dl-report:hover{opacity:.88}
+@media print{
+  @page{margin:1.25in 0.75in}
+  .exec-report-close,.steps-panel,.header,.btn-exec-report,.btn-dl-report{display:none!important}
+  .exec-report-overlay{position:static!important;background:#fff!important;overflow:visible!important}
+  .exec-report-doc{box-shadow:none!important;padding:0!important}
+  .er-section{page-break-inside:avoid}
+  .er-outreach-box{page-break-inside:avoid}
+}
 </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMVMREWQT1"></script>
@@ -522,6 +564,18 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
     </div><!-- end main-panel -->
   </div><!-- end workflow -->
 </div><!-- end container -->
+
+<!-- Report buttons (shown after Step 6 completes) -->
+<div id="reportBtns" style="display:none;gap:12px;justify-content:center;padding:16px;flex-wrap:wrap">
+  <button class="btn-dl-report" onclick="downloadClinicalReport()"><i class="ti ti-file-download"></i> Download Executive Summary (PDF)</button>
+  <button class="btn-exec-report" style="background:var(--navy);border-color:var(--navy)" onclick="viewClinicalReport()"><i class="ti ti-eye"></i> View Executive Summary</button>
+</div>
+
+<!-- Executive Summary Report Overlay -->
+<div class="exec-report-overlay" id="execReportOverlay">
+  <button class="exec-report-close" onclick="closeExecReport()"><i class="ti ti-x"></i> Close Report</button>
+  <div class="exec-report-doc" id="execReportContent"></div>
+</div>
 
 <script>
 // ── STATE ──────────────────────────────────────────────────────────────────
@@ -1137,6 +1191,11 @@ async function generateMessage() {
     document.getElementById('step6-num').className = 'step-num done';
     const out = document.getElementById('outputSection');
     if(out) { out.style.display='block'; out.scrollIntoView({behavior:'smooth',block:'start'}); }
+    // Show report buttons
+    const rbtns = document.getElementById('reportBtns');
+    if(rbtns) rbtns.style.display='flex';
+    window._clinResult = result;
+    window._clinPayload = payload;
   } catch(e) {
     alert('Error generating message: ' + e.message);
   }
@@ -1191,6 +1250,166 @@ function switchTab(tab) {
   if(pane) pane.classList.add('active');
 }
 
+
+function buildClinicalReport(result, payload){
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  const drugs = payload.drugs || [];
+  const ddi = payload.ddiResults || {};
+  const factors = payload.riskFactors || [];
+  const ctx = payload.patientContext || {};
+  const interactions = (ddi.drug_interactions||[]).filter(i=>i.severity==='Critical'||i.severity==='High'||i.severity==='Moderate');
+  const warnings = (ddi.warnings||[]).slice(0,6);
+  const cprs = ddi.risk_score || 0;
+  const sevColor = {Critical:'#A32D2D',High:'#C05020',Moderate:'#D97706',Low:'#2E7D4F'};
+  const sevBg = {Critical:'#FCEBEB',High:'#fdeee8',Moderate:'#FDF3E3',Low:'#E8F5ED'};
+  const tierColors = {CONFIRMED:'#1A7A4A',COMPUTED:'#1B6EC2',PREDICTIVE:'#7C3AED'};
+
+  let html = '';
+
+  // Header
+  html += '<div class="er-header">';
+  html += '<div class="er-header-title">IntractMD™ Clinical MTM Executive Summary</div>';
+  html += '<div class="er-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
+  html += '<div class="er-header-date">Generated: ' + dateStr + ' · For pharmacist and prescriber review only</div>';
+  html += '</div>';
+
+  // Patient & context
+  html += '<div class="er-section">';
+  html += '<div class="er-section-title"><i class="ti ti-user" style="color:var(--cyan)"></i> Patient & Case Context</div>';
+  html += '<div class="er-info-grid">';
+  html += '<div class="er-info-box"><div class="er-info-label">Patient</div><div class="er-info-value">' + (ctx.firstName||'Member') + '</div></div>';
+  html += '<div class="er-info-box"><div class="er-info-label">Health Plan</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
+  html += '<div class="er-info-box"><div class="er-info-label">Case Manager</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
+  html += '<div class="er-info-box"><div class="er-info-label">Confidence Tier</div><div class="er-info-value" style="color:' + (tierColors[result.confidence_summary&&result.confidence_summary.highest_tier_used]||'#7C3AED') + '">' + (result.confidence_summary&&result.confidence_summary.highest_tier_used||'PREDICTIVE') + '</div></div>';
+  html += '</div></div>';
+
+  // Medications
+  html += '<div class="er-section">';
+  html += '<div class="er-section-title"><i class="ti ti-pill" style="color:var(--cyan)"></i> Medications Reviewed (' + drugs.length + ')</div>';
+  html += '<div class="er-drug-tags">';
+  drugs.forEach(function(d){ html += '<span class="er-drug-tag">' + d + '</span>'; });
+  html += '</div></div>';
+
+  // Risk score
+  const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
+  const scoreLabel = cprs >= 70 ? 'High Risk' : cprs >= 40 ? 'Moderate Risk' : 'Lower Risk';
+  html += '<div class="er-section">';
+  html += '<div class="er-section-title"><i class="ti ti-chart-bar" style="color:var(--cyan)"></i> Composite Polypharmacy Risk Score (CPRS)</div>';
+  html += '<div class="er-score-row">';
+  html += '<div><div class="er-score-val" style="color:' + scoreColor + '">' + cprs + '</div><div class="er-score-label">out of 100</div></div>';
+  html += '<div><div style="font-size:15px;font-weight:700;color:' + scoreColor + '">' + scoreLabel + '</div>';
+  html += '<div style="font-size:12px;color:#666;margin-top:4px;max-width:480px">The CPRS reflects cumulative interaction risk across 8 clinical dimensions including bleeding, cardiac, CNS, serotonin, NTI conflict, pharmacokinetic, renal/hepatic, and pharmacodynamic risk.</div></div>';
+  html += '</div></div>';
+
+  // DDI findings
+  if(interactions.length){
+    html += '<div class="er-section">';
+    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> Drug-Drug Interactions (' + interactions.length + ' flagged)</div>';
+    html += '<table class="er-table"><thead><tr><th>Severity</th><th>Interaction</th><th>Mechanism</th><th>Action</th></tr></thead><tbody>';
+    interactions.forEach(function(i){
+      const sc = sevColor[i.severity]||'#555';
+      const sb = sevBg[i.severity]||'#f4f7fb';
+      html += '<tr>'
+        + '<td><span class="er-sev" style="background:' + sb + ';color:' + sc + '">' + i.severity + '</span></td>'
+        + '<td style="font-weight:600">' + (i.drug1||'') + ' + ' + (i.drug2||'') + '</td>'
+        + '<td>' + (i.mechanism||i.description||'—') + '</td>'
+        + '<td style="font-style:italic;color:#666">' + (i.action||'—') + '</td>'
+        + '</tr>';
+    });
+    html += '</tbody></table></div>';
+  }
+
+  // Supplement/food warnings
+  if(warnings.length){
+    html += '<div class="er-section">';
+    html += '<div class="er-section-title"><i class="ti ti-leaf" style="color:var(--cyan)"></i> Supplement & Food Warnings (' + warnings.length + ')</div>';
+    html += '<table class="er-table"><thead><tr><th>Severity</th><th>Item</th><th>Risk</th><th>Action</th></tr></thead><tbody>';
+    warnings.forEach(function(w){
+      const sc = sevColor[w.severity]||'#555';
+      const sb = sevBg[w.severity]||'#f4f7fb';
+      html += '<tr>'
+        + '<td><span class="er-sev" style="background:' + sb + ';color:' + sc + '">' + w.severity + '</span></td>'
+        + '<td style="font-weight:600">' + (w.interacts_with||'—') + '</td>'
+        + '<td>' + (w.mechanism||'—') + '</td>'
+        + '<td style="font-style:italic;color:#666">' + (w.action||'—') + '</td>'
+        + '</tr>';
+    });
+    html += '</tbody></table></div>';
+  }
+
+  // Risk factors
+  if(factors.length){
+    html += '<div class="er-section">';
+    html += '<div class="er-section-title"><i class="ti ti-heart-rate-monitor" style="color:var(--cyan)"></i> Risk Factors (' + factors.length + ')</div>';
+    html += '<div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:8px">';
+    factors.forEach(function(f){
+      html += '<span style="background:#EBF5FC;border:1px solid #C0DFF5;border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:#1B6EC2">' + (f.label||f) + '</span>';
+    });
+    html += '</div></div>';
+  }
+
+  // Outreach generated
+  html += '<div class="er-section">';
+  html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> Outreach Generated</div>';
+  if(result.email){
+    html += '<div class="er-outreach-box">';
+    html += '<div class="er-outreach-label">Email</div>';
+    html += '<div style="font-size:11px;font-weight:600;color:var(--navy);margin-bottom:6px">' + (result.email.subject||'') + '</div>';
+    html += '<div class="er-outreach-body">' + (result.email.body||'').replace(/</g,'&lt;') + '</div>';
+    html += '</div>';
+  }
+  if(result.sms&&result.sms.body){
+    html += '<div class="er-outreach-box">';
+    html += '<div class="er-outreach-label">SMS</div>';
+    html += '<div class="er-outreach-body">' + (result.sms.body||'').replace(/</g,'&lt;') + '</div>';
+    html += '</div>';
+  }
+  if(result.case_manager_script){
+    const sc = result.case_manager_script;
+    html += '<div class="er-outreach-box">';
+    html += '<div class="er-outreach-label">Call Script</div>';
+    if(sc.opening) html += '<div style="font-size:12px;margin-bottom:6px"><strong>Opening:</strong> ' + sc.opening + '</div>';
+    if(sc.key_points&&sc.key_points.length){
+      html += '<ul style="font-size:12px;color:#333;line-height:1.7;padding-left:18px">';
+      sc.key_points.forEach(function(p){ html += '<li>' + p + '</li>'; });
+      html += '</ul>';
+    }
+    if(sc.closing) html += '<div style="font-size:12px;margin-top:6px"><strong>Closing:</strong> ' + sc.closing + '</div>';
+    html += '</div>';
+  }
+  html += '</div>';
+
+  // Footer
+  html += '<div class="er-footer">';
+  html += 'IntractMD™ is a clinical decision support tool — not a substitute for professional medical advice.<br/>';
+  html += '©2026 Resolve Medical, LLC · Patent Pending · 700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113';
+  html += '</div>';
+
+  return html;
+}
+
+function viewClinicalReport(){
+  if(!window._clinResult || !window._clinPayload) return;
+  const html = buildClinicalReport(window._clinResult, window._clinPayload);
+  document.getElementById('execReportContent').innerHTML = html;
+  document.getElementById('execReportOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeExecReport(){
+  document.getElementById('execReportOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function downloadClinicalReport(){
+  if(!window._clinResult || !window._clinPayload) return;
+  const html = buildClinicalReport(window._clinResult, window._clinPayload);
+  document.getElementById('execReportContent').innerHTML = html;
+  document.getElementById('execReportOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(function(){ window.print(); }, 400);
+}
 
 </script>
 </body>
