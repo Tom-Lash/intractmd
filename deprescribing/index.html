@@ -101,7 +101,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 .btn-download:hover{opacity:.88}
 /* Print styles */
 @media print{
-  @page{margin:1.1in 1.25in}
+  @page{margin:1.1in 1.75in}
   .header,.intro,.card:first-of-type,.btn-download,.qp-label,.qp-row,.tags,#drug-tags,.input-row,.ac-wrap,.btn-analyze{display:none!important}
   body{background:#fff;color:#000;font-size:11pt}
   .main{padding:0;max-width:100%}
@@ -575,6 +575,7 @@ async function analyze(){
       body: JSON.stringify({drugs:drugs})
     });
     const data = await res.json();
+    console.log('[deprescribing] API response candidates[0]:', JSON.stringify(data.candidates && data.candidates[0]));
     if(data.error){
       resultsEl.innerHTML='<div class="card"><div class="empty"><i class="ti ti-alert-circle"></i><p>'+data.error+'</p></div></div>';
     } else {
@@ -669,9 +670,11 @@ function renderResults(data){
       const tierFg = {AVOID:'#A32D2D',CAUTION:'#D97706',INTERACTION:'#D97706',MEASURE:'#1B6EC2'};
       const bg = tierColors[c.tier] || '#EBF5FC';
       const fg = tierFg[c.tier] || '#1B6EC2';
-      const delta = typeof c.cprs_delta === 'number' && c.cprs_delta > 0
-        ? '<span style="color:#6EE7B7;font-weight:600">-' + c.cprs_delta + ' pts</span> (' + c.cprs_before + '→' + c.cprs_after + ')'
-        : '<span style="color:rgba(255,255,255,.4)">—</span>';
+      const delta = typeof c.cprs_delta === 'number'
+        ? (c.cprs_delta > 0
+            ? '<span style="color:#6EE7B7;font-weight:600">-' + c.cprs_delta + ' pts</span> <span style="color:rgba(255,255,255,.6)">(' + c.cprs_before + '→' + c.cprs_after + ')</span>'
+            : '<span style="color:rgba(255,255,255,.5)">No change (' + c.cprs_before + '→' + c.cprs_after + ')</span>')
+        : '<span style="color:rgba(255,255,255,.4)">Calculating…</span>';
       html += '<tr>'
         + '<td style="color:rgba(255,255,255,.5)">' + (i+1) + '</td>'
         + '<td style="font-weight:600">' + esc(c.drug) + '</td>'
