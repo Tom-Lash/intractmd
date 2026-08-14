@@ -330,6 +330,15 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         </div>
       </div>
     </div>
+    <!-- Briefing button — appears after DDI analysis completes -->
+    <div id="briefingBtnWrap" style="display:none;margin-top:14px">
+      <button onclick="viewClinicalReport()" style="width:100%;padding:11px 14px;background:var(--cyan);color:var(--navy);border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 2px 8px rgba(0,180,216,.3)">
+        <i class="ti ti-file-description"></i> View Clinical Briefing
+      </button>
+      <button onclick="downloadClinicalReport()" style="width:100%;margin-top:8px;padding:9px 14px;background:#fff;color:var(--navy);border:1.5px solid var(--cyan);border-radius:8px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px">
+        <i class="ti ti-file-download"></i> Download PDF
+      </button>
+    </div>
 
     <!-- MAIN WORKFLOW -->
     <div class="main-panel">
@@ -993,6 +1002,21 @@ async function runDDI() {
     document.getElementById('step4-num').className = 'step-num done';
     document.getElementById('step5-num').className = 'step-num done';
     document.getElementById('generateBtn').disabled = false;
+    // Show briefing button in sidebar
+    const bwrap = document.getElementById('briefingBtnWrap');
+    if(bwrap) bwrap.style.display = 'block';
+    window._clinPayload = {
+      drugs: [...drugs],
+      ddiResults: ddiData || {},
+      riskFactors: Object.values(selectedFactors),
+      patientContext: {
+        firstName: (document.getElementById('patientFirstName')||{}).value || 'Member',
+        planName: (document.getElementById('planName')||{}).value || 'your health plan',
+        caseManagerName: (document.getElementById('caseManagerName')||{}).value || 'your care team'
+      },
+      language: (document.getElementById('outreachLanguage')||{}).value || 'en'
+    };
+    window._clinResult = null; // outreach not yet generated
   } catch(e) {
     document.getElementById('ddiResult').innerHTML = '<div style="color:red;font-size:13px;">Error: ' + e.message + '</div>';
   }
@@ -1195,6 +1219,7 @@ async function generateMessage() {
     const rbtns = document.getElementById('reportBtns');
     if(rbtns) rbtns.style.display='flex';
     window._clinResult = result;
+    // Update payload with final context
     window._clinPayload = payload;
   } catch(e) {
     alert('Error generating message: ' + e.message);
@@ -1252,6 +1277,7 @@ function switchTab(tab) {
 
 
 function buildClinicalReport(result, payload){
+  result = result || {};
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
   const drugs = payload.drugs || [];
@@ -1349,7 +1375,8 @@ function buildClinicalReport(result, payload){
     html += '</div></div>';
   }
 
-  // Outreach generated
+  // Outreach generated — only if available
+  if(result && result.email){
   html += '<div class="er-section">';
   html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> Outreach Generated</div>';
   if(result.email){
@@ -1379,6 +1406,7 @@ function buildClinicalReport(result, payload){
     html += '</div>';
   }
   html += '</div>';
+  } // end outreach section
 
   // Footer
   html += '<div class="er-footer">';
