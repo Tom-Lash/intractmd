@@ -1022,9 +1022,14 @@ function downloadSummary(){
     return '<span style="display:inline-block;background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 10px;font-size:10pt;font-weight:600;color:#0D3B6E;margin:2px 4px 2px 0">' + d + '</span>';
   }).join('');
 
-  // Get results HTML
+  // Get only summary card and candidates — skip the Current Risk Profile card
   const resultsEl = document.getElementById('results');
-  const resultsHtml = resultsEl ? resultsEl.innerHTML : '';
+  let resultsHtml = '';
+  if (resultsEl) {
+    // Get all children except the first card (Current Risk Profile)
+    const children = Array.from(resultsEl.children);
+    resultsHtml = children.slice(1).map(function(el){ return el.outerHTML; }).join('');
+  }
 
   const fullHtml = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>IntractMD Deprescribing Summary</title>'
     + '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>'
