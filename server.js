@@ -594,11 +594,14 @@ app.use(session({
 app.post('/api/pilot-login', express.json(), (req, res) => {
   const { username, password } = req.body || {};
   const users = loadPilotUsers();
+  console.log('[PILOT LOGIN] attempt:', username, '| body:', JSON.stringify(req.body), '| users loaded:', Object.keys(users));
   if (username && users[username] && users[username] === password) {
     req.session.pilotAuthenticated = true;
     req.session.pilotUser = username;
+    console.log('[PILOT LOGIN] success:', username);
     return res.json({ ok: true });
   }
+  console.log('[PILOT LOGIN] failed for:', username);
   return res.status(401).json({ ok: false });
 });
 
