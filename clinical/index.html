@@ -1418,8 +1418,8 @@ function buildClinicalReport(result, payload){
 }
 
 function viewClinicalReport(){
-  if(!window._clinResult || !window._clinPayload) return;
-  const html = buildClinicalReport(window._clinResult, window._clinPayload);
+  if(!window._clinPayload) return;
+  const html = buildClinicalReport(window._clinResult || null, window._clinPayload);
   document.getElementById('execReportContent').innerHTML = html;
   document.getElementById('execReportOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -1431,8 +1431,8 @@ function closeExecReport(){
 }
 
 function downloadClinicalReport(){
-  if(!window._clinResult || !window._clinPayload) return;
-  const html = buildClinicalReport(window._clinResult, window._clinPayload);
+  if(!window._clinPayload) return;
+  const html = buildClinicalReport(window._clinResult || null, window._clinPayload);
   document.getElementById('execReportContent').innerHTML = html;
   document.getElementById('execReportOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
