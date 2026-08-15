@@ -186,8 +186,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 @media print{
   @page{margin:1.25in 0.75in}
   .exec-report-close,.steps-panel,.header,.btn-exec-report,.btn-dl-report{display:none!important}
-  .exec-report-overlay{position:static!important;background:#fff!important;overflow:visible!important}
-  .exec-report-doc{box-shadow:none!important;padding:0!important}
+  .exec-report-overlay{position:static!important;background:#fff!important;overflow:visible!important;display:block!important}
+  .exec-report-doc{box-shadow:none!important;padding:0!important;margin:0!important}
+  .er-header{margin-top:0!important}
   .er-section{page-break-inside:avoid}
   .er-outreach-box{page-break-inside:avoid}
 }
@@ -1320,7 +1321,7 @@ function buildClinicalReport(result, payload){
   // Risk score
   const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
   const scoreLabel = cprs >= 70 ? 'High Risk' : cprs >= 40 ? 'Moderate Risk' : 'Lower Risk';
-  html += '<div class="er-section">';
+  html += '<div class="er-section" style="page-break-after:always">';
   html += '<div class="er-section-title"><i class="ti ti-chart-bar" style="color:var(--cyan)"></i> Composite Polypharmacy Risk Score (CPRS)</div>';
   html += '<div class="er-score-row">';
   html += '<div><div class="er-score-val" style="color:' + scoreColor + '">' + cprs + '</div><div class="er-score-label">out of 100</div></div>';
