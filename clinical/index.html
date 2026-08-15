@@ -329,17 +329,17 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           <div class="tier-bar predictive" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-alert-triangle"></i> PREDICTIVE — inferred guidance</div>
         </div>
       </div>
+      <!-- Briefing button — appears after DDI analysis completes -->
+      <div id="briefingBtnWrap" style="display:none;margin-top:14px">
+        <button onclick="viewClinicalReport()" style="width:100%;padding:11px 14px;background:var(--cyan);color:var(--navy);border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 2px 8px rgba(0,180,216,.3)">
+          <i class="ti ti-file-description"></i> View Clinical Briefing
+        </button>
+        <button onclick="downloadClinicalReport()" style="width:100%;margin-top:8px;padding:9px 14px;background:#fff;color:var(--navy);border:1.5px solid var(--cyan);border-radius:8px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px">
+          <i class="ti ti-file-download"></i> Download PDF
+        </button>
+      </div>
     </div>
     <!-- Briefing button — appears after DDI analysis completes -->
-    <div id="briefingBtnWrap" style="display:none;margin-top:14px">
-      <button onclick="viewClinicalReport()" style="width:100%;padding:11px 14px;background:var(--cyan);color:var(--navy);border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 2px 8px rgba(0,180,216,.3)">
-        <i class="ti ti-file-description"></i> View Clinical Briefing
-      </button>
-      <button onclick="downloadClinicalReport()" style="width:100%;margin-top:8px;padding:9px 14px;background:#fff;color:var(--navy);border:1.5px solid var(--cyan);border-radius:8px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px">
-        <i class="ti ti-file-download"></i> Download PDF
-      </button>
-    </div>
-
     <!-- MAIN WORKFLOW -->
     <div class="main-panel">
 
