@@ -62,6 +62,11 @@ if (window.location.search.includes('error=1')) {
   errorMsg.classList.add('show');
 }
 
+// Force www to avoid Cloudflare redirect stripping POST body
+if (window.location.hostname === 'intractmd.com') {
+  window.location.href = 'https://www.intractmd.com/login' + window.location.search;
+}
+
 form.addEventListener('submit', async function(e) {
   e.preventDefault();
   errorMsg.classList.remove('show');
