@@ -1439,11 +1439,55 @@ function closeExecReport(){
 
 function downloadClinicalReport(){
   if(!window._clinPayload) return;
-  const html = buildClinicalReport(window._clinResult || null, window._clinPayload);
-  document.getElementById('execReportContent').innerHTML = html;
-  document.getElementById('execReportOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
-  setTimeout(function(){ window.print(); }, 400);
+  const body = buildClinicalReport(window._clinResult || null, window._clinPayload);
+  const fullHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>IntractMD Clinical MTM Executive Summary</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<style>
+@page{margin:1in 0.85in}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a2e;padding:0}
+:root{--navy:#0D3B6E;--cyan:#00B4D8;--br:#e2e6ea;--bg:#f8f9fb;--tx2:#555566;--tx3:#888899}
+.er-header{text-align:center;border-bottom:2px solid var(--navy);padding-bottom:16px;margin-bottom:20px}
+.er-header-title{font-size:20px;font-weight:700;color:var(--navy)}
+.er-header-sub{font-size:12px;color:#555;margin-top:5px}
+.er-header-date{font-size:11px;color:#888;margin-top:3px}
+.er-info-label{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.er-info-value{font-size:13px;font-weight:600;color:var(--navy)}
+.er-drug-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px}
+.er-drug-tag{background:#fff;border:1.5px solid var(--cyan);border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:var(--navy)}
+.er-section{margin-bottom:20px;page-break-inside:avoid}
+.er-section-title{font-size:14px;font-weight:700;color:var(--navy);padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.er-section-title i{color:var(--cyan)}
+.er-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:14px}
+.er-table th{background:var(--navy);color:#fff;padding:7px 10px;text-align:left;font-size:10px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.er-table td{padding:6px 10px;border-bottom:1px solid #e2e6ea;vertical-align:top;color:#1a1a2e}
+.er-table tr:nth-child(even) td{background:#f8f9fb;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.er-sev{display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.er-outreach-box{background:#f4f7fb;border-radius:8px;padding:14px 16px;margin-bottom:12px;page-break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.er-outreach-label{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.er-outreach-body{font-size:12px;color:#333;line-height:1.7;white-space:pre-wrap}
+.er-footer{margin-top:30px;padding-top:12px;border-top:1px solid #e2e6ea;text-align:center;font-size:10px;color:#aaa;line-height:1.6}
+.print-btn{position:fixed;top:16px;right:16px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:"Inter",sans-serif;display:flex;align-items:center;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.print-btn:hover{opacity:.88}
+@media print{.print-btn{display:none!important}}
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">&#x1F4E5; Print / Save PDF</button>
+<div style="max-width:780px;margin:0 auto;padding:32px 40px">
+${body}
+</div>
+</body>
+</html>`;
+  const win = window.open('', '_blank');
+  win.document.write(fullHtml);
+  win.document.close();
 }
 
 </script>
