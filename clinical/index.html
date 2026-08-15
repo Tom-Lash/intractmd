@@ -1285,50 +1285,67 @@ function buildClinicalReport(result, payload){
   const ddi = payload.ddiResults || {};
   const factors = payload.riskFactors || [];
   const ctx = payload.patientContext || {};
-  const interactions = (ddi.drug_interactions||[]).filter(i=>i.severity==='Critical'||i.severity==='High'||i.severity==='Moderate');
+  const interactions = (ddi.drug_interactions||[]).filter(function(i){ return i.severity==='Critical'||i.severity==='High'||i.severity==='Moderate'; });
   const warnings = (ddi.warnings||[]).slice(0,6);
   const cprs = ddi.risk_score || 0;
   const sevColor = {Critical:'#A32D2D',High:'#C05020',Moderate:'#D97706',Low:'#2E7D4F'};
   const sevBg = {Critical:'#FCEBEB',High:'#fdeee8',Moderate:'#FDF3E3',Low:'#E8F5ED'};
   const tierColors = {CONFIRMED:'#1A7A4A',COMPUTED:'#1B6EC2',PREDICTIVE:'#7C3AED'};
+  const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
+  const scoreLabel = cprs >= 70 ? 'High Risk' : cprs >= 40 ? 'Moderate Risk' : 'Lower Risk';
+  const tierUsed = result.confidence_summary&&result.confidence_summary.highest_tier_used||'PREDICTIVE';
 
   let html = '';
 
-  // Header
+  // ── PAGE 1: HEADER + CONDENSED SUMMARY ──────────────────────────────────
   html += '<div class="er-header">';
   html += '<div class="er-header-title">IntractMD™ Clinical MTM Executive Summary</div>';
   html += '<div class="er-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
   html += '<div class="er-header-date">Generated: ' + dateStr + ' · For pharmacist and prescriber review only</div>';
   html += '</div>';
 
-  // Patient & context
-  html += '<div class="er-section">';
-  html += '<div class="er-section-title"><i class="ti ti-user" style="color:var(--cyan)"></i> Patient & Case Context</div>';
-  html += '<div class="er-info-grid">';
-  html += '<div class="er-info-box"><div class="er-info-label">Patient</div><div class="er-info-value">' + (ctx.firstName||'Member') + '</div></div>';
-  html += '<div class="er-info-box"><div class="er-info-label">Health Plan</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
-  html += '<div class="er-info-box"><div class="er-info-label">Case Manager</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
-  html += '<div class="er-info-box"><div class="er-info-label">Confidence Tier</div><div class="er-info-value" style="color:' + (tierColors[result.confidence_summary&&result.confidence_summary.highest_tier_used]||'#7C3AED') + '">' + (result.confidence_summary&&result.confidence_summary.highest_tier_used||'PREDICTIVE') + '</div></div>';
-  html += '</div></div>';
+  // Condensed summary box — all key info in one compact block
+  html += '<div style="border:1.5px solid var(--navy);border-radius:10px;padding:16px 20px;margin-bottom:20px">';
 
-  // Medications
-  html += '<div class="er-section">';
-  html += '<div class="er-section-title"><i class="ti ti-pill" style="color:var(--cyan)"></i> Medications Reviewed (' + drugs.length + ')</div>';
+  // Patient row
+  html += '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e6ea">';
+  html += '<div><div class="er-info-label">Patient</div><div class="er-info-value">' + (ctx.firstName||'Member') + '</div></div>';
+  html += '<div><div class="er-info-label">Health Plan</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
+  html += '<div><div class="er-info-label">Case Manager</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
+  html += '<div><div class="er-info-label">Confidence Tier</div><div class="er-info-value" style="color:' + (tierColors[tierUsed]||'#7C3AED') + '">' + tierUsed + '</div></div>';
+  html += '</div>';
+
+  // CPRS + drug count + interaction count in one row
+  html += '<div style="display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:16px;align-items:center;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e6ea">';
+  html += '<div style="text-align:center;padding:8px 16px;background:#f4f7fb;border-radius:8px">';
+  html += '<div style="font-size:28px;font-weight:700;color:' + scoreColor + '">' + cprs + '</div>';
+  html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">CPRS / 100</div>';
+  html += '<div style="font-size:11px;font-weight:700;color:' + scoreColor + '">' + scoreLabel + '</div>';
+  html += '</div>';
+  html += '<div><div class="er-info-label">Medications</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">reviewed</div></div>';
+  html += '<div><div class="er-info-label">DDI Findings</div><div style="font-size:20px;font-weight:700;color:' + (interactions.length>0?'#A32D2D':'#2E7D4F') + '">' + interactions.length + '</div><div style="font-size:11px;color:#888">flagged</div></div>';
+  html += '<div><div class="er-info-label">Supp/Food Warnings</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">identified</div></div>';
+  html += '</div>';
+
+  // Drug tags
+  html += '<div><div class="er-info-label" style="margin-bottom:6px">Medications Reviewed</div>';
   html += '<div class="er-drug-tags">';
   drugs.forEach(function(d){ html += '<span class="er-drug-tag">' + d + '</span>'; });
   html += '</div></div>';
 
-  // Risk score
-  const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
-  const scoreLabel = cprs >= 70 ? 'High Risk' : cprs >= 40 ? 'Moderate Risk' : 'Lower Risk';
-  html += '<div class="er-section" style="page-break-after:always">';
-  html += '<div class="er-section-title"><i class="ti ti-chart-bar" style="color:var(--cyan)"></i> Composite Polypharmacy Risk Score (CPRS)</div>';
-  html += '<div class="er-score-row">';
-  html += '<div><div class="er-score-val" style="color:' + scoreColor + '">' + cprs + '</div><div class="er-score-label">out of 100</div></div>';
-  html += '<div><div style="font-size:15px;font-weight:700;color:' + scoreColor + '">' + scoreLabel + '</div>';
-  html += '<div style="font-size:12px;color:#666;margin-top:4px;max-width:480px">The CPRS reflects cumulative interaction risk across 8 clinical dimensions including bleeding, cardiac, CNS, serotonin, NTI conflict, pharmacokinetic, renal/hepatic, and pharmacodynamic risk.</div></div>';
-  html += '</div></div>';
+  // Risk factors if any
+  if(factors.length){
+    html += '<div style="margin-top:12px;padding-top:12px;border-top:1px solid #e2e6ea">';
+    html += '<div class="er-info-label" style="margin-bottom:6px">Risk Factors</div>';
+    html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
+    factors.forEach(function(f){
+      html += '<span style="background:#EBF5FC;border:1px solid #C0DFF5;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;color:#1B6EC2">' + (f.label||f) + '</span>';
+    });
+    html += '</div></div>';
+  }
+  html += '</div>'; // end summary box
 
+  // ── DETAIL SECTIONS ──────────────────────────────────────────────────────
   // DDI findings
   if(interactions.length){
     html += '<div class="er-section">';
@@ -1365,49 +1382,38 @@ function buildClinicalReport(result, payload){
     html += '</tbody></table></div>';
   }
 
-  // Risk factors
-  if(factors.length){
-    html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-heart-rate-monitor" style="color:var(--cyan)"></i> Risk Factors (' + factors.length + ')</div>';
-    html += '<div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:8px">';
-    factors.forEach(function(f){
-      html += '<span style="background:#EBF5FC;border:1px solid #C0DFF5;border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:#1B6EC2">' + (f.label||f) + '</span>';
-    });
-    html += '</div></div>';
-  }
-
-  // Outreach generated — only if available
+  // Outreach
   if(result && result.email){
-  html += '<div class="er-section">';
-  html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> Outreach Generated</div>';
-  if(result.email){
-    html += '<div class="er-outreach-box">';
-    html += '<div class="er-outreach-label">Email</div>';
-    html += '<div style="font-size:11px;font-weight:600;color:var(--navy);margin-bottom:6px">' + (result.email.subject||'') + '</div>';
-    html += '<div class="er-outreach-body">' + (result.email.body||'').replace(/</g,'&lt;') + '</div>';
-    html += '</div>';
-  }
-  if(result.sms&&result.sms.body){
-    html += '<div class="er-outreach-box">';
-    html += '<div class="er-outreach-label">SMS</div>';
-    html += '<div class="er-outreach-body">' + (result.sms.body||'').replace(/</g,'&lt;') + '</div>';
-    html += '</div>';
-  }
-  if(result.case_manager_script){
-    const sc = result.case_manager_script;
-    html += '<div class="er-outreach-box">';
-    html += '<div class="er-outreach-label">Call Script</div>';
-    if(sc.opening) html += '<div style="font-size:12px;margin-bottom:6px"><strong>Opening:</strong> ' + sc.opening + '</div>';
-    if(sc.key_points&&sc.key_points.length){
-      html += '<ul style="font-size:12px;color:#333;line-height:1.7;padding-left:18px">';
-      sc.key_points.forEach(function(p){ html += '<li>' + p + '</li>'; });
-      html += '</ul>';
+    html += '<div class="er-section">';
+    html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> Outreach Generated</div>';
+    if(result.email){
+      html += '<div class="er-outreach-box">';
+      html += '<div class="er-outreach-label">Email</div>';
+      html += '<div style="font-size:11px;font-weight:600;color:var(--navy);margin-bottom:6px">' + (result.email.subject||'') + '</div>';
+      html += '<div class="er-outreach-body">' + (result.email.body||'').replace(/</g,'&lt;') + '</div>';
+      html += '</div>';
     }
-    if(sc.closing) html += '<div style="font-size:12px;margin-top:6px"><strong>Closing:</strong> ' + sc.closing + '</div>';
+    if(result.sms&&result.sms.body){
+      html += '<div class="er-outreach-box">';
+      html += '<div class="er-outreach-label">SMS</div>';
+      html += '<div class="er-outreach-body">' + (result.sms.body||'').replace(/</g,'&lt;') + '</div>';
+      html += '</div>';
+    }
+    if(result.case_manager_script){
+      const sc = result.case_manager_script;
+      html += '<div class="er-outreach-box">';
+      html += '<div class="er-outreach-label">Call Script</div>';
+      if(sc.opening) html += '<div style="font-size:12px;margin-bottom:6px"><strong>Opening:</strong> ' + sc.opening + '</div>';
+      if(sc.key_points&&sc.key_points.length){
+        html += '<ul style="font-size:12px;color:#333;line-height:1.7;padding-left:18px">';
+        sc.key_points.forEach(function(p){ html += '<li>' + p + '</li>'; });
+        html += '</ul>';
+      }
+      if(sc.closing) html += '<div style="font-size:12px;margin-top:6px"><strong>Closing:</strong> ' + sc.closing + '</div>';
+      html += '</div>';
+    }
     html += '</div>';
   }
-  html += '</div>';
-  } // end outreach section
 
   // Footer
   html += '<div class="er-footer">';
