@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>IntractMD™ — Pilot Access</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#0B1F3A;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{background:#fff;border-radius:16px;padding:40px 36px;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.logo{text-align:center;margin-bottom:28px}
+.logo-name{font-size:28px;font-weight:700;color:#0B1F3A;letter-spacing:-0.02em}
+.logo-name span{color:#00B4D8}
+.logo-sub{font-size:12px;color:#888;margin-top:4px;letter-spacing:0.04em}
+.pilot-badge{display:inline-block;background:#E8F6FA;border:1px solid #00B4D8;border-radius:20px;padding:3px 12px;font-size:11px;font-weight:600;color:#0077A8;margin-top:8px;letter-spacing:0.06em;text-transform:uppercase}
+.form-group{margin-bottom:16px}
+label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:6px}
+input{width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;outline:none;transition:border-color .15s;color:#1a1a2e}
+input:focus{border-color:#00B4D8}
+.btn{width:100%;padding:13px;background:#0B1F3A;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;margin-top:8px;transition:background .15s}
+.btn:hover{background:#1A3A5C}
+.error{background:#FCEBEB;border:1px solid #E8B4B4;border-radius:8px;padding:10px 14px;font-size:13px;color:#A32D2D;margin-bottom:16px;display:none}
+.error.show{display:block}
+.footer{text-align:center;margin-top:24px;font-size:11px;color:#aaa;line-height:1.6}
+.footer a{color:#00B4D8;text-decoration:none}
+.divider{border:none;border-top:1px solid #eee;margin:24px 0}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">
+    <div class="logo-name">Intract<span>MD</span>™</div>
+    <div class="logo-sub">by Resolve Medical, LLC</div>
+    <div class="pilot-badge">Pilot Access</div>
+  </div>
+  <div class="error" id="errorMsg">Incorrect username or password. Please try again.</div>
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" autocorrect="off" autocapitalize="none" spellcheck="false"/>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password"/>
+    </div>
+    <button type="submit" class="btn" id="loginBtn">Sign In →</button>
+  </form>
+  <hr class="divider"/>
+  <div class="footer">
+    Need access? Contact Resolve Medical<br/>
+    <a href="tel:2165090672">216-509-0672</a> &middot; <a href="mailto:info@resolve.med">info@resolve.med</a>
+  </div>
+</div>
+<script>
+const form = document.getElementById('loginForm');
+const errorMsg = document.getElementById('errorMsg');
+const loginBtn = document.getElementById('loginBtn');
+
+// Show error if redirected with ?error=1
+if (window.location.search.includes('error=1')) {
+  errorMsg.classList.add('show');
+}
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  errorMsg.classList.remove('show');
+  loginBtn.textContent = 'Signing in...';
+  loginBtn.disabled = true;
+  const username = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value;
+  try {
+    const resp = await fetch('/api/pilot-login', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({username, password})
+    });
+    const data = await resp.json();
+    if (data.ok) {
+      // Redirect to intended destination or proactive
+      const dest = new URLSearchParams(window.location.search).get('next') || '/proactive';
+      window.location.href = dest;
+    } else {
+      errorMsg.classList.add('show');
+      loginBtn.textContent = 'Sign In →';
+      loginBtn.disabled = false;
+    }
+  } catch(err) {
+    errorMsg.classList.add('show');
+    loginBtn.textContent = 'Sign In →';
+    loginBtn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>

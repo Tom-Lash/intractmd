@@ -43,6 +43,7 @@ app.get('/terms', (req, res) => {
 app.get('/healthz', (req, res) => res.status(200).send('OK'));
 
 const basicAuth = require('express-basic-auth');
+const session = require('express-session');
 
 if (process.env.SITE_LOCKED === 'true') {
   app.use((req, res, next) => {
@@ -574,23 +575,64 @@ const pilotAuth = basicAuth({
     'Contact Resolve Medical at 216-509-0672 or info@resolve.med for access.',
 });
 
+// Old basicAuth gate replaced by session-based gate below
+// ── END PILOT ACCESS GATE ────────────────────────────────────────────────────
+
+// ── SESSION-BASED LOGIN ────────────────────────────────────────────────────────
+const SESSION_SECRET = process.env.SESSION_SECRET || 'intractmd-pilot-2026-secret';
+app.use(session({
+  secret: SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    secure: process.env.NODE_ENV === 'production',
+    httpOnly: true,
+    maxAge: 7 * 24 * 60 * 60 * 1000
+  }
+}));
+
+app.post('/api/pilot-login', express.json(), (req, res) => {
+  const { username, password } = req.body || {};
+  const users = loadPilotUsers();
+  if (username && users[username] && users[username] === password) {
+    req.session.pilotAuthenticated = true;
+    req.session.pilotUser = username;
+    return res.json({ ok: true });
+  }
+  return res.status(401).json({ ok: false });
+});
+
+app.get('/logout', (req, res) => {
+  req.session.destroy();
+  res.redirect('/login');
+});
+
+app.get('/login', (req, res) => {
+  res.sendFile(require('path').join(__dirname, 'public', 'login.html'));
+});
+
 app.use((req, res, next) => {
-  // Match the path itself and anything beneath it, but not merely a shared
-  // prefix — /deprescribing-info should not be gated by /deprescribing.
   const gated = PILOT_PATHS.some(
     p => req.path === p || req.path.startsWith(p + '/')
   );
   if (!gated) return next();
-
   if (PILOT_USER_COUNT === 0) {
     return res.status(503).send(
       'This IntractMD surface is not currently available. ' +
       'Contact Resolve Medical at 216-509-0672 or info@resolve.med.'
     );
   }
-  return pilotAuth(req, res, next);
+  if (req.session && req.session.pilotAuthenticated) return next();
+  const authHeader = req.headers['authorization'];
+  if (authHeader && authHeader.startsWith('Basic ')) {
+    const b64 = authHeader.slice(6);
+    const decoded = Buffer.from(b64, 'base64').toString('utf8');
+    const [u, p] = decoded.split(':');
+    const users = loadPilotUsers();
+    if (u && users[u] && users[u] === p) return next();
+  }
+  return res.redirect('/login?next=' + encodeURIComponent(req.path));
 });
-// ── END PILOT ACCESS GATE ────────────────────────────────────────────────────
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
