@@ -482,10 +482,15 @@ async function runAnalysis(){
   const resultsDiv=document.getElementById('results');
   if(resultsDiv)resultsDiv.style.display='block';
   renderResults(result);
+  window._proactiveResult = result;
+  window._proactiveDrugs = Array.from(drugs);
   btn.disabled=false;
   // Show clear button after analysis completes
   const clearBtn=document.getElementById('clearBtn');
   if(clearBtn){clearBtn.style.display='block';clearBtn.style.background='#2E7D4F';clearBtn.style.color='#fff';clearBtn.style.border='2px solid #2E7D4F';clearBtn.style.fontWeight='700';}
+  // Show report buttons
+  const rbtns=document.getElementById('proactiveReportBtns');
+  if(rbtns)rbtns.style.display='flex';
 }
 
 function buildPrompt(drugs){
@@ -705,6 +710,181 @@ function toggleShowMore(){
 
 
 buildChips();renderTray();
+</script>
+<div id="proactiveReportBtns" style="display:none;gap:10px;justify-content:center;padding:12px 16px;flex-wrap:wrap;margin-top:4px">
+  <button onclick="viewProactiveReport()" style="display:inline-flex;align-items:center;gap:7px;padding:9px 18px;background:#2E7D4F;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">
+    <i class="ti ti-file-description"></i> View Summary Report
+  </button>
+  <button onclick="downloadProactiveReport()" style="display:inline-flex;align-items:center;gap:7px;padding:9px 18px;background:#fff;color:#2E7D4F;border:2px solid #2E7D4F;border-radius:8px;font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">
+    <i class="ti ti-file-download"></i> Download PDF
+  </button>
+</div>
+
+<div id="proactiveReportOverlay" style="display:none;position:fixed;inset:0;background:#f4f7fb;z-index:2000;overflow-y:auto">
+  <button onclick="closeProactiveReport()" style="position:fixed;top:18px;right:24px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;z-index:2001;display:flex;align-items:center;gap:6px;font-family:'Inter',sans-serif">
+    <i class="ti ti-x"></i> Close Report
+  </button>
+  <div id="proactiveReportContent" style="max-width:800px;margin:0 auto;padding:40px 48px;background:#fff;min-height:100vh"></div>
+</div>
+
+<script>
+function buildProactiveReport(r, drugList){
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  const sevColor = {Critical:'#A32D2D',High:'#C05020',Moderate:'#D97706',Low:'#2E7D4F'};
+  const sevBg = {Critical:'#FCEBEB',High:'#fdeee8',Moderate:'#FDF3E3',Low:'#E8F5ED'};
+  const pcprs = Math.round(r.pcprs||0);
+  const scoreColor = pcprs>=70?'#A32D2D':pcprs>=40?'#D97706':'#2E7D4F';
+  const scoreLabel = pcprs>=70?'High Risk':pcprs>=40?'Moderate Risk':'Lower Risk';
+  const allInteractions = [];
+  (r.drug_interactions||[]).forEach(function(w){
+    allInteractions.push({severity:w.severity,label:(w.drug_a||w.drug1||'')+'+'+(w.drug_b||w.drug2||''),mechanism:w.mechanism,action:w.action,cat:'Drug-Drug'});
+  });
+  (r.warnings||[]).forEach(function(w){
+    allInteractions.push({severity:w.severity,label:w.drug+'+'+w.interacts_with,mechanism:w.mechanism,action:w.action,cat:w.category==='supplement'?'Supplement':'Food'});
+  });
+  const sevOrder={Critical:0,High:1,Moderate:2,Low:3};
+  allInteractions.sort(function(a,b){return (sevOrder[a.severity]||4)-(sevOrder[b.severity]||4);});
+  const nCrit=allInteractions.filter(function(x){return x.severity==='Critical';}).length;
+  const nHigh=allInteractions.filter(function(x){return x.severity==='High';}).length;
+  const nMod=allInteractions.filter(function(x){return x.severity==='Moderate';}).length;
+
+  let html = '';
+  // Header
+  html += '<div style="text-align:center;border-bottom:2px solid #0D3B6E;padding-bottom:16px;margin-bottom:20px">';
+  html += '<div style="font-size:20px;font-weight:700;color:#0D3B6E">IntractMD™ Proactive Supplement & Food Risk Report</div>';
+  html += '<div style="font-size:12px;color:#555;margin-top:5px">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
+  html += '<div style="font-size:11px;color:#888;margin-top:3px">Generated: '+dateStr+' · For pharmacist and prescriber review only</div>';
+  html += '</div>';
+
+  // Summary box
+  html += '<div style="border:1.5px solid #0D3B6E;border-radius:10px;padding:16px 20px;margin-bottom:20px">';
+  // Score row
+  html += '<div style="display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:16px;align-items:center;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e6ea">';
+  html += '<div style="text-align:center;padding:8px 16px;background:#f4f7fb;border-radius:8px">';
+  html += '<div style="font-size:28px;font-weight:700;color:'+scoreColor+'">'+pcprs+'</div>';
+  html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">PCPRS / 100</div>';
+  html += '<div style="font-size:11px;font-weight:700;color:'+scoreColor+'">'+scoreLabel+'</div>';
+  html += '</div>';
+  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">Risk Tier</div><div style="font-size:15px;font-weight:700;color:#0D3B6E">'+(r.risk_tier||'—')+'</div></div>';
+  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">Total Findings</div><div style="font-size:20px;font-weight:700;color:#0D3B6E">'+allInteractions.length+'</div></div>';
+  html += '<div>';
+  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+nCrit+' Critical</span>';
+  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+nHigh+' High</span>';
+  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+nMod+' Moderate</span>';
+  html += '</div></div>';
+
+  // Drug tags
+  html += '<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #e2e6ea">';
+  html += '<div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Medications Reviewed</div>';
+  html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
+  drugList.forEach(function(d){ html += '<span style="background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:#0D3B6E">'+d+'</span>'; });
+  html += '</div></div>';
+
+  // AI summary
+  if(r.ai_summary){
+    html += '<div style="font-size:13px;color:#444;line-height:1.7;font-style:italic">“'+r.ai_summary+'”</div>';
+  }
+  html += '</div>';
+
+  // Interaction table
+  if(allInteractions.length){
+    html += '<div style="margin-bottom:20px">';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px">Findings by Severity</div>';
+    html += '<table style="width:100%;border-collapse:collapse;font-size:11px">';
+    html += '<thead><tr style="-webkit-print-color-adjust:exact;print-color-adjust:exact">';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Severity</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Interaction</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Type</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Mechanism</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Action</th>';
+    html += '</tr></thead><tbody>';
+    allInteractions.forEach(function(i,idx){
+      const sc = sevColor[i.severity]||'#555';
+      const sb = sevBg[i.severity]||'#f4f7fb';
+      const bg = idx%2===0?'#fff':'#f8f9fb';
+      html += '<tr style="background:'+bg+'">'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea"><span style="display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700;background:'+sb+';color:'+sc+';-webkit-print-color-adjust:exact;print-color-adjust:exact">'+i.severity+'</span></td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;font-weight:600">'+i.label+'</td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666">'+i.cat+'</td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#444">'+i.mechanism+'</td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666;font-style:italic">'+i.action+'</td>'
+        +'</tr>';
+    });
+    html += '</tbody></table></div>';
+  }
+
+  // Avoid list
+  if(r.avoid_supplements&&r.avoid_supplements.length){
+    html += '<div style="margin-bottom:16px;page-break-inside:avoid">';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">Supplements to Avoid</div>';
+    html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
+    r.avoid_supplements.forEach(function(s){
+      html += '<span style="background:#FCEBEB;border:1px solid #E8B4B4;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;color:#A32D2D">'+s+'</span>';
+    });
+    html += '</div></div>';
+  }
+  if(r.caution_foods&&r.caution_foods.length){
+    html += '<div style="margin-bottom:16px;page-break-inside:avoid">';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">Foods to Use with Caution</div>';
+    html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
+    r.caution_foods.forEach(function(f){
+      html += '<span style="background:#FDF3E3;border:1px solid #F6CC85;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;color:#D97706">'+f+'</span>';
+    });
+    html += '</div></div>';
+  }
+
+  // Footer
+  html += '<div style="margin-top:30px;padding-top:12px;border-top:1px solid #e2e6ea;text-align:center;font-size:10px;color:#aaa;line-height:1.6">';
+  html += 'IntractMD™ is a clinical decision support tool — not a substitute for professional medical advice.<br/>';
+  html += '©2026 Resolve Medical, LLC · Patent Pending · 700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113';
+  html += '</div>';
+
+  return html;
+}
+
+function viewProactiveReport(){
+  if(!window._proactiveResult) return;
+  const html = buildProactiveReport(window._proactiveResult, window._proactiveDrugs||[]);
+  document.getElementById('proactiveReportContent').innerHTML = html;
+  document.getElementById('proactiveReportOverlay').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProactiveReport(){
+  document.getElementById('proactiveReportOverlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function downloadProactiveReport(){
+  if(!window._proactiveResult) return;
+  const body = buildProactiveReport(window._proactiveResult, window._proactiveDrugs||[]);
+  const fullHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>IntractMD Proactive Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<style>
+@page{margin:1in 0.85in}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a2e;padding:0}
+.print-btn{position:fixed;top:16px;right:16px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:"Inter",sans-serif;display:flex;align-items:center;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+@media print{.print-btn{display:none!important}}
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">&#x1F4E5; Print / Save PDF</button>
+<div style="max-width:780px;margin:0 auto;padding:32px 40px">
+\${body}
+</div>
+</body>
+</html>`;
+  const win = window.open('', '_blank');
+  win.document.write(fullHtml);
+  win.document.close();
+}
 </script>
 </body>
 </html>
