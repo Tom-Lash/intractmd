@@ -1012,17 +1012,59 @@ function buildReport(data, drugs){
 }
 
 function downloadSummary(){
+  if(!window._lastAnalysisData) return;
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
-  const dateEl = document.getElementById('print-header-date');
-  if (dateEl) dateEl.textContent = 'Generated: ' + dateStr + ' · For pharmacist and prescriber review only · Not for clinical use without supervision';
-  const tagsEl = document.getElementById('print-drugs-tags');
-  if (tagsEl && window._lastAnalysisDrugs) {
-    tagsEl.innerHTML = window._lastAnalysisDrugs.map(function(d){
-      return '<span style="display:inline-block;background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 10px;font-size:10pt;font-weight:600;color:#0D3B6E;margin:2px 4px 2px 0">' + d + '</span>';
-    }).join('');
-  }
-  window.print();
+  const drugs = window._lastAnalysisDrugs || [];
+
+  // Build drug tags HTML
+  const drugTagsHtml = drugs.map(function(d){
+    return '<span style="display:inline-block;background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 10px;font-size:10pt;font-weight:600;color:#0D3B6E;margin:2px 4px 2px 0">' + d + '</span>';
+  }).join('');
+
+  // Get results HTML
+  const resultsEl = document.getElementById('results');
+  const resultsHtml = resultsEl ? resultsEl.innerHTML : '';
+
+  const fullHtml = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>IntractMD Deprescribing Summary</title>'
+    + '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>'
+    + '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>'
+    + '<style>@page{margin:1.25in 0.75in}*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Inter",sans-serif;background:#fff;color:#1a1a2e}'
+    + '.print-btn{position:fixed;top:16px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;font-family:"Inter",sans-serif;display:flex;align-items:center;gap:8px}'
+    + '.btn-download,.btn-view-report{display:none!important}'
+    + '.summary-card{background:#fff!important;border:1.5px solid #0D3B6E!important;border-radius:6px;padding:16px 20px;color:#000!important;margin-bottom:16px}'
+    + '.summary-card h3{color:#0D3B6E!important;font-size:13pt;border-bottom:1px solid #0D3B6E;padding-bottom:6px;margin-bottom:10px}'
+    + '.summary-table{width:100%;border-collapse:collapse;font-size:9.5pt}'
+    + '.summary-table th{background:#0D3B6E!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:6px 8px}'
+    + '.summary-table td{padding:5px 8px;border-bottom:1px solid #ddd;color:#000!important}'
+    + '.summary-tier{border:1px solid #999;background:#fff!important;color:#000!important;font-size:8pt;padding:1px 6px}'
+    + '.candidate{border:1px solid #ddd;border-radius:6px;margin-bottom:10px;padding:10px 12px;page-break-inside:avoid}'
+    + '.candidate-body{display:block!important;max-height:none!important;padding:8px 0 0}'
+    + '.candidate-rank{background:#0D3B6E!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}'
+    + '.delta-badge{border:1px solid #ddd!important;background:#fff!important;border-radius:8px;padding:6px 14px;text-align:center}'
+    + '.evidence-box{background:#f4f7fb!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;border-radius:4px;padding:8px}'
+    + '.evidence-title{color:#0D3B6E!important;font-weight:600;font-size:11px}'
+    + '.evidence-item{color:#333!important;font-size:9pt;padding:3px 0;border-bottom:1px solid #ddd}'
+    + '@media print{.print-btn{display:none!important}}</style>'
+    + '</head><body>'
+    + '<button class="print-btn" onclick="window.print()" style="right:16px">&#x1F4E5; Print / Save PDF</button>'
+    + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E">&#8592; Return to Analysis</button>'
+    + '<div style="max-width:780px;margin:0 auto;padding:32px 40px">'
+    + '<div style="text-align:center;border-bottom:2px solid #0D3B6E;padding-bottom:16px;margin-bottom:20px">'
+    + '<div style="font-size:20px;font-weight:700;color:#0D3B6E">IntractMD™ Deprescribing Intelligence Analysis</div>'
+    + '<div style="font-size:12px;color:#555;margin-top:5px">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>'
+    + '<div style="font-size:11px;color:#888;margin-top:3px">Generated: ' + dateStr + ' · For pharmacist and prescriber review only</div>'
+    + '</div>'
+    + '<div style="background:#f4f7fb;border:1px solid #ddd;border-radius:8px;padding:12px 16px;margin-bottom:20px">'
+    + '<div style="font-size:10px;font-weight:700;color:#0D3B6E;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Medications Analyzed</div>'
+    + drugTagsHtml
+    + '</div>'
+    + resultsHtml
+    + '</div></body></html>';
+
+  const win = window.open('', '_blank');
+  win.document.write(fullHtml);
+  win.document.close();
 }
 
 function showDimInfo(dim, val){
