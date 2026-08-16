@@ -636,7 +636,7 @@ app.use((req, res, next) => {
     const users = loadPilotUsers();
     if (u && users[u] && users[u] === p) return next();
   }
-  return res.redirect('/login?next=' + encodeURIComponent(req.path));
+  if (!res.headersSent) return res.redirect('/login?next=' + encodeURIComponent(req.path));
 });
 
 app.use(express.json());
