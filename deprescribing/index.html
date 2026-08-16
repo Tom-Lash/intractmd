@@ -256,21 +256,19 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 </div>
 <div class="main">
 
-  <div class="intro">
+  <div class="intro" style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
     <h1><i class="ti ti-trending-down" style="margin-right:6px"></i>AI-Powered Deprescribing Risk Analysis</h1>
     <p>Enter a patient's medication list below. IntractMD will calculate the current Composite Polypharmacy Risk Score across all eight clinical dimensions, then simulate removing each medication to identify which removals would produce the greatest risk reduction — ranked by impact.</p>
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:14px">
-      <div class="intro-tags">
-        <span class="intro-tag"><i class="ti ti-flask"></i> Risk-Delta Simulation</span>
-        <span class="intro-tag"><i class="ti ti-shield-check"></i> 8-Dimensional CPRS</span>
-        <span class="intro-tag"><i class="ti ti-certificate"></i> Beers &amp; STOPP Criteria</span>
-        <span class="intro-tag"><i class="ti ti-info-circle"></i> For Pharmacist &amp; Prescriber Review</span>
-      </div>
-      <button onclick="openDeprescribingVideo()" style="background:#1B6EC2;border:none;border-radius:8px;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;">
-        <span style="font-size:16px;">&#9654;</span> Watch: How to Use This App
-      </button>
+    <div class="intro-tags">
+      <span class="intro-tag"><i class="ti ti-flask"></i> Risk-Delta Simulation</span>
+      <span class="intro-tag"><i class="ti ti-shield-check"></i> 8-Dimensional CPRS</span>
+      <span class="intro-tag"><i class="ti ti-certificate"></i> Beers &amp; STOPP Criteria</span>
+      <span class="intro-tag"><i class="ti ti-info-circle"></i> For Pharmacist &amp; Prescriber Review</span>
     </div>
   </div>
+  <button onclick="openDeprescribingVideo()" style="background:#1B6EC2;border:none;border-radius:8px;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;margin-top:-8px">
+    <span style="font-size:16px;">&#9654;</span> Watch: How to Use This App
+  </button>
   <div id="deprescribing-video-modal" onclick="if(event.target===this)closeDeprescribingVideo()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:3000;align-items:center;justify-content:center;">
     <div style="position:relative;width:90vw;max-width:860px;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:16/9;">
       <button onclick="closeDeprescribingVideo()" style="position:absolute;top:-36px;right:0;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;line-height:1;">&times;</button>
@@ -1102,7 +1100,7 @@ document.addEventListener('keydown', function(e){
 });
 
 function openDeprescribingVideo(){
-  document.getElementById('deprescribing-video-iframe').src='https://player.vimeo.com/video/1218014186?h=28e8792e4a&autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1';
+  document.getElementById('deprescribing-video-iframe').src='https://player.vimeo.com/video/1209720658?h=a8eef8befe&autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1';
   var m=document.getElementById('deprescribing-video-modal');
   m.style.display='flex';document.body.style.overflow='hidden';
 }
