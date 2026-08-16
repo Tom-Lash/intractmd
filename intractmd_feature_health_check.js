@@ -134,6 +134,11 @@ async function testInfrastructure() {
     const r = await get('/clinical', 10000);
     result('Infrastructure', 'Clinical surface /clinical reachable', r.status===200||r.status===401||r.status===302, `${r.status} in ${r.ms}ms`);
   } catch(e) { result('Infrastructure', 'Clinical surface loads', false, e.message); }
+  // Deprescribing surface
+  try {
+    const r = await get('/deprescribing', 10000);
+    result('Infrastructure', 'Deprescribing surface /deprescribing reachable', r.status===200||r.status===401||r.status===302, `${r.status} in ${r.ms}ms`);
+  } catch(e) { result('Infrastructure', 'Deprescribing surface loads', false, e.message); }
 }
 
 // ── 2. DRUG LIST / AUTOCOMPLETE ──────────────────────────────────────────────
