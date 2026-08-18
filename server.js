@@ -615,6 +615,13 @@ app.get('/logout', (req, res) => {
 app.get('/login', (req, res) => {
   res.sendFile(require('path').join(__dirname, 'public', 'login.html'));
 });
+// PWA routes
+app.get('/manifest.json', (req, res) => res.sendFile(require('path').join(__dirname, 'public', 'manifest.json')));
+app.get('/sw.js', (req, res) => { res.setHeader('Service-Worker-Allowed', '/'); res.sendFile(require('path').join(__dirname, 'public', 'sw.js')); });
+app.get('/app', (req, res) => {
+  if (!req.session || !req.session.pilotAuthenticated) return res.redirect('/login?next=/app');
+  res.sendFile(require('path').join(__dirname, 'public', 'app.html'));
+});
 
 app.use((req, res, next) => {
   const gated = PILOT_PATHS.some(

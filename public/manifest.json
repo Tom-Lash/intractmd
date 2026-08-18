@@ -1,0 +1,45 @@
+{
+  "name": "IntractMD™ — Polypharmacy Risk Platform",
+  "short_name": "IntractMD",
+  "description": "AI-powered drug interaction, polypharmacy risk, and deprescribing intelligence platform by Resolve Medical, LLC.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0B1F3A",
+  "theme_color": "#0B1F3A",
+  "categories": ["medical", "health", "productivity"],
+  "icons": [
+    { "src": "/icons/icon-72.png",  "sizes": "72x72",   "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Proactive Screening",
+      "short_name": "Proactive",
+      "description": "Drug, supplement & food interaction screening",
+      "url": "/proactive",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Clinical MTM",
+      "short_name": "Clinical",
+      "description": "Patient outreach message generator",
+      "url": "/clinical",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Deprescribing Intelligence",
+      "short_name": "Deprescribing",
+      "description": "AI-powered deprescribing risk analysis",
+      "url": "/deprescribing",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    }
+  ]
+}
