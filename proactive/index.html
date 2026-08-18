@@ -634,19 +634,14 @@ function renderResults(r){
   // CHANGE 2, 3, 5: Unified list, collapsed cards, top 6 visible
   // Critical items already shown in red banner — exclude from main list
   const nonCritItems=allInteractions.filter(x=>x.severity!=='Critical');
-  const SHOW_MAX=6;
   const wl=document.getElementById('warnList');
   wl.innerHTML='';
-  let modLowCount=0;
+  const highItems=nonCritItems.filter(x=>x.severity==='High');
+  const modLowItems=nonCritItems.filter(x=>x.severity!=='High');
   nonCritItems.forEach((w,i)=>{
     const sc=(w.severity||'Moderate').toLowerCase();
-    // Always show High — only collapse Moderate/Low beyond SHOW_MAX
-    const isHighOrAbove=w.severity==='High';
-    let hidden=false;
-    if(!isHighOrAbove){
-      hidden=modLowCount>=SHOW_MAX;
-      modLowCount++;
-    }
+    // Show Critical+High by default; hide Moderate/Low
+    const hidden=w.severity!=='High';
     wl.innerHTML+=`<div class="warn-card ${sc}" style="${hidden?'display:none;':''}" data-extra="${hidden}">
       <div class="warn-head" style="cursor:pointer;" onclick="toggleCard(this)">
         <i class="ti ${w.icon}" style="font-size:17px;color:${w.iconColor}"></i>
@@ -661,9 +656,8 @@ function renderResults(r){
       </div>
     </div>`;
   });
-  if(nonCritItems.length>SHOW_MAX){
-    const rem=nonCritItems.length-SHOW_MAX;
-    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ Show ${rem} more interactions</div>`;
+  if(modLowItems.length>0){
+    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ Show ${modLowItems.length} additional Moderate & Low interactions</div>`;
   }
 
   // Dimension grid

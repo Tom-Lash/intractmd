@@ -1372,6 +1372,20 @@ function capFirst(s){return s?s.charAt(0).toUpperCase()+s.slice(1):"";}
 function typeLabel(t){return t==="drug-supplement"?"Drug-Supp":t==="supplement-supplement"?"Supp-Supp":"";}
 function typeBadge(t){return t==="drug-supplement"?"ds":t==="supplement-supplement"?"ss":"dd";}
 
+function patToggleMore(){
+  var extras=document.querySelectorAll('[data-sev-hidden="true"]');
+  var btn=document.getElementById('patShowMore');
+  var showing=extras[0]&&extras[0].style.display!=='none';
+  extras.forEach(function(e){e.style.display=showing?'none':'';});
+  if(btn)btn.innerHTML=showing?'&#9660; Show '+extras.length+' additional Moderate &amp; Minor interactions':'&#9650; Show fewer interactions';
+}
+function patToggleMore(){
+  var extras=document.querySelectorAll('[data-sev-hidden="true"]');
+  var btn=document.getElementById('patShowMore');
+  var showing=extras[0]&&extras[0].style.display!=='none';
+  extras.forEach(function(e){e.style.display=showing?'none':'';});
+  if(btn)btn.innerHTML=showing?'&#9660; Show '+extras.length+' additional Moderate &amp; Minor interactions':'&#9650; Show fewer interactions';
+}
 function renderResults(ai){
   if(!ai||(!(ai.known_interactions||ai.pairs))){
     document.getElementById("results").innerHTML="<div class=\"empty\"><i class=\"ti ti-alert-circle\"></i><p>No results returned. Check your API key.</p></div>";return;
@@ -1429,10 +1443,13 @@ function renderResults(ai){
   }
 
   if(known.length){
+    var majorItems=known.filter(function(p){return sc(p.severity)==="major";});
+    var otherItems=known.filter(function(p){return sc(p.severity)!=="major";});
     h+="<div class=\"sec-hdr\" style=\"margin-top:1.25rem\"><i class=\"ti ti-books\"></i> Known Interactions <span class=\"sec-count\">"+known.length+"</span></div>";
     known.forEach(function(pair){
       var sev=sc(pair.severity);
-      h+="<div class=\"ix "+sev+"\"><div class=\"ix-top\">";
+      var hidePair=sev!=="major";
+      h+="<div class=\"ix "+sev+"\" "+(hidePair?"style=\"display:none\" data-sev-hidden=\"true\"":"")+"><div class=\"ix-top\">";
       h+="<span class=\"ix-drugs\">"+pair.drugs+"</span>";
       h+="<span class=\"badge "+sev+"\">"+(sev==="none"?"No interaction":capFirst(sev))+"</span>";
       if(pair.type&&pair.type!=="drug-drug")h+="<span class=\"badge "+typeBadge(pair.type)+"\">"+typeLabel(pair.type)+"</span>";
@@ -1449,6 +1466,12 @@ function renderResults(ai){
     });
   }
 
+  if(otherItems.length>0){
+    h+="<div id=\"patShowMore\" onclick=\"patToggleMore()\" style=\"text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;\">&#9660; Show "+otherItems.length+" additional Moderate &amp; Minor interactions</div>";
+  }
+  if(otherItems.length>0){
+    h+="<div id=\"patShowMore\" onclick=\"patToggleMore()\" style=\"text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;\">&#9660; Show "+otherItems.length+" additional Moderate &amp; Minor interactions</div>";
+  }
   var food_ints=ai.food_interactions||[];
   if(food_ints.length){
     h+="<div class=\"sec-hdr\" style=\"margin-top:1.25rem\"><i class=\"ti ti-apple\" style=\"color:var(--org)\"></i> <span style=\"color:var(--org)\">Food Interactions</span> <span class=\"sec-count\">"+food_ints.length+"</span></div>";
@@ -1502,6 +1525,12 @@ function buildPrintReport(ai){
   var ts=now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
   var known=ai.known_interactions||ai.pairs||[];
   var predictive=ai.predictive_interactions||[];
+  if(otherItems.length>0){
+    h+="<div id=\"patShowMore\" onclick=\"patToggleMore()\" style=\"text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;\">&#9660; Show "+otherItems.length+" additional Moderate &amp; Minor interactions</div>";
+  }
+  if(otherItems.length>0){
+    h+="<div id=\"patShowMore\" onclick=\"patToggleMore()\" style=\"text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;\">&#9660; Show "+otherItems.length+" additional Moderate &amp; Minor interactions</div>";
+  }
   var food_ints=ai.food_interactions||[];
   var poly=ai.polypharmacy_assessment||null;
   var score=ai.risk_score||0;

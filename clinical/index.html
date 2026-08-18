@@ -1095,13 +1095,11 @@ function renderDDIResult() {
   // Non-critical sorted list
   if(nonCritItems.length){
     html += '<div id="clinDDIList">';
-    let mlCount = 0;
-    const SHOW_MAX = 5;
+    const modLowItems = nonCritItems.filter(x=>x.severity!=='High');
     nonCritItems.forEach(function(w){
       const sc=(w.severity||'Moderate').toLowerCase();
       const isHigh=w.severity==='High';
-      const hidden=!isHigh && mlCount>=SHOW_MAX;
-      if(!isHigh) mlCount++;
+      const hidden=!isHigh;
       html += '<div class="interaction-item" style="'+(hidden?'display:none;':'')+'" data-clin-extra="'+hidden+'">'
         + '<div style="cursor:pointer;" onclick="clinItemToggle(this)">' 
         + '<span class="sev '+sc+'">'+w.severity+'</span> '
@@ -1112,9 +1110,8 @@ function renderDDIResult() {
         + '<div style="font-size:12px;color:var(--text2);margin-bottom:4px;">'+w.mechanism+'</div>'
         + '<div style="font-size:12px;color:var(--text3);">&rarr; '+w.action+'</div></div></div>';
     });
-    const extraCount = Math.max(0, nonCritItems.filter(x=>x.severity!=='High').length - SHOW_MAX);
-    if(extraCount>0){
-      html += '<div id="clinShowMore" onclick="clinToggleMore()" style="text-align:center;padding:8px;cursor:pointer;font-size:13px;font-weight:600;color:var(--navy);border:1px solid #ddd;border-radius:8px;margin-top:6px;background:#f8f9fa;">&#9660; Show '+extraCount+' more</div>';
+    if(modLowItems.length>0){
+      html += '<div id="clinShowMore" onclick="clinToggleMore()" style="text-align:center;padding:8px;cursor:pointer;font-size:13px;font-weight:600;color:var(--navy);border:1px solid #ddd;border-radius:8px;margin-top:6px;background:#f8f9fa;">&#9660; Show '+modLowItems.length+' additional Moderate &amp; Low interactions</div>';
     }
     html += '</div>';
   }
