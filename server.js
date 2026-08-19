@@ -358,7 +358,7 @@ function computeCompositeFromPairs(foundPairs, totalSubstanceCount) {
   const cprs = Math.min(100, weightedSum * phi * kappa);
 
   return {
-    cprs: Math.round(cprs),
+    cprs: Math.round(Math.round(cprs / 5) * 5), // rounded to nearest 5 to suppress AI variability
     maxSeverity,
     dimensions: dimMax,
     phi: Math.round(phi * 100) / 100,
@@ -1303,7 +1303,8 @@ function computeMemberRisk(profile) {
     (worst, f) => (tierRank(f.severity) > tierRank(worst) ? f.severity : worst),
     'Minimal'
   );
-  const sfCprs = Math.min(100, Math.round((SEVERITY_SCORE[sfWorst] || 0) * phi));
+  const sfCprsRaw = Math.min(100, (SEVERITY_SCORE[sfWorst] || 0) * phi);
+  const sfCprs = Math.round(Math.round(sfCprsRaw / 5) * 5);
   const cprs = Math.min(100, Math.max(ddComposite.cprs, sfCprs));
 
   return {
