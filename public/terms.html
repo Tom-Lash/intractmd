@@ -33,7 +33,7 @@ ul{margin:8px 0 16px 24px}li{font-size:15px;line-height:1.75;color:#333;margin-b
 </div>
 <div class="content">
 <h1>Terms of Use</h1>
-<div class="meta">Resolve Medical, LLC (Delaware LLC) &nbsp;|&nbsp; Principal office: Cleveland, Ohio &nbsp;|&nbsp; Governing law: Delaware &nbsp;|&nbsp; Venue: Cuyahoga County, Ohio &nbsp;|&nbsp; Effective date: July 2026</div>
+<div class="meta">Resolve Medical, LLC (Delaware LLC) &nbsp;|&nbsp; Principal office: Cleveland, Ohio &nbsp;|&nbsp; Governing law: Delaware &nbsp;|&nbsp; Venue: Cuyahoga County, Ohio &nbsp;|&nbsp; Effective date: August 2026</div>
 <h2><span class="sec-num">1.</span> Acceptance of Terms</h2>
 <p>These Terms of Use ("Terms") govern your access to and use of the IntractMD&#8482; platform, including www.intractmd.com, www.intractmd.com/proactive, and www.intractmd.com/clinical (collectively, the "Platform"), and all content, features, and services made available through the Platform by Resolve Medical, LLC, a Delaware limited liability company with its principal place of business in Cleveland, Ohio ("Resolve Medical," "we," "us," or "our").</p>
 <p>By accessing or using the Platform in any manner, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, you must not use the Platform. Resolve Medical reserves the right to modify these Terms at any time. Your continued use of the Platform following any modification constitutes your acceptance of the revised Terms.</p>
@@ -62,36 +62,59 @@ ul{margin:8px 0 16px 24px}li{font-size:15px;line-height:1.75;color:#333;margin-b
 <p>Resolve Medical does not recommend or endorse any specific drug, supplement, food, medical device, test, physician, pharmacist, pharmacy, or clinical procedure mentioned on the Platform.</p>
 <h2><span class="sec-num">8.</span> Accuracy, Completeness, and Timeliness Disclaimer</h2>
 <p>We make no representations or warranties of any kind about the accuracy, reliability, completeness, currentness, or timeliness of drug interaction risk scores, supplement and food warnings, pill identification results, drug information summaries, AI-generated outreach materials, or any other content generated or displayed by the Platform. Drug information changes rapidly and the Platform's data may not reflect the most recent developments.</p>
-<h2><span class="sec-num">9.</span> Disclaimer of Warranties</h2>
+<h2><span class="sec-num">9.</span> Deprescribing Intelligence Surface</h2>
+<p>IntractMD&#8482; includes a Deprescribing Intelligence surface that uses an AI-powered N+1 counterfactual simulation to identify medications in a patient&#8217;s regimen that appear in published deprescribing criteria, including the American Geriatrics Society Beers Criteria&#174; (2023), STOPP/START v3, Canadian Family Physician deprescribing guidelines, and CMS Star Ratings quality measures D09 and D10. Users of this surface acknowledge and agree to the following:</p>
+<ul>
+<li><strong>Not a recommendation to discontinue medication.</strong> All output from the Deprescribing Intelligence surface, including ranked deprescribing candidates, Composite Polypharmacy Risk Score (CPRS) delta estimates, evidence citations, and before/after risk comparisons, constitutes a prompt for pharmacist and prescriber review only. Nothing in the output of this surface constitutes a recommendation, instruction, or authorization to reduce, taper, or discontinue any medication.</li>
+<li><strong>Prescriber involvement required.</strong> No medication should be reduced, tapered, or discontinued based on IntractMD output without the explicit involvement and approval of the patient&#8217;s prescribing physician or licensed healthcare provider. Deprescribing without appropriate medical supervision can cause serious harm, including withdrawal syndromes, disease relapse, and cardiovascular events.</li>
+<li><strong>Population-level criteria.</strong> Beers Criteria, STOPP/START, and other evidence sources incorporated into the Deprescribing Intelligence surface represent population-level guidelines developed for general clinical guidance. These criteria do not account for individual patient circumstances, comorbidities, contraindications, or clinical history. A medication flagged by these criteria may be entirely appropriate for a specific patient.</li>
+<li><strong>CPRS delta scores are estimates.</strong> The Composite Polypharmacy Risk Score and the estimated score change associated with each deprescribing candidate are algorithmic estimates based on structured interaction data. They are not validated clinical predictions and should not be used as the sole basis for any clinical decision.</li>
+<li><strong>For institutional and clinical use.</strong> The Deprescribing Intelligence surface is designed for use by licensed pharmacists, physicians, and qualified healthcare professionals operating within their scope of practice. It is not intended for unsupervised patient self-use.</li>
+<li><strong>Excluded medications.</strong> The platform excludes certain medication classes from deprescribing candidacy, including medications identified as rescue therapy, replacement therapy, or life-sustaining treatment. These exclusions are based on published criteria and may not capture every clinical scenario. Users should apply independent clinical judgment.</li>
+</ul>
+
+<h2><span class="sec-num">10.</span> Proactive Supplement and Food Screening Surface</h2>
+<p>The Proactive Supplement &amp; Food Screening surface generates drug-supplement and drug-food interaction profiles based on a combination of pre-computed interaction data and AI-generated analysis. Users acknowledge that supplement and food interaction data is less standardized than prescription drug interaction data, evidence quality varies across supplement categories, and the severity ratings assigned reflect clinical judgment and published evidence but are not equivalent to FDA drug labeling classifications. Users should consult a licensed pharmacist or physician before making any changes to supplement use based on this surface&#8217;s output.</p>
+
+<h2><span class="sec-num">11.</span> Clinical MTM Workflow Surface</h2>
+<p>The Clinical MTM Workflow surface is designed for use by licensed pharmacists, care managers, and qualified healthcare professionals as part of a Medication Therapy Management (MTM) program. Output from this surface, including patient outreach emails, SMS messages, and call scripts, is provided as a starting point for clinical communication and must be reviewed and approved by a qualified professional before use. Resolve Medical is not responsible for the accuracy, appropriateness, or completeness of AI-generated outreach content when applied to specific patient situations.</p>
+
+<h2><span class="sec-num">12.</span> Installable Application (PWA)</h2>
+<p>IntractMD&#8482; is available as a Progressive Web Application (PWA) that may be installed on mobile and desktop devices. The PWA accesses the same clinical surfaces described in these Terms of Use. Installation of the PWA constitutes acceptance of these Terms of Use. The PWA is provided as-is and Resolve Medical makes no warranty regarding its availability, performance, or compatibility with any specific device or operating system.</p>
+
+<h2><span class="sec-num">13.</span> Billing and Reimbursement Information</h2>
+<p>Information provided by IntractMD&#8482; regarding CMS billing codes, reimbursement rates, and care management service eligibility is provided for general informational purposes only and does not constitute legal, billing, or compliance advice. CMS billing rules are complex and change frequently. Users are solely responsible for ensuring that any billing activities comply with applicable CMS guidelines, state law, and payer requirements. Resolve Medical is not responsible for any billing errors, claim denials, or compliance violations arising from reliance on information provided by this platform.</p>
+
+<h2><span class="sec-num">14.</span> Disclaimer of Warranties</h2>
 <p class="caps">THE PLATFORM AND ALL CONTENT ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, RESOLVE MEDICAL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.</p>
-<h2><span class="sec-num">10.</span> Limitation of Liability</h2>
+<h2><span class="sec-num">15.</span> Limitation of Liability</h2>
 <p class="caps">TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL RESOLVE MEDICAL, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, OR SUPPLIERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING DAMAGES FOR PERSONAL INJURY, WRONGFUL DEATH, ADVERSE DRUG EVENTS, DRUG INTERACTIONS, MEDICATION ERRORS, LOST PROFITS, OR RELIANCE ON ANY PLATFORM CONTENT, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY.</p>
 <p class="caps">RESOLVE MEDICAL'S TOTAL AGGREGATE LIABILITY TO YOU SHALL NOT EXCEED THE GREATER OF: (A) THE TOTAL AMOUNT PAID BY YOU TO RESOLVE MEDICAL IN THE TWELVE MONTHS PRECEDING THE CLAIM; OR (B) ONE HUNDRED U.S. DOLLARS ($100.00). YOU ACKNOWLEDGE THAT THESE LIMITATIONS ARE AN ESSENTIAL ELEMENT OF THE AGREEMENT BETWEEN YOU AND RESOLVE MEDICAL.</p>
-<h2><span class="sec-num">11.</span> One-Year Limitation Period</h2>
+<h2><span class="sec-num">16.</span> One-Year Limitation Period</h2>
 <p>Any claim or cause of action arising out of or relating to your use of the Platform must be filed within one (1) year after such claim or cause of action arose. If any such claim is not filed within this one-year period, it is permanently barred.</p>
-<h2><span class="sec-num">12.</span> Pill Identifier &#8212; Special Disclaimer</h2>
+<h2><span class="sec-num">17.</span> Pill Identifier &#8212; Special Disclaimer</h2>
 <p>The pill identifier feature is provided for reference purposes only and should never be the sole basis for ingesting, dispensing, or administering any pill. Generic drugs may have different imprints, colors, and shapes from reference entries in our database. Counterfeit pills may be manufactured to resemble legitimate pharmaceuticals and may contain dangerous or lethal substances including illicit fentanyl. No pill identification system can reliably identify counterfeit pills. Always confirm pill identification with a licensed pharmacist before ingesting any unknown pill.</p>
-<h2><span class="sec-num">13.</span> Counterfeit Drug Warning</h2>
+<h2><span class="sec-num">18.</span> Counterfeit Drug Warning</h2>
 <div class="alert"><strong>Counterfeit Pill Warning</strong><p>A pill that looks identical to a legitimate prescription medication may contain a lethal dose of fentanyl. Never ingest any pill not received directly from a licensed pharmacy with a valid prescription. If you suspect a counterfeit pill, call Poison Control (1-800-222-1222) or 911 immediately. Do not ingest the pill.</p></div>
 <p>The Platform's identification of a pill as a specific medication is not a guarantee that the pill is authentic, uncontaminated, or safe to ingest. Resolve Medical expressly disclaims any liability for harm resulting from ingestion of a counterfeit or adulterated pill.</p>
-<h2><span class="sec-num">14.</span> HIPAA and Privacy</h2>
+<h2><span class="sec-num">19.</span> HIPAA and Privacy</h2>
 <p>IntractMD&#8482; is designed to operate without collecting, storing, or transmitting Protected Health Information (PHI). The Platform processes medication information entered by users in real time and does not retain this information after a session ends. Because Resolve Medical does not collect or maintain PHI, a Business Associate Agreement (BAA) is not required for use of the patient-facing Platform. The Platform uses Google Analytics 4 for aggregate, non-identifiable usage tracking. No personally identifiable information is collected through Google Analytics.</p>
-<h2><span class="sec-num">15.</span> Use of the Platform</h2>
+<h2><span class="sec-num">20.</span> Use of the Platform</h2>
 <p>You may use the Platform for lawful, personal, non-commercial purposes consistent with these Terms. Healthcare professionals and health plan representatives may use the Platform for clinical decision support purposes consistent with their professional obligations and these Terms. You agree that you will not attempt to reverse-engineer or decompile the Platform, use automated tools to extract data, interfere with Platform infrastructure, or misrepresent the source, accuracy, or clinical authority of information derived from the Platform.</p>
-<h2><span class="sec-num">16.</span> Intellectual Property</h2>
+<h2><span class="sec-num">21.</span> Intellectual Property</h2>
 <p>The Platform and all content are owned by Resolve Medical, LLC or its licensors and are protected by United States and international intellectual property laws. IntractMD&#8482; is a trademark of Resolve Medical, LLC. A provisional patent application has been filed with the United States Patent and Trademark Office covering the inventive methods and systems embodied in the Platform.</p>
-<h2><span class="sec-num">17.</span> Third-Party Links and Resources</h2>
+<h2><span class="sec-num">22.</span> Third-Party Links and Resources</h2>
 <p>The Platform may contain links to third-party websites including the FDA, NLM, and MedlinePlus. These links are provided for informational purposes only. Resolve Medical is not responsible for third-party site content, and inclusion of any link does not imply endorsement.</p>
-<h2><span class="sec-num">18.</span> Indemnification</h2>
+<h2><span class="sec-num">23.</span> Indemnification</h2>
 <p>You agree to defend, indemnify, and hold harmless Resolve Medical, LLC and its officers, directors, employees, agents, licensors, and suppliers from any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of your violation of these Terms, your use or misuse of the Platform, or your reliance on any Platform content in making a clinical or personal medication decision.</p>
-<h2><span class="sec-num">19.</span> Modifications to These Terms</h2>
+<h2><span class="sec-num">24.</span> Modifications to These Terms</h2>
 <p>Resolve Medical reserves the right to modify, amend, or update these Terms at any time in its sole discretion. Your continued use of the Platform following the posting of revised Terms constitutes your acceptance of the revised Terms.</p>
-<h2><span class="sec-num">20.</span> Governing Law and Jurisdiction</h2>
+<h2><span class="sec-num">25.</span> Governing Law and Jurisdiction</h2>
 <p>These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to its conflict of law principles. Resolve Medical, LLC is a Delaware limited liability company, and the parties agree that Delaware law is the appropriate governing law for this agreement.</p>
 <p>Any legal action or proceeding arising out of or related to these Terms or your use of the Platform shall be brought exclusively in the state or federal courts located in Cuyahoga County, Ohio, and you hereby consent to personal jurisdiction and venue in such courts.</p>
-<h2><span class="sec-num">21.</span> Severability</h2>
+<h2><span class="sec-num">26.</span> Severability</h2>
 <p>If any provision of these Terms is found to be invalid or unenforceable, that provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions shall not be affected.</p>
-<h2><span class="sec-num">22.</span> Contact Information</h2>
+<h2><span class="sec-num">27.</span> Contact Information</h2>
 <div class="contact-box">
 <p><strong>Resolve Medical, LLC</strong></p>
 <p>700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113</p>
