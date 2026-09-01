@@ -1278,6 +1278,35 @@ function switchTab(tab) {
 
 function buildClinicalReport(result, payload){
   result = result || {};
+  var LC={
+    report_title:  uiLang==='es'?'Informe Clínico MTM de IntractMD™':''+LC.report_title+'',
+    for_review:    uiLang==='es'?'Solo para revisión clínica. No es consejo médico.':''+LC.for_review+'',
+    generated:     uiLang==='es'?'Generado:':'Generated:',
+    meds_reviewed: uiLang==='es'?'Medicamentos Revisados':''+LC.meds_reviewed+'',
+    risk_score:    uiLang==='es'?'Puntuación de Riesgo CPRS':'CPRS Risk Score',
+    high_risk:     uiLang==='es'?'Riesgo Alto':LC.high_risk,
+    mod_risk:      uiLang==='es'?'Riesgo Moderado':LC.mod_risk,
+    low_risk:      uiLang==='es'?'Riesgo Menor':LC.low_risk,
+    ddi_sec:       uiLang==='es'?'Interacciones entre Medicamentos':'Drug-Drug Interactions',
+    supp_sec:      uiLang==='es'?'Advertencias de Suplementos y Alimentos':'Supplement & Food Warnings',
+    factors_sec:   uiLang==='es'?'Factores de Riesgo Clínicos':'Clinical Risk Factors',
+    no_ddi:        uiLang==='es'?'No se identificaron interacciones significativas.':''+LC.no_ddi+'',
+    no_supp:       uiLang==='es'?'No se identificaron advertencias de suplementos o alimentos.':''+LC.no_supp+'',
+    col_sev:       uiLang==='es'?'Severidad':'Severity',
+    col_inter:     uiLang==='es'?'Interacción':'Interaction',
+    col_mech:      uiLang==='es'?'Mecanismo':'Mechanism',
+    col_action:    uiLang==='es'?'Acción':'Action',
+    col_item:      uiLang==='es'?'Ítem':'Item',
+    col_risk:      uiLang==='es'?'Riesgo':'Risk',
+    sev_critical:  uiLang==='es'?'Crítico':'Critical',
+    sev_high:      uiLang==='es'?'Alto':'High',
+    sev_moderate:  uiLang==='es'?'Moderado':'Moderate',
+    sev_low:       uiLang==='es'?'Bajo':'Low',
+    print_pdf:     uiLang==='es'?'Imprimir / Guardar PDF':'Print / Save PDF',
+    return_btn:    uiLang==='es'?'Volver al Análisis':'Return to Analysis',
+    high_risk_cls: uiLang==='es'?'Clase de Medicamento de Alto Riesgo Presente':LC.high_risk_cls,
+    renal_cleared: uiLang==='es'?'Medicamentos de Eliminación Renal':LC.renal_cleared,
+  };
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
   const drugs = payload.drugs || [];
@@ -1291,7 +1320,7 @@ function buildClinicalReport(result, payload){
   const sevBg = {Critical:'#FCEBEB',High:'#fdeee8',Moderate:'#FDF3E3',Low:'#E8F5ED'};
   const tierColors = {CONFIRMED:'#1A7A4A',COMPUTED:'#1B6EC2',PREDICTIVE:'#7C3AED'};
   const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
-  const scoreLabel = cprs >= 70 ? 'High Risk' : cprs >= 40 ? 'Moderate Risk' : 'Lower Risk';
+  const scoreLabel = cprs >= 70 ? LC.high_risk : cprs >= 40 ? LC.mod_risk : LC.low_risk;
   const tierUsed = result.confidence_summary&&result.confidence_summary.highest_tier_used||'PREDICTIVE';
 
   let html = '';
@@ -1300,7 +1329,7 @@ function buildClinicalReport(result, payload){
   html += '<div class="er-header">';
   html += '<div class="er-header-title">IntractMD™ Clinical MTM Executive Summary</div>';
   html += '<div class="er-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
-  html += '<div class="er-header-date">Generated: ' + dateStr + ' · For pharmacist and prescriber review only</div>';
+  html += '<div class="er-header-date">'+LC.generated+' ' + dateStr + ' · '+(uiLang==='es'?'Solo para revisión clínica':'For pharmacist and prescriber review only')+'</div>';
   html += '</div>';
 
   // Condensed summary box — all key info in one compact block
@@ -1327,7 +1356,7 @@ function buildClinicalReport(result, payload){
   html += '</div>';
 
   // Drug tags
-  html += '<div><div class="er-info-label" style="margin-bottom:6px">Medications Reviewed</div>';
+  html += '<div><div class="er-info-label" style="margin-bottom:6px">'+LC.meds_reviewed+'</div>';
   html += '<div class="er-drug-tags">';
   drugs.forEach(function(d){ html += '<span class="er-drug-tag">' + d + '</span>'; });
   html += '</div></div>';
@@ -1349,7 +1378,7 @@ function buildClinicalReport(result, payload){
   if(interactions.length){
     html += '<div class="er-section">';
     html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> Drug-Drug Interactions (' + interactions.length + ' flagged)</div>';
-    html += '<table class="er-table"><thead><tr><th>Severity</th><th>Interaction</th><th>Mechanism</th><th>Action</th></tr></thead><tbody>';
+    html += '<table class="er-table"><thead><tr><th>'+LC.col_sev+'</th><th>'+LC.col_inter+'</th><th>'+LC.col_mech+'</th><th>'+LC.col_action+'</th></tr></thead><tbody>';
     interactions.forEach(function(i){
       const sc = sevColor[i.severity]||'#555';
       const sb = sevBg[i.severity]||'#f4f7fb';
@@ -1366,8 +1395,8 @@ function buildClinicalReport(result, payload){
   // Supplement/food warnings
   if(warnings.length){
     html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-leaf" style="color:var(--cyan)"></i> Supplement & Food Warnings (' + warnings.length + ')</div>';
-    html += '<table class="er-table"><thead><tr><th>Severity</th><th>Item</th><th>Risk</th><th>Action</th></tr></thead><tbody>';
+    html += '<div class="er-section-title"><i class="ti ti-leaf" style="color:var(--cyan)"></i> '+LC.supp_sec+' (' + warnings.length + ')</div>';
+    html += '<table class="er-table"><thead><tr><th>'+LC.col_sev+'</th><th>'+LC.col_item+'</th><th>'+LC.col_risk+'</th><th>'+LC.col_action+'</th></tr></thead><tbody>';
     warnings.forEach(function(w){
       const sc = sevColor[w.severity]||'#555';
       const sb = sevBg[w.severity]||'#f4f7fb';
