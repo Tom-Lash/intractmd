@@ -819,14 +819,14 @@ function buildProactiveReport(r, drugList){
   // Interaction table
   if(allInteractions.length){
     html += '<div style="margin-bottom:20px">';
-    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px">"+L.findings_sev+"</div>';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px">'+L.findings_sev+'</div>';
     html += '<table style="width:100%;border-collapse:collapse;font-size:11px">';
     html += '<thead><tr style="-webkit-print-color-adjust:exact;print-color-adjust:exact">';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.sev_col+"</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.interact_col+"</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.type_col+"</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.mech_col+"</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.action_col+"</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">'+L.sev_col+'</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">'+L.interact_col+'</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">'+L.type_col+'</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">'+L.mech_col+'</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">'+L.action_col+'</th>';
     html += '</tr></thead><tbody>';
     allInteractions.forEach(function(i,idx){
       const sc = sevColor[(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)]||'#555';
@@ -846,7 +846,7 @@ function buildProactiveReport(r, drugList){
   // Avoid list
   if(r.avoid_supplements&&r.avoid_supplements.length){
     html += '<div style="margin-bottom:16px;page-break-inside:avoid">';
-    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">"+L.supp_avoid+"</div>';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">'+L.supp_avoid+'</div>';
     html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
     r.avoid_supplements.forEach(function(s){
       html += '<span style="background:#FCEBEB;border:1px solid #E8B4B4;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;color:#A32D2D">'+s+'</span>';
