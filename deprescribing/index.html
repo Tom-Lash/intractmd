@@ -289,7 +289,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
       </div>
       <div class="ac-drop" id="ac-drop"></div>
     </div>
-    <div class="qp-label">Common medications — tap to add</div>
+    <div class="qp-label" id="qp-label-d">Common medications — tap to add</div>
     <div class="qp-row" id="qp-row"></div>
     <div class="tags" id="drug-tags"></div>
 
@@ -306,7 +306,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
     </div>
 
     <button class="btn btn-analyze" id="analyze-btn" onclick="analyze()" disabled>
-      <i class="ti ti-brain"></i> Analyze Deprescribing Opportunities
+      <i class="ti ti-brain"></i> <span id="analyze-btn-txt">Analyze Deprescribing Opportunities</span>
     </button>
   </div>
 
@@ -1067,25 +1067,7 @@ function downloadSummary(){
     + drugTagsHtml
     + '</div>'
     + resultsHtml
-    + '</div><script>
-var uiLang=localStorage.getItem('intractmd_lang')||'en';
-function setLangD(l){
-  uiLang=l;
-  localStorage.setItem('intractmd_lang',l);
-  var en=document.getElementById('lang-en-d');
-  var es=document.getElementById('lang-es-d');
-  if(en)en.className='lang-btn'+(l==='en'?' active':'');
-  if(es)es.className='lang-btn'+(l==='es'?' active':'');
-  var di=document.querySelector('.drug-input');
-  if(di)di.placeholder=(l==='es'?'Buscar medicamentos...':'Search medications...');
-  var ab=document.querySelector('.btn-analyze');
-  if(ab)ab.innerHTML='<i class="ti ti-brain"></i> '+(l==='es'?'Analizar Oportunidades de Desprescripción':'Analyze Deprescribing Opportunities');
-  window._uiLang=l;
-}
-window._uiLang=uiLang;
-document.addEventListener('DOMContentLoaded',function(){setLangD(uiLang);});
-</script>
-</body></html>';
+    + '</div></body></html>';
 
   const win = window.open('', '_blank');
   win.document.write(fullHtml);
@@ -1151,19 +1133,102 @@ function toggleCandidate(i){
     <div class="dim-modal-scale" id="dimModalScale"></div>
   </div>
 </div>
+
 <script>
 var uiLang=localStorage.getItem('intractmd_lang')||'en';
+var TR_D={
+  intro_title:  {en:'Deprescribing Intelligence',es:'Inteligencia de Desprescripci\u00f3n'},
+  intro_body:   {en:'N+1 counterfactual simulation \u2014 identifies which medications to deprescribe and quantifies expected risk reduction.',es:'Simulaci\u00f3n N+1 contrafactual \u2014 identifica qu\u00e9 medicamentos desprescribir y cuantifica la reducci\u00f3n de riesgo esperada.'},
+  qp_label:     {en:'Common medications \u2014 tap to add',es:'Medicamentos comunes \u2014 toque para agregar'},
+  drug_ph:      {en:'Search medications...',es:'Buscar medicamentos...'},
+  analyze_btn:  {en:'Analyze Deprescribing Opportunities',es:'Analizar Oportunidades de Desprescripci\u00f3n'},
+  download_pdf: {en:'Download Summary (PDF)',es:'Descargar Resumen (PDF)'},
+  view_report:  {en:'View Summary Report',es:'Ver Informe Resumido'},
+  candidates_hdr:{en:'Deprescribing Candidates',es:'Candidatos para Desprescripci\u00f3n'},
+  no_candidates:{en:'No medication in this regimen appears in the deprescribing criteria.',es:'Ning\u00fan medicamento de este r\u00e9gimen aparece en los criterios de desprescripci\u00f3n.'},
+  meds_analyzed:{en:'Medications Analyzed',es:'Medicamentos Analizados'},
+  baseline_cprs:{en:'Baseline CPRS',es:'CPRS Base'},
+  new_cprs:     {en:'New CPRS',es:'Nuevo CPRS'},
+  risk_delta:   {en:'Risk Reduction',es:'Reducci\u00f3n de Riesgo'},
+  evidence:     {en:'Evidence',es:'Evidencia'},
+  disclaimer:   {en:'For pharmacist and prescriber review only. Not medical advice.',es:'Solo para revisi\u00f3n de farmac\u00e9utico y prescriptor. No es consejo m\u00e9dico.'},
+  beers:        {en:'Beers Criteria',es:'Criterios de Beers'},
+  stopp:        {en:'STOPP/START',es:'STOPP/START'},
+  cms_d09:      {en:'CMS D09',es:'CMS D09'},
+  cms_d10:      {en:'CMS D10',es:'CMS D10'},
+  view_briefing:{en:'View Clinical Briefing',es:'Ver Informe Cl\u00ednico'},
+  before_label: {en:'Before',es:'Antes'},
+  after_label:  {en:'After',es:'Despu\u00e9s'},
+  dim_bleeding: {en:'Bleeding',es:'Sangrado'},
+  dim_cardiac:  {en:'Cardiac',es:'Card\u00edaco'},
+  dim_serotonin:{en:'Serotonin',es:'Serotonina'},
+  dim_nti:      {en:'NTI Conflict',es:'Conflicto NTI'},
+  dim_cns:      {en:'CNS',es:'SNC'},
+  dim_cyp450:   {en:'CYP450',es:'CYP450'},
+  dim_renal:    {en:'Renal/Hepatic',es:'Renal/Hep\u00e1tico'},
+  dim_pd:       {en:'Pharmacodynamic',es:'Farmacodin\u00e1mico'},
+  loading:      {en:'Running deprescribing analysis...',es:'Ejecutando an\u00e1lisis de desprescripci\u00f3n...'},
+  badge_pilot:  {en:'Deprescribing',es:'Desprescripci\u00f3n'},
+};
+function td(k){var e=TR_D[k];return e?(e[uiLang]||e.en||k):k;}
 function setLangD(l){
-  uiLang=l;
-  localStorage.setItem('intractmd_lang',l);
-  var en=document.getElementById('lang-en-d');
-  var es=document.getElementById('lang-es-d');
+  uiLang=l;localStorage.setItem('intractmd_lang',l);window._uiLang=l;
+  var en=document.getElementById('lang-en-d');var es=document.getElementById('lang-es-d');
   if(en)en.className='lang-btn'+(l==='en'?' active':'');
   if(es)es.className='lang-btn'+(l==='es'?' active':'');
-  var di=document.querySelector('.drug-input');
-  if(di)di.placeholder=(l==='es'?'Buscar medicamentos...':'Search medications...');
+  // Drug input
+  var di=document.querySelector('.drug-input');if(di)di.placeholder=td('drug_ph');
+  // Analyze button
+  var abt=document.getElementById('analyze-btn-txt');
+  if(abt)abt.textContent=td('analyze_btn');
   var ab=document.querySelector('.btn-analyze');
-  if(ab)ab.innerHTML='<i class="ti ti-brain"></i> '+(l==='es'?'Analizar Oportunidades de Desprescripción':'Analyze Deprescribing Opportunities');
+  if(ab&&!abt)ab.innerHTML='<i class="ti ti-brain"></i> '+td('analyze_btn');
+  // Static text IDs
+  var ids={
+    'intro-title-d':'intro_title',
+    'intro-body-d':'intro_body',
+    'qp-label-d':'qp_label',
+    'candidates-hdr-d':'candidates_hdr',
+  };
+  Object.keys(ids).forEach(function(id){
+    var el=document.getElementById(id);if(el)el.textContent=td(ids[id]);
+  });
+  // Download/view report buttons
+  var dlBtn=document.querySelector('.btn-download');
+  if(dlBtn)dlBtn.innerHTML='<i class="ti ti-file-download"></i> '+td('download_pdf');
+  var vrBtn=document.querySelector('.btn-view-report');
+  if(vrBtn)vrBtn.innerHTML='<i class="ti ti-file-description"></i> '+td('view_report');
+  // Disclaimer
+  document.querySelectorAll('.disclaimer,.disc').forEach(function(el){
+    if(el.textContent.indexOf('pharmacist')>=0||el.textContent.indexOf('farmac')>=0)
+      el.textContent=td('disclaimer');
+  });
+  // Candidate cards — translate labels
+  document.querySelectorAll('.dim-label').forEach(function(el){
+    var map={
+      'Bleeding':'dim_bleeding','Sangrado':'dim_bleeding',
+      'Cardiac':'dim_cardiac','Card\u00edaco':'dim_cardiac',
+      'Serotonin':'dim_serotonin','Serotonina':'dim_serotonin',
+      'NTI Conflict':'dim_nti','Conflicto NTI':'dim_nti',
+      'CNS':'dim_cns','SNC':'dim_cns',
+      'CYP450':'dim_cyp450',
+      'Renal/Hepatic':'dim_renal','Renal/Hep\u00e1tico':'dim_renal',
+      'Pharmacodynamic':'dim_pd','Farmacodin\u00e1mico':'dim_pd',
+    };
+    var key=map[el.textContent.trim()];if(key)el.textContent=td(key);
+  });
+  // Before/After labels
+  document.querySelectorAll('.before-label,.cprs-before-lbl').forEach(function(el){
+    el.textContent=td('before_label');
+  });
+  document.querySelectorAll('.after-label,.cprs-after-lbl').forEach(function(el){
+    el.textContent=td('after_label');
+  });
+  // Risk delta label
+  document.querySelectorAll('.delta-label,.risk-delta-lbl').forEach(function(el){
+    if(el.textContent.indexOf('Risk')>=0||el.textContent.indexOf('Reducci')>=0)
+      el.textContent=td('risk_delta');
+  });
   window._uiLang=l;
 }
 window._uiLang=uiLang;
