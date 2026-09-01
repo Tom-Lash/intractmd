@@ -378,8 +378,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 2: MEDICATION LIST -->
       <div class="card" id="step-2">
         <div class="card-title"><i class="ti ti-pill"></i> Step 2 — Medication List</div>
-        <div class="card-sub">Enter medications from EHR or pharmacy claims — these are CONFIRMED findings</div>
-        <div class="tier-bar confirmed"><i class="ti ti-check"></i> CONFIRMED — sourced from verified medical record</div>
+        <div class="card-sub">'+(uiLang==='es'?'Ingrese medicamentos del HCE o reclamaciones de farmacia — estos son hallazgos CONFIRMADOS':'Enter medications from EHR or pharmacy claims — these are CONFIRMED findings')+'</div>
+        <div class="tier-bar confirmed"><i class="ti ti-check"></i> '+(uiLang==='es'?'CONFIRMADO — proveniente del expediente médico verificado':'CONFIRMED — sourced from verified medical record')+'</div>
         <div style="position:relative;">
           <div class="drug-entry">
             <input type="text" id="drugInput" placeholder="Type a drug name (e.g. Warfarin)..."
@@ -402,7 +402,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div class="card-title"><i class="ti ti-radar"></i> Step 3 — Drug-Drug Interaction Risk Score</div>
         <div class="card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
         <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-bottom:14px;padding:11px;">
-          <i class="ti ti-radar"></i> Run Drug Interaction Analysis
+          <i class="ti ti-radar"></i> '+(uiLang==='es'?'Ejecutar Análisis de Interacciones':'Run Drug Interaction Analysis')+'
         </button>
         <div id="ddiPlaceholder" class="ddi-placeholder">
           <i class="ti ti-radar" style="font-size:32px;margin-bottom:8px;display:block;opacity:.3;"></i>
@@ -871,12 +871,13 @@ function renderQuickPills() {
   const container = document.getElementById('quickPills');
   if(!container) return;
   container.innerHTML = QUICK_DRUGS.map(d =>
-    '<span onclick="quickAddDrug(\'' + d + '\')" ' +
+    '<span data-qp="' + d + '" onclick="quickAddDrug(\'' + d + '\')" ' +
     'style="cursor:pointer;padding:4px 12px;border:1.5px solid #ddd;border-radius:20px;' +
     'font-size:12px;color:var(--navy);background:#f8f8f8;font-weight:500;transition:all .15s;" ' +
     'onmouseover="this.style.borderColor=\'var(--cyan)\';this.style.background=\'#f0fafd\'" ' +
-    'onmouseout="this.style.borderColor=\'#ddd\';this.style.background=\'#f8f8f8\'">' + d + '</span>'
+    'onmouseout="if(!drugs.has(this.getAttribute(\'data-qp\'))){this.style.borderColor=\'#ddd\';this.style.background=\'#f8f8f8\'}">' + d + '</span>'
   ).join('');
+  syncQuickPills();
 }
 
 function onDrugInput(val) {
@@ -955,10 +956,29 @@ function removeDrug(name) {
   updateStepStatus();
 }
 
+function syncQuickPills(){
+  var container=document.getElementById('quickPills');
+  if(!container)return;
+  container.querySelectorAll('span[data-qp]').forEach(function(el){
+    var name=el.getAttribute('data-qp');
+    var added=drugs.has(name);
+    if(added){
+      el.style.borderColor='var(--cyan)';
+      el.style.background='#e0f7fd';
+      el.style.color='var(--navy)';
+      el.style.fontWeight='700';
+    } else {
+      el.style.borderColor='#ddd';
+      el.style.background='#f8f8f8';
+      el.style.color='var(--navy)';
+      el.style.fontWeight='500';
+    }
+  });
+}
 function renderDrugTags() {
   const container = document.getElementById('drugTags');
   if(!drugs.size) {
-    container.innerHTML = '<span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">No medications added yet</span>';
+    container.innerHTML = '<span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">'+(uiLang==='es'?'Aún no se han agregado medicamentos':'No medications added yet')+'</span>';
   } else {
     container.innerHTML = [...drugs].map(d =>
       '<span class="drug-tag">' + d + ' <span class="rm" onclick="removeDrug(\'' + d.replace(/'/g,"\\'") + '\')">×</span></span>'
@@ -966,6 +986,7 @@ function renderDrugTags() {
   }
   document.getElementById('ddiBtn').disabled = drugs.size < 2;
   document.getElementById('step2-num').className = 'step-num ' + (drugs.size > 0 ? 'done' : '');
+  syncQuickPills();
 }
 
 document.addEventListener('click', e => {
@@ -1377,7 +1398,7 @@ function buildClinicalReport(result, payload){
   // DDI findings
   if(interactions.length){
     html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> Drug-Drug Interactions (' + interactions.length + ' flagged)</div>';
+    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> '+LC.ddi_sec+' (' + interactions.length + ' '+(uiLang==='es'?'marcados':'flagged')+')' + '</div>';
     html += '<table class="er-table"><thead><tr><th>'+LC.col_sev+'</th><th>'+LC.col_inter+'</th><th>'+LC.col_mech+'</th><th>'+LC.col_action+'</th></tr></thead><tbody>';
     interactions.forEach(function(i){
       const sc = sevColor[i.severity]||'#555';
@@ -1413,7 +1434,7 @@ function buildClinicalReport(result, payload){
   // Outreach
   if(result && result.email){
     html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> Outreach Generated</div>';
+    html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> '+(uiLang==='es'?'Comunicación Generada':'Outreach Generated')+'</div>';
     if(result.email){
       html += '<div class="er-outreach-box">';
       html += '<div class="er-outreach-label">Email</div>';
