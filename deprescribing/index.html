@@ -917,24 +917,7 @@ function closeReport(){
   document.body.style.overflow = '';
 }
 function buildReport(data, drugs){
-  var RL={
-    meds_analyzed:   uiLang==='es'?'Medicamentos Analizados':''+RL.meds_analyzed+'',
-    analysis_summ:   uiLang==='es'?'Resumen del An\u00e1lisis de Desprescripci\u00f3n':'Deprescribing Analysis Summary',
-    meds_flagged:    uiLang==='es'?'Medicamentos Marcados en Criterios Publicados':'Medications Flagged in Published Deprescribing Criteria',
-    how_to_read:     uiLang==='es'?'C\u00f3mo leer estos resultados:':'How to read these results:',
-    col_med:         uiLang==='es'?'Medicamento':'Medication',
-    col_class:       uiLang==='es'?'Clase':'Class',
-    col_evid:        uiLang==='es'?'Nivel de Evidencia':'Evidence Tier',
-    col_cit:         uiLang==='es'?'Citas':'Citations',
-    col_cprs:        uiLang==='es'?'Impacto CPRS':'CPRS Impact',
-    for_review:      uiLang==='es'?'Solo para revisi\u00f3n de farmac\u00e9utico y prescriptor.':'For pharmacist and prescriber review only.',
-    no_change:       uiLang==='es'?'No discontinuar sin consultar al m\u00e9dico prescriptor.':'Do not discontinue without consulting the prescribing physician.',
-    all_findings:    uiLang==='es'?'Todos los hallazgos requieren revisi\u00f3n antes de cualquier cambio.':''+RL.all_findings+'',
-    generated:       uiLang==='es'?'Generado:':'Generated:',
-    print_pdf:       uiLang==='es'?'Imprimir / Guardar PDF':'Print / Save PDF',
-    return_btn:      uiLang==='es'?'Volver al An\u00e1lisis':'Return to Analysis',
-    report_title:    uiLang==='es'?'IntractMD\u2122 An\u00e1lisis de Desprescripci\u00f3n':'IntractMD\u2122 Deprescribing Intelligence Analysis',
-  };
+    var RL=getRL();
   const baseline   = data.baseline || { cprs:0, dimensions:{} };
   const candidates = data.candidates || [];
   const now = new Date();
@@ -1033,6 +1016,7 @@ function buildReport(data, drugs){
 
 function downloadSummary(){
   if(!window._lastAnalysisData) return;
+  var RL=getRL();
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'});
   const drugs = window._lastAnalysisDrugs || [];
@@ -1189,6 +1173,26 @@ var TR_D={
   badge_pilot:  {en:'Deprescribing',es:'Desprescripci\u00f3n'},
 };
 function td(k){var e=TR_D[k];return e?(e[uiLang]||e.en||k):k;}
+function getRL(){
+  return {
+    meds_analyzed:   uiLang==='es'?'Medicamentos Analizados':'MEDICATIONS ANALYZED',
+    analysis_summ:   uiLang==='es'?'Resumen del Análisis de Desprescripción':'Deprescribing Analysis Summary',
+    meds_flagged:    uiLang==='es'?'Medicamentos Marcados en Criterios Publicados':'Medications Flagged in Published Deprescribing Criteria',
+    how_to_read:     uiLang==='es'?'Cómo leer estos resultados:':'How to read these results:',
+    col_med:         uiLang==='es'?'Medicamento':'Medication',
+    col_class:       uiLang==='es'?'Clase':'Class',
+    col_evid:        uiLang==='es'?'Nivel de Evidencia':'Evidence Tier',
+    col_cit:         uiLang==='es'?'Citas':'Citations',
+    col_cprs:        uiLang==='es'?'Impacto CPRS':'CPRS Impact',
+    for_review:      uiLang==='es'?'Solo para revisión de farmacéutico y prescriptor.':'For pharmacist and prescriber review only.',
+    no_change:       uiLang==='es'?'No discontinuar sin consultar al médico prescriptor.':'Do not discontinue without consulting the prescribing physician.',
+    all_findings:    uiLang==='es'?'Todos los hallazgos requieren revisión antes de cualquier cambio.':'All findings require pharmacist and prescriber review before any medication change.',
+    generated:       uiLang==='es'?'Generado:':'Generated:',
+    print_pdf:       uiLang==='es'?'Imprimir / Guardar PDF':'Print / Save PDF',
+    return_btn:      uiLang==='es'?'Volver al Análisis':'Return to Analysis',
+    report_title:    uiLang==='es'?'IntractMD™ Análisis de Desprescripción':'IntractMD™ Deprescribing Intelligence Analysis',
+  };
+}
 function setLangD(l){
   uiLang=l;localStorage.setItem('intractmd_lang',l);window._uiLang=l;
   var en=document.getElementById('lang-en-d');var es=document.getElementById('lang-es-d');
