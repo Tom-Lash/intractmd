@@ -45,6 +45,7 @@
   --white:#FFFFFF;
   --r:8px;
 }
+.lang-toggle{display:flex;align-items:center;gap:4px}.lang-btn{padding:3px 10px;font-size:11px;font-weight:700;border:1.5px solid #2E7D52;background:none;color:#2E7D52;cursor:pointer;border-radius:20px}.lang-btn.active{background:#2E7D52;color:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:var(--tx);min-height:100vh}
 
@@ -210,7 +211,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 <div class="app-hdr">
   <img src="/resolve-logo.jpeg" alt="Resolve Medical" style="height:42px;width:auto;object-fit:contain"/>
 
-</div>
+<div class="lang-toggle" style="margin-left:auto;display:flex;gap:4px"><button style="padding:3px 10px;font-size:11px;font-weight:700;border:1.5px solid #2E7D52;background:none;color:#2E7D52;cursor:pointer;border-radius:20px" id="lang-en-p" onclick="setLangP(chr(39)+en')">EN</button><button style="padding:3px 10px;font-size:11px;font-weight:700;border:1.5px solid #aaa;background:none;color:#888;cursor:pointer;border-radius:20px" id="lang-es-p" onclick="setLangP(chr(39)+es')">ES</button></div></div>
   <div style="display:flex;align-items:center;gap:0;background:#0a2040;border-bottom:2px solid #00B4D8;padding:0 1rem;">
 <a href="https://www.intractmd.com/proactive" style="padding:10px 16px;font-size:13px;font-weight:700;color:#00B4D8;text-decoration:none;border-bottom:3px solid #00B4D8;margin-bottom:-2px;white-space:nowrap;">
     Proactive
@@ -847,7 +848,8 @@ function closeProactiveReport(){
 function downloadProactiveReport(){
   if(!window._proactiveResult) return;
   const body = buildProactiveReport(window._proactiveResult, window._proactiveDrugs||[]);
-  const style = '@page{margin:1in 0.85in}*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Inter",sans-serif;background:#fff;color:#1a1a2e;padding:0}.print-btn{position:fixed;top:16px;right:16px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}@media print{.print-btn{display:none}}';
+  const style = '@page{margin:1in 0.85in}.lang-toggle{display:flex;align-items:center;gap:4px}.lang-btn{padding:3px 10px;font-size:11px;font-weight:700;border:1.5px solid #2E7D52;background:none;color:#2E7D52;cursor:pointer;border-radius:20px}.lang-btn.active{background:#2E7D52;color:#fff}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Inter",sans-serif;background:#fff;color:#1a1a2e;padding:0}.print-btn{position:fixed;top:16px;right:16px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}@media print{.print-btn{display:none}}';
   const fullHtml = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>IntractMD Proactive Report</title>'
     + '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>'
     + '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>'

@@ -16,6 +16,7 @@
   --gray:#F4F6F9;--text:#1A1A2E;--text2:#555;--text3:#888;
   --r:10px;--shadow:0 2px 12px rgba(0,0,0,.08);
 }
+.lang-toggle{display:flex;align-items:center;gap:4px}.lang-btn{padding:3px 10px;font-size:11px;font-weight:700;border:1.5px solid rgba(255,255,255,.5);background:none;color:rgba(255,255,255,.7);cursor:pointer;border-radius:20px}.lang-btn.active{background:#fff;color:#0B1F3A}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--text);min-height:100vh;}
 
@@ -213,7 +214,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
     <img src="/resolve-logo.jpeg" alt="Resolve Medical" style="height:42px;width:auto;object-fit:contain"/>
     <div class="hdr-sub">Institutional Patient Outreach Generator — Resolve Medical, LLC</div>
   </div>
-  <div class="hdr-badge"><i class="ti ti-building-hospital"></i> Case Manager Workflow</div>
+  <div class="lang-toggle"><button class="lang-btn active" id="lang-en-c" onclick="setLangC('en')">EN</button><button class="lang-btn" id="lang-es-c" onclick="setLangC('es')">ES</button></div>
+<div class="lang-toggle"><button class="lang-btn active" id="lang-en-c" onclick="setLangC('en')">EN</button><button class="lang-btn" id="lang-es-c" onclick="setLangC('es')">ES</button></div>
+<div class="hdr-badge"><i class="ti ti-building-hospital"></i> Case Manager Workflow</div>
 </div>
 
 <div style="display:flex;align-items:center;gap:0;background:#0a2040;border-bottom:2px solid #534AB7;padding:0 1rem;">
