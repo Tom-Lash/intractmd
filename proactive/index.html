@@ -718,6 +718,36 @@ buildChips();renderTray();
 
 <script>
 function buildProactiveReport(r, drugList){
+  var L = {
+    report_title: uiLang==='es'?'Informe de Interacciones Proactivas':L.report_title,
+    generated:    uiLang==='es'?'Generado: ':L.generated,
+    meds_analyzed:uiLang==='es'?'Medicamentos Analizados':L.meds_analyzed,
+    risk_score:   uiLang==='es'?'Puntuación de Riesgo de Polifarmacia':L.risk_score,
+    dd_sec:       uiLang==='es'?'Interacciones entre Medicamentos':L.dd_sec,
+    no_dd:        uiLang==='es'?'No se identificaron interacciones significativas':L.no_dd,
+    supp_sec:     uiLang==='es'?'Suplementos y Alimentos a Evitar':L.supp_sec,
+    food_sec:     uiLang==='es'?'Interacciones con Alimentos':L.food_sec,
+    ai_sec:       uiLang==='es'?'Resumen Clínico por IA':L.ai_sec,
+    avoid_sec:    uiLang==='es'?'Lista Consolidada de Evitación':L.avoid_sec,
+    mechanism:    uiLang==='es'?'Mecanismo':L.mechanism,
+    clin_effect:  uiLang==='es'?'Efecto clínico':L.clin_effect,
+    evidence:     uiLang==='es'?'Evidencia':L.evidence,
+    rec_action:   uiLang==='es'?'Acción recomendada':L.rec_action,
+    monitor:      uiLang==='es'?'Monitorear':'Monitor',
+    pat_note:     uiLang==='es'?'Nota para el paciente':L.pat_note,
+    avoid_lbl:    uiLang==='es'?'EVITAR':L.avoid_lbl,
+    caution_lbl:  uiLang==='es'?'PRECAUCIÓN':L.caution_lbl,
+    safe_lbl:     uiLang==='es'?'SEGURO':L.safe_lbl,
+    sev_critical: uiLang==='es'?'Crítico':L.sev_critical,
+    sev_high:     uiLang==='es'?'Alto':L.sev_high,
+    sev_moderate: uiLang==='es'?'Moderado':L.sev_moderate,
+    sev_low:      uiLang==='es'?'Bajo':'Low',
+    sev_minimal:  uiLang==='es'?'Mínimo':'Minimal',
+    disclaimer:   uiLang==='es'?'Solo para soporte de decisión clínica. No es consejo médico.':'Clinical decision support only. Not a substitute for professional medical advice.',
+    no_supp:      uiLang==='es'?'No se identificaron riesgos de suplementos':L.no_supp,
+    timing:       uiLang==='es'?'Orientación de tiempo':'Timing guidance',
+    food_note:    uiLang==='es'?'Interacciones alimentarias clínicamente significativas.':'Clinically significant food and dietary interactions.',
+  };
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
   const sevColor = {Critical:'#A32D2D',High:'#C05020',Moderate:'#D97706',Low:'#2E7D4F'};
@@ -734,9 +764,9 @@ function buildProactiveReport(r, drugList){
   });
   const sevOrder={Critical:0,High:1,Moderate:2,Low:3};
   allInteractions.sort(function(a,b){return (sevOrder[a.severity]||4)-(sevOrder[b.severity]||4);});
-  const nCrit=allInteractions.filter(function(x){return x.severity==='Critical';}).length;
-  const nHigh=allInteractions.filter(function(x){return x.severity==='High';}).length;
-  const nMod=allInteractions.filter(function(x){return x.severity==='Moderate';}).length;
+  const nCrit=allInteractions.filter(function(x){return x.severity===L.sev_critical;}).length;
+  const nHigh=allInteractions.filter(function(x){return x.severity===L.sev_high;}).length;
+  const nMod=allInteractions.filter(function(x){return x.severity===L.sev_moderate;}).length;
 
   let html = '';
   // Header
