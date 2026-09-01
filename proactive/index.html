@@ -676,10 +676,10 @@ function renderResults(r){
   const al=document.getElementById('avoidList');
   al.innerHTML='';
   (r.avoid_supplements||[]).forEach(s=>{
-    al.innerHTML+=`<div class="avoid-item supp"><i class="ti ti-leaf avoid-item-icon"></i><div><div class="avoid-name">${s}</div><div class="avoid-reason">Supplement — avoid while on your current medications</div></div></div>`;
+    al.innerHTML+=`<div class="avoid-item supp"><i class="ti ti-leaf avoid-item-icon"></i><div><div class="avoid-name">${s}</div><div class="avoid-reason">${uiLang==='es'?'Suplemento — evitar mientras toma sus medicamentos actuales':'Supplement — avoid while on your current medications'}</div></div></div>`;
   });
   (r.caution_foods||[]).forEach(f=>{
-    al.innerHTML+=`<div class="avoid-item food"><i class="ti ti-apple avoid-item-icon"></i><div><div class="avoid-name">${f}</div><div class="avoid-reason">Food/dietary substance — limit or avoid with your medications</div></div></div>`;
+    al.innerHTML+=`<div class="avoid-item food"><i class="ti ti-apple avoid-item-icon"></i><div><div class="avoid-name">${f}</div><div class="avoid-reason">${uiLang==='es'?'Alimento — limitar o evitar con sus medicamentos':'Food/dietary substance — limit or avoid with your medications'}</div></div></div>`;
   });
 
   document.getElementById('explainPanel').style.display='block';
