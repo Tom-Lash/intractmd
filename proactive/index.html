@@ -579,7 +579,20 @@ function renderResults(r){
   var _rtEs=_rt==='Critical'?'Crítico':_rt==='High'?'Alto':_rt==='Moderate'?'Moderado':_rt==='Low'?'Bajo':_rt==='Minimal'?'Mínimo':_rt;
   var _rtLabel=uiLang==='es'?'Puntuación de Riesgo — '+_rtEs:'Supplement & Food Risk Score — '+_rt;
   document.getElementById('riskTier').innerHTML='<span id="risk-tier-txt">'+_rtLabel+'</span>';
-  document.getElementById('riskTitle').textContent=r.risk_title||'';
+  var _rt2=r.risk_title||'';
+  if(uiLang==='es'){
+    _rt2=_rt2.replace('Minimal supplement and food interaction burden','Carga mínima de interacciones con suplementos y alimentos')
+             .replace('Low supplement and food interaction burden','Carga baja de interacciones con suplementos y alimentos')
+             .replace('Moderate supplement and food interaction burden','Carga moderada de interacciones con suplementos y alimentos')
+             .replace('High supplement and food interaction burden','Carga alta de interacciones con suplementos y alimentos')
+             .replace('Critical supplement and food interaction burden','Carga crítica de interacciones con suplementos y alimentos')
+             .replace('supplement and food interaction burden','interacciones con suplementos y alimentos')
+             .replace('for this regimen','para este régimen')
+             .replace('for your medication regimen','para su régimen de medicamentos')
+             .replace('identified','identificadas')
+             .replace('Supplement and food warnings','Advertencias de suplementos y alimentos');
+  }
+  document.getElementById('riskTitle').textContent=_rt2;
 
   // Build unified sorted interaction list (drug-drug + supplements + foods)
   const sevOrder={Critical:0,High:1,Moderate:2,Low:3,Minimal:4};
