@@ -1301,19 +1301,19 @@ function switchTab(tab) {
 function buildClinicalReport(result, payload){
   result = result || {};
   var LC={
-    report_title:  uiLang==='es'?'Informe Clínico MTM de IntractMD™':''+LC.report_title+'',
-    for_review:    uiLang==='es'?'Solo para revisión clínica. No es consejo médico.':''+LC.for_review+'',
+    report_title:  uiLang==='es'?'Resumen Ejecutivo Clínico MTM de IntractMD™':'IntractMD™ Clinical MTM Executive Summary',
+    for_review:    uiLang==='es'?'Solo para soporte de decisión clínica. No es consejo médico.':'Clinical decision support only. Not a substitute for professional medical advice.',
     generated:     uiLang==='es'?'Generado:':'Generated:',
-    meds_reviewed: uiLang==='es'?'Medicamentos Revisados':''+LC.meds_reviewed+'',
+    meds_reviewed: uiLang==='es'?'Medicamentos Revisados':'Medications Reviewed',
     risk_score:    uiLang==='es'?'Puntuación de Riesgo CPRS':'CPRS Risk Score',
-    high_risk:     uiLang==='es'?'Riesgo Alto':LC.high_risk,
-    mod_risk:      uiLang==='es'?'Riesgo Moderado':LC.mod_risk,
-    low_risk:      uiLang==='es'?'Riesgo Menor':LC.low_risk,
+    high_risk:     uiLang==='es'?'Riesgo Alto':'High Risk',
+    mod_risk:      uiLang==='es'?'Riesgo Moderado':'Moderate Risk',
+    low_risk:      uiLang==='es'?'Riesgo Menor':'Lower Risk',
     ddi_sec:       uiLang==='es'?'Interacciones entre Medicamentos':'Drug-Drug Interactions',
     supp_sec:      uiLang==='es'?'Advertencias de Suplementos y Alimentos':'Supplement & Food Warnings',
     factors_sec:   uiLang==='es'?'Factores de Riesgo Clínicos':'Clinical Risk Factors',
-    no_ddi:        uiLang==='es'?'No se identificaron interacciones significativas.':''+LC.no_ddi+'',
-    no_supp:       uiLang==='es'?'No se identificaron advertencias de suplementos o alimentos.':''+LC.no_supp+'',
+    no_ddi:        uiLang==='es'?'No se identificaron interacciones significativas.':'No significant interactions identified.',
+    no_supp:       uiLang==='es'?'No se identificaron advertencias de suplementos o alimentos.':'No supplement or food warnings identified.',
     col_sev:       uiLang==='es'?'Severidad':'Severity',
     col_inter:     uiLang==='es'?'Interacción':'Interaction',
     col_mech:      uiLang==='es'?'Mecanismo':'Mechanism',
@@ -1326,8 +1326,8 @@ function buildClinicalReport(result, payload){
     sev_low:       uiLang==='es'?'Bajo':'Low',
     print_pdf:     uiLang==='es'?'Imprimir / Guardar PDF':'Print / Save PDF',
     return_btn:    uiLang==='es'?'Volver al Análisis':'Return to Analysis',
-    high_risk_cls: uiLang==='es'?'Clase de Medicamento de Alto Riesgo Presente':LC.high_risk_cls,
-    renal_cleared: uiLang==='es'?'Medicamentos de Eliminación Renal':LC.renal_cleared,
+    high_risk_cls: uiLang==='es'?'Clase de Medicamento de Alto Riesgo Presente':'High-Risk Drug Class Present',
+    renal_cleared: uiLang==='es'?'Medicamentos de Eliminación Renal':'Renally Cleared Medications',
   };
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
@@ -1349,7 +1349,7 @@ function buildClinicalReport(result, payload){
 
   // ── PAGE 1: HEADER + CONDENSED SUMMARY ──────────────────────────────────
   html += '<div class="er-header">';
-  html += '<div class="er-header-title">'+(uiLang==='es'?'IntractMD™ Resumen Ejecutivo MTM Clínico':'IntractMD™ Clinical MTM Executive Summary')+'</div>';
+  html += '<div class="er-header-title">'+(uiLang==='es'?'Resumen Ejecutivo Clínico MTM de IntractMD™':'IntractMD™ Clinical MTM Executive Summary')+'</div>';
   html += '<div class="er-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
   html += '<div class="er-header-date">'+LC.generated+' ' + dateStr + ' · '+LC.for_review+'</div>';
   html += '</div>';
