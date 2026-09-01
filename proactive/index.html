@@ -858,175 +858,11 @@ function downloadProactiveReport(){
     + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E;box-shadow:none">&#8592; Return to Analysis</button>'
     + '<div style="max-width:780px;margin:0 auto;padding:32px 40px">' + body + '</div>'
     + '
-<script>
-var uiLang = localStorage.getItem('intractmd_lang') || 'en';
 
-var TR_PROACTIVE = {
-  intro_title:    {en:'Proactive Drug, Supplement & Food Interaction Engine',
-                   es:'Motor Proactivo de Interacciones: Medicamentos, Suplementos y Alimentos'},
-  intro_sub:      {en:'Select your medications below. IntractMD will automatically identify supplements and foods to avoid — no supplement input required.',
-                   es:'Seleccione sus medicamentos a continuación. IntractMD identificará automáticamente suplementos y alimentos a evitar — sin necesidad de ingresarlos.'},
-  step1_lbl:      {en:'Step 1 — Enter your medications', es:'Paso 1 — Ingrese sus medicamentos'},
-  step1_ph:       {en:'Or type any medication name and press Enter...', es:'O escriba cualquier medicamento y presione Enter...'},
-  quick_add:      {en:'Quick add — common medications', es:'Agregar rápido — medicamentos comunes'},
-  add_btn:        {en:'Add', es:'Agregar'},
-  clear_btn:      {en:'Clear all', es:'Borrar todo'},
-  step2_lbl:      {en:'Step 2 — Run analysis', es:'Paso 2 — Ejecutar análisis'},
-  analyze_btn:    {en:'Check drug interactions + supplements & foods to avoid',
-                   es:'Verificar interacciones + suplementos y alimentos a evitar'},
-  view_report:    {en:'View Summary Report', es:'Ver Informe Resumido'},
-  download_pdf:   {en:'Download PDF', es:'Descargar PDF'},
-  disclaimer:     {en:'Clinical decision support only. Not medical advice.',
-                   es:'Solo para soporte de decisión clínica. No es consejo médico.'},
-  loading:        {en:'Generating Risk Analysis Report...', es:'Generando informe de análisis de riesgo...'},
-  risk_score:     {en:'Polypharmacy Risk Score', es:'Puntuación de Riesgo de Polifarmacia'},
-  dd_sec:         {en:'Drug-Drug Interactions', es:'Interacciones entre Medicamentos'},
-  supp_sec:       {en:'Supplements & Foods to Avoid', es:'Suplementos y Alimentos a Evitar'},
-  food_sec:       {en:'Food Interactions', es:'Interacciones con Alimentos'},
-  risk_sec:       {en:'Risk by Dimension', es:'Riesgo por Dimensión'},
-  ai_sec:         {en:'AI Clinical Summary', es:'Resumen Clínico por IA'},
-  avoid_sec:      {en:'Consolidated Avoidance List', es:'Lista Consolidada de Evitación'},
-  show_more:      {en:'Show additional interactions', es:'Mostrar interacciones adicionales'},
-  show_fewer:     {en:'Show fewer interactions', es:'Mostrar menos interacciones'},
-  no_meds:        {en:'No medications added yet.', es:'Aún no se han agregado medicamentos.'},
-  meds_analyzed:  {en:'Medications Analyzed', es:'Medicamentos Analizados'},
-  pilot_badge:    {en:'Pilot Preview', es:'Vista Piloto'},
-  sev_critical:   {en:'Critical', es:'Crítico'},
-  sev_high:       {en:'High', es:'Alto'},
-  sev_moderate:   {en:'Moderate', es:'Moderado'},
-  sev_low:        {en:'Low', es:'Bajo'},
-  sev_minimal:    {en:'Minimal', es:'Mínimo'},
-  mechanism:      {en:'Mechanism', es:'Mecanismo'},
-  clinical_effect:{en:'Clinical effect', es:'Efecto clínico'},
-  evidence:       {en:'Evidence', es:'Evidencia'},
-  monitor:        {en:'Monitor', es:'Monitorear'},
-  rec_action:     {en:'Recommended action', es:'Acción recomendada'},
-  patient_note:   {en:'Patient note', es:'Nota para el paciente'},
-  avoid_label:    {en:'AVOID', es:'EVITAR'},
-  caution_label:  {en:'CAUTION', es:'PRECAUCIÓN'},
-  safe_label:     {en:'SAFE', es:'SEGURO'},
-  food_note:      {en:'Clinically significant food and dietary interactions. Timing and dietary modifications may be required.',
-                   es:'Interacciones alimentarias y dietéticas clínicamente significativas. Pueden requerirse modificaciones en el horario y la dieta.'},
-};
 
-function tp(k) {
-  var e = TR_PROACTIVE[k];
-  return e ? (e[uiLang] || e.en || k) : k;
-}
 
-function setLangP(l) {
-  uiLang = l;
-  localStorage.setItem('intractmd_lang', l);
-  window._uiLang = l;
 
-  // Toggle button active states
-  var en = document.getElementById('lang-en-p');
-  var es = document.getElementById('lang-es-p');
-  if (en) en.className = 'lang-btn' + (l === 'en' ? ' active' : '');
-  if (es) es.className = 'lang-btn' + (l === 'es' ? ' active' : '');
 
-  // Update all data-i18n spans
-  document.querySelectorAll('[data-i18n]').forEach(function(el) {
-    var k = el.getAttribute('data-i18n');
-    if (TR_PROACTIVE[k]) el.textContent = tp(k);
-  });
-
-  // Input placeholder
-  var di = document.getElementById('drugInput');
-  if (di) di.placeholder = tp('step1_ph');
-
-  // Analyze button
-  var ab = document.getElementById('analyzeBtn');
-  if (ab) ab.innerHTML = '<i class="ti ti-radar"></i> ' + tp('analyze_btn');
-
-  // Report buttons
-  var rb = document.getElementById('proactiveReportBtns');
-  if (rb) {
-    var btns = rb.querySelectorAll('button');
-    if (btns[0]) btns[0].innerHTML = '<i class="ti ti-file-description"></i> ' + tp('view_report');
-    if (btns[1]) btns[1].innerHTML = '<i class="ti ti-file-download"></i> ' + tp('download_pdf');
-  }
-
-  // Update results if already rendered
-  updateRenderedResults(l);
-}
-
-function updateRenderedResults(l) {
-  // Section headers in results
-  document.querySelectorAll('.sec-hdr').forEach(function(el) {
-    var icon = el.querySelector('i');
-    var count = el.querySelector('.sec-count');
-    var iconHtml = icon ? icon.outerHTML + ' ' : '';
-    var countHtml = count ? ' ' + count.outerHTML : '';
-    var txt = el.textContent.trim().replace(/[0-9]+/g,'').trim();
-    var map = {
-      'Drug-Drug Interactions': 'dd_sec',
-      'Interacciones entre Medicamentos': 'dd_sec',
-      'Supplements & Foods to Avoid': 'supp_sec',
-      'Suplementos y Alimentos a Evitar': 'supp_sec',
-      'Food Interactions': 'food_sec',
-      'Interacciones con Alimentos': 'food_sec',
-      'Risk by Dimension': 'risk_sec',
-      'Riesgo por Dimensión': 'risk_sec',
-      'AI Clinical Summary': 'ai_sec',
-      'Resumen Clínico por IA': 'ai_sec',
-      'Consolidated Avoidance List': 'avoid_sec',
-      'Lista Consolidada de Evitación': 'avoid_sec',
-    };
-    var key = map[txt];
-    if (key) el.innerHTML = iconHtml + tp(key) + countHtml;
-  });
-
-  // Field labels
-  document.querySelectorAll('.ix-lbl').forEach(function(el) {
-    var map = {
-      'Mechanism': 'mechanism', 'Mecanismo': 'mechanism',
-      'Clinical effect': 'clinical_effect', 'Efecto clínico': 'clinical_effect',
-      'Evidence': 'evidence', 'Evidencia': 'evidence',
-      'Monitor': 'monitor', 'Monitorear': 'monitor',
-      'Recommended action': 'rec_action', 'Acción recomendada': 'rec_action',
-      'Patient note': 'patient_note', 'Nota para el paciente': 'patient_note',
-      'Timing guidance': 'monitor',
-    };
-    var key = map[el.textContent.trim()];
-    if (key) el.textContent = tp(key);
-  });
-
-  // Severity badges
-  document.querySelectorAll('.badge').forEach(function(el) {
-    var map = {
-      'Critical': 'sev_critical', 'Crítico': 'sev_critical',
-      'High': 'sev_high', 'Alto': 'sev_high',
-      'Moderate': 'sev_moderate', 'Moderado': 'sev_moderate',
-      'Low': 'sev_low', 'Bajo': 'sev_low',
-      'Minimal': 'sev_minimal', 'Mínimo': 'sev_minimal',
-    };
-    var key = map[el.textContent.trim()];
-    if (key) el.textContent = tp(key);
-  });
-
-  // Supplement tier labels
-  document.querySelectorAll('.tier-label, .avoid-label, .caution-label, .safe-label').forEach(function(el) {
-    var txt = el.textContent.trim();
-    if (txt === 'AVOID' || txt === 'EVITAR') el.textContent = tp('avoid_label');
-    if (txt === 'CAUTION' || txt === 'PRECAUCIÓN') el.textContent = tp('caution_label');
-    if (txt === 'SAFE' || txt === 'SEGURO') el.textContent = tp('safe_label');
-  });
-}
-
-// Hook into the analysis result render so results come out in the right language
-var _origSetLang = window.setLang;
-// Patch any result-render functions to call updateRenderedResults after
-var _resultObserver = new MutationObserver(function() {
-  if (uiLang === 'es') updateRenderedResults('es');
-});
-document.addEventListener('DOMContentLoaded', function() {
-  var resultsEl = document.getElementById('results') || document.getElementById('proactiveResults') || document.querySelector('.results-wrap');
-  if (resultsEl) _resultObserver.observe(resultsEl, {childList: true, subtree: true});
-  setLangP(uiLang);
-});
-window._uiLang = uiLang;
-</script>
 </body></html>';
   const win = window.open('', '_blank');
   win.document.write(fullHtml);
@@ -1034,174 +870,90 @@ window._uiLang = uiLang;
 }
 </script>
 
+
+
+
+
+
 <script>
 var uiLang = localStorage.getItem('intractmd_lang') || 'en';
-
 var TR_PROACTIVE = {
-  intro_title:    {en:'Proactive Drug, Supplement & Food Interaction Engine',
-                   es:'Motor Proactivo de Interacciones: Medicamentos, Suplementos y Alimentos'},
-  intro_sub:      {en:'Select your medications below. IntractMD will automatically identify supplements and foods to avoid — no supplement input required.',
-                   es:'Seleccione sus medicamentos a continuación. IntractMD identificará automáticamente suplementos y alimentos a evitar — sin necesidad de ingresarlos.'},
-  step1_lbl:      {en:'Step 1 — Enter your medications', es:'Paso 1 — Ingrese sus medicamentos'},
-  step1_ph:       {en:'Or type any medication name and press Enter...', es:'O escriba cualquier medicamento y presione Enter...'},
-  quick_add:      {en:'Quick add — common medications', es:'Agregar rápido — medicamentos comunes'},
-  add_btn:        {en:'Add', es:'Agregar'},
-  clear_btn:      {en:'Clear all', es:'Borrar todo'},
-  step2_lbl:      {en:'Step 2 — Run analysis', es:'Paso 2 — Ejecutar análisis'},
-  analyze_btn:    {en:'Check drug interactions + supplements & foods to avoid',
-                   es:'Verificar interacciones + suplementos y alimentos a evitar'},
-  view_report:    {en:'View Summary Report', es:'Ver Informe Resumido'},
-  download_pdf:   {en:'Download PDF', es:'Descargar PDF'},
-  disclaimer:     {en:'Clinical decision support only. Not medical advice.',
-                   es:'Solo para soporte de decisión clínica. No es consejo médico.'},
-  loading:        {en:'Generating Risk Analysis Report...', es:'Generando informe de análisis de riesgo...'},
-  risk_score:     {en:'Polypharmacy Risk Score', es:'Puntuación de Riesgo de Polifarmacia'},
-  dd_sec:         {en:'Drug-Drug Interactions', es:'Interacciones entre Medicamentos'},
-  supp_sec:       {en:'Supplements & Foods to Avoid', es:'Suplementos y Alimentos a Evitar'},
-  food_sec:       {en:'Food Interactions', es:'Interacciones con Alimentos'},
-  risk_sec:       {en:'Risk by Dimension', es:'Riesgo por Dimensión'},
-  ai_sec:         {en:'AI Clinical Summary', es:'Resumen Clínico por IA'},
-  avoid_sec:      {en:'Consolidated Avoidance List', es:'Lista Consolidada de Evitación'},
-  show_more:      {en:'Show additional interactions', es:'Mostrar interacciones adicionales'},
-  show_fewer:     {en:'Show fewer interactions', es:'Mostrar menos interacciones'},
-  no_meds:        {en:'No medications added yet.', es:'Aún no se han agregado medicamentos.'},
-  meds_analyzed:  {en:'Medications Analyzed', es:'Medicamentos Analizados'},
-  pilot_badge:    {en:'Pilot Preview', es:'Vista Piloto'},
-  sev_critical:   {en:'Critical', es:'Crítico'},
-  sev_high:       {en:'High', es:'Alto'},
-  sev_moderate:   {en:'Moderate', es:'Moderado'},
-  sev_low:        {en:'Low', es:'Bajo'},
-  sev_minimal:    {en:'Minimal', es:'Mínimo'},
-  mechanism:      {en:'Mechanism', es:'Mecanismo'},
-  clinical_effect:{en:'Clinical effect', es:'Efecto clínico'},
-  evidence:       {en:'Evidence', es:'Evidencia'},
-  monitor:        {en:'Monitor', es:'Monitorear'},
-  rec_action:     {en:'Recommended action', es:'Acción recomendada'},
-  patient_note:   {en:'Patient note', es:'Nota para el paciente'},
-  avoid_label:    {en:'AVOID', es:'EVITAR'},
-  caution_label:  {en:'CAUTION', es:'PRECAUCIÓN'},
-  safe_label:     {en:'SAFE', es:'SEGURO'},
-  food_note:      {en:'Clinically significant food and dietary interactions. Timing and dietary modifications may be required.',
-                   es:'Interacciones alimentarias y dietéticas clínicamente significativas. Pueden requerirse modificaciones en el horario y la dieta.'},
+  step1_ph:       {en:'Or type any medication name and press Enter...',es:'O escriba cualquier medicamento y presione Enter...'},
+  analyze_btn:    {en:'Check drug interactions + supplements & foods to avoid',es:'Verificar interacciones + suplementos y alimentos a evitar'},
+  view_report:    {en:'View Summary Report',es:'Ver Informe Resumido'},
+  download_pdf:   {en:'Download PDF',es:'Descargar PDF'},
+  dd_sec:         {en:'Drug-Drug Interactions',es:'Interacciones entre Medicamentos'},
+  supp_sec:       {en:'Supplements & Foods to Avoid',es:'Suplementos y Alimentos a Evitar'},
+  food_sec:       {en:'Food Interactions',es:'Interacciones con Alimentos'},
+  risk_sec:       {en:'Risk by Dimension',es:'Riesgo por Dimensi\u00f3n'},
+  ai_sec:         {en:'AI Clinical Summary',es:'Resumen Cl\u00ednico por IA'},
+  avoid_sec:      {en:'Consolidated Avoidance List',es:'Lista Consolidada de Evitaci\u00f3n'},
+  sev_critical:   {en:'Critical',es:'Cr\u00edtico'},
+  sev_high:       {en:'High',es:'Alto'},
+  sev_moderate:   {en:'Moderate',es:'Moderado'},
+  sev_low:        {en:'Low',es:'Bajo'},
+  sev_minimal:    {en:'Minimal',es:'M\u00ednimo'},
+  mechanism:      {en:'Mechanism',es:'Mecanismo'},
+  clinical_effect:{en:'Clinical effect',es:'Efecto cl\u00ednico'},
+  evidence:       {en:'Evidence',es:'Evidencia'},
+  monitor:        {en:'Monitor',es:'Monitorear'},
+  rec_action:     {en:'Recommended action',es:'Acci\u00f3n recomendada'},
+  patient_note:   {en:'Patient note',es:'Nota para el paciente'},
 };
-
-function tp(k) {
-  var e = TR_PROACTIVE[k];
-  return e ? (e[uiLang] || e.en || k) : k;
+function tp(k){var e=TR_PROACTIVE[k];return e?(e[uiLang]||e.en||k):k;}
+function setLangP(l){
+  uiLang=l;localStorage.setItem('intractmd_lang',l);window._uiLang=l;
+  var en=document.getElementById('lang-en-p');var es=document.getElementById('lang-es-p');
+  if(en)en.className='lang-btn'+(l==='en'?' active':'');
+  if(es)es.className='lang-btn'+(l==='es'?' active':'');
+  var di=document.getElementById('drugInput');if(di)di.placeholder=tp('step1_ph');
+  var ab=document.getElementById('analyzeBtn');
+  if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+tp('analyze_btn');
+  var rb=document.getElementById('proactiveReportBtns');
+  if(rb){var btns=rb.querySelectorAll('button');
+    if(btns[0])btns[0].innerHTML='<i class="ti ti-file-description"></i> '+tp('view_report');
+    if(btns[1])btns[1].innerHTML='<i class="ti ti-file-download"></i> '+tp('download_pdf');}
+  updateProactiveResults();
 }
-
-function setLangP(l) {
-  uiLang = l;
-  localStorage.setItem('intractmd_lang', l);
-  window._uiLang = l;
-
-  // Toggle button active states
-  var en = document.getElementById('lang-en-p');
-  var es = document.getElementById('lang-es-p');
-  if (en) en.className = 'lang-btn' + (l === 'en' ? ' active' : '');
-  if (es) es.className = 'lang-btn' + (l === 'es' ? ' active' : '');
-
-  // Update all data-i18n spans
-  document.querySelectorAll('[data-i18n]').forEach(function(el) {
-    var k = el.getAttribute('data-i18n');
-    if (TR_PROACTIVE[k]) el.textContent = tp(k);
+function updateProactiveResults(){
+  document.querySelectorAll('.sec-hdr').forEach(function(el){
+    var icon=el.querySelector('i');var count=el.querySelector('.sec-count');
+    var iconHtml=icon?icon.outerHTML+' ':'';var countHtml=count?' '+count.outerHTML:'';
+    var txt=el.textContent.replace(/[0-9]/g,'').trim();
+    var map={'Drug-Drug Interactions':'dd_sec','Interacciones entre Medicamentos':'dd_sec',
+      'Supplements & Foods to Avoid':'supp_sec','Suplementos y Alimentos a Evitar':'supp_sec',
+      'Food Interactions':'food_sec','Interacciones con Alimentos':'food_sec',
+      'Risk by Dimension':'risk_sec','Riesgo por Dimensión':'risk_sec',
+      'AI Clinical Summary':'ai_sec','Resumen Clínico por IA':'ai_sec',
+      'Consolidated Avoidance List':'avoid_sec','Lista Consolidada de Evitación':'avoid_sec'};
+    var key=map[txt];if(key)el.innerHTML=iconHtml+tp(key)+countHtml;
   });
-
-  // Input placeholder
-  var di = document.getElementById('drugInput');
-  if (di) di.placeholder = tp('step1_ph');
-
-  // Analyze button
-  var ab = document.getElementById('analyzeBtn');
-  if (ab) ab.innerHTML = '<i class="ti ti-radar"></i> ' + tp('analyze_btn');
-
-  // Report buttons
-  var rb = document.getElementById('proactiveReportBtns');
-  if (rb) {
-    var btns = rb.querySelectorAll('button');
-    if (btns[0]) btns[0].innerHTML = '<i class="ti ti-file-description"></i> ' + tp('view_report');
-    if (btns[1]) btns[1].innerHTML = '<i class="ti ti-file-download"></i> ' + tp('download_pdf');
-  }
-
-  // Update results if already rendered
-  updateRenderedResults(l);
-}
-
-function updateRenderedResults(l) {
-  // Section headers in results
-  document.querySelectorAll('.sec-hdr').forEach(function(el) {
-    var icon = el.querySelector('i');
-    var count = el.querySelector('.sec-count');
-    var iconHtml = icon ? icon.outerHTML + ' ' : '';
-    var countHtml = count ? ' ' + count.outerHTML : '';
-    var txt = el.textContent.trim().replace(/[0-9]+/g,'').trim();
-    var map = {
-      'Drug-Drug Interactions': 'dd_sec',
-      'Interacciones entre Medicamentos': 'dd_sec',
-      'Supplements & Foods to Avoid': 'supp_sec',
-      'Suplementos y Alimentos a Evitar': 'supp_sec',
-      'Food Interactions': 'food_sec',
-      'Interacciones con Alimentos': 'food_sec',
-      'Risk by Dimension': 'risk_sec',
-      'Riesgo por Dimensión': 'risk_sec',
-      'AI Clinical Summary': 'ai_sec',
-      'Resumen Clínico por IA': 'ai_sec',
-      'Consolidated Avoidance List': 'avoid_sec',
-      'Lista Consolidada de Evitación': 'avoid_sec',
-    };
-    var key = map[txt];
-    if (key) el.innerHTML = iconHtml + tp(key) + countHtml;
+  document.querySelectorAll('.ix-lbl').forEach(function(el){
+    var map={'Mechanism':'mechanism','Mecanismo':'mechanism',
+      'Clinical effect':'clinical_effect','Efecto clínico':'clinical_effect',
+      'Evidence':'evidence','Evidencia':'evidence',
+      'Monitor':'monitor','Monitorear':'monitor',
+      'Recommended action':'rec_action','Acción recomendada':'rec_action',
+      'Patient note':'patient_note','Nota para el paciente':'patient_note'};
+    var key=map[el.textContent.trim()];if(key)el.textContent=tp(key);
   });
-
-  // Field labels
-  document.querySelectorAll('.ix-lbl').forEach(function(el) {
-    var map = {
-      'Mechanism': 'mechanism', 'Mecanismo': 'mechanism',
-      'Clinical effect': 'clinical_effect', 'Efecto clínico': 'clinical_effect',
-      'Evidence': 'evidence', 'Evidencia': 'evidence',
-      'Monitor': 'monitor', 'Monitorear': 'monitor',
-      'Recommended action': 'rec_action', 'Acción recomendada': 'rec_action',
-      'Patient note': 'patient_note', 'Nota para el paciente': 'patient_note',
-      'Timing guidance': 'monitor',
-    };
-    var key = map[el.textContent.trim()];
-    if (key) el.textContent = tp(key);
-  });
-
-  // Severity badges
-  document.querySelectorAll('.badge').forEach(function(el) {
-    var map = {
-      'Critical': 'sev_critical', 'Crítico': 'sev_critical',
-      'High': 'sev_high', 'Alto': 'sev_high',
-      'Moderate': 'sev_moderate', 'Moderado': 'sev_moderate',
-      'Low': 'sev_low', 'Bajo': 'sev_low',
-      'Minimal': 'sev_minimal', 'Mínimo': 'sev_minimal',
-    };
-    var key = map[el.textContent.trim()];
-    if (key) el.textContent = tp(key);
-  });
-
-  // Supplement tier labels
-  document.querySelectorAll('.tier-label, .avoid-label, .caution-label, .safe-label').forEach(function(el) {
-    var txt = el.textContent.trim();
-    if (txt === 'AVOID' || txt === 'EVITAR') el.textContent = tp('avoid_label');
-    if (txt === 'CAUTION' || txt === 'PRECAUCIÓN') el.textContent = tp('caution_label');
-    if (txt === 'SAFE' || txt === 'SEGURO') el.textContent = tp('safe_label');
+  document.querySelectorAll('.badge').forEach(function(el){
+    var map={'Critical':'sev_critical','Crítico':'sev_critical',
+      'High':'sev_high','Alto':'sev_high',
+      'Moderate':'sev_moderate','Moderado':'sev_moderate',
+      'Low':'sev_low','Bajo':'sev_low',
+      'Minimal':'sev_minimal','Mínimo':'sev_minimal'};
+    var key=map[el.textContent.trim()];
+    if(key&&!el.classList.contains('evidence')&&!el.classList.contains('food-ix'))el.textContent=tp(key);
   });
 }
-
-// Hook into the analysis result render so results come out in the right language
-var _origSetLang = window.setLang;
-// Patch any result-render functions to call updateRenderedResults after
-var _resultObserver = new MutationObserver(function() {
-  if (uiLang === 'es') updateRenderedResults('es');
-});
-document.addEventListener('DOMContentLoaded', function() {
-  var resultsEl = document.getElementById('results') || document.getElementById('proactiveResults') || document.querySelector('.results-wrap');
-  if (resultsEl) _resultObserver.observe(resultsEl, {childList: true, subtree: true});
+var _pObs=new MutationObserver(function(){if(uiLang==='es')updateProactiveResults();});
+document.addEventListener('DOMContentLoaded',function(){
+  var res=document.getElementById('results');
+  if(res)_pObs.observe(res,{childList:true,subtree:true});
   setLangP(uiLang);
 });
-window._uiLang = uiLang;
+window._uiLang=uiLang;
 </script>
 </body>
 </html>
