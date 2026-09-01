@@ -235,7 +235,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
       </div>
     </div>
     <button onclick="openProactiveVideo()" style="background:#1B6EC2;border:none;border-radius:8px;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;">
-      <span style="font-size:16px;">&#9654;</span> Watch: How to Use This App
+      <span style="font-size:16px;">&#9654;</span> <span id="watch-btn-txt">Watch: How to Use This App</span>
     </button>
   </div>
 
@@ -307,11 +307,11 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 
     <div class="explain-panel" id="explainPanel" style="display:none">
       <button class="explain-toggle" id="explainToggle" onclick="toggleExplain()">
-        <span><i class="ti ti-info-circle" style="margin-right:6px;color:var(--amber)"></i>What does this score mean?</span>
+        <span id="score-mean-lbl"><i class="ti ti-info-circle" style="margin-right:6px;color:var(--amber)"></i><span id="score-mean-txt">What does this score mean?</span></span>
         <i class="ti ti-chevron-down"></i>
       </button>
       <div class="explain-body" id="explainBody">
-        <p style="margin-bottom:12px">The <strong>Proactive Risk Score (0–100)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.</p>
+        <p id="score-explain" style="margin-bottom:12px">The <strong>Proactive Risk Score (0–100)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.</p>
         <div class="explain-tier"><div class="explain-tier-dot" style="background:#2E6B4A"></div><div><strong>0–20 Minimal</strong> — Few or no significant interactions identified. Standard precautions apply.</div></div>
         <div class="explain-tier"><div class="explain-tier-dot" style="background:#8BC34A"></div><div><strong>21–40 Low</strong> — Minor interactions present. Review warnings and discuss with your pharmacist.</div></div>
         <div class="explain-tier"><div class="explain-tier-dot" style="background:#D4860A"></div><div><strong>41–60 Moderate</strong> — Several interactions identified. Some supplements or foods should be avoided. Consult your doctor.</div></div>
@@ -927,7 +927,11 @@ function setLangP(l){
  var qlEl=document.getElementById('quick-add-lbl');
  if(qlEl)qlEl.textContent=l==='es'?'Agregar r&aacute;pido &mdash; medicamentos comunes:':'Quick-add common medications:';
  var wbEl=document.getElementById('watch-btn-txt');
- if(wbEl)wbEl.textContent=l==='es'?'Ver: C&oacute;mo usar esta aplicaci&oacute;n':'Watch: How to Use This App';
+ if(wbEl)wbEl.textContent=l==='es'?'Ver: Cómo usar esta aplicación':'Watch: How to Use This App';
+ var smEl=document.getElementById('score-mean-txt');
+ if(smEl)smEl.textContent=l==='es'?'¿Qué significa esta puntuación?':'What does this score mean?';
+ var seEl=document.getElementById('score-explain');
+ if(seEl)seEl.innerHTML=l==='es'?'La <strong>Puntuación de Riesgo Proactivo (0–100)</strong> mide cuántas interacciones clínicamente significativas entre medicamentos, suplementos y alimentos existen para su régimen específico. Una puntuación más alta indica más interacciones que requieren atención.':'The <strong>Proactive Risk Score (0–10)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.';
  updateProactiveResults();
 }
 function updateProactiveResults(){
