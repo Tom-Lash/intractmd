@@ -3386,7 +3386,8 @@ function calcPcprsFromDD(cachedDDInteractions) {
 app.get('/proactive', (req, res) => { res.sendFile(require('path').join(__dirname, 'proactive', 'index.html')); });
 app.post('/api/proactive-analyze', async (req, res) => {
   try {
-    const { drugs } = req.body;
+    const { drugs, lang } = req.body;
+    const langInstr = lang==='es' ? '\nIMPORTANT: Write ALL text fields (risk_title, mechanism, action, monitoring_notes) in Spanish. Keep severity values in English (Critical/High/Moderate/Low/Minimal). Keep drug names in their original form.' : '';
     const defaultPrompt = `You are a clinical pharmacologist AI for IntractMD Proactive.
 
 The patient medication regimen is: ${(drugs||[]).join(', ')}.
@@ -3395,7 +3396,7 @@ Perform TWO analyses: (1) drug-drug interactions, (2) supplement and food warnin
 
 Return ONLY valid JSON:
 {"pcprs":<0-100>,"risk_tier":"<Minimal|Low|Moderate|High|Critical>","risk_title":"<1 sentence>","drug_interactions":[{"drug_a":"<drug>","drug_b":"<drug>","severity":"<Critical|High|Moderate>","mechanism":"<1 sentence>","action":"<1 sentence>"}],"warnings":[{"drug":"<drug>","interacts_with":"<supplement or food>","category":"<supplement|food>","severity":"<Critical|High|Moderate>","mechanism":"<1 sentence>","action":"<1 sentence>"}],"avoid_supplements":["<name>"],"caution_supplements":["<name>"],"avoid_foods":["<name>"],"monitoring_notes":"<1 sentence>"}`;
-    const prompt = req.body.prompt || defaultPrompt;
+    const prompt = (req.body.prompt || defaultPrompt) + langInstr;
     if (!drugs || drugs.length < 1) return res.status(400).json({ error: 'Need at least 1 drug' });
 
     // ── FAST PATH: Check proactive profile cache first ──────────────────────
