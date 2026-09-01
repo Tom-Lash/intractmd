@@ -848,8 +848,7 @@ function closeProactiveReport(){
 function downloadProactiveReport(){
   if(!window._proactiveResult) return;
   const body = buildProactiveReport(window._proactiveResult, window._proactiveDrugs||[]);
-  const style = '@page{margin:1in 0.85in}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Inter",sans-serif;background:#fff;color:#1a1a2e;padding:0}.print-btn{position:fixed;top:16px;right:16px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}@media print{.print-btn{display:none}}';
+  const style = '@page{margin:1in 0.85in}*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Inter",sans-serif;background:#fff;color:#1a1a2e;padding:0}.print-btn{position:fixed;top:16px;right:16px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}@media print{.print-btn{display:none}}';
   const fullHtml = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>IntractMD Proactive Report</title>'
     + '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>'
     + '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>'
