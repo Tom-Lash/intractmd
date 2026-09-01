@@ -378,8 +378,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 2: MEDICATION LIST -->
       <div class="card" id="step-2">
         <div class="card-title"><i class="ti ti-pill"></i> Step 2 — Medication List</div>
-        <div class="card-sub">'+(uiLang==='es'?'Ingrese medicamentos del HCE o reclamaciones de farmacia — estos son hallazgos CONFIRMADOS':'Enter medications from EHR or pharmacy claims — these are CONFIRMED findings')+'</div>
-        <div class="tier-bar confirmed"><i class="ti ti-check"></i> '+(uiLang==='es'?'CONFIRMADO — proveniente del expediente médico verificado':'CONFIRMED — sourced from verified medical record')+'</div>
+        <div class="card-sub" id="step2-card-sub">Enter medications from EHR or pharmacy claims — these are CONFIRMED findings</div>
+        <div class="tier-bar confirmed"><i class="ti ti-check"></i> <span id="step2-confirmed-lbl">CONFIRMED — sourced from verified medical record</span></div>
         <div style="position:relative;">
           <div class="drug-entry">
             <input type="text" id="drugInput" placeholder="Type a drug name (e.g. Warfarin)..."
@@ -1619,6 +1619,8 @@ function setLangC(l){
     'reg-ctx-lbl': {en:'REGIMEN CONTEXT FACTORS (LAYER 3)',es:'FACTORES DE CONTEXTO DEL RÉGIMEN (CAPA 3)'},
     'reg-ctx-sub': {en:'Select any additional context factors visible in the patient record.',es:'Seleccione factores de contexto adicionales visibles en el expediente del paciente.'},
     'ddi-btn-txt': {en:'Run Drug Interaction Analysis',es:'Ejecutar Análisis de Interacciones'},
+    'step2-card-sub': {en:'Enter medications from EHR or pharmacy claims — these are CONFIRMED findings',es:'Ingrese medicamentos del HCE o reclamaciones de farmacia — estos son hallazgos CONFIRMADOS'},
+    'step2-confirmed-lbl': {en:'CONFIRMED — sourced from verified medical record',es:'CONFIRMADO — proveniente del expediente médico verificado'},
     'view-brief-btn': {en:'View Clinical Briefing',es:'Ver Informe Clínico'},
 
     'nav-proactive':'nav_proactive',
