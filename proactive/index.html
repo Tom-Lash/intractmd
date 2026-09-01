@@ -747,6 +747,16 @@ function buildProactiveReport(r, drugList){
     no_supp:      uiLang==='es'?'No se identificaron riesgos de suplementos':L.no_supp,
     timing:       uiLang==='es'?'Orientación de tiempo':'Timing guidance',
     food_note:    uiLang==='es'?'Interacciones alimentarias clínicamente significativas.':'Clinically significant food and dietary interactions.',
+    findings_sev: uiLang==='es'?'Hallazgos por Severidad':'Findings by Severity',
+    sev_col:      uiLang==='es'?'Severidad':'Severity',
+    interact_col: uiLang==='es'?'Interacción':'Interaction',
+    type_col:     uiLang==='es'?'Tipo':'Type',
+    mech_col:     uiLang==='es'?'Mecanismo':'Mechanism',
+    action_col:   uiLang==='es'?'Acción':'Action',
+    supp_avoid:   uiLang==='es'?'Suplementos a Evitar':'Supplements to Avoid',
+    foods_avoid:  uiLang==='es'?'Alimentos a Evitar o Limitar':'Foods to Avoid or Limit',
+    supp_avoid_sub: uiLang==='es'?'Suplemento — evitar con sus medicamentos':'Supplement — avoid while on your current medications',
+    food_avoid_sub: uiLang==='es'?'Alimento — limitar o evitar con sus medicamentos':'Food/dietary substance — limit or avoid with your medications',
   };
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
@@ -757,10 +767,10 @@ function buildProactiveReport(r, drugList){
   const scoreLabel = pcprs>=70?'High Risk':pcprs>=40?'Moderate Risk':'Lower Risk';
   const allInteractions = [];
   (r.drug_interactions||[]).forEach(function(w){
-    allInteractions.push({severity:w.severity,label:(w.drug_a||w.drug1||'')+'+'+(w.drug_b||w.drug2||''),mechanism:w.mechanism,action:w.action,cat:'Drug-Drug'});
+    allInteractions.push({severity:w.severity,label:(w.drug_a||w.drug1||'')+'+'+(w.drug_b||w.drug2||''),mechanism:w.mechanism,action:w.action,cat:(uiLang==='es'?'Medicamento-Medicamento':'Drug-Drug')});
   });
   (r.warnings||[]).forEach(function(w){
-    allInteractions.push({severity:w.severity,label:w.drug+'+'+w.interacts_with,mechanism:w.mechanism,action:w.action,cat:w.category==='supplement'?'Supplement':'Food'});
+    allInteractions.push({severity:w.severity,label:w.drug+'+'+w.interacts_with,mechanism:w.mechanism,action:w.action,cat:w.category==='supplement'?(uiLang==='es'?'Suplemento':'Supplement'):(uiLang==='es'?'Alimento':'Food')});
   });
   const sevOrder={Critical:0,High:1,Moderate:2,Low:3};
   allInteractions.sort(function(a,b){return (sevOrder[a.severity]||4)-(sevOrder[b.severity]||4);});
@@ -809,23 +819,23 @@ function buildProactiveReport(r, drugList){
   // Interaction table
   if(allInteractions.length){
     html += '<div style="margin-bottom:20px">';
-    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px">Findings by Severity</div>';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:12px">"+L.findings_sev+"</div>';
     html += '<table style="width:100%;border-collapse:collapse;font-size:11px">';
     html += '<thead><tr style="-webkit-print-color-adjust:exact;print-color-adjust:exact">';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Severity</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Interaction</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Type</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Mechanism</th>';
-    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">Action</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.sev_col+"</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.interact_col+"</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.type_col+"</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.mech_col+"</th>';
+    html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">"+L.action_col+"</th>';
     html += '</tr></thead><tbody>';
     allInteractions.forEach(function(i,idx){
-      const sc = sevColor[i.severity]||'#555';
-      const sb = sevBg[i.severity]||'#f4f7fb';
+      const sc = sevColor[(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)]||'#555';
+      const sb = sevBg[(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)]||'#f4f7fb';
       const bg = idx%2===0?'#fff':'#f8f9fb';
       html += '<tr style="background:'+bg+'">'
-        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea"><span style="display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700;background:'+sb+';color:'+sc+';-webkit-print-color-adjust:exact;print-color-adjust:exact">'+i.severity+'</span></td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea"><span style="display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700;background:'+sb+';color:'+sc+';-webkit-print-color-adjust:exact;print-color-adjust:exact">'+(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)+'</span></td>'
         +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;font-weight:600">'+i.label+'</td>'
-        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666">'+i.cat+'</td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666">'+(uiLang==='es'?(i.cat==='Drug-Drug'||i.cat==='Medicamento-Medicamento'?'Med-Med':i.cat==='Supplement'||i.cat==='Suplemento'?'Suplemento':i.cat==='Food'||i.cat==='Alimento'?'Alimento':i.cat):i.cat)+'</td>'
         +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#444">'+i.mechanism+'</td>'
         +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666;font-style:italic">'+i.action+'</td>'
         +'</tr>';
@@ -836,7 +846,7 @@ function buildProactiveReport(r, drugList){
   // Avoid list
   if(r.avoid_supplements&&r.avoid_supplements.length){
     html += '<div style="margin-bottom:16px;page-break-inside:avoid">';
-    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">Supplements to Avoid</div>';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">"+L.supp_avoid+"</div>';
     html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
     r.avoid_supplements.forEach(function(s){
       html += '<span style="background:#FCEBEB;border:1px solid #E8B4B4;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;color:#A32D2D">'+s+'</span>';
