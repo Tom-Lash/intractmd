@@ -687,7 +687,23 @@ function renderResults(r){
     dg.innerHTML+=`<div class="dim-card"><div class="dim-lbl">${name}</div><div class="dim-track"><div class="dim-fill" style="width:${s}%;background:${color}"></div></div><div class="dim-score">${s}<span style="font-size:11px;font-weight:400;color:#8C7A5A">/100</span></div></div>`;
   });
 
-  document.getElementById('aiText').textContent=r.ai_summary||'';
+  var _aiSum=r.ai_summary||'';
+  if(uiLang==='es'&&_aiSum){
+    _aiSum=_aiSum
+      .replace(/Pre-computed analysis: (\d+) supplement\/food interaction[s]? identified across (\d+) medication\(s\)\./g,
+        function(m,n1,n2){return 'An\u00e1lisis precalculado: '+n1+' interacciones de suplementos\/alimentos identificadas en '+n2+' medicamento(s).';})
+      .replace('Review the AVOID list carefully before taking any supplements or consuming flagged foods.',
+        'Revise la lista EVITAR cuidadosamente antes de tomar suplementos o consumir alimentos marcados.')
+      .replace('Share this report with your doctor or pharmacist before starting any new supplement.',
+        'Comparta este informe con su m\u00e9dico o farmac\u00e9utico antes de comenzar cualquier suplemento.')
+      .replace('important supplement and food interactions have been identified',
+        'interacciones importantes de suplementos y alimentos han sido identificadas')
+      .replace('that you should be aware of before taking any new vitamins, herbal products, or dietary supplements.',
+        'que debe conocer antes de tomar nuevas vitaminas, productos herb\u00e1ceos o suplementos diet\u00e9ticos.')
+      .replace('Based on your current medication regimen,',
+        'Seg\u00fan su r\u00e9gimen de medicamentos actual,');
+  }
+  document.getElementById('aiText').textContent=_aiSum;
 
   const al=document.getElementById('avoidList');
   al.innerHTML='';
@@ -828,7 +844,17 @@ function buildProactiveReport(r, drugList){
 
   // AI summary
   if(r.ai_summary){
-    html += '<div style="font-size:13px;color:#444;line-height:1.7;font-style:italic">“'+r.ai_summary+'”</div>';
+    var _rs=r.ai_summary;
+    if(uiLang==='es'&&_rs){
+      _rs=_rs
+        .replace(/Pre-computed analysis: (\d+) supplement\/food interactions? identified across (\d+) medication\(s\)\./g,
+          function(m,n1,n2){return 'An\u00e1lisis precalculado: '+n1+' interacciones identificadas en '+n2+' medicamento(s).';})
+        .replace('Review the AVOID list carefully before taking any supplements or consuming flagged foods.',
+          'Revise la lista EVITAR antes de tomar suplementos o consumir alimentos marcados.')
+        .replace('Share this report with your doctor or pharmacist before starting any new supplement.',
+          'Comparta este informe con su farmac\u00e9utico antes de iniciar cualquier suplemento.');
+    }
+    html += '<div style="font-size:13px;color:#444;line-height:1.7;font-style:italic">"'+_rs+'"</div>';
   }
   html += '</div>';
 
