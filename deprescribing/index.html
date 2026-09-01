@@ -235,14 +235,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 
 <div class="header">
   <img src="/resolve-logo.jpeg" alt="Resolve Medical" style="height:42px;width:auto;object-fit:contain"/>
-  <div class="header-badge">Deprescribing Intelligence</div>
+  <div class="header-badge" id="hdr-badge-d">Deprescribing Intelligence</div>
   <div class="lang-toggle"><button class="lang-btn active" id="lang-en-d" onclick="setLangD('en')">EN</button><button class="lang-btn" id="lang-es-d" onclick="setLangD('es')">ES</button></div>
-<div class="header-sub">by Resolve Medical, LLC · Pilot Preview</div>
+<div class="header-sub" id="hdr-sub-d">by Resolve Medical, LLC · Pilot Preview</div>
 </div>
 <div style="display:flex;align-items:center;gap:0;background:#0a2040;border-bottom:2px solid #00A86B;padding:0 1rem;">
-<a href="https://www.intractmd.com/proactive" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;">Proactive</a>
-  <a href="https://www.intractmd.com/clinical" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;">Clinical</a>
-  <a href="https://www.intractmd.com/deprescribing" style="padding:10px 16px;font-size:13px;font-weight:700;color:#00E5A0;text-decoration:none;border-bottom:3px solid #00A86B;margin-bottom:-2px;white-space:nowrap;">Deprescribing</a>
+<a href="https://www.intractmd.com/proactive" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;"><span id="nav-p-d">Proactive</span></a>
+  <a href="https://www.intractmd.com/clinical" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;"><span id="nav-c-d">Clinical</span></a>
+  <a href="https://www.intractmd.com/deprescribing" style="padding:10px 16px;font-size:13px;font-weight:700;color:#00E5A0;text-decoration:none;border-bottom:3px solid #00A86B;margin-bottom:-2px;white-space:nowrap;"><span id="nav-d-d">Deprescribing</span></a>
 </div>
 
 <div id="print-header-standalone" style="display:none">
@@ -1185,11 +1185,17 @@ function setLangD(l){
   if(ab&&!abt)ab.innerHTML='<i class="ti ti-brain"></i> '+td('analyze_btn');
   // Static text IDs
   var ids={
+    'hdr-badge-d': 'intro_title',
     'intro-title-d':'intro_title',
-    'intro-body-d':'intro_body',
     'qp-label-d':'qp_label',
     'candidates-hdr-d':'candidates_hdr',
+    'nav-p-d':    {en:'Proactive',es:'Proactivo'},
+    'nav-c-d':    {en:'Clinical',es:'Clínico'},
+    'nav-d-d':    {en:'Deprescribing',es:'Desprescripción'},
   };
+  // Translate header-sub
+  var hsdEl=document.getElementById('hdr-sub-d');
+  if(hsdEl)hsdEl.textContent=l==='es'?'por Resolve Medical, LLC · Vista Piloto':'by Resolve Medical, LLC · Pilot Preview';
   Object.keys(ids).forEach(function(id){
     var el=document.getElementById(id);if(el)el.textContent=td(ids[id]);
   });
