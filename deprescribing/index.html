@@ -1270,6 +1270,8 @@ function setLangD(l){
   if(phTitle)phTitle.textContent=l==='es'?'Medicamentos Analizados':'Medications Analyzed';
   var phMedTitle=document.querySelector('#print-drugs-list div');
   if(phMedTitle&&phMedTitle.textContent.indexOf('Medications')>=0)phMedTitle.textContent=l==='es'?'Medicamentos Analizados':'Medications Analyzed';
+  // Re-render results in new language if analysis already run
+  if(window._lastAnalysisData)renderResults(window._lastAnalysisData);
   window._uiLang=l;
 }
 window._uiLang=uiLang;

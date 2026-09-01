@@ -1077,6 +1077,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(res)_pObs.observe(res,{childList:true,subtree:true});
  setLangP(uiLang);
 });
+if(window._proactiveResult)renderResults(window._proactiveResult);
 window._uiLang=uiLang;
 </script>
 </body>
