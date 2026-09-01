@@ -212,7 +212,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 <div class="hdr">
   <div>
     <img src="/resolve-logo.jpeg" alt="Resolve Medical" style="height:42px;width:auto;object-fit:contain"/>
-    <div class="hdr-sub">Institutional Patient Outreach Generator — Resolve Medical, LLC</div>
+    <div class="hdr-sub"><span id="hdr-sub-txt">Institutional Patient Outreach Generator — Resolve Medical, LLC</span></div>
   </div>
   <div class="lang-toggle"><button class="lang-btn active" id="lang-en-c" onclick="setLangC('en')">EN</button><button class="lang-btn" id="lang-es-c" onclick="setLangC('es')">ES</button></div>
 <div class="hdr-badge"><i class="ti ti-building-hospital"></i> Case Manager Workflow</div>
@@ -1482,24 +1482,7 @@ body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a2e;padding:0}
 <div style="max-width:780px;margin:0 auto;padding:32px 40px">
 ${body}
 </div>
-<script>
-var uiLang=localStorage.getItem('intractmd_lang')||'en';
-function setLangC(l){
-  uiLang=l;
-  localStorage.setItem('intractmd_lang',l);
-  var en=document.getElementById('lang-en-c');
-  var es=document.getElementById('lang-es-c');
-  if(en)en.className='lang-btn'+(l==='en'?' active':'');
-  if(es)es.className='lang-btn'+(l==='es'?' active':'');
-  var di=document.getElementById('drugInput');
-  if(di)di.placeholder=(l==='es'?'Escriba un medicamento (ej. Warfarina)...':'Type a drug name (e.g. Warfarin)...');
-  var ol=document.getElementById('outreachLanguage');
-  if(ol)ol.value=l;
-  window._uiLang=l;
-}
-window._uiLang=uiLang;
-document.addEventListener('DOMContentLoaded',function(){setLangC(uiLang);});
-</script>
+
 </body>
 </html>`;
   const win = window.open('', '_blank');
@@ -1508,19 +1491,102 @@ document.addEventListener('DOMContentLoaded',function(){setLangC(uiLang);});
 }
 
 </script>
+
 <script>
 var uiLang=localStorage.getItem('intractmd_lang')||'en';
+var TR_C={
+  hdr_sub:      {en:'Institutional Patient Outreach Generator \u2014 Resolve Medical, LLC',es:'Generador Institucional de Comunicaci\u00f3n con el Paciente \u2014 Resolve Medical, LLC'},
+  nav_proactive:{en:'Proactive',es:'Proactivo'},
+  nav_clinical: {en:'Clinical',es:'Cl\u00ednico'},
+  nav_depresc:  {en:'Deprescribing',es:'Desprescripci\u00f3n'},
+  step1:        {en:'Step 1 \u2014 Patient Information',es:'Paso 1 \u2014 Informaci\u00f3n del Paciente'},
+  step2:        {en:'Step 2 \u2014 Enter Medications',es:'Paso 2 \u2014 Ingrese Medicamentos'},
+  step3:        {en:'Step 3 \u2014 Run DDI Analysis',es:'Paso 3 \u2014 Ejecutar An\u00e1lisis DDI'},
+  step4:        {en:'Step 4 \u2014 Supplement Screening',es:'Paso 4 \u2014 Evaluaci\u00f3n de Suplementos'},
+  step5:        {en:'Step 5 \u2014 Generate Outreach',es:'Paso 5 \u2014 Generar Comunicaci\u00f3n'},
+  step6:        {en:'Step 6 \u2014 Clinical Briefing',es:'Paso 6 \u2014 Informe Cl\u00ednico'},
+  drug_ph:      {en:'Type a drug name (e.g. Warfarin)...',es:'Escriba un medicamento (ej. Warfarina)...'},
+  add_btn:      {en:'Add',es:'Agregar'},
+  analyze_btn:  {en:'Run Full Analysis',es:'Ejecutar An\u00e1lisis Completo'},
+  gen_outreach: {en:'Generate Outreach',es:'Generar Comunicaci\u00f3n'},
+  view_brief:   {en:'View Clinical Briefing',es:'Ver Informe Cl\u00ednico'},
+  download_pdf: {en:'Download PDF',es:'Descargar PDF'},
+  outreach_lang:{en:'Outreach Language',es:'Idioma de Comunicaci\u00f3n'},
+  pat_first:    {en:'Patient First Name',es:'Nombre del Paciente'},
+  pat_last:     {en:'Patient Last Name',es:'Apellido del Paciente'},
+  pat_dob:      {en:'Date of Birth',es:'Fecha de Nacimiento'},
+  case_mgr:     {en:'Case Manager / Pharmacist',es:'Gestor de Casos / Farmac\u00e9utico'},
+  disclaimer:   {en:'Clinical decision support only. Not medical advice.',es:'Solo para soporte de decisi\u00f3n cl\u00ednica. No es consejo m\u00e9dico.'},
+  badge_pilot:  {en:'Clinical MTM',es:'MTM Cl\u00ednico'},
+  no_meds:      {en:'No medications added yet.',es:'A\u00fan no se han agregado medicamentos.'},
+  email_tab:    {en:'Email',es:'Correo Electr\u00f3nico'},
+  sms_tab:      {en:'SMS',es:'SMS'},
+  call_tab:     {en:'Call Script',es:'Guion de Llamada'},
+  findings_sev: {en:'Findings by Severity',es:'Hallazgos por Severidad'},
+  sev_col:      {en:'Severity',es:'Severidad'},
+  interact_col: {en:'Interaction',es:'Interacci\u00f3n'},
+  type_col:     {en:'Type',es:'Tipo'},
+  mech_col:     {en:'Mechanism',es:'Mecanismo'},
+  action_col:   {en:'Action',es:'Acci\u00f3n'},
+  sev_critical: {en:'Critical',es:'Cr\u00edtico'},
+  sev_high:     {en:'High',es:'Alto'},
+  sev_moderate: {en:'Moderate',es:'Moderado'},
+  sev_low:      {en:'Low',es:'Bajo'},
+  sev_minimal:  {en:'Minimal',es:'M\u00ednimo'},
+};
+function tc(k){var e=TR_C[k];return e?(e[uiLang]||e.en||k):k;}
 function setLangC(l){
-  uiLang=l;
-  localStorage.setItem('intractmd_lang',l);
-  var en=document.getElementById('lang-en-c');
-  var es=document.getElementById('lang-es-c');
+  uiLang=l;localStorage.setItem('intractmd_lang',l);window._uiLang=l;
+  var en=document.getElementById('lang-en-c');var es=document.getElementById('lang-es-c');
   if(en)en.className='lang-btn'+(l==='en'?' active':'');
   if(es)es.className='lang-btn'+(l==='es'?' active':'');
-  var di=document.getElementById('drugInput');
-  if(di)di.placeholder=(l==='es'?'Escriba un medicamento (ej. Warfarina)...':'Type a drug name (e.g. Warfarin)...');
-  var ol=document.getElementById('outreachLanguage');
-  if(ol)ol.value=l;
+  // Drug input placeholder
+  var di=document.getElementById('drugInput');if(di)di.placeholder=tc('drug_ph');
+  // Sync outreach language dropdown
+  var ol=document.getElementById('outreachLanguage');if(ol)ol.value=l;
+  // Translate elements by ID
+  var ids={
+    'hdr-sub-txt':'hdr_sub',
+    'nav-proactive':'nav_proactive',
+    'nav-clinical':'nav_clinical',
+    'nav-deprescribing':'nav_depresc',
+  };
+  Object.keys(ids).forEach(function(id){
+    var el=document.getElementById(id);if(el)el.textContent=tc(ids[id]);
+  });
+  // Translate step card titles
+  document.querySelectorAll('.card-title').forEach(function(el){
+    var txt=el.textContent.trim();
+    var map={
+      'Step 1 \u2014 Patient Information':'step1','Paso 1 \u2014 Informaci\u00f3n del Paciente':'step1',
+      'Step 2 \u2014 Enter Medications':'step2','Paso 2 \u2014 Ingrese Medicamentos':'step2',
+      'Step 3 \u2014 Run DDI Analysis':'step3','Paso 3 \u2014 Ejecutar An\u00e1lisis DDI':'step3',
+      'Step 4 \u2014 Supplement Screening':'step4','Paso 4 \u2014 Evaluaci\u00f3n de Suplementos':'step4',
+      'Step 5 \u2014 Generate Outreach':'step5','Paso 5 \u2014 Generar Comunicaci\u00f3n':'step5',
+      'Step 6 \u2014 Clinical Briefing':'step6','Paso 6 \u2014 Informe Cl\u00ednico':'step6',
+    };
+    // Get icon if present
+    var icon=el.querySelector('i');
+    var key=Object.keys(map).find(function(k){return txt.indexOf(k.replace(/\u2014.*/,'').trim())>=0;});
+    if(key&&map[key]){
+      var iconHtml=icon?icon.outerHTML+' ':'';
+      el.innerHTML=iconHtml+tc(map[key]);
+    }
+  });
+  // Analyze button
+  var ab=document.querySelector('.btn-analyze');
+  if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+tc('analyze_btn');
+  // Severity badges in results
+  document.querySelectorAll('.badge').forEach(function(el){
+    var map={
+      'Critical':'sev_critical','Cr\u00edtico':'sev_critical',
+      'High':'sev_high','Alto':'sev_high',
+      'Moderate':'sev_moderate','Moderado':'sev_moderate',
+      'Low':'sev_low','Bajo':'sev_low',
+      'Minimal':'sev_minimal','M\u00ednimo':'sev_minimal',
+    };
+    var key=map[el.textContent.trim()];if(key)el.textContent=tc(key);
+  });
   window._uiLang=l;
 }
 window._uiLang=uiLang;
