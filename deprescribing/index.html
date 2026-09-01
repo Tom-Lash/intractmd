@@ -736,7 +736,7 @@ function renderResults(data){
         + '</tr>';
     });
     html += '</tbody></table>';
-    html += '<button class="btn-download" onclick="downloadSummary()"><i class="ti ti-file-download"></i> Download Summary (PDF)</button>';
+    html += '<button class="btn-download" onclick="downloadSummary()"><i class="ti ti-file-download"></i> '+(uiLang==='es'?'Descargar Resumen (PDF)':'Download Summary (PDF)')+'</button>';
     html += '<button class="btn-view-report" onclick="viewReport()"><i class="ti ti-eye"></i> View Summary Report</button>';
     html += '</div>';
   }
@@ -817,7 +817,7 @@ function renderResults(data){
       }
       if (c.evidence && c.evidence.length) {
         html += '<div class="evidence-box"><div class="evidence-title">'
-              + '<i class="ti ti-certificate"></i> Published Criteria</div>';
+              + '<i class="ti ti-certificate"></i> '+(uiLang==='es'?'Criterios Publicados':'Published Criteria')+'</div>';
         c.evidence.forEach(function(ev){
           html += '<div class="evidence-item">' + esc(ev) + '</div>';
         });
@@ -994,7 +994,7 @@ function buildReport(data, drugs){
   html += '</tbody></table>';
 
   // Candidate detail cards
-  html += '<div class="report-section-title"><i class="ti ti-clipboard-check" style="color:var(--cyan)"></i> Detailed Findings by Medication</div>';
+  html += '<div class="report-section-title"><i class="ti ti-clipboard-check" style="color:var(--cyan)"></i> '+(uiLang==='es'?'Hallazgos Detallados por Medicamento':'Detailed Findings by Medication')+'</div>';
   candidates.forEach(function(c, i){
     const bg = tierColors[c.tier] || '#EBF5FC';
     const fg = tierFg[c.tier] || '#1B6EC2';
@@ -1012,7 +1012,7 @@ function buildReport(data, drugs){
       html += '<div class="report-rationale">' + esc(c.rationale) + '</div>';
     }
     if (c.evidence && c.evidence.length) {
-      html += '<div class="report-evidence"><div class="report-evidence-title"><i class="ti ti-certificate"></i> Published Criteria</div>';
+      html += '<div class="report-evidence"><div class="report-evidence-title"><i class="ti ti-certificate"></i> '+(uiLang==='es'?'Criterios Publicados':'Published Criteria')+'</div>';
       c.evidence.forEach(function(ev){
         html += '<div class="report-evidence-item">' + esc(ev) + '</div>';
       });
