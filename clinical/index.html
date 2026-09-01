@@ -1343,15 +1343,15 @@ function buildClinicalReport(result, payload){
   const tierColors = {CONFIRMED:'#1A7A4A',COMPUTED:'#1B6EC2',PREDICTIVE:'#7C3AED'};
   const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
   const scoreLabel = cprs >= 70 ? LC.high_risk : cprs >= 40 ? LC.mod_risk : LC.low_risk;
-  const tierUsed = result.confidence_summary&&result.confidence_summary.highest_tier_used||'PREDICTIVE';
+  const tierUsed = result.confidence_summary&&result.confidence_summary.highest_tier_used||uiLang==='es'?'PREDICTIVO':'PREDICTIVE';
 
   let html = '';
 
   // ── PAGE 1: HEADER + CONDENSED SUMMARY ──────────────────────────────────
   html += '<div class="er-header">';
-  html += '<div class="er-header-title">IntractMD™ Clinical MTM Executive Summary</div>';
+  html += '<div class="er-header-title">'+(uiLang==='es'?'IntractMD™ Resumen Ejecutivo MTM Clínico':'IntractMD™ Clinical MTM Executive Summary')+'</div>';
   html += '<div class="er-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
-  html += '<div class="er-header-date">'+LC.generated+' ' + dateStr + ' · '+(uiLang==='es'?'Solo para revisión clínica':'For pharmacist and prescriber review only')+'</div>';
+  html += '<div class="er-header-date">'+LC.generated+' ' + dateStr + ' · '+LC.for_review+'</div>';
   html += '</div>';
 
   // Condensed summary box — all key info in one compact block
@@ -1359,10 +1359,10 @@ function buildClinicalReport(result, payload){
 
   // Patient row
   html += '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e6ea">';
-  html += '<div><div class="er-info-label">Patient</div><div class="er-info-value">' + (ctx.firstName||'Member') + '</div></div>';
-  html += '<div><div class="er-info-label">Health Plan</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
-  html += '<div><div class="er-info-label">Case Manager</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
-  html += '<div><div class="er-info-label">Confidence Tier</div><div class="er-info-value" style="color:' + (tierColors[tierUsed]||'#7C3AED') + '">' + tierUsed + '</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Paciente':'Patient')+'</div><div class="er-info-value">' + (ctx.firstName||uiLang==='es'?'Miembro':'Member') + '</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Plan de Salud':'Health Plan')+'</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Gestor de Casos':'Case Manager')+'</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Nivel de Confianza':'Confidence Tier')+'</div><div class="er-info-value" style="color:' + (tierColors[tierUsed]||'#7C3AED') + '">' +(uiLang==='es'?(tierUsed==='CONFIRMED'?'CONFIRMADO':tierUsed==='COMPUTED'?'CALCULADO':tierUsed==='PREDICTIVE'?'PREDICTIVO':tierUsed):tierUsed)+'</div></div>';
   html += '</div>';
 
   // CPRS + drug count + interaction count in one row
@@ -1372,9 +1372,9 @@ function buildClinicalReport(result, payload){
   html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">CPRS / 100</div>';
   html += '<div style="font-size:11px;font-weight:700;color:' + scoreColor + '">' + scoreLabel + '</div>';
   html += '</div>';
-  html += '<div><div class="er-info-label">Medications</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">reviewed</div></div>';
-  html += '<div><div class="er-info-label">DDI Findings</div><div style="font-size:20px;font-weight:700;color:' + (interactions.length>0?'#A32D2D':'#2E7D4F') + '">' + interactions.length + '</div><div style="font-size:11px;color:#888">flagged</div></div>';
-  html += '<div><div class="er-info-label">Supp/Food Warnings</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">identified</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Medicamentos':'Medications')+'</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">reviewed</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Hallazgos DDI':'DDI Findings')+'</div><div style="font-size:20px;font-weight:700;color:' + (interactions.length>0?'#A32D2D':'#2E7D4F') + '">' + interactions.length + '</div><div style="font-size:11px;color:#888">flagged</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Advertencias Supl/Alimentos':'Supp/Food Warnings')+'</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">identified</div></div>';
   html += '</div>';
 
   // Drug tags
@@ -1386,7 +1386,7 @@ function buildClinicalReport(result, payload){
   // Risk factors if any
   if(factors.length){
     html += '<div style="margin-top:12px;padding-top:12px;border-top:1px solid #e2e6ea">';
-    html += '<div class="er-info-label" style="margin-bottom:6px">Risk Factors</div>';
+    html += '<div class="er-info-label" style="margin-bottom:6px">'+(uiLang==='es'?'Factores de Riesgo':'Risk Factors')+'</div>';
     html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
     factors.forEach(function(f){
       html += '<span style="background:#EBF5FC;border:1px solid #C0DFF5;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;color:#1B6EC2">' + (f.label||f) + '</span>';
@@ -1399,7 +1399,7 @@ function buildClinicalReport(result, payload){
   // DDI findings
   if(interactions.length){
     html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> '+LC.ddi_sec+' (' + interactions.length + ' '+(uiLang==='es'?'marcados':'flagged')+')' + '</div>';
+    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> '+LC.ddi_sec+' (' + interactions.length + ' '+(uiLang==='es'?'marcados':uiLang==='es'?'marcados':'flagged')+')' + '</div>';
     html += '<table class="er-table"><thead><tr><th>'+LC.col_sev+'</th><th>'+LC.col_inter+'</th><th>'+LC.col_mech+'</th><th>'+LC.col_action+'</th></tr></thead><tbody>';
     interactions.forEach(function(i){
       const sc = sevColor[i.severity]||'#555';
