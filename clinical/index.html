@@ -1372,9 +1372,9 @@ function buildClinicalReport(result, payload){
   html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">CPRS / 100</div>';
   html += '<div style="font-size:11px;font-weight:700;color:' + scoreColor + '">' + scoreLabel + '</div>';
   html += '</div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Medicamentos':'Medications')+'</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">reviewed</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Medicamentos':'Medications')+'</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">'+(uiLang==='es'?'revisados':'reviewed')+'</div></div>';
   html += '<div><div class="er-info-label">'+(uiLang==='es'?'Hallazgos DDI':'DDI Findings')+'</div><div style="font-size:20px;font-weight:700;color:' + (interactions.length>0?'#A32D2D':'#2E7D4F') + '">' + interactions.length + '</div><div style="font-size:11px;color:#888">flagged</div></div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Advertencias Supl/Alimentos':'Supp/Food Warnings')+'</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">identified</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Advertencias Supl/Alimentos':'Supp/Food Warnings')+'</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">'+(uiLang==='es'?'identificadas':'identified')+'</div></div>';
   html += '</div>';
 
   // Drug tags
