@@ -63,6 +63,8 @@ input::placeholder{color:#6b6b66}
 .tag-rm{background:none;border:none;cursor:pointer;color:var(--tx2);font-size:16px;line-height:1;padding:0}
 .quick-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .btn-q{font-size:12px;padding:5px 10px;background:var(--bg);border:0.5px solid var(--br2);border-radius:6px;cursor:pointer;color:var(--tx)}
+.btn-q.on{background:var(--teal-md);color:#fff;border-color:var(--teal-md);}
+.btn-q.on{background:var(--teal-md);color:#fff;border-color:var(--teal-md);}
 .btn-p{padding:9px 20px;background:linear-gradient(135deg,#00B4D8,#1B6EC2);color:#fff;border:none;border-radius:var(--r);font-size:13px;font-weight:500;cursor:pointer}
 .btn-p:hover{background:linear-gradient(135deg,#00A3C4,#0D4F9E)}
 .btn-p:disabled{opacity:.4;cursor:not-allowed}
@@ -1017,12 +1019,14 @@ function addDrugByName(name,generic){
   drugs.push({display:name,generic:g});
   renderTags();
 }
+function syncBtnQ(){function syncBtnQ(){var qr=document.getElementById("quickRow");if(!qr)return;Array.prototype.forEach.call(qr.querySelectorAll(".btn-q"),function(b){var n=b.textContent.split(" (")[0].toLowerCase();b.classList.toggle("on",drugs.some(function(d){return(typeof d==="string"?d:(d.display||d.generic||d)).toLowerCase()===n;}));});}
+var qr=document.getElementById("quickRow");if(!qr)return;Array.prototype.forEach.call(qr.querySelectorAll(".btn-q"),function(b){var n=b.textContent.split(" (")[0].toLowerCase();b.classList.toggle("on",drugs.some(function(d){return(typeof d==="string"?d:(d.display||d.generic||d)).toLowerCase()===n;}));});}
 var qr=document.getElementById("quickRow");
 TOP20_DRUGS.forEach(function(item){
   var btn=document.createElement("button");
   btn.className="btn-q";
   btn.textContent=item.name+' ('+item.brand+')';
-  btn.addEventListener("click",function(){addDrugByName(item.name,item.name.toLowerCase());});
+  btn.addEventListener("click",function(){addDrugByName(item.name,item.name.toLowerCase());syncBtnQ();});
   qr.appendChild(btn);
 });
 
@@ -1042,7 +1046,7 @@ function updateStatus(){
     setSt(parts.join(", ")+" — ready to analyze.");
   }
 }
-function renderTags(){
+function renderTags(){if(typeof syncBtnQ==="function")syncBtnQ();if(typeof syncBtnQ==="function")syncBtnQ();
   tagsEl.innerHTML="";
   drugs.forEach(function(d,i){
     var span=document.createElement("span");
