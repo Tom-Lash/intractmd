@@ -260,8 +260,8 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-hei
 
   <div class="intro" style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
     <div style="flex:1">
-      <h1><i class="ti ti-trending-down" style="margin-right:6px"></i>AI-Powered Deprescribing Risk Analysis</h1>
-      <p>Enter a patient's medication list below. IntractMD will calculate the current Composite Polypharmacy Risk Score across all eight clinical dimensions, then simulate removing each medication to identify which removals would produce the greatest risk reduction — ranked by impact.</p>
+      <h1 id="intro-h1-d"><i class="ti ti-trending-down" style="margin-right:6px"></i>AI-Powered Deprescribing Risk Analysis</h1>
+      <p id="intro-p-d">Enter a patient's medication list below. IntractMD will calculate the current Composite Polypharmacy Risk Score across all eight clinical dimensions, then simulate removing each medication to identify which removals would produce the greatest risk reduction — ranked by impact.</p>
       <div class="intro-tags">
         <span class="intro-tag"><i class="ti ti-flask"></i> Risk-Delta Simulation</span>
         <span class="intro-tag"><i class="ti ti-shield-check"></i> 8-Dimensional CPRS</span>
@@ -1184,16 +1184,21 @@ function setLangD(l){
   var ab=document.querySelector('.btn-analyze');
   if(ab&&!abt)ab.innerHTML='<i class="ti ti-brain"></i> '+td('analyze_btn');
   // Static text IDs
+  // Translate nav tabs directly
+  var navMap={'nav-p-d':{en:'Proactive',es:'Proactivo'},'nav-c-d':{en:'Clinical',es:'Clínico'},'nav-d-d':{en:'Deprescribing',es:'Desprescripción'}};
+  Object.keys(navMap).forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=navMap[id][l]||navMap[id].en;});
   var ids={
     'hdr-badge-d': 'intro_title',
     'intro-title-d':'intro_title',
     'qp-label-d':'qp_label',
     'candidates-hdr-d':'candidates_hdr',
-    'nav-p-d':    {en:'Proactive',es:'Proactivo'},
-    'nav-c-d':    {en:'Clinical',es:'Clínico'},
-    'nav-d-d':    {en:'Deprescribing',es:'Desprescripción'},
   };
   // Translate header-sub
+  // Translate intro box
+  var ih1=document.getElementById('intro-h1-d');
+  if(ih1){var icon=ih1.querySelector('i');ih1.innerHTML=(icon?icon.outerHTML+' ':'')+td('intro_title');}
+  var ipEl=document.getElementById('intro-p-d');
+  if(ipEl)ipEl.textContent=l==='es'?'Ingrese la lista de medicamentos del paciente. IntractMD calculará el Puntaje de Riesgo de Polifarmacia actual en las ocho dimensiones clínicas, luego simulará la eliminación de cada medicamento para identificar cuáles reducirían el riesgo más significativamente, clasificados por impacto.':"Enter a patient's medication list below. IntractMD will calculate the current Composite Polypharmacy Risk Score across all eight clinical dimensions, then simulate the removal of each medication to identify which removals would produce the greatest risk reduction, ranked by impact.";
   var hsdEl=document.getElementById('hdr-sub-d');
   if(hsdEl)hsdEl.textContent=l==='es'?'por Resolve Medical, LLC · Vista Piloto':'by Resolve Medical, LLC · Pilot Preview';
   Object.keys(ids).forEach(function(id){
