@@ -320,19 +320,19 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
         <p style="margin-top:12px;font-size:12px;color:var(--tx3)">This tool provides educational information only and is not a substitute for professional medical advice. Always consult your healthcare provider before making changes to your medications or supplements.</p>
       </div>
     </div>
-    <div class="sec-hdr" id="ddSection" style="display:none"><i class="ti ti-pills"></i> Drug-drug interactions</div><div class="warn-list" id="ddList"></div><div class="sec-hdr"><i class="ti ti-leaf"></i> Supplements & foods to avoid</div>
+    <div class="sec-hdr" id="ddSection" style="display:none"><i class="ti ti-pills"></i> <span id="dd-hdr-txt">Drug-drug interactions</span></div><div class="warn-list" id="ddList"></div><div class="sec-hdr" id="supp-hdr"><i class="ti ti-leaf"></i> <span id="supp-hdr-txt">Supplements &amp; foods to avoid</span></div>
     <div class="warn-list" id="warnList"></div>
 
-    <div class="sec-hdr"><i class="ti ti-chart-bar"></i> Risk by dimension</div>
+    <div class="sec-hdr" id="risk-hdr"><i class="ti ti-chart-bar"></i> <span id="risk-hdr-txt">Risk by dimension</span></div>
     <div class="dim-grid" id="dimGrid"></div>
 
-    <div class="explain-panel"><button class="explain-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span><i class="ti ti-info-circle" style="margin-right:6px;color:var(--amber)"></i>What do these dimensions mean?</span><i class="ti ti-chevron-down"></i></button><div class="explain-body"><div class="explain-tier"><div class="explain-tier-dot" style="background:#C0392B"></div><div><strong>Bleeding Risk</strong> - Anticoagulant and antiplatelet burden from warfarin, aspirin, NSAIDs, SSRIs, fish oil, vitamin E.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#D35400"></div><div><strong>Cardiac Risk</strong> - QT prolongation risk from antiarrhythmics, antidepressants, antibiotics, bitter orange.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#6A4C93"></div><div><strong>Serotonin Risk</strong> - Combined serotonergic burden from SSRIs, MAOIs, tramadol, St. Johns Wort, 5-HTP.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#D4860A"></div><div><strong>NTI Conflict</strong> - Interactions involving narrow therapeutic index drugs: warfarin, digoxin, lithium, levothyroxine.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#2E86AB"></div><div><strong>CNS Risk</strong> - Additive sedation from opioids, benzodiazepines, antihistamines, alcohol, valerian, kava.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#2E6B4A"></div><div><strong>CYP450 Risk</strong> - Enzyme-mediated metabolism interactions. Grapefruit juice and St. Johns Wort are common triggers.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#7B8C3E"></div><div><strong>Renal/Hepatic</strong> - Cumulative kidney and liver stress from NSAIDs, kava, comfrey, high-dose acetaminophen.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#6B5B45"></div><div><strong>Pharmacodynamic</strong> - Additive blood pressure, blood sugar, and absorption effects not covered above.</div></div></div></div><div class="sec-hdr"><i class="ti ti-robot"></i> AI clinical summary</div>
+    <div class="explain-panel"><button class="explain-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span><i class="ti ti-info-circle" style="margin-right:6px;color:var(--amber)"></i><span id="dim-mean-txt">What do these dimensions mean?</span></span><i class="ti ti-chevron-down"></i></button><div class="explain-body"><div class="explain-tier"><div class="explain-tier-dot" style="background:#C0392B"></div><div><strong>Bleeding Risk</strong> - Anticoagulant and antiplatelet burden from warfarin, aspirin, NSAIDs, SSRIs, fish oil, vitamin E.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#D35400"></div><div><strong>Cardiac Risk</strong> - QT prolongation risk from antiarrhythmics, antidepressants, antibiotics, bitter orange.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#6A4C93"></div><div><strong>Serotonin Risk</strong> - Combined serotonergic burden from SSRIs, MAOIs, tramadol, St. Johns Wort, 5-HTP.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#D4860A"></div><div><strong>NTI Conflict</strong> - Interactions involving narrow therapeutic index drugs: warfarin, digoxin, lithium, levothyroxine.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#2E86AB"></div><div><strong>CNS Risk</strong> - Additive sedation from opioids, benzodiazepines, antihistamines, alcohol, valerian, kava.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#2E6B4A"></div><div><strong>CYP450 Risk</strong> - Enzyme-mediated metabolism interactions. Grapefruit juice and St. Johns Wort are common triggers.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#7B8C3E"></div><div><strong>Renal/Hepatic</strong> - Cumulative kidney and liver stress from NSAIDs, kava, comfrey, high-dose acetaminophen.</div></div><div class="explain-tier"><div class="explain-tier-dot" style="background:#6B5B45"></div><div><strong>Pharmacodynamic</strong> - Additive blood pressure, blood sugar, and absorption effects not covered above.</div></div></div></div><div class="sec-hdr" id="ai-hdr"><i class="ti ti-robot"></i> <span id="ai-hdr-txt">AI clinical summary</span></div>
     <div class="ai-box">
       <div class="ai-box-lbl"><i class="ti ti-sparkles"></i> IntractMD AI — Powered by Claude (Anthropic)</div>
       <div class="ai-box-text" id="aiText"></div>
     </div>
 
-    <div class="sec-hdr"><i class="ti ti-ban"></i> Consolidated avoidance list</div>
+    <div class="sec-hdr" id="avoid-hdr"><i class="ti ti-ban"></i> <span id="avoid-hdr-txt">Consolidated avoidance list</span></div>
     <div class="avoid-list" id="avoidList"></div>
 
     <div class="app-footer">
@@ -755,7 +755,7 @@ function buildProactiveReport(r, drugList){
     action_col:   uiLang==='es'?'Acción':'Action',
     supp_avoid:   uiLang==='es'?'Suplementos a Evitar':'Supplements to Avoid',
     foods_avoid:  uiLang==='es'?'Alimentos a Evitar o Limitar':'Foods to Avoid or Limit',
-    supp_avoid_sub: uiLang==='es'?'Suplemento — evitar con sus medicamentos':'Supplement — avoid while on your current medications',
+    supp_avoid_sub: uiLang==='es'?'Suplemento — evitar con sus medicamentos':(uiLang==='es'?'Suplemento — evitar mientras toma sus medicamentos actuales':'Supplement — avoid while on your current medications'),
     food_avoid_sub: uiLang==='es'?'Alimento — limitar o evitar con sus medicamentos':'Food/dietary substance — limit or avoid with your medications',
   };
   const now = new Date();
@@ -972,6 +972,28 @@ function setLangP(l){
  if(smEl)smEl.textContent=l==='es'?'¿Qué significa esta puntuación?':'What does this score mean?';
  var seEl=document.getElementById('score-explain');
  if(seEl)seEl.innerHTML=l==='es'?'La <strong>Puntuación de Riesgo Proactivo (0–100)</strong> mide cuántas interacciones clínicamente significativas entre medicamentos, suplementos y alimentos existen para su régimen específico. Una puntuación más alta indica más interacciones que requieren atención.':'The <strong>Proactive Risk Score (0–10)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.';
+ // Translate static section headers
+ var ids = {
+  'dd-hdr-txt':    {en:'Drug-drug interactions',es:'Interacciones entre medicamentos'},
+  'supp-hdr-txt':  {en:'Supplements & foods to avoid',es:'Suplementos y alimentos a evitar'},
+  'risk-hdr-txt':  {en:'Risk by dimension',es:'Riesgo por dimensi\u00f3n'},
+  'dim-mean-txt':  {en:'What do these dimensions mean?',es:'\u00bfQu\u00e9 significan estas dimensiones?'},
+  'ai-hdr-txt':    {en:'AI clinical summary',es:'Resumen cl\u00ednico de IA'},
+  'avoid-hdr-txt': {en:'Consolidated avoidance list',es:'Lista consolidada de evitaci\u00f3n'},
+ };
+ Object.keys(ids).forEach(function(id){
+  var el=document.getElementById(id);
+  if(el)el.textContent=ids[id][l]||ids[id].en;
+ });
+ // Re-translate any dynamically generated supplement subtitles
+ document.querySelectorAll('.avoid-reason').forEach(function(el){
+  if(el.textContent.indexOf('Supplement')===0||el.textContent.indexOf('Suplemento')===0){
+   el.textContent=l==='es'?'Suplemento \u2014 evitar mientras toma sus medicamentos actuales':'Supplement \u2014 avoid while on your current medications';
+  }
+  if(el.textContent.indexOf('Food')===0||el.textContent.indexOf('Alimento')===0){
+   el.textContent=l==='es'?'Alimento \u2014 limitar o evitar con sus medicamentos':'Food/dietary substance \u2014 limit or avoid with your medications';
+  }
+ });
  updateProactiveResults();
 }
 function updateProactiveResults(){
