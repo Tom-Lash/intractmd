@@ -1019,8 +1019,7 @@ function addDrugByName(name,generic){
   drugs.push({display:name,generic:g});
   renderTags();
 }
-function syncBtnQ(){function syncBtnQ(){var qr=document.getElementById("quickRow");if(!qr)return;Array.prototype.forEach.call(qr.querySelectorAll(".btn-q"),function(b){var n=b.textContent.split(" (")[0].toLowerCase();b.classList.toggle("on",drugs.some(function(d){return(typeof d==="string"?d:(d.display||d.generic||d)).toLowerCase()===n;}));});}
-var qr=document.getElementById("quickRow");if(!qr)return;Array.prototype.forEach.call(qr.querySelectorAll(".btn-q"),function(b){var n=b.textContent.split(" (")[0].toLowerCase();b.classList.toggle("on",drugs.some(function(d){return(typeof d==="string"?d:(d.display||d.generic||d)).toLowerCase()===n;}));});}
+function syncBtnQ(){var qr=document.getElementById("quickRow");if(!qr)return;Array.prototype.forEach.call(qr.querySelectorAll(".btn-q"),function(b){var n=b.textContent.split(" (")[0].toLowerCase();b.classList.toggle("on",drugs.some(function(d){return(typeof d==="string"?d:(d.display||d.generic||d)).toLowerCase()===n;}));});}
 var qr=document.getElementById("quickRow");
 TOP20_DRUGS.forEach(function(item){
   var btn=document.createElement("button");
@@ -1046,7 +1045,7 @@ function updateStatus(){
     setSt(parts.join(", ")+" — ready to analyze.");
   }
 }
-function renderTags(){if(typeof syncBtnQ==="function")syncBtnQ();if(typeof syncBtnQ==="function")syncBtnQ();
+function renderTags(){if(typeof syncBtnQ==="function")syncBtnQ();
   tagsEl.innerHTML="";
   drugs.forEach(function(d,i){
     var span=document.createElement("span");
