@@ -710,7 +710,7 @@ function renderResults(data){
     narrative += 'All findings require pharmacist and prescriber review before any medication change.';
 
     html += '<div class="summary-card">';
-    html += '<h3><i class="ti ti-report-analytics"></i> Deprescribing Analysis Summary</h3>';
+    html += '<h3><i class="ti ti-report-analytics"></i> '+RL.analysis_summ+'</h3>';
     html += '<div style="font-size:12.5px;color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:14px">' + narrative + '</div>';
 
     // Summary table
@@ -744,7 +744,7 @@ function renderResults(data){
   // ── Candidates ─────────────────────────────────────────────────────────────
   html += '<div class="card-title" style="padding:0 0 6px;font-size:15px;font-weight:700;color:var(--navy)">'
         + '<i class="ti ti-clipboard-check" style="color:var(--cyan)"></i> '
-        + 'Medications Flagged in Published Deprescribing Criteria</div>';
+        + RL.meds_flagged+'</div>';
 
   html += '<div style="font-size:12px;color:var(--tx2);line-height:1.55;margin:0 0 6px">'
         + 'Each medication below appears in published criteria used to review prescribing in older adults. '
@@ -760,7 +760,7 @@ function renderResults(data){
 
   // Interpretive guide shown above candidate list
   html += '<div style="background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:10px 14px;margin:0 0 14px;font-size:12.5px;color:var(--tx2);line-height:1.65">'
-        + '<strong style="color:var(--navy)">How to read these results:</strong> '
+        + '<strong style="color:var(--navy)">'+RL.how_to_read+'</strong> '
         + 'Each medication is ranked by the strength of its published deprescribing evidence — shown in the <strong>colored badge</strong> (AVOID, CAUTION, or MEASURE). '
         + 'The <strong>gray badge</strong> shows the estimated CPRS point reduction if that medication were removed from the regimen. '
         + 'A larger drop indicates greater impact on overall polypharmacy risk. '
@@ -824,7 +824,7 @@ function renderResults(data){
         html += '</div>';
       }
       html += '<div style="margin-top:10px;font-size:11px;color:var(--tx3);font-style:italic">'
-            + '⚠ For pharmacist and prescriber review only. Do not discontinue any medication '
+            + '⚠ '+RL.for_review+' '+RL.no_change+' '
             + 'without consulting the prescribing physician.</div>';
       html += '</div></div>';
     });
@@ -917,6 +917,24 @@ function closeReport(){
   document.body.style.overflow = '';
 }
 function buildReport(data, drugs){
+  var RL={
+    meds_analyzed:   uiLang==='es'?'Medicamentos Analizados':''+RL.meds_analyzed+'',
+    analysis_summ:   uiLang==='es'?'Resumen del An\u00e1lisis de Desprescripci\u00f3n':'Deprescribing Analysis Summary',
+    meds_flagged:    uiLang==='es'?'Medicamentos Marcados en Criterios Publicados':'Medications Flagged in Published Deprescribing Criteria',
+    how_to_read:     uiLang==='es'?'C\u00f3mo leer estos resultados:':'How to read these results:',
+    col_med:         uiLang==='es'?'Medicamento':'Medication',
+    col_class:       uiLang==='es'?'Clase':'Class',
+    col_evid:        uiLang==='es'?'Nivel de Evidencia':'Evidence Tier',
+    col_cit:         uiLang==='es'?'Citas':'Citations',
+    col_cprs:        uiLang==='es'?'Impacto CPRS':'CPRS Impact',
+    for_review:      uiLang==='es'?'Solo para revisi\u00f3n de farmac\u00e9utico y prescriptor.':'For pharmacist and prescriber review only.',
+    no_change:       uiLang==='es'?'No discontinuar sin consultar al m\u00e9dico prescriptor.':'Do not discontinue without consulting the prescribing physician.',
+    all_findings:    uiLang==='es'?'Todos los hallazgos requieren revisi\u00f3n antes de cualquier cambio.':''+RL.all_findings+'',
+    generated:       uiLang==='es'?'Generado:':'Generated:',
+    print_pdf:       uiLang==='es'?'Imprimir / Guardar PDF':'Print / Save PDF',
+    return_btn:      uiLang==='es'?'Volver al An\u00e1lisis':'Return to Analysis',
+    report_title:    uiLang==='es'?'IntractMD\u2122 An\u00e1lisis de Desprescripci\u00f3n':'IntractMD\u2122 Deprescribing Intelligence Analysis',
+  };
   const baseline   = data.baseline || { cprs:0, dimensions:{} };
   const candidates = data.candidates || [];
   const now = new Date();
@@ -930,7 +948,7 @@ function buildReport(data, drugs){
   html += '<div class="report-header">';
   html += '<div class="report-header-title">IntractMD™ Deprescribing Intelligence Analysis</div>';
   html += '<div class="report-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
-  html += '<div class="report-header-date">Generated: ' + dateStr + ' · For pharmacist and prescriber review only</div>';
+  html += '<div class="report-header-date">'+RL.generated+' ' + dateStr + ' · '+RL.for_review+'</div>';
   html += '</div>';
 
   // Selected drugs
@@ -946,17 +964,17 @@ function buildReport(data, drugs){
   const avoidCount = candidates.filter(function(c){ return c.tier === 'AVOID'; }).length;
   const maxDelta = candidates.reduce(function(mx, c){ return c.cprs_delta > mx ? c.cprs_delta : mx; }, 0);
   const topCandidate = candidates[0];
-  html += '<div class="report-section-title"><i class="ti ti-report-analytics" style="color:var(--cyan)"></i> Deprescribing Analysis Summary</div>';
+  html += '<div class="report-section-title"><i class="ti ti-report-analytics" style="color:var(--cyan)"></i> '+RL.analysis_summ+'</div>';
   let narrative = 'This ' + drugs.length + '-medication regimen has a baseline Composite Polypharmacy Risk Score (CPRS) of <strong>' + baseline.cprs + '/100</strong>. ';
   narrative += candidates.length + ' medication' + (candidates.length !== 1 ? 's' : '') + ' appear in published deprescribing criteria. ';
   if (avoidCount) narrative += '<strong>' + avoidCount + ' medication' + (avoidCount > 1 ? 's are' : ' is') + ' flagged AVOID</strong> in older adults per Beers Criteria or STOPP/START v3. ';
   if (maxDelta > 0 && topCandidate) narrative += 'Removing <strong>' + esc(topCandidate.drug) + '</strong> would produce the largest estimated CPRS reduction (' + maxDelta + ' points). ';
-  narrative += 'All findings require pharmacist and prescriber review before any medication change.';
+  narrative += ''+RL.all_findings+'';
   html += '<div class="report-narrative">' + narrative + '</div>';
 
   // Summary table
   html += '<table class="report-table"><thead><tr>';
-  html += '<th>#</th><th>Medication</th><th>Class</th><th>Evidence Tier</th><th>Citations</th><th>CPRS Impact</th>';
+  html += '<th>#</th><th>'+RL.col_med+'</th><th>'+RL.col_class+'</th><th>'+RL.col_evid+'</th><th>'+RL.col_cit+'</th><th>'+RL.col_cprs+'</th>';
   html += '</tr></thead><tbody>';
   candidates.forEach(function(c, i){
     const bg = tierColors[c.tier] || '#EBF5FC';
@@ -1054,13 +1072,13 @@ function downloadSummary(){
     + '.evidence-item{color:#333!important;font-size:9pt;padding:3px 0;border-bottom:1px solid #ddd}'
     + '@media print{.print-btn{display:none!important}}</style>'
     + '</head><body>'
-    + '<button class="print-btn" onclick="window.print()" style="right:16px">&#x1F4E5; Print / Save PDF</button>'
-    + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E">&#8592; Return to Analysis</button>'
+    + '<button class="print-btn" onclick="window.print()" style="right:16px">&#x1F4E5; '+RL.print_pdf+'</button>'
+    + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E">&#8592; '+RL.return_btn+'</button>'
     + '<div style="max-width:780px;margin:0 auto;padding:32px 40px">'
     + '<div style="text-align:center;border-bottom:2px solid #0D3B6E;padding-bottom:16px;margin-bottom:20px">'
     + '<div style="font-size:20px;font-weight:700;color:#0D3B6E">IntractMD™ Deprescribing Intelligence Analysis</div>'
     + '<div style="font-size:12px;color:#555;margin-top:5px">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>'
-    + '<div style="font-size:11px;color:#888;margin-top:3px">Generated: ' + dateStr + ' · For pharmacist and prescriber review only</div>'
+    + '<div style="font-size:11px;color:#888;margin-top:3px">'+RL.generated+' ' + dateStr + ' · '+RL.for_review+'</div>'
     + '</div>'
     + '<div style="background:#f4f7fb;border:1px solid #ddd;border-radius:8px;padding:12px 16px;margin-bottom:20px">'
     + '<div style="font-size:10px;font-weight:700;color:#0D3B6E;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Medications Analyzed</div>'
@@ -1199,6 +1217,9 @@ function setLangD(l){
   if(ih1){var icon=ih1.querySelector('i');ih1.innerHTML=(icon?icon.outerHTML+' ':'')+td('intro_title');}
   var ipEl=document.getElementById('intro-p-d');
   if(ipEl)ipEl.textContent=l==='es'?'Ingrese la lista de medicamentos del paciente. IntractMD calculará el Puntaje de Riesgo de Polifarmacia actual en las ocho dimensiones clínicas, luego simulará la eliminación de cada medicamento para identificar cuáles reducirían el riesgo más significativamente, clasificados por impacto.':"Enter a patient's medication list below. IntractMD will calculate the current Composite Polypharmacy Risk Score across all eight clinical dimensions, then simulate the removal of each medication to identify which removals would produce the greatest risk reduction, ranked by impact.";
+  // Translate print header title
+  var phEl=document.querySelector('#print-header-standalone div');
+  if(phEl&&phEl.textContent.indexOf('IntractMD')>=0)phEl.textContent=l==='es'?'IntractMD™ Análisis de Desprescripción':'IntractMD™ Deprescribing Intelligence Analysis';
   var hsdEl=document.getElementById('hdr-sub-d');
   if(hsdEl)hsdEl.textContent=l==='es'?'por Resolve Medical, LLC · Vista Piloto':'by Resolve Medical, LLC · Pilot Preview';
   Object.keys(ids).forEach(function(id){
