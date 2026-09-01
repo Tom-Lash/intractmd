@@ -703,8 +703,8 @@ function renderResults(data){
     const maxDelta = candidates.reduce(function(mx, c){ return c.cprs_delta > mx ? c.cprs_delta : mx; }, 0);
     const totalDelta = candidates.reduce(function(s, c){ return s + (c.cprs_delta || 0); }, 0);
 
-    let narrative = 'This ' + data.drug_count + '-medication regimen has a baseline CPRS of <strong>' + baseline.cprs + '/100</strong>. ';
-    narrative += candidates.length + ' medication' + (candidates.length > 1 ? 's' : '') + ' appear in published deprescribing criteria. ';
+    let narrative = uiLang==='es'?'Este régimen de '+data.drug_count+' medicamentos tiene un CPRS base de <strong>'+baseline.cprs+'/100</strong>. ':'This '+data.drug_count+'-medication regimen has a baseline CPRS of <strong>'+baseline.cprs+'/100</strong>. ';
+    narrative += uiLang==='es'?candidates.length+' medicamento'+(candidates.length>1?'s':'')+' aparece'+(candidates.length>1?'n':'')+' en criterios de desprescripción publicados. ':candidates.length+' medication'+(candidates.length>1?'s':'')+' appear in published deprescribing criteria. ';
     if (avoidCount) narrative += '<strong>' + avoidCount + ' medication' + (avoidCount > 1 ? 's are' : ' is') + ' flagged AVOID</strong> in older adults per Beers or STOPP criteria. ';
     if (maxDelta > 0) narrative += 'Removing <strong>' + esc(topCandidate.drug) + '</strong> would produce the largest estimated risk reduction (' + maxDelta + ' CPRS points). ';
     narrative += uiLang==='es'?'Todos los hallazgos requieren revisión antes de cualquier cambio de medicamento.':'All findings require pharmacist and prescriber review before any medication change.';
@@ -724,7 +724,7 @@ function renderResults(data){
       const delta = typeof c.cprs_delta === 'number'
         ? (c.cprs_delta > 0
             ? '<span style="color:#6EE7B7;font-weight:600">-' + c.cprs_delta + ' pts</span> <span style="color:rgba(255,255,255,.6)">(' + c.cprs_before + '→' + c.cprs_after + ')</span>'
-            : '<span style="color:rgba(255,255,255,.5)">No change (' + c.cprs_before + '→' + c.cprs_after + ')</span>')
+            : '<span style="color:rgba(255,255,255,.5)">'+(uiLang==='es'?'Sin cambio':'No change')+' (' + c.cprs_before + '→' + c.cprs_after + ')</span>')
         : '<span style="color:rgba(255,255,255,.4)">Calculating…</span>';
       html += '<tr>'
         + '<td style="color:rgba(255,255,255,.5)">' + (i+1) + '</td>'
@@ -948,8 +948,8 @@ function buildReport(data, drugs){
   const maxDelta = candidates.reduce(function(mx, c){ return c.cprs_delta > mx ? c.cprs_delta : mx; }, 0);
   const topCandidate = candidates[0];
   html += '<div class="report-section-title"><i class="ti ti-report-analytics" style="color:var(--cyan)"></i> '+RL.analysis_summ+'</div>';
-  let narrative = 'This ' + drugs.length + '-medication regimen has a baseline Composite Polypharmacy Risk Score (CPRS) of <strong>' + baseline.cprs + '/100</strong>. ';
-  narrative += candidates.length + ' medication' + (candidates.length !== 1 ? 's' : '') + ' appear in published deprescribing criteria. ';
+  let narrative = uiLang==='es'?'Este régimen de '+drugs.length+' medicamentos tiene un CPRS base de <strong>'+baseline.cprs+'/100</strong>. ':'This '+drugs.length+'-medication regimen has a baseline Composite Polypharmacy Risk Score (CPRS) of <strong>'+baseline.cprs+'/100</strong>. ';
+  narrative += uiLang==='es'?candidates.length+' medicamento'+(candidates.length!==1?'s':'')+' aparece'+(candidates.length!==1?'n':'')+' en criterios publicados. ':candidates.length+' medication'+(candidates.length!==1?'s':'')+' appear in published deprescribing criteria. ';
   if (avoidCount) narrative += '<strong>' + avoidCount + ' medication' + (avoidCount > 1 ? 's are' : ' is') + ' flagged AVOID</strong> in older adults per Beers Criteria or STOPP/START v3. ';
   if (maxDelta > 0 && topCandidate) narrative += 'Removing <strong>' + esc(topCandidate.drug) + '</strong> would produce the largest estimated CPRS reduction (' + maxDelta + ' points). ';
   narrative += ''+RL.all_findings+'';
@@ -963,7 +963,7 @@ function buildReport(data, drugs){
     const bg = tierColors[c.tier] || '#EBF5FC';
     const fg = tierFg[c.tier] || '#1B6EC2';
     const delta = typeof c.cprs_delta === 'number'
-      ? (c.cprs_delta > 0 ? '-' + c.cprs_delta + ' pts (' + c.cprs_before + '→' + c.cprs_after + ')' : 'No change')
+      ? (c.cprs_delta > 0 ? '-' + c.cprs_delta + ' pts (' + c.cprs_before + '→' + c.cprs_after + ')' : (uiLang==='es'?'Sin cambio':'No change'))
       : '—';
     html += '<tr>'
       + '<td>' + (i+1) + '</td>'
