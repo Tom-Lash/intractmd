@@ -275,67 +275,67 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
     <!-- STEPS SIDEBAR -->
     <div class="steps-panel">
-      <div class="steps-title">Workflow Progress</div>
+      <div class="steps-title" id="wf-progress-lbl">Workflow Progress</div>
       <div class="step-item" onclick="scrollToStep(1)">
         <div class="step-num done" id="step1-num">1</div>
         <div>
-          <div class="step-label">Patient & Context</div>
-          <div class="step-desc">Name, plan, case manager</div>
+          <div class="step-label" id="step1-lbl">Patient & Context</div>
+          <div class="step-desc" id="step1-sub">Name, plan, case manager</div>
           <span class="step-tier tier-confirmed">SETUP</span>
         </div>
       </div>
       <div class="step-item" onclick="scrollToStep(2)">
         <div class="step-num" id="step2-num">2</div>
         <div>
-          <div class="step-label">Medication List</div>
-          <div class="step-desc">From EHR or claims</div>
+          <div class="step-label" id="step2-lbl">Medication List</div>
+          <div class="step-desc" id="step2-sub">From EHR or claims</div>
           <span class="step-tier tier-confirmed">CONFIRMED</span>
         </div>
       </div>
       <div class="step-item" onclick="scrollToStep(3)">
         <div class="step-num" id="step3-num">3</div>
         <div>
-          <div class="step-label">DDI Risk Score</div>
-          <div class="step-desc">Drug-drug interactions</div>
+          <div class="step-label" id="step3-lbl">DDI Risk Score</div>
+          <div class="step-desc" id="step3-sub">Drug-drug interactions</div>
           <span class="step-tier tier-confirmed">CONFIRMED</span>
         </div>
       </div>
       <div class="step-item" onclick="scrollToStep(4)">
         <div class="step-num" id="step4-num">4</div>
         <div>
-          <div class="step-label">Risk Factors</div>
-          <div class="step-desc">Physiologic & regimen context</div>
+          <div class="step-label" id="step4-lbl">Risk Factors</div>
+          <div class="step-desc" id="step4-sub">Physiologic & regimen context</div>
           <span class="step-tier tier-computed">COMPUTED</span>
         </div>
       </div>
       <div class="step-item" onclick="scrollToStep(5)">
         <div class="step-num" id="step5-num">5</div>
         <div>
-          <div class="step-label">Supplement/Food Risks</div>
-          <div class="step-desc">Proactive avoidance list</div>
+          <div class="step-label" id="step5-lbl">Supplement/Food Risks</div>
+          <div class="step-desc" id="step5-sub">Proactive avoidance list</div>
           <span class="step-tier tier-predictive">PREDICTIVE</span>
         </div>
       </div>
       <div class="step-item" onclick="scrollToStep(6)">
         <div class="step-num active" id="step6-num">6</div>
         <div>
-          <div class="step-label active">Generate Message</div>
-          <div class="step-desc">Email · SMS · Call script</div>
+          <div class="step-label active" id="step6-lbl">Generate Message</div>
+          <div class="step-desc" id="step6-sub">Email · SMS · Call script</div>
           <span class="step-tier tier-predictive">ACTION OUTPUT</span>
         </div>
       </div>
       <div style="margin-top:16px;padding:12px;background:#f8f9fa;border-radius:8px;">
-        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Confidence Legend</div>
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;"><span id="conf-legend-lbl">Confidence Legend</span></div>
         <div style="display:flex;flex-direction:column;gap:4px;">
-          <div class="tier-bar confirmed" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-check"></i> CONFIRMED — from verified record</div>
-          <div class="tier-bar computed" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-cpu"></i> COMPUTED — system-derived</div>
-          <div class="tier-bar predictive" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-alert-triangle"></i> PREDICTIVE — inferred guidance</div>
+          <div class="tier-bar confirmed" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-check"></i> <span id="conf1-lbl">CONFIRMED — from verified record</span></div>
+          <div class="tier-bar computed" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-cpu"></i> <span id="conf2-lbl">COMPUTED — system-derived</span></div>
+          <div class="tier-bar predictive" style="margin:0;padding:5px 8px;font-size:11px;"><i class="ti ti-alert-triangle"></i> <span id="conf3-lbl">PREDICTIVE — inferred guidance</span></div>
         </div>
       </div>
       <!-- Briefing button — appears after DDI analysis completes -->
       <div id="briefingBtnWrap" style="display:none;margin-top:14px">
         <button onclick="viewClinicalReport()" style="width:100%;padding:11px 14px;background:var(--cyan);color:var(--navy);border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 2px 8px rgba(0,180,216,.3)">
-          <i class="ti ti-file-description"></i> View Clinical Briefing
+          <i class="ti ti-file-description"></i> <span id="view-brief-btn">View Clinical Briefing</span>
         </button>
         <button onclick="downloadClinicalReport()" style="width:100%;margin-top:8px;padding:9px 14px;background:#fff;color:var(--navy);border:1.5px solid var(--cyan);border-radius:8px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px">
           <i class="ti ti-file-download"></i> Download PDF
@@ -1547,12 +1547,49 @@ function setLangC(l){
   // Translate elements by ID
   var ids={
     'hdr-sub-txt':'hdr_sub',
+    'wf-progress-lbl': {en:'WORKFLOW PROGRESS',es:'PROGRESO DEL FLUJO'},
+    'conf-legend-lbl': {en:'CONFIDENCE LEGEND',es:'LEYENDA DE CONFIANZA'},
+    'step1-lbl': {en:'Patient & Context',es:'Paciente y Contexto'},
+    'step1-sub': {en:'Name, plan, case manager',es:'Nombre, plan, gestor de casos'},
+    'step2-lbl': {en:'Medication List',es:'Lista de Medicamentos'},
+    'step2-sub': {en:'From EHR or claims',es:'De HCE o reclamaciones'},
+    'step3-lbl': {en:'DDI Risk Score',es:'Puntuación de Riesgo DDI'},
+    'step3-sub': {en:'Drug-drug interactions',es:'Interacciones entre medicamentos'},
+    'step4-lbl': {en:'Risk Factors',es:'Factores de Riesgo'},
+    'step4-sub': {en:'Physiologic & regimen context',es:'Contexto fisiológico y de régimen'},
+    'step5-lbl': {en:'Supplement/Food Risks',es:'Riesgos de Suplementos/Alimentos'},
+    'step5-sub': {en:'Proactive avoidance list',es:'Lista proactiva de evitación'},
+    'step6-lbl': {en:'Generate Message',es:'Generar Mensaje'},
+    'step6-sub': {en:'Email · SMS · Call script',es:'Correo · SMS · Guion de llamada'},
+    'conf1-lbl':  {en:'CONFIRMED — from verified record',es:'CONFIRMADO — de registro verificado'},
+    'conf2-lbl':  {en:'COMPUTED — system-derived',es:'CALCULADO — derivado del sistema'},
+    'conf3-lbl':  {en:'PREDICTIVE — inferred guidance',es:'PREDICTIVO — orientación inferida'},
+    'add-phys-lbl':{en:'ADDITIONAL PHYSIOLOGIC FACTORS (MANUAL ENTRY)',es:'FACTORES FISIOLÓGICOS ADICIONALES (ENTRADA MANUAL)'},
+    'add-phys-sub':{en:'Click any card to select — add details if known from the patient record.',es:'Haga clic en cualquier tarjeta para seleccionar — agregue detalles si se conocen del expediente.'},
+    'reg-ctx-lbl': {en:'REGIMEN CONTEXT FACTORS (LAYER 3)',es:'FACTORES DE CONTEXTO DEL RÉGIMEN (CAPA 3)'},
+    'reg-ctx-sub': {en:'Select any additional context factors visible in the patient record.',es:'Seleccione factores de contexto adicionales visibles en el expediente del paciente.'},
     'nav-proactive':'nav_proactive',
     'nav-clinical':'nav_clinical',
     'nav-deprescribing':'nav_depresc',
   };
   Object.keys(ids).forEach(function(id){
-    var el=document.getElementById(id);if(el)el.textContent=tc(ids[id]);
+    var el=document.getElementById(id);
+    if(!el)return;
+    var val=ids[id];
+    if(typeof val==='string'){el.textContent=tc(val);}
+    else if(typeof val==='object'){el.textContent=val[l]||val.en;}
+  });
+  // Translate view clinical briefing and download pdf sidebar buttons
+  var vcb=document.querySelector('.sidebar-btn');
+  if(vcb&&vcb.textContent.indexOf('Clinical')>=0||vcb&&vcb.textContent.indexOf('Clínico')>=0){
+    vcb.innerHTML='<i class="ti ti-file-description"></i> '+(l==='es'?'Ver Informe Clínico':'View Clinical Briefing');
+  }
+  var sbtns=document.querySelectorAll('.sidebar-btn');
+  sbtns.forEach(function(btn){
+    if(btn.textContent.indexOf('View Clinical')>=0||btn.textContent.indexOf('Ver Informe')>=0)
+      btn.innerHTML='<i class="ti ti-file-description"></i> '+(l==='es'?'Ver Informe Clínico':'View Clinical Briefing');
+    if(btn.textContent.indexOf('Download PDF')>=0||btn.textContent.indexOf('Descargar PDF')>=0)
+      btn.innerHTML='<i class="ti ti-file-download"></i> '+(l==='es'?'Descargar PDF':'Download PDF');
   });
   // Translate step card titles
   document.querySelectorAll('.card-title').forEach(function(el){
