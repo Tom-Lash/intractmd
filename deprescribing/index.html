@@ -797,8 +797,8 @@ function renderResults(data){
       html += '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0">';
       html += '<div class="delta-badge" style="background:' + style.bg + ';border-color:' + style.bd + '">'
             + '<div class="delta-val" style="color:' + style.fg + ';font-size:13px;line-height:1.3">'
-            + esc(c.tier_label) + '</div>'
-            + '<div class="delta-label" style="color:' + style.fg + '">per criteria</div></div>';
+            + esc(uiLang==='es'?(c.tier_label==='Use with caution'?'Usar con precaución':c.tier_label==='Avoid'?'Evitar':c.tier_label==='Quality measure'?'Medida de calidad':c.tier_label):c.tier_label) + '</div>'
+            + '<div class="delta-label" style="color:' + style.fg + '">'+(uiLang==='es'?'según criterios':'per criteria')+'</div></div>';
       if (hasDelta) {
         html += '<div class="delta-badge" style="background:var(--bg);border-color:var(--br)">'
               + '<div class="delta-val" style="color:' + deltaColor + ';font-size:13px;line-height:1.3">'
