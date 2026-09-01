@@ -857,11 +857,59 @@ function downloadProactiveReport(){
     + '<button class="print-btn" onclick="window.print()">&#x1F4E5; Print / Save PDF</button>'
     + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E;box-shadow:none">&#8592; Return to Analysis</button>'
     + '<div style="max-width:780px;margin:0 auto;padding:32px 40px">' + body + '</div>'
-    + '</body></html>';
+    + '<script>
+var uiLang=localStorage.getItem('intractmd_lang')||'en';
+function setLangP(l){
+  uiLang=l;
+  localStorage.setItem('intractmd_lang',l);
+  var en=document.getElementById('lang-en-p');
+  var es=document.getElementById('lang-es-p');
+  if(en)en.className='lang-btn'+(l==='en'?' active':'');
+  if(es)es.className='lang-btn'+(l==='es'?' active':'');
+  var di=document.getElementById('drugInput');
+  if(di)di.placeholder=(l==='es'?'O escriba cualquier medicamento y presione Enter...':'Or type any medication name and press Enter...');
+  var ab=document.getElementById('analyzeBtn');
+  if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+(l==='es'?'Verificar interacciones + suplementos y alimentos a evitar':'Check drug interactions + supplements & foods to avoid');
+  var rb=document.getElementById('proactiveReportBtns');
+  if(rb){
+    var btns=rb.querySelectorAll('button');
+    if(btns[0])btns[0].innerHTML='<i class="ti ti-file-description"></i> '+(l==='es'?'Ver Informe Resumido':'View Summary Report');
+    if(btns[1])btns[1].innerHTML='<i class="ti ti-file-download"></i> '+(l==='es'?'Descargar PDF':'Download PDF');
+  }
+  window._uiLang=l;
+}
+window._uiLang=uiLang;
+document.addEventListener('DOMContentLoaded',function(){setLangP(uiLang);});
+</script>
+</body></html>';
   const win = window.open('', '_blank');
   win.document.write(fullHtml);
   win.document.close();
 }
+</script>
+<script>
+var uiLang=localStorage.getItem('intractmd_lang')||'en';
+function setLangP(l){
+  uiLang=l;
+  localStorage.setItem('intractmd_lang',l);
+  var en=document.getElementById('lang-en-p');
+  var es=document.getElementById('lang-es-p');
+  if(en)en.className='lang-btn'+(l==='en'?' active':'');
+  if(es)es.className='lang-btn'+(l==='es'?' active':'');
+  var di=document.getElementById('drugInput');
+  if(di)di.placeholder=(l==='es'?'O escriba cualquier medicamento y presione Enter...':'Or type any medication name and press Enter...');
+  var ab=document.getElementById('analyzeBtn');
+  if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+(l==='es'?'Verificar interacciones + suplementos y alimentos a evitar':'Check drug interactions + supplements & foods to avoid');
+  var rb=document.getElementById('proactiveReportBtns');
+  if(rb){
+    var btns=rb.querySelectorAll('button');
+    if(btns[0])btns[0].innerHTML='<i class="ti ti-file-description"></i> '+(l==='es'?'Ver Informe Resumido':'View Summary Report');
+    if(btns[1])btns[1].innerHTML='<i class="ti ti-file-download"></i> '+(l==='es'?'Descargar PDF':'Download PDF');
+  }
+  window._uiLang=l;
+}
+window._uiLang=uiLang;
+document.addEventListener('DOMContentLoaded',function(){setLangP(uiLang);});
 </script>
 </body>
 </html>

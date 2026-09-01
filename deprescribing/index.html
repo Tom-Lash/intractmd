@@ -1067,7 +1067,25 @@ function downloadSummary(){
     + drugTagsHtml
     + '</div>'
     + resultsHtml
-    + '</div></body></html>';
+    + '</div><script>
+var uiLang=localStorage.getItem('intractmd_lang')||'en';
+function setLangD(l){
+  uiLang=l;
+  localStorage.setItem('intractmd_lang',l);
+  var en=document.getElementById('lang-en-d');
+  var es=document.getElementById('lang-es-d');
+  if(en)en.className='lang-btn'+(l==='en'?' active':'');
+  if(es)es.className='lang-btn'+(l==='es'?' active':'');
+  var di=document.querySelector('.drug-input');
+  if(di)di.placeholder=(l==='es'?'Buscar medicamentos...':'Search medications...');
+  var ab=document.querySelector('.btn-analyze');
+  if(ab)ab.innerHTML='<i class="ti ti-brain"></i> '+(l==='es'?'Analizar Oportunidades de Desprescripción':'Analyze Deprescribing Opportunities');
+  window._uiLang=l;
+}
+window._uiLang=uiLang;
+document.addEventListener('DOMContentLoaded',function(){setLangD(uiLang);});
+</script>
+</body></html>';
 
   const win = window.open('', '_blank');
   win.document.write(fullHtml);
@@ -1133,6 +1151,24 @@ function toggleCandidate(i){
     <div class="dim-modal-scale" id="dimModalScale"></div>
   </div>
 </div>
+<script>
+var uiLang=localStorage.getItem('intractmd_lang')||'en';
+function setLangD(l){
+  uiLang=l;
+  localStorage.setItem('intractmd_lang',l);
+  var en=document.getElementById('lang-en-d');
+  var es=document.getElementById('lang-es-d');
+  if(en)en.className='lang-btn'+(l==='en'?' active':'');
+  if(es)es.className='lang-btn'+(l==='es'?' active':'');
+  var di=document.querySelector('.drug-input');
+  if(di)di.placeholder=(l==='es'?'Buscar medicamentos...':'Search medications...');
+  var ab=document.querySelector('.btn-analyze');
+  if(ab)ab.innerHTML='<i class="ti ti-brain"></i> '+(l==='es'?'Analizar Oportunidades de Desprescripción':'Analyze Deprescribing Opportunities');
+  window._uiLang=l;
+}
+window._uiLang=uiLang;
+document.addEventListener('DOMContentLoaded',function(){setLangD(uiLang);});
+</script>
 </body>
 </html>
  
