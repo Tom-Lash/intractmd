@@ -402,7 +402,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <div class="card-title"><i class="ti ti-radar"></i> Step 3 — Drug-Drug Interaction Risk Score</div>
         <div class="card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
         <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-bottom:14px;padding:11px;">
-          <i class="ti ti-radar"></i> '+(uiLang==='es'?'Ejecutar Análisis de Interacciones':'Run Drug Interaction Analysis')+'
+          <i class="ti ti-radar"></i> <span id="ddi-btn-txt">Run Drug Interaction Analysis</span>
         </button>
         <div id="ddiPlaceholder" class="ddi-placeholder">
           <i class="ti ti-radar" style="font-size:32px;margin-bottom:8px;display:block;opacity:.3;"></i>
@@ -598,19 +598,19 @@ let selectedFactors = {};
 
 // ── RISK FACTOR DEFINITIONS (Layer 2-3 from Framework) ────────────────────
 const PHYSIOLOGIC_FACTORS = [
-  { id:'renal_impairment', label:'Renal Impairment', desc:'eGFR reduced / CrCl <60', action:'Renally cleared drugs may accumulate.', input:'select', options:['Mild (CrCl 30-60)','Moderate (CrCl 15-30)','Severe (CrCl <15)'] },
-  { id:'hepatic_impairment', label:'Hepatic Impairment', desc:'Elevated LFTs / liver disease', action:'Hepatically metabolized drugs may be affected.', input:'select', options:['Child-Pugh A','Child-Pugh B','Child-Pugh C'] },
-  { id:'age_65_plus', label:'Age 65+', desc:'Increased sensitivity to many drug classes', action:'Age-related pharmacokinetic changes present.', input:'text', placeholder:'Patient age' },
-  { id:'qt_risk', label:'QT Prolongation Risk', desc:'ECG or electrolyte concerns', action:'Cardiac rhythm monitoring may be needed.', input:null },
-  { id:'prior_ade', label:'Prior ADE / Allergy History', desc:'Known adverse drug event on record', action:'Review allergen list before adding new medications.', input:'text', placeholder:'Brief description' },
-  { id:'pregnancy', label:'Pregnancy / Breastfeeding', desc:'Documented in record', action:'Category review required for all medications.', input:null },
+  { id:'renal_impairment', label:(uiLang==='es'?'Insuficiencia Renal':'Renal Impairment'), desc:(uiLang==='es'?'eGFR reducido / CrCl <60':'eGFR reduced / CrCl <60'), action:'Renally cleared drugs may accumulate.', input:'select', options:['Mild (CrCl 30-60)','Moderate (CrCl 15-30)','Severe (CrCl <15)'] },
+  { id:'hepatic_impairment', label:(uiLang==='es'?'Insuficiencia Hepática':'Hepatic Impairment'), desc:(uiLang==='es'?'ALT/AST elevados / enfermedad hepática':'Elevated LFTs / liver disease'), action:'Hepatically metabolized drugs may be affected.', input:'select', options:['Child-Pugh A','Child-Pugh B','Child-Pugh C'] },
+  { id:'age_65_plus', label:(uiLang==='es'?'Edad 65+':'Age 65+'), desc:(uiLang==='es'?'Mayor sensibilidad a muchas clases de medicamentos':'Increased sensitivity to many drug classes'), action:'Age-related pharmacokinetic changes present.', input:'text', placeholder:'Patient age' },
+  { id:'qt_risk', label:(uiLang==='es'?'Riesgo de Prolongación QT':'QT Prolongation Risk'), desc:(uiLang==='es'?'Preocupaciones de ECG o electrolíticos':'ECG or electrolyte concerns'), action:'Cardiac rhythm monitoring may be needed.', input:null },
+  { id:'prior_ade', label:(uiLang==='es'?'Historia de EAM / Alergias':'Prior ADE / Allergy History'), desc:(uiLang==='es'?'Evento adverso a medicamento conocido':'Known adverse drug event on record'), action:'Review allergen list before adding new medications.', input:'text', placeholder:'Brief description' },
+  { id:'pregnancy', label:(uiLang==='es'?'Embarazo / Lactancia':'Pregnancy / Breastfeeding'), desc:(uiLang==='es'?'Documentado en el expediente':'Documented in record'), action:'Category review required for all medications.', input:null },
 ];
 
 const REGIMEN_FACTORS = [
-  { id:'high_med_count', label:'High Medication Count', desc:'5+ active medications', action:'Polypharmacy risk increases interaction probability.', input:'text', placeholder:'Total medication count' },
-  { id:'recent_med_change', label:'Recent Medication Change', desc:'New Rx or dose change in last 30 days', action:'Monitor for new symptoms or side effects.', input:'text', placeholder:'Which medication changed' },
+  { id:'high_med_count', label:(uiLang==='es'?'Alto Número de Medicamentos':'High Medication Count'), desc:(uiLang==='es'?'5+ medicamentos activos':'5+ active medications'), action:'Polypharmacy risk increases interaction probability.', input:'text', placeholder:'Total medication count' },
+  { id:'recent_med_change', label:(uiLang==='es'?'Cambio Reciente de Medicamento':'Recent Medication Change'), desc:(uiLang==='es'?'Nueva Rx o cambio de dosis en los últimos 30 días':'New Rx or dose change in last 30 days'), action:'Monitor for new symptoms or side effects.', input:'text', placeholder:'Which medication changed' },
   { id:'multiple_prescribers', label:'Multiple Prescribers', desc:'Care coordination concern', action:'Encourage patient to share complete medication list.', input:'text', placeholder:'Number of prescribers' },
-  { id:'high_risk_class', label:'High-Risk Drug Class', desc:'Anticoagulant, opioid, insulin, or antiepileptic present', action:'Enhanced monitoring protocol may apply.', input:'select', options:['Anticoagulant','Opioid','Insulin/Antidiabetic','Antiepileptic','Antipsychotic','Multiple classes'] },
+  { id:'high_risk_class', label:(uiLang==='es'?'Clase de Medicamento de Alto Riesgo':'High-Risk Drug Class'), desc:(uiLang==='es'?'Anticoagulante, opioide, insulina o antiepiléptico presente':'Anticoagulant, opioid, insulin, or antiepileptic present'), action:'Enhanced monitoring protocol may apply.', input:'select', options:['Anticoagulant','Opioid','Insulin/Antidiabetic','Antiepileptic','Antipsychotic','Multiple classes'] },
 ];
 
 // ── RENDER FACTOR GRIDS ───────────────────────────────────────────────────
@@ -1618,6 +1618,9 @@ function setLangC(l){
     'add-phys-sub':{en:'Click any card to select — add details if known from the patient record.',es:'Haga clic en cualquier tarjeta para seleccionar — agregue detalles si se conocen del expediente.'},
     'reg-ctx-lbl': {en:'REGIMEN CONTEXT FACTORS (LAYER 3)',es:'FACTORES DE CONTEXTO DEL RÉGIMEN (CAPA 3)'},
     'reg-ctx-sub': {en:'Select any additional context factors visible in the patient record.',es:'Seleccione factores de contexto adicionales visibles en el expediente del paciente.'},
+    'ddi-btn-txt': {en:'Run Drug Interaction Analysis',es:'Ejecutar Análisis de Interacciones'},
+    'view-brief-btn': {en:'View Clinical Briefing',es:'Ver Informe Clínico'},
+
     'nav-proactive':'nav_proactive',
     'nav-clinical':'nav_clinical',
     'nav-deprescribing':'nav_depresc',
