@@ -774,16 +774,16 @@ function buildProactiveReport(r, drugList){
   });
   const sevOrder={Critical:0,High:1,Moderate:2,Low:3};
   allInteractions.sort(function(a,b){return (sevOrder[a.severity]||4)-(sevOrder[b.severity]||4);});
-  const nCrit=allInteractions.filter(function(x){return x.severity===L.sev_critical;}).length;
-  const nHigh=allInteractions.filter(function(x){return x.severity===L.sev_high;}).length;
-  const nMod=allInteractions.filter(function(x){return x.severity===L.sev_moderate;}).length;
+  const nCrit=allInteractions.filter(function(x){return x.severity==='Critical';}).length;
+  const nHigh=allInteractions.filter(function(x){return x.severity==='High';}).length;
+  const nMod=allInteractions.filter(function(x){return x.severity==='Moderate';}).length;
 
   let html = '';
   // Header
   html += '<div style="text-align:center;border-bottom:2px solid #0D3B6E;padding-bottom:16px;margin-bottom:20px">';
-  html += '<div style="font-size:20px;font-weight:700;color:#0D3B6E">IntractMD™ Proactive Supplement & Food Risk Report</div>';
+  html += '<div style="font-size:20px;font-weight:700;color:#0D3B6E">'+(uiLang==='es'?'IntractMD™ Informe Proactivo de Riesgo':'IntractMD™ Proactive Supplement & Food Risk Report')+'</div>';
   html += '<div style="font-size:12px;color:#555;margin-top:5px">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
-  html += '<div style="font-size:11px;color:#888;margin-top:3px">Generated: '+dateStr+' · For pharmacist and prescriber review only</div>';
+  html += '<div style="font-size:11px;color:#888;margin-top:3px">Generated: '+dateStr+(uiLang==='es'?' · Solo para farmacéutico y prescriptor':' · For pharmacist and prescriber review only')+'</div>';
   html += '</div>';
 
   // Summary box
@@ -795,17 +795,17 @@ function buildProactiveReport(r, drugList){
   html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">PCPRS / 100</div>';
   html += '<div style="font-size:11px;font-weight:700;color:'+scoreColor+'">'+scoreLabel+'</div>';
   html += '</div>';
-  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">Risk Tier</div><div style="font-size:15px;font-weight:700;color:#0D3B6E">'+(r.risk_tier||'—')+'</div></div>';
-  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">Total Findings</div><div style="font-size:20px;font-weight:700;color:#0D3B6E">'+allInteractions.length+'</div></div>';
+  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+(uiLang==='es'?'Nivel de Riesgo':'Risk Tier')+'</div><div style="font-size:15px;font-weight:700;color:#0D3B6E">'+(uiLang==='es'?(r.risk_tier==='Critical'?'Crítico':r.risk_tier==='High'?'Alto':r.risk_tier==='Moderate'?'Moderado':r.risk_tier==='Low'?'Bajo':r.risk_tier==='Minimal'?'Mínimo':r.risk_tier||'—'):(r.risk_tier||'—'))+'</div></div>';
+  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+(uiLang==='es'?'Hallazgos Totales':'Total Findings')+'</div><div style="font-size:20px;font-weight:700;color:#0D3B6E">'+allInteractions.length+'</div></div>';
   html += '<div>';
-  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+nCrit+' Critical</span>';
-  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+nHigh+' High</span>';
-  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+nMod+' Moderate</span>';
+  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+(uiLang==='es'?nCrit+' Crítico':nCrit+' Critical')+'</span>';
+  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+(uiLang==='es'?nHigh+' Alto':nHigh+' High')+'</span>';
+  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+(uiLang==='es'?nMod+' Moderado':nMod+' Moderate')+'</span>';
   html += '</div></div>';
 
   // Drug tags
   html += '<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #e2e6ea">';
-  html += '<div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Medications Reviewed</div>';
+  html += '<div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">'+(uiLang==='es'?'Medicamentos Revisados':'Medications Reviewed')+'</div>';
   html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
   drugList.forEach(function(d){ html += '<span style="background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:#0D3B6E">'+d+'</span>'; });
   html += '</div></div>';
