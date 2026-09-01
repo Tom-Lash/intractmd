@@ -707,15 +707,15 @@ function renderResults(data){
     narrative += candidates.length + ' medication' + (candidates.length > 1 ? 's' : '') + ' appear in published deprescribing criteria. ';
     if (avoidCount) narrative += '<strong>' + avoidCount + ' medication' + (avoidCount > 1 ? 's are' : ' is') + ' flagged AVOID</strong> in older adults per Beers or STOPP criteria. ';
     if (maxDelta > 0) narrative += 'Removing <strong>' + esc(topCandidate.drug) + '</strong> would produce the largest estimated risk reduction (' + maxDelta + ' CPRS points). ';
-    narrative += 'All findings require pharmacist and prescriber review before any medication change.';
+    narrative += uiLang==='es'?'Todos los hallazgos requieren revisión antes de cualquier cambio de medicamento.':'All findings require pharmacist and prescriber review before any medication change.';
 
     html += '<div class="summary-card">';
-    html += '<h3><i class="ti ti-report-analytics"></i> '+RL.analysis_summ+'</h3>';
+    html += '<h3><i class="ti ti-report-analytics"></i> '+(uiLang==='es'?'Resumen del Análisis de Desprescripción':'Deprescribing Analysis Summary')+'</h3>';
     html += '<div style="font-size:12.5px;color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:14px">' + narrative + '</div>';
 
     // Summary table
     html += '<table class="summary-table">';
-    html += '<thead><tr><th>#</th><th>Medication</th><th>Class</th><th>Evidence Tier</th><th>Citations</th><th>CPRS Impact</th></tr></thead><tbody>';
+    html += '<thead><tr><th>#</th><th>'+(uiLang==='es'?'Medicamento':'Medication')+'</th><th>'+(uiLang==='es'?'Clase':'Class')+'</th><th>'+(uiLang==='es'?'Nivel de Evidencia':'Evidence Tier')+'</th><th>'+(uiLang==='es'?'Citas':'Citations')+'</th><th>'+(uiLang==='es'?'Impacto CPRS':'CPRS Impact')+'</th></tr></thead><tbody>';
     candidates.forEach(function(c, i){
       const tierColors = {AVOID:'#FCEBEB',CAUTION:'#FDF3E3',INTERACTION:'#FDF3E3',MEASURE:'#EBF5FC'};
       const tierFg = {AVOID:'#A32D2D',CAUTION:'#D97706',INTERACTION:'#D97706',MEASURE:'#1B6EC2'};
@@ -744,7 +744,7 @@ function renderResults(data){
   // ── Candidates ─────────────────────────────────────────────────────────────
   html += '<div class="card-title" style="padding:0 0 6px;font-size:15px;font-weight:700;color:var(--navy)">'
         + '<i class="ti ti-clipboard-check" style="color:var(--cyan)"></i> '
-        + RL.meds_flagged+'</div>';
+        + (uiLang==='es'?'Medicamentos Marcados en Criterios Publicados':'Medications Flagged in Published Deprescribing Criteria')+'</div>';
 
   html += '<div style="font-size:12px;color:var(--tx2);line-height:1.55;margin:0 0 6px">'
         + 'Each medication below appears in published criteria used to review prescribing in older adults. '
@@ -760,7 +760,7 @@ function renderResults(data){
 
   // Interpretive guide shown above candidate list
   html += '<div style="background:var(--bg);border:1px solid var(--br);border-radius:8px;padding:10px 14px;margin:0 0 14px;font-size:12.5px;color:var(--tx2);line-height:1.65">'
-        + '<strong style="color:var(--navy)">'+RL.how_to_read+'</strong> '
+        + '<strong style="color:var(--navy)">'+(uiLang==='es'?'Cómo leer estos resultados:':'How to read these results:')+'</strong> '
         + 'Each medication is ranked by the strength of its published deprescribing evidence — shown in the <strong>colored badge</strong> (AVOID, CAUTION, or MEASURE). '
         + 'The <strong>gray badge</strong> shows the estimated CPRS point reduction if that medication were removed from the regimen. '
         + 'A larger drop indicates greater impact on overall polypharmacy risk. '
@@ -824,7 +824,7 @@ function renderResults(data){
         html += '</div>';
       }
       html += '<div style="margin-top:10px;font-size:11px;color:var(--tx3);font-style:italic">'
-            + '⚠ '+RL.for_review+' '+RL.no_change+' '
+            + '⚠ '+(uiLang==='es'?'Solo para revisión de farmacéutico y prescriptor. No discontinuar sin consultar al médico.':'For pharmacist and prescriber review only. Do not discontinue without consulting the prescribing physician.')+' '
             + 'without consulting the prescribing physician.</div>';
       html += '</div></div>';
     });
