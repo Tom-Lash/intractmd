@@ -1647,25 +1647,19 @@ function setLangC(l){
     if(btn.textContent.indexOf('Download PDF')>=0||btn.textContent.indexOf('Descargar PDF')>=0)
       btn.innerHTML='<i class="ti ti-file-download"></i> '+(l==='es'?'Descargar PDF':'Download PDF');
   });
-  // Translate step card titles
-  document.querySelectorAll('.card-title').forEach(function(el){
-    var txt=el.textContent.trim();
-    var map={
-      'Step 1 \u2014 Patient Information':'step1','Paso 1 \u2014 Informaci\u00f3n del Paciente':'step1',
-      'Step 2 \u2014 Enter Medications':'step2','Paso 2 \u2014 Ingrese Medicamentos':'step2',
-      'Step 3 \u2014 Run DDI Analysis':'step3','Paso 3 \u2014 Ejecutar An\u00e1lisis DDI':'step3',
-      'Step 4 \u2014 Supplement Screening':'step4','Paso 4 \u2014 Evaluaci\u00f3n de Suplementos':'step4',
-      'Step 5 \u2014 Generate Outreach':'step5','Paso 5 \u2014 Generar Comunicaci\u00f3n':'step5',
-      'Step 6 \u2014 Clinical Briefing':'step6','Paso 6 \u2014 Informe Cl\u00ednico':'step6',
-    };
-    // Get icon if present
-    var icon=el.querySelector('i');
-    var key=Object.keys(map).find(function(k){return txt.indexOf(k.replace(/\u2014.*/,'').trim())>=0;});
-    if(key&&map[key]){
-      var iconHtml=icon?icon.outerHTML+' ':'';
-      el.innerHTML=iconHtml+tc(map[key]);
-    }
-  });
+  // Step card titles — intentionally NOT rewritten.
+  // This block matched a card title on its "Step N" prefix alone and replaced
+  // it with TR_C.stepN. Those entries describe a different workflow to the one
+  // on the page, so on every load "Step 4 — Polypharmacy Risk Factors" became
+  // "Step 4 — Supplement Screening" (Step 5's job), "Step 5 — Supplement &
+  // Food Risks" became "Step 5 — Generate Outreach" (Step 6's job), and
+  // "Step 6 — Generate Patient Outreach Message" became "Step 6 — Clinical
+  // Briefing". It fired in English as well as Spanish.
+  //
+  // The Spanish in TR_C.step1..step6 translates those wrong English titles, so
+  // there is no correct Spanish for the real ones yet. The accurate English
+  // titles in the markup now stand in both languages; Spanish is pending
+  // translation review.
   // Analyze button
   var ab=document.querySelector('.btn-analyze');
   if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+tc('analyze_btn');
