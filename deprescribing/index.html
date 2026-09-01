@@ -1234,11 +1234,11 @@ function setLangD(l){
   if(dlBtn)dlBtn.innerHTML='<i class="ti ti-file-download"></i> '+td('download_pdf');
   var vrBtn=document.querySelector('.btn-view-report');
   if(vrBtn)vrBtn.innerHTML='<i class="ti ti-file-description"></i> '+td('view_report');
-  // Disclaimer
-  document.querySelectorAll('.disclaimer,.disc').forEach(function(el){
-    if(el.textContent.indexOf('pharmacist')>=0||el.textContent.indexOf('farmac')>=0)
-      el.textContent=td('disclaimer');
-  });
+  // Disclaimer — intentionally NOT translated or rewritten.
+  // This block used to replace the full legal disclaimer in the page with the
+  // short TR_D.disclaimer string on every load, in English as well as Spanish,
+  // so the full text was never visible on the live site. The full English text
+  // now stands in both languages; a reviewed Spanish version is pending legal.
   // Candidate cards — translate labels
   document.querySelectorAll('.dim-label').forEach(function(el){
     var map={
