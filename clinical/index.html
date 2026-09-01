@@ -877,7 +877,7 @@ function renderQuickPills() {
     'onmouseover="this.style.borderColor=\'var(--cyan)\';this.style.background=\'#f0fafd\'" ' +
     'onmouseout="if(!drugs.has(this.getAttribute(\'data-qp\'))){this.style.borderColor=\'#ddd\';this.style.background=\'#f8f8f8\'}">' + d + '</span>'
   ).join('');
-  syncQuickPills();
+  if(typeof syncQuickPills==="function")syncQuickPills()();
 }
 
 function onDrugInput(val) {
