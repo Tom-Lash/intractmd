@@ -230,8 +230,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
     <div style="display:flex;align-items:flex-start;gap:12px;flex:1;">
       <i class="ti ti-shield-exclamation intro-icon"></i>
       <div>
-        <div class="intro-title">Proactive Drug, Supplement & Food Interaction Engine</div>
-        <div class="intro-body">Enter your known prescriptions and this engine <strong style="color:#1A5C38">checks drug-drug interactions</strong> in your regimen AND proactively identifies every supplement and food you should <strong style="color:#1A5C38">avoid or limit</strong> — before any adverse event occurs. Unlike standard checkers that wait for you to ask, this tool warns you about risks you didn't know to look for.</div>
+        <div class="intro-title" id="intro-title">Proactive Drug, Supplement &amp; Food Interaction Engine</div>
+        <div class="intro-body" id="intro-body">Enter your known prescriptions and this engine <strong style="color:#1A5C38">checks drug-drug interactions</strong> in your regimen AND proactively identifies every supplement and food you should <strong style="color:#1A5C38">avoid or limit</strong> — before any adverse event occurs. Unlike standard checkers that wait for you to ask, this tool warns you about risks you didn't know to look for.</div>
       </div>
     </div>
     <button onclick="openProactiveVideo()" style="background:#1B6EC2;border:none;border-radius:8px;color:#fff;padding:10px 18px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;flex-shrink:0;">
@@ -260,9 +260,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
   </script>
 
 <div class="card">
-    <div class="card-title"><i class="ti ti-pills"></i> Step 1 — Enter your medications</div>
+    <div class="card-title"><i class="ti ti-pills"></i> <span id="step1-title">Step 1 — Enter your medications</span></div>
 
-    <div style="font-size:12px;color:var(--tx2);margin-bottom:10px;font-weight:500">Quick-add common medications:</div>
+    <div style="font-size:12px;color:var(--tx2);margin-bottom:10px;font-weight:500" id="quick-add-lbl">Quick-add common medications:</div>
     <div class="chip-grid" id="chipGrid"></div>
 
     <div class="input-row" style="margin-top:12px">
@@ -899,6 +899,9 @@ var TR_PROACTIVE = {
   monitor:        {en:'Monitor',es:'Monitorear'},
   rec_action:     {en:'Recommended action',es:'Acci\u00f3n recomendada'},
   patient_note:   {en:'Patient note',es:'Nota para el paciente'},
+  avoid_label:    {en:'AVOID',es:'EVITAR'},
+  caution_label:  {en:'CAUTION',es:'PRECAUCIóN'},
+  safe_label:     {en:'SAFE',es:'SEGURO'},
 };
 function tp(k){var e=TR_PROACTIVE[k];return e?(e[uiLang]||e.en||k):k;}
 function setLangP(l){
@@ -913,6 +916,19 @@ function setLangP(l){
   if(rb){var btns=rb.querySelectorAll('button');
     if(btns[0])btns[0].innerHTML='<i class="ti ti-file-description"></i> '+tp('view_report');
     if(btns[1])btns[1].innerHTML='<i class="ti ti-file-download"></i> '+tp('download_pdf');}
+  // Translate static HTML elements
+  var itEl=document.getElementById('intro-title');
+  if(itEl)itEl.textContent=l==='es'?'Motor Proactivo de Interacciones: Medicamentos, Suplementos y Alimentos':'Proactive Drug, Supplement & Food Interaction Engine';
+  var ibEl=document.getElementById('intro-body');
+  if(ibEl)ibEl.innerHTML=l==='es'?'Ingrese sus medicamentos conocidos y este motor <strong style="color:#1A5C38">verifica interacciones entre medicamentos</strong> en su régimen Y proactivamente identifica cada suplemento y alimento que debe <strong style="color:#1A5C38">evitar o limitar</strong> — antes de que ocurra cualquier evento adverso. A diferencia de los verificadores estándar, esta herramienta le advierte sobre riesgos que no sabía buscar.':'Enter your known prescriptions and this engine <strong style="color:#1A5C38">checks drug-drug interactions</strong> in your regimen AND proactively identifies every supplement and food you should <strong style="color:#1A5C38">avoid or limit</strong> — before any adverse event occurs. Unlike standard checkers that wait for you to ask, this tool warns you about risks you didn't know to look for.';
+  var s1El=document.getElementById('step1-title');
+  if(s1El)s1El.textContent=l==='es'?'Paso 1 — Ingrese sus medicamentos':'Step 1 — Enter your medications';
+  var qlEl=document.getElementById('quick-add-lbl');
+  if(qlEl)qlEl.textContent=l==='es'?'Agregar rápido — medicamentos comunes:':'Quick-add common medications:';
+  var wbEl=document.getElementById('watch-btn-txt');
+  if(wbEl)wbEl.textContent=l==='es'?'Ver: Cómo usar esta aplicación':'Watch: How to Use This App';
+  var s2El=document.getElementById('step2-title');
+  if(s2El)s2El.textContent=l==='es'?'Paso 2 — Ejecutar análisis':'Step 2 — Run analysis';
   updateProactiveResults();
 }
 function updateProactiveResults(){
