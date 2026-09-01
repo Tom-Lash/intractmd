@@ -280,7 +280,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
     <i class="ti ti-radar"></i> Check drug interactions + supplements & foods to avoid
   </button>
   <button class="btn-clear" id="clearBtn" onclick="clearSelections()" style="display:none">
-    <i class="ti ti-trash"></i> Clear &amp; Start New Search
+    <i class="ti ti-trash"></i> <span id="clear-btn-txt">Clear &amp; Start New Search</span>
   </button>
   <div id="proactiveReportBtns" style="display:none;gap:10px;justify-content:center;padding:8px 0 4px;flex-wrap:wrap">
     <button onclick="viewProactiveReport()" style="display:inline-flex;align-items:center;gap:7px;padding:9px 18px;background:#2E7D4F;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:700;font-family:Inter,sans-serif;cursor:pointer"><i class="ti ti-file-description"></i> View Summary Report</button>
@@ -300,7 +300,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
         <div class="risk-denom">/100</div>
       </div>
       <div class="risk-info">
-        <div class="risk-tier" id="riskTier">Supplement &amp; Food Risk Score</div>
+        <div class="risk-tier" id="riskTier"><span id="risk-tier-txt">Supplement &amp; Food Risk Score</span></div>
         <div class="risk-title" id="riskTitle">Analyzing...</div>
       </div>
     </div>
@@ -575,7 +575,10 @@ function renderResults(r){
   const dial=document.getElementById('riskDial');
   dial.className='risk-dial '+tc;
   document.getElementById('riskNum').textContent=Math.round(r.pcprs||0);
-  document.getElementById('riskTier').textContent='Supplement & Food Risk Score — '+(r.risk_tier||'');
+  var _rt=r.risk_tier||'';
+  var _rtEs=_rt==='Critical'?'Crítico':_rt==='High'?'Alto':_rt==='Moderate'?'Moderado':_rt==='Low'?'Bajo':_rt==='Minimal'?'Mínimo':_rt;
+  var _rtLabel=uiLang==='es'?'Puntuación de Riesgo — '+_rtEs:'Supplement & Food Risk Score — '+_rt;
+  document.getElementById('riskTier').innerHTML='<span id="risk-tier-txt">'+_rtLabel+'</span>';
   document.getElementById('riskTitle').textContent=r.risk_title||'';
 
   // Build unified sorted interaction list (drug-drug + supplements + foods)
@@ -658,7 +661,7 @@ function renderResults(r){
     </div>`;
   });
   if(modLowItems.length>0){
-    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ Show ${modLowItems.length} additional Moderate & Low interactions</div>`;
+    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ ${uiLang==='es'?'Mostrar '+modLowItems.length+' interacciones adicionales Moderadas y Bajas':'Show '+modLowItems.length+' additional Moderate & Low interactions'}</div>`;
   }
 
   // Dimension grid
@@ -974,6 +977,8 @@ function setLangP(l){
  if(seEl)seEl.innerHTML=l==='es'?'La <strong>Puntuación de Riesgo Proactivo (0–100)</strong> mide cuántas interacciones clínicamente significativas entre medicamentos, suplementos y alimentos existen para su régimen específico. Una puntuación más alta indica más interacciones que requieren atención.':'The <strong>Proactive Risk Score (0–10)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.';
  // Translate static section headers
  var ids = {
+  'clear-btn-txt':  {en:'Clear & Start New Search',es:'Borrar y comenzar nueva búsqueda'},
+  'risk-tier-txt':  {en:'Supplement & Food Risk Score',es:'Puntuación de Riesgo de Suplementos y Alimentos'},
   'dd-hdr-txt':    {en:'Drug-drug interactions',es:'Interacciones entre medicamentos'},
   'supp-hdr-txt':  {en:'Supplements & foods to avoid',es:'Suplementos y alimentos a evitar'},
   'risk-hdr-txt':  {en:'Risk by dimension',es:'Riesgo por dimensi\u00f3n'},
