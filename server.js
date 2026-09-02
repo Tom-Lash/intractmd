@@ -535,7 +535,12 @@ function writeFileCache(dir, slug, data) {
 // to the public. A forgotten environment variable should not silently expose an
 // unreviewed clinical tool.
 
-const PILOT_PATHS = ['/proactive', '/clinical', '/deprescribing'];
+// /i18n.js carries the UI strings for the three gated surfaces. It is listed
+// here so the pilot copy is not readable without a login: the page gate alone
+// would leave the string table open to anyone who requested it directly.
+// The gate is session-based, so a logged-in pilot user's cookie authenticates
+// this subresource the same way it authenticates the page.
+const PILOT_PATHS = ['/proactive', '/clinical', '/deprescribing', '/i18n.js'];
 
 function loadPilotUsers() {
   const users = {};
