@@ -349,6 +349,7 @@
     "clinical.selfReport.supp.fish_oil": "Fish Oil / Omega-3",
     "clinical.selfReport.supp.vitamin_e": "Vitamin E",
     "clinical.selfReport.supp.vitamin_k": "Vitamin K",
+    "clinical.selfReport.supp.st_johns_wort": "St. John's Wort",
     "clinical.selfReport.supp.ginkgo": "Ginkgo Biloba",
     "clinical.selfReport.supp.garlic": "Garlic supplements",
     "clinical.selfReport.supp.melatonin": "Melatonin",
