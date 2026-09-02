@@ -17,3 +17,60 @@ obfuscate_frontend.js
 precompute_proactive_cache.js
 main
 public/index.dev.html
+
+# ── Generated output and local working files ──────────────────────────────
+# None of the below is deployed: Render builds from git, so an untracked file
+# never reaches production. These rules keep it that way, and stop ~2.29M lines
+# of local noise from swamping every diff view.
+
+# Test and health-check output
+test_results/
+health-check/
+
+# Large media — the pilot videos are served from Vimeo, not the repo
+*.mp4
+
+# Backups
+*.bak
+*.bak-retag
+*-backup-*.txt
+
+# Generated cache artifacts.
+# NOTE: cache/ itself is deliberately NOT ignored — it holds ~178k tracked
+# files (the drug-pair database). Only these two generated files are excluded.
+cache/pill-index.backup.json
+cache/pill-build-log.txt
+
+# Generated log output.
+# NOTE: logs/ itself is deliberately NOT ignored — it has tracked files.
+logs/latest.json
+logs/analytics-latest.json
+logs/analytics-preview.html
+logs/scheduled-run-*.json
+
+# One-off patch and generation scripts, same family as the fix_* rules above.
+# Anything still in use belongs in scripts/ and should be committed there.
+add_*.py
+build_pill_cache*.py
+generate_*.js
+check_missing_profiles.js
+patch_pill_v3.js
+pill_debug.js
+quick_test.js
+install_step2.py
+test_fda_api*.py
+
+# Working documents (decks, specs, drafts) are never committed, matching the
+# existing *.pdf rule above. Global rather than scoped, so they stay ignored
+# wherever they are moved to — including docs/.
+#
+# They must also never sit in public/: Express serves that directory wholesale
+# via express.static, so a committed file there would be downloadable by anyone
+# who guesses the name.
+*.docx
+*.pptx
+
+# Internal review tracking. Records open regulatory and clinical translation
+# gaps with dates against them; kept out of the repo deliberately and shared
+# with reviewers directly.
+review-worklist.md
