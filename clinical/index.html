@@ -360,7 +360,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
             <input type="text" id="caseManagerName" placeholder="e.g., Sarah Chen, PharmD"/>
           </div>
           <div class="form-group">
-            <label>Outreach Language</label>
+            <label id="outreach-lang-lbl">Outreach Language</label>
             <select id="outreachLanguage">
               <option value="en">English</option>
               <option value="es">Spanish (Español)</option>
@@ -1617,6 +1617,8 @@ function setLangC(l){
     'step2-card-sub': {en:'Enter medications from EHR or pharmacy claims — these are CONFIRMED findings',es:'Ingrese medicamentos del HCE o reclamaciones de farmacia — estos son hallazgos CONFIRMADOS'},
     'step2-confirmed-lbl': {en:'CONFIRMED — sourced from verified medical record',es:'CONFIRMADO — proveniente del expediente médico verificado'},
     'view-brief-btn': {en:'View Clinical Briefing',es:'Ver Informe Clínico'},
+
+    'outreach-lang-lbl':'outreach_lang',
 
     'nav-proactive':'nav_proactive',
     'nav-clinical':'nav_clinical',
