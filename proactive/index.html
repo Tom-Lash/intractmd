@@ -194,6 +194,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 .explain-tier{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;margin-bottom:8px;font-size:13px}
 .explain-tier-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
 .acd{position:absolute;background:#fff;border:1.5px solid var(--forest);border-radius:0 0 8px 8px;width:100%;max-height:200px;overflow-y:auto;z-index:100;display:none}.acd-item{padding:8px 13px;font-size:13px;cursor:pointer;color:var(--tx)}.acd-item:hover{background:var(--amber-bg)}.input-wrap{position:relative;flex:1}</style>
+<script src="/i18n.js"></script>
+<script>var tt=window.IntractMD.i18n.t, t=tt;</script>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMVMREWQT1"></script>
 <script>
@@ -272,7 +274,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--warm);color:va
 
     <div style="font-size:12px;color:var(--tx2);margin-bottom:8px;font-weight:500">Your medications (<span id="countLbl">0</span> added):</div>
     <div class="tray" id="tray">
-      <span class="tray-hint">No medications added yet</span>
+      <span class="tray-hint" id="tray-hint">No medications added yet</span>
     </div>
   </div>
 
@@ -398,7 +400,7 @@ function renderTray(){
   const n=drugs.size;
   document.getElementById('countLbl').textContent=n;
   const ab=document.getElementById('analyzeBtn');ab.disabled=n<2;ab.classList.remove('ready');
-  if(!n){t.innerHTML='<span class="tray-hint">No medications added yet</span>';return;}
+  if(!n){t.innerHTML='<span class="tray-hint" id="tray-hint">'+tt('common.empty.noMeds')+'</span>';return;}
   t.innerHTML='';
   drugs.forEach(d=>{
     const tag=document.createElement('span');
@@ -463,7 +465,7 @@ async function runAnalysis(){
 
   let result;
   try{
-    const payload=JSON.stringify({drugs:Array.from(drugs),prompt,lang:window._uiLang||uiLang||"en"});
+    const payload=JSON.stringify({drugs:Array.from(drugs),prompt,lang:IntractMD.i18n.getLang()});
     // Use simple fetch — cache returns in <200ms so streaming adds no value
     const resp=await fetch('/api/proactive-analyze',{
       method:'POST',
@@ -552,6 +554,7 @@ function getFallback(drugs){
   if(hasMetf)warnings.push({drug:'Metformin',interacts_with:'Alcohol',category:'food',severity:'Moderate',mechanism:'Alcohol increases lactic acidosis risk with metformin, particularly with heavy or binge drinking',action:'Limit alcohol to no more than 1-2 standard drinks per day while on metformin. Avoid alcohol entirely if kidney function is impaired.'});
   if(!warnings.length)warnings.push({drug:drugs[0],interacts_with:"St. John's Wort",category:'supplement',severity:'Moderate',mechanism:"St. John's Wort is a potent CYP3A4 inducer that can reduce effectiveness of many medications",action:"Avoid St. John's Wort unless cleared by your physician."});
   return{
+    from_fallback:true,
     pcprs:hasWarf&&hasSSRI?74:hasWarf?62:hasSSRI?55:38,
     risk_tier:hasWarf&&hasSSRI?'High':hasWarf?'High':hasSSRI?'Moderate':'Low',
     risk_title:'Supplement and food warnings identified for your medication regimen',
@@ -561,6 +564,17 @@ function getFallback(drugs){
     avoid_supplements:warnings.filter(w=>w.category==='supplement').map(w=>w.interacts_with),
     caution_foods:warnings.filter(w=>w.category==='food').map(w=>w.interacts_with)
   };
+}
+
+// Hard rule 6: every piece of patient-facing advice must end with a prompt to
+// consult the prescriber. The offline fallback copy predates that rule and seven
+// of its nine action lines end without one. The wording of those lines is with
+// the pharmacist (worklist item 8) and is deliberately not changed here — the
+// prompt is appended at render time to whichever lines lack it.
+function withPrescriberPrompt(action, isFallback){
+  if(!isFallback || !action) return action;
+  if(/(doctor|physician|pharmacist|prescriber|m\u00e9dico|medico|farmac\u00e9utico|prescriptor)/i.test(action)) return action;
+  return action + ' ' + tt('common.consultPrescriber');
 }
 
 function tierClass(tier){
@@ -576,11 +590,12 @@ function renderResults(r){
   dial.className='risk-dial '+tc;
   document.getElementById('riskNum').textContent=Math.round(r.pcprs||0);
   var _rt=r.risk_tier||'';
-  var _rtEs=_rt==='Critical'?'Crítico':_rt==='High'?'Alto':_rt==='Moderate'?'Moderado':_rt==='Low'?'Bajo':_rt==='Minimal'?'Mínimo':_rt;
-  var _rtLabel=uiLang==='es'?'Puntuación de Riesgo — '+_rtEs:'Supplement & Food Risk Score — '+_rt;
+  var _sevKey={Critical:'critical',High:'high',Moderate:'moderate',Low:'low',Minimal:'minimal'}[_rt];
+  var _rtLocal=_sevKey?t('common.severity.'+_sevKey):_rt;
+  var _rtLabel=t('proactive.risk.tierLabel',{tier:_rtLocal});
   document.getElementById('riskTier').innerHTML='<span id="risk-tier-txt">'+_rtLabel+'</span>';
   var _rt2=r.risk_title||'';
-  if(uiLang==='es'){
+  if(IntractMD.i18n.getLang()==='es'){
     _rt2=_rt2.replace('Minimal supplement and food interaction burden','Carga mínima de interacciones con suplementos y alimentos')
              .replace('Low supplement and food interaction burden','Carga baja de interacciones con suplementos y alimentos')
              .replace('Moderate supplement and food interaction burden','Carga moderada de interacciones con suplementos y alimentos')
@@ -599,14 +614,14 @@ function renderResults(r){
   const allInteractions=[];
   (r.drug_interactions||[]).forEach(w=>{
     allInteractions.push({severity:w.severity||'Moderate',label:w.drug_a+' + '+w.drug_b,
-      mechanism:w.mechanism,action:w.action,catLabel:'Drug-Drug',
+      mechanism:w.mechanism,action:w.action,catLabel:t('proactive.cat.drugDrug'),
       catBg:'#EBF5FC',catColor:'#1B6EC2',catBorder:'#C0DFF5',
       icon:'ti-pills',iconColor:'#1B6EC2'});
   });
   (r.warnings||[]).forEach(w=>{
     const isSupp=w.category==='supplement';
     allInteractions.push({severity:w.severity||'Moderate',label:w.drug+' + '+w.interacts_with,
-      mechanism:w.mechanism,action:w.action,catLabel:isSupp?'Supplement':'Food',
+      mechanism:w.mechanism,action:withPrescriberPrompt(w.action,r.from_fallback),catLabel:isSupp?t('proactive.cat.supplement'):t('proactive.cat.food'),
       catBg:isSupp?'#F3EEF9':'#E8F5ED',catColor:isSupp?'#6A4C93':'#2E6B4A',
       catBorder:isSupp?'#D4C5E8':'#AEDCC0',
       icon:isSupp?'ti-leaf':'ti-apple',iconColor:isSupp?'#6A4C93':'#2E6B4A'});
@@ -624,10 +639,10 @@ function renderResults(r){
     const wl2=document.getElementById('warnList');
     if(wl2&&wl2.parentNode)wl2.parentNode.insertBefore(summaryEl,wl2);}
   summaryEl.innerHTML=[
-    nCrit>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0">${nCrit} Critical</span>`:'',
-    nHigh>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdeee8;color:#C05020;border:1px solid #e8b090">${nHigh} High</span>`:'',
-    nMod>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdf3e3;color:#D4860A;border:1px solid #e8cc80">${nMod} Moderate</span>`:'',
-    nLow>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#f2f8f4;color:#2E7D4F;border:1px solid #a0d0b0">${nLow} Low</span>`:''
+    nCrit>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0">${t('proactive.count.critical',{n:nCrit})}</span>`:'',
+    nHigh>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdeee8;color:#C05020;border:1px solid #e8b090">${t('proactive.count.high',{n:nHigh})}</span>`:'',
+    nMod>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdf3e3;color:#D4860A;border:1px solid #e8cc80">${t('proactive.count.moderate',{n:nMod})}</span>`:'',
+    nLow>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#f2f8f4;color:#2E7D4F;border:1px solid #a0d0b0">${t('proactive.count.low',{n:nLow})}</span>`:''
   ].join('');
 
   // CHANGE 1: Critical red alert banner
@@ -638,7 +653,7 @@ function renderResults(r){
   const critItems=allInteractions.filter(x=>x.severity==='Critical');
   if(critItems.length){
     alertEl.style.display='block';
-    alertEl.innerHTML='<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:16px;">\u{1F6A8}</span><strong style="color:#8B0000;font-size:14px;">CRITICAL — Immediate attention required</strong></div>'
+    alertEl.innerHTML='<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;"><span style="font-size:16px;">\u{1F6A8}</span><strong style="color:#8B0000;font-size:14px;">'+t('common.alert.criticalBanner')+'</strong></div>'
       +critItems.map(x=>`<div style="padding:8px 10px;margin-bottom:6px;border-radius:6px;background:#fff;border-left:4px solid #CC0000;"><div style="font-weight:700;font-size:13px;color:#8B0000;margin-bottom:3px;">${x.label} <span style="font-size:11px;padding:2px 7px;border-radius:10px;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0;">${x.catLabel}</span></div><div style="font-size:12px;color:#5a2020;margin-bottom:4px;">${x.mechanism}</div><div style="font-size:12px;color:#8B0000;font-weight:600;">→ ${x.action}</div></div>`).join('');
   }else{alertEl.style.display='none';}
 
@@ -663,7 +678,7 @@ function renderResults(r){
       <div class="warn-head" style="cursor:pointer;" onclick="toggleCard(this)">
         <i class="ti ${w.icon}" style="font-size:17px;color:${w.iconColor}"></i>
         <div class="warn-pair">${w.label}</div>
-        <span class="sev-badge ${sc}">${w.severity}</span>
+        <span class="sev-badge ${sc}">${t('common.severity.'+sc)}</span>
         <span class="cat-badge" style="background:${w.catBg};color:${w.catColor};border:1px solid ${w.catBorder}">${w.catLabel}</span>
         <span style="margin-left:auto;font-size:11px;color:#aaa;padding-left:6px;">▼</span>
       </div>
@@ -674,7 +689,7 @@ function renderResults(r){
     </div>`;
   });
   if(modLowItems.length>0){
-    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ ${uiLang==='es'?'Mostrar '+modLowItems.length+' interacciones adicionales Moderadas y Bajas':'Show '+modLowItems.length+' additional Moderate & Low interactions'}</div>`;
+    wl.innerHTML+=`<div id="showMoreBtn" onclick="toggleShowMore()" style="text-align:center;padding:10px;cursor:pointer;font-size:13px;font-weight:600;color:#1B6EC2;border:1px solid #C0DFF5;border-radius:8px;margin-top:6px;background:#EBF5FC;">▼ ${t('common.showMore',{n:modLowItems.length})}</div>`;
   }
 
   // Dimension grid
@@ -688,7 +703,7 @@ function renderResults(r){
   });
 
   var _aiSum=r.ai_summary||'';
-  if(uiLang==='es'&&_aiSum){
+  if(IntractMD.i18n.getLang()==='es'&&_aiSum){
     _aiSum=_aiSum
       .replace(/Pre-computed analysis: (\d+) supplement\/food interaction[s]? identified across (\d+) medication\(s\)\./g,
         function(m,n1,n2){return 'An\u00e1lisis precalculado: '+n1+' interacciones de suplementos\/alimentos identificadas en '+n2+' medicamento(s).';})
@@ -708,10 +723,10 @@ function renderResults(r){
   const al=document.getElementById('avoidList');
   al.innerHTML='';
   (r.avoid_supplements||[]).forEach(s=>{
-    al.innerHTML+=`<div class="avoid-item supp"><i class="ti ti-leaf avoid-item-icon"></i><div><div class="avoid-name">${s}</div><div class="avoid-reason">${uiLang==='es'?'Suplemento — evitar mientras toma sus medicamentos actuales':'Supplement — avoid while on your current medications'}</div></div></div>`;
+    al.innerHTML+=`<div class="avoid-item supp"><i class="ti ti-leaf avoid-item-icon"></i><div><div class="avoid-name">${s}</div><div class="avoid-reason">${t('proactive.avoid.suppReason')}</div></div></div>`;
   });
   (r.caution_foods||[]).forEach(f=>{
-    al.innerHTML+=`<div class="avoid-item food"><i class="ti ti-apple avoid-item-icon"></i><div><div class="avoid-name">${f}</div><div class="avoid-reason">${uiLang==='es'?'Alimento — limitar o evitar con sus medicamentos':'Food/dietary substance — limit or avoid with your medications'}</div></div></div>`;
+    al.innerHTML+=`<div class="avoid-item food"><i class="ti ti-apple avoid-item-icon"></i><div><div class="avoid-name">${f}</div><div class="avoid-reason">${t('proactive.avoid.foodReason')}</div></div></div>`;
   });
 
   document.getElementById('explainPanel').style.display='block';
@@ -733,7 +748,7 @@ function toggleShowMore(){
   const btn=document.getElementById('showMoreBtn');
   const showing=extras[0]&&extras[0].style.display!=='none';
   extras.forEach(e=>{e.style.display=showing?'none':'block';});
-  if(btn)btn.textContent=showing?'▼ Show '+extras.length+' more interactions':'▲ Show fewer';
+  if(btn)btn.textContent=showing?'▼ '+t('common.showMore',{n:extras.length}):'▲ '+t('common.showFewer');
 }
 
 
@@ -743,7 +758,7 @@ buildChips();renderTray();
 
 <div id="proactiveReportOverlay" style="display:none;position:fixed;inset:0;background:#f4f7fb;z-index:2000;overflow-y:auto">
   <button onclick="closeProactiveReport()" style="position:fixed;top:18px;right:24px;background:#0D3B6E;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;z-index:2001;display:flex;align-items:center;gap:6px;font-family:'Inter',sans-serif">
-    <i class="ti ti-x"></i> Close Report
+    <i class="ti ti-x"></i> <span id="close-report-txt">Close Report</span>
   </button>
   <div id="proactiveReportContent" style="max-width:800px;margin:0 auto;padding:40px 48px;background:#fff;min-height:100vh"></div>
 </div>
@@ -751,44 +766,46 @@ buildChips();renderTray();
 <script>
 function buildProactiveReport(r, drugList){
   var L = {
-    report_title: uiLang==='es'?'Informe de Interacciones Proactivas':'Proactive Supplement & Food Interaction Report',
-    generated:    uiLang==='es'?'Generado: ':'Generated: ',
-    meds_analyzed:uiLang==='es'?'Medicamentos Analizados':'Medications Analyzed',
-    risk_score:   uiLang==='es'?'Puntuación de Riesgo de Polifarmacia':'Polypharmacy Risk Score',
-    dd_sec:       uiLang==='es'?'Interacciones entre Medicamentos':'Drug-Drug Interactions',
-    no_dd:        uiLang==='es'?'No se identificaron interacciones significativas':'No significant drug-drug interactions identified',
-    supp_sec:     uiLang==='es'?'Suplementos y Alimentos a Evitar':'Supplements & Foods to Avoid',
-    food_sec:     uiLang==='es'?'Interacciones con Alimentos':'Food Interactions',
-    ai_sec:       uiLang==='es'?'Resumen Clínico por IA':'AI Clinical Summary',
-    avoid_sec:    uiLang==='es'?'Lista Consolidada de Evitación':'Consolidated Avoidance List',
-    mechanism:    uiLang==='es'?'Mecanismo':'Mechanism',
-    clin_effect:  uiLang==='es'?'Efecto clínico':'Clinical effect',
-    evidence:     uiLang==='es'?'Evidencia':'Evidence',
-    rec_action:   uiLang==='es'?'Acción recomendada':'Recommended action',
-    monitor:      uiLang==='es'?'Monitorear':'Monitor',
-    pat_note:     uiLang==='es'?'Nota para el paciente':'Patient note',
-    avoid_lbl:    uiLang==='es'?'EVITAR':'AVOID',
-    caution_lbl:  uiLang==='es'?'PRECAUCIÓN':'CAUTION',
-    safe_lbl:     uiLang==='es'?'SEGURO':'SAFE',
-    sev_critical: uiLang==='es'?'Crítico':'Critical',
-    sev_high:     uiLang==='es'?'Alto':'High',
-    sev_moderate: uiLang==='es'?'Moderado':'Moderate',
-    sev_low:      uiLang==='es'?'Bajo':'Low',
-    sev_minimal:  uiLang==='es'?'Mínimo':'Minimal',
-    disclaimer:   uiLang==='es'?'Solo para soporte de decisión clínica. No es consejo médico.':'Clinical decision support only. Not a substitute for professional medical advice.',
-    no_supp:      uiLang==='es'?'No se identificaron riesgos de suplementos':'No supplement risks identified',
-    timing:       uiLang==='es'?'Orientación de tiempo':'Timing guidance',
-    food_note:    uiLang==='es'?'Interacciones alimentarias clínicamente significativas.':'Clinically significant food and dietary interactions.',
-    findings_sev: uiLang==='es'?'Hallazgos por Severidad':'Findings by Severity',
-    sev_col:      uiLang==='es'?'Severidad':'Severity',
-    interact_col: uiLang==='es'?'Interacción':'Interaction',
-    type_col:     uiLang==='es'?'Tipo':'Type',
-    mech_col:     uiLang==='es'?'Mecanismo':'Mechanism',
-    action_col:   uiLang==='es'?'Acción':'Action',
-    supp_avoid:   uiLang==='es'?'Suplementos a Evitar':'Supplements to Avoid',
-    foods_avoid:  uiLang==='es'?'Alimentos a Evitar o Limitar':'Foods to Avoid or Limit',
-    supp_avoid_sub: uiLang==='es'?'Suplemento — evitar con sus medicamentos':(uiLang==='es'?'Suplemento — evitar mientras toma sus medicamentos actuales':'Supplement — avoid while on your current medications'),
-    food_avoid_sub: uiLang==='es'?'Alimento — limitar o evitar con sus medicamentos':'Food/dietary substance — limit or avoid with your medications',
+    report_title:   t('proactive.report.title'),
+    generated:      t('common.report.generated') + ' ',
+    meds_analyzed:  t('common.report.medsAnalyzed'),
+    risk_score:     t('proactive.report.riskScore'),
+    dd_sec:         t('proactive.report.ddSec'),
+    no_dd:          t('proactive.report.noDdi'),
+    supp_sec:       t('proactive.report.suppSec'),
+    food_sec:       t('proactive.report.foodSec'),
+    ai_sec:         t('proactive.report.aiSec'),
+    avoid_sec:      t('proactive.report.avoidSec'),
+    mechanism:      t('common.col.mechanism'),
+    clin_effect:    t('common.label.clinicalEffect'),
+    evidence:       t('common.label.evidence'),
+    rec_action:     t('common.label.recommendedAction'),
+    monitor:        t('common.label.monitor'),
+    pat_note:       t('common.label.patientNote'),
+    avoid_lbl:      t('proactive.badge.avoid'),
+    caution_lbl:    t('proactive.badge.caution'),
+    safe_lbl:       t('proactive.badge.safe'),
+    sev_critical:   t('common.severity.critical'),
+    sev_high:       t('common.severity.high'),
+    sev_moderate:   t('common.severity.moderate'),
+    sev_low:        t('common.severity.low'),
+    sev_minimal:    t('common.severity.minimal'),
+    disclaimer:     t('common.disclaimer.cdsOnly'),
+    no_supp:        t('proactive.report.noSupp'),
+    timing:         t('common.label.timing'),
+    food_note:      t('proactive.report.foodNote'),
+    findings_sev:   t('common.report.findingsBySeverity'),
+    sev_col:        t('common.col.severity'),
+    interact_col:   t('common.col.interaction'),
+    type_col:       t('common.col.type'),
+    mech_col:       t('common.col.mechanism'),
+    action_col:     t('common.col.action'),
+    supp_avoid:     t('proactive.report.suppAvoid'),
+    foods_avoid:    t('proactive.report.foodsAvoid'),
+    supp_avoid_sub: t('proactive.avoid.suppReason'),
+    print_pdf:      t('common.report.printPdf'),
+    return_btn:     t('common.report.returnToAnalysis'),
+    food_avoid_sub: t('proactive.avoid.foodReason'),
   };
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
@@ -796,13 +813,13 @@ function buildProactiveReport(r, drugList){
   const sevBg = {Critical:'#FCEBEB',High:'#fdeee8',Moderate:'#FDF3E3',Low:'#E8F5ED'};
   const pcprs = Math.round(r.pcprs||0);
   const scoreColor = pcprs>=70?'#A32D2D':pcprs>=40?'#D97706':'#2E7D4F';
-  const scoreLabel = pcprs>=70?'High Risk':pcprs>=40?'Moderate Risk':'Lower Risk';
+  const scoreLabel = pcprs>=70?t('common.riskBand.high'):pcprs>=40?t('common.riskBand.moderate'):t('common.riskBand.low');
   const allInteractions = [];
   (r.drug_interactions||[]).forEach(function(w){
-    allInteractions.push({severity:w.severity,label:(w.drug_a||w.drug1||'')+'+'+(w.drug_b||w.drug2||''),mechanism:w.mechanism,action:w.action,cat:(uiLang==='es'?'Medicamento-Medicamento':'Drug-Drug')});
+    allInteractions.push({severity:w.severity,label:(w.drug_a||w.drug1||'')+'+'+(w.drug_b||w.drug2||''),mechanism:w.mechanism,action:w.action,cat:t('proactive.cat.drugDrug')});
   });
   (r.warnings||[]).forEach(function(w){
-    allInteractions.push({severity:w.severity,label:w.drug+'+'+w.interacts_with,mechanism:w.mechanism,action:w.action,cat:w.category==='supplement'?(uiLang==='es'?'Suplemento':'Supplement'):(uiLang==='es'?'Alimento':'Food')});
+    allInteractions.push({severity:w.severity,label:w.drug+'+'+w.interacts_with,mechanism:w.mechanism,action:withPrescriberPrompt(w.action,r.from_fallback),cat:w.category==='supplement'?t('proactive.cat.supplement'):t('proactive.cat.food')});
   });
   const sevOrder={Critical:0,High:1,Moderate:2,Low:3};
   allInteractions.sort(function(a,b){return (sevOrder[a.severity]||4)-(sevOrder[b.severity]||4);});
@@ -813,9 +830,9 @@ function buildProactiveReport(r, drugList){
   let html = '';
   // Header
   html += '<div style="text-align:center;border-bottom:2px solid #0D3B6E;padding-bottom:16px;margin-bottom:20px">';
-  html += '<div style="font-size:20px;font-weight:700;color:#0D3B6E">'+(uiLang==='es'?'IntractMD™ Informe Proactivo de Riesgo':'IntractMD™ Proactive Supplement & Food Risk Report')+'</div>';
+  html += '<div style="font-size:20px;font-weight:700;color:#0D3B6E">'+t('proactive.report.header')+'</div>';
   html += '<div style="font-size:12px;color:#555;margin-top:5px">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
-  html += '<div style="font-size:11px;color:#888;margin-top:3px">Generated: '+dateStr+(uiLang==='es'?' · Solo para farmacéutico y prescriptor':' · For pharmacist and prescriber review only')+'</div>';
+  html += '<div style="font-size:11px;color:#888;margin-top:3px">Generated: '+dateStr+(' · ' + t('common.disclaimer.pharmReviewOnly'))+'</div>';
   html += '</div>';
 
   // Summary box
@@ -827,17 +844,17 @@ function buildProactiveReport(r, drugList){
   html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">PCPRS / 100</div>';
   html += '<div style="font-size:11px;font-weight:700;color:'+scoreColor+'">'+scoreLabel+'</div>';
   html += '</div>';
-  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+(uiLang==='es'?'Nivel de Riesgo':'Risk Tier')+'</div><div style="font-size:15px;font-weight:700;color:#0D3B6E">'+(uiLang==='es'?(r.risk_tier==='Critical'?'Crítico':r.risk_tier==='High'?'Alto':r.risk_tier==='Moderate'?'Moderado':r.risk_tier==='Low'?'Bajo':r.risk_tier==='Minimal'?'Mínimo':r.risk_tier||'—'):(r.risk_tier||'—'))+'</div></div>';
-  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+(uiLang==='es'?'Hallazgos Totales':'Total Findings')+'</div><div style="font-size:20px;font-weight:700;color:#0D3B6E">'+allInteractions.length+'</div></div>';
+  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+t('common.report.riskTier')+'</div><div style="font-size:15px;font-weight:700;color:#0D3B6E">'+(function(){var k={Critical:'critical',High:'high',Moderate:'moderate',Low:'low',Minimal:'minimal'}[r.risk_tier];return k?t('common.severity.'+k):(r.risk_tier||'—');})()+'</div></div>';
+  html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+t('proactive.report.totalFindings')+'</div><div style="font-size:20px;font-weight:700;color:#0D3B6E">'+allInteractions.length+'</div></div>';
   html += '<div>';
-  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+(uiLang==='es'?nCrit+' Crítico':nCrit+' Critical')+'</span>';
-  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+(uiLang==='es'?nHigh+' Alto':nHigh+' High')+'</span>';
-  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+(uiLang==='es'?nMod+' Moderado':nMod+' Moderate')+'</span>';
+  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+t('proactive.count.critical',{n:nCrit})+'</span>';
+  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+t('proactive.count.high',{n:nHigh})+'</span>';
+  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+t('proactive.count.moderate',{n:nMod})+'</span>';
   html += '</div></div>';
 
   // Drug tags
   html += '<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #e2e6ea">';
-  html += '<div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">'+(uiLang==='es'?'Medicamentos Revisados':'Medications Reviewed')+'</div>';
+  html += '<div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">'+t('common.report.medsReviewed')+'</div>';
   html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
   drugList.forEach(function(d){ html += '<span style="background:#fff;border:1.5px solid #00B4D8;border-radius:20px;padding:3px 12px;font-size:12px;font-weight:600;color:#0D3B6E">'+d+'</span>'; });
   html += '</div></div>';
@@ -845,7 +862,7 @@ function buildProactiveReport(r, drugList){
   // AI summary
   if(r.ai_summary){
     var _rs=r.ai_summary;
-    if(uiLang==='es'&&_rs){
+    if(IntractMD.i18n.getLang()==='es'&&_rs){
       _rs=_rs
         .replace(/Pre-computed analysis: (\d+) supplement\/food interactions? identified across (\d+) medication\(s\)\./g,
           function(m,n1,n2){return 'An\u00e1lisis precalculado: '+n1+' interacciones identificadas en '+n2+' medicamento(s).';})
@@ -871,13 +888,13 @@ function buildProactiveReport(r, drugList){
     html += '<th style="background:#0D3B6E;color:#fff;padding:7px 10px;text-align:left">'+L.action_col+'</th>';
     html += '</tr></thead><tbody>';
     allInteractions.forEach(function(i,idx){
-      const sc = sevColor[(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)]||'#555';
-      const sb = sevBg[(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)]||'#f4f7fb';
+      const sc = sevColor[(L['sev_'+String(i.severity||'').toLowerCase()]||i.severity)]||'#555';
+      const sb = sevBg[(L['sev_'+String(i.severity||'').toLowerCase()]||i.severity)]||'#f4f7fb';
       const bg = idx%2===0?'#fff':'#f8f9fb';
       html += '<tr style="background:'+bg+'">'
-        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea"><span style="display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700;background:'+sb+';color:'+sc+';-webkit-print-color-adjust:exact;print-color-adjust:exact">'+(uiLang==='es'?(L['sev_'+i.severity.toLowerCase()]||i.severity):i.severity)+'</span></td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea"><span style="display:inline-block;padding:2px 7px;border-radius:8px;font-size:10px;font-weight:700;background:'+sb+';color:'+sc+';-webkit-print-color-adjust:exact;print-color-adjust:exact">'+(L['sev_'+String(i.severity||'').toLowerCase()]||i.severity)+'</span></td>'
         +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;font-weight:600">'+i.label+'</td>'
-        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666">'+(uiLang==='es'?(i.cat==='Drug-Drug'||i.cat==='Medicamento-Medicamento'?'Med-Med':i.cat==='Supplement'||i.cat==='Suplemento'?'Suplemento':i.cat==='Food'||i.cat==='Alimento'?'Alimento':i.cat):i.cat)+'</td>'
+        +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666">'+i.cat+'</td>'
         +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#444">'+i.mechanism+'</td>'
         +'<td style="padding:6px 10px;border-bottom:1px solid #e2e6ea;color:#666;font-style:italic">'+i.action+'</td>'
         +'</tr>';
@@ -897,7 +914,7 @@ function buildProactiveReport(r, drugList){
   }
   if(r.caution_foods&&r.caution_foods.length){
     html += '<div style="margin-bottom:16px;page-break-inside:avoid">';
-    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">Foods to Use with Caution</div>';
+    html += '<div style="font-size:14px;font-weight:700;color:#0D3B6E;padding-bottom:6px;border-bottom:1px solid #e2e6ea;margin-bottom:10px">'+t('proactive.report.foodsCaution')+'</div>';
     html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
     r.caution_foods.forEach(function(f){
       html += '<span style="background:#FDF3E3;border:1px solid #F6CC85;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;color:#D97706">'+f+'</span>';
@@ -907,8 +924,8 @@ function buildProactiveReport(r, drugList){
 
   // Footer
   html += '<div style="margin-top:30px;padding-top:12px;border-top:1px solid #e2e6ea;text-align:center;font-size:10px;color:#aaa;line-height:1.6">';
-  html += 'IntractMD™ is a clinical decision support tool — not a substitute for professional medical advice.<br/>';
-  html += '©2026 Resolve Medical, LLC · Patent Pending · 700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113';
+  html += t('common.disclaimer.cdsFooter') + '<br/>';
+  html += t('common.brand.copyright');
   html += '</div>';
 
   return html;
@@ -936,8 +953,8 @@ function downloadProactiveReport(){
     + '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>'
     + '<style>' + style + '</style>'
     + '</head><body>'
-    + '<button class="print-btn" onclick="window.print()">&#x1F4E5; Print / Save PDF</button>'
-    + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E;box-shadow:none">&#8592; Return to Analysis</button>'
+    + '<button class="print-btn" onclick="window.print()">&#x1F4E5; ' + L.print_pdf + '</button>'
+    + '<button class="print-btn" onclick="window.close()" style="right:auto;left:16px;background:#fff;color:#0D3B6E;border:2px solid #0D3B6E;box-shadow:none">&#8592; ' + L.return_btn + '</button>'
     + '<div style="max-width:780px;margin:0 auto;padding:32px 40px">' + body + '</div>'
     + '</body></html>';
   const win = window.open('', '_blank');
@@ -953,132 +970,82 @@ function downloadProactiveReport(){
 
 
 <script>
-var uiLang=localStorage.getItem('intractmd_lang')||'en';
-var TR_P={
- step1_ph:{en:'Or type any medication name and press Enter...',es:'O escriba cualquier medicamento y presione Enter...'},
- analyze_btn:{en:'Check drug interactions + supplements & foods to avoid',es:'Verificar interacciones + suplementos y alimentos a evitar'},
- view_report:{en:'View Summary Report',es:'Ver Informe Resumido'},
- download_pdf:{en:'Download PDF',es:'Descargar PDF'},
- dd_sec:{en:'Drug-Drug Interactions',es:'Interacciones entre Medicamentos'},
- supp_sec:{en:'Supplements & Foods to Avoid',es:'Suplementos y Alimentos a Evitar'},
- food_sec:{en:'Food Interactions',es:'Interacciones con Alimentos'},
- risk_sec:{en:'Risk by Dimension',es:'Riesgo por Dimensi&oacute;n'},
- ai_sec:{en:'AI Clinical Summary',es:'Resumen Cl&iacute;nico por IA'},
- avoid_sec:{en:'Consolidated Avoidance List',es:'Lista Consolidada de Evitaci&oacute;n'},
- sev_critical:{en:'Critical',es:'Cr&iacute;tico'},
- sev_high:{en:'High',es:'Alto'},
- sev_moderate:{en:'Moderate',es:'Moderado'},
- sev_low:{en:'Low',es:'Bajo'},
- sev_minimal:{en:'Minimal',es:'M&iacute;nimo'},
- mechanism:{en:'Mechanism',es:'Mecanismo'},
- clinical_effect:{en:'Clinical effect',es:'Efecto cl&iacute;nico'},
- evidence:{en:'Evidence',es:'Evidencia'},
- monitor:{en:'Monitor',es:'Monitorear'},
- rec_action:{en:'Recommended action',es:'Acci&oacute;n recomendada'},
- patient_note:{en:'Patient note',es:'Nota para el paciente'},
+// ── LANGUAGE CONTROL ────────────────────────────────────────────────────────
+// The string table lives in /i18n.js. This surface no longer carries its own
+// translations, so what used to be TR_P + tp() + a MutationObserver that
+// re-patched section headers after every render is now one t() pass and a
+// re-render.
+//
+// setLangP keeps its name deliberately: the EN/ES buttons in the markup call it
+// directly, and this refactor is not allowed to change the control.
+
+// Static copy, by element id. Split by how it has to be written to the DOM.
+var STATIC_TEXT = {
+  'intro-title':   'proactive.intro.title',
+  'step1-title':   'proactive.step1.title',
+  'quick-add-lbl': 'proactive.quickAdd.label',
+  'watch-btn-txt': 'common.btn.watchVideo',
+  'clear-btn-txt': 'proactive.btn.clear',
+  'score-mean-txt':'proactive.explain.toggle',
+  'dim-mean-txt':  'proactive.dims.toggle',
+  'dd-hdr-txt':    'proactive.hdr.ddi',
+  'supp-hdr-txt':  'proactive.hdr.supp',
+  'risk-hdr-txt':  'proactive.hdr.dimensions',
+  'ai-hdr-txt':    'proactive.hdr.ai',
+  'avoid-hdr-txt': 'proactive.hdr.avoid',
+  'close-report-txt':'common.report.close',
+  'tray-hint':     'common.empty.noMeds'
 };
-function tp(k){var e=TR_P[k];return e?(e[uiLang]||e.en||k):k;}
+// These carry inline markup, so they are written as HTML.
+var STATIC_HTML = {
+  'intro-body':    'proactive.intro.body',
+  'score-explain': 'proactive.explain.body'
+};
+
+function applyProactiveStrings(){
+  Object.keys(STATIC_TEXT).forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.textContent=tt(STATIC_TEXT[id]);
+  });
+  Object.keys(STATIC_HTML).forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.innerHTML=tt(STATIC_HTML[id]);
+  });
+  var di=document.getElementById('drugInput');
+  if(di)di.placeholder=tt('proactive.input.placeholder');
+  var ab=document.getElementById('analyzeBtn');
+  if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+tt('proactive.btn.analyze');
+  var rb=document.getElementById('proactiveReportBtns');
+  if(rb){
+    var btns=rb.querySelectorAll('button');
+    if(btns[0])btns[0].innerHTML='<i class="ti ti-file-description"></i> '+tt('common.report.viewSummary');
+    if(btns[1])btns[1].innerHTML='<i class="ti ti-file-download"></i> '+tt('common.report.downloadPdf');
+  }
+  // The tray count line ("Your medications (N added):") is deliberately left in
+  // markup. Its key proactive.tray.count exists but has no Spanish, so wiring it
+  // would change nothing on screen while restructuring markup that #countLbl
+  // depends on. Convert it in Stage 4 alongside the other structural work.
+  // #risk-tier-txt is intentionally absent: it lives inside the hidden results
+  // panel and renderResults() always writes it with the tier appended.
+}
+
 function setLangP(l){
- uiLang=l;localStorage.setItem('intractmd_lang',l);window._uiLang=l;
- var en=document.getElementById('lang-en-p');
- var es=document.getElementById('lang-es-p');
- if(en)en.className='lang-btn'+(l==='en'?' active':'');
- if(es)es.className='lang-btn'+(l==='es'?' active':'');
- var di=document.getElementById('drugInput');
- if(di)di.placeholder=tp('step1_ph');
- var ab=document.getElementById('analyzeBtn');
- if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+tp('analyze_btn');
- var rb=document.getElementById('proactiveReportBtns');
- if(rb){
-  var btns=rb.querySelectorAll('button');
-  if(btns[0])btns[0].innerHTML='<i class="ti ti-file-description"></i> '+tp('view_report');
-  if(btns[1])btns[1].innerHTML='<i class="ti ti-file-download"></i> '+tp('download_pdf');
- }
- var itEl=document.getElementById('intro-title');
- if(itEl)itEl.textContent=l==='es'?'Motor Proactivo de Interacciones: Medicamentos, Suplementos y Alimentos':'Proactive Drug, Supplement & Food Interaction Engine';
- var ibEl=document.getElementById('intro-body');
- if(ibEl){
-  if(l==='es'){
-   ibEl.innerHTML='Ingrese sus medicamentos conocidos y este motor <strong style="color:#1A5C38">verifica interacciones entre medicamentos</strong> en su r&eacute;gimen Y proactivamente identifica cada suplemento y alimento que debe <strong style="color:#1A5C38">evitar o limitar</strong> &mdash; antes de que ocurra cualquier evento adverso. A diferencia de los verificadores est&aacute;ndar, esta herramienta le advierte sobre riesgos que no sab&iacute;a buscar.';
-  }else{
-   ibEl.innerHTML='Enter your known prescriptions and this engine <strong style="color:#1A5C38">checks drug-drug interactions</strong> in your regimen AND proactively identifies every supplement and food you should <strong style="color:#1A5C38">avoid or limit</strong> &mdash; before any adverse event occurs. Unlike standard checkers that wait for you to ask, this tool warns you about risks you didn\'t know to look for.';
-  }
- }
- var s1El=document.getElementById('step1-title');
- if(s1El)s1El.textContent=l==='es'?'Paso 1 &mdash; Ingrese sus medicamentos':'Step 1 &mdash; Enter your medications';
- var qlEl=document.getElementById('quick-add-lbl');
- if(qlEl)qlEl.textContent=l==='es'?'Agregar r&aacute;pido &mdash; medicamentos comunes:':'Quick-add common medications:';
- var wbEl=document.getElementById('watch-btn-txt');
- if(wbEl)wbEl.textContent=l==='es'?'Ver: Cómo usar esta aplicación':'Watch: How to Use This App';
- var smEl=document.getElementById('score-mean-txt');
- if(smEl)smEl.textContent=l==='es'?'¿Qué significa esta puntuación?':'What does this score mean?';
- var seEl=document.getElementById('score-explain');
- if(seEl)seEl.innerHTML=l==='es'?'La <strong>Puntuación de Riesgo Proactivo (0–100)</strong> mide cuántas interacciones clínicamente significativas entre medicamentos, suplementos y alimentos existen para su régimen específico. Una puntuación más alta indica más interacciones que requieren atención.':'The <strong>Proactive Risk Score (0–10)</strong> measures how many clinically significant drug-drug interactions, supplement risks, and food risks exist for your specific medication regimen. A higher score means more interactions requiring attention.';
- // Translate static section headers
- var ids = {
-  'clear-btn-txt':  {en:'Clear & Start New Search',es:'Borrar y comenzar nueva búsqueda'},
-  'risk-tier-txt':  {en:'Supplement & Food Risk Score',es:'Puntuación de Riesgo de Suplementos y Alimentos'},
-  'dd-hdr-txt':    {en:'Drug-drug interactions',es:'Interacciones entre medicamentos'},
-  'supp-hdr-txt':  {en:'Supplements & foods to avoid',es:'Suplementos y alimentos a evitar'},
-  'risk-hdr-txt':  {en:'Risk by dimension',es:'Riesgo por dimensi\u00f3n'},
-  'dim-mean-txt':  {en:'What do these dimensions mean?',es:'\u00bfQu\u00e9 significan estas dimensiones?'},
-  'ai-hdr-txt':    {en:'AI clinical summary',es:'Resumen cl\u00ednico de IA'},
-  'avoid-hdr-txt': {en:'Consolidated avoidance list',es:'Lista consolidada de evitaci\u00f3n'},
- };
- Object.keys(ids).forEach(function(id){
-  var el=document.getElementById(id);
-  if(el)el.textContent=ids[id][l]||ids[id].en;
- });
- // Re-translate any dynamically generated supplement subtitles
- document.querySelectorAll('.avoid-reason').forEach(function(el){
-  if(el.textContent.indexOf('Supplement')===0||el.textContent.indexOf('Suplemento')===0){
-   el.textContent=l==='es'?'Suplemento \u2014 evitar mientras toma sus medicamentos actuales':'Supplement \u2014 avoid while on your current medications';
-  }
-  if(el.textContent.indexOf('Food')===0||el.textContent.indexOf('Alimento')===0){
-   el.textContent=l==='es'?'Alimento \u2014 limitar o evitar con sus medicamentos':'Food/dietary substance \u2014 limit or avoid with your medications';
-  }
- });
- updateProactiveResults();
+  IntractMD.i18n.setLang(l);
+  var en=document.getElementById('lang-en-p');
+  var es=document.getElementById('lang-es-p');
+  if(en)en.className='lang-btn'+(l==='en'?' active':'');
+  if(es)es.className='lang-btn'+(l==='es'?' active':'');
+  applyProactiveStrings();
+  // Re-render any results already on screen. This is what the MutationObserver
+  // was standing in for, and it covers the offline fallback too, since that
+  // result object goes through the same renderResults() path.
+  if(window._proactiveResult)renderResults(window._proactiveResult);
 }
-function updateProactiveResults(){
- document.querySelectorAll('.sec-hdr').forEach(function(el){
-  var icon=el.querySelector('i');var count=el.querySelector('.sec-count');
-  var iconHtml=icon?icon.outerHTML+' ':'';var countHtml=count?' '+count.outerHTML:'';
-  var txt=el.textContent.replace(/[0-9]/g,'').trim();
-  var map={'Drug-Drug Interactions':'dd_sec','Interacciones entre Medicamentos':'dd_sec',
-   'Supplements & Foods to Avoid':'supp_sec','Suplementos y Alimentos a Evitar':'supp_sec',
-   'Food Interactions':'food_sec','Interacciones con Alimentos':'food_sec',
-   'AI Clinical Summary':'ai_sec','Resumen Clínico por IA':'ai_sec',
-   'Consolidated Avoidance List':'avoid_sec','Lista Consolidada de Evitación':'avoid_sec'};
-  var key=map[txt];if(key)el.innerHTML=iconHtml+tp(key)+countHtml;
- });
- document.querySelectorAll('.ix-lbl').forEach(function(el){
-  var map={'Mechanism':'mechanism','Mecanismo':'mechanism',
-   'Clinical effect':'clinical_effect','Efecto clínico':'clinical_effect',
-   'Evidence':'evidence','Evidencia':'evidence',
-   'Monitor':'monitor','Monitorear':'monitor',
-   'Recommended action':'rec_action','Acción recomendada':'rec_action',
-   'Patient note':'patient_note','Nota para el paciente':'patient_note'};
-  var key=map[el.textContent.trim()];if(key)el.textContent=tp(key);
- });
- document.querySelectorAll('.badge').forEach(function(el){
-  var map={'Critical':'sev_critical','Crítico':'sev_critical',
-   'High':'sev_high','Alto':'sev_high',
-   'Moderate':'sev_moderate','Moderado':'sev_moderate',
-   'Low':'sev_low','Bajo':'sev_low',
-   'Minimal':'sev_minimal','Mínimo':'sev_minimal'};
-  var key=map[el.textContent.trim()];
-  if(key&&!el.classList.contains('evidence')&&!el.classList.contains('food-ix'))el.textContent=tp(key);
- });
-}
-var _pObs=new MutationObserver(function(){if(uiLang==='es')updateProactiveResults();});
+
 document.addEventListener('DOMContentLoaded',function(){
- var res=document.getElementById('results');
- if(res)_pObs.observe(res,{childList:true,subtree:true});
- setLangP(uiLang);
+  setLangP(IntractMD.i18n.getLang());
 });
 if(window._proactiveResult)renderResults(window._proactiveResult);
-window._uiLang=uiLang;
 </script>
 </body>
 </html>
