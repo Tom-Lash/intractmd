@@ -378,7 +378,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           <div class="drug-entry">
             <input type="text" id="drugInput" placeholder="Type a drug name (e.g. Warfarin)..."
               oninput="onDrugInput(this.value)" onkeydown="onDrugKeydown(event)"/>
-            <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> Add</button>
+            <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> <span id="add-btn-txt">Add</span></button>
           </div>
           <div id="drugAcd" style="display:none;position:absolute;top:42px;left:0;right:60px;background:#fff;border:1.5px solid var(--navy);border-radius:0 0 8px 8px;z-index:100;max-height:200px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,.1);"></div>
         </div>
@@ -1618,6 +1618,7 @@ function setLangC(l){
     'step2-confirmed-lbl': {en:'CONFIRMED — sourced from verified medical record',es:'CONFIRMADO — proveniente del expediente médico verificado'},
     'view-brief-btn': {en:'View Clinical Briefing',es:'Ver Informe Clínico'},
 
+    'add-btn-txt':'add_btn',
     'outreach-lang-lbl':'outreach_lang',
 
     'nav-proactive':'nav_proactive',
