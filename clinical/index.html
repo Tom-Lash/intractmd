@@ -1359,7 +1359,7 @@ function buildClinicalReport(result, payload){
 
   // Patient row
   html += '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e6ea">';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Paciente':'Patient')+'</div><div class="er-info-value">' + (ctx.firstName||uiLang==='es'?'Miembro':'Member') + '</div></div>';
+  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Paciente':'Patient')+'</div><div class="er-info-value">' + (ctx.firstName || (uiLang==='es'?'Miembro':'Member')) + '</div></div>';
   html += '<div><div class="er-info-label">'+(uiLang==='es'?'Plan de Salud':'Health Plan')+'</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
   html += '<div><div class="er-info-label">'+(uiLang==='es'?'Gestor de Casos':'Case Manager')+'</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
   html += '<div><div class="er-info-label">'+(uiLang==='es'?'Nivel de Confianza':'Confidence Tier')+'</div><div class="er-info-value" style="color:' + (tierColors[tierUsed]||'#7C3AED') + '">' +(uiLang==='es'?(tierUsed==='CONFIRMED'?'CONFIRMADO':tierUsed==='COMPUTED'?'CALCULADO':tierUsed==='PREDICTIVE'?'PREDICTIVO':tierUsed):tierUsed)+'</div></div>';
