@@ -194,6 +194,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
   .er-outreach-box{page-break-inside:avoid}
 }
 </style>
+<script src="/i18n.js"></script>
+<script>var tt=window.IntractMD.i18n.t;</script>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMVMREWQT1"></script>
 <script>
@@ -343,27 +345,27 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 1: PATIENT CONTEXT -->
       <div class="card" id="step-1">
         <div class="card-title"><i class="ti ti-user"></i> Step 1 — Patient & Case Manager Context</div>
-        <div class="card-sub">Setup information for message personalization</div>
+        <div class="card-sub" id="step1-card-sub">Setup information for message personalization</div>
         <div class="form-row">
           <div class="form-group">
-            <label>Patient Full Name</label>
+            <label id="lbl-patient-name">Patient Full Name</label>
             <input type="text" id="patientFirstName" placeholder="e.g., Margaret Johnson" oninput="updateStepStatus()"/>
           </div>
           <div class="form-group">
-            <label>Health Plan Name</label>
+            <label id="lbl-plan-name">Health Plan Name</label>
             <input type="text" id="planName" placeholder="e.g., BlueCross BlueShield Ohio"/>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label>Case Manager Name</label>
+            <label id="lbl-case-manager">Case Manager Name</label>
             <input type="text" id="caseManagerName" placeholder="e.g., Sarah Chen, PharmD"/>
           </div>
           <div class="form-group">
             <label id="outreach-lang-lbl">Outreach Language</label>
             <select id="outreachLanguage">
-              <option value="en">English</option>
-              <option value="es">Spanish (Español)</option>
+              <option value="en" id="opt-lang-en">English</option>
+              <option value="es" id="opt-lang-es">Spanish (Español)</option>
             </select>
           </div>
         </div>
@@ -386,7 +388,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           <span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">No medications added yet</span>
         </div>
         <div style="margin-top:14px;">
-          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Quick add — common polypharmacy medications:</div>
+          <div id="quick-add-lbl" style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Quick add — common polypharmacy medications:</div>
           <div id="quickPills" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
         </div>
       </div>
@@ -394,14 +396,14 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 3: DDI RISK SCORE -->
       <div class="card" id="step-3">
         <div class="card-title"><i class="ti ti-radar"></i> Step 3 — Drug-Drug Interaction Risk Score</div>
-        <div class="card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
+        <div class="card-sub" id="step3-card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
         <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-bottom:14px;padding:11px;">
           <i class="ti ti-radar"></i> <span id="ddi-btn-txt">Run Drug Interaction Analysis</span>
         </button>
         <div id="ddiPlaceholder" class="ddi-placeholder">
           <i class="ti ti-radar" style="font-size:32px;margin-bottom:8px;display:block;opacity:.3;"></i>
-          <div style="font-size:14px;font-weight:600;margin-bottom:4px;">Add 2+ medications in Step 2, then click the button above</div>
-          <div style="font-size:12px;">Analysis pulls from 124,750-pair cache — results in under 1 second</div>
+          <div id="ddi-ph-main" style="font-size:14px;font-weight:600;margin-bottom:4px;">Add 2+ medications in Step 2, then click the button above</div>
+          <div id="ddi-ph-sub" style="font-size:12px;">Analysis pulls from 124,750-pair cache — results in under 1 second</div>
         </div>
         <div id="ddiResult" style="display:none;"></div>
       </div>
@@ -409,12 +411,12 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 4: RISK FACTORS -->
       <div class="card" id="step-4">
         <div class="card-title"><i class="ti ti-clipboard-list"></i> Step 4 — Polypharmacy Risk Factors</div>
-        <div class="card-sub">Select risk factors from patient record — check all that apply. Each factor modifies the overall risk assessment.</div>
+        <div class="card-sub" id="step4-card-sub">Select risk factors from patient record — check all that apply. Each factor modifies the overall risk assessment.</div>
         <div class="tier-bar computed"><i class="ti ti-cpu"></i> COMPUTED — system applies severity modifiers based on selected factors</div>
 
         <div style="font-size:12px;font-weight:700;color:var(--computed);text-transform:uppercase;letter-spacing:.5px;margin:0 0 8px;display:flex;align-items:center;gap:6px;"><i class="ti ti-cpu"></i> Auto-Computed from Medication Regimen</div>
         <div id="autoFactorResults" style="margin-bottom:16px;">
-          <div style="font-size:13px;color:var(--text3);padding:8px 0;">Run DDI analysis in Step 3 to auto-compute risk factors.</div>
+          <div id="auto-factor-ph" style="font-size:13px;color:var(--text3);padding:8px 0;">Run DDI analysis in Step 3 to auto-compute risk factors.</div>
         </div>
         <div id="add-phys-lbl" style="font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin:16px 0 4px;">Additional Physiologic Factors (manual entry)</div>
         <div id="add-phys-sub" style="font-size:12px;color:var(--text3);margin-bottom:10px;">Click any card to select — add details if known from the patient record.</div>
@@ -433,67 +435,67 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           <div style="font-size:12px;font-weight:700;color:var(--confirmed);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
             <i class="ti ti-user-check"></i> Patient Self-Report (upgrades to CONFIRMED)
           </div>
-          <div style="font-size:12px;color:var(--text3);margin-bottom:12px;">Check any items the patient reports regularly consuming — these upgrade from PREDICTIVE to CONFIRMED in the outreach message.</div>
+          <div id="selfreport-sub" style="font-size:12px;color:var(--text3);margin-bottom:12px;">Check any items the patient reports regularly consuming — these upgrade from PREDICTIVE to CONFIRMED in the outreach message.</div>
 
-          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Foods & Beverages:</div>
+          <div id="foods-hdr" style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Foods & Beverages:</div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;" id="foodReportGrid">
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('grapefruit','Grapefruit / grapefruit juice',this.checked)"> Grapefruit juice
+              <input type="checkbox" onchange="toggleFoodReport('grapefruit',this.checked)"> Grapefruit juice
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('alcohol','Alcohol (regular consumption)',this.checked)"> Alcohol
+              <input type="checkbox" onchange="toggleFoodReport('alcohol',this.checked)"> Alcohol
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('leafy_greens','High vitamin K foods (spinach, kale, broccoli)',this.checked)"> High vitamin K foods
+              <input type="checkbox" onchange="toggleFoodReport('leafy_greens',this.checked)"> High vitamin K foods
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('dairy','Dairy products (high calcium)',this.checked)"> Dairy / high calcium
+              <input type="checkbox" onchange="toggleFoodReport('dairy',this.checked)"> Dairy / high calcium
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('tyramine','Tyramine-rich foods (aged cheese, cured meats)',this.checked)"> Tyramine-rich foods
+              <input type="checkbox" onchange="toggleFoodReport('tyramine',this.checked)"> Tyramine-rich foods
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('cranberry','Cranberry juice',this.checked)"> Cranberry juice
+              <input type="checkbox" onchange="toggleFoodReport('cranberry',this.checked)"> Cranberry juice
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('caffeine','Excessive caffeine',this.checked)"> Excessive caffeine
+              <input type="checkbox" onchange="toggleFoodReport('caffeine',this.checked)"> Excessive caffeine
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('high_fat','High fat meals',this.checked)"> High fat meals
+              <input type="checkbox" onchange="toggleFoodReport('high_fat',this.checked)"> High fat meals
             </label>
           </div>
 
-          <div style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Supplements:</div>
+          <div id="supps-hdr" style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Supplements:</div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;" id="suppReportGrid">
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('fish_oil','Fish Oil / Omega-3',this.checked)"> Fish Oil / Omega-3
+              <input type="checkbox" onchange="toggleSuppReport('fish_oil',this.checked)"> Fish Oil / Omega-3
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('vitamin_e','Vitamin E',this.checked)"> Vitamin E
+              <input type="checkbox" onchange="toggleSuppReport('vitamin_e',this.checked)"> Vitamin E
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('vitamin_k','Vitamin K',this.checked)"> Vitamin K
+              <input type="checkbox" onchange="toggleSuppReport('vitamin_k',this.checked)"> Vitamin K
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('st_johns_wort','St. John\'s Wort',this.checked)"> St. John's Wort
+              <input type="checkbox" onchange="toggleSuppReport('st_johns_wort',this.checked)"> St. John's Wort
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('ginkgo','Ginkgo Biloba',this.checked)"> Ginkgo Biloba
+              <input type="checkbox" onchange="toggleSuppReport('ginkgo',this.checked)"> Ginkgo Biloba
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('garlic','Garlic supplements',this.checked)"> Garlic supplements
+              <input type="checkbox" onchange="toggleSuppReport('garlic',this.checked)"> Garlic supplements
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('melatonin','Melatonin',this.checked)"> Melatonin
+              <input type="checkbox" onchange="toggleSuppReport('melatonin',this.checked)"> Melatonin
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('magnesium','Magnesium',this.checked)"> Magnesium
+              <input type="checkbox" onchange="toggleSuppReport('magnesium',this.checked)"> Magnesium
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('coq10','CoQ10',this.checked)"> CoQ10
+              <input type="checkbox" onchange="toggleSuppReport('coq10',this.checked)"> CoQ10
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('turmeric','Turmeric / Curcumin',this.checked)"> Turmeric / Curcumin
+              <input type="checkbox" onchange="toggleSuppReport('turmeric',this.checked)"> Turmeric / Curcumin
             </label>
           </div>
         </div>
@@ -502,12 +504,12 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 5: SUPPLEMENT/FOOD RISKS -->
       <div class="card" id="step-5">
         <div class="card-title"><i class="ti ti-leaf"></i> Step 5 — Supplement & Food Risks</div>
-        <div class="card-sub">Inferred from the medication regimen — these are PREDICTIVE findings based on known drug interactions</div>
+        <div class="card-sub" id="step5-card-sub">Inferred from the medication regimen — these are PREDICTIVE findings based on known drug interactions</div>
         <div class="tier-bar predictive"><i class="ti ti-alert-triangle"></i> PREDICTIVE — inferred from regimen, not confirmed patient intake</div>
         <div id="supplementResults">
           <div class="ddi-placeholder" style="border-color:#ddd;">
             <i class="ti ti-leaf" style="font-size:28px;margin-bottom:8px;display:block;opacity:.4;"></i>
-            <div style="font-size:13px;">Run DDI analysis first to load supplement and food risks</div>
+            <div id="supp-ph" style="font-size:13px;">Run DDI analysis first to load supplement and food risks</div>
           </div>
         </div>
       </div>
@@ -515,7 +517,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
       <!-- STEP 6: GENERATE MESSAGE -->
       <div class="card" id="step-6">
         <div class="card-title"><i class="ti ti-send"></i> Step 6 — Generate Patient Outreach Message</div>
-        <div class="card-sub">Generates email, SMS, and case manager call script using confidence-tier language framework</div>
+        <div class="card-sub" id="step6-card-sub">Generates email, SMS, and case manager call script using confidence-tier language framework</div>
 
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
           <div style="padding:10px;border-radius:8px;background:var(--confirmed-lt);text-align:center;">
@@ -650,7 +652,25 @@ function ensureSelected(id) {
 const patientFoods = {};
 const patientSupps = {};
 
-function toggleFoodReport(id, label, checked) {
+// Self-report handlers take a KEY only. The display label used to be passed as
+// a string literal inside the inline onchange attribute, which is what broke on
+// the apostrophe in "St. John's Wort" (#83) — that handler failed to compile and
+// the checkbox silently discarded its selection. No label text sits inside an
+// attribute now, so that class of failure cannot recur.
+//
+// Some foods store a longer form than they display ("High vitamin K foods" vs
+// "High vitamin K foods (spinach, kale, broccoli)"); that longer form is what
+// reaches the outreach payload. Supplements store exactly what they display, so
+// they have no .stored key and fall through to the label.
+function selfReportText(kind, id){
+  var stored = 'clinical.selfReport.' + kind + '.' + id + '.stored';
+  var label  = 'clinical.selfReport.' + kind + '.' + id;
+  return IntractMD.i18n.strings.en[stored] ? IntractMD.i18n.t(stored)
+                                           : IntractMD.i18n.t(label);
+}
+
+function toggleFoodReport(id, checked) {
+  var label = selfReportText('food', id);
   if(checked){
     patientFoods[id] = {
       factorId: 'food_' + id, tier: 'CONFIRMED',
@@ -673,7 +693,8 @@ function toggleFoodReport(id, label, checked) {
   updateCounts();
 }
 
-function toggleSuppReport(id, label, checked) {
+function toggleSuppReport(id, checked) {
+  var label = selfReportText('supp', id);
   if(checked){
     patientSupps[id] = {
       factorId: 'supp_' + id, tier: 'CONFIRMED',
@@ -717,8 +738,8 @@ function autoComputeFactors(drugList) {
     const ntiDrug = NTI_DRUGS.find(d => drugs.some(dr => dr.includes(d)));
     autoFactors['nti_drug'] = {
       factorId: 'nti_drug', tier: 'COMPUTED',
-      label: 'Narrow Therapeutic Index Drug',
-      plainLanguage: ntiDrug + ' is a narrow therapeutic index drug requiring careful monitoring',
+      label: tt('clinical.autoFactor.nti.label'),
+      plainLanguage: tt('clinical.autoFactor.nti.plainLanguage', {drug: ntiDrug}),
       action: 'Small changes in dose or interactions can cause significant effects. Monitor closely.',
       value: ntiDrug
     };
@@ -735,7 +756,7 @@ function autoComputeFactors(drugList) {
     autoFactors['high_risk_class'] = {
       factorId: 'high_risk_class', tier: 'COMPUTED',
       label: 'High-Risk Drug Class Present',
-      plainLanguage: highRiskClasses.join(', ') + ' present in regimen',
+      plainLanguage: tt('clinical.autoFactor.highRiskClass.plainLanguage', {classes: highRiskClasses.join(', ')}),
       action: 'Enhanced monitoring protocol applies for ' + highRiskClasses.join(' and ') + ' medications.',
       value: highRiskClasses.join(', ')
     };
@@ -746,8 +767,8 @@ function autoComputeFactors(drugList) {
   if(bleedDrugs.length >= 2) {
     autoFactors['bleeding_risk'] = {
       factorId: 'bleeding_risk', tier: 'COMPUTED',
-      label: 'Elevated Bleeding Risk',
-      plainLanguage: 'Multiple antiplatelet/anticoagulant agents: ' + bleedDrugs.join(', '),
+      label: tt('clinical.autoFactor.bleeding.label'),
+      plainLanguage: tt('clinical.autoFactor.bleeding.plainLanguage', {drugs: bleedDrugs.join(', ')}),
       action: 'Combined bleeding risk is elevated. Avoid NSAIDs, fish oil >1g, vitamin E >400 IU.',
       value: bleedDrugs.join(', ')
     };
@@ -757,8 +778,8 @@ function autoComputeFactors(drugList) {
   if(drugList.length >= 5) {
     autoFactors['high_med_count'] = {
       factorId: 'high_med_count', tier: 'COMPUTED',
-      label: 'Polypharmacy — ' + drugList.length + ' Medications',
-      plainLanguage: 'Patient is on ' + drugList.length + ' active medications',
+      label: tt('clinical.autoFactor.polypharmacy.label', {n: drugList.length}),
+      plainLanguage: tt('clinical.autoFactor.polypharmacy.plainLanguage', {n: drugList.length}),
       action: 'Polypharmacy increases interaction probability. Review for deprescribing opportunities.',
       value: drugList.length
     };
@@ -770,7 +791,7 @@ function autoComputeFactors(drugList) {
     autoFactors['qt_risk'] = {
       factorId: 'qt_risk', tier: 'COMPUTED',
       label: 'QT Prolongation Risk',
-      plainLanguage: 'Multiple QT-prolonging agents: ' + qtDrugs.join(', '),
+      plainLanguage: tt('clinical.autoFactor.qt.plainLanguage', {drugs: qtDrugs.join(', ')}),
       action: 'Cardiac rhythm monitoring may be indicated. Avoid additional QT-prolonging agents.',
       value: qtDrugs.join(', ')
     };
@@ -782,7 +803,7 @@ function autoComputeFactors(drugList) {
     autoFactors['renal_concern'] = {
       factorId: 'renal_concern', tier: 'COMPUTED',
       label: 'Renally Cleared Medications',
-      plainLanguage: renalDrugs.join(', ') + ' require adequate renal function',
+      plainLanguage: tt('clinical.autoFactor.renal.plainLanguage', {drugs: renalDrugs.join(', ')}),
       action: 'Check recent eGFR. Dose adjustment may be needed if renal function is impaired.',
       value: renalDrugs.join(', ')
     };
@@ -793,8 +814,8 @@ function autoComputeFactors(drugList) {
   if(hepaticDrugs.length >= 2) {
     autoFactors['hepatic_concern'] = {
       factorId: 'hepatic_concern', tier: 'COMPUTED',
-      label: 'Hepatic Metabolism Concern',
-      plainLanguage: 'Multiple hepatically metabolized drugs: ' + hepaticDrugs.join(', '),
+      label: tt('clinical.autoFactor.hepatic.label'),
+      plainLanguage: tt('clinical.autoFactor.hepatic.plainLanguage', {drugs: hepaticDrugs.join(', ')}),
       action: 'Monitor liver function. Avoid alcohol and hepatotoxic supplements.',
       value: hepaticDrugs.join(', ')
     };
@@ -808,7 +829,7 @@ function renderAutoFactors(autoFactors) {
   if(!container) return;
   const factors = Object.values(autoFactors);
   if(!factors.length) {
-    container.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0;">No computed risk factors identified for this regimen.</div>';
+    container.innerHTML = '<div style="font-size:13px;color:var(--text3);padding:8px 0;">'+tt('clinical.step4.noFactors')+'</div>';
     return;
   }
   container.innerHTML = factors.map(f => `
@@ -973,7 +994,7 @@ function syncQuickPills(){
 function renderDrugTags() {
   const container = document.getElementById('drugTags');
   if(!drugs.size) {
-    container.innerHTML = '<span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">'+(uiLang==='es'?'Aún no se han agregado medicamentos':'No medications added yet')+'</span>';
+    container.innerHTML = '<span style="font-size:12px;color:var(--text3);padding:4px 0;display:block;">'+tt('common.empty.noMeds')+'</span>';
   } else {
     container.innerHTML = [...drugs].map(d =>
       '<span class="drug-tag">' + d + ' <span class="rm" onclick="removeDrug(\'' + d.replace(/'/g,"\\'") + '\')">×</span></span>'
@@ -1040,7 +1061,7 @@ async function runDDI() {
     document.getElementById('ddiResult').innerHTML = '<div style="color:red;font-size:13px;">Error: ' + e.message + '</div>';
   }
   btn.disabled = false;
-  btn.innerHTML = '<i class="ti ti-refresh"></i> Re-run Analysis';
+  btn.innerHTML = '<i class="ti ti-refresh"></i> '+tt('clinical.ddi.rerun');
 }
 
 function buildProactivePrompt(drugList) {
@@ -1135,7 +1156,7 @@ function renderDDIResult() {
   }
 
   if(!allItems.length){
-    html += '<div style="font-size:13px;color:var(--text3);">No significant interactions identified for this medication combination.</div>';
+    html += '<div style="font-size:13px;color:var(--text3);">'+tt('clinical.ddi.none')+'</div>';
   }
   html += '</div>';
   el.innerHTML = html;
@@ -1152,7 +1173,7 @@ function clinToggleMore(){
   const btn=document.getElementById('clinShowMore');
   const showing=extras[0]&&extras[0].style.display!=='none';
   extras.forEach(e=>{e.style.display=showing?'none':'';});
-  if(btn)btn.textContent=showing?'&#9660; Show '+extras.length+' more':'&#9650; Show fewer';
+  if(btn)btn.textContent=showing?'&#9660; Show '+extras.length+' more':'&#9650; '+tt('common.showFewer');
 }
 
 
@@ -1161,7 +1182,7 @@ function renderSupplementResults() {
   if(!el || !ddiData || !ddiData.warnings) return;
   const warns = ddiData.warnings.slice(0, 6);
   if(!warns.length) {
-    el.innerHTML = '<div style="font-size:13px;color:var(--text3);">No significant supplement or food interactions identified.</div>';
+    el.innerHTML = '<div style="font-size:13px;color:var(--text3);">'+tt('clinical.step5.none')+'</div>';
     return;
   }
   el.innerHTML = '<div style="display:flex;flex-direction:column;gap:8px;">' +
@@ -1255,7 +1276,7 @@ function renderOutput(result) {
   if(body) body.textContent = result.email&&result.email.body||'';
   const sms = result.sms&&result.sms.body||'';
   if(smsBody) smsBody.textContent = sms;
-  if(smsCnt) smsCnt.textContent = sms.length + ' / 160 characters';
+  if(smsCnt) smsCnt.textContent = tt('clinical.smsCount', {n: sms.length});
   const script = result.case_manager_script||{};
   if(scriptEl) scriptEl.innerHTML =
     '<div style="margin-bottom:10px;padding:10px 14px;background:var(--navy);color:#fff;border-radius:6px;font-size:13px;"><strong>Opening:</strong> ' + (script.opening||'') + '</div>' +
@@ -1294,34 +1315,32 @@ function switchTab(tab) {
 
 function buildClinicalReport(result, payload){
   result = result || {};
+  // Report labels. These were 22 inline uiLang ternaries; every one is now a
+  // lookup whose English and Spanish were verified identical to what the
+  // ternaries produced before the swap.
   var LC={
-    report_title:  uiLang==='es'?'Resumen Ejecutivo Clínico MTM de IntractMD™':'IntractMD™ Clinical MTM Executive Summary',
-    for_review:    uiLang==='es'?'Solo para soporte de decisión clínica. No es consejo médico.':'Clinical decision support only. Not a substitute for professional medical advice.',
-    generated:     uiLang==='es'?'Generado:':'Generated:',
-    meds_reviewed: uiLang==='es'?'Medicamentos Revisados':'Medications Reviewed',
-    risk_score:    uiLang==='es'?'Puntuación de Riesgo CPRS':'CPRS Risk Score',
-    high_risk:     uiLang==='es'?'Riesgo Alto':'High Risk',
-    mod_risk:      uiLang==='es'?'Riesgo Moderado':'Moderate Risk',
-    low_risk:      uiLang==='es'?'Riesgo Menor':'Lower Risk',
-    ddi_sec:       uiLang==='es'?'Interacciones entre Medicamentos':'Drug-Drug Interactions',
-    supp_sec:      uiLang==='es'?'Advertencias de Suplementos y Alimentos':'Supplement & Food Warnings',
-    factors_sec:   uiLang==='es'?'Factores de Riesgo Clínicos':'Clinical Risk Factors',
-    no_ddi:        uiLang==='es'?'No se identificaron interacciones significativas.':'No significant interactions identified.',
-    no_supp:       uiLang==='es'?'No se identificaron advertencias de suplementos o alimentos.':'No supplement or food warnings identified.',
-    col_sev:       uiLang==='es'?'Severidad':'Severity',
-    col_inter:     uiLang==='es'?'Interacción':'Interaction',
-    col_mech:      uiLang==='es'?'Mecanismo':'Mechanism',
-    col_action:    uiLang==='es'?'Acción':'Action',
-    col_item:      uiLang==='es'?'Ítem':'Item',
-    col_risk:      uiLang==='es'?'Riesgo':'Risk',
-    sev_critical:  uiLang==='es'?'Crítico':'Critical',
-    sev_high:      uiLang==='es'?'Alto':'High',
-    sev_moderate:  uiLang==='es'?'Moderado':'Moderate',
-    sev_low:       uiLang==='es'?'Bajo':'Low',
-    print_pdf:     uiLang==='es'?'Imprimir / Guardar PDF':'Print / Save PDF',
-    return_btn:    uiLang==='es'?'Volver al Análisis':'Return to Analysis',
-    high_risk_cls: uiLang==='es'?'Clase de Medicamento de Alto Riesgo Presente':'High-Risk Drug Class Present',
-    renal_cleared: uiLang==='es'?'Medicamentos de Eliminación Renal':'Renally Cleared Medications',
+    for_review:    tt('common.disclaimer.cdsOnly'),
+    generated:     tt('common.report.generated'),
+    meds_reviewed: tt('common.report.medsReviewed'),
+    risk_score:    tt('clinical.report.cprsScore'),
+    high_risk:     tt('common.riskBand.high'),
+    mod_risk:      tt('common.riskBand.moderate'),
+    low_risk:      tt('common.riskBand.low'),
+    ddi_sec:       tt('clinical.report.ddiSec'),
+    supp_sec:      tt('clinical.report.suppSec'),
+    factors_sec:   tt('clinical.report.factorsSec'),
+    col_sev:       tt('common.col.severity'),
+    col_inter:     tt('common.col.interaction'),
+    col_mech:      tt('common.col.mechanism'),
+    col_action:    tt('common.col.action'),
+    col_item:      tt('common.col.item'),
+    col_risk:      tt('common.col.risk'),
+    sev_critical:  tt('common.severity.critical'),
+    sev_high:      tt('common.severity.high'),
+    sev_moderate:  tt('common.severity.moderate'),
+    sev_low:       tt('common.severity.low'),
+    print_pdf:     tt('common.report.printPdf'),
+    return_btn:    tt('common.report.returnToAnalysis'),
   };
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
@@ -1343,7 +1362,7 @@ function buildClinicalReport(result, payload){
 
   // ── PAGE 1: HEADER + CONDENSED SUMMARY ──────────────────────────────────
   html += '<div class="er-header">';
-  html += '<div class="er-header-title">'+(uiLang==='es'?'Resumen Ejecutivo Clínico MTM de IntractMD™':'IntractMD™ Clinical MTM Executive Summary')+'</div>';
+  html += '<div class="er-header-title">'+tt('clinical.report.header')+'</div>';
   html += '<div class="er-header-sub">Resolve Medical, LLC · intractmd.com · 216-509-0672</div>';
   html += '<div class="er-header-date">'+LC.generated+' ' + dateStr + ' · '+LC.for_review+'</div>';
   html += '</div>';
@@ -1353,10 +1372,10 @@ function buildClinicalReport(result, payload){
 
   // Patient row
   html += '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #e2e6ea">';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Paciente':'Patient')+'</div><div class="er-info-value">' + (ctx.firstName || (uiLang==='es'?'Miembro':'Member')) + '</div></div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Plan de Salud':'Health Plan')+'</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Gestor de Casos':'Case Manager')+'</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Nivel de Confianza':'Confidence Tier')+'</div><div class="er-info-value" style="color:' + (tierColors[tierUsed]||'#7C3AED') + '">' +(uiLang==='es'?(tierUsed==='CONFIRMED'?'CONFIRMADO':tierUsed==='COMPUTED'?'CALCULADO':tierUsed==='PREDICTIVE'?'PREDICTIVO':tierUsed):tierUsed)+'</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.patient')+'</div><div class="er-info-value">' + (ctx.firstName || tt('clinical.report.member')) + '</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.healthPlan')+'</div><div class="er-info-value">' + (ctx.planName||'—') + '</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.caseManager')+'</div><div class="er-info-value">' + (ctx.caseManagerName||'—') + '</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.confidenceTier')+'</div><div class="er-info-value" style="color:' + (tierColors[tierUsed]||'#7C3AED') + '">' +(function(){var k={CONFIRMED:'confirmed',COMPUTED:'computed',PREDICTIVE:'predictive'}[tierUsed];return k?tt('common.tier.'+k):tierUsed;})()+'</div></div>';
   html += '</div>';
 
   // CPRS + drug count + interaction count in one row
@@ -1366,9 +1385,9 @@ function buildClinicalReport(result, payload){
   html += '<div style="font-size:10px;color:#888;font-weight:600;text-transform:uppercase">CPRS / 100</div>';
   html += '<div style="font-size:11px;font-weight:700;color:' + scoreColor + '">' + scoreLabel + '</div>';
   html += '</div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Medicamentos':'Medications')+'</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">'+(uiLang==='es'?'revisados':'reviewed')+'</div></div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Hallazgos DDI':'DDI Findings')+'</div><div style="font-size:20px;font-weight:700;color:' + (interactions.length>0?'#A32D2D':'#2E7D4F') + '">' + interactions.length + '</div><div style="font-size:11px;color:#888">flagged</div></div>';
-  html += '<div><div class="er-info-label">'+(uiLang==='es'?'Advertencias Supl/Alimentos':'Supp/Food Warnings')+'</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">'+(uiLang==='es'?'identificadas':'identified')+'</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.medications')+'</div><div style="font-size:20px;font-weight:700;color:var(--navy)">' + drugs.length + '</div><div style="font-size:11px;color:#888">'+tt('clinical.report.reviewed')+'</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.ddiFindings')+'</div><div style="font-size:20px;font-weight:700;color:' + (interactions.length>0?'#A32D2D':'#2E7D4F') + '">' + interactions.length + '</div><div style="font-size:11px;color:#888">flagged</div></div>';
+  html += '<div><div class="er-info-label">'+tt('clinical.report.suppWarnings')+'</div><div style="font-size:20px;font-weight:700;color:' + (warnings.length>0?'#D97706':'#2E7D4F') + '">' + warnings.length + '</div><div style="font-size:11px;color:#888">'+tt('clinical.report.identified')+'</div></div>';
   html += '</div>';
 
   // Drug tags
@@ -1380,7 +1399,7 @@ function buildClinicalReport(result, payload){
   // Risk factors if any
   if(factors.length){
     html += '<div style="margin-top:12px;padding-top:12px;border-top:1px solid #e2e6ea">';
-    html += '<div class="er-info-label" style="margin-bottom:6px">'+(uiLang==='es'?'Factores de Riesgo':'Risk Factors')+'</div>';
+    html += '<div class="er-info-label" style="margin-bottom:6px">'+tt('clinical.report.riskFactors')+'</div>';
     html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
     factors.forEach(function(f){
       html += '<span style="background:#EBF5FC;border:1px solid #C0DFF5;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;color:#1B6EC2">' + (f.label||f) + '</span>';
@@ -1393,7 +1412,7 @@ function buildClinicalReport(result, payload){
   // DDI findings
   if(interactions.length){
     html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> '+LC.ddi_sec+' (' + interactions.length + ' '+(uiLang==='es'?'marcados':uiLang==='es'?'marcados':'flagged')+')' + '</div>';
+    html += '<div class="er-section-title"><i class="ti ti-alert-triangle" style="color:var(--cyan)"></i> '+LC.ddi_sec+' (' + interactions.length + ' '+tt('clinical.report.flagged')+')' + '</div>';
     html += '<table class="er-table"><thead><tr><th>'+LC.col_sev+'</th><th>'+LC.col_inter+'</th><th>'+LC.col_mech+'</th><th>'+LC.col_action+'</th></tr></thead><tbody>';
     interactions.forEach(function(i){
       const sc = sevColor[i.severity]||'#555';
@@ -1429,7 +1448,7 @@ function buildClinicalReport(result, payload){
   // Outreach
   if(result && result.email){
     html += '<div class="er-section">';
-    html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> '+(uiLang==='es'?'Comunicación Generada':'Outreach Generated')+'</div>';
+    html += '<div class="er-section-title"><i class="ti ti-send" style="color:var(--cyan)"></i> '+tt('clinical.report.outreachSec')+'</div>';
     if(result.email){
       html += '<div class="er-outreach-box">';
       html += '<div class="er-outreach-label">Email</div>';
@@ -1462,7 +1481,7 @@ function buildClinicalReport(result, payload){
   // Footer
   html += '<div class="er-footer">';
   html += 'IntractMD™ is a clinical decision support tool — not a substitute for professional medical advice.<br/>';
-  html += '©2026 Resolve Medical, LLC · Patent Pending · 700 W Saint Clair Ave., Suite 100, Cleveland, OH 44113';
+  html += tt('common.brand.copyright');
   html += '</div>';
 
   return html;
@@ -1544,12 +1563,6 @@ var TR_C={
   nav_proactive:{en:'Proactive',es:'Proactivo'},
   nav_clinical: {en:'Clinical',es:'Cl\u00ednico'},
   nav_depresc:  {en:'Deprescribing',es:'Desprescripci\u00f3n'},
-  step1:        {en:'Step 1 \u2014 Patient Information',es:'Paso 1 \u2014 Informaci\u00f3n del Paciente'},
-  step2:        {en:'Step 2 \u2014 Enter Medications',es:'Paso 2 \u2014 Ingrese Medicamentos'},
-  step3:        {en:'Step 3 \u2014 Run DDI Analysis',es:'Paso 3 \u2014 Ejecutar An\u00e1lisis DDI'},
-  step4:        {en:'Step 4 \u2014 Supplement Screening',es:'Paso 4 \u2014 Evaluaci\u00f3n de Suplementos'},
-  step5:        {en:'Step 5 \u2014 Generate Outreach',es:'Paso 5 \u2014 Generar Comunicaci\u00f3n'},
-  step6:        {en:'Step 6 \u2014 Clinical Briefing',es:'Paso 6 \u2014 Informe Cl\u00ednico'},
   drug_ph:      {en:'Type a drug name (e.g. Warfarin)...',es:'Escriba un medicamento (ej. Warfarina)...'},
   add_btn:      {en:'Add',es:'Agregar'},
   analyze_btn:  {en:'Run Full Analysis',es:'Ejecutar An\u00e1lisis Completo'},
@@ -1580,52 +1593,129 @@ var TR_C={
   sev_minimal:  {en:'Minimal',es:'M\u00ednimo'},
 };
 function tc(k){var e=TR_C[k];return e?(e[uiLang]||e.en||k):k;}
+// ── SHARED STRING TABLE ─────────────────────────────────────────────────────
+// Group 2 of the Clinical refactor: page chrome, the sidebar workflow list, the
+// confidence legend and the nav. These used to be inline {en,es} literals in
+// setLangC's `ids` map; they now come from /i18n.js like every other surface.
+//
+// Two of these read differently in the source than they used to: setLangC
+// stored 'WORKFLOW PROGRESS' and 'CONFIDENCE LEGEND' in caps while i18n.js and
+// the markup use title case. .steps-title carries text-transform:uppercase, so
+// both render identically on screen — the caps were never doing any work.
+//
+// The `ids` map below still holds the step-card entries. Those move in later
+// groups; the two mechanisms run side by side until then.
+var CLINICAL_TEXT = {
+  'hdr-sub-txt':      'clinical.hdr.sub',
+  'wf-progress-lbl':  'clinical.sidebar.progress',
+  'conf-legend-lbl':  'clinical.sidebar.confLegend',
+  'step1-lbl':        'clinical.step1.label',
+  'step1-sub':        'clinical.step1.sub',
+  'step2-lbl':        'clinical.step2.label',
+  'step2-sub':        'clinical.step2.sub',
+  'step3-lbl':        'clinical.step3.label',
+  'step3-sub':        'clinical.step3.sub',
+  'step4-lbl':        'clinical.step4.label',
+  'step4-sub':        'clinical.step4.sub',
+  'step5-lbl':        'clinical.step5.label',
+  'step5-sub':        'clinical.step5.sub',
+  'step6-lbl':        'clinical.step6.label',
+  'step6-sub':        'clinical.step6.sub',
+  'conf1-lbl':        'clinical.conf.1',
+  'conf2-lbl':        'clinical.conf.2',
+  'conf3-lbl':        'clinical.conf.3',
+  'nav-proactive':    'common.nav.proactive',
+  'nav-clinical':     'common.nav.clinical',
+  'nav-deprescribing':'common.nav.deprescribing',
+
+  // Group 3 — Steps 1 and 2. The two card titles are deliberately absent: each
+  // carries a leading <i> icon, so keying them means wrapping their text in a
+  // span, and that is markup restructuring rather than adding an id.
+  'step1-card-sub':      'clinical.step1.cardSub',
+  'lbl-patient-name':    'clinical.field.patientName',
+  'lbl-plan-name':       'clinical.field.planName',
+  'lbl-case-manager':    'clinical.field.caseManager',
+  'outreach-lang-lbl':   'clinical.field.outreachLang',
+  'opt-lang-en':         'clinical.opt.english',
+  'opt-lang-es':         'clinical.opt.spanish',
+  'step2-card-sub':      'clinical.step2.cardSub',
+  'step2-confirmed-lbl': 'clinical.step2.confirmedBar',
+  'add-btn-txt':         'common.btn.add',
+  'quick-add-lbl':       'clinical.quickAdd.label',
+
+  // Group 4 — Steps 3, 4 and 5. Held back for the same reason as the Step 1/2
+  // card titles: the three card titles here, the COMPUTED and PREDICTIVE tier
+  // bars, the "Auto-Computed" and "Patient Self-Report" headings, and the 18
+  // self-report checkbox labels all carry their text as a sibling of an <i> or
+  // an <input>, so keying them means adding a span. That is a markup change,
+  // and it is being collected into one follow-up PR rather than decided here.
+  'step3-card-sub':      'clinical.step3.cardSub',
+  'ddi-btn-txt':         'clinical.btn.runDdi',
+  'ddi-ph-main':         'clinical.ddi.placeholder1',
+  'ddi-ph-sub':          'clinical.ddi.placeholder2',
+  'step4-card-sub':      'clinical.step4.cardSub',
+  'auto-factor-ph':      'clinical.step4.runFirst',
+  'add-phys-lbl':        'clinical.step4.addPhys',
+  'add-phys-sub':        'clinical.step4.addPhysSub',
+  'reg-ctx-lbl':         'clinical.step4.regCtx',
+  'reg-ctx-sub':         'clinical.step4.regCtxSub',
+  'selfreport-sub':      'clinical.selfReport.sub',
+  'foods-hdr':           'clinical.selfReport.foodsLabel',
+  'supps-hdr':           'clinical.selfReport.suppsLabel',
+  'step5-card-sub':      'clinical.step5.cardSub',
+  'supp-ph':             'clinical.step5.placeholder',
+
+  // Group 5 — Step 6 and the sidebar report buttons. Two things are absent on
+  // purpose.
+  //
+  // The Step 6 card title, the Generate button, the three output tabs, the
+  // three Copy buttons, the two report buttons, Close Report and the reviewer
+  // note all carry their text beside an <i> or, in the reviewer note's case,
+  // wrapped around a live <span id="tierUsed">. Those go in the deferred
+  // markup PR with the rest of that class.
+  //
+  // The three confidence chips (CONFIRMED / COMPUTED / PREDICTIVE at lines
+  // 525-533) are a different reason: they render English in Spanish mode today
+  // and common.tier.* has reviewed Spanish, so keying them here would be a
+  // visible Spanish gain. The same three words also render as sidebar badges,
+  // a runtime factor badge and three tier bars, none of which this group can
+  // reach, so keying only these would put CONFIRMADO and CONFIRMED on screen
+  // together. All eight elements move at once, under worklist item 22.
+  'step6-card-sub':      'clinical.step6.cardSub',
+  'view-brief-btn':      'clinical.btn.viewBriefing',
+  'download-pdf-txt':    'common.report.downloadPdf'
+};
+
+// Placeholders are attributes, not text nodes, so they need their own pass.
+var CLINICAL_PLACEHOLDER = {
+  'patientFirstName': 'clinical.field.patientName.ph',
+  'planName':         'clinical.field.planName.ph',
+  'caseManagerName':  'clinical.field.caseManager.ph',
+  'drugInput':        'clinical.drug.placeholder'
+};
+
+function applyClinicalStrings(){
+  Object.keys(CLINICAL_TEXT).forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.textContent=tt(CLINICAL_TEXT[id]);
+  });
+  Object.keys(CLINICAL_PLACEHOLDER).forEach(function(id){
+    var el=document.getElementById(id);
+    if(el)el.placeholder=tt(CLINICAL_PLACEHOLDER[id]);
+  });
+}
+
 function setLangC(l){
-  uiLang=l;localStorage.setItem('intractmd_lang',l);window._uiLang=l;
+  uiLang=l;IntractMD.i18n.setLang(l);window._uiLang=l;
   var en=document.getElementById('lang-en-c');var es=document.getElementById('lang-es-c');
   if(en)en.className='lang-btn'+(l==='en'?' active':'');
   if(es)es.className='lang-btn'+(l==='es'?' active':'');
-  // Drug input placeholder
-  var di=document.getElementById('drugInput');if(di)di.placeholder=tc('drug_ph');
   // Sync outreach language dropdown
   var ol=document.getElementById('outreachLanguage');if(ol)ol.value=l;
   // Translate elements by ID
   var ids={
-    'hdr-sub-txt':'hdr_sub',
-    'wf-progress-lbl': {en:'WORKFLOW PROGRESS',es:'PROGRESO DEL FLUJO'},
-    'conf-legend-lbl': {en:'CONFIDENCE LEGEND',es:'LEYENDA DE CONFIANZA'},
-    'step1-lbl': {en:'Patient & Context',es:'Paciente y Contexto'},
-    'step1-sub': {en:'Name, plan, case manager',es:'Nombre, plan, gestor de casos'},
-    'step2-lbl': {en:'Medication List',es:'Lista de Medicamentos'},
-    'step2-sub': {en:'From EHR or claims',es:'De HCE o reclamaciones'},
-    'step3-lbl': {en:'DDI Risk Score',es:'Puntuación de Riesgo DDI'},
-    'step3-sub': {en:'Drug-drug interactions',es:'Interacciones entre medicamentos'},
-    'step4-lbl': {en:'Risk Factors',es:'Factores de Riesgo'},
-    'step4-sub': {en:'Physiologic & regimen context',es:'Contexto fisiológico y de régimen'},
-    'step5-lbl': {en:'Supplement/Food Risks',es:'Riesgos de Suplementos/Alimentos'},
-    'step5-sub': {en:'Proactive avoidance list',es:'Lista proactiva de evitación'},
-    'step6-lbl': {en:'Generate Message',es:'Generar Mensaje'},
-    'step6-sub': {en:'Email · SMS · Call script',es:'Correo · SMS · Guion de llamada'},
-    'conf1-lbl':  {en:'CONFIRMED — from verified record',es:'CONFIRMADO — de registro verificado'},
-    'conf2-lbl':  {en:'COMPUTED — system-derived',es:'CALCULADO — derivado del sistema'},
-    'conf3-lbl':  {en:'PREDICTIVE — inferred guidance',es:'PREDICTIVO — orientación inferida'},
-    'add-phys-lbl':{en:'Additional Physiologic Factors (manual entry)',es:'FACTORES FISIOLÓGICOS ADICIONALES (ENTRADA MANUAL)'},
-    'add-phys-sub':{en:'Click any card to select — add details if known from the patient record.',es:'Haga clic en cualquier tarjeta para seleccionar — agregue detalles si se conocen del expediente del paciente.'},
-    'reg-ctx-lbl': {en:'Regimen Context Factors (Layer 3)',es:'FACTORES DE CONTEXTO DEL RÉGIMEN (CAPA 3)'},
-    'reg-ctx-sub': {en:'Select any additional context factors visible in the patient record.',es:'Seleccione factores de contexto adicionales visibles en el expediente del paciente.'},
-    'ddi-btn-txt': {en:'Run Drug Interaction Analysis',es:'Ejecutar Análisis de Interacciones'},
-    'step2-card-sub': {en:'Enter medications from EHR or pharmacy claims — these are CONFIRMED findings',es:'Ingrese medicamentos del HCE o reclamaciones de farmacia — estos son hallazgos CONFIRMADOS'},
-    'step2-confirmed-lbl': {en:'CONFIRMED — sourced from verified medical record',es:'CONFIRMADO — proveniente del expediente médico verificado'},
-    'view-brief-btn': {en:'View Clinical Briefing',es:'Ver Informe Clínico'},
-
-    'download-pdf-txt':'download_pdf',
-    'add-btn-txt':'add_btn',
-    'outreach-lang-lbl':'outreach_lang',
-
-    'nav-proactive':'nav_proactive',
-    'nav-clinical':'nav_clinical',
-    'nav-deprescribing':'nav_depresc',
   };
+  applyClinicalStrings();
   Object.keys(ids).forEach(function(id){
     var el=document.getElementById(id);
     if(!el)return;
@@ -1650,20 +1740,6 @@ function setLangC(l){
   // there is no correct Spanish for the real ones yet. The accurate English
   // titles in the markup now stand in both languages; Spanish is pending
   // translation review.
-  // Analyze button
-  var ab=document.querySelector('.btn-analyze');
-  if(ab)ab.innerHTML='<i class="ti ti-radar"></i> '+tc('analyze_btn');
-  // Severity badges in results
-  document.querySelectorAll('.badge').forEach(function(el){
-    var map={
-      'Critical':'sev_critical','Cr\u00edtico':'sev_critical',
-      'High':'sev_high','Alto':'sev_high',
-      'Moderate':'sev_moderate','Moderado':'sev_moderate',
-      'Low':'sev_low','Bajo':'sev_low',
-      'Minimal':'sev_minimal','M\u00ednimo':'sev_minimal',
-    };
-    var key=map[el.textContent.trim()];if(key)el.textContent=tc(key);
-  });
 
   // The empty-medication-list message lives in two places: the initial markup
   // of #drugTags, which is English, and renderDrugTags(), which translates it

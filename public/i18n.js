@@ -713,6 +713,7 @@
     "clinical.report.medications": "Medicamentos",
     "clinical.report.reviewed": "revisados",
     "clinical.report.ddiFindings": "Hallazgos DDI",
+    "clinical.report.flagged": "marcados",
     "clinical.report.suppWarnings": "Advertencias Supl/Alimentos",
     "clinical.report.identified": "identificadas",
     "clinical.report.riskFactors": "Factores de Riesgo",
