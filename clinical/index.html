@@ -219,15 +219,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 </div>
 
 <div style="display:flex;align-items:center;gap:0;background:#0a2040;border-bottom:2px solid #534AB7;padding:0 1rem;">
-<a href="https://www.intractmd.com/proactive" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;">
-    Proactive
-  </a>
-  <a href="https://www.intractmd.com/clinical" style="padding:10px 16px;font-size:13px;font-weight:700;color:#a89af0;text-decoration:none;border-bottom:3px solid #534AB7;margin-bottom:-2px;white-space:nowrap;">
-    Clinical
-  </a>
-  <a href="https://www.intractmd.com/deprescribing" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;">
-    Deprescribing
-  </a>
+<a href="https://www.intractmd.com/proactive" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;"><span id="nav-proactive">Proactive</span></a>
+  <a href="https://www.intractmd.com/clinical" style="padding:10px 16px;font-size:13px;font-weight:700;color:#a89af0;text-decoration:none;border-bottom:3px solid #534AB7;margin-bottom:-2px;white-space:nowrap;"><span id="nav-clinical">Clinical</span></a>
+  <a href="https://www.intractmd.com/deprescribing" style="padding:10px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;"><span id="nav-deprescribing">Deprescribing</span></a>
 </div>
 <!-- LOADING OVERLAY -->
 <div class="loading-overlay" id="loadingOverlay">
@@ -338,7 +332,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           <i class="ti ti-file-description"></i> <span id="view-brief-btn">View Clinical Briefing</span>
         </button>
         <button onclick="downloadClinicalReport()" style="width:100%;margin-top:8px;padding:9px 14px;background:#fff;color:var(--navy);border:1.5px solid var(--cyan);border-radius:8px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px">
-          <i class="ti ti-file-download"></i> Download PDF
+          <i class="ti ti-file-download"></i> <span id="download-pdf-txt">Download PDF</span>
         </button>
       </div>
     </div>
@@ -366,7 +360,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
             <input type="text" id="caseManagerName" placeholder="e.g., Sarah Chen, PharmD"/>
           </div>
           <div class="form-group">
-            <label>Outreach Language</label>
+            <label id="outreach-lang-lbl">Outreach Language</label>
             <select id="outreachLanguage">
               <option value="en">English</option>
               <option value="es">Spanish (Español)</option>
@@ -384,7 +378,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           <div class="drug-entry">
             <input type="text" id="drugInput" placeholder="Type a drug name (e.g. Warfarin)..."
               oninput="onDrugInput(this.value)" onkeydown="onDrugKeydown(event)"/>
-            <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> Add</button>
+            <button class="btn-add" onclick="addDrug()"><i class="ti ti-plus"></i> <span id="add-btn-txt">Add</span></button>
           </div>
           <div id="drugAcd" style="display:none;position:absolute;top:42px;left:0;right:60px;background:#fff;border:1.5px solid var(--navy);border-radius:0 0 8px 8px;z-index:100;max-height:200px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,.1);"></div>
         </div>
@@ -1624,6 +1618,10 @@ function setLangC(l){
     'step2-confirmed-lbl': {en:'CONFIRMED — sourced from verified medical record',es:'CONFIRMADO — proveniente del expediente médico verificado'},
     'view-brief-btn': {en:'View Clinical Briefing',es:'Ver Informe Clínico'},
 
+    'download-pdf-txt':'download_pdf',
+    'add-btn-txt':'add_btn',
+    'outreach-lang-lbl':'outreach_lang',
+
     'nav-proactive':'nav_proactive',
     'nav-clinical':'nav_clinical',
     'nav-deprescribing':'nav_depresc',
@@ -1635,18 +1633,10 @@ function setLangC(l){
     if(typeof val==='string'){el.textContent=tc(val);}
     else if(typeof val==='object'){el.textContent=val[l]||val.en;}
   });
-  // Translate view clinical briefing and download pdf sidebar buttons
-  var vcb=document.querySelector('.sidebar-btn');
-  if(vcb&&vcb.textContent.indexOf('Clinical')>=0||vcb&&vcb.textContent.indexOf('Clínico')>=0){
-    vcb.innerHTML='<i class="ti ti-file-description"></i> '+(l==='es'?'Ver Informe Clínico':'View Clinical Briefing');
-  }
-  var sbtns=document.querySelectorAll('.sidebar-btn');
-  sbtns.forEach(function(btn){
-    if(btn.textContent.indexOf('View Clinical')>=0||btn.textContent.indexOf('Ver Informe')>=0)
-      btn.innerHTML='<i class="ti ti-file-description"></i> '+(l==='es'?'Ver Informe Clínico':'View Clinical Briefing');
-    if(btn.textContent.indexOf('Download PDF')>=0||btn.textContent.indexOf('Descargar PDF')>=0)
-      btn.innerHTML='<i class="ti ti-file-download"></i> '+(l==='es'?'Descargar PDF':'Download PDF');
-  });
+  // The .sidebar-btn selector these lines used matched no element on this
+  // surface, so neither sidebar button was ever translated by it. Both are now
+  // handled by id through the ids map above: view-brief-btn and
+  // download-pdf-txt.
   // Step card titles — intentionally NOT rewritten.
   // This block matched a card title on its "Step N" prefix alone and replaced
   // it with TR_C.stepN. Those entries describe a different workflow to the one
