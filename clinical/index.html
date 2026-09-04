@@ -363,7 +363,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
           </div>
           <div class="form-group">
             <label id="outreach-lang-lbl">Outreach Language</label>
-            <select id="outreachLanguage">
+            <select id="outreachLanguage" onchange="outreachLangChosen=true">
               <option value="en" id="opt-lang-en">English</option>
               <option value="es" id="opt-lang-es">Spanish (Español)</option>
             </select>
@@ -587,6 +587,11 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
 <script>
 // ── STATE ──────────────────────────────────────────────────────────────────
+// True once the case manager has picked an outreach language themselves.
+// Until then the control is showing a default, and setLangC keeps it in step
+// with the console. After that it is a decision, and setLangC leaves it alone.
+var outreachLangChosen = false;
+
 const drugs = new Set();
 let ddiData = null;
 let supplementData = null;
@@ -1710,8 +1715,18 @@ function setLangC(l){
   var en=document.getElementById('lang-en-c');var es=document.getElementById('lang-es-c');
   if(en)en.className='lang-btn'+(l==='en'?' active':'');
   if(es)es.className='lang-btn'+(l==='es'?' active':'');
-  // Sync outreach language dropdown
-  var ol=document.getElementById('outreachLanguage');if(ol)ol.value=l;
+  // Seed the outreach language from the console language — but only while it
+  // is still a default. These are separate decisions: a case manager working
+  // in English may well be writing to a Spanish-speaking member, and that is
+  // the normal case, not an edge case.
+  //
+  // This used to run unconditionally, so any console toggle silently reset a
+  // deliberate choice and the next Generate produced a message in the wrong
+  // language, with nothing on screen saying so. Seeding the default still
+  // matters: the markup lists English first with no `selected`, so without
+  // this a Spanish-console user would default to English outreach.
+  var ol=document.getElementById('outreachLanguage');
+  if(ol && !outreachLangChosen) ol.value=l;
   // Translate elements by ID
   var ids={
   };
