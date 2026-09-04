@@ -1664,6 +1664,18 @@ function setLangC(l){
     };
     var key=map[el.textContent.trim()];if(key)el.textContent=tc(key);
   });
+
+  // The empty-medication-list message lives in two places: the initial markup
+  // of #drugTags, which is English, and renderDrugTags(), which translates it
+  // correctly. Nothing called renderDrugTags() on load or on a language switch
+  // — only addDrug, removeDrug and the quick-add pills do — so the tray stayed
+  // English until a medication was added and then removed again. A user who
+  // never adds one never saw Spanish here at all.
+  //
+  // Calling it here re-renders the tray in the selected language. It is
+  // idempotent: with medications present it rebuilds the same tags, and the
+  // button and step-number states it sets are both derived from drugs.size.
+  renderDrugTags();
   window._uiLang=l;
 }
 window._uiLang=uiLang;
