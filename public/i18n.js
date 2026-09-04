@@ -630,6 +630,7 @@
     "proactive.count.critical": "{n} Crítico",
     "proactive.count.high": "{n} Alto",
     "proactive.count.moderate": "{n} Moderado",
+    "proactive.count.low": "{n} Bajo",
     "proactive.cat.drugDrug": "Medicamento-Medicamento",
     "proactive.cat.supplement": "Suplemento",
     "proactive.cat.food": "Alimento",
