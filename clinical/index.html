@@ -1343,7 +1343,7 @@ function buildClinicalReport(result, payload){
   const tierColors = {CONFIRMED:'#1A7A4A',COMPUTED:'#1B6EC2',PREDICTIVE:'#7C3AED'};
   const scoreColor = cprs >= 70 ? '#A32D2D' : cprs >= 40 ? '#D97706' : '#2E7D4F';
   const scoreLabel = cprs >= 70 ? LC.high_risk : cprs >= 40 ? LC.mod_risk : LC.low_risk;
-  const tierUsed = result.confidence_summary&&result.confidence_summary.highest_tier_used||uiLang==='es'?'PREDICTIVO':'PREDICTIVE';
+  const tierUsed = result.confidence_summary&&result.confidence_summary.highest_tier_used||'PREDICTIVE';
 
   let html = '';
 
