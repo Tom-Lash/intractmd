@@ -3701,5 +3701,70 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeVideoMo
 
 
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8c7832342747420d874a639acc9a73db"}'></script><!-- End Cloudflare Web Analytics -->
+<!-- ==========================================================================
+     Quick-add "already added" sync   |   added 2026-09-04
+     Purely additive: reads the DOM and toggles the existing .btn-q.on class.
+     Edits nothing else. Delete this whole block to undo.
+     Covers all three rows: drugs, supplements, foods.
+     ========================================================================== -->
+<script>
+(function () {
+  var ROWS = [
+    { buttons: 'quickRow',     tags: 'tags'       },
+    { buttons: 'suppQuickRow', tags: 'supp-tags'  },
+    { buttons: 'foodQuickRow', tags: 'food-tags'  }
+  ];
+  function norm(s) {
+    return String(s).split(' (')[0].split('/')[0]
+      .replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+  function chipNames(tagsEl) {
+    var out = [];
+    Array.prototype.forEach.call(tagsEl.querySelectorAll('.tag'), function (tag) {
+      var c = tag.cloneNode(true);
+      Array.prototype.forEach.call(
+        c.querySelectorAll('.rxcui, .tag-rm'),
+        function (n) { if (n.parentNode) n.parentNode.removeChild(n); }
+      );
+      out.push(norm(c.textContent));
+    });
+    return out;
+  }
+  function sync() {
+    try {
+      ROWS.forEach(function (row) {
+        var btnRow = document.getElementById(row.buttons);
+        var tagsEl = document.getElementById(row.tags);
+        if (!btnRow || !tagsEl) return;
+        var names = chipNames(tagsEl);
+        Array.prototype.forEach.call(
+          btnRow.querySelectorAll('.btn-q'),
+          function (b) {
+            b.classList.toggle('on', names.indexOf(norm(b.textContent)) !== -1);
+          }
+        );
+      });
+    } catch (e) {
+      if (window.console && console.warn) console.warn('quick-add sync:', e);
+    }
+  }
+  function start() {
+    ROWS.forEach(function (row) {
+      [row.tags, row.buttons].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        new MutationObserver(sync).observe(el, { childList: true, subtree: true });
+      });
+    });
+    sync();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();
+</script>
+<!-- ===================== end quick-add sync block ===================== -->
 </body>
 </html>
