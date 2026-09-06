@@ -1178,7 +1178,13 @@ function clinToggleMore(){
   const btn=document.getElementById('clinShowMore');
   const showing=extras[0]&&extras[0].style.display!=='none';
   extras.forEach(e=>{e.style.display=showing?'none':'';});
-  if(btn)btn.textContent=showing?'&#9660; Show '+extras.length+' more':'&#9650; '+tt('common.showFewer');
+  // textContent does not decode HTML entities, so assigning '&#9660;' here
+  // printed the entity literally from the first click onward, in both
+  // languages. The initial render at the top of this file builds the same
+  // button through innerHTML, where the entity decodes correctly — which is
+  // why only the toggled states were wrong. Assigning the characters directly
+  // removes the mismatch rather than accommodating it.
+  if(btn)btn.textContent=showing?'\u25BC Show '+extras.length+' more':'\u25B2 '+tt('common.showFewer');
 }
 
 
