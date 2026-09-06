@@ -344,7 +344,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
       <!-- STEP 1: PATIENT CONTEXT -->
       <div class="card" id="step-1">
-        <div class="card-title"><i class="ti ti-user"></i> Step 1 — Patient & Case Manager Context</div>
+        <div class="card-title"><i class="ti ti-user"></i> <span id="step1-card-title">Step 1 — Patient & Case Manager Context</span></div>
         <div class="card-sub" id="step1-card-sub">Setup information for message personalization</div>
         <div class="form-row">
           <div class="form-group">
@@ -373,7 +373,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
       <!-- STEP 2: MEDICATION LIST -->
       <div class="card" id="step-2">
-        <div class="card-title"><i class="ti ti-pill"></i> Step 2 — Medication List</div>
+        <div class="card-title"><i class="ti ti-pill"></i> <span id="step2-card-title">Step 2 — Medication List</span></div>
         <div class="card-sub" id="step2-card-sub">Enter medications from EHR or pharmacy claims — these are CONFIRMED findings</div>
         <div class="tier-bar confirmed"><i class="ti ti-check"></i> <span id="step2-confirmed-lbl">CONFIRMED — sourced from verified medical record</span></div>
         <div style="position:relative;">
@@ -395,7 +395,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
       <!-- STEP 3: DDI RISK SCORE -->
       <div class="card" id="step-3">
-        <div class="card-title"><i class="ti ti-radar"></i> Step 3 — Drug-Drug Interaction Risk Score</div>
+        <div class="card-title"><i class="ti ti-radar"></i> <span id="step3-card-title">Step 3 — Drug-Drug Interaction Risk Score</span></div>
         <div class="card-sub" id="step3-card-sub">Run the interaction analysis to establish baseline risk — CONFIRMED from medication list</div>
         <button class="btn-generate" id="ddiBtn" onclick="runDDI()" disabled style="margin-bottom:14px;padding:11px;">
           <i class="ti ti-radar"></i> <span id="ddi-btn-txt">Run Drug Interaction Analysis</span>
@@ -410,11 +410,11 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
       <!-- STEP 4: RISK FACTORS -->
       <div class="card" id="step-4">
-        <div class="card-title"><i class="ti ti-clipboard-list"></i> Step 4 — Polypharmacy Risk Factors</div>
+        <div class="card-title"><i class="ti ti-clipboard-list"></i> <span id="step4-card-title">Step 4 — Polypharmacy Risk Factors</span></div>
         <div class="card-sub" id="step4-card-sub">Select risk factors from patient record — check all that apply. Each factor modifies the overall risk assessment.</div>
-        <div class="tier-bar computed"><i class="ti ti-cpu"></i> COMPUTED — system applies severity modifiers based on selected factors</div>
+        <div class="tier-bar computed"><i class="ti ti-cpu"></i> <span id="step4-computed-bar">COMPUTED — system applies severity modifiers based on selected factors</span></div>
 
-        <div style="font-size:12px;font-weight:700;color:var(--computed);text-transform:uppercase;letter-spacing:.5px;margin:0 0 8px;display:flex;align-items:center;gap:6px;"><i class="ti ti-cpu"></i> Auto-Computed from Medication Regimen</div>
+        <div style="font-size:12px;font-weight:700;color:var(--computed);text-transform:uppercase;letter-spacing:.5px;margin:0 0 8px;display:flex;align-items:center;gap:6px;"><i class="ti ti-cpu"></i> <span id="auto-computed-lbl">Auto-Computed from Medication Regimen</span></div>
         <div id="autoFactorResults" style="margin-bottom:16px;">
           <div id="auto-factor-ph" style="font-size:13px;color:var(--text3);padding:8px 0;">Run DDI analysis in Step 3 to auto-compute risk factors.</div>
         </div>
@@ -433,69 +433,69 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         <!-- PATIENT SELF-REPORT: Foods & Supplements -->
         <div style="margin-top:20px;padding-top:16px;border-top:1px solid #eee;">
           <div style="font-size:12px;font-weight:700;color:var(--confirmed);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
-            <i class="ti ti-user-check"></i> Patient Self-Report (upgrades to CONFIRMED)
+            <i class="ti ti-user-check"></i> <span id="selfreport-title">Patient Self-Report (upgrades to CONFIRMED)</span>
           </div>
           <div id="selfreport-sub" style="font-size:12px;color:var(--text3);margin-bottom:12px;">Check any items the patient reports regularly consuming — these upgrade from PREDICTIVE to CONFIRMED in the outreach message.</div>
 
           <div id="foods-hdr" style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Foods & Beverages:</div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;" id="foodReportGrid">
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('grapefruit',this.checked)"> Grapefruit juice
+              <input type="checkbox" onchange="toggleFoodReport('grapefruit',this.checked)"> <span id="sr-food-grapefruit">Grapefruit juice</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('alcohol',this.checked)"> Alcohol
+              <input type="checkbox" onchange="toggleFoodReport('alcohol',this.checked)"> <span id="sr-food-alcohol">Alcohol</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('leafy_greens',this.checked)"> High vitamin K foods
+              <input type="checkbox" onchange="toggleFoodReport('leafy_greens',this.checked)"> <span id="sr-food-leafy_greens">High vitamin K foods</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('dairy',this.checked)"> Dairy / high calcium
+              <input type="checkbox" onchange="toggleFoodReport('dairy',this.checked)"> <span id="sr-food-dairy">Dairy / high calcium</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('tyramine',this.checked)"> Tyramine-rich foods
+              <input type="checkbox" onchange="toggleFoodReport('tyramine',this.checked)"> <span id="sr-food-tyramine">Tyramine-rich foods</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('cranberry',this.checked)"> Cranberry juice
+              <input type="checkbox" onchange="toggleFoodReport('cranberry',this.checked)"> <span id="sr-food-cranberry">Cranberry juice</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('caffeine',this.checked)"> Excessive caffeine
+              <input type="checkbox" onchange="toggleFoodReport('caffeine',this.checked)"> <span id="sr-food-caffeine">Excessive caffeine</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleFoodReport('high_fat',this.checked)"> High fat meals
+              <input type="checkbox" onchange="toggleFoodReport('high_fat',this.checked)"> <span id="sr-food-high_fat">High fat meals</span>
             </label>
           </div>
 
           <div id="supps-hdr" style="font-size:12px;font-weight:600;color:var(--text3);margin-bottom:8px;">Regular Supplements:</div>
           <div style="display:flex;flex-wrap:wrap;gap:8px;" id="suppReportGrid">
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('fish_oil',this.checked)"> Fish Oil / Omega-3
+              <input type="checkbox" onchange="toggleSuppReport('fish_oil',this.checked)"> <span id="sr-supp-fish_oil">Fish Oil / Omega-3</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('vitamin_e',this.checked)"> Vitamin E
+              <input type="checkbox" onchange="toggleSuppReport('vitamin_e',this.checked)"> <span id="sr-supp-vitamin_e">Vitamin E</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('vitamin_k',this.checked)"> Vitamin K
+              <input type="checkbox" onchange="toggleSuppReport('vitamin_k',this.checked)"> <span id="sr-supp-vitamin_k">Vitamin K</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('st_johns_wort',this.checked)"> St. John's Wort
+              <input type="checkbox" onchange="toggleSuppReport('st_johns_wort',this.checked)"> <span id="sr-supp-st_johns_wort">St. John's Wort</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('ginkgo',this.checked)"> Ginkgo Biloba
+              <input type="checkbox" onchange="toggleSuppReport('ginkgo',this.checked)"> <span id="sr-supp-ginkgo">Ginkgo Biloba</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('garlic',this.checked)"> Garlic supplements
+              <input type="checkbox" onchange="toggleSuppReport('garlic',this.checked)"> <span id="sr-supp-garlic">Garlic supplements</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('melatonin',this.checked)"> Melatonin
+              <input type="checkbox" onchange="toggleSuppReport('melatonin',this.checked)"> <span id="sr-supp-melatonin">Melatonin</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('magnesium',this.checked)"> Magnesium
+              <input type="checkbox" onchange="toggleSuppReport('magnesium',this.checked)"> <span id="sr-supp-magnesium">Magnesium</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('coq10',this.checked)"> CoQ10
+              <input type="checkbox" onchange="toggleSuppReport('coq10',this.checked)"> <span id="sr-supp-coq10">CoQ10</span>
             </label>
             <label style="display:flex;align-items:center;gap:6px;padding:6px 12px;border:1.5px solid #ddd;border-radius:20px;cursor:pointer;font-size:13px;background:#fafafa;">
-              <input type="checkbox" onchange="toggleSuppReport('turmeric',this.checked)"> Turmeric / Curcumin
+              <input type="checkbox" onchange="toggleSuppReport('turmeric',this.checked)"> <span id="sr-supp-turmeric">Turmeric / Curcumin</span>
             </label>
           </div>
         </div>
@@ -503,9 +503,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
       <!-- STEP 5: SUPPLEMENT/FOOD RISKS -->
       <div class="card" id="step-5">
-        <div class="card-title"><i class="ti ti-leaf"></i> Step 5 — Supplement & Food Risks</div>
+        <div class="card-title"><i class="ti ti-leaf"></i> <span id="step5-card-title">Step 5 — Supplement & Food Risks</span></div>
         <div class="card-sub" id="step5-card-sub">Inferred from the medication regimen — these are PREDICTIVE findings based on known drug interactions</div>
-        <div class="tier-bar predictive"><i class="ti ti-alert-triangle"></i> PREDICTIVE — inferred from regimen, not confirmed patient intake</div>
+        <div class="tier-bar predictive"><i class="ti ti-alert-triangle"></i> <span id="step5-predictive-bar">PREDICTIVE — inferred from regimen, not confirmed patient intake</span></div>
         <div id="supplementResults">
           <div class="ddi-placeholder" style="border-color:#ddd;">
             <i class="ti ti-leaf" style="font-size:28px;margin-bottom:8px;display:block;opacity:.4;"></i>
@@ -516,7 +516,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
       <!-- STEP 6: GENERATE MESSAGE -->
       <div class="card" id="step-6">
-        <div class="card-title"><i class="ti ti-send"></i> Step 6 — Generate Patient Outreach Message</div>
+        <div class="card-title"><i class="ti ti-send"></i> <span id="step6-card-title">Step 6 — Generate Patient Outreach Message</span></div>
         <div class="card-sub" id="step6-card-sub">Generates email, SMS, and case manager call script using confidence-tier language framework</div>
 
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
@@ -535,31 +535,31 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
         </div>
 
         <button class="btn-generate" id="generateBtn" onclick="generateMessage()" disabled>
-          <i class="ti ti-sparkles"></i> Generate Outreach Message
+          <i class="ti ti-sparkles"></i> <span id="generate-btn-txt">Generate Outreach Message</span>
         </button>
 
         <!-- OUTPUT -->
         <div id="outputSection" style="display:none;margin-top:20px;">
           <div class="output-tabs">
-            <div class="output-tab active" onclick="switchTab('email')"><i class="ti ti-mail"></i> Email</div>
-            <div class="output-tab" onclick="switchTab('sms')"><i class="ti ti-message"></i> SMS</div>
-            <div class="output-tab" onclick="switchTab('script')"><i class="ti ti-phone"></i> Call Script</div>
+            <div class="output-tab active" onclick="switchTab('email')"><i class="ti ti-mail"></i> <span id="tab-email-txt">Email</span></div>
+            <div class="output-tab" onclick="switchTab('sms')"><i class="ti ti-message"></i> <span id="tab-sms-txt">SMS</span></div>
+            <div class="output-tab" onclick="switchTab('script')"><i class="ti ti-phone"></i> <span id="tab-script-txt">Call Script</span></div>
           </div>
 
           <div class="output-pane active" id="pane-email">
-            <button class="btn-copy" onclick="copyContent('email')"><i class="ti ti-copy"></i> Copy</button>
+            <button class="btn-copy" onclick="copyContent('email')"><i class="ti ti-copy"></i> <span id="copy-email-txt">Copy</span></button>
             <div class="message-subject" id="email-subject"></div>
             <div class="message-box" id="email-body"></div>
           </div>
 
           <div class="output-pane" id="pane-sms">
-            <button class="btn-copy" onclick="copyContent('sms')"><i class="ti ti-copy"></i> Copy</button>
+            <button class="btn-copy" onclick="copyContent('sms')"><i class="ti ti-copy"></i> <span id="copy-sms-txt">Copy</span></button>
             <div class="message-box" id="sms-body"></div>
             <div style="font-size:11px;color:var(--text3);margin-top:6px;" id="sms-count"></div>
           </div>
 
           <div class="output-pane" id="pane-script">
-            <button class="btn-copy" onclick="copyContent('script')"><i class="ti ti-copy"></i> Copy</button>
+            <button class="btn-copy" onclick="copyContent('script')"><i class="ti ti-copy"></i> <span id="copy-script-txt">Copy</span></button>
             <div id="script-content"></div>
           </div>
 
@@ -575,13 +575,13 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#EEF2F7;color:var(--
 
 <!-- Report buttons (shown after Step 6 completes) -->
 <div id="reportBtns" style="display:none;gap:12px;justify-content:center;padding:16px;flex-wrap:wrap">
-  <button class="btn-dl-report" onclick="downloadClinicalReport()"><i class="ti ti-file-download"></i> Download Executive Summary (PDF)</button>
-  <button class="btn-exec-report" style="background:var(--navy);border-color:var(--navy)" onclick="viewClinicalReport()"><i class="ti ti-eye"></i> View Executive Summary</button>
+  <button class="btn-dl-report" onclick="downloadClinicalReport()"><i class="ti ti-file-download"></i> <span id="dl-exec-txt">Download Executive Summary (PDF)</span></button>
+  <button class="btn-exec-report" style="background:var(--navy);border-color:var(--navy)" onclick="viewClinicalReport()"><i class="ti ti-eye"></i> <span id="view-exec-txt">View Executive Summary</span></button>
 </div>
 
 <!-- Executive Summary Report Overlay -->
 <div class="exec-report-overlay" id="execReportOverlay">
-  <button class="exec-report-close" onclick="closeExecReport()"><i class="ti ti-x"></i> Close Report</button>
+  <button class="exec-report-close" onclick="closeExecReport()"><i class="ti ti-x"></i> <span id="close-report-txt">Close Report</span></button>
   <div class="exec-report-doc" id="execReportContent"></div>
 </div>
 
@@ -1688,7 +1688,79 @@ var CLINICAL_TEXT = {
   // together. All eight elements move at once, under worklist item 22.
   'step6-card-sub':      'clinical.step6.cardSub',
   'view-brief-btn':      'clinical.btn.viewBriefing',
-  'download-pdf-txt':    'common.report.downloadPdf'
+  'download-pdf-txt':    'common.report.downloadPdf',
+
+  // ── Markup PR (2026-09-06) ─────────────────────────────────────────────
+  // These carried their text as a sibling of an <i> icon or an <input>, so
+  // they could not be keyed by writing textContent on the parent — that would
+  // have deleted the icon. Each now has a <span id> around its text alone.
+  //
+  // Every key below is English-fallback, so wiring them renders exactly what
+  // rendered before. Verified against i18n.js before wiring; see the note on
+  // the four held entries further down.
+  'step1-card-title':    'clinical.step1.cardTitle',
+  'step2-card-title':    'clinical.step2.cardTitle',
+  'step3-card-title':    'clinical.step3.cardTitle',
+  'step4-card-title':    'clinical.step4.cardTitle',
+  'step5-card-title':    'clinical.step5.cardTitle',
+  'step6-card-title':    'clinical.step6.cardTitle',
+  'step4-computed-bar':  'clinical.step4.computedBar',
+  'step5-predictive-bar':'clinical.step5.predictiveBar',
+  'auto-computed-lbl':   'clinical.step4.autoComputed',
+  'selfreport-title':    'clinical.selfReport.title',
+  'copy-email-txt':      'clinical.btn.copy',
+  'copy-sms-txt':        'clinical.btn.copy',
+  'copy-script-txt':     'clinical.btn.copy',
+  'dl-exec-txt':         'clinical.btn.downloadExec',
+  'view-exec-txt':       'clinical.btn.viewExec',
+  'close-report-txt':    'common.report.close',
+
+  // The 18 self-report checkbox labels. Keys already existed; all 18 are
+  // English-fallback, and each label's markup text was checked against its
+  // key's English value before wiring.
+  'sr-food-grapefruit':  'clinical.selfReport.food.grapefruit',
+  'sr-food-alcohol':     'clinical.selfReport.food.alcohol',
+  'sr-food-leafy_greens':'clinical.selfReport.food.leafy_greens',
+  'sr-food-dairy':       'clinical.selfReport.food.dairy',
+  'sr-food-tyramine':    'clinical.selfReport.food.tyramine',
+  'sr-food-cranberry':   'clinical.selfReport.food.cranberry',
+  'sr-food-caffeine':    'clinical.selfReport.food.caffeine',
+  'sr-food-high_fat':    'clinical.selfReport.food.high_fat',
+  'sr-supp-fish_oil':    'clinical.selfReport.supp.fish_oil',
+  'sr-supp-vitamin_e':   'clinical.selfReport.supp.vitamin_e',
+  'sr-supp-vitamin_k':   'clinical.selfReport.supp.vitamin_k',
+  'sr-supp-st_johns_wort':'clinical.selfReport.supp.st_johns_wort',
+  'sr-supp-ginkgo':      'clinical.selfReport.supp.ginkgo',
+  'sr-supp-garlic':      'clinical.selfReport.supp.garlic',
+  'sr-supp-melatonin':   'clinical.selfReport.supp.melatonin',
+  'sr-supp-magnesium':   'clinical.selfReport.supp.magnesium',
+  'sr-supp-coq10':       'clinical.selfReport.supp.coq10',
+  'sr-supp-turmeric':    'clinical.selfReport.supp.turmeric'
+
+  // ── DELIBERATELY ABSENT: four spans exist but are NOT wired ────────────
+  //
+  // generate-btn-txt, tab-email-txt, tab-sms-txt, tab-script-txt.
+  //
+  // Their keys — clinical.btn.generate, clinical.tab.email, .sms,
+  // .callScript — ALREADY HAVE SPANISH. Adding them here would render
+  // "Generar Comunicación" and "Correo Electrónico" the moment this merges,
+  // which is a Spanish gain. The 2026-09-06 phase rule holds every gain until
+  // the batched clinical/bilingual review has happened.
+  //
+  // The spans are still added, because the span is the structural work and
+  // nothing renders differently without a map entry. Wiring is one line each
+  // once the review clears.
+  //
+  // All four move together, including tab-sms-txt whose Spanish is also "SMS"
+  // and would look identical: keying three of four tabs and leaving one is the
+  // mixed render this project keeps producing.
+  //
+  // The reviewer note (line ~567) is also absent, for a different reason. Its
+  // key clinical.reviewerNote exists and is English-only, so it is no gain —
+  // but its text wraps a live <span id="tierUsed"> that runDDI() writes into,
+  // and applyClinicalStrings() sets textContent, which would destroy that span
+  // on every language switch and blank the tier. That is a regression, not a
+  // wiring change. Its own PR, with its own before/after.
 };
 
 // Placeholders are attributes, not text nodes, so they need their own pass.
