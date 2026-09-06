@@ -639,10 +639,10 @@ function renderResults(r){
     const wl2=document.getElementById('warnList');
     if(wl2&&wl2.parentNode)wl2.parentNode.insertBefore(summaryEl,wl2);}
   summaryEl.innerHTML=[
-    nCrit>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0">${t('proactive.count.critical',{n:nCrit})}</span>`:'',
-    nHigh>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdeee8;color:#C05020;border:1px solid #e8b090">${t('proactive.count.high',{n:nHigh})}</span>`:'',
-    nMod>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdf3e3;color:#D4860A;border:1px solid #e8cc80">${t('proactive.count.moderate',{n:nMod})}</span>`:'',
-    nLow>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#f2f8f4;color:#2E7D4F;border:1px solid #a0d0b0">${t('proactive.count.low',{n:nLow})}</span>`:''
+    nCrit>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fce8e8;color:#8B0000;border:1px solid #e8a0a0">${t('common.count.critical',{n:nCrit})}</span>`:'',
+    nHigh>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdeee8;color:#C05020;border:1px solid #e8b090">${t('common.count.high',{n:nHigh})}</span>`:'',
+    nMod>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#fdf3e3;color:#D4860A;border:1px solid #e8cc80">${t('common.count.moderate',{n:nMod})}</span>`:'',
+    nLow>0?`<span style="padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#f2f8f4;color:#2E7D4F;border:1px solid #a0d0b0">${t('common.count.low',{n:nLow})}</span>`:''
   ].join('');
 
   // CHANGE 1: Critical red alert banner
@@ -847,9 +847,9 @@ function buildProactiveReport(r, drugList){
   html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+t('common.report.riskTier')+'</div><div style="font-size:15px;font-weight:700;color:#0D3B6E">'+(function(){var k={Critical:'critical',High:'high',Moderate:'moderate',Low:'low',Minimal:'minimal'}[r.risk_tier];return k?t('common.severity.'+k):(r.risk_tier||'—');})()+'</div></div>';
   html += '<div><div style="font-size:10px;font-weight:700;color:#888;text-transform:uppercase;margin-bottom:3px">'+t('proactive.report.totalFindings')+'</div><div style="font-size:20px;font-weight:700;color:#0D3B6E">'+allInteractions.length+'</div></div>';
   html += '<div>';
-  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+t('proactive.count.critical',{n:nCrit})+'</span>';
-  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+t('proactive.count.high',{n:nHigh})+'</span>';
-  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+t('proactive.count.moderate',{n:nMod})+'</span>';
+  if(nCrit>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FCEBEB;color:#A32D2D;margin:2px">'+t('common.count.critical',{n:nCrit})+'</span>';
+  if(nHigh>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#fdeee8;color:#C05020;margin:2px">'+t('common.count.high',{n:nHigh})+'</span>';
+  if(nMod>0) html += '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:#FDF3E3;color:#D97706;margin:2px">'+t('common.count.moderate',{n:nMod})+'</span>';
   html += '</div></div>';
 
   // Drug tags
